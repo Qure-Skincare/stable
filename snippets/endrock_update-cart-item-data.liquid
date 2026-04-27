@@ -1,9 +1,0 @@
-{% comment %} AB TEST 219 to 224 {% endcomment %}
-{% assign cart_item_price = item.final_price | times: item.quantity %}
-
-{% if item.properties._igcp %}
-  {% assign cart_item_compare_price = item.properties._igcp | times: item.quantity %}
-{% else %}
-  {% assign cart_item_compare_price = item.variant.compare_at_price | times: item.quantity %}
-{% endif %}
-{% comment %} AB TEST 219 to 224 {% endcomment %}

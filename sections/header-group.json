@@ -21,10 +21,6 @@
         "days": 14
       }
     },
-    "endrock-gamification-header": {
-      "type": "endrock-gamification-header",
-      "settings": {}
-    },
     "header": {
       "type": "n-header",
       "custom_css": [],
@@ -33,7 +29,6 @@
   },
   "order": [
     "announcement-bar-gamification",
-    "endrock-gamification-header",
     "header"
   ]
 }

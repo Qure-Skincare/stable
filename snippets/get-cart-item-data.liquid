@@ -64,10 +64,6 @@
 
     {% assign __cart_item_title = cart_item_title | downcase %}
 
-    {% if settings.enable_test %}
-      {% include 'endrock_update-cart-item-data' %}
-    {% endif %}
-
     {% comment %} insurance item {% endcomment %}
 
     {% if __cart_item_title contains 'shipping insurance' %}

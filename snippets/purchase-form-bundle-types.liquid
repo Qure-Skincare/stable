@@ -1,9 +1,0 @@
-{% doc %}
-  Renders a bundle types snippet for purchase form bundle section.
-{% enddoc %}
-
-<ul class="nav nav-pills pb-md-25 pb-15" id="bundles-tab" role="tablist"{% if section.settings.hide_types %} style="display:none"{% endif %}>
-  {% render 'purchase-form-bundle-types-item' array: __idsArray1, class: 'px-15 px-md-0', type: 1 %}
-  {% render 'purchase-form-bundle-types-item' array: __idsArray2, type: 2 %}
-  {% render 'purchase-form-bundle-types-item' array: __idsArray3, type: 3 %}
-</ul>

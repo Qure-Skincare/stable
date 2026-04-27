@@ -2,9 +2,9 @@
     Renders an article section
 {% enddoc %}
 
-{% capture discover %}{% render 'article-snippet-discover' %}{% endcapture %}
-{% capture subscription %}{% render 'article-snippet-subscription' %}{% endcapture %}
-{% capture community %}{% render 'article-snippet-community' %}{% endcapture %}
+{% capture discover %}{% render 'n-article-snippet-discover' %}{% endcapture %}
+{% capture subscription %}{% render 'n-article-snippet-subscription' %}{% endcapture %}
+{% capture community %}{% render 'n-article-snippet-community' %}{% endcapture %}
 
 {% assign share_url = shop.url | append: article.url %}
 <!-- POST ARTICLE -->
@@ -62,16 +62,16 @@
             <div class="post-article__top-list">
                 <h6>{{ 'blog.popular.header' | t }}</h6>
                 <ul class="e-top-posts">
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
-                    {% render 'blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skin', limit: 1 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:1 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:1 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skincare', limit: 1, offset:2 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:1 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'light-therapy', limit: 1, offset:2 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:2 %}
+                    {% render 'n-blog-snippet-post-popular' with blog_handle: 'skin', limit: 1, offset:3 %}
                 </ul>
             </div>
         </article>

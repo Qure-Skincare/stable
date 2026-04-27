@@ -1,0 +1,68 @@
+{% doc %}
+  Renders a product header section
+{% enddoc %}
+
+{% include 'get-product-data' %}
+
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
+<section class="hero-product" id="hero-product">
+    <div class="hero-product__container container">
+        <div class="hero-product__gallery">
+            {% render 'n-product-page-slider', product: product, page: page, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
+            {% if product_media.size > 1 %}
+                {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
+            {% endif %}
+        </div>
+        <div class="hero-product__main">
+
+            {% render 'n-page-rating', section: section %}
+
+            <h1>{{ product_title }}</h1>
+
+            <article>
+                {{ product_description }}
+            </article>
+
+            {% if black_friday_discount_percent > 0 %}
+                {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
+            {%- else -%}
+                {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: section %}
+            {%- endif -%}
+
+            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
+            {% render 'n-product-saveup-offer' %}
+        </div>
+        <div class="hero-product__extra">
+            {% render 'n-product-page-collapsed', product: product, page: page %}
+        </div>
+    </div>
+</section>
+
+{% if product %}
+    {% render 'n-product-data-json', product: product %} 
+{% endif %}
+
+{% schema %}
+{
+    "name": "t:sections.product.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_discount",
+            "label": "t:common.show_discount",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "rating",
+            "label": "t:common.rating",
+            "default": true
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.product.name"
+        }
+    ]
+}
+{% endschema %}

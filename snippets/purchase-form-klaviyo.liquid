@@ -1,9 +1,0 @@
-{% if section.settings.klaviyo_form_name != blank %}
-    <div class="klaviyo-popup klaviyo-form-{{ section.settings.klaviyo_form_name }} hide"></div>
-
-    {% if section.settings.type == 'box' %}
-        <button id="back-in-stock" class="show-klaviyo-popup btn btn-sm btn--secondary w-100 mt-20" data-bs-toggle="modal" data-bs-target="#reusableKlaviyoModal" data-form-id="klaviyo-popup">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
-    {% else %}
-        <button class="show-klaviyo-popup btn btn-sm btn--secondary hide" data-bs-toggle="modal" data-bs-target="#reusableKlaviyoModal" data-form-id="klaviyo-popup">{{ 'purchase-form.settings.notify-me-when-available' | t }}</button>
-    {% endif %}
-{% endif %}

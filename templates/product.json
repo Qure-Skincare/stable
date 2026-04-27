@@ -9,9 +9,12 @@
  */
  {
   "sections": {
-    "product": {
-      "type": "product",
-      "settings": {}
+    "product_header_YnMCRC": {
+      "type": "n-product",
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "show_discount": true
+      }
     },
     "n_press_reviews_HDaUTN": {
       "type": "n_press-reviews",
@@ -135,7 +138,7 @@
     }
   },
   "order": [
-    "product",
+    "product_header_YnMCRC",
     "n_press_reviews_HDaUTN",
     "n_trusted_reviews_HRLHtt",
     "n_you_may_also_like_HZi1bC"
