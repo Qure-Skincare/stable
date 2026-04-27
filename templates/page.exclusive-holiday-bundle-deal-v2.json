@@ -953,7 +953,7 @@
       }
     },
     "sticky_button_hNut0P": {
-      "type": "sticky-button",
+      "type": "n-sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Shop now to save up to 57% on Exclusive Bundles",

@@ -725,7 +725,7 @@
       }
     },
     "sticky_cta_Kmmeg7": {
-      "type": "sticky-button",
+      "type": "n-sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Neck & Décolletage LED System",

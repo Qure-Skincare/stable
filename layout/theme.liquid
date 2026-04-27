@@ -57,7 +57,7 @@
       </script>
     {% endif %}
 
-    <script src="{{ 'redirect.js' | asset_url }}"></script>
+    <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns.com/assets/images/qure_32x32.webp" type="image/png">
     <link rel="stylesheet" href="https://qureskincaredns.com/assets/css/vendor.css">
@@ -82,7 +82,7 @@
 
     {% render 'n-header-scripts' %}
 
-    <script src="{{ 'datalayer.js' | asset_url }}"></script>
+    <script src="{{ 'n-datalayer.js' | asset_url }}"></script>
     <script src="https://qureskincaredns.com/shopify/js/country-detect.js"></script>
   </head>
 
@@ -95,14 +95,14 @@
     
     <!-- End Google Tag Manager (noscript) -->
     
-    {% sections 'header-group' %}
+    {% sections 'n-header-group' %}
 
     <main class="sections-stack">
       {{ content_for_layout }}
     </main>
 
-    {% sections 'footer-group' %}
-    {% render 'footer-scripts' %}
+    {% sections 'n-footer-group' %}
+    {% render 'n-footer-scripts' %}
 
     <script src="https://qureskincaredns.com/assets/js/vendor.js" defer="defer"></script>
 

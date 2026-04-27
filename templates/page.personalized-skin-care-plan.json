@@ -556,8 +556,8 @@
       }
     },
     "sticky_cta_hd4dLE": {
-      "type": "sticky-cta",
-      "name": "t:sections.static-sticky-cta.name",
+      "type": "n-sticky-button-boxes",
+      "name": "t:sections.sticky-button.name",
       "settings": {}
     }
   },

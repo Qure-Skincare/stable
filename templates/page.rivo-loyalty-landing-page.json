@@ -246,87 +246,69 @@
       "settings": {}
     },
     "faq_xz4dFb": {
-      "type": "faq",
+      "type": "n_faq",
       "blocks": {
         "accordion_pfp4iX": {
           "type": "accordion",
           "settings": {
             "heading": "How do I join the loyalty program?",
-            "text": "<p>Simply sign up to create your account and start earning rewards!</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Simply sign up to create your account and start earning rewards!</p>"
           }
         },
         "accordion_VrmgLd": {
           "type": "accordion",
           "settings": {
             "heading": "How can I earn points?",
-            "text": "<p>Earn points by signing up, making purchases, and more! Check out the “Ways to Earn” section for details.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Earn points by signing up, making purchases, and more! Check out the “Ways to Earn” section for details.</p>"
           }
         },
         "accordion_98kfi9": {
           "type": "accordion",
           "settings": {
             "heading": "How do I redeem my points?",
-            "text": "<p>Log in, visit your dashboard, and visit the “Ways to Redeem” section to redeem your points for rewards.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Log in, visit your dashboard, and visit the “Ways to Redeem” section to redeem your points for rewards.</p>"
           }
         },
         "accordion_7d6Pnd": {
           "type": "accordion",
           "settings": {
             "heading": "Where can I see my points balance?",
-            "text": "<p>Log in to your account! Your points balance will be highlighted at the top of the page.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Log in to your account! Your points balance will be highlighted at the top of the page.</p>"
           }
         },
         "accordion_VqUiJm": {
           "type": "accordion",
           "settings": {
             "heading": "Do my points expire?",
-            "text": "<p>Points will expire after one year if there isn't any account activity.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Points will expire after one year if there isn't any account activity.</p>"
           }
         },
         "accordion_fAJ8Rf": {
           "type": "accordion",
           "settings": {
             "heading": "Do my rewards expire?",
-            "text": "<p>Rewards will not expire once they are activated in the account.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Rewards will not expire once they are activated in the account.</p>"
           }
         },
         "accordion_iwmUVf": {
           "type": "accordion",
           "settings": {
             "heading": "What happens to my points if I return a purchase?",
-            "text": "<p>If you return a purchase, the points you earned for that purchase will be deducted from your account.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>If you return a purchase, the points you earned for that purchase will be deducted from your account.</p>"
           }
         },
         "accordion_peceqr": {
           "type": "accordion",
           "settings": {
             "heading": "When do I get my birthday gift?",
-            "text": "<p>On your birthday! The only instance in which birthday points will be delayed until next year is if your birthday is within 30 days from the day you entered it.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>On your birthday! The only instance in which birthday points will be delayed until next year is if your birthday is within 30 days from the day you entered it.</p>"
           }
         },
         "accordion_C9gk4f": {
           "type": "accordion",
           "settings": {
             "heading": "I forgot to use my points at Checkout, can I apply them retroactively?",
-            "text": "<p>No, unfortunately points cannot be redeemed on an order after the purchase has been completed</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>No, unfortunately points cannot be redeemed on an order after the purchase has been completed</p>"
           }
         }
       },
@@ -343,12 +325,11 @@
       ],
       "name": "t:sections.faq.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
   },

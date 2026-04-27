@@ -121,7 +121,7 @@
       }
     },
     "faq_xz4dFb": {
-      "type": "faq",
+      "type": "n_faq",
       "blocks": {
         "accordion_pfp4iX": {
           "type": "accordion",
@@ -218,12 +218,11 @@
       ],
       "name": "t:sections.faq.name",
       "settings": {
-        "heading": "Have questions?",
-        "text": "",
+        "use_own_file": true,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
         "button_label": "Ask us",
-        "button_url": "",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
   },

@@ -691,18 +691,6 @@
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
-    "sticky_cta_KmhMmz": {
-      "type": "sticky-button",
-      "disabled": true,
-      "name": "t:sections.sticky-button.name",
-      "settings": {
-        "heading": "Dermal Mist",
-        "text": "93 reserved in last 48 hours",
-        "limited": false,
-        "button-label": "",
-        "button-url": ""
-      }
-    },
     "sticky_cta_ddPFdd": {
       "type": "n-sticky-button-variants",
       "blocks": {
@@ -756,7 +744,6 @@
     "text_header_LkTtUE",
     "17574126382ef36ccf",
     "n_faq_CqC3HU",
-    "sticky_cta_KmhMmz",
     "sticky_cta_ddPFdd"
   ]
 }
