@@ -25,87 +25,6 @@
       "type": "endrock-gamification-header",
       "settings": {}
     },
-    "endrock-rotating-announcement": {
-      "type": "endrock__rotating-announcement",
-      "blocks": {
-        "announcement-1": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "heading": "<p><strong>International Women’s Day</strong> – 20% off sitewide</p>",
-            "button-label": "Shop Now",
-            "button-url": "https://qureskincare.com/collections/best-sellers"
-          }
-        },
-        "announcement-2": {
-          "type": "announcement",
-          "settings": {
-            "heading": "<p><strong>Free Shipping</strong> on Orders Over $100 in the <strong>U.S.</strong></p>",
-            "button-label": "",
-            "button-url": "",
-            "icon": "shopify://shop_images/icon-cart.png"
-          }
-        },
-        "announcement_yBCcDb": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "heading": "<p>Buy a Shower Filter, Get a <strong>FREE Faucet Filter</strong></p>",
-            "button-label": "SHOP NOW",
-            "button-url": "https://qureskincare.com/pages/qure-filters-offer"
-          }
-        },
-        "announcement-3": {
-          "type": "announcement",
-          "settings": {
-            "heading": "<p>Exclusive Bundles Sale <strong>Save Up To 57%</strong></p>",
-            "button-label": "Shop Now",
-            "button-url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new"
-          }
-        },
-        "exclude_page_fAmFcE": {
-          "type": "exclude-page",
-          "settings": {
-            "exclude-page": "qure-micro-infusion-landing-page-b"
-          }
-        },
-        "exclude-page-2": {
-          "type": "exclude-page",
-          "settings": {
-            "exclude-page": "qure-microinfusion-offer"
-          }
-        },
-        "exclude_page_QYnffp": {
-          "type": "exclude-page",
-          "settings": {
-            "exclude-page": "qure-microinfusion-offer-listicle"
-          }
-        }
-      },
-      "block_order": [
-        "announcement-1",
-        "announcement-2",
-        "announcement_yBCcDb",
-        "announcement-3",
-        "exclude_page_fAmFcE",
-        "exclude-page-2",
-        "exclude_page_QYnffp"
-      ],
-      "disabled": true,
-      "settings": {
-        "delay": 3000
-      }
-    },
-    "footer-form": {
-      "type": "announcement-bar",
-      "disabled": true,
-      "settings": {
-        "heading": "Autumn Glow Sale 67% OFF Micro-Infusion",
-        "button-label": "Shop Now",
-        "button-url": "https://qureskincare.com/pages/microinfusion",
-        "show": false
-      }
-    },
     "header": {
       "type": "n-header",
       "custom_css": [],
@@ -115,8 +34,6 @@
   "order": [
     "announcement-bar-gamification",
     "endrock-gamification-header",
-    "endrock-rotating-announcement",
-    "footer-form",
     "header"
   ]
 }

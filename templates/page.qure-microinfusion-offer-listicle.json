@@ -413,11 +413,6 @@
         "form_name": "purchase-form-second"
       }
     },
-    "main": {
-      "type": "page-qure-microinfusion-offer-listicle",
-      "disabled": true,
-      "settings": {}
-    },
     "n_reviews_GKYEdE": {
       "type": "n_reviews",
       "blocks": {
@@ -512,7 +507,6 @@
     "n_base_section_tTiBbr",
     "n_text_Cjt9wE",
     "purchase_form_Sj9cVS",
-    "main",
     "n_reviews_GKYEdE",
     "sticky_button_yEBzkA"
   ]

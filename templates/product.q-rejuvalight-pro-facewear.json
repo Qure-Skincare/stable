@@ -9,17 +9,6 @@
  */
  {
   "sections": {
-    "announcement_bar_jkkyg7": {
-      "type": "announcement-bar",
-      "disabled": true,
-      "name": "t:sections.announcement-bar.name",
-      "settings": {
-        "heading": "FREE Worldwide Shipping Above $100",
-        "button-label": "Shop Now",
-        "button-url": "#",
-        "show": false
-      }
-    },
     "product_header_V3N3T8": {
       "type": "n-product-header",
       "blocks": {
@@ -1484,7 +1473,6 @@
     }
   },
   "order": [
-    "announcement_bar_jkkyg7",
     "product_header_V3N3T8",
     "n_press_reviews_fxy6Uf",
     "n_base_section_UEpGJ4",
