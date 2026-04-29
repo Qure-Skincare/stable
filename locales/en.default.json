@@ -590,6 +590,7 @@
   },
   "purchase-form": {
     "settings": {
+      "available-stocks": "Available until stocks last!",
       "buy-button-label": "Buy Now",
       "subscribe-button-label": "Subscribe Now",
       "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",

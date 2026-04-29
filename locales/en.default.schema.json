@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "available-stocks": "Available text",
         "guarantee_period": "Guarantee period",
         "year": "year",
         "30_days": "30 days",

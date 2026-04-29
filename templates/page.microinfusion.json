@@ -1545,15 +1545,6 @@
         "text": "<h2>Typically a more hygienic option than re-usable at-home rollers when used as directed</h2><p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>"
       }
     },
-    "stock_alert_9g7rUD": {
-      "type": "stock-alert",
-      "name": "t:sections.stock-alert.name",
-      "settings": {
-        "text": "<p>Available until stocks last!</p>",
-        "text_mobile": "",
-        "style_color": "green"
-      }
-    },
     "purchase_form_Lj9cVS": {
       "type": "n-purchase-form",
       "blocks": {
@@ -1815,7 +1806,8 @@
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form-second",
-        "guarantee_period": "90"
+        "guarantee_period": "90",
+        "available-stocks": true
       }
     },
     "n_text_YpMGMC": {
@@ -1967,7 +1959,6 @@
     "n_easy_steps_BPz487",
     "n_comparison_table_jwRYA7",
     "n_comparison_npyhFt",
-    "stock_alert_9g7rUD",
     "purchase_form_Lj9cVS",
     "n_text_YpMGMC",
     "175741184236d78985",
