@@ -600,11 +600,15 @@
         "text": "<h2>A mist that does more than refresh<h2>"
       }
     },
-    "text_header_LkTtUE": {
-      "type": "text-header",
-      "name": "t:sections.text-header.name",
+    "n_text_VGtQXJ": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
       "settings": {
-        "heading": "Our customer reviews"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "17574126382ef36ccf": {
@@ -741,7 +745,7 @@
     "n_base_section_tDwkbA",
     "n_video_slider_HiYyrf",
     "n_comparison_WktgAV",
-    "text_header_LkTtUE",
+    "n_text_VGtQXJ",
     "17574126382ef36ccf",
     "n_faq_CqC3HU",
     "sticky_cta_ddPFdd"

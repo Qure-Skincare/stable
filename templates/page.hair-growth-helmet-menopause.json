@@ -545,49 +545,58 @@
         "youtube_url": false
       }
     },
-    "video_review_slider_3h9U8Q": {
-      "type": "video-review-slider",
+    "n_video_slider_p78WDL": {
+      "type": "n_video-slider",
       "blocks": {
-        "slider_PrUUTL": {
+        "slider_QGDTJm": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "hr1ahbnrgn"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "hr1ahbnrgn"
           }
         },
-        "slider_qLdRNB": {
+        "slider_QgKh3p": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "cp1yzbnyd4"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "cp1yzbnyd4"
           }
         },
-        "slider_E8KKcf": {
+        "slider_CRV373": {
           "type": "slider",
           "settings": {
-            "youtube_url": "",
-            "wistia_url": "yx9d5s1s0w"
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "yx9d5s1s0w"
           }
         },
-        "slider_Fqmhtj": {
+        "slider_jeLq7G": {
           "type": "slider",
           "settings": {
-            "youtube_url": "https://youtu.be/nv5oKEULitQ?si=lLgvFaReEu4qh9uq",
-            "video_cover_image": "shopify://shop_images/Review_14.png",
-            "wistia_url": ""
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://youtu.be/nv5oKEULitQ?si=lLgvFaReEu4qh9uq",
+            "image": "shopify://shop_images/Review_14.png"
           }
         }
       },
       "block_order": [
-        "slider_PrUUTL",
-        "slider_qLdRNB",
-        "slider_E8KKcf",
-        "slider_Fqmhtj"
+        "slider_QGDTJm",
+        "slider_QgKh3p",
+        "slider_CRV373",
+        "slider_jeLq7G"
       ],
-      "name": "t:sections.video-review-slider.name",
+      "name": "t:sections.n_video-slider.name",
       "settings": {
-        "heading": "Confidence starts here - at the roots",
-        "background_color": "#f6f6f7"
+        "use_own_file": true,
+        "modifier": "none",
+        "text": "<h2>Confidence starts here - at the roots</h2>"
       }
     },
     "hair_growth_helmet_product_comparison_CxQNNe": {
@@ -852,7 +861,7 @@
     "carousel_jHy7Zp",
     "faq_VwkhRa",
     "hair_growth_helmet_usage_guide_HQaYec",
-    "video_review_slider_3h9U8Q",
+    "n_video_slider_p78WDL",
     "hair_growth_helmet_product_comparison_CxQNNe",
     "faq_8dzUGE"
   ]
