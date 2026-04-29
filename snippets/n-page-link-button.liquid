@@ -7,6 +7,36 @@
   {% render 'n-page-link-button', section: '' %}
 {% enddoc %}
 
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'link' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
 {% if section.settings.button-label != blank %}
     <a href="{{ section.settings.button-url }}" class="btn btn--primary add-cart-button" aria-label="{{ section.settings.button-label | escape }}">{{ section.settings.button-label }}</a>
 {% endif %}
+
+{% unless block.settings.hide_bottom %}
+  <ul class="e-features-list">
+      <li>
+          <i class="e-icon e-icon-guarantee"></i>
+          {% if section.settings.guarantee_period != blank %}
+            {% case section.settings.guarantee_period %}
+              {% when '90' %}
+                {{ 'product.settings.buy-button-bottom.guaranteed_text_90' | t }}
+              {% else %}
+                {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
+            {% endcase %}
+          {% else %}
+            {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
+          {% endif %}
+      </li>
+      <li>
+          <i class="e-icon e-icon-shipping-order"></i>
+          {{ 'product.settings.buy-button-bottom.shipping_text' | t }}
+      </li>
+  </ul>
+{% endunless %}

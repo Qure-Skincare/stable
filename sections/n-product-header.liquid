@@ -5,12 +5,16 @@
 {% include 'get-product-data' %}
 
 <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
-<section class="hero-product" id="hero-product">
+<section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}" id="hero-product">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
-            {% render 'n-product-page-slider', product: product, page: page, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
-            {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
-            {% render 'n-product-page-slider-sticky-video', section: section %}
+            {% if section.settings.image != blank %}
+                <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+            {% else %}
+                {% render 'n-product-page-slider', product: product, page: page, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
+                {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
+                {% render 'n-product-page-slider-sticky-video', section: section %}
+            {% endif %}
         </div>
         <div class="hero-product__main">
 
@@ -52,6 +56,12 @@
     "name": "t:sections.product-header.name",
     "settings": [
         {
+            "type": "checkbox",
+            "id": "reverse",
+            "label": "t:common.reverse",
+            "default": false
+        },
+        {
             "type": "text",
             "id": "seo_heading",
             "label": "t:common.seo_heading"
@@ -77,6 +87,11 @@
             "type": "richtext",
             "id": "description",
             "label": "t:common.description"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
         },
         {
             "type": "checkbox",
@@ -134,7 +149,14 @@
             "type": "link",
             "name": "t:common.link",
             "limit": 1,
-            "settings": []
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "hide_bottom",
+                    "label": "t:common.hide_bottom",
+                    "default": true
+                }
+            ]
         },
         {
             "type": "jumpto",
@@ -207,6 +229,54 @@
         {
             "type": "exclusive-offer",
             "name": "t:common.exclusive-offer",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product1",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "product",
+                    "id": "product2",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product2",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "select",
+                    "id": "guarantee_period",
+                    "label": "t:common.guarantee_period",
+                    "options": [
+                        {
+                            "value": "30",
+                            "label": "t:common.30_days"
+                        },
+                        {
+                            "value": "year",
+                            "label": "t:common.year"
+                        }
+                    ],
+                    "default": "30"
+                }
+            ]
+        },
+        {
+            "type": "exclusive-offer-bundle",
+            "name": "t:common.exclusive-offer-bundle",
             "limit": 1,
             "settings": [
                 {

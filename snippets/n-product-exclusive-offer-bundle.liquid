@@ -1,0 +1,60 @@
+{% doc %}
+  Renders a product exclusive offer bundle snippet for the page-header section
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-exclusive-offer-bundle', section: '', block: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'exclusive-offer-bundle' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+
+<div class="c-complete-bundle">
+    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'product-exclusive-offer-' %}
+    <p>
+        <strong>{{ 'page.exclusive-offer-bundle.header' | t }}</strong>
+        {{ block.settings.text |  replace: '<p>', '' |  replace: '</p>', '' | replace: '$129', product_sale_price }}
+    </p>
+    {% if block.settings.image_product1 != blank %}
+        <figure>
+            <img src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
+            <figcaption class="e-pill-badge e-pill-badge--sm">{{ product_sale_price }}</figcaption>
+        </figure>
+    {% endif %}
+    <i class="e-icon e-icon-plus"></i>
+    {% include 'get-product-data', product_handle: block.settings.product2, product_prefix: 'product-exclusive-offer-' %}
+    <figure>
+        {% if block.settings.image_product2 != blank %}
+            <img src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
+        {% endif %}
+        <figcaption class="e-pill-badge e-pill-badge--sm">
+            <del>{{ product_sale_price }}</del>
+            <strong>{{ 'page.exclusive-offer-bundle.free' | t }}</strong>
+        </figcaption>
+    </figure>
+    <div class="e-progress _e-progress--nearly-full">
+        <p>{{ 'page.exclusive-offer-bundle.text' | t }}</p>
+
+        <div style="--progress: {{ 'page.exclusive-offer-bundle.percent' | t }}%">{{ 'page.exclusive-offer-bundle.percent' | t }}% {{ 'page.exclusive-offer-bundle.sold' | t }}</div>
+    </div>
+</div>
+
+{% if product != blank %}
+    <script>
+        const exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
+        const exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
+        const exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
+    
+        document.addEventListener("DOMContentLoaded", function () {
+          loadScriptOnce('n-product-exclusive-offer-bundle.js', '{{ 'n-product-exclusive-offer-bundle.js' | asset_url }}');
+        });
+    </script>
+{% endif %}

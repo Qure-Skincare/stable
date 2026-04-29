@@ -31,6 +31,8 @@
             {% render 'n-product-page-black-friday-discount', section: section, block: block %}
         {% when 'exclusive-offer' %}
             {% include 'n-product-exclusive-offer', section: section, block: block %}
+        {% when 'exclusive-offer-bundle' %}
+            {% include 'n-product-exclusive-offer-bundle', section: section, block: block %}
         {% when 'nextships' %}        
             {% render 'n-product-page-next-ships', section: section %}
         {% when 'button' %}

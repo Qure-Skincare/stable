@@ -9,77 +9,44 @@
  */
 {
   "sections": {
-    "clean_water_KQtjt9": {
-      "type": "clean-water",
+    "page_header_6BFNQxx": {
+      "type": "n-product-header",
       "blocks": {
-        "bundle_kDgyMX": {
-          "type": "bundle",
-          "settings": {
-            "heading": "THE COMPLETE FILTER BUNDLE",
-            "text": "<p>Order today & Receive a FREE Faucet Filter with your Shower Filter (value $129)</p>",
-            "first_image_text": "$149",
-            "first_image": "shopify://shop_images/qure_water_img1_df67ca70-e575-45ec-956e-940c3d9c6f97.webp",
-            "second_image_text": "<p><em>$129</em> <strong>FREE</strong></p>",
-            "second_image": "shopify://shop_images/qure_water_img2_242b9f9f-9838-4aaf-8c1b-a3fe740dd659.webp",
-            "heading_percent_scale": "Limited Time Offer, While Supplies Last",
-            "percent_value": "60%",
-            "percent_scale_text": "<p>60% Sold</p>"
-          }
+        "description_iSDNaK": {
+          "type": "description",
+          "settings": {}
         },
-        "carousel_qnYhfH": {
-          "type": "carousel",
-          "settings": {
-            "image": "shopify://shop_images/shower_plus_faucet_img_1.webp"
-          }
+        "link_iPBNaS": {
+          "type": "link"
         },
-        "carousel_ncTjRr": {
-          "type": "carousel",
+        "exclusive-offer-bundle_iaSzaK": {
+          "type": "exclusive-offer-bundle",
           "settings": {
-            "image": "shopify://shop_images/shower_plus_faucet_img_2.webp"
-          }
-        },
-        "carousel_B9hmJG": {
-          "type": "carousel",
-          "settings": {
-            "image": "shopify://shop_images/shower_plus_faucet_img_3.webp"
-          }
-        },
-        "carousel_ArpNbH": {
-          "type": "carousel",
-          "settings": {
-            "image": "shopify://shop_images/shower_plus_faucet_img_4.webp"
-          }
-        },
-        "carousel_8YTH8w": {
-          "type": "carousel",
-          "settings": {
-            "image": "shopify://shop_images/shower_plus_faucet_img_5.webp"
-          }
-        },
-        "carousel_tUqQP9": {
-          "type": "carousel",
-          "settings": {
-            "image": "shopify://shop_images/shower_plus_faucet_img_6.webp"
+            "product": "shower-filter",
+            "image_product1": "shopify://shop_images/qure_water_img1_df67ca70-e575-45ec-956e-940c3d9c6f97.webp",
+            "product2": "faucet-filter",
+            "image_product2": "shopify://shop_images/qure_water_img2_242b9f9f-9838-4aaf-8c1b-a3fe740dd659.webp",
+            "text": "<p>Order today & Receive a FREE Faucet Filter with your Shower Filter (value $129)</p>"
           }
         }
       },
       "block_order": [
-        "bundle_kDgyMX",
-        "carousel_qnYhfH",
-        "carousel_ncTjRr",
-        "carousel_B9hmJG",
-        "carousel_ArpNbH",
-        "carousel_8YTH8w",
-        "carousel_tUqQP9"
+        "description_iSDNaK",
+        "link_iPBNaS",
+        "exclusive-offer-bundle_iaSzaK"
       ],
-      "name": "t:sections.clean-water.name",
+      "name": "t:sections.page-header.name",
       "settings": {
+        "seo_heading": "",
         "heading": "Clean Water, Clearer Skin, Healthier Hair",
-        "text": "<p>Your water is filled with hidden irritants and chemicals that damage your skin and hair daily.</p><p>The Qure Filter Bundle removes these at the source without adding any steps to your routine.</p>",
-        "button_label": "Buy One + Get One FREE",
-        "button_url": "#buy-form",
-        "rating_text": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating_image": "shopify://shop_images/cyan_blue_rating.svg"
+        "rating": true,
+        "limited": false,
+        "description": "<ul><li>Your water is filled with hidden irritants and chemicals that damage your skin and hair daily.</li><li>The Qure Filter Bundle removes these at the source without adding any steps to your routine.</li></ul>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "Buy One + Get One Free",
+        "button-url": "#form-inside",
+        "approved": false
       }
     },
     "n_qure_filters_offer_quote_zqnAHh": {
@@ -546,8 +513,8 @@
         "badge_text": "Dermatologist Reviewed"
       }
     },
-    "form": {
-      "type": "page-qure-filters-offer-form",
+    "n-form-inside": {
+      "type": "n-form-inside",
       "settings": {}
     },
     "n_video_slider_yBjMTk": {
@@ -711,39 +678,49 @@
         "text": "<h2>Your skin deserves Qure</h2><p>When your water is working against you, no product can keep up. Qure filters are designed with your skin and hair in mind. Here’s how Qure compares to what you’re using now.</p>"
       }
     },
-    "featured_product_bundle_fGtC93": {
-      "type": "featured-product-bundle",
+    "page_header_inside": {
+      "type": "n-product-header",
       "blocks": {
-        "claim_MTiLze": {
-          "type": "claim",
+        "description_iSDNaK": {
+          "type": "description",
+          "settings": {}
+        },
+        "link_iPBNaS": {
+          "type": "link",
           "settings": {
-            "heading_bundle": "Get both Qure filters today. Only pay for one.",
-            "first_image_text": "<p>$149</p>",
-            "first_image": "shopify://shop_images/qure_water_img1.webp",
-            "second_image_text": "<p>$129 <strong>FREE</strong></p>",
-            "second_image": "shopify://shop_images/qure_water_img2.webp",
-            "heading_scale": "Limited Time Offer, While Supplies Last",
-            "scale_text": "<p>60% Sold</p>",
-            "scale_value": "60%",
-            "button": "Claim Offer Now",
-            "button-url": "#buy-form",
-            "review_image_text": "<p>Dermatologist Reviewed</p>",
-            "review_image": "shopify://shop_images/dermatologist_13b5a446-fc57-44bb-afea-a6d6bda4cc85.svg",
-            "shipping_image_text": "<p>Free Shipping Over &lcub;$100&rcub;</p>",
-            "shipping_image": "shopify://shop_images/shipping.svg"
+            "hide_bottom": false
+          }
+        },
+        "exclusive-offer-bundle_iaSzaK": {
+          "type": "exclusive-offer-bundle",
+          "settings": {
+            "product": "shower-filter",
+            "image_product1": "shopify://shop_images/qure_water_img1_df67ca70-e575-45ec-956e-940c3d9c6f97.webp",
+            "product2": "faucet-filter",
+            "image_product2": "shopify://shop_images/qure_water_img2_242b9f9f-9838-4aaf-8c1b-a3fe740dd659.webp",
+            "text": "<p>Order today & Receive a FREE Faucet Filter with your Shower Filter (value $129)</p>"
           }
         }
       },
       "block_order": [
-        "claim_MTiLze"
+        "description_iSDNaK",
+        "exclusive-offer-bundle_iaSzaK",
+        "link_iPBNaS"
       ],
-      "name": "t:sections.featured-product-bundle.name",
+      "name": "t:sections.page-header.name",
       "settings": {
-        "heading": "Protect your skin & save $129",
-        "text": "<p>You’ve tried the products. You’ve changed your routine. But until you fix what’s coming out of the tap, your skin is always working uphill.</p><p>This is your chance to protect it at every step. In the shower and at the sink.</p>",
-        "image": "shopify://shop_images/protect_skin.webp",
-        "rating_text": "<p><strong>4.8</strong>/5 Rated by Customers</p>",
-        "rating_image": "shopify://shop_images/review-stars.svg"
+        "seo_heading": "",
+        "heading": "Protect your skin & save $99",
+        "rating": true,
+        "limited": false,
+        "description": "<p>You’ve tried the products. You’ve changed your routine. But until you fix what’s coming out of the tap, your skin is always working uphill.</p><p>This is your chance to protect it at every step. In the shower and at the sink.</p>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "Buy One + Get One Free",
+        "button-url": "#form-inside",
+        "approved": false,
+        "reverse": true,
+        "image": "shopify://shop_images/protect_skin.webp"
       }
     },
     "n_faq_dyCjhg": {
@@ -811,38 +788,19 @@
       }
     },
     "sticky_cta_SrchB9": {
-      "type": "sticky-button-variants",
-      "blocks": {
-        "variant_43xxGi": {
-          "type": "variant",
-          "settings": {
-            "heading": "White",
-            "image": "shopify://shop_images/white_swatch.webp"
-          }
-        },
-        "variant_45xfGi": {
-          "type": "variant",
-          "settings": {
-            "heading": "Black",
-            "image": "shopify://shop_images/black_swatch.webp"
-          }
-        }
-      },
-      "block_order": [
-        "variant_43xxGi",
-        "variant_45xfGi"
-      ],
-      "name": "t:sections.sticky-button-variants.name",
+      "type": "n-sticky-button",
+      "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "",
-        "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Buy Now",
-        "button-url": ""
+        "heading": "Limited Time Offer",
+        "text": "580 purchased in last 48 hours",
+        "limited": false,
+        "button-label": "Buy One + Get One Free",
+        "button-url": "#form-inside"
       }
     }
   },
   "order": [
-    "clean_water_KQtjt9",
+    "page_header_6BFNQxx",
     "n_qure_filters_offer_quote_zqnAHh",
     "n_qure_filters_offer_peek_card_slider_JgnGLR",
     "n_logos_r79NY3",
@@ -851,10 +809,10 @@
     "n_progress_metrics_UDwAJ8",
     "n_trusted_reviews_b9NgPL",
     "n_trusted_recommended_awbjc8",
-    "form",
+    "n-form-inside",
     "n_video_slider_yBjMTk",
     "n_skin_deserves_FJifqy",
-    "featured_product_bundle_fGtC93",
+    "page_header_inside",
     "n_faq_dyCjhg",
     "sticky_cta_SrchB9"
   ]

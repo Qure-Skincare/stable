@@ -1,0 +1,202 @@
+{% assign shower_filter_handle = 'shower-filter' %}
+{% include 'get-product-data', product_handle: shower_filter_handle %}
+
+{% assign faucet_filter_handle = 'faucet-filter' %}
+{% include 'get-product-data', product_handle: faucet_filter_handle %}
+
+<!-- HERO PRODUCT -->
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
+<section class="hero-product hero-product--reverse hero-product--secondary" id="form-inside">
+    <div class="hero-product__container container">
+        <div class="hero-product__gallery">
+            {% render 'n-product-page-slider', product: product, page: page, element_id: '#form-inside', slidesPerView: 1, spaceBetween: 16 %}
+            {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
+        </div>
+        <div class="hero-product__main">
+            <div class="e-pill-badge e-pill-badge--md">Limited Time Offer</div>
+            <h2>Qure Shower Filter</h2>
+            <h4>+ FREE Faucet Filter</h4>
+            <div class="c-special-offer" data-label="Special Offer">
+                <div class="e-price">
+                    <div class="e-price__main">
+                        <div class="e-price__current"></div>
+                        <div class="e-price__old"></div>
+                    </div>
+                </div>
+                <div class="e-pill-save">Save 50%</div>
+            </div>
+            <article>
+                <ul>
+                    <li>Lifetime Warranty</li>
+                    <li>99% Fit Compatibility</li>
+                </ul>
+                <p>Repair skin and hair with dual filters that remove up to 99% of chlorine, heavy metals and contaminants.</p>
+            </article>
+            <hr />
+            <div class="purchase-form-wrapper">
+                <div class="c-options-selector">
+                    <p class="c-options-selector__title">Select Your Color:</p>
+                    <ul class="c-options-selector__list">
+                        <li>
+                            <label class="qure__variant-item planBlock">
+                                <input type="radio" name="color" id="white" class="variant__input" checked="checked" />
+                                <div class="bundle">
+                                    <figure>
+                                        <img src="https://qureskincaredns.com/sections/isolated/qure-shower-filter/images/shower_filter_white.webp" alt="White" />
+                                    </figure>
+                                    <i class="e-icon e-icon-plus"></i>
+                                    <figure>
+                                        <img src="https://qureskincaredns.com/sections/isolated/qure-shower-filter/images/faucet_filter_white.webp" alt="White" />
+                                        <figcaption class="e-pill-badge e-pill-badge--xxs">Free</figcaption>
+                                    </figure>
+                                </div>
+                                <span>White</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="qure__variant-item planBlock">
+                                <input type="radio" name="color" id="black" class="variant__input" />
+                                <div class="bundle">
+                                    <figure>
+                                        <img src="https://qureskincaredns.com/sections/isolated/qure-shower-filter/images/shower_filter_black.webp" alt="Black" />
+                                    </figure>
+                                    <i class="e-icon e-icon-plus"></i>
+                                    <figure>
+                                        <img src="https://qureskincaredns.com/sections/isolated/qure-shower-filter/images/faucet_filter_black.webp" alt="Black" />
+                                        <figcaption class="e-pill-badge e-pill-badge--xxs">Free</figcaption>
+                                    </figure>
+                                </div>
+                                <span>Black</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-subscribe-selector">
+                    <p class="c-subscribe-selector__title">Select Your Delivery:</p>
+                    <ul class="c-subscribe-selector__list">
+                        <li class="c-subscribe-selector__item">
+                            <label class="c-subscribe-selector__label">
+                                <input id="subscribe" type="radio" name="subscribe" checked="checked" />
+                                <div class="c-subscribe-selector__name">
+                                    Subscribe &amp;
+                                    <div class="e-pill-save">Save 50%</div>
+                                </div>
+                                <div class="c-subscribe-selector__price">
+                                    <div class="e-price e-price--highlight">
+                                        <div class="e-price__main">
+                                            <div class="e-price__current"></div>
+                                            <div class="e-price__old"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-subscribe-selector__text">
+                                    <hr />
+                                    <table>
+                                        <tr>
+                                            <th>Qure Shower Filter</th>
+                                            <td class="price__subscription"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Qure Faucet Filter</th>
+                                            <td><span>FREE</span> <del class="price_faucet__regular"></del></td>
+                                        </tr>
+                                    </table>
+                                    <hr />
+                                    <p>Receive a new Filter Refill every 90 days</p>
+                                </div>
+                                <div class="c-subscribe-selector__tag">Best Value <i class="e-icon e-icon-rating-fill"></i></div>
+                            </label>
+                        </li>
+                        <li class="c-subscribe-selector__item">
+                            <label class="c-subscribe-selector__label">
+                                <input type="radio" name="subscribe" />
+                                <div class="c-subscribe-selector__name">
+                                    One-Time Purchase
+                                </div>
+                                <div class="c-subscribe-selector__price">
+                                    <div class="e-price e-price--highlight">
+                                        <div class="e-price__main">
+                                            <div class="e-price__current"></div>
+                                            <div class="e-price__old"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-subscribe-selector__text">
+                                    <hr />
+                                    <table>
+                                        <tr>
+                                            <th>Qure Shower Filter</th>
+                                            <td class="price__subscription"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Qure Faucet Filter</th>
+                                            <td><span>FREE</span> <del class="price_faucet__regular"></del></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-buy-block">
+                <div class="c-order-button">
+                    <form data-static="true">
+                        <button class="btn btn--primary n-form-inside-button" type="submit">Subscribe Now &amp; Save 50%</button>
+                    </form>
+                </div>
+                <p><strong>Skip, pause/modify or cancel anytime. </strong> <a href="/pages/subscriptions">See more details.</a></p>
+                <ul class="e-features-list">
+                    <li>
+                        <i class="e-icon e-icon-guarantee"></i>
+                        30-Day Money-Back Guarantee
+                    </li>
+                    <li>
+                        <i class="e-icon e-icon-shipping-order"></i>
+                        Free Shipping over 100$
+                    </li>
+                </ul>
+                <div class="c-lifetime-warranty c-lifetime-warranty--vertical">
+                    <i class="e-icon e-icon-verified-shield"></i>
+                    <p>
+                        <strong>Covered by our Lifetime Warranty.</strong>
+                        Backed by our 30-Day Money-Back Guarantee.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-product__extra">
+            {% render 'n-product-page-collapsed', product: product, page: page %}
+        </div>
+    </div>
+</section>
+
+{% capture button_text_subscribe %}{{ 'sections.page-qure-filters-offer-form.settings.button_label_save' | t }}{% endcapture %}
+
+<script>
+    const shower_selling_plan = 7175078127;
+    const faucet_selling_plan = 7176421615;
+    const discount_text = '{{ 'sections.page-qure-filters-offer-form.settings.discount_text' | t }}';
+    const button_text = '{{ 'sections.page-qure-filters-offer-form.settings.button_label' | t }}';
+    const button_text_subscribe = '{{ button_text_subscribe |  replace:  '&amp;', '&' }}';
+
+    const shower = window.get_products_data["{{ shower_filter_handle }}"];
+    const faucet = window.get_products_data["{{ faucet_filter_handle }}"];
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('n-form-inside', '{{ 'n-form-inside.js' | asset_url }}');
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+        loadScriptOnce("countdown", "https://qureskincaredns.com/assets/js-new/countdown.js");
+        loadScriptOnce("youtube-popup", "https://qureskincaredns.com/assets/js-new/yt-popup.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+        loadScriptOnce("gallery-sticky-video", "https://qureskincaredns.com/assets/js-new/gallery-sticky-video.js");
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+    });
+</script>
+<!-- HERO PRODUCT END -->

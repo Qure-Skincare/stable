@@ -376,6 +376,13 @@
       "button-label": "Buy Now & Save",
       "shipping-text": "Free US Shipping over $100",
       "free": "FREE"
+    },
+    "exclusive-offer-bundle": {
+      "header": "THE COMPLETE FILTER BUNDLE",
+      "text": "Limited Time Offer, While Supplies Last",
+      "percent": "60",
+      "free": "FREE",
+      "sold": "Sold"
     }
   },
   "special-offer": {
