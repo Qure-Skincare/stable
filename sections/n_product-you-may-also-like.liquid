@@ -41,7 +41,7 @@
                     {% for index in indices_array %}
                         {% assign product = collections['upsell-bundle'].products[index] %}
                         {%- if product != blank -%}
-                            {% include 'n_get-product-data', product_handle: product.handle, product_prefix: 'you-may-also-like-' %}
+                            {% include 'get-product-data', product_handle: product.handle, product_prefix: 'you-may-also-like-' %}
                             {% if product_handle contains 'micro-infusion' %}
                                 {% assign product_url = '/pages/microinfusion' %}
                             {% endif %}

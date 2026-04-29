@@ -382,47 +382,46 @@
       }
     },
     "carousel_jHy7Zp": {
-      "type": "carousel",
+      "type": "n_features-marquee",
       "blocks": {
-        "items_NHKMPi": {
-          "type": "items",
+        "image_with_text_1": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Free US Shipping On Orders Over $100",
-            "image": "shopify://shop_images/guarantee.svg"
+            "icon": "shipping-order",
+            "text": "Free US Shipping On Orders Over $100"
           }
         },
-        "items_qd3AjU": {
-          "type": "items",
+        "image_with_text_2": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Dermatologist Reviewed",
-            "image": "shopify://shop_images/Guarantee_Icons.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist Reviewed"
           }
         },
-        "items_ANgYcm": {
-          "type": "items",
+        "image_with_text_3": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Buy Now, Pay Later Options Available",
-            "image": "shopify://shop_images/pay-later.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later Options Available"
           }
         },
-        "items_wpmqpr": {
-          "type": "items",
+        "image_with_text_4": {
+          "type": "image_with_text",
           "settings": {
-            "heading": "Proven Results, Backed By Science",
-            "image": "shopify://shop_images/proven-result.svg"
+            "icon": "proven",
+            "text": "Proven Results, Backed By Science"
           }
         }
       },
       "block_order": [
-        "items_NHKMPi",
-        "items_qd3AjU",
-        "items_ANgYcm",
-        "items_wpmqpr"
+        "image_with_text_1",
+        "image_with_text_2",
+        "image_with_text_3",
+        "image_with_text_4"
       ],
-      "name": "t:common.carousel",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "background_color": "#ffffff",
-        "display_mode": "both"
+        "use_own_file": true
       }
     },
     "faq_VwkhRa": {

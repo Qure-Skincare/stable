@@ -15,7 +15,7 @@
     Output is placed last inside `<li>` and compacted so flex layout matches the design section.
   {%- endcomment -%}
   {% capture n_bundle_routine_gpd_markup %}
-    {% include 'n_get-product-data', product_handle: product_handle, product_prefix: product_prefix %}
+    {% include 'get-product-data', product_handle: product_handle, product_prefix: product_prefix %}
   {% endcapture %}
 
   {% if get_product_data != blank %}

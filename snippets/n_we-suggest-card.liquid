@@ -12,7 +12,7 @@
 {% if card_product != blank %}
 {% assign product_handle = card_product.handle %}
 {% assign product_prefix = 'nws-' | append: section.id | append: '-' | append: block.id | append: '-' %}
-{% include 'n_get-product-data', product_handle: product_handle, product_prefix: product_prefix %}
+{% include 'get-product-data', product_handle: product_handle, product_prefix: product_prefix %}
 
 {% if get_product_data != blank %}
 {% assign display_title = block.settings.card_title | default: product_title %}

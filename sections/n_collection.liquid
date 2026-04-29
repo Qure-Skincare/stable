@@ -12,7 +12,7 @@
             {% for product in collection.products %}
                 {% include 'n_collection-cards', position: forloop.index, section: section %}
 
-                {% include 'n_get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
+                {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
 
                 {% if product_handle contains 'micro-infusion' %}
                     {% assign product_url = '/pages/microinfusion' %}

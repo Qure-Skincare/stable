@@ -682,9 +682,9 @@
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
       }
     },
-    "page_led_mask_offer_2_led_mask_offer_QgKWfH": {
-      "type": "page-led-mask-offer-2-led-mask-form",
-      "name": "t:sections.led-mask-offer.name",
+    "n-form-inside-mask_QgKWfH": {
+      "type": "n-form-inside-mask",
+      "name": "t:sections.n-form-inside.name",
       "settings": {}
     },
     "n_features_marquee_4YPxHy": {
@@ -1116,7 +1116,7 @@
     "n_progress_metrics_WTwTgr",
     "n_trusted_reviews_APqC9g",
     "n_page_led_mask_offer_2_exclusive_bundle_3KybCF",
-    "page_led_mask_offer_2_led_mask_offer_QgKWfH",
+    "n-form-inside-mask_QgKWfH",
     "n_features_marquee_4YPxHy",
     "n_comparison_Tyz6F4",
     "n_easy_steps_FWp4Aw",

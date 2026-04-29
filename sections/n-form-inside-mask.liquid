@@ -1,0 +1,142 @@
+{% doc %}
+  Renders a led mask offer section on page led-mask-offer-2
+{% enddoc %}
+
+<!-- HERO PRODUCT -->
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/hero-product/hero-product.css" />
+<section class="hero-product hero-product--reverse hero-product--secondary" id="buy-form">
+    <div class="hero-product__container container">
+        <div class="hero-product__gallery">
+            {% render 'n-product-page-slider', product: product, page: page, element_id: '#buy-form', slidesPerView: 1, spaceBetween: 16 %}
+            {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
+        </div>
+        <div class="hero-product__main">
+            <div class="e-pill-badge e-pill-badge--md">Limited Time Offer</div>
+            <h2>Q-Rejuvalight Pro LED Mask</h2>
+            <h4>+ FREE Neck &amp; Décolletage LED System</h4>
+            <div class="c-special-offer" data-label="Special Offer">
+                <div class="e-price">
+                    <div class="e-price__main">
+                        <div class="e-price__current">$399</div>
+                        <div class="e-price__old e-price__full">{$dyn}</div>
+                    </div>
+                </div>
+                <div class="e-pill-save">Save 20%</div>
+            </div>
+            <article>
+                <ul>
+                    <li>Lifetime Warranty</li>
+                    <li>FDA Cleared</li>
+                </ul>
+                <p>Elevate your LED routine with full face and neck coverage for consistent all-over results.</p>
+            </article>
+            <hr />
+            <div class="c-bundle-included">
+                <p class="c-bundle-included__tile">What’s Included</p>
+                <ul class="c-bundle-included__list">
+
+                    {% assign mask_handle = 'q-rejuvalight-pro-facewear-3' %}
+                    {% include 'get-product-data', product_handle: mask_handle %}
+
+                    <li>
+                        <a href="/products/{{ get_product_data.handle }}">
+                            <img src="https://qureskincaredns.com/sections/isolated/led-mask-offer/images/q-rejuvalight.webp" alt="Q-Rejuvalight Pro LED Mask" />
+                        </a>
+                        <div>
+                            <a href="/products/{{ get_product_data.handle }}">Q-Rejuvalight Pro LED Mask</a>
+                            <small>FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.</small>
+                            <div class="e-price">
+                                <div class="e-price__main">
+                                    <div class="e-price__current">$399</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    {% assign neck_handle = 'neck-decolletage-led' %}
+                    {% include 'get-product-data', product_handle: neck_handle %}
+
+                    <li>
+                        <a href="/products/{{ get_product_data.handle }}">
+                            <img src="https://qureskincaredns.com/sections/isolated/led-mask-offer/images/led-device.webp" alt="Neck & Décolletage LED Device" />
+                        </a>
+                        <div>
+                            <a href="/products/{{ get_product_data.handle }}">Neck &amp; Décolletage LED Device</a>
+                            <small>Clinically proven to smooth and firm where aging shows first.</small>
+                            <div class="e-price e-price--highlight">
+                                <div class="e-price__main">
+                                    <div class="e-price__current">FREE</div>
+                                    <div class="e-price__old">299</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <hr />
+                <div class="c-bundle-included__amount">
+                    <p>INSTANT SAVINGS: $299</p>
+                    <div class="e-price">
+                        <div class="e-price__main">
+                            <div class="e-price__current">$399</div>
+                            <div class="e-price__old e-price__full">{$dyn}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-buy-block">
+                <div class="e-progress _e-progress--nearly-full e-progress--low-stock">
+                    <p>Low Stock</p>
+                    <small>Due to high demand, this offer is only available while stock lasts.</small>
+                    <div style="--progress: 75%">75% Sold</div>
+                </div>
+                <div class="e-get-free-shipping">Order today to lock in your deal and get FREE Shipping</div>
+                <div class="c-order-button">
+                    <form data-static="true">
+                        <button class="btn btn--primary" type="submit">Shop Now &amp; Save $299 <i class="e-icon e-icon-arrow"></i></button>
+                    </form>
+                </div>
+                <div class="c-buy-block__payment-logos">
+                    <img src="https://qureskincaredns.com/assets/images/full-payment-logos.svg" alt="Full payment logos" />
+                </div>
+                <ul class="e-features-list">
+                    <li>
+                        <i class="e-icon e-icon-one-year"></i>
+                        1-Year Guarantee
+                    </li>
+                    <li>
+                        <i class="e-icon e-icon-shipping-order"></i>
+                        Free Shipping over 100$
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-product__extra">
+            {% render 'n-product-page-collapsed', product: product, page: page %}
+        </div>
+    </div>
+</section>
+
+<script>
+
+    const mask = window.get_products_data["{{ mask_handle }}"];
+    const neck = window.get_products_data["{{ neck_handle }}"];
+
+    const discount_text = '{{ 'sections.page-led-mask-offer-2-led-mask-form.settings.discount-text' | t }}';
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('n-form-inside-mask', '{{ 'n-form-inside-mask.js' | asset_url }}');
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("swiper", "https://qureskincaredns.com/assets/js-new/swiper.js");
+        loadScriptOnce("countdown", "https://qureskincaredns.com/assets/js-new/countdown.js");
+        loadScriptOnce("youtube-popup", "https://qureskincaredns.com/assets/js-new/yt-popup.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+        loadScriptOnce("gallery-sticky-video", "https://qureskincaredns.com/assets/js-new/gallery-sticky-video.js");
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
+    });
+</script>
+<!-- HERO PRODUCT END -->
