@@ -2,14 +2,19 @@
   Renders a page rating snippet for the page-header section.
 
   @param {object} - A section object.
+  @param {rating_text} - A string value.
 
   @example
-  {% render 'n-page-rating', section: section %}
+  {% render 'n-page-rating', section: section, rating_text: '' %}
 {% enddoc %}
 
 {% if section.settings.rating != blank %}
     <div class="c-rating c-rating--bg">
         <div class="e-rating-stars" style="--rating: 4.8"></div>
-        <a href="{% if section.settings.rating-url != blank %}{{ section.settings.rating-url }}{% else %}#stamped-main-widget{% endif %}">{{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}</a>
+        {% if rating_text != blank %}
+            <span>{{ rating_text }}</span>
+        {% else %}
+            <a href="{% if section.settings.rating-url != blank %}{{ section.settings.rating-url }}{% else %}#stamped-main-widget{% endif %}">{{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}</a>
+        {% endif %}
     </div>
 {% endif %}

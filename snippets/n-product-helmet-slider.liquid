@@ -1,0 +1,69 @@
+{% doc %}
+  Renders a product/page media carousel array.
+
+  @param {array} input_media_carousel - A product/page media carousel array.
+  @param {string} size - A string value.
+
+  @example
+  {% render 'n-product-helmet-slider', input_media_carousel: '' %}
+{% enddoc %}
+
+{% if template.name == 'page' %}
+    {% assign input_media_carousel = page.metafields.custom.carousel_media.value %}
+{% else %}
+    {% assign input_media_carousel = product.metafields.custom.carousel_media.value %}
+{% endif %}
+
+{% if input_media_carousel != blank %}
+
+    {% assign objects = '' %}
+
+    {% for item in input_media_carousel.wistia_index_for_watch_video_list.value %}
+        {% if item != blank %}
+            {% assign objects = objects | append: item | append: "," %}
+        {% endif %}
+    {% endfor %}
+
+    {% assign watch_objects = objects | split: "," %}
+
+    <div class="swiper helmet-home__gallery-main" id="helmet-gallery">
+        <div class="swiper-wrapper">
+            {% for media in input_media_carousel.image_or_video.value %}
+                {% assign index = forloop.index0 %}
+                {% assign title = media |  replace: 'files/', '' | replace: '.webp', '' %}
+
+                {% if media.media_type == 'video' %}
+                    {% if media.sources[1].url != blank %}
+                        {% assign video_source_url = media.sources[1].url %}
+                    {% else %}
+                        {% assign video_source_url = media.sources[0].url %}
+                    {% endif %}
+                    <div class="swiper-slide">
+                        <img src="{{ media | img_url: '720x' }}" alt="{{ title }}" data-url="{{ video_source_url }}" class="lvideo" />
+                    </div>
+                {% else %}
+                    {% if watch_objects[index] != blank and watch_objects[index] != 'none' %}
+                        <div class="swiper-slide">
+                            <div class="slide-image">
+                                <img src="{{ media | img_url: '720x' }}" alt="{{ title | escape }}" data-product-handle="{{ title | escape }}" />
+                                <div
+                                    class="watch-how-it-works watch-wistia-video"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#reusableWistiaModal"
+                                    data-video-id="{{ watch_objects[index] }}"
+                                >
+                                    <i class="e-icon e-icon-watch"></i>
+                                    <div><strong>Watch:</strong> How It Works</div>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="swiper-slide">
+                            <img src="{{ media | img_url: '720x' }}" alt="{{ title }}" data-product-handle="{{ title | escape }}">
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

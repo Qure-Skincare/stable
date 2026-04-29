@@ -27,5 +27,9 @@
     {% else %}
         <strong>{{ 'product.settings.money-back.header' | t }}</strong>
     {% endif %}
-    <p>{{ 'product.settings.money-back.text' | t }}</p>
+    {% if block.settings.text != blank %}
+        <p>{{ block.settings.text }}</p>
+    {% else %}
+        <p>{{ 'product.settings.money-back.text' | t }}</p>
+    {% endif %}
 </div>

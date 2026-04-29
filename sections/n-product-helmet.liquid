@@ -1,0 +1,361 @@
+{% doc %}
+  Renders a product hair growth helmet header section
+{% enddoc %}
+
+{% if template.name == 'page' %}
+    {% include 'get-product-data', product_handle: 'hair-growth-helmet' %}
+{% else %}
+    {% include 'get-product-data' %}
+{% endif %}
+
+<!-- HELMET HOME  -->
+<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/helmet-home/helmet-home.css" />
+<div class="helmet-home" id="helmet-home">
+    <div class="container">
+        <div class="helmet-home__grid">
+            <div class="helmet-home__column">
+                <div class="helmet-home__content">
+                    <div class="helmet-home__header d-none d-md-block">
+                        <div class="helmet-home__header-rating">
+                            {%- if product != blank -%}
+                                {% if section.settings.rating != blank %}
+                                    {% render 'n-product-rating', product: product, rating_text: section.settings.seo_heading %}
+                                {% endif %}
+                            {%- else -%}
+                                {% render 'n-page-rating', section: section, rating_text: section.settings.seo_heading %}
+                            {%- endif -%}
+                        </div>
+
+                        {% if section.settings.heading != blank %}
+                            <h1 class="helmet-home__header-title">{{ section.settings.heading }}</h1>
+                        {% endif %}
+
+                        <div class="helmet-home__header-price">
+                            {% if black_friday_discount_percent > 0 %}
+                                {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
+                            {%- else -%}
+                                {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section %}
+                            {%- endif -%}
+                        </div>
+                    </div>
+
+                    {{ 'sections.hair-growth-helmet.header.benefits_html' | t }}
+
+                    {% if section.settings.description != blank %}
+                        <div class="helmet-home__description">
+                            {{ section.settings.description }}
+                        </div>
+                    {%- endif -%}
+
+                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
+
+                    <div class="helmet-home__users-experienced" data-bs-toggle="modal" data-bs-target="#info-modal">
+                        <img src="https://qureskincaredns.com/alex/sections/isolated/helmet-home/images/qure-headgear-1589-2.webp" alt="">
+                        {{ 'sections.hair-growth-helmet.header.info_html' | t }}
+                    </div>
+
+                    <div class="helmet-home__according">
+                        {% render 'n-product-page-collapsed', product: product, page: page %}
+                    </div>
+                    <div class="helmet-home__moneyback">
+                        {% render 'n-product-money-back', section: section %}
+                    </div>
+                    <div class="helmet-home__jump-to">
+                        {% render 'n-product-page-jumpto', section: section %}
+                    </div>
+                </div>
+            </div>
+            <div class="helmet-home__column">
+                <div class="helmet-home__header d-md-none">
+                    <div class="helmet-home__header-rating">
+                        {%- if product != blank -%}
+                            {% if section.settings.rating != blank %}
+                                {% render 'n-product-rating', product: product, rating_text: section.settings.seo_heading %}
+                            {% endif %}
+                        {%- else -%}
+                            {% render 'n-page-rating', section: section %}
+                        {%- endif -%}
+                    </div>
+
+                    {% if section.settings.heading != blank %}
+                        <h1 class="helmet-home__header-title">{{ section.settings.heading }}</h1>
+                    {% endif %}
+
+                    <div class="helmet-home__header-price">
+                        {% if black_friday_discount_percent > 0 %}
+                            {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
+                        {%- else -%}
+                            {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section %}
+                        {%- endif -%}
+                    </div>
+                </div>
+                <div class="helmet-home__gallery">
+                    {% render 'n-product-helmet-slider' %}
+                    {% render 'n-product-helmet-slider-thumbs' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- MODALS -->
+<div class="modal helmet-home-modal fade" id="shipment-modal">
+    <div class="modal-dialog">
+        <div class="modal-content helmet-home-modal__content">
+            <div class="helmet-home-modal__text shipment-popup">
+                <span>JOIN OUR EARLY ACCESS</span>
+                <h6>Secure your Q-Renew LLLT Helmet before anyone else.</h6>
+                <p>We know how hard it is to wait when you're ready for change. Pre-ordering ensures you're <strong>first in line</strong> once shipments begin.</p>
+                <p>Your order will ship in January 2026, and you'll get <strong>early access</strong> to updates, usage tips, and progress guides before anyone else.</p>
+                <hr />
+                <span>Your pre-order includes</span>
+                <strong>1-Year Money-Back Guarantee</strong>
+                <p>Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.</p>
+                <strong>Free Worldwide Shipping</strong>
+                <p>Your pre-order comes with free worldwide shipping.</p>
+                <p>Orders shipped outside the U.S. may be subject to import duties, customs fees, or local taxes upon arrival. These are determined by your country’s customs authority and are the responsibility of the customer.</p>
+                <button type="button" class="btn btn--primary">Pre-Order Now</button>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="" />
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal helmet-home-modal fade" id="info-modal">
+    <div class="modal-dialog">
+        <div class="modal-content helmet-home-modal__content">
+            <div class="helmet-home-modal__text info-popup">
+                <h6>Discover the hair routine made for you</h6>
+                <p>Hair loss doesn’t look the same for everyone. Choose the concern that feels most familiar to see how Q-Renew can help.</p>
+                <hr />
+                <strong>Select your concern</strong>
+                <ul class="tabs" role="tablist">
+                    <li>
+                        <button class="active" data-bs-toggle="tab" data-bs-target="#crown-thinning" type="button">Crown thinning</button>
+                    </li>
+                    <li>
+                        <button data-bs-toggle="tab" data-bs-target="#widening-part-line" type="button">Widening part line</button>
+                    </li>
+                    <li>
+                        <button data-bs-toggle="tab" data-bs-target="#receding-hairline" type="button">Receding hairline</button>
+                    </li>
+                    <li>
+                        <button data-bs-toggle="tab" data-bs-target="#reduced-volume" type="button">Reduced volume</button>
+                    </li>
+                    <li>
+                        <button data-bs-toggle="tab" data-bs-target="#weaker-strands" type="button">Weaker strands</button>
+                    </li>
+                    <li>
+                        <button data-bs-toggle="tab" data-bs-target="#shedding" type="button">Shedding</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="crown-thinning">
+                        <p>For many women, the crown is one of the first areas to show thinning. Hormonal changes during menopause, stress, and genetics can all shorten the natural growth cycle.</p>
+                        <p>Over time, follicles in this area can shrink and produce finer strands, which makes the scalp more visible at the top or back of the head.</p>
+                        <strong>How Q-Renew helps</strong>
+                        <p>By delivering light energy deep into the scalp, Q-Renew supports follicle activity in the crown area, helping to reduce visible thinning and improve overall coverage.</p>
+                    </div>
+                    <div class="tab-pane fade" id="widening-part-line">
+                        <p>One of the most common and distressing signs of thinning is when the part line gets wider. It happens as follicles along the central scalp miniaturize and can produce thinner, weaker hairs.</p>
+                        <p>This gradual loss of density makes the scalp more noticeable through the part.</p>
+                        <strong>How Q-Renew helps</strong>
+                        <p>Q-Renew's lasers are precisely distributed across the scalp, targeting the central line where thinning is most visible. By stimulating follicles along the part, it helps encourage thicker strands and support a more balanced, fuller-looking part line.</p>
+                    </div>
+                    <div class="tab-pane fade" id="receding-hairline">
+                        <p>Thinning around the temples and hairline not only affects volume but can change the shape of the face.</p>
+                        <p>This area is particularly vulnerable to hormonal shifts, stress, and genetics, and the delicate hairs here are often the first to weaken or stop growing.</p>
+                        <strong>How Q-Renew helps</strong>
+                        <p>Q-Renew provides full-front coverage, delivering light directly to the temples and hairline. This helps support follicle activity in these sensitive zones, encouraging healthier growth and support the appearance of a fuller hairline.</p>
+                    </div>
+                    <div class="tab-pane fade" id="reduced-volume">
+                        <p>Hair that looks flat or limp is a sign that follicles are producing finer strands. Over time, this reduction in density changes the overall body and fullness of hair, leaving it without its natural lift and bounce.</p>
+                        <strong>How Q-Renew helps</strong>
+                        <p>By supporting follicle function across the entire scalp, Q-Renew encourages the appearance of thicker, stronger hair over time. The result is healthier density, giving hair more lift, movement, and natural fullness.</p>
+                    </div>
+                    <div class="tab-pane fade" id="weaker-strands">
+                        <p>When follicles aren’t functioning at their best, the hair they produce grows in finer and more fragile. Weak strands break easily and don’t grow as long, creating the sense that your hair is stuck at a shorter length and never feels strong.</p>
+                        <strong>How Q-Renew helps</strong>
+                        <p>Q-Renew delivers light energy to the root, encouraging stronger hair fiber production over time. With consistent use, strands can grow in thicker and more resilient, reducing breakage and restoring a healthier look and feel.</p>
+                    </div>
+                    <div class="tab-pane fade" id="shedding">
+                        <p>Excessive daily shedding can feel like an ongoing battle, with hair collecting in the shower, on your pillow, or in your brush.</p>
+                        <p>Shedding often occurs when follicles exit the growth phase too early, a process often influenced by stress, hormones, or genetics.</p>
+                        <strong>How Q-Renew helps</strong>
+                        <p>Q-Renew works with your natural hair cycle, helping to extend the growth phase of follicles. Many users first notice a reduction in excess shedding before seeing new density, which sets the stage for stronger, fuller hair over time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="helmet-home-modal__disclaimer">*Results based on a 16-week self-reported study. Participants used the helmet 7 times per week. Individual results may vary.</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="" />
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal email-modal fade" id="email-modal">
+    <div class="modal-dialog">
+        <div class="modal-content email-modal__content">
+            <div class="email-modal-form">
+                <div class="klaviyo-form-QQP9fe"></div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                <img src="https://qureskincaredns.com/assets/images/cross_black.svg" alt="" />
+            </button>
+        </div>
+    </div>
+</div>
+<!-- MODALS -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("helmet-home-swiper", "https://qureskincaredns.com/sections/new/helmet-home/helmet-home.js");
+        loadScriptOnce("klaviyo-early-access", "https://static.klaviyo.com/onsite/js/VtM5fu/klaviyo.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+    });
+</script>
+<!-- HELMET HOME END -->
+
+
+{% if product %}
+    {% render 'n-product-data-json', product: product %} 
+{% endif %}
+
+{% schema %}
+{
+    "name": "t:sections.product-hair-growth-helmet-header.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "seo_heading",
+            "label": "t:common.seo_heading"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "checkbox",
+            "id": "rating",
+            "label": "t:common.rating",
+            "default": true
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "t:common.description"
+        },
+        {
+            "type": "checkbox",
+            "id": "reserved",
+            "label": "t:common.reserved",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "soldout",
+            "label": "t:common.soldout",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "jumpto",
+            "name": "t:common.jumpto",
+            "limit": 10,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "button-label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button-url",
+                    "label": "t:common.button-url"
+                }
+            ]
+        },
+        {
+            "type": "benefits",
+            "name": "t:common.benefits",
+            "limit": 3,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "money-back",
+            "name": "t:common.money-back",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "price",
+            "name": "t:common.price",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "show_discount",
+                    "label": "t:common.show_discount",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "type": "description",
+            "name": "t:common.description",
+            "limit": 1,
+            "settings": []
+        },
+        {
+            "type": "button",
+            "name": "t:common.button",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "hide_payments",
+                    "label": "t:common.hide_payments",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "hide_bottom",
+                    "label": "t:common.hide_bottom",
+                    "default": false
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

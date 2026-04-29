@@ -1,0 +1,62 @@
+{% doc %}
+  Renders a product/page media carousel array.
+
+  @param {array} input_media_carousel - A product/page media carousel array.
+
+  @example
+  {% render 'n-product-helmet-slider-thumbs', input_media_carousel: '' %}
+{% enddoc %}
+
+{% if template.name == 'page' %}
+    {% assign input_media_carousel = page.metafields.custom.carousel_media.value %}
+{% else %}
+    {% assign input_media_carousel = product.metafields.custom.carousel_media.value %}
+{% endif %}
+
+{% if input_media_carousel != blank %}
+
+    {% assign objects = '' %}
+    {% assign watch_objects = '' %}
+
+    {% for item in input_media_carousel.wistia_index_for_video_list.value %}
+        {% if item != blank %}
+            {% assign objects = objects | append: item | append: "," %}
+        {% endif %}
+    {% endfor %}
+
+    {% assign objects_array = objects | split: "," %}
+
+    {% if input_media_carousel.wistia_index_for_watch_video_list.value != blank %}
+        {% for item in input_media_carousel.wistia_index_for_watch_video_list.value %}
+            {% if item != blank %}
+                {% assign watch_objects = watch_objects | append: item | append: "," %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign watch_objects_array = watch_objects | split: "," %}
+
+    <div class="swiper helmet-home__gallery-thumbs d-md-none" id="helmet-gallery-thumbs">
+        <div class="swiper-wrapper">
+            {% for media in input_media_carousel.image_or_video.value %}
+                {% assign index = forloop.index0 %}
+                {% assign title = media |  replace: 'files/', '' | replace: '.webp', '' %}
+
+                {% if media.media_type == 'video' %}
+                    {% if media.sources[1].url != blank %}
+                        {% assign video_source_url = media.sources[1].url %}
+                    {% else %}
+                        {% assign video_source_url = media.sources[0].url %}
+                    {% endif %}
+                    <div class="swiper-slide">
+                    <img src="{{ media | img_url: '240x' }}" alt="{{ title }}" data-url="{{ video_source_url }}" />
+                    </div>
+                {% else %}
+                    <div class="swiper-slide">
+                        <img src="{{ media | img_url: '240x' }}" alt="{{ title }}">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

@@ -4,18 +4,22 @@
   @param {object} product - A string value.
 
   @example
-  {% render 'n-product-rating', product: '' %}
+  {% render 'n-product-rating', product: '', rating_text: '' %}
 {% enddoc %}
 
 {% assign rating_value = product.metafields.reviews.rating.value %}
 {% assign rating_count = product.metafields.reviews.rating_count.value %}
 
 {% if rating_count > 5 %}
-
     {% assign show_rating = rating_value | slice: 0, 3 %}
+
     <div class="c-rating c-rating--bg">
         <div class="e-rating-stars" style="--rating: {{ show_rating }}"></div>
-        <a href="#stamped-main-widget">{{ 'product.settings.n-product-rating.static_html' | t: rating: show_rating }}</a>
+        {% if rating_text != blank %}
+            <span>{{ rating_text }}</span>
+        {% else %}
+            <a href="#stamped-main-widget">{{ 'product.settings.n-product-rating.static_html' | t: rating: show_rating }}</a>
+        {% endif %}
     </div>
 {% else %}
     <div class="c-rating c-rating--bg">
