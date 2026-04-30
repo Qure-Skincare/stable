@@ -36,7 +36,7 @@ const reloadDrawer = (array) => {
 
         bindForms();
 
-        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns.com/assets/js-new/swiper.js')
+        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js-new/swiper.js')
     })
     .catch(console.error);
 }

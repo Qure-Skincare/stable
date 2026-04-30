@@ -1,11 +1,11 @@
 {% assign black_friday_turn_on = settings.black_friday_turn_on %}
 
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/cart/cart.css" />
+<link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/cart/cart.css" />
 <section id="main-cart-dynamic-content" class="cart">
     <div class="container">
         {% if cart.item_count == 0 %}
             <div class="cart__empty">
-                <img src="https://qureskincaredns.com/assets/images/empty-cart.svg" alt="{{ 'cart.static.settings.empty-header' | t }}" />
+                <img src="https://qureskincaredns-stable.com/assets/images/empty-cart.svg" alt="{{ 'cart.static.settings.empty-header' | t }}" />
                 <h2>{{ 'cart.static.settings.empty-header' | t }}</h2>
                 <p>{{ 'cart.static.settings.empty-text' | t }}</p>
                 {{ 'cart.static.settings.empty-button_html' | t: button_link: '/' }}
@@ -71,7 +71,7 @@
                 <div class="cart__footer">
                     <div class="cart-footer">
                         <div class="cart-footer__secure-ship">
-                            <img src="https://qureskincaredns.com/sections/global/drawer/images/secure-ship.svg" alt="Secure Ship" />
+                            <img src="https://qureskincaredns-stable.com/sections/global/drawer/images/secure-ship.svg" alt="Secure Ship" />
                             <p>{{ 'cart.drawer.settings.insurance-text' | t }} + <strong>{{ global_insurance_price }}</strong></p>
                             <label class="e-switcher">
                                 <form method="post" action="/cart/add" enctype="multipart/form-data">

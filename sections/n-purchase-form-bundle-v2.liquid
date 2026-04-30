@@ -5,7 +5,7 @@
 {% include 'assoc-array', section: section, __parent_title: 'type', __separator: '###' %}
 
 <!-- BUNDLES -->
-<link rel="stylesheet" href="https://qureskincaredns.com/sections/new/bundles/bundles.css" />
+<link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/bundles/bundles.css" />
 <section id="purchase-form-bundle" class="bundles {{ section.id }}">
     <div class="container">
         {% if section.settings.heading != blank %}
@@ -18,13 +18,13 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
-        loadScriptOnce("bundles", "https://qureskincaredns.com/sections/new/bundles/bundles.js");
+        loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js-new/dialog.js");
+        loadScriptOnce("bundles", "https://qureskincaredns-stable.com/sections/new/bundles/bundles.js");
     });
 </script>
 <!-- BUNDLES END -->
 
-<script src="https://qureskincaredns.com/shopify/js/purchase-form-bundle.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
+<script src="https://qureskincaredns-stable.com/shopify/js/purchase-form-bundle.js" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 
 {%- schema -%}
 {
