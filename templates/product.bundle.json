@@ -17,7 +17,7 @@
       }
     },
     "product-bundle-old": {
-      "type": "product-bundle",
+      "type": "n-product-bundle",
       "disabled": true,
       "settings": {}
     },
