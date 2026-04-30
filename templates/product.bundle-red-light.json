@@ -10,7 +10,7 @@
  {
   "sections": {
     "product-bundle": {
-      "type": "product-bundle",
+      "type": "n-product-bundle",
       "settings": {
         "heading": "Breakout Control Advanced with Red Light Therapy",
         "reserved": false,
