@@ -56,7 +56,7 @@ const reloadDrawer = async (detail) => {
         if (counter) counter.textContent = itemCount;
     }
 
-    loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns.com/assets/js-new/swiper.js');
+    loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js-new/swiper.js');
 };
 
 function bindForms() {
