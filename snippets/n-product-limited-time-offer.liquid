@@ -18,7 +18,7 @@
 
 <div class="c-limited-offer">
     <p>{{ 'product.settings.limited-offer.header' | t }}</p>
-    <div class="e-countdown" data-deadline="">
+    <div class="e-countdown" data-deadline="" data-offer-days="{{ block.settings.days }}">
         <div data-key="{{ 'product.settings.limited-offer.days' | t }}">00</div>
         <div data-key="{{ 'product.settings.limited-offer.hours' | t }}">00</div>
         <div data-key="{{ 'product.settings.limited-offer.minutes' | t }}">00</div>
@@ -29,8 +29,6 @@
 
 {% if block.settings.days > 0 %}
     <script>
-        let customDays = {{ block.settings.days }} - 1;
-
         document.addEventListener("DOMContentLoaded", function () {
             loadScriptOnce("n-product-limited-time-offer.js", "{{ 'n-product-limited-time-offer.js' | asset_url }}");
         });
