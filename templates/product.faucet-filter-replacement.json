@@ -94,7 +94,7 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "purchase-form-landing": {
@@ -243,7 +243,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
@@ -258,7 +258,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
@@ -325,7 +325,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Measured improvement in skin hydration after just 4 weeks</h2><p>An independent user study with 30 participants, supported by third-party skin hydration measurements, showed improvements in measured skin hydration after 4 weeks of daily use of the Qure Faucet Filter.</p>"
       }
     },
@@ -379,7 +379,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>The results are crystal clear</h2>",
         "button_label": ""
@@ -389,7 +389,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“How do you <em>reduce the things in your water that may be causing issues</em> with your skin?<br/><br/>This Qure filter is incredible – it’s <em>the only filter I personally use to</em> [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
@@ -450,7 +450,7 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_why_it_works_gwdxhE": {
@@ -505,7 +505,7 @@
       ],
       "name": "t:sections.n_why-it-works.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "faucet-filter",
         "text": "<h2>Why It Works</h2><p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
         "image": "shopify://shop_images/faucet-filter.webp"
@@ -569,7 +569,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -614,7 +614,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_easy_steps_ntE9Cf": {
@@ -652,7 +652,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Set up in 3 easy steps</h2>",
         "image": "shopify://shop_images/faucet_thumbnail.webp",
@@ -769,7 +769,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Why choose Qure?</h2><p>With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin.</p>"
       }
     },
@@ -777,7 +777,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -878,7 +878,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
