@@ -81,7 +81,7 @@
       "disabled": true,
       "name": "t:sections.n_index-quick-links.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_across_image_banner_TNGNLJ": {
@@ -89,7 +89,7 @@
       "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Get clinic-level results from home – minus the ‘clinical’ costs.</h1>",
         "text": "<p>Join <strong>300,000+ customers</strong> feeling more confident.</p>",
@@ -114,7 +114,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "holidays",
         "heading": "<h1>Give Mom the Glow She Deserves</h1>",
         "text": "<p>Buy LED Mask, Get Neck & Décolletage LED <strong>FREE</strong></p>",
@@ -192,7 +192,7 @@
       ],
       "name": "t:sections.n_index-quick-title-links.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_press_reviews_KgaUTN": {
@@ -243,7 +243,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
@@ -383,7 +383,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -450,7 +450,7 @@
       ],
       "name": "t:sections.n_index-top-rated.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "Top Rated Products"
       }
     },
@@ -506,7 +506,7 @@
       ],
       "name": "t:sections.n_index-get-qure.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "Get the Qure",
         "text": "<p>Reclaim your confidence at any age, no matter what your skin concern is.</p>"
       }
@@ -551,14 +551,14 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_trusted_recommended_KHYLQ9": {
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office”.</em></p>",
@@ -669,7 +669,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -678,7 +678,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -734,7 +734,7 @@
       ],
       "name": "t:sections.n_our-advisors.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Meet our board of advisors</h2><p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
       }
     },
@@ -766,7 +766,7 @@
       ],
       "name": "t:sections.n_take-quiz.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     },
@@ -808,7 +808,7 @@
       ],
       "name": "t:sections.n_index-our-community.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Learn more and share your skincare journey</h2><p>Achieve your best skin yet with our simple 3-step skincare routine.</p>",
         "button_label": "Join Our Community",
         "button_url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
