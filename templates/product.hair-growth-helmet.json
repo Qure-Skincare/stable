@@ -96,7 +96,7 @@
       }
     },
     "n_hair_growth_helmet_image_slider_9KL6Kj": {
-      "type": "n_hair-growth-helmet-image-slider",
+      "type": "n_hair-growth-helmet-peek-cards-slider",
       "blocks": {
         "slider_V86bzz": {
           "type": "slider",
@@ -252,6 +252,8 @@
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": false,
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses medical-grade lasers and LEDs to help encourage the appearance of active growth. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
@@ -330,7 +332,7 @@
       "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
         "use_own_file": false,
-        "heading": "Why Q-Renew works",
+        "heading": "<h2>Why Q-Renew works</h2>",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
