@@ -118,7 +118,7 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_press_reviews_gzTQ6b": {
@@ -162,7 +162,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"spaceBetween\": 80"
       }
@@ -171,7 +171,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -223,7 +223,7 @@
       ],
       "name": "t:sections.n_why-using.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>4 reasons why you’ll love Red Light Therapy</h2>",
         "button_label": ""
@@ -321,7 +321,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": ""
@@ -331,7 +331,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“LED light targets the skin’s surface to <em>help improve the look of firmness and smoothness</em><em><strong>,</strong></em> supporting a more youthful appearance over time.”</p>",
@@ -394,7 +394,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -439,7 +439,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_easy_steps_dCkc3p": {
@@ -485,7 +485,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "no-video",
         "text": "<h2>Your 10-minute LED ritual for visibly firmer-looking skin</h2>",
         "wistia_url": "",
@@ -601,7 +601,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>How Qure compares</h2>"
       }
     },
@@ -609,7 +609,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -717,7 +717,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
