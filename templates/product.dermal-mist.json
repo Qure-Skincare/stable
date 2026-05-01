@@ -96,7 +96,7 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "purchase-form-landing": {
@@ -248,14 +248,14 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_base_section_T8jB96": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -310,7 +310,7 @@
       ],
       "name": "t:sections.n_how-to-use.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Bacteria defense that fits your day</h2>",
         "text": "<p>Fresh, comfortable skin wherever you are. Dermal Mist comes in two sizes: a 100 ml bottle for consistent at-home use, and a 15 ml travel size for easy, on-the-go refreshment.</p><p><strong>Use it in 4 ways.</strong></p>"
       }
@@ -319,7 +319,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Dermal Mist is great for use after the gym, but the best use of hypocholorus acid is in combination with Qure’s Micro-Infusion. <em>Dermal Mist preps your skin, allowing  ingredients placed on top to penetrate your skin even further.</em>”</p>",
@@ -370,7 +370,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_base_section_tDwkbA": {
@@ -389,7 +389,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -490,7 +490,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -596,7 +596,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>A mist that does more than refresh<h2>"
       }
     },
@@ -604,7 +604,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -688,7 +688,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
