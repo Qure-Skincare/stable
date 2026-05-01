@@ -111,7 +111,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "MICRO-INFUSION DART PATCHES",
         "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,
@@ -432,7 +432,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"spaceBetween\": 80"
       }
@@ -441,7 +441,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -500,7 +500,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>No hype, just evidence</h2><p>In an independent study of 30 subjects over 4 weeks of use, participants' skin was measured and showed a visible improvement after just one month.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>"
       }
     },
@@ -652,7 +652,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -694,7 +694,7 @@
       ],
       "name": "t:sections.n_how-to-use.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "heading": "<h2>Targeted ingredients, thoughtfully applied</h2>",
         "text": "<p>Ultra-fine, serum-infused micro-darts help apply ingredients in a precise, targeted way. The lightweight design allows the patch to sit comfortably on the skin while the formula is released over time for optimal contact.</p>"
@@ -748,7 +748,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "grey",
@@ -795,7 +795,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy they are to use</h2>",
         "image": "shopify://shop_images/patches-use-video.webp",
@@ -935,7 +935,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Not your ordinary eye patches</h2>"
       }
     },
@@ -1027,7 +1027,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -1084,7 +1084,7 @@
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Skin-replenishing, science-backed ingredients</h2>"
       }
     },
@@ -1092,7 +1092,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -1168,7 +1168,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
