@@ -95,7 +95,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": { 
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "rating": true,
@@ -450,14 +450,14 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_base_section_HChwEE": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -473,7 +473,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Powered by actives, designed for daily use</h2><p>Targets uneven texture, fine lines, and discoloration with clinically-backed ingredients that work together to smooth, firm, and visibly brighten your skin over time.</p>",
         "button_label": "",
@@ -512,7 +512,7 @@
       ],
       "name": "t:sections.n_before-after-accordion.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "image": "shopify://shop_images/uneven-skin-texture.webp",
         "flag": "shopify://shop_images/canada_f.webp",
         "username": "Bethany N.",
@@ -553,7 +553,7 @@
       ],
       "name": "t:sections.n_before-after-accordion.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "image": "shopify://shop_images/fine-line-wrinkles.webp",
         "flag": "shopify://shop_images/america_f.webp",
         "username": "Shannon W.",
@@ -594,7 +594,7 @@
       ],
       "name": "t:sections.n_before-after-accordion.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "image": "shopify://shop_images/dark-spots.webp",
         "flag": "shopify://shop_images/america_f.webp",
         "username": "Elisabeth R.",
@@ -765,7 +765,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -776,7 +776,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Qure has a really good serum. It’s probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
@@ -827,7 +827,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_base_section_iACXMc": {
@@ -878,7 +878,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -961,7 +961,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -1057,7 +1057,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>More actives, less hassle, better results</h2>"
       }
     },
@@ -1065,7 +1065,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -1149,7 +1149,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",

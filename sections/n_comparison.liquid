@@ -24,7 +24,7 @@
                     {% for block in section.blocks %}
                         {% if block.type == 'left_column' %}
                             {% if block.settings.text != blank %}
-                                <li><i class="e-icon e-icon-checkmark"></i>{{ block.settings.text }}</li>
+                                <li><i class="e-icon e-icon-checkmark"></i><div>{{ block.settings.text }}</div></li>
                             {% endif %}
                         {% endif %}
                     {% endfor %}
@@ -50,7 +50,7 @@
                     {% for block in section.blocks %}
                         {% if block.type == 'right_column' %}
                             {% if block.settings.text != blank %}
-                                <li><i class="e-icon e-icon-cross"></i>{{ block.settings.text }}</li>
+                                <li><i class="e-icon e-icon-cross"></i><div>{{ block.settings.text }}</div></li>
                             {% endif %}
                         {% endif %}
                     {% endfor %}

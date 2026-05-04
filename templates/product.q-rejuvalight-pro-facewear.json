@@ -73,7 +73,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "The Results",
-            "button-url": "#results"
+            "button-url": "#improve_skin"
           }
         },
         "jumpto_A2": {
@@ -94,14 +94,14 @@
           "type": "jumpto",
           "settings": {
             "button-label": "How To Use",
-            "button-url": "#how_to_use"
+            "button-url": "#easy_steps"
           }
         },
         "jumpto_A5": {
           "type": "jumpto",
           "settings": {
             "button-label": "Tech Specs",
-            "button-url": "#how_to_use"
+            "button-url": "#how_it_works"
           }
         },
         "jumpto_A6": {
@@ -130,7 +130,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Unlock your best skin yet with our LED Face Mask",
         "rating": true,
@@ -190,7 +190,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p>FEATURED IN</p>",
         "settings": "\"slidesPerView\": 5"
       }
@@ -199,7 +199,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -259,7 +259,7 @@
       ],
       "name": "t:sections.n_why-using.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>5 reasons why you’ll love LED Light Therapy</h2>",
         "button_label": "",
@@ -322,7 +322,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Combines clinically-studied wavelengths</h2><p>Results supported by light therapy studies:</p>"
       }
     },
@@ -561,7 +561,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -572,7 +572,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Of all the LED masks we’ve tried, this is <em>the best on the market right now...</em> It didn’t lose in any category...</p><p>There’s real science behind LED therapy,  <em>Qure makes it easy</em> to be consistent—which is what really drives results.”</p>",
@@ -715,7 +715,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -782,7 +782,7 @@
       ],
       "name": "t:sections.n_how-it-works.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>How it works</h2>"
       }
     },
@@ -1014,7 +1014,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -1059,7 +1059,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_easy_steps_qtaB86": {
@@ -1097,7 +1097,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mask-use-video.webp",
@@ -1111,7 +1111,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -1232,7 +1232,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>How Q-Rejuvalight compares</h2>"
       }
     },
@@ -1344,7 +1344,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>The beauty of clinical results from home - without the ‘clinical’ costs</h2><p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>"
       }
     },
@@ -1363,7 +1363,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>",
         "button_label": "",
@@ -1464,7 +1464,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
