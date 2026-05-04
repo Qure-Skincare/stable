@@ -9,9 +9,9 @@
          <div class="flyout-cart__header">
                <div>{{ 'cart.drawer.settings.header' | t }} ({{ cart.item_count }})</div>
                <button
-                  class="btn-close"
+                  class="flyout-cart__close"
                   type="button"
-                  data-bs-dismiss="offcanvas"
+                  onclick="cartCanvas.close()"
                >
                   <i class="e-icon e-icon-cross"></i>
                </button>
