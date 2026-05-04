@@ -43,7 +43,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "How It Works",
-            "button-url": "#how_it_works"
+            "button-url": "#science-backed"
           }
         },
         "jumpto_A3": {
@@ -64,7 +64,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "ingredients",
-            "button-url": "#science_backed"
+            "button-url": "#science-backed"
           }
         },
         "jumpto_A6": {
