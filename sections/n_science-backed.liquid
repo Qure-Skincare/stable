@@ -6,7 +6,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/science-backed/science-backed.css" />
 {% endif %}
-<section class="science-backed{%  if section.settings.modifier != 'none' %} science-backed--{{ section.settings.modifier }}{% endif %}">
+<section class="science-backed{%  if section.settings.modifier != 'none' %} science-backed--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id | downcase |  handleize }}"{% endif %}>
     <div class="container">
 
         {% if section.settings.text != blank %}
@@ -194,6 +194,11 @@
                     "label": "t:common.single"
                 }
             ]
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
         },
         {
             "type": "richtext",

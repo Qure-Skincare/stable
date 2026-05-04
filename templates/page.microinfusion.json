@@ -36,7 +36,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "The Results",
-            "button-url": "#results"
+            "button-url": "#improve_skin"
           }
         },
         "jumpto_A2": {
@@ -50,21 +50,21 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Reviews",
-            "button-url": "#reviews"
+            "button-url": "#trusted-reviews"
           }
         },
         "jumpto_A4": {
           "type": "jumpto",
           "settings": {
             "button-label": "How To Use",
-            "button-url": "#how_to_use"
+            "button-url": "#easy_steps"
           }
         },
         "jumpto_A5": {
           "type": "jumpto",
           "settings": {
-            "button-label": "Tech Specs",
-            "button-url": "#how_to_use"
+            "button-label": "ingredients",
+            "button-url": "#science_backed"
           }
         },
         "jumpto_A6": {
@@ -1205,6 +1205,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
+        "section_id": "science-backed",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "text_mobile": "",
         "left_heading": "<h4>For Dark Spots</h4>",
