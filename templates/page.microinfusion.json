@@ -36,35 +36,35 @@
           "type": "jumpto",
           "settings": {
             "button-label": "The Results",
-            "button-url": "#results"
+            "button-url": "#improve_skin"
           }
         },
         "jumpto_A2": {
           "type": "jumpto",
           "settings": {
             "button-label": "How It Works",
-            "button-url": "#how_it_works"
+            "button-url": "#science-backed"
           }
         },
         "jumpto_A3": {
           "type": "jumpto",
           "settings": {
             "button-label": "Reviews",
-            "button-url": "#reviews"
+            "button-url": "#trusted-reviews"
           }
         },
         "jumpto_A4": {
           "type": "jumpto",
           "settings": {
             "button-label": "How To Use",
-            "button-url": "#how_to_use"
+            "button-url": "#easy_steps"
           }
         },
         "jumpto_A5": {
           "type": "jumpto",
           "settings": {
-            "button-label": "Tech Specs",
-            "button-url": "#how_to_use"
+            "button-label": "Ingredients",
+            "button-url": "#science-backed"
           }
         },
         "jumpto_A6": {
@@ -411,7 +411,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"spaceBetween\": 80"
       }
@@ -464,7 +464,7 @@
       ],
       "name": "t:sections.n_why-using.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
         "button_label": "",
@@ -475,7 +475,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -550,7 +550,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>No hype, just evidence</h2><p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.</p>"
       }
     },
@@ -842,7 +842,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -929,7 +929,7 @@
       ],
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
         "quote": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -939,7 +939,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office”.</em></p>",
@@ -1036,7 +1036,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -1081,7 +1081,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_science_backed_YbLMqt": {
@@ -1203,8 +1203,9 @@
       ],
       "name": "t:sections.n_science-backed.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
+        "section_id": "science-backed",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "text_mobile": "",
         "left_heading": "<h4>For Dark Spots</h4>",
@@ -1281,7 +1282,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -1290,7 +1291,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "guide",
         "text": "<h5>Is this your kind of skincare ritual?</h5><p>Take a look at our Micro-Infusion safety protocols and treatment instructions.</p>",
         "button_label": "See Detailed Guide",
@@ -1332,7 +1333,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
@@ -1436,7 +1437,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
@@ -1541,7 +1542,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Typically a more hygienic option than re-usable at-home rollers when used as directed</h2><p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>"
       }
     },
@@ -1814,7 +1815,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -1922,7 +1923,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
