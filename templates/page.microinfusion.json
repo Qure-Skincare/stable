@@ -63,7 +63,7 @@
         "jumpto_A5": {
           "type": "jumpto",
           "settings": {
-            "button-label": "ingredients",
+            "button-label": "Ingredients",
             "button-url": "#science-backed"
           }
         },
