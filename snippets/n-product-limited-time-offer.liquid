@@ -29,8 +29,6 @@
 
 {% if block.settings.days > 0 %}
     <script>
-        let customDays = {{ block.settings.days }} - 1;
-
         document.addEventListener("DOMContentLoaded", function () {
             loadScriptOnce("n-product-limited-time-offer.js", "{{ 'n-product-limited-time-offer.js' | asset_url }}");
         });

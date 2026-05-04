@@ -6,7 +6,7 @@
  {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/base-section/base-section.css" />
  {% endif %}
-<section class="base-section{% if section.settings.modifier_2 != 'none' %} base-section--{{ section.settings.modifier_2 }}{% endif %}{% if section.settings.modifier != 'none' %} base-section--{{ section.settings.modifier }}{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}">
+<section class="base-section{% if section.settings.modifier_2 != 'none' %} base-section--{{ section.settings.modifier_2 }}{% endif %}{% if section.settings.modifier != 'none' %} base-section--{{ section.settings.modifier }}{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article>
                 {{ section.settings.heading }}
@@ -279,6 +279,11 @@
                     "label": "t:sections.n_base-section.settings.background-color-options.grey"
                 }
             ]
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
         },
         {
             "type": "richtext",
