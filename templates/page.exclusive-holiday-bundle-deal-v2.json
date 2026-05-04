@@ -59,7 +59,7 @@
       ],
       "name": "t:sections.n_hero-product.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h1>Get Your Best Skin Yet — Save up to 57% on Exclusive Bundles.</h1>",
         "text": "",
         "button_label": "SHOP & SAVE UP TO 57%",
@@ -115,7 +115,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
@@ -209,7 +209,7 @@
       ],
       "name": "t:sections.n_page-exclusive-bundle-resuslts-showcase.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Top-rated products at best prices</h2>",
         "rating": "4.5",
         "rating_text": "200,000+ Confident Customers"
@@ -398,7 +398,7 @@
       "disabled": true,
       "name": "t:sections.n_take-quiz.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Need help finding your new routine?</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     },
@@ -546,7 +546,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Confidence changing results, from people just like you</h2>",
         "button_label": "",
@@ -593,14 +593,14 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_trusted_recommended_tQjWAG": {
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want <em>to avoid the hassle or cost of going to the office”.</em></p>",
@@ -663,7 +663,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -755,7 +755,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Hello make-up free days, goodbye clinical costs</h2><p>Are you ready to enjoy the same technology used in clinics, without the price tag or hassle? Get clinic-level results with consistent treatments from the comfort of your own home – for a fraction of the clinical cost.</p>"
       }
     },
@@ -851,7 +851,7 @@
       ],
       "name": "t:sections.n_page-exclusive-bundle-deal-learn-more.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Learn more about our products</h2>"
       }
     },
@@ -887,7 +887,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "heading": "",
         "text": "<h2>Better skin starts here</h2><p>No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.</p>",
@@ -945,7 +945,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
