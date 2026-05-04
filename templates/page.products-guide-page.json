@@ -79,7 +79,7 @@
         "items_qDeaFN"
       ],
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h1>User Guides</h1><p><strong>Choose your product</strong> to get started.</p>"
       }
     }
