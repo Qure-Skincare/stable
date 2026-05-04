@@ -13,7 +13,7 @@
       "type": "n_hero-banner",
       "name": "t:sections.n_hero-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "holidays",
         "text": "<h1>Shop our best sellers</h1>",
         "image": "shopify://shop_images/best-seller-banner.webp",
@@ -61,21 +61,21 @@
       "disabled": true,
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_breadcrumb_fXMjkJ": {
       "type": "n_breadcrumb",
       "name": "t:sections.n_breadcrumb.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_pills_nav_fXMjkJ": {
       "type": "n_pills-nav",
       "name": "t:sections.n_pills-nav.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_collection_fXMjkJ": {
@@ -107,7 +107,7 @@
       ],
       "name": "t:sections.n_collection.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_trusted_reviews_kiGgwT": {
@@ -162,7 +162,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "",
         "button_label": ""
@@ -196,7 +196,7 @@
       ],
       "name": "t:sections.n_take-quiz.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     }
