@@ -2,7 +2,7 @@
 
 <!-- FLYOUT CART -->
 
-<div class="flyout-cart offcanvas offcanvas-end" id="cartCanvas">
+<dialog class="flyout-cart offcanvas offcanvas-end" id="cartCanvas">
    <div id="cart-dynamic-content" class="flyout-cart__dynamic">
       {% render 'n-footer-cart-drawer-timer', timer: global_timer %}
       <div class="flyout-cart__wrapper">
@@ -38,7 +38,7 @@
          {% endif %}
       </div>
    </div>
-</div>
+</dialog>
 <!-- FLYOUT CART END -->
 
 <script>
