@@ -73,7 +73,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "The Results",
-            "button-url": "#results"
+            "button-url": "#improve_skin"
           }
         },
         "jumpto_A2": {
@@ -94,14 +94,14 @@
           "type": "jumpto",
           "settings": {
             "button-label": "How To Use",
-            "button-url": "#how_to_use"
+            "button-url": "#easy_steps"
           }
         },
         "jumpto_A5": {
           "type": "jumpto",
           "settings": {
             "button-label": "Tech Specs",
-            "button-url": "#how_to_use"
+            "button-url": "#how_it_works"
           }
         },
         "jumpto_A6": {
