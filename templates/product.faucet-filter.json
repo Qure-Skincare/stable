@@ -778,7 +778,8 @@
           "type": "items",
           "settings": {
             "text": "<h6>Remove</h6><p>Remove faucet aerator. Simply attach and twist it off using the key for removal.</p>",
-            "image": "shopify://shop_images/faucet_remove.webp"
+            "image": "shopify://shop_images/faucet_remove.webp",
+            "image_mobile": "shopify://shop_images/faucet_remove-m.webp"
           }
         },
         "items_3PLjd7": {
@@ -821,7 +822,8 @@
           "type": "image_with_text",
           "settings": {
             "icon": "verified-shield",
-            "text": "<p>Covered by our Lifetime Warranty<br/>Your purchase is protected for life and comes with a 30-day money-back guarantee</p>"
+            "text": "<p>Covered by our Lifetime Warranty<br/>Your purchase is protected for life and comes with a 30-day money-back guarantee</p>",
+            "image": "shopify://shop_images/Q-fitler.webp"
           }
         },
         "tab_XGVJWV": {
