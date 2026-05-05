@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Faucet Filter Guide</h1><h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before installing and using your Qure&nbsp;Faucet Filter.</p>",
         "text": "",
@@ -39,7 +39,7 @@
       ],
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>The Qure Faucet Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
       }
     },
@@ -107,7 +107,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_step_XzrxG3": {
@@ -175,11 +175,11 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Quick Start Guide",
-        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>To install your new Faucet Filter, you'll need the following:</p><ul><li>Qure Faucet Filter with 360° nozzle</li><li>Multi-functional adapter (provided)</li><li>Adapter wrench (provided)</li><li>Bubbler wrench (provided)</li><li>Thread adapters (provided)</li><li>Silicone ring (provided)</li></ul>"
+        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>To install your new Faucet Filter, you'll need the following:</p><ul><li>Qure Faucet Filter with 360В° nozzle</li><li>Multi-functional adapter (provided)</li><li>Adapter wrench (provided)</li><li>Bubbler wrench (provided)</li><li>Thread adapters (provided)</li><li>Silicone ring (provided)</li></ul>"
       }
     },
     "n_guide_content_step_g8LF3K": {
@@ -231,7 +231,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "How To Replace The Filter",
@@ -245,7 +245,7 @@
           "type": "items",
           "settings": {
             "image": "shopify://shop_images/included-box-filter.webp",
-            "text": "<p>Qure Faucet Filter with 360° nozzle (filter cartridge preinstalled in the unit)</p><p>1pc</p>"
+            "text": "<p>Qure Faucet Filter with 360В° nozzle (filter cartridge preinstalled in the unit)</p><p>1pc</p>"
           }
         },
         "items_7wCBBJ": {
@@ -302,7 +302,7 @@
       ],
       "name": "t:sections.n_guide-included-box.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "What's Included In The Box",
@@ -336,7 +336,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Water Mode Selection",
@@ -347,7 +347,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Care & Maintenance",
@@ -359,7 +359,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Troubleshooting & Adjustments",
@@ -416,7 +416,7 @@
       ],
       "name": "t:sections.n_guide-faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "FAQs",
