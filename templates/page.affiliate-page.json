@@ -62,7 +62,7 @@
       ],
       "name": "t:sections.n_affiliate-content-creator.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h1>Are you a Content Creator?</h1>",
         "text": "<p>Qure is proud to support creators on their journey to sharing innovative, science-backed skincare solutions. Because everyone deserves to feel beautiful in their skin.</p><p>Join the numerous faces that help shape the future of skincare.</p><p>I'm a:</p>",
         "creator_button_label": "",
@@ -103,7 +103,7 @@
       ],
       "name": "t:sections.n_affiliate-page-step-by-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>How does it work?</h2>"
       }
     },
@@ -169,7 +169,7 @@
       ],
       "name": "t:sections.n_affiliate-page-resons-to-join.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Why should you join?</h2>"
       }
     },
@@ -177,7 +177,7 @@
       "type": "n_affiliate-page-apply-form",
       "name": "t:sections.n_affiliate-page-apply-form.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>How Apply to Join the Qure Creator Program</h2>",
         "popup_text": "Please contact ugc@qureskincare.com with your portfolio and we will be in touch if we have any collaboration opportunities available.",
         "affiliate_signup_iframe_url": "https://api.socialsnowball.io/register-form/12963/92dcd279-8f4d-4230-a1b8-2933b3ac0833"
