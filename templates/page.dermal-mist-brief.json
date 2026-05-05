@@ -145,7 +145,7 @@
           "type": "quote",
           "settings": {
             "style": "blue",
-            "text": "<p>Remember toВ <strong>add a personal touch</strong>В to the messaging, talk about how it makes your skin feel and when you use it.</p><p>Examples:</p><ul><li>вЂњMy skin flares up after the gym, and this calms it down instantly.вЂќ</li><li>вЂњI always keep this in my bag to use when I'm traveling.вЂќ</li><li>вЂњIt feels so light and refreshing, but makes my skin feel clean and refreshed.вЂќ</li></ul>"
+            "text": "<p>Remember toВ <strong>add a personal touch</strong>В to the messaging, talk about how it makes your skin feel and when you use it.</p><p>Examples:</p><ul><li>“My skin flares up after the gym, and this calms it down instantly.”</li><li>“I always keep this in my bag to use when I'm traveling.”</li><li>“It feels so light and refreshing, but makes my skin feel clean and refreshed.”</li></ul>"
           }
         }
       },
