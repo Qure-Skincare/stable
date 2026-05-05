@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Dermal Mist Creative Content Guide</h1>",
         "text": "",
@@ -27,7 +27,7 @@
       "type": "n_intro",
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>Discover how to make the most of the Qure Dermal Mist with our creative content guide.</strong></p><p>This brief will help you elevate your skincare routine with the Qure Dermal Mist. Powered by hypochlorous acid spray and designed to prevent breakouts, this mist can be used to reduce impurities during the day or cleanse before your favorite Micro-Infusion treatment.</p>"
       }
     },
@@ -87,7 +87,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_dcTLny": {
@@ -106,7 +106,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Product Information",
@@ -118,7 +118,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Usage Instructions",
@@ -130,7 +130,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Product Claims",
@@ -154,11 +154,11 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": true,
         "heading": "Content Requirements",
-        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Light and calming spray, and doesn't leave skin sticky or tight.</li><li>Soothes redness and irritation without stinging or dryness.</li><li>Just mist and go — no rinsing, no mess.</li><li>Use after cleansing, post-workout, during travel, or anytime skin feels off.</li><li>100ml for everyday use, 15ml for on-the-go breakout control.</li><li>Gentle enough for sensitive or reactive skin.</li></ul>",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Light and calming spray, and doesn't leave skin sticky or tight.</li><li>Soothes redness and irritation without stinging or dryness.</li><li>Just mist and go - no rinsing, no mess.</li><li>Use after cleansing, post-workout, during travel, or anytime skin feels off.</li><li>100ml for everyday use, 15ml for on-the-go breakout control.</li><li>Gentle enough for sensitive or reactive skin.</li></ul>",
         "slides_per_view": ""
       }
     },
@@ -192,7 +192,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Creative Direction",
@@ -289,7 +289,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Content Examples",
@@ -301,7 +301,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "grey",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"...Spray your skin to sanitize it before using your Micro-Infusion device. <em>It's absolutely genius</em>.\"</p>",
