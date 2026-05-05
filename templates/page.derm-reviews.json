@@ -27,7 +27,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Trusted by doctors for healthier, radiant skin</h1>",
         "text": "",
@@ -59,7 +59,7 @@
         "pills_navigation_item_YFnCRE": {
           "type": "pills_navigation_item",
           "settings": {
-            "text": "Neck & Décolletage LED System",
+            "text": "Neck & DГ©colletage LED System",
             "url": "shopify://pages/neck-decolletage-led-reviews",
             "active": false
           }
@@ -90,7 +90,7 @@
       ],
       "name": "t:sections.n_pills-navigation.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "Filter by product",
         "sub_text": "Swipe for more"
       }
@@ -99,7 +99,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office\".</em></p>",
         "video_image_cover": "shopify://shop_images/shah-maxfield.webp",
@@ -159,7 +159,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_results_comparison_slider_NENwHd": {
@@ -197,7 +197,7 @@
       ],
       "name": "t:sections.n_results-comparison-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
@@ -205,10 +205,10 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "background_color": "grey",
-        "heading": "<h2>Qure's Micro-Infusion goes where your skin cream can't…</h2>",
+        "heading": "<h2>Qure's Micro-Infusion goes where your skin cream can'tвЂ¦</h2>",
         "text": "<p>Its tiny, almost painless, 24K gold plated 0.5mm microneedles penetrate beyond the skin's surface to gently create controlled trauma in your skin which help <em>boost the feel of firmness, smooth texture and reduce the look of fine lines and wrinkles.</em></p><p>The invisible micro-channels then infuse science-backed serums into your skin that are tailored to <em>treat your specific skin concerns,</em> increasing absorption and delivering powerful active ingredients exactly where they're needed.</p>",
         "image": "shopify://shop_images/skin-cream.webp",
         "button_label": "Shop Micro-Infusion",
@@ -222,7 +222,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr.Shah <br /> Board Certified Dermatologist</p>",
-            "text": "<p>“I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out”</p>",
+            "text": "<p>вЂњI like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting outвЂќ</p>",
             "image": "shopify://shop_images/shah.webp"
           }
         },
@@ -230,7 +230,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Maxfield <br /> Board Certified Dermatologist</p>",
-            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routine”</p>",
+            "text": "<p>вЂњQure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routineвЂќ</p>",
             "image": "shopify://shop_images/maxfield.webp"
           }
         },
@@ -238,7 +238,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Tripathi <br /> Double Board Certified Facial Plastic Surgeon</p>",
-            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "text": "<p>вЂњI love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.вЂќ</p>",
             "image": "shopify://shop_images/tripathi.webp"
           }
         },
@@ -246,7 +246,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Stephens <br /> Board Certified Dermatologist</p>",
-            "text": "<p>“What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create”</p>",
+            "text": "<p>вЂњWhat really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they createвЂќ</p>",
             "image": "shopify://shop_images/stephens.webp"
           }
         }
@@ -259,7 +259,7 @@
       ],
       "name": "t:sections.n_expert-board.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Meet our board of advisors</h2>",
         "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
       }
