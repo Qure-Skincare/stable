@@ -12,7 +12,7 @@
     "main": {
       "type": "n_404",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       },
       "name": "t:sections.n_404.name"
     }
