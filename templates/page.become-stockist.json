@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Will you be our next professional partner?</h1>",
         "text": "",
@@ -73,16 +73,16 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_text_intro_yHhkiP": {
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
-        "text": "<h3>Qure’s Professional Skincare Revolution</h3><p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.</p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.</p><p>Gain maximum advantage of the industry’s consistent growth.</p><p>Join the revolution and <em>become our professional partner.</em></p>",
+        "text": "<h3>QureвЂ™s Professional Skincare Revolution</h3><p>Using science-backed technology, research, and forward-focused insights, Qure creates visionary solutions, setting the new benchmark in the beauty industry.</p><p>Bringing together world-class experts with product designers and engineers, we disrupt the dermatologist industry and question how we can give power to people to teat their own skin from home with proven DIY therapies for an affordable price.</p><p>Gain maximum advantage of the industryвЂ™s consistent growth.</p><p>Join the revolution and <em>become our professional partner.</em></p>",
         "button_label": ""
       }
     },
@@ -133,7 +133,7 @@
         "popup_YxRnWf"
       ],
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "stats",
         "text": "",
         "button_label": ""
@@ -143,7 +143,7 @@
       "type": "n_base-form",
       "name": "t:sections.n_base-form.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     }
   },
