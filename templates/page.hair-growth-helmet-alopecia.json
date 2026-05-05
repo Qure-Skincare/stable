@@ -86,7 +86,7 @@
       ],
       "name": "t:sections.n_product-hair-growth-helmet-header.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "Backed by Dermatologists",
         "heading": "FDA-Cleared Red Light Therapy for Androgenetic Alopecia",
         "rating": true,
@@ -169,7 +169,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-image-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>See the change, feel the difference</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
         "button_label": "Read the Study",
@@ -237,7 +237,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Advanced Light Therapy for Androgenetic Alopecia</h2>",
         "text": "<p>The Q-Renew LLLT Helmet utilizes the power of low-level light therapy (LLLT), a scientifically-backed technology for treating androgenetic alopecia. It delivers a precise combination of red light and laser therapy to stimulate dormant hair follicles and support the natural hair growth cycle.</p>",
         "button_label": "Explore The Features"
@@ -278,7 +278,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "How LLLT Combats Androgenetic Alopecia",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
@@ -340,7 +340,7 @@
       ],
       "name": "t:sections.n_results-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Backed by real results</h2>",
         "text": "<p>The Q-Renew LLLT Helmet is clinically proven to be effective for treating androgenetic alopecia. In a 16-week user study, participants with androgenetic alopecia reported significant improvements in hair growth and scalp health.</p>",
         "sub_text": "<p>These results highlight how consistent <strong>red light therapy for hair loss</strong> can help support visible improvements in hair appearance and scalp health over time.<br/><br/>*Based on a Qure user study. Individual results may vary.</p>"
@@ -386,7 +386,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_faq_VwkhRa": {
@@ -395,7 +395,7 @@
         "accordion_PTLUG3": {
           "type": "accordion",
           "settings": {
-            "heading": " What is androgenetic alopecia and how can LLLT help?",
+            "heading": "В What is androgenetic alopecia and how can LLLT help?",
             "text": "<p>Androgenetic alopecia is a common, genetic form of hair loss affecting up to 50% of males and females. LLLT (low-level light therapy) is an FDA-cleared treatment that uses red light and laser energy to stimulate hair follicles, promoting regrowth and improving hair density.</p>"
           }
         },
@@ -432,7 +432,7 @@
           "disabled": true,
           "settings": {
             "heading": "Can red light therapy for hair loss help reduce shedding?",
-            "text": "<p>Excessive daily shedding can feel constant and discouraging, with hair collecting in the shower, on your pillow, or in your brush. This often happens when follicles exit the growth phase too early—a process commonly influenced by stress, hormonal changes, or genetic factors.</p><p><strong>Red light therapy for hair loss</strong> works in sync with the natural hair growth cycle by supporting follicles during the active growth phase. With consistent use, many people notice a reduced appearance of excessive shedding before seeing improvements in overall density—helping create the foundation for stronger, fuller-looking hair over time.</p>"
+            "text": "<p>Excessive daily shedding can feel constant and discouraging, with hair collecting in the shower, on your pillow, or in your brush. This often happens when follicles exit the growth phase too earlyвЂ”a process commonly influenced by stress, hormonal changes, or genetic factors.</p><p><strong>Red light therapy for hair loss</strong> works in sync with the natural hair growth cycle by supporting follicles during the active growth phase. With consistent use, many people notice a reduced appearance of excessive shedding before seeing improvements in overall densityвЂ”helping create the foundation for stronger, fuller-looking hair over time.</p>"
           }
         }
       },
@@ -446,9 +446,9 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Your Androgenetic Alopecia Questions Answered</h2>",
-        "text": "Have a concern we didn’t cover?",
+        "text": "Have a concern we didnвЂ™t cover?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
@@ -491,7 +491,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-usage-guide.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Restore your hair health in just 12 minutes a day</h2>",
         "video_url": "wvoucso35j",
         "youtube_url": false
@@ -546,7 +546,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confidence starts here - at the roots</h2>"
       }
@@ -691,7 +691,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-product-comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "How It Compares"
       }
     },
@@ -737,7 +737,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Renew LLLT Helmet safe and FDA cleared?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet is safe and FDA-cleared. It is included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I–II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It features built-in safety sensors that only activate the lights when the device is properly positioned on your head. It will automatically pause if removed. The warmth is mild, with a maximum of 35°C (95°F).</p>"
+            "text": "<p>Yes, the Q-Renew LLLT Helmet is safe and FDA-cleared. It is included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIaвЂ“V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of IвЂ“II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It features built-in safety sensors that only activate the lights when the device is properly positioned on your head. It will automatically pause if removed. The warmth is mild, with a maximum of 35В°C (95В°F).</p>"
           }
         },
         "accordion_M7qFY8": {
@@ -767,7 +767,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
