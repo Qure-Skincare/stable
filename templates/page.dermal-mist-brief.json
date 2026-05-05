@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Dermal Mist Creative Content Guide</h1>",
         "text": "",
@@ -27,7 +27,7 @@
       "type": "n_intro",
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>Discover how to make the most of the Qure Dermal Mist with our creative content guide.</strong></p><p>This brief will help you elevate your skincare routine with the Qure Dermal Mist. Powered by hypochlorous acid spray and designed to prevent breakouts, this mist can be used to reduce impurities during the day or cleanse before your favorite Micro-Infusion treatment.</p>"
       }
     },
@@ -87,7 +87,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_dcTLny": {
@@ -106,7 +106,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Product Information",
@@ -118,11 +118,11 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Usage Instructions",
-        "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li><strong>Post-workout essential:</strong> Spray right after a gym session to help keep breakouts at bay before you can get to a full cleanse.</li><li><strong>Post-workout essential:</strong> In between washes, a spray on your pillowcase can help keep breakout-causing germs under control.</li><li><strong>Pre-treatments purifier:</strong> Before Micro-Infusion, give your skin a spritz to cleanse and prep for better results.</li><li><strong>Device defender:</strong> After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</li></ol>",
+        "text": "<h2>Usage Instructions</h2><p><strong>How To Use:</strong></p><ol><li><strong>Post-workout essential:</strong>В Spray right after a gym session to help keep breakouts at bay before you can get to a full cleanse.</li><li><strong>Post-workout essential:</strong>В In between washes, a spray on your pillowcase can help keep breakout-causing germs under control.</li><li><strong>Pre-treatments purifier:</strong>В Before Micro-Infusion, give your skin a spritz to cleanse and prep for better results.</li><li><strong>Device defender:</strong>В After using your Q-Rejuvalight Pro, a light spray and wipe inside your device keeps it clean.</li></ol>",
         "slides_per_view": ""
       }
     },
@@ -130,7 +130,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Product Claims",
@@ -145,7 +145,7 @@
           "type": "quote",
           "settings": {
             "style": "blue",
-            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how it makes your skin feel and when you use it.</p><p>Examples:</p><ul><li>“My skin flares up after the gym, and this calms it down instantly.”</li><li>“I always keep this in my bag to use when I'm traveling.”</li><li>“It feels so light and refreshing, but makes my skin feel clean and refreshed.”</li></ul>"
+            "text": "<p>Remember toВ <strong>add a personal touch</strong>В to the messaging, talk about how it makes your skin feel and when you use it.</p><p>Examples:</p><ul><li>вЂњMy skin flares up after the gym, and this calms it down instantly.вЂќ</li><li>вЂњI always keep this in my bag to use when I'm traveling.вЂќ</li><li>вЂњIt feels so light and refreshing, but makes my skin feel clean and refreshed.вЂќ</li></ul>"
           }
         }
       },
@@ -154,11 +154,11 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": true,
         "heading": "Content Requirements",
-        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Light and calming spray, and doesn't leave skin sticky or tight.</li><li>Soothes redness and irritation without stinging or dryness.</li><li>Just mist and go — no rinsing, no mess.</li><li>Use after cleansing, post-workout, during travel, or anytime skin feels off.</li><li>100ml for everyday use, 15ml for on-the-go breakout control.</li><li>Gentle enough for sensitive or reactive skin.</li></ul>",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Light and calming spray, and doesn't leave skin sticky or tight.</li><li>Soothes redness and irritation without stinging or dryness.</li><li>Just mist and go вЂ” no rinsing, no mess.</li><li>Use after cleansing, post-workout, during travel, or anytime skin feels off.</li><li>100ml for everyday use, 15ml for on-the-go breakout control.</li><li>Gentle enough for sensitive or reactive skin.</li></ul>",
         "slides_per_view": ""
       }
     },
@@ -181,7 +181,7 @@
           "type": "quote",
           "settings": {
             "style": "blue",
-            "text": "<p><strong>Tag and mention</strong> @qureskincare #DermalMist #hypochlorousacid #qureskincare</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+            "text": "<p><strong>Tag and mention</strong>В @qureskincare #DermalMist #hypochlorousacid #qureskincare</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
           }
         }
       },
@@ -192,7 +192,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Creative Direction",
@@ -289,7 +289,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Content Examples",
@@ -301,7 +301,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "grey",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"...Spray your skin to sanitize it before using your Micro-Infusion device. <em>It's absolutely genius</em>.\"</p>",
