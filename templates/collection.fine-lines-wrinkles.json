@@ -13,7 +13,7 @@
       "type": "n_hero-banner",
       "name": "t:sections.n_hero-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "holidays",
         "text": "<h1>Fine Lines & Wrinkles</h1>",
         "image": "shopify://shop_images/best-seller-banner.webp",
@@ -60,35 +60,35 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_breadcrumb_fXMjkJ": {
       "type": "n_breadcrumb",
       "name": "t:sections.n_breadcrumb.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_pills_nav_fXMjkJ": {
       "type": "n_pills-nav",
       "name": "t:sections.n_pills-nav.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_collection_fXMjkJ": {
       "type": "n_collection",
       "name": "t:sections.n_collection.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_base_section_zWkqBN": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
@@ -110,7 +110,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
-            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "text": "<h6>My skin returned to life!</h6><p>вЂњI just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!вЂќ</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
             "product_text": "Ellie uses...",
@@ -124,7 +124,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "text": "<h6>CanвЂ™t go a day without it</h6><p>вЂњStraight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.вЂќ</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
             "product_text": "Anton uses...",
@@ -138,7 +138,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "text": "<h6>Works better than I imagined!</h6><p>вЂњI am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.вЂќ</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
             "product_text": "Jennifer uses...",
@@ -153,9 +153,9 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "text": "<h2>Results youвЂ™ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
       }
@@ -175,7 +175,7 @@
         "take_quiz_sub_DfRXwD": {
           "type": "take_quiz",
           "settings": {
-            "text": "<p>Here’s your personalized skincare routine…</p>",
+            "text": "<p>HereвЂ™s your personalized skincare routineвЂ¦</p>",
             "sub_text": "",
             "button_label": "",
             "button_url": ""
@@ -188,8 +188,8 @@
       ],
       "name": "t:sections.n_take-quiz.name",
       "settings": {
-        "use_own_file": true,
-        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
+        "use_own_file": false,
+        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You donвЂ™t have time for products that donвЂ™t work. WeвЂ™ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     }
   },
