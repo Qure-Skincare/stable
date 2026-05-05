@@ -27,7 +27,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Trusted by doctors for healthier, radiant skin</h1>",
         "text": "",
@@ -59,7 +59,7 @@
         "pills_navigation_item_YFnCRE": {
           "type": "pills_navigation_item",
           "settings": {
-            "text": "Neck & Décolletage LED System",
+            "text": "Neck & DГ©colletage LED System",
             "url": "shopify://pages/neck-decolletage-led-reviews",
             "active": false
           }
@@ -90,7 +90,7 @@
       ],
       "name": "t:sections.n_pills-navigation.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "Filter by product",
         "sub_text": "Swipe for more"
       }
@@ -99,9 +99,9 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>“Qure has a really good serum. It's probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
+        "text": "<p>вЂњQure has a really good serum. It's probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.вЂќ</p>",
         "video_image_cover": "shopify://shop_images/dr-shah-maxfield.webp",
         "video_url": "https://www.youtube.com/watch?v=PJt57LcFEQk",
         "badge_text": "Dermatologist Reviewed"
@@ -142,7 +142,7 @@
       ],
       "name": "t:sections.n_results-comparison-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
@@ -150,11 +150,11 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "background_color": "grey",
         "heading": "<h2>Everything you need in one serum</h2>",
-        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort</em>.</p><p>Packed with <em>clinically backed ingredients</em> like Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step.</p><p>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
+        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort</em>.</p><p>Packed with <em>clinically backed ingredients</em> like ArgirelineВ® Peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step.</p><p>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
         "image": "shopify://shop_images/in-one-serum.webp",
         "button_label": "Shop All-In-One Serum",
         "button_url": "#"
@@ -167,7 +167,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr.Shah <br /> Board Certified Dermatologist</p>",
-            "text": "<p>“I like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting out”</p>",
+            "text": "<p>вЂњI like that they put a lot of R&D into their products - Ultimately, I think that they care a lot about the products they are putting outвЂќ</p>",
             "image": "shopify://shop_images/shah.webp"
           }
         },
@@ -175,7 +175,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Maxfield <br /> Board Certified Dermatologist</p>",
-            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routine”</p>",
+            "text": "<p>вЂњQure do studies on this, taking a look at how effective it is, so you can have confidence it's going to help what you're doing for your skincare routineвЂќ</p>",
             "image": "shopify://shop_images/maxfield.webp"
           }
         },
@@ -183,7 +183,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Tripathi <br /> Double Board Certified Facial Plastic Surgeon</p>",
-            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "text": "<p>вЂњI love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.вЂќ</p>",
             "image": "shopify://shop_images/tripathi.webp"
           }
         },
@@ -191,7 +191,7 @@
           "type": "slider",
           "settings": {
             "heading": "<p>Dr. Stephens <br /> Board Certified Dermatologist</p>",
-            "text": "<p>“What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create”</p>",
+            "text": "<p>вЂњWhat really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they createвЂќ</p>",
             "image": "shopify://shop_images/stephens.webp"
           }
         }
@@ -204,7 +204,7 @@
       ],
       "name": "t:sections.n_expert-board.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Meet our board of advisors</h2>",
         "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
       }
