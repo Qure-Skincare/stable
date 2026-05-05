@@ -666,24 +666,24 @@
           "type": "image_with_text",
           "settings": {
             "text": "<h3>Target</h3><p>80 micro-darts painlessly reach below the surface to target the look of fine lines and dullness. </p>",
-            "image": "shopify://shop_images/Img_43.webp",
-            "image_mobile": "shopify://shop_images/1_7.webp"
+            "image": "shopify://shop_images/patches-1.webp",
+            "image_mobile": "shopify://shop_images/patches-1-mob.webp"
           }
         },
         "image_with_text_tiiDVA": {
           "type": "image_with_text",
           "settings": {
             "text": "<h3>Absorb</h3><p>The micro-darts gradually dissolve upon contact, allowing the serum to be absorbed for plumper-looking skin.</p>",
-            "image": "shopify://shop_images/a-2.webp",
-            "image_mobile": "shopify://shop_images/a-2-m.webp"
+            "image": "shopify://shop_images/patches-2.webp",
+            "image_mobile": "shopify://shop_images/patches-2-mob.webp"
           }
         },
         "image_with_text_MXDgh8": {
           "type": "image_with_text",
           "settings": {
             "text": "<h3>Finish</h3><p>After 2 hours, the skin is left looking smoother and more radiant.</p>",
-            "image": "shopify://shop_images/Img_17.png",
-            "image_mobile": "shopify://shop_images/1_2.png"
+            "image": "shopify://shop_images/patches-3.webp",
+            "image_mobile": "shopify://shop_images/patches-3-mob.webp"
           }
         }
       },
