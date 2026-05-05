@@ -423,7 +423,7 @@
           "type": "image_with_text",
           "settings": {
             "text": "<h4>\"This helps bring life and radiance to your eyes, the focal point of your face.\"</h4>",
-            "image": "shopify://shop_images/vogue.webp"
+            "image": "shopify://shop_images/vogue-black.svg"
           }
         }
       },
@@ -434,7 +434,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
-        "settings": "\"spaceBetween\": 80"
+        "slide": "one-slide"
       }
     },
     "n_base_section_VwYqRn": {
