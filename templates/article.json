@@ -12,7 +12,7 @@
     "n_breadcrumb": {
       "type": "n_breadcrumb",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       },
       "name": "t:sections.n_breadcrumb.name"
     },
