@@ -13,7 +13,7 @@
       "type": "n_intro",
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h1>Frequently Asked Questions</h1>"
       }
@@ -98,7 +98,7 @@
       ],
       "name": "t:sections.n_faq-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_faq_content_gxGnmA": {
@@ -127,7 +127,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will my order ship?",
-            "text": "<p>Here’s how it works: you order, we process, then we ship. Ordering takes a few seconds. </p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. </p><p>You’ll get a shipment notification email with a tracking number as soon as your package ships and it’s on the way!</p>",
+            "text": "<p>HereвЂ™s how it works: you order, we process, then we ship. Ordering takes a few seconds. </p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. </p><p>YouвЂ™ll get a shipment notification email with a tracking number as soon as your package ships and itвЂ™s on the way!</p>",
             "section_id": ""
           }
         },
@@ -135,8 +135,8 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "I’m having problems tracking my order.",
-            "text": "<p>Sorry about that! Please note the carrier could take 1-2 business days to register your shipment status online. </p><p>If your tracking number isn’t updating or working at all after this time period, please reach out to us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> We can give you the inside info.</p>",
+            "heading": "IвЂ™m having problems tracking my order.",
+            "text": "<p>Sorry about that! Please note the carrier could take 1-2 business days to register your shipment status online. </p><p>If your tracking number isnвЂ™t updating or working at all after this time period, please reach out to us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> We can give you the inside info.</p>",
             "section_id": ""
           }
         },
@@ -172,7 +172,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How can I update my order or cancel my order?",
-            "text": "<p>If your order has not been shipped then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we’ll do our best to process your request.</p>",
+            "text": "<p>If your order has not been shipped then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but weвЂ™ll do our best to process your request.</p>",
             "section_id": ""
           }
         },
@@ -180,8 +180,8 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "My promo code isn’t working.",
-            "text": "<p>If your promo code won’t apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - All codes' life eventually comes to an end, make sure you use it before that happens.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to <a href=\"#\">subscribe to our newsletter</a>!</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Platform</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - we’ll be happy to help!</p>",
+            "heading": "My promo code isnвЂ™t working.",
+            "text": "<p>If your promo code wonвЂ™t apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - All codes' life eventually comes to an end, make sure you use it before that happens.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to <a href=\"#\">subscribe to our newsletter</a>!</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Platform</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - weвЂ™ll be happy to help!</p>",
             "section_id": ""
           }
         },
@@ -190,7 +190,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I use multiple promo codes at checkout?",
-            "text": "<p>You can use one promo code per order. If you’ve encountered two valid Qure promo codes then please choose the one you want to use more.</p>",
+            "text": "<p>You can use one promo code per order. If youвЂ™ve encountered two valid Qure promo codes then please choose the one you want to use more.</p>",
             "section_id": ""
           }
         },
@@ -199,7 +199,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is SecureShip?",
-            "text": "<p>SecureShip provides shipping insurance for our customers’ online purchases that are lost or damaged while in transit or “porch pirated” (“porch pirated” meaning the carrier reports the status as “delivered” but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
+            "text": "<p>SecureShip provides shipping insurance for our customersвЂ™ online purchases that are lost or damaged while in transit or вЂњporch piratedвЂќ (вЂњporch piratedвЂќ meaning the carrier reports the status as вЂњdeliveredвЂќ but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
             "section_id": ""
           }
         }
@@ -219,7 +219,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "heading": "<h2>Shipping & Orders</h2>",
         "section_id": "Shipping & Orders"
@@ -241,7 +241,7 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "How does Qure’s Light Therapy technology work?",
+            "heading": "How does QureвЂ™s Light Therapy technology work?",
             "text": "<p>Q-Rejuvalight Pro Facewear uses clinical-grade technology to deliver safe, concentrated wavelengths of light directly to the underlying layers of your skin. </p><p>The optimal wavelengths of light are absorbed by your skin cells and kick start the production of collagen, elastin, and fibroblasts. </p><p>In turn, this stimulates mechanisms within the skin that solve skin problems and concerns from the inside out.</p>",
             "section_id": ""
           }
@@ -314,7 +314,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Does my Q-Rejuvalight Pro Facewear work without the app?",
-            "text": "<p>You can manually use your Q-Rejuvalight Pro Facewear without using the app. However if you’re wanting to customize your treatment on different areas on your face, then this will need to be done via the Qure Skincare app.</p><p>To choose/change a full treatment without using the app, follow the instructions below:</p><ul><li>Power on the device by holding the Q button on forehead until the led indicator light is on</li><li>Press the button once for Pro-Aging Treatment</li><li>Press it again for Anti-Breakout Treatment</li><li>Switch off the device by holding down the Q button until the indicator light turns off</li></ul>",
+            "text": "<p>You can manually use your Q-Rejuvalight Pro Facewear without using the app. However if youвЂ™re wanting to customize your treatment on different areas on your face, then this will need to be done via the Qure Skincare app.</p><p>To choose/change a full treatment without using the app, follow the instructions below:</p><ul><li>Power on the device by holding the Q button on forehead until the led indicator light is on</li><li>Press the button once for Pro-Aging Treatment</li><li>Press it again for Anti-Breakout Treatment</li><li>Switch off the device by holding down the Q button until the indicator light turns off</li></ul>",
             "section_id": ""
           }
         },
@@ -341,7 +341,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long will it take before I start seeing results?",
-            "text": "<p>Depending on what skin concern you’re wanting to treat.</p><p>With daily use, users will typically notice a reduction in acne breakouts after just 2 weeks!</p><p>While users typically see visible improvement of wrinkles, fine lines and signs of aging, as well as improved skin tone and smoothness after 8-12 weeks.</p>",
+            "text": "<p>Depending on what skin concern youвЂ™re wanting to treat.</p><p>With daily use, users will typically notice a reduction in acne breakouts after just 2 weeks!</p><p>While users typically see visible improvement of wrinkles, fine lines and signs of aging, as well as improved skin tone and smoothness after 8-12 weeks.</p>",
             "section_id": ""
           }
         },
@@ -394,7 +394,7 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "What’s included in the box?",
+            "heading": "WhatвЂ™s included in the box?",
             "text": "<p>Inside the box, you'll find:</p><ul><li>Q-Rejuvalight Pro LED Face Mask</li><li>Adjustable head strap for a secure, comfortable fit</li><li>USB-C charging cable</li><li>Portable luxury storage pouch</li><li>Clear setup instructions and user manual</li></ul>",
             "section_id": "Storing Q-Rejuvalight Pro"
           }
@@ -467,7 +467,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro FDA-cleared?",
-            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world’s first customizable, FDA-cleared at-home LED mask that's proven to be an effective and safe treatment for acne and aging skin concerns.</p>",
+            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the worldвЂ™s first customizable, FDA-cleared at-home LED mask that's proven to be an effective and safe treatment for acne and aging skin concerns.</p>",
             "section_id": ""
           }
         }
@@ -503,7 +503,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Q-Rejuvalight Pro Facewear</h2>",
         "section_id": "Q-Rejuvalight Pro Facewear"
@@ -517,7 +517,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin healthy, hydrated, and glowing long-term.</p>",
+            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and youвЂ™ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time youвЂ™ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skinвЂ™s complexion, fast.</p><p>DonвЂ™t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin healthy, hydrated, and glowing long-term.</p>",
             "section_id": ""
           }
         },
@@ -526,7 +526,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will I see results?",
-            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time you’ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skin’s complexion, fast.</p><p>Don’t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin healthy, hydrated, and glowing long-term.</p>",
+            "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and youвЂ™ll likely notice a radiance boost, softer fine lines and overall a healthy fresh complexion in the next day or two.</p><p>The more treatments you perform the greater skin benefits over time youвЂ™ll receive. This quick and easy home facial is perfect to perform a day or two before a big event, when you need to look to boost your skinвЂ™s complexion, fast.</p><p>DonвЂ™t forget to keep up with your everyday skincare routine to boost the effectiveness of your Micro-Infusion results and keep skin healthy, hydrated, and glowing long-term.</p>",
             "section_id": ""
           }
         },
@@ -544,7 +544,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do you open the serum ampoule?",
-            "text": "<p>Our serums come sealed with aluminum to ensure the serum stays sterile for treatment.</p><p>[image]</p><p></p><ol><li>Firmly hold the ampoule bottle. Find the arrow on the cap lid and flip to open from the end where the arrow is located.</li><li>Once the seal has been broken, hold the cap and steadily bend the silver seal away from the serum ampoule until it almost snaps off.</li><li>Peel back the silver seal from around the top of the serum ampoule and dispose of it.</li><li>Remove the rubber stopper and pour the serum into your Micro-Infusion device.</li></ol><p>If you’re mixing serums for your treatment, put back the rubber stopper on the vial to save the remaining serum for your next session!</p>",
+            "text": "<p>Our serums come sealed with aluminum to ensure the serum stays sterile for treatment.</p><p>[image]</p><p></p><ol><li>Firmly hold the ampoule bottle. Find the arrow on the cap lid and flip to open from the end where the arrow is located.</li><li>Once the seal has been broken, hold the cap and steadily bend the silver seal away from the serum ampoule until it almost snaps off.</li><li>Peel back the silver seal from around the top of the serum ampoule and dispose of it.</li><li>Remove the rubber stopper and pour the serum into your Micro-Infusion device.</li></ol><p>If youвЂ™re mixing serums for your treatment, put back the rubber stopper on the vial to save the remaining serum for your next session!</p>",
             "section_id": "",
             "image": "shopify://shop_images/faq-1.webp"
           }
@@ -563,7 +563,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I use any serum with my Micro-Infusion device?",
-            "text": "<p>Not all serums are suitable for Micro-Infusion. We have developed our potent serum ampoules that are perfect for Qure’s Micro-Infusion System. They are formulated to have low risk of irritation and with no fragrance.</p>",
+            "text": "<p>Not all serums are suitable for Micro-Infusion. We have developed our potent serum ampoules that are perfect for QureвЂ™s Micro-Infusion System. They are formulated to have low risk of irritation and with no fragrance.</p>",
             "section_id": ""
           }
         },
@@ -572,7 +572,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I clean the device?",
-            "text": "<p>Once you’ve finished stamping your way to brighter and plumper skin, follow the below cleaning instructions:</p><ul><li>Twist off the needle head with the cap attached and safely dispose.</li><li>Wash the chamber out with water and gentle cleanser.</li><li>Let the device air dry completely, on a clean surface, before packing away.</li><li>Open a brand new needle head packet and attach the needle head onto the device. Ensure hands are clean and don’t open the cap of the needle head.</li></ul>",
+            "text": "<p>Once youвЂ™ve finished stamping your way to brighter and plumper skin, follow the below cleaning instructions:</p><ul><li>Twist off the needle head with the cap attached and safely dispose.</li><li>Wash the chamber out with water and gentle cleanser.</li><li>Let the device air dry completely, on a clean surface, before packing away.</li><li>Open a brand new needle head packet and attach the needle head onto the device. Ensure hands are clean and donвЂ™t open the cap of the needle head.</li></ul>",
             "section_id": ""
           }
         }
@@ -588,7 +588,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Micro-Infusion System</h2>",
         "section_id": "Micro-Infusion System"
@@ -629,7 +629,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I customize my treatment?",
-            "text": "<p>On the LCD screen you’re able to select your desired treatment zone before starting the session. This means you aren’t locked into a single full-head mode. You can choose where you want the light therapy to focus.</p>",
+            "text": "<p>On the LCD screen youвЂ™re able to select your desired treatment zone before starting the session. This means you arenвЂ™t locked into a single full-head mode. You can choose where you want the light therapy to focus.</p>",
             "section_id": ""
           }
         },
@@ -656,7 +656,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long will it take before I start seeing results?",
-            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3–6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
+            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3вЂ“6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
             "section_id": ""
           }
         },
@@ -710,7 +710,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is it FDA-cleared?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet is FDA-cleared. </p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I–II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.</p>",
+            "text": "<p>Yes, the Q-Renew LLLT Helmet is FDA-cleared. </p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIaвЂ“V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of IвЂ“II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.</p>",
             "section_id": ""
           }
         }
@@ -732,7 +732,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Q-Renew LLLT Helmet</h2>",
         "section_id": "Q-Renew LLLT Helmet"
@@ -764,7 +764,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What should I do if I receive the wrong product?",
-            "text": "<p>If you received a product different from the one that you ordered, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal </a>and we’ll be sure to make this right!</p>",
+            "text": "<p>If you received a product different from the one that you ordered, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal </a>and weвЂ™ll be sure to make this right!</p>",
             "section_id": ""
           }
         }
@@ -776,7 +776,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Returns & Exchanges</h2>",
         "section_id": "Returns & Exchanges"
@@ -817,7 +817,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the credit card statement or PayPal statement name?",
-            "text": "<p>Please look out for “QURE SKIN” or “INSPIREBRANDS” charge on your credit card statement or PayPal account after you have placed your order. </p><p>If you’re not sure what charge description you should be looking for then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> </p>",
+            "text": "<p>Please look out for вЂњQURE SKINвЂќ or вЂњINSPIREBRANDSвЂќ charge on your credit card statement or PayPal account after you have placed your order. </p><p>If youвЂ™re not sure what charge description you should be looking for then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> </p>",
             "section_id": ""
           }
         }
@@ -830,7 +830,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Billing & Payments</h2>",
         "section_id": "Billing & Payments"
@@ -864,7 +864,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Warranty</h2>",
         "section_id": "Warranty"
@@ -886,8 +886,8 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "What does it mean to “customize” my Q-Rejuvalight Pro treatment?",
-            "text": "<p>The Q-Rejuvalight Pro Facewear is the world’s first customizable LED light therapy home device. You can personalize your treatments by selecting either the Pro-Aging or Anti-Breakout mode on 5 different facial areas (or even full face) via the Qure Skincare app.</p><p>Not everyone has the same concerns or skin issues that they want to Qure.</p><p>So, if you were wanting to target breakout concerns on your chin and nose, then you can program the Anti-Breakout treatment on those facial areas, while having the Pro-Aging treatment on the rest of your face like your forehead, eyes and cheeks.</p><p>It’s your own personalized LED light therapy treatment, that you can tailor to your own skin’s needs and concerns.</p><p>For more information on how to select your treatments on different facial areas, click the question mark icon on the top left hand corner of the treatment page of the app.</p>",
+            "heading": "What does it mean to вЂњcustomizeвЂќ my Q-Rejuvalight Pro treatment?",
+            "text": "<p>The Q-Rejuvalight Pro Facewear is the worldвЂ™s first customizable LED light therapy home device. You can personalize your treatments by selecting either the Pro-Aging or Anti-Breakout mode on 5 different facial areas (or even full face) via the Qure Skincare app.</p><p>Not everyone has the same concerns or skin issues that they want to Qure.</p><p>So, if you were wanting to target breakout concerns on your chin and nose, then you can program the Anti-Breakout treatment on those facial areas, while having the Pro-Aging treatment on the rest of your face like your forehead, eyes and cheeks.</p><p>ItвЂ™s your own personalized LED light therapy treatment, that you can tailor to your own skinвЂ™s needs and concerns.</p><p>For more information on how to select your treatments on different facial areas, click the question mark icon on the top left hand corner of the treatment page of the app.</p>",
             "section_id": ""
           }
         },
@@ -908,7 +908,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Qure Skincare App</h2>",
         "section_id": "Qure Skincare App"
@@ -922,7 +922,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Why is my Q-Rejuvalight Pro not turning on?",
-            "text": "<p>If your Q-Rejuvalight Pro Facewear is not turning on, follow these troubleshooting steps:</p><ul><li>Make sure the device is fully charged (you’ll see a blinking light when charging).</li><li>Remove the mask from the charging cable, as the mask cannot be used while plugged in.</li><li>Check that the USB-C charging cable is fully inserted when charging.</li></ul><p>Still nothing? Try a different outlet or charging cable to rule out charging issues.</p><p>If the Q-Rejuvalight Pro Facewear is fully charged and still does not turn on, please contact us and our team will help futher.</p>",
+            "text": "<p>If your Q-Rejuvalight Pro Facewear is not turning on, follow these troubleshooting steps:</p><ul><li>Make sure the device is fully charged (youвЂ™ll see a blinking light when charging).</li><li>Remove the mask from the charging cable, as the mask cannot be used while plugged in.</li><li>Check that the USB-C charging cable is fully inserted when charging.</li></ul><p>Still nothing? Try a different outlet or charging cable to rule out charging issues.</p><p>If the Q-Rejuvalight Pro Facewear is fully charged and still does not turn on, please contact us and our team will help futher.</p>",
             "section_id": ""
           }
         },
@@ -962,7 +962,7 @@
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "heading": "<h2>Troubleshooting</h2>",
         "section_id": "Troubleshooting"
