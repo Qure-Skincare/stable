@@ -44,7 +44,7 @@
       ],
       "name": "t:sections.n_contact-form.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Contact Us</h2><p>We are here to help!</p>",
         "show_contact_info": true
       }
@@ -53,7 +53,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<p><strong>Additional Customer Service </strong></p><p><a href=\"https://qureskincare.com/pages/faqs\">Frequently Asked Questions</a> | <a href=\"https://qureskincare.com/pages/returns-exchanges\">Returns and Exchanges</a></p>",
         "button_label": "",
