@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Q-Renew LLLT Helmet Creative Content Guide</h1>",
         "text": "",
@@ -27,7 +27,7 @@
       "type": "n_intro",
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>Discover how to make the most of the Qure Q-Renew LLLT Helmet Guide with our creative content guide.</strong></p><p>This brief will guide you in creating engaging content that highlights how our device improves hair growth and reduces thinning.</p>"
       }
     },
@@ -87,7 +87,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_YthwVW": {
@@ -106,7 +106,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Product Information",
@@ -130,7 +130,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Usage Instructions",
@@ -142,7 +142,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Product Claims",
@@ -166,7 +166,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": true,
         "heading": "Content Requirements",
@@ -204,7 +204,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Creative Direction",
@@ -224,25 +224,25 @@
         "text_slider_QrLQz4": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Daily Routine Integration</strong></p><p>Show how simple the 12-minute treatment is with a GRWM or nigh routine, where the Q-Renew Helmet is used in a relaxed setting, such as while reading, scrolling TikTok, etc. too emphasize its ease of use and convenience.</p><p>[note_grey]<strong>Hook:</strong></p><ul><li>“This helmet is the easiest part of my night routine… and the one part that’s actually working.”</li><li>“This is everything I do while my hair grows back…”</li></ul><p>[/note]</p>"
+            "text": "<p><strong>Daily Routine Integration</strong></p><p>Show how simple the 12-minute treatment is with a GRWM or nigh routine, where the Q-Renew Helmet is used in a relaxed setting, such as while reading, scrolling TikTok, etc. too emphasize its ease of use and convenience.</p><p>[note_grey]<strong>Hook:</strong></p><ul><li>“This helmet is the easiest part of my night routine... and the one part that's actually working.”</li><li>“This is everything I do while my hair grows back...”</li></ul><p>[/note]</p>"
           }
         },
         "text_slider_CkyYD9": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Tech & Innovation Highlight</strong></p><p>Present the Q-Renew Helmet as a cutting-edge beauty/wellness device with an unboxing or tech-demo style video. Draw attention to the 370 lights, LCD screen, adjustable fit, and wireless charging dock.</p><p>[note_grey]<strong>Hook:</strong></p><ul><li>“Unboxing the hair growth device that looks straight out of the future…”</li><li>“If Apple made a hair growth device, it would look like this.”</li></ul><p>[/note]</p>"
+            "text": "<p><strong>Tech & Innovation Highlight</strong></p><p>Present the Q-Renew Helmet as a cutting-edge beauty/wellness device with an unboxing or tech-demo style video. Draw attention to the 370 lights, LCD screen, adjustable fit, and wireless charging dock.</p><p>[note_grey]<strong>Hook:</strong></p><ul><li>“Unboxing the hair growth device that looks straight out of the future”</li><li>“If Apple made a hair growth device, it would look like this.”</li></ul><p>[/note]</p>"
           }
         },
         "text_slider_7KXdyw": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Confidence & Self-Care Routine</strong></p><p>Position hair growth as part of self-care and confidence building, talking about how investing in your hair is investing in your confidence. Pair the helmet with your other wellness/beauty rituals.</p><p>[note_grey]<strong>Hook:</strong>“For me, growing my hair back hasn’t just been about looks. It’s been about feeling like myself again, and that’s why I count it as part of my self-care routine.”[/note]</p>"
+            "text": "<p><strong>Confidence & Self-Care Routine</strong></p><p>Position hair growth as part of self-care and confidence building, talking about how investing in your hair is investing in your confidence. Pair the helmet with your other wellness/beauty rituals.</p><p>[note_grey]<strong>Hook:</strong>“For me, growing my hair back hasn't just been about looks. It's been about feeling like myself again, and that's why I count it as part of my self-care routine.”[/note]</p>"
           }
         },
         "text_slider_tBPeBn": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Expert/Authority-Driven Education</strong></p><p>Educate the audience on red light therapy and Low-Level Laser Therapy (LLLT) in simple, easy-to-understand terms. Break down how the light stimulates hair follicles, increases blood flow, and supports natural regrowth without using complex medical jargon. </p><p>[note_grey]<strong>Hook:</strong>“Did you know that red light therapy can stimulate follicles and support regrowth? Here’s how the Q-Renew Helmet makes it easy at home.”[/note]</p>"
+            "text": "<p><strong>Expert/Authority-Driven Education</strong></p><p>Educate the audience on red light therapy and Low-Level Laser Therapy (LLLT) in simple, easy-to-understand terms. Break down how the light stimulates hair follicles, increases blood flow, and supports natural regrowth without using complex medical jargon. </p><p>[note_grey]<strong>Hook:</strong>“Did you know that red light therapy can stimulate follicles and support regrowth? Here's how the Q-Renew Helmet makes it easy at home.”[/note]</p>"
           }
         }
       },
@@ -255,7 +255,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Content Angles & Ideas",
