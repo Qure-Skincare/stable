@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>We're rethinking skincare</h1>",
         "text": "<p>Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.</p>",
@@ -73,14 +73,14 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_our_story_intro": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -132,7 +132,7 @@
       ],
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "stats",
         "text": "",
         "button_label": "",
@@ -143,7 +143,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -159,7 +159,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "sm",
         "heading": "<h2>Feeling good in your skin is so much more than skin deep.</h2>",
         "text": "",
@@ -249,7 +249,7 @@
       ],
       "name": "t:sections.n_our-story-proven-results-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
@@ -293,14 +293,14 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_our_story_experts": {
       "type": "n_our-story-trusted-recommended",
       "name": "t:sections.n_our-story-trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
@@ -386,7 +386,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
