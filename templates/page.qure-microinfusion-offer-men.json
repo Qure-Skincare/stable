@@ -85,7 +85,7 @@
         "soldout": false,
         "button-label": "Get Smoother Skin",
         "button-url": "#purchase-form",
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_press_reviews_cxhHAa": {
@@ -120,7 +120,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>"
       }
     },
@@ -164,7 +164,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -179,7 +179,7 @@
       "type": "n_highlight",
       "name": "t:sections.n_highlight.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "green",
         "text": "ONLY FACIAL TREATMENTS YOUR SKIN NEEDS",
         "text_mobile": "Available until stocks last!"
@@ -250,7 +250,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
@@ -302,7 +302,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_video_slider_7NW4Eq": {
@@ -393,7 +393,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -402,7 +402,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -454,7 +454,7 @@
       ],
       "name": "t:sections.n_why-using.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
         "button_label": "buy now & SAVE UP TO 70%"
       }
@@ -463,7 +463,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office”.</em></p>",
@@ -528,7 +528,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -607,7 +607,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "BUY NOW SAVE UP TO 70%"
@@ -714,7 +714,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Typically a more hygienic option than re-usable at-home rollers when used as directed</h2><p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>"
       }
     },
@@ -802,7 +802,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
@@ -841,7 +841,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>See how quick and easy it is to useHow To Use</h2>",
         "image": "shopify://shop_images/mi-men-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-men-use-video-mob.webp",
@@ -853,7 +853,7 @@
       "type": "n_highlight",
       "name": "t:sections.n_highlight.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "dark",
         "text": "INCLUDED IN THE SYSTEM:",
         "text_mobile": "INCLUDED IN THE SYSTEM:"
@@ -976,7 +976,7 @@
       ],
       "name": "t:sections.n_science-backed.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "left_heading": "<h4>For Dark Spots</h4>",
         "right_heading": "<h4>For Wrinkles</h4>",
@@ -988,7 +988,7 @@
       "type": "n_guarantee",
       "name": "t:sections.n_guarantee.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "image": "shopify://shop_images/icon.webp",
         "heading": "<h2>Try it now with zero risk.<br/>Our 90-day money-back guarantee</h2>",
         "text": "<p>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.<br/><br/>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>"
@@ -1281,7 +1281,7 @@
       ],
       "name": "t:sections.n_should-know.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>What you should know for the best results</h2><p>The Qure Micro-Infusion System is designed with your safety in mind.Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimize the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.</p><p>Below are a few rules you should follow while using your Qure Micro-Infusion System:</p>",
         "button_label": "See Detailed Treatment Guide",
         "button_url": "https://querskin-brand.aronwebsolutions.com/page.sunil-micro-infusion-safety.html"
@@ -1367,7 +1367,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
