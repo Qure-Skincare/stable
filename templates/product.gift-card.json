@@ -34,7 +34,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "",
         "heading": "Qure Gift Card",
         "rating": true,
@@ -232,7 +232,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
@@ -290,7 +290,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -300,7 +300,7 @@
     "n_you_may_also_like_HZi1bC": {
       "type": "n_product-you-may-also-like",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       },
       "name": "t:sections.n_product-you-may-also-like.name"
     }
