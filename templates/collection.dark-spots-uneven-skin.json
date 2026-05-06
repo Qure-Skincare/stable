@@ -13,8 +13,8 @@
       "type": "n_hero-banner",
       "name": "t:sections.n_hero-banner.name",
       "settings": {
-        "use_own_file": true,
-        "modifier": "holidays",
+        "use_own_file": false,
+        "modifier": "none",
         "text": "<h1>Dark Spots & Hyperpigmentation</h1>",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
@@ -60,44 +60,28 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_breadcrumb_fXMjkJ": {
       "type": "n_breadcrumb",
       "name": "t:sections.n_breadcrumb.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_pills_nav_fXMjkJ": {
       "type": "n_pills-nav",
       "name": "t:sections.n_pills-nav.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_collection_fXMjkJ": {
       "type": "n_collection",
       "name": "t:sections.n_collection.name",
       "settings": {
-        "use_own_file": true
-      }
-    },
-    "n_base_section_zWkqBN": {
-      "type": "n_base-section",
-      "name": "t:sections.n_base-section.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "none",
-        "modifier_2": "none",
-        "background_color": "none",
-        "heading": "<h2>Save up to 55% on Exclusive Bundles</h2>",
-        "text": "<p>Everything your skin needs, bundled for less.</p><p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
-        "image": "shopify://shop_images/bundle_d5ea1950-0efe-439d-9833-c4e123bcdab1.webp",
-        "button_label": "Shop & Save 55%",
-        "button_url": "#",
-        "wistia_url": ""
+        "use_own_file": false
       }
     },
     "n_trusted_reviews_mRLHtt": {
@@ -124,7 +108,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "text": "<h6>Can't go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
             "product_text": "Anton uses...",
@@ -153,9 +137,9 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "text": "<h2>Results you'll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
       }
@@ -169,13 +153,13 @@
             "text": "<h5>Take The Quiz</h5><p>Then get a custom skincare plan, backed by science.</p>",
             "sub_text": "Only takes 60 seconds",
             "button_label": "Take The Quiz",
-            "button_url": ""
+            "button_url": "#"
           }
         },
         "take_quiz_sub_DfRXwD": {
           "type": "take_quiz",
           "settings": {
-            "text": "<p>Here’s your personalized skincare routine…</p>",
+            "text": "<p>Here's your personalized skincare routine...</p>",
             "sub_text": "",
             "button_label": "",
             "button_url": ""
@@ -188,8 +172,8 @@
       ],
       "name": "t:sections.n_take-quiz.name",
       "settings": {
-        "use_own_file": true,
-        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don’t have time for products that don’t work. We’ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
+        "use_own_file": false,
+        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don't have time for products that don't work. We'll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     }
   },
@@ -199,7 +183,6 @@
     "n_breadcrumb_fXMjkJ",
     "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
-    "n_base_section_zWkqBN",
     "n_trusted_reviews_mRLHtt",
     "n_take_quiz_DfRXwD"
   ]
