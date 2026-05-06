@@ -46,14 +46,15 @@
         "soldout": false,
         "button-label": "Buy One + Get One Free",
         "button-url": "#form-inside",
-        "approved": false
+        "approved": false,
+        "use_own_file": false
       }
     },
     "n_qure_filters_offer_quote_zqnAHh": {
       "type": "n_qure-filters-offer-quote",
       "name": "t:sections.n_qure-filters-offer-quote.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h3>“Unfiltered water may disturb the natural balance of skin flora, exacerbating conditions such as acne, eczema and dermatitis.”</h3><p> </p><p>Dr Gloria Lin, a board-certified dermatologist, in</p>",
         "image": "shopify://shop_images/newsweek_b464ea00-69e1-46c8-bb2b-79afbd4b65bf.webp"
       }
@@ -102,7 +103,7 @@
       ],
       "name": "t:sections.n_qure-filters-offer-meet-filters-peek-card-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>The 3 biggest skin and hair issues? Blame your water.</h2>",
         "text": "<p>And no amount of expensive products can change that. In fact, they could just make it worse.</p>"
       }
@@ -157,7 +158,7 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_text_ccFneR": {
@@ -192,7 +193,7 @@
       ],
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>More products won’t fix the real problem</h2><p>No product can fix what dirty water keeps damaging. Until you fix the water, you are just masking the problem... and pouring money down the drain.</p>",
         "button_label": "",
@@ -377,7 +378,7 @@
       ],
       "name": "t:sections.n_qure-filters-offer-meet-filters.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Meet The Qure Filters</h2><p>From hair to hands, protect your entire body from damaging chemicals and compounds with our unique skincare filtration system.</p>",
         "image": "shopify://shop_images/qr-filter_pc.webp"
       }
@@ -437,7 +438,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Clinically proven to improve skin hydration in just 4 weeks</h2><p>We conducted a independent user study on 30 participants to measure the influence on the level of skin hydration and appearance of wrinkles. Here’s what the results were:</p>"
       }
     },
@@ -491,7 +492,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Your transformation awaits</h2>",
         "button_label": "",
@@ -502,7 +503,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“How do you<em> reduce the things in your water that are causing issues</em> with your skin?</p><p>This Qure filter is incredible –<em> it’s the only filter I personally use</em> to [reduce] chlorine and anything else that’s going to make your water harsh for your skin.”</p>",
@@ -577,7 +578,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See why everyone's switching to filtered water</h2>"
       }
@@ -674,7 +675,7 @@
       ],
       "name": "t:sections.n_skin-deserves.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Your skin deserves Qure</h2><p>When your water is working against you, no product can keep up. Qure filters are designed with your skin and hair in mind. Here’s how Qure compares to what you’re using now.</p>"
       }
     },
@@ -780,7 +781,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
