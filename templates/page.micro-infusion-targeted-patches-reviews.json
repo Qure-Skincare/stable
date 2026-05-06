@@ -27,7 +27,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Trusted by doctors for healthier, radiant skin</h1>",
         "text": "",
@@ -90,7 +90,7 @@
       ],
       "name": "t:sections.n_pills-navigation.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "Filter by product",
         "sub_text": "Swipe for more"
       }
@@ -99,7 +99,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“To have Argireline in a very targeted patch is GENIUS; it's <em>a botox-like peptide</em> that really helps with fine lines”</p>",
         "video_image_cover": "shopify://shop_images/micro-infusion_72dcdf8b-ad2a-4827-a120-1b93d9911396.webp",
@@ -133,7 +133,7 @@
       ],
       "name": "t:sections.n_results-comparison-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
@@ -141,7 +141,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "background_color": "grey",
         "heading": "<h2>80 Serum-Enriches Micro-Darts for precise improvement</h2>",
@@ -195,7 +195,7 @@
       ],
       "name": "t:sections.n_expert-board.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Meet our board of advisors</h2>",
         "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
       }
