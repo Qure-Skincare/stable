@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Get started with the Neck & Décolletage LED System</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the system.</p>",
@@ -27,7 +27,7 @@
       "type": "n_intro",
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>The Qure Neck & Décolletage LED System</strong> uses LED light therapy to visibly firm, smooth, and brighten the delicate skin on your neck and chest. </p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
       }
     },
@@ -79,7 +79,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_step_bfgn4t": {
@@ -133,7 +133,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Quick Start Guide",
@@ -155,7 +155,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Charging Your Device",
@@ -166,7 +166,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Care & Maintenance",
@@ -178,7 +178,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Troubleshooting & Adjustments",
@@ -251,7 +251,7 @@
       ],
       "name": "t:sections.n_guide-faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "FAQs",
