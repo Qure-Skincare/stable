@@ -24,7 +24,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>500K+ Happy Customers</h1>",
         "text": "",
@@ -87,7 +87,7 @@
       ],
       "name": "t:sections.n_pills-navigation.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "Filter by product",
         "sub_text": "Swipe for more"
       }
@@ -160,7 +160,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none"
       }
     },
@@ -190,7 +190,7 @@
       ],
       "name": "t:sections.n_results-comparison-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     }
