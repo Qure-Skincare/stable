@@ -101,7 +101,7 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_how_to_use_9hzbK3": {
@@ -144,7 +144,7 @@
       ],
       "name": "t:sections.n_how-to-use.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "center",
         "heading": "<h2>Get compliment-worthy skin</h2>",
         "text": ""
@@ -245,7 +245,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Proof in Numbers</h2><p>During clinical studies on LED light therapy, users reported numerous benefits:</p>"
       }
     },
@@ -513,7 +513,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Thousands are out-glowing their insecurities</h2>",
         "button_label": "",
@@ -676,7 +676,7 @@
       ],
       "name": "Exclusive bundle",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "badge": "<p><strong>Mother's Day</strong> Offer</p>",
         "heading": "<p>Experience face and neck rejuvenation in one bundle</p>",
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
@@ -727,7 +727,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_comparison_Tyz6F4": {
@@ -831,7 +831,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>The beauty of clinical results from home - without the ‘clinical’ costs</h2><p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>"
       }
     },
@@ -870,7 +870,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mask-use-video.webp",
@@ -942,7 +942,7 @@
       ],
       "name": "t:sections.n_how-it-works.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>How it works</h2>"
       }
     },
@@ -950,7 +950,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -966,7 +966,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -982,7 +982,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Of all the LED masks we’ve tried, this is <em>the best on the market right now...</em> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, and <em>Qure makes it easy</em> to be consistent—which is what really drives results.”</p>",
@@ -1067,7 +1067,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -1076,7 +1076,7 @@
       "type": "n_page-led-mask-offer-2-across-image-banner",
       "name": "t:sections.n_page-led-mask-offer-2-across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Maximize Benefits with a FREE Neck & Décolletage LED System</h2>",
         "text": "<ul><li>Extend your treatment beyond the face for an all-over rejuvenated look</li><li>Visibly smooth fine lines, improve skin texture, and support firmness</li><li>Helps reduce the look of dark spots and improve uneven tone for a more radiant complexion</li></ul>",
         "rating_text": "<p><strong>97%</strong> customer satisfaction rate</p>",
@@ -1093,7 +1093,7 @@
       "type": "n_page-led-mask-offer-2-faq",
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "sticky_cta_xhjAY4": {
