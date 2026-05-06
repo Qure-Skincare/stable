@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>The only FDA-cleared LED light therapy mask with an app.</h1>",
         "text": "",
@@ -47,7 +47,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>An app for out-of-this world skincare</h2><p>Your skin is unique, and your treatment should reflect that. The Qure Skincare App gives you full control of your clinical-grade LED sessions, all from home. No clinics, no waiting rooms, just personalized treatment when you need it.</p>",
         "button_label": "",
@@ -58,7 +58,7 @@
       "type": "n_app-features",
       "name": "t:sections.n_app-features.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       },
       "blocks": {
         "slide_iRQdH8": {
@@ -101,7 +101,7 @@
       "type": "n_press-reviews",
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       },
@@ -154,7 +154,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
