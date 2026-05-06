@@ -33,7 +33,7 @@
       ],
       "name": "t:sections.n_mi-faq-page-hero-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h1>Enjoy Smoother, Healthier Skin at Home in Just 5 Minutes with Our Micro-Infusion System</h1>",
         "text": "<p>Created In Partnership With <strong>Leading Dermatologists</strong></p>",
         "image": "shopify://shop_images/micro_infusion-banner.webp",
@@ -44,7 +44,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>What Is the Qure Micro-Infusion System?</h2>",
@@ -55,7 +55,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>How Fast Can I See Results?</h2>",
@@ -66,7 +66,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "img-to-left",
         "updated_info": false,
         "heading": "<h2>How Does the Qure Micro-Infusion System Work?</h2>",
@@ -78,7 +78,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>Can I Use the Qure Micro-Infusion System If I Have Sensitive Skin?</h2>",
@@ -120,7 +120,7 @@
       ],
       "name": "t:sections.n_mi-faq-page-set-up-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Treatment</h2><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
@@ -131,7 +131,7 @@
       "type": "n_mi-faq-page-qa-img-mobile",
       "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "heading": "<h2>Will the Qure Micro-Infusion System Work for Wrinkles?</h2>",
         "text": "<p>Absolutely! The Qure Micro-Infusion System is designed to be <strong>gentle and effective</strong> for most skin types, including sensitive skin.</p><p>We know that everyone's skin is unique, and that's why our device is crafted to minimize irritation while maximizing results.</p><p>The 24k gold plated micro-needles are <strong>designed to be virtually painless,</strong> and our serums are formulated to soothe and nourish even the most delicate skin.</p><p>So, if you have sensitive skin, you can confidently use our Micro-Infusion System to achieve a <strong>healthier, more radiant complexion.</strong></p>",
@@ -143,7 +143,7 @@
       "type": "n_mi-faq-page-qa-img-mobile",
       "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "img-to-top",
         "heading": "<h2>Will the Qure Micro-Infusion System Work for Dark Spots and Hyperpigmentation?</h2>",
         "text": "<p>Yes, it will! The Qure Micro-Infusion System is specifically designed to address a variety of skin concerns, including dark spots and hyperpigmentation.</p><p>Our micro-needling process, combined with our rejuvenating serum, <strong>helps to penetrate deeply into the skin, reducing pigmentation</strong> and evening out skin tone.</p><p>The system delivers active ingredients directly to the areas where they are needed most, promoting a clearer, more radiant complexion.</p><p>With consistent use, you\u2019ll notice a <strong>significant reduction in dark spots</strong> and a more even skin tone, helping you to reveal your <strong>natural glow.</strong></p>",
@@ -155,7 +155,7 @@
       "type": "n_mi-faq-page-qa-img-mobile",
       "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "img-to-top",
         "heading": "<h2>How Much Does the Qure Micro-Infusion System Cost?</h2>",
         "text": "<p>At Qure, we are dedicated to making advanced skincare solutions accessible and affordable for everyone.</p><p>We\u2019ve priced our Micro-Infusion System competitively because we understand that quality skincare shouldn\u2019t break the bank.</p><p>Professional treatments can be costly and time-consuming, but with Qure, <strong>you can achieve similar results at home for a fraction of the cost.</strong></p><p>The Qure Micro-Infusion System, which includes the device and a 6-month supply of serums, typically retails at $713.</p><p>However, for a limited time, you can get it for just $219 when you choose our best value bundle, <strong>saving you 70%.</strong></p><p>We believe everyone deserves to look and feel their best without the high costs of professional treatments.</p>",
@@ -167,7 +167,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "img-to-left",
         "updated_info": false,
         "heading": "<h2>Where Can I Purchase the Qure Micro-Infusion System?</h2>",
@@ -179,7 +179,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>Is the Qure Micro-Infusion System Safe?</h2>",
@@ -190,7 +190,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>What If I Am Not Happy With My Purchase?</h2>",
@@ -201,7 +201,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>Try it Yourself And Enjoy Simple Skincare Created To Support Real Women Look And Feel Their Best.</h2>",
@@ -229,7 +229,7 @@
       ],
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
         "heading": "<h2>Flexible Payment Plans</h2>",
@@ -648,7 +648,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you\u2019ll see with your own eyes</h2>",
         "button_label": "Check Availability",
@@ -659,7 +659,7 @@
       "type": "n_mi-faq-page-qa",
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "updated_info": true,
         "heading": "<h6>Update 09/21/25</h6>",
