@@ -40,7 +40,7 @@
       ],
       "name": "t:sections.n_hero-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h1>5 Reasons Micro-Infusion Is the Smarter Alternative to Expensive Creams</h1><p><strong>Finally:</strong> A painless, sterile, at-home treatment that targets wrinkles and dark spots… even when skincare stops working.</p>",
         "image": "shopify://shop_images/micro-infusion-listicle-hero.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-listicle-hero-mob.webp",
@@ -55,7 +55,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<p>If you've seen board-certified dermatologists talking about Micro-Infusion, you're not imagining it.</p><p>This treatment is quickly becoming the go-to alternative to expensive creams because it delivers active ingredients past the skin barrier - without the waste, waiting, or watching your serums evaporate on the surface.</p>",
         "button_label": "",
@@ -66,7 +66,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -81,7 +81,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -97,7 +97,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -113,7 +113,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -129,7 +129,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -145,7 +145,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Stop Settling for Surface-Level Results</h2><p>If you've been frustrated by creams that don't work, serums that don't sink in, or routines that drain your wallet without transforming your skin, it's time to go deeper.</p><p>Qure's Micro-Infusion System delivers clinical-quality results in the comfort of your home—in just 5 minutes.</p>",
         "button_label": "",
@@ -481,7 +481,7 @@
       ],
       "name": "t:sections.n_reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "People Around The World Are Rediscovering Their Natural Glow."
       }
     },
