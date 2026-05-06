@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Easy Returns &amp; Exchanges</h1>",
         "text": "<p>Shop with confidence at Qure</p>",
@@ -27,7 +27,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -43,7 +43,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -95,7 +95,7 @@
       ],
       "name": "t:sections.n_returns-exchanges-how-to-use.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>How to return or exchange</h2>",
         "button_label": "Start a return",
         "button_url": "https://qureskincare.return.richpanel.com/create"
@@ -136,7 +136,7 @@
       ],
       "name": "t:sections.n_contact-form.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Have questions?</h2><p>If you have a question about your order please contact our customer service team by visiting our <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>.<br/>For more information on our warranty please visit our warranty policy.</p>",
         "show_contact_info": false
       }
@@ -145,7 +145,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "sm",
         "heading": "<h2>Feeling good in your skin is so much more than skin deep.</h2>",
         "text": "",
@@ -195,7 +195,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
@@ -237,7 +237,7 @@
       ],
       "name": "t:sections.n_returns-exchanges-tiles-group.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>More Help at Your Fingertips</h2>"
       }
     }
