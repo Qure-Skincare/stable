@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Q-Rejuvalight Pro Creative Content Guide</h1>",
         "text": "",
@@ -39,7 +39,7 @@
       ],
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
       }
     },
@@ -107,7 +107,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_AiUfdM": {
@@ -126,7 +126,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Product Information",
@@ -215,7 +215,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Usage Instructions",
@@ -248,7 +248,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Treatment Modes",
@@ -259,7 +259,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Product Claims & User Study",
@@ -283,7 +283,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": true,
         "heading": "Content Requirements",
@@ -321,7 +321,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Creative Direction",
@@ -407,7 +407,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Content Examples",
@@ -419,7 +419,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "grey",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Of all the LED masks we’ve tried, <em>this is the best on the market right now...</em> It didn't lose in any category...”</p>",
