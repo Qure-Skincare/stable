@@ -33,7 +33,7 @@
       ],
       "name": "t:sections.n_hero-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "image": "shopify://shop_images/Image_44.webp",
         "image_mobile": "shopify://shop_images/image_3_1.webp",
@@ -88,7 +88,7 @@
       ],
       "name": "t:sections.n_expert-board.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Trusted and Recommended by Skin Experts</h2>",
         "text": ""
       }
@@ -97,7 +97,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
@@ -152,7 +152,7 @@
       ],
       "name": "t:sections.n_achievement-goals.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>The results are crystal clear</h2>"
       }
     },
@@ -230,7 +230,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -364,7 +364,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "buy now & SAVE up to 70%"
@@ -454,7 +454,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Give yourself a Clinic Quality glow up without the Clinical Prices</h2>"
       }
     },
@@ -493,7 +493,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-20-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-20-use-video-mob.webp",
@@ -804,7 +804,7 @@
       ],
       "name": "t:sections.n_mi-new.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Built for real results</h2>",
         "image": "shopify://shop_images/mi-new.webp",
         "button_label": "Shop Now"
@@ -858,7 +858,7 @@
       ],
       "name": "t:sections.n_why-using.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
         "button_label": "buy now &amp; SAVE UP TO 70%"
       }
@@ -943,7 +943,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
