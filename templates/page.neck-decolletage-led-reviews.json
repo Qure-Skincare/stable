@@ -27,7 +27,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero",
         "heading": "<h1>Trusted by doctors for healthier, radiant skin</h1>",
         "text": "",
@@ -90,7 +90,7 @@
       ],
       "name": "t:sections.n_pills-navigation.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "Filter by product",
         "sub_text": "Swipe for more"
       }
@@ -99,7 +99,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"LED light targets fibroblasts to <em>increase collagen production</em> and has anti-aging benefits especially if you are seeing wrinkles and lines on your neck...\"</p>",
@@ -162,7 +162,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -202,7 +202,7 @@
       ],
       "name": "t:sections.n_results-comparison-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Clinically proven results you can see</h2>"
       }
     },
@@ -210,7 +210,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
@@ -266,7 +266,7 @@
       ],
       "name": "t:sections.n_expert-board.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Meet our board of advisors</h2>",
         "text": "<p>At Qure Skincare, we are proud to have a team of esteemed Dermatologists guiding our mission to deliver high-quality skincare solutions.</p>"
       }
