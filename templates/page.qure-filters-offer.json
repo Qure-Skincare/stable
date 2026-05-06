@@ -46,7 +46,8 @@
         "soldout": false,
         "button-label": "Buy One + Get One Free",
         "button-url": "#form-inside",
-        "approved": false
+        "approved": false,
+        "use_own_file": false
       }
     },
     "n_qure_filters_offer_quote_zqnAHh": {
