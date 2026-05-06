@@ -65,7 +65,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
@@ -118,7 +118,7 @@
       ],
       "name": "t:sections.n_why-using.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "",
         "button_label": "",
@@ -129,7 +129,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
@@ -196,7 +196,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>No hype, just evidence</h2><p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 treatments.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>"
       }
     },
@@ -240,7 +240,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_trusted_reviews_mRLHtt": {
@@ -296,7 +296,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -338,7 +338,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
@@ -449,7 +449,7 @@
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
@@ -457,7 +457,7 @@
       "type": "n_product-you-may-also-like",
       "name": "t:sections.n_product-you-may-also-like.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     }
   },
