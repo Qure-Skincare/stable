@@ -14,7 +14,7 @@
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "holidays",
+        "modifier": "none",
         "text": "<h1>Fine Lines & Wrinkles</h1>",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
@@ -82,22 +82,6 @@
       "name": "t:sections.n_collection.name",
       "settings": {
         "use_own_file": false
-      }
-    },
-    "n_base_section_zWkqBN": {
-      "type": "n_base-section",
-      "name": "t:sections.n_base-section.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "modifier_2": "none",
-        "background_color": "none",
-        "heading": "<h2>Save up to 55% on Exclusive Bundles</h2>",
-        "text": "<p>Everything your skin needs, bundled for less.</p><p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
-        "image": "shopify://shop_images/bundle_d5ea1950-0efe-439d-9833-c4e123bcdab1.webp",
-        "button_label": "Shop & Save 55%",
-        "button_url": "#",
-        "wistia_url": ""
       }
     },
     "n_trusted_reviews_mRLHtt": {
@@ -199,7 +183,6 @@
     "n_breadcrumb_fXMjkJ",
     "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
-    "n_base_section_zWkqBN",
     "n_trusted_reviews_mRLHtt",
     "n_take_quiz_DfRXwD"
   ]
