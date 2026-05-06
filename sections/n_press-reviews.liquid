@@ -13,12 +13,15 @@
             class="c-swiper"
             data-swiper-thumbs=".press-reviews .c-swiper-thumbs"
             data-swiper='{
+            {% if section.settings.slide == 'one-slide' %}
+                "slidesPerView": 1
+            {% else %}
                 "slidesPerView": 1,
                 "spaceBetween": 16,
                 "loop": true,
                 "autoplay": {
                 "delay": 5000
-                }
+                }{% endif %}
             }'>
             <div class="swiper-wrapper">
                 {% for block in section.blocks %}
@@ -35,13 +38,16 @@
         <div
             class="c-swiper c-swiper-thumbs"
             data-swiper='{
+            {% if section.settings.slide == 'one-slide' %}
+                "slidesPerView": 1
+            {% else %}
                 "slidesPerView": 3,
                 "spaceBetween": 30,
                 "breakpoints": {
                     "992": {
                         {{ section.settings.settings }}
                     }
-                }
+                }{% endif %}
             }'>
             <div class="swiper-wrapper">
                 {% for block in section.blocks %}
@@ -78,6 +84,22 @@
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
+        },
+        {
+            "type": "select",
+            "id": "slide",
+            "label": "t:common.slide",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "one-slide",
+                    "label": "t:sections.n_press-reviews.settings.one-slide"
+                }
+            ]
         },
         {
             "type": "text",

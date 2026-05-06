@@ -157,6 +157,7 @@
         "accordion": "Accordion",
         "accordion-image": "Accordion image",
         "slider": "Slider",
+        "slide": "Slide",
         "text-slider": "Text slider",
         "video-slider": "Video slider",
         "carousel": "Carousel",
@@ -653,7 +654,10 @@
             "name": "Expert reviews"
         },
         "n_press-reviews": {
-            "name": "Press reviews"
+            "name": "Press reviews",
+            "settings": {
+                "one-slide": "One slide"
+            }
         },
         "n_highlight": {
             "name": "Highlight",

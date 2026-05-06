@@ -111,7 +111,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "MICRO-INFUSION DART PATCHES",
         "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,
@@ -423,7 +423,7 @@
           "type": "image_with_text",
           "settings": {
             "text": "<h4>\"This helps bring life and radiance to your eyes, the focal point of your face.\"</h4>",
-            "image": "shopify://shop_images/vogue.webp"
+            "image": "shopify://shop_images/vogue-black.svg"
           }
         }
       },
@@ -432,16 +432,16 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
-        "settings": "\"spaceBetween\": 80"
+        "slide": "one-slide"
       }
     },
     "n_base_section_VwYqRn": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -500,7 +500,7 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>No hype, just evidence</h2><p>In an independent study of 30 subjects over 4 weeks of use, participants' skin was measured and showed a visible improvement after just one month.<br/><br/><em>Tested by an independent lab, compiled by Regulatory Consultants</em></p>"
       }
     },
@@ -652,7 +652,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
@@ -666,24 +666,24 @@
           "type": "image_with_text",
           "settings": {
             "text": "<h3>Target</h3><p>80 micro-darts painlessly reach below the surface to target the look of fine lines and dullness. </p>",
-            "image": "shopify://shop_images/Img_43.webp",
-            "image_mobile": "shopify://shop_images/1_7.webp"
+            "image": "shopify://shop_images/patches-1.webp",
+            "image_mobile": "shopify://shop_images/patches-1-mob.webp"
           }
         },
         "image_with_text_tiiDVA": {
           "type": "image_with_text",
           "settings": {
             "text": "<h3>Absorb</h3><p>The micro-darts gradually dissolve upon contact, allowing the serum to be absorbed for plumper-looking skin.</p>",
-            "image": "shopify://shop_images/a-2.webp",
-            "image_mobile": "shopify://shop_images/a-2-m.webp"
+            "image": "shopify://shop_images/patches-2.webp",
+            "image_mobile": "shopify://shop_images/patches-2-mob.webp"
           }
         },
         "image_with_text_MXDgh8": {
           "type": "image_with_text",
           "settings": {
             "text": "<h3>Finish</h3><p>After 2 hours, the skin is left looking smoother and more radiant.</p>",
-            "image": "shopify://shop_images/Img_17.png",
-            "image_mobile": "shopify://shop_images/1_2.png"
+            "image": "shopify://shop_images/patches-3.webp",
+            "image_mobile": "shopify://shop_images/patches-3-mob.webp"
           }
         }
       },
@@ -694,7 +694,7 @@
       ],
       "name": "t:sections.n_how-to-use.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "heading": "<h2>Targeted ingredients, thoughtfully applied</h2>",
         "text": "<p>Ultra-fine, serum-infused micro-darts help apply ingredients in a precise, targeted way. The lightweight design allows the patch to sit comfortably on the skin while the formula is released over time for optimal contact.</p>"
@@ -748,7 +748,7 @@
       ],
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "grey",
@@ -795,7 +795,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy they are to use</h2>",
         "image": "shopify://shop_images/patches-use-video.webp",
@@ -845,7 +845,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_comparison_r4PB3k": {
@@ -935,7 +935,7 @@
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Not your ordinary eye patches</h2>"
       }
     },
@@ -1027,7 +1027,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>"
       }
@@ -1084,7 +1084,7 @@
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Skin-replenishing, science-backed ingredients</h2>"
       }
     },
@@ -1092,7 +1092,7 @@
       "type": "n_text",
       "name": "t:sections.n_text.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
@@ -1168,7 +1168,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
