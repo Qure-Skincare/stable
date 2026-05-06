@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Shower Filter Creative Content Guide</h1>",
         "text": "",
@@ -39,7 +39,7 @@
       ],
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>Discover how to make the most of the Qure Shower Filter with our creative content guide</strong></p><p>This brief will help you craft compelling content that highlights how our innovative filter reduces skin-irritating contaminants, supports clearer, more hydrated skin.</p><p>It enhances the effectiveness of every step in your skincare routine, and is backed by a lifetime warranty.</p>"
       }
     },
@@ -107,7 +107,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_a3bghQ": {
@@ -126,7 +126,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Product Information",
@@ -198,7 +198,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Installation Guide",
@@ -209,7 +209,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Product Claims & User Study",
@@ -233,7 +233,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": true,
         "heading": "Content Requirements",
@@ -271,7 +271,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Creative Direction",
@@ -322,7 +322,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Content Angles & Ideas",
@@ -406,7 +406,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Content Examples",
@@ -418,7 +418,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "grey",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Throughout my life…living in Wilmington, [my] skin was great. Then I… move to Charlotte and… every week my skin would get irritated especially after showering. Even my hair wouldn't cooperate. I was convinced it was the water I was exposed to.</p><p>Turns out, <em>there's an overwhelming amount of data that the water hardness could affect your skin</em>.”</p>",
