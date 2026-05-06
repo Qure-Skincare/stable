@@ -325,7 +325,7 @@
       ],
       "name": "t:sections.faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",
