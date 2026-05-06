@@ -13,7 +13,7 @@
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Shower Filter Guide</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before installing and using your Qure&nbsp;Shower Filter.</p>",
@@ -39,7 +39,7 @@
       ],
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p><strong>The Qure Shower Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
       }
     },
@@ -115,7 +115,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_step_7M7FkN": {
@@ -175,7 +175,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "How To Install",
@@ -231,7 +231,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "How To Replace The Filter",
@@ -294,7 +294,7 @@
       ],
       "name": "t:sections.n_guide-included-box.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "What's Included In The Box",
@@ -337,7 +337,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Water Mode Selection",
@@ -348,7 +348,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Care & Maintenance",
@@ -360,7 +360,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Troubleshooting & Adjustments",
@@ -372,7 +372,7 @@
       "type": "n_guide-content",
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Warranty Information",
@@ -421,7 +421,7 @@
       ],
       "name": "t:sections.n_guide-faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "FAQs",
