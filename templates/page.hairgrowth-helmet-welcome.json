@@ -41,7 +41,7 @@
       ],
       "name": "t:sections.n_guide-welcome.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Welcome to Qure!</h2>",
         "wistia_url": "ttfepq4bot"
       }
@@ -50,7 +50,7 @@
       "type": "n_guide-base-info",
       "name": "t:sections.n_guide-base-info.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<p>Enjoy peace of mind with our 30 day money-back guarantee.</p>",
         "button_label": "Learn More",
         "button_url": "https://qureskincare.com/pages/returns-exchanges"
