@@ -15,7 +15,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
-        "heading": "<h1>Get started with the QвЂ‘RenewВ LLLT Helmet</h1>",
+        "heading": "<h1>Get started with the Q‑Renew LLLT Helmet</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the device.</p>",
         "image": "shopify://shop_images/helmet_banner.webp",
         "image_mobile": "shopify://shop_images/helmet_banner_mob.webp",
@@ -41,7 +41,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
-        "text": "<p><strong>The Q-Renew LLLT Helmet</strong>В is designed to support you in your journey toward fuller, healthier-looking hair. Whether you're just beginning your routine or maintaining results, this device fits seamlessly into your lifestyle.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
+        "text": "<p><strong>The Q-Renew LLLT Helmet</strong> is designed to support you in your journey toward fuller, healthier-looking hair. Whether you're just beginning your routine or maintaining results, this device fits seamlessly into your lifestyle.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
       }
     },
     "n_guide_menu_EbHdME": {
@@ -132,7 +132,7 @@
         "active": true,
         "must_read": false,
         "heading": "Quick Start Guide",
-        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>Ready to begin? To get started with your first treatment, you'll need the following:</p><ul><li>Q-Renew LLLT Helmet</li><li>Charging Base (provided)</li><li>USB-C Charging Cable (provided)</li></ul>"
+        "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>Ready to begin? To get started with your first treatment, you’ll need the following:</p><ul><li>Q-Renew LLLT Helmet</li><li>Charging Base (provided)</li><li>USB-C Charging Cable (provided)</li></ul>"
       }
     },
     "n_guide_content_image_block_JXe8LY": {
@@ -154,7 +154,7 @@
         "active": false,
         "must_read": false,
         "heading": "Charging Your Device",
-        "text": "<h2>Charging Your Device</h2><p>[image]</p><p>Connect the included USB-C cable to the charging base and plug it into a 5V power adapter (not included).</p><p>Tap the LCD screen to check charging progress.</p><p>Full charge time is approximately 4 hours.</p><ul><li>The device will not operate while charging.</li><li>Ensure all ports are completely dry before charging.</li></ul><p>Tips to maximize battery life:</p><ul><li>Avoid leaving your device charging for long periods of time.</li><li>Avoid letting the battery completely run out.</li><li>Do not use your device while it's connected to the charger.</li></ul>"
+        "text": "<h2>Charging Your Device</h2><p>[image]</p><p>Connect the included USB-C cable to the charging base and plug it into a 5V power adapter (not included).</p><p>Tap the LCD screen to check charging progress.</p><p>Full charge time is approximately 4 hours.</p><ul><li>The device will not operate while charging.</li><li>Ensure all ports are completely dry before charging.</li></ul><p>Tips to maximize battery life:</p><ul><li>Avoid leaving your device charging for long periods of time.</li><li>Avoid letting the battery completely run out.</li><li>Do not use your device while it’s connected to the charger.</li></ul>"
       }
     },
     "n_guide_content_EgcRqf": {
@@ -177,7 +177,7 @@
         "active": false,
         "must_read": false,
         "heading": "Troubleshooting & Adjustments",
-        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don't worry, most issues are quick to solve.</p><h6>Device is not turning on</h6><ul><li>Ensure the charging cable is securely connected to the power outlet.</li><li>Ensure the charging cable is securely connected to the device and charge it fully.</li><li>Try a different power outlet.</li><li>Press and hold the on/off button for at least one second.</li></ul><p>[hr]</p><h6>Device is turning off too early</h6><p>The battery level may be too low - charge the product fully and try again.</p><p>[hr]</p><h6>Something else?</h6><p>DO NOT attempt to investigate or modify the product. It contains no serviceable parts.</p><p>If the issue persists, please contact Qure Support atВ <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>В for further assistance.</p>",
+        "text": "<h2>Troubleshooting & Adjustments</h2><p>Having trouble? Don’t worry, most issues are quick to solve.</p><h6>Device is not turning on</h6><ul><li>Ensure the charging cable is securely connected to the power outlet.</li><li>Ensure the charging cable is securely connected to the device and charge it fully.</li><li>Try a different power outlet.</li><li>Press and hold the on/off button for at least one second.</li></ul><p>[hr]</p><h6>Device is turning off too early</h6><p>The battery level may be too low — charge the product fully and try again.</p><p>[hr]</p><h6>Something else?</h6><p>DO NOT attempt to investigate or modify the product. It contains no serviceable parts.</p><p>If the issue persists, please contact Qure Support at <a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a> for further assistance.</p>",
         "slides_per_view": ""
       }
     },
@@ -208,15 +208,15 @@
         "faq_item_KxNJg7": {
           "type": "faq_item",
           "settings": {
-            "heading": "It won't turn on - what do I do?",
-            "text": "<p>Ensure it's fully charged, the cable is secure, and press the Q button for at least 1 second.</p>"
+            "heading": "It won’t turn on — what do I do?",
+            "text": "<p>Ensure it’s fully charged, the cable is secure, and press the Q button for at least 1 second.</p>"
           }
         },
         "faq_item_JYybFJ": {
           "type": "faq_item",
           "settings": {
             "heading": "It turns off during use?",
-            "text": "<p>The battery may be low - recharge fully and try again.</p>"
+            "text": "<p>The battery may be low — recharge fully and try again.</p>"
           }
         },
         "faq_item_ENEWkj": {
