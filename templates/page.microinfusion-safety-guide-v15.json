@@ -1,0 +1,498 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+    "sections": {
+      "n_across_image_banner_uJpq01": {
+        "type": "n_across-image-banner",
+        "blocks": {
+          "image_MaYYNQ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-bottles-15.webp"
+            }
+          }
+        },
+        "block_order": [
+          "image_MaYYNQ"
+        ],
+        "name": "t:sections.n_across-image-banner.name",
+        "settings": {
+          "use_own_file": false,
+          "modifier": "hero_reverse",
+          "heading": "<h1>Get started with Micro-Infusion </h1>",
+          "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read this guideline carefully before proceeding with Micro-Infusion treatment.</p>",
+          "image": "shopify://shop_images/micro-infusion-banner-15.webp",
+          "image_mobile": "shopify://shop_images/micro-infusion-banner-mob-15.webp",
+          "button_label": "",
+          "button_url": ""
+        }
+      },
+      "n_intro_xbgVRU": {
+        "type": "n_intro",
+        "blocks": {
+          "wistia_video_cGebjV": {
+            "type": "wistia_video",
+            "settings": {
+              "wistia_url": "6de5pg0r6e",
+              "image": "shopify://shop_images/how_to_v15.webp"
+            }
+          }
+        },
+        "block_order": [
+          "wistia_video_cGebjV"
+        ],
+        "name": "t:sections.n_intro.name",
+        "settings": {
+          "use_own_file": false,
+          "text": "<p><strong>Your new Qure Micro-Infusion device</strong> delivers targeted ingredients deep below the surface, helping reduce the look of fine lines, brighten tone, and boost your natural glow.</p><p>This guide will walk you through every step so you can get glowing results safely and confidently.</p>"
+        }
+      },
+      "n_guide_menu_48HGcg": {
+        "type": "n_guide-menu",
+        "blocks": {
+          "menu_item_nMcfzX": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Quick Start Guide",
+              "must_read": false
+            }
+          },
+          "menu_item_LHdFrN": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Learn About Your Device",
+              "must_read": false
+            }
+          },
+          "menu_item_c6fikQ": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Serum Ingredients & Information",
+              "must_read": false
+            }
+          },
+          "menu_item_wL93W7": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Where to Use",
+              "must_read": false
+            }
+          },
+          "menu_item_u8Y20n": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Schedule & Set Reminders",
+              "must_read": false
+            }
+          },
+          "menu_item_bynieX": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Post-Treatment Care & Tips",
+              "must_read": false
+            }
+          },
+          "menu_item_PdwHQi": {
+            "type": "menu_item",
+            "settings": {
+              "item": "Safety Precautions",
+              "must_read": false
+            }
+          },
+          "menu_item_E7dJBn": {
+            "type": "menu_item",
+            "settings": {
+              "item": "FAQs",
+              "must_read": false
+            }
+          }
+        },
+        "block_order": [
+          "menu_item_nMcfzX",
+          "menu_item_LHdFrN",
+          "menu_item_c6fikQ",
+          "menu_item_wL93W7",
+          "menu_item_u8Y20n",
+          "menu_item_bynieX",
+          "menu_item_PdwHQi",
+          "menu_item_E7dJBn"
+        ],
+        "name": "t:sections.n_guide-menu.name",
+        "settings": {
+          "use_own_file": false
+        }
+      },
+      "n_guide_content_step_bfgn4t": {
+        "type": "n_guide-content-step",
+        "blocks": {
+          "step_by_step_p98rhw": {
+            "type": "step_by_step",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-15-step-1.webp",
+              "text": "<h6>Step 1</h6><p>Cleanse your face thoroughly to remove all traces of makeup and lotions. Pat dry.</p><p>Spritz our <a href=\"#\" title=\"#\">Dermal Mist</a> to refresh and prepare your skin further and wait for it to dry before beginning.</p>"
+            }
+          },
+          "step_by_step_rRiUhK": {
+            "type": "step_by_step",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-15-step-2.webp",
+              "text": "<h6>Step 2</h6><p>Twist off the cap of the serum vial and screw on the sterile needle head.</p><p>Hold the device upside down for 1-2 minutes to let the serum flow into the needle head and saturate the area around the needles.</p>"
+            }
+          },
+          "step_by_step_9bwbiE": {
+            "type": "step_by_step",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-15-step-3.webp",
+              "text": "<h6>Step 3</h6><p>Remove the cap and stamp gently across your face using light pressure.</p><p>[note_green]<strong>Tip:</strong> Do not apply too much pressure! The needles are designed to be gentle on your skin.[/note]</p>"
+            }
+          },
+          "step_by_step_pzjKh4": {
+            "type": "step_by_step",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-15-step-4.webp",
+              "text": "<h6>Step 4</h6><p>Work section by section, repeating each area 2-3 times. </p><p>[note_green]<strong>Tip:</strong> Each time you stamp, overlap the previous stamp halfway to ensure each area of the face is stamped at least twice.[/note]</p>"
+            }
+          },
+          "step_by_step_XqWUJp": {
+            "type": "step_by_step",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-15-step-5.webp",
+              "text": "<h6>Step 5</h6><p>When stamping, ensure that the serum remains at the needle head. If the serum does not appear around the needles, tilt the device upward or lean your head back slightly to help the serum flow.</p>"
+            }
+          },
+          "step_by_step_jtjmU9": {
+            "type": "step_by_step",
+            "settings": {
+              "image": "shopify://shop_images/micro-infusion-15-step-6.webp",
+              "text": "<h6>Step 6</h6><p>When finished, carefully dispose of the serum vial and needle head. </p><p>[note_green]<strong>Tip:</strong> Do not reuse needle heads - even if it looks clean. It is designed for one treatment only.[/note]</p>"
+            }
+          },
+          "wistia_video_CgPRiF": {
+            "type": "wistia_video",
+            "settings": {
+              "wistia_url": "6de5pg0r6e",
+              "image": "shopify://shop_images/how_to_v15.webp"
+            }
+          },
+          "quote_WEMwW4": {
+            "type": "quote",
+            "settings": {
+              "style": "blue",
+              "text": "<p><strong>After your treatment:</strong></p><ul><li>Apply gentle, hydrating skincare if you need it.</li><li>Avoid using makeup or active ingredients (like retinoids or acids) for at least 24 hours.</li><li>Avoid heat, sweating, and direct sun.</li></ul>"
+            }
+          }
+        },
+        "block_order": [
+          "step_by_step_p98rhw",
+          "step_by_step_rRiUhK",
+          "step_by_step_9bwbiE",
+          "step_by_step_pzjKh4",
+          "step_by_step_XqWUJp",
+          "step_by_step_jtjmU9",
+          "wistia_video_CgPRiF",
+          "quote_WEMwW4"
+        ],
+        "name": "t:sections.n_guide-content-step.name",
+        "settings": {
+          "use_own_file": false,
+          "active": true,
+          "must_read": false,
+          "heading": "Quick Start Guide",
+          "text": "<h2>Quick Start Guide</h2><p>[wistia_video]</p><p>To get started with your first treatment, you'll need the following:</p><ul><li>1 sterile needle head (provided)</li><li>1 Micro-Infusion serum vial (provided)</li></ul><p>Ensure your hands are clean before and during the treatment and do not rush yourself.</p>"
+        }
+      },
+      "n_guide_content_image_block_ptjFFA": {
+        "type": "n_guide-content-image-block",
+        "blocks": {
+          "image_P9f9r9": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/mi_bottle_detail_15.webp"
+            }
+          }
+        },
+        "block_order": [
+          "image_P9f9r9"
+        ],
+        "name": "t:sections.n_guide-content-image-block.name",
+        "settings": {
+          "use_own_file": false,
+          "active": false,
+          "must_read": false,
+          "heading": "Learn About Your Device",
+          "text": "<h2>Learn About Your Device</h2><p>Qure's Micro-Infusion device uses 24K gold plated needles to deliver concentrated serum directly below the surface of your skin.</p><p>The needles are thinner than a strand of hair, so the treatment feels gentle — but the results are powerful.</p><p>[image]</p><p><strong>It works in two ways:</strong></p><ol><li>It triggers your skin's natural repair response for smoother and firmer looking skin.</li><li>It creates tiny, invisible channels in the surface of your skin, allowing powerful active ingredients to absorb deeper and work faster.</li></ol>"
+        }
+      },
+      "n_guide_content_image_block_GTfejE": {
+        "type": "n_guide-content-image-block",
+        "blocks": {
+          "image_with_text_r3ggRA": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify://shop_images/white_serum_v15.webp",
+              "text": "<p><strong>For Dark Spots</strong></p><p>Helps to smooth and even skin, promoting a brighter-looking complexion.</p>"
+            }
+          },
+          "image_with_text_737mXq": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify://shop_images/blue_serum_v15.webp",
+              "text": "<p><strong>For Wrinkles</strong></p><p>Helps to plump skin, reducing the look of fine lines and wrinkles.</p>"
+            }
+          },
+          "popup_BYRjYP": {
+            "type": "popup",
+            "settings": {
+              "heading": "Dark Spots",
+              "text": "<p>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p>"
+            }
+          },
+          "popup_3Xjhxr": {
+            "type": "popup",
+            "settings": {
+              "heading": "Wrinkles",
+              "text": "<p>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p>"
+            }
+          },
+          "popup_header_UWNmpG": {
+            "type": "popup_header",
+            "settings": {
+              "heading": "View full ingredient lists"
+            }
+          },
+          "popup_quote_bKzNcE": {
+            "type": "popup_quote",
+            "settings": {
+              "text": "<p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "image_with_text_r3ggRA",
+          "image_with_text_737mXq",
+          "popup_BYRjYP",
+          "popup_3Xjhxr",
+          "popup_header_UWNmpG",
+          "popup_quote_bKzNcE"
+        ],
+        "name": "t:sections.n_guide-content-image-block.name",
+        "settings": {
+          "use_own_file": false,
+          "active": false,
+          "must_read": false,
+          "heading": "Serum Ingredients & Information",
+          "text": "<h2>Serum Ingredients & Information</h2><p>Each Qure Micro-Infusion treatment is powered by a single-use ampoule of concentrated serum, designed to target specific skin concerns with clinically backed ingredients.</p><p>These serums are lightweight, fast-absorbing, and free from fragrance, parabens, and harsh actives.</p>"
+        }
+      },
+      "n_guide_content_image_block_HQqbwt": {
+        "type": "n_guide-content-image-block",
+        "blocks": {
+          "image_MNPqqw": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/mi_where_to_use_details.webp"
+            }
+          },
+          "quote_9RB8pK": {
+            "type": "quote",
+            "settings": {
+              "style": "red",
+              "text": "<p><strong>Do not</strong> use Micro-Infusion on the eyelids, lips, or on areas with active breakouts or broken skin.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "image_MNPqqw",
+          "quote_9RB8pK"
+        ],
+        "name": "t:sections.n_guide-content-image-block.name",
+        "settings": {
+          "use_own_file": false,
+          "active": false,
+          "must_read": false,
+          "heading": "Where to Use",
+          "text": "<h2>Where to Use</h2><p>[image]</p><p>The Qure Micro-Infusion device is designed for use on the face and neck only.</p><p>You can safely treat the forehead, cheeks, nose, chin, jawline, and the under-eye area (up to the orbital bone). </p><p>Use light, even pressure and pass over each area 2-3 times. If a section feels too sensitive, it's okay to skip it.</p><p>[quote_content]</p>"
+        }
+      },
+      "n_guide_shedule_dY167v": {
+        "type": "n_guide-shedule",
+        "blocks": {
+          "link_jVzXrL": {
+            "type": "link",
+            "settings": {
+              "link_url": "https://apps.apple.com/us/app/qure-skincare/id1670113821",
+              "image": "shopify://shop_images/app_store_200x_ac25bdd1-4c0d-4f5c-9133-6481e5c7d85a.svg"
+            }
+          },
+          "link_jVzju7": {
+            "type": "link",
+            "settings": {
+              "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure&ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340&pli=1",
+              "image": "shopify://shop_images/google_play_200x_bbd57f1c-4ffd-4010-9f3c-62438d152aa6.svg"
+            }
+          }
+        },
+        "block_order": [
+          "link_jVzXrL",
+          "link_jVzju7"
+        ],
+        "name": "t:sections.n_guide-shedule.name",
+        "settings": {
+          "active": false,
+          "must_read": false,
+          "heading": "Schedule & Set Reminders",
+          "text": "<h2>Schedule & Set Reminders</h2><p>The Qure app supports your Micro-Infusion routine by keeping everything simple.</p><p>It helps you track treatments and stay consistent over time, without needing to think about timing or schedules.</p>"
+        }
+      },
+      "n_guide_content_RT7gWn": {
+        "type": "n_guide-content",
+        "blocks": {
+          "quote_g9b9Uc": {
+            "type": "quote",
+            "settings": {
+              "style": "blue",
+              "text": "<p>You may experience slight redness and irritation after the treatment. <strong>This is normal</strong> and should subside within a few hours!</p>"
+            }
+          }
+        },
+        "block_order": [
+          "quote_g9b9Uc"
+        ],
+        "name": "t:sections.n_guide-content.name",
+        "settings": {
+          "use_own_file": false,
+          "active": false,
+          "must_read": false,
+          "heading": "Post-Treatment Care & Tips",
+          "text": "<h2>Post-Treatment Care & Tips</h2><p>After your Micro-Infusion treatment, your skin is more absorbent and sensitive. Following the right aftercare helps maximize results and minimize irritation.</p><p><strong>For the first 24 hours:</strong></p><ul><li>Stick to gentle skincare products only, such as hydrating cleansers and simple moisturizers.</li><li>Avoid makeup, sun exposure, heat (like saunas or workouts), and swimming.</li><li>Skip active ingredients like retinol, acids, or vitamin C.</li><li>Minimize touching your face - especially with unclean hands.</li></ul><p>[quote_content]</p><p>[hr]</p><p><strong>The morning after:</strong></p><ul><li>Always apply SPF 50+ to protect your skin.</li></ul><p>[hr]</p><p><strong>For the next 2-3 days:</strong></p><ul><li>Gradually reintroduce your usual skincare.</li><li>If you use exfoliants or actives (like retinol), wait 48-72 hours before applying them again.</li></ul>",
+          "slides_per_view": ""
+        }
+      },
+      "n_guide_content_qaxRRH": {
+        "type": "n_guide-content",
+        "blocks": {
+          "quote_fqxqVq": {
+            "type": "quote",
+            "settings": {
+              "style": "red",
+              "text": "<p><strong>Only</strong> use the serums supplied with your Micro-Infusion Device. Only our serum ampoules are developed specifically for the Qure's Micro-Infusion Device.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "quote_fqxqVq"
+        ],
+        "name": "t:sections.n_guide-content.name",
+        "settings": {
+          "use_own_file": false,
+          "active": false,
+          "must_read": false,
+          "heading": "Safety Precautions",
+          "text": "<h2>Safety Precautions</h2><p>Your Qure Micro-Infusion treatment is designed to be gentle and effective — but it's important to use it correctly. </p><p>We recommend completing a patch test on an area of your skin that isn't too exposed prior to treatment, to have a better understanding of how your skin will react and the downtime you should expect.</p><h6>Do not use Micro-Infusion if:</h6><ul><li>You have active acne, open wounds, sunburn, eczema, or rosacea</li><li>You've used retinoids, acids (AHAs/BHAs), or exfoliants in the last 48 hours</li><li>You've recently had laser, filler, or chemical peel treatments (wait at least 2 weeks)</li><li>You're pregnant or breastfeeding (without consulting your doctor first)</li><li>You have a history of keloid scarring or severe skin sensitivity</li><li>You have metal allergies or any medical concern</li></ul><p>[quote_content]</p><p>[hr]</p><h6><em>Note:</em></h6><p>This treatment is not intended to diagnose, treat, cure, or prevent any disease. If you have any skin conditions, are pregnant or breastfeeding, please consult with your doctor prior to treatment.</p><p>If you have metal allergies or if you have any medical concern, please consult your medical professional before using this treatment device. Any harmful consequence resulting from misuse or application to other body areas, not following instruction or any other improper applications is neither the responsibility of Qure Skincare Pty Ltd. or its affiliates.</p>",
+          "slides_per_view": ""
+        }
+      },
+      "n_guide_faq_XGzmpC": {
+        "type": "n_guide-faq",
+        "blocks": {
+          "faq_item_Ypebcp": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "How quickly will I see results?",
+              "text": "<p>Micro-Infusion treatment is powerful, and you'll likely notice the first results instantly, with a strong radiance boost, softer fine lines and overall a healthy, fresh complexion in the next day or two.</p><p>The more treatments you perform, the more outstanding skin benefits you'll receive.</p><p>Depending on how many treatments you complete, the results should last three to four months.</p>"
+            }
+          },
+          "faq_item_kJGA6W": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "How often can I use the treatment?",
+              "text": "<p>We recommend using your Micro-Infusion treatment every 2 weeks for the best results.</p>"
+            }
+          },
+          "faq_item_D6GhrE": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "When is the best time to perform Micro-Infusion?",
+              "text": "<p>We recommend using the treatment at night before bed, due to the increase in skin's sensitivity following the treatment.</p><p>Avoid makeup, sun exposure, heat (like saunas or workouts), and swimming for 24 hours after use.</p>"
+            }
+          },
+          "faq_item_bTrpib": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "There is a lot of serum left over. Can I still use it?",
+              "text": "<p>Definitely! Once you’ve completed the treatment, take the leftover serum from the device and pat it onto your face and neck. One ampoule of serum is intended for one whole treatment. </p>"
+            }
+          },
+          "faq_item_YTxURq": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "Why isn't the serum coming out the the device when I am stamping?",
+              "text": "<p>When stamping it's best to ensure the serum is at the end of the device where the needles are.</p><p>Sometimes this requires you to slightly tilt your head back or device towards the ceiling to help the serum make its way through the needles.</p><p>Another tip is to pop the lid back on the device and put it upside down again, firmly tap the end of the device a few times to help push the serum down the needles.</p>"
+            }
+          },
+          "faq_item_KHaJDB": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "Can I use Micro-Infusion around the eyes?",
+              "text": "<p>Yes, you can!</p><p>Make sure to apply a very gentle pressure, up to your orbital bone, when stamping around the eye area. We also recommend only doing one pass in this area.</p><p>Never use Micro-Infusion on your eyelids or too close your your lash line.</p>"
+            }
+          },
+          "faq_item_fqnyBz": {
+            "type": "faq_item",
+            "settings": {
+              "heading": "Can I treat my neck?",
+              "text": "<p>Yes. Performing Micro-Infusion on the neck can help improve the appearance of fine lines, and rejuvenate skin.</p><p>It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and youthfulness of the skin.</p>"
+            }
+          },
+          "faq_ask_plate_Dyi6FK": {
+            "type": "faq_ask_plate",
+            "settings": {
+              "heading": "Don't see your question?",
+              "button_label": "Ask us",
+              "button_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "faq_item_Ypebcp",
+          "faq_item_kJGA6W",
+          "faq_item_D6GhrE",
+          "faq_item_bTrpib",
+          "faq_item_YTxURq",
+          "faq_item_KHaJDB",
+          "faq_item_fqnyBz",
+          "faq_ask_plate_Dyi6FK"
+        ],
+        "name": "t:sections.n_guide-faq.name",
+        "settings": {
+          "use_own_file": false,
+          "active": false,
+          "must_read": false,
+          "heading": "FAQs",
+          "text": "<h2>Frequently Asked Questions</h2>"
+        }
+      }
+    },
+    "order": [
+      "n_across_image_banner_uJpq01",
+      "n_intro_xbgVRU",
+      "n_guide_menu_48HGcg",
+      "n_guide_content_step_bfgn4t",
+      "n_guide_content_image_block_ptjFFA",
+      "n_guide_content_image_block_GTfejE",
+      "n_guide_content_image_block_HQqbwt",
+      "n_guide_shedule_dY167v",
+      "n_guide_content_RT7gWn",
+      "n_guide_content_qaxRRH",
+      "n_guide_faq_XGzmpC"
+    ]
+  }

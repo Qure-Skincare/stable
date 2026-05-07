@@ -24,7 +24,7 @@
       ],
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "hero_reverse",
         "heading": "<h1>Get started with Micro-Infusion</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read this guideline carefully before proceeding with Micro-Infusion treatment.</p>",
@@ -51,7 +51,7 @@
       ],
       "name": "t:sections.n_intro.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<p><strong>Discover how to make the most of the Qure Q-Rejuvalight Pro LED Mask with our creative content guide.</strong></p><p>This brief will help you understand the key benefits of the Q-Rejuvalight Pro Mask and create content that is engaging and educational. </p>"
       }
@@ -128,7 +128,7 @@
       ],
       "name": "t:sections.n_guide-menu.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_guide_content_step_dqEU6J": {
@@ -220,7 +220,7 @@
       ],
       "name": "t:sections.n_guide-content-step.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": true,
         "must_read": false,
         "heading": "Quick Start Guide",
@@ -242,7 +242,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Learn About Your Device",
@@ -305,7 +305,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Serum Ingredients & Information",
@@ -335,7 +335,7 @@
       ],
       "name": "t:sections.n_guide-content-image-block.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Where to Use",
@@ -388,7 +388,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Post-Treatment Care & Tips",
@@ -412,7 +412,7 @@
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "Safety Precautions",
@@ -508,7 +508,7 @@
       ],
       "name": "t:sections.n_guide-faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "active": false,
         "must_read": false,
         "heading": "FAQs",
