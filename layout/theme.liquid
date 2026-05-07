@@ -59,8 +59,8 @@
 
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css?rnd=1" />
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css?rnd=2" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css?rnd={{ 'now' | date: '%s' }}" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css?rnd={{ 'now' | date: '%s' }}" />
     
     <style>
         :root {
