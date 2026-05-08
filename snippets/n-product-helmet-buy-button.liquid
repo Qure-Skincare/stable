@@ -1,0 +1,73 @@
+{% doc %}
+  Renders the buy button for the helmet product/page.
+
+  Server-side computes the discount-aware label and the sold-out state so no
+  client JS is needed to rewrite the button text. Intentionally does NOT use
+  the shared `.add-cart-button` class so that scripts like
+  `n-product-price.js` and `n-product-exclusive-offer.js` won't overwrite the
+  label (in particular, won't turn a disabled "Sold Out" button back into a
+  "Buy Now…" label).
+
+  @param {string} product_variant_id - The variant ID to add to cart
+  @param {number} product_discount - Discount percentage (0 if no discount)
+  @param {bool} product_available - Whether the product/variant is available
+  @param {object} section - The current section (reads section.settings)
+
+  @example
+  {% render 'n-product-helmet-buy-button',
+       product_variant_id: product_variant_id,
+       product_discount: product_discount,
+       product_available: product_available,
+       section: section %}
+{% enddoc %}
+
+{%- assign helmet_is_soldout = false -%}
+{%- if product_available == false -%}
+  {%- assign helmet_is_soldout = true -%}
+{%- endif -%}
+{%- if section.settings.soldout -%}
+  {%- assign helmet_is_soldout = true -%}
+{%- endif -%}
+
+{%- if helmet_is_soldout -%}
+  {%- capture helmet_button_label -%}{{ 'product.settings.soldout-button-label' | t }}{%- endcapture -%}
+{%- elsif product_discount > 0 -%}
+  {%- capture helmet_button_label -%}{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%{%- endcapture -%}
+{%- else -%}
+  {%- capture helmet_button_label -%}{{ 'product.settings.buy-button-label' | t }}{%- endcapture -%}
+{%- endif -%}
+
+<div class="helmet-home__ordering">
+    <form method="post" action="/cart/add" enctype="multipart/form-data">
+        <button
+            type="{% if helmet_is_soldout %}button{% else %}submit{% endif %}"
+            class="btn btn--primary helmet-home__ordering-btn"
+            {% if helmet_is_soldout %}disabled{% endif %}
+        >{{ helmet_button_label }}</button>
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="id" value="{{ product_variant_id }}">
+    </form>
+</div>
+
+{%- comment -%}
+  Touch-state CSS: the global `.btn--primary:hover` rule is wrapped in
+  `@media (hover:hover)` so it never fires on mobile. Add `:active` (and a
+  reusable `.is-pressed` class) for proper tap feedback. Disable the default
+  blue iOS tap highlight so our custom pressed style shows cleanly.
+{%- endcomment -%}
+<style>
+  .helmet-home__ordering-btn {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .helmet-home__ordering-btn:active,
+  .helmet-home__ordering-btn.is-pressed {
+    background-color: var(--btn-primary-bg-hover);
+    border-color: var(--btn-primary-bg-hover);
+    color: var(--btn-primary-color-hover);
+    text-decoration: none;
+  }
+  .helmet-home__ordering-btn[disabled] {
+    cursor: not-allowed;
+  }
+</style>

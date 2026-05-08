@@ -1,11 +1,11 @@
-{% doc %}
+wwtf{% doc %}
     Renders a banner with Modal section for hair growth helmet page.
 {% enddoc %}
 
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/across-image-banner/across-image-banner.css" />
 {% endif %}
-<section class="across-image-banner across-image-banner--light-tech">
+<section class="across-image-banner across-image-banner--light-tech" id="light-technology">
     <picture>
         {% if section.settings.image != blank %}
             <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
