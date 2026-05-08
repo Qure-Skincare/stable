@@ -9,7 +9,6 @@
 {% endif %}
 
 <!-- HELMET HOME  -->
-<link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/helmet-home/helmet-home.css" />
 <div class="helmet-home" id="helmet-home">
     <div class="container">
         <div class="helmet-home__grid">
@@ -47,7 +46,11 @@
                         </div>
                     {%- endif -%}
 
-                    {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
+                    {% render 'n-product-helmet-buy-button',
+                        product_variant_id: product_variant_id,
+                        product_discount: product_discount,
+                        product_available: product_available,
+                        section: section %}
 
                     <div class="helmet-home__users-experienced" data-bs-toggle="modal" data-bs-target="#info-modal">
                         <img src="https://qureskincaredns-stable.com/alex/sections/isolated/helmet-home/images/qure-headgear-1589-2.webp" alt="">
@@ -215,10 +218,10 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("helmet-home-swiper", "https://qureskincaredns-stable.com/sections/new/helmet-home/helmet-home.js");
         loadScriptOnce("klaviyo-early-access", "https://static.klaviyo.com/onsite/js/VtM5fu/klaviyo.js");
         loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js-new/wistia-popup.js");
         loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
+        loadScriptOnce("swiper", "https://qureskincaredns-stable.com/assets/js-new/swiper.js");
     });
 </script>
 <!-- HELMET HOME END -->

@@ -86,7 +86,7 @@
       ],
       "name": "t:sections.n_product-hair-growth-helmet-header.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "seo_heading": "Backed by Dermatologists",
         "heading": "Q-Renew LLLT Helmet",
         "rating": true,
@@ -96,7 +96,7 @@
       }
     },
     "n_hair_growth_helmet_image_slider_9KL6Kj": {
-      "type": "n_hair-growth-helmet-image-slider",
+      "type": "n_hair-growth-helmet-peek-cards-slider",
       "blocks": {
         "slider_V86bzz": {
           "type": "slider",
@@ -183,7 +183,7 @@
       ],
       "name": "t:sections.hair-growth-helmet-image-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>See the change, feel the difference</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
         "button_label": "Read the Study",
@@ -251,7 +251,9 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses medical-grade lasers and LEDs to help encourage the appearance of active growth. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
@@ -288,7 +290,7 @@
       ],
       "name": "t:sections.n_expert-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Trusted and Recommended by Experts</h2>",
         "wistia_url": "8kldazu7xg",
         "button_label": "<p><strong>Watch:</strong> Doctorly</p>"
@@ -329,8 +331,8 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
-        "use_own_file": true,
-        "heading": "Why Q-Renew works",
+        "use_own_file": false,
+        "heading": "<h2>Why Q-Renew works</h2>",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
@@ -486,7 +488,7 @@
       ],
       "name": "t:sections.n_product-result.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Backed<strong> </strong>by real results</h2>"
       }
     },
@@ -530,7 +532,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_hair_growth_helmet_usage_guide_HQaYec": {
@@ -539,8 +541,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>1. Prepare</h6>",
-            "text": "<p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
+            "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
           }
@@ -548,8 +549,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>2. Treatment</h6>",
-            "text": "<p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
+            "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
           }
@@ -557,8 +557,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>3. Aftercare</h6>",
-            "text": "<p>The helmet shuts off automatically; remove and store until your next session.</p>",
+            "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
           }
@@ -571,7 +570,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-usage-guide.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Support hair health in just 12 minutes a day</h2>",
         "video_url": "wvoucso35j",
         "youtube_url": false
@@ -717,7 +716,7 @@
       ],
       "name": "t:sections.n_hair-growth-helmet-product-comparison.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "How It Compares"
       }
     },
@@ -770,7 +769,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "text": "<h2>Confidence starts here - at the roots</h2>"
       }
@@ -916,7 +915,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question?",
         "button_label": "Ask us",

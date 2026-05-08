@@ -96,7 +96,7 @@
       }
     },
     "hair_growth_helmet_image_slider_9KL6Kj": {
-      "type": "n_hair-growth-helmet-image-slider",
+      "type": "n_hair-growth-helmet-peek-cards-slider",
       "blocks": {
         "slider_UGthBb": {
           "type": "slider",
