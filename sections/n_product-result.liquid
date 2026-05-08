@@ -7,7 +7,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/product-results/product-results.css" />
 {% endif %}
-<section class="product-results">
+<section class="product-results" id="backed-by-real-results">
 
     {% assign tab_blocks = section.blocks | where: "type", "tab" %}
     {% assign tab_content_blocks = section.blocks | where: "type", "tab_content" %}
