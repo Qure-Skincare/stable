@@ -1,102 +1,97 @@
-{% doc %}
+wwtf{% doc %}
     Renders a banner with Modal section for hair growth helmet page.
 {% enddoc %}
 
 {% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/alex/sections/isolated/across-image-banner/across-image-banner.css" />
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/across-image-banner/across-image-banner.css" />
 {% endif %}
-<div class="qure__section across-image-banner" id="light-technology">
-    <picture class="across-image-banner__image">
-        <source media="(min-width:768px)" srcset="https://qureskincaredns-stable.com/alex/sections/isolated/across-image-banner/images/pixels.webp" />
-        <img src="https://qureskincaredns-stable.com/alex/sections/isolated/across-image-banner/images/pixels.webp" />
+<section class="across-image-banner across-image-banner--light-tech" id="light-technology">
+    <picture>
+        {% if section.settings.image != blank %}
+            <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+        {% endif %}
+        {% if section.settings.image_mobile != blank %}
+            <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+        {% endif %}
     </picture>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="across-image-banner__content">
-                    {% if section.settings.heading != blank %}
-                        {{ section.settings.heading }}
-                    {% endif %}
-                    {% if section.settings.text != blank %}
-                        {{ section.settings.text }}
-                    {% endif %}
-                    {% if section.settings.button_label != blank %}
-                        <button class="btn btn--primary-white" type="button" data-bs-toggle="modal"
-                            data-bs-target="#tech-modal">
-                            <i class="fa-regular fa-circle-plus"></i>
-                            {{ section.settings.button_label }}
-                        </button>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+        <article>
+            {{ section.settings.heading }}
+            {{ section.settings.text }}
+            {% if section.settings.button_label != blank %}
+                <button class="btn btn--primary-white" type="button" onclick="techModal.showModal()">
+                    <i class="e-icon e-icon-plus"></i>
+                    {{ section.settings.button_label }}
+                </button>
+            {% endif %}
+        </article>
     </div>
-</div>
-<div class="modal hemlet-tech-modal fade" id="tech-modal">
-    <div class="modal-dialog">
-        <div class="modal-content hemlet-tech-modal__content">
-            <div class="tech-popup">
-                <div class="tech-popup__carousel">
-                    <div class="swiper qure__swiper" id="qure__swiper-tech-popup" data-section-id="tech-popup"
-                        data-mobile="1" data-tablet="1" data-desktop="1" data-autoplay="false" data-loop="false"
-                        data-spacing="0" data-spacingmob="0" data-pagination-fraction="true"
-                        data-arrowleft="tech-popup-arrow-left" data-arrowright="tech-popup-arrow-right">
-                        <div class="swiper-wrapper">
-                            {% for block in section.blocks %}
-                                {% if block.type == 'image' %}
-                                    <div class="swiper-slide">
-                                        {% if block.settings.image != blank %}
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                        {% endif %}
-                                    </div>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                        <div class="swiper-arrows-with-pagination">
-                            <div class="qure-swiper-button-prev qure-swiper-arrow tech-popup-arrow-left"><i
-                                    class="fa-regular fa-angle-left"></i></div>
-                            <div class="swiper-pagination"></div>
-                            <div class="qure-swiper-button-next qure-swiper-arrow tech-popup-arrow-right"><i
-                                    class="fa-regular fa-angle-right"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="tech-popup__icons">
+
+    <dialog class="c-dialog c-dialog--right-side" id="techModal">
+        <div class="c-dialog__content">
+            <div
+                class="c-swiper"
+                data-swiper='{
+                            "slidesPerView": 1,
+                            "spaceBetween": 16,
+                            "loop": false,
+                            "pagination": {
+                                "el": ".c-swiper-pagination",
+                                "type": "custom"
+                            },
+                            "navigation": {
+                                "prevEl": ".c-swiper-button-prev",
+                                "nextEl": ".c-swiper-button-next"
+                            }
+                        }'>
+                <div class="swiper-wrapper">
                     {% for block in section.blocks %}
-                        {% if block.type == 'image_with_text' %}
-                            <li>
+                        {% if block.type == 'image' %}
+                            <div class="swiper-slide">
                                 {% if block.settings.image != blank %}
                                     <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
-                                {% if block.settings.text != blank %}
-                                    {{ block.settings.text | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}
-                                {% endif %}
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                <div class="tech-popup__text">
-                    {% for block in section.blocks %}
-                        {% if block.type == "text" %}
-                            {% if block.settings.heding != blank %}
-                                {{ block.settings.heding }}
-                            {% endif %}
-                            {% if block.settings.text != blank %}
-                                {{ block.settings.text }}
-                            {% endif %}
+                            </div>
                         {% endif %}
                     {% endfor %}
                 </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal">
-                <img src="https://qureskincaredns-stable.com/assets/images/cross_black.svg" alt="cross_black" />
-            </button>
+            <ul class="tiles">
+                {% for block in section.blocks %}
+                    {% if block.type == 'image_with_text' %}
+                        <li>
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% endif %}
+                                {{ block.settings.text | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <div class="features">
+                <h6>Key Features</h6>
+                <ul>
+                    <li><strong>370 Total Diodes</strong> for maximum scalp coverage.</li>
+                    <li><strong>Zone Targeting</strong> via LCD display for customized treatments.</li>
+                    <li><strong>Multi-Wavelength Light</strong> (630-680 nm) to target follicles at different depths.</li>
+                    <li><strong>Cordless &amp; Rechargeable</strong> for true hands-free convenience.</li>
+                    <li><strong>Smart Safety Sensors</strong> with auto shut-off for worry-free use.</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</div>
+        <button class="c-dialog__close" type="button" onclick="techModal.close()">
+            <i class="e-icon e-icon-cross"></i>
+        </button>
+    </dialog>
+</section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('main-slider', 'https://qureskincaredns-stable.com/assets/js/main-slider.js');
+        loadScriptOnce("dialog", "https://qureskincaredns.com/assets/js-new/dialog.js");
     });
 </script>
 
@@ -124,6 +119,16 @@
         "type": "text",
         "id": "button_label",
         "label": "t:common.button-label"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:common.image"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "t:common.image-mobile"
     }
   ],
   "blocks": [
