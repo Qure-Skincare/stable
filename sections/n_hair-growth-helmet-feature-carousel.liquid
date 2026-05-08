@@ -2,61 +2,70 @@
     Renders a feature carousel section for hair growth helmet page.
 {% enddoc %}
 
+<!-- BASE SLIDER -->
 {% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/alex/sections/isolated/why-carousel/why-carousel.css" />
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/base-slider/base-slider.css" />
 {% endif %}
-<div class="qure__section why-carousel" id="why-carousel">
+<section class="base-slider base-slider--why-work">
     <div class="container">
-        <div class="why-carousel__content">
-            {% if section.settings.heading != blank %}
-                <h2 class="why-carousel__title">{{ section.settings.heading }}</h2>
-            {% endif %}
-            <div class="why-carousel__carousel">
-                <div class="swiper qure__swiper" id="qure__swiper-why-carousel" data-section-id="why-carousel"
-                    data-mobile="1.05" data-tablet="2.2" data-desktop="3" data-autoplay="false" data-loop="false"
-                    data-spacing="-6" data-spacingmob="-18" data-pagination-fraction="true"
-                    data-arrowleft="why-carousel-arrow-left" data-arrowright="why-carousel-arrow-right">
-                    <div class="swiper-wrapper">
-                        {% for block in section.blocks %}
-                            {% if block.type == 'section' %}
-                                <div class="swiper-slide">
-                                    <div class="why-carousel__item">
-                                        {% if block.settings.image != blank %}
-                                            
-                                        {% endif %}
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                        {% if block.settings.heading != blank %}
-                                            {{ block.settings.heading }}
-                                        {% endif %}
-                                        {% if block.settings.text != blank %}
-                                            {{ block.settings.text }}
-                                        {% endif %}
-                                    </div>
-                                </div>
+        {{ section.settings.heading }}
+        <div
+            class="c-swiper"
+            data-swiper='{
+                    "slidesPerView": 1.1,
+                    "spaceBetween": 16,
+                    "loop": false,
+                    "pagination": {
+                        "el": ".c-swiper-pagination",
+                        "type": "custom"
+                    },
+                    "navigation": {
+                        "prevEl": ".c-swiper-button-prev",
+                        "nextEl": ".c-swiper-button-next"
+                    },
+                    "breakpoints": {
+                        "768": {
+                            "slidesPerView": 2
+                        },
+                        "992": {
+                            "slidesPerView": 3
+                        }
+                    }
+                }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'section' %}
+                        <div class="swiper-slide">
+                            {% if block.settings.image != blank %}
+                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% endif %}
-                        {% endfor %}
-                    </div>
-                    <div class="swiper-arrows-with-pagination">
-                        <div class="qure-swiper-button-prev qure-swiper-arrow why-carousel-arrow-left"><i
-                                class="fa-regular fa-angle-left"></i></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="qure-swiper-button-next qure-swiper-arrow why-carousel-arrow-right"><i
-                                class="fa-regular fa-angle-right"></i></div>
-                    </div>
-                </div>
+                            {{ block.settings.heading }}
+                            {{ block.settings.text }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-            {% if section.settings.button_url != blank and section.settings.button_label != blank %}
-                <a href="{{ section.settings.button_url }}" class="btn why-carousel__button">{{ section.settings.button_label }}</a>
-            {% endif %}
-            
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
         </div>
+        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+            <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+        {% endif %}
+        
     </div>
-</div>
+</section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('main-slider', 'https://qureskincaredns-stable.com/assets/js/main-slider.js');
+        loadScriptOnce("base-slider", "https://qureskincaredns.com/sections/new/base-slider/base-slider.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns.com/assets/js-new/wistia-popup.js");
+        loadScriptOnce("youtube-popup", "https://qureskincaredns.com/assets/js-new/yt-popup.js");
+        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
     });
 </script>
+<!-- BASE SLIDER END -->
 
 {%  schema  %}
 {

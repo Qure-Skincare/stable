@@ -1,0 +1,121 @@
+{% doc %}
+    Renders an image slider section for hair growth helmet page.
+{% enddoc %}
+
+<!-- PEEK CARDS SLIDER -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/peek-cards-slider/peek-cards-slider.css" />
+{% endif %}
+<section class="peek-cards-slider peek-cards-slider--changes" id="see-the-change">
+    <div class="container">
+        <article class="peek-cards-slider__content">
+            {{ section.settings.heading }}
+            {% if section.settings.text != blank %}
+                <div>
+                    {{ section.settings.text }}
+                </div>
+            {% endif %}
+            {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+                <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+            {% endif %}
+            
+            <div
+                class="c-swiper"
+                data-swiper='{
+                        "slidesPerView": 1.1,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "768": {
+                                "slidesPerView": 1.5
+                            },
+                            "992": {
+                                "slidesPerView": 2.15
+                            }
+                        }
+                    }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'slider' %}
+                            <div class="swiper-slide">
+                                <div class="changes-tile">
+                                    {% if block.settings.image != blank %}
+                                        <img src=" {{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                    {{ block.settings.text | replace: '<em>', '<span>' | replace: '</em>', '</span>' }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!-- PEEK CARDS SLIDER END -->
+
+{%  schema  %}
+{
+  "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "use_own_file",
+        "label": "t:common.use-own-file",
+        "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "heading",
+        "label": "t:common.header"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "t:common.text"
+    },
+    {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:common.button-label"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:common.button-url"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "slider",
+        "name": "t:common.slider",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    }
+  ]
+}
+
+{% endschema %}
