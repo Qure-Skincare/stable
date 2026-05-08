@@ -286,65 +286,72 @@
         "button_url": "#helmet-home"
       }
     },
-    "n_results_slider_DKCtmR": {
-      "type": "n_results-slider",
+    "n_progress_metrics_VwkhRa": {
+      "type": "n_progress-metrics",
       "blocks": {
-        "slider_nk3MnN": {
-          "type": "slider",
+        "compare_image_1": {
+          "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/backed-real-results-1.webp",
-            "text": "<p>Proven to visually improve <em>Thinning Crown</em></p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Thinning Crown[/span]</p>"
           }
         },
-        "slider_4eTEbC": {
-          "type": "slider",
+        "compare_image_2": {
+          "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/backed-real-results-2.webp",
-            "text": "<p>Proven to visually improve <em>Receding Hairline</em></p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Receding Hairline[/span]</p>"
           }
         },
-        "slider_ffYVxx": {
-          "type": "slider",
+        "compare_image_3": {
+          "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/backed-real-results-3.webp",
-            "text": "<p>Proven to visually improve <em>Temporal Thinning</em></p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Temporal Thinning[/span]</p>"
           }
         },
-        "text_with_progress_cdXLi9": {
-          "type": "text_with_progress",
+        "percent_value_1": {
+          "type": "percent_value",
           "settings": {
-            "percent_value": "100%",
+            "percent_value": 100,
             "text": "reported an improvement in overall hair quality*"
           }
         },
-        "text_with_progress_F4bjaQ": {
-          "type": "text_with_progress",
+        "percent_value_2": {
+          "type": "percent_value",
           "settings": {
-            "percent_value": "89%",
+            "percent_value": 89,
             "text": "experienced fuller-looking, more voluminous hair*"
           }
         },
-        "text_with_progress_Bf4pzi": {
-          "type": "text_with_progress",
+        "percent_value_3": {
+          "type": "percent_value",
           "settings": {
-            "percent_value": "82%",
+            "percent_value": 82,
             "text": "reported thicker-looking hair with consistent use*"
+          }
+        },
+        "disclaimer_1": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Based on a Qure user study. Individual results may vary."
           }
         }
       },
       "block_order": [
-        "slider_nk3MnN",
-        "slider_4eTEbC",
-        "slider_ffYVxx",
-        "text_with_progress_cdXLi9",
-        "text_with_progress_F4bjaQ",
-        "text_with_progress_Bf4pzi"
+        "compare_image_1",
+        "compare_image_2",
+        "compare_image_3",
+        "percent_value_1",
+        "percent_value_2",
+        "percent_value_3",
+        "disclaimer_1"
       ],
-      "name": "t:sections.n_results-slider.name",
+      "name": "t:sections.n_progress-metrics.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<h2>Backed by real results</h2>",
-        "text": "<p>The Q-Renew LLLT Helmet is clinically proven to be effective for treating androgenetic alopecia. In a 16-week user study, participants with androgenetic alopecia reported significant improvements in hair growth and scalp health.</p>",
+        "heading": "",
+        "text": "<h2>Backed by real results</h2><p>The Q-Renew LLLT Helmet is clinically proven to be effective for treating androgenetic alopecia. In a 16-week user study, participants with androgenetic alopecia reported significant improvements in hair growth and scalp health.<br/><strong>After 16 weeks of consistent red light therapy for hair loss:</strong></p>",
         "sub_text": "<p>These results highlight how consistent <strong>red light therapy for hair loss</strong> can help support visible improvements in hair appearance and scalp health over time.<br/><br/>*Based on a Qure user study. Individual results may vary.</p>"
       }
     },
@@ -779,7 +786,7 @@
     "n_hair_growth_helmet_image_slider_9KL6Kj",
     "n_hair_growth_helmet_banner_with_modal_BnqA3f",
     "n_hair_growth_helmet_feature_carousel_HtN8C4",
-    "n_results_slider_DKCtmR",
+    "n_progress_metrics_VwkhRa",
     "n_features_marquee_jHy7Zp",
     "n_faq_VwkhRa",
     "n_hair_growth_helmet_usage_guide_HQaYec",
