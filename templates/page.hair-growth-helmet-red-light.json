@@ -238,6 +238,8 @@
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": false,
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Powerful light technology for fuller-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, the Q-Renew LLLT Helmet uses clinically-proven lasers and LEDs to reactivate hair follicles. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
@@ -279,7 +281,7 @@
       "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
         "use_own_file": false,
-        "heading": "Why Red Light Therapy for Hair Loss Works",
+        "heading": "<h2>Why Red Light Therapy for Hair Loss Works</h2>",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
@@ -458,8 +460,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>1. Prepare</h6>",
-            "text": "<p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
+            "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
           }
@@ -467,8 +468,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>2. Treatment</h6>",
-            "text": "<p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
+            "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
           }
@@ -476,8 +476,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>3. Aftercare</h6>",
-            "text": "<p>The helmet shuts off automatically; remove and store until your next session.</p>",
+            "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
           }
