@@ -1,13 +1,13 @@
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
- * MENO
+ *
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header": {
       "type": "n-product-helmet",
@@ -86,7 +86,6 @@
       ],
       "name": "t:sections.product-hair-growth-helmet-header.name",
       "settings": {
-        "use_own_file": false,
         "seo_heading": "Backed by Dermatologists",
         "heading": "FDA-Cleared Red Light Therapy for For Menopausal Hair Loss",
         "rating": true,
@@ -236,11 +235,11 @@
       "name": "t:sections.hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": false,
-        "image": "shopify://shop_images/pixels.webp",
-        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
         "text": "<p>Backed by decades of light therapy research, Q-Renew uses medical-grade lasers and LEDs to help encourage the appearance of active growth — even through hormonal changes. No gimmicks, no miracle claims — just real technology that works.</p>",
-        "button_label": "Explore The Features"
+        "button_label": "Explore The Features",
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp"
       }
     },
     "n_expert_reviews_ip7VfA": {
@@ -385,9 +384,7 @@
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
         "use_own_file": false,
-        "heading": "",
-        "text": "<h2>Backed by real results</h2><p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments with Q-Renew.<br/><strong>After 16 weeks of consistent red light therapy for hair loss:</strong></p>",
-        "sub_text": "<p>These results highlight how consistent <strong>red light therapy for hair loss</strong> can help support visible improvements in hair appearance and scalp health over time.<br/><br/>*Based on a Qure user study. Individual results may vary.</p>"
+        "text": "<h2>Backed by real results</h2><p>In a user study, participants reported fuller-looking hair and healthier-feeling scalps after 16 weeks of regular treatments with Q-Renew.<br/><strong>After 16 weeks of consistent red light therapy for hair loss:</strong></p>"
       }
     },
     "carousel_jHy7Zp": {
@@ -440,54 +437,42 @@
           "type": "accordion",
           "settings": {
             "heading": "Crown Thinning",
-            "text": "<p>For many women going through menopause, the crown is one of the first areas to show noticeable change. As oestrogen and progesterone levels drop, the hair growth cycle can shorten — follicles in this area may shrink and produce finer strands, making the scalp more visible at the top of the head.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By delivering light energy deep into the scalp, Q-Renew supports follicle activity in the crown area, helping to reduce visible thinning and improve overall coverage.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>For many women going through menopause, the crown is one of the first areas to show noticeable change. As oestrogen and progesterone levels drop, the hair growth cycle can shorten — follicles in this area may shrink and produce finer strands, making the scalp more visible at the top of the head.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By delivering light energy deep into the scalp, Q-Renew supports follicle activity in the crown area, helping to reduce visible thinning and improve overall coverage.</p>"
           }
         },
         "accordion_NKwfPK": {
           "type": "accordion",
           "settings": {
             "heading": "Widening Part Line",
-            "text": "<p>A widening part is one of the most common — and distressing — signs of hormone-related hair changes. As follicles along the central scalp miniaturize, the part gradually becomes more visible and coverage feels thinner day by day.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew's lasers are precisely distributed across the scalp, targeting the central line where thinning is most visible. By stimulating follicles along the part, it helps encourage thicker strands and a fuller-looking part over time.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>A widening part is one of the most common — and distressing — signs of hormone-related hair changes. As follicles along the central scalp miniaturize, the part gradually becomes more visible and coverage feels thinner day by day.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew's lasers are precisely distributed across the scalp, targeting the central line where thinning is most visible. By stimulating follicles along the part, it helps encourage thicker strands and a fuller-looking part over time.</p>"
           }
         },
         "accordion_YEffqy": {
           "type": "accordion",
           "settings": {
             "heading": "Reduced Volume & Flatness",
-            "text": "<p>During and after menopause, many women notice their hair losing its body and bounce. This happens as follicles produce finer strands due to hormonal shifts, leaving hair looking flat, limp, and without its natural fullness.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By supporting follicle function across the entire scalp, Q-Renew encourages the appearance of thicker, stronger hair. The result is healthier density, giving hair more lift, movement, and natural fullness.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>During and after menopause, many women notice their hair losing its body and bounce. This happens as follicles produce finer strands due to hormonal shifts, leaving hair looking flat, limp, and without its natural fullness.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By supporting follicle function across the entire scalp, Q-Renew encourages the appearance of thicker, stronger hair. The result is healthier density, giving hair more lift, movement, and natural fullness.</p>"
           }
         },
         "accordion_NHBERr": {
           "type": "accordion",
           "settings": {
             "heading": "Increased Daily Shedding",
-            "text": "<p>Noticing more hair in the shower, on your pillow, or in your brush? During the hormonal transition of menopause, oestrogen levels fall and more follicles can shift into the resting phase simultaneously, increasing daily shedding.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew works with your natural hair cycle, helping to extend the active growth phase. Many users first notice reduced shedding before seeing new density — setting the stage for stronger, fuller hair over time.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Noticing more hair in the shower, on your pillow, or in your brush? During the hormonal transition of menopause, oestrogen levels fall and more follicles can shift into the resting phase simultaneously, increasing daily shedding.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew works with your natural hair cycle, helping to extend the active growth phase. Many users first notice reduced shedding before seeing new density — setting the stage for stronger, fuller hair over time.</p>"
           }
         },
         "accordion_rQ3dFk": {
           "type": "accordion",
           "settings": {
             "heading": "Weaker, More Fragile Strands",
-            "text": "<p>Hormonal changes during menopause can affect the structure of each hair strand, making it finer, more prone to breakage, and unable to grow as long as before. Hair that feels weaker or snaps easily is a common concern at this stage.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew delivers light energy to the root, encouraging stronger hair fiber production over time. With consistent use, strands can grow in thicker and more resilient, reducing breakage and restoring a healthier look and feel.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Hormonal changes during menopause can affect the structure of each hair strand, making it finer, more prone to breakage, and unable to grow as long as before. Hair that feels weaker or snaps easily is a common concern at this stage.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew delivers light energy to the root, encouraging stronger hair fiber production over time. With consistent use, strands can grow in thicker and more resilient, reducing breakage and restoring a healthier look and feel.</p>"
           }
         },
         "accordion_LPeTme": {
           "type": "accordion",
           "settings": {
             "heading": "Temple Thinning & Hairline Changes",
-            "text": "<p>Thinning around the temples and hairline is another common effect of hormonal changes. The delicate hairs in this area are particularly sensitive to oestrogen fluctuations, and are often among the first to weaken or slow in growth.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew provides full-front coverage, delivering light directly to the temples and hairline to support follicle activity in these sensitive zones and encourage the appearance of a fuller hairline.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Thinning around the temples and hairline is another common effect of hormonal changes. The delicate hairs in this area are particularly sensitive to oestrogen fluctuations, and are often among the first to weaken or slow in growth.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew provides full-front coverage, delivering light directly to the temples and hairline to support follicle activity in these sensitive zones and encourage the appearance of a fuller hairline.</p>"
           }
         }
       },
@@ -501,13 +486,11 @@
       ],
       "name": "t:sections.faq.name",
       "settings": {
-        "heading": "<h2>Discover the routine made for your stage of life.  Menopause can affect hair in different ways. Choose the concern that feels most familiar:</h2>",
         "use_own_file": false,
+        "heading": "<h2>Discover the routine made for your stage of life.  Menopause can affect hair in different ways. Choose the concern that feels most familiar:</h2>",
         "text": "",
         "button_label": "",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
     "hair_growth_helmet_usage_guide_HQaYec": {
@@ -547,8 +530,7 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Restore your hair health in just 12 minutes a day</h2>",
-        "video_url": "wvoucso35j",
-        "youtube_url": false
+        "video_url": "wvoucso35j"
       }
     },
     "n_video_slider_p78WDL": {
@@ -756,81 +738,63 @@
           "type": "accordion",
           "settings": {
             "heading": "Can Q-Renew help with hair changes during menopause?",
-            "text": "<p>leading to finer strands, increased shedding, and reduced scalp coverage — a pattern that commonly presents as female pattern hair loss (androgenetic alopecia).</p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, which encompasses the thinning patterns many women experience during hormonal changes.</p><p>In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Results may vary. If unsure whether the device is suitable for you, consult your healthcare provider.</p><p><strong>Do not use if pregnant or breastfeeding.</strong></p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>leading to finer strands, increased shedding, and reduced scalp coverage — a pattern that commonly presents as female pattern hair loss (androgenetic alopecia).</p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, which encompasses the thinning patterns many women experience during hormonal changes.</p><p>In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Results may vary. If unsure whether the device is suitable for you, consult your healthcare provider.</p><p><strong>Do not use if pregnant or breastfeeding.</strong></p>"
           }
         },
         "accordion_aJd9jV": {
           "type": "accordion",
           "settings": {
             "heading": "How does the Qure Q-Renew LLLT Helmet work?",
-            "text": "<p>The Q-Renew LLLT Helmet uses a combination of low-level laser therapy (LLLT) and red LED light therapy to help energize hair follicles and support healthier-looking, fuller hair. The lasers deliver focused light deeper into the scalp, while LEDs provide broader coverage</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>The Q-Renew LLLT Helmet uses a combination of low-level laser therapy (LLLT) and red LED light therapy to help energize hair follicles and support healthier-looking, fuller hair. The lasers deliver focused light deeper into the scalp, while LEDs provide broader coverage</p>"
           }
         },
         "accordion_EAdrMB": {
           "type": "accordion",
           "settings": {
             "heading": "How often can I use this treatment?",
-            "text": "<p>We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to maintain results.</p><p>Each treatment lasts 12 minutes and ends automatically.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to maintain results.</p><p>Each treatment lasts 12 minutes and ends automatically.</p>"
           }
         },
         "accordion_WVdct6": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see the results?",
-            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3-6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3-6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>"
           }
         },
         "accordion_4xbifb": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use it while it is charging?",
-            "text": "<p>No. The helmet will not operate while charging. Always unplug before use.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>No. The helmet will not operate while charging. Always unplug before use.</p>"
           }
         },
         "accordion_mkVbPN": {
           "type": "accordion",
           "settings": {
             "heading": "How long does it take to charge?",
-            "text": "<p>A full charge takes about 4 hours. The helmet is powered by a rechargeable 3.7V, 5000mAh lithium-ion battery.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>A full charge takes about 4 hours. The helmet is powered by a rechargeable 3.7V, 5000mAh lithium-ion battery.</p>"
           }
         },
         "accordion_mAjjJj": {
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Renew LLLT Helmet safe and FDA cleared?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet is safe and FDA-cleared. It is included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIaвЂ“V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of IвЂ“II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It features built-in safety sensors that only activate the lights when the device is properly positioned on your head. It will automatically pause if removed. The warmth is mild, with a maximum of 35В°C (95В°F).</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes, the Q-Renew LLLT Helmet is safe and FDA-cleared. It is included on the Australian Register of Therapeutic Goods (ARTG 522231) as a Class IIa medical device.<br/><br/>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIaвЂ“V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of IвЂ“II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.<br/><br/>It features built-in safety sensors that only activate the lights when the device is properly positioned on your head. It will automatically pause if removed. The warmth is mild, with a maximum of 35В°C (95В°F).</p>"
           }
         },
         "accordion_M7qFY8": {
           "type": "accordion",
           "settings": {
             "heading": "Who is it not recommended for?",
-            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>"
           }
         },
         "accordion_fgq9EN": {
           "type": "accordion",
           "settings": {
             "heading": "Does Q-Renew LLLT Helmet come with a warranty?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet comes with a 2 years of protection plus 1 extra year at no added cost. </p>",
-            "link_url": "",
-            "link_text": ""
+            "text": "<p>Yes, the Q-Renew LLLT Helmet comes with a 2 years of protection plus 1 extra year at no added cost. </p>"
           }
         }
       },
@@ -847,13 +811,11 @@
       ],
       "name": "t:sections.faq.name",
       "settings": {
-        "heading": "<h2>Have questions?</h2>",
         "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
         "text": "",
         "button_label": "Ask us",
-        "button_url": "",
-        "terms-conditions": false,
-        "promotional_terms_and_conditions": ""
+        "button_url": ""
       }
     }
   },
