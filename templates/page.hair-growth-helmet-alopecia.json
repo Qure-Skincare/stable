@@ -238,6 +238,8 @@
       "name": "t:sections.n_hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": false,
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Advanced Light Therapy for Androgenetic Alopecia</h2>",
         "text": "<p>The Q-Renew LLLT Helmet utilizes the power of low-level light therapy (LLLT), a scientifically-backed technology for treating androgenetic alopecia. It delivers a precise combination of red light and laser therapy to stimulate dormant hair follicles and support the natural hair growth cycle.</p>",
         "button_label": "Explore The Features"
@@ -279,7 +281,7 @@
       "name": "t:sections.n_hair-growth-helmet-feature-carousel.name",
       "settings": {
         "use_own_file": false,
-        "heading": "How LLLT Combats Androgenetic Alopecia",
+        "heading": "<h2>How LLLT Combats Androgenetic Alopecia</h2>",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
@@ -432,7 +434,7 @@
           "disabled": true,
           "settings": {
             "heading": "Can red light therapy for hair loss help reduce shedding?",
-            "text": "<p>Excessive daily shedding can feel constant and discouraging, with hair collecting in the shower, on your pillow, or in your brush. This often happens when follicles exit the growth phase too earlyвЂ”a process commonly influenced by stress, hormonal changes, or genetic factors.</p><p><strong>Red light therapy for hair loss</strong> works in sync with the natural hair growth cycle by supporting follicles during the active growth phase. With consistent use, many people notice a reduced appearance of excessive shedding before seeing improvements in overall densityвЂ”helping create the foundation for stronger, fuller-looking hair over time.</p>"
+            "text": "<p>Excessive daily shedding can feel constant and discouraging, with hair collecting in the shower, on your pillow, or in your brush. This often happens when follicles exit the growth phase too early—a process commonly influenced by stress, hormonal changes, or genetic factors.</p><p><strong>Red light therapy for hair loss</strong> works in sync with the natural hair growth cycle by supporting follicles during the active growth phase. With consistent use, many people notice a reduced appearance of excessive shedding before seeing improvements in overall density—helping create the foundation for stronger, fuller-looking hair over time.</p>"
           }
         }
       },
@@ -448,7 +450,7 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Your Androgenetic Alopecia Questions Answered</h2>",
-        "text": "Have a concern we didnвЂ™t cover?",
+        "text": "Have a concern we didn't cover?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
@@ -459,8 +461,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>1. Prepare</h6>",
-            "text": "<p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
+            "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
           }
@@ -468,8 +469,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>2. Treatment</h6>",
-            "text": "<p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
+            "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
           }
@@ -477,8 +477,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>3. Aftercare</h6>",
-            "text": "<p>The helmet shuts off automatically; remove and store until your next session.</p>",
+            "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
           }
