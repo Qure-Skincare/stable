@@ -33,7 +33,7 @@
           "type": "money-back",
           "settings": {
             "heading": "Money Back Guarantee",
-            "text": "Hair growth during hormonal changes takes time. That's why we offer a money-back guarantee. If you don't see real results, get a full refund вЂ” no questions asked.",
+            "text": "Hair growth during hormonal changes takes time. That's why we offer a money-back guarantee. If you don't see real results, get a full refund — no questions asked.",
             "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
@@ -236,8 +236,10 @@
       "name": "t:sections.hair-growth-helmet-banner-with-modal.name",
       "settings": {
         "use_own_file": false,
+        "image": "shopify://shop_images/pixels.webp",
+        "image_mobile": "shopify://shop_images/pixels.webp",
         "heading": "<h2>Powerful light technology for healthier-looking hair</h2>",
-        "text": "<p>Backed by decades of light therapy research, Q-Renew uses medical-grade lasers and LEDs to help encourage the appearance of active growth вЂ” even through hormonal changes. No gimmicks, no miracle claims вЂ” just real technology that works.</p>",
+        "text": "<p>Backed by decades of light therapy research, Q-Renew uses medical-grade lasers and LEDs to help encourage the appearance of active growth — even through hormonal changes. No gimmicks, no miracle claims — just real technology that works.</p>",
         "button_label": "Explore The Features"
       }
     },
@@ -248,14 +250,14 @@
           "type": "slider",
           "settings": {
             "image": "shopify://shop_images/maxfield_cd1969a0-a2b0-4c5a-81bc-3c16f63273f7.webp",
-            "text": "<p>вЂњI look for two things in a device like this: LED and lasers. These two together helps gives you much stronger activation.вЂќ</p><p>вЂ“ Dr. Maxfield</p>"
+            "text": "<p>“I look for two things in a device like this: LED and lasers. These two together helps gives you much stronger activation.”</p><p>“Dr. Maxfield”</p>"
           }
         },
         "slider_EhQ9CU": {
           "type": "slider",
           "settings": {
             "image": "shopify://shop_images/shah_354ce7dc-671d-4ddc-a59b-7bf69b8fa81c.webp",
-            "text": "<p>вЂњI highly advocate low level light therapy devices that you wear externally for early hair loss. And when combined with a medication like minoxidil, the benefits and results are amplified.вЂќ</p><p>вЂ“ Dr. Shah</p>"
+            "text": "<p>“I highly advocate low level light therapy devices that you wear externally for early hair loss. And when combined with a medication like minoxidil, the benefits and results are amplified.”</p><p>“Dr. Shah”</p>"
           }
         },
         "disclaimer_FKRXGg": {
@@ -286,7 +288,7 @@
           "settings": {
             "image": "shopify://shop_images/6_aa559435-67ea-4abf-a608-b4bc6120687e.svg",
             "heading": "<p><strong>Supports hair follicles</strong></p>",
-            "text": "<p>Low-level lasers reach deep into the scalp to energize dormant follicles. As hormones shift, follicles can become less active вЂ” Q-Renew works with your hair </p>"
+            "text": "<p>Low-level lasers reach deep into the scalp to energize dormant follicles. As hormones shift, follicles can become less active — Q-Renew works with your hair </p>"
           }
         },
         "section_gxTc4q": {
@@ -294,7 +296,7 @@
           "settings": {
             "image": "shopify://shop_images/8_cc4881c0-6c79-41b3-a3cd-887524f4a85d.svg",
             "heading": "<p><strong>Improves thickness</strong></p>",
-            "text": "<p>LED light supports circulation and nutrient delivery around the follicle. Over time, this helps new strands grow in stronger and more resilient вЂ” counteracting</p><p><br/></p>"
+            "text": "<p>LED light supports circulation and nutrient delivery around the follicle. Over time, this helps new strands grow in stronger and more resilient — counteracting</p><p><br/></p>"
           }
         },
         "section_BTCCyz": {
@@ -302,7 +304,7 @@
           "settings": {
             "image": "shopify://shop_images/7_b652c035-154f-446a-8c7f-dbda4f7cf104.svg",
             "heading": "<p><strong>Reduces visible shedding</strong></p>",
-            "text": "<p>Light therapy may help prolong the active growth phase of follicles. The result is fewer hairs lost daily and fuller-looking coverage вЂ” even when hormones are fluctuating.</p>"
+            "text": "<p>Light therapy may help prolong the active growth phase of follicles. The result is fewer hairs lost daily and fuller-looking coverage — even when hormones are fluctuating.</p>"
           }
         }
       },
@@ -314,7 +316,7 @@
       "name": "t:sections.hair-growth-helmet-feature-carousel.name",
       "settings": {
         "use_own_file": false,
-        "heading": "Why Q-Renew works вЂ” especially during hormonal changes",
+        "heading": "<h2>Why Q-Renew works — especially during hormonal changes</h2>",
         "button_label": "Get Started",
         "button_url": "#helmet-home"
       }
@@ -431,7 +433,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Crown Thinning",
-            "text": "<p>For many women going through menopause, the crown is one of the first areas to show noticeable change. As oestrogen and progesterone levels drop, the hair growth cycle can shorten вЂ” follicles in this area may shrink and produce finer strands, making the scalp more visible at the top of the head.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By delivering light energy deep into the scalp, Q-Renew supports follicle activity in the crown area, helping to reduce visible thinning and improve overall coverage.</p>",
+            "text": "<p>For many women going through menopause, the crown is one of the first areas to show noticeable change. As oestrogen and progesterone levels drop, the hair growth cycle can shorten — follicles in this area may shrink and produce finer strands, making the scalp more visible at the top of the head.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>By delivering light energy deep into the scalp, Q-Renew supports follicle activity in the crown area, helping to reduce visible thinning and improve overall coverage.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -440,7 +442,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Widening Part Line",
-            "text": "<p>A widening part is one of the most common вЂ” and distressing вЂ” signs of hormone-related hair changes. As follicles along the central scalp miniaturize, the part gradually becomes more visible and coverage feels thinner day by day.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew's lasers are precisely distributed across the scalp, targeting the central line where thinning is most visible. By stimulating follicles along the part, it helps encourage thicker strands and a fuller-looking part over time.</p>",
+            "text": "<p>A widening part is one of the most common — and distressing — signs of hormone-related hair changes. As follicles along the central scalp miniaturize, the part gradually becomes more visible and coverage feels thinner day by day.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew's lasers are precisely distributed across the scalp, targeting the central line where thinning is most visible. By stimulating follicles along the part, it helps encourage thicker strands and a fuller-looking part over time.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -458,7 +460,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Increased Daily Shedding",
-            "text": "<p>Noticing more hair in the shower, on your pillow, or in your brush? During the hormonal transition of menopause, oestrogen levels fall and more follicles can shift into the resting phase simultaneously, increasing daily shedding.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew works with your natural hair cycle, helping to extend the active growth phase. Many users first notice reduced shedding before seeing new density вЂ” setting the stage for stronger, fuller hair over time.</p>",
+            "text": "<p>Noticing more hair in the shower, on your pillow, or in your brush? During the hormonal transition of menopause, oestrogen levels fall and more follicles can shift into the resting phase simultaneously, increasing daily shedding.</p><p><strong>HOW Q-RENEW HELPS</strong></p><p>Q-Renew works with your natural hair cycle, helping to extend the active growth phase. Many users first notice reduced shedding before seeing new density — setting the stage for stronger, fuller hair over time.</p>",
             "link_url": "",
             "link_text": ""
           }
@@ -507,8 +509,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>1. Prepare</h6>",
-            "text": "<p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
+            "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
           }
@@ -516,8 +517,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>2. Treatment</h6>",
-            "text": "<p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
+            "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
           }
@@ -525,8 +525,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
-            "heading": "<h6>3. Aftercare</h6>",
-            "text": "<p>The helmet shuts off automatically; remove and store until your next session.</p>",
+            "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
           }
@@ -750,7 +749,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Can Q-Renew help with hair changes during menopause?",
-            "text": "<p>leading to finer strands, increased shedding, and reduced scalp coverage вЂ” a pattern that commonly presents as female pattern hair loss (androgenetic alopecia).</p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, which encompasses the thinning patterns many women experience during hormonal changes.</p><p>In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Results may vary. If unsure whether the device is suitable for you, consult your healthcare provider.</p><p><strong>Do not use if pregnant or breastfeeding.</strong></p>",
+            "text": "<p>leading to finer strands, increased shedding, and reduced scalp coverage — a pattern that commonly presents as female pattern hair loss (androgenetic alopecia).</p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, which encompasses the thinning patterns many women experience during hormonal changes.</p><p>In a 16-week consumer use study with consistent use, participants showed visible improvements in hair thickness, density, and overall hair quality. Results may vary. If unsure whether the device is suitable for you, consult your healthcare provider.</p><p><strong>Do not use if pregnant or breastfeeding.</strong></p>",
             "link_url": "",
             "link_text": ""
           }
