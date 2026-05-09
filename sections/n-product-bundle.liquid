@@ -30,7 +30,10 @@
 
             {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
 
-            {% render 'n-product-page-next-ships', section: section %}
+            {%- assign nextships_block = section.blocks | where: 'type', 'nextships' | first -%}
+            {%- if nextships_block -%}
+                {% render 'n-product-page-next-ships', section: section, block: nextships_block %}
+            {%- endif -%}
 
             {% render 'n-product-saveup-offer' %}
         </div>
