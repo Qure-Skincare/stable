@@ -11,6 +11,20 @@
   "sections": {
     "product-bundle": {
       "type": "n-product-bundle",
+      "blocks": {
+        "nextships_5rd2bS": {
+          "type": "nextships",
+          "settings": {
+            "date": "17th May",
+            "percent": 93,
+            "date_soldout": "16th April",
+            "date_reserved": "17th May"
+          }
+        }
+      },
+      "block_order": [
+        "nextships_5rd2bS"
+      ],
       "settings": {
         "heading": "",
         "reserved": true,
