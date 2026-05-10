@@ -29,6 +29,12 @@
             {%- endif -%}
 
             {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
+
+            {%- assign nextships_block = section.blocks | where: 'type', 'nextships' | first -%}
+            {%- if nextships_block -%}
+                {% render 'n-product-page-next-ships', section: section, block: nextships_block %}
+            {%- endif -%}
+
             {% render 'n-product-saveup-offer' %}
         </div>
         <div class="hero-product__extra">
@@ -43,7 +49,7 @@
 
 {% schema %}
 {
-    "name": "t:sections.product.name",
+    "name": "t:sections.product-header.name",
     "settings": [
         {
             "type": "checkbox",
@@ -58,9 +64,43 @@
             "default": true
         }
     ],
+    "blocks": [
+        {
+            "type": "nextships",
+            "name": "t:common.nextships",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "date",
+                    "label": "t:common.date"
+                },
+                {
+                    "type": "range",
+                    "id": "percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "t:common.percent",
+                    "default": 48
+                },
+                {
+                    "type": "text",
+                    "id": "date_soldout",
+                    "label": "t:common.soldout"
+                },
+                {
+                    "type": "text",
+                    "id": "date_reserved",
+                    "label": "t:common.reserved"
+                }
+            ]
+        }
+    ],
     "presets": [
         {
-            "name": "t:sections.product.name"
+            "name": "t:sections.product-header.name"
         }
     ]
 }
