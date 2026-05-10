@@ -16,7 +16,11 @@
 
             {% render 'n-page-rating', section: section %}
 
-            <h1>{{ product_title }}</h1>
+            {% if section.settings.heading != blank %}
+                <h1>{{ section.settings.heading }}</h1>
+            {% else %}
+                <h1>{{ product_title }}</h1>
+            {% endif %}
 
             <article>
                 {{ product_description }}
@@ -62,6 +66,11 @@
             "id": "rating",
             "label": "t:common.rating",
             "default": true
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
         }
     ],
     "blocks": [
