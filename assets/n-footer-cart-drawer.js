@@ -41,6 +41,12 @@ const reloadDrawer = (array) => {
     .catch(console.error);
 }
 
+const refreshDrawer = () => {
+     updateSection('n-footer-cart-drawer', 'cart-dynamic-content').then(() => {
+        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js-new/swiper.js')
+     });
+}
+
 const bindForms = () => {
     //clear all binds before if they are exist
     document.querySelectorAll('form[action$="/cart/add"]').forEach((form) => {
@@ -364,5 +370,6 @@ const updateCartMany = (updates) => {
 window.CartDrawer = {
     toogleGift,
     addToCartJson,
-    getCartState
+    getCartState,
+    refreshDrawer
 };

@@ -1,0 +1,48 @@
+.bundle-add-button {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.bundle-add-button.bundle-selected {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.bundle-add-button.bundle-selected:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.bundle-cta-bar__progress li {
+  position: relative;
+}
+
+.bundle-cta-bar__progress li .bundle-cta-bar__discount,
+.bundle-cta-bar__progress li .bundle-cta-bar__product {
+  transition: opacity 0.25s ease;
+}
+
+.bundle-cta-bar__progress li .bundle-cta-bar__product {
+  display: none;
+}
+
+.bundle-cta-bar__progress li.is-filled .bundle-cta-bar__discount {
+  display: none;
+}
+
+.bundle-cta-bar__progress li.is-filled .bundle-cta-bar__product {
+  display: flex;
+}
+
+.bundle-cta-bar__amount {
+  display: none;
+}
+
+.bundle-cta-bar__amount.is-visible {
+  display: flex;
+}
+
+.bundle-cta-bar__button .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
