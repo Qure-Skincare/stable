@@ -13,7 +13,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
@@ -109,7 +109,7 @@
       ],
       "name": "t:sections.n_we-suggest.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "Based on your goals, we suggest:",
         "complete_bundle_button_label": ""
       }
@@ -164,7 +164,7 @@
       ],
       "name": "t:sections.n_logos.name",
       "settings": {
-        "use_own_file": true
+        "use_own_file": false
       }
     },
     "n_skincare_routine_gsdR4E": {
@@ -212,7 +212,7 @@
       ],
       "name": "t:sections.n_skincare-routine.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "Meet your new skincare routine"
       }
     },
@@ -329,7 +329,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "text": "<h2>No promises, just proof</h2>",
         "button_label": "",
@@ -340,7 +340,7 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "none",
         "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
@@ -393,7 +393,7 @@
       ],
       "name": "t:sections.n_video-slider.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
       }
@@ -430,7 +430,7 @@
       ],
       "name": "t:sections.n_skincare-lifestyle.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Skincare is a lifestyle</h2><p>Caring for your skin goes beyond the products you use. It’s about adopting habits that support your skin’s health every day. Our dermatologists recommend these expert tips to help you reach your skin goals even faster.</p>"
       }
     },
@@ -526,7 +526,7 @@
       ],
       "name": "t:sections.n_skin-deserves.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Your skin deserves Qure</h2><p>Skincare isn’t a numbers game. More products won’t help if your skin can’t use them effectively. Qure gives you the right treatment, in the right way, for results you can actually see.</p>"
       }
     },
@@ -566,7 +566,7 @@
       ],
       "name": "t:sections.n_bundle-routine.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": "<h2>Bundle your new routine</h2><p>Mix and match our targeted treatments to create a high-performance routine that fits your skin goals.</p>"
       }
     },
