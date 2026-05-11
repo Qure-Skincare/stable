@@ -92,6 +92,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "reverse": false,
         "seo_heading": "",
         "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
         "rating": false,
@@ -186,7 +187,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 0,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -413,6 +414,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"spaceBetween\": 80"
       }
     },
@@ -479,6 +481,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help<em> improve the feel of firmness</em>, smooth texture, and <em>reduce the look of fine lines and wrinkles</em>.<br/><br/>The invisible micro-channels then deliver science-backed serums onto the skin’s surface, <em>tailored to address specific skin goals</em> — enhancing absorption and helping active ingredients work more effectively where they’re applied.</p>",
         "button_label": "Shop Now",
