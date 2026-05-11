@@ -91,7 +91,7 @@
         "rating": true,
         "description": "<p>The Q-Renew LLLT Helmet is a clinically-proven, non-invasive solution for androgenetic alopecia. It combines medical-grade lasers and LED lights to stimulate hair follicles and promote hair regrowth in both men and women.</p>",
         "reserved": false,
-        "soldout": false
+        "soldout": true
       }
     },
     "n_hair_growth_helmet_image_slider_9KL6Kj": {
@@ -463,6 +463,7 @@
         "slider_NB9ieE": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>1. Prepare</h6><p>Start with clean, dry hair and place the helmet comfortably on your head.</p>",
             "image": "shopify://shop_images/steps-to-use-1.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-1-mob.webp"
@@ -471,6 +472,7 @@
         "slider_jrXtEm": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>2. Treatment</h6><p>Press start, select your zone, and relax for 12 minutes while the lights work.</p>",
             "image": "shopify://shop_images/steps-to-use-2.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-2-mob.webp"
@@ -479,6 +481,7 @@
         "slider_wYcAtU": {
           "type": "slider",
           "settings": {
+            "heading": "",
             "text": "<h6>3. Aftercare</h6><p>The helmet shuts off automatically; remove and store until your next session.</p>",
             "image": "shopify://shop_images/steps-to-use-3.webp",
             "image_mobile": "shopify://shop_images/steps-to-use-3-mob.webp"
