@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_prNYyf": {
       "type": "n-product-header",
@@ -95,6 +95,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "reverse": false,
         "seo_heading": "SHOWER FILTER",
         "heading": "Save your hair and skin from dryness and irritation",
         "rating": true,
@@ -104,7 +105,7 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": false
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -113,10 +114,10 @@
         "nextships_4xp7uM": {
           "type": "nextships",
           "settings": {
-            "date": "23rd January",
+            "date": "2nd June",
             "percent": 55,
-            "date_soldout": "7 January",
-            "date_reserved": "8 January"
+            "date_soldout": "5th May",
+            "date_reserved": "2nd June"
           }
         },
         "type_hHPdgJ": {
@@ -128,7 +129,7 @@
           "settings": {
             "heading": "White",
             "image": "shopify://shop_images/variant-white-1.webp",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_NEgEkN": {
@@ -142,6 +143,8 @@
             "preselected": false,
             "heading": "3 Months Supply",
             "subheading": "(Showerhead + 1 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -161,6 +164,8 @@
             "preselected": false,
             "heading": "6 Months Supply",
             "subheading": "(Showerhead + 2 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -180,6 +185,8 @@
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "(Showerhead + 4 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -211,6 +218,8 @@
             "preselected": false,
             "heading": "3 Months Supply",
             "subheading": "(Showerhead + 1 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -230,6 +239,8 @@
             "preselected": false,
             "heading": "6 Months Supply",
             "subheading": "(Showerhead + 2 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -249,6 +260,8 @@
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "(Showerhead + 4 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -266,7 +279,7 @@
           "settings": {
             "heading": "Silver",
             "image": "shopify://shop_images/variant-silver-1.webp",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_hD69Aq": {
@@ -280,8 +293,10 @@
             "preselected": false,
             "heading": "3 Months Supply",
             "subheading": "(Showerhead + 1 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -299,8 +314,10 @@
             "preselected": false,
             "heading": "6 Months Supply",
             "subheading": "(Showerhead + 2 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -318,8 +335,10 @@
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "(Showerhead + 4 Filter)",
+            "text": "",
+            "product_discount_percent": 0,
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -349,7 +368,8 @@
         "form_name": "purchase-form-landing",
         "hide_types": false,
         "type": "list",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "n_base_section_CGMUkn": {
@@ -412,6 +432,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
+        "section_id": "",
         "heading": "<h2>Do you know what’s in your water?</h2>",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
@@ -427,6 +448,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Meet the Qure Shower Filter</h2>",
         "text": "<p>At Qure, we believe great skin starts at the source—and that’s the water you use every day. The Qure Shower Filter helps <em>reduce certain chemicals and minerals</em> found in tap water that can linger on your skin after showering.</p>",
         "image": "shopify://shop_images/shower_img.webp",
@@ -596,7 +618,8 @@
         "use_own_file": false,
         "background_color": "none",
         "text": "<h2>The results are crystal clear</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_Akm4BH": {
@@ -851,7 +874,8 @@
         "image": "shopify://shop_images/shower-filter-use-video.webp",
         "image_mobile": "shopify://shop_images/shower-filter-use-video-mob.webp",
         "wistia_url": "fsw2ted2a8",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_product_settings_rDjiPj": {
