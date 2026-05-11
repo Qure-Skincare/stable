@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_U6RBGz": {
       "type": "n-product-header",
@@ -111,7 +111,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": false,
+        "reverse": false,
         "seo_heading": "MICRO-INFUSION DART PATCHES",
         "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,
@@ -120,7 +120,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -143,7 +144,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -220,7 +221,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {
@@ -232,7 +233,7 @@
             "popular": false,
             "best": true,
             "preselected": true,
-            "heading": "3 Months Supply",
+            "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
             "text": "Ships every 3 months",
             "image": "shopify://shop_images/24-pairs.webp",
@@ -254,7 +255,7 @@
             "popular": true,
             "best": false,
             "preselected": false,
-            "heading": "2 Months Supply",
+            "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/16-pairs.webp",
@@ -276,7 +277,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "1 Month Supply",
+            "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
             "text": "Ships every 1 month",
             "image": "shopify://shop_images/8-pairs.webp",
@@ -307,7 +308,8 @@
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
         "type": "list",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "purchase-form-landing-old": {
@@ -413,7 +415,8 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "n_press_reviews_tDbz84": {
@@ -434,7 +437,8 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
-        "slide": "one-slide"
+        "slide": "one-slide",
+        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_base_section_VwYqRn": {
@@ -445,6 +449,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>80 serum-infused micro-darts for targeted care</h2>",
         "text": "<p>These advanced patches feature 80 ultra-fine, self-dissolving micro-darts designed to target and help <em>improve the appearance of fine lines, under-eye puffiness, and dark circles.</em><br/><br/>While traditional patches lay flat on the skin, the micro-dart design allows the serum to be applied in a more targeted, close-to-skin manner for enhanced contact and absorption. <br/><br/>Precisely engineered, the patches help support smoother-looking, more refreshed skin with consistent cosmetic use — including on delicate under-eye areas.</p>",
         "button_label": "Shop Now",
@@ -752,6 +757,7 @@
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "grey",
+        "section_id": "",
         "heading": "<h2>Target specific areas to help combat multiple concerns</h2>",
         "text": "",
         "image": "shopify://shop_images/tg-frame.webp",
