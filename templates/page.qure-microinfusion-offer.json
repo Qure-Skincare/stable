@@ -1280,7 +1280,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
-            "left_items": 0,
+            "left_items": 429,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1299,7 +1299,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
-            "left_items": 0,
+            "left_items": 256,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1444,7 +1444,7 @@
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form-second",
-        "guarantee_period": "30",
+        "guarantee_period": "90",
         "available-stocks": false
       }
     },
