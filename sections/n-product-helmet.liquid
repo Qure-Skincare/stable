@@ -52,6 +52,19 @@
                         product_available: product_available,
                         section: section %}
 
+                    {% if section.settings.whitelist == true %}
+                        <div class="helmet-home__ordering">
+                            <button type="button" class="btn btn--primary" data-bs-toggle="modal" data-bs-target="#email-modal">
+                                {{ 'sections.hair-growth-helmet.header.whitelist' | t }}
+                                <img src="https://qureskincaredns-stable.com/alex/sections/isolated/helmet-home/images/email-icon.svg" alt="" />
+                            </button>
+                            <div class="pre-order-info">
+                                <div class="pre-order-info__status">{{ 'sections.hair-growth-helmet.header.unavailable' | t }}</div>
+                                <div class="pre-order-info__expected">{{ 'sections.hair-growth-helmet.header.whitelist_date' | t }}</div>
+                            </div>
+                        </div>
+                    {% endif %}
+
                     <div class="helmet-home__users-experienced" data-bs-toggle="modal" data-bs-target="#info-modal">
                         <img src="https://qureskincaredns-stable.com/alex/sections/isolated/helmet-home/images/qure-headgear-1589-2.webp" alt="">
                         {{ 'sections.hair-growth-helmet.header.info_html' | t }}
@@ -107,29 +120,31 @@
 
 
 <!-- MODALS -->
-<div class="modal helmet-home-modal fade" id="shipment-modal">
-    <div class="modal-dialog">
-        <div class="modal-content helmet-home-modal__content">
-            <div class="helmet-home-modal__text shipment-popup">
-                <span>JOIN OUR EARLY ACCESS</span>
-                <h6>Secure your Q-Renew LLLT Helmet before anyone else.</h6>
-                <p>We know how hard it is to wait when you're ready for change. Pre-ordering ensures you're <strong>first in line</strong> once shipments begin.</p>
-                <p>Your order will ship in January 2026, and you'll get <strong>early access</strong> to updates, usage tips, and progress guides before anyone else.</p>
-                <hr />
-                <span>Your pre-order includes</span>
-                <strong>1-Year Money-Back Guarantee</strong>
-                <p>Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.</p>
-                <strong>Free Worldwide Shipping</strong>
-                <p>Your pre-order comes with free worldwide shipping.</p>
-                <p>Orders shipped outside the U.S. may be subject to import duties, customs fees, or local taxes upon arrival. These are determined by your country’s customs authority and are the responsibility of the customer.</p>
-                <button type="button" class="btn btn--primary">Pre-Order Now</button>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal">
-                <img src="https://qureskincaredns-stable.com/assets/images/cross_black.svg" alt="" />
-            </button>
+<dialog class="c-dialog c-dialog--right-side" id="shipmentModal">
+    <div class="c-dialog__content">
+        <div class="shipment-popup">
+            <span>JOIN OUR EARLY ACCESS</span>
+            <h6>Secure your Q-Renew LLLT Helmet before anyone else.</h6>
+            <p>We know how hard it is to wait when you're ready for change. Pre-ordering ensures you're <strong>first in line</strong> once shipments begin.</p>
+            <p>Your order will ship in January 2026, and you'll get <strong>early access</strong> to updates, usage tips, and progress guides before anyone else.</p>
+            <hr />
+            <span>Your pre-order includes</span>
+            <strong>1-Year Money-Back Guarantee</strong>
+            <p>Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.</p>
+            <strong>Free Worldwide Shipping</strong>
+            <p>Your pre-order comes with free worldwide shipping.</p>
+            <p>Orders shipped outside the U.S. may be subject to import duties, customs fees, or local taxes upon arrival. These are determined by your country’s customs authority and are the responsibility of the customer.</p>
+            <form method="post" action="/cart/add" enctype="multipart/form-data">
+                <button type="submit" class="btn btn--primary helmet-home__ordering-btn">Pre-Order Now</button>
+                <input type="hidden" name="quantity" value="1">
+                <input type="hidden" name="id" value="{{ product_variant_id }}">
+            </form>
         </div>
     </div>
-</div>
+    <button class="c-dialog__close" type="button" onclick="shipmentModal.close()">
+        <i class="e-icon e-icon-cross"></i>
+    </button>
+</dialog>
 <div class="modal helmet-home-modal fade" id="info-modal">
     <div class="modal-dialog">
         <div class="modal-content helmet-home-modal__content">
@@ -255,6 +270,11 @@
             "type": "richtext",
             "id": "description",
             "label": "t:common.description"
+        },
+        {
+            "type": "checkbox",
+            "id": "whitelist",
+            "label": "t:common.whitelist"
         },
         {
             "type": "checkbox",
