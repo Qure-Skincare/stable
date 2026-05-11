@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_V3N3T8": {
       "type": "n-product-header",
@@ -48,14 +48,15 @@
             "image_product1": "shopify://shop_images/Img_16.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/ndBox.webp",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
+            "guarantee_period": "30"
           }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
           "settings": {
-            "sum": "$50",
-            "code": "QURE50",
+            "sum": "$100",
+            "code": "QURE100",
             "days": 5
           }
         },
@@ -130,7 +131,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": false,
+        "reverse": false,
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Unlock your best skin yet with our LED Face Mask",
         "rating": true,
@@ -139,7 +140,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
       }
     },
     "n_press_reviews_fxy6Uf": {
@@ -192,6 +194,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<p>FEATURED IN</p>",
+        "slide": "none",
         "settings": "\"slidesPerView\": 5"
       }
     },
@@ -203,6 +206,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Helps address multiple skin concerns with just one device</h2>",
         "text": "<p>A portable, FDA-cleared, at-home LED light therapy device that is <em>clinically validated</em> to <em>improve the appearance of wrinkles</em> and mild to moderate inflammatory acne.<br/><br/>Q-Rejuvalight Pro uses five clinically backed light wavelengths to deliver light energy designed to <em>target multiple visible skin concerns,</em> supporting clearer-looking, smoother-looking skin where topical care can’t reach.</p>",
         "image": "shopify://shop_images/skin_firming.webp",
@@ -1115,6 +1119,7 @@
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure mobile app</h2>",
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to treat and <em>target what your skin needs today</em>. </p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
         "image": "shopify://shop_images/image_4.webp",
