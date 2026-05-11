@@ -190,7 +190,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_DBd4ef": {
@@ -205,7 +205,7 @@
             "preorder": true,
             "total_treatments": 12,
             "left_items": 142,
-            "preorder_text": "Your Delivery Timeline: next batch ships 17th May:<br> Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
             "preorder_date_reserved": "17th May",
             "preorder_percent": 93,
@@ -239,7 +239,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 165,
@@ -259,7 +259,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_nyJ9n7": {
@@ -267,11 +267,11 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply Promo Pre-Order",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "total_treatments": 12,
             "left_items": 0,
             "preorder_text": "",
@@ -286,11 +286,11 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "3 Month Supply Pre-Order",
+            "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_W.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "total_treatments": 6,
             "left_items": 0,
             "preorder_text": "",
