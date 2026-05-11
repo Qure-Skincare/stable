@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_kHW3Cn": {
       "type": "n-product-header",
@@ -94,8 +94,8 @@
         "jumpto_hQdAPf"
       ],
       "name": "t:sections.product-header.name",
-      "settings": { 
-        "use_own_file": false,
+      "settings": {
+        "reverse": false,
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "rating": true,
@@ -104,7 +104,8 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -127,7 +128,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -139,7 +140,7 @@
             "popular": false,
             "best": true,
             "preselected": true,
-            "heading": "6 Months Supply",
+            "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
             "text": "",
             "image": "shopify://shop_images/3-bottles.webp",
@@ -161,7 +162,7 @@
             "popular": true,
             "best": false,
             "preselected": false,
-            "heading": "4 Months Supply",
+            "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
             "text": "",
             "image": "shopify://shop_images/2-bottles.webp",
@@ -183,7 +184,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "2 Months Supply",
+            "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
             "text": "",
             "image": "shopify://shop_images/1-bottle.webp",
@@ -204,7 +205,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {
@@ -216,7 +217,7 @@
             "popular": false,
             "best": true,
             "preselected": true,
-            "heading": "6 Months Supply",
+            "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
@@ -238,7 +239,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "4 Months Supply",
+            "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/2-bottles.webp",
@@ -260,7 +261,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "2 Months Supply",
+            "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/1-bottle.webp",
@@ -291,7 +292,8 @@
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
         "type": "list",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "purchase-form-landing-old": {
@@ -397,7 +399,8 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "n_logos_r846Fz": {
@@ -461,6 +464,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Everything you need in one serum</h2>",
         "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort.</em><br/><br/>Packed with <em>clinically backed ingredients</em> like peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step. <br/><br/>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
         "image": "shopify://shop_images/Frame_1000004192.png",
@@ -882,6 +886,7 @@
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>One product to replace your full routine</h2>",
         "text": "",
         "image": "shopify://shop_images/Image_27.png",
