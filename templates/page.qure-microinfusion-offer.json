@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_hero_section_xMcaXr": {
       "type": "n_hero-section",
@@ -141,6 +141,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!<br/><br/><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p></p><ol><li>𝗦𝘁𝗮𝗺𝗽  Patented 24k gold-plated needles create micro-channels.</li><li>𝗜𝗻𝗳𝘂𝘀𝗲  <br/>Clinically formulated serum flows directly into the dermis, not on top of it.</li><li>𝗥𝗲𝗻𝗲𝘄𝘀 <br/>Helps skin look refreshed and visibly renewed.</li></ol>",
         "button_label": "",
@@ -231,6 +232,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"spaceBetween\": 80"
       }
     },
@@ -279,6 +281,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p>",
         "button_label": "",
@@ -369,6 +372,7 @@
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Introducing the Qure Micro-Infusion System</h2>",
         "text": "<p>[note_grey]“<strong>Even my esthetician is hooked! </strong>And I can now visit beauty clinics less often.”[/note]</p><p>[marked_list]</p><ul><li>Helps reduce appearance of fine lines</li><li>Wake up with dewy looking, glowing skin</li><li>Reveal brighter looking, firmer feeling skin</li><li>Help fade appearance of dark spots and acne marks</li></ul>",
         "image": "shopify://shop_images/qure-micro-infusion.webp",
@@ -1101,6 +1105,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
+        "section_id": "",
         "text": "",
         "text_mobile": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "left_heading": "<h3>For Dark Spots</h3>",
@@ -1164,7 +1169,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_type_accordion_SQKQhNr": {
@@ -1193,7 +1198,7 @@
             "preorder": true,
             "total_treatments": 12,
             "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: <br> Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 17th May:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
             "preorder_date_reserved": "17th May",
             "preorder_percent": 93,
@@ -1227,7 +1232,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -1247,7 +1252,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_type_accordion_SVLXcAn": {
@@ -1269,11 +1274,11 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply promo PRE-ORDER",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "total_treatments": 12,
             "left_items": 0,
             "preorder_text": "",
@@ -1288,11 +1293,11 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "preselected": false,
-            "heading": "3 Month Supply PRE-ORDER",
+            "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_W.webp",
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "total_treatments": 6,
             "left_items": 0,
             "preorder_text": "",
@@ -1438,7 +1443,9 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-second"
+        "form_name": "purchase-form-second",
+        "guarantee_period": "30",
+        "available-stocks": false
       }
     },
     "n_should_know_8jabz8": {
