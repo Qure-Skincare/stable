@@ -296,113 +296,6 @@
         "guarantee_period": "30"
       }
     },
-    "purchase-form-landing-old": {
-      "type": "n-purchase-form-landing",
-      "blocks": {
-        "nextships_4xp7uM": {
-          "type": "nextships",
-          "settings": {
-            "date": "25 September",
-            "percent": 55,
-            "date_soldout": "28 July",
-            "date_reserved": "3 August"
-          }
-        },
-        "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "All-In-One Face Serum",
-            "preselected": false
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "all-in-one-face-serum-6-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": true,
-            "heading": "6 Months",
-            "subheading": "(3 bottles)",
-            "text": "",
-            "image": "shopify://shop_images/3-bottles.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "all-in-one-face-serum-4-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "4 Months",
-            "subheading": "(2 bottles)",
-            "text": "",
-            "image": "shopify://shop_images/2-bottles.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_RBCPe8": {
-          "type": "product",
-          "settings": {
-            "product": "face-serum",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "2 Months",
-            "subheading": "(1 bottle)",
-            "text": "",
-            "image": "shopify://shop_images/1-bottle.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        }
-      },
-      "block_order": [
-        "nextships_4xp7uM",
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_gbPf3J",
-        "product_NEgEkN",
-        "product_RBCPe8"
-      ],
-      "disabled": true,
-      "settings": {
-        "form_name": "purchase-form-landing",
-        "hide_types": true,
-        "type": "box",
-        "klaviyo_form_name": "",
-        "guarantee_period": "30"
-      }
-    },
     "n_logos_r846Fz": {
       "type": "n_logos",
       "blocks": {
@@ -1204,7 +1097,6 @@
   "order": [
     "product_header_kHW3Cn",
     "purchase-form-landing",
-    "purchase-form-landing-old",
     "n_logos_r846Fz",
     "n_base_section_HChwEE",
     "n_text_xJUd4V",
