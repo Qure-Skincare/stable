@@ -126,7 +126,7 @@
           "settings": {
             "heading": "Dark Spots",
             "image": "shopify://shop_images/Dark_Spots_6.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_gbPf3J": {
@@ -204,7 +204,7 @@
           "settings": {
             "heading": "Wrinkles",
             "image": "shopify://shop_images/Frame_1073714897.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_nyJ9n7": {
