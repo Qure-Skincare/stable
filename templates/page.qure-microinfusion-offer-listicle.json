@@ -70,6 +70,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<p><strong>Reason #1</strong></p><h2>Your Creams Stop at the Surface</h2>",
         "text": "<p>Here's the truth most skincare brands won't tell you: expensive creams and serums can only sit on top of your skin.</p><p>Your skin's natural barrier blocks most active ingredients from reaching the deeper layers where they actually work.</p><p>Qure's Micro-Infusion System changes the game. Using 24K gold-plated microneedles (thinner than a strand of hair), it creates tiny surface channels that allow powerful serums to penetrate beyond your skin's barrier—delivering ingredients exactly where they're needed for visible results.</p><p>[note_green]\"Traditional creams and serums struggle to penetrate the skin barrier effectively. Micro-infusion technology creates precise channels that allow active ingredients to reach the deeper layers where they can actually transform your skin.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
         "button_label": "",
@@ -85,6 +86,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<p><strong>Reason #2</strong></p><h2>Dermatologists Say It's More Effective</h2>",
         "text": "<p>You've probably spent hundreds on luxury creams that promised miracles but delivered disappointment.</p><p>Here's what leading dermatologists recommend instead: micro-infusion technology.</p><p>This medical-grade approach combines two proven actions in one treatment—mechanical stimulation that helps visibly smooth fine lines, plus direct serum delivery through microscopic channels for maximum absorption.</p><p>The result? Professional-level efficacy without the clinic price tag or appointment hassle.</p><p>[note_green]\"Micro-infusion combines the benefits of targeted serum delivery with mechanical stimulation. It's a dual-action approach that outperforms topical application alone - giving you professional results at home.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
         "image": "shopify://shop_images/microinfusion-listicle-1.webp",
@@ -101,6 +103,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<p><strong>Reason #3</strong></p><h2>See Results Overnight (Not in 8-12 Weeks)</h2>",
         "text": "<p>Remember reading \"results in 8-12 weeks\" on your last cream purchase?</p><p>That's the skincare industry's way of managing expectations—because surface-level products take months to show minimal change.</p><p>Qure users report visible differences after just one treatment. That glass-skin glow, refreshed texture, and dewy radiance you've been chasing? It's achievable in a single 5-minute session.</p><p>Perfect for transforming dull, tired-looking skin before events or any time you want to feel camera-ready.</p><p>[note_green]\"When active ingredients penetrate beyond the surface barrier, you see results dramatically faster. What takes creams 8-12 weeks can happen in days with proper delivery technology.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
         "image": "shopify://shop_images/microinfusion-listicle-2.webp",
@@ -117,6 +120,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<p><strong>Reason #4</strong></p><h2>Stop Wasting Money on Products That Can't Penetrate</h2>",
         "text": "<p>Let's do the math on your current routine:<br/>Vitamin C serum ($65), retinol cream ($80), dark spot treatment ($75), hyaluronic acid ($55).</p><p>That's $275+ every 2-3 months on products that mostly evaporate or rub off on your pillowcase.</p><p>Qure's targeted serum delivery ensures you're not wasting a single drop. The micro-infusion channels allow significantly more absorption compared to topical application alone.</p><p>You use less product and get exponentially better results.</p><p>[note_green]\"Most patients don't realize that up to 90% of their expensive serums never penetrate the skin. Micro-infusion technology maximizes absorption, making every drop count.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
         "image": "shopify://shop_images/microinfusion-listicle-3.webp",
@@ -133,6 +137,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<p><strong>Reason #5</strong></p><h2>Virtually Painless & Zero Downtime</h2>",
         "text": "<p>Here's what you won't experience with Qure:<br/>The burning sensation of harsh chemical peels, the irritation of overloaded cream formulas, or the redness and peeling from aggressive treatments.</p><p>The EO-sterilized 24K gold needles are so fine (0.5mm) that most users describe the sensation as a gentle pressing—not piercing.</p><p>Minimal redness typically fades by morning. You can literally do your treatment before bed and wake up glowing the next day.</p><p>[note_green]\"The 24K gold-plated needles at 0.5mm are designed for comfort. Most patients report minimal discomfort and can resume their normal routine immediately, unlike aggressive treatments that require days of recovery.\"</p><p><strong>- Dr. Shah, Board Certified Dermatologist</strong>[/note]</p>",
         "image": "shopify://shop_images/microinfusion-listicle-4.webp",
@@ -410,7 +415,9 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-second"
+        "form_name": "purchase-form-second",
+        "guarantee_period": "30",
+        "available-stocks": false
       }
     },
     "n_reviews_GKYEdE": {
@@ -492,7 +499,7 @@
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
         "limited": false,
-        "button-label": "BUY NOW AND SAVE UP TO 43%",
+        "button-label": "BUY NOW AND SAVE UP TO 70%",
         "button-url": "#purchase-form"
       }
     }
