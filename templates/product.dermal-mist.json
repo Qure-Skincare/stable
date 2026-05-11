@@ -880,6 +880,7 @@
     },
     "sticky_cta_ddPFdd": {
       "type": "n-sticky-button-variants",
+      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
