@@ -22,7 +22,7 @@
     {% endif %}
 {% endif %}
 
-{% if global_bar_gift1_handle != blank and gamification_enable == false  %}
+{% if global_bar_gift1_handle != blank %}
     {% if global_bar_gift1_variant_id != null and global_bar_gift1_limit > 0 %}
         <form id="gift_{{ global_bar_gift1_handle }}" method="post" action="/cart/add" enctype="multipart/form-data" class="footer-cart-drawer-gift">
             <input type="hidden" name="quantity" id="quantity" value="1">
@@ -32,7 +32,6 @@
         </form>
     {% endif %}
 {% endif %}
-
 
 {% if global_bar_gift2_handle != blank %}
     {% if global_bar_gift2_variant_id != null and global_bar_gift2_limit > 0 %}

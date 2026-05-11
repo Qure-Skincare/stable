@@ -126,7 +126,7 @@
     {% assign global_bar_product_title = global_bar_shipping_title %}
 {% endif %}
 
-{% if global_bar_gift1_limit > 0 and gamification_enable == false %}
+{% if global_bar_gift1_limit > 0 %}
     {% if global_total_price_devided > global_bar_shipping_limit and global_total_price_devided <= global_bar_gift1_limit %}
         {% assign global_bar_add_more = global_bar_gift1_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
         {% assign global_bar_product_price = global_bar_gift1_price | times: 100 | money_without_trailing_zeros %}
@@ -135,14 +135,8 @@
 {% endif %}
 
 {% if global_bar_gift2_limit > 0 %}
-    {% if global_bar_gift1_limit > 0 and gamification_enable == false %}
+    {% if global_bar_gift1_limit > 0 %}
         {% if global_total_price_devided > global_bar_gift1_limit and global_total_price_devided <= global_bar_gift2_limit %}
-            {% assign global_bar_add_more = global_bar_gift2_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
-            {% assign global_bar_product_price = global_bar_gift2_price | times: 100 | money_without_trailing_zeros %}
-            {% assign global_bar_product_title = global_bar_gift2_title %}
-        {% endif %}
-    {% else %}
-        {% if global_total_price_devided > global_bar_shipping_limit and global_total_price_devided <= global_bar_gift2_limit %}
             {% assign global_bar_add_more = global_bar_gift2_limit | times: 100 | minus: global_total_price | money_without_trailing_zeros %}
             {% assign global_bar_product_price = global_bar_gift2_price | times: 100 | money_without_trailing_zeros %}
             {% assign global_bar_product_title = global_bar_gift2_title %}
