@@ -1631,7 +1631,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 165,
