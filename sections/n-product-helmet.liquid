@@ -55,28 +55,10 @@
                     <dialog class="c-dialog c-dialog--right-side" id="shipmentModal">
                         <div class="c-dialog__content">
                             <div class="shipment-popup">
-                                <span>JOIN OUR EARLY ACCESS</span>
                                 {%- if product.metafields.custom.preorder_popup_text != blank -%}
                                     {{ product.metafields.custom.preorder_popup_text }}
                                 {%- elsif page.metafields.custom.preorder_popup_text != blank -%}
                                     {{ page.metafields.custom.preorder_popup_text }}
-                                {%- else -%}
-                                    <h6>Secure your Q-Renew LLLT Helmet before anyone else.</h6>
-                                    <p>We know how hard it is to wait when you're ready for change. Pre-ordering ensures you're <strong>first in line</strong> once shipments begin.</p>
-                                    <p>Your order will ship in June 2026, and you'll get <strong>early access</strong> to updates, usage tips, and progress guides before anyone else.</p>
-                                {%- endif -%}
-                                <hr />
-                                <span>Your pre-order includes</span>
-                                {%- if product.metafields.custom.preorder_popup_includes_text != blank -%}
-                                    {{ product.metafields.custom.preorder_popup_includes_text }}
-                                {%- elsif page.metafields.custom.preorder_popup_includes_text != blank -%}
-                                    {{ page.metafields.custom.preorder_popup_includes_text }}
-                                {%- else -%}
-                                    <strong>1-Year Money-Back Guarantee</strong>
-                                    <p>Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.</p>
-                                    <strong>Free Worldwide Shipping</strong>
-                                    <p>Your pre-order comes with free worldwide shipping.</p>
-                                    <p>Orders shipped outside the U.S. may be subject to import duties, customs fees, or local taxes upon arrival. These are determined by your country’s customs authority and are the responsibility of the customer.</p>
                                 {%- endif -%}
                                 <form method="post" action="/cart/add" enctype="multipart/form-data">
                                     <button type="submit" class="btn btn--primary helmet-home__ordering-btn">Pre-Order Now</button>
