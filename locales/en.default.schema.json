@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "hide_bottom": "Hide bottom",
         "available-stocks": "Available text",
         "guarantee_period": "Guarantee period",
         "year": "year",
