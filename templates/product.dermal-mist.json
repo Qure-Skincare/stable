@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_c7eEXx": {
       "type": "n-product-header",
@@ -87,6 +87,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "reverse": false,
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Refresh your skin anytime, anywhere with  Dermal Mist",
         "rating": true,
@@ -96,7 +97,7 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": false
+        "approved": false
       }
     },
     "purchase-form-landing": {
@@ -133,7 +134,9 @@
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
+            "text": "",
             "image": "shopify://shop_images/derm_trio.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -153,7 +156,9 @@
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
+            "text": "",
             "image": "shopify://shop_images/derm_duo.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -173,7 +178,9 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
+            "text": "",
             "image": "shopify://shop_images/derm_single.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -202,7 +209,7 @@
             "popular": false,
             "best": true,
             "preselected": true,
-            "heading": "6 Months",
+            "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/derm_trio.webp",
@@ -224,7 +231,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "4 Months",
+            "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/derm_duo.webp",
@@ -246,7 +253,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "2 Months",
+            "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/derm_single.webp",
@@ -283,7 +290,6 @@
     },
     "purchase-form-landing-old": {
       "type": "n-purchase-form-landing",
-      "disabled": true,
       "blocks": {
         "nextships_4xp7uM": {
           "type": "nextships",
@@ -316,7 +322,9 @@
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
+            "text": "",
             "image": "shopify://shop_images/derm_trio.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -336,7 +344,9 @@
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
+            "text": "",
             "image": "shopify://shop_images/derm_duo.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -356,7 +366,9 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
+            "text": "",
             "image": "shopify://shop_images/derm_single.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -374,11 +386,13 @@
         "product_NEgEkN",
         "product_RBCPe8"
       ],
+      "disabled": true,
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "box",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
       }
     },
     "n_logos_d77Mmj": {
@@ -442,6 +456,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>A mist to refresh skin prone to breakouts, redness and sensitivity</h2>",
         "text": "<p>Powered by hypochlorous acid (HOCl), Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion—without irritation.<br/></p><p>Perfect for skin that experiences <em>breakouts, visible redness, or post-treatment sensitivity</em>, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.<br/></p><p>It’s fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
         "button_label": "SHOP NOW",
@@ -494,6 +509,7 @@
       "name": "t:sections.n_how-to-use.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Bacteria defense that fits your day</h2>",
         "text": "<p>Fresh, comfortable skin wherever you are. Dermal Mist comes in two sizes: a 100 ml bottle for consistent at-home use, and a 15 ml travel size for easy, on-the-go refreshment.</p><p><strong>Use it in 4 ways.</strong></p>"
       }
@@ -576,6 +592,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Powered by Hypochlorus Acid</h2>",
         "text": "<p><em>Hypochlorous Acid (HOCl)</em> is a gentle, skin-compatible ingredient commonly used in cosmetics to help refresh the skin and support a clean, balanced feel.<br/><br/>Combined with botanical extracts, this lightweight mist is designed to help soothe the look of stressed skin and provide a refreshing boost throughout the day.<br/><br/>Ideal for skin that feels sensitive, looks flushed, or needs a quick reset as part of your daily routine.</p>",
         "image": "shopify://shop_images/hypo_acid.webp",
@@ -880,7 +897,6 @@
     },
     "sticky_cta_ddPFdd": {
       "type": "n-sticky-button-variants",
-      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -909,6 +925,7 @@
         "variant_45xfGi",
         "variant_45sxGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",

@@ -86,7 +86,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -112,6 +111,7 @@
       "block_order": [
         "badge_NVnWab"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -245,6 +245,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
     },
@@ -682,6 +683,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Why we started Qure</h2>",
         "text": "<p>We had one belief: Feeling good in your skin is a fundamental right — not a luxury. Because how you feel in your skin affects how you show up in your life.<br/><br/>As a brother-and-sister duo, we saw that <em>clinically proven skincare</em> was often expensive, or out of reach for many people. <br/><br/>So we set out to remove unnecessary barriers and make effective <em>science-backed treatments </em>accessible from home.</p>",
         "image": "shopify://shop_images/skincare_rev.webp",

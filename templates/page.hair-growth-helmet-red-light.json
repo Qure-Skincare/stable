@@ -90,8 +90,9 @@
         "heading": "Red Light Therapy for Hair Loss Using an FDA-Cleared LLLT Helmet",
         "rating": true,
         "description": "<p>Targeted <strong>red light therapy for hair loss</strong> combines LED light and medical-grade lasers to support scalp health and promote the appearance of thicker-looking hair in just 12 minutes per session.</p>",
-        "reserved": false,
-        "soldout": true
+        "whitelist": false,
+        "reserved": true,
+        "soldout": false
       }
     },
     "n_hair_growth_helmet_image_slider_9KL6Kj": {
