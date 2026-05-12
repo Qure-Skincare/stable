@@ -21,6 +21,11 @@
        section: section %}
 {% enddoc %}
 
+{%- assign helmet_is_reserved = false -%}
+{%- if section.settings.reserved -%}
+  {%- assign helmet_is_reserved = true -%}
+{%- endif -%}
+
 {%- assign helmet_is_soldout = false -%}
 {%- if product_available == false -%}
   {%- assign helmet_is_soldout = true -%}
@@ -31,6 +36,8 @@
 
 {%- if helmet_is_soldout -%}
   {%- capture helmet_button_label -%}{{ 'product.settings.soldout-button-label' | t }}{%- endcapture -%}
+{%- elsif helmet_is_reserved -%}
+  {%- capture helmet_button_label -%}{{ 'product.settings.reserved-button-label' | t }}{%- endcapture -%}
 {%- elsif product_discount > 0 -%}
   {%- capture helmet_button_label -%}{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%{%- endcapture -%}
 {%- else -%}
