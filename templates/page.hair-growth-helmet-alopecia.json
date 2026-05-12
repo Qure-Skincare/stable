@@ -90,8 +90,9 @@
         "heading": "FDA-Cleared Red Light Therapy for Androgenetic Alopecia",
         "rating": true,
         "description": "<p>The Q-Renew LLLT Helmet is a clinically-proven, non-invasive solution for androgenetic alopecia. It combines medical-grade lasers and LED lights to stimulate hair follicles and promote hair regrowth in both men and women.</p>",
-        "reserved": false,
-        "soldout": true
+        "whitelist": false,
+        "reserved": true,
+        "soldout": false
       }
     },
     "n_hair_growth_helmet_image_slider_9KL6Kj": {

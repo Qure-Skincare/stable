@@ -16,27 +16,6 @@
     {% endfor %}
 {% endif %}
 
-{% if page != blank %}
-    <ul class="e-features-list">
-        {% case block.settings.guarantee_period %}
-            {% when 'year' %}
-                <li>
-                    <i class="e-icon e-icon-one-year"></i>
-                    1-Year Guarantee
-                </li>
-            {% else %}
-                <li>
-                    <i class="e-icon e-icon-guarantee"></i>
-                    {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                </li>
-        {% endcase %}
-        <li>
-            <i class="e-icon e-icon-shipping-order"></i>
-            {{ 'product.settings.buy-button-bottom.shipping_text' | t }}
-        </li>
-    </ul>
-{% endif %}
-
 <div class="c-exclusive-offer">
     <div class="c-exclusive-offer__tag">
         {{ 'page.exclusive-offer.n_header_html' | t }}
