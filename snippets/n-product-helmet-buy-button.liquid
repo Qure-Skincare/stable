@@ -21,6 +21,11 @@
        section: section %}
 {% enddoc %}
 
+{%- assign helmet_is_reserved = false -%}
+{%- if section.settings.reserved -%}
+  {%- assign helmet_is_reserved = true -%}
+{%- endif -%}
+
 {%- assign helmet_is_soldout = false -%}
 {%- if product_available == false -%}
   {%- assign helmet_is_soldout = true -%}
@@ -31,6 +36,8 @@
 
 {%- if helmet_is_soldout -%}
   {%- capture helmet_button_label -%}{{ 'product.settings.soldout-button-label' | t }}{%- endcapture -%}
+{%- elsif helmet_is_reserved -%}
+  {%- capture helmet_button_label -%}{{ 'product.settings.reserved-button-label' | t }}{%- endcapture -%}
 {%- elsif product_discount > 0 -%}
   {%- capture helmet_button_label -%}{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%{%- endcapture -%}
 {%- else -%}
@@ -47,6 +54,15 @@
         <input type="hidden" name="quantity" value="1">
         <input type="hidden" name="id" value="{{ product_variant_id }}">
     </form>
+    {% if section.settings.reserved == true %}
+        <div class="pre-order-info">
+            <div class="pre-order-info__status">{{ 'sections.hair-growth-helmet.header.reserve' | t }}</div>
+            <div class="pre-order-info__expected" onclick="shipmentModal.showModal()">
+                {{ 'sections.hair-growth-helmet.header.reserve_date' | t }}
+                <img src="https://qureskincaredns-stable.com/alex/sections/isolated/helmet-home/images/expected-arrow.svg" alt="" />
+            </div>
+        </div>
+    {% endif %}
 </div>
 
 {%- comment -%}
