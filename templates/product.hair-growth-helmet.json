@@ -91,7 +91,8 @@
         "rating": true,
         "description": "<p>Targeted LED light therapy and medical-grade lasers to support scalp health. Encourages the appearance of thicker-looking hair with <strong>just 12 minutes per session</strong>.</p>",
         "reserved": false,
-        "soldout": true
+        "soldout": true,
+        "whitelist": false
       }
     },
     "n_hair_growth_helmet_image_slider_9KL6Kj": {
