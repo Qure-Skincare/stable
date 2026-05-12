@@ -154,6 +154,26 @@
                     "id": "hide_bottom",
                     "label": "t:common.hide_bottom",
                     "default": true
+                },
+                {
+                    "type": "select",
+                    "id": "guarantee_period",
+                    "label": "t:common.guarantee_period",
+                    "options": [
+                        {
+                            "value": "30",
+                            "label": "t:common.30_days"
+                        },
+                        {
+                            "value": "90",
+                            "label": "t:common.90_days"
+                        },
+                        {
+                            "value": "year",
+                            "label": "t:common.year"
+                        }
+                    ],
+                    "default": "30"
                 }
             ]
         },
@@ -254,22 +274,6 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
-                },
-                {
-                    "type": "select",
-                    "id": "guarantee_period",
-                    "label": "t:common.guarantee_period",
-                    "options": [
-                        {
-                            "value": "30",
-                            "label": "t:common.30_days"
-                        },
-                        {
-                            "value": "year",
-                            "label": "t:common.year"
-                        }
-                    ],
-                    "default": "30"
                 }
             ]
         },
@@ -302,22 +306,6 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
-                },
-                {
-                    "type": "select",
-                    "id": "guarantee_period",
-                    "label": "t:common.guarantee_period",
-                    "options": [
-                        {
-                            "value": "30",
-                            "label": "t:common.30_days"
-                        },
-                        {
-                            "value": "year",
-                            "label": "t:common.year"
-                        }
-                    ],
-                    "default": "30"
                 }
             ]
         },
