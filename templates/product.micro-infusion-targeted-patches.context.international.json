@@ -16,12 +16,32 @@
     "purchase-form-landing": {
       "settings": {},
       "blocks": {
+        "product_RBCPe8": {
+          "settings": {
+            "soldout": true
+          }
+        },
         "product_gbPf3J": {
           "settings": {
             "soldout": true
           }
         },
-        "product_RBCPe8": {
+        "product_x3jeL8": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_eiY89h": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_nyJ9n7": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_AJPQaQ": {
           "settings": {
             "soldout": true
           }
