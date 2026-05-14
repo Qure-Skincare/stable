@@ -12,15 +12,19 @@
 
 {% if rating_count > 5 %}
     {% assign show_rating = rating_value | slice: 0, 3 %}
-    <div class="e-rating-stars" style="--rating: {{ show_rating }}"></div>
-    {% if rating_text != blank %}
-        <span>{{ rating_text }}</span>
-    {% else %}
-        <a href="#stamped-main-widget">{{ 'product.settings.n-product-rating.static_html' | t: rating: show_rating }}</a>
-    {% endif %}
+    <div class="c-rating c-rating--bg">
+      <div class="e-rating-stars" style="--rating: {{ show_rating }}"></div>
+      {% if rating_text != blank %}
+          <span>{{ rating_text }}</span>
+      {% else %}
+          <a href="#stamped-main-widget">{{ 'product.settings.n-product-rating.static_html' | t: rating: show_rating }}</a>
+      {% endif %}
+    </div>
 {% else %}
-    <div class="e-rating-stars" style="--rating: 4.8"></div>
-    {{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}
+    <div class="c-rating c-rating--bg">
+      <div class="e-rating-stars" style="--rating: 4.8"></div>
+      {{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}
+    </div>
 {% endif %}
 
 {% if rating_value != blank %}
