@@ -357,7 +357,8 @@
                     "holidays": "Holidays",
                     "hero": "Hero banner",
                     "hero-reverse": "Hero reverse",
-                    "sm": "Small banner"
+                    "sm": "Small banner",
+                    "holidays-secondary": "Holidays secondary"
                 }
             },
             "blocks": {

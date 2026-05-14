@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/across-image-banner/across-image-banner.css" />
 {% endif %}
-    <section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% endif %}">
+<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
@@ -131,6 +131,10 @@
                     {% endfor %}
                 {% endif %}
 
+                {% if section.settings.sub_text != blank %}
+                    <small>{{ section.settings.sub_text | replace : '<p>', '' | replace : '</p>', '' }}</small>
+                {% endif %}
+
             </article>
 
             {% for block in section.blocks %}
@@ -189,6 +193,10 @@
                 {
                     "value": "sm",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.sm"
+                },
+                {
+                    "value": "holidays-secondary",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.holidays-secondary"
                 }
             ]
         },
@@ -201,6 +209,11 @@
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
+        },
+        {
+            "type": "richtext",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
         },
         {
             "type": "image_picker",
