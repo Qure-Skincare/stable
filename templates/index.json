@@ -124,6 +124,33 @@
         "button_url": "https://qureskincare.com/pages/q-rejuvalight-pro-offer"
       }
     },
+    "n_across_image_banner_jUysh7T": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "badge_NVnWab": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "Memorial Day Sale"
+          }
+        }
+      },
+      "block_order": [
+        "badge_NVnWab"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "holidays-secondary",
+        "heading": "<h1>Simplify Your Routine Before&nbsp;Summer</h1>",
+        "text": "<p>Stock Up On <strong>All-In-One Face Serum</strong>:<br />Clinically Backed Ingredients that Help With 5+ Skin Concerns</p>",
+        "sub_text": "<p><em>Limited time offer.</em> Valid for US and UK orders only.</p>",
+        "image": "shopify://shop_images/memorial-day.webp",
+        "image_mobile": "shopify://shop_images/memorial-day-mob.webp",
+        "button_label": "Buy Now &amp; Save Up to 40%",
+        "button_url": "https://qureskincare.com/products/face-serum"
+      }
+    },
     "n_index-quick-title-links": {
       "type": "n_index-quick-title-links",
       "blocks": {
@@ -821,6 +848,7 @@
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_across_image_banner_RwWtme",
+    "n_across_image_banner_jUysh7T",
     "n_index-quick-title-links",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
