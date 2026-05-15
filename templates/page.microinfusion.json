@@ -819,6 +819,19 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_LM98hx": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_49.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Hannah J.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>AMAZING!</h6><p>“I’ve used the micro-infusion dark spot bundle set only one and I can already tell a difference!! My skin is ✨GLOWING✨ I have had several people ask me what I’ve done different just from one use! I cannot wait to continue using this and see the continued progress I’ll have. 10000/10 recommend!!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -841,7 +854,8 @@
         "slider_VMhi4U",
         "slider_JGNbxw",
         "slider_pmdDck",
-        "slider_QUARee"
+        "slider_QUARee",
+        "slider_LM98hx"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
