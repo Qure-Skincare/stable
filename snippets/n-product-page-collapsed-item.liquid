@@ -9,29 +9,37 @@
   {% render 'n-product-bundle-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
 {% enddoc %}
 
+{% capture marked_list %}{% render 'n_product-marked-list' %}{% endcapture %}
 
 {% if input != blank %}
-    {% assign included_json = input.value | parse_json %}
+  {% assign included_json = input.value | parse_json %}
 
-    <details class="c-accordion__item">
-        <summary class="c-accordion__summary">{{ title }}</summary>
-        <article class="c-accordion__content">
-            {% for item in included_json.children %}
-                {% case item.type %}
-                  {% when 'list' %}
-                    <ul>
-                      {% for list_item in item.children %}
-                        <li>{{ list_item.children[0].value }}</li>
-                      {% endfor %}
-                    </ul>
-                  {% when 'paragraph' %}
-                    <p>
-                      {% for paragraph_item in item.children %}
-                        {{ paragraph_item.value }}
-                      {% endfor %}
-                    </p>
-                {% endcase %}
-              {% endfor %}
-        </article>
-    </details>
+  <details class="c-accordion__item">
+      <summary class="c-accordion__summary">{{ title }}</summary>
+      <article class="c-accordion__content">
+          {% for item in included_json.children %}
+              {% case item.type %}
+                {% when 'list' %}
+                  <ul>
+                    {% for list_item in item.children %}
+                      <li>{{ list_item.children[0].value 
+                        | replace: '[hr]', '<hr />' 
+                        | replace: '[br]', '<br />' 
+                        | replace: '[marked_list]', marked_list
+                        }}</li>
+                    {% endfor %}
+                  </ul>
+                {% when 'paragraph' %}
+                  <p>
+                    {% for paragraph_item in item.children %}
+                      {{ paragraph_item.value 
+                      | replace: '[hr]', '<hr />' 
+                      | replace: '[br]', '<br />' 
+                      | replace: '[marked_list]', marked_list }}
+                    {% endfor %}
+                  </p>
+              {% endcase %}
+            {% endfor %}
+      </article>
+  </details>
 {% endif %}

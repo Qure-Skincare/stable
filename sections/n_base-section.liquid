@@ -15,6 +15,52 @@
                     <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                 </picture>
             {% endif %}
+
+            {% assign has_accordion = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'accordion' %}
+                    {% assign has_accordion = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_accordion %}
+                <div>
+                    <div class="c-accordion c-accordion--lines c-accordion--arrow-icon">
+                        <div class="c-accordion__list">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'accordion' %}
+                                    <details class="c-accordion__item">
+                                        {% if block.settings.heading != blank %}
+                                            <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
+                                        {% endif %}
+                                        <article class="c-accordion__content">
+                                            {{ block.settings.text }}
+                                            <ul class="c-percent-list">
+                                                <li>
+                                                    {% if block.settings.percent_value_1 != blank %}
+                                                        <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_1 }}"><span>{{ block.settings.percent_value_1 }}%</span></div>
+                                                    {% endif %}
+                                                    {% if block.settings.percent_scale_text_1 != blank %}
+                                                        <span>{{ block.settings.percent_scale_text_1 }}</span>
+                                                    {% endif %}
+                                                </li>
+                                                <li>
+                                                    {% if block.settings.percent_value_2 != blank %}
+                                                        <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_2 }}"><span>{{ block.settings.percent_value_2 }}%</span></div>
+                                                    {% endif %}
+                                                    {% if block.settings.percent_scale_text_2 != blank %}
+                                                        <span>{{ block.settings.percent_scale_text_2 }}</span>
+                                                    {% endif %}
+                                                </li>
+                                            </ul>
+                                        </article>
+                                    </details>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
             {% if section.settings.wistia_url != blank %}
                 <div class="wistia-embed-video">
                     <div class="wistia_responsive_padding">
@@ -211,7 +257,35 @@
                 </div>
             {% endif %}
 
+            {% for block in section.blocks %}
+                {% if block.type == 'popup' %}
+                    {% if block.settings.button_label != blank and block.settings.popup_id != blank %}
+                        <a href="javascript:;" onclick="{{ block.settings.popup_id }}.showModal()">{{ block.settings.button_label }}</a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
         </article>
+
+        {% for block in section.blocks %}
+            {% if block.type == 'popup' %}
+                <dialog class="c-dialog c-dialog--right-side" id="{{ block.settings.popup_id }}">
+                    <div class="c-dialog__content">
+                        {{ block.settings.text }}
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        {% endif %}
+                    </div>
+                    {% if block.settings.sub_text != blank %}
+                        <div class="c-dialog__disclaimer">{{ block.settings.sub_text }}</div>
+                    {% endif %}
+                    <button class="c-dialog__close" type="button" onclick="{{ block.settings.popup_id }}.close()">
+                        <i class="e-icon e-icon-cross"></i>
+                    </button>
+                </dialog>
+            {% endif %}
+        {% endfor %}
+
     </div>
 </section>
 <script>
@@ -520,6 +594,74 @@
                 "type": "text",
                 "id": "text",
                 "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "accordion",
+        "name": "t:common.accordion",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "percent_value_1",
+                "label": "t:common.percent-value"
+            },
+            {
+                "type": "text",
+                "id": "percent_scale_text_1",
+                "label": "t:common.percent-scale-text"
+            },
+            {
+                "type": "text",
+                "id": "percent_value_2",
+                "label": "t:common.percent-value"
+            },
+            {
+                "type": "text",
+                "id": "percent_scale_text_2",
+                "label": "t:common.percent-scale-text"
+            }
+        ]
+    },
+    {
+        "type": "popup",
+        "name": "t:common.popup",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label"
+            },
+            {
+                "type": "text",
+                "id": "popup_id",
+                "label": "t:common.popup-id"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "label": "t:common.sub-text"
             }
         ]
     }

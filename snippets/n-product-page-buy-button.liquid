@@ -84,15 +84,17 @@
     </div>
 
     {% unless is_modal %}
-      {% unless block.settings.hide_bottom %}
-          <div class="c-certified-box">
-              <ul>
-                  <li><img src="https://qureskincaredns-stable.com/sections/isolated/targeted-patches/images/crt-1.webp" alt="Certified Dermatologists" /></li>
-                  <li><img src="https://qureskincaredns-stable.com/sections/isolated/targeted-patches/images/crt-2.webp" alt="Certified Dermatologists" /></li>
-                  <li>+50</li>
-              </ul>
-              <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
-          </div>
+      {% unless block.settings.hide_bottom or section.settings.hide_bottom %}
+          {% unless block.settings.hide_certified or section.settings.hide_certified %}
+              <div class="c-certified-box">
+                  <ul>
+                      <li><img src="https://qureskincaredns-stable.com/sections/isolated/targeted-patches/images/crt-1.webp" alt="Certified Dermatologists" /></li>
+                      <li><img src="https://qureskincaredns-stable.com/sections/isolated/targeted-patches/images/crt-2.webp" alt="Certified Dermatologists" /></li>
+                      <li>+50</li>
+                  </ul>
+                  <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
+              </div>
+          {% endunless %}
           <ul class="e-features-list">
               <li>
                   <i class="e-icon e-icon-guarantee"></i>

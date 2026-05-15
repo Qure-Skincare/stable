@@ -31,8 +31,11 @@
           "settings": {
             "heading": "Clinically Proven Results",
             "text1": "agree skin feels hydrated",
+            "percent_value_1": 90,
             "text2": "agree skin feels softer",
-            "text3": "agree hair feels less frizzy"
+            "percent_value_2": 83,
+            "text3": "agree hair feels less frizzy",
+            "percent_value_3": 70
           }
         },
         "nextships_nN4CpM": {

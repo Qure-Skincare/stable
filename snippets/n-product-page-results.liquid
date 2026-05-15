@@ -18,12 +18,12 @@
 
 <ul class="c-clinic-metrics" data-label="{{ block.settings.heading }}">
     {% if block.settings.text1 != blank %}
-        <li data-value="90%">{{ block.settings.text1 }}</li>
+        <li data-value="{{ block.settings.percent_value_1 }}%">{{ block.settings.text1 }}</li>
     {% endif %}
     {% if block.settings.text2 != blank %}
-        <li data-value="83%">{{ block.settings.text2 }}</li>
+        <li data-value="{{ block.settings.percent_value_2 }}%">{{ block.settings.text2 }}</li>
     {% endif %}
     {% if block.settings.text3 != blank %}
-        <li data-value="70%">{{ block.settings.text3 }}</li>
+        <li data-value="{{ block.settings.percent_value_3 }}%">{{ block.settings.text3 }}</li>
     {% endif %}
 </ul>
