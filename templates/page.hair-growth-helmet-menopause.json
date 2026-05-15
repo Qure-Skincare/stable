@@ -91,7 +91,7 @@
         "rating": true,
         "description": "<p>Targeted LED light therapy and medical-grade lasers designed to support scalp health during hormonal changes. Helps encourage the appearance of thicker, fuller-looking hair with <strong>just 12 minutes per session</strong>.</p>",
         "whitelist": false,
-        "reserved": true,
+        "reserved": false,
         "soldout": false
       }
     },
