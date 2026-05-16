@@ -117,6 +117,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
     },
@@ -236,7 +237,7 @@
             "product": "line-refine-bundle-pro1",
             "image": "shopify://shop_images/Line_Refine_Bundle_Pro_acca69aa-ddf7-4405-98ea-9756b1cd3c48.png",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -246,7 +247,7 @@
             "product": "line-refine-bundle-advanced",
             "image": "shopify://shop_images/Line_Refine_Bundle_Advanced_53750926-1d13-46d0-ac0c-8647271fb8b5.png",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -256,7 +257,7 @@
             "product": "line-refine-bundle-essential",
             "image": "shopify://shop_images/Line_Refine_Bundle_Essential.png",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
@@ -891,6 +892,7 @@
         "modifier": "none",
         "heading": "",
         "text": "<h2>Better skin starts here</h2><p>No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob-1_2abc0783-5cc1-405d-9ff1-471b566527ad.webp",
         "button_label": "",
