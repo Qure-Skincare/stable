@@ -14,11 +14,11 @@
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
       "settings": {
-        "heading": "<p><a href=\"https://qureskincare.com/pages/q-rejuvalight-pro-offer\" title=\"https://qureskincare.com/pages/q-rejuvalight-pro-offer\"><strong>Limited Time Mother’s Day Offer </strong></a><strong>- </strong>Save $299</p>",
+        "heading": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
         "color": "#000000",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
-        "from": "2026-05-10",
-        "days": 9
+        "from": "2026-05-17",
+        "days": 7
       }
     },
     "header": {
