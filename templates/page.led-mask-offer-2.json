@@ -41,6 +41,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "reverse": false,
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
         "rating": false,
@@ -679,7 +680,7 @@
       "name": "Exclusive bundle",
       "settings": {
         "use_own_file": false,
-        "badge": "<p><strong>Mother's Day</strong> Offer</p>",
+        "badge": "<p><strong>Memorial Day</strong> Offer</p>",
         "heading": "<p>Experience face and neck rejuvenation in one bundle</p>",
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
       }
@@ -956,6 +957,7 @@
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Clinical-grade LED, personalized to your skin</h2>",
         "text": "<p><strong>See transformative results in less than 12 weeks.</strong></p><p>Safe,clinically proven wavelengths of light penetrate the layers of the skin at various depths to trigger natural cellular reactions that treats skin concerns from the inside out, for immediate and long lasting results.</p>",
         "image": "shopify://shop_images/clinical-grade.webp",
@@ -972,6 +974,7 @@
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure mobile app</h2>",
         "text": "<p><strong>The only FDA-cleared LED light therapy mask with an app.</strong></p><p>Your skin is unique, so your treatment should be too.</p><p>Choose between <em>three treatment modes</em>, “Skin Rejuvenating”, “Skin Clearing” or custom treatment zones. Select a treatment mode on five different facial areas to <em>treat and target what your skin needs today. </em></p><p>Never miss a treatment with Qure mobile app planner and phone reminders.</p>",
         "image": "shopify://shop_images/image_4_1_20deb982-a801-424d-9d27-b8bc39b864d2.png",
@@ -1100,7 +1103,6 @@
     },
     "sticky_cta_xhjAY4": {
       "type": "n-sticky-button",
-      "disabled": false,
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED System",
