@@ -7,13 +7,14 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_product_header_cleanser": {
       "type": "n-product-header",
       "blocks": {
         "description_hnJud7": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "results_kJG7Dg": {
           "type": "results",
@@ -41,15 +42,11 @@
       ],
       "name": "t:sections.n_product-header.name",
       "settings": {
-        "use_own_file": false,
-        "approved": true,
-        "rating": false,
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
         "heading": "Daily Cleansing Gel",
+        "rating": false,
         "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>",
-        "button_label": "Buy Now &amp; Save 38%",
-        "button_url": "#",
-        "bundle_text": ""
+        "approved": true
       }
     },
     "purchase-form-landing": {
@@ -141,10 +138,10 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_certified": true,
         "hide_types": true,
         "type": "list",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "hide_certified": true
       }
     },
     "n_across_image_banner_cleanser": {
@@ -350,8 +347,8 @@
           "type": "popup",
           "settings": {
             "button_label": "View Full Ingredient List",
-            "text": "<p><strong>Cleanser Ingredients</strong></p><p>Glycerin, Aqua (Water), Sodium Cocoyl Glutamate, Disodium Cocoamphodiacetate, Lactic Acid, Sodium Chloride, Squalane, Aloe Barbadensis Leaf Juice Powder, Panthenol, Camellia Sinensis (Green Tea) Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Sodium Phytate, Caprylhydroxamic Acid, Glyceryl Caprylate</p>",
             "popup_id": "fullIngredient",
+            "text": "<p><strong>Cleanser Ingredients</strong></p><p>Glycerin, Aqua (Water), Sodium Cocoyl Glutamate, Disodium Cocoamphodiacetate, Lactic Acid, Sodium Chloride, Squalane, Aloe Barbadensis Leaf Juice Powder, Panthenol, Camellia Sinensis (Green Tea) Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Sodium Phytate, Caprylhydroxamic Acid, Glyceryl Caprylate</p>",
             "sub_text": "<ul><li>Fragrance-free</li><li>Silicone-free</li><li>Cruelty-free</li><li>Non-drying</li><li>Hypoallergenic</li><li>Safe for sensitive skin</li></ul>"
           }
         }
@@ -364,8 +361,7 @@
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
-        "use_own_file": false,
-        "text": "<h2>Made gentle for all skin types</h2>"
+        "use_own_file": false
       }
     },
     "n_page_microinfusion_complete_system_cleanser": {
@@ -505,7 +501,6 @@
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
         "text": "Don't see your question? ",
-        "sub_text": "",
         "button_label": "Ask us ",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
