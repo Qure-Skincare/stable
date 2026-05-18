@@ -210,14 +210,41 @@
                     "label": "t:common.text"
                 },
                 {
+                    "type": "range",
+                    "id": "percent_value_1",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 5
+                },
+                {
                     "type": "text",
                     "id": "text2",
                     "label": "t:common.text"
                 },
                 {
+                    "type": "range",
+                    "id": "percent_value_2",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 5
+                },
+                {
                     "type": "text",
                     "id": "text3",
                     "label": "t:common.text"
+                },
+                {
+                    "type": "range",
+                    "id": "percent_value_3",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 5
                 }
             ]
         },
@@ -349,6 +376,12 @@
                     "type": "checkbox",
                     "id": "hide_bottom",
                     "label": "t:common.hide_bottom",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "hide_certified",
+                    "label": "t:common.hide_certified",
                     "default": false
                 }
             ]

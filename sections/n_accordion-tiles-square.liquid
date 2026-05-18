@@ -1,0 +1,145 @@
+{% doc %}
+  Renders an accordion tiles section with optional ingredient dialog.
+{% enddoc %}
+
+<!-- ACCORDION TILES -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns.com/sections/new/accordion-tiles/accordion-tiles.css" />
+{% endif %}
+<section class="accordion-tiles accordion-tiles--square">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                    "slidesPerView": 1.1,
+                    "spaceBetween": 16,
+                    "loop": false,
+                    "breakpoints": {
+                        "768": {
+                            "slidesPerView": 2.1
+                        },
+                        "992": {
+                            "slidesPerView": 3,
+                            "spaceBetween": 32
+                        }
+                    }
+                }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'accordion' %}
+                            <div class="swiper-slide">
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                <details>
+                                    {% if block.settings.heading != blank %}
+                                        <summary>{{ block.settings.heading }} <i class="e-icon e-icon-plus"></i></summary>
+                                    {% endif %}
+                                    {{ block.settings.text }}
+                                </details>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% for block in section.blocks %}
+                {% if block.type == 'popup' %}
+                    {% if block.settings.button_label != blank and block.settings.popup_id != blank %}
+                        <a href="javascript:;" onclick="{{ block.settings.popup_id }}.showModal()">{{ block.settings.button_label }}</a>
+                    {% endif %}
+                
+                    <dialog class="c-dialog" id="{{ block.settings.popup_id }}">
+                        <div class="c-dialog__content">
+                            {{ block.settings.text }}
+                            <hr />
+                            <ul class="c-marked-list c-marked-list--fill">
+                                {{ block.settings.sub_text | replace: '<ul>', '' }}
+                            </ul>
+                        </div>
+                        <button class="c-dialog__close" type="button" onclick="{{ block.settings.popup_id }}.close()">
+                            <i class="e-icon e-icon-cross"></i>
+                        </button>
+                    </dialog>
+                {% endif %}                
+            {% endfor %}
+        </article>
+    </div>
+</section>
+<!-- ACCORDION TILES END -->
+
+{% schema %}
+{
+  "name": "t:sections.n_accordion-tiles-square.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_own_file",
+      "label": "t:common.use-own-file",
+      "default": false
+    },
+    {
+        "type": "richtext",
+        "id": "heading",
+        "label": "t:common.header"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "accordion",
+        "name": "t:common.accordion",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "popup",
+        "name": "t:common.popup",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "t:common.button-label"
+            },
+            {
+                "type": "text",
+                "id": "popup_id",
+                "label": "t:common.popup-id"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            },
+            {
+                "type": "richtext",
+                "id": "sub_text",
+                "label": "t:common.sub-text"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.n_accordion-tiles-square.name"
+    }
+  ]
+}
+{% endschema %}

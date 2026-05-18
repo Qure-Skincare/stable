@@ -40,5 +40,20 @@
         {% elsif page.metafields.custom.full_ingredient_list != blank %}
             {% render 'n-product-page-collapsed-item' input: page.metafields.custom.full_ingredient_list, index: 'six', title: 'Full ingredient list' %}
         {% endif %}
+        {%  if product.metafields.custom.how_to_use != blank %}
+            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.how_to_use, index: 'seven', title: 'How To Use' %}
+        {% elsif page.metafields.custom.how_to_use != blank %}
+            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.how_to_use, index: 'seven', title: 'How To Use' %}
+        {% endif %}
+        {% if product.metafields.custom.why_we_love_it != blank %}
+            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.why_we_love_it, index: 'eight', title: 'Why We Love It' %}
+        {% elsif page.metafields.custom.why_we_love_it != blank %}
+            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.why_we_love_it, index: 'eight', title: 'Why We Love It' %}
+        {% endif %}
+        {% if product.metafields.custom.clean_ingredients != blank %}
+            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.clean_ingredients, index: 'nine', title: 'Clean Ingredients' %}
+        {% elsif page.metafields.custom.clean_ingredients != blank %}
+            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.clean_ingredients, index: 'nine', title: 'Clean Ingredients' %}
+        {% endif %}
     </div>
 </div>

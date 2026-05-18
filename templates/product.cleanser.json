@@ -1,0 +1,525 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
+  "sections": {
+    "n_product_header_cleanser": {
+      "type": "n-product-header",
+      "blocks": {
+        "description_hnJud7": {
+          "type": "description"
+        },
+        "results_kJG7Dg": {
+          "type": "results",
+          "settings": {
+            "heading": "Based on a 6 week consumer study",
+            "text1": "said their skin felt hydrated after use",
+            "percent_value_1": 100,
+            "text2": "agree skin feels smoother after use",
+            "percent_value_2": 83,
+            "text3": "agree cleanser feels gentle and soothing",
+            "percent_value_3": 83
+          }
+        },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        }
+      },
+      "block_order": [
+        "description_hnJud7",
+        "section_A0",
+        "results_kJG7Dg"
+      ],
+      "name": "t:sections.n_product-header.name",
+      "settings": {
+        "use_own_file": false,
+        "approved": true,
+        "rating": false,
+        "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
+        "heading": "Daily Cleansing Gel",
+        "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>",
+        "button_label": "Buy Now &amp; Save 38%",
+        "button_url": "#",
+        "bundle_text": ""
+      }
+    },
+    "purchase-form-landing": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "type_bPf3D2": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_NEgEkq": {
+          "type": "product_type",
+          "settings": {
+            "preselected": true
+          }
+        },
+        "product_gbPf3D1": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "3 bottles",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-trio.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
+          }
+        },
+        "product_NEgEkq2": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser-4-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "4 Months Supply",
+            "subheading": "2 bottles",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-duo.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
+          }
+        },
+        "product_RBCPe11": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "2 Months Supply",
+            "subheading": "1 bottle",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-uno.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
+          }
+        }
+      },
+      "block_order": [
+        "type_bPf3D2",
+        "product_type_NEgEkq",
+        "product_gbPf3D1",
+        "product_NEgEkq2",
+        "product_RBCPe11"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-subscription",
+        "hide_certified": true,
+        "hide_types": true,
+        "type": "list",
+        "klaviyo_form_name": ""
+      }
+    },
+    "n_across_image_banner_cleanser": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "heading": "<h2>A cleanser that restores what others remove</h2>",
+        "text": "<p>Most cleansers leave skin feeling tight.</p><p>That feeling isn’t clean - it’s moisture loss.</p><p>Many cleansers rely on strong surfactants to create a foamy, squeaky clean feel, often at the expense of your skin barrier.</p><p>Our cleanser is different. Instead of relying on water alone, the formula is powered by 50% glycerin, a moisture loving ingredient that helps skin hold onto hydration while you cleanse.</p>",
+        "image": "shopify://shop_images/cleanser-bg-image-1.webp",
+        "image_mobile": "shopify://shop_images/cleanser-bg-image-1-mob.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_expert_board_cleanser": {
+      "type": "n_expert-board",
+      "blocks": {
+        "slider_shah": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Shah<br>Board Certified Dermatologist</p>",
+            "text": "<p>“I like that they put a lot of R&amp;D into their products - Ultimately, I think that they care a lot about the products they are putting out.”</p>",
+            "image": "shopify://shop_images/shah.webp"
+          }
+        },
+        "slider_maxfield": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Maxfield<br>Board Certified Dermatologist</p>",
+            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to help what you’re doing for your skincare routine.”</p>",
+            "image": "shopify://shop_images/maxfield.webp"
+          }
+        },
+        "slider_tripathi": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Tripathi<br>Double Board Certified Facial Plastic Surgeon</p>",
+            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "image": "shopify://shop_images/tripathi.webp"
+          }
+        },
+        "slider_stephens": {
+          "type": "slider",
+          "settings": {
+            "heading": "<p>Dr. Stephens<br>Board Certified Dermatologist</p>",
+            "text": "<p>“What really sets Qure apart is the level of innovation and thoughtfulness they put into each product. Their commitment to quality and attention to detail really shines through in everything they create.”</p>",
+            "image": "shopify://shop_images/stephens.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_shah",
+        "slider_maxfield",
+        "slider_tripathi",
+        "slider_stephens"
+      ],
+      "name": "t:sections.n_expert-board.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Trusted and Recommended by Skin Experts</h2>",
+        "text": ""
+      }
+    },
+    "n_base_section_cleanser_clinical": {
+      "type": "n_base-section",
+      "blocks": {
+        "accordion_hydration": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Boosts hydration",
+            "text": "<p>Our glycerin-first formula draws moisture into skin as it cleanses, so you finish feeling hydrated rather than stripped.</p>",
+            "percent_value_1": "100",
+            "percent_scale_text_1": "agreed that skin felt hydrated after cleansing",
+            "percent_value_2": "80",
+            "percent_scale_text_2": "said skin did not feel dry or tight after cleansing"
+          }
+        },
+        "accordion_texture": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Improves texture",
+            "text": "<p>A gentle 1.75% lactic acid refines skin over time without irritation, while 50% glycerin ensures skin stays comfortable throughout.</p>",
+            "percent_value_1": "93",
+            "percent_scale_text_1": "said their skin felt soft and clean",
+            "percent_value_2": "83",
+            "percent_scale_text_2": "reported smoother-feeling skin"
+          }
+        },
+        "accordion_soothe": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Soothes and calms",
+            "text": "<p>Tested on 106 volunteers and confirmed to be non-irritating and soothing for sensitive skin.</p>",
+            "percent_value_1": "83",
+            "percent_scale_text_1": "agreed cleanser felt gentle and soothing on first use",
+            "percent_value_2": "80",
+            "percent_scale_text_2": "said skin looked healthy after cleansing"
+          }
+        },
+        "popup_study_details": {
+          "type": "popup",
+          "settings": {
+            "button_label": "Read study details",
+            "popup_id": "readStudyDetails",
+            "text": "<h6>Clinically Proven Benefits</h6><p>An independent user study with 30 participants, supported by third-party TEWL measurements, showed improvements in measured skin barrier after 6 weeks of daily use of the Qure Daily Cleansing Gel.</p>",
+            "image": "shopify://shop_images/cleanser-metrics-image-1.webp",
+            "sub_text": "*Testing conducted by an independent laboratory. Results based on user perception and instrumental measurements of daily use over 6 weeks."
+          }
+        }
+      },
+      "block_order": [
+        "accordion_hydration",
+        "accordion_texture",
+        "accordion_soothe",
+        "popup_study_details"
+      ],
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "reverse",
+        "modifier_2": "none",
+        "background_color": "none",
+        "heading": "<h2>Clinically tested, barrier approved</h2>",
+        "text": "",
+        "image": "shopify://shop_images/cleanser-text-image-1.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_features_marquee_cleanser": {
+      "type": "n_features-marquee",
+      "blocks": {
+        "image_with_text_shipping": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br />Orders Over $100"
+          }
+        },
+        "image_with_text_reviewed": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "reviewed",
+            "text": "Dermatologist<br />Reviewed"
+          }
+        },
+        "image_with_text_pay_later": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br />Options Available"
+          }
+        },
+        "image_with_text_proven": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "proven",
+            "text": "Proven Results,<br />Backed By Science"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_shipping",
+        "image_with_text_reviewed",
+        "image_with_text_pay_later",
+        "image_with_text_proven"
+      ],
+      "name": "t:sections.n_features-marquee.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_accordion_tiles_square_cleanser": {
+      "type": "n_accordion-tiles-square",
+      "blocks": {
+        "accordion_glycerin": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/glycerin-tile.webp",
+            "heading": "Glycerin",
+            "text": "<p>A proven humectant that attracts and holds moisture in the skin, leaving skin feeling hydrated, comfortable, and balanced after rinse off.</p>"
+          }
+        },
+        "accordion_lactic": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/lactic-acid-tile.webp",
+            "heading": "Lactic Acid",
+            "text": "<p>A gentle exfoliating acid that helps refine the look of skin texture and boost radiance over time. Used at a skin friendly level, lactic acid supports smoother looking skin without the harsh feel of traditional exfoliating cleansers.</p>"
+          }
+        },
+        "accordion_aloe_green_tea": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/aloe-vera-tile.webp",
+            "heading": "Aloe Vera &amp; Green Tea",
+            "text": "<p>Natural calming agents with antioxidant benefits. They soothe and protect, making this cleanser gentle enough for daily use on sensitive skin.</p>"
+          }
+        },
+        "popup_ingredients": {
+          "type": "popup",
+          "settings": {
+            "button_label": "View Full Ingredient List",
+            "text": "<p><strong>Cleanser Ingredients</strong></p><p>Glycerin, Aqua (Water), Sodium Cocoyl Glutamate, Disodium Cocoamphodiacetate, Lactic Acid, Sodium Chloride, Squalane, Aloe Barbadensis Leaf Juice Powder, Panthenol, Camellia Sinensis (Green Tea) Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Sodium Phytate, Caprylhydroxamic Acid, Glyceryl Caprylate</p>",
+            "popup_id": "fullIngredient",
+            "sub_text": "<ul><li>Fragrance-free</li><li>Silicone-free</li><li>Cruelty-free</li><li>Non-drying</li><li>Hypoallergenic</li><li>Safe for sensitive skin</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_glycerin",
+        "accordion_lactic",
+        "accordion_aloe_green_tea",
+        "popup_ingredients"
+      ],
+      "name": "t:sections.n_accordion-tiles.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h2>Made gentle for all skin types</h2>"
+      }
+    },
+    "n_page_microinfusion_complete_system_cleanser": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_faucet_filter": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-filter",
+            "variant_title": "",
+            "description": "Wash with filtered water to help boost hydration and reduce the look of irritation.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_cleanser": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "variant_title": "",
+            "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_face_serum": {
+          "type": "product",
+          "settings": {
+            "product": "face-serum",
+            "variant_title": "",
+            "description": "Prepares skin for a more effective LED session.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "product_led_mask": {
+          "type": "product",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear-3",
+            "variant_title": "",
+            "description": "Daily multi wavelength LED treatment for clearer, firmer-looking skin.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "step_restrict": {
+          "type": "step",
+          "settings": {
+            "step": "Restrict"
+          }
+        },
+        "step_revive": {
+          "type": "step",
+          "settings": {
+            "step": "Revive"
+          }
+        },
+        "step_ready": {
+          "type": "step",
+          "settings": {
+            "step": "Ready"
+          }
+        },
+        "step_rejuvenate": {
+          "type": "step",
+          "settings": {
+            "step": "Rejuvenate"
+          }
+        }
+      },
+      "block_order": [
+        "product_faucet_filter",
+        "product_cleanser",
+        "product_face_serum",
+        "product_led_mask",
+        "step_restrict",
+        "step_revive",
+        "step_ready",
+        "step_rejuvenate"
+      ],
+      "name": "t:sections.n_page-microinfusion-complete-system.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Complete the Qure system</h2>",
+        "button_label": "Add Full System to Cart",
+        "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
+      }
+    },
+    "n_faq_cleanser": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_sensitive_skin": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this cleanser suitable for sensitive skin?",
+            "text": "<p>Yes. This cleanser is gentle, non-stripping, and dermatologically tested to be suitable for sensitive skin. It is clinically tested, hypoallergenic, non-irritating, and allergy tested. As with any skincare product, we recommend patch testing before first use, especially if you have highly reactive skin.</p>"
+          }
+        },
+        "accordion_dry_out": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will this cleanser dry out my skin?",
+            "text": "<p>No. The formula is glycerin based rather than water based, which helps maintain moisture while cleansing. Most users reported their skin felt hydrated, soft, and comfortable after washing, not tight or stripped.</p>"
+          }
+        },
+        "accordion_daily_use": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use this cleanser every day?",
+            "text": "<p>Yes, this cleanser is designed for daily use, morning and night. The formula is pH balanced and suitable for consistent use without disrupting your skin barrier.</p><p>For makeup or sunscreen removal, use a pre-cleanse first. This formula is best suited as a second cleanse or a morning cleanse when your skin needs care - not stripping.</p>"
+          }
+        },
+        "accordion_with_actives": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use this with retinol, vitamin C, or exfoliating acids?",
+            "text": "<p>Yes. This cleanser was formulated to work alongside active routines. By supporting the skin barrier, it helps make actives feel more comfortable over time rather than adding extra stress to the skin.</p>"
+          }
+        },
+        "accordion_exfoliate": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will this cleanser exfoliate my skin?",
+            "text": "<p>It contains a gentle level of lactic acid that helps refine the look of skin texture over time. It is not a harsh exfoliant and does not replace dedicated exfoliating treatments.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_sensitive_skin",
+        "accordion_dry_out",
+        "accordion_daily_use",
+        "accordion_with_actives",
+        "accordion_exfoliate"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question? ",
+        "sub_text": "",
+        "button_label": "Ask us ",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    }
+  },
+  "order": [
+    "n_product_header_cleanser",
+    "purchase-form-landing",
+    "n_across_image_banner_cleanser",
+    "n_expert_board_cleanser",
+    "n_base_section_cleanser_clinical",
+    "n_features_marquee_cleanser",
+    "n_accordion_tiles_square_cleanser",
+    "n_page_microinfusion_complete_system_cleanser",
+    "n_faq_cleanser"
+  ]
+}
