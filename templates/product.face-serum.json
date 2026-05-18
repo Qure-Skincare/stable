@@ -221,7 +221,7 @@
             "subheading": "(3 bottles)",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
-            "product_discount_percent": 4,
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
