@@ -311,7 +311,8 @@
         "save": "Save",
         "am-or-pm": "AM or PM",
         "eye": "Eye",
-        "share": "Share"
+        "share": "Share",
+        "benefits": "Benefits"
     },
     "blocks": {
         "block-card": {

@@ -45,7 +45,7 @@
 
   {% if reserved == false and soldout == false %}
     <script>
-      let buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
+      var buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
 
       document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('n-product-price.js', '{{ 'n-product-price.js' | asset_url }}');

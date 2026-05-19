@@ -18,7 +18,13 @@
 
 <div class="c-exclusive-offer">
     <div class="c-exclusive-offer__tag">
-        {{ 'page.exclusive-offer.n_header_html' | t }}
+
+        {% if block.settings.tag != blank %}
+            <div class="e-double-tag">{{ block.settings.tag | replace: '<p>', '' | replace: '</p>', '' }}</div>
+        {% else %}
+            {{ 'page.exclusive-offer.n_header_html' | t }}
+        {% endif %}
+        
     </div>
     <div class="c-exclusive-offer__list">
         <div class="c-exclusive-offer__item">
@@ -43,10 +49,10 @@
 
 {% if product != blank %}
     <script>
-        const exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
-        const exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
-        const exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
-    
+        var exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
+        var exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
+        var exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
+
         document.addEventListener("DOMContentLoaded", function () {
           loadScriptOnce('n-product-exclusive-offer.js', '{{ 'n-product-exclusive-offer.js' | asset_url }}');
         });

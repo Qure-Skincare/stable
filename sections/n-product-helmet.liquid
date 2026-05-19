@@ -46,6 +46,36 @@
                         </div>
                     {%- endif -%}
 
+                    {%- comment -%}
+                      `n-product-exclusive-offer` uses `{% include 'get-product-data' %}`
+                      internally, which leaks variable mutations to the outer scope.
+                      Snapshot the helmet's product variables before the loop and restore
+                      them after so the buy-button below renders with the helmet's data,
+                      not the offer products' data.
+                    {%- endcomment -%}
+                    {%- assign saved_product_variant_id = product_variant_id -%}
+                    {%- assign saved_product_discount = product_discount -%}
+                    {%- assign saved_product_available = product_available -%}
+                    {%- assign saved_product_sale_price = product_sale_price -%}
+                    {%- assign saved_product_before_price = product_before_price -%}
+                    {%- assign saved_product_black_friday_price = product_black_friday_price -%}
+                    {%- assign saved_black_friday_discount = black_friday_discount -%}
+
+                    {% for block in section.blocks %}
+                        {% case block.type %}
+                            {% when 'exclusive-offer' %}
+                                {% include 'n-product-exclusive-offer', section: section, block: block %}
+                        {% endcase %}
+                    {% endfor %}
+
+                    {%- assign product_variant_id = saved_product_variant_id -%}
+                    {%- assign product_discount = saved_product_discount -%}
+                    {%- assign product_available = saved_product_available -%}
+                    {%- assign product_sale_price = saved_product_sale_price -%}
+                    {%- assign product_before_price = saved_product_before_price -%}
+                    {%- assign product_black_friday_price = saved_product_black_friday_price -%}
+                    {%- assign black_friday_discount = saved_black_friday_discount -%}
+
                     {% render 'n-product-helmet-buy-button',
                         product_variant_id: product_variant_id,
                         product_discount: product_discount,
@@ -359,6 +389,43 @@
                     "id": "hide_bottom",
                     "label": "t:common.hide_bottom",
                     "default": false
+                }
+            ]
+        },
+        {
+            "type": "exclusive-offer",
+            "name": "t:common.exclusive-offer",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "tag",
+                    "label": "t:common.tag"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product1",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "product",
+                    "id": "product2",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product2",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
                 }
             ]
         }
