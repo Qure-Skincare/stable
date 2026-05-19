@@ -1,0 +1,216 @@
+{% doc %}
+  Renders an announcement bar section
+{% enddoc %}
+
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
+
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% unless is_exception %}
+<!-- ANNOUNCEMENT BAR -->
+<div id="announcement-bar" class="announcement-bar">
+    <div class="announcement-bar-content">
+        {% if section.settings.slider %}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                    "slidesPerView": 1,
+                    "spaceBetween": 0,
+                    "loop": true,
+                    "autoplay": {
+                        "delay": 3000,
+                        "pauseOnMouseEnter": true
+                    }
+                }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'slider' %}
+                            <div class="swiper-slide">
+                                {% if block.settings.countdown %}
+                                    <div class="announcement-bar-offer-countdown">
+                                        <div class="container">
+                                            <p style="--colorize-color_: #ff5429"><a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a> {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                                            <div class="e-countdown"{% if block.settings.from != blank %} data-deadline="{{ block.settings.from }}"{% endif %} data-offer-days="{{ block.settings.days }}" style="--colorize-color: #ff5429">
+                                                <div data-key="{{ 'announcement-bar.settings.days' | t }}">00</div>
+                                                <div data-key="{{ 'announcement-bar.settings.hours' | t }}">00</div>
+                                                <div data-key="{{ 'announcement-bar.settings.minutes' | t }}">00</div>
+                                                <div data-key="{{ 'announcement-bar.settings.seconds' | t }}">00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <a class="announcement-bar-link" href="{{ block.settings.button_url }}">
+                                        {{ block.settings.text }}
+                                        {% if block.settings.button_label != blank %}
+                                            <span>{{ block.settings.button_label }}</span>
+                                        {% endif %}
+                                    </a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% else %}
+            {% if section.settings.countdown %}
+                <div class="announcement-bar-offer-countdown">
+                    <div class="container">
+                        <p style="--colorize-color_: #ff5429"><a href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a> {{ section.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                        <div class="e-countdown"{% if section.settings.from != blank %} data-deadline="{{ section.settings.from }}"{% endif %} data-offer-days="{{ section.settings.days }}" style="--colorize-color: #ff5429">
+                            <div data-key="{{ 'announcement-bar.settings.days' | t }}">00</div>
+                            <div data-key="{{ 'announcement-bar.settings.hours' | t }}">00</div>
+                            <div data-key="{{ 'announcement-bar.settings.minutes' | t }}">00</div>
+                            <div data-key="{{ 'announcement-bar.settings.seconds' | t }}">00</div>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <a class="announcement-bar-link" href="{{ section.settings.button_url }}">
+                    {{ section.settings.text }}
+                    {% if section.settings.button_label != blank %}
+                        <span>{{ section.settings.button_label }}</span>
+                    {% endif %}
+                    
+                </a>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+
+{%- assign has_countdown = false -%}
+{%- if section.settings.countdown and section.settings.days > 0 -%}
+    {%- assign has_countdown = true -%}
+{%- endif -%}
+{%- for block in section.blocks -%}
+    {%- if block.settings.countdown and block.settings.days > 0 -%}
+        {%- assign has_countdown = true -%}
+        {%- break -%}
+    {%- endif -%}
+{%- endfor -%}
+
+{% if has_countdown %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("n_announcement-bar.js", "{{ 'n_announcement-bar.js' | asset_url }}");
+        });
+    </script>
+{% endif %}
+<!-- ANNOUNCEMENT BAR END -->
+{% endunless %}
+
+{% schema %}
+{
+    "name": "t:sections.announcement-bar.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "slider",
+            "label": "t:common.slider",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "countdown",
+            "label": "t:sections.announcement-bar.settings.countdown",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        { 
+            "type": "textarea", 
+            "id": "exception", 
+            "label": "t:common.exception" 
+        },
+        {
+            "type": "text",
+            "id": "from",
+            "label": "t:common.from",
+            "info": "Date format: YYYY-MM-DD"
+        },
+        {
+            "type": "range",
+            "id": "days",
+            "min": 1,
+            "max": 30,
+            "step": 1,
+            "unit": "day",
+            "label": "t:common.days",
+            "default": 5
+        }
+    ],
+    "blocks":[
+        {
+            "type": "slider",
+            "name": "t:common.slider",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "countdown",
+                    "label": "t:sections.announcement-bar.settings.countdown",
+                    "default": false
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "t:common.button-url"
+                },
+                {
+                    "type": "text",
+                    "id": "from",
+                    "label": "t:common.from",
+                    "info": "Date format: YYYY-MM-DD"
+                },
+                {
+                    "type": "range",
+                    "id": "days",
+                    "min": 1,
+                    "max": 30,
+                    "step": 1,
+                    "unit": "day",
+                    "label": "t:common.days",
+                    "default": 5
+                }
+            ]
+
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.announcement-bar.name"
+        }
+    ]
+}
+{% endschema %}

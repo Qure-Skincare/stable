@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
@@ -21,6 +21,48 @@
         "days": 7
       }
     },
+    "announcement-bar": {
+      "type": "n_announcement-bar",
+      "blocks": {
+        "slider_1": {
+          "type": "slider",
+          "settings": {
+            "countdown": true,
+            "text": "<p> - Save Up To 40%</p>",
+            "button_label": "Memorial Day Offer",
+            "button_url": "https://qureskincare.com/products/face-serum",
+            "from": "2026-05-17",
+            "days": 7
+          }
+        },
+        "slider_2": {
+          "type": "slider",
+          "settings": {
+            "countdown": false,
+            "text": "<p><strong>Limited Time Memorial Day Sale</strong> &ndash; up&nbsp;to&nbsp;40%&nbsp;off</p>",
+            "button_label": "Shop Now",
+            "button_url": "https://qureskincare.com/products/face-serum",
+            "from": "",
+            "days": 5
+          }
+        }
+      },
+      "block_order": [
+        "slider_1",
+        "slider_2"
+      ],
+      "disabled": true,
+      "settings": {
+        "slider": true,
+        "countdown": false,
+        "text": "",
+        "button_label": "",
+        "button_url": "",
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
+        "from": "",
+        "days": 5
+      }
+    },
     "header": {
       "type": "n-header",
       "custom_css": [],
@@ -29,6 +71,7 @@
   },
   "order": [
     "announcement-bar-gamification",
+    "announcement-bar",
     "header"
   ]
 }

@@ -328,7 +328,10 @@
             "name": "Announcement bar gamification"
         },
         "announcement-bar": {
-            "name": "Announcement bar"
+            "name": "Announcement bar",
+            "settings": {
+                "countdown": "Countdown"
+            }
         },
         "n_404": {
             "name": "404"
