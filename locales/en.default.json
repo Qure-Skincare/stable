@@ -87,13 +87,13 @@
       "new": "New"
     },
     "bf-banner-with-text": {
-      "bf_sale_image": "https://qureskincaredns-stable.com/alex/sections/global/banner-with-text/images/black-friday-sale.webp"
+      "bf_sale_image": "https://qureskincaredns-stable.com/assets/images/banner-with-text/black-friday-sale.webp"
     },
     "bf-clickable-banner-with-text": {
-      "bf_sale_image": "https://qureskincaredns-stable.com/alex/sections/global/banner-with-text/images/black-friday-sale.webp"
+      "bf_sale_image": "https://qureskincaredns-stable.com/assets/images/banner-with-text/black-friday-sale.webp"
     },
     "bf-page-banner": {
-      "bf_sale_image": "https://qureskincaredns-stable.com/alex/sections/isolated/page-banner/images/black-friday-sale.webp",
+      "bf_sale_image": "https://qureskincaredns-stable.com/assets/images/banner-with-text/black-friday-sale.webp",
       "exclude_text": "*Excludes bundles",
       "percent_value": "26%"
     },
@@ -120,7 +120,7 @@
     },
     "car-giveaway-page-banner": {
       "cta_text": "Join Us In Celebrating the ",
-      "qure_logo": "https://qureskincaredns-stable.com/sections/isolated/page-banner/images/qure_logo.svg",
+      "qure_logo": "https://qureskincaredns-stable.com/assets/images/qure_logo.svg",
       "after_logo_text": "Community"
     },
     "car-giveaway-countdown-timer": {
@@ -138,7 +138,7 @@
       "seconds": "S"
     },
     "car-giveaway-product-cards": {
-      "tick_image": "https://qureskincaredns-stable.com/sections/isolated/top-products/images/tick.svg"
+      "tick_image": "https://qureskincaredns-stable.com/assets/images/top-products/tick.svg"
     },
     "car-giveaway-interior-style": {
       "interior_text": "INTERIOR",
@@ -781,12 +781,12 @@
     },
     "blog-post": {
       "settings": {
-        "image_1": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/choose_blog_1.webp",
-        "image_mobile_1": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/choose_blog_1_mob.webp",
-        "image_2": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/choose_blog_2.webp",
-        "image_mobile_2": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/choose_blog_2_mob.webp",
-        "image_3": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/choose_blog_3.webp",
-        "image_mobile_3": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/choose_blog_3_mob.webp"
+        "image_1": "https://qureskincaredns-stable.com/assets/images/blogs/choose_blog_1.webp",
+        "image_mobile_1": "https://qureskincaredns-stable.com/assets/images/blogs/choose_blog_1_mob.webp",
+        "image_2": "https://qureskincaredns-stable.com/assets/images/blogs/choose_blog_2.webp",
+        "image_mobile_2": "https://qureskincaredns-stable.com/assets/images/blogs/choose_blog_2_mob.webp",
+        "image_3": "https://qureskincaredns-stable.com/assets/images/blogs/choose_blog_3.webp",
+        "image_mobile_3": "https://qureskincaredns-stable.com/assets/images/blogs/choose_blog_3_mob.webp"
       }
     },
     "blog-bottom": {
@@ -813,8 +813,8 @@
     },
     "snippets": {
       "discover": {
-        "image": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/discover_best_seller.webp",
-        "image_mobile": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/discover_best_seller_mob.webp",
+        "image": "https://qureskincaredns-stable.com/assets/images/blogs/discover_best_seller.webp",
+        "image_mobile": "https://qureskincaredns-stable.com/assets/images/blogs/discover_best_seller_mob.webp",
         "header_html": "<strong>Discover our Best Sellers</strong>",
         "button_label": "Shop Now"
       },
