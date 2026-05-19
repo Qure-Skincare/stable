@@ -7,12 +7,13 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "type": "header",
   "name": "t:sections-group.header.name",
   "sections": {
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
+      "disabled": true,
       "settings": {
         "heading": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
         "color": "#000000",
@@ -28,8 +29,8 @@
           "type": "slider",
           "settings": {
             "countdown": true,
-            "text": "<p> - Save Up To 40%</p>",
-            "button_label": "Memorial Day Offer",
+            "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
+            "button_label": "",
             "button_url": "https://qureskincare.com/products/face-serum",
             "from": "2026-05-17",
             "days": 7
@@ -37,6 +38,7 @@
         },
         "slider_2": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "countdown": false,
             "text": "<p><strong>Limited Time Memorial Day Sale</strong> &ndash; up&nbsp;to&nbsp;40%&nbsp;off</p>",
@@ -51,9 +53,8 @@
         "slider_1",
         "slider_2"
       ],
-      "disabled": true,
       "settings": {
-        "slider": true,
+        "slider": false,
         "countdown": false,
         "text": "",
         "button_label": "",
