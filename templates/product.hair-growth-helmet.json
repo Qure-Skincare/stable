@@ -24,6 +24,7 @@
         },
         "exclusive-offer": {
           "type": "exclusive-offer",
+          "disabled": true,
           "settings": {
             "tag": "<p><strong>Father’s day</strong> Offer</p>",
             "product": "hair-growth-helmet",
