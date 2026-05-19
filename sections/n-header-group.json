@@ -12,13 +12,48 @@
   "name": "t:sections-group.header.name",
   "sections": {
     "announcement-bar-gamification": {
-      "type": "n-announcement-bar-gamification",
+    "type": "n-announcement-bar-gamification",
+    "settings": {
+      "heading": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
+      "color": "#000000",
+      "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
+      "from": "2026-05-17",
+      "days": 7,
+      "disabled": false
+    }
+  },
+    "announcement-bar": {
+      "type": "n_announcement-bar",
+      "blocks": {
+        "slider_1": {
+          "type": "slider",
+          "settings": {
+            "text": "<p> - Save Up To 40%</p>",
+            "button_label": "Memorial Day Offer",
+            "button_url": "https://qureskincare.com/products/face-serum",
+            "from": "2026-05-17",
+            "days": 7,
+            "countdown": true
+          }
+        },
+        "slider_2": {
+          "type": "slider",
+          "settings": {
+            "text": "<p><strong>Limited Time Memorial Day Sale</strong> &ndash; up&nbsp;to&nbsp;40%&nbsp;off</p>",
+            "button_label": "Shop Now",
+            "button_url": "https://qureskincare.com/products/face-serum",
+            "countdown": false
+          }
+        }
+      },
+      "block_order": [
+        "slider_1",
+        "slider_2"
+      ],
       "settings": {
-        "heading": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
-        "color": "#000000",
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
-        "from": "2026-05-17",
-        "days": 7
+        "slider": true,
+        "disabled": true,
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle"
       }
     },
     "header": {
@@ -29,6 +64,7 @@
   },
   "order": [
     "announcement-bar-gamification",
+    "announcement-bar",
     "header"
   ]
 }
