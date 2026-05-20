@@ -993,7 +993,7 @@
             "tags": "",
             "min_rating": "none",
             "fill_empty": false,
-            "random": false,
+            "random": true,
             "with_photos": false
           }
         },
