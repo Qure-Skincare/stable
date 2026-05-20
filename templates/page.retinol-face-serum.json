@@ -976,8 +976,52 @@
     "17575150924facf5ff": {
       "type": "apps",
       "blocks": {
+        "stamped_reviews_carousel_4gB7PF": {
+          "type": "shopify://apps/stamped-reviews/blocks/carousel/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "title": "",
+            "auto_play": false,
+            "take": 30,
+            "color_title": "",
+            "color_star": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "5657784025237",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        },
+        "stamped_reviews_full_page_gWmFhQ": {
+          "type": "shopify://apps/stamped-reviews/blocks/full-page/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
+          "settings": {
+            "product_image": true,
+            "take": 6,
+            "label_substitute": "",
+            "color_star": "",
+            "color_verified": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "5657784025237",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "4",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        },
         "stamped_reviews_main_widget_BGKcAp": {
           "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
           "settings": {
             "animation": true,
             "tags_exclude": "",
@@ -990,6 +1034,8 @@
         }
       },
       "block_order": [
+        "stamped_reviews_carousel_4gB7PF",
+        "stamped_reviews_full_page_gWmFhQ",
         "stamped_reviews_main_widget_BGKcAp"
       ],
       "settings": {}
