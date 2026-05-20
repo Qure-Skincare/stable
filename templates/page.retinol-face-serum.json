@@ -667,7 +667,7 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "text": "<h2>Real retinol results — from real customers</h2>",
         "button_label": "",
         "button_url": ""
       }
@@ -678,7 +678,7 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "heading": "<h2>Dermatologist-Reviewed Retinol Formula</h2>",
         "text": "<p>“Qure has a really good serum. It’s probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
         "video_image_cover": "shopify://shop_images/dr-shah-maxfield.webp",
         "text_on_image": "",
@@ -783,7 +783,7 @@
         "modifier_2": "simple-grid",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>One product to replace your full routine</h2>",
+        "heading": "<h2>One retinol serum. Five skin concerns. Zero fuss.</h2>",
         "text": "",
         "image": "shopify://shop_images/Image_27.png",
         "button_label": "",
@@ -864,7 +864,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "text": "<h2>Confident skin starts here</h2>"
+        "text": "<h2>Your retinol routine starts here</h2>"
       }
     },
     "n_comparison_table_iyUBix": {
