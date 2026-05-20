@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_kHW3Cn": {
       "type": "n-page-header",
@@ -97,11 +97,11 @@
       "settings": {
         "product": "face-serum",
         "reverse": false,
-        "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
-        "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "seo_heading": "RETINOL SERUM — CLINICALLY-STUDIED ANTI-AGING INGREDIENTS",
+        "heading": "The Retinol Serum That Does It All",
         "rating": true,
         "limited": false,
-        "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
+        "description": "<ul><li>Powered by Retinol to help reduce the appearance of fine lines, wrinkles, and uneven skin tone for smoother, firmer-looking skin.</li><li>No need for multiple products — one serum helps target multiple skin concerns in a single step.</li><li>Retinol + Bakuchiol + Argireline® Peptides + Niacinamide + Vitamin C — the retinol routine, upgraded.</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -294,7 +294,9 @@
         "hide_types": false,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_logos_r846Fz": {
