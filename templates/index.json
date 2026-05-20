@@ -103,17 +103,23 @@
             "image": "shopify://shop_images/bundle-thumbnail-shower.webp",
             "link_url": "https://qureskincare.com/products/hair-growth-helmet"
           }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "badge_text": "This Father’s Day only"
+          }
         }
       },
       "block_order": [
         "bundle_1",
-        "bundle_2"
+        "bundle_2",
+        "badge_text"
       ],
       "settings": {
         "use_own_file": false,
         "modifier": "fathers-day",
         "heading": "<h1>The kind of care he won't think to buy for himself.</h1>",
-        "badge_text": "This Father’s Day only",
         "image": "shopify://shop_images/fathers-day.webp",
         "image_mobile": "shopify://shop_images/fathers-day-mob.webp",
         "button_label": "Buy Now &amp; Save Up to 44%",
