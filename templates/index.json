@@ -104,7 +104,7 @@
             "link_url": "https://qureskincare.com/products/hair-growth-helmet"
           }
         },
-        {
+        "badge_text": {
           "type": "badge",
           "settings": {
             "badge_text": "This Father’s Day only"
