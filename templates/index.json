@@ -84,6 +84,48 @@
         "use_own_file": false
       }
     },
+    "n_across_image_banner_fathers_day": {
+      "type": "n_across-image-banner",
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "blocks": {
+        "bundle_1": {
+          "type": "bundle",
+          "settings": {
+            "image": "shopify://shop_images/bundle-thumbnail-helmet.webp",
+            "link_url": "https://qureskincare.com/products/shower-filter"
+          }
+        },
+        "bundle_2": {
+          "type": "bundle",
+          "settings": {
+            "text": "<p>Q-Renew LLLT Helmet &amp; Shower Filter Bundle</p>",
+            "image": "shopify://shop_images/bundle-thumbnail-shower.webp",
+            "link_url": "https://qureskincare.com/products/hair-growth-helmet"
+          }
+        },
+        "badge_text": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "This Father’s Day only"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_1",
+        "bundle_2",
+        "badge_text"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "fathers-day",
+        "heading": "<h1>The kind of care he won't think to buy for himself.</h1>",
+        "image": "shopify://shop_images/fathers-day.webp",
+        "image_mobile": "shopify://shop_images/fathers-day-mob.webp",
+        "button_label": "Buy Now &amp; Save Up to 44%",
+        "button_url": "https://qureskincare.com/products/hair-growth-helmet"
+      }
+    },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
       "disabled": true,
@@ -114,6 +156,7 @@
         "badge_NVnWab"
       ],
       "name": "t:sections.n_across-image-banner.name",
+      "disabled": false,
       "settings": {
         "use_own_file": true,
         "modifier": "holidays-secondary",
@@ -821,6 +864,7 @@
   },
   "order": [
     "n_index-quick-links",
+    "n_across_image_banner_fathers_day",
     "n_across_image_banner_TNGNLJ",
     "n_across_image_banner_jUysh7T",
     "n_index-quick-title-links",
