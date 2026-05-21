@@ -57,7 +57,7 @@
       "settings": {
         "slider": false,
         "countdown": true,
-        "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\"><strong>Limited Time Memorial Day Sale</strong></a><strong> - </strong>Save Up to 40% on All-In-One Face Serum</p>",
+        "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\"><strong>Limited Time Memorial Day Sale</strong></a><strong> - </strong>Save Up to 40% on &lt;br&gt; All-In-One Face Serum</p>",
         "button_label": "",
         "button_url": "",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1",
