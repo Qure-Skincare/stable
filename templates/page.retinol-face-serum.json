@@ -901,12 +901,12 @@
         "comparison_table_UY3pRQ": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Qure <br />All-In-One Serum</h3>",
-            "text_1": "Retinol, peptides, niacinamide, bakuchiol",
+            "heading": "<h3>Qure <br/>Retinol Serum</h3>",
+            "text_1": "Clinical-strength Retinol + Bakuchiol + Peptides + Niacinamide",
             "select_1": "checkmark",
-            "text_2": "Targets 5+ concerns in one easy-to-use formula",
+            "text_2": "Targets 5+ concerns — retinol-led, multi-active formula",
             "select_2": "checkmark",
-            "text_3": "One step, AM or PM",
+            "text_3": "One step, PM",
             "select_3": "checkmark",
             "text_4": "Great value",
             "select_4": "checkmark",
@@ -917,7 +917,7 @@
         "comparison_table_J84FYW": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>High-End<br />Serums</h3>",
+            "heading": "<h3>High-End<br/>Serums</h3>",
             "text_1": "Usually 1–2 premium actives per product",
             "select_1": "checkmark",
             "text_2": "Often one concern per product",
@@ -1047,11 +1047,19 @@
           "type": "accordion",
           "settings": {
             "heading": "Who should use All-In-One Serum?",
-            "text": "<p>You should use the All-In-One Serum if:</p><ul><li>Your skin is showing signs of aging</li><li>Your skin looks dull and tired</li><li>You want to even your skin tone and texture</li><li>Your skin has dark spots and discoloration</li></ul><p>All-In-One Serum helps improve these skin concerns. It’s a lightweight serum that rejuvenates dull skin for smooth, radiant results. Its clinically proven ingredients work to make your skin look brighter, instantly and over time.</p>"
+            "text": "<p>Qure Retinol Serum is ideal if:<br/><br/>• Your skin is showing signs of aging<br/>• You want to start or upgrade your retinol routine<br/>• You have fine lines, dark spots, or uneven texture<br/>• You’ve found other retinols too harsh<br/><br/>This retinol formula combines Retinol with calming and hydrating actives for visible results while helping maintain skin comfort..</p>"
+          }
+        },
+        "accordion_NQVGkB": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When will I see retinol results?",
+            "text": "<p>Retinol results build over time. Many users notice smoother-looking skin texture within 2–4 weeks, with more visible improvement in the appearance of fine lines, uneven tone, and dark spots over continued use. Consistency is key.</p>"
           }
         },
         "accordion_JB38QN": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "When will I start to see results?",
             "text": "<p>Most people see improvement in a few weeks, but this can vary. Remember to stick with it - consistency is key!</p>"
@@ -1060,12 +1068,20 @@
         "accordion_gNgBWa": {
           "type": "accordion",
           "settings": {
-            "heading": "When should I use the All-In-One Serum?",
-            "text": "<p>The All-In-One Serum should be used once daily, after cleansing and before moisturizer. It’s suitable for both morning and evening routines.</p><p>To maximize the effectiveness, apply after your Q-Rejuvalight Pro LED Mask treatment.</p>"
+            "heading": "When should I use the Retinol Serum?",
+            "text": "<p>Use once daily, preferably in the evening, as Retinol can increase sun sensitivity. Apply after cleansing and before moisturizer. During your first week, start with every-other-day use to help build skin tolerance. Always apply SPF in the morning.</p>"
+          }
+        },
+        "accordion_aGyPHQ": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this retinol serum suitable for sensitive skin?",
+            "text": "<p>Yes. This formula pairs Retinol with Bakuchiol and calming actives to help minimize irritation. If you have sensitive skin, we recommend starting with every-other-day use and performing a patch test before full application.</p>"
           }
         },
         "accordion_CWjLWj": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "What is the full ingredient list?",
             "text": "<p>Purified Aqua, Aqua (and) Acetyl Hexapeptide-8, Aqua (and) Boswellia Serrata Resin Extract, Glycerin, Caprylic/capric Triglyceride, 1,3-Propanediol, Aqua (and) Sodium Hydroxide, Maltodextrin (and) Sucrose Dilaurate (and) Sodium Cocoyl Glutamate (and) Pisum Sativum (Pea) Extract, Glycerin (and) Aqua (and) Artemisia Umbelliformis Extract, Sodium Acrylates Copolymer (and) Lecithin, Niacinamide, 1,2-Hexanediol (and) Caprylyl Glycol (and) Tropolone, Sodium Acrylates Copolymer (and) Lecithin, Caprylic/Capric Triglyceride (and) Retinol (and) BHT, Retinyl Palmitate (and) Glycine Soja (Soybean) Oil (and) Tocopherol, Bakuchiol, Glyceryl Oleate Citrate (and) Caprylic/Capric Triglyceride, Lactic Acid, Propanediol (and) Aqua (and) Ganoderma Lucidum (Mushroom) Extract, Camellia Sinensis Leaf Extract, Polycrylate-13 (and) Polyisobutene (and) Polysorbate 20, Tocopheryl Acetate, 3-O-Ethyl Ascorbic Acid, Pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, Ferulic Acid, Mandelic Acid, Aqua (and) Ginkgo biloba Leaf Extract, Aqua (and) Terminalia Ferdinandiana Fruit Extract</p>"
@@ -1073,6 +1089,7 @@
         },
         "accordion_Yx9qnV": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "What skin types is the All-In-One Serum best for?",
             "text": "<p>This formula is suitable for all skin types (including sensitive) thanks to its balanced blend of active and calming ingredients. It’s especially helpful if you’re targeting fine lines, dullness, uneven tone, or dryness.</p>"
@@ -1080,6 +1097,7 @@
         },
         "accordion_AptLfW": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use this with the Q-Rejuvalight Pro LED Face Mask?",
             "text": "<p>Yes, this serum pairs perfectly with the Q-Rejuvalight Pro. For best results, use the mask on clean skin first, then follow with the All-In-One Serum to maximize absorption and benefits.</p>"
@@ -1088,8 +1106,10 @@
       },
       "block_order": [
         "accordion_kKNrdN",
+        "accordion_NQVGkB",
         "accordion_JB38QN",
         "accordion_gNgBWa",
+        "accordion_aGyPHQ",
         "accordion_CWjLWj",
         "accordion_Yx9qnV",
         "accordion_AptLfW"
