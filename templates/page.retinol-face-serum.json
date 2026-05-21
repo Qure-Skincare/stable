@@ -978,6 +978,7 @@
       "blocks": {
         "stamped_reviews_carousel_4gB7PF": {
           "type": "shopify://apps/stamped-reviews/blocks/carousel/a103faaf-2125-4b0e-89fa-de5149736723",
+          "disabled": true,
           "settings": {
             "title": "",
             "auto_play": false,
@@ -1021,7 +1022,6 @@
         },
         "stamped_reviews_main_widget_BGKcAp": {
           "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "disabled": true,
           "settings": {
             "animation": true,
             "tags_exclude": "",
