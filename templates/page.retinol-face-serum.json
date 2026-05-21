@@ -387,7 +387,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Retinol",
-            "text": "<p>Helps reduce the appearance of wrinkles and age spots and smooths the feel of skin texture.</p>"
+            "text": "<p>The gold standard of anti-aging, Retinol helps reduce the appearance of fine lines, wrinkles, uneven skin tone, and rough texture over time.</p>"
           }
         },
         "accordion_cXNxrR": {
@@ -401,7 +401,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Lactic & Mandelic Acid",
-            "text": "<p>Gentle chemical exfoliants to clear away the layer of dead cells to reveal smoother, clearer-looking skin.</p>"
+            "text": "<p>Gentle exfoliants work alongside Retinol to help remove dead skin buildup, revealing smoother-, brighter-looking skin underneath.</p>"
           }
         }
       },
@@ -417,7 +417,7 @@
         "flag": "shopify://shop_images/canada_f.webp",
         "username": "Bethany N.",
         "verified_customer": "Verified",
-        "text": "<h3>Uneven Skin Texture</h3><p>Clarify and even skin tone, minimize enlarged pores, strengthen skin's barrier, reduce breakouts.</p>",
+        "text": "<h3>Retinol for Smoother Skin Texture</h3><p>Retinol helps improve the appearance of rough texture, visible pores, and uneven-looking skin for a smoother, more refined complexion.</p>",
         "sub_text": "<p>Key Ingredients:</p>"
       }
     },
