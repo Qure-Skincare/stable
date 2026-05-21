@@ -428,21 +428,21 @@
           "type": "accordion",
           "settings": {
             "heading": "Argireline® Peptides",
-            "text": "<p>The most trusted anti-aging peptide in the world. Stimulates collagen, reduces fine lines and boosts moisture for a firmer, youthful complexion!</p>"
+            "text": "<p>Works alongside Retinol to help improve the appearance of fine lines and support firmer, smoother-looking skin.</p>"
           }
         },
         "accordion_QddmKc": {
           "type": "accordion",
           "settings": {
             "heading": "Bakuchiol",
-            "text": "<p>A gentle alternative to retinol, bakuchiol helps to make your skin look smooth and firm.</p>"
+            "text": "<p>A plant-based Retinol alternative, Bakuchiol helps enhance Retinol’s smoothing and firming benefits while helping maintain skin comfort.</p>"
           }
         },
         "accordion_FjVPdm": {
           "type": "accordion",
           "settings": {
             "heading": "Hyaluronic Acid",
-            "text": "<p>A drink of water for thirsty skin. Helps your skin retain moisture for softer and more supple looking skin.</p>"
+            "text": "<p>Helps replenish hydration to keep skin feeling soft, supple, and balanced throughout your Retinol journey.</p>"
           }
         }
       },
@@ -458,7 +458,7 @@
         "flag": "shopify://shop_images/america_f.webp",
         "username": "Shannon W.",
         "verified_customer": "Verified",
-        "text": "<h3>Fine Lines and Wrinkles</h3><p>Deeply hydrate skin to make fine lines less visible for more plumper, younger looking skin</p>",
+        "text": "<h3>Retinol for Fine Lines & Wrinkles<br/></h3><p>Retinol, one of the most clinically studied anti-aging skincare ingredients, helps visibly reduce the appearance of fine lines and wrinkles with consistent use.</p>",
         "sub_text": "<p>Key Ingredients:</p>"
       }
     },
