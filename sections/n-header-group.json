@@ -60,7 +60,7 @@
         "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
         "button_label": "",
         "button_url": "",
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1",
         "from": "2026-05-18",
         "days": 7
       }
