@@ -124,14 +124,14 @@
       "after_logo_text": "Community"
     },
     "car-giveaway-countdown-timer": {
-      "white_line_image": "https://qureskincaredns-stable.com/sections/isolated/countdown-timer/images/white_line.svg",
+      "white_line_image": "https://qureskincaredns-stable.com/sections/countdown-timer/images/white_line.svg",
       "days": "DAYS",
       "hours": "HOURS",
       "minutes": "MINUTES",
       "seconds": "SECONDS"
     },
     "car-giveaway-countdown-timer-sticky": {
-      "white_line_image": "https://qureskincaredns-stable.com/sections/isolated/countdown-timer/images/white_line_mob.svg",
+      "white_line_image": "https://qureskincaredns-stable.com/sections/countdown-timer/images/white_line_mob.svg",
       "days": "D",
       "hours": "H",
       "minutes": "M",
@@ -142,7 +142,7 @@
     },
     "car-giveaway-interior-style": {
       "interior_text": "INTERIOR",
-      "email_icon": "https://qureskincaredns-stable.com/sections/isolated/interior-classy/images/email_icon.svg"
+      "email_icon": "https://qureskincaredns-stable.com/sections/interior-classy/images/email_icon.svg"
     },
     "n_contact-form": {
       "success_text": "Thanks for contacting us. We'll get back to you as soon as possible.",
@@ -195,7 +195,7 @@
       "include_text": "Included free"
     },
     "serum-infusions": {
-      "rating_image": "https://qureskincaredns-stable.com/sections/isolated/serum/images/stars.webp",
+      "rating_image": "https://qureskincaredns-stable.com/sections/serum/images/stars.webp",
       "verified_customer_text": "Verified Customer"
     },
     "proof-in-numbers": {
@@ -206,7 +206,7 @@
       "badge_image": "https://qureskincaredns-stable.com/assets/images/reviewCheck.svg"
     },
     "trusted-recommended": {
-      "badge_image": "https://qureskincaredns-stable.com/sections/isolated/experts/images/tick_new.svg",
+      "badge_image": "https://qureskincaredns-stable.com/sections/experts/images/tick_new.svg",
       "badge_image_mobile": "https://qureskincaredns-stable.com/assets/images/tick_new.svg",
       "badge_text": "Dermatologist Reviewed"
     },
@@ -217,7 +217,7 @@
     "serum-selection": {
       "or_text": "or",
       "and_text": "&",
-      "review_stars": "https://qureskincaredns-stable.com/sections/isolated/serum/images/stars.webp",
+      "review_stars": "https://qureskincaredns-stable.com/sections/serum/images/stars.webp",
       "verified_customer_text": "Verified Customer"
     },
     "qure-filters-offer-slider-with-text": {
@@ -227,7 +227,7 @@
       "arrow_image": "https://qureskincaredns-stable.com/assets/images/arrow_right.svg",
       "button_label": "Ask us",
       "text_before_button": "Don’t see your question?",
-      "arrow_rotated_image": "https://qureskincaredns-stable.com/sections/isolated/faqs/images/arrow_rotated.svg"
+      "arrow_rotated_image": "https://qureskincaredns-stable.com/sections/faqs/images/arrow_rotated.svg"
     },
     "expert-advisory": {
       "shop_now_text": "Shop Now"
@@ -322,27 +322,16 @@
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-stable.com/assets/images/reviewCheck.svg"
     },
-    "micro-infusion-lim-ed-bundle-inside-kit": {
-      "bullet_arrow": "https://qureskincaredns-stable.com/sections/isolated/inside-kit/images/bullet_arrow.svg",
-      "bullet_arrow_left": "https://qureskincaredns-stable.com/sections/isolated/inside-kit/images/bullet_arrow_left.svg"
-    },
     "skincare-plan": {
       "product": "Product",
       "results": "Results",
       "review": "Review",
-      "read-more": " Read more",
-      "review-stars": "https://qureskincaredns-stable.com/sections/isolated/skincare-plan/images/review_stars.webp"
+      "read-more": " Read more"
     },
     "skincare-routine": {
       "am_text": "AM",
       "pm_text": "PM",
-      "am_image": "https://qureskincaredns-stable.com/sections/isolated/skincare-routine/images/am.webp",
-      "pm_image": "https://qureskincaredns-stable.com/sections/isolated/skincare-routine/images/pm.webp",
       "or_text": "or"
-    },
-    "faq-header": {
-      "view_image": "https://qureskincaredns-stable.com/sections/isolated/faqs/images/eye.svg",
-      "shared_image": "https://qureskincaredns-stable.com/sections/isolated/faqs/images/share.svg"
     },
     "faq-promo-banner": {
       "limited_offer_text": "Limited Time Offer"
@@ -812,11 +801,7 @@
         "read_time": "6 min read"
       },
       "social_media": {
-        "share": "Share this article:",
-        "facebook_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/facebook.webp",
-        "pinterest_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/pinterest.webp",
-        "whatsapp_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/whatsapp.webp",
-        "email_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/email.webp"
+        "share": "Share this article:"
       }
     },
     "snippets": {

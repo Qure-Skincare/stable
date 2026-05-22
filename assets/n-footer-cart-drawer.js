@@ -36,14 +36,14 @@ const reloadDrawer = (array) => {
 
         bindForms();
 
-        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js-new/swiper.js')
+        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js/swiper.js')
     })
     .catch(console.error);
 }
 
 const refreshDrawer = () => {
      updateSection('n-footer-cart-drawer', 'cart-dynamic-content').then(() => {
-        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js-new/swiper.js')
+        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js/swiper.js')
      });
 }
 
