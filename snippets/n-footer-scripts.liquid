@@ -33,20 +33,37 @@
 
 {% render 'n-stamped-rewards-init' %}
 
-{% if page.handle == 'microinfusion' %}
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var stampedWidget = document.getElementById('stamped-main-widget');
-            if (stampedWidget) {
-                stampedWidget.setAttribute("data-product-id", "8215269441775");
-                stampedWidget.setAttribute("data-product-sku", "MICROINFSN-1MTH-TP");
-                stampedWidget.setAttribute("data-name", "Micro-Infusion Targeted Patches (8 Pairs)");
-                if (typeof StampedFn !== 'undefined' && typeof StampedFn.reloadUGC === 'function') {
-                    StampedFn.reloadUGC();
-                }
-            }
-        });
-    </script>
+{%- assign stamped_product = page.metafields.custom.product_reviews_mapping.value -%}
+
+{% if stamped_product != blank %}
+<script>
+  (function() {
+    const product = {
+      id: {{ stamped_product.id | json }},
+      sku: {{ stamped_product.selected_or_first_available_variant.sku | json }},
+      name: {{ stamped_product.title | json }}
+    };
+
+    function initStamped() {
+      const widget = document.getElementById('stamped-main-widget');
+      if (!widget) return;
+
+      widget.setAttribute('data-product-id', product.id);
+      if (product.sku)  widget.setAttribute('data-product-sku', product.sku);
+      if (product.name) widget.setAttribute('data-name', product.name);
+
+      if (typeof StampedFn?.reloadUGC === 'function') {
+        StampedFn.reloadUGC();
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initStamped);
+    } else {
+      initStamped();
+    }
+  })();
+</script>
 {% endif %}
 
 {% comment %}
