@@ -1,0 +1,48 @@
+{% doc %}
+  Renders the AIO product description: a `<ul class="collapsed-list">`
+  with up to 5 title/text pairs and a "Show more / Show less" toggle.
+
+  Renders nothing if every title/text pair is empty.
+
+  @param {object} block - A section block of type `description-aio`.
+
+  @example
+  {% render 'n-product-description-aio', block: block %}
+{% enddoc %}
+
+{%- liquid
+  assign s = block.settings
+  assign has_items = false
+  if s.title_1 != blank or s.text_1 != blank
+    assign has_items = true
+  elsif s.title_2 != blank or s.text_2 != blank
+    assign has_items = true
+  elsif s.title_3 != blank or s.text_3 != blank
+    assign has_items = true
+  elsif s.title_4 != blank or s.text_4 != blank
+    assign has_items = true
+  elsif s.title_5 != blank or s.text_5 != blank
+    assign has_items = true
+  endif
+-%}
+
+{% if has_items %}
+    <article {{ block.shopify_attributes }}>
+        <ul class="collapsed-list">
+            {% for i in (1..5) %}
+                {% assign title_key = 'title_' | append: i %}
+                {% assign text_key = 'text_' | append: i %}
+                {% assign item_title = block.settings[title_key] %}
+                {% assign item_text = block.settings[text_key] %}
+                {% if item_title != blank or item_text != blank %}
+                    <li>
+                        {% if item_title != blank %}<span>{{ item_title }}</span>{% endif %}
+                        {% if item_text != blank %}{{ item_text }}{% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <a href="javascript:;" onclick="this.textContent = this.closest('article').classList.toggle('show-more') ? 'Show less' : 'Show more'"> {{ 'product.settings.description-aio.show_more' | t }} </a>
+    </article>
+    <hr />
+{% endif %}

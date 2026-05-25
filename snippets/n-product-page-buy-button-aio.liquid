@@ -1,5 +1,10 @@
 {% doc %}
-  Renders a buy button snippet.
+  AIO variant of the product-page buy button.
+
+  Identical to `n-product-page-buy-button` but appends the
+  `<a class="one-time-purchase">` toggle inside `.c-buy-block` and loads
+  the AIO toggle script that swaps the product list between the
+  "One Time Purchase" and "Subscribe & Save" types.
 
   @param {string} product_price - A string value.
   @param {string} product_variant_id - A string value.
@@ -8,7 +13,7 @@
   @param {bool} static - A static value.
 
   @example
-  {% render 'n-product-page-buy-button', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', static: '' %}
+  {% render 'n-product-page-buy-button-aio', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', static: '' %}
 {% enddoc %}
 
 {% assign reserved = null %}
@@ -39,8 +44,6 @@
     {% assign soldout = true %}
   {% endif %}
 
-
-
   {% if block == blank %}
     {% for _block in section.blocks %}
         {% if _block.type == 'button' %}
@@ -49,7 +52,6 @@
     {% endfor %}
   {% endif %}
 {% endif %}
-
 
 
 {% if reserved == true %}
@@ -66,7 +68,7 @@
         <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
         <input type="hidden" name="quantity" id="quantity" value="1">
         <input type="hidden" name="selling_plan" id="selling_plan" value="">
-        <input type="hidden" name="id" value="{{ product_variant_id }}">    
+        <input type="hidden" name="id" value="{{ product_variant_id }}">
       </form>
 
       {% unless is_modal %}
@@ -90,40 +92,7 @@
         {% endfor %}
     {% endif %}
 
-    {% unless is_modal %}
-      {% unless block.settings.hide_bottom or section.settings.hide_bottom %}
-          {% unless block.settings.hide_certified or section.settings.hide_certified %}
-              <div class="c-certified-box">
-                  <ul>
-                      <li><img src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
-                      <li><img src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-2.webp" alt="Certified Dermatologists" /></li>
-                      <li>+50</li>
-                  </ul>
-                  <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
-              </div>
-          {% endunless %}
-          <ul class="e-features-list">
-              <li>
-                  <i class="e-icon e-icon-guarantee"></i>
-
-                  {% if section.settings.guarantee_period != blank %}
-                    {% case section.settings.guarantee_period %}
-                      {% when '90' %}
-                        {{ 'product.settings.buy-button-bottom.guaranteed_text_90' | t }}
-                      {% else %}
-                        {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                    {% endcase %}
-                  {% else %}
-                    {{ 'product.settings.buy-button-bottom.guaranteed_text' | t }}
-                  {% endif %}
-              </li>
-              <li>
-                  <i class="e-icon e-icon-shipping-order"></i>
-                  {{ 'product.settings.buy-button-bottom.shipping_text' | t }}
-              </li>
-          </ul>
-      {% endunless %}
-    {% endunless %}
+    <a class="one-time-purchase" href="javascript:;" data-aio-toggle></a>
 </div>
 
 
@@ -139,3 +108,9 @@
     });
   </script>
 {% endif %}
+
+<script src="{{ 'n-product-page-buy-button-aio.js' | asset_url }}"
+        data-section="{{ section.id }}"
+        data-form="{{ section.settings.form_name }}"
+        defer>
+</script>

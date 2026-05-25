@@ -424,6 +424,7 @@
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
+        "recommended_no_link_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "guaranteed_text_90": "90-Day Money-Back Guarantee",
         "guaranteed_text_year": "1-Year Guarantee",
@@ -489,6 +490,9 @@
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
+      },
+      "description-aio": {
+        "show_more": "Show more"
       }
     }
   },

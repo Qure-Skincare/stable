@@ -311,7 +311,10 @@
         "save": "Save",
         "am-or-pm": "AM or PM",
         "eye": "Eye",
-        "share": "Share"
+        "share": "Share",
+        "faq": "FAQ",
+        "aio_toggle": "AIO one-time / subscribe toggle",
+        "description-aio": "Description AIO"
     },
     "blocks": {
         "block-card": {

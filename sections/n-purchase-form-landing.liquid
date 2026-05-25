@@ -6,7 +6,11 @@
         {% include 'n-purchase-form-landing-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'n-purchase-form-landing-klaviyo', section: section %}
         {% include 'n-purchase-form-landing-subscription' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
-        {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
+        {% if section.settings.aio_toggle %}
+            {% render 'n-product-page-buy-button-aio', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
+        {% else %}
+            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
+        {% endif %}
     </div>
     <script src="{{ 'n-purchase-form-landing.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 </template>
@@ -84,6 +88,12 @@
                 "id": "hide_certified",
                 "label": "t:common.hide_certified",
                 "default": false
+            },
+            {
+                "type": "checkbox",
+                "id": "aio_toggle",
+                "label": "t:common.aio_toggle",
+                "default": false
             }
         ],
         "blocks": [
@@ -138,6 +148,23 @@
                     {
                         "type": "text",
                         "id": "onetime_text",
+                        "label": "t:common.text"
+                    }
+                ]
+            },
+            {
+                "type": "note",
+                "name": "t:common.note",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.header"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
                         "label": "t:common.text"
                     }
                 ]
