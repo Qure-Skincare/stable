@@ -901,7 +901,7 @@
         "comparison_table_UY3pRQ": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Qure <br/>Retinol Serum</h3>",
+            "heading": "<h5>Qure <br/>Retinol Serum</h5>",
             "text_1": "Clinical-strength Retinol + Bakuchiol + Peptides + Niacinamide",
             "select_1": "checkmark",
             "text_2": "Targets 5+ concerns — retinol-led, multi-active formula",
@@ -917,7 +917,7 @@
         "comparison_table_J84FYW": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>High-End<br/>Serums</h3>",
+            "heading": "<h5>High-End<br/>Serums</h5>",
             "text_1": "Usually 1–2 premium actives per product",
             "select_1": "checkmark",
             "text_2": "Often one concern per product",
@@ -933,7 +933,7 @@
         "comparison_table_mV9R3h": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Drugstore<br />Serums</h3>",
+            "heading": "<h5>Drugstore<br />Serums</h5>",
             "text_1": "Basic actives in lowest concentrations",
             "select_1": "cross",
             "text_2": "Often one concern per product",

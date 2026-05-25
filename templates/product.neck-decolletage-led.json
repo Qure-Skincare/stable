@@ -540,7 +540,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/neck_comp_1.webp",
-            "heading": "<h3>Neck & Décolletage System</h3>",
+            "heading": "<h5>Neck & Décolletage System</h5>",
             "text_1": "Contoured design that stays in place, no slipping",
             "select_1": "checkmark",
             "text_2": "Clip-on wireless controller for total freedom",
@@ -557,7 +557,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/neck_comp_2.webp",
-            "heading": "<h3>Contour Neck & Décolleté</h3>",
+            "heading": "<h5>Contour Neck & Décolleté</h5>",
             "text_1": "Flimsy silicone wrap that may slip or bunch",
             "select_1": "cross",
             "text_2": "Wired controller, best used lying down",
@@ -574,7 +574,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/neck_comp_3.webp",
-            "heading": "<h3>Neck & Déc Perfector</h3>",
+            "heading": "<h5>Neck & Déc Perfector</h5>",
             "text_1": "Flimsy silicone wrap that may slip or bunch",
             "select_1": "cross",
             "text_2": "USB plug-in, limits movement",
