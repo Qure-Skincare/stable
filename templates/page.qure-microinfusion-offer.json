@@ -866,7 +866,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/micro-infusion-system.webp",
-            "heading": "<h3>Qure <br/>Micro-Infusion System</h3>",
+            "heading": "<h5>Qure <br/>Micro-Infusion System</h5>",
             "text_1": "As little as 1-2 days",
             "select_1": "checkmark",
             "text_2": "Tailored to your needs",
@@ -883,7 +883,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/clinic-treatment.webp",
-            "heading": "<h3>Micro-Infusion<br/>Clinic Treatment</h3>",
+            "heading": "<h5>Micro-Infusion<br/>Clinic Treatment</h5>",
             "text_1": "As little as 1-2 days",
             "select_1": "checkmark",
             "text_2": "Tailored to your needs",
@@ -900,7 +900,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/home-treatment.webp",
-            "heading": "<h3>Derma Roller<br/>At-Home Treatment</h3>",
+            "heading": "<h5>Derma Roller<br/>At-Home Treatment</h5>",
             "text_1": "A few days",
             "select_1": "cross",
             "text_2": "Not customized",
