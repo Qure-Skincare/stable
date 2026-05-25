@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_KpLxTq": {
       "type": "n-product-header",
@@ -31,7 +31,8 @@
           "type": "button",
           "settings": {
             "hide_payments": false,
-            "hide_bottom": false
+            "hide_bottom": false,
+            "hide_certified": false
           }
         },
         "limited_offer_A8": {
@@ -45,12 +46,11 @@
         },
         "nextships_BtDkBp": {
           "type": "nextships",
-          "disabled": true,
           "settings": {
-            "date": "25 September",
-            "percent": 55,
-            "date_soldout": "28 July",
-            "date_reserved": "3 August"
+            "date": "10th August",
+            "percent": 71,
+            "date_soldout": "25th May",
+            "date_reserved": "10th August"
           }
         },
         "reviews-videos": {
@@ -109,16 +109,17 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "reverse": false,
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
         "heading": "Smooth and firm the look of skin with the Neck & Décolletage LED System",
         "rating": true,
         "limited": false,
         "description": "<ul><li>Smoother, firmer-looking skin on the neck and chest where early signs of aging appear.</li><li>Improves the appearance of discoloration, crepey texture and wrinkles.</li><li>Visibly enhances skin tone and leaves skin with a brighter, more radiant finish.</li></ul>",
-        "reserved": false,
+        "reserved": true,
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "use_own_file": false
+        "approved": false
       }
     },
     "n_press_reviews_gzTQ6b": {
@@ -164,6 +165,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"spaceBetween\": 80"
       }
     },
@@ -175,6 +177,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>All the skin firming, smoothing, clearing benefits with just 1 system</h2>",
         "text": "<p>The Neck & Décolletage LED System uses red and near-infrared light to help <em>improve the look of firmness</em>, tone, and texture in the neck and chest area.<br/><br/>These wavelengths support the appearance of smoother, more even-looking skin and a refreshed, radiant look over time.</p>",
         "image": "shopify://shop_images/n-d-image.webp",
@@ -226,7 +229,8 @@
         "use_own_file": false,
         "modifier": "none",
         "text": "<h2>4 reasons why you’ll love Red Light Therapy</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_reviews_YnnHVE": {
@@ -324,7 +328,8 @@
         "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_aE3ndQ": {
@@ -489,7 +494,8 @@
         "modifier": "no-video",
         "text": "<h2>Your 10-minute LED ritual for visibly firmer-looking skin</h2>",
         "wistia_url": "",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_comparison_table_3jPMGi": {
