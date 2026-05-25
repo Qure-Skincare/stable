@@ -91,7 +91,7 @@
         "rating": true,
         "description": "<p>Targeted <strong>red light therapy for hair loss</strong> combines LED light and medical-grade lasers to support scalp health and promote the appearance of thicker-looking hair in just 12 minutes per session.</p>",
         "whitelist": false,
-        "reserved": true,
+        "reserved": false,
         "soldout": false
       }
     },
@@ -644,6 +644,27 @@
         "heading": "How It Compares"
       }
     },
+    "177969432871ff83bb": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_htRz4N": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_htRz4N"
+      ],
+      "settings": {}
+    },
     "n_faq_8dzUGE": {
       "type": "n_faq",
       "blocks": {
@@ -734,6 +755,7 @@
     "n_faq_VwkhRa",
     "n_hair_growth_helmet_usage_guide_HQaYec",
     "n_hair_growth_helmet_product_comparison_CxQNNe",
+    "177969432871ff83bb",
     "n_faq_8dzUGE"
   ]
 }
