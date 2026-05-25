@@ -145,7 +145,7 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": true,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  <br>Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
             "preorder_percent": 93
@@ -160,7 +160,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply (Pre-Order)",
             "subheading": "(6 Treatments)",
             "text": "",
             "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
