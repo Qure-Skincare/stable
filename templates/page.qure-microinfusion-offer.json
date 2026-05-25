@@ -1364,7 +1364,7 @@
             "preorder": true,
             "total_treatments": 12,
             "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships June 26th: <br>Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
             "preorder_percent": 93,
