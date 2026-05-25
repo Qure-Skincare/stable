@@ -81,7 +81,7 @@
           "type": "faq",
           "settings": {
             "button_label": "Frequently Asked Questions",
-            "button_url": "#"
+            "button_url": "#faq"
           }
         }
       },
@@ -109,7 +109,8 @@
         "soldout": false,
         "button-label": "",
         "button-url": "",
-        "approved": false
+        "approved": false,
+        "price": "178$"
       }
     },
     "purchase-form-landing": {
@@ -132,7 +133,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -209,7 +210,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {

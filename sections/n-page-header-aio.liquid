@@ -65,6 +65,10 @@
     {% render 'n-product-data-json', product: product %}
 {% endif %}
 
+{%- if section.settings.price != blank -%}
+<script>window.__aioPrice = {{ section.settings.price | json }};</script>
+{%- endif -%}
+
 {% schema %}
 {
     "name": "t:sections.page-header.name",
@@ -139,6 +143,11 @@
             "id": "approved",
             "label": "t:common.approved-by",
             "default": false
+        },
+        {
+            "type": "text",
+            "id": "price",
+            "label": "t:common.price"
         }
     ],
     "blocks": [
