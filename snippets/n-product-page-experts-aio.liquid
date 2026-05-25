@@ -1,0 +1,47 @@
+{% doc %}
+  Renders the "experts" block (quote-card + certified-box) for the AIO
+  product header. Sits in `.hero-product__extra`, between the collapsed
+  accordion and the jump-to nav.
+
+  Renders nothing if no `experts` block is added to the section.
+
+  @param {object} section - The current section object.
+
+  @example
+  {% render 'n-product-page-experts-aio', section: section %}
+{% enddoc %}
+
+{% assign experts_blocks = section.blocks | where: 'type', 'experts' %}
+
+{% if experts_blocks.size > 0 %}
+    <div class="hero-product__experts">
+        {% for block in experts_blocks %}
+            <div class="e-quote-card" {{ block.shopify_attributes }}>
+                <i class="e-icon e-icon-quote"></i>
+                {% if block.settings.image != blank %}
+                    <picture>
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.username | escape }}" />
+                    </picture>
+                {% endif %}
+                {% if block.settings.text != blank %}
+                    {{ block.settings.text }}
+                {% endif %}
+                {% if block.settings.username != blank or block.settings.position != blank %}
+                    <div>
+                        {% if block.settings.username != blank %}<strong>{{ block.settings.username }}</strong>{% endif %}
+                        {% if block.settings.position != blank %}<small>{{ block.settings.position }}</small>{% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <div class="c-certified-box">
+            <ul>
+                <li><img src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
+                <li><img src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-2.webp" alt="Certified Dermatologists" /></li>
+                <li>+50</li>
+            </ul>
+            <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
+        </div>
+    </div>
+{% endif %}

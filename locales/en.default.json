@@ -488,6 +488,9 @@
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
+      },
+      "description-aio": {
+        "show_more": "Show more"
       }
     }
   },

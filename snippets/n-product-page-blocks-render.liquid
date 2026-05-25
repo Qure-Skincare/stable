@@ -17,6 +17,8 @@
     {% case block.type %}
         {% when 'description' %}
             {% render 'n-product-description', description: section.settings.description %}
+        {% when 'description-aio' %}
+            {% render 'n-product-description-aio', block: block %}
         {% when 'price' %}
             {% if black_friday_discount_percent > 0 %}
                 {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}

@@ -1,5 +1,5 @@
 {% if section.settings.form_name == 'purchase-form-landing-subscription' %}
-    <p id="subscription-details" class="subscription-details">{{ 'purchase-form.settings.n_more_details_html' | t }}</p>
+    <p id="subscription-details" class="subscription-details{% if section.settings.aio_toggle %} hide{% endif %}">{{ 'purchase-form.settings.n_more_details_html' | t }}</p>
 {% endif %}
 
 {% if section.settings.type == 'variant' %}
