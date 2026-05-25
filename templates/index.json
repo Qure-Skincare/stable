@@ -156,7 +156,6 @@
         "badge_NVnWab"
       ],
       "name": "t:sections.n_across-image-banner.name",
-      "disabled": false,
       "settings": {
         "use_own_file": true,
         "modifier": "holidays-secondary",
