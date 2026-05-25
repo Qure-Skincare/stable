@@ -1357,16 +1357,16 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Memorial Day Promo",
+            "heading": "6 Month Supply Promo PRE-ORDER",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 12,
             "left_items": 519,
-            "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "16th April",
-            "preorder_date_reserved": "17th May",
+            "preorder_text": "Your Delivery Timeline: next batch ships June 26th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
             "preorder_percent": 93,
             "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
