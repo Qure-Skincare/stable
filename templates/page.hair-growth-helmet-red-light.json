@@ -91,7 +91,7 @@
         "rating": true,
         "description": "<p>Targeted <strong>red light therapy for hair loss</strong> combines LED light and medical-grade lasers to support scalp health and promote the appearance of thicker-looking hair in just 12 minutes per session.</p>",
         "whitelist": false,
-        "reserved": false,
+        "reserved": true,
         "soldout": false
       }
     },
