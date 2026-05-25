@@ -237,7 +237,7 @@
             "product": "line-refine-bundle-pro1",
             "image": "shopify://shop_images/Line_Refine_Bundle_Pro_acca69aa-ddf7-4405-98ea-9756b1cd3c48.png",
             "preselected": false,
-            "soldout": false,
+            "soldout": true,
             "reserved": false
           }
         },
