@@ -237,7 +237,7 @@
             "product": "line-refine-bundle-pro1",
             "image": "shopify://shop_images/Line_Refine_Bundle_Pro_acca69aa-ddf7-4405-98ea-9756b1cd3c48.png",
             "preselected": false,
-            "soldout": false,
+            "soldout": true,
             "reserved": false
           }
         },
@@ -279,7 +279,7 @@
             "product": "fade-firm-bundle-pro1",
             "image": "shopify://shop_images/Fade_Firm_Bundle_Pro_d34b8bb4-b8b4-4b24-a989-db33c53939b5.png",
             "preselected": false,
-            "soldout": false,
+            "soldout": true,
             "reserved": false
           }
         },
@@ -289,7 +289,7 @@
             "product": "fade-firm-bundle-advanced",
             "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_bca77af6-6e1b-438c-a8ef-b0ed81d4638b.png",
             "preselected": false,
-            "soldout": false,
+            "soldout": true,
             "reserved": false
           }
         },

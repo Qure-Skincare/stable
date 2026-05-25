@@ -32,12 +32,22 @@
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
           }
+        },
+        "nextships_4QXeV7": {
+          "type": "nextships",
+          "settings": {
+            "date": "10th August",
+            "percent": 57,
+            "date_soldout": "25th May",
+            "date_reserved": "10th August"
+          }
         }
       },
       "block_order": [
         "description_iSDNaK",
         "link_iPBNaS",
-        "exclusive-offer_iaSzaK"
+        "exclusive-offer_iaSzaK",
+        "nextships_4QXeV7"
       ],
       "name": "t:sections.page-header.name",
       "settings": {
@@ -47,7 +57,7 @@
         "rating": false,
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
-        "reserved": false,
+        "reserved": true,
         "soldout": false,
         "button-label": "Shop Now & Save $299",
         "button-url": "#buy-form",
@@ -1108,7 +1118,7 @@
         "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED System",
         "text": "1,893 purchased in last 48 hours",
         "limited": false,
-        "button-label": "SHOP NOW & SAVE $299",
+        "button-label": "RESERVE NOW & SAVE $299",
         "button-url": "#buy-form"
       }
     }

@@ -143,7 +143,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
             "product_discount_percent": 0,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
@@ -165,7 +165,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
             "product_discount_percent": 0,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "preorder_text": "Your Delivery Timeline: next batch ships 17th May: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "16th April",
@@ -377,7 +377,9 @@
         "hide_types": false,
         "type": "box",
         "klaviyo_form_name": "",
-        "guarantee_period": "90"
+        "guarantee_period": "90",
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_press_reviews_3zGerf": {
@@ -1607,7 +1609,7 @@
             "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_1.5_6month_DSno_mist.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 12,
             "left_items": 438,
@@ -1626,7 +1628,7 @@
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 6,
             "left_items": 793,

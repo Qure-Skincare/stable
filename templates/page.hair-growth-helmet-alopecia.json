@@ -91,7 +91,7 @@
         "rating": true,
         "description": "<p>The Q-Renew LLLT Helmet is a clinically-proven, non-invasive solution for androgenetic alopecia. It combines medical-grade lasers and LED lights to stimulate hair follicles and promote hair regrowth in both men and women.</p>",
         "whitelist": false,
-        "reserved": false,
+        "reserved": true,
         "soldout": false
       }
     },
