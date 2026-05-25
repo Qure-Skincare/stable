@@ -47,7 +47,7 @@
         "rating": false,
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
-        "reserved": false,
+        "reserved": true,
         "soldout": false,
         "button-label": "Shop Now & Save $299",
         "button-url": "#buy-form",
