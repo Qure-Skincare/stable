@@ -7,20 +7,22 @@
   {% include 'n-footer-cart-drawer-upsells-item', product_handle: '' %}
 {% enddoc %}
 
-{% include 'get-product-data', product_handle: product_handle, product_prefix: 'upsells-item-' %}
+{% if product_handle != blank %}
+    {% include 'get-product-data', product_handle: product_handle, product_prefix: 'upsells-item-' %}
 
-{% if product_available == true %}
-    <div class="swiper-slide">
-        <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
-        <p>
-            {{ product_title }} <br />
-            {{ product_sale_price }}
-        </p>
-        <form method="post" action="/cart/add" enctype="multipart/form-data" onsubmit="if (typeof click_cart_upsell_event === 'function') { click_cart_upsell_event('{{ product_variant_id }}', '{{ product_title | escape }}'); }">
-            <button type="submit" class="btn btn--md btn--primary-white">{{ 'cart.drawer.upsell.buy-button-label' | t }}</button>
-            <input type="hidden" name="quantity" id="quantity" value="1">
-            <input type="hidden" name="id" value="{{ product_variant_id }}">
-            <input type="hidden" name="properties[_source]" value="slide_cart_upsell">
-        </form>
-    </div>
+    {% if product_available == true %}
+        <div class="swiper-slide">
+            <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+            <p>
+                {{ product_title }} <br />
+                {{ product_sale_price }}
+            </p>
+            <form method="post" action="/cart/add" enctype="multipart/form-data" onsubmit="if (typeof click_cart_upsell_event === 'function') { click_cart_upsell_event('{{ product_variant_id }}', '{{ product_title | escape }}'); }">
+                <button type="submit" class="btn btn--md btn--primary-white">{{ 'cart.drawer.upsell.buy-button-label' | t }}</button>
+                <input type="hidden" name="quantity" id="quantity" value="1">
+                <input type="hidden" name="id" value="{{ product_variant_id }}">
+                <input type="hidden" name="properties[_source]" value="slide_cart_upsell">
+            </form>
+        </div>
+    {% endif %}
 {% endif %}
