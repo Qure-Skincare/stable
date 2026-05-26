@@ -29,7 +29,7 @@
 
 {% if rating_value != blank %}
     <script>
-      var product_rating = '{{ rating_value }}';
+      const product_rating = '{{ rating_value }}';
 
       document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('product-rating', 'https://qureskincaredns-stable.com/shopify/js/product-rating.js');

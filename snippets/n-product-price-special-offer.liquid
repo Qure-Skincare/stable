@@ -35,12 +35,12 @@
 <script>
 
     {% if section.settings.soldout != blank %}
-    var buy_and_save_button_label = '{{ button-label }}';
+        let buy_and_save_button_label = '{{ button-label }}';
     {% else %}
     {% if product_discount %}
-        var buy_and_save_button_label = '{{ button-label }} {{ product_discount }}%';
+        let buy_and_save_button_label = '{{ button-label }} {{ product_discount }}%';
     {% else %}
-        var buy_and_save_button_label = '{{ button-label }} {{ black_friday_discount }}%';
+        let buy_and_save_button_label = '{{ button-label }} {{ black_friday_discount }}%';
     {% endif %}
     {% endif %}
 

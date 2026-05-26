@@ -16,6 +16,24 @@
     {% endfor %}
 {% endif %}
 
+{% assign exclusive_offer_product2 = all_products[block.settings.product2] %}
+{% assign exclusive_offer_product2_black_variant_id = blank %}
+{% if exclusive_offer_product2 != blank %}
+    {% for variant in exclusive_offer_product2.variants %}
+        {% assign variant_title = variant.title | downcase %}
+        {% assign variant_option1 = variant.option1 | downcase %}
+        {% assign variant_option2 = variant.option2 | downcase %}
+        {% assign variant_option3 = variant.option3 | downcase %}
+        {% if variant_title contains 'black' or variant_option1 contains 'black' or variant_option2 contains 'black' or variant_option3 contains 'black' %}
+            {% assign exclusive_offer_product2_black_variant_id = variant.id %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% if exclusive_offer_product2_black_variant_id == blank and exclusive_offer_product2 != blank %}
+    {% assign exclusive_offer_product2_black_variant_id = exclusive_offer_product2.selected_or_first_available_variant.id %}
+{% endif %}
+
 <div class="c-exclusive-offer">
     <div class="c-exclusive-offer__tag">
 
@@ -49,9 +67,11 @@
 
 {% if product != blank %}
     <script>
-        var exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
-        var exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
-        var exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
+        const exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
+        const exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
+        const exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
+        const exclusive_product2_black_variant_id = '{{ exclusive_offer_product2_black_variant_id }}';
+        const exclusive_offer_discount_code = {{ block.settings.discount_code | default: 'FREEN&DOFFER' | json }};
 
         document.addEventListener("DOMContentLoaded", function () {
           loadScriptOnce('n-product-exclusive-offer.js', '{{ 'n-product-exclusive-offer.js' | asset_url }}');

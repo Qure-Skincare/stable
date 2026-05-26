@@ -46,13 +46,6 @@
                         </div>
                     {%- endif -%}
 
-                    {%- comment -%}
-                      `n-product-exclusive-offer` uses `{% include 'get-product-data' %}`
-                      internally, which leaks variable mutations to the outer scope.
-                      Snapshot the helmet's product variables before the loop and restore
-                      them after so the buy-button below renders with the helmet's data,
-                      not the offer products' data.
-                    {%- endcomment -%}
                     {%- assign saved_product_variant_id = product_variant_id -%}
                     {%- assign saved_product_discount = product_discount -%}
                     {%- assign saved_product_available = product_available -%}
@@ -426,6 +419,12 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "discount_code",
+                    "label": "Discount code",
+                    "default": "FREEN&DOFFER"
                 }
             ]
         }

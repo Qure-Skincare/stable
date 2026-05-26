@@ -49,9 +49,9 @@
 
 {% if product != blank %}
     <script>
-        var exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
-        var exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
-        var exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
+        const exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
+        const exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
+        const exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
 
         document.addEventListener("DOMContentLoaded", function () {
           loadScriptOnce('n-product-exclusive-offer-bundle.js', '{{ 'n-product-exclusive-offer-bundle.js' | asset_url }}');

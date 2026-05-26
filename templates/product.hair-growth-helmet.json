@@ -24,14 +24,15 @@
         },
         "exclusive-offer": {
           "type": "exclusive-offer",
-          "disabled": true,
+          "disabled": false,
           "settings": {
             "tag": "<p><strong>Father’s day</strong> Offer</p>",
             "product": "hair-growth-helmet",
             "image_product1": "shopify://shop_images/exclusive-offer-helmet.webp",
             "product2": "shower-filter",
             "image_product2": "shopify://shop_images/exclusive-offer-shower.webp",
-            "text": "<p>Q-Renew LLLT Helmet &amp; Shower Filter Bundle $999</p>"
+            "text": "<p>Q-Renew LLLT Helmet &amp; Shower Filter Bundle $999</p>",
+            "discount_code": "HELMET&SOFFER"
           }
         },
         "button": {
