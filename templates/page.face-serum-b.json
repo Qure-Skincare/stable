@@ -211,6 +211,7 @@
         },
         "product_eiY89h": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "all-in-one-face-serum-6-month-bundle",
             "product_variant_id": 46097709760751,
