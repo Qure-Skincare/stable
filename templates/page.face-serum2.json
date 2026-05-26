@@ -7,11 +7,26 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_kHW3Cn": {
       "type": "n-page-header-aio",
       "blocks": {
+        "description_aio_A1": {
+          "type": "description-aio",
+          "settings": {
+            "title_1": "Minimizes the look of fine lines & wrinkles",
+            "text_1": "<p>Argireline® Peptides help visibly smooth the look of expression lines while Retinol helps improve the appearance of crow’s feet, forehead lines, and uneven texture for smoother and firmer skin.</p>",
+            "title_2": "Helps visibly fade dark spots",
+            "text_2": "<p>Vitamin C and Niacinamide work together to brighten stubborn hyperpigmentation, sun damage, and uneven patches - revealing the radiant, balanced complexion you'd happily show off bare.</p>",
+            "title_3": "Supports skin firmness",
+            "text_3": "<p>Bakuchiol, the gentle plant-based retinol alternative, helps firm the skin without harsh dryness and irritation. Skin feels softer, tighter, and looks lifted even on sensitive complexions.</p>",
+            "title_4": "Shields skin from daily damage",
+            "text_4": "<p>Vitamin E + Ferulic Acid form a powerhouse antioxidant defense, neutralizing free radicals from pollution, UV, and stress before they break down collagen or dull your natural glow.</p>",
+            "title_5": "Saves you hundreds every year",
+            "text_5": "<p>Replaces 5 products in one bottle, so you can save more each year. Instead of juggling separate serums, eye creams, brightening drops, and anti-aging treatments, one serum delivers everything you need for clinical-grade results.</p>"
+          }
+        },
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
           "settings": {}
@@ -27,21 +42,6 @@
           "type": "description",
           "disabled": true,
           "settings": {}
-        },
-        "description_aio_A1": {
-          "type": "description-aio",
-          "settings": {
-            "title_1": "Minimizes the look of fine lines & wrinkles",
-            "text_1": "<p>Argireline\u00ae Peptides help visibly smooth the look of expression lines while Retinol helps improve the appearance of crow\u2019s feet, forehead lines, and uneven texture for smoother and firmer skin.</p>",
-            "title_2": "Helps visibly fade dark spots",
-            "text_2": "<p>Vitamin C and Niacinamide work together to brighten stubborn hyperpigmentation, sun damage, and uneven patches - revealing the radiant, balanced complexion you'd happily show off bare.</p>",
-            "title_3": "Supports skin firmness",
-            "text_3": "<p>Bakuchiol, the gentle plant-based retinol alternative, helps firm the skin without harsh dryness and irritation. Skin feels softer, tighter, and looks lifted even on sensitive complexions.</p>",
-            "title_4": "Shields skin from daily damage",
-            "text_4": "<p>Vitamin E + Ferulic Acid form a powerhouse antioxidant defense, neutralizing free radicals from pollution, UV, and stress before they break down collagen or dull your natural glow.</p>",
-            "title_5": "Saves you hundreds every year",
-            "text_5": "<p>Replaces 5 products in one bottle, so you can save more each year. Instead of juggling separate serums, eye creams, brightening drops, and anti-aging treatments, one serum delivers everything you need for clinical-grade results.</p>"
-          }
         },
         "section_A0": {
           "type": "section",
@@ -226,7 +226,7 @@
             "subheading": "(3 bottles)",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
