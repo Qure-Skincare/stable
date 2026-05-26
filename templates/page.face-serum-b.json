@@ -95,6 +95,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "face-serum",
         "reverse": false,
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
