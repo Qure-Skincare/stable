@@ -86,22 +86,21 @@
     },
     "n_across_image_banner_fathers_day": {
       "type": "n_across-image-banner",
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
       "blocks": {
         "bundle_1": {
           "type": "bundle",
           "settings": {
             "image": "shopify://shop_images/bundle-thumbnail-helmet.webp",
-            "link_url": "https://qureskincare.com/products/shower-filter"
+            "link_url": "https://qureskincare.com/products/shower-filter",
+            "text": ""
           }
         },
         "bundle_2": {
           "type": "bundle",
           "settings": {
-            "text": "<p>Q-Renew LLLT Helmet &amp; Shower Filter Bundle</p>",
             "image": "shopify://shop_images/bundle-thumbnail-shower.webp",
-            "link_url": "https://qureskincare.com/products/hair-growth-helmet"
+            "link_url": "https://qureskincare.com/products/hair-growth-helmet",
+            "text": "<p>Q-Renew LLLT Helmet &amp; Shower Filter Bundle</p>"
           }
         },
         "badge_text": {
@@ -116,10 +115,14 @@
         "bundle_2",
         "badge_text"
       ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
         "modifier": "fathers-day",
         "heading": "<h1>The kind of care he won't think to buy for himself.</h1>",
+        "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/fathers-day.webp",
         "image_mobile": "shopify://shop_images/fathers-day-mob.webp",
         "button_label": "Buy Now &amp; Save Up to 44%",
@@ -128,7 +131,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -155,6 +157,7 @@
       "block_order": [
         "badge_NVnWab"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": true,
