@@ -37,7 +37,7 @@
 {%- if helmet_is_soldout -%}
   {%- capture helmet_button_label -%}{{ 'product.settings.soldout-button-label' | t }}{%- endcapture -%}
 {%- elsif helmet_is_reserved -%}
-  {%- capture helmet_button_label -%}{{ 'product.settings.reserved-button-label' | t }}{%- endcapture -%}
+  {%- capture helmet_button_label -%}{{ 'sections.hair-growth-helmet.header.reserve_button' | t }}{%- endcapture -%}
 {%- elsif product_discount > 0 -%}
   {%- capture helmet_button_label -%}{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%{%- endcapture -%}
 {%- else -%}

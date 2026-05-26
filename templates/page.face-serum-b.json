@@ -1,0 +1,1121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_header_kHW3Cn": {
+      "type": "n-product-header",
+      "blocks": {
+        "black_friday_discount_A9": {
+          "type": "black-friday-discount",
+          "settings": {}
+        },
+        "price_A11": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_discount": false
+          }
+        },
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "disabled": true,
+          "settings": {
+            "sum": "$100",
+            "code": "QURE5000",
+            "days": 5
+          }
+        },
+        "nextships_KzHDC3": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "jumpto_J8aUQH": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How It Works",
+            "button-url": "#powered_by"
+          }
+        },
+        "jumpto_UrBwXR": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Reviews",
+            "button-url": "#trusted-reviews"
+          }
+        },
+        "jumpto_hcQKEq": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Ingredients",
+            "button-url": "#powered_by"
+          }
+        },
+        "jumpto_hQdAPf": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "black_friday_discount_A9",
+        "price_A11",
+        "description_iPBNaS",
+        "section_A0",
+        "limited_offer_A8",
+        "nextships_KzHDC3",
+        "jumpto_J8aUQH",
+        "jumpto_UrBwXR",
+        "jumpto_hcQKEq",
+        "jumpto_hQdAPf"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "product": "face-serum",
+        "reverse": false,
+        "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
+        "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "rating": true,
+        "limited": false,
+        "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": "",
+        "approved": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "23rd January",
+            "percent": 55,
+            "date_soldout": "7 January",
+            "date_reserved": "8 January"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "One time purchase",
+            "preselected": false
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-6-month-bundle",
+            "product_variant_id": 46097709760751,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "180 Days Supply",
+            "subheading": "(3 bottles)",
+            "text": "",
+            "image": "shopify://shop_images/3-bottles.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-4-month-bundle",
+            "product_variant_id": 46097705631983,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "120 Days Supply",
+            "subheading": "(2 bottles)",
+            "text": "",
+            "image": "shopify://shop_images/2-bottles.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_x3jeL8": {
+          "type": "product",
+          "settings": {
+            "product": "face-serum",
+            "product_variant_id": 35987553419413,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "60 Days Supply",
+            "subheading": "(1 bottle)",
+            "text": "",
+            "image": "shopify://shop_images/1-bottle.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Subscribe & Save",
+            "preselected": true
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-6-month-bundle",
+            "product_variant_id": 46097709760751,
+            "product_selling_plan": 8321761519,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "180 Days Supply",
+            "subheading": "(3 bottles)",
+            "text": "Ships every 6 months",
+            "image": "shopify://shop_images/3-bottles.webp",
+            "product_discount_percent": 20,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "all-in-one-face-serum-4-month-bundle",
+            "product_variant_id": 46097705631983,
+            "product_selling_plan": 8321728751,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "120 Days Supply",
+            "subheading": "(2 bottles)",
+            "text": "Ships every 4 months",
+            "image": "shopify://shop_images/2-bottles.webp",
+            "product_discount_percent": 11,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_AJPQaQ": {
+          "type": "product",
+          "settings": {
+            "product": "face-serum",
+            "product_variant_id": 35987553419413,
+            "product_selling_plan": 8321564911,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "60 Days Supply",
+            "subheading": "(1 bottle)",
+            "text": "Ships every 2 months",
+            "image": "shopify://shop_images/1-bottle.webp",
+            "product_discount_percent": 10,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_RBCPe8",
+        "product_gbPf3J",
+        "product_x3jeL8",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_eiY89h",
+        "product_nyJ9n7",
+        "product_AJPQaQ"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-subscription",
+        "hide_types": false,
+        "type": "list",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
+      }
+    },
+    "n_logos_r846Fz": {
+      "type": "n_logos",
+      "blocks": {
+        "carousel_iU7k7V": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/vogue_1cc4c3cc-1f4c-432c-8fa5-4e2ecd7bdc2c.svg"
+          }
+        },
+        "carousel_ihTTwT": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/womens-health.svg"
+          }
+        },
+        "carousel_7pmCPD": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/elle_54660f6f-a533-4b3f-8a45-0345c881697a.webp"
+          }
+        },
+        "carousel_ReKdHc": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan_f205bfe7-d6c2-481a-b639-273120ddcf5c.svg"
+          }
+        },
+        "carousel_QBqr3i": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/grazia_dd8672a7-9cb0-4f7c-ad61-1966664bd086.svg"
+          }
+        },
+        "carousel_YxgDDf": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/qq_37b5fce6-480a-47c9-b57f-c1807e9259ba.svg"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_iU7k7V",
+        "carousel_ihTTwT",
+        "carousel_7pmCPD",
+        "carousel_ReKdHc",
+        "carousel_QBqr3i",
+        "carousel_YxgDDf"
+      ],
+      "name": "t:sections.n_logos.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_base_section_HChwEE": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "reverse",
+        "modifier_2": "none",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>Everything you need in one serum</h2>",
+        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort.</em><br/><br/>Packed with <em>clinically backed ingredients</em> like peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step. <br/><br/>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
+        "image": "shopify://shop_images/Frame_1000004192.png",
+        "button_label": "Shop Now",
+        "button_url": "#hero-product",
+        "wistia_url": ""
+      }
+    },
+    "n_text_xJUd4V": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h2>Powered by actives, designed for daily use</h2><p>Targets uneven texture, fine lines, and discoloration with clinically-backed ingredients that work together to smooth, firm, and visibly brighten your skin over time.</p>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_before_after_accordion_XLxqHG": {
+      "type": "n_before-after-accordion",
+      "blocks": {
+        "accordion_bjLmdx": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Retinol",
+            "text": "<p>Helps reduce the appearance of wrinkles and age spots and smooths the feel of skin texture.</p>"
+          }
+        },
+        "accordion_cXNxrR": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Niacinamide",
+            "text": "<p>All star ingredient that helps clarify and even skin tone, minimize the look of pores, and reduce the appearance of redness.</p>"
+          }
+        },
+        "accordion_aU7Aba": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Lactic & Mandelic Acid",
+            "text": "<p>Gentle chemical exfoliants to clear away the layer of dead cells to reveal smoother, clearer-looking skin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_bjLmdx",
+        "accordion_cXNxrR",
+        "accordion_aU7Aba"
+      ],
+      "name": "t:sections.n_before-after-accordion.name",
+      "settings": {
+        "use_own_file": false,
+        "image": "shopify://shop_images/uneven-skin-texture.webp",
+        "flag": "shopify://shop_images/canada_f.webp",
+        "username": "Bethany N.",
+        "verified_customer": "Verified",
+        "text": "<h3>Uneven Skin Texture</h3><p>Clarify and even skin tone, minimize enlarged pores, strengthen skin's barrier, reduce breakouts.</p>",
+        "sub_text": "<p>Key Ingredients:</p>"
+      }
+    },
+    "n_before_after_accordion_ERnFbH": {
+      "type": "n_before-after-accordion",
+      "blocks": {
+        "accordion_LrfLWD": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Argireline® Peptides",
+            "text": "<p>The most trusted anti-aging peptide in the world. Stimulates collagen, reduces fine lines and boosts moisture for a firmer, youthful complexion!</p>"
+          }
+        },
+        "accordion_QddmKc": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Bakuchiol",
+            "text": "<p>A gentle alternative to retinol, bakuchiol helps to make your skin look smooth and firm.</p>"
+          }
+        },
+        "accordion_FjVPdm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Hyaluronic Acid",
+            "text": "<p>A drink of water for thirsty skin. Helps your skin retain moisture for softer and more supple looking skin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_LrfLWD",
+        "accordion_QddmKc",
+        "accordion_FjVPdm"
+      ],
+      "name": "t:sections.n_before-after-accordion.name",
+      "settings": {
+        "use_own_file": false,
+        "image": "shopify://shop_images/fine-line-wrinkles.webp",
+        "flag": "shopify://shop_images/america_f.webp",
+        "username": "Shannon W.",
+        "verified_customer": "Verified",
+        "text": "<h3>Fine Lines and Wrinkles</h3><p>Deeply hydrate skin to make fine lines less visible for more plumper, younger looking skin</p>",
+        "sub_text": "<p>Key Ingredients:</p>"
+      }
+    },
+    "n_before_after_accordion_Xhrege": {
+      "type": "n_before-after-accordion",
+      "blocks": {
+        "accordion_xbekmB": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Ethyl Ascorbic Acid (Vitamin C)",
+            "text": "<p>A powerful antioxidant that helps protect the skin from environmental stressors and supports a more youthful-looking appearance.</p>"
+          }
+        },
+        "accordion_fBfpNm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Ferulic Acid",
+            "text": "<p>Known for helping to brighten the look of skin and reducing the appearance of wrinkles.</p>"
+          }
+        },
+        "accordion_pFJtgW": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Actiwhite™",
+            "text": "<p>Visibly brighten and even skin tone and reduce the appearance of dark spots for a more radiant looking complexion.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_xbekmB",
+        "accordion_fBfpNm",
+        "accordion_pFJtgW"
+      ],
+      "name": "t:sections.n_before-after-accordion.name",
+      "settings": {
+        "use_own_file": false,
+        "image": "shopify://shop_images/dark-spots.webp",
+        "flag": "shopify://shop_images/america_f.webp",
+        "username": "Elisabeth R.",
+        "verified_customer": "Verified",
+        "text": "<h3>Dark Spots and Discoloration</h3><p>Reduce the look of hyperpigmentation to restore a more even-looking skin tone.</p>",
+        "sub_text": "<p>Key Ingredients:</p>"
+      }
+    },
+    "n_trusted_reviews_JKPtU7": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_TpJ8w4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ana.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Ana L.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Amazing</strong></p><p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the Micro-Infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_abfgij": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/vanessa.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Vanessa B.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>My cystic acne is gone</strong></p><p>“So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_qhUQXb": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/cheryl.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Cheryl T.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>I see a difference!</strong></p><p>“I SEE A DIFFERENCE!! This product is a keeper. I've been using it for 2 weeks now and I definitely see a big difference in my skin!!... I noticed my sun spots look lighter, especially on the backs of my hands. Facial redness and discolorations look lessened! Very happy with this serum.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_cpigmp": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/dona.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Dona S.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Love your serum!</strong></p><p>“Love your serum! It goes on easily, feels good, and did make my old skin look and feel better. Wish it had been around when I was in my 30’s. I might have taken care of my skin. Since my late 60’s I’ve tried other brands. All were a bit disappointing and I saw few results. After two weeks using Qure I actually thought my old skin looked better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_PmFDhN": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/tina.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Tina C.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>I look fresher</strong></p><p>“I am only 2 weeks in on using this product, my skin feels softer, hydrated and glowing. Friends have asked me what do I use on my face as I look fresher. I tell them Qure All in One Face Serum. I have give them your website to order their choice of products from your company 😁👍.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_cKj3dV": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/bethany.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Bethany N.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Changed my life!</strong></p><p>“This product has changed my life! My skin feels brighter, clearer and way more even! I’ll use this for the rest of my life!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_gEUMA6": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/lena.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Lena A.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>My skin feels tight</strong></p><p>“I tried this serum after trying all the others... It started minimizing the look of my fine lines from the first use. My skin feels tight, but, not too tight. My face feels softer than it has in 20 years. I will not be using any serums on my face except QURE. I am thrilled with the results!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_TBcUkR": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jessica.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jessica R.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Best experience</strong></p><p>“I had an excellent customer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100/100 , My skin had a small breakout, enlarged pores and was tired, with just one Micro-Infusion treatment it changed radically in 3 days, I will buy it again”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_Bj8kXD": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/dorothy.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Dorothy S.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Beauty has no age limit</strong></p><p>\"I am 76 years old. I shared my discovery of Qure's All-in-1 serum about three months ago and that I had purchased the red light mask about six weeks before. I use both daily. Such a boost to my regimen in just three or four minutes!... I think Qure's products have made an obvious improvement in the look of my skin's texture, brightness, and tone.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_Twbf7w": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/white-c.webp",
+            "flag": "shopify://shop_images/hong_kong_f.webp",
+            "username": "White C.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>The best serum!</strong></p><p>“I can't believe it! In just 2 months of using this serum, the results on my skin are absolutely amazing. I no longer have to rely on heavy makeup and concealer to cover up any imperfections. This serum has truly worked wonders for me!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_3YDwbC": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/johanna.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Johanna Y.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>All in for All-In-One Serum</strong></p><p>\"I purchased this as part of my nightly routine as a few dark spots and some fine lines showing up. After using it consistently now for 6-7 weeks, I can honestly say the darker spots look lighter... My skin feels smooth and I see less fine lines! I will continue on this journey in hopes to see even more benefits!\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_TpJ8w4",
+        "slider_abfgij",
+        "slider_qhUQXb",
+        "slider_cpigmp",
+        "slider_PmFDhN",
+        "slider_cKj3dV",
+        "slider_gEUMA6",
+        "slider_TBcUkR",
+        "slider_Bj8kXD",
+        "slider_Twbf7w",
+        "slider_3YDwbC"
+      ],
+      "name": "t:sections.n_trusted-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "none",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_trusted_recommended_kxwhkh": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Qure has a really good serum. It’s probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
+        "video_image_cover": "shopify://shop_images/dr-shah-maxfield.webp",
+        "text_on_image": "",
+        "wistia_url": false,
+        "video_url": "https://www.youtube.com/watch?v=PJt57LcFEQk",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    },
+    "n_features_marquee_h4hRGq": {
+      "type": "n_features-marquee",
+      "blocks": {
+        "image_with_text_Hnxp4K": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br> Orders Over 100$"
+          }
+        },
+        "image_with_text_dBhwq7": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "reviewed",
+            "text": "Dermatologist<br> Reviewed"
+          }
+        },
+        "image_with_text_C6aRqT": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br> Options Available"
+          }
+        },
+        "image_with_text_HP7mtc": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "proven",
+            "text": "Proven Results,<br> Backed By Science"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_Hnxp4K",
+        "image_with_text_dBhwq7",
+        "image_with_text_C6aRqT",
+        "image_with_text_HP7mtc"
+      ],
+      "name": "t:sections.n_features-marquee.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_base_section_iACXMc": {
+      "type": "n_base-section",
+      "blocks": {
+        "icon_with_text_8ERLxm": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "fine-lines",
+            "text": "Fine Lines"
+          }
+        },
+        "icon_with_text_t9D7xA": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "wrinkles",
+            "text": "Wrinkles"
+          }
+        },
+        "icon_with_text_U8czdN": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "dark-spots",
+            "text": "Dark Spots"
+          }
+        },
+        "icon_with_text_cXAMt9": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "blemishes",
+            "text": "Blemishes"
+          }
+        },
+        "icon_with_text_cw3Urt": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "rough-texture",
+            "text": "Rough Texture"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_8ERLxm",
+        "icon_with_text_t9D7xA",
+        "icon_with_text_U8czdN",
+        "icon_with_text_cXAMt9",
+        "icon_with_text_cw3Urt"
+      ],
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>One product to replace your full routine</h2>",
+        "text": "",
+        "image": "shopify://shop_images/Image_27.png",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_video_slider_VwmkXe": {
+      "type": "n_video-slider",
+      "blocks": {
+        "slider_GtNcqX": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "gt0wr74fyd"
+          }
+        },
+        "slider_bBxxip": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=wuIjXhlFUTU",
+            "image": "shopify://shop_images/all-in-one-serum-reviews.webp"
+          }
+        },
+        "slider_cQjVqK": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "7ghlcv9xqg"
+          }
+        },
+        "slider_xkp7P8": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": false,
+            "video_url": "cdyj6o3q28"
+          }
+        },
+        "slider_K4FbdA": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=j0L38mO7XaY&t=208s",
+            "image": "shopify://shop_images/luxury-micro-habits.webp"
+          }
+        },
+        "slider_AXryMm": {
+          "type": "slider",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=Jb99E6ztDIM",
+            "image": "shopify://shop_images/anti-aging-skincare-serum.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_GtNcqX",
+        "slider_bBxxip",
+        "slider_cQjVqK",
+        "slider_xkp7P8",
+        "slider_K4FbdA",
+        "slider_AXryMm"
+      ],
+      "name": "t:sections.n_video-slider.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h2>Confident skin starts here</h2>"
+      }
+    },
+    "n_comparison_table_iyUBix": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_b6fAAH": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Active Ingredients",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_PTcf36": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Multi-Benefit Formula",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_BTUB3F": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Ease of Use",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_w3ziN9": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Cost",
+            "color": "none"
+          }
+        },
+        "comparison_table_UY3pRQ": {
+          "type": "comparison_table",
+          "settings": {
+            "heading": "<h5>Qure <br />All-In-One Serum</h5>",
+            "text_1": "Retinol, peptides, niacinamide, bakuchiol",
+            "select_1": "checkmark",
+            "text_2": "Targets 5+ concerns in one easy-to-use formula",
+            "select_2": "checkmark",
+            "text_3": "One step, AM or PM",
+            "select_3": "checkmark",
+            "text_4": "Great value",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_J84FYW": {
+          "type": "comparison_table",
+          "settings": {
+            "heading": "<h5>High-End<br />Serums</h5>",
+            "text_1": "Usually 1–2 premium actives per product",
+            "select_1": "checkmark",
+            "text_2": "Often one concern per product",
+            "select_2": "cross",
+            "text_3": "Multi-step routine",
+            "select_3": "cross",
+            "text_4": "High ($90+ per product)",
+            "select_4": "cross",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_mV9R3h": {
+          "type": "comparison_table",
+          "settings": {
+            "heading": "<h5>Drugstore<br />Serums</h5>",
+            "text_1": "Basic actives in lowest concentrations",
+            "select_1": "cross",
+            "text_2": "Often one concern per product",
+            "select_2": "cross",
+            "text_3": "Multi-step routine",
+            "select_3": "cross",
+            "text_4": "Low",
+            "select_4": "cross",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_b6fAAH",
+        "comparison_table_heading_PTcf36",
+        "comparison_table_heading_BTUB3F",
+        "comparison_table_heading_w3ziN9",
+        "comparison_table_UY3pRQ",
+        "comparison_table_J84FYW",
+        "comparison_table_mV9R3h"
+      ],
+      "name": "t:sections.n_comparison-table.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h2>More actives, less hassle, better results</h2>"
+      }
+    },
+    "n_text_cf3y97": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h2>Our customer reviews</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "17575150924facf5ff": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_zBLPfg": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_zBLPfg"
+      ],
+      "settings": {}
+    },
+    "n_faq_WDCm9K": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_kKNrdN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Who should use All-In-One Serum?",
+            "text": "<p>You should use the All-In-One Serum if:</p><ul><li>Your skin is showing signs of aging</li><li>Your skin looks dull and tired</li><li>You want to even your skin tone and texture</li><li>Your skin has dark spots and discoloration</li></ul><p>All-In-One Serum helps improve these skin concerns. It’s a lightweight serum that rejuvenates dull skin for smooth, radiant results. Its clinically proven ingredients work to make your skin look brighter, instantly and over time.</p>"
+          }
+        },
+        "accordion_JB38QN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When will I start to see results?",
+            "text": "<p>Most people see improvement in a few weeks, but this can vary. Remember to stick with it - consistency is key!</p>"
+          }
+        },
+        "accordion_gNgBWa": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When should I use the All-In-One Serum?",
+            "text": "<p>The All-In-One Serum should be used once daily, after cleansing and before moisturizer. It’s suitable for both morning and evening routines.</p><p>To maximize the effectiveness, apply after your Q-Rejuvalight Pro LED Mask treatment.</p>"
+          }
+        },
+        "accordion_CWjLWj": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is the full ingredient list?",
+            "text": "<p>Purified Aqua, Aqua (and) Acetyl Hexapeptide-8, Aqua (and) Boswellia Serrata Resin Extract, Glycerin, Caprylic/capric Triglyceride, 1,3-Propanediol, Aqua (and) Sodium Hydroxide, Maltodextrin (and) Sucrose Dilaurate (and) Sodium Cocoyl Glutamate (and) Pisum Sativum (Pea) Extract, Glycerin (and) Aqua (and) Artemisia Umbelliformis Extract, Sodium Acrylates Copolymer (and) Lecithin, Niacinamide, 1,2-Hexanediol (and) Caprylyl Glycol (and) Tropolone, Sodium Acrylates Copolymer (and) Lecithin, Caprylic/Capric Triglyceride (and) Retinol (and) BHT, Retinyl Palmitate (and) Glycine Soja (Soybean) Oil (and) Tocopherol, Bakuchiol, Glyceryl Oleate Citrate (and) Caprylic/Capric Triglyceride, Lactic Acid, Propanediol (and) Aqua (and) Ganoderma Lucidum (Mushroom) Extract, Camellia Sinensis Leaf Extract, Polycrylate-13 (and) Polyisobutene (and) Polysorbate 20, Tocopheryl Acetate, 3-O-Ethyl Ascorbic Acid, Pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, Ferulic Acid, Mandelic Acid, Aqua (and) Ginkgo biloba Leaf Extract, Aqua (and) Terminalia Ferdinandiana Fruit Extract</p>"
+          }
+        },
+        "accordion_Yx9qnV": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What skin types is the All-In-One Serum best for?",
+            "text": "<p>This formula is suitable for all skin types (including sensitive) thanks to its balanced blend of active and calming ingredients. It’s especially helpful if you’re targeting fine lines, dullness, uneven tone, or dryness.</p>"
+          }
+        },
+        "accordion_AptLfW": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use this with the Q-Rejuvalight Pro LED Face Mask?",
+            "text": "<p>Yes, this serum pairs perfectly with the Q-Rejuvalight Pro. For best results, use the mask on clean skin first, then follow with the All-In-One Serum to maximize absorption and benefits.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_kKNrdN",
+        "accordion_JB38QN",
+        "accordion_gNgBWa",
+        "accordion_CWjLWj",
+        "accordion_Yx9qnV",
+        "accordion_AptLfW"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    },
+    "sticky_cta_fbPDSk": {
+      "type": "n-sticky-button-variants",
+      "blocks": {
+        "variant_43xxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "6 Months",
+            "image": "shopify://shop_images/3-bottles.webp"
+          }
+        },
+        "variant_45xfGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "4 Months",
+            "image": "shopify://shop_images/2-bottles.webp"
+          }
+        },
+        "variant_45sxGi": {
+          "type": "variant",
+          "settings": {
+            "heading": "2 Months",
+            "image": "shopify://shop_images/1-bottle.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_43xxGi",
+        "variant_45xfGi",
+        "variant_45sxGi"
+      ],
+      "disabled": true,
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "275 Units Reserved in last 48 hours",
+        "button-label": "",
+        "button-url": ""
+      }
+    }
+  },
+  "order": [
+    "product_header_kHW3Cn",
+    "purchase-form-landing",
+    "n_logos_r846Fz",
+    "n_base_section_HChwEE",
+    "n_text_xJUd4V",
+    "n_before_after_accordion_XLxqHG",
+    "n_before_after_accordion_ERnFbH",
+    "n_before_after_accordion_Xhrege",
+    "n_trusted_reviews_JKPtU7",
+    "n_trusted_recommended_kxwhkh",
+    "n_features_marquee_h4hRGq",
+    "n_base_section_iACXMc",
+    "n_video_slider_VwmkXe",
+    "n_comparison_table_iyUBix",
+    "n_text_cf3y97",
+    "17575150924facf5ff",
+    "n_faq_WDCm9K",
+    "sticky_cta_fbPDSk"
+  ]
+}

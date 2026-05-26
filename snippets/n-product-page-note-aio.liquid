@@ -1,0 +1,18 @@
+{% doc %}
+  Renders a single `c-note c-note--triangle` block (h6 heading + richtext)
+  for the AIO product header.
+
+  Renders nothing if the block has no heading and no text.
+
+  @param {object} block - A section block of type `note`.
+
+  @example
+  {% render 'n-product-page-note-aio', block: block %}
+{% enddoc %}
+
+{% if block.settings.heading != blank or block.settings.text != blank %}
+    <div class="c-note c-note--triangle" {{ block.shopify_attributes }}>
+        {% if block.settings.heading != blank %}<h6>{{ block.settings.heading }}</h6>{% endif %}
+        {% if block.settings.text != blank %}{{ block.settings.text }}{% endif %}
+    </div>
+{% endif %}

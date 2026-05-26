@@ -1,11 +1,13 @@
 {% doc %}
   Renders a collapsed snippet for the product-header/page-header section
 
-  @param {object} - A product object.
-  @param {object} - A page object.
+  @param {object} product - A product object.
+  @param {object} page - A page object.
+  @param {object} section - Optional. When provided, an `faq` block on the
+    section will render a "Frequently Asked Questions" link below the list.
 
   @example
-  {% render 'n-product-page-collapsed' product: product, page: page %}
+  {% render 'n-product-page-collapsed' product: product, page: page, section: section %}
 {% enddoc %}
 
 <div class="c-accordion c-accordion--lines">
@@ -56,4 +58,13 @@
             {% render 'n-product-page-collapsed-item' input: page.metafields.custom.clean_ingredients, index: 'nine', title: 'Clean Ingredients' %}
         {% endif %}
     </div>
+
+    {% if section %}
+        {% assign faq_blocks = section.blocks | where: 'type', 'faq' %}
+        {% for block in faq_blocks %}
+            {% if block.settings.button_label != blank %}
+                <a class="c-accordion__link" href="{{ block.settings.button_url }}" {{ block.shopify_attributes }}>{{ block.settings.button_label }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 </div>

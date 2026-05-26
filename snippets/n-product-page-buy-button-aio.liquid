@@ -1,0 +1,118 @@
+{% doc %}
+  AIO variant of the product-page buy button.
+
+  Identical to `n-product-page-buy-button` but appends the
+  `<a class="one-time-purchase">` toggle inside `.c-buy-block` and loads
+  the AIO toggle script that swaps the product list between the
+  "One Time Purchase" and "Subscribe & Save" types.
+
+  @param {string} product_price - A string value.
+  @param {string} product_variant_id - A string value.
+  @param {string} product_price_divided - A string value.
+  @param {object} section - A object value.
+  @param {bool} static - A static value.
+
+  @example
+  {% render 'n-product-page-buy-button-aio', product_price: '', product_variant_id: '', product_price_divided: '', section: '', product_available: '', static: '' %}
+{% enddoc %}
+
+{% assign reserved = null %}
+{% assign soldout = null %}
+
+{% assign default_button_label = 'product.settings.buy-button-label' | t %}
+
+{% if section.settings.button_label != blank %}
+  {% assign default_button_label = section.settings.button_label %}
+{% endif %}
+
+{% if product_price != null %}
+  {% capture button-label %}{{ default_button_label }} – <span class="igPrice">{{ product_price }}</span>{% endcapture %}
+{% else %}
+  {% capture button-label %}{{ default_button_label }}{% endcapture %}
+{% endif %}
+
+
+{% if product_available == false %}
+  {% assign soldout = true %}
+{% endif %}
+
+{% if section != blank %}
+  {% if section.settings.reserved != blank %}
+    {% assign reserved = true %}
+  {% endif %}
+  {% if section.settings.soldout != blank %}
+    {% assign soldout = true %}
+  {% endif %}
+
+  {% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'button' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
+
+{% if reserved == true %}
+  {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
+{% endif %}
+
+{% if soldout == true %}
+  {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
+{% endif %}
+
+<div class="c-buy-block">
+    <div class="c-order-button">
+      <form method="post" action="/cart/add" enctype="multipart/form-data"{% if static %} data-static="true"{% endif %}>
+        <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
+        <input type="hidden" name="quantity" id="quantity" value="1">
+        <input type="hidden" name="selling_plan" id="selling_plan" value="">
+        <input type="hidden" name="id" value="{{ product_variant_id }}">
+      </form>
+
+      {% unless is_modal %}
+        {% unless block.settings.hide_payments %}
+            <div class="e-pay-options">
+                {{ 'product.settings.buy-button-bottom.heading_html' | t: product_price_divided: product_price_divided }}
+                <ul>
+                    <li><img src="https://qureskincaredns-stable.com/assets/images/klarna.svg" alt="Klarna" /></li>
+                    <li><img src="https://qureskincaredns-stable.com/assets/images/sezzle.svg" alt="Sezzle" /></li>
+                    <li><img src="https://qureskincaredns-stable.com/assets/images/afterpay.svg" alt="Afterpay" /></li>
+                </ul>
+            </div>
+        {% endunless %}
+      {% endunless %}
+    </div>
+
+    {% assign note_blocks = section.blocks | where: 'type', 'note' %}
+    {% if note_blocks.size > 0 %}
+        {% for note_block in note_blocks %}
+            {% render 'n-product-page-note-aio', block: note_block %}
+        {% endfor %}
+    {% endif %}
+
+    <a class="one-time-purchase" href="javascript:;" data-aio-toggle></a>
+</div>
+
+
+{% if reserved or soldout %}
+  <script>
+    let product_buy_button_label = '{{ button-label }}';
+    let product_buy_button_soldout = {% if soldout %}true{% else %}false{% endif %};
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScriptOnce('n-product-page-buy-button.js', '{{ 'n-product-page-buy-button.js' | asset_url }}');
+    });
+  </script>
+{% endif %}
+
+<script src="{{ 'n-product-page-buy-button-aio.js' | asset_url }}"
+        data-section="{{ section.id }}"
+        data-form="{{ section.settings.form_name }}"
+        data-best-value-label="{{ 'purchase-form.settings.best-value' | t | escape }}"
+        data-best-results-label="{{ 'purchase-form.settings.best-results' | t | escape }}"
+        defer>
+</script>

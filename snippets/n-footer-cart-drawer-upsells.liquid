@@ -10,9 +10,10 @@
     <div
         class="c-swiper"
         data-swiper='{
-            "slidesPerView": 1.1,
+            "slidesPerView": "auto",
             "spaceBetween": 12,
-            "loop": false
+            "loop": false,
+            "direction": "vertical"
         }'>
         <div class="swiper-wrapper">
             {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product1_handle %}

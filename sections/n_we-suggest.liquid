@@ -4,7 +4,7 @@
 
 <!-- WE SUGGEST -->
 {% if section.settings.use_own_file %}
-  <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/we-suggest/we-suggest.css">
+  <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/we-suggest/we-suggest.css">
 {% endif %}
 <link rel="stylesheet" href="{{ 'n-bundle-selection.css' | asset_url }}">
 
@@ -40,8 +40,8 @@
         moneyFormatNoTrailing: {{ shop.money_without_trailing_zeros_format | json }}
     };
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("we-suggest", "https://qureskincaredns-stable.com/sections/new/we-suggest/we-suggest.js");
-        loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js-new/dialog.js");
+        loadScriptOnce("we-suggest", "https://qureskincaredns-stable.com/sections/we-suggest/we-suggest.js");
+        loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
         loadScriptOnce("n-bundle-selection", "{{ 'n-bundle-selection.js' | asset_url }}");
     });
 </script>

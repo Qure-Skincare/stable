@@ -27,24 +27,22 @@
       "blocks": {
         "slider_1": {
           "type": "slider",
-          "disabled": true,
           "settings": {
-            "countdown": true,
-            "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
+            "countdown": false,
+            "text": "<p>Free Shipping on Orders $100+ | US & UK Only</p>",
             "button_label": "",
-            "button_url": "https://qureskincare.com/products/face-serum",
-            "from": "2026-05-17",
-            "days": 7
+            "button_url": "",
+            "from": "",
+            "days": 1
           }
         },
         "slider_2": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "countdown": false,
-            "text": "<p><strong>Limited Time Memorial Day Sale</strong> &ndash; up&nbsp;to&nbsp;40%&nbsp;off</p>",
+            "text": "<p>Micro-Infusion Offer - Save Up to <strong>70%</strong></p>",
             "button_label": "Shop Now",
-            "button_url": "https://qureskincare.com/products/face-serum",
+            "button_url": "https://qureskincare.com/pages/microinfusion",
             "from": "",
             "days": 5
           }
@@ -55,14 +53,14 @@
         "slider_2"
       ],
       "settings": {
-        "slider": false,
-        "countdown": true,
-        "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\">Memorial Day Offer</a> US & UK <strong>- </strong>Save Up To 40%</p>",
+        "slider": true,
+        "countdown": false,
+        "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\"><strong>Memorial Day Sale</strong></a><strong> - </strong>Save Up to 40% on All-In-One Face Serum</p>",
         "button_label": "",
         "button_url": "",
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle",
-        "from": "2026-05-18",
-        "days": 7
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1",
+        "from": "",
+        "days": 1
       }
     },
     "header": {

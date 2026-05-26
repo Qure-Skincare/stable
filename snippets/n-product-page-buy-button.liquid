@@ -83,6 +83,13 @@
       {% endunless %}
     </div>
 
+    {% assign note_blocks = section.blocks | where: 'type', 'note' %}
+    {% if note_blocks.size > 0 %}
+        {% for note_block in note_blocks %}
+            {% render 'n-product-page-note-aio', block: note_block %}
+        {% endfor %}
+    {% endif %}
+
     {% unless is_modal %}
       {% unless block.settings.hide_bottom or section.settings.hide_bottom %}
           {% unless block.settings.hide_certified or section.settings.hide_certified %}

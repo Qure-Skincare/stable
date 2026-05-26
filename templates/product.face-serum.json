@@ -128,7 +128,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -205,7 +205,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {
@@ -221,7 +221,7 @@
             "subheading": "(3 bottles)",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -236,14 +236,14 @@
             "product": "all-in-one-face-serum-4-month-bundle",
             "product_variant_id": 46097705631983,
             "product_selling_plan": 8321728751,
-            "popular": false,
+            "popular": true,
             "best": false,
             "preselected": false,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/2-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 11,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -265,7 +265,7 @@
             "subheading": "(1 bottle)",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/1-bottle.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -293,7 +293,10 @@
         "hide_types": false,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_logos_r846Fz": {
@@ -898,7 +901,7 @@
         "comparison_table_UY3pRQ": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Qure <br />All-In-One Serum</h3>",
+            "heading": "<h5>Qure <br />All-In-One Serum</h5>",
             "text_1": "Retinol, peptides, niacinamide, bakuchiol",
             "select_1": "checkmark",
             "text_2": "Targets 5+ concerns in one easy-to-use formula",
@@ -914,7 +917,7 @@
         "comparison_table_J84FYW": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>High-End<br />Serums</h3>",
+            "heading": "<h5>High-End<br />Serums</h5>",
             "text_1": "Usually 1–2 premium actives per product",
             "select_1": "checkmark",
             "text_2": "Often one concern per product",
@@ -930,7 +933,7 @@
         "comparison_table_mV9R3h": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Drugstore<br />Serums</h3>",
+            "heading": "<h5>Drugstore<br />Serums</h5>",
             "text_1": "Basic actives in lowest concentrations",
             "select_1": "cross",
             "text_2": "Often one concern per product",

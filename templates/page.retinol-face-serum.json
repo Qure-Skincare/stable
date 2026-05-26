@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_kHW3Cn": {
       "type": "n-page-header",
@@ -97,11 +97,11 @@
       "settings": {
         "product": "face-serum",
         "reverse": false,
-        "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
-        "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "seo_heading": "RETINOL SERUM — CLINICALLY-STUDIED ANTI-AGING INGREDIENTS",
+        "heading": "The Retinol Serum That Does It All",
         "rating": true,
         "limited": false,
-        "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
+        "description": "<ul><li>Powered by Retinol to help reduce the appearance of fine lines, wrinkles, and uneven skin tone for smoother, firmer-looking skin.</li><li>No need for multiple products — one serum helps target multiple skin concerns in a single step.</li><li>Retinol + Bakuchiol + Argireline® Peptides + Niacinamide + Vitamin C — the retinol routine, upgraded.</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -129,7 +129,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -206,7 +206,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {
@@ -222,7 +222,7 @@
             "subheading": "(3 bottles)",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -244,7 +244,7 @@
             "subheading": "(2 bottles)",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/2-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 11,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -266,7 +266,7 @@
             "subheading": "(1 bottle)",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/1-bottle.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -294,7 +294,10 @@
         "hide_types": false,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_logos_r846Fz": {
@@ -359,10 +362,10 @@
         "modifier_2": "none",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>Everything you need in one serum</h2>",
-        "text": "<p>Simplify your skincare routine, get <em>maximum results with minimal effort.</em><br/><br/>Packed with <em>clinically backed ingredients</em> like peptides, Retinol, Bakuchiol, Niacinamide, Hyaluronic Acid, Vitamin C, Vitamin E, Ferulic Acid. The All-In-One Serum hydrates, brightens, smooths look of fine lines in one easy step. <br/><br/>Vegan and cruelty-free. Free from fragrance, parabens, and PEG.</p>",
+        "heading": "<h2>Everything your retinol routine needs — in one serum</h2>",
+        "text": "<p>Get visible anti-aging results without a complicated routine. Powered by Retinol, a gold-standard skincare ingredient, and enhanced with Bakuchiol, Peptides, Niacinamide, Hyaluronic Acid, and Vitamin C.<br/><br/>Helps hydrate, visibly brighten the look of skin, and reduce the appearance of fine lines in one easy step.<br/><br/>Vegan and cruelty-free. Free from fragrance, parabens, and PEGs.</p>",
         "image": "shopify://shop_images/Frame_1000004192.png",
-        "button_label": "Shop Now",
+        "button_label": "Shop Retinol Serum",
         "button_url": "#hero-product",
         "wistia_url": ""
       }
@@ -385,7 +388,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Retinol",
-            "text": "<p>Helps reduce the appearance of wrinkles and age spots and smooths the feel of skin texture.</p>"
+            "text": "<p>The gold standard of anti-aging, Retinol helps reduce the appearance of fine lines, wrinkles, uneven skin tone, and rough texture over time.</p>"
           }
         },
         "accordion_cXNxrR": {
@@ -399,7 +402,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Lactic & Mandelic Acid",
-            "text": "<p>Gentle chemical exfoliants to clear away the layer of dead cells to reveal smoother, clearer-looking skin.</p>"
+            "text": "<p>Gentle exfoliants work alongside Retinol to help remove dead skin buildup, revealing smoother-, brighter-looking skin underneath.</p>"
           }
         }
       },
@@ -415,7 +418,7 @@
         "flag": "shopify://shop_images/canada_f.webp",
         "username": "Bethany N.",
         "verified_customer": "Verified",
-        "text": "<h3>Uneven Skin Texture</h3><p>Clarify and even skin tone, minimize enlarged pores, strengthen skin's barrier, reduce breakouts.</p>",
+        "text": "<h3>Retinol for Smoother Skin Texture</h3><p>Retinol helps improve the appearance of rough texture, visible pores, and uneven-looking skin for a smoother, more refined complexion.</p>",
         "sub_text": "<p>Key Ingredients:</p>"
       }
     },
@@ -426,21 +429,21 @@
           "type": "accordion",
           "settings": {
             "heading": "Argireline® Peptides",
-            "text": "<p>The most trusted anti-aging peptide in the world. Stimulates collagen, reduces fine lines and boosts moisture for a firmer, youthful complexion!</p>"
+            "text": "<p>Works alongside Retinol to help improve the appearance of fine lines and support firmer, smoother-looking skin.</p>"
           }
         },
         "accordion_QddmKc": {
           "type": "accordion",
           "settings": {
             "heading": "Bakuchiol",
-            "text": "<p>A gentle alternative to retinol, bakuchiol helps to make your skin look smooth and firm.</p>"
+            "text": "<p>A plant-based Retinol alternative, Bakuchiol helps enhance Retinol’s smoothing and firming benefits while helping maintain skin comfort.</p>"
           }
         },
         "accordion_FjVPdm": {
           "type": "accordion",
           "settings": {
             "heading": "Hyaluronic Acid",
-            "text": "<p>A drink of water for thirsty skin. Helps your skin retain moisture for softer and more supple looking skin.</p>"
+            "text": "<p>Helps replenish hydration to keep skin feeling soft, supple, and balanced throughout your Retinol journey.</p>"
           }
         }
       },
@@ -456,7 +459,7 @@
         "flag": "shopify://shop_images/america_f.webp",
         "username": "Shannon W.",
         "verified_customer": "Verified",
-        "text": "<h3>Fine Lines and Wrinkles</h3><p>Deeply hydrate skin to make fine lines less visible for more plumper, younger looking skin</p>",
+        "text": "<h3>Retinol for Fine Lines & Wrinkles<br/></h3><p>Retinol, one of the most clinically studied anti-aging skincare ingredients, helps visibly reduce the appearance of fine lines and wrinkles with consistent use.</p>",
         "sub_text": "<p>Key Ingredients:</p>"
       }
     },
@@ -467,7 +470,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ethyl Ascorbic Acid (Vitamin C)",
-            "text": "<p>A powerful antioxidant that helps protect the skin from environmental stressors and supports a more youthful-looking appearance.</p>"
+            "text": "<p>Brightening antioxidants work alongside Retinol to help visibly brighten the look of skin and protect against the visible effects of environmental stressors that can contribute to dullness and uneven-looking tone.</p>"
           }
         },
         "accordion_fBfpNm": {
@@ -497,7 +500,7 @@
         "flag": "shopify://shop_images/america_f.webp",
         "username": "Elisabeth R.",
         "verified_customer": "Verified",
-        "text": "<h3>Dark Spots and Discoloration</h3><p>Reduce the look of hyperpigmentation to restore a more even-looking skin tone.</p>",
+        "text": "<h3>Retinol for Dark Spots & Uneven Tone</h3><p>Retinol helps improve the appearance of dark spots, discoloration, and uneven skin tone for a brighter, more even-looking complexion.</p>",
         "sub_text": "<p>Key Ingredients:</p>"
       }
     },
@@ -665,7 +668,7 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "text": "<h2>Real retinol results — from real customers</h2>",
         "button_label": "",
         "button_url": ""
       }
@@ -676,8 +679,8 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>“Qure has a really good serum. It’s probably <em>the best known peptide complex</em></p><p>It has awesome, complimenting ingredients and amazing antioxidants. It really helps to simplify and consolidate your night routine.”</p>",
+        "heading": "<h2>Dermatologist-Reviewed Retinol Formula</h2>",
+        "text": "<p>\"Qure's retinol serum is formulated the right way — retinol paired with calming and brightening actives that make it effective and tolerable for daily use.<br/> A smart, simplified retinol routine.\"</p>",
         "video_image_cover": "shopify://shop_images/dr-shah-maxfield.webp",
         "text_on_image": "",
         "wistia_url": false,
@@ -781,7 +784,7 @@
         "modifier_2": "simple-grid",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>One product to replace your full routine</h2>",
+        "heading": "<h2>One retinol serum. Five skin concerns. Zero fuss.</h2>",
         "text": "",
         "image": "shopify://shop_images/Image_27.png",
         "button_label": "",
@@ -862,7 +865,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "text": "<h2>Confident skin starts here</h2>"
+        "text": "<h2>Your retinol routine starts here</h2>"
       }
     },
     "n_comparison_table_iyUBix": {
@@ -899,12 +902,12 @@
         "comparison_table_UY3pRQ": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Qure <br />All-In-One Serum</h3>",
-            "text_1": "Retinol, peptides, niacinamide, bakuchiol",
+            "heading": "<h5>Qure <br/>Retinol Serum</h5>",
+            "text_1": "Clinical-strength Retinol + Bakuchiol + Peptides + Niacinamide",
             "select_1": "checkmark",
-            "text_2": "Targets 5+ concerns in one easy-to-use formula",
+            "text_2": "Targets 5+ concerns — retinol-led, multi-active formula",
             "select_2": "checkmark",
-            "text_3": "One step, AM or PM",
+            "text_3": "One step, PM",
             "select_3": "checkmark",
             "text_4": "Great value",
             "select_4": "checkmark",
@@ -915,7 +918,7 @@
         "comparison_table_J84FYW": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>High-End<br />Serums</h3>",
+            "heading": "<h5>High-End<br/>Serums</h5>",
             "text_1": "Usually 1–2 premium actives per product",
             "select_1": "checkmark",
             "text_2": "Often one concern per product",
@@ -931,7 +934,7 @@
         "comparison_table_mV9R3h": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h3>Drugstore<br />Serums</h3>",
+            "heading": "<h5>Drugstore<br />Serums</h5>",
             "text_1": "Basic actives in lowest concentrations",
             "select_1": "cross",
             "text_2": "Often one concern per product",
@@ -957,7 +960,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>More actives, less hassle, better results</h2>"
+        "text": "<h2>More retinol power, less hassle, better results</h2>"
       }
     },
     "n_text_cf3y97": {
@@ -974,7 +977,7 @@
     "17575150924facf5ff": {
       "type": "apps",
       "blocks": {
-        "stamped_reviews_main_widget_zBLPfg": {
+        "stamped_reviews_main_widget_BGKcAp": {
           "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
             "animation": true,
@@ -983,12 +986,12 @@
             "search": "",
             "linkify": true,
             "use_metafields": false,
-            "sku_tagtype": "sku"
+            "sku_tagtype": "handle"
           }
         }
       },
       "block_order": [
-        "stamped_reviews_main_widget_zBLPfg"
+        "stamped_reviews_main_widget_BGKcAp"
       ],
       "settings": {}
     },
@@ -999,11 +1002,19 @@
           "type": "accordion",
           "settings": {
             "heading": "Who should use All-In-One Serum?",
-            "text": "<p>You should use the All-In-One Serum if:</p><ul><li>Your skin is showing signs of aging</li><li>Your skin looks dull and tired</li><li>You want to even your skin tone and texture</li><li>Your skin has dark spots and discoloration</li></ul><p>All-In-One Serum helps improve these skin concerns. It’s a lightweight serum that rejuvenates dull skin for smooth, radiant results. Its clinically proven ingredients work to make your skin look brighter, instantly and over time.</p>"
+            "text": "<p>Qure Retinol Serum is ideal if:<br/><br/>• Your skin is showing signs of aging<br/>• You want to start or upgrade your retinol routine<br/>• You have fine lines, dark spots, or uneven texture<br/>• You’ve found other retinols too harsh<br/><br/>This retinol formula combines Retinol with calming and hydrating actives for visible results while helping maintain skin comfort..</p>"
+          }
+        },
+        "accordion_NQVGkB": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When will I see retinol results?",
+            "text": "<p>Retinol results build over time. Many users notice smoother-looking skin texture within 2–4 weeks, with more visible improvement in the appearance of fine lines, uneven tone, and dark spots over continued use. Consistency is key.</p>"
           }
         },
         "accordion_JB38QN": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "When will I start to see results?",
             "text": "<p>Most people see improvement in a few weeks, but this can vary. Remember to stick with it - consistency is key!</p>"
@@ -1012,12 +1023,20 @@
         "accordion_gNgBWa": {
           "type": "accordion",
           "settings": {
-            "heading": "When should I use the All-In-One Serum?",
-            "text": "<p>The All-In-One Serum should be used once daily, after cleansing and before moisturizer. It’s suitable for both morning and evening routines.</p><p>To maximize the effectiveness, apply after your Q-Rejuvalight Pro LED Mask treatment.</p>"
+            "heading": "When should I use the Retinol Serum?",
+            "text": "<p>Use once daily, preferably in the evening, as Retinol can increase sun sensitivity. Apply after cleansing and before moisturizer. During your first week, start with every-other-day use to help build skin tolerance. Always apply SPF in the morning.</p>"
+          }
+        },
+        "accordion_aGyPHQ": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this retinol serum suitable for sensitive skin?",
+            "text": "<p>Yes. This formula pairs Retinol with Bakuchiol and calming actives to help minimize irritation. If you have sensitive skin, we recommend starting with every-other-day use and performing a patch test before full application.</p>"
           }
         },
         "accordion_CWjLWj": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "What is the full ingredient list?",
             "text": "<p>Purified Aqua, Aqua (and) Acetyl Hexapeptide-8, Aqua (and) Boswellia Serrata Resin Extract, Glycerin, Caprylic/capric Triglyceride, 1,3-Propanediol, Aqua (and) Sodium Hydroxide, Maltodextrin (and) Sucrose Dilaurate (and) Sodium Cocoyl Glutamate (and) Pisum Sativum (Pea) Extract, Glycerin (and) Aqua (and) Artemisia Umbelliformis Extract, Sodium Acrylates Copolymer (and) Lecithin, Niacinamide, 1,2-Hexanediol (and) Caprylyl Glycol (and) Tropolone, Sodium Acrylates Copolymer (and) Lecithin, Caprylic/Capric Triglyceride (and) Retinol (and) BHT, Retinyl Palmitate (and) Glycine Soja (Soybean) Oil (and) Tocopherol, Bakuchiol, Glyceryl Oleate Citrate (and) Caprylic/Capric Triglyceride, Lactic Acid, Propanediol (and) Aqua (and) Ganoderma Lucidum (Mushroom) Extract, Camellia Sinensis Leaf Extract, Polycrylate-13 (and) Polyisobutene (and) Polysorbate 20, Tocopheryl Acetate, 3-O-Ethyl Ascorbic Acid, Pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate, Ferulic Acid, Mandelic Acid, Aqua (and) Ginkgo biloba Leaf Extract, Aqua (and) Terminalia Ferdinandiana Fruit Extract</p>"
@@ -1025,6 +1044,7 @@
         },
         "accordion_Yx9qnV": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "What skin types is the All-In-One Serum best for?",
             "text": "<p>This formula is suitable for all skin types (including sensitive) thanks to its balanced blend of active and calming ingredients. It’s especially helpful if you’re targeting fine lines, dullness, uneven tone, or dryness.</p>"
@@ -1032,6 +1052,7 @@
         },
         "accordion_AptLfW": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use this with the Q-Rejuvalight Pro LED Face Mask?",
             "text": "<p>Yes, this serum pairs perfectly with the Q-Rejuvalight Pro. For best results, use the mask on clean skin first, then follow with the All-In-One Serum to maximize absorption and benefits.</p>"
@@ -1040,8 +1061,10 @@
       },
       "block_order": [
         "accordion_kKNrdN",
+        "accordion_NQVGkB",
         "accordion_JB38QN",
         "accordion_gNgBWa",
+        "accordion_aGyPHQ",
         "accordion_CWjLWj",
         "accordion_Yx9qnV",
         "accordion_AptLfW"

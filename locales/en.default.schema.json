@@ -312,7 +312,10 @@
         "am-or-pm": "AM or PM",
         "eye": "Eye",
         "share": "Share",
-        "benefits": "Benefits"
+        "benefits": "Benefits",
+        "faq": "FAQ",
+        "aio_toggle": "AIO one-time / subscribe toggle",
+        "description-aio": "Description AIO"
     },
     "blocks": {
         "block-card": {
@@ -364,7 +367,8 @@
                     "hero": "Hero banner",
                     "hero-reverse": "Hero reverse",
                     "sm": "Small banner",
-                    "holidays-secondary": "Holidays secondary"
+                    "holidays-secondary": "Holidays secondary",
+                    "fathers-day": "Fathers day"
                 }
             },
             "blocks": {
@@ -920,9 +924,6 @@
         },
         "results-slider": {
             "name": "Results slider"
-        },
-        "n_results-slider": {
-            "name": "N Results slider"
         },
         "n_returns-exchanges-tiles-group": {
             "name": "Tiles group"

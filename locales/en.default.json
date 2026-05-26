@@ -101,9 +101,9 @@
       "header": {
         "benefits_html": "<ul class='helmet-home__benefits'><li>FDA Cleared</li><li>Wireless</li><li>Easy to Use</li></ul>",
         "info_html": "<p>89% of users felt more confident about their hair after 16 weeks.</p><strong>Will Q-Renew work for me?</strong>",
-        "reserve_button": "Reserve Now",
+        "reserve_button": "Pre Order Now",
         "reserve": "Available for Pre-Order",
-        "reserve_date": "Next Batch Ships 2nd June",
+        "reserve_date": "Next Batch Ships 10th August",
         "whitelist": "Join the Waitlist",
         "whitelist_date": "Expected Jan. 2026",
         "unavailable": "Unavailable"
@@ -124,14 +124,14 @@
       "after_logo_text": "Community"
     },
     "car-giveaway-countdown-timer": {
-      "white_line_image": "https://qureskincaredns-stable.com/sections/isolated/countdown-timer/images/white_line.svg",
+      "white_line_image": "https://qureskincaredns-stable.com/sections/countdown-timer/images/white_line.svg",
       "days": "DAYS",
       "hours": "HOURS",
       "minutes": "MINUTES",
       "seconds": "SECONDS"
     },
     "car-giveaway-countdown-timer-sticky": {
-      "white_line_image": "https://qureskincaredns-stable.com/sections/isolated/countdown-timer/images/white_line_mob.svg",
+      "white_line_image": "https://qureskincaredns-stable.com/sections/countdown-timer/images/white_line_mob.svg",
       "days": "D",
       "hours": "H",
       "minutes": "M",
@@ -142,7 +142,7 @@
     },
     "car-giveaway-interior-style": {
       "interior_text": "INTERIOR",
-      "email_icon": "https://qureskincaredns-stable.com/sections/isolated/interior-classy/images/email_icon.svg"
+      "email_icon": "https://qureskincaredns-stable.com/sections/interior-classy/images/email_icon.svg"
     },
     "n_contact-form": {
       "success_text": "Thanks for contacting us. We'll get back to you as soon as possible.",
@@ -195,7 +195,7 @@
       "include_text": "Included free"
     },
     "serum-infusions": {
-      "rating_image": "https://qureskincaredns-stable.com/sections/isolated/serum/images/stars.webp",
+      "rating_image": "https://qureskincaredns-stable.com/sections/serum/images/stars.webp",
       "verified_customer_text": "Verified Customer"
     },
     "proof-in-numbers": {
@@ -206,7 +206,7 @@
       "badge_image": "https://qureskincaredns-stable.com/assets/images/reviewCheck.svg"
     },
     "trusted-recommended": {
-      "badge_image": "https://qureskincaredns-stable.com/sections/isolated/experts/images/tick_new.svg",
+      "badge_image": "https://qureskincaredns-stable.com/sections/experts/images/tick_new.svg",
       "badge_image_mobile": "https://qureskincaredns-stable.com/assets/images/tick_new.svg",
       "badge_text": "Dermatologist Reviewed"
     },
@@ -217,7 +217,7 @@
     "serum-selection": {
       "or_text": "or",
       "and_text": "&",
-      "review_stars": "https://qureskincaredns-stable.com/sections/isolated/serum/images/stars.webp",
+      "review_stars": "https://qureskincaredns-stable.com/sections/serum/images/stars.webp",
       "verified_customer_text": "Verified Customer"
     },
     "qure-filters-offer-slider-with-text": {
@@ -227,7 +227,7 @@
       "arrow_image": "https://qureskincaredns-stable.com/assets/images/arrow_right.svg",
       "button_label": "Ask us",
       "text_before_button": "Don’t see your question?",
-      "arrow_rotated_image": "https://qureskincaredns-stable.com/sections/isolated/faqs/images/arrow_rotated.svg"
+      "arrow_rotated_image": "https://qureskincaredns-stable.com/sections/faqs/images/arrow_rotated.svg"
     },
     "expert-advisory": {
       "shop_now_text": "Shop Now"
@@ -306,13 +306,14 @@
         "product2-header": "Neck & Décolletage LED System",
         "product2-description": "Clinically studied wavelengths shown to visibly smooth and firm.",
         "instant-saving": "INSTANT SAVINGS:",
-        "low-stock": "Low Stock",
+        "low-stock": "Out Of Stock- Pre Order Now ",
         "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
         "order-today": " Order today to lock in your deal and get FREE Shipping",
-        "button-label": "Shop Now & Save $299",
+        "button-label": "Reserve Now & Save $299",
         "guarantee-text": "90-Day Money-Back Guarantee",
         "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
+        "button-text": "Reserve Now",
         "discount-text": "% OFF",
         "sold": "Sold",
         "percent": "82%"
@@ -322,27 +323,16 @@
       "verified_text": "Verified",
       "review_image": "https://qureskincaredns-stable.com/assets/images/reviewCheck.svg"
     },
-    "micro-infusion-lim-ed-bundle-inside-kit": {
-      "bullet_arrow": "https://qureskincaredns-stable.com/sections/isolated/inside-kit/images/bullet_arrow.svg",
-      "bullet_arrow_left": "https://qureskincaredns-stable.com/sections/isolated/inside-kit/images/bullet_arrow_left.svg"
-    },
     "skincare-plan": {
       "product": "Product",
       "results": "Results",
       "review": "Review",
-      "read-more": " Read more",
-      "review-stars": "https://qureskincaredns-stable.com/sections/isolated/skincare-plan/images/review_stars.webp"
+      "read-more": " Read more"
     },
     "skincare-routine": {
       "am_text": "AM",
       "pm_text": "PM",
-      "am_image": "https://qureskincaredns-stable.com/sections/isolated/skincare-routine/images/am.webp",
-      "pm_image": "https://qureskincaredns-stable.com/sections/isolated/skincare-routine/images/pm.webp",
       "or_text": "or"
-    },
-    "faq-header": {
-      "view_image": "https://qureskincaredns-stable.com/sections/isolated/faqs/images/eye.svg",
-      "shared_image": "https://qureskincaredns-stable.com/sections/isolated/faqs/images/share.svg"
     },
     "faq-promo-banner": {
       "limited_offer_text": "Limited Time Offer"
@@ -434,6 +424,7 @@
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
         "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
+        "recommended_no_link_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "guaranteed_text_90": "90-Day Money-Back Guarantee",
         "guaranteed_text_year": "1-Year Guarantee",
@@ -499,6 +490,9 @@
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
+      },
+      "description-aio": {
+        "show_more": "Show more"
       }
     }
   },
@@ -583,7 +577,7 @@
         "text": "Fill it with amazing skincare.",
         "settings": {
           "header": "Save up to 57% on our Exclusive Bundles",
-          "image": "https://qureskincaredns-stable.com/sections/global/drawer/images/empty-cart.webp",
+          "image": "https://qureskincaredns-stable.com/sections/cart/images/flyout-cart-placeholder.webp",
           "content_html": "<ul><li>Shop our devices & skincare at our best prices.</li><li>Target your skin concerns in one simple routine.</li><li>Get clinical results at home - no downtime.</li></ul>",
           "button-label": "Shop Bundles",
           "button-url": "/pages/exclusive-holiday-bundle-deal-new",
@@ -616,6 +610,7 @@
       "off": "OFF",
       "popular": "Popular",
       "best-value": "Best Value",
+      "best-results": "Best Results",
       "subscribe": "Subscribe",
       "payment-option": "Select A Payment Option",
       "pay-full": "Pay in full",
@@ -812,11 +807,7 @@
         "read_time": "6 min read"
       },
       "social_media": {
-        "share": "Share this article:",
-        "facebook_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/facebook.webp",
-        "pinterest_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/pinterest.webp",
-        "whatsapp_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/whatsapp.webp",
-        "email_icon": "https://qureskincaredns-stable.com/sections/isolated/blogs/images/email.webp"
+        "share": "Share this article:"
       }
     },
     "snippets": {

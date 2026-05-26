@@ -3,9 +3,9 @@
 {% enddoc %}
 
 {% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/new/across-image-banner/across-image-banner.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/across-image-banner/across-image-banner.css" />
 {% endif %}
-<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% endif %}">
+<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
@@ -67,6 +67,23 @@
                         </div>
                     {% endif %}
                 {% endfor %}
+
+                {%  assign has_bundle = false %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'bundle' %}
+                        {% assign has_bundle = true %}
+                    {% endif %}
+                {% endfor %}
+                {% if has_bundle %}
+                    <div class="special-bundle">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'bundle' %}
+                                <a href="{{ block.settings.link_url }}"><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></a>
+                                {{ block.settings.text }}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
 
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                     <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
@@ -197,6 +214,10 @@
                 {
                     "value": "holidays-secondary",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.holidays-secondary"
+                },
+                {
+                    "value": "fathers-day",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.fathers-day"
                 }
             ]
         },
@@ -387,6 +408,27 @@
                 "type": "text",
                 "id": "badge_text",
                 "label": "t:common.badge-text"
+            }
+        ]
+    },
+    {
+        "type": "bundle",
+        "name": "t:common.bundle",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link-url"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
             }
         ]
     }

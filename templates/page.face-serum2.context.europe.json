@@ -1,0 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "europe"
+  },
+  "parent": "page.face-serum2.json",
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_RBCPe8": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_gbPf3J": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_x3jeL8": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_eiY89h": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_nyJ9n7": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_AJPQaQ": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
+    }
+  }
+}
