@@ -2,6 +2,14 @@
   Renders a product header section
 {% enddoc %}
 
+{%- liquid
+  if product == blank
+    if section.settings.product != blank
+      assign product = section.settings.product
+    endif
+  endif
+-%}
+
 {% include 'get-product-data' %}
 
 <section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}" id="hero-product">
@@ -54,6 +62,11 @@
 {
     "name": "t:sections.product-header.name",
     "settings": [
+        {
+            "type": "product",
+            "id": "product",
+            "label": "t:common.product"
+        },
         {
             "type": "checkbox",
             "id": "reverse",
