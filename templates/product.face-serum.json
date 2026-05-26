@@ -265,7 +265,7 @@
             "subheading": "(1 bottle)",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/1-bottle.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
