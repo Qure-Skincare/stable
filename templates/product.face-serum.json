@@ -128,7 +128,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_RBCPe8": {
@@ -205,7 +205,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_eiY89h": {
@@ -293,7 +293,10 @@
         "hide_types": false,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_logos_r846Fz": {
