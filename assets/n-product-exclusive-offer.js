@@ -6,7 +6,7 @@ async function handleClick(e) {
         : 'FREEN&DOFFER';
     const product2VariantId = typeof exclusive_product2_black_variant_id !== 'undefined' && exclusive_product2_black_variant_id
         ? exclusive_product2_black_variant_id
-        : exclusive_product2.variant_id;
+        : (typeof exclusive_product2 !== 'undefined' && exclusive_product2 ? exclusive_product2.variant_id : undefined);
 
     const input = [
         { id: exclusive_product.variant_id, quantity: 1 },
