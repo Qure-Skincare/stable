@@ -1,9 +1,5 @@
 {% doc %}
   Renders a page header section.
-
-  Mirrors `n-product-header`, but resolves the `product` variable from a
-  section setting (or page metafield) so the same product snippets work on
-  `/pages/*` templates where Shopify does not auto-populate `product`.
 {% enddoc %}
 
 {%- liquid
@@ -71,8 +67,7 @@
         {
             "type": "product",
             "id": "product",
-            "label": "t:common.product",
-            "info": "Used to populate price, rating, gallery, JSON-LD and metafield-driven blocks on /pages/* templates. Leave empty to fall back to page.metafields.custom.product or to static settings only."
+            "label": "t:common.product"
         },
         {
             "type": "checkbox",

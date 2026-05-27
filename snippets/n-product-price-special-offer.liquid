@@ -35,7 +35,7 @@
 <script>
 
     {% if section.settings.soldout != blank %}
-    let buy_and_save_button_label = '{{ button-label }}';
+        let buy_and_save_button_label = '{{ button-label }}';
     {% else %}
     {% if product_discount %}
         let buy_and_save_button_label = '{{ button-label }} {{ product_discount }}%';

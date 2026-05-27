@@ -52,7 +52,7 @@
         const exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
         const exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
         const exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
-    
+
         document.addEventListener("DOMContentLoaded", function () {
           loadScriptOnce('n-product-exclusive-offer-bundle.js', '{{ 'n-product-exclusive-offer-bundle.js' | asset_url }}');
         });
