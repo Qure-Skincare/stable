@@ -13,21 +13,24 @@ function upsellPopupInitPrices() {
     const priceEl = document.querySelector('.upsell-popup .upsell-popup__price');
     const oldEl = document.querySelector('.upsell-popup .upsell-popup__old');
 
-    if (!priceEl || !oldEl) return;
+    if (!priceEl) return;
 
-    const price = upsell_popup_data && upsell_popup_data.price
-        ? upsell_popup_data.price
-        : (typeof upsell_button_price_label !== 'undefined' ? upsell_button_price_label : '');
-    const oldPrice = upsell_popup_data && upsell_popup_data.compare_at_price
-        ? upsell_popup_data.compare_at_price
-        : (typeof upsell_button_price_old !== 'undefined' ? upsell_button_price_old : '');
+    const price = (typeof upsell_button_price_label !== 'undefined' && upsell_button_price_label)
+        ? upsell_button_price_label
+        : (upsell_popup_data && upsell_popup_data.price ? upsell_popup_data.price : '');
+    const oldPrice = (typeof upsell_button_price_old !== 'undefined' && upsell_button_price_old)
+        ? upsell_button_price_old
+        : '';
 
-    priceEl.textContent = price;
-    oldEl.textContent = oldPrice;
+    if (price) priceEl.textContent = price;
+
+    if (!oldEl) return;
 
     if (!oldPrice || oldPrice === price) {
+        oldEl.textContent = '';
         oldEl.classList.add('d-none');
     } else {
+        oldEl.textContent = oldPrice;
         oldEl.classList.remove('d-none');
     }
 }
