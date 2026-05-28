@@ -1129,6 +1129,7 @@
     },
     "n_page-led-mask-offer-2-faq_led_mask_offer_2": {
       "type": "n_page-led-mask-offer-2-faq",
+      "disabled": true,
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false
@@ -1143,6 +1144,61 @@
         "limited": false,
         "button-label": "RESERVE NOW & SAVE $299",
         "button-url": "#buy-form"
+      }
+    },
+    "n_faq_WVrxYn": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_CQaUTD": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why does Dr. Youn specifically recommend this device?",
+            "text": "<p>Dr. Youn looks for three things before recommending any at-home device to his patients: FDA clearance, peer-reviewed clinical data on the wavelengths used, and real-world usability. The Q-Rejuvalight Pro checks all three. FDA-cleared, five clinically studied wavelengths, and a hands-free 3-minute treatment that people actually stick to.</p>"
+          }
+        },
+        "accordion_6gzWFe": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does LED therapy actually work, or is it hype?",
+            "text": "<p>LED photobiomodulation has decades of peer-reviewed research behind it. Red and infrared light stimulate collagen production and cellular repair. Blue light targets acne-causing bacteria. The key is using the right wavelengths at the right energy levels — which is exactly what the Q-Rejuvalight Pro is calibrated to do.</p>"
+          }
+        },
+        "accordion_RGGAHN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why is the neck device FREE? What's the catch?",
+            "text": "<p>There's no catch. Qure is offering the Neck & Décolletage System free with the Q-Rejuvalight Pro purchase as a limited-time bundle. The neck device is a pre-order item (shipping July 20), which is how they're able to offer it as a gift with purchase at this time. The face mask ships immediately</p>"
+          }
+        },
+        "accordion_dLymfU": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How long until I see results?",
+            "text": "<p>In clinical studies, most users reported visible improvements within 4–8 weeks of consistent use. Dr. Youn recommends committing to 12 weeks to see the full benefit — and with just 3 minutes a day, that's easier than any clinic treatment schedule.</p>"
+          }
+        },
+        "accordion_3bmbN3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is there a money-back guarantee?",
+            "text": "<p>Yes. Qure offers a 30-Day Money-Back Guarantee. If you're not satisfied within the first 30 days, you can return the device for a full refund. This is backed by Qure's customer service team directly.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_CQaUTD",
+        "accordion_6gzWFe",
+        "accordion_RGGAHN",
+        "accordion_dLymfU",
+        "accordion_3bmbN3"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h1>Dr. Youn answers your questions</h1>",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": ""
       }
     }
   },
@@ -1164,6 +1220,7 @@
     "n_video_slider_VtYK7L",
     "n_page_led_mask_offer_2_across_image_banner_a4L3QA",
     "n_page-led-mask-offer-2-faq_led_mask_offer_2",
-    "sticky_cta_xhjAY4"
+    "sticky_cta_xhjAY4",
+    "n_faq_WVrxYn"
   ]
 }
