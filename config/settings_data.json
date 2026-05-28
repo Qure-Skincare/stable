@@ -131,6 +131,11 @@
         "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
         "disabled": true,
         "settings": {}
+      },
+      "3409074178882204272": {
+        "type": "shopify://apps/airwallex-fraud-protection/blocks/index/1b547a35-b1a5-4a66-8215-b21d21a171a0",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
