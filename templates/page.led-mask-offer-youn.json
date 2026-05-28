@@ -1017,6 +1017,7 @@
     },
     "n_trusted_recommended_iD3xKn": {
       "type": "n_trusted-recommended",
+      "disabled": true,
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
         "use_own_file": false,
