@@ -7,14 +7,17 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_jUJyDD": {
       "type": "n-product-header",
       "blocks": {
         "link_iPBNaS": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "hide_bottom": true,
+            "guarantee_period": "30"
+          }
         },
         "description_iSDNaK": {
           "type": "description",
@@ -25,7 +28,7 @@
           "settings": {
             "heading": "Watch: How To Use",
             "image": "shopify://shop_images/how_to_use_men.webp",
-            "wistia_url": "8ymvdqzx92"
+            "wistia_url": "6de5pg0r6e"
           }
         },
         "jumpto_jEyVj6": {
@@ -76,6 +79,8 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "product": "",
+        "reverse": false,
         "seo_heading": "",
         "heading": "The go-to skin treatment for the ultimate confidence booster",
         "rating": false,
@@ -85,7 +90,7 @@
         "soldout": false,
         "button-label": "Get Smoother Skin",
         "button-url": "#purchase-form",
-        "use_own_file": false
+        "approved": false
       }
     },
     "n_press_reviews_cxhHAa": {
@@ -121,7 +126,9 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>"
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_base_section_3YD3kx": {
@@ -168,6 +175,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p>",
         "button_label": "",
@@ -191,7 +199,8 @@
         "buy_button_QTPJzQ": {
           "type": "buy_button",
           "settings": {
-            "button_label": "BUY NOW & SAVE UP TO 70%"
+            "button_label": "BUY NOW & SAVE UP TO 70%",
+            "button_url": ""
           }
         },
         "certified_box_4EjYh3": {
@@ -254,6 +263,7 @@
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Introducing the Qure Micro-Infusion System</h2>",
         "text": "<p>[marked_list]</p><ul><li>Helps reduce appearance of fine lines</li><li>Wake up with dewy looking, glowing skin</li><li>Reveal brighter looking, firmer feeling skin</li><li>Help fade appearance of dark spots and acne marks</li></ul>",
         "image": "shopify://shop_images/qure-micro-infusion_men.webp",
@@ -406,6 +416,7 @@
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Dual action for twice the results</h2>",
         "text": "<p>Qure’s Micro-Infusion System has a one-two punch, making it uniquely effective.</p><ol><li>First, it uses tiny 24K gold-plated, EO-sterilized needles (thinner than a hair) to gently press against your skin. This helps visibly smooth and refine the look of fine lines.</li><li>Next, it delivers serum through the tiny surface channels created, helping your skin better absorb the ingredients.</li></ol><p>Perfect for anyone wanting to add a fresh, dewy, glowing look to their skin, especially before an event or occasion.</p>",
         "image": "shopify://shop_images/dual-action_men.webp",
@@ -455,8 +466,10 @@
       "name": "t:sections.n_why-using.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "buy now & SAVE UP TO 70%"
+        "button_label": "buy now & SAVE UP TO 70%",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_kxwhkh": {
@@ -543,7 +556,10 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "David G.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>My skin looks so healthy!</strong></p><p>“I was skeptical at first, but after using the Micro-Infusion Device for a few weeks, I'm blown away by the results. My skin looks and feels noticeably smoother. Highly recommend giving it a try!”</p>"
+            "text": "<p><strong>My skin looks so healthy!</strong></p><p>“I was skeptical at first, but after using the Micro-Infusion Device for a few weeks, I'm blown away by the results. My skin looks and feels noticeably smoother. Highly recommend giving it a try!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_XVPtMY": {
@@ -553,7 +569,10 @@
             "flag": "shopify://shop_images/cambodia_f.webp",
             "username": "AJ B.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Strengthened skin</strong></p><p>“My skin has definitely improved and strengthened since using the Micro-Infusion Device with serum as well. It is less costly than going to a cosmetic dermatologist and it is easy-to-use at home. So far I’m loving this! Didn’t hurt, skin wasn’t irritated after, feels and looks great! Looking forward to my next treatment!”</p>"
+            "text": "<p><strong>Strengthened skin</strong></p><p>“My skin has definitely improved and strengthened since using the Micro-Infusion Device with serum as well. It is less costly than going to a cosmetic dermatologist and it is easy-to-use at home. So far I’m loving this! Didn’t hurt, skin wasn’t irritated after, feels and looks great! Looking forward to my next treatment!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_QMkxAE": {
@@ -563,7 +582,10 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "John M.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>My skin looks so healthy!</strong></p><p>“First time trying Micro-Infusion and wow, what a difference! Haven’t tried any other treatments but one day after Qure’s and my skin already feels firmer, looks plumper, and definitely healthier. Big fan already. Highly recommend giving it a go!”</p>"
+            "text": "<p><strong>My skin looks so healthy!</strong></p><p>“First time trying Micro-Infusion and wow, what a difference! Haven’t tried any other treatments but one day after Qure’s and my skin already feels firmer, looks plumper, and definitely healthier. Big fan already. Highly recommend giving it a go!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_F3MWdW": {
@@ -573,7 +595,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Dylan B.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Acne scars have faded</strong></p><p>“Qure Micro-Infusion has been a game-changer for me. After struggling with acne scarring and dark spots for years, I can finally say goodbye to them. I feel more confident than ever before. It's a must-try for anyone dealing with similar skin concerns.”</p>"
+            "text": "<p><strong>Acne scars have faded</strong></p><p>“Qure Micro-Infusion has been a game-changer for me. After struggling with acne scarring and dark spots for years, I can finally say goodbye to them. I feel more confident than ever before. It's a must-try for anyone dealing with similar skin concerns.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_pfQbmw": {
@@ -583,7 +608,10 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Jay J.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Clearer skin overnight</strong></p><p>I noticed huge improvements after using Qure’s Micro-Infusion system with clearer skin overnight. It did hurt a little at the start but I got use to it quickly. Would definitely recommend this 👏🏽</p>"
+            "text": "<p><strong>Clearer skin overnight</strong></p><p>I noticed huge improvements after using Qure’s Micro-Infusion system with clearer skin overnight. It did hurt a little at the start but I got use to it quickly. Would definitely recommend this 👏🏽</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         },
         "slider_4JamhG": {
@@ -593,7 +621,10 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Paul W.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>WOW I want more!</strong></p><p>“A couple days after my 1st Micro-Infusion treatment, one of my employees who’d been on holiday came into my office and literally screamed “oh my god, you look so young!” Well that clinched it for me. I’m male, 65, and take great care of my skin….these will never last 3 months because I can’t wait to turn back the clock even more! :)”</p>"
+            "text": "<p><strong>WOW I want more!</strong></p><p>“A couple days after my 1st Micro-Infusion treatment, one of my employees who’d been on holiday came into my office and literally screamed “oh my god, you look so young!” Well that clinched it for me. I’m male, 65, and take great care of my skin….these will never last 3 months because I can’t wait to turn back the clock even more! :)”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
           }
         }
       },
@@ -610,7 +641,8 @@
         "use_own_file": false,
         "background_color": "light",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": "BUY NOW SAVE UP TO 70%"
+        "button_label": "BUY NOW SAVE UP TO 70%",
+        "button_url": ""
       }
     },
     "n_comparison_aByC6H": {
@@ -724,25 +756,29 @@
         "comparison_table_heading_xyncQd": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Results in"
+            "heading": "Results in",
+            "color": "none"
           }
         },
         "comparison_table_heading_RFR6L8": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Customized"
+            "heading": "Customized",
+            "color": "none"
           }
         },
         "comparison_table_heading_86rDzQ": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Skin Safe"
+            "heading": "Skin Safe",
+            "color": "none"
           }
         },
         "comparison_table_heading_rfBMbF": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Cost"
+            "heading": "Cost",
+            "color": "none"
           }
         },
         "comparison_table_JULNzp": {
@@ -757,7 +793,9 @@
             "text_3": "Minimal downtime & virtually painless",
             "select_3": "checkmark",
             "text_4": "$20 per treatment",
-            "select_4": "checkmark"
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
           }
         },
         "comparison_table_8pdxdF": {
@@ -772,7 +810,9 @@
             "text_3": "Minimal downtime",
             "select_3": "checkmark",
             "text_4": "$300+ per treatment",
-            "select_4": "checkmark"
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
           }
         },
         "comparison_table_XDTp7i": {
@@ -787,7 +827,9 @@
             "text_3": "Potential side effects",
             "select_3": "cross",
             "text_4": "< $10 per treatment",
-            "select_4": "checkmark"
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
           }
         }
       },
@@ -842,11 +884,13 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>See how quick and easy it is to useHow To Use</h2>",
         "image": "shopify://shop_images/mi-men-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-men-use-video-mob.webp",
         "wistia_url": "wxgqgsjjdr",
-        "button_label": "BUY NOW & SAVE UP TO 70%"
+        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_url": ""
       }
     },
     "n_highlight_ntcdd4": {
@@ -977,7 +1021,10 @@
       "name": "t:sections.n_science-backed.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
+        "section_id": "",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
+        "text_mobile": "",
         "left_heading": "<h4>For Dark Spots</h4>",
         "right_heading": "<h4>For Wrinkles</h4>",
         "left_image": "shopify://shop_images/Dark_Spots_7.png",
@@ -1254,7 +1301,9 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "SvCm4c",
-        "form_name": "purchase-form-second"
+        "form_name": "purchase-form-second",
+        "guarantee_period": "30",
+        "available-stocks": false
       }
     },
     "n_should_know_FGng9D": {
