@@ -268,7 +268,7 @@
         "text": "<p>[marked_list]</p><ul><li>Helps reduce appearance of fine lines</li><li>Wake up with dewy looking, glowing skin</li><li>Reveal brighter looking, firmer feeling skin</li><li>Help fade appearance of dark spots and acne marks</li></ul>",
         "image": "shopify://shop_images/qure-micro-infusion_men.webp",
         "button_label": "",
-        "button_url": "#",
+        "button_url": "#purchase-form",
         "wistia_url": ""
       }
     },
@@ -469,7 +469,7 @@
         "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
         "button_label": "buy now & SAVE UP TO 70%",
-        "button_url": ""
+        "button_url": "#purchase-form"
       }
     },
     "n_trusted_recommended_kxwhkh": {
