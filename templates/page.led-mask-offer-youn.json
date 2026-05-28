@@ -698,8 +698,8 @@
       "name": "Exclusive bundle",
       "settings": {
         "use_own_file": false,
-        "badge": "<p><strong>Memorial Day</strong> Offer</p>",
-        "heading": "<p>Experience face and neck rejuvenation in one bundle</p>",
+        "badge": "<p><strong>Dr. Young Bundle</strong> Offer</p>",
+        "heading": "<p>What's included in the Dr. Youn bundle</p>",
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
       }
     },
@@ -777,61 +777,73 @@
         "left_column_J6mUxQ": {
           "type": "left_column",
           "settings": {
-            "text": "One-time investment"
+            "text": "FDA-Cleared for safety & efficacy"
           }
         },
         "left_column_YBGw3L": {
           "type": "left_column",
           "settings": {
-            "text": "No appointments - use anytime at home"
+            "text": "5 clinically studied wavelengths"
           }
         },
         "left_column_h9TznP": {
           "type": "left_column",
           "settings": {
-            "text": "Saves time with only 3 minutes a day"
+            "text": "Just 3 minutes per day, at home"
           }
         },
         "left_column_nxG6c3": {
           "type": "left_column",
           "settings": {
-            "text": "Better results with more frequent treatments"
+            "text": "One-time purchase — use it forever"
           }
         },
         "left_column_QKYEhk": {
           "type": "left_column",
           "settings": {
-            "text": "Customized approach with clinical backing"
+            "text": "Treats face, neck & chest in the same session"
+          }
+        },
+        "left_column_hy9bGe": {
+          "type": "left_column",
+          "settings": {
+            "text": "No downtime, no appointments needed"
           }
         },
         "right_column_J6mUxQ": {
           "type": "right_column",
           "settings": {
-            "text": "Ongoing cost per session"
+            "text": "Professional-grade equipment"
           }
         },
         "right_column_YBGw3L": {
           "type": "right_column",
           "settings": {
-            "text": "Completed according to clinic's availability"
+            "text": "$150–$400 per session"
           }
         },
         "right_column_h9TznP": {
           "type": "right_column",
           "settings": {
-            "text": "Requires 20-30 mins per session, plus travel time"
+            "text": "6–12+ sessions typically recommended"
           }
         },
         "right_column_nxG6c3": {
           "type": "right_column",
           "settings": {
-            "text": "Less treatments = less consistent results"
+            "text": "Travel, scheduling, waiting rooms"
           }
         },
         "right_column_QKYEhk": {
           "type": "right_column",
           "settings": {
-            "text": "Customized approach with clinical backing"
+            "text": "Neck & chest usually not included"
+          }
+        },
+        "right_column_A4Qii4": {
+          "type": "right_column",
+          "settings": {
+            "text": "Results stop when sessions stop"
           }
         }
       },
@@ -844,16 +856,18 @@
         "left_column_h9TznP",
         "left_column_nxG6c3",
         "left_column_QKYEhk",
+        "left_column_hy9bGe",
         "right_column_J6mUxQ",
         "right_column_YBGw3L",
         "right_column_h9TznP",
         "right_column_nxG6c3",
-        "right_column_QKYEhk"
+        "right_column_QKYEhk",
+        "right_column_A4Qii4"
       ],
       "name": "t:sections.n_comparison.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>The beauty of clinical results from home - without the ‘clinical’ costs</h2><p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.</p>"
+        "text": "<h2>The beauty of clinical results — from home</h2><p>\"My patients ask me all the time if at-home LED actually works. Here's my honest answer.\"</p>"
       }
     },
     "n_easy_steps_FWp4Aw": {
