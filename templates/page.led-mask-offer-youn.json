@@ -30,7 +30,7 @@
             "image_product1": "shopify://shop_images/Img_50.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+            "text": "<p>Get the Q-Rejuvalight Pro LED Face Mask — and receive the Neck & Décolletage Device FREE. Full-body rejuvenation, in just 3 minutes a day.</p>"
           }
         },
         "nextships_4QXeV7": {
@@ -51,12 +51,13 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "",
-        "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
+        "heading": "The LED Bundle I Recommend to My Own Patients",
         "rating": false,
         "limited": false,
-        "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
+        "description": "<ul><li>FDA-Cleared — the same safety standard Dr. Youn looks for</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "reserved": true,
         "soldout": false,
         "button-label": "Reserve Now & Save $299",
@@ -123,28 +124,28 @@
         "image_with_text_Tth4r7": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h6>Trusted by world-leading dermatologists</h6><p>”Dr. Shah, a Board-Certified Dermatologist, reviewed that it’s \"the best LED mask on the market, in my opinion.”</p>",
+            "text": "<h6>Trusted by world-leading dermatologists</h6><p>Dr. Youn and 50+ dermatologists actively recommend Qure to their own patients — that's the endorsement that matters.</p>",
             "image": "shopify://shop_images/1_1.jpg"
           }
         },
         "image_with_text_PhpjdG": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h6>Alleviates many different skin concerns</h6><p>Choose between an anti-aging treatment, an anti-breakout treatment, or customized treatment modes for each facial area.</p>",
+            "text": "<h6>Addresses multiple skin concerns at once</h6><p>From fine lines and wrinkles to acne and uneven tone — one device handles what used to require multiple clinic visits.</p>",
             "image": "shopify://shop_images/1_2.jpg"
           }
         },
         "image_with_text_FMQjFh": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h6>Proven results in less than 12 weeks</h6><p>Customers have reported reduced redness, diminished fine lines & wrinkles, and a glowing, younger-looking complexion.</p>",
+            "text": "<h6>Visible results in under 12 weeks</h6><p>In clinical studies, users saw measurably smoother, firmer, more radiant skin — no guesswork, no empty claims.</p>",
             "image": "shopify://shop_images/1_3.jpg"
           }
         },
         "image_with_text_mKtnLw": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h6>Track your treatments with Qure mobile app</h6><p>Use on its own, or pair with our app to customize your treatments, set reminders, and track progress.</p>",
+            "text": "<h6>Track your progress with the Qure app</h6><p>Log your treatments, track skin improvements over time, and get guided routines personalized to your goals.</p>",
             "image": "shopify://shop_images/1_8.png"
           }
         }
@@ -159,7 +160,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "center",
-        "heading": "<h2>Get compliment-worthy skin</h2>",
+        "heading": "<h2>Get compliment-worthy skin - from home</h2><p>Dr. Youn breaks down exactly what makes this device different from anything else on the market.</p>",
         "text": ""
       }
     },
@@ -241,6 +242,12 @@
             "badge_text": "Dark Spots & Skin Tone",
             "text": "<p>Q-Rejuvalight Pro combines blue (415 nm) and red (630 nm) LED wavelengths that are proven to improve mild to severe acne. A 2006 study found that after 8 sessions over 4 weeks, participants saw a 46% reduction in lesion count at 4 weeks and an impressive 81% reduction at 12 weeks, with minimal side effect.</p><p>[hr]</p><h6>About the clinical trial</h6><p>4-week trial with 24 participants with mild to severe acne. Results measured after 8 treatments via lesion counts at weeks 2, 4, 8, and 12, along with dermatologist evaluation and patient self-assessment.</p><p>[span]Reference: Gold, Michael H., et al. \"Combination Blue (415 nm) and Red (633 nm) LED Phototherapy in the Treatment of Mild to Severe Acne Vulgaris.\" Journal of Cosmetic and Laser Therapy, vol. 8, no. 2, June 2006, pp. 71-75.[/span]</p>"
           }
+        },
+        "disclaimer_LwBdyD": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Based on clinical user studies conducted with Q-Rejuvalight Pro LED Mask. Individual results may vary."
+          }
         }
       },
       "block_order": [
@@ -254,12 +261,13 @@
         "popup_heading_study_3",
         "popup_text_study_1",
         "popup_text_study_2",
-        "popup_text_study_3"
+        "popup_text_study_3",
+        "disclaimer_LwBdyD"
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>Proof in Numbers</h2><p>During clinical studies on LED light therapy, users reported numerous benefits:</p>"
+        "text": "<h2>The proof Dr. Youn looked for</h2><p>\"I don't recommend devices I haven't reviewed the clinical data on. Here's what the studies showed.\"</p>"
       }
     },
     "n_trusted_reviews_APqC9g": {
