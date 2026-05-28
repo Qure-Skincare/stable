@@ -52,6 +52,16 @@
             "guarantee_period": "30"
           }
         },
+        "upsell-popup_mMzPq2": {
+          "type": "upsell-popup",
+          "settings": {
+            "upsell_product": "dermal-mist",
+            "image": "shopify://shop_images/upsell-popup-image.webp",
+            "heading": "<h5>Keep Your Mask and Skin — Clean</h5><p><em>save 20%</em> when added to your treatment</p>",
+            "text": "<p>Wipe the inside surface of your mask with Hypochlorous Acid Dermal Mist - safe for both skin and LED devices.</p><ul><li>Sanitizes your mask surface between uses</li><li>Reducing skin bacteria before treatment</li><li>Calming visible redness &amp; supporting skin barrier</li></ul><p>Includes full-size (100ml) + travel (15ml).</p>",
+            "discount_code": "MASK&MOFFER"
+          }
+        },
         "limited_offer_A8": {
           "type": "limited-offer",
           "settings": {
@@ -120,6 +130,7 @@
         "description_A10",
         "button_A9",
         "exclusive-offer_iaSzaD",
+        "upsell-popup_mMzPq2",
         "limited_offer_A8",
         "nextships_A7",
         "jumpto_A1",

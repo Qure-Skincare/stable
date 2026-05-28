@@ -1,0 +1,59 @@
+{% doc %}
+  Renders a post-add-to-cart upsell popup for the page-header section
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-upsell-popup', section: '', block: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'upsell-popup' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% include 'get-product-data', product_handle: block.settings.upsell_product, product_prefix: 'upsell-popup-' %}
+
+<dialog class="c-dialog c-dialog--column" id="upsellPopup">
+    <div class="c-dialog__message">
+        <p><strong>{{ product.title }}</strong> added to cart.</p>
+    </div>
+    <div class="c-dialog__content">
+        <div class="upsell-popup">
+            <div class="upsell-popup__header">
+                {{ block.settings.heading }}
+            </div>
+            <div class="upsell-popup__content">
+                {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                {% endif %}
+                {{ block.settings.text }}
+            </div>
+            <form class="upsell-popup__footer" action="#">
+                <button class="btn btn--primary" type="button">{{ 'product.settings.upsell-popup.button-label' | t }} <span>{{ product_sale_price }}</span> {{ product_before_price }}</button>
+                <a href="#" class="upsell-popup__continue">{{ 'product.settings.upsell-popup.continue' | t }}</a>
+            </form>
+        </div>
+    </div>
+    <button class="c-dialog__close" type="button" onclick="upsellPopup.close()">
+        <i class="e-icon e-icon-cross"></i>
+    </button>
+</dialog>
+
+{% if product != blank %}
+    <script>
+        const upsell_button_price_label = '{{ product_sale_price }}';
+        const upsell_button_price_old   = '{{ product_before_price }}';
+        const upsell_product_handle     = '{{ block.settings.upsell_product }}';
+        const upsell_discount_code      = {{ block.settings.discount_code | default: 'MASK&MOFFER' | json }};
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-upsell-popup.js', '{{ 'n-product-upsell-popup.js' | asset_url }}');
+            loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
+        });
+    </script>
+{% endif %}
