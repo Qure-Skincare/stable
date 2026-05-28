@@ -294,7 +294,7 @@
     },
     "page-led-mask-offer-2-led-mask-form": {
       "settings": {
-        "limited": "MEMORIAL DAY OFFER",
+        "limited": "Exclusive OFFER",
         "header": "Q-Rejuvalight Pro LED Mask",
         "subheader": "+ FREE Neck & Décolletage LED System",
         "warranty": "Warranty",
@@ -362,7 +362,7 @@
     },
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>EXCLUSIVE</span><span> OFFER</span></div>",
-      "n_header_html": "<div class='e-double-tag'><strong>Memorial Day</strong> Promo</div>",
+      "n_header_html": "<div class='e-double-tag'><strong>Exclusive</strong> OFFER</div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
       "shipping-text": "Free US Shipping over $100",
