@@ -36,10 +36,10 @@
         "nextships_4QXeV7": {
           "type": "nextships",
           "settings": {
-            "date": "10th August",
-            "percent": 57,
+            "date": "12th June",
+            "percent": 76,
             "date_soldout": "25th May",
-            "date_reserved": "10th August"
+            "date_reserved": "12th June"
           }
         }
       },
@@ -51,6 +51,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
