@@ -47,10 +47,10 @@
         "nextships_BtDkBp": {
           "type": "nextships",
           "settings": {
-            "date": "20th June",
+            "date": "8th June",
             "percent": 71,
             "date_soldout": "25th May",
-            "date_reserved": "20th June"
+            "date_reserved": "8th June"
           }
         },
         "reviews-videos": {
@@ -109,6 +109,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
         "heading": "Smooth and firm the look of skin with the Neck & Décolletage LED System",
@@ -118,8 +119,7 @@
         "reserved": true,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "approved": false
+        "button-url": ""
       }
     },
     "n_press_reviews_gzTQ6b": {
