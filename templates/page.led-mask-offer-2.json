@@ -36,18 +36,10 @@
         "nextships_4QXeV7": {
           "type": "nextships",
           "settings": {
-            "date": "20th June",
+            "date": "8th June",
             "percent": 76,
             "date_soldout": "25th May",
-            "date_reserved": "20th June"
-          }
-        },
-        "approved_by_iD6h6z": {
-          "type": "approved",
-          "settings": {
-            "image_1": "shopify://shop_images/approved-by-1.webp",
-            "image_2": "shopify://shop_images/approved-by-2.webp",
-            "text": "<p>Approved by <strong>Dr. Shah</strong> &amp; <strong>Dr. Maxfield</strong></p>"
+            "date_reserved": "8th June"
           }
         }
       },
@@ -55,8 +47,7 @@
         "description_iSDNaK",
         "link_iPBNaS",
         "exclusive-offer_iaSzaK",
-        "nextships_4QXeV7",
-        "approved_by_iD6h6z"
+        "nextships_4QXeV7"
       ],
       "name": "t:sections.page-header.name",
       "settings": {
