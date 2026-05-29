@@ -1,8 +1,3 @@
-/**
- * Bundle Selection (n-)
- * Synchronizes [data-bundle-button] product cards with the
- * .bundle-cta-bar sticky bar (4 slots, tiered discounts 15/20/25/30).
- */
 (function () {
   'use strict';
 

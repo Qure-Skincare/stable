@@ -1,9 +1,3 @@
-/**
- * Upsell popup — opens a <dialog> right after the main PDP "Buy Now" submit.
- * Silently adds the main product (no drawer auto-open), then offers an upsell
- * that applies a Shopify discount code on add. No client-side math: prices and
- * discount enforcement come from Shopify.
- */
 
 const upsell_popup_data = (typeof upsell_product_handle !== 'undefined' && upsell_product_handle && window.get_products_data)
     ? window.get_products_data['upsell-popup-' + upsell_product_handle]
