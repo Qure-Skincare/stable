@@ -33,20 +33,28 @@
           "settings": {
             "section_id": "purchase-form-landing"
           }
+        },
+        "approved_by_iD6h6z": {
+          "type": "approved",
+          "settings": {
+            "image_1": "shopify://shop_images/approved-by-1.webp",
+            "image_2": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> &amp; <strong>Dr. Maxfield</strong></p>"
+          }
         }
       },
       "block_order": [
         "description_hnJud7",
         "section_A0",
-        "results_kJG7Dg"
+        "results_kJG7Dg",
+        "approved_by_iD6h6z"
       ],
       "name": "t:sections.n_product-header.name",
       "settings": {
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
         "heading": "Daily Cleansing Gel",
         "rating": false,
-        "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>",
-        "approved": true
+        "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>"
       }
     },
     "purchase-form-landing": {

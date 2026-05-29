@@ -8,12 +8,18 @@
 {% enddoc %}
 
 
-{% if section.settings.approved %}
-    <div class="c-approved-by">
-        <ul>
-            <li><img src="https://qureskincaredns-stable.com/sections/hero-section/images/approved-by-1.webp" alt="Dr. Shah" /></li>
-            <li><img src="https://qureskincaredns-stable.com/sections/hero-section/images/approved-by-2.webp" alt="Dr. Maxfield" /></li>
-        </ul>
-        {{ 'page.approved.text_html' | t }}
-    </div>
-{% endif %}
+{% for block in section.blocks %}
+    {% if block.type == 'approved' %}
+        <div class="c-approved-by">
+            <ul>
+                {% if block.settings.image_1 != blank %}
+                    <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
+                {% endif %}
+                {% if block.settings.image_2 != blank %}
+                    <li><img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
+                {% endif %}
+            </ul>
+            {{ block.settings.text }}
+        </div>
+    {% endif %}
+{% endfor %}

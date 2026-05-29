@@ -128,12 +128,6 @@
             "type": "url",
             "id": "button-url",
             "label": "t:common.button-url"
-        },
-        {
-            "type": "checkbox",
-            "id": "approved",
-            "label": "t:common.approved-by",
-            "default": false
         }
     ],
     "blocks": [
@@ -476,6 +470,28 @@
                     "type": "text",
                     "id": "video_url",
                     "label": "t:common.video-url"
+                }
+            ]
+        },
+        {
+            "type": "approved",
+            "name": "t:common.approved-by",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_1",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_2",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
                 }
             ]
         }
