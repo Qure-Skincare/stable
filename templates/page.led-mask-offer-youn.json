@@ -36,17 +36,10 @@
         "nextships_4QXeV7": {
           "type": "nextships",
           "settings": {
-            "date": "20th June",
+            "date": "8th June",
             "percent": 71,
             "date_soldout": "25th May",
-            "date_reserved": "20th June"
-          }
-        },
-        "approved_by_iD6h6z": {
-          "type": "approved",
-          "settings": {
-            "image_1": "shopify://shop_images/Dr.Yun.png",
-            "text": "<p>Approved by <strong>Dr. Youn</strong></p>"
+            "date_reserved": "8th June"
           }
         }
       },
@@ -54,8 +47,7 @@
         "description_iSDNaK",
         "link_iPBNaS",
         "exclusive-offer_iaSzaK",
-        "nextships_4QXeV7",
-        "approved_by_iD6h6z"
+        "nextships_4QXeV7"
       ],
       "name": "t:sections.page-header.name",
       "settings": {
