@@ -1,4 +1,3 @@
-
 const upsell_popup_data = (typeof upsell_product_handle !== 'undefined' && upsell_product_handle && window.get_products_data)
     ? window.get_products_data['upsell-popup-' + upsell_product_handle]
     : null;
