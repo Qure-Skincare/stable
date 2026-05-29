@@ -41,13 +41,22 @@
             "date_soldout": "25th May",
             "date_reserved": "20th June"
           }
+        },
+        "approved_by_iD6h6z": {
+          "type": "approved",
+          "settings": {
+            "image_1": "shopify://shop_images/approved-by-1.webp",
+            "image_2": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> &amp; <strong>Dr. Maxfield</strong></p>"
+          }
         }
       },
       "block_order": [
         "description_iSDNaK",
         "link_iPBNaS",
         "exclusive-offer_iaSzaK",
-        "nextships_4QXeV7"
+        "nextships_4QXeV7",
+        "approved_by_iD6h6z"
       ],
       "name": "t:sections.page-header.name",
       "settings": {
@@ -61,8 +70,7 @@
         "reserved": true,
         "soldout": false,
         "button-label": "Reserve Now & Save $299",
-        "button-url": "#buy-form",
-        "approved": true
+        "button-url": "#buy-form"
       }
     },
     "n_logos_GdDRJU": {

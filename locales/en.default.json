@@ -357,9 +357,6 @@
         "header": "Jump To"
       }
     },
-    "approved": {
-      "text_html": "<p>Approved by <strong>Dr. Shah</strong> &amp; <strong>Dr. Maxfield</strong></p>"
-    },
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>EXCLUSIVE</span><span> OFFER</span></div>",
       "n_header_html": "<div class='e-double-tag'><strong>Exclusive</strong> OFFER</div>",
