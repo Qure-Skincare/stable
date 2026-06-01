@@ -59,8 +59,8 @@
         "button_label": "",
         "button_url": "",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1",
-        "from": "",
-        "days": 1
+        "from": "2026-06-01",
+        "days": 12
       }
     },
     "header": {
