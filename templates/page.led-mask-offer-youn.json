@@ -12,6 +12,13 @@
     "page_header_6BFNQx": {
       "type": "n-product-header",
       "blocks": {
+        "approved_c7Y6Gp": {
+          "type": "approved",
+          "settings": {
+            "image_1": "shopify://shop_images/Dr.Yun.png",
+            "text": "<p>Approved by <strong>Dr. Youn</strong></p>"
+          }
+        },
         "description_iSDNaK": {
           "type": "description",
           "settings": {}
@@ -44,6 +51,7 @@
         }
       },
       "block_order": [
+        "approved_c7Y6Gp",
         "description_iSDNaK",
         "link_iPBNaS",
         "exclusive-offer_iaSzaK",
