@@ -98,6 +98,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "SHOWER FILTER",
         "heading": "Save your hair and skin from dryness and irritation",
@@ -107,8 +108,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "approved": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -299,7 +299,7 @@
             "text": "",
             "product_discount_percent": 0,
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -320,7 +320,7 @@
             "text": "",
             "product_discount_percent": 0,
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -341,7 +341,7 @@
             "text": "",
             "product_discount_percent": 0,
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -372,7 +372,10 @@
         "hide_types": false,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_base_section_CGMUkn": {
