@@ -140,6 +140,7 @@
         "product-url": "Product URL",
         "video-mobile": "Video mobile",
         "rating-image": "Rating image",
+        "button-line": "Button line",
         "button-label": "Button label",
         "button-label-image": "Button label image",
         "button-url": "Button url",
@@ -316,7 +317,9 @@
         "benefits": "Benefits",
         "faq": "FAQ",
         "aio_toggle": "AIO one-time / subscribe toggle",
-        "description-aio": "Description AIO"
+        "description-aio": "Description AIO",
+        "alert": "Alert",
+        "secondary": "Secondary"
     },
     "blocks": {
         "block-card": {

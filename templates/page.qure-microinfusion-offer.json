@@ -69,6 +69,108 @@
         "wistia_url": "8ymvdqzx92"
       }
     },
+    "n_hero_section_Kiu8T3": {
+      "type": "n_hero-section",
+      "disabled": true,
+      "blocks": {
+        "approved_by_1": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_2": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "approved_by_3": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-3.webp",
+            "text": ""
+          }
+        },
+        "approved_by_4": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-4.webp",
+            "text": "<p>50+ dermatologists <span>&bull;</span> <a href=\"https://qureskincare.com/pages/derm-reviews\"><strong>4.8/5</strong></a> 500k+ customers</p>"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_1",
+        "approved_by_2",
+        "approved_by_3",
+        "approved_by_4"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h1>Fine lines &amp; dark spots look smoother. No injections.</h1><p><strong>24K gold-plated microneedles.</strong> Qure's Micro-Infusion System delivers active serums deeper than traditional creams can reach.</p>",
+        "button_label": "START & SAVE 70%",
+        "button_url": "#purchase-form",
+        "button_line": false,
+        "alert": "<p><strong>Limited Time Offer:</strong> Less than one clinic visit.</p>",
+        "image": "shopify://shop_images/micro-infusion-hero-b.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-b-mob.webp",
+      }
+    },
+    "n_hero_section_3uBXrT": {
+      "type": "n_hero-section",
+      "disabled": true,
+      "blocks": {
+        "approved_by_1": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_2": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "approved_by_3": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-3.webp",
+            "text": ""
+          }
+        },
+        "approved_by_4": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-4.webp",
+            "text": "<p>50+ dermatologists <span>&bull;</span> <a href=\"https://qureskincare.com/pages/derm-reviews\"><strong>4.8/5</strong></a> 500k+ customers</p>"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_1",
+        "approved_by_2",
+        "approved_by_3",
+        "approved_by_4"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "secondary",
+        "text": "<h1>Fine lines &amp; dark spots look visibly reduced. No injections.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "button_label": "Choose Your Supply",
+        "button_url": "#purchase-form",
+        "button_line": true,
+        "alert": "<p><strong>Limited Time Offer:</strong> Save Up to 70%.</p>",
+        "image": "shopify://shop_images/micro-infusion-hero-c.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-c-mob.webp",
+      }
+    },
     "n_trusted_recommended_MlYLp4": {
       "type": "n_trusted-recommended",
       "disabled": true,
@@ -1125,17 +1227,6 @@
         "button-url": "#purchase-form"
       }
     },
-    "n_guarantee_J98b9K": {
-      "type": "n_guarantee",
-      "disabled": true,
-      "name": "t:sections.n_guarantee.name",
-      "settings": {
-        "use_own_file": false,
-        "image": "shopify://shop_images/icon.webp",
-        "heading": "<h2>Try it now with zero risk. <br/>Our 90-day money-back guarantee</h2>",
-        "text": "<p><br/>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.<br/><br/>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>"
-      }
-    },
     "purchase_form_PwCCh6": {
       "type": "n-purchase-form",
       "blocks": {
@@ -1624,6 +1715,8 @@
   },
   "order": [
     "n_hero_section_xMcaXr",
+    "n_hero_section_Kiu8T3",
+    "n_hero_section_3uBXrT",
     "n_trusted_recommended_MlYLp4",
     "n_our_advisors_jX3gJz",
     "n_base_section_3uBXrT",
@@ -1642,7 +1735,6 @@
     "n_highlight_rFRFiz",
     "n_science_backed_6ehGih",
     "sticky_cta_d9dC8X",
-    "n_guarantee_J98b9K",
     "purchase_form_PwCCh6",
     "n_should_know_8jabz8",
     "n_why_using_cj3RFv",
