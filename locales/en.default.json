@@ -490,6 +490,10 @@
       },
       "description-aio": {
         "show_more": "Show more"
+      },
+      "upsell-popup": {
+        "button-label": "Add to Cart –",
+        "continue": "Continue to Cart"
       }
     }
   },

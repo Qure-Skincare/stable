@@ -42,7 +42,8 @@ const reloadDrawer = (array) => {
 }
 
 const refreshDrawer = () => {
-     updateSection('n-footer-cart-drawer', 'cart-dynamic-content').then(() => {
+     return updateSection('n-footer-cart-drawer', 'cart-dynamic-content').then(() => {
+        bindForms();
         loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js/swiper.js')
      });
 }

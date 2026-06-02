@@ -1,0 +1,73 @@
+{% doc %}
+  Renders a post-add-to-cart upsell popup for the page-header section
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-upsell-popup', section: '', block: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'upsell-popup' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% include 'get-product-data', product_handle: block.settings.upsell_product, product_prefix: 'upsell-popup-' %}
+
+{%- assign upsell_discount_percent = block.settings.discount_percent | default: 0 -%}
+{%- assign upsell_price_original_cents = product_price_original -%}
+
+{%- if upsell_discount_percent > 0 and upsell_price_original_cents > 0 -%}
+    {%- assign upsell_discount_delta = upsell_price_original_cents | times: upsell_discount_percent | divided_by: 100 -%}
+    {%- assign upsell_price_final_cents = upsell_price_original_cents | minus: upsell_discount_delta -%}
+{%- else -%}
+    {%- assign upsell_price_final_cents = upsell_price_original_cents -%}
+{%- endif -%}
+
+{%- assign upsell_price_original = upsell_price_original_cents | money_without_trailing_zeros -%}
+{%- assign upsell_price_final = upsell_price_final_cents | money_without_trailing_zeros -%}
+
+<dialog class="c-dialog c-dialog--column" id="upsellPopup">
+    <div class="c-dialog__message">
+        <p><strong>{{ product.title }}</strong> added to cart.</p>
+    </div>
+    <div class="c-dialog__content">
+        <div class="upsell-popup">
+            <div class="upsell-popup__header">
+                {{ block.settings.heading }}
+            </div>
+            <div class="upsell-popup__content">
+                {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                {% endif %}
+                {{ block.settings.text }}
+            </div>
+            <form class="upsell-popup__footer" action="#">
+                <button class="btn btn--primary" type="button">{{ 'product.settings.upsell-popup.button-label' | t }} {% if upsell_discount_percent > 0 and upsell_price_final_cents != upsell_price_original_cents %}<span>{{ upsell_price_original }}</span>{% endif %} {{ upsell_price_final }}</button>
+                <a href="#" class="upsell-popup__continue">{{ 'product.settings.upsell-popup.continue' | t }}</a>
+            </form>
+        </div>
+    </div>
+    <button class="c-dialog__close" type="button" onclick="upsellPopup.close()">
+        <i class="e-icon e-icon-cross"></i>
+    </button>
+</dialog>
+
+{% if product != blank %}
+    <script>
+        const upsell_button_price_label = '{{ upsell_price_final }}';
+        const upsell_button_price_old   = '{{ upsell_price_original }}';
+        const upsell_product_handle     = '{{ block.settings.upsell_product }}';
+        const upsell_discount_code      = {{ block.settings.discount_code | default: 'MASK&MOFFER' | json }};
+        const upsell_discount_percent   = {{ upsell_discount_percent | default: 0 | json }};
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-upsell-popup.js', '{{ 'n-product-upsell-popup.js' | asset_url }}');
+            loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
+        });
+    </script>
+{% endif %}
