@@ -12,9 +12,129 @@
     "main": {
       "type": "page",
       "settings": {}
+    },
+    "n_index-top-rated": {
+      "type": "n_index-top-rated",
+      "blocks": {
+        "hover_image_y8Fn3G": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Micro-Infusion Facial System",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "image_text": "bestseller",
+            "image": "shopify://shop_images/Frame_1073714796_2.png",
+            "hover_image": "shopify://shop_images/Frame_1073714796_3.png",
+            "url": "https://qureskincare.com/pages/microinfusion",
+            "rating_text": "1,312 Reviews"
+          }
+        },
+        "hover_image_FDAa4d": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "q-rejuvalight-pro-facewear",
+            "image_text": "bestseller",
+            "image": "shopify://shop_images/q-rejuvalight-pro-facewear.webp",
+            "hover_image": "shopify://shop_images/Frame_1073714814_1.png",
+            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "rating_text": "1,375 Reviews"
+          }
+        },
+        "hover_image_hm3rHW": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "All-In-One Face Serum",
+            "product": "face-serum",
+            "image_text": "tending",
+            "image": "shopify://shop_images/all-in-one-face-serum.webp",
+            "hover_image": "shopify://shop_images/Img_7.png",
+            "url": "https://qureskincare.com/products/face-serum",
+            "rating_text": "380 Reviews"
+          }
+        },
+        "hover_image_kQWMy8": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Micro-Infusion Targeted Patches",
+            "product": "micro-infusion-targeted-patches",
+            "image_text": "trending",
+            "image": "shopify://shop_images/micro-infusion-targeted-patches.webp",
+            "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
+            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
+            "rating_text": "157 Reviews"
+          }
+        }
+      },
+      "block_order": [
+        "hover_image_y8Fn3G",
+        "hover_image_FDAa4d",
+        "hover_image_hm3rHW",
+        "hover_image_kQWMy8"
+      ],
+      "name": "t:sections.n_index-top-rated.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "Top Rated Products"
+      }
+    },
+    "n_faq_hsa_fsa": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_1": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is a qualified customer?",
+            "text": "<p>A qualified customer is any individual with an active HSA (Health Savings Account) or FSA (Flexible Spending Account) who is purchasing an eligible product. Most people with employer-sponsored health benefits or a high-deductible health plan qualify.</p>"
+          }
+        },
+        "accordion_2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is an HSA or FSA and what are the benefits?",
+            "text": "<p>HSA (Health Savings Account) and FSA (Flexible Spending Account) are tax-advantaged accounts that let you use pre-tax dollars for qualified health and wellness purchases - giving you an instant discount equal to your tax rate. FSAs are employer-sponsored with use-it-or-lose-it rules; HSAs are tied to high-deductible health plans and roll over year to year.</p>"
+          }
+        },
+        "accordion_3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I'm not seeing HSA or FSA options at checkout. Why not?",
+            "text": "<p>The HSA/FSA option only appears at checkout when your cart contains eligible products. If you don't see it, one or more items in your cart may not qualify. Remove non-eligible items and try again, or contact our support team for help.</p>"
+          }
+        },
+        "accordion_4": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I keep being redirected to Shop Pay. How do I use my HSA/FSA card?",
+            "text": "<p>At checkout, scroll past the accelerated payment options (Shop Pay, Apple Pay, etc.) to the manual payment section. Select Flex | Pay with HSA/FSA as your payment method, then enter your HSA or FSA debit card details as prompted.</p>"
+          }
+        },
+        "accordion_5": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I don't have an HSA or FSA card. Can I still use my HSA/FSA funds?",
+            "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5-10 business days depending on your plan.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_1",
+        "accordion_2",
+        "accordion_3",
+        "accordion_4",
+        "accordion_5"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question? ",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "n_index-top-rated",
+    "n_faq_hsa_fsa"
   ]
 }
