@@ -110,10 +110,11 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "custom_css": [],
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "text": "<h1>Fine lines &amp; dark spots look smoother. No injections.</h1><p><strong>24K gold-plated microneedles.</strong> Qure's Micro-Infusion System delivers active serums deeper than traditional creams can reach.</p>",
+        "text": "<h1>Fine lines & dark spots look smoother. No injections.</h1><p><strong>24K gold-plated microneedles.</strong> Qure's Micro-Infusion System delivers active serums deeper than traditional creams can reach.</p>",
         "image": "shopify://shop_images/micro-infusion-hero-b.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-b-mob.webp",
         "button_url": "#purchase-form",
