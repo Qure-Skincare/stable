@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/across-image-banner/across-image-banner.css" />
 {% endif %}
-<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% endif %}">
+<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
@@ -26,7 +26,11 @@
                 {% endfor %}
 
                 {% if section.settings.heading != blank %}
-                    {{ section.settings.heading }}
+                    {{ section.settings.heading 
+                    | replace: '[qure]', '<i class="e-icon e-icon-qure"></i>' 
+                    | replace: '[thin_cross]', '<i class="e-icon e-icon-thin-cross"></i>'
+                    | replace: '[flex]', '<i class="e-icon e-icon-flex"></i>'
+                    }}
                 {% endif %}
 
                 {% if section.settings.text != blank %}
@@ -99,7 +103,8 @@
 
                 {% for block in section.blocks%}
                     {% if block.type == 'box' %}
-                        <div class="c-certified-box">
+                        {% if block.settings.outside_badge == false %}
+                            <div class="c-certified-box">
                             <ul>
                                 {% if block.settings.image_1 != blank %}
                                     <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
@@ -115,6 +120,7 @@
                                 {{ block.settings.text }}
                             {% endif %}
                         </div>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
 
@@ -171,6 +177,50 @@
                     </div>
                 {% endif %}
             {% endfor %}
+
+            {% assign badges_group = false %}
+            {% for block in section.blocks%}
+                {% if block.type == 'badge_group' %}
+                    {% assign badges_group = true %}
+                {% endif %}
+            {% endfor %}
+            {% if badges_group %}
+                <ul class="badges-group">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'badge_group' %}
+                            <li>
+                                {% if block.settings.badge_text != blank %}
+                                    <div class="e-pill-badge e-pill-badge--fill"><span class="e-checkmark"></span>{{ block.settings.badge_text }}</div>
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% for block in section.blocks%}
+                {% if block.type == 'box' %}
+                    {% if block.settings.outside_box == true %}
+                        <div class="c-certified-box">
+                        <ul>
+                            {% if block.settings.image_1 != blank %}
+                                <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
+                            {% endif %}
+                            {% if block.settings.image_2 != blank %}
+                                <li><img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
+                            {% endif %}
+                            {% if block.settings.badge_text != blank %}
+                                <li>{{ block.settings.badge_text }}</li>
+                            {% endif %}
+                        </ul>
+                        {% if block.settings.text != blank %}
+                            {{ block.settings.text }}
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
         </div>
     </section>
 
@@ -218,6 +268,10 @@
                 {
                     "value": "fathers-day",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.fathers-day"
+                },
+                {
+                    "value": "flex",
+                    "label": "t:common.flex"
                 }
             ]
         },
@@ -299,6 +353,12 @@
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
+            },
+            {
+                "type": "checkbox",
+                "id": "outside_box",
+                "label": "t:sections.n_across-image-banner.blocks.box.settings.outside_box",
+                "default": false
             }
         ]
     },
@@ -431,7 +491,19 @@
                 "label": "t:common.text"
             }
         ]
+    },
+    {
+        "type": "badge_group",
+        "name": "t:sections.n_across-image-banner.settings.badge-group.name",
+        "settings": [
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text"
+            }
+        ]
     }
+
 ],
 "presets": [
     {

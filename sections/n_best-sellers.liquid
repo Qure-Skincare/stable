@@ -2,23 +2,20 @@
     Renders a top rated section.
 {% enddoc %}
 
-<!-- TOP RATED -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/top-rated/top-rated.css" />
-{% endif %}
-<section class="top-rated">
+
+<!-- BEST SELLERS -->
+<section class="best-sellers">
     <div class="container">
-        <article>
-            <h2>{{ section.settings.heading }}</h2>
+        {{ section.settings.heading }}
+        <div class="best-sellers__list">
             {% for block in section.blocks %}
                 {% if block.type == 'hover_image' %}
                     {% if block.settings.product != blank %}
-                        {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'index-qure-products-' %}
+                        {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'best-sellers-' %}
                     {% endif %}
-
-                    <div class="c-product-tile">
-                        {% if block.settings.hover_image != blank %}
-                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ block.settings.url }}">
+                    <div class="best-sellers__item">
+                        <div class="c-product-tile">
+                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ product_url }}">
                                 {% if block.settings.image != blank %}
                                     <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
@@ -27,46 +24,42 @@
                                         <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ 'sections.n_index-top-rated.settings.best-seller-text' | t }}</div>
                                     {% elsif block.settings.image_text == 'trending' %}
                                         <div class="e-pill-badge e-pill-badge--xs" style="--badge-base-color: #ff5429">{{ 'sections.n_index-top-rated.settings.trending-text' | t }}</div>
+                                    {% elsif block.settings.image_text == 'hsa-fsa' %}
+                                        <div class="e-pill-badge e-pill-badge--sm e-pill-badge--fill" style="--badge-fill-color: #f6f6f7; --badge-base-color: #212428"><span class="e-checkmark"></span>{{ 'sections.n_best-sellers.blocks.hover_image.settings.hsa-fsa' | t }}</div>
                                     {% endif %}
                                 {% endif %}
                             </a>
-                        {% endif %}
-                        {% if block.settings.rating_text != blank %}
                             <div class="c-product-tile__rating">
-                                <div class="e-rating-stars" style="--rating:"></div>
-                                <a href="{{ block.settings.url }}">{{ block.settings.rating_text }}</a>
+                                <div class="e-rating-stars" style="--rating: {{ product_rating }}"></div>
+                                <a href="{{ product_url }}">{{ product_rating_count }} {{ 'sections.n_collection.reviews' | t }}</a>
                             </div>
-                        {% endif %}
-                        {% if block.settings.heading != blank %}
-                            <a class="c-product-tile__name" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
-                        {% endif %}
-                        <div class="c-product-tile__price">
-                            <div class="e-price">
-                                <div class="e-price__main">
-                                    <div class="e-price__current">{{ product_sale_price }}</div>
+                            <a class="c-product-tile__name" href="{{ product_url }}">{{ block.settings.heading }}</a>
+                            <div class="c-product-tile__price">
+                                <div class="e-price">
+                                    <div class="e-price__main">
+                                        <div class="e-price__current">{{ product_sale_price }}</div>
+                                    </div>
                                 </div>
                             </div>
+                            <a class="c-product-tile__button" href="{{ product_url }}">
+                                <button class="btn btn--primary">{{ 'sections.n_best-sellers.blocks.hover_image.settings.buy-now' | t }}</button>
+                            </a>
                         </div>
                     </div>
                 {% endif %}
             {% endfor %}
-        </article>
+        </div>
     </div>
 </section>
-<!-- TOP RATED END -->
+<!-- BEST SELLERS END -->
+
 
 {% schema %}
 {
-    "name": "t:sections.n_index-top-rated.name",
+    "name": "t:sections.n_best-sellers.name",
     "settings": [
         {
-            "type": "checkbox",
-            "id": "use_own_file",
-            "label": "t:common.use-own-file",
-            "default": false
-        },
-        {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         }
@@ -103,6 +96,10 @@
                         {
                             "value": "trending",
                             "label": "t:common.trending"
+                        },
+                        {
+                            "value": "hsa-fsa",
+                            "label": "t:sections.n_best-sellers.blocks.hover_image.settings.hsa-fsa"
                         }
                     ]
                 },
@@ -111,23 +108,17 @@
                     "id": "image",
                     "label": "t:common.image"
                 },
-                
                 {
                     "type": "image_picker",
                     "id": "hover_image",
                     "label": "t:common.hover-image"
-                },
-                {
-                    "type": "url",
-                    "id": "url",
-                    "label": "t:common.link-url"
-                },
-                {
-                    "type": "text",
-                    "id": "rating_text",
-                    "label": "t:common.rating-text"
                 }
             ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_best-sellers.name"
         }
     ]
 }
