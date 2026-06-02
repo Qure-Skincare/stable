@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/hero-section/hero-section.css" />
 {% endif %}
-<section class="hero-section{% if section.settings.modifier != 'none' %} hero-section--{{ section.settings.modifier }}{% endif %}">
+<section class="hero-section{% if section.settings.modifier != 'none' %} hero-section--{{ section.settings.modifier }}{% endif %}"{% if section.settings.hidden == true %} style="display:none"{% endif %}>
     <div class="container">
         <picture class="hero-section__image">
             {% if section.settings.image != blank %}
@@ -124,11 +124,17 @@
 {% schema %}
 {
     "name": "t:sections.n_hero-section.name",
-        "settings": [
+    "settings": [
         {
             "type": "checkbox",
             "id": "use_own_file",
             "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hidden",
+            "label": "t:common.hidden",
             "default": false
         },
         {

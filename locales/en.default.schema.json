@@ -10,6 +10,7 @@
  
  {
     "common": {
+        "hidden": "Hidden",
         "hide_bottom": "Hide bottom",
         "hide_certified": "Hide certified-by",
         "hide_payments": "Hide payments",
@@ -319,7 +320,7 @@
         "aio_toggle": "AIO one-time / subscribe toggle",
         "description-aio": "Description AIO",
         "alert": "Alert",
-        "secondary": "Secondary"
+        "secondary": "Secondary",
         "best-seller": "Best seller",
         "trending": "Trending",
         "flex": "Flex",
