@@ -54,6 +54,7 @@
         },
         "upsell-popup_mMzPq2": {
           "type": "upsell-popup",
+          "disabled": true,
           "settings": {
             "upsell_product": "dermal-mist",
             "image": "shopify://shop_images/upsell-popup-image.webp",
