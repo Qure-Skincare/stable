@@ -342,6 +342,16 @@
     },
     "products-guide": {
       "right_icon": "https://qureskincaredns-stable.com/assets/images/right_icon.svg"
+    },
+    "n_best-sellers": {
+      "blocks": {
+        "hover_image": {
+          "settings": {
+            "hsa-fsa": "HSA/FSA",
+            "buy-now": "Buy Now"
+          }
+        }
+      }
     }
   },
   "breadcrumb": {

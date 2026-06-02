@@ -320,6 +320,10 @@
         "description-aio": "Description AIO",
         "alert": "Alert",
         "secondary": "Secondary"
+        "best-seller": "Best seller",
+        "trending": "Trending",
+        "flex": "Flex",
+        "arrow-button": "Arrow button"
     },
     "blocks": {
         "block-card": {
@@ -373,11 +377,19 @@
                     "sm": "Small banner",
                     "holidays-secondary": "Holidays secondary",
                     "fathers-day": "Fathers day"
+                },
+                "badge-group": {
+                    "name": "Badge group"
                 }
             },
             "blocks": {
                 "app_store": {
                     "name": "App store badge"
+                },
+                "box": {
+                    "settings": {
+                        "outside_box": "Outside box"
+                    }
                 }
             }
         },
@@ -816,6 +828,20 @@
         },
         "n_mi-faq-page-set-up-qa": {
             "name": "Set up QA"
+        },
+        "n_best-sellers": {
+            "name": "Best Sellers",
+            "blocks": {
+                "hover_image": {
+                    "settings": {
+                        "hsa-fsa": "HSA/FSA",
+                        "buy-now": "Buy Now"
+                    }
+                }
+            }
+        },
+        "n_how-it-works-content": {
+            "name": "How it works content"
         },
         "bf-bundle-banner": {
             "name": "Black Friday bundle banner"
