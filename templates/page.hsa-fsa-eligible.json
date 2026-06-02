@@ -9,72 +9,124 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
-    },
-    "n_index-top-rated": {
-      "type": "n_index-top-rated",
+    "n_across-image-banner_hsa_fsa": {
+      "type": "n_across-image-banner",
       "blocks": {
-        "hover_image_y8Fn3G": {
-          "type": "hover_image",
+        "badge": {
+          "type": "badge",
           "settings": {
-            "heading": "Micro-Infusion Facial System",
-            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
-            "image_text": "bestseller",
-            "image": "shopify://shop_images/Frame_1073714796_2.png",
-            "hover_image": "shopify://shop_images/Frame_1073714796_3.png",
-            "url": "https://qureskincare.com/pages/microinfusion",
-            "rating_text": "1,312 Reviews"
+            "badge_text": "Pay With HSA / FSA"
           }
         },
-        "hover_image_FDAa4d": {
-          "type": "hover_image",
+        "badge_group_1": {
+          "type": "badge_group",
           "settings": {
-            "heading": "Q-Rejuvalight Pro Facewear",
-            "product": "q-rejuvalight-pro-facewear",
-            "image_text": "bestseller",
-            "image": "shopify://shop_images/q-rejuvalight-pro-facewear.webp",
-            "hover_image": "shopify://shop_images/Frame_1073714814_1.png",
-            "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
-            "rating_text": "1,375 Reviews"
+            "badge_text": "FSA Eligible"
           }
         },
-        "hover_image_hm3rHW": {
-          "type": "hover_image",
+        "badge_group_2": {
+          "type": "badge_group",
           "settings": {
-            "heading": "All-In-One Face Serum",
-            "product": "face-serum",
-            "image_text": "tending",
-            "image": "shopify://shop_images/all-in-one-face-serum.webp",
-            "hover_image": "shopify://shop_images/Img_7.png",
-            "url": "https://qureskincare.com/products/face-serum",
-            "rating_text": "380 Reviews"
+            "badge_text": "HSA Eligible"
           }
         },
-        "hover_image_kQWMy8": {
-          "type": "hover_image",
+        "box": {
+          "type": "box",
           "settings": {
-            "heading": "Micro-Infusion Targeted Patches",
-            "product": "micro-infusion-targeted-patches",
-            "image_text": "trending",
-            "image": "shopify://shop_images/micro-infusion-targeted-patches.webp",
-            "hover_image": "shopify://shop_images/Patches_f35d5219-aea3-4fe7-804d-052768dce864.png",
-            "url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
-            "rating_text": "157 Reviews"
+            "outside_box": true,
+            "image_1": "shopify://shop_images/crt-1.webp",
+            "image_2": "shopify://shop_images/crt-2.webp",
+            "badge_text": "+50",
+            "text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
           }
         }
       },
       "block_order": [
-        "hover_image_y8Fn3G",
-        "hover_image_FDAa4d",
-        "hover_image_hm3rHW",
-        "hover_image_kQWMy8"
+        "badge",
+        "badge_group_1",
+        "badge_group_2",
+        "box"
       ],
-      "name": "t:sections.n_index-top-rated.name",
+      "settings": {
+        "modifier": "flex",
+        "use_own_file": false,
+        "heading": "<h1>[qure] [thin_cross] [flex]</h1>",
+        "text": "<p>Qure has partnered with Flex so you can use your HSA or FSA pre-tax dollars on eligible Qure products, from clinically validated skincare devices to dermatologist-approved at-home treatments.</p>",
+        "image": "shopify://shop_images/flex.webp",
+        "image_mobile": "shopify://shop_images/flex-mob.webp",
+        "button_label": "Shop Eligible Products",
+        "button_url": "#"
+      }
+    },
+    "n_how-it-works-content_hsa_fsa": {
+      "type": "n_how-it-works-content",
+      "settings": {
+        "text": "<h2>How It Works</h2><ol><li><h6>Add Products to Your Cart</h6><p>Log in to your HSA or FSA provider to confirm your available balance before purchasing.</p></li><li><h6>Select Flex at Checkout</h6><p>Every eligible item is clearly labeled on this page. Add directly to cart, no guessing, no eligibility confusion.</p></li><li><h6>Enter With Your HSA/FSA Card</h6><p>Enter your HSA/FSA card. Flex verifies instantly, no forms, no reimbursement.</p></li></ol>"
+      }
+    },
+    "n_text_hsa_fsa": {
+      "type": "n_text",
+      "settings": {
+        "modifier": "flex",
+        "text": "<p>[div]</p><p>[qure]</p><p>[thin_cross]</p><p>[flex]</p><p>[/div]</p><h4>Spend HSA/FSA funds on your dermatologist-recommended</h4>",
+        "button_label": "Learn how it works",
+        "button_url": "#",
+        "arrow_button": true
+      }
+    },
+    "n_best_sellers_hsa_fsa": {
+      "type": "n_best-sellers",
+      "blocks": {
+        "hover_image_helmet": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Q-Renew LLLT Helmet",
+            "product": "hair-growth-helmet",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/helmet.webp",
+            "hover_image": "shopify://shop_images/helmet-hover.webp"
+          }
+        },
+        "hover_image_facewear": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "q-rejuvalight-pro-facewear",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/q-rejuvalight-pro-facewear.webp",
+            "hover_image": "shopify://shop_images/q-rejuvalight-pro-facewear-hover.webp"
+          }
+        },
+        "hover_image_neck": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Neck & D\u00e9colletage LED Device",
+            "product": "neck-decolletage-led",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/neck-and-deck.webp",
+            "hover_image": "shopify://shop_images/neck-and-deck-hover.webp"
+          }
+        },
+        "hover_image_micro_infusion": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Micro-Infusion Facial System",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/micro-infusion.webp",
+            "hover_image": "shopify://shop_images/micro-infusion-hover.webp"
+          }
+        }
+      },
+      "block_order": [
+        "hover_image_helmet",
+        "hover_image_facewear",
+        "hover_image_neck",
+        "hover_image_micro_infusion"
+      ],
       "settings": {
         "use_own_file": false,
-        "heading": "Top Rated Products"
+        "heading": "<h2>Pay Directly With Your HSA/FSA Card</h2>"
       }
     },
     "n_faq_hsa_fsa": {
@@ -97,8 +149,8 @@
         "accordion_3": {
           "type": "accordion",
           "settings": {
-            "heading": "I'm not seeing HSA or FSA options at checkout. Why not?",
-            "text": "<p>The HSA/FSA option only appears at checkout when your cart contains eligible products. If you don't see it, one or more items in your cart may not qualify. Remove non-eligible items and try again, or contact our support team for help.</p>"
+            "heading": "I\u2019m not seeing HSA or FSA options at checkout. Why not?",
+            "text": "<p>The HSA/FSA option only appears at checkout when your cart contains eligible products. If you don\u2019t see it, one or more items in your cart may not qualify. Remove non-eligible items and try again, or contact our support team for help.</p>"
           }
         },
         "accordion_4": {
@@ -111,8 +163,8 @@
         "accordion_5": {
           "type": "accordion",
           "settings": {
-            "heading": "I don't have an HSA or FSA card. Can I still use my HSA/FSA funds?",
-            "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5-10 business days depending on your plan.</p>"
+            "heading": "I don\u2019t have an HSA or FSA card. Can I still use my HSA/FSA funds?",
+            "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5\u201310 business days depending on your plan.</p>"
           }
         }
       },
@@ -126,15 +178,17 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
+        "text": "Don\u2019t see your question? ",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
   },
   "order": [
-    "main",
-    "n_index-top-rated",
+    "n_across-image-banner_hsa_fsa",
+    "n_how-it-works-content_hsa_fsa",
+    "n_text_hsa_fsa",
+    "n_best_sellers_hsa_fsa",
     "n_faq_hsa_fsa"
   ]
 }

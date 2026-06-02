@@ -1,0 +1,31 @@
+{% doc %}
+  Renders a how it works content section
+{% enddoc %}
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+    <div class="container">
+        <article class="how-it-works__content">
+            {{ section.settings.text }}
+        </article>
+    </div>
+</section>
+<!-- HOW IT WORKS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_how-it-works-content.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_how-it-works-content.name"
+        }
+    ]
+}
+{% endschema %}

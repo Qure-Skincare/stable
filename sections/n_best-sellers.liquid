@@ -6,112 +6,48 @@
 <!-- BEST SELLERS -->
 <section class="best-sellers">
     <div class="container">
-        <h2>Pay Directly With Your HSA/FSA Card</h2>
+        {{ section.settings.heading }}
         <div class="best-sellers__list">
-            <div class="best-sellers__item">
-                <div class="c-product-tile">
-                    <a class="c-product-tile__image" style="--image-on-hover: url(/assets/images/top-products/helmet-hover.webp)" href="#">
-                        <img src="assets/images/top-products/helmet.webp" alt="Pay Directly With Your HSA/FSA Card" />
-                        <div class="e-pill-badge e-pill-badge--sm e-pill-badge--fill" style="--badge-fill-color: #f6f6f7; --badge-base-color: #212428">
-                            <span class="e-checkmark"></span>
-                            HSA/FSA
-                        </div>
-                    </a>
-                    <div class="c-product-tile__rating">
-                        <div class="e-rating-stars" style="--rating: 4.9"></div>
-                        <a href="#">380 Reviews</a>
-                    </div>
-                    <a class="c-product-tile__name" href="#">Q-Renew LLLT Helmet</a>
-                    <div class="c-product-tile__price">
-                        <div class="e-price">
-                            <div class="e-price__main">
-                                <div class="e-price__current">{$dyn}</div>
+            {% for block in section.blocks %}
+                {% if block.type == 'hover_image' %}
+                    {% if block.settings.product != blank %}
+                        {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'best-sellers-' %}
+                    {% endif %}
+                    <div class="best-sellers__item">
+                        <div class="c-product-tile">
+                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ product_url }}">
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.image_text != 'none' %}
+                                    {% if block.settings.image_text == 'bestseller' %}
+                                        <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ 'sections.n_index-top-rated.settings.best-seller-text' | t }}</div>
+                                    {% elsif block.settings.image_text == 'trending' %}
+                                        <div class="e-pill-badge e-pill-badge--xs" style="--badge-base-color: #ff5429">{{ 'sections.n_index-top-rated.settings.trending-text' | t }}</div>
+                                    {% elsif block.settings.image_text == 'hsa-fsa' %}
+                                        <div class="e-pill-badge e-pill-badge--sm e-pill-badge--fill" style="--badge-fill-color: #f6f6f7; --badge-base-color: #212428"><span class="e-checkmark"></span>{{ 'sections.n_best-sellers.blocks.hover_image.settings.hsa-fsa' | t }}</div>
+                                    {% endif %}
+                                {% endif %}
+                            </a>
+                            <div class="c-product-tile__rating">
+                                <div class="e-rating-stars" style="--rating: {{ product_rating }}"></div>
+                                <a href="{{ product_url }}">{{ product_rating_count }} {{ 'sections.n_collection.reviews' | t }}</a>
                             </div>
-                        </div>
-                    </div>
-                    <form class="c-product-tile__button" action="#">
-                        <button class="btn btn--primary">Buy Now</button>
-                    </form>
-                </div>
-            </div>
-            <div class="best-sellers__item">
-                <div class="c-product-tile">
-                    <a class="c-product-tile__image" style="--image-on-hover: url(/assets/images/top-products/q-rejuvalight-pro-facewear-hover.webp)" href="#">
-                        <img src="assets/images/top-products/q-rejuvalight-pro-facewear.webp" alt="Pay Directly With Your HSA/FSA Card" />
-                        <div class="e-pill-badge e-pill-badge--sm e-pill-badge--fill" style="--badge-fill-color: #f6f6f7; --badge-base-color: #212428">
-                            <span class="e-checkmark"></span>
-                            HSA/FSA
-                        </div>
-                    </a>
-                    <div class="c-product-tile__rating">
-                        <div class="e-rating-stars" style="--rating: 4.6"></div>
-                        <a href="#">1,375 Reviews</a>
-                    </div>
-                    <a class="c-product-tile__name" href="#">Q-Rejuvalight Pro Facewear</a>
-                    <div class="c-product-tile__price">
-                        <div class="e-price">
-                            <div class="e-price__main">
-                                <div class="e-price__current">{$dyn}</div>
+                            <a class="c-product-tile__name" href="{{ product_url }}">{{ block.settings.heading }}</a>
+                            <div class="c-product-tile__price">
+                                <div class="e-price">
+                                    <div class="e-price__main">
+                                        <div class="e-price__current">{{ product_sale_price }}</div>
+                                    </div>
+                                </div>
                             </div>
+                            <a class="c-product-tile__button" href="{{ product_url }}">
+                                <button class="btn btn--primary">{{ 'sections.n_best-sellers.blocks.hover_image.settings.buy-now' | t }}</button>
+                            </a>
                         </div>
                     </div>
-                    <form class="c-product-tile__button" action="#">
-                        <button class="btn btn--primary">Buy Now</button>
-                    </form>
-                </div>
-            </div>
-            <div class="best-sellers__item">
-                <div class="c-product-tile">
-                    <a class="c-product-tile__image" style="--image-on-hover: url(/assets/images/top-products/neck-and-deck-hover.webp)" href="#">
-                        <img src="assets/images/top-products/neck-and-deck.webp" alt="Pay Directly With Your HSA/FSA Card" />
-                        <div class="e-pill-badge e-pill-badge--sm e-pill-badge--fill" style="--badge-fill-color: #f6f6f7; --badge-base-color: #212428">
-                            <span class="e-checkmark"></span>
-                            HSA/FSA
-                        </div>
-                    </a>
-                    <div class="c-product-tile__rating">
-                        <div class="e-rating-stars" style="--rating: 4.5"></div>
-                        <a href="#">106 Reviews</a>
-                    </div>
-                    <a class="c-product-tile__name" href="#">Neck &amp; Décolletage LED Device</a>
-                    <div class="c-product-tile__price">
-                        <div class="e-price">
-                            <div class="e-price__main">
-                                <div class="e-price__current">{$dyn}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <form class="c-product-tile__button" action="#">
-                        <button class="btn btn--primary">Buy Now</button>
-                    </form>
-                </div>
-            </div>
-            <div class="best-sellers__item">
-                <div class="c-product-tile">
-                    <a class="c-product-tile__image" style="--image-on-hover: url(/sections/complete-system/images/micro-infusion-hover.webp)" href="#">
-                        <img src="sections/complete-system/images/micro-infusion.webp" alt="Pay Directly With Your HSA/FSA Card" />
-                        <div class="e-pill-badge e-pill-badge--sm e-pill-badge--fill" style="--badge-fill-color: #f6f6f7; --badge-base-color: #212428">
-                            <span class="e-checkmark"></span>
-                            HSA/FSA
-                        </div>
-                    </a>
-                    <div class="c-product-tile__rating">
-                        <div class="e-rating-stars" style="--rating:"></div>
-                        <a href="#">196 Reviews</a>
-                    </div>
-                    <a class="c-product-tile__name" href="#">Micro-Infusion Facial System</a>
-                    <div class="c-product-tile__price">
-                        <div class="e-price">
-                            <div class="e-price__main">
-                                <div class="e-price__current">{$dyn}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <form class="c-product-tile__button" action="#">
-                        <button class="btn btn--primary">Buy Now</button>
-                    </form>
-                </div>
-            </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -123,13 +59,7 @@
     "name": "t:sections.n_best-sellers.name",
     "settings": [
         {
-            "type": "checkbox",
-            "id": "use_own_file",
-            "label": "t:common.use-own-file",
-            "default": false
-        },
-        {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         }
@@ -166,6 +96,10 @@
                         {
                             "value": "trending",
                             "label": "t:common.trending"
+                        },
+                        {
+                            "value": "hsa-fsa",
+                            "label": "t:sections.n_best-sellers.blocks.hover_image.settings.hsa-fsa"
                         }
                     ]
                 },
@@ -174,21 +108,10 @@
                     "id": "image",
                     "label": "t:common.image"
                 },
-                
                 {
                     "type": "image_picker",
                     "id": "hover_image",
                     "label": "t:common.hover-image"
-                },
-                {
-                    "type": "url",
-                    "id": "url",
-                    "label": "t:common.link-url"
-                },
-                {
-                    "type": "text",
-                    "id": "rating_text",
-                    "label": "t:common.rating-text"
                 }
             ]
         }

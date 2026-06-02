@@ -22,10 +22,20 @@
         {% if show_article %}
             <article>
                 {% if section.settings.text != blank %}
-                    {{ section.settings.text }}
+                    {{ section.settings.text 
+                    | replace: '<p>[qure]</p>', '<i class="e-icon e-icon-qure"></i>' 
+                    | replace: '<p>[thin_cross]</p>', '<i class="e-icon e-icon-thin-cross"></i>'
+                    | replace: '<p>[flex]</p>', '<i class="e-icon e-icon-flex"></i>'
+                    | replace: '<p>[div]</p>', '<div>'
+                    | replace: '<p>[/div]</p>', '</div>'
+                    }}
                 {% endif %}
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                    <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
+                    {% if section.settings.arrow_button %}
+                        <a href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
+                    {% else %}
+                        <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
+                    {% endif %}
                 {% endif %}
                 {% assign has_text = false %}
                 {% assign has_popup = false %}
@@ -109,6 +119,10 @@
                 {
                     "value": "stats",
                     "label": "t:common.stats"
+                },
+                {
+                    "value": "flex",
+                    "label": "t:common.flex"
                 }
             ]
         },
@@ -126,6 +140,13 @@
             "type": "url",
             "id": "button_url",
             "label": "t:common.button-url"
+        },
+        {
+            "type": "checkbox",
+            "id": "arrow_button",
+            "label": "t:common.arrow-button",
+            "default": false
+
         }
     ],
     "blocks": [
