@@ -110,6 +110,7 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "use_own_file": false,
@@ -164,10 +165,11 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "settings": {
         "use_own_file": false,
         "modifier": "secondary",
-        "text": "<h1>Fine lines &amp; dark spots look visibly reduced. No injections.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "text": "<h1>Fine lines & dark spots look visibly reduced. No injections.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "image": "shopify://shop_images/micro-infusion-hero-c.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-c-mob.webp",
         "button_url": "#purchase-form",
