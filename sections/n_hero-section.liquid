@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/hero-section/hero-section.css" />
 {% endif %}
-<section class="hero-section">
+<section class="hero-section{% if section.settings.modifier != 'none' %} hero-section--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
         <picture class="hero-section__image">
             {% if section.settings.image != blank %}
@@ -17,7 +17,13 @@
         </picture>
         <article class="hero-section__content">
             <div class="hero-section__content-header">
-                    <div class="c-approved-by">
+                    {% assign approved_by_count = 0 %}
+                    {% for block in section.blocks %}
+                        {% if block.type == 'approved-by' %}
+                            {% assign approved_by_count = approved_by_count | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    <div class="c-approved-by{% if approved_by_count > 3 %} c-approved-by--secondary{% endif %}">
                         <ul>
                             {% for block in section.blocks %}
                                 {% if block.type == 'approved-by' %}
@@ -39,40 +45,52 @@
             </div>
             {% if section.settings.button_url != blank and section.settings.button_label != blank %}
                 <div class="hero-section__content-button">
-                    
+                    {% if section.settings.button_line %}
+                        <hr />
+                    {% endif %}
+                    {% if section.settings.alert != blank %}
+                        <div class="c-info-bar c-info-bar--alert c-info-bar--fill">{{ section.settings.alert | replace: '<p>', '' | replace: '</p>', '' }}</div>
+                    {% endif %}
                         <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
-                    
                     {% if section.settings.sub_text != blank %}
                         <div class="c-info-bar">{{ section.settings.sub_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     {% endif %}
                 </div>
             {% endif %}
-            <div class="hero-section__content-footer">
-                {% for block in section.blocks %}
-                    {% if block.type == 'note' %}
-                        {% if block.settings.text != blank %}
-                            <div class="hero-section__content-footer">
-                                <div class="c-note">
-                                    <i class="e-icon e-icon-stars"></i>
-                                    {{ block.settings.text }}
+            {% assign has_note = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'note' %}
+                    {% assign has_note = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_note %}
+                <div class="hero-section__content-footer">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'note' %}
+                            {% if block.settings.text != blank %}
+                                <div class="hero-section__content-footer">
+                                    <div class="c-note">
+                                        <i class="e-icon e-icon-stars"></i>
+                                        {{ block.settings.text }}
+                                    </div>
                                 </div>
-                            </div>
+                            {% endif %}
                         {% endif %}
+                    {% endfor %}
+                    {% if section.settings.marked_list != blank %}
+                        {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
                     {% endif %}
-                {% endfor %}
-                {% if section.settings.marked_list != blank %}
-                    {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
-                {% endif %}
-                {% if section.settings.video_image_cover != blank %}
-                    <picture
-                        data-label-text="Watch: How To Use"
-                        data-bs-toggle="modal"
-                        data-bs-target="#shower2"
-                    >
-                        <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                    </picture>
-                {% endif %}
-            </div>
+                    {% if section.settings.video_image_cover != blank %}
+                        <picture
+                            data-label-text="Watch: How To Use"
+                            data-bs-toggle="modal"
+                            data-bs-target="#shower2"
+                        >
+                            <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                        </picture>
+                    {% endif %}
+                </div>
+            {% endif %}
         </article>
     </div>
 </section>
@@ -114,6 +132,22 @@
             "default": false
         },
         {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "secondary",
+                    "label": "t:common.secondary"
+                }
+            ]
+        },
+        {
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
@@ -137,6 +171,17 @@
             "type": "text",
             "id": "button_label",
             "label": "t:common.button-label"
+        },
+        {
+            "type": "checkbox",
+            "id": "button_line",
+            "label": "t:common.button-line",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "alert",
+            "label": "t:common.alert"
         },
         {
             "type": "richtext",
