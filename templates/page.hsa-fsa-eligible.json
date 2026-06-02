@@ -33,11 +33,11 @@
         "box": {
           "type": "box",
           "settings": {
-            "outside_box": true,
             "image_1": "shopify://shop_images/crt-1.webp",
             "image_2": "shopify://shop_images/crt-2.webp",
             "badge_text": "+50",
-            "text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
+            "text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>",
+            "outside_box": true
           }
         }
       },
@@ -48,8 +48,8 @@
         "box"
       ],
       "settings": {
-        "modifier": "flex",
         "use_own_file": false,
+        "modifier": "flex",
         "heading": "<h1>[qure] [thin_cross] [flex]</h1>",
         "text": "<p>Qure has partnered with Flex so you can use your HSA or FSA pre-tax dollars on eligible Qure products, from clinically validated skincare devices to dermatologist-approved at-home treatments.</p>",
         "image": "shopify://shop_images/flex.webp",
@@ -100,7 +100,7 @@
         "hover_image_neck": {
           "type": "hover_image",
           "settings": {
-            "heading": "Neck & D\u00e9colletage LED Device",
+            "heading": "Neck & Décolletage LED Device",
             "product": "neck-decolletage-led",
             "image_text": "hsa-fsa",
             "image": "shopify://shop_images/neck-and-deck.webp",
@@ -125,7 +125,6 @@
         "hover_image_micro_infusion"
       ],
       "settings": {
-        "use_own_file": false,
         "heading": "<h2>Pay Directly With Your HSA/FSA Card</h2>"
       }
     },
@@ -149,8 +148,8 @@
         "accordion_3": {
           "type": "accordion",
           "settings": {
-            "heading": "I\u2019m not seeing HSA or FSA options at checkout. Why not?",
-            "text": "<p>The HSA/FSA option only appears at checkout when your cart contains eligible products. If you don\u2019t see it, one or more items in your cart may not qualify. Remove non-eligible items and try again, or contact our support team for help.</p>"
+            "heading": "I’m not seeing HSA or FSA options at checkout. Why not?",
+            "text": "<p>The HSA/FSA option only appears at checkout when your cart contains eligible products. If you don’t see it, one or more items in your cart may not qualify. Remove non-eligible items and try again, or contact our support team for help.</p>"
           }
         },
         "accordion_4": {
@@ -163,8 +162,8 @@
         "accordion_5": {
           "type": "accordion",
           "settings": {
-            "heading": "I don\u2019t have an HSA or FSA card. Can I still use my HSA/FSA funds?",
-            "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5\u201310 business days depending on your plan.</p>"
+            "heading": "I don’t have an HSA or FSA card. Can I still use my HSA/FSA funds?",
+            "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5–10 business days depending on your plan.</p>"
           }
         }
       },
@@ -178,7 +177,7 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don\u2019t see your question? ",
+        "text": "Don’t see your question? ",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
