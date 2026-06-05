@@ -62,12 +62,10 @@
             {% endif %}
 
             {% if section.settings.wistia_url != blank %}
-                <div class="wistia-embed-video">
-                    <div class="wistia_responsive_padding">
-                        <div class="wistia_responsive_wrapper">
-                            <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true"></div>
-                        </div>
-                    </div>
+                <div class="c-wistia c-wistia--custom c-wistia--is-playing">
+                    <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                        
+                    </wistia-player>
                 </div>
             {% endif %}
 
@@ -290,7 +288,6 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
     });
 </script>
@@ -388,6 +385,11 @@
             "type": "text",
             "id": "wistia_url",
             "label": "t:common.wistia-url"
+        },
+        {
+            "type": "image_picker",
+            "id": "video_image_cover",
+            "label": "t:common.video-image-cover"
         }
 ],
 "blocks": [

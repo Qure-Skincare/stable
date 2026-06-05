@@ -9,138 +9,327 @@
  */
  {
   "sections": {
-    "product_header_YnMCRC": {
-      "type": "n-product",
+    "n_product_header_gLYhrR": {
+      "type": "n-product-header",
       "name": "t:sections.product-header.name",
       "settings": {
-        "show_discount": true
+        "product": "",
+        "reverse": false,
+        "seo_heading": "DESIGNED FOR SKIN THAT USES LED",
+        "heading": "Blue+ Face Serum",
+        "rating": true,
+        "limited": false,
+        "description": "<p>A methylene blue–powered serum that helps your skin make the most of every LED session while delivering antioxidant support for calmer, fresher-looking skin.</p>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
-    "n_press_reviews_HDaUTN": {
-      "type": "n_press-reviews",
+    "n_trusted_recommended_blue_face_serum": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.”</p>",
+        "video_image_cover": "shopify://shop_images/dr-shah-maxfield-2.webp",
+        "text_on_image": "",
+        "wistia_url": false,
+        "video_url": "",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    },
+    "n_features_marquee_blue_face_serum": {
+      "type": "n_features-marquee",
       "blocks": {
-        "image_with_text_rczj6t": {
+        "image_with_text_shipping": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
-            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br>Orders Over $100"
           }
         },
-        "image_with_text_WhtWNQ": {
+        "image_with_text_reviewed": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h4>“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”</h4>",
-            "image": "shopify://shop_images/women-health.svg"
+            "icon": "reviewed",
+            "text": "Dermatologist<br>Reviewed"
           }
         },
-        "image_with_text_rwJFRA": {
+        "image_with_text_pay_later": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h4>“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”</h4>",
-            "image": "shopify://shop_images/Popsugar_logo.svg"
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br>Options Available"
           }
         },
-        "image_with_text_GcMQyX": {
+        "image_with_text_proven": {
           "type": "image_with_text",
           "settings": {
-            "text": "<h4>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”</h4>",
-            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
-          }
-        },
-        "image_with_text_xNnbxX": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</h4>",
-            "image": "shopify://shop_images/gq.svg"
+            "icon": "proven",
+            "text": "Proven Results,<br>Backed By Science"
           }
         }
       },
       "block_order": [
-        "image_with_text_rczj6t",
-        "image_with_text_WhtWNQ",
-        "image_with_text_rwJFRA",
-        "image_with_text_GcMQyX",
-        "image_with_text_xNnbxX"
+        "image_with_text_shipping",
+        "image_with_text_reviewed",
+        "image_with_text_pay_later",
+        "image_with_text_proven"
       ],
-      "name": "t:sections.n_press-reviews.name",
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>",
-        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
+        "use_own_file": false
       }
     },
-    "n_trusted_reviews_HRLHtt": {
-      "type": "n_trusted-reviews",
+    "n_accordion_tiles_square_blue_face_serum": {
+      "type": "n_accordion-tiles-square",
       "blocks": {
-        "slider_iCfR9d": {
-          "type": "slider",
+        "accordion_methylene_blue": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/ellie-v.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ellie V.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Ellie uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "image": "shopify://shop_images/methylene-blue-tile.webp",
+            "heading": "Methylene Blue",
+            "text": "<p>A powerful antioxidant that helps tired, stressed skin look more awake. It works to even out tone and bring back the healthy clarity your skin needs.</p>"
           }
         },
-        "slider_xqHC8P": {
-          "type": "slider",
+        "accordion_calendula": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/anton-m.webp",
-            "flag": "shopify://shop_images/australia_f.webp",
-            "username": "Anton M.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
-            "product_text": "Anton uses...",
-            "product_title": "Q-Rejuvalight Pro LED Mask"
+            "image": "shopify://shop_images/calendula-iactive-tile.webp",
+            "heading": "Calendula iActive",
+            "text": "<p>Selected for its calming properties, it helps reduce the look of redness and sensitivity while supporting skin that is easily stressed or overworked. In daily use, it contributes to skin feeling more balanced, comfortable, and visibly calmer.</p>"
           }
         },
-        "slider_ea3hLd": {
-          "type": "slider",
+        "accordion_beta_glucan": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/jennifer-n.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "image": "shopify://shop_images/beta-glucan-tile.webp",
+            "heading": "Beta-Glucan",
+            "text": "<p>Deeply soothing and hydrating, Beta-Glucan helps skin stay comfortable and bounce back faster. It’s the ingredient that makes repeated LED sessions feel gentle rather than demanding.</p>"
+          }
+        },
+        "popup_ingredients": {
+          "type": "popup",
+          "settings": {
+            "button_label": "View Full Ingredient List",
+            "popup_id": "fullIngredient",
+            "text": "<p><strong>Blue+ Face Serum Ingredients</strong></p><p>Water (Aqua), Coco-Caprylate/Caprate, Propanediol, Cetearyl Alcohol, Aloe Barbadensis Leaf Juice, Glyceryl Caprylate, Methylene Blue, Sodium Hyaluronate, Cetearyl Glucoside, Sorbitol, Tocopheryl Acetate, Cetearyl Olivate, Glucomannan, Niacinamide, Sorbitan Olivate, Glycerin, Caprylhydroxamic Acid, Aloe Barbadensis Leaf Juice Powder, Bisabolol, Calendula Officinalis Flower Extract, Allantoin, Panthenol, Methylparaben, Citric Acid, Potassium Sorbate, Sodium Benzoate, Beta-Glucan, 1,2-Hexanediol, Caprylyl Glycol.</p>",
+            "sub_text": "<ul><li>Fragrance-free</li><li>Silicone-free</li><li>Cruelty-free</li><li>Lightweight</li><li>Hypoallergenic</li><li>Safe for sensitive skin</li></ul>"
           }
         }
       },
       "block_order": [
-        "slider_iCfR9d",
-        "slider_xqHC8P",
-        "slider_ea3hLd"
+        "accordion_methylene_blue",
+        "accordion_calendula",
+        "accordion_beta_glucan",
+        "popup_ingredients"
       ],
-      "name": "t:sections.n_trusted-reviews.name",
+      "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
         "use_own_file": false,
-        "background_color": "light",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "heading": "<h2>Made gentle for all skin types</h2>"
+      }
+    },
+    "n_across_image_banner_blue_face_serum": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "heading": "<h2>Why we chose methylene blue</h2>",
+        "text": "<p>Besides its unique light-responsive properties, it’s a next-generation antioxidant studied for its role in skin longevity.</p><p>Research shows methylene blue can help reduce oxidative stress — one of the key contributors to visible skin aging — while supporting healthy fibroblast activity and overall skin resilience.</p><p>It has also been shown in skin models to support hydration and skin structure markers associated with firmer, healthier-looking skin.</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/blue-bg-image-1.webp",
+        "image_mobile": "shopify://shop_images/blue-bg-image-1-mob.webp",
         "button_label": "",
         "button_url": ""
       }
     },
-    "n_you_may_also_like_HZi1bC": {
-      "type": "n_product-you-may-also-like",
+    "n_base_section_refill_blue_face_serum": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": false
+        "use_own_file": false,
+        "modifier": "reverse",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>Designed to last and built to refill</h2>",
+        "text": "<p>Our new refillable system means less waste and better value over time.</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol>",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "tj97vrxlon"
+      }
+    },
+    "n_page_microinfusion_complete_system_blue_face_serum": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_faucet_filter": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-filter",
+            "variant_title": "",
+            "description": "Wash with filtered water to help boost hydration and reduce the look of irritation.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_cleanser": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "variant_title": "",
+            "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_blue_face_serum": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "variant_title": "",
+            "description": "Prepares skin for a more effective LED session.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "product_led_mask": {
+          "type": "product",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear",
+            "variant_title": "",
+            "description": "Daily multi wavelength LED treatment for clearer, firmer-looking skin.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "step_restrict": {
+          "type": "step",
+          "settings": {
+            "step": "Restrict"
+          }
+        },
+        "step_revive": {
+          "type": "step",
+          "settings": {
+            "step": "Revive"
+          }
+        },
+        "step_ready": {
+          "type": "step",
+          "settings": {
+            "step": "Ready"
+          }
+        },
+        "step_rejuvenate": {
+          "type": "step",
+          "settings": {
+            "step": "Rejuvenate"
+          }
+        }
       },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      "block_order": [
+        "product_faucet_filter",
+        "product_cleanser",
+        "product_blue_face_serum",
+        "product_led_mask",
+        "step_restrict",
+        "step_revive",
+        "step_ready",
+        "step_rejuvenate"
+      ],
+      "name": "t:sections.n_page-microinfusion-complete-system.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Complete the Qure system</h2>",
+        "button_label": "Add Full System to Cart",
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
+    "n_faq_blue_face_serum": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_sensitive_skin": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this serum suitable for sensitive skin?",
+            "text": "<p>Yes. Blue+ Face Serum is dermatologically tested, non-irritating, hypoallergenic, and suitable for sensitive skin. The formula includes soothing and barrier-supporting ingredients such as beta-glucan, bisabolol, allantoin, and aloe to help keep skin comfortable.</p>"
+          }
+        },
+        "accordion_without_led": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does Blue+ work without LED?",
+            "text": "<p>Yes. Blue+ can be used on its own as a lightweight antioxidant serum that helps support skin exposed to everyday environmental stressors, including screen-based blue light. When used with LED, it is designed to enhance how the skin responds to red and blue light.</p>"
+          }
+        },
+        "accordion_replace_serums": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will this replace my other serums?",
+            "text": "<p>Not necessarily. Blue+ is designed to work as a targeted treatment step. It can be used on its own as a simple, all-in-one antioxidant serum, or layered with other products depending on your routine and skin needs.</p>"
+          }
+        },
+        "accordion_how_often": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often should I use it?",
+            "text": "<p>Blue+ can be used daily. When using LED, apply it before each LED session. When not using LED, apply in the morning as part of your skincare routine to help support skin exposed to daily environmental stressors.</p>"
+          }
+        },
+        "accordion_how_much": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How much should I use?",
+            "text": "<p>It is important to use only a pea-sized amount for the face and neck. Applying more than this is not necessary and may lead to temporary blue surface staining.</p><p>Always allow the serum to fully absorb for a few minutes before applying your LED mask or other products. Blue+ has been tested with the Q-Rejuvalight Pro LED Mask materials and is designed to absorb without interfering with light coverage. Any temporary tinting will fade on its own.</p>"
+          }
+        },
+        "accordion_red_blue_modes": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does it work with both red and blue LED modes?",
+            "text": "<p>Yes. Blue+ was formulated to work with both red and blue LED wavelengths. The formula uses methylene blue to absorb light and support the skin’s biological response, helping blue light target acne-causing bacteria and red light support skin renewal and overall skin quality.</p>"
+          }
+        },
+        "accordion_refill_system": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How does the refill system work?",
+            "text": "<p>The refill system is designed so you keep the outer bottle and pump, and only replace the inner serum refill. To refill, detach the outer case from the base, remove the empty refill, slide in the new refill, then place the case back on and twist the base to open and unlock the nozzle. This reduces waste while keeping the same packaging experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_sensitive_skin",
+        "accordion_without_led",
+        "accordion_replace_serums",
+        "accordion_how_often",
+        "accordion_how_much",
+        "accordion_red_blue_modes",
+        "accordion_refill_system"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
     }
   },
   "order": [
-    "product_header_YnMCRC",
-    "n_press_reviews_HDaUTN",
-    "n_trusted_reviews_HRLHtt",
-    "n_you_may_also_like_HZi1bC"
+    "n_product_header_gLYhrR",
+    "n_trusted_recommended_blue_face_serum",
+    "n_features_marquee_blue_face_serum",
+    "n_accordion_tiles_square_blue_face_serum",
+    "n_across_image_banner_blue_face_serum",
+    "n_base_section_refill_blue_face_serum",
+    "n_page_microinfusion_complete_system_blue_face_serum",
+    "n_faq_blue_face_serum"
   ]
 }
