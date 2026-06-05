@@ -63,7 +63,7 @@
 
             {% if section.settings.wistia_url != blank %}
                 <div class="c-wistia c-wistia--custom c-wistia--is-playing">
-                    <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                    <wistia-player media-id="{{ section.settings.wistia_url }}" autoplay="true" muted="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
                         
                     </wistia-player>
                 </div>
@@ -140,7 +140,9 @@
                     | replace: '<p>[note_grey]', '<div class="c-note" style="--note-bg: #f6f6f7">'
                     | replace: '[/note]</p>', '</div>' 
                     | replace: '<p>[step]</p><ul>', '<ul class="e-steps-list">' 
-                    | replace: '<p>[marked_list]</p><ul>', '<ul class="c-marked-list">' }}
+                    | replace: '<p>[marked_list]</p><ul>', '<ul class="c-marked-list">' 
+                    | replace: '<p>[normal]</p><ol>', '<ol class="normal">'
+                    }}
                 </div>
             {% endif %}
 

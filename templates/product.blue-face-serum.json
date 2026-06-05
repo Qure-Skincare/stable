@@ -11,9 +11,32 @@
   "sections": {
     "n_product_header_gLYhrR": {
       "type": "n-product-header",
+      "blocks": {
+        "price_A11": {
+          "type": "price",
+          "settings": {
+            "show_discount": false
+          }
+        },
+        "description_iPBNaS": {
+          "type": "description",
+          "settings": {}
+        },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        }
+      },
+      "block_order": [
+        "price_A11",
+        "description_iPBNaS",
+        "section_A0"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "product": "",
+        "product": "blue-face-serum",
         "reverse": false,
         "seo_heading": "DESIGNED FOR SKIN THAT USES LED",
         "heading": "Blue+ Face Serum",
@@ -23,7 +46,202 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": ""
+        "button-url": "",
+        "approved": false
+      }
+    },
+    "purchase-form-landing": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "One time purchase",
+            "preselected": false
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "6 Months Supply",
+            "subheading": "(1 Bottle + 2 Refills)",
+            "text": "",
+            "image": "shopify://shop_images/form-thumbnail-trio.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "4 Months Supply",
+            "subheading": "(1 Bottle + 1 Refills)",
+            "text": "",
+            "image": "shopify://shop_images/form-thumbnail-duo.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_x3jeL8": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "2 Months Supply",
+            "subheading": "(1 Bottle)",
+            "text": "",
+            "image": "shopify://shop_images/form-thumbnail-uno.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Subscribe & Save",
+            "preselected": true
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "6 Months Supply",
+            "subheading": "(1 Bottle + 2 Refills)",
+            "text": "Ships every 6 months",
+            "image": "shopify://shop_images/form-thumbnail-trio.webp",
+            "product_discount_percent": 20,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "4 Months Supply",
+            "subheading": "(1 Bottle + 1 Refills)",
+            "text": "Ships every 4 months",
+            "image": "shopify://shop_images/form-thumbnail-duo.webp",
+            "product_discount_percent": 11,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_AJPQaQ": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "2 Months Supply",
+            "subheading": "(1 Bottle)",
+            "text": "Ships every 2 months",
+            "image": "shopify://shop_images/form-thumbnail-uno.webp",
+            "product_discount_percent": 10,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_RBCPe8",
+        "product_gbPf3J",
+        "product_x3jeL8",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_eiY89h",
+        "product_nyJ9n7",
+        "product_AJPQaQ"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-subscription",
+        "hide_types": false,
+        "type": "list",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30"
+      }
+    },
+    "n_base_section_led_sync_blue_face_serum": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "reverse",
+        "modifier_2": "none",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>Skincare that works in sync with LED light</h2>",
+        "text": "<p>LED therapy works by delivering light energy into the skin. But what you apply before your session matters.</p><p>Many serums are designed for overnight repair or active treatment — not for repeated light exposure. Some can interfere with LED light therapy, be irritating, or simply weren't formulated with LED in mind.</p><p>Blue+ is different.</p><p>It uses methylene blue, an antioxidant studied in light-exposure contexts, in a lightweight formula designed to sit comfortably on skin during LED sessions.</p>",
+        "button_label": "Shop Now",
+        "button_url": "#",
+        "wistia_url": "qk92k5wrnj"
       }
     },
     "n_trusted_recommended_blue_face_serum": {
@@ -158,7 +376,7 @@
         "background_color": "none",
         "section_id": "",
         "heading": "<h2>Designed to last and built to refill</h2>",
-        "text": "<p>Our new refillable system means less waste and better value over time.</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol>",
+        "text": "<p>Our new refillable system means less waste and better value over time.</p><p>[normal]</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol>",
         "button_label": "",
         "button_url": "",
         "wistia_url": "tj97vrxlon"
@@ -324,6 +542,8 @@
   },
   "order": [
     "n_product_header_gLYhrR",
+    "purchase-form-landing",
+    "n_base_section_led_sync_blue_face_serum",
     "n_trusted_recommended_blue_face_serum",
     "n_features_marquee_blue_face_serum",
     "n_accordion_tiles_square_blue_face_serum",

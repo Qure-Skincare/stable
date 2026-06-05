@@ -796,8 +796,7 @@
             "blocks": {
                 "product": {
                     "settings": {
-                        "variant_title": "Variant title",
-                        "variant_title_info": "Optional. Enter the exact variant title from the product (e.g. White / 1 Month). If empty or not found, first available variant is used."
+                        "variant_title": "Variant title"
                     }
                 }
             }
