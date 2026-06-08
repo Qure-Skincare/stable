@@ -608,6 +608,19 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_R98WyX": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_53.webp",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Sloane M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Noticeably Softer Skin & Cleaner Water After</strong></p><p>“I wasn’t expecting a shower filter to make this much of a difference, but I’m genuinely impressed. After installing it, I immediately noticed the water felt softer and less harsh on my skin and hair. Within a few showers, my skin felt less tight and dry, especially noticeable since I’m prone to dryness and irritation.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -617,7 +630,8 @@
         "slider_GbGWiZ",
         "slider_dYqN0a",
         "slider_XK19xG",
-        "slider_HkNCaH"
+        "slider_HkNCaH",
+        "slider_R98WyX"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -1049,7 +1063,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "1757411492448c8907": {
