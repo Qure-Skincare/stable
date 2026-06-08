@@ -52,6 +52,7 @@
         "modifier": "flex",
         "heading": "<h1>[qure] [thin_cross] [flex]</h1>",
         "text": "<p>Qure has partnered with Flex so you can use your HSA or FSA pre-tax dollars on eligible Qure products, from clinically validated skincare devices to dermatologist-approved at-home treatments.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/flex.webp",
         "image_mobile": "shopify://shop_images/flex-mob.webp",
         "button_label": "Shop Eligible Products",
@@ -67,8 +68,9 @@
     "n_text_hsa_fsa": {
       "type": "n_text",
       "settings": {
+        "use_own_file": false,
         "modifier": "flex",
-        "text": "<p>[div]</p><p>[qure]</p><p>[thin_cross]</p><p>[flex]</p><p>[/div]</p><h4>Spend HSA/FSA funds on your dermatologist-recommended</h4>",
+        "text": "<p>[div]</p><p>[qure]</p><p>[thin_cross]</p><p>[flex]</p><p>[/div]</p><h4>Spend HSA/FSA funds on your dermatologist-recommended products</h4>",
         "button_label": "Learn how it works",
         "button_url": "#",
         "arrow_button": true
@@ -177,7 +179,7 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don’t see your question? ",
+        "text": "Don’t see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
