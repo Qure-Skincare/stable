@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_FnMCMD": {
       "type": "n-product-header",
@@ -85,6 +85,8 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
+        "reverse": false,
         "seo_heading": "FAUCET FILTER REFILL CARTRIDGER",
         "heading": "Keep the good skin flowing with the Faucet Filter Refill",
         "rating": true,
@@ -93,8 +95,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "use_own_file": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -142,7 +143,9 @@
             "preselected": true,
             "heading": "White",
             "subheading": "",
+            "text": "",
             "image": "shopify://shop_images/faucet_refill-w.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -162,7 +165,9 @@
             "preselected": false,
             "heading": "Black",
             "subheading": "",
+            "text": "",
             "image": "shopify://shop_images/faucet_refill-b.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -184,7 +189,11 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "variant",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_base_section_CGMUkn": {
@@ -247,6 +256,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
+        "section_id": "",
         "heading": "<h2>Do you know what’s in your water?</h2>",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
@@ -262,6 +272,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
+        "section_id": "",
         "heading": "<h2>Meet the Qure Faucet Filter</h2>",
         "text": "<p>Great skin begins with the source – the water you use daily. The Qure Faucet Filter <em>effectively reduces harmful skin irritants</em> that can affect your skin's health and appearance.</p>",
         "image": "shopify://shop_images/facewashing_faucet.webp",
@@ -370,19 +381,34 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_acjwMY": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_52.webp",
+            "flag": "shopify://shop_images/eng-flag.webp",
+            "username": "Chinenye O.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>The filter is an essential</strong></p><p>“My skin was very reactive so the water was definitely affecting my skin but the filter was the best choice for me. It really helped me not worry about the water affecting my skin anti and now my skin is a lot better. I’m just dealing with spots”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
         "slider_neyQQf",
         "slider_zGeEYy",
-        "slider_FWwKpP"
+        "slider_FWwKpP",
+        "slider_acjwMY"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": false,
         "background_color": "none",
         "text": "<h2>The results are crystal clear</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_Akm4BH": {
@@ -658,7 +684,8 @@
         "image": "shopify://shop_images/faucet_thumbnail.webp",
         "image_mobile": "shopify://shop_images/faucet_thumbnail-mob.webp",
         "wistia_url": "t0xzq5gdvm",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_comparison_wGQ6da": {
@@ -781,7 +808,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "17574115467f0c78e8": {
