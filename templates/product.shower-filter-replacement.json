@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_5nXYyf": {
       "type": "n-product-header",
@@ -85,6 +85,8 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
+        "reverse": false,
         "seo_heading": "SHOWER FILTER REFILL CARTRIDGE",
         "heading": "Keep your skin & hair protected with the Shower Filter Refill",
         "rating": true,
@@ -93,8 +95,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "use_own_file": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -142,7 +143,9 @@
             "preselected": true,
             "heading": "White",
             "subheading": "",
+            "text": "",
             "image": "shopify://shop_images/cartiage-1.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -162,7 +165,9 @@
             "preselected": false,
             "heading": "Black",
             "subheading": "",
+            "text": "",
             "image": "shopify://shop_images/cartiage-2.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -184,7 +189,11 @@
         "form_name": "purchase-form-landing",
         "hide_types": true,
         "type": "variant",
-        "klaviyo_form_name": ""
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_base_section_CGMUkn": {
@@ -247,6 +256,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "grey",
+        "section_id": "",
         "heading": "<h2>Do you know what’s in your water?</h2>",
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
@@ -262,6 +272,7 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Maximum filtration, minimal effort</h2>",
         "text": "<p>The Qure Shower Filter is designed to <em>remove up to 99% of chlorine</em> – and other hard water nasties like copper, calcium, and lead – for healthy skin and hair.</p><p>For optimized showering that leaves you feeling (and looking) your best, swap out the filter cartridge every 3 months.</p><p>This Refill seamlessly fits the Qure Shower Filter system, providing long-lasting filtration benefits.</p>",
         "image": "shopify://shop_images/shower_img.webp",
@@ -415,6 +426,19 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_HngyFc": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_53.webp",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Sloane M.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Noticeably Softer Skin & Cleaner Water After</strong></p><p>“I wasn’t expecting a shower filter to make this much of a difference, but I’m genuinely impressed. After installing it, I immediately noticed the water felt softer and less harsh on my skin and hair. Within a few showers, my skin felt less tight and dry, especially noticeable since I’m prone to dryness and irritation.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -424,14 +448,16 @@
         "slider_GbGWiZ",
         "slider_dYqN0a",
         "slider_XK19xG",
-        "slider_HkNCaH"
+        "slider_HkNCaH",
+        "slider_HngyFc"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": false,
         "background_color": "none",
         "text": "<h2>The results are crystal clear</h2>",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_trusted_recommended_Akm4BH": {
@@ -686,7 +712,8 @@
         "image": "shopify://shop_images/shower-filter-refill-video.webp",
         "image_mobile": "shopify://shop_images/shower-filter-refill-video-mob.webp",
         "wistia_url": "bwhqvtar9u",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_comparison_WktgAV": {
@@ -809,7 +836,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "175741161617f7c983": {
