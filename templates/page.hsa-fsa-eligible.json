@@ -112,11 +112,11 @@
         "hover_image_micro_infusion": {
           "type": "hover_image",
           "settings": {
-            "heading": "Micro-Infusion Facial System",
-            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "heading": "Breakout Control Advanced",
+            "product": "breakout-control-advanced1",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/micro-infusion.webp",
-            "hover_image": "shopify://shop_images/micro-infusion-hover.webp"
+            "image": "shopify://shop_images/Breakout_Control_Advanced_8dc0326a-e0a1-4f02-88b7-009e9b085649.png",
+            "hover_image": "shopify://shop_images/Mask_Acne_B_A_bff619dc-0c2c-4a1f-903d-57ca3a055a22.png"
           }
         }
       },
