@@ -72,7 +72,7 @@
         "modifier": "flex",
         "text": "<p>[div]</p><p>[qure]</p><p>[thin_cross]</p><p>[flex]</p><p>[/div]</p><h4>Spend HSA/FSA funds on your dermatologist-recommended products</h4>",
         "button_label": "Learn how it works",
-        "button_url": "#",
+        "button_url": "#faq",
         "arrow_button": true
       }
     },
