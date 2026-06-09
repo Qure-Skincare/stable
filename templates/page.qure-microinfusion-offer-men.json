@@ -1079,7 +1079,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Father's Day Promo",
+            "heading": "6 Month Supply Father's Day Promo (Pre-Order)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DS.webp",
             "soldout": false,
@@ -1098,7 +1098,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "preselected": false,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply (Pre-Order)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
             "soldout": false,
@@ -1148,7 +1148,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply Father's Day Promo (Pre-Order)",
+            "heading": "6 Month Supply Father's Day Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
