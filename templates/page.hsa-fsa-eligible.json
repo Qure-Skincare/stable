@@ -124,7 +124,7 @@
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles)",
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
-            "image_text": "none",
+            "image_text": "hsa-fsa",
             "image": "shopify://shop_images/MI_1.5_3month_DS.jpg",
             "hover_image": "shopify://shop_images/Frame_1073714796_2.png"
           }
@@ -132,9 +132,11 @@
         "hover_image_h7Tt7m": {
           "type": "hover_image",
           "settings": {
-            "heading": "",
-            "product": "",
-            "image_text": "none"
+            "heading": "Shower Filter",
+            "product": "shower-filter",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/Frame_1073714796_10.webp",
+            "hover_image": "shopify://shop_images/exclusive-offer-shower.webp"
           }
         },
         "hover_image_RAV6MA": {
