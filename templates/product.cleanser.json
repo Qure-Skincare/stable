@@ -16,7 +16,8 @@
           "type": "approved",
           "settings": {
             "image_1": "shopify://shop_images/doctor_img.png",
-            "text": ""
+            "image_2": "shopify://shop_images/approved-by-2_87ff637d-d12b-4842-a174-f80d61ece182.webp",
+            "text": "<p>Recommended by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
           }
         },
         "description_hnJud7": {
