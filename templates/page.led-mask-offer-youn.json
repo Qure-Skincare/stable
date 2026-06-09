@@ -43,10 +43,10 @@
         "nextships_4QXeV7": {
           "type": "nextships",
           "settings": {
-            "date": "8th June",
+            "date": "30th June",
             "percent": 71,
-            "date_soldout": "25th May",
-            "date_reserved": "8th June"
+            "date_soldout": "8th June",
+            "date_reserved": "30th June"
           }
         }
       },
