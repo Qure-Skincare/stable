@@ -142,9 +142,11 @@
         "hover_image_RAV6MA": {
           "type": "hover_image",
           "settings": {
-            "heading": "",
-            "product": "",
-            "image_text": "none"
+            "heading": "Faucet Filter",
+            "product": "faucet-filter",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/faucet_qure.webp",
+            "hover_image": "shopify://shop_images/faucet-filter-hover.webp"
           }
         },
         "hover_image_3RHYBj": {
