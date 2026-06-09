@@ -152,9 +152,11 @@
         "hover_image_3RHYBj": {
           "type": "hover_image",
           "settings": {
-            "heading": "",
-            "product": "",
-            "image_text": "none"
+            "heading": "Dermal Mist",
+            "product": "dermal-mist",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/Dermal-mist-product-and-bottle-e-com-edited.jpg",
+            "hover_image": "shopify://shop_images/Dermal_Mist_Acne_4f4cb31d-5186-47ca-856d-df58f0f8825e.png"
           }
         }
       },
