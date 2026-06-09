@@ -12,9 +12,22 @@
     "n_product_header_cleanser": {
       "type": "n-product-header",
       "blocks": {
+        "approved_6HL8Jr": {
+          "type": "approved",
+          "settings": {
+            "image_1": "shopify://shop_images/doctor_img.png",
+            "text": ""
+          }
+        },
         "description_hnJud7": {
           "type": "description",
           "settings": {}
+        },
+        "section_A0": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
         },
         "results_kJG7Dg": {
           "type": "results",
@@ -27,34 +40,27 @@
             "text3": "agree cleanser feels gentle and soothing",
             "percent_value_3": 83
           }
-        },
-        "section_A0": {
-          "type": "section",
-          "settings": {
-            "section_id": "purchase-form-landing"
-          }
-        },
-        "approved_by_iD6h6z": {
-          "type": "approved",
-          "settings": {
-            "image_1": "shopify://shop_images/approved-by-1.webp",
-            "image_2": "shopify://shop_images/approved-by-2.webp",
-            "text": "<p>Approved by <strong>Dr. Shah</strong> &amp; <strong>Dr. Maxfield</strong></p>"
-          }
         }
       },
       "block_order": [
+        "approved_6HL8Jr",
         "description_hnJud7",
         "section_A0",
-        "results_kJG7Dg",
-        "approved_by_iD6h6z"
+        "results_kJG7Dg"
       ],
       "name": "t:sections.n_product-header.name",
       "settings": {
+        "product": "",
+        "reverse": false,
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
         "heading": "Daily Cleansing Gel",
         "rating": false,
-        "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>"
+        "limited": false,
+        "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -67,6 +73,7 @@
         "product_type_NEgEkq": {
           "type": "product_type",
           "settings": {
+            "heading": "",
             "preselected": true
           }
         },
@@ -149,7 +156,10 @@
         "hide_types": true,
         "type": "list",
         "klaviyo_form_name": "",
-        "hide_certified": true
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": true,
+        "aio_toggle": false
       }
     },
     "n_across_image_banner_cleanser": {
@@ -160,6 +170,7 @@
         "modifier": "none",
         "heading": "<h2>A cleanser that restores what others remove</h2>",
         "text": "<p>Most cleansers leave skin feeling tight.</p><p>That feeling isn’t clean - it’s moisture loss.</p><p>Many cleansers rely on strong surfactants to create a foamy, squeaky clean feel, often at the expense of your skin barrier.</p><p>Our cleanser is different. Instead of relying on water alone, the formula is powered by 50% glycerin, a moisture loving ingredient that helps skin hold onto hydration while you cleanse.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/cleanser-bg-image-1.webp",
         "image_mobile": "shopify://shop_images/cleanser-bg-image-1-mob.webp",
         "button_label": "",
@@ -274,11 +285,13 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Clinically tested, barrier approved</h2>",
         "text": "",
         "image": "shopify://shop_images/cleanser-text-image-1.webp",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "wistia_url": ""
       }
     },
     "n_features_marquee_cleanser": {
@@ -288,28 +301,28 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br />Orders Over $100"
+            "text": "Free Shipping On<br>Orders Over $100"
           }
         },
         "image_with_text_reviewed": {
           "type": "image_with_text",
           "settings": {
             "icon": "reviewed",
-            "text": "Dermatologist<br />Reviewed"
+            "text": "Dermatologist<br>Reviewed"
           }
         },
         "image_with_text_pay_later": {
           "type": "image_with_text",
           "settings": {
             "icon": "pay-later",
-            "text": "Buy Now, Pay Later<br />Options Available"
+            "text": "Buy Now, Pay Later<br>Options Available"
           }
         },
         "image_with_text_proven": {
           "type": "image_with_text",
           "settings": {
             "icon": "proven",
-            "text": "Proven Results,<br />Backed By Science"
+            "text": "Proven Results,<br>Backed By Science"
           }
         }
       },
@@ -369,7 +382,8 @@
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
-        "use_own_file": false
+        "use_own_file": false,
+        "heading": ""
       }
     },
     "n_page_microinfusion_complete_system_cleanser": {
@@ -508,8 +522,8 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
-        "button_label": "Ask us ",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     }
