@@ -1189,7 +1189,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_W.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -1217,7 +1217,7 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Father's Day Promo",
+            "heading": "6 Month Supply Father's Day Promo (Pre-Order)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,
