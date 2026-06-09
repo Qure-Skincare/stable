@@ -29,7 +29,7 @@
 
             {%- if product != blank -%}
                 {% if section.settings.rating != blank %}
-                    {% render 'n-product-rating', product: product %}
+                    {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
                 {% endif %}
             {%- else -%}
                 {% render 'n-page-rating', section: section %}
@@ -88,6 +88,22 @@
             "id": "rating",
             "label": "t:common.rating",
             "default": true
+        },
+        {
+            "type": "select",
+            "id": "rating_type",
+            "label": "t:common.rating-type",
+            "default": "customers",
+            "options": [
+                {
+                    "value": "customers",
+                    "label": "t:common.rated-by-customers"
+                },
+                {
+                    "value": "dermatologists",
+                    "label": "t:common.backed-by-dermatologists"
+                }
+            ]
         },
         {
             "type": "checkbox",

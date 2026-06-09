@@ -12,12 +12,6 @@
     "n_product_header_gLYhrR": {
       "type": "n-product-header",
       "blocks": {
-        "price_A11": {
-          "type": "price",
-          "settings": {
-            "show_discount": false
-          }
-        },
         "description_iPBNaS": {
           "type": "description",
           "settings": {}
@@ -30,7 +24,6 @@
         }
       },
       "block_order": [
-        "price_A11",
         "description_iPBNaS",
         "section_A0"
       ],
@@ -41,13 +34,13 @@
         "seo_heading": "DESIGNED FOR SKIN THAT USES LED",
         "heading": "Blue+ Face Serum",
         "rating": true,
+        "rating_type": "dermatologists",
         "limited": false,
         "description": "<p>A methylene blue–powered serum that helps your skin make the most of every LED session while delivering antioxidant support for calmer, fresher-looking skin.</p>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "approved": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -146,7 +139,7 @@
           "settings": {
             "product": "blue-face-serum",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 8441757935,
             "popular": false,
             "best": true,
             "preselected": true,
@@ -168,7 +161,7 @@
           "settings": {
             "product": "blue-face-serum",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 9389176848623,
             "popular": true,
             "best": false,
             "preselected": false,
@@ -190,7 +183,7 @@
           "settings": {
             "product": "blue-face-serum",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 9389197525231,
             "popular": false,
             "best": false,
             "preselected": false,
@@ -225,7 +218,10 @@
         "hide_types": false,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "aio_toggle": false
       }
     },
     "n_base_section_led_sync_blue_face_serum": {
@@ -379,7 +375,8 @@
         "text": "<p>Our new refillable system means less waste and better value over time.</p><p>[normal]</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": "tj97vrxlon"
+        "wistia_url": "tj97vrxlon",
+        "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp"
       }
     },
     "n_page_microinfusion_complete_system_blue_face_serum": {
@@ -538,6 +535,44 @@
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
+    },
+    "sticky_cta_blue_face_serum": {
+      "type": "n-sticky-button-variants",
+      "blocks": {
+        "variant_6m": {
+          "type": "variant",
+          "settings": {
+            "heading": "6 Months",
+            "image": "shopify://shop_images/form-thumbnail-trio.webp"
+          }
+        },
+        "variant_4m": {
+          "type": "variant",
+          "settings": {
+            "heading": "4 Months",
+            "image": "shopify://shop_images/form-thumbnail-duo.webp"
+          }
+        },
+        "variant_2m": {
+          "type": "variant",
+          "settings": {
+            "heading": "2 Months",
+            "image": "shopify://shop_images/form-thumbnail-uno.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_6m",
+        "variant_4m",
+        "variant_2m"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "580 Units Reserved in last 48 hours",
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [
@@ -550,6 +585,7 @@
     "n_across_image_banner_blue_face_serum",
     "n_base_section_refill_blue_face_serum",
     "n_page_microinfusion_complete_system_blue_face_serum",
-    "n_faq_blue_face_serum"
+    "n_faq_blue_face_serum",
+    "sticky_cta_blue_face_serum"
   ]
 }

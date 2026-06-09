@@ -53,7 +53,7 @@
                                     assign product = all_products[block.settings.product]
                                   endif
                                 -%}
-                                {% if product != blank %}
+                                {% if product != blank and product.available %}
                                 {% assign product_url = product.url %}
                                 {% assign product_title = product.title %}
                                 {% assign product_media = product.media %}
