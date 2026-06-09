@@ -89,8 +89,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "Get Smoother Skin",
-        "button-url": "#purchase-form",
-        "approved": false
+        "button-url": "#purchase-form"
       }
     },
     "n_press_reviews_cxhHAa": {
@@ -189,7 +188,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "green",
-        "text": "ONLY FACIAL TREATMENTS YOUR SKIN NEEDS",
+        "text": "Father's Day Promo!",
         "text_mobile": "Available until stocks last!"
       }
     },
@@ -502,7 +501,6 @@
         },
         "slider_TnmTax": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "heading": "<p>“One of the best ways to help improve the look of hyperpigmentation at home.”</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark]Board-Certified Dermatologist</p>",
@@ -513,7 +511,6 @@
         },
         "slider_Bjgafk": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "heading": "<p>“With Micro-Infusion, you may notice visible results quickly after your first treatment.”</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark]Board-Certified Dermatologist</p>",
