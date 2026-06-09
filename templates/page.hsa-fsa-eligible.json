@@ -211,6 +211,13 @@
             "heading": "I don’t have an HSA or FSA card. Can I still use my HSA/FSA funds?",
             "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5–10 business days depending on your plan.</p>"
           }
+        },
+        "accordion_i79L8Q": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is a Letter of Medical Necessity? (LOMN)",
+            "text": "<p>A Letter of Medical Necessity (LMN) is a document written by a healthcare provider that explains why a specific medical service, treatment, or equipment is necessary for a patient's health.</p><p>In relation to an HSA (Health Savings Account) or FSA (Flexible Spending Account), an LMN is often required for reimbursement of expenses that are not clearly defined as eligible under the standard IRS guidelines.</p>"
+          }
         }
       },
       "block_order": [
@@ -218,7 +225,8 @@
         "accordion_2",
         "accordion_3",
         "accordion_4",
-        "accordion_5"
+        "accordion_5",
+        "accordion_i79L8Q"
       ],
       "settings": {
         "use_own_file": false,

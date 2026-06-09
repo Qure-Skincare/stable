@@ -7,14 +7,14 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product-bundle": {
       "type": "n-product-bundle",
       "settings": {
-        "heading": "Breakout Control Advanced with Red Light Therapy",
-        "reserved": false,
-        "soldout": false
+        "show_discount": false,
+        "rating": true,
+        "heading": "Breakout Control Advanced with Red Light Therapy"
       }
     },
     "n_base_section_RnXaHd": {
@@ -25,6 +25,7 @@
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Red Light Therapy at Home</h2>",
         "text": "<p>Experience the transformative power of <strong>Red Light Therapy</strong> from the comfort of your home. No need for expensive salon visits or long treatment times-just a few minutes with our <strong>Breakout Control Advanced</strong> bundle provides the therapeutic benefits of <strong>LED light therapy</strong>, helping to clear acne, reduce inflammation, and promote healthier skin.<br/><br/>This at-home treatment delivers targeted results with ease, allowing you to seamlessly incorporate <strong>Red Light Therapy</strong> into your daily skincare routine. With consistent use, you’ll enjoy smoother, clearer skin, all while saving time and money on in-clinic treatments. <strong>Red Light Therapy</strong> has never been more accessible or effective-your skin will thank you!</p>",
         "image": "shopify://shop_images/skin_firming.webp",
@@ -83,6 +84,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
     },
@@ -169,12 +171,28 @@
             "heading": "How To Achieve Acne-Free, Radiant Skin?",
             "text": "<p>Perfect for all skin types, <strong>Breakout Control Advanced</strong> is designed to treat acne without causing dryness or irritation. Experience the combined benefits of <strong>Red Light Therapy</strong> and advanced skincare technology for visible results in fewer treatments. With consistent use, you’ll enjoy smooth, radiant skin that feels healthier and looks clearer.</p>"
           }
+        },
+        "accordion_rX6w8W": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is an HSA or FSA and what are the benefits?",
+            "text": "<p>HSA (Health Savings Account) and FSA (Flexible Spending Account) are tax-advantaged accounts that let you use pre-tax dollars for qualified health and wellness purchases - giving you an instant discount equal to your tax rate. FSAs are employer-sponsored with use-it-or-lose-it rules; HSAs are tied to high-deductible health plans and roll over year to year.</p>"
+          }
+        },
+        "accordion_tWLNDh": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is a qualified customer?",
+            "text": "<p>A qualified customer is any individual with an active HSA (Health Savings Account) or FSA (Flexible Spending Account) who is purchasing an eligible product. Most people with employer-sponsored health benefits or a high-deductible health plan qualify.</p>"
+          }
         }
       },
       "block_order": [
         "accordion_kJHtcE",
         "accordion_Hj9wiN",
-        "accordion_iTKLYy"
+        "accordion_iTKLYy",
+        "accordion_rX6w8W",
+        "accordion_tWLNDh"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
@@ -187,10 +205,10 @@
     },
     "n_you_may_also_like_uZi1bC": {
       "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
       "settings": {
         "use_own_file": false
-      },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      }
     }
   },
   "order": [
