@@ -123,8 +123,9 @@
           "type": "hover_image",
           "settings": {
             "heading": "",
-            "product": "",
-            "image_text": "none"
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "image_text": "none",
+            "image": "shopify://shop_images/micro-infusion-system.webp"
           }
         },
         "hover_image_h7Tt7m": {
