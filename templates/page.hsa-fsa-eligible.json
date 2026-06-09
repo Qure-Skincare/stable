@@ -56,7 +56,7 @@
         "image": "shopify://shop_images/flex.webp",
         "image_mobile": "shopify://shop_images/flex-mob.webp",
         "button_label": "Shop Eligible Products",
-        "button_url": "#"
+        "button_url": "#best_sellers"
       }
     },
     "n_how-it-works-content_hsa_fsa": {
@@ -89,6 +89,16 @@
             "hover_image": "shopify://shop_images/Mask_Acne_B_A_bff619dc-0c2c-4a1f-903d-57ca3a055a22.png"
           }
         },
+        "hover_image_facewear": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "product": "q-rejuvalight-pro-facewear",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/led-mask.webp",
+            "hover_image": "shopify://shop_images/q-rejuvalight-pro-facewear-hover.webp"
+          }
+        },
         "hover_image_neck": {
           "type": "hover_image",
           "settings": {
@@ -108,23 +118,13 @@
             "image": "shopify://shop_images/helmet.webp",
             "hover_image": "shopify://shop_images/helmet-hover.webp"
           }
-        },
-        "hover_image_facewear": {
-          "type": "hover_image",
-          "settings": {
-            "heading": "Q-Rejuvalight Pro Facewear",
-            "product": "q-rejuvalight-pro-facewear",
-            "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/led-mask.webp",
-            "hover_image": "shopify://shop_images/q-rejuvalight-pro-facewear-hover.webp"
-          }
         }
       },
       "block_order": [
         "hover_image_micro_infusion",
+        "hover_image_facewear",
         "hover_image_neck",
-        "hover_image_helmet",
-        "hover_image_facewear"
+        "hover_image_helmet"
       ],
       "settings": {
         "heading": "<h2>Pay Directly With Your HSA/FSA Card</h2>"
