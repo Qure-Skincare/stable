@@ -199,7 +199,7 @@
           "type": "buy_button",
           "settings": {
             "button_label": "BUY NOW & SAVE UP TO 70%",
-            "button_url": ""
+            "button_url": "#purchase-form"
           }
         },
         "certified_box_4EjYh3": {
