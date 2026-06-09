@@ -95,7 +95,7 @@
             "heading": "Q-Rejuvalight Pro Facewear",
             "product": "q-rejuvalight-pro-facewear",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/led-mask.webp",
+            "image": "shopify://shop_images/LED_Mask_with_app_NEW.jpg",
             "hover_image": "shopify://shop_images/q-rejuvalight-pro-facewear-hover.webp"
           }
         },
@@ -105,7 +105,7 @@
             "heading": "Neck & Décolletage LED Device",
             "product": "neck-decolletage-led",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/neck-and-deck.webp",
+            "image": "shopify://shop_images/Neck-Decolletage-LED-Device_box-render_3fa9d83f-8943-44d9-86cd-6ba9dbc9f833.png",
             "hover_image": "shopify://shop_images/neck-and-deck-hover.webp"
           }
         },
@@ -115,8 +115,40 @@
             "heading": "Q-Renew LLLT Helmet",
             "product": "hair-growth-helmet",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/helmet.webp",
+            "image": "shopify://shop_images/helmet_qure_2b9a254b-41cb-4f7a-8e61-bb54601ffb41.webp",
             "hover_image": "shopify://shop_images/helmet-hover.webp"
+          }
+        },
+        "hover_image_HHYB7V": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "",
+            "product": "",
+            "image_text": "none"
+          }
+        },
+        "hover_image_h7Tt7m": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "",
+            "product": "",
+            "image_text": "none"
+          }
+        },
+        "hover_image_RAV6MA": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "",
+            "product": "",
+            "image_text": "none"
+          }
+        },
+        "hover_image_3RHYBj": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "",
+            "product": "",
+            "image_text": "none"
           }
         }
       },
@@ -124,7 +156,11 @@
         "hover_image_micro_infusion",
         "hover_image_facewear",
         "hover_image_neck",
-        "hover_image_helmet"
+        "hover_image_helmet",
+        "hover_image_HHYB7V",
+        "hover_image_h7Tt7m",
+        "hover_image_RAV6MA",
+        "hover_image_3RHYBj"
       ],
       "settings": {
         "heading": "<h2>Pay Directly With Your HSA/FSA Card</h2>"
