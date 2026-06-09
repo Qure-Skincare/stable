@@ -56,7 +56,7 @@
         "image": "shopify://shop_images/flex.webp",
         "image_mobile": "shopify://shop_images/flex-mob.webp",
         "button_label": "Shop Eligible Products",
-        "button_url": "#best_sellers"
+        "button_url": "#best-sellers"
       }
     },
     "n_how-it-works-content_hsa_fsa": {
