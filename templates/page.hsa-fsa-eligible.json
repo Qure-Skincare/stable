@@ -79,6 +79,26 @@
     "n_best_sellers_hsa_fsa": {
       "type": "n_best-sellers",
       "blocks": {
+        "hover_image_micro_infusion": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Breakout Control Advanced",
+            "product": "breakout-control-advanced1",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/Breakout_Control_Advanced_8dc0326a-e0a1-4f02-88b7-009e9b085649.png",
+            "hover_image": "shopify://shop_images/Mask_Acne_B_A_bff619dc-0c2c-4a1f-903d-57ca3a055a22.png"
+          }
+        },
+        "hover_image_neck": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Neck & Décolletage LED Device",
+            "product": "breakout-control-essential",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/neck-and-deck.webp",
+            "hover_image": "shopify://shop_images/neck-and-deck-hover.webp"
+          }
+        },
         "hover_image_helmet": {
           "type": "hover_image",
           "settings": {
@@ -98,33 +118,13 @@
             "image": "shopify://shop_images/q-rejuvalight-pro-facewear.webp",
             "hover_image": "shopify://shop_images/q-rejuvalight-pro-facewear-hover.webp"
           }
-        },
-        "hover_image_neck": {
-          "type": "hover_image",
-          "settings": {
-            "heading": "Neck & Décolletage LED Device",
-            "product": "neck-decolletage-led",
-            "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/neck-and-deck.webp",
-            "hover_image": "shopify://shop_images/neck-and-deck-hover.webp"
-          }
-        },
-        "hover_image_micro_infusion": {
-          "type": "hover_image",
-          "settings": {
-            "heading": "Breakout Control Advanced",
-            "product": "breakout-control-advanced1",
-            "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/Breakout_Control_Advanced_8dc0326a-e0a1-4f02-88b7-009e9b085649.png",
-            "hover_image": "shopify://shop_images/Mask_Acne_B_A_bff619dc-0c2c-4a1f-903d-57ca3a055a22.png"
-          }
         }
       },
       "block_order": [
-        "hover_image_helmet",
-        "hover_image_facewear",
+        "hover_image_micro_infusion",
         "hover_image_neck",
-        "hover_image_micro_infusion"
+        "hover_image_helmet",
+        "hover_image_facewear"
       ],
       "settings": {
         "heading": "<h2>Pay Directly With Your HSA/FSA Card</h2>"
