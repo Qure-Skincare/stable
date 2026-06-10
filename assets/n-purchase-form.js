@@ -142,7 +142,9 @@ document.addEventListener('DOMContentLoaded', function() {
         toogleTab(block_id);
 
         setTimeout(() => {
-            purchase_form_event(__section, this, product_variant_id);
+            if (typeof purchase_form_event === 'function') {
+                purchase_form_event(__section, this, product_variant_id);
+            }
         }, 500)
     }
 
