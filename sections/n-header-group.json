@@ -40,9 +40,9 @@
           "type": "slider",
           "settings": {
             "countdown": false,
-            "text": "<p>Micro-Infusion Offer - Save Up to <strong>70%</strong></p>",
+            "text": "<p><strong>Father’s Day Offer </strong>- Save Up to <strong>70%</strong></p>",
             "button_label": "Shop Now",
-            "button_url": "https://qureskincare.com/pages/microinfusion",
+            "button_url": "https://qureskincare.com/pages/qure-microinfusion-offer-men",
             "from": "",
             "days": 5
           }
