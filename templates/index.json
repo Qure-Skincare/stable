@@ -438,6 +438,31 @@
         "button_url": ""
       }
     },
+    "n_index-daily-cleanser": {
+      "type": "n_index-daily-cleanser",
+      "blocks": {
+        "gift_1": {
+          "type": "gift",
+          "settings": {
+            "image": "shopify://shop_images/daily-cleanser-gift.webp",
+            "badge_text": "Free Gift"
+          }
+        }
+      },
+      "block_order": [
+        "gift_1"
+      ],
+      "name": "t:sections.n_index-daily-cleanser.name",
+      "disabled": true,
+      "settings": {
+        "text": "<h3>Daily Cleanser</h3><p>50% Glycerin. <strong>No Dryness.</strong> No Tightness.</p>",
+        "badge_text": "NEW",
+        "button_label": "Buy Now",
+        "button_url": "https://qureskincare.com/products/cleanser",
+        "image": "shopify://shop_images/daily-cleanser-bg.webp",
+        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp"
+      }
+    },
     "n_index-top-rated": {
       "type": "n_index-top-rated",
       "blocks": {
@@ -872,6 +897,7 @@
     "n_index-quick-title-links",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
+    "n_index-daily-cleanser",
     "n_index-top-rated",
     "n_index-get-qure",
     "n_features_marquee_qXW6Gd",
