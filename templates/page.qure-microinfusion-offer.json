@@ -111,7 +111,6 @@
         "approved_by_3",
         "approved_by_4"
       ],
-      "disabled": false,
       "custom_css": [],
       "settings": {
         "use_own_file": false,
@@ -167,7 +166,6 @@
         "approved_by_3",
         "approved_by_4"
       ],
-      "disabled": false,
       "settings": {
         "use_own_file": false,
         "hidden": true,
@@ -1255,7 +1253,7 @@
         "payment_type_3zQTmH": {
           "type": "payment_type",
           "settings": {
-            "image": "shopify://shop_images/logos_701eef24-0061-4d41-8688-ce69887aace9.svg"
+            "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
