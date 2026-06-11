@@ -541,6 +541,7 @@
         },
         "faq_item_awj7Em": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "How do you open the serum ampoule?",
