@@ -508,6 +508,9 @@
       }
     }
   },
+  "n-upsell-card": {
+    "button-label": "Buy Now"
+  },
   "404": {
     "settings": {
       "header": "Oops",

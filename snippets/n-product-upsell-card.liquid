@@ -1,0 +1,48 @@
+{% doc %}
+  Renders an upsell card for the product-header section
+
+  @param {object} section - A section object.
+  @param {object} block - A block object.
+
+  @example
+  {% include 'n-product-upsell-card' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'upsell-card' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if block != blank and block.settings.product != blank %}
+    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'product-upsell-card-' %}
+
+    <div class="c-upsell-card">
+        <picture>
+            <img src="{{ product_featured_image | img_url: '400x' }}" alt="{{ product_title | escape }}" />
+        </picture>
+        {% if block.settings.badge_text != blank %}
+            <small>{{ block.settings.badge_text }}</small>
+        {% endif %}
+        {{ block.settings.text }}
+        <div class="e-price">
+            <div class="e-price__main">
+                <div class="e-price__current">{{ product_sale_price }}</div>
+                {% if product_before_price != blank %}
+                    <div class="e-price__old">{{ product_before_price }}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% if product_available == true %}
+            <a href="#" class="js-upsell-card-cta" data-variant-id="{{ product_variant_id }}">{{ 'n-upsell-card.button-label' | t }}</a>
+        {% endif %}
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-upsell-card.js', '{{ 'n-product-upsell-card.js' | asset_url }}');
+        });
+    </script>
+{% endif %}

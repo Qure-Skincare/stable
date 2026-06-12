@@ -47,6 +47,7 @@
             {% include 'n-product-page-blocks-render' %}
         </div>
         <div class="hero-product__extra">
+            {% include 'n-product-upsell-card' %}
             {% include 'n-product-page-cross-sell', product: product %}
             {% render 'n-product-page-collapsed', product: product, page: page %}
             {% render 'n-product-page-jumpto', section: section %}
@@ -354,6 +355,28 @@
                 },
                 {
                     "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "upsell-card",
+            "name": "Upsell card",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "text",
+                    "id": "badge_text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "html",
                     "id": "text",
                     "label": "t:common.text"
                 }

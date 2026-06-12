@@ -21,11 +21,20 @@
           "settings": {
             "section_id": "purchase-form-landing"
           }
+        },
+        "upsell_card_blue": {
+          "type": "upsell-card",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear-blue-serum",
+            "badge_text": "Bundle & Save",
+            "text": "<h6>Qure LED Routine Set</h6><p>Visibly reduce redness and signs of aging with our Q-Rejuvalight Pro LED Mask and Blue+ Face Serum duo.</p>"
+          }
         }
       },
       "block_order": [
         "description_iPBNaS",
-        "section_A0"
+        "section_A0",
+        "upsell_card_blue"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
