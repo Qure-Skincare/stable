@@ -17,6 +17,23 @@
                     {% endif %}
                 {% endfor %}
             </ol>
+            {%- liquid
+              assign complete_system_rendered_count = 0
+              for block in section.blocks
+                if block.type == 'product'
+                  assign cs_count_product = block.settings.product
+                  if cs_count_product != blank and cs_count_product.id == blank
+                    assign cs_count_product = all_products[block.settings.product]
+                  endif
+                  if cs_count_product != blank and cs_count_product.available
+                    assign complete_system_rendered_count = complete_system_rendered_count | plus: 1
+                  endif
+                endif
+              endfor
+              if complete_system_rendered_count < 1
+                assign complete_system_rendered_count = 1
+              endif
+            -%}
             <div class="complete-system__items">
                 <div
                     class="c-swiper"
@@ -40,7 +57,7 @@
                                     "spaceBetween": 24
                                 },
                                 "992": {
-                                    "slidesPerView": 4
+                                    "slidesPerView": {{ complete_system_rendered_count }}
                                 }
                             }
                         }'>
