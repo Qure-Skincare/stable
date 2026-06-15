@@ -47,10 +47,10 @@
         "nextships_BtDkBp": {
           "type": "nextships",
           "settings": {
-            "date": "8th June",
+            "date": "30th June",
             "percent": 71,
-            "date_soldout": "25th May",
-            "date_reserved": "8th June"
+            "date_soldout": "8th June",
+            "date_reserved": "30th June"
           }
         },
         "reviews-videos": {
@@ -619,7 +619,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "17574113984fdd4547": {

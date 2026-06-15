@@ -1,0 +1,96 @@
+{% doc %}
+    Renders a daily cleanser section for the index page
+{% enddoc %}
+
+<!-- DAILY CLEANSER -->
+<section class="daily-cleanser">
+    <picture>
+        {% if section.settings.image != blank %}
+            <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+        {% endif %}
+        {% if section.settings.image_mobile != blank %}
+            <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+        {% endif %}
+    </picture>
+    <div class="container">
+        <article>
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ section.settings.badge_text }}</div>
+            {% endif %}
+            {{ section.settings.text }}
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+            {% endif %}
+        </article>
+    </div>
+    {% for block in section.blocks %}
+        {% if block.type == 'gift' %}
+            <div class="free-gift">
+                {% if block.settings.badge_text != blank %}
+                    <div class="e-pill-badge e-pill-badge--fill">{{ block.settings.badge_text }}</div>
+                {% endif %}
+                {% if block.settings.image != blank %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
+<!-- DAILY CLEANSER END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_index-daily-cleanser.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "gift",
+            "name": "t:common.gift",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "badge_text",
+                    "label": "t:common.badge-text"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

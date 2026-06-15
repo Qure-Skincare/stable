@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "page_header_jUJySS": {
       "type": "n-product-header",
@@ -92,8 +92,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "Get Smoother, Glowing Skin",
-        "button-url": "#purchase-form",
-        "use_own_file": false
+        "button-url": "#purchase-form"
       }
     },
     "n_press_reviews_y63L78": {

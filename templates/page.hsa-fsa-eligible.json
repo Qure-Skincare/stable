@@ -52,10 +52,11 @@
         "modifier": "flex",
         "heading": "<h1>[qure] [thin_cross] [flex]</h1>",
         "text": "<p>Qure has partnered with Flex so you can use your HSA or FSA pre-tax dollars on eligible Qure products, from clinically validated skincare devices to dermatologist-approved at-home treatments.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/flex.webp",
         "image_mobile": "shopify://shop_images/flex-mob.webp",
         "button_label": "Shop Eligible Products",
-        "button_url": "#"
+        "button_url": "#best-sellers"
       }
     },
     "n_how-it-works-content_hsa_fsa": {
@@ -67,24 +68,25 @@
     "n_text_hsa_fsa": {
       "type": "n_text",
       "settings": {
+        "use_own_file": false,
         "modifier": "flex",
-        "text": "<p>[div]</p><p>[qure]</p><p>[thin_cross]</p><p>[flex]</p><p>[/div]</p><h4>Spend HSA/FSA funds on your dermatologist-recommended</h4>",
+        "text": "<p>[div]</p><p>[qure]</p><p>[thin_cross]</p><p>[flex]</p><p>[/div]</p><h4>Spend HSA/FSA funds on your dermatologist-recommended products</h4>",
         "button_label": "Learn how it works",
-        "button_url": "#",
+        "button_url": "#faq",
         "arrow_button": true
       }
     },
     "n_best_sellers_hsa_fsa": {
       "type": "n_best-sellers",
       "blocks": {
-        "hover_image_helmet": {
+        "hover_image_micro_infusion": {
           "type": "hover_image",
           "settings": {
-            "heading": "Q-Renew LLLT Helmet",
-            "product": "hair-growth-helmet",
+            "heading": "Breakout Control Advanced",
+            "product": "breakout-control-advanced1",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/helmet.webp",
-            "hover_image": "shopify://shop_images/helmet-hover.webp"
+            "image": "shopify://shop_images/Breakout_Control_Advanced_8dc0326a-e0a1-4f02-88b7-009e9b085649.png",
+            "hover_image": "shopify://shop_images/Mask_Acne_B_A_bff619dc-0c2c-4a1f-903d-57ca3a055a22.png"
           }
         },
         "hover_image_facewear": {
@@ -93,7 +95,7 @@
             "heading": "Q-Rejuvalight Pro Facewear",
             "product": "q-rejuvalight-pro-facewear",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/q-rejuvalight-pro-facewear.webp",
+            "image": "shopify://shop_images/LED_Mask_with_app_NEW.jpg",
             "hover_image": "shopify://shop_images/q-rejuvalight-pro-facewear-hover.webp"
           }
         },
@@ -103,26 +105,70 @@
             "heading": "Neck & Décolletage LED Device",
             "product": "neck-decolletage-led",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/neck-and-deck.webp",
+            "image": "shopify://shop_images/Neck-Decolletage-LED-Device_box-render_3fa9d83f-8943-44d9-86cd-6ba9dbc9f833.png",
             "hover_image": "shopify://shop_images/neck-and-deck-hover.webp"
           }
         },
-        "hover_image_micro_infusion": {
+        "hover_image_helmet": {
           "type": "hover_image",
           "settings": {
-            "heading": "Micro-Infusion Facial System",
-            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "heading": "Q-Renew LLLT Helmet",
+            "product": "hair-growth-helmet",
             "image_text": "hsa-fsa",
-            "image": "shopify://shop_images/micro-infusion.webp",
-            "hover_image": "shopify://shop_images/micro-infusion-hover.webp"
+            "image": "shopify://shop_images/helmet_qure_2b9a254b-41cb-4f7a-8e61-bb54601ffb41.webp",
+            "hover_image": "shopify://shop_images/helmet-hover.webp"
+          }
+        },
+        "hover_image_HHYB7V": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles)",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/MI_1.5_3month_DS.jpg",
+            "hover_image": "shopify://shop_images/Frame_1073714796_2.png"
+          }
+        },
+        "hover_image_h7Tt7m": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Shower Filter",
+            "product": "shower-filter",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/Frame_1073714796_10.webp",
+            "hover_image": "shopify://shop_images/exclusive-offer-shower.webp"
+          }
+        },
+        "hover_image_RAV6MA": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Faucet Filter",
+            "product": "faucet-filter",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/faucet_qure.webp",
+            "hover_image": "shopify://shop_images/faucet-filter-hover.webp"
+          }
+        },
+        "hover_image_3RHYBj": {
+          "type": "hover_image",
+          "settings": {
+            "heading": "Dermal Mist",
+            "product": "dermal-mist",
+            "image_text": "hsa-fsa",
+            "image": "shopify://shop_images/Dermal-mist-product-and-bottle-e-com-edited.jpg",
+            "hover_image": "shopify://shop_images/Dermal_Mist_Acne_4f4cb31d-5186-47ca-856d-df58f0f8825e.png"
           }
         }
       },
       "block_order": [
-        "hover_image_helmet",
+        "hover_image_micro_infusion",
         "hover_image_facewear",
         "hover_image_neck",
-        "hover_image_micro_infusion"
+        "hover_image_helmet",
+        "hover_image_HHYB7V",
+        "hover_image_h7Tt7m",
+        "hover_image_RAV6MA",
+        "hover_image_3RHYBj"
       ],
       "settings": {
         "heading": "<h2>Pay Directly With Your HSA/FSA Card</h2>"
@@ -165,6 +211,13 @@
             "heading": "I don’t have an HSA or FSA card. Can I still use my HSA/FSA funds?",
             "text": "<p>Yes. You can pay with a regular credit or debit card at checkout, and Flex will email you an itemized receipt that you can submit to your HSA or FSA provider for reimbursement. The process typically takes 5–10 business days depending on your plan.</p>"
           }
+        },
+        "accordion_i79L8Q": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is a Letter of Medical Necessity? (LOMN)",
+            "text": "<p>A Letter of Medical Necessity (LMN) is a document written by a healthcare provider that explains why a specific medical service, treatment, or equipment is necessary for a patient's health.</p><p>In relation to an HSA (Health Savings Account) or FSA (Flexible Spending Account), an LMN is often required for reimbursement of expenses that are not clearly defined as eligible under the standard IRS guidelines.</p>"
+          }
         }
       },
       "block_order": [
@@ -172,12 +225,13 @@
         "accordion_2",
         "accordion_3",
         "accordion_4",
-        "accordion_5"
+        "accordion_5",
+        "accordion_i79L8Q"
       ],
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don’t see your question? ",
+        "text": "Don’t see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }

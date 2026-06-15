@@ -144,33 +144,6 @@
         "button_url": "shopify://collections/best-sellers"
       }
     },
-    "n_across_image_banner_jUysh7T": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "badge_NVnWab": {
-          "type": "badge",
-          "settings": {
-            "badge_text": "Memorial Day Sale"
-          }
-        }
-      },
-      "block_order": [
-        "badge_NVnWab"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": true,
-        "modifier": "holidays-secondary",
-        "heading": "<h1>Simplify Your Routine Before Summer</h1>",
-        "text": "<p>Stock Up On <strong>All-In-One Face Serum</strong>:<br/>Clinically Backed Ingredients that Help With 5+ Skin Concerns</p>",
-        "sub_text": "<p><em>Limited time offer.</em> Valid for US and UK orders only.</p>",
-        "image": "shopify://shop_images/memorial-day.webp",
-        "image_mobile": "shopify://shop_images/memorial-day-mob.webp",
-        "button_label": "Buy Now & Save Up to 40%",
-        "button_url": "https://qureskincare.com/products/face-serum"
-      }
-    },
     "n_index-quick-title-links": {
       "type": "n_index-quick-title-links",
       "blocks": {
@@ -436,6 +409,31 @@
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
+      }
+    },
+    "n_index-daily-cleanser": {
+      "type": "n_index-daily-cleanser",
+      "blocks": {
+        "gift_1": {
+          "type": "gift",
+          "settings": {
+            "image": "shopify://shop_images/daily-cleanser-gift.webp",
+            "badge_text": "Free Gift"
+          }
+        }
+      },
+      "block_order": [
+        "gift_1"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_index-daily-cleanser.name",
+      "settings": {
+        "text": "<h3>Daily Cleanser</h3><p>50% Glycerin. <strong>No Dryness.</strong> No Tightness.</p>",
+        "badge_text": "NEW",
+        "button_label": "Buy Now",
+        "button_url": "https://qureskincare.com/products/cleanser",
+        "image": "shopify://shop_images/daily-cleanser-bg.webp",
+        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp"
       }
     },
     "n_index-top-rated": {
@@ -868,10 +866,10 @@
     "n_index-quick-links",
     "n_across_image_banner_fathers_day",
     "n_across_image_banner_TNGNLJ",
-    "n_across_image_banner_jUysh7T",
     "n_index-quick-title-links",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
+    "n_index-daily-cleanser",
     "n_index-top-rated",
     "n_index-get-qure",
     "n_features_marquee_qXW6Gd",

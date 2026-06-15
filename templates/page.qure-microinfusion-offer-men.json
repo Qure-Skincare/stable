@@ -89,8 +89,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "Get Smoother Skin",
-        "button-url": "#purchase-form",
-        "approved": false
+        "button-url": "#purchase-form"
       }
     },
     "n_press_reviews_cxhHAa": {
@@ -189,7 +188,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "green",
-        "text": "ONLY FACIAL TREATMENTS YOUR SKIN NEEDS",
+        "text": "Father's Day Promo!",
         "text_mobile": "Available until stocks last!"
       }
     },
@@ -200,7 +199,7 @@
           "type": "buy_button",
           "settings": {
             "button_label": "BUY NOW & SAVE UP TO 70%",
-            "button_url": ""
+            "button_url": "#purchase-form"
           }
         },
         "certified_box_4EjYh3": {
@@ -502,7 +501,6 @@
         },
         "slider_TnmTax": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "heading": "<p>“One of the best ways to help improve the look of hyperpigmentation at home.”</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark]Board-Certified Dermatologist</p>",
@@ -513,7 +511,6 @@
         },
         "slider_Bjgafk": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "heading": "<p>“With Micro-Infusion, you may notice visible results quickly after your first treatment.”</p>",
             "text": "<p>Dr. Davin Lim</p><p>[checkmark]Board-Certified Dermatologist</p>",
@@ -899,8 +896,8 @@
       "settings": {
         "use_own_file": false,
         "modifier": "dark",
-        "text": "INCLUDED IN THE SYSTEM:",
-        "text_mobile": "INCLUDED IN THE SYSTEM:"
+        "text": "Father's Day Promo",
+        "text_mobile": "Father's Day Promo"
       }
     },
     "n_science_backed_HPyFrt": {
@@ -1047,10 +1044,10 @@
         "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
-            "date": "21 January",
-            "percent": 55,
-            "date_soldout": "7 January",
-            "date_reserved": "8 January"
+            "date": "26th June",
+            "percent": 95,
+            "date_soldout": "26th May",
+            "date_reserved": "26th June"
           }
         },
         "payment_type_3zQTmH": {
@@ -1082,13 +1079,13 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Promo",
+            "heading": "6 Month Supply Father's Day Promo (Pre-Order)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DS.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 12,
-            "left_items": 164,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1101,13 +1098,13 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "preselected": false,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply (Pre-Order)",
             "subheading": "(6 Treatments)",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
             "soldout": false,
-            "preorder": false,
+            "preorder": true,
             "total_treatments": 6,
-            "left_items": 201,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1123,7 +1120,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -1151,7 +1148,7 @@
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "preselected": true,
-            "heading": "6 Month Supply Promo",
+            "heading": "6 Month Supply Father's Day Promo",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "soldout": false,
@@ -1192,7 +1189,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "image": "shopify://shop_images/MI_1_month_W.webp",
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -1220,13 +1217,13 @@
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "preselected": true,
-            "heading": "6 Month Supply Promo",
+            "heading": "6 Month Supply Father's Day Promo (Pre-Order)",
             "subheading": "(12 Treatments)",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
-            "left_items": 47,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",

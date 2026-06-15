@@ -372,6 +372,19 @@
             "product_title": ""
           }
         },
+        "slider_whdTd9": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_51.webp",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Terra S.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>I opted in for the red-light therapy</strong></p><p>“I really wanted to address the hormonal acne on my chin so I opted in for the red-light therapy and I bought the microneedling kit due to my smile lines and the start of fine lines on my forehead.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_7jpqCr": {
           "type": "slider",
           "settings": {
@@ -561,6 +574,7 @@
       "block_order": [
         "slider_eyGA9z",
         "slider_HYJYjr",
+        "slider_whdTd9",
         "slider_7jpqCr",
         "slider_wEyeMx",
         "slider_LXdKBJ",
@@ -1385,7 +1399,8 @@
         "modifier": "none",
         "text": "<h2>Confident skin starts here</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "1707653061bd3707e6": {
