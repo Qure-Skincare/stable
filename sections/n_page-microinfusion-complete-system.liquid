@@ -25,7 +25,7 @@
                   if cs_count_product != blank and cs_count_product.id == blank
                     assign cs_count_product = all_products[block.settings.product]
                   endif
-                  if cs_count_product != blank and cs_count_product.available
+                  if cs_count_product != blank
                     assign complete_system_rendered_count = complete_system_rendered_count | plus: 1
                   endif
                 endif
@@ -70,7 +70,7 @@
                                     assign product = all_products[block.settings.product]
                                   endif
                                 -%}
-                                {% if product != blank and product.available %}
+                                {% if product != blank %}
                                 {% assign product_url = product.url %}
                                 {% assign product_title = product.title %}
                                 {% assign product_media = product.media %}
