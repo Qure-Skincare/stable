@@ -13,10 +13,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    document.querySelectorAll('.' + __section + ' .e-pill-tabs--selector').forEach(function(element) {
+        element.addEventListener('click', function(e) {
+            initTemplate(getProductType());
+        });
+    });
+
     function initTemplate(source) {
         if(!source) return;
 
-        const template_form = document.getElementById(__form + '-source-' + source);
+        let template_name = __form + '-source-' + source;
+
+        if(__form == 'purchase-form-subscription') {
+            let checkedInput = document.querySelector('.' + __section + ' input[type="radio"][name="delivery-type"]:checked');
+            if(checkedInput) {
+                if(checkedInput.value == 'subscription') {
+                    template_name = __form + '-source-' + source + '-subscription';
+                }
+            }
+        }
+
+        const template_form = document.getElementById(template_name);
         const target = document.getElementById(__form + '-body-' + __section);
 
         if (template_form && target) {
@@ -99,12 +116,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const product_variant_id = this.getAttribute("data-product_variant_id");
         const soldout = this.getAttribute("data-soldout");
         const preorder = this.getAttribute("data-preorder");
+        const product_selling_plan = this.getAttribute("data-product-selling-plan");
         const block_id = this.getAttribute("data-block-id");
 
         updateProductFormButton(product_variant_id, soldout);
         clearPreorderBoxes();
         tooglePreorderBox(preorder, product_variant_id);
         backInStock(soldout);
+        subscriptionForm(this,product_selling_plan);
 
         const purchase_form_pay_in_full = document.querySelector('.' + __section + " .purchase_form_pay_in_full");
         if (purchase_form_pay_in_full) {
@@ -144,6 +163,31 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             purchase_form_event(__section, this, product_variant_id);
         }, 500)
+    }
+
+
+    function subscriptionForm(element, product_selling_plan) {
+        if(__form == 'purchase-form-subscription') {
+
+            const details = document.getElementById('subscription-details');
+
+            if(details) {
+                if(product_selling_plan) {
+                    details.classList.remove('hide');
+                }
+                else {
+                    details.classList.add('hide');
+                }
+            }
+
+            const form = document.querySelector('.' + __section + ' .c-order-button form[action="/cart/add"]');
+            if (!form) return;
+
+            const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
+            if (!sellingPlanInput) return;
+
+            sellingPlanInput.value = product_selling_plan;
+        }
     }
 
 
