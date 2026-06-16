@@ -99,6 +99,7 @@
                                         data-complete-item
                                         data-product-id="{{ product.id }}"
                                         data-selected-variant-id="{{ complete_system_variant.id }}"
+                                        data-variant-available="{{ complete_system_variant.available }}"
                                     >
                                         <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
                                             {% if product_media.size > 0 %}

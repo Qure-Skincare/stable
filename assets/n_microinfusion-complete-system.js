@@ -13,7 +13,8 @@ function initNMicroinfusionCompleteSystem() {
     var items = [];
     cards.forEach(function (card) {
       var selectedId = parseInt(card.getAttribute('data-selected-variant-id'), 10);
-      if (selectedId) {
+      var isAvailable = card.getAttribute('data-variant-available') !== 'false';
+      if (selectedId && isAvailable) {
         items.push({ id: selectedId, quantity: 1 });
       }
     });
