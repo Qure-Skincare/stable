@@ -18,9 +18,6 @@
     "europe": {
       "parent": "@default"
     },
-    "germany": {
-      "parent": "@default"
-    },
     "us": {
       "parent": "@default"
     },
