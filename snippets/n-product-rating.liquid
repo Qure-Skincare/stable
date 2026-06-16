@@ -2,15 +2,27 @@
   Renders a product rating snippet for the product-header section.
 
   @param {object} product - A string value.
+  @param {string} rating_text - A string value.
+  @param {string} rating_type - 'dermatologists' shows the "Backed by Dermatologists" variant.
 
   @example
-  {% render 'n-product-rating', product: '', rating_text: '' %}
+  {% render 'n-product-rating', product: '', rating_text: '', rating_type: '' %}
 {% enddoc %}
 
 {% assign rating_value = product.metafields.reviews.rating.value %}
 {% assign rating_count = product.metafields.reviews.rating_count.value %}
 
-{% if rating_count > 5 %}
+{% if rating_type == 'dermatologists' %}
+    {% if rating_count > 5 %}
+        {% assign show_rating = rating_value | slice: 0, 3 %}
+    {% else %}
+        {% assign show_rating = '4.8' %}
+    {% endif %}
+    <div class="c-rating">
+      <div class="e-rating-stars" style="--rating: {{ show_rating }}"></div>
+      <span>{{ 'product.settings.n-product-rating.dermatologists' | t }}</span>
+    </div>
+{% elsif rating_count > 5 %}
     {% assign show_rating = rating_value | slice: 0, 3 %}
     <div class="c-rating c-rating--bg">
       <div class="e-rating-stars" style="--rating: {{ show_rating }}"></div>

@@ -47,6 +47,7 @@
         "exclusive-offer": "Exclusive-offer",
         "exclusive-offer-bundle": "Exclusive bundle offer",
         "upsell-popup": "Upsell popup",
+        "upsell-card": "Upsell card",
         "delivery": "Delivery",
         "subscription": "Subscription",
         "onetime": "Onetime",
@@ -116,6 +117,9 @@
         "text-mobile": "Text mobile",
         "rating": "Rating",
         "rating-text": "Rating text",
+        "rating-type": "Rating type",
+        "rated-by-customers": "Rated by Customers",
+        "backed-by-dermatologists": "Backed by Dermatologists",
         "link-text": "Link text",
         "image-header": "Image header",
         "image-text": "Image text",
@@ -797,8 +801,7 @@
             "blocks": {
                 "product": {
                     "settings": {
-                        "variant_title": "Variant title",
-                        "variant_title_info": "Optional. Enter the exact variant title from the product (e.g. White / 1 Month). If empty or not found, first available variant is used."
+                        "variant_title": "Variant title"
                     }
                 }
             }

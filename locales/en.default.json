@@ -462,7 +462,8 @@
         "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
       },
       "n-product-rating": {
-        "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</small>"
+        "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</small>",
+        "dermatologists": "Backed by Dermatologists"
       },
       "product-buy-button-sticky": {
         "color": "Set color",
@@ -506,6 +507,9 @@
         "continue": "Continue to Cart"
       }
     }
+  },
+  "n-upsell-card": {
+    "button-label": "Buy Now"
   },
   "404": {
     "settings": {
@@ -626,7 +630,7 @@
       "pay-full": "Pay in full",
       "onetime": "One-Time Purchase",
       "subscribe": "Subscribe",
-      "subscribe_percent": "75%",
+      "subscribe_percent": "70%",
       "subscribe_text": "Auto-ships · Cancel anytime · No commitment",
       "onetime-payment": "One-time payment with:",
       "subscription-onetime-option": "One Time:",

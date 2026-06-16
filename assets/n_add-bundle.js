@@ -1,10 +1,3 @@
-/**
- * Add bundle — batch add from data-cart-items (JSON array of { id, quantity }).
- * Uses window.CartDrawer.addToCartJson when present (theme cart drawer).
- *
- * Must run when document is already complete: this file is often loaded via
- * loadScriptOnce() after DOMContentLoaded has already fired.
- */
 function installNAddBundleTouchPrimaryPress(btn) {
   if (btn.dataset.nAddBundleTouchPress === '1') return;
   if (!window.matchMedia('(hover: none)').matches) return;
@@ -73,32 +66,28 @@ function initNAddBundle() {
       var done = function () {
         delete btn.dataset.nAddBundleBusy;
       };
-      if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
-        Promise.resolve(window.CartDrawer.addToCartJson(items)).then(done).catch(done);
-      } else {
-        var root =
-          window.Shopify && window.Shopify.routes && window.Shopify.routes.root
-            ? window.Shopify.routes.root
-            : '/';
-        fetch(root + 'cart/add.js', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ items: items })
+      var root =
+        window.Shopify && window.Shopify.routes && window.Shopify.routes.root
+          ? window.Shopify.routes.root
+          : '/';
+      items
+        .reduce(function (chain, item) {
+          return chain.then(function () {
+            return fetch(root + 'cart/add.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ items: [item] }),
+              credentials: 'same-origin'
+            }).catch(function () {});
+          });
+        }, Promise.resolve())
+        .then(function () {
+          document.dispatchEvent(
+            new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartJson' } })
+          );
         })
-          .then(function (r) {
-            return r.json().then(function (data) {
-              if (!r.ok) return Promise.reject(data);
-              return data;
-            });
-          })
-          .then(function () {
-            document.dispatchEvent(
-              new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartJson' } })
-            );
-          })
-          .catch(function () {})
-          .finally(done);
-      }
+        .catch(function () {})
+        .finally(done);
     });
   });
 }
