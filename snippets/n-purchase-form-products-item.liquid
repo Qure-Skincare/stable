@@ -42,7 +42,11 @@
                         {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
 
                         {% if block.settings.total_treatments > 0 %}
-                            {% assign product_price_per_item = product_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                            {% if subscription_is_on == true %}
+                                {% assign product_price_per_item = product_subscription_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                            {% else %}
+                                {% assign product_price_per_item = product_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                            {% endif %}
                         {% endif %}
 
                         {% capture product-included-dropdown %}
