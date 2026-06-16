@@ -51,6 +51,7 @@
         "subscription": "Subscription",
         "onetime": "Onetime",
         "selling_plan": "Selling plan",
+        "selling_plan_text": "Selling plan text",
         "variant": "Variant",
         "style": "Style",
         "box": "Box",

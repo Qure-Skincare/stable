@@ -136,7 +136,12 @@
                                             </div>
                                         {% endif %}
                                     </div>
-                                    <div class="c-supply-selector__desc">{{ block.settings.subheading }}</div>
+                                    <div class="c-supply-selector__desc">
+                                        {{ block.settings.subheading }}
+                                        {% if subscription_is_on == true and block.settings.product_selling_plan > 0 and block.settings.product_selling_plan_text != blank %}
+                                            [{{ block.settings.product_selling_plan_text }}]
+                                        {% endif %}
+                                    </div>
 
                                     {% if product_discount != blank %}
                                         <div class="c-supply-selector__save">
