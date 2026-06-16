@@ -1,7 +1,3 @@
-/**
- * Microinfusion complete system helpers.
- * Syncs bundle payload from configured variant IDs per card.
- */
 function initNMicroinfusionCompleteSystem() {
   document.querySelectorAll('.complete-system').forEach(function (sectionEl) {
     var bundleButton = sectionEl.querySelector('.js-add-bundle');
@@ -13,8 +9,7 @@ function initNMicroinfusionCompleteSystem() {
     var items = [];
     cards.forEach(function (card) {
       var selectedId = parseInt(card.getAttribute('data-selected-variant-id'), 10);
-      var isAvailable = card.getAttribute('data-variant-available') !== 'false';
-      if (selectedId && isAvailable) {
+      if (selectedId) {
         items.push({ id: selectedId, quantity: 1 });
       }
     });
