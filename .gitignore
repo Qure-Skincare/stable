@@ -18,6 +18,7 @@ release
 
 .cursor
 .playwright-mcp
+.vscode/
 
 # Claude Code
 CLAUDE.md
