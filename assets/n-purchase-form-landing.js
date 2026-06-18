@@ -25,7 +25,7 @@ function __landing__initTemplate(source) {
 
     let template_name = __form_landing + '-source-' + source;
 
-    let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="delivery-type"]:checked');
+    let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="delivery-type-landing"]:checked');
     if(checkedInput) {
         if(checkedInput.value == 'subscription') {
             template_name = __form_landing + '-source-' + source + '-subscription';
