@@ -116,6 +116,32 @@
         },
         {
             "type": "select",
+            "id": "subscription_product",
+            "label": "t:common.subscription_product",
+            "options": [
+                {
+                    "value": "false",
+                    "label": "t:common.false"
+                },
+                {
+                    "value": "true",
+                    "label": "t:common.true"
+                }
+            ],
+            "default": "false"
+        },
+        {
+            "type": "range",
+            "id": "subscription_discount_max_percent",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "t:common.true.subscription_discount_percent",
+            "default": 70
+        },
+        {
+            "type": "select",
             "id": "guarantee_period",
             "label": "t:common.guarantee_period",
             "options": [

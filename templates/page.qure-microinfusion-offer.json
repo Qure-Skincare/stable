@@ -1581,7 +1581,9 @@
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-subscription",
+        "form_name": "purchase-form",
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 70,
         "guarantee_period": "90",
         "available-stocks": false
       }

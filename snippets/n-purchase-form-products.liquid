@@ -3,7 +3,7 @@
 {% endcapture %}
 
 <div class="treatment__step">
-    {% if section.settings.form_name == 'purchase-form-subscription' %}
+    {% if section.settings.subscription_product == 'true' %}
         <div class="treatment__switcher">
             <ul class="e-pill-tabs e-pill-tabs--selector">
                 <li>
@@ -15,7 +15,7 @@
                 <li>
                     <label>
                         <input name="delivery-type" type="radio" value="subscription" checked="checked" />
-                        {{ 'purchase-form.settings.subscribe' | t }} &amp; {{ 'purchase-form.settings.save' | t }}&nbsp;<strong>{{ 'purchase-form.settings.subscribe_percent' | t }}</strong>
+                        {{ 'purchase-form.settings.subscribe' | t }}{% if section.settings.subscription_discount_max_percent > 0 %} &amp; {{ 'purchase-form.settings.save' | t }}&nbsp;<strong>{{ section.settings.subscription_discount_max_percent }}%</strong>{% endif %}
                     </label>
                 </li>
             </ul>
@@ -26,7 +26,7 @@
     <div class="c-supply-selector{% if section.settings.type != 'list' %}  c-supply-selector--tiles{% endif %}">
         <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product' | t }}</p>
 
-        {% if section.settings.form_name == 'purchase-form-subscription' %}
+        {% if section.settings.subscription_product == 'true' %}
             {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
             {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box, subscription_is_on: true %}
             {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box, subscription_is_on: true %}

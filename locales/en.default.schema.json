@@ -10,6 +10,10 @@
  
  {
     "common": {
+        "false": "False",
+        "true": "True",
+        "subscription_product": "Subscription for products",
+        "subscription_discount_max_percent": "Subscription max discount",
         "hidden": "Hidden",
         "hide_bottom": "Hide bottom",
         "hide_certified": "Hide certified-by",

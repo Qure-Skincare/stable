@@ -34,6 +34,32 @@
             },
             {
                 "type": "select",
+                "id": "subscription_product",
+                "label": "t:common.subscription_product",
+                "options": [
+                    {
+                        "value": "false",
+                        "label": "t:common.false"
+                    },
+                    {
+                        "value": "true",
+                        "label": "t:common.true"
+                    }
+                ],
+                "default": "false"
+            },
+            {
+                "type": "range",
+                "id": "subscription_discount_max_percent",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "label": "t:common.true.subscription_discount_percent",
+                "default": 70
+            },
+            {
+                "type": "select",
                 "id": "type",
                 "label": "t:common.type",
                 "options": [
@@ -287,6 +313,11 @@
                         "type": "text",
                         "id": "subheading",
                         "label": "t:common.subheader"
+                    },
+                    {
+                        "type": "text",
+                        "id": "product_selling_plan_text",
+                        "label": "t:common.selling_plan_text"
                     },
                     {
                         "type": "text",
