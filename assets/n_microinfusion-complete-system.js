@@ -1,7 +1,3 @@
-/**
- * Microinfusion complete system helpers.
- * Syncs bundle payload from configured variant IDs per card.
- */
 function initNMicroinfusionCompleteSystem() {
   document.querySelectorAll('.complete-system').forEach(function (sectionEl) {
     var bundleButton = sectionEl.querySelector('.js-add-bundle');

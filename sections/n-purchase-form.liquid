@@ -55,7 +55,11 @@
         </div>
     </div>
 </section>
-<script src="https://qureskincaredns-stable.com/sections/treatment/treatment.js" defer="defer"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("treatment-new", "https://qureskincaredns-stable.com/sections/treatment/treatment.js");
+    });
+</script>
 
 <script src="{{ 'n-purchase-form.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 
@@ -231,6 +235,18 @@
                     "label": "t:common.product"
                 },
                 {
+                    "type": "number",
+                    "id": "product_variant_id",
+                    "label": "t:common.variant",
+                    "default": 0
+                },   
+                {
+                    "type": "number",
+                    "id": "product_selling_plan",
+                    "label": "t:common.selling_plan",
+                    "default": 0
+                },
+                {
                     "type": "checkbox",
                     "id": "preselected",
                     "label": "t:common.preselect",
@@ -247,9 +263,24 @@
                     "label": "t:common.subheader"
                 },
                 {
+                    "type": "text",
+                    "id": "product_selling_plan_text",
+                    "label": "t:common.selling_plan_text"
+                },
+                {
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                },
+                {
+                    "type": "range",
+                    "id": "product_discount_percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "t:common.product_discount",
+                    "default": 0
                 },
                 {
                     "type": "checkbox",

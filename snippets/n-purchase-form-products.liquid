@@ -3,8 +3,35 @@
 {% endcapture %}
 
 <div class="treatment__step">
+    {% if section.settings.form_name == 'purchase-form-subscription' %}
+        <div class="c-selector-switcher c-selector-switcher--dark">
+            <ul class="e-pill-tabs e-pill-tabs--selector">
+                <li>
+                    <label>
+                        <input name="delivery-type" type="radio" value="onetime" />
+                        {{ 'purchase-form.settings.onetime' | t }}
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input name="delivery-type" type="radio" value="subscription" checked="checked" />
+                        {{ 'purchase-form.settings.subscribe' | t }} &amp; {{ 'purchase-form.settings.save' | t }}&nbsp;<strong>{{ 'purchase-form.settings.subscribe_percent' | t }}</strong>
+                    </label>
+                </li>
+            </ul>
+            <p><i class="e-icon e-icon-rotation-2"></i> {{ 'purchase-form.settings.subscribe_text' | t }}</p>
+        </div>
+    {% endif %}
+
     <div class="c-supply-selector{% if section.settings.type != 'list' %}  c-supply-selector--tiles{% endif %}">
         <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product' | t }}</p>
+
+        {% if section.settings.form_name == 'purchase-form-subscription' %}
+            {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
+            {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box, subscription_is_on: true %}
+            {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box, subscription_is_on: true %}
+        {% endif %}
+
         {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box %}
         {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box %}
         {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box %}

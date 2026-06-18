@@ -116,6 +116,8 @@
         {% else %}
           {% assign product_discount = product_price_original | minus: product_subscription_discount_delta | times: 1.0 | divided_by: product_price_original | minus: 1 | abs | times: 100 | ceil %}
         {% endif %}
+
+        {% assign product_price_divided = product_price_original | minus: product_subscription_discount_delta | divided_by: 4 | money_without_trailing_zeros %}
         
         {% if black_friday_discount_percent > 0 %}
           {% assign product_subscription_discount_delta = product_subscription_price_original | times: black_friday_discount_percent | divided_by: 100 %}      

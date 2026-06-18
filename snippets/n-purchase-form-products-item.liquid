@@ -7,6 +7,8 @@
     </style>
 
     {% assign product_counter = 0 %}
+    {% assign subscription_discount_percent = blank %}
+    {% assign product_prefix = 'purchase-form-products-item-' %}
     {% capture preorder-box-items %}{% endcapture %}
     {% capture product-included-dropdown %}{% endcapture %}
 
@@ -14,6 +16,9 @@
         {% assign block = section.blocks | where: "id", __id | first %}
         {% if block.type == 'product_type' %}
             {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
+            {% if subscription_is_on == true %}
+                {% assign product_type_title = product_type_title | append: '-subscription' %}
+            {% endif %}
         {% endif %}
     {%- endfor -%}
 
@@ -23,13 +28,25 @@
                 {% assign block = section.blocks | where: "id", __id | first %}
                 {% if block.type == 'product' %}
                     {% assign product_counter = product_counter | plus: 1 %}
-                    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-products-item-' %}
+
+                    {% if subscription_is_on == true %}
+                        {% if block.settings.product_discount_percent != blank %}
+                            {% assign product_prefix = 'purchase-form-products-item-subscription' %}
+                            {% assign subscription_discount_percent = block.settings.product_discount_percent %}
+                        {% endif %}
+                    {% endif %}
+
+                    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: product_prefix %}
 
                     {% if product_id %}
                         {% assign product_title_tag = block.settings.heading | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
 
                         {% if block.settings.total_treatments > 0 %}
-                            {% assign product_price_per_item = product_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                            {% if subscription_is_on == true %}
+                                {% assign product_price_per_item = product_subscription_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                            {% else %}
+                                {% assign product_price_per_item = product_price_original | divided_by: block.settings.total_treatments | money_without_trailing_zeros %}
+                            {% endif %}
                         {% endif %}
 
                         {% capture product-included-dropdown %}
@@ -45,6 +62,10 @@
                         {% endcapture %}
 
                         {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+
+                        {% if subscription_is_on == true and block.settings.product_selling_plan > 0 %}
+                            {% capture data-per %}{{ 'purchase-form.settings.subscribe-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+                        {% endif %}
 
                         {% if block.settings.preorder == true %}
                             {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
@@ -67,6 +88,9 @@
                             data-preorder="{{ block.settings.preorder }}" 
                             data-product-counter="{{ product_counter }}"
                             data-product-name="{{ block.settings.heading | escape }}",
+                            {% if subscription_is_on == true and block.settings.product_selling_plan > 0 %}
+                            data-product-selling-plan="{{ block.settings.product_selling_plan }}"
+                            {% endif %}
                             {% if block.settings.preselected == true %}
                             data-preselected="{{ block.settings.preselected }}"
                             {% else %}
@@ -89,9 +113,16 @@
                                     <div class="c-supply-selector__price">
                                         <div class="e-price{% if product_before_price != blank %} e-price--highlight{% endif %}{% if black_friday_discount_percent > 0 %} e-price--strikethrough{% endif %}">
                                             <div class="e-price__main">
-                                                <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
-                                                {% if product_before_price != blank %}
-                                                    <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                {% if product_subscription_price != blank %}
+                                                    <div class="e-price__current igSubPrice" data-variant-id="{{ product_variant_id }}">{{ product_subscription_price }}</div>
+                                                    {% if product_before_price != blank %}
+                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                    {% endif %}
+                                                {% else %}
+                                                    <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
+                                                    {% if product_before_price != blank %}
+                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                    {% endif %}
                                                 {% endif %}
                                             </div>
                                         </div>
@@ -105,11 +136,20 @@
                                             </div>
                                         {% endif %}
                                     </div>
-                                    <div class="c-supply-selector__desc">{{ block.settings.subheading }}</div>
+                                    <div class="c-supply-selector__desc">
+                                        {{ block.settings.subheading }}
+                                        {% if subscription_is_on == true and block.settings.product_selling_plan > 0 and block.settings.product_selling_plan_text != blank %}
+                                            {{ block.settings.product_selling_plan_text }}
+                                        {% endif %}
+                                    </div>
 
                                     {% if product_discount != blank %}
                                         <div class="c-supply-selector__save">
-                                            <div class="e-pill-save"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
+                                            {% if product_subscription_price != blank %}
+                                                <div class="e-pill-save e-pill-save--light"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
+                                            {% else %}
+                                                <div class="e-pill-save"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
+                                            {% endif %}
                                         </div>
                                     {% endif %}
                                 </div>
