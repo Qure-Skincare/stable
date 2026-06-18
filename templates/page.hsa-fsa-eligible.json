@@ -218,6 +218,13 @@
             "heading": "What is a Letter of Medical Necessity? (LOMN)",
             "text": "<p>A Letter of Medical Necessity (LMN) is a document written by a healthcare provider that explains why a specific medical service, treatment, or equipment is necessary for a patient's health.</p><p>In relation to an HSA (Health Savings Account) or FSA (Flexible Spending Account), an LMN is often required for reimbursement of expenses that are not clearly defined as eligible under the standard IRS guidelines.</p>"
           }
+        },
+        "accordion_CUgm3V": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I didn’t receive an email from Flex with my itemized receipt and/or letter of medical necessity. What should I do?",
+            "text": "<p>Please check your spam folder, as sometimes emails from <a href=\"mailto:notifications@withflex.com\" title=\"mailto:notifications@withflex.com\">notifications@withflex.com</a> may be automatically filtered as spam by some email service providers. If you still can’t find it, please email <a href=\"mailto:support@withflex.com\" title=\"mailto:support@withflex.com\">support@withflex.com</a> and let them know the email address associated with your order.</p>"
+          }
         }
       },
       "block_order": [
@@ -226,7 +233,8 @@
         "accordion_3",
         "accordion_4",
         "accordion_5",
-        "accordion_i79L8Q"
+        "accordion_i79L8Q",
+        "accordion_CUgm3V"
       ],
       "settings": {
         "use_own_file": false,
