@@ -116,7 +116,7 @@
                                                 {% if product_subscription_price != blank %}
                                                     <div class="e-price__current igSubPrice" data-variant-id="{{ product_variant_id }}">{{ product_subscription_price }}</div>
                                                     {% if product_before_price != blank %}
-                                                        <div class="e-price__old igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
+                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
                                                     {% endif %}
                                                 {% else %}
                                                     <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
@@ -146,7 +146,6 @@
                                     {% if product_discount != blank %}
                                         <div class="c-supply-selector__save">
                                             {% if product_subscription_price != blank %}
-                                                <del class="igComparePrice">{{ product_before_price }}</del>
                                                 <div class="e-pill-save e-pill-save--light"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
                                             {% else %}
                                                 <div class="e-pill-save"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
