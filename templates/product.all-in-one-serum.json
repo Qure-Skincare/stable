@@ -731,10 +731,11 @@
         "background_color": "none",
         "section_id": "",
         "heading": "<h2>Designed to last and built to refill</h2>",
-        "text": "<p>Our new refillable system means less waste and better value over time.</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol>",
+        "text": "<p>Our new refillable system means less waste and better value over time.</p><p>[normal]</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol></p>",
         "image": "",
         "button_label": "",
         "button_url": "",
+        "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp",
         "wistia_url": "tj97vrxlon"
       }
     },
