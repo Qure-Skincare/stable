@@ -100,13 +100,13 @@
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "approved": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -143,6 +143,7 @@
             "preselected": true,
             "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/3-bottles.webp",
             "product_discount_percent": 0,
@@ -165,6 +166,7 @@
             "preselected": false,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/2-bottles.webp",
             "product_discount_percent": 0,
@@ -187,6 +189,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/1-bottle.webp",
             "product_discount_percent": 0,
@@ -221,6 +224,7 @@
             "preselected": true,
             "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
             "product_discount_percent": 20,
@@ -243,6 +247,7 @@
             "preselected": false,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/2-bottles.webp",
             "product_discount_percent": 30,
@@ -265,6 +270,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/1-bottle.webp",
             "product_discount_percent": 10,
@@ -292,7 +298,9 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 70,
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -379,7 +387,8 @@
         "modifier": "none",
         "text": "<h2>Powered by actives, designed for daily use</h2><p>Targets uneven texture, fine lines, and discoloration with clinically-backed ingredients that work together to smooth, firm, and visibly brighten your skin over time.</p>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "n_before_after_accordion_XLxqHG": {
@@ -972,7 +981,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "17575150924facf5ff": {
