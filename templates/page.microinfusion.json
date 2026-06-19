@@ -1980,6 +1980,13 @@
             "heading": "Tranexamic Acid Notice",
             "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:<br/><br/>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, topical TXA in cosmetic formulations is permitted.<br/><br/>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.<br/><br/>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).<br/><br/>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our suport team</a> —we’re happy to help!</p>"
           }
+        },
+        "accordion_R83BDk": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is the 90-day money-back guarantee?",
+            "text": "<p>We're confident you'll love your results. If after 90 days of consistent use you don't notice any improvement in your skin — firmer, brighter, or more youthful-looking — simply contact us and we'll refund your money in full. To qualify, you'll need to submit before-and-after photos taken after each 2-week treatment within the 90-day period.</p>"
+          }
         }
       },
       "block_order": [
@@ -1991,7 +1998,8 @@
         "accordion_CWAkdL",
         "accordion_pNEtik",
         "accordion_NKHMct",
-        "accordion_hrY8T4"
+        "accordion_hrY8T4",
+        "accordion_R83BDk"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
