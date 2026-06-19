@@ -291,7 +291,7 @@
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
+        "subscription_discount_max_percent": 46,
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
