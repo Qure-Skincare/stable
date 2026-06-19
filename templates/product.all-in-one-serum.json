@@ -665,7 +665,7 @@
         "product_faucet_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "faucet-filter",
             "variant_title": "",
             "description": "Wash with filtered water to help boost hydration and reduce the look of irritation.",
             "am_or_pm_1": "am",
@@ -675,7 +675,7 @@
         "product_cleanser_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "Cleanser",
             "variant_title": "",
             "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
             "am_or_pm_1": "am",
@@ -685,7 +685,7 @@
         "product_led_mask_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "q-rejuvalight-pro-facewear",
             "variant_title": "",
             "description": "Daily multi wavelength LED treatment for clearer, firmer-looking skin.",
             "am_or_pm_1": "pm",
@@ -695,7 +695,7 @@
         "product_serum_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "variant_title": "",
             "description": "Brightens, smooths and firms in one step, designed to simplify your routine.",
             "am_or_pm_1": "pm",
