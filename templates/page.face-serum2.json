@@ -127,6 +127,7 @@
         },
         "type_hHPdgJ": {
           "type": "type",
+          "disabled": true,
           "settings": {}
         },
         "product_type_QKQhNr": {
@@ -147,6 +148,7 @@
             "preselected": true,
             "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/3-bottles.webp",
             "product_discount_percent": 0,
@@ -169,6 +171,7 @@
             "preselected": false,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/2-bottles.webp",
             "product_discount_percent": 0,
@@ -191,6 +194,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/1-bottle.webp",
             "product_discount_percent": 0,
@@ -224,6 +228,7 @@
             "preselected": true,
             "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
             "product_discount_percent": 20,
@@ -246,6 +251,7 @@
             "preselected": false,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/2-bottles.webp",
             "product_discount_percent": 11,
@@ -268,6 +274,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/1-bottle.webp",
             "product_discount_percent": 10,
@@ -304,6 +311,8 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -390,7 +399,8 @@
         "modifier": "none",
         "text": "<h2>Powered by actives, designed for daily use</h2><p>Targets uneven texture, fine lines, and discoloration with clinically-backed ingredients that work together to smooth, firm, and visibly brighten your skin over time.</p>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "n_before_after_accordion_XLxqHG": {
@@ -983,7 +993,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "17575150924facf5ff": {
