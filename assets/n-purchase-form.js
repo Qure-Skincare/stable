@@ -24,12 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let template_name = __form + '-source-' + source;
 
-        if(__form == 'purchase-form-subscription') {
-            let checkedInput = document.querySelector('.' + __section + ' input[type="radio"][name="delivery-type"]:checked');
-            if(checkedInput) {
-                if(checkedInput.value == 'subscription') {
-                    template_name = __form + '-source-' + source + '-subscription';
-                }
+        let checkedInput = document.querySelector('.' + __section + ' input[type="radio"][name="delivery-type"]:checked');
+        if(checkedInput) {
+            if(checkedInput.value == 'subscription') {
+                template_name = __form + '-source-' + source + '-subscription';
             }
         }
 
@@ -169,27 +167,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function subscriptionForm(element, product_selling_plan) {
-        if(__form == 'purchase-form-subscription') {
+        const details = document.getElementById('subscription-details');
 
-            const details = document.getElementById('subscription-details');
-
-            if(details) {
-                if(product_selling_plan) {
-                    details.classList.remove('hide');
-                }
-                else {
-                    details.classList.add('hide');
-                }
+        if(details) {
+            if(product_selling_plan) {
+                details.classList.remove('hide');
             }
-
-            const form = document.querySelector('.' + __section + ' .c-order-button form[action="/cart/add"]');
-            if (!form) return;
-
-            const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
-            if (!sellingPlanInput) return;
-
-            sellingPlanInput.value = product_selling_plan;
+            else {
+                details.classList.add('hide');
+            }
         }
+
+        const form = document.querySelector('.' + __section + ' .c-order-button form[action="/cart/add"]');
+        if (!form) return;
+
+        const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
+        if (!sellingPlanInput) return;
+
+        sellingPlanInput.value = product_selling_plan;
     }
 
 

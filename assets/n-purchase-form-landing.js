@@ -12,10 +12,27 @@ document.querySelectorAll('.' + __section_landing + ' .purchase_form_lading_prod
     });
 });
 
+document.querySelectorAll('.' + __section_landing + ' .e-pill-tabs--selector').forEach(function(element) {
+    element.addEventListener('click', function(e) {
+        __landing__initTemplate(__landing__getProductType());
+    });
+});
+
 function __landing__initTemplate(source) {
     if(!source) return;
 
-    const template_form = document.getElementById(__form_landing + '-source-' + source);
+    //const template_form = document.getElementById(__form_landing + '-source-' + source);
+
+    let template_name = __form_landing + '-source-' + source;
+
+    let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="delivery-type-landing"]:checked');
+    if(checkedInput) {
+        if(checkedInput.value == 'subscription') {
+            template_name = __form_landing + '-source-' + source + '-subscription';
+        }
+    }
+
+    const template_form = document.getElementById(template_name);
     const target = document.getElementById(__form_landing + '-body-' + __section_landing);
 
     if (template_form && target) {
@@ -123,29 +140,26 @@ function __landing__handlerProductVariantSelector(e) {
 }
 
 function __landing__SubscriptionForm(element, product_selling_plan) {
-    if(__form_landing == 'purchase-form-landing-subscription') {
-        
-        __landing_updateButtonLabel(element);
+    __landing_updateButtonLabel(element);
 
-        const details = document.getElementById('subscription-details');
+    const details = document.getElementById('subscription-details');
 
-        if(details) {
-            if(product_selling_plan) {
-                details.classList.remove('hide');
-            }
-            else {
-                details.classList.add('hide');
-            }
+    if(details) {
+        if(product_selling_plan) {
+            details.classList.remove('hide');
         }
-
-        const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
-        if (!form) return;
-
-        const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
-        if (!sellingPlanInput) return;
-
-        sellingPlanInput.value = product_selling_plan;
+        else {
+            details.classList.add('hide');
+        }
     }
+
+    const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
+    if (!form) return;
+
+    const sellingPlanInput = form.querySelector('input[name="selling_plan"]');
+    if (!sellingPlanInput) return;
+
+    sellingPlanInput.value = product_selling_plan;
 }
 
 function __landing__BackInStock(soldout) {
