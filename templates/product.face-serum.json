@@ -29,7 +29,6 @@
         },
         "section_A0": {
           "type": "section",
-          "disabled": true,
           "settings": {
             "section_id": "purchase-form-landing"
           }
