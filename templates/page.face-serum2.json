@@ -127,7 +127,6 @@
         },
         "type_hHPdgJ": {
           "type": "type",
-          "disabled": true,
           "settings": {}
         },
         "product_type_QKQhNr": {
@@ -227,7 +226,7 @@
             "best": true,
             "preselected": true,
             "heading": "180 Days Supply",
-            "subheading": "(3 bottles)",
+            "subheading": "(3 bottles) Ships every 6 months",
             "product_selling_plan_text": "",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/3-bottles.webp",
@@ -310,7 +309,7 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "type": "list",
