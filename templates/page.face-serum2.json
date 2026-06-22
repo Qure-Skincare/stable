@@ -308,9 +308,9 @@
         "note_A1"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
+        "form_name": "purchase-form-landing",
         "hide_types": true,
-        "subscription_product": "true",
+        "subscription_product": "false",
         "subscription_discount_max_percent": 40,
         "type": "list",
         "klaviyo_form_name": "",
