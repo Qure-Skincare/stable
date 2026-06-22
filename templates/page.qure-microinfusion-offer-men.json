@@ -84,6 +84,7 @@
         "seo_heading": "",
         "heading": "The go-to skin treatment for the ultimate confidence booster",
         "rating": false,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Helps reduce appearance of fine lines, smooth texture whilst helping to infuse active ingredients into your skin.</li><li>Virtually painless and performed in the comfort and convenience of your home.</li><li>Minimal to no downtime with visible results.</li></ul>",
         "reserved": false,
@@ -188,7 +189,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "green",
-        "text": "Father's Day Promo!",
+        "text": "Available until stocks last!",
         "text_mobile": "Available until stocks last!"
       }
     },
