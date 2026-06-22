@@ -317,7 +317,7 @@
         "guarantee_period": "30",
         "hide_bottom": true,
         "hide_certified": true,
-        "aio_toggle": true
+        "aio_toggle": false
       }
     },
     "n_logos_r846Fz": {
