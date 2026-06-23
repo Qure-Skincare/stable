@@ -56,7 +56,7 @@
         "slider": false,
         "countdown": true,
         "text": "<p>Prime Day Offer - up to <strong>70%</strong> on Micro-Infusion System</p>",
-        "button_label": "SHOP NOW",
+        "button_label": "",
         "button_url": "",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1",
         "from": "2026-06-23",
