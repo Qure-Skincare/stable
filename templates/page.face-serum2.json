@@ -312,12 +312,13 @@
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "all-in-one-face-serum-6-month-bundle",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": true,
-        "hide_certified": true,
-        "aio_toggle": true
+        "hide_certified": true
       }
     },
     "n_logos_r846Fz": {

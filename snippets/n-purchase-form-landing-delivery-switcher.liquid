@@ -1,0 +1,31 @@
+<div class="c-selector-switcher c-selector-switcher--{% if section.settings.delivery_switcher_position == 'header' %}dark{% else %}text{% endif %}">
+    <ul class="e-pill-tabs e-pill-tabs--selector">
+        <li>
+            <label>
+                <input name="delivery-type-landing" type="radio" value="onetime" />
+                {{ 'purchase-form.settings.onetime' | t }}
+                {% unless section.settings.delivery_switcher_position == 'header' %}
+                    {% if section.settings.delivery_switcher_product != blank %}
+                        {% include 'get-product-data', product_handle: section.settings.delivery_switcher_product, product_prefix: 'purchase-form-landing-delivery-switcher-product-' %}
+                        {{ product_sale_price }}
+                    {% endif %}
+                {% endunless %}
+            </label>
+        </li>
+        <li>
+            <label>
+                <input name="delivery-type-landing" type="radio" value="subscription" checked="checked" />
+                {{ 'purchase-form.settings.subscribe' | t }}{% if section.settings.subscription_discount_max_percent > 0 %} &amp; {{ 'purchase-form.settings.save' | t }}&nbsp;<strong>{{ section.settings.subscription_discount_max_percent }}%</strong>{% endif %}
+            </label>
+        </li>
+    </ul>
+    <p><i class="e-icon e-icon-rotation-2"></i> {{ 'purchase-form.settings.subscribe_text' | t }}</p>
+</div>
+
+{% unless section.settings.delivery_switcher_position == 'header' %}
+    <script>
+        let one_time_purchase = '{{ 'purchase-form.settings.onetime' | t }}:';
+        let subscribe_and_save = '{{ 'purchase-form.settings.subscribe-and-save' | t }}';
+    </script>
+    <script src="{{ 'n-purchase-form-landing-delivery-switcher.js' | asset_url }}" defer></script>
+{% endunless %}
