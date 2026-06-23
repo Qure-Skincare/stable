@@ -40,7 +40,7 @@
           "type": "slider",
           "settings": {
             "countdown": false,
-            "text": "<p><strong>Micro Infusion Offer </strong>- Save Up to <strong>70%</strong></p>",
+            "text": "<p>Prime Day Offer - up to <strong>70%</strong> on Micro-Infusion System</p>",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/pages/microinfusion",
             "from": "",
@@ -53,14 +53,14 @@
         "slider_2"
       ],
       "settings": {
-        "slider": true,
-        "countdown": false,
-        "text": "<p><a href=\"https://qureskincare.com/products/face-serum\" title=\"https://qureskincare.com/products/face-serum\"><strong>Memorial Day Sale</strong></a><strong> - </strong>Save Up to 40% on All-In-One Face Serum</p>",
-        "button_label": "",
+        "slider": false,
+        "countdown": true,
+        "text": "<p>Prime Day Offer - up to <strong>70%</strong> on Micro-Infusion System</p>",
+        "button_label": "SHOP NOW",
         "button_url": "",
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1",
-        "from": "2026-06-01",
-        "days": 12
+        "from": "2026-06-23",
+        "days": 4
       }
     },
     "header": {
