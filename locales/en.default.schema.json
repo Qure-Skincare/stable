@@ -488,6 +488,9 @@
         "n_trusted-recommended": {
             "name": "Trusted recommended"
         },
+        "n_trusted-recommended-up": {
+            "name": "Trusted recommended updated"
+        },
         "n_video-slider": {
             "name": "Video slider"
         },

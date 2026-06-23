@@ -1,0 +1,88 @@
+{% doc %}
+  Renders a trusted recommended section
+{% enddoc %}
+
+<!-- BASE SECTION -->
+<section class="base-section base-section--small-media">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            <div class="c-wistia c-wistia--custom c-wistia--is-playing">
+                {% if section.settings.wistia_url != blank %}
+                    <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                        <div class="c-wistia__custom">
+                            <figure>
+                                {% if section.settings.image != blank %}
+                                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if section.settings.text_on_image != blank %}
+                                    <figcaption>
+                                        {{ section.settings.text_on_image | replace: '<p>', '' | replace: '</p>', '' }}
+                                    </figcaption>
+                                {% endif %}
+                            </figure>
+                        </div>
+                    </wistia-player>
+                {% endif %}
+            </div>
+            {% if section.settings.text != blank %}
+                <div>
+                    {{ section.settings.text }}
+                </div>
+            {% endif %}
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge">
+                    <span class="e-checkmark"></span>
+                    {{ section.settings.badge_text }}
+                </div>
+            {% endif %}
+            
+        </article>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("wistia-player", "https://fast.wistia.com/player.js");
+    });
+</script>
+<!-- BASE SECTION END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_trusted-recommended-up.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "richtext",
+            "id": "text_on_image",
+            "label": "t:common.text-on-image"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text",
+            "default": "Dermatologist Reviewed"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        }
+    ]
+}
+{% endschema %}
