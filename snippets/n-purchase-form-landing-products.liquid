@@ -7,7 +7,11 @@
 {% endif %}
 
 <div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}">
-    <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
+    {% if section.settings.delivery_switcher_position == 'header' %}
+        <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
+    {% else %}
+        <p class="c-supply-selector__title">{{ 'purchase-form.settings.subscribe-and-save' | t }}</p>
+    {% endif %}
 
     {% if section.settings.subscription_product == 'true' %}
         {% include 'n-purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}

@@ -12,6 +12,7 @@
         "false": "False",
         "true": "True",
         "delivery_switcher_position": "Delivery switcher position",
+        "delivery_switcher_product": "Delivery switcher product",
         "subscription_discount_max_percent": "Subscription max discount",
         "hidden": "Hidden",
         "hide_bottom": "Hide bottom",
