@@ -201,6 +201,7 @@
         "patches": "Patches",
         "quote": "Quote",
         "quote-mobile": "Quote mobile",
+        "quote-image": "Quote image",
         "content": "Content",
         "additional-content": "Additional content",
         "mobile": "Mobile",
@@ -385,7 +386,8 @@
                     "hero-reverse": "Hero reverse",
                     "sm": "Small banner",
                     "holidays-secondary": "Holidays secondary",
-                    "fathers-day": "Fathers day"
+                    "fathers-day": "Fathers day",
+                    "doctorly": "Doctorly"
                 },
                 "badge-group": {
                     "name": "Badge group"
@@ -399,6 +401,12 @@
                     "settings": {
                         "outside_box": "Outside box"
                     }
+                },
+                "pill": {
+                    "name": "Pill badge (doctorly)"
+                },
+                "bottles": {
+                    "name": "Bottles (doctorly)"
                 }
             }
         },
@@ -690,6 +698,12 @@
         "n_expert-reviews": {
             "name": "Expert reviews"
         },
+        "n_experts-quote": {
+            "name": "Experts quote"
+        },
+        "n_hair-growth-helmet-expert-reviews": {
+            "name": "Hair growth helmet — expert reviews"
+        },
         "n_press-reviews": {
             "name": "Press reviews",
             "settings": {
@@ -962,6 +976,9 @@
                     "name": "Compare HigherDose Red Light Hat"
                 }    
             }
+        },
+        "n_hair-growth-helmet-peek-cards-slider": {
+            "name": "N Peek cards slider for hair growth helmet"
         },
         "results-slider": {
             "name": "Results slider"

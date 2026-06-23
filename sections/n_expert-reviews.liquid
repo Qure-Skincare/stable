@@ -1,99 +1,64 @@
-{% doc %}
-  Renders an expert reviews section
-{% enddoc %}
-
 <!-- EXPERT REVIEWS -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/expert-reviews/expert-reviews.css" />
-{% endif %}
-<section class="expert-reviews expert-reviews--old-page">
+<section class="expert-reviews">
     <div class="container">
         {{ section.settings.text }}
-        {% if section.settings.wistia_url != blank %}
-            <div class="c-wistia-embed-video">
-                <div class="wistia_responsive_padding">
-                    <div class="wistia_responsive_wrapper">
-                        <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} popover=true seo=false videoFoam=true">
-                            <div class="wistia_swatch">
-                                <img src="https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch" alt="Watch: Doctorly" />
+
+        <div class="c-swiper c-swiper-videos" data-swiper='{ "effect": "fade" }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'slider' %}
+                        <div class="swiper-slide">
+                            <div class="c-wistia c-wistia--custom">
+                                <wistia-player media-id="{{ block.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                    <div class="c-wistia__custom">
+                                        <picture>
+                                            {% if block.settings.image != blank %}
+                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% endif %}
+                                        </picture>
+                                        <div class="e-pill-badge e-pill-badge--sm">
+                                            <i class="e-icon e-icon-watch"></i>
+                                            <div><strong>{{ 'sections.n_expert-reviews.watch' | t }}</strong> {{ block.settings.button_label }}</div>
+                                        </div>
+                                    </div>
+                                </wistia-player>
                             </div>
                         </div>
-                    </div>
-                </div>
-                {% if section.settings.button_label != blank %}
-                    <div class="e-pill-badge e-pill-badge--sm wistia-custom-play">
-                        <i class="e-icon e-icon-watch"></i>
-                        <div>{{ section.settings.button_label | replace: '<p>', '' | replace: '</p>', '' }}</div>
-                    </div>
-                {% endif %}
-                
-            </div>
-        {% endif %}
-        
-        <div class="expert-reviews__content">
-            <div
-                class="c-swiper c-swiper-thumbs"
-                data-swiper='{
-                        "slidesPerView": "auto",
-                        "spaceBetween": 8,
-                        "breakpoints": {
-                            "768": {
-                                "spaceBetween": 10
-                            }
-                        }
-                    }'>
-                <div class="swiper-wrapper">
-                    {% for block in section.blocks %}
-                        {% if block.type == 'slider' %}
-                            {% if block.settings.image != blank %}
-                                <div class="swiper-slide">
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                </div>
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-            <div
-                class="c-swiper"
-                data-swiper-thumbs=".expert-reviews .c-swiper-thumbs"
-                data-swiper-events="autoplayTimeLeft"
-                data-swiper='{
-                        "slidesPerView": 1,
-                        "spaceBetween": 16,
-                        "loop": true,
-                        "autoplay": {
-                            "delay": 7000,
-                            "disableOnInteraction": false
-                        }
-                    }'>
-                <div class="swiper-wrapper">
-                    {% for block in section.blocks %}
-                        {% if block.type == 'slider' %}
-                            {% if block.settings.text != blank %}
-                                <div class="swiper-slide">
-                                    {{ block.settings.text }}
-                                </div>
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-            {% for block in section.blocks %}
-                {% if block.type == 'disclaimer' %}
-                    {% if block.settings.text != blank %}
-                        <small>{{ block.settings.text }}</small>
                     {% endif %}
-                {% endif %}
-            {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="expert-reviews__content">
+            <div class="c-swiper c-swiper-thumbs" data-swiper='{ "slidesPerView": "auto", "spaceBetween": 8, "breakpoints": { "768": { "spaceBetween": 10 } } }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide">
+                            {% if block.settings.thumbnail != blank %}
+                                <img src="{{ block.settings.thumbnail | image_url }}" alt="{{ block.settings.thumbnail.alt | escape }}" />
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="c-swiper" data-swiper-thumbs=".expert-reviews .c-swiper-thumbs" data-swiper-events="autoplayTimeLeft" data-swiper='{ "slidesPerView": 1, "spaceBetween": 16, "loop": true, "autoplay": { "delay": 7000, "disableOnInteraction": false } }'>
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide">
+                            {{ block.settings.text }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% if section.settings.sub_text != blank %}
+                <small>{{ section.settings.sub_text }}</small>
+            {% endif %}
         </div>
     </div>
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("swiper", "https://qureskincaredns-stable.com/assets/js/swiper.js");
-        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
-        loadScriptOnce("wistia", "https://qureskincaredns-stable.com/assets/js/wistia.js");
+        loadScriptOnce("expert-reviews", "https://qureskincaredns-stable.com/sections/expert-reviews/expert-reviews.js");
     });
 </script>
 <!-- EXPERT REVIEWS END -->
@@ -101,28 +66,17 @@
 {% schema %}
 {
     "name": "t:sections.n_expert-reviews.name",
-        "settings": [
-            {
-                "type": "checkbox",
-                "id": "use_own_file",
-                "label": "t:common.use-own-file",
-                "default": false
-            },
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": "t:common.text"
-            },
-            {
-                "type": "text",
-                "id": "wistia_url",
-                "label": "t:common.wistia-url"
-            },
-            {
-                "type": "richtext",
-                "id": "button_label",
-                "label": "t:common.button-label"
-            }
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
+        }
     ],
     "blocks": [
         {
@@ -130,24 +84,27 @@
             "name": "t:common.slider",
             "settings": [
                 {
+                    "type": "text",
+                    "id": "wistia_url",
+                    "label": "t:common.wistia-url"
+                },
+                {
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
                 },
                 {
-                    "type": "richtext",
-                    "id": "text",
-                    "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "disclaimer",
-            "name": "t:common.disclaimer",
-            "limit": 1,
-            "settings": [
-                {
                     "type": "text",
+                    "id": "button_label",
+                    "label": "t:common.button-label"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "thumbnail",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
                 }

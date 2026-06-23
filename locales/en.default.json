@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "n_expert-reviews": {
+      "watch": "Watch:"
+    },
     "n_page-exclusive-bundle-deal-learn-more": {
       "settings": {
         "shop_now_text": "Shop Now"
