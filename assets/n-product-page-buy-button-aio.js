@@ -1,3 +1,19 @@
+/*
+ * AIO buy-button toggle.
+ *
+ * Renders the single `<a class="one-time-purchase">` link inside `.c-buy-block`
+ * that:
+ *   1. Displays the OPPOSITE purchase mode label (e.g. shows "One time
+ *      purchase" while Subscribe & Save list is active and vice versa), so the
+ *      link reads as a call-to-action that switches to the other mode.
+ *   2. Acts as a toggle: clicking it switches the product list rendered by
+ *      `n-purchase-form-landing.js` between the two `product_type` groups by
+ *      simulating a click on the opposite radio in
+ *      `purchase_form_lading_product_type_*`.
+ *
+ * Reuses `__landing__initTemplate` from `n-purchase-form-landing.js` so the
+ * existing list-loading flow stays the single source of truth.
+ */
 (function () {
     var script = document.currentScript;
     if (!script) return;
