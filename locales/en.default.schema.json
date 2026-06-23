@@ -11,7 +11,7 @@
     "common": {
         "false": "False",
         "true": "True",
-        "subscription_product": "Subscription for products",
+        "delivery_switcher_position": "Delivery switcher position",
         "subscription_discount_max_percent": "Subscription max discount",
         "hidden": "Hidden",
         "hide_bottom": "Hide bottom",
@@ -325,8 +325,6 @@
         "share": "Share",
         "benefits": "Benefits",
         "faq": "FAQ",
-        "aio_toggle": "AIO one-time / subscribe toggle",
-        "description-aio": "Description AIO",
         "alert": "Alert",
         "secondary": "Secondary",
         "best-seller": "Best seller",

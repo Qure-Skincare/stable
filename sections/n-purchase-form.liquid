@@ -117,7 +117,7 @@
         {
             "type": "select",
             "id": "subscription_product",
-            "label": "t:common.subscription_product",
+            "label": "t:common.subscription",
             "options": [
                 {
                     "value": "false",
@@ -137,8 +137,20 @@
             "max": 100,
             "step": 1,
             "unit": "%",
-            "label": "t:common.true.subscription_discount_percent",
+            "label": "t:common.subscription_discount_max_percent",
             "default": 70
+        },
+        {
+            "type": "select",
+            "id": "delivery_switcher_position",
+            "label": "t:common.delivery_switcher_position",
+            "options": [
+                {
+                    "value": "header",
+                    "label": "t:common.header"
+                }
+            ],
+            "default": "header"
         },
         {
             "type": "select",
