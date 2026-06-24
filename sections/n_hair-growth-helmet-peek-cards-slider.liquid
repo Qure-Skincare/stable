@@ -10,6 +10,14 @@
     <div class="container">
         <article class="peek-cards-slider__content">
             {{ section.settings.heading }}
+            {% if section.settings.quote_image != blank or section.settings.quote_text != blank %}
+                <div class="e-experts-quote-inline">
+                    {% if section.settings.quote_image != blank %}
+                        <img src="{{ section.settings.quote_image | image_url }}" alt="{{ section.settings.quote_image.alt | escape }}" />
+                    {% endif %}
+                    {{ section.settings.quote_text }}
+                </div>
+            {% endif %}
             {% if section.settings.text != blank %}
                 <div>
                     {{ section.settings.text }}
@@ -86,6 +94,16 @@
         "type": "richtext",
         "id": "text",
         "label": "t:common.text"
+    },
+    {
+        "type": "image_picker",
+        "id": "quote_image",
+        "label": "t:common.quote-image"
+    },
+    {
+        "type": "richtext",
+        "id": "quote_text",
+        "label": "t:common.quote"
     },
     {
         "type": "text",

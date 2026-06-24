@@ -1,0 +1,69 @@
+{% doc %}
+  Renders an experts quote section
+{% enddoc %}
+
+<!-- EXPERTS QUOTE -->
+<section class="experts-quote">
+    <div class="container">
+        <picture>
+            {% if section.settings.image != blank %}
+                <source media="(min-width: 768px)" srcset="{{ section.settings.image | image_url }}" />
+            {% endif %}
+            {% if section.settings.image_mobile != blank %}
+                <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+            {% endif %}
+        </picture>
+        <article>
+            {{ section.settings.text }}
+            {% if section.settings.username != blank or section.settings.sub_text != blank %}
+                <div>
+                    {% if section.settings.username != blank %}
+                        <span>{{ section.settings.username }}</span>
+                    {% endif %}
+                    {% if section.settings.sub_text != blank %}
+                        <small>{{ section.settings.sub_text }}</small>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </article>
+    </div>
+</section>
+<!-- EXPERTS QUOTE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_experts-quote.name",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "username",
+            "label": "t:common.username"
+        },
+        {
+            "type": "text",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_experts-quote.name"
+        }
+    ]
+}
+{% endschema %}
