@@ -852,6 +852,9 @@
     "checkout": {
       "contact": {
         "address1_label": "Address (We are not able to ship to PO boxes)"
+      },
+      "payment": {
+        "purchase_options_subscription_agreement_label": "This order includes an auto-renewing subscription. "
       }
     }
   }
