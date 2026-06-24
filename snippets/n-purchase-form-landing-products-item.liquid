@@ -69,6 +69,8 @@
                             data-product-name="{{ block.settings.heading | escape }}",
                             {% if subscription_is_on == true and block.settings.product_selling_plan > 0 %}
                             data-product-selling-plan="{{ block.settings.product_selling_plan }}"
+                            {% elsif subscription_section_is_on == true  and block.settings.product_selling_plan > 0 %}
+                            data-product-selling-plan="{{ block.settings.product_selling_plan }}"
                             {% endif %}
                             {% if block.settings.preselected == blank %}
                             data-preselected="{{ block.settings.preselected }}"
