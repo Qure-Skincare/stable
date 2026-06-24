@@ -9,7 +9,7 @@
                         {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
                         <button type="button">
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                <img loading="lazy" src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
                             {% endif %}
                             {{ product_type_title }}
                         </button>
@@ -23,7 +23,7 @@
                         <li>
                             <label for="sticky_{{ product_title_tag }}">
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
+                                    <img loading="lazy" src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}">
                                 {% endif %}
                                 <input type="radio" name="variant-title" id="sticky_{{ product_title_tag }}" data-variant-title="{{ product_title_tag }}" {% if forloop.index == 1 %}checked{% endif %}>
                                 <span>{{ block.settings.heading }}</span>

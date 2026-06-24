@@ -47,7 +47,7 @@
                     {% assign tab_index = tab_index | plus: 1 %}
                     {% if block.settings.image != blank %}
                         <div class="c-pill-tabs__pane{% if tab_index == 1 %} show{% endif %}" id="pill-tabs-{{ block.settings.heading | strip | handleize }}">
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                         </div>
                     {% endif %}
                 {% endif %}

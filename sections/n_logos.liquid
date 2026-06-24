@@ -12,7 +12,7 @@
                 {% if block.type == 'carousel' %}
                     {% if block.settings.image != blank %}
                         <li>
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                         </li>
                     {% endif %}
                 {% endif %}

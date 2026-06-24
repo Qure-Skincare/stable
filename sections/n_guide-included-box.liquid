@@ -38,7 +38,7 @@
                         {% if block.type == 'items' %}
                             <li>
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
                                 {% if block.settings.text != blank %}
                                     {{ block.settings.text }}

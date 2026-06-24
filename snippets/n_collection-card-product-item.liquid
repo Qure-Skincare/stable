@@ -16,7 +16,7 @@
 <div class="best-sellers__item">
     <a class="best-sellers__review" href="{{ product_url }}">
         {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | img_url: '500x' }}" alt="{{ block.settings.image.alt | escape }}" />
+            <img loading="lazy" src="{{ block.settings.image | img_url: '500x' }}" alt="{{ block.settings.image.alt | escape }}" />
         {% endif %}
         <div>
             {% if block.settings.text != blank %}
@@ -32,7 +32,7 @@
                 {% assign n_card_product_title = product_title | split: '(' | first | strip %}
                 <p>
                     {% if n_card_product.featured_image != blank %}
-                        <img src="{{ n_card_product.featured_image | img_url: '250x' }}" alt="{{ n_card_product.featured_image.alt | escape }}" />
+                        <img loading="lazy" src="{{ n_card_product.featured_image | img_url: '250x' }}" alt="{{ n_card_product.featured_image.alt | escape }}" />
                     {% endif %}
                     {% if block.settings.client != blank %}
                         <small>{{ block.settings.client }} {{ 'sections.n_collection.uses' | t }}</small>

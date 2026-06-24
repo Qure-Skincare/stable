@@ -4,7 +4,7 @@
     {% for block in section.blocks %}
         {% if block.type == 'image_faq' %}
             <picture>
-                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
             </picture>
         {% endif %}
     {% endfor %}

@@ -20,7 +20,7 @@
                 <i class="e-icon e-icon-quote"></i>
                 {% if block.settings.image != blank %}
                     <picture>
-                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.username | escape }}" />
+                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.username | escape }}" />
                     </picture>
                 {% endif %}
                 {% if block.settings.text != blank %}
@@ -37,8 +37,8 @@
 
         <div class="c-certified-box">
             <ul>
-                <li><img src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
-                <li><img src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-2.webp" alt="Certified Dermatologists" /></li>
+                <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
+                <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-2.webp" alt="Certified Dermatologists" /></li>
                 <li>+50</li>
             </ul>
             <p>{{ 'product.settings.buy-button-bottom.recommended_no_link_html' | t }}</p>

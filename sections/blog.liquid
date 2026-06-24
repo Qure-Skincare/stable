@@ -15,13 +15,13 @@
                                 {% case forloop.index %}
                                     {% when 1 %}
                                         <source media="(min-width:768px)" srcset="{{ 'blog.blog-post.settings.image_1' | t }}" />
-                                        <img src="{{ 'blog.blog-post.settings.image_mobile_1' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
+                                        <img loading="lazy" src="{{ 'blog.blog-post.settings.image_mobile_1' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
                                     {% when 2 %}
                                         <source media="(min-width:768px)" srcset="{{ 'blog.blog-post.settings.image_2' | t }}" />
-                                        <img src="{{ 'blog.blog-post.settings.image_mobile_2' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
+                                        <img loading="lazy" src="{{ 'blog.blog-post.settings.image_mobile_2' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
                                     {% when 3 %}
                                         <source media="(min-width:768px)" srcset="{{ 'blog.blog-post.settings.image_3' | t }}" />
-                                        <img src="{{ 'blog.blog-post.settings.image_mobile_3' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
+                                        <img loading="lazy" src="{{ 'blog.blog-post.settings.image_mobile_3' | t }}" alt="{{ link.title | escape }}" width="256" height="170" />
                                 {% endcase %}
                             </picture>
                             <h6>{{ link.title }}</h6>

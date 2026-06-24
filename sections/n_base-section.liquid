@@ -12,7 +12,8 @@
                 {{ section.settings.heading }}
             {% if section.settings.image != blank %}
                 <picture>
-                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    <source media="(max-width: 767px)" srcset="{{ section.settings.image | image_url : width: 500 }}">
+                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                 </picture>
             {% endif %}
 
@@ -67,7 +68,7 @@
                         <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
                             <div class="c-wistia__custom">
                                 <picture>
-                                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                    <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                                 </picture>
                             </div>
                         </wistia-player>
@@ -89,7 +90,7 @@
                         {% for block in section.blocks %}
                             {% if block.type == 'app_store' and block.settings.link_url != blank and block.settings.image != blank %}
                                 <a href="{{ block.settings.link_url }}" target="_blank" rel="nofollow">
-                                    <img src="{{- block.settings.image | image_url -}}" alt="{{- block.settings.image.alt | escape -}}" />
+                                    <img loading="lazy" src="{{- block.settings.image | image_url -}}" alt="{{- block.settings.image.alt | escape -}}" />
                                 </a>
                             {% endif %}
                         {% endfor %}
@@ -164,7 +165,7 @@
                             <div class="c-dialog__content">
                                 {{ block.settings.text }}
                                 <button type="button" class="btn-close" onclick="fullIngredient.close()">
-                                    <img src="{{ 'sections.n_base-section.image' | t }}" alt="" />
+                                    <img loading="lazy" src="{{ 'sections.n_base-section.image' | t }}" alt="" />
                                 </button>
                             </div>
                         {% endif %}
@@ -237,7 +238,7 @@
                                         {% if block.settings.image != blank or block.settings.text != blank %}
                                             <li>
                                                 {% if block.settings.image != blank %}
-                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                 {% endif %}
                                                 {{ block.settings.text }}
                                             </li>
@@ -285,7 +286,7 @@
                     <div class="c-dialog__content">
                         {{ block.settings.text }}
                         {% if block.settings.image != blank %}
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                         {% endif %}
                     </div>
                     {% if block.settings.sub_text != blank %}

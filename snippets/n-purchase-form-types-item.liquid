@@ -11,7 +11,7 @@
                 <label for="{{ section.id }}-{{ block.id }}">
                     <input type="radio" class="bundle__input" name="purchase_form_product_type_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" data-name="{{ block.settings.heading | escape }}" {% if block.settings.preselected == true %} checked{% endif %}/>
                     {% if block.settings.image != blank %}
-                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
+                        <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
                     {% endif %}
                     <span>{{ block.settings.heading }}</span>
                 </label>

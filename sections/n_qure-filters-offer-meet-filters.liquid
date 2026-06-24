@@ -14,7 +14,7 @@
                     {{ section.settings.text }}
                 {% endif %}
                 {% if section.settings.image != blank %}
-                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                 {% endif %}
             </article>
         {% endif %}
@@ -62,7 +62,7 @@
                             {% if child_tab == tab_handle %}
                                 {% if child_block.type == 'image' %}
                                     {% if child_block.settings.image != blank %}
-                                        <img src="{{ child_block.settings.image | image_url }}" alt="{{ child_block.settings.image.alt | escape }}" />
+                                        <img loading="lazy" src="{{ child_block.settings.image | image_url }}" alt="{{ child_block.settings.image.alt | escape }}" />
                                     {% endif %}
                                 {% endif %}
                             {% endif %}
@@ -77,7 +77,7 @@
                                                 <div class="wistia_responsive_wrapper">
                                                     <div class="wistia_embed wistia_async_{{ child_block.settings.wistia_url }} popover=true seo=false videoFoam=true">
                                                         <div class="wistia_swatch">
-                                                            <img src="https://fast.wistia.com/embed/medias/{{ child_block.settings.wistia_url }}/swatch" alt="" />
+                                                            <img loading="lazy" src="https://fast.wistia.com/embed/medias/{{ child_block.settings.wistia_url }}/swatch" alt="" />
                                                         </div>
                                                     </div>
                                                 </div>

@@ -17,7 +17,7 @@
 {% endif %}
 
 <picture data-label-text="{{ block.settings.heading }}" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ block.settings.wistia_url }}">
-    <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
+    <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
 </picture>
 
 <script>

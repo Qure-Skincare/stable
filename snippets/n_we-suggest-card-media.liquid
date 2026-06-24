@@ -20,10 +20,9 @@
     >
       {% if resolved_product_image != blank %}
         {% if resolved_product_image.width != blank and resolved_product_image.height != blank %}
-          <img
+          <img loading="lazy" 
             src="{{ resolved_product_image | image_url: width: 800 }}"
             alt="{{ alt_text | escape }}"
-            loading="lazy"
             width="{{ resolved_product_image.width }}"
             height="{{ resolved_product_image.height }}"
           >
@@ -35,10 +34,9 @@
   </div>
   {% if block.settings.results_image != blank %}
     <div class="c-suggest-card__media-content">
-      <img
+      <img loading="lazy" 
         src="{{ block.settings.results_image | image_url }}"
         alt="{{ alt_text | escape }}"
-        loading="lazy"
         width="{{ block.settings.results_image.width }}"
         height="{{ block.settings.results_image.height }}"
       >

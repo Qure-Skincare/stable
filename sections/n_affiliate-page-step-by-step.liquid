@@ -37,7 +37,7 @@
                             <div class="swiper-slide">
                                 <picture data-index="{{ forloop.index }}">
                                     {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                     {% endif %}
                                 </picture>
                                 {% if block.settings.text != blank %}

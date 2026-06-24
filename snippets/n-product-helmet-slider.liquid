@@ -47,13 +47,13 @@
                     {% endif %}
                     <div class="swiper-slide">
                         <div class="slide-image">
-                            <img src="{{ media | img_url: '720x' }}" alt="{{ title }}" data-url="{{ video_source_url }}" class="lvideo" />
+                            <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ title }}" data-url="{{ video_source_url }}" class="lvideo" />
                         </div>
                     </div>
                 {% else %}
                     <div class="swiper-slide">
                         <div class="slide-image">
-                            <img src="{{ media | img_url: '720x' }}" alt="{{ title | escape }}" data-product-handle="{{ title | escape }}" />
+                            <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ title | escape }}" data-product-handle="{{ title | escape }}" />
                             {% if watch_objects[index] != blank and watch_objects[index] != 'none' %}
                                 <div
                                     class="watch-how-it-works watch-wistia-video"

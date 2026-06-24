@@ -15,7 +15,7 @@
                     {% if block.type == 'information_box' %}
                         <li>
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% endif %}
                             {% if block.settings.button_label != blank and block.settings.button_url != blank %}
                                 <a class="btn btn--primary-white" href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a>

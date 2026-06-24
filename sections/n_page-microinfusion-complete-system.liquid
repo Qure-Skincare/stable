@@ -103,14 +103,14 @@
                                         <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
                                             {% if product_media.size > 0 %}
                                                 {% if complete_system_variant.featured_image != blank %}
-                                                    <img data-variant-image src="{{ complete_system_variant.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                    <img loading="lazy" data-variant-image src="{{ complete_system_variant.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                                 {% else %}
                                                     {% for media in product_media limit: 1 %}
-                                                        <img data-variant-image src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                        <img loading="lazy" data-variant-image src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                                     {% endfor %}
                                                 {% endif %}
                                             {% elsif product.featured_image != blank %}
-                                                <img data-variant-image src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                <img loading="lazy" data-variant-image src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                             {% endif %}
                                             {%- if block.settings.am_or_pm_1 != 'none' -%}
                                                 <div class="c-product-tile__time">

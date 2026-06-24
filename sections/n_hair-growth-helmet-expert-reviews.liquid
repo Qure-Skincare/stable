@@ -15,7 +15,7 @@
                     <div class="wistia_responsive_wrapper">
                         <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} popover=true seo=false videoFoam=true">
                             <div class="wistia_swatch">
-                                <img src="https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch" alt="Watch: Doctorly" />
+                                <img loading="lazy" src="https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch" alt="Watch: Doctorly" />
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         {% if block.type == 'slider' %}
                             {% if block.settings.image != blank %}
                                 <div class="swiper-slide">
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 </div>
                             {% endif %}
                         {% endif %}

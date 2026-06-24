@@ -19,7 +19,7 @@
 
             {% if section.settings.image != blank %}
                 <picture>
-                    <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" id="purchase_form_image" />
+                    <img loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" id="purchase_form_image" />
                 </picture>
             {% endif %}
         </article>

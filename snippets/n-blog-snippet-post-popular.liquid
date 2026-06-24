@@ -6,7 +6,7 @@
 {% for article in blogs[blog_handle].articles limit:limit offset: offset %}
     <li>
         <a href="{{ article.url }}">
-            <img src="{{ article.image | img_url }}" alt="{{ article.image.alt | escape }}" />
+            <img loading="lazy" src="{{ article.image | img_url }}" alt="{{ article.image.alt | escape }}" />
             <span>#{{ blogs[blog_handle].title }}</span>
             <p>{{ article.title | truncatewords: 8 }}</p>
         </a>

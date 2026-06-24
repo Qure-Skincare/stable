@@ -85,7 +85,7 @@
                                                 <div class="c-step-by-step__item"{% if block.settings.image != blank %} data-index="{{ step_counter }}"{% endif %}>
                                                     {% if block.settings.image != blank %}
                                                         <picture>
-                                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                         </picture>
                                                     {% endif %}
                                                     <article>

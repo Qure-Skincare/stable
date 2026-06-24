@@ -25,7 +25,7 @@
                     {% assign title = media | replace: 'files/', '' | replace: '.webp', '' %}
                     <div class="swiper-slide">
                         <div class="slide-thumbnail">
-                            <img src="{{ media | img_url: '240x' }}" alt="{{ title }}" />
+                            <img loading="lazy" src="{{ media | img_url: '240x' }}" alt="{{ title }}" />
                         </div>
                     </div>
                 {% endfor %}

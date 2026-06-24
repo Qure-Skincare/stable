@@ -11,7 +11,7 @@ wwtf{% doc %}
             <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
         {% endif %}
         {% if section.settings.image_mobile != blank %}
-            <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+            <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
         {% endif %}
     </picture>
     <div class="container">
@@ -49,7 +49,7 @@ wwtf{% doc %}
                         {% if block.type == 'image' %}
                             <div class="swiper-slide">
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
                             </div>
                         {% endif %}
@@ -66,7 +66,7 @@ wwtf{% doc %}
                     {% if block.type == 'image_with_text' %}
                         <li>
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% endif %}
                                 {{ block.settings.text | replace: '<p>', '<span>' | replace: '</p>', '</span>' }}
                         </li>

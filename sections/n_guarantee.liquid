@@ -10,7 +10,7 @@
   <div class="container">
     <article>
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy" />
+        <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy" />
       {% endif %}
       {% if section.settings.heading != blank %}
         {{ section.settings.heading }}

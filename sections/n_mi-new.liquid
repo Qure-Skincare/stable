@@ -25,7 +25,7 @@
             {% endfor %}
             {% if section.settings.image != blank %}
                 <picture class="mi-new__image">
-                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                 </picture>
             {% endif %}
         </article>

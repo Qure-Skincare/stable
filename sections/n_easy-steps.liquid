@@ -14,7 +14,7 @@
                     <source media="(min-width:767px)" srcset="{{ section.settings.image | image_url }}" />
                 {% endif %}
                 {% if section.settings.image_mobile != blank %}
-                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                    <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
                 {% endif %}
             </picture>
         {% endif %}
@@ -26,7 +26,7 @@
                         {% if block.settings.image != blank and block.settings.image_mobile != blank %}
                             <picture>
                                 <source media="(min-width:767px)" srcset="{{ block.settings.image | image_url }}" />
-                                <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
                             </picture>
                         {% endif %}
                         {{ block.settings.text }}

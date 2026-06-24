@@ -38,7 +38,7 @@
                                 <div class="c-visual-compare-card">
                                     {% if block.settings.image != blank %}
                                         <picture>
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         </picture>
                                     {% endif %}
                                     {% if block.settings.text != blank %}
@@ -81,7 +81,7 @@
                         {% assign image_pane_index = image_pane_index | plus: 1 %}
                         <div class="c-pill-tabs__pane{% if image_pane_index == 1 %} show{% endif %}" id="pill-tabs-{{ block.settings.heading | strip | handleize }}">
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% endif %}
                         </div>
                     {% endif %}

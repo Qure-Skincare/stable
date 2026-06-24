@@ -77,7 +77,7 @@
                             {% if block.type== 'heading_prof' %}
                                 <div class="table-header">
                                     {% if block.settings.left_image != blank %}
-                                        <img class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
+                                        <img loading="lazy" class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.left_heading != blank %}
                                         <div class="table-header-name">
@@ -91,16 +91,16 @@
                                 </div>
                                 <div class="table-header">
                                     {% if block.settings.right_image != blank %}
-                                        <img class="table-header-image" src="{{ block.settings.right_image | image_url }}" alt="{{ block.settings.right_image.alt | escape }}" />
+                                        <img loading="lazy" class="table-header-image" src="{{ block.settings.right_image | image_url }}" alt="{{ block.settings.right_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.right_heading != blank %}
                                         <div class="table-header-name">
                                             {{ block.settings.right_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[irestore-prof-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/irestore.webp" />'
-                                            | replace: '[currentbody-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/currentbody.webp" />' 
-                                            | replace: '[red-light-hat-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/higherdose.webp" />'
+                                            | replace: '[irestore-prof-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/irestore.webp" />'
+                                            | replace: '[currentbody-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/currentbody.webp" />' 
+                                            | replace: '[red-light-hat-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/higherdose.webp" />'
                                             }}
                                         </div>
                                     {% endif %}
@@ -246,30 +246,30 @@
                             {% if block.type== 'heading_hair_growth' %}
                                 <div class="table-header">
                                     {% if block.settings.left_image != blank %}
-                                        <img class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
+                                        <img loading="lazy" class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.left_heading != blank %}
                                         <div class="table-header-name">
                                             {{ block.settings.left_heading 
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[qure-logo]', '<img class="qure-logo" src="https://qureskincaredns-stable.com/assets/images/qure_logo..svg" />' 
+                                            | replace: '[qure-logo]', '<img loading="lazy" class="qure-logo" src="https://qureskincaredns-stable.com/assets/images/qure_logo..svg" />' 
                                             }}
                                         </div>
                                     {% endif %}
                                 </div>
                                 <div class="table-header">
                                     {% if block.settings.right_image != blank %}
-                                        <img class="table-header-image" src="{{ block.settings.right_image | image_url }}" alt="{{ block.settings.right_image.alt | escape }}" />
+                                        <img loading="lazy" class="table-header-image" src="{{ block.settings.right_image | image_url }}" alt="{{ block.settings.right_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.right_heading != blank %}
                                         <div class="table-header-name">
                                             {{ block.settings.right_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[irestore-prof-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/irestore.webp" />'
-                                            | replace: '[currentbody-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/currentbody.webp" />' 
-                                            | replace: '[red-light-hat-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/higherdose.webp" />'
+                                            | replace: '[irestore-prof-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/irestore.webp" />'
+                                            | replace: '[currentbody-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/currentbody.webp" />' 
+                                            | replace: '[red-light-hat-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/higherdose.webp" />'
                                             }}
                                         </div>
                                     {% endif %}
@@ -415,30 +415,30 @@
                             {% if block.type== 'heading_red_light_hat' %}
                                 <div class="table-header">
                                     {% if block.settings.left_image != blank %}
-                                        <img class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
+                                        <img loading="lazy" class="table-header-image" src="{{ block.settings.left_image | image_url }}" alt="{{ block.settings.left_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.left_heading != blank %}
                                         <div class="table-header-name">
                                             {{ block.settings.left_heading 
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[qure-logo]', '<img class="qure-logo" src="https://qureskincaredns-stable.com/assets/images/qure_logo..svg" />' 
+                                            | replace: '[qure-logo]', '<img loading="lazy" class="qure-logo" src="https://qureskincaredns-stable.com/assets/images/qure_logo..svg" />' 
                                             }}
                                         </div>
                                     {% endif %}
                                 </div>
                                 <div class="table-header">
                                     {% if block.settings.right_image != blank %}
-                                        <img class="table-header-image" src="{{ block.settings.right_image | image_url }}" alt="{{ block.settings.right_image.alt | escape }}" />
+                                        <img loading="lazy" class="table-header-image" src="{{ block.settings.right_image | image_url }}" alt="{{ block.settings.right_image.alt | escape }}" />
                                     {% endif %}
                                     {% if block.settings.right_heading != blank %}
                                         <div class="table-header-name">
                                             {{ block.settings.right_heading
                                             | replace: '<p>', ''
                                             | replace: '</p>', ''
-                                            | replace: '[irestore-prof-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/irestore.webp" />'
-                                            | replace: '[currentbody-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/currentbody.webp" />' 
-                                            | replace: '[red-light-hat-logo]', '<img src="https://qureskincaredns-stable.com/sections/how-compares/images/higherdose.webp" />'
+                                            | replace: '[irestore-prof-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/irestore.webp" />'
+                                            | replace: '[currentbody-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/currentbody.webp" />' 
+                                            | replace: '[red-light-hat-logo]', '<img loading="lazy" src="https://qureskincaredns-stable.com/sections/how-compares/images/higherdose.webp" />'
                                             }}
                                         </div>
                                     {% endif %}

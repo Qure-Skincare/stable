@@ -13,7 +13,7 @@
 
 {% if title != blank %}
     <div class="swiper-slide">
-        <a href="{{ url }}"><img src="{{ image | image_url }}" alt="{{ title | escape }}" /></a>
+        <a href="{{ url }}"><img loading="lazy" src="{{ image | image_url: width: 400 }}" alt="{{ title | escape }}" /></a>
         {% if thumbs != blank %}
             <p>{{ title }}</p>
         {% else %}

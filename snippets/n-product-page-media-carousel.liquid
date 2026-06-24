@@ -47,12 +47,12 @@
                 {% assign video_source_url = media.sources[0].url %}
             {% endif %}
             <div class="swiper-slide">
-            <img src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
+                <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
             </div>
         {% else %}
             {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
                 <div class="swiper-slide">
-                    <img
+                    <img loading="lazy"
                         class="watch-wistia-video"
                         src="{{ media | img_url: size }}"
                         alt="{{ title | escape }}"
@@ -63,7 +63,15 @@
                 </div>
             {% else %}
                 <div class="swiper-slide">
-                    <img src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
+                    {% assign loading = 'lazy' %}
+                    {% if thumbnails == true and forloop.index < 4 %}
+                        {% assign loading = 'eager' %}
+                    {% endif %}
+                    {% if thumbnails == false and forloop.index == 1 %}
+                        {% assign loading = 'eager' %}
+                    {% endif %}
+
+                    <img loading="{{ loading }}" src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
                 </div>
             {% endif %}
         {% endif %}

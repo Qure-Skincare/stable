@@ -17,7 +17,7 @@
                         <div class="c-product-tile">
                             <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ product_url }}">
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
                                 {% if block.settings.image_text != 'none' %}
                                     {% if block.settings.image_text == 'bestseller' %}

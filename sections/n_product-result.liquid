@@ -79,7 +79,7 @@
                                             <div class="c-visual-compare-card">
                                                 {% if block.settings.image != blank %}
                                                     <picture>
-                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                     </picture>
                                                 {% endif %}
                                                 {% if block.settings.text != blank %}
@@ -105,7 +105,7 @@
                         {% assign block_tab_id = block.settings.section_id | strip | handleize %}
                         {% if block_tab_id == current_tab_id %}
                             <picture>
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             </picture>
                         {% endif %}
                     {% endif %}

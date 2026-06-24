@@ -33,7 +33,7 @@
                         <div class="swiper-slide">
                             <div class="c-post-tile">
                                 <a href="{{ related_post.url }}" class="c-post-tile__image">
-                                    <img src="{{ related_post.image | image_url }}" alt="{{ related_post.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ related_post.image | image_url }}" alt="{{ related_post.image.alt | escape }}" />
                                     <div class="e-pill-badge e-pill-badge--sm">#{{ blog.title }}</div>
                                 </a>
                                 <div class="c-post-tile__content">

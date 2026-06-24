@@ -80,7 +80,7 @@
                         {% if block.type == 'text_with_image' %}
                             <li>
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
                                 {{ block.settings.text }}
                             </li>

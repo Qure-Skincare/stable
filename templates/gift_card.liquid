@@ -57,8 +57,6 @@
       </script>
     {% endif %}
 
-    {% comment %} <script src="{{ 'redirect.js' | asset_url }}"></script> {% endcomment %}
-
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/vendor.css">
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/spacings.css">
@@ -80,8 +78,8 @@
 
     {% render 'n-header-scripts' %}
 
-    <script src="https://qureskincaredns-stable.com/shopify/js/datalayer.js"></script>
-    <script src="https://qureskincaredns-stable.com/shopify/js/country-detect.js"></script>
+    <script src="{{ 'n-datalayer.js' | asset_url }}"></script>
+    <script src="{{ 'n-country-detect.js' | asset_url }}"></script>
   </head>
 
   <body class="{{ template }}">
@@ -122,7 +120,7 @@
             {% if settings.logo %}
               {{ settings.logo | image_url: width: 300 | image_tag: alt: shop.name }}
             {% else %}
-              <img
+              <img loading="lazy" 
                 src="{{ 'gift-card/card.svg' | shopify_asset_url }}"
                 alt="{{ 'gift_card.card' | t }}"
                 width="300"
@@ -137,7 +135,7 @@
 
           {% if gift_card.pass_url %}
             <a href="{{ gift_card.pass_url }}">
-              <img
+              <img loading="lazy" 
                 src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
                 alt="{{ 'gift_card.add_to_apple_wallet' | t }}"
                 width="200"
@@ -148,11 +146,7 @@
         </div>
     </main>
 
-    {% comment %} {% sections 'footer-group' %} {% endcomment %}
-    {% comment %} {% render 'footer-scripts' %} {% endcomment %}
-
-    <script src="https://qureskincaredns-stable.com/assets/js/vendor.js" defer="defer"></script>
-    <script src="https://qureskincaredns-stable.com/assets/js/header.js" defer="defer"></script>
-    <script src="https://qureskincaredns-stable.com/assets/js/footer.js" defer="defer"></script>
+    {% comment %} {% sections 'n-footer-group' %} {% endcomment %}
+    {% render 'n-footer-scripts' %}
   </body>
 </html>

@@ -61,7 +61,7 @@
                                         {% endif %}
                                         {% if block.settings.image != blank %}
                                             <picture>
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                             </picture>
                                         {% endif %}
                                     </li>
@@ -76,7 +76,7 @@
                                         <li>
                                             {% if block.settings.image != blank %}
                                                 <picture>
-                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                 </picture>
                                             {% endif %}
                                             {% if block.settings.text != blank %}
@@ -104,7 +104,7 @@
                                         {% endif %}
                                         {% if block.settings.image != blank %}
                                             <picture>
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                             </picture>
                                         {% endif %}
                                     </li>

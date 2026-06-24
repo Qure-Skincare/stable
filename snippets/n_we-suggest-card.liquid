@@ -107,7 +107,7 @@
       <span>{{ block.settings.review_attribution | escape }}</span>
     {% endif %}
     {% if block.settings.review_image != blank %}
-      <img src="{{ block.settings.review_image | image_url }}" alt="{{ block.settings.review_image.alt | escape }}" />
+      <img loading="lazy" src="{{ block.settings.review_image | image_url }}" alt="{{ block.settings.review_image.alt | escape }}" />
     {% endif %}
   </div>
 

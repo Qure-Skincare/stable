@@ -31,7 +31,7 @@
                         {% if block.type == 'accordion' %}
                             <div class="swiper-slide">
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
                                 <details>
                                     {% if block.settings.heading != blank %}

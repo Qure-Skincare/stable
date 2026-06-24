@@ -15,7 +15,10 @@
                 {% for block in section.blocks %}
                     {% if block.type == 'left_heading' %}
                         {% if block.settings.image != blank %}
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="{{ block.settings.image | image_url : width: 250 }}">
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            </picture>
                         {% endif %}
                         {{ block.settings.heading }}
                     {% endif %}
@@ -41,7 +44,10 @@
                 {% for block in section.blocks %}
                     {% if block.type == 'right_heading' %}
                         {% if block.settings.image != blank %}
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="{{ block.settings.image | image_url : width: 250 }}">
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            </picture>
                         {% endif %}
                         {{ block.settings.heading }}
                     {% endif %}

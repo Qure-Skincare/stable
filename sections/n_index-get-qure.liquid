@@ -20,7 +20,7 @@
                      {% if block.settings.image != blank and block.settings.image_mobile != blank %}
                         <picture>
                            <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url }}" />
-                           <img src="{{ block.settings.image_mobile | image_url }}" />
+                           <img loading="lazy" src="{{ block.settings.image_mobile | image_url }}" />
                         </picture>
                      {% endif %}
                      {% if block.settings.text != blank %}

@@ -17,7 +17,7 @@
                     <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
                         {% if section.settings.video_image_cover != blank %}
                                 <picture>
-                                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                    <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                                 </picture>
                         {% endif %}
                         {% if section.settings.text_on_image != blank %}
@@ -46,7 +46,7 @@
                     <figure class="lvideo" data-url="{{ section.settings.video_url }}">
                         {% if section.settings.video_image_cover != blank %}
                             <picture>
-                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                             </picture>
                         {% endif %}
                         {% if section.settings.text_on_image != blank %}
@@ -74,7 +74,7 @@
             <article>
                 {{ section.settings.heading }}
                 <picture>
-                    <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                    <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                 </picture>
                 {% if section.settings.text != blank %}
                     <div>

@@ -54,7 +54,7 @@
                     {% if block.type == 'image_with_text' %}
                         {% if block.settings.image != blank %}
                             <div class="swiper-slide">
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
                             </div>
                         {% endif %}
                     {% endif %}
