@@ -274,7 +274,7 @@
       }
     },
     "n_expert_reviews_AR8UbM": {
-      "type": "n_expert-reviews",
+      "type": "n_hair-growth-helmet-expert-reviews",
       "blocks": {
         "slider_Y7RYEj": {
           "type": "slider",
@@ -302,7 +302,7 @@
         "slider_DDcNWB",
         "disclaimer_MPXpLM"
       ],
-      "name": "t:sections.n_expert-reviews.name",
+      "name": "t:sections.n_hair-growth-helmet-expert-reviews.name",
       "settings": {
         "use_own_file": false,
         "text": "<h2>Trusted and Recommended by Experts</h2>",

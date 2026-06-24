@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "n_expert-reviews": {
+      "watch": "Watch:"
+    },
     "n_page-exclusive-bundle-deal-learn-more": {
       "settings": {
         "shop_now_text": "Shop Now"
@@ -620,6 +623,7 @@
       "select-product-variant": "Select Your Supply:",
       "select-product-delivery": "Select Your Delivery:",
       "notify-me-when-available": "Notify Me When Available",
+      "subscribe-and-save": "Subscribe & Save:",
       "and": "&",
       "save": "Save",
       "off": "OFF",
@@ -640,7 +644,7 @@
       "kit-left": "{{ count }} kits left",
       "monthly-payment": "Monthly interest-free payments with:",
       "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='/pages/contact-us' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
-      "n-questions_html": "Have questions about about Micro-Infusion?? <a href=/pages/contact-us class='btn btn--md btn--secondary'>Chat with us!</a>",
+      "n-questions_html": "Have questions about about Micro-Infusion? <a href=/pages/contact-us class='btn btn--md btn--secondary'>Chat with us!</a>",
       "more_details_html": "<div class='fs-14'>Skip, pause or cancel anytime. <a href='/pages/subscriptions' class='text-decoration-underline' style='--base-color: #212428;'>See more details</a></div>",
       "n_more_details_html": "<small>Skip, pause or cancel anytime. <a href='/pages/subscriptions'>See more details</a></small>"
     }

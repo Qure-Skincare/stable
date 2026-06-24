@@ -87,17 +87,18 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Refresh your skin anytime, anywhere with  Dermal Mist",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>A hypochlorous acid mist to rebalance skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to soothe visible redness, calm irritation or as a no-rinse refresher throughout the day. </li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "approved": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -134,6 +135,7 @@
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/derm_trio.webp",
             "product_discount_percent": 0,
@@ -156,6 +158,7 @@
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/derm_duo.webp",
             "product_discount_percent": 0,
@@ -178,6 +181,7 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/derm_single.webp",
             "product_discount_percent": 0,
@@ -211,6 +215,7 @@
             "preselected": true,
             "heading": "180 Days Supply",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "Ships every 6 months",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/derm_trio.webp",
             "product_discount_percent": 20,
@@ -233,6 +238,7 @@
             "preselected": false,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "Ships every 4 months",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/derm_duo.webp",
             "product_discount_percent": 11,
@@ -255,6 +261,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "Ships every 2 months",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/derm_single.webp",
             "product_discount_percent": 10,
@@ -282,10 +289,14 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 46,
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "purchase-form-landing-old": {
@@ -322,6 +333,7 @@
             "preselected": true,
             "heading": "6 Months",
             "subheading": "(3 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/derm_trio.webp",
             "product_discount_percent": 0,
@@ -344,6 +356,7 @@
             "preselected": false,
             "heading": "4 Months",
             "subheading": "(2 bottles)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/derm_duo.webp",
             "product_discount_percent": 0,
@@ -366,6 +379,7 @@
             "preselected": false,
             "heading": "2 Months",
             "subheading": "(1 bottle)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/derm_single.webp",
             "product_discount_percent": 0,
@@ -390,9 +404,13 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
         "type": "box",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_logos_d77Mmj": {
@@ -808,7 +826,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "17574126382ef36ccf": {

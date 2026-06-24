@@ -158,7 +158,7 @@
             "preselected": true,
             "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
-            "text": "",
+            "product_selling_plan_text": "",
             "image": "shopify://shop_images/24-pairs.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -180,7 +180,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
-            "text": "",
+            "product_selling_plan_text": "",
             "image": "shopify://shop_images/16-pairs.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -202,7 +202,7 @@
             "preselected": false,
             "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
-            "text": "",
+            "product_selling_plan_text": "",
             "image": "shopify://shop_images/8-pairs.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -235,7 +235,7 @@
             "preselected": true,
             "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
-            "text": "Ships every 3 months",
+            "product_selling_plan_text": "Ships every 3 months",
             "image": "shopify://shop_images/24-pairs.webp",
             "product_discount_percent": 20,
             "soldout": false,
@@ -257,7 +257,7 @@
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
-            "text": "Ships every 2 months",
+            "product_selling_plan_text": "Ships every 2 months",
             "image": "shopify://shop_images/16-pairs.webp",
             "product_discount_percent": 11,
             "soldout": false,
@@ -279,7 +279,7 @@
             "preselected": false,
             "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
-            "text": "Ships every 1 month",
+            "product_selling_plan_text": "Ships every 1 month",
             "image": "shopify://shop_images/8-pairs.webp",
             "product_discount_percent": 10,
             "soldout": false,
@@ -305,116 +305,11 @@
         "product_AJPQaQ"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
-        "type": "list",
-        "klaviyo_form_name": "",
-        "guarantee_period": "30"
-      }
-    },
-    "purchase-form-landing-old": {
-      "type": "n-purchase-form-landing",
-      "blocks": {
-        "nextships_4xp7uM": {
-          "type": "nextships",
-          "settings": {
-            "date": "25 September",
-            "percent": 55,
-            "date_soldout": "28 July",
-            "date_reserved": "3 August"
-          }
-        },
-        "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Micro-Infusion Targeted Patches",
-            "preselected": false
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-targeted-patches-3-month-supply-24-pairs-1",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": true,
-            "heading": "3 Months",
-            "subheading": "(3 boxes, 24 pairs)",
-            "text": "",
-            "image": "shopify://shop_images/24-pairs.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-targeted-patches-2-month-supply-16-pairs-1",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "2 Months",
-            "subheading": "(2 boxes, 16 pairs)",
-            "text": "",
-            "image": "shopify://shop_images/16-pairs.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_RBCPe8": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-targeted-patches",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "1 Months",
-            "subheading": "(1 box, 8 pairs)",
-            "text": "",
-            "image": "shopify://shop_images/8-pairs.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        }
-      },
-      "block_order": [
-        "nextships_4xp7uM",
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_gbPf3J",
-        "product_NEgEkN",
-        "product_RBCPe8"
-      ],
-      "disabled": true,
-      "settings": {
         "form_name": "purchase-form-landing",
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 40,
         "hide_types": true,
-        "type": "box",
+        "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30"
       }
@@ -1224,7 +1119,6 @@
   "order": [
     "product_header_U6RBGz",
     "purchase-form-landing",
-    "purchase-form-landing-old",
     "n_press_reviews_tDbz84",
     "n_base_section_VwYqRn",
     "n_progress_metrics_CNFt9V",

@@ -2,10 +2,36 @@
     {% render 'n-product-page-next-ships', section: section, class: 'hide preorder_box' %}
 {% endcapture %}
 
+{% if section.settings.delivery_switcher_position == 'header' %}
+    {% include 'n-purchase-form-landing-delivery-switcher' %}
+{% endif %}
+
+{% assign subscription_section_is_on = false %}
+
+{% if section.settings.subscription_product == 'false' %}
+    {% for block in section.blocks %}
+        {% if block.type == 'subscription' %}
+            {% assign subscription_section_is_on = true %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
 <div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}">
-    <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
-    {% include 'n-purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box %}
-    {% include 'n-purchase-form-landing-products-item' array: __idsArray2, preorder_box: preorder_box %}
-    {% include 'n-purchase-form-landing-products-item' array: __idsArray3, preorder_box: preorder_box %}
+    {% if section.settings.delivery_switcher_position == 'header' %}
+        <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
+    {% else %}
+        <p class="c-supply-selector__title">{{ 'purchase-form.settings.subscribe-and-save' | t }}</p>
+    {% endif %}
+
+    {% if section.settings.subscription_product == 'true' %}
+        {% include 'n-purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
+        {% include 'n-purchase-form-landing-products-item' array: __idsArray2, preorder_box: preorder_box, subscription_is_on: true %}
+        {% include 'n-purchase-form-landing-products-item' array: __idsArray3, preorder_box: preorder_box, subscription_is_on: true %}
+    {% endif %}
+
+    {% include 'n-purchase-form-landing-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_section_is_on: subscription_section_is_on %}
+    {% include 'n-purchase-form-landing-products-item' array: __idsArray2, preorder_box: preorder_box, subscription_section_is_on: subscription_section_is_on %}
+    {% include 'n-purchase-form-landing-products-item' array: __idsArray3, preorder_box: preorder_box, subscription_section_is_on: subscription_section_is_on %}
+
     <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
 </div>

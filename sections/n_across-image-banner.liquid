@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/across-image-banner/across-image-banner.css" />
 {% endif %}
-<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% endif %}">
+<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% elsif section.settings.modifier == 'doctorly' %} across-image-banner--doctorly{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
@@ -24,6 +24,13 @@
                         {% endif %}
                     {% endif %}
                 {% endfor %}
+
+                {% if section.settings.rating != blank %}
+                    <div class="c-rating c-rating--bg">
+                        <div class="e-rating-stars" style="--rating: {{ section.settings.rating }}"></div>
+                        <a href="#"><strong>{{ section.settings.rating }}</strong>{{ section.settings.rating_text }}</a>
+                    </div>
+                {% endif %}
 
                 {% if section.settings.heading != blank %}
                     {{ section.settings.heading 
@@ -90,7 +97,7 @@
                 {% endif %}
 
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                    <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' %}btn--primary-white{% else %}btn--primary{% endif %}">{{ section.settings.button_label }}</a>
                 {% endif %}
 
                 {% for block in section.blocks %}
@@ -159,6 +166,36 @@
                 {% endif %}
 
             </article>
+
+            {% assign has_pill = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'pill' %}
+                    {% assign has_pill = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_pill %}
+                <ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'pill' %}
+                            {% if block.settings.text != blank %}
+                                <li class="e-pill-badge e-pill-badge--sm">{{ block.settings.text }}</li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% for block in section.blocks %}
+                {% if block.type == 'bottles' %}
+                    {% if block.settings.image != blank %}
+                        <div class="hero-mi-bottles">
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% if block.settings.label != blank %}
+                                <span>{{ block.settings.label }}</span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
 
             {% for block in section.blocks %}
                 {% if block.type == 'image' %}
@@ -272,8 +309,22 @@
                 {
                     "value": "flex",
                     "label": "t:common.flex"
+                },
+                {
+                    "value": "doctorly",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.doctorly"
                 }
             ]
+        },
+        {
+            "type": "text",
+            "id": "rating",
+            "label": "t:common.rating"
+        },
+        {
+            "type": "text",
+            "id": "rating_text",
+            "label": "t:common.rating-text"
         },
         {
             "type": "richtext",
@@ -500,6 +551,34 @@
                 "type": "text",
                 "id": "badge_text",
                 "label": "t:common.badge-text"
+            }
+        ]
+    },
+    {
+        "type": "pill",
+        "name": "t:sections.n_across-image-banner.blocks.pill.name",
+        "settings": [
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "bottles",
+        "name": "t:sections.n_across-image-banner.blocks.bottles.name",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "label",
+                "label": "t:common.text"
             }
         ]
     }

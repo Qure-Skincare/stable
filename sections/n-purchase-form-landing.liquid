@@ -6,10 +6,10 @@
         {% include 'n-purchase-form-landing-products' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'n-purchase-form-landing-klaviyo', section: section %}
         {% include 'n-purchase-form-landing-subscription' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
-        {% if section.settings.aio_toggle %}
-            {% render 'n-product-page-buy-button-aio', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
-        {% else %}
-            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
+        {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
+
+        {% if section.settings.delivery_switcher_position == 'footer' %}
+            {% include 'n-purchase-form-landing-delivery-switcher' %}
         {% endif %}
     </div>
     <script src="{{ 'n-purchase-form-landing.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
@@ -31,6 +31,53 @@
                 "id": "hide_types",
                 "label": "t:sections.purchase-form-landing.settings.hide_types",
                 "default": false
+            },
+            {
+                "type": "select",
+                "id": "subscription_product",
+                "label": "t:common.subscription",
+                "options": [
+                    {
+                        "value": "false",
+                        "label": "t:common.false"
+                    },
+                    {
+                        "value": "true",
+                        "label": "t:common.true"
+                    }
+                ],
+                "default": "false"
+            },
+            {
+                "type": "range",
+                "id": "subscription_discount_max_percent",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "label": "t:common.subscription_discount_max_percent",
+                "default": 70
+            },
+            {
+                "type": "select",
+                "id": "delivery_switcher_position",
+                "label": "t:common.delivery_switcher_position",
+                "options": [
+                    {
+                        "value": "header",
+                        "label": "t:common.header"
+                    },
+                    {
+                        "value": "footer",
+                        "label": "t:common.footer"
+                    }
+                ],
+                "default": "header"
+            },
+            {
+                "type": "product",
+                "id": "delivery_switcher_product",
+                "label": "t:common.delivery_switcher_product"
             },
             {
                 "type": "select",
@@ -87,12 +134,6 @@
                 "type": "checkbox",
                 "id": "hide_certified",
                 "label": "t:common.hide_certified",
-                "default": false
-            },
-            {
-                "type": "checkbox",
-                "id": "aio_toggle",
-                "label": "t:common.aio_toggle",
                 "default": false
             }
         ],
@@ -287,6 +328,11 @@
                         "type": "text",
                         "id": "subheading",
                         "label": "t:common.subheader"
+                    },
+                    {
+                        "type": "text",
+                        "id": "product_selling_plan_text",
+                        "label": "t:common.selling_plan_text"
                     },
                     {
                         "type": "text",

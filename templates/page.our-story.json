@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>We're rethinking skincare</h1>",
         "text": "<p>Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/our_story_banner.webp",
         "image_mobile": "shopify://shop_images/our_story_banner_mob.webp",
         "button_label": "",
@@ -84,6 +87,7 @@
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>From a personal struggle to a skincare revolution</h2>",
         "text": "<p>Good skin shouldn’t be a luxury. That belief sparked Qure — a brand built to bridge <em>the gap between clinical-grade treatments and everyday skincare,</em> without the clinic price tag.</p><p>It started with a personal journey. Kristina had always struggled with her skin and spent years researching products and routines.</p><p>She’d send care packages to Matt, complete with handwritten instructions. When his skin started to glow, she assumed it was thanks to her advice. But it wasn’t. Matt had been using an LED panel — proof that professional tech worked. <em>The problem? It wasn’t affordable or accessible.</em></p>",
         "image": "shopify://shop_images/skincare_revolution.webp",
@@ -98,7 +102,7 @@
         "stat_1": {
           "type": "text",
           "settings": {
-            "heading": "300,000+",
+            "heading": "700,000+",
             "text": "Customers Worldwide"
           }
         },
@@ -136,7 +140,8 @@
         "modifier": "stats",
         "text": "",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "n_our_story_led_story": {
@@ -147,6 +152,7 @@
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>From a personal struggle to a skincare revolution</h2>",
         "text": "<p>With the release of the <a href=\"https://qureskincare.com/products/q-rejuvalight-pro-facewear\" title=\"https://qureskincare.com/products/q-rejuvalight-pro-facewear\">Q-Rejuvalight Pro LED Face Mask</a>, we put the future of your skin in your hands—literally.</p><p>By <em>bringing clinical-grade technology home</em>, we’ve made real results possible—without the clinic price tag.</p><p>Because when it comes to your skin, you deserve solutions that work.</p>",
         "image": "shopify://shop_images/skincare_rev.webp",
@@ -161,8 +167,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "sm",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h2>Feeling good in your skin is so much more than skin deep.</h2>",
         "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/feeling_good_banner.webp",
         "image_mobile": "shopify://shop_images/feeling_good_banner_mob.webp",
         "button_label": "",
