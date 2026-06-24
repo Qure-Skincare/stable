@@ -2,10 +2,8 @@
     {% render 'n-product-page-next-ships', section: section, class: 'hide preorder_box' %}
 {% endcapture %}
 
-{% if section.settings.subscription_product == 'true' %}
-    {% if section.settings.delivery_switcher_position == 'header' %}
-        {% include 'n-purchase-form-landing-delivery-switcher' %}
-    {% endif %}
+{% if section.settings.delivery_switcher_position == 'header' %}
+    {% include 'n-purchase-form-landing-delivery-switcher' %}
 {% endif %}
 
 <div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}">
