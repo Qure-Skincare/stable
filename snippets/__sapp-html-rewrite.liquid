@@ -1,0 +1,120 @@
+{%- assign sapp_class_exceptions = 'sapp-init,sapp-config,"__init"' | split: ',' -%}
+{%- assign sapp_no_rewrite       = sapp_src_exceptions | concat: sapp_class_exceptions -%}
+{%- assign sapp_skip_types     = 'application/json,application/ld+json,importmap,application/ecmascript,text/template,text/x-template,application/xhtml+xml' | split: ',' -%}
+
+{%- if sapp_rewrite_script -%}
+{%- assign sapp_chunks = sapp_html | split: '<script' -%}
+{%- assign sapp_html = sapp_chunks[0] -%}
+{%- for ch in sapp_chunks offset: 1 -%}
+  {%- assign tag_open_split = ch | split: '>' -%}
+  {%- assign tag_open = tag_open_split[0] -%}
+  {%- assign rest = ch | remove_first: tag_open -%}
+
+  {%- assign skip = false -%}
+
+  {%- for ex in sapp_no_rewrite -%}
+    {%- if tag_open contains ex -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+
+  {%- unless skip -%}
+    {%- for t in sapp_skip_types -%}
+      {%- assign needle1 = 'type="' | append: t | append: '"' -%}
+      {%- assign needle2 = "type='" | append: t | append: "'" -%}
+      {%- if tag_open contains needle1 or tag_open contains needle2 -%}
+        {%- assign skip = true -%}{%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+
+  {%- unless skip -%}
+    {%- for needle in sapp_innerhtml_exceptions -%}
+      {%- if rest contains needle -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+
+  {%- if skip -%}
+    {%- assign sapp_html = sapp_html | append: '<script' | append: ch -%}
+  {%- else -%}
+    {%- assign new_open = tag_open -%}
+    {%- assign orig_type = '' -%}
+    {%- if new_open contains 'type="module"' or new_open contains "type='module'" -%}
+      {%- assign orig_type = 'module' -%}
+    {%- endif -%}
+    {%- if new_open contains 'src=' -%}
+      {%- assign new_open = new_open
+        | replace: 'data-src=', '__SAPP_DS__'
+        | replace: 'src=', 'data-src='
+        | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- endif -%}
+    {%- if orig_type != '' -%}
+      {%- assign type_inject = ' type="javascript/sapp-loading" data-sapp-orig-type="' | append: orig_type | append: '"' -%}
+    {%- else -%}
+      {%- assign type_inject = ' type="javascript/sapp-loading"' -%}
+    {%- endif -%}
+    {%- assign sapp_html = sapp_html | append: '<script' | append: type_inject | append: new_open | append: rest -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- if sapp_rewrite_iframe -%}
+{%- assign sapp_chunks = sapp_html | split: '<iframe' -%}
+{%- assign sapp_html = sapp_chunks[0] -%}
+{%- for ch in sapp_chunks offset: 1 -%}
+  {%- assign tag_open_split = ch | split: '>' -%}
+  {%- assign tag_open = tag_open_split[0] -%}
+  {%- assign rest = ch | remove_first: tag_open -%}
+  {%- if tag_open contains 'src=' -%}
+    {%- assign new_open = tag_open
+      | replace: 'data-src=', '__SAPP_DS__'
+      | replace: 'src=', 'data-src='
+      | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- assign sapp_html = sapp_html | append: '<iframe' | append: new_open | append: rest -%}
+  {%- else -%}
+    {%- assign sapp_html = sapp_html | append: '<iframe' | append: ch -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- if sapp_rewrite_video -%}
+{%- assign sapp_chunks = sapp_html | split: '<video' -%}
+{%- assign sapp_html = sapp_chunks[0] -%}
+{%- for ch in sapp_chunks offset: 1 -%}
+  {%- assign tag_open_split = ch | split: '>' -%}
+  {%- assign tag_open = tag_open_split[0] -%}
+  {%- assign rest = ch | remove_first: tag_open -%}
+  {%- if tag_open contains 'src=' -%}
+    {%- assign new_open = tag_open
+      | replace: 'data-src=', '__SAPP_DS__'
+      | replace: 'src=', 'data-src='
+      | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- assign sapp_html = sapp_html | append: '<video' | append: new_open | append: rest -%}
+  {%- else -%}
+    {%- assign sapp_html = sapp_html | append: '<video' | append: ch -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- if sapp_rewrite_audio -%}
+{%- assign sapp_chunks = sapp_html | split: '<audio' -%}
+{%- assign sapp_html = sapp_chunks[0] -%}
+{%- for ch in sapp_chunks offset: 1 -%}
+  {%- assign tag_open_split = ch | split: '>' -%}
+  {%- assign tag_open = tag_open_split[0] -%}
+  {%- assign rest = ch | remove_first: tag_open -%}
+  {%- if tag_open contains 'src=' -%}
+    {%- assign new_open = tag_open
+      | replace: 'data-src=', '__SAPP_DS__'
+      | replace: 'src=', 'data-src='
+      | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- assign sapp_html = sapp_html | append: '<audio' | append: new_open | append: rest -%}
+  {%- else -%}
+    {%- assign sapp_html = sapp_html | append: '<audio' | append: ch -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- assign sapp_html = sapp_html
+  | replace: 'function asyncLoad()', 'window.asyncLoad = function asyncLoad()'
+  | replace: 'var urls', 'var urls = asyncLoadArr'
+  | replace: 's.src = urls[i];', 'continue;'
+-%}

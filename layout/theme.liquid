@@ -1,3 +1,6 @@
+{% include '__sapp-detect' %}
+
+{%- capture sapp_html -%}
 <!doctype html>
 <html lang="{{ shop.locale }}">
 
@@ -63,6 +66,10 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css">
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css?rnd=1" />
+
+    {%- unless is_admin_interface -%}
+        {% include '__sapp-include' %}
+    {%- endunless -%}
     
     <style>
         :root {
@@ -104,3 +111,5 @@
     <script src="https://qureskincaredns-stable.com/assets/js/vendor.js" defer="defer"></script>
   </body>
 </html>
+{%- endcapture -%}
+{% include '__sapp-output' %}

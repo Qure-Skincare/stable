@@ -1,0 +1,42 @@
+<script class="sapp-init" type="application/json" id="sapp-config">
+{
+  "license": {
+    "host": {{ shop.permanent_domain | json }},
+    "token": {{ sapp_license_token | json }},
+    "expiresAt": {{ sapp_license_expires }}
+  },
+  "debug": false,
+  "timeouts": {
+    "mobile":  { "preload": "1000", "scripts": "2500", "other": "2900", "async": "3500" },
+    "desktop": { "preload": "500", "scripts": "2500", "other": "2900", "async": "3500" }
+  },
+  "queueOptions": {
+    "async": { "stagger": 800 }
+  },
+  "dispatchSyntheticEvents": true,
+  "defaultMediaTrigger": "scroll",
+  "rules": [
+    { 
+      "match": { "innerHTML": "ShopifyAnalytics" },
+      "queue": "loaded",
+      "trigger": "timeout"
+    },
+    { 
+      "match": { "id": "web-pixels-manager-setup" },
+      "queue": "other",
+      "trigger": "timeout"
+    },
+    { 
+      "match": { "src": "portable-wallets" },
+      "queue": "event",
+      "trigger": ["scroll", "click", "touchstart", "mousemove"] 
+    }
+  ],
+  "exceptions": {
+    "id":        ["sapp-config"],
+    "class":     ["sapp-init", "__init"],
+    "innerHTML": {{ sapp_innerhtml_exceptions | json }},
+    "src":       {{ sapp_src_exceptions | json }}
+  }
+}
+</script>
