@@ -384,7 +384,7 @@
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
         "delivery_switcher_product": "",
-        "type": "list",
+        "type": "variant",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
