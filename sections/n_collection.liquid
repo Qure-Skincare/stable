@@ -40,10 +40,15 @@
                     {% endif %}
                 {% endfor %}
 
+                {% assign n_tile_old_price = blank %}
                 {% if black_friday_discount_percent > 0 %}
                     {% assign n_tile_price_display = product_black_friday_price %}
+                    {% assign n_tile_old_price = product_sale_price %}
                 {% else %}
                     {% assign n_tile_price_display = product_sale_price %}
+                    {% if product_before_price != blank %}
+                        {% assign n_tile_old_price = product_before_price %}
+                    {% endif %}
                 {% endif %}
 
                 {% if product_available %}
@@ -76,6 +81,9 @@
                             <div class="e-price">
                                 <div class="e-price__main">
                                     <div class="e-price__current">{{ n_tile_price_display }}</div>
+                                    {% if n_tile_old_price != blank %}
+                                        <div class="e-price__old">{{ n_tile_old_price }}</div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
