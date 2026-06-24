@@ -855,7 +855,8 @@
       },
       "payment": {
         "purchase_options_subscription_agreement_label": "This order includes an auto-renewing subscription. You'll be charged the recurring amount shown until cancelled. Cancel anytime in your account or by contacting us.",
-        "purchase_options_subscription_consent_text": "You'll be charged the recurring amount shown until cancelled. Cancel anytime in your account or by contacting us. See {{ cancelation_policy_lable }}."
+        "purchase_options_subscription_consent_text": "You'll be charged the recurring amount shown until cancelled. Cancel anytime in your account or by contacting us. See {{ cancelation_policy_lable }}.",
+        "purchase_options_subscription_cancellation_instructions": "See {{ cancelation_policy_lable }}."
       }
     }
   }
