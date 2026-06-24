@@ -1,17 +1,19 @@
-<div class="c-selector-switcher c-selector-switcher--dark">
-    <ul class="e-pill-tabs e-pill-tabs--selector">
-        <li>
-            <label>
-                <input name="delivery-type" type="radio" value="onetime" />
-                {{ 'purchase-form.settings.onetime' | t }}
-            </label>
-        </li>
-        <li>
-            <label>
-                <input name="delivery-type" type="radio" value="subscription" checked="checked" />
-                {{ 'purchase-form.settings.subscribe' | t }}{% if section.settings.subscription_discount_max_percent > 0 %} &amp; {{ 'purchase-form.settings.save' | t }}&nbsp;<strong>{{ section.settings.subscription_discount_max_percent }}%</strong>{% endif %}
-            </label>
-        </li>
-    </ul>
-    <p><i class="e-icon e-icon-rotation-2"></i> {{ 'purchase-form.settings.subscribe_text' | t }}</p>
-</div>
+{% if section.settings.subscription_product == 'true' %}
+    <div class="c-selector-switcher c-selector-switcher--dark">
+        <ul class="e-pill-tabs e-pill-tabs--selector">
+            <li>
+                <label>
+                    <input name="delivery-type" type="radio" value="onetime" />
+                    {{ 'purchase-form.settings.onetime' | t }}
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input name="delivery-type" type="radio" value="subscription" checked="checked" />
+                    {{ 'purchase-form.settings.subscribe' | t }}{% if section.settings.subscription_discount_max_percent > 0 %} &amp; {{ 'purchase-form.settings.save' | t }}&nbsp;<strong>{{ section.settings.subscription_discount_max_percent }}%</strong>{% endif %}
+                </label>
+            </li>
+        </ul>
+        <p><i class="e-icon e-icon-rotation-2"></i> {{ 'purchase-form.settings.subscribe_text' | t }}</p>
+    </div>
+{% endif %}
