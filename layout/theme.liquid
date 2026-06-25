@@ -63,9 +63,9 @@
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
-    
+    <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/general.css" as="style" fetchpriority="low">
+    <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" as="style" fetchpriority="low">
+
     <style>
         :root {
           {% if settings.primary-color != blank %}
@@ -79,7 +79,7 @@
     
     {{ content_for_header }}
 
-    {% comment %} {% render 'n-header-scripts' %} {% endcomment %}
+    {% render 'n-header-scripts' %}
 
     <script src="{{ 'n-datalayer.js' | asset_url }}"></script>
     <script src="{{ 'n-country-detect.js' | asset_url }}"></script>
@@ -97,6 +97,9 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <!-- End Google Tag Manager (noscript) -->
+
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
     
     {% sections 'n-header-group' %}
 
@@ -105,13 +108,9 @@
     </main>
 
     {% sections 'n-footer-group' %}
-    {% comment %} {% render 'n-footer-scripts' %} {% endcomment %}
+    {% render 'n-footer-scripts' %}
 
     <script src="https://qureskincaredns-stable.com/assets/js/vendor.js" defer="defer"></script>
-    {% comment %} <link rel="preload" as="style" href="https://qureskincaredns-stable.com/assets/css/general.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css"></noscript> {% endcomment %}
-
-    {% comment %} <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css"> {% endcomment %}
   </body>
 </html>
 {%- endcapture -%}

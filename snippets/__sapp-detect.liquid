@@ -29,3 +29,7 @@
 
 {%- assign sapp_src_exceptions = '__sapp-,load_feature' | split: ',' -%}
 {%- assign sapp_innerhtml_exceptions = 'Shopify.locale,function asyncLoad()' | split: ',' -%}
+
+
+{% comment %} {%- assign sapp_src_exceptions = '__sapp-,load_feature,assets/js/,assets/n-,header.js,footer.js' | split: ',' -%}
+{%- assign sapp_innerhtml_exceptions = 'Shopify.locale,function asyncLoad(),loadScriptOnce' | split: ',' -%} {% endcomment %}

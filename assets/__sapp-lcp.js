@@ -91,8 +91,20 @@
     }
   }
 
+  // Fonts are declared in an inert <style type="text/sapp-fonts"> so the browser
+  // can't fetch them during the LCP window. Activate them after the hero loads:
+  // cloning the rules into a live <style> registers the @font-face and the text
+  // swaps from the system fallback (font-display: swap).
+  function activateFonts() {
+    var f = document.getElementById('sapp-fonts');
+    if (!f) return;
+    var s = document.createElement('style');
+    s.textContent = f.textContent;
+    document.head.appendChild(s);
+  }
+
   function start() {
-    whenLcpReady(activate);
+    whenLcpReady(function () { activate(); activateFonts(); });
     armHoverBackgrounds();
   }
 
