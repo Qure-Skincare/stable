@@ -63,7 +63,7 @@
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/critical.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
     
     <style>
@@ -108,7 +108,8 @@
     {% comment %} {% render 'n-footer-scripts' %} {% endcomment %}
 
     <script src="https://qureskincaredns-stable.com/assets/js/vendor.js" defer="defer"></script>
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
+    {% comment %} <link rel="preload" as="style" href="https://qureskincaredns-stable.com/assets/css/general.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css"></noscript> {% endcomment %}
 
     {% comment %} <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css"> {% endcomment %}
   </body>

@@ -8,10 +8,24 @@
 <section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% elsif section.settings.modifier == 'doctorly' %} across-image-banner--doctorly{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
-                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+                <source media="(min-width:768px)"
+                    srcset="{{ section.settings.image | image_url: width: 768 }} 768w,
+                            {{ section.settings.image | image_url: width: 1024 }} 1024w,
+                            {{ section.settings.image | image_url: width: 1440 }} 1440w,
+                            {{ section.settings.image | image_url: width: 1920 }} 1920w"
+                    sizes="100vw" />
             {% endif %}
             {% if section.settings.image_mobile != blank %}
-                <img loading="eager" fetchpriority="high" src="{{ section.settings.image_mobile | image_url | split: '?' | first }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                <img loading="eager" fetchpriority="high"
+                    src="{{ section.settings.image_mobile | image_url: width: 800 }}"
+                    srcset="{{ section.settings.image_mobile | image_url: width: 360 }} 360w,
+                            {{ section.settings.image_mobile | image_url: width: 480 }} 480w,
+                            {{ section.settings.image_mobile | image_url: width: 768 }} 768w,
+                            {{ section.settings.image_mobile | image_url: width: 1080 }} 1080w"
+                    sizes="100vw"
+                    width="{{ section.settings.image_mobile.width }}"
+                    height="{{ section.settings.image_mobile.height }}"
+                    alt="{{ section.settings.image_mobile.alt | escape }}" />
             {% endif %}
         </picture>
         <div class="container">

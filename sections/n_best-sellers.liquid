@@ -15,7 +15,7 @@
                     {% endif %}
                     <div class="best-sellers__item">
                         <div class="c-product-tile">
-                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ product_url }}">
+                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url }})" href="{{ product_url }}" aria-label="{{ block.settings.image.alt | escape }}">
                                 {% if block.settings.image != blank %}
                                     <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
@@ -33,7 +33,7 @@
                                 <div class="e-rating-stars" style="--rating: {{ product_rating }}"></div>
                                 <a href="{{ product_url }}">{{ product_rating_count }} {{ 'sections.n_collection.reviews' | t }}</a>
                             </div>
-                            <a class="c-product-tile__name" href="{{ product_url }}">{{ block.settings.heading }}</a>
+                            <a class="c-product-tile__name" href="{{ product_url }}" aria-label="{{ block.settings.heading | escape }}">{{ block.settings.heading }}</a>
                             <div class="c-product-tile__price">
                                 <div class="e-price">
                                     <div class="e-price__main">

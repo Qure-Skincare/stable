@@ -20,14 +20,14 @@
                      {% if block.settings.image != blank and block.settings.image_mobile != blank %}
                         <picture>
                            <source media="(min-width: 768px)" srcset="{{ block.settings.image | image_url }}" />
-                           <img loading="lazy" src="{{ block.settings.image_mobile | image_url }}" />
+                           <img loading="lazy" src="{{ block.settings.image_mobile | image_url }}" alt="{{ section.settings.heading | escape }}" />
                         </picture>
                      {% endif %}
                      {% if block.settings.text != blank %}
                         <h6>{{ block.settings.text }}</h6>
                      {% endif %}
                      {% if block.settings.button != blank and block.settings.button_url != blank %}
-                        <a class="btn btn--primary-white" href="{{ block.settings.button_url }}">{{ block.settings.button }}</a>
+                        <a class="btn btn--primary-white" href="{{ block.settings.button_url }}" aria-label="{{ section.settings.heading | escape }}">{{ block.settings.button }}</a>
                      {% endif %}
                   </li>
                {% endif %}

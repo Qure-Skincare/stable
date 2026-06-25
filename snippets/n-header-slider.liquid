@@ -103,7 +103,7 @@
     </div>
 
     {% if thumbs != blank and title2 != blank %}
-        <button class="c-swiper-button-prev"></button>
+        <button class="c-swiper-button-prev" aria-label="prev"></button>
         <div class="c-swiper c-swiper-thumbs"
             data-swiper='{
                 "slidesPerView": 4,
@@ -122,6 +122,6 @@
                 {% render 'n-header-slider-item', title: title9, image: image9, url: url9, thumbs: thumbs %}
             </div>
         </div>
-        <button class="c-swiper-button-next"></button>
+        <button class="c-swiper-button-next" aria-label="next"></button>
     {% endif %}
 </div>

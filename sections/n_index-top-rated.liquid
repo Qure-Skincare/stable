@@ -18,9 +18,9 @@
 
                     <div class="c-product-tile">
                         {% if block.settings.hover_image != blank %}
-                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url: width: 400 }})" href="{{ block.settings.url }}">
+                            <a class="c-product-tile__image" style="--image-on-hover: url({{ block.settings.hover_image | image_url: width: 400 }})" href="{{ block.settings.url }}" aria-label="{{ block.settings.heading | escape }}">
                                 {% if block.settings.image != blank %}
-                                    <img loading="lazy" src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.heading | escape }}" />
                                 {% endif %}
                                 {% if block.settings.image_text != 'none' %}
                                     {% if block.settings.image_text == 'bestseller' %}
@@ -38,7 +38,7 @@
                             </div>
                         {% endif %}
                         {% if block.settings.heading != blank %}
-                            <a class="c-product-tile__name" href="{{ block.settings.url }}">{{ block.settings.heading }}</a>
+                            <a class="c-product-tile__name" href="{{ block.settings.url }}" aria-label="{{ block.settings.heading | escape }}">{{ block.settings.heading }}</a>
                         {% endif %}
                         <div class="c-product-tile__price">
                             <div class="e-price">

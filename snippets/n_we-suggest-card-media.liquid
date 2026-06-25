@@ -17,6 +17,7 @@
         style="--image-on-hover: url({{ resolved_hover_image | image_url: width: 1200 }})"
       {% endif %}
       href="{{ card_link_href }}"
+      aria-label="{{ alt_text | escape }}"
     >
       {% if resolved_product_image != blank %}
         {% if resolved_product_image.width != blank and resolved_product_image.height != blank %}

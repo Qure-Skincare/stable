@@ -54,7 +54,7 @@
 
                 <div class="best-sellers__item">
                     <div class="c-product-tile">
-                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
+                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}" aria-label="{{ product_title | escape }}">
                             {% if product_media.size > 0 %}
                                 {% for media in product_media limit: 1 %}
                                     <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
@@ -71,7 +71,7 @@
                             {% endif %}
                         </a>
                         {% render 'n_collection-product-rating', product: product %}
-                        <a class="c-product-tile__name" href="{{ product_url }}">{{ product_title }}</a>
+                        <a class="c-product-tile__name" href="{{ product_url }}" aria-label="{{ product_title | escape }}">{{ product_title }}</a>
                         <div class="c-product-tile__price">
                             <div class="e-price">
                                 <div class="e-price__main">
