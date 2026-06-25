@@ -10,14 +10,14 @@
       {%- assign sapp_backend_file  = '__sapp-backend.js'  -%}
     {%- endif -%}
     {%- assign sapp_custom_file   = '__sapp-custom.js'   -%}
-    {%- assign sapp_lcp_file   = '__sapp-lcp.js'   -%}
     {%- include '__sapp-config' -%}
+
+    {% render '__sapp-lcp' %}
 
     <script src="{{ sapp_runtime_file  | asset_url }}" defer="defer"></script>
     <script src="{{ sapp_custom_file   | asset_url }}" defer="defer"></script>
     <script src="{{ sapp_observer_file | asset_url }}" defer="defer"></script>
     <script src="{{ sapp_backend_file  | asset_url }}" defer="defer"></script>
-    <script src="{{ sapp_lcp_file   | asset_url }}" defer="defer"></script>
 
     <link rel="stylesheet" href="{{ '__sapp-custom.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="{{ '__sapp-custom.css' | asset_url }}"></noscript>

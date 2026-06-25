@@ -1,5 +1,5 @@
 {%- assign sapp_class_exceptions = 'sapp-init,sapp-config,"__init"' | split: ',' -%}
-{%- assign sapp_no_rewrite       = sapp_src_exceptions | concat: sapp_class_exceptions -%}
+{%- assign sapp_no_rewrite       = sapp_init_src | concat: sapp_class_exceptions -%}
 {%- assign sapp_skip_types     = 'application/json,application/ld+json,importmap,application/ecmascript,text/template,text/x-template,application/xhtml+xml' | split: ',' -%}
 
 {%- if sapp_rewrite_script -%}
@@ -27,12 +27,32 @@
   {%- endunless -%}
 
   {%- unless skip -%}
-    {%- for needle in sapp_innerhtml_exceptions -%}
+    {%- for needle in sapp_init_innerhtml -%}
       {%- if rest contains needle -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
     {%- endfor -%}
   {%- endunless -%}
 
-  {%- if skip -%}
+  {%- assign is_lcp_script = false -%}
+  {%- for ls in sapp_lcp_scripts -%}
+    {%- if tag_open contains ls -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {%- comment -%} Inline scripts opt in with the data-sapp-lcp attribute. {%- endcomment -%}
+  {%- if tag_open contains 'data-sapp-lcp' -%}{%- assign is_lcp_script = true -%}{%- endif -%}
+  {%- comment -%} Inline scripts matched by a substring of their body. {%- endcomment -%}
+  {%- unless is_lcp_script -%}
+    {%- assign sapp_body = rest | split: '</script' | first -%}
+    {%- for needle in sapp_lcp_innerhtml -%}
+      {%- if sapp_body contains needle -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+
+  {%- if is_lcp_script -%}
+    {%- assign new_open = tag_open
+      | replace: 'data-src=', '__SAPP_DS__'
+      | replace: 'src=', 'data-src='
+      | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- assign sapp_html = sapp_html | append: '<script type="text/sapp-lcp"' | append: new_open | append: rest -%}
+  {%- elsif skip -%}
     {%- assign sapp_html = sapp_html | append: '<script' | append: ch -%}
   {%- else -%}
     {%- assign new_open = tag_open -%}

@@ -1,19 +1,9 @@
-/*
- * __sapp-lcp.js
- * ---------------------------------------------------------------------------
- * Frees the network during the LCP critical window.
- *
- * Server-side (snippets/__sapp-html-rewrite.liquid) every <img> WITHOUT
- * loading="eager" has its src/srcset rewritten to data-src/data-srcset, so the
- * browser's preload scanner cannot fetch it. The single eager image (the hero /
- * LCP) keeps its real src and loads first, alone, getting the full bandwidth.
- *
- * This module waits until the eager image(s) have loaded — that is the LCP
- * moment — and only then hands the deferred images to an IntersectionObserver.
- * Near-viewport images load right after LCP; far ones wait for scroll (data
- * saving). If JS is the only thing standing between the user and the images, a
- * fallback timeout guarantees they are never stuck hidden.
- */
+{%- comment -%}
+  Inlined LCP orchestrator. class="__init" keeps it out of the sapp script
+  rewrite so it runs immediately. The DOMContentLoaded guard ensures it waits
+  for the <body> (eager image) before activating any deferred resource.
+{%- endcomment -%}
+<script class="__init">
 (function () {
   'use strict';
 
@@ -103,8 +93,27 @@
     document.head.appendChild(s);
   }
 
+  // Scripts marked type="text/sapp-lcp" are inert (the browser neither fetches
+  // nor runs them). After the hero loads, recreate them as real scripts:
+  //   - external (has data-src): set src, async=false to preserve order
+  //   - inline (no data-src): copy the body so it executes
+  function activateLcpScripts() {
+    var nodes = document.querySelectorAll('script[type="text/sapp-lcp"]');
+    for (var i = 0; i < nodes.length; i++) {
+      var src = nodes[i].getAttribute('data-src');
+      var s = document.createElement('script');
+      if (src) {
+        s.src = src;
+        s.async = false;
+      } else {
+        s.textContent = nodes[i].textContent;
+      }
+      document.head.appendChild(s);
+    }
+  }
+
   function start() {
-    whenLcpReady(function () { activate(); activateFonts(); });
+    whenLcpReady(function () { activate(); activateFonts(); activateLcpScripts(); });
     armHoverBackgrounds();
   }
 
@@ -114,3 +123,4 @@
     start();
   }
 })();
+</script>
