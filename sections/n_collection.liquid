@@ -40,10 +40,19 @@
                     {% endif %}
                 {% endfor %}
 
+                {% assign n_tile_old_price = blank %}
+                {% assign n_tile_old_price_2 = blank %}
                 {% if black_friday_discount_percent > 0 %}
                     {% assign n_tile_price_display = product_black_friday_price %}
+                    {% assign n_tile_old_price = product_sale_price %}
+                    {% if product_before_price != blank %}
+                        {% assign n_tile_old_price_2 = product_before_price %}
+                    {% endif %}
                 {% else %}
                     {% assign n_tile_price_display = product_sale_price %}
+                    {% if product_before_price != blank %}
+                        {% assign n_tile_old_price = product_before_price %}
+                    {% endif %}
                 {% endif %}
 
                 {% if product_available %}
@@ -73,9 +82,15 @@
                         {% render 'n_collection-product-rating', product: product %}
                         <a class="c-product-tile__name" href="{{ product_url }}" aria-label="{{ product_title | escape }}">{{ product_title }}</a>
                         <div class="c-product-tile__price">
-                            <div class="e-price">
+                            <div class="e-price e-price--strikethrough-old">
                                 <div class="e-price__main">
                                     <div class="e-price__current">{{ n_tile_price_display }}</div>
+                                    {% if n_tile_old_price != blank %}
+                                        <div class="e-price__old">{{ n_tile_old_price }}</div>
+                                    {% endif %}
+                                    {% if n_tile_old_price_2 != blank %}
+                                        <div class="e-price__old">{{ n_tile_old_price_2 }}</div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

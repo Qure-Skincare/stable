@@ -93,7 +93,7 @@
 
                                     {% unless section.settings.type == 'variant' %}
                                         <div class="c-supply-selector__price">
-                                            <div class="e-price{% if black_friday_discount_percent > 0 %} e-price--strikethrough{% endif %}">
+                                            <div class="e-price{% if black_friday_discount_percent > 0 and product_subscription_price == blank %} e-price--strikethrough{% endif %}">
                                                 <div class="e-price__main">
                                                     {% if product_subscription_price != blank %}
                                                         <div class="e-price__current igSubPrice" data-variant-id="{{ product_variant_id }}">{{ product_subscription_price }}</div>
@@ -109,7 +109,7 @@
                                                     {% endif %}
                                                 </div>
                                             </div>
-                                            {% if product_black_friday_price != blank %}
+                                            {% if product_black_friday_price != blank and product_subscription_price == blank %}
                                                 <div class="c-supply-selector__final-price">
                                                     <div class="e-price">
                                                         <div class="e-price__main">
