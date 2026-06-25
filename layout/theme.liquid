@@ -83,8 +83,10 @@
 
     <script src="{{ 'n-datalayer.js' | asset_url }}"></script>
     <script src="{{ 'n-country-detect.js' | asset_url }}"></script>
-    <script src="{{ '__sapp-lcp.js' | asset_url }}" defer="defer"></script>
 
+    {%- unless is_admin_interface -%}
+        {% include '__sapp-include' %}
+    {%- endunless -%}
   </head>
 
   <body class="{{ template | downcase }}">
@@ -109,10 +111,6 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
 
     {% comment %} <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css"> {% endcomment %}
-
-    {%- unless is_admin_interface -%}
-        {% include '__sapp-include' %}
-    {%- endunless -%}
   </body>
 </html>
 {%- endcapture -%}

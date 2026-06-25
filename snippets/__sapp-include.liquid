@@ -10,6 +10,7 @@
       {%- assign sapp_backend_file  = '__sapp-backend.js'  -%}
     {%- endif -%}
     {%- assign sapp_custom_file   = '__sapp-custom.js'   -%}
+    {%- assign sapp_lcp_file   = '__sapp-lcp.js'   -%}
     {%- include '__sapp-preload' -%}
     {%- include '__sapp-config' -%}
     {{ '__sapp-custom.css' | asset_url | stylesheet_tag }}
@@ -17,5 +18,6 @@
     <script src="{{ sapp_custom_file   | asset_url }}"></script>
     <script src="{{ sapp_observer_file | asset_url }}"></script>
     <script src="{{ sapp_backend_file  | asset_url }}" async></script>
+    <script src="{{ sapp_lcp_file   | asset_url }}" defer="defer"></script>
   {%- endif -%}
 {%- endunless -%}

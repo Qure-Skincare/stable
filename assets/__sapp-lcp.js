@@ -1,5 +1,5 @@
 /*
- * n-lcp-defer.js
+ * __sapp-lcp.js
  * ---------------------------------------------------------------------------
  * Frees the network during the LCP critical window.
  *
@@ -75,7 +75,26 @@
     setTimeout(fire, FALLBACK_MS);    // safety net
   }
 
-  function start() { whenLcpReady(activate); }
+  // Hover background images (--image-on-hover) are renamed server-side to
+  // --image-on-hover-defer so the CSS never fetches them. Restore the real
+  // property on first pointerenter — on touch devices (no hover) they stay
+  // unloaded forever, saving the bytes entirely.
+  function armHoverBackgrounds() {
+    var els = document.querySelectorAll('[style*="--image-on-hover-defer"]');
+    for (var i = 0; i < els.length; i++) {
+      (function (el) {
+        el.addEventListener('pointerenter', function restore() {
+          el.style.setProperty('--image-on-hover', el.style.getPropertyValue('--image-on-hover-defer'));
+          el.removeEventListener('pointerenter', restore);
+        }, { once: true });
+      })(els[i]);
+    }
+  }
+
+  function start() {
+    whenLcpReady(activate);
+    armHoverBackgrounds();
+  }
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', start, { once: true });

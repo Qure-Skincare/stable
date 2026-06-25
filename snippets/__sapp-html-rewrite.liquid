@@ -56,12 +56,6 @@
 {%- endfor -%}
 {%- endif -%}
 
-{%- comment -%}
-  Image deferral. Every <img> WITHOUT loading="eager" gets src/srcset rewritten
-  to data-src/data-srcset so the preload scanner can't fetch it during the LCP
-  window. n-lcp-defer.js releases them after the eager (LCP) image has loaded.
-  Built via array + single join (O(D)) instead of per-tag append (O(N*D)).
-{%- endcomment -%}
 {%- if sapp_rewrite_img -%}
 {%- assign sapp_img_chunks = sapp_html | split: '<img' -%}
 {%- assign sapp_img_out = sapp_img_chunks[0] | split: '|SAPPNUL|' -%}
@@ -84,9 +78,10 @@
   {%- assign sapp_img_out = sapp_img_out | concat: piece_arr -%}
 {%- endfor -%}
 {%- assign sapp_html = sapp_img_out | join: '' -%}
+{%- assign sapp_html = sapp_html | replace: '--image-on-hover:', '--image-on-hover-defer:' -%}
 {%- endif -%}
 
-{% comment %} {%- if sapp_rewrite_iframe -%}
+{%- if sapp_rewrite_iframe -%}
 {%- assign sapp_chunks = sapp_html | split: '<iframe' -%}
 {%- assign sapp_html = sapp_chunks[0] -%}
 {%- for ch in sapp_chunks offset: 1 -%}
@@ -141,7 +136,7 @@
     {%- assign sapp_html = sapp_html | append: '<audio' | append: ch -%}
   {%- endif -%}
 {%- endfor -%}
-{%- endif -%} {% endcomment %}
+{%- endif -%}
 
 {%- assign sapp_html = sapp_html
   | replace: 'function asyncLoad()', 'window.asyncLoad = function asyncLoad()'
