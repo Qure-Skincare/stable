@@ -4,7 +4,6 @@
 {%- if request.host contains 'shopifypreview.com' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 
 {%- assign sapp_path = request.path -%}
-{%- if sapp_path contains '/cart' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/checkout' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/account' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/apps/' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
@@ -28,14 +27,7 @@
 {%- assign sapp_use_minified = true -%}
 
 {%- assign sapp_init_src = '' | split: ',' -%}
-{%- assign sapp_init_innerhtml = 'Shopify.locale,function asyncLoad()' | split: ',' -%}
+{%- assign sapp_init_innerhtml = '' | split: ',' -%}
 
-{%- comment -%} Run after the LCP image (activated by __sapp-lcp snippet). {%- endcomment -%}
-{%- comment -%} External scripts matched by src filename. {%- endcomment -%}
-{%- assign sapp_lcp_scripts = 'load_feature,__sapp-runtime,__sapp-observer,__sapp-backend,n-redirect.js,n-datalayer.js,n-country-detect.js,vendor.js,header.js,footer.js' | split: ',' -%}
-{%- comment -%} Inline scripts matched by a substring of their body. {%- endcomment -%}
-{%- assign sapp_lcp_innerhtml = 'loadScriptOnce' | split: ',' -%}
-
-
-{% comment %} {%- assign sapp_init_src = '__sapp-,load_feature,assets/js/,assets/n-,header.js,footer.js' | split: ',' -%}
-{%- assign sapp_init_innerhtml = 'Shopify.locale,function asyncLoad(),loadScriptOnce' | split: ',' -%} {% endcomment %}
+{%- assign sapp_lcp_scripts = 'load_feature,__sapp-,load_feature,assets/js/,assets/n-,header.js,footer.js' | split: ',' -%}
+{%- assign sapp_lcp_innerhtml = 'Shopify.locale,function asyncLoad(),loadScriptOnce' | split: ',' -%}

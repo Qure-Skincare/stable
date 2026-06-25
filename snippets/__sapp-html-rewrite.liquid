@@ -2,12 +2,21 @@
 {%- assign sapp_no_rewrite       = sapp_init_src | concat: sapp_class_exceptions -%}
 {%- assign sapp_skip_types     = 'application/json,application/ld+json,importmap,application/ecmascript,text/template,text/x-template,application/xhtml+xml' | split: ',' -%}
 
+{%- comment -%} Precompute the constant type="..." / type='...' needles once, not per tag. {%- endcomment -%}
+{%- assign sapp_type_needles = '' | split: ',' -%}
+{%- for t in sapp_skip_types -%}
+  {%- assign n1 = 'type="' | append: t | append: '"' -%}
+  {%- assign n2 = "type='" | append: t | append: "'" -%}
+  {%- assign na = n1 | split: '|SAPPNUL|' -%}
+  {%- assign nb = n2 | split: '|SAPPNUL|' -%}
+  {%- assign sapp_type_needles = sapp_type_needles | concat: na | concat: nb -%}
+{%- endfor -%}
+
 {%- if sapp_rewrite_script -%}
 {%- assign sapp_chunks = sapp_html | split: '<script' -%}
-{%- assign sapp_html = sapp_chunks[0] -%}
+{%- assign sapp_out = sapp_chunks[0] | split: '|SAPPNUL|' -%}
 {%- for ch in sapp_chunks offset: 1 -%}
-  {%- assign tag_open_split = ch | split: '>' -%}
-  {%- assign tag_open = tag_open_split[0] -%}
+  {%- assign tag_open = ch | split: '>' | first -%}
   {%- assign rest = ch | remove_first: tag_open -%}
 
   {%- assign skip = false -%}
@@ -17,12 +26,8 @@
   {%- endfor -%}
 
   {%- unless skip -%}
-    {%- for t in sapp_skip_types -%}
-      {%- assign needle1 = 'type="' | append: t | append: '"' -%}
-      {%- assign needle2 = "type='" | append: t | append: "'" -%}
-      {%- if tag_open contains needle1 or tag_open contains needle2 -%}
-        {%- assign skip = true -%}{%- break -%}
-      {%- endif -%}
+    {%- for needle in sapp_type_needles -%}
+      {%- if tag_open contains needle -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
     {%- endfor -%}
   {%- endunless -%}
 
@@ -38,12 +43,14 @@
   {%- endfor -%}
   {%- comment -%} Inline scripts opt in with the data-sapp-lcp attribute. {%- endcomment -%}
   {%- if tag_open contains 'data-sapp-lcp' -%}{%- assign is_lcp_script = true -%}{%- endif -%}
-  {%- comment -%} Inline scripts matched by a substring of their body. {%- endcomment -%}
+  {%- comment -%} Inline scripts matched by a substring of their body (skip the split when the list is empty). {%- endcomment -%}
   {%- unless is_lcp_script -%}
-    {%- assign sapp_body = rest | split: '</script' | first -%}
-    {%- for needle in sapp_lcp_innerhtml -%}
-      {%- if sapp_body contains needle -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
-    {%- endfor -%}
+    {%- if sapp_lcp_innerhtml.size > 0 -%}
+      {%- assign sapp_body = rest | split: '</script' | first -%}
+      {%- for needle in sapp_lcp_innerhtml -%}
+        {%- if sapp_body contains needle -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
   {%- endunless -%}
 
   {%- if is_lcp_script -%}
@@ -51,9 +58,9 @@
       | replace: 'data-src=', '__SAPP_DS__'
       | replace: 'src=', 'data-src='
       | replace: '__SAPP_DS__', 'data-src=' -%}
-    {%- assign sapp_html = sapp_html | append: '<script type="text/sapp-lcp"' | append: new_open | append: rest -%}
+    {%- assign piece = '<script type="text/sapp-lcp"' | append: new_open | append: rest -%}
   {%- elsif skip -%}
-    {%- assign sapp_html = sapp_html | append: '<script' | append: ch -%}
+    {%- assign piece = '<script' | append: ch -%}
   {%- else -%}
     {%- assign new_open = tag_open -%}
     {%- assign orig_type = '' -%}
@@ -71,9 +78,13 @@
     {%- else -%}
       {%- assign type_inject = ' type="javascript/sapp-loading"' -%}
     {%- endif -%}
-    {%- assign sapp_html = sapp_html | append: '<script' | append: type_inject | append: new_open | append: rest -%}
+    {%- assign piece = '<script' | append: type_inject | append: new_open | append: rest -%}
   {%- endif -%}
+
+  {%- assign piece_arr = piece | split: '|SAPPNUL|' -%}
+  {%- assign sapp_out = sapp_out | concat: piece_arr -%}
 {%- endfor -%}
+{%- assign sapp_html = sapp_out | join: '' -%}
 {%- endif -%}
 
 {%- if sapp_rewrite_img -%}
@@ -101,62 +112,37 @@
 {%- assign sapp_html = sapp_html | replace: '--image-on-hover:', '--image-on-hover-defer:' -%}
 {%- endif -%}
 
-{%- if sapp_rewrite_iframe -%}
-{%- assign sapp_chunks = sapp_html | split: '<iframe' -%}
-{%- assign sapp_html = sapp_chunks[0] -%}
-{%- for ch in sapp_chunks offset: 1 -%}
-  {%- assign tag_open_split = ch | split: '>' -%}
-  {%- assign tag_open = tag_open_split[0] -%}
-  {%- assign rest = ch | remove_first: tag_open -%}
-  {%- if tag_open contains 'src=' -%}
-    {%- assign new_open = tag_open
-      | replace: 'data-src=', '__SAPP_DS__'
-      | replace: 'src=', 'data-src='
-      | replace: '__SAPP_DS__', 'data-src=' -%}
-    {%- assign sapp_html = sapp_html | append: '<iframe' | append: new_open | append: rest -%}
-  {%- else -%}
-    {%- assign sapp_html = sapp_html | append: '<iframe' | append: ch -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- endif -%}
+{%- comment -%}
+  Media src deferral (iframe/video/audio). Each tag is toggled independently via
+  its sapp_rewrite_* flag — enabled tags join sapp_media_tags and get one pass
+  each (array + join, O(D)). All flags off → empty list → the loop never runs.
+{%- endcomment -%}
+{%- assign sapp_media_tags = '' | split: ',' -%}
+{%- if sapp_rewrite_iframe -%}{%- assign sapp_mt = 'iframe' | split: '~' -%}{%- assign sapp_media_tags = sapp_media_tags | concat: sapp_mt -%}{%- endif -%}
+{%- if sapp_rewrite_video  -%}{%- assign sapp_mt = 'video'  | split: '~' -%}{%- assign sapp_media_tags = sapp_media_tags | concat: sapp_mt -%}{%- endif -%}
+{%- if sapp_rewrite_audio  -%}{%- assign sapp_mt = 'audio'  | split: '~' -%}{%- assign sapp_media_tags = sapp_media_tags | concat: sapp_mt -%}{%- endif -%}
 
-{%- if sapp_rewrite_video -%}
-{%- assign sapp_chunks = sapp_html | split: '<video' -%}
-{%- assign sapp_html = sapp_chunks[0] -%}
-{%- for ch in sapp_chunks offset: 1 -%}
-  {%- assign tag_open_split = ch | split: '>' -%}
-  {%- assign tag_open = tag_open_split[0] -%}
-  {%- assign rest = ch | remove_first: tag_open -%}
-  {%- if tag_open contains 'src=' -%}
-    {%- assign new_open = tag_open
-      | replace: 'data-src=', '__SAPP_DS__'
-      | replace: 'src=', 'data-src='
-      | replace: '__SAPP_DS__', 'data-src=' -%}
-    {%- assign sapp_html = sapp_html | append: '<video' | append: new_open | append: rest -%}
-  {%- else -%}
-    {%- assign sapp_html = sapp_html | append: '<video' | append: ch -%}
-  {%- endif -%}
+{%- for tag in sapp_media_tags -%}
+  {%- assign sapp_open = '<' | append: tag -%}
+  {%- assign sapp_chunks = sapp_html | split: sapp_open -%}
+  {%- assign sapp_out = sapp_chunks[0] | split: '|SAPPNUL|' -%}
+  {%- for ch in sapp_chunks offset: 1 -%}
+    {%- assign tag_open = ch | split: '>' | first -%}
+    {%- if tag_open contains 'src=' -%}
+      {%- assign rest = ch | remove_first: tag_open -%}
+      {%- assign new_open = tag_open
+        | replace: 'data-src=', '__SAPP_DS__'
+        | replace: 'src=', 'data-src='
+        | replace: '__SAPP_DS__', 'data-src=' -%}
+      {%- assign piece = sapp_open | append: new_open | append: rest -%}
+    {%- else -%}
+      {%- assign piece = sapp_open | append: ch -%}
+    {%- endif -%}
+    {%- assign piece_arr = piece | split: '|SAPPNUL|' -%}
+    {%- assign sapp_out = sapp_out | concat: piece_arr -%}
+  {%- endfor -%}
+  {%- assign sapp_html = sapp_out | join: '' -%}
 {%- endfor -%}
-{%- endif -%}
-
-{%- if sapp_rewrite_audio -%}
-{%- assign sapp_chunks = sapp_html | split: '<audio' -%}
-{%- assign sapp_html = sapp_chunks[0] -%}
-{%- for ch in sapp_chunks offset: 1 -%}
-  {%- assign tag_open_split = ch | split: '>' -%}
-  {%- assign tag_open = tag_open_split[0] -%}
-  {%- assign rest = ch | remove_first: tag_open -%}
-  {%- if tag_open contains 'src=' -%}
-    {%- assign new_open = tag_open
-      | replace: 'data-src=', '__SAPP_DS__'
-      | replace: 'src=', 'data-src='
-      | replace: '__SAPP_DS__', 'data-src=' -%}
-    {%- assign sapp_html = sapp_html | append: '<audio' | append: new_open | append: rest -%}
-  {%- else -%}
-    {%- assign sapp_html = sapp_html | append: '<audio' | append: ch -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- endif -%}
 
 {%- assign sapp_html = sapp_html
   | replace: 'function asyncLoad()', 'window.asyncLoad = function asyncLoad()'
