@@ -1,0 +1,38 @@
+{% doc %}
+  Renders the helmet header price block.
+
+  When Black Friday is off it renders the regular price exactly as before
+  (`n-product-price`: current price, struck-through compare price, save pill).
+  When Black Friday is on it renders the discounted price with the struck-through
+  regular price plus the Black Friday plate (`price-offer__bf`). The inline
+  "SAVE %" pill is intentionally omitted because the plate carries the discount.
+
+  @param {string} product_sale_price - Formatted regular price.
+  @param {string} product_before_price - Formatted compare-at price (may be blank).
+  @param {string} product_black_friday_price - Formatted Black Friday price (when BF on).
+  @param {string} product_discount - Discount percent for the regular save pill.
+  @param {number} black_friday_discount_percent - BF discount percent (0 when off).
+  @param {object} section - The current section.
+
+  @example
+  {% render 'n-product-helmet-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_black_friday_price: helmet_black_friday_price, product_discount: product_discount, black_friday_discount_percent: helmet_black_friday_discount_percent, section: section %}
+{% enddoc %}
+
+{%- if black_friday_discount_percent > 0 -%}
+    <div class="price-offer">
+        <div class="e-price">
+            <div class="e-price__main">
+                <div class="e-price__current">{{ product_black_friday_price }}</div>
+                {%- if product_sale_price != blank -%}
+                    <div class="e-price__old">{{ product_sale_price }}</div>
+                {%- endif -%}
+            </div>
+        </div>
+        <div class="price-offer__bf">
+            <div class="price-offer__bf-label">{{ 'special-offer.settings.header' | t }}</div>
+            <div class="price-offer__bf-discont">{{ 'product.settings.save' | t }} {{ black_friday_discount_percent }}%</div>
+        </div>
+    </div>
+{%- else -%}
+    {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section %}
+{%- endif -%}
