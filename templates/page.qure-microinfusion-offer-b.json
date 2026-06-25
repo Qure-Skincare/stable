@@ -111,6 +111,7 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "use_own_file": false,
@@ -166,6 +167,7 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "settings": {
         "use_own_file": false,
         "hidden": true,
