@@ -56,7 +56,7 @@
 {%- endfor -%}
 {%- endif -%}
 
-{%- if sapp_rewrite_iframe -%}
+{% comment %} {%- if sapp_rewrite_iframe -%}
 {%- assign sapp_chunks = sapp_html | split: '<iframe' -%}
 {%- assign sapp_html = sapp_chunks[0] -%}
 {%- for ch in sapp_chunks offset: 1 -%}
@@ -111,7 +111,7 @@
     {%- assign sapp_html = sapp_html | append: '<audio' | append: ch -%}
   {%- endif -%}
 {%- endfor -%}
-{%- endif -%}
+{%- endif -%} {% endcomment %}
 
 {%- assign sapp_html = sapp_html
   | replace: 'function asyncLoad()', 'window.asyncLoad = function asyncLoad()'

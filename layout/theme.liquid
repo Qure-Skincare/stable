@@ -63,13 +63,8 @@
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css">
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css?rnd=1" />
-
-    {%- unless is_admin_interface -%}
-        {% include '__sapp-include' %}
-    {%- endunless -%}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/critical.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
     
     <style>
         :root {
@@ -88,6 +83,7 @@
 
     <script src="{{ 'n-datalayer.js' | asset_url }}"></script>
     <script src="{{ 'n-country-detect.js' | asset_url }}"></script>
+
   </head>
 
   <body class="{{ template | downcase }}">
@@ -109,6 +105,13 @@
     {% comment %} {% render 'n-footer-scripts' %} {% endcomment %}
 
     <script src="https://qureskincaredns-stable.com/assets/js/vendor.js" defer="defer"></script>
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
+
+    {% comment %} <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css"> {% endcomment %}
+
+    {%- unless is_admin_interface -%}
+        {% include '__sapp-include' %}
+    {%- endunless -%}
   </body>
 </html>
 {%- endcapture -%}

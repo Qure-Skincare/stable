@@ -1,4 +1,7 @@
-<link rel="preload" as="script" href="{{ sapp_runtime_file  | asset_url }}">
+{% comment %} <link rel="preload" as="script" href="{{ sapp_runtime_file  | asset_url }}">
 <link rel="preload" as="script" href="{{ sapp_custom_file   | asset_url }}">
 <link rel="preload" as="script" href="{{ sapp_observer_file | asset_url }}">
-<link rel="preload" as="script" href="{{ sapp_backend_file  | asset_url }}">
+<link rel="preload" as="script" href="{{ sapp_backend_file  | asset_url }}"> {% endcomment %}
+
+{% comment %} <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/general.css" as="style" fetchpriority="low"> {% endcomment %}
+{% comment %} <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" as="style" fetchpriority="low"> {% endcomment %}
