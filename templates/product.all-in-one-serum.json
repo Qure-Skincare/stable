@@ -7,14 +7,18 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "product_header_aio": {
+    "n_product_header_aio": {
       "type": "n-product-header",
       "blocks": {
+        "black_friday_discount_aio": {
+          "type": "black-friday-discount",
+          "disabled": true,
+          "settings": {}
+        },
         "price_aio": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "show_discount": false
           }
@@ -31,16 +35,19 @@
         }
       },
       "block_order": [
+        "black_friday_discount_aio",
         "price_aio",
         "description_aio",
         "section_aio"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "rating": true,
+        "rating_type": "dermatologists",
         "limited": false,
         "description": "<ul><li>Helps reduce the appearance of fine lines and uneven skin tone, for smoother-, firmer-looking skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
         "reserved": false,
@@ -52,69 +59,84 @@
     "purchase-form-landing": {
       "type": "n-purchase-form-landing",
       "blocks": {
-        "type_onetime_aio": {
+        "type_otp_aio": {
           "type": "type",
           "settings": {}
         },
-        "product_type_onetime_aio": {
+        "product_type_otp_aio": {
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
             "preselected": false
           }
         },
-        "product_ot_6m_aio": {
+        "product_otp_6m_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "popular": false,
             "best": true,
             "preselected": true,
             "heading": "6 Months",
-            "subheading": "1 Bottle + 2 Refills",
+            "subheading": "(1 Bottle + 2 Refills)",
+            "product_selling_plan_text": "",
             "text": "",
-            "image": "shopify://shop_images/form-thumbnail-trio.webp",
+            "image": "shopify://shop_images/form-thumbnail-trio_3c2afb2c-b2c4-4912-ac2c-818fe52b3d3b.webp",
             "product_discount_percent": 0,
             "soldout": false,
-            "preorder": false
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
-        "product_ot_4m_aio": {
+        "product_otp_4m_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
-            "popular": false,
+            "popular": true,
             "best": false,
             "preselected": false,
             "heading": "4 Months",
-            "subheading": "1 Bottle + 1 Refills",
+            "subheading": "(1 Bottle + 1 Refills)",
+            "product_selling_plan_text": "",
             "text": "",
-            "image": "shopify://shop_images/form-thumbnail-duo.webp",
+            "image": "shopify://shop_images/form-thumbnail-duo_8c891cf7-64f4-45c7-92ac-baae2bda7d9a.webp",
             "product_discount_percent": 0,
             "soldout": false,
-            "preorder": false
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
-        "product_ot_2m_aio": {
+        "product_otp_2m_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "popular": false,
             "best": false,
             "preselected": false,
             "heading": "2 Months",
-            "subheading": "1 Bottle",
+            "subheading": "(1 Bottle)",
+            "product_selling_plan_text": "",
             "text": "",
-            "image": "shopify://shop_images/form-thumbnail-uno.webp",
+            "image": "shopify://shop_images/form-thumbnail-uno_5fe37bba-e2ba-4c3b-91e3-33182ff33fb0.webp",
             "product_discount_percent": 0,
             "soldout": false,
-            "preorder": false
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "type_sub_aio": {
@@ -131,64 +153,79 @@
         "product_sub_6m_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 8441757935,
             "popular": false,
             "best": true,
             "preselected": true,
             "heading": "6 Months",
-            "subheading": "1 Bottle + 2 Refills",
+            "subheading": "(1 Bottle + 2 Refills)",
+            "product_selling_plan_text": "Ships every 6 months",
             "text": "",
-            "image": "shopify://shop_images/form-thumbnail-trio.webp",
-            "product_discount_percent": 0,
+            "image": "shopify://shop_images/form-thumbnail-trio_3c2afb2c-b2c4-4912-ac2c-818fe52b3d3b.webp",
+            "product_discount_percent": 20,
             "soldout": false,
-            "preorder": false
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "product_sub_4m_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
+            "product_selling_plan": 8441725167,
+            "popular": true,
             "best": false,
             "preselected": false,
             "heading": "4 Months",
-            "subheading": "1 Bottle + 1 Refills",
+            "subheading": "(1 Bottle + 1 Refills)",
+            "product_selling_plan_text": "Ships every 4 months",
             "text": "",
-            "image": "shopify://shop_images/form-thumbnail-duo.webp",
-            "product_discount_percent": 0,
+            "image": "shopify://shop_images/form-thumbnail-duo_8c891cf7-64f4-45c7-92ac-baae2bda7d9a.webp",
+            "product_discount_percent": 11,
             "soldout": false,
-            "preorder": false
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "product_sub_2m_aio": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "all-in-one-serum",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 8441692399,
             "popular": false,
             "best": false,
             "preselected": false,
             "heading": "2 Months",
-            "subheading": "1 Bottle",
+            "subheading": "(1 Bottle)",
+            "product_selling_plan_text": "Ships every 2 months",
             "text": "",
-            "image": "shopify://shop_images/form-thumbnail-uno.webp",
-            "product_discount_percent": 0,
+            "image": "shopify://shop_images/form-thumbnail-uno_5fe37bba-e2ba-4c3b-91e3-33182ff33fb0.webp",
+            "product_discount_percent": 10,
             "soldout": false,
-            "preorder": false
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         }
       },
       "block_order": [
-        "type_onetime_aio",
-        "product_type_onetime_aio",
-        "product_ot_6m_aio",
-        "product_ot_4m_aio",
-        "product_ot_2m_aio",
+        "type_otp_aio",
+        "product_type_otp_aio",
+        "product_otp_6m_aio",
+        "product_otp_4m_aio",
+        "product_otp_2m_aio",
         "type_sub_aio",
         "product_type_sub_aio",
         "product_sub_6m_aio",
@@ -196,14 +233,17 @@
         "product_sub_2m_aio"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "form_name": "purchase-form-landing",
+        "hide_types": true,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 40,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false,
-        "aio_toggle": false
+        "hide_certified": false
       }
     },
     "n_logos_aio": {
@@ -675,7 +715,7 @@
         "product_cleanser_aio": {
           "type": "product",
           "settings": {
-            "product": "Cleanser",
+            "product": "cleanser",
             "variant_title": "",
             "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
             "am_or_pm_1": "am",
@@ -732,11 +772,10 @@
         "section_id": "",
         "heading": "<h2>Designed to last and built to refill</h2>",
         "text": "<p>Our new refillable system means less waste and better value over time.</p><p>[normal]</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol></p>",
-        "image": "",
         "button_label": "",
         "button_url": "",
-        "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp",
-        "wistia_url": "tj97vrxlon"
+        "wistia_url": "tj97vrxlon",
+        "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp"
       }
     },
     "n_faq_aio": {
@@ -805,8 +844,8 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
-        "button_label": "Ask us ",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
@@ -817,21 +856,21 @@
           "type": "variant",
           "settings": {
             "heading": "6 Months",
-            "image": "shopify://shop_images/form-thumbnail-trio.webp"
+            "image": "shopify://shop_images/form-thumbnail-trio_3c2afb2c-b2c4-4912-ac2c-818fe52b3d3b.webp"
           }
         },
         "variant_4m_aio": {
           "type": "variant",
           "settings": {
             "heading": "4 Months",
-            "image": "shopify://shop_images/form-thumbnail-duo.webp"
+            "image": "shopify://shop_images/form-thumbnail-duo_8c891cf7-64f4-45c7-92ac-baae2bda7d9a.webp"
           }
         },
         "variant_2m_aio": {
           "type": "variant",
           "settings": {
             "heading": "2 Months",
-            "image": "shopify://shop_images/form-thumbnail-uno.webp"
+            "image": "shopify://shop_images/form-thumbnail-uno_5fe37bba-e2ba-4c3b-91e3-33182ff33fb0.webp"
           }
         }
       },
@@ -850,7 +889,7 @@
     }
   },
   "order": [
-    "product_header_aio",
+    "n_product_header_aio",
     "purchase-form-landing",
     "n_logos_aio",
     "n_base_section_skin_changes_aio",
