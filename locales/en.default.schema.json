@@ -387,6 +387,7 @@
                     "sm": "Small banner",
                     "holidays-secondary": "Holidays secondary",
                     "fathers-day": "Fathers day",
+                    "fourth-of-july": "Fourth of July",
                     "doctorly": "Doctorly"
                 },
                 "badge-group": {
@@ -407,6 +408,12 @@
                 },
                 "bottles": {
                     "name": "Bottles (doctorly)"
+                },
+                "stars_image": {
+                    "name": "Stars image"
+                },
+                "treatment_result_badge": {
+                    "name": "Treatment result badge"
                 }
             }
         },
