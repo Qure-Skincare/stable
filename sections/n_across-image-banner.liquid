@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/across-image-banner/across-image-banner.css" />
 {% endif %}
-<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% elsif section.settings.modifier == 'doctorly' %} across-image-banner--doctorly{% endif %}">
+<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'fourth-of-july' %} across-image-banner--holidays across-image-banner--fourth-of-july{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% elsif section.settings.modifier == 'doctorly' %} across-image-banner--doctorly{% endif %}">
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
@@ -18,9 +18,17 @@
             <article>
 
                 {% for block in section.blocks %}
+                    {% if block.type == 'stars_image' %}
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                {% for block in section.blocks %}
                     {% if block.type == 'badge' %}
                         {% if block.settings.badge_text != blank %}
-                            <div class="e-pill-badge e-pill-badge--xs">{{ block.settings.badge_text }}</div>
+                            <div class="e-pill-badge e-pill-badge--xs">{% if block.settings.image != blank %}<img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />{% endif %}{{ block.settings.badge_text }}</div>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
@@ -208,6 +216,17 @@
             {% endfor %}
 
             {% for block in section.blocks %}
+                {% if block.type == 'treatment_result_badge' %}
+                    <div class="treatment-result-badge">
+                        {% if block.settings.image != blank %}
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        {% endif %}
+                        {% if block.settings.text != blank %}{{ block.settings.text }}{% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            {% for block in section.blocks %}
                 {% if block.type == 'percent_value' %}
                     <div class="e-discount-badge" data-text-top="Up to" data-text-bottom="Off">
                         <span>{{ block.settings.percent_value }}%</span>
@@ -305,6 +324,10 @@
                 {
                     "value": "fathers-day",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.fathers-day"
+                },
+                {
+                    "value": "fourth-of-july",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.fourth-of-july"
                 },
                 {
                     "value": "flex",
@@ -519,6 +542,40 @@
                 "type": "text",
                 "id": "badge_text",
                 "label": "t:common.badge-text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+        ]
+    },
+    {
+        "type": "stars_image",
+        "name": "t:sections.n_across-image-banner.blocks.stars_image.name",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            }
+        ]
+    },
+    {
+        "type": "treatment_result_badge",
+        "name": "t:sections.n_across-image-banner.blocks.treatment_result_badge.name",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
             }
         ]
     },
