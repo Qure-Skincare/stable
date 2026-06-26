@@ -53,7 +53,7 @@
         "slider_2"
       ],
       "settings": {
-        "slider": false,
+        "slider": true,
         "countdown": false,
         "text": "<p><a href=\"https://qureskincare.com/pages/qure-microinfusion-offer\" title=\"https://qureskincare.com/pages/qure-microinfusion-offer\">Prime Day Offer</a> - up to <strong>70%</strong> on Micro-Infusion System</p>",
         "button_label": "",
