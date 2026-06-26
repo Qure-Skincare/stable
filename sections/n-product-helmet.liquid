@@ -8,6 +8,10 @@
     {% include 'get-product-data' %}
 {% endif %}
 
+{%- comment -%} Stable Black Friday values for the header price block (the blocks loop below may overwrite product data). {%- endcomment -%}
+{%- assign helmet_black_friday_discount_percent = black_friday_discount_percent -%}
+{%- assign helmet_black_friday_price = product_black_friday_price -%}
+
 <!-- HELMET HOME  -->
 <div class="helmet-home" id="helmet-home">
     <div class="container">
@@ -30,11 +34,13 @@
                         {% endif %}
 
                         <div class="helmet-home__header-price">
-                            {% if black_friday_discount_percent > 0 %}
-                                {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
-                            {%- else -%}
-                                {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section %}
-                            {%- endif -%}
+                            {% render 'n-product-helmet-price',
+                                product_sale_price: product_sale_price,
+                                product_before_price: product_before_price,
+                                product_black_friday_price: helmet_black_friday_price,
+                                product_discount: product_discount,
+                                black_friday_discount_percent: helmet_black_friday_discount_percent,
+                                section: section %}
                         </div>
                     </div>
 
@@ -221,11 +227,13 @@
                     {% endif %}
 
                     <div class="helmet-home__header-price">
-                        {% if black_friday_discount_percent > 0 %}
-                            {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
-                        {%- else -%}
-                            {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section %}
-                        {%- endif -%}
+                        {% render 'n-product-helmet-price',
+                            product_sale_price: product_sale_price,
+                            product_before_price: product_before_price,
+                            product_black_friday_price: helmet_black_friday_price,
+                            product_discount: product_discount,
+                            black_friday_discount_percent: helmet_black_friday_discount_percent,
+                            section: section %}
                     </div>
                 </div>
                 <div class="helmet-home__gallery">

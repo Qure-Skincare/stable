@@ -84,57 +84,14 @@
         "use_own_file": false
       }
     },
-    "n_across_image_banner_fathers_day": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "bundle_1": {
-          "type": "bundle",
-          "settings": {
-            "image": "shopify://shop_images/bundle-thumbnail-helmet.webp",
-            "link_url": "https://qureskincare.com/products/shower-filter",
-            "text": ""
-          }
-        },
-        "bundle_2": {
-          "type": "bundle",
-          "settings": {
-            "image": "shopify://shop_images/bundle-thumbnail-shower.webp",
-            "link_url": "https://qureskincare.com/products/hair-growth-helmet",
-            "text": "<p>Q-Renew LLLT Helmet &amp; Shower Filter Bundle</p>"
-          }
-        },
-        "badge_text": {
-          "type": "badge",
-          "settings": {
-            "badge_text": "This Father’s Day only"
-          }
-        }
-      },
-      "block_order": [
-        "bundle_1",
-        "bundle_2",
-        "badge_text"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "fathers-day",
-        "heading": "<h1>The kind of care he won't think to buy for himself.</h1>",
-        "text": "",
-        "sub_text": "",
-        "image": "shopify://shop_images/fathers-day.webp",
-        "image_mobile": "shopify://shop_images/fathers-day-mob.webp",
-        "button_label": "Buy Now &amp; Save Up to 44%",
-        "button_url": "https://qureskincare.com/products/hair-growth-helmet"
-      }
-    },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
         "modifier": "hero",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Get clinic-level results from home – minus the ‘clinical’ costs.</h1>",
         "text": "<p>Join <strong>700,000+ customers</strong> feeling more confident.</p>",
         "sub_text": "",
@@ -864,7 +821,6 @@
   },
   "order": [
     "n_index-quick-links",
-    "n_across_image_banner_fathers_day",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
     "n_press_reviews_KgaUTN",

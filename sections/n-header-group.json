@@ -58,9 +58,9 @@
         "text": "<p><a href=\"https://qureskincare.com/pages/qure-microinfusion-offer\" title=\"https://qureskincare.com/pages/qure-microinfusion-offer\">Prime Day Offer</a> - up to <strong>70%</strong> on Micro-Infusion System</p>",
         "button_label": "",
         "button_url": "",
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1, doctorly",
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1, doctorly,qure-microinfusion-offer-b, qure-micro-infusion-landing-page-b",
         "from": "2026-06-23",
-        "days": 3
+        "days": 4
       }
     },
     "header": {
