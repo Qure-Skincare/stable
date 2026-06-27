@@ -59,6 +59,10 @@ const purchase_form_event = (target, element, product_variant_id) => {
 
 
 document.addEventListener('datalayer.pushCustomEvent', (event) => {
-    console.log(event.detail);
-    window.dataLayer.push(event.detail);
+    // Defensive init: this listener can fire before the GTM bootstrap (which
+    // creates window.dataLayer) has run — e.g. a purchase-form event dispatched
+    // right after LCP while the GTM inline script is still deferred in the sapp
+    // queue. Using the canonical `dataLayer || []` pattern buffers the event so
+    // GTM picks it up once it loads, instead of throwing on an undefined array.
+    (window.dataLayer = window.dataLayer || []).push(event.detail);
 });
