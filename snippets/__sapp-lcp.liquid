@@ -4,6 +4,21 @@
   for the <body> (eager image) before activating any deferred resource.
 {%- endcomment -%}
 <script class="__init">
+
+function loadScriptOnce(id, src, callback) {
+    if (!document.getElementById(id)) {
+      const script = document.createElement('script');
+      script.id = id;
+      script.src = src;
+      script.onload = function () {
+      if (typeof callback === 'function') callback();
+      };
+      document.head.appendChild(script);
+    } else if (typeof callback === 'function') {
+      callback();
+    }
+}
+
 (function () {
   'use strict';
 
@@ -97,23 +112,73 @@
   // nor runs them). After the hero loads, recreate them as real scripts:
   //   - external (has data-src): set src, async=false to preserve order
   //   - inline (no data-src): copy the body so it executes
-  function activateLcpScripts() {
+  // Materialize the inert LCP scripts and call onAllExternalDone() once every
+  // EXTERNAL one has finished executing. Inline scripts run synchronously on
+  // insert; external ones (async=false) execute in order, so waiting for their
+  // load/error events guarantees their globals (loadScriptOnce, is_gdpr_country,
+  // …) exist before the caller replays DOMContentLoaded.
+  function activateLcpScripts(onAllExternalDone) {
     var nodes = document.querySelectorAll('script[type="text/sapp-lcp"]');
+    var pending = 0;
+    var finished = false;
+    function check() {
+      if (finished || pending > 0) return;
+      finished = true;
+      if (onAllExternalDone) onAllExternalDone();
+    }
+    function settle() { pending--; check(); }
     for (var i = 0; i < nodes.length; i++) {
       var src = nodes[i].getAttribute('data-src');
       var s = document.createElement('script');
       if (src) {
         s.src = src;
         s.async = false;
+        pending++;
+        s.addEventListener('load', settle, { once: true });
+        s.addEventListener('error', settle, { once: true });
       } else {
         s.textContent = nodes[i].textContent;
       }
+      // Mark as already handled so the sapp observer's MutationObserver skips it.
+      // Without this the freshly inserted, normal-type <script> is re-caught,
+      // blocked and re-queued — then runs a SECOND time once the queue fires.
+      // The browser already executes it here exactly once.
+      s.setAttribute('data-sapp-handled', '1');
       document.head.appendChild(s);
     }
+    check(); // no external scripts → fire immediately
   }
 
   function start() {
-    whenLcpReady(function () { activate(); activateFonts(); activateLcpScripts(); });
+    whenLcpReady(function () {
+      // Lever A — shared contract: the LCP critical window is now closed. The
+      // sapp observer reads this flag and lets any further runtime-injected,
+      // non-pre-deferred script (loadScriptOnce children, late apps) run
+      // immediately instead of blocking it and dragging it through the queue
+      // timeouts. Set BEFORE anything below can inject scripts.
+      window.__sappLcpReady = true;
+
+      activate();
+      activateFonts();
+
+      // Lever B — we run post-hero, so the real DOMContentLoaded already fired.
+      // LCP code that wraps work in a DOMContentLoaded listener (e.g.
+      // loadScriptOnce) would otherwise wait for the backend's SYNTHETIC DCL,
+      // which is gated behind every queue draining (~3.5s). Replay DCL once the
+      // external LCP scripts have executed — so their globals (loadScriptOnce,
+      // is_gdpr_country, …) already exist when the handlers run. Deferred theme
+      // scripts haven't executed yet, so they haven't registered DCL handlers
+      // and aren't affected; loadScriptOnce is idempotent, so the backend's
+      // later synthetic DCL re-firing the same handlers is a harmless no-op.
+      activateLcpScripts(function () {
+        if (document.readyState !== 'loading') {
+          try {
+            document.dispatchEvent(new Event('DOMContentLoaded', { bubbles: true }));
+            window.dispatchEvent(new Event('DOMContentLoaded'));
+          } catch (e) {}
+        }
+      });
+    });
     armHoverBackgrounds();
   }
 

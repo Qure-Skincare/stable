@@ -37,20 +37,29 @@
     {%- endfor -%}
   {%- endunless -%}
 
+  {%- comment -%}
+    LCP detection must respect the exception list: a skipped script (sapp-init,
+    sapp-config, "__init", sapp_init_src) must NEVER be turned inert, even when
+    its body happens to contain an LCP needle (e.g. the inlined orchestrator now
+    defines loadScriptOnce, which is also an sapp_lcp_innerhtml entry). Without
+    this guard the orchestrator itself gets type="text/sapp-lcp" and never runs.
+  {%- endcomment -%}
   {%- assign is_lcp_script = false -%}
-  {%- for ls in sapp_lcp_scripts -%}
-    {%- if tag_open contains ls -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
-  {%- endfor -%}
-  {%- comment -%} Inline scripts opt in with the data-sapp-lcp attribute. {%- endcomment -%}
-  {%- if tag_open contains 'data-sapp-lcp' -%}{%- assign is_lcp_script = true -%}{%- endif -%}
-  {%- comment -%} Inline scripts matched by a substring of their body (skip the split when the list is empty). {%- endcomment -%}
-  {%- unless is_lcp_script -%}
-    {%- if sapp_lcp_innerhtml.size > 0 -%}
-      {%- assign sapp_body = rest | split: '</script' | first -%}
-      {%- for needle in sapp_lcp_innerhtml -%}
-        {%- if sapp_body contains needle -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
-      {%- endfor -%}
-    {%- endif -%}
+  {%- unless skip -%}
+    {%- for ls in sapp_lcp_scripts -%}
+      {%- if tag_open contains ls -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+    {%- comment -%} Inline scripts opt in with the data-sapp-lcp attribute. {%- endcomment -%}
+    {%- if tag_open contains 'data-sapp-lcp' -%}{%- assign is_lcp_script = true -%}{%- endif -%}
+    {%- comment -%} Inline scripts matched by a substring of their body (skip the split when the list is empty). {%- endcomment -%}
+    {%- unless is_lcp_script -%}
+      {%- if sapp_lcp_innerhtml.size > 0 -%}
+        {%- assign sapp_body = rest | split: '</script' | first -%}
+        {%- for needle in sapp_lcp_innerhtml -%}
+          {%- if sapp_body contains needle -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endunless -%}
   {%- endunless -%}
 
   {%- if is_lcp_script -%}
