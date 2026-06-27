@@ -7,8 +7,18 @@
   },
   "debug": false,
   "timeouts": {
-    {% comment %} "mobile":  { "preload": "1000", "scripts": "2500", "other": "2900", "async": "3500" }, {% endcomment %}
-    {% comment %} "desktop": { "preload": "500", "scripts": "2500", "other": "2900", "async": "3500" } {% endcomment %}
+    "mobile":  { "preload": "none", "scripts": "none", "other": "none", "async": "none" },
+    "desktop": { "preload": "none", "scripts": "none", "other": "none", "async": "none" }
+  },
+  {%- comment -%}
+    OPTIONAL slow-connection profile. The backend selects it at start time when
+    the measured network is slow (window.__sapp.net.slow — from the LCP/document
+    throughput probe), or when forced via ?sappconn=slow. Omit the block to always
+    use `timeouts`. Here every queue is "none" so deferred/non-critical scripts
+    never load for slow users; LCP-lane scripts still load. Must differ from
+    `timeouts` to have any effect.
+  {%- endcomment -%}
+  "timeoutsSlow": {
     "mobile":  { "preload": "none", "scripts": "none", "other": "none", "async": "none" },
     "desktop": { "preload": "none", "scripts": "none", "other": "none", "async": "none" }
   },

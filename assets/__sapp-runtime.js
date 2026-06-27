@@ -355,6 +355,10 @@
   w.__sapp = {
     config: Object.freeze(cfg),
     state: { applied: new Set(), loaded: new Set(), isMobile: isMobile, started: false, failed: false },
+    /* Network profile {slow,kbps,source,...} measured post-LCP by the inlined
+       orchestrator. Adopt any value already published before init; otherwise the
+       orchestrator sets __sapp.net once the LCP image has loaded. */
+    net: (w.__sappNet || null),
     queues: queues,
     handlers: {},
     license: { verify: licenseVerify },

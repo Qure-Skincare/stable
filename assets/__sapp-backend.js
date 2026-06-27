@@ -3,7 +3,22 @@
   if (!S || S.state.failed) return;
 
   var cfg = S.config;
-  var t = (S.state.isMobile ? cfg.timeouts.mobile : cfg.timeouts.desktop) || {};
+
+  /* Active timeout profile, resolved lazily in start() — NOT at module load.
+     The slow/fast decision depends on S.net (measured post-LCP by the inlined
+     orchestrator), which isn't ready when this file first executes, but IS ready
+     by the time start() fires (window load / 3s fallback). When a `timeoutsSlow`
+     profile exists and the connection is slow, use it; ?sappconn=slow|fast forces
+     a profile for testing. */
+  function resolveTimeouts() {
+    var slow;
+    var forced = /[?&]sappconn=(slow|fast)/.exec(w.location.search);
+    if (forced) slow = forced[1] === 'slow';
+    else slow = !!(S.net && S.net.slow);
+    var profile = (slow && cfg.timeoutsSlow) ? cfg.timeoutsSlow : cfg.timeouts;
+    return (S.state.isMobile ? profile.mobile : profile.desktop) || {};
+  }
+  var t = {};
 
   function isDisabled(v) { return v === 'none' || v === 0 || v == null || v === false; }
   function scheduleQueue(name, timeout) {
@@ -86,7 +101,8 @@
   }
 
   function start() {
-    S.debug.log('backend start, timeouts=', t);
+    t = resolveTimeouts();
+    S.debug.log('backend start, timeouts=', t, 'net=', S.net);
     if (S.observer && S.observer.stop) S.observer.stop();
 
     var pendingQueues = 1; /* loaded */

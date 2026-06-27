@@ -149,7 +149,145 @@ function loadScriptOnce(id, src, callback) {
     check(); // no external scripts → fire immediately
   }
 
+  // Connection below this measured effective downlink (kbps) is treated as slow.
+  var SLOW_KBPS = 1500;
+  var NET_STORE_KEY = 'sappKbps';
+  // Size of the active fallback probe payload to fetch when nothing is passively
+  // measurable (cache-busted), and a one-shot guard so it runs at most once.
+  var PROBE_BYTES_MIN = 20000;
+  var netProbeStarted = false;
+
+  // Real, size-independent effective downlink (kbps) from an already-loaded,
+  // same-origin image's Resource Timing: bytes / download-time. transferSize is
+  // 0 for cached or cross-origin-without-Timing-Allow-Origin resources, so those
+  // are skipped; same-origin images (the LCP hero, Shopify CDN) expose it.
+  // Returns null when nothing is measurable on this load (e.g. warm cache).
+  function measuredKbps() {
+    try {
+      var res = performance.getEntriesByType('resource');
+      var best = null;
+      for (var i = 0; i < res.length; i++) {
+        var e = res[i];
+        if (e.initiatorType !== 'img') continue;
+        if (!(e.transferSize > 0)) continue;                 // 0 = cached / TAO-blocked
+        if (!(e.responseEnd > e.responseStart)) continue;
+        if (e.name.indexOf(location.origin) !== 0) continue; // same-origin only
+        if (!best || e.transferSize > best.transferSize) best = e;
+      }
+      if (best) return (best.transferSize * 8) / ((best.responseEnd - best.responseStart) / 1000) / 1000;
+      // Early fallback (before any image is measurable, e.g. on a slow link where
+      // the LCP image is still downloading): the HTML document itself is
+      // same-origin, downloaded first, and timed by DCL — so it already reflects
+      // the link speed and lets the queue pick its profile in time.
+      var nav = performance.getEntriesByType('navigation')[0];
+      if (nav && nav.transferSize > 0 && nav.responseEnd > nav.responseStart) {
+        return (nav.transferSize * 8) / ((nav.responseEnd - nav.responseStart) / 1000) / 1000;
+      }
+    } catch (e) {}
+    return null;
+  }
+
+  // Build the net profile object. The slow decision: explicit saveData wins;
+  // else the measured kbps vs threshold; else the coarse navigator.connection
+  // hint; else (truly unknown) stay false — never degrade on unknown.
+  function buildNet(kbps, source) {
+    var c = navigator.connection || navigator.mozConnection || navigator.webkitConnection || null;
+    var slow = false;
+    if (c && c.saveData === true) slow = true;
+    else if (kbps != null) slow = kbps < SLOW_KBPS;
+    else if (c) slow = ['slow-2g', '2g', '3g'].indexOf(c.effectiveType) !== -1;
+    return {
+      slow: slow,
+      kbps: kbps != null ? Math.round(kbps) : null,
+      source: source,                          // 'measured' | 'cached' | 'probed' | 'unknown'
+      saveData: !!(c && c.saveData),
+      effectiveType: c ? c.effectiveType : null,
+      downlink: c ? c.downlink : null,
+      rtt: c ? c.rtt : null
+    };
+  }
+
+  // Publish so it is always inspectable: window.__sapp.net (the speed widget
+  // object) + window.__sappNet (standalone, set even before the runtime exists).
+  function publishNet(net) {
+    window.__sappNet = net;
+    if (window.__sapp) window.__sapp.net = net;
+  }
+
+  // Last-resort active probe: when nothing was passively measurable AND there is
+  // no stored history (e.g. bfcache restore, service-worker-served document),
+  // fetch a same-origin payload cache-busted and time it ourselves — so the
+  // connection is determined even then. Runs at most once; same-origin keeps the
+  // body CORS-readable; cache:'no-store' forces a real transfer.
+  function probeNetwork(onDone) {
+    if (netProbeStarted) { onDone(null); return; }
+    netProbeStarted = true;
+    try {
+      // Largest same-origin image = bandwidth-dominated sample (a small payload
+      // would be RTT-dominated and badly underestimate the speed).
+      var url = null, bestArea = -1, imgs = document.querySelectorAll('img'), i, s, area;
+      for (i = 0; i < imgs.length; i++) {
+        s = imgs[i].currentSrc || imgs[i].src;
+        if (s && s.indexOf(location.origin) === 0) {
+          area = (imgs[i].naturalWidth || 0) * (imgs[i].naturalHeight || 0);
+          if (area > bestArea) { bestArea = area; url = s; }
+        }
+      }
+      if (!url) url = location.href;                 // fallback: re-fetch the document
+      var bust = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'sappprobe=' + (new Date()).getTime();
+      var t0 = (window.performance && performance.now) ? performance.now() : (new Date()).getTime();
+      fetch(bust, { cache: 'no-store' })
+        .then(function (r) { return r.arrayBuffer(); })
+        .then(function (buf) {
+          var wallMs = ((window.performance && performance.now) ? performance.now() : (new Date()).getTime()) - t0;
+          // Prefer the download-only phase from the fetch's Resource Timing entry
+          // (excludes connection/TTFB); wall-clock includes RTT and underestimates.
+          setTimeout(function () {
+            var kbps = null;
+            var e = performance.getEntriesByName ? performance.getEntriesByName(bust)[0] : null;
+            if (e && e.transferSize > 0 && e.responseEnd > e.responseStart) {
+              kbps = (e.transferSize * 8) / ((e.responseEnd - e.responseStart) / 1000) / 1000;
+            } else if (wallMs > 0 && buf.byteLength >= PROBE_BYTES_MIN) {
+              kbps = (buf.byteLength * 8) / (wallMs / 1000) / 1000; // coarse fallback
+            }
+            onDone(kbps);
+          }, 50);
+        })
+        .catch(function () { onDone(null); });
+    } catch (e) { onDone(null); }
+  }
+
+  // Resolve and publish the network profile. Passive first (image → document →
+  // localStorage); if still unknown, fire the active probe and re-publish.
+  function measureNetwork() {
+    var kbps = measuredKbps();
+    var source = 'measured';
+    if (kbps == null) {                       // nothing measurable this load
+      var prev = 0;
+      try { prev = parseInt(localStorage.getItem(NET_STORE_KEY), 10) || 0; } catch (e) {}
+      if (prev > 0) { kbps = prev; source = 'cached'; }
+      else { kbps = null; source = 'unknown'; }
+    } else {
+      try { localStorage.setItem(NET_STORE_KEY, Math.round(kbps)); } catch (e) {}
+    }
+
+    var net = buildNet(kbps, source);
+    publishNet(net);
+
+    if (source === 'unknown') {
+      probeNetwork(function (pk) {
+        if (pk == null) return;               // probe failed → stay unknown/fast
+        try { localStorage.setItem(NET_STORE_KEY, Math.round(pk)); } catch (e) {}
+        publishNet(buildNet(pk, 'probed'));
+      });
+    }
+    return net;
+  }
+
   function start() {
+    // Early network estimate (from the HTML document) so the backend can pick its
+    // timeout profile in time; refined from the LCP image in whenLcpReady below.
+    measureNetwork();
     whenLcpReady(function () {
       // Lever A — shared contract: the LCP critical window is now closed. The
       // sapp observer reads this flag and lets any further runtime-injected,
@@ -157,6 +295,10 @@ function loadScriptOnce(id, src, callback) {
       // immediately instead of blocking it and dragging it through the queue
       // timeouts. Set BEFORE anything below can inject scripts.
       window.__sappLcpReady = true;
+
+      // Measure the real effective downlink now that the LCP image has loaded,
+      // and publish it on __sapp.net / window.__sappNet for any consumer.
+      measureNetwork();
 
       activate();
       activateFonts();
