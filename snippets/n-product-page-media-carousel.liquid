@@ -47,7 +47,7 @@
                 {% assign video_source_url = media.sources[0].url %}
             {% endif %}
             <div class="swiper-slide">
-                <img loading="eager" src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
+                <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
             </div>
         {% else %}
             {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
@@ -63,15 +63,11 @@
                 </div>
             {% else %}
                 <div class="swiper-slide">
-                    {% assign loading = 'lazy' %}
-                    {% if thumbnails == true %}
-                        {% assign loading = 'eager' %}
-                    {% endif %}
                     {% if thumbnails == false and forloop.index == 1 %}
-                        {% assign loading = 'eager' %}
+                        <img loading="eager" fetchpriority="high" src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
+                    {% else %}
+                        <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
                     {% endif %}
-
-                    <img loading="{{ loading }}" src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
                 </div>
             {% endif %}
         {% endif %}

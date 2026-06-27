@@ -96,6 +96,13 @@
 {%- assign sapp_html = sapp_out | join: '' -%}
 {%- endif -%}
 
+{%- comment -%}
+  Transparent 1x1 GIF kept as a data-URI (no network request). Once src is
+  moved to data-src a deferred <img> has no source and the browser paints the
+  broken-image glyph; this placeholder fills src so the box stays empty/clean
+  until the observer swaps in the real image. width/height/CSS keep the layout.
+{%- endcomment -%}
+{%- assign sapp_pixel = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' -%}
 {%- if sapp_rewrite_img -%}
 {%- assign sapp_img_chunks = sapp_html | split: '<img' -%}
 {%- assign sapp_img_out = sapp_img_chunks[0] | split: '|SAPPNUL|' -%}
@@ -112,7 +119,7 @@
       | replace: 'src=', 'data-src='
       | replace: '|SAPPDSS|', 'data-srcset='
       | replace: '|SAPPDS|', 'data-src=' -%}
-    {%- assign piece = '<img' | append: new_open | append: rest -%}
+    {%- assign piece = '<img src="' | append: sapp_pixel | append: '"' | append: new_open | append: rest -%}
   {%- endif -%}
   {%- assign piece_arr = piece | split: '|SAPPNUL|' -%}
   {%- assign sapp_img_out = sapp_img_out | concat: piece_arr -%}
