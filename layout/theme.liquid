@@ -100,7 +100,8 @@
 
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
-    {% comment %} <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" /> {% endcomment %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" /></noscript>
     
     {% sections 'n-header-group' %}
 
