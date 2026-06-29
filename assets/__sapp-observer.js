@@ -250,7 +250,8 @@
       }
       blockScript(node);
       var defaultTask = makeScriptTask(node, null);
-      var defaultQueue = node.getAttribute('data-sapp-from-async-load') === '1' ? 'async' : 'scripts';
+      var defaultQueue = node.getAttribute('data-sapp-from-embed') === '1' ? 'embeds'
+        : node.getAttribute('data-sapp-from-async-load') === '1' ? 'async' : 'scripts';
       S.run.onTrigger('timeout', defaultTask);
       S.run.push(defaultQueue, defaultTask);
       S.debug.tap(node, 'defer-default:' + defaultQueue);

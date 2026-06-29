@@ -70,7 +70,7 @@
   S.run.sweep = finalSweep;
 
   function maxTimeout() {
-    var vals = [t.preload, t.scripts, t.other, t.async], m = 0, any = false;
+    var vals = [t.preload, t.scripts, t.embeds, t.other, t.async], m = 0, any = false;
     for (var i = 0; i < vals.length; i++) {
       if (isDisabled(vals[i])) continue;
       var n = parseInt(vals[i], 10);
@@ -108,6 +108,7 @@
     var pendingQueues = 1; /* loaded */
     if (!isDisabled(t.preload)) pendingQueues++;
     if (!isDisabled(t.scripts)) pendingQueues++;
+    if (!isDisabled(t.embeds))  pendingQueues++;
     if (!isDisabled(t.other))   pendingQueues++;
     if (!isDisabled(t.async))   pendingQueues++;
 
@@ -125,6 +126,7 @@
     if (S.observer && S.observer.materializeAsyncLoad) S.observer.materializeAsyncLoad();
     scheduleQueue('preload', t.preload);
     scheduleQueue('scripts', t.scripts);
+    scheduleQueue('embeds',  t.embeds);
     scheduleQueue('other',   t.other);
     scheduleQueue('async',   t.async);
     scheduleSweep();

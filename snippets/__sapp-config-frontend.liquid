@@ -7,8 +7,8 @@
   },
   "debug": false,
   "timeouts": {
-    "mobile":  { "preload": "none", "scripts": "none", "other": "none", "async": "none" },
-    "desktop": { "preload": "none", "scripts": "none", "other": "none", "async": "none" }
+    "mobile":  { "preload": "1000", "scripts": "5500", "embeds": "4000", "other": "1900", "async": "3500" },
+    "desktop": { "preload": "500", "scripts": "5500", "embeds": "4000", "other": "1900", "async": "3500" }
   },
   {%- comment -%}
     OPTIONAL slow-connection profile. The backend selects it at start time when
@@ -19,11 +19,11 @@
     `timeouts` to have any effect.
   {%- endcomment -%}
   "timeoutsSlow": {
-    "mobile":  { "preload": "none", "scripts": "none", "other": "none", "async": "none" },
-    "desktop": { "preload": "none", "scripts": "none", "other": "none", "async": "none" }
+    "mobile":  { "preload": "none", "scripts": "none", "embeds": "none", "other": "none", "async": "none" },
+    "desktop": { "preload": "none", "scripts": "none", "embeds": "none", "other": "none", "async": "none" }
   },
   "queueOptions": {
-    "async": { "stagger": 800 }
+    "async": { "stagger": 100 }
   },
   "dispatchSyntheticEvents": true,
   "defaultMediaTrigger": "scroll",
@@ -31,6 +31,11 @@
     { 
       "match": { "innerHTML": "ShopifyAnalytics" },
       "queue": "loaded",
+      "trigger": "timeout"
+    },
+    { 
+      "match": { "innerHTML": "gtm.js" },
+      "queue": "preload",
       "trigger": "timeout"
     },
     { 

@@ -282,7 +282,7 @@
     w.addEventListener(trigger, handler, { passive: passiveFor(trigger), capture: true, once: true });
   }
 
-  var queues = { loaded: [], preload: [], scripts: [], other: [], async: [], event: [] };
+  var queues = { loaded: [], preload: [], scripts: [], embeds: [], other: [], async: [], event: [] };
 
   function pushTask(queueName, task) {
     var name = queues[queueName] ? queueName : 'event';
