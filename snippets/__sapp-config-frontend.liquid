@@ -14,16 +14,25 @@
     OPTIONAL slow-connection profile. The backend selects it at start time when
     the measured network is slow (window.__sapp.net.slow — from the LCP/document
     throughput probe), or when forced via ?sappconn=slow. Omit the block to always
-    use `timeouts`. Here every queue is "none" so deferred/non-critical scripts
-    never load for slow users; LCP-lane scripts still load. Must differ from
-    `timeouts` to have any effect.
+    use `timeouts`. Here the heavy queues are pushed far back so on a weak link
+    the pipe and main thread stay clear during the early-interaction window
+    (e.g. add-to-cart, which is LCP-lane and unaffected); set a queue to "none"
+    to skip it entirely for slow users. Must differ from `timeouts` to matter.
   {%- endcomment -%}
-  {% comment %} "timeoutsSlow": {
-    "mobile":  { "preload": "none", "scripts": "none", "embeds": "none", "other": "none", "async": "none" },
-    "desktop": { "preload": "none", "scripts": "none", "embeds": "none", "other": "none", "async": "none" }
-  }, {% endcomment %}
+  "timeoutsSlow": {
+    "mobile":  { "preload": "2000", "scripts": "12000", "embeds": "15000", "other": "6000", "async": "10000" },
+    "desktop": { "preload": "1500", "scripts": "12000", "embeds": "15000", "other": "6000", "async": "10000" }
+  },
+  {%- comment -%}
+    "*" applies to every queue (a per-queue key overrides it). stagger trickles a
+    queue's scripts one-by-one with a fixed gap instead of firing the whole batch
+    at once — fewer simultaneous downloads (bandwidth stays free for user actions
+    like add-to-cart) and spread-out execution (main thread stays responsive).
+  {%- endcomment -%}
   "queueOptions": {
-    "async": { "stagger": 100 }
+    "*":       { "stagger": 50 },
+    "scripts": { "stagger": 50, "burst": 3 },
+    "async":   { "stagger": 50, "burst": 3 }
   },
   "dispatchSyntheticEvents": true,
   "defaultMediaTrigger": "scroll",

@@ -158,6 +158,13 @@
     if (!s.src && node.textContent) s.textContent = node.textContent;
     var nonce = node.nonce || getCspNonce();
     if (nonce) s.nonce = nonce;
+    /* The deferred bulk is non-critical by definition. Mark it low priority so
+       the browser hands bandwidth to higher-priority work first — user-initiated
+       requests like add-to-cart (which the cart code marks priority:'high') win
+       the pipe even while many deferred scripts are downloading. LCP-lane scripts
+       are materialised by the inlined orchestrator, not here, so they keep their
+       normal priority. Respect an explicit fetchpriority already in the markup. */
+    if (!s.getAttribute('fetchpriority')) s.setAttribute('fetchpriority', 'low');
     return s;
   }
 
@@ -299,14 +306,32 @@
     var q = queues[name]; if (!q) return;
     emit('queueStart', name, q.length);
     var t0 = Date.now();
-    var opts = (cfg.queueOptions && cfg.queueOptions[name]) || {};
+    /* Per-queue options, with an optional "*" entry as the default for every
+       queue (a per-queue key overrides it). Lets `stagger`/`slice` be set once
+       for all queues instead of repeated per name. */
+    var qo = cfg.queueOptions || {};
+    var opts = {};
+    var dk; for (dk in (qo['*'] || {})) opts[dk] = qo['*'][dk];
+    for (dk in (qo[name] || {})) opts[dk] = qo[name][dk];
     var stagger = opts.stagger || 0;
+    var burst = opts.burst || 1;   // tasks per batch; 1 = classic one-by-one stagger
     var slice = opts.slice || 0;
     if (stagger > 0) {
-      for (var i = 0; i < q.length; i++) {
-        (function (task, delay) { setTimeout(function () { runTask(task); }, delay); })(q[i], i * stagger);
+      /* Run the queue in batches of `burst`, each batch `stagger` ms after the
+         previous. burst=1 → one task per tick (identical to plain stagger);
+         larger burst trickles in groups so the whole queue drains faster while
+         still yielding to input between batches and capping concurrency. */
+      if (burst < 1) burst = 1;
+      var batches = Math.ceil(q.length / burst);
+      for (var b = 0; b < batches; b++) {
+        (function (batchIndex) {
+          setTimeout(function () {
+            var s = batchIndex * burst, e = Math.min(s + burst, q.length);
+            for (var k = s; k < e; k++) runTask(q[k]);
+          }, batchIndex * stagger);
+        })(b);
       }
-      setTimeout(function () { emit('queueDone', name, Date.now() - t0, q.length); }, q.length * stagger);
+      setTimeout(function () { emit('queueDone', name, Date.now() - t0, q.length); }, batches * stagger);
     } else if (slice > 0 && q.length > 1) {
       var idx = 0;
       (function chunk() {
