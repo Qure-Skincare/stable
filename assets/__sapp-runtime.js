@@ -201,6 +201,14 @@
     try { task.fn(); emit('taskDone', task); } catch (e) { emit('taskError', task, e); }
   }
 
+  /* User-gesture event types: a real one carries isTrusted=true. Pages dispatch
+     synthetic clicks/scrolls (tab auto-activation, .click() helpers, sticky
+     buttons) which must NOT count as interaction — otherwise an event-gated
+     script (Wistia, wallets) fires at load instead of on real user intent.
+     Only these types are filtered; custom-event triggers are left untouched. */
+  var USER_GESTURE = { click: 1, mousedown: 1, mousemove: 1, scroll: 1, wheel: 1, touchstart: 1, touchmove: 1, keydown: 1, pointerdown: 1 };
+  function isSyntheticGesture(ev) { return !!(ev && ev.isTrusted === false && USER_GESTURE[ev.type]); }
+
   function onTrigger(trigger, task, opts) {
     opts = opts || {};
     function isScrollLike(tr) {
@@ -235,7 +243,7 @@
            иначе она перехватила бы первый клик после загрузки темы. */
         if ((task._replayOnDone || task._preventDefaultOnTrigger || task._onTriggerHandlerId) &&
             !(ev && ev.type === 'click') && trigger.indexOf('click') >= 0) {
-          var clickCapture = function (cev) { onTriggerEvent(cev); };
+          var clickCapture = function (cev) { if (isSyntheticGesture(cev)) return; onTriggerEvent(cev); };
           w.addEventListener('click', clickCapture, { passive: passiveFor('click'), capture: true });
           task._cancelClickCapture = function () { w.removeEventListener('click', clickCapture, true); };
           debug.log('click capture armed: trigger was', (ev && ev.type) || source);
@@ -265,8 +273,11 @@
             /* no IntersectionObserver support: fall through (best-effort) */
           }
           if (tr === 'manual' || tr === 'timeout') { return; }
-          var h = function (ev) { fire(ev, tr); };
-          w.addEventListener(tr, h, { passive: passiveFor(tr), capture: true, once: true });
+          /* No once:true — a synthetic event must not consume the listener, or
+             the real gesture afterwards would be missed. fire() removes every
+             trigger listener via cleanups once a real one wins. */
+          var h = function (ev) { if (isSyntheticGesture(ev)) return; fire(ev, tr); };
+          w.addEventListener(tr, h, { passive: passiveFor(tr), capture: true });
           cleanups.push(function () { w.removeEventListener(tr, h, true); });
         })(trigger[i]);
       }
@@ -285,8 +296,8 @@
     }
     if (trigger === 'manual') return;
     if (trigger === 'timeout') { task._pending = true; return; }
-    var handler = function (ev) { w.removeEventListener(trigger, handler, true); onTriggerEvent(ev); runTask(task); };
-    w.addEventListener(trigger, handler, { passive: passiveFor(trigger), capture: true, once: true });
+    var handler = function (ev) { if (isSyntheticGesture(ev)) return; w.removeEventListener(trigger, handler, true); onTriggerEvent(ev); runTask(task); };
+    w.addEventListener(trigger, handler, { passive: passiveFor(trigger), capture: true });
   }
 
   var queues = { loaded: [], preload: [], scripts: [], embeds: [], other: [], async: [], event: [] };
