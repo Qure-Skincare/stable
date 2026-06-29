@@ -7,8 +7,8 @@
   },
   "debug": false,
   "timeouts": {
-    "mobile":  { "preload": "1000", "scripts": "5500", "embeds": "4000", "other": "1900", "async": "3500" },
-    "desktop": { "preload": "500", "scripts": "5500", "embeds": "4000", "other": "1900", "async": "3500" }
+    "mobile":  { "preload": "1000", "scripts": "5500", "embeds": "6500", "other": "1900", "async": "3500" },
+    "desktop": { "preload": "500", "scripts": "5500", "embeds": "6500", "other": "1900", "async": "3500" }
   },
   {%- comment -%}
     OPTIONAL slow-connection profile. The backend selects it at start time when
@@ -18,10 +18,10 @@
     never load for slow users; LCP-lane scripts still load. Must differ from
     `timeouts` to have any effect.
   {%- endcomment -%}
-  "timeoutsSlow": {
+  {% comment %} "timeoutsSlow": {
     "mobile":  { "preload": "none", "scripts": "none", "embeds": "none", "other": "none", "async": "none" },
     "desktop": { "preload": "none", "scripts": "none", "embeds": "none", "other": "none", "async": "none" }
-  },
+  }, {% endcomment %}
   "queueOptions": {
     "async": { "stagger": 100 }
   },

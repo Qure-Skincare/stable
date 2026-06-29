@@ -22,7 +22,7 @@
             <ul class="c-pill-tabs__buttons e-pill-tabs" role="tablist">
                 {% for block in section.blocks %}
                     {% if block.type == 'tab_heading' %}
-                        <li>
+                        <li role="tab">
                             <button {% if forloop.index == 1 %}class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#{{ block.settings.tab_heading | strip | handleize }}">{{- block.settings.tab_heading -}}</button>
                         </li>
                     {% endif %}

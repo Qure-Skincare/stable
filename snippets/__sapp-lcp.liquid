@@ -36,26 +36,62 @@ function loadScriptOnce(id, src, callback) {
     if (ds) { img.setAttribute('src', ds); img.removeAttribute('data-src'); }
   }
 
-  // Activate lazy loading for every deferred image.
-  function activate() {
-    var deferred = document.querySelectorAll('img[data-src], img[data-srcset]');
-    if (!deferred.length) return;
+  // One shared lazy-load IntersectionObserver, created in activate().
+  var io = null;
 
-    if (!('IntersectionObserver' in window)) {
-      for (var i = 0; i < deferred.length; i++) swap(deferred[i]);
-      return;
+  // Register every not-yet-swapped deferred image under `root` (default: whole
+  // document) with the observer. swap() strips data-src, so already-loaded
+  // images are skipped automatically and re-observing is a harmless no-op.
+  function observeDeferred(root) {
+    var scope = (root && root.querySelectorAll) ? root : document;
+    var deferred = scope.querySelectorAll('img[data-src], img[data-srcset]');
+    for (var i = 0; i < deferred.length; i++) {
+      if (io) io.observe(deferred[i]); else swap(deferred[i]);
+    }
+  }
+
+  // Activate lazy loading for every deferred image, and keep doing so for images
+  // injected later. Theme code (bundle templates, modal sliders, AJAX sections)
+  // clones markup into the DOM long after this first pass — those images still
+  // carry data-src + a transparent-pixel src, so without picking them up they
+  // never load. A lightweight, image-only MutationObserver registers them with
+  // the same IntersectionObserver for the page's lifetime.
+  function activate() {
+    if ('IntersectionObserver' in window) {
+      io = new IntersectionObserver(function (entries, obs) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            swap(entries[i].target);
+            obs.unobserve(entries[i].target);
+          }
+        }
+      }, { rootMargin: ROOT_MARGIN });
     }
 
-    var io = new IntersectionObserver(function (entries, obs) {
-      for (var i = 0; i < entries.length; i++) {
-        if (entries[i].isIntersecting) {
-          swap(entries[i].target);
-          obs.unobserve(entries[i].target);
-        }
-      }
-    }, { rootMargin: ROOT_MARGIN });
+    observeDeferred(document);
 
-    for (var j = 0; j < deferred.length; j++) io.observe(deferred[j]);
+    if ('MutationObserver' in window) {
+      var mo = new MutationObserver(function (muts) {
+        for (var i = 0; i < muts.length; i++) {
+          var added = muts[i].addedNodes;
+          for (var j = 0; j < added.length; j++) {
+            var n = added[j];
+            if (n.nodeType !== 1) continue;
+            if (n.tagName === 'IMG') {
+              if (n.getAttribute('data-src') || n.getAttribute('data-srcset')) {
+                if (io) io.observe(n); else swap(n);
+              }
+            } else if (n.querySelectorAll) {
+              observeDeferred(n);
+            }
+          }
+        }
+      });
+      mo.observe(document.documentElement, { childList: true, subtree: true });
+    }
+
+    // Explicit re-scan hook for code that injects deferred images manually.
+    window.__sappLazy = observeDeferred;
   }
 
   // Resolve once all eager (critical) images have finished — the LCP moment.
@@ -128,8 +164,19 @@ function loadScriptOnce(id, src, callback) {
     }
     function settle() { pending--; check(); }
     for (var i = 0; i < nodes.length; i++) {
-      var src = nodes[i].getAttribute('data-src');
+      var node = nodes[i];
+      var src = node.getAttribute('data-src');
       var s = document.createElement('script');
+      // Preserve the original script's own attributes (data-section, data-form,
+      // id, nonce, …) so code reading document.currentScript.getAttribute(...)
+      // still resolves them after materialization. Skip 'type' (must stay an
+      // executable classic script) and 'data-src' (promoted to src below).
+      var attrs = node.attributes;
+      for (var a = 0; a < attrs.length; a++) {
+        var an = attrs[a].name;
+        if (an === 'type' || an === 'data-src') continue;
+        s.setAttribute(an, attrs[a].value);
+      }
       if (src) {
         s.src = src;
         s.async = false;
@@ -137,7 +184,7 @@ function loadScriptOnce(id, src, callback) {
         s.addEventListener('load', settle, { once: true });
         s.addEventListener('error', settle, { once: true });
       } else {
-        s.textContent = nodes[i].textContent;
+        s.textContent = node.textContent;
       }
       // Mark as already handled so the sapp observer's MutationObserver skips it.
       // Without this the freshly inserted, normal-type <script> is re-caught,

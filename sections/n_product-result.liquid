@@ -24,7 +24,7 @@
             {% if tab_blocks.size > 0 %}
                 <ul class="e-pill-tabs" role="tablist">
                     {% for tab_block in tab_blocks %}
-                        <li>
+                        <li role="tab">
                             <button
                                 {% if tab_block.settings.active %}
                                     class="active"

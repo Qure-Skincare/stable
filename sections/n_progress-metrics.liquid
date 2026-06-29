@@ -69,7 +69,7 @@
                     {% for block in section.blocks %}
                         {% if block.type == 'image' %}
                             {% assign image_tab_index = image_tab_index | plus: 1 %}
-                            <li>
+                            <li role="tab">
                                 <button {% if image_tab_index == 1 %}class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#pill-tabs-{{ block.settings.heading | strip | handleize }}">{{ block.settings.heading }}</button>
                             </li>
                         {% endif %}

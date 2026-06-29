@@ -33,7 +33,7 @@
                     {% if block.type == 'tab' %}
                         {% assign tab_index = tab_index | plus: 1 %}
                         {% if block.settings.heading != blank %}
-                            <li>
+                            <li role="tab">
                                 <button{% if tab_index == 1 %} class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#pill-tabs-{{ block.settings.heading | strip | handleize }}">{{ block.settings.heading }}</button>
                             </li>
                         {% endif %}
