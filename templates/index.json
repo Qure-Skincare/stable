@@ -9,6 +9,50 @@
  */
 {
   "sections": {
+    "n_across_image_banner_Jul4": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "stars_image_jul4": {
+          "type": "stars_image",
+          "settings": {
+            "image": "shopify://shop_images/fourth-of-july-stars.svg"
+          }
+        },
+        "badge_jul4": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "4th of july SALE",
+            "image": "shopify://shop_images/fourth-of-july-flag.svg"
+          }
+        },
+        "treatment_result_badge_jul4": {
+          "type": "treatment_result_badge",
+          "settings": {
+            "image": "shopify://shop_images/fourth-of-july-percentage.svg",
+            "text": "<p>of testers saw visible results. <strong>After just one treatment!</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "stars_image_jul4",
+        "badge_jul4",
+        "treatment_result_badge_jul4"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "fourth-of-july",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>Give Your Skin the Celebration It Deserves</h1>",
+        "text": "<p>Up to 70% Off Micro-Infusion System</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/fourth-of-july.webp",
+        "image_mobile": "shopify://shop_images/fourth-of-july-mob.webp",
+        "button_label": "Buy Now & Save",
+        "button_url": "https://qureskincare.com/pages/qure-microinfusion-offer"
+      }
+    },
     "n_index-quick-links": {
       "type": "n_index-quick-links",
       "blocks": {
@@ -84,53 +128,9 @@
         "use_own_file": false
       }
     },
-    "n_across_image_banner_Jul4": {
-      "type": "n_across-image-banner",
-      "name": "t:sections.n_across-image-banner.name",
-      "disabled": true,
-      "blocks": {
-        "stars_image_jul4": {
-          "type": "stars_image",
-          "settings": {
-            "image": "shopify://shop_images/fourth-of-july-stars.svg"
-          }
-        },
-        "badge_jul4": {
-          "type": "badge",
-          "settings": {
-            "badge_text": "4th of july SALE",
-            "image": "shopify://shop_images/fourth-of-july-flag.svg"
-          }
-        },
-        "treatment_result_badge_jul4": {
-          "type": "treatment_result_badge",
-          "settings": {
-            "image": "shopify://shop_images/fourth-of-july-percentage.svg",
-            "text": "<p>of testers saw visible results. <strong>After just one treatment!</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "stars_image_jul4",
-        "badge_jul4",
-        "treatment_result_badge_jul4"
-      ],
-      "settings": {
-        "use_own_file": false,
-        "modifier": "fourth-of-july",
-        "rating": "",
-        "rating_text": "",
-        "heading": "<h1>Give Your Skin the&nbsp;Celebration&nbsp;It&nbsp;Deserves</h1>",
-        "text": "<p>Up to <span>70%</span> Off Micro-Infusion System</p>",
-        "sub_text": "",
-        "image": "shopify://shop_images/fourth-of-july.webp",
-        "image_mobile": "shopify://shop_images/fourth-of-july-mob.webp",
-        "button_label": "Buy Now & Save Up to 40%",
-        "button_url": "/pages/microinfusion"
-      }
-    },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
