@@ -36,18 +36,46 @@ function loadScriptOnce(id, src, callback) {
     if (ds) { img.setAttribute('src', ds); img.removeAttribute('data-src'); }
   }
 
-  // One shared lazy-load IntersectionObserver, created in activate().
+  // Two shared lazy-load observers, created in activate():
+  //   io       — per-image: swaps a single image when it nears the viewport.
+  //   sliderIo — per-slider-container: swaps EVERY image inside it at once.
   var io = null;
+  var sliderIo = null;
+
+  // Horizontal carousels translate off-screen slides outside the viewport, so a
+  // per-image observer never fires for them — they keep the 1x1 placeholder,
+  // which (being square) renders TALLER than the real image and, via the
+  // wrapper's flex stretch, inflates every slide's height. Loading a slider's
+  // images as a unit when the slider itself nears the viewport keeps each slide
+  // at its true proportions. Match the theme's Swiper roots.
+  var SLIDER_SEL = '[data-swiper], .swiper, .c-swiper';
+
+  function swapAllIn(root) {
+    var d = root.querySelectorAll('img[data-src], img[data-srcset]');
+    for (var i = 0; i < d.length; i++) swap(d[i]);
+  }
+
+  // Route one deferred image: if it lives in a slider, lazy-load the whole
+  // slider (once); otherwise lazy-load the image on its own.
+  function registerImg(img) {
+    if (!img.getAttribute('data-src') && !img.getAttribute('data-srcset')) return;
+    var slider = img.closest ? img.closest(SLIDER_SEL) : null;
+    if (slider) {
+      if (slider.getAttribute('data-sapp-lazy-slider')) return; // already handled
+      slider.setAttribute('data-sapp-lazy-slider', '1');
+      if (sliderIo) sliderIo.observe(slider); else swapAllIn(slider);
+    } else {
+      if (io) io.observe(img); else swap(img);
+    }
+  }
 
   // Register every not-yet-swapped deferred image under `root` (default: whole
-  // document) with the observer. swap() strips data-src, so already-loaded
-  // images are skipped automatically and re-observing is a harmless no-op.
+  // document). swap() strips data-src, so already-loaded images are skipped and
+  // re-observing is a harmless no-op.
   function observeDeferred(root) {
     var scope = (root && root.querySelectorAll) ? root : document;
     var deferred = scope.querySelectorAll('img[data-src], img[data-srcset]');
-    for (var i = 0; i < deferred.length; i++) {
-      if (io) io.observe(deferred[i]); else swap(deferred[i]);
-    }
+    for (var i = 0; i < deferred.length; i++) registerImg(deferred[i]);
   }
 
   // Activate lazy loading for every deferred image, and keep doing so for images
@@ -55,13 +83,21 @@ function loadScriptOnce(id, src, callback) {
   // clones markup into the DOM long after this first pass — those images still
   // carry data-src + a transparent-pixel src, so without picking them up they
   // never load. A lightweight, image-only MutationObserver registers them with
-  // the same IntersectionObserver for the page's lifetime.
+  // the observers for the page's lifetime.
   function activate() {
     if ('IntersectionObserver' in window) {
       io = new IntersectionObserver(function (entries, obs) {
         for (var i = 0; i < entries.length; i++) {
           if (entries[i].isIntersecting) {
             swap(entries[i].target);
+            obs.unobserve(entries[i].target);
+          }
+        }
+      }, { rootMargin: ROOT_MARGIN });
+      sliderIo = new IntersectionObserver(function (entries, obs) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            swapAllIn(entries[i].target);
             obs.unobserve(entries[i].target);
           }
         }
@@ -77,13 +113,8 @@ function loadScriptOnce(id, src, callback) {
           for (var j = 0; j < added.length; j++) {
             var n = added[j];
             if (n.nodeType !== 1) continue;
-            if (n.tagName === 'IMG') {
-              if (n.getAttribute('data-src') || n.getAttribute('data-srcset')) {
-                if (io) io.observe(n); else swap(n);
-              }
-            } else if (n.querySelectorAll) {
-              observeDeferred(n);
-            }
+            if (n.tagName === 'IMG') registerImg(n);
+            else if (n.querySelectorAll) observeDeferred(n);
           }
         }
       });
