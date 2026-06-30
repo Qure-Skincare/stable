@@ -5,7 +5,18 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/across-image-banner/across-image-banner.css" />
 {% endif %}
-<section class="across-image-banner{% if section.settings.modifier == 'holidays' %} across-image-banner--holidays{% elsif section.settings.modifier == 'hero' %} across-image-banner--hero{% elsif section.settings.modifier == 'hero_reverse' %} across-image-banner--hero across-image-banner--reverse{% elsif section.settings.modifier == 'sm' %} across-image-banner--sm{% elsif section.settings.modifier == 'holidays-secondary' %} across-image-banner--holidays across-image-banner--holidays-secondary{% elsif section.settings.modifier == 'fathers-day' %} across-image-banner--holidays across-image-banner--fathers-day{% elsif section.settings.modifier == 'fourth-of-july' %} across-image-banner--holidays across-image-banner--fourth-of-july{% elsif section.settings.modifier == 'flex' %} across-image-banner--flex{% elsif section.settings.modifier == 'doctorly' %} across-image-banner--doctorly{% endif %}">
+{%- liquid
+    assign mod = section.settings.modifier
+    assign banner_class = 'across-image-banner'
+    if mod == 'hero_reverse'
+        assign banner_class = 'across-image-banner across-image-banner--hero across-image-banner--reverse'
+    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday'
+        assign banner_class = banner_class | append: ' across-image-banner--holidays across-image-banner--' | append: mod
+    elsif mod != 'none' and mod != blank
+        assign banner_class = banner_class | append: ' across-image-banner--' | append: mod
+    endif
+-%}
+<section class="{{ banner_class }}">
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)"
@@ -292,6 +303,18 @@
             {% endfor %}
 
         </div>
+
+        {% for block in section.blocks %}
+            {% if block.type == 'video' %}
+                {% if block.settings.video_url != blank %}
+                    <div class="qure-birthday-video">
+                        <video autoplay="" loop="" muted="" playsinline="">
+                            <source src="{{ block.settings.video_url }}" type="video/webm" />
+                        </video>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
     </section>
 
 
@@ -342,6 +365,10 @@
                 {
                     "value": "fourth-of-july",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.fourth-of-july"
+                },
+                {
+                    "value": "qure-birthday",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.qure-birthday"
                 },
                 {
                     "value": "flex",
@@ -650,6 +677,18 @@
                 "type": "text",
                 "id": "label",
                 "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "video",
+        "name": "t:common.video",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "video_url",
+                "label": "t:common.video-url"
             }
         ]
     }
