@@ -60,25 +60,29 @@
       "queue": "other",
       "trigger": "timeout"
     },
-    { 
+    {%- comment -%} Triggers are scroll/touchstart only — NO `click`/`mousemove` — so the add-to-cart
+      click (and desktop hover) never wakes these heavier third parties on the cart interaction. The
+      reviews widget (widget.min.js) is additionally kicked by the rating-anchor fix in __sapp-custom.js
+      on a rating click, since there is no `click` trigger to load it for that flow. {%- endcomment -%}
+    {
       "match": { "src": "portable-wallets" },
       "queue": "event",
-      "trigger": ["scroll", "click", "touchstart", "mousemove"] 
+      "trigger": ["scroll", "touchstart"]
     },
-    { 
+    {
       "match": { "src": "E-v1.js" },
       "queue": "event",
-      "trigger": ["scroll", "click", "touchstart", "mousemove"] 
+      "trigger": ["scroll", "touchstart"]
     },
-    { 
+    {
       "match": { "src": "player.js" },
       "queue": "event",
-      "trigger": ["scroll", "click", "touchstart", "mousemove"] 
+      "trigger": ["scroll", "touchstart"]
     },
-    { 
+    {
       "match": { "src": "widget.min.js" },
       "queue": "event",
-      "trigger": ["scroll", "click", "touchstart", "mousemove"] 
+      "trigger": ["scroll", "touchstart"]
     }
   ],
   "exceptions": {

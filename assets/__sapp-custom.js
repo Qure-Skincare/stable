@@ -55,6 +55,23 @@ window.__sapp.handlers = window.__sapp.handlers || {};
     try { return d.getElementById(h.slice(1)); } catch (e) { return null; }
   }
 
+  /* The reviews widget is event-gated on scroll/touchstart (no `click`, so the
+     add-to-cart click can't wake it), so a desktop rating click without a prior
+     scroll would otherwise scroll to an empty container. Clicking the rating IS the
+     intent to see reviews, so run its parked task now. Idempotent — runTask has a
+     task.done guard, so a later scroll trigger won't double-run it. */
+  function kickWidget() {
+    var S = w.__sapp;
+    if (!S || !S.queues || !S.queues.event || !S.run || !S.run.task) return;
+    var ev = S.queues.event;
+    for (var k = 0; k < ev.length; k++) {
+      var t = ev[k];
+      if (!t || t.done || !t.node) continue;
+      var src = (t.node.getAttribute && (t.node.getAttribute('data-src') || t.node.getAttribute('src')) || t.node.src) || '';
+      if (src.indexOf('widget.min.js') >= 0) { try { S.run.task(t); } catch (e) {} }
+    }
+  }
+
   function scrollToTarget(el) {
     var offset = parseFloat((w.getComputedStyle && getComputedStyle(el).scrollMarginTop) || 0) || 0;
     var de = d.documentElement;
@@ -116,6 +133,7 @@ window.__sapp.handlers = window.__sapp.handlers || {};
     if (!el) return;
     e.preventDefault();
     try { if (w.history && history.pushState) history.pushState(null, '', a.getAttribute('href')); } catch (x) {}
+    kickWidget();
     scrollToTarget(el);
   }, true);
 })(window, document);
