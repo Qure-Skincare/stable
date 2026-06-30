@@ -1,23 +1,16 @@
 {%- unless sapp_passthrough -%}
   {%- if license_valid_liquid -%}
-    {%- if sapp_use_minified -%}
-      {%- assign sapp_runtime_file  = '__sapp-runtime.min.js'  -%}
-      {%- assign sapp_observer_file = '__sapp-observer.min.js' -%}
-      {%- assign sapp_backend_file  = '__sapp-backend.min.js'  -%}
-    {%- else -%}
-      {%- assign sapp_runtime_file  = '__sapp-runtime.js'  -%}
-      {%- assign sapp_observer_file = '__sapp-observer.js' -%}
-      {%- assign sapp_backend_file  = '__sapp-backend.js'  -%}
-    {%- endif -%}
-    {%- assign sapp_custom_file   = '__sapp-custom.js'   -%}
     {%- include '__sapp-config-frontend' -%}
-
     {% render '__sapp-lcp' %}
-
-    <script src="{{ sapp_runtime_file  | asset_url }}" defer="defer"></script>
-    <script src="{{ sapp_custom_file   | asset_url }}" defer="defer"></script>
-    <script src="{{ sapp_observer_file | asset_url }}" defer="defer"></script>
-    <script src="{{ sapp_backend_file  | asset_url }}" defer="defer"></script>
+    {%- if sapp_use_minified -%}
+      <script src="{{ '__sapp-bundle.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-custom.js' | asset_url }}" defer="defer"></script>
+    {%- else -%}
+      <script src="{{ '__sapp-runtime.js'  | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-observer.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-backend.js'  | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-custom.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
 
     <link rel="stylesheet" href="{{ '__sapp-custom.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="{{ '__sapp-custom.css' | asset_url }}"></noscript>
