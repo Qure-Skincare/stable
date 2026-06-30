@@ -104,11 +104,33 @@
 {%- endcomment -%}
 {%- assign sapp_pixel = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' -%}
 {%- if sapp_rewrite_img -%}
+{%- comment -%}
+  LCP preload (mobile-only). The theme marks its above-the-fold LCP image with
+  loading="eager" fetchpriority="high". We scan for the FIRST such <img> in
+  document order, mirror its src/srcset/sizes into a <link rel="preload"> and
+  inject it into <head> below — so even an LCP image deep in the body is
+  discovered immediately. Scoped to media="(max-width:767.98px)": on mobile the
+  <img> IS the LCP resource for every variant (hero/banner <picture> serve a
+  desktop <source> above 768px), so this preloads exactly the right file with
+  zero desktop double-download. Captured here, injected once after the loop.
+{%- endcomment -%}
+{%- assign sapp_lcp_found = false -%}
+{%- assign sapp_lcp_src = '' -%}
+{%- assign sapp_lcp_srcset = '' -%}
+{%- assign sapp_lcp_sizes = '' -%}
 {%- assign sapp_img_chunks = sapp_html | split: '<img' -%}
 {%- assign sapp_img_out = sapp_img_chunks[0] | split: '|SAPPNUL|' -%}
 {%- for ch in sapp_img_chunks offset: 1 -%}
   {%- assign tag_open = ch | split: '>' | first -%}
   {%- if tag_open contains 'loading="eager"' or tag_open contains "loading='eager'" -%}
+    {%- unless sapp_lcp_found -%}
+      {%- if tag_open contains 'fetchpriority="high"' or tag_open contains "fetchpriority='high'" -%}
+        {%- if tag_open contains ' src="' -%}{%- assign sapp_lcp_src = tag_open | split: ' src="' | last | split: '"' | first -%}{%- endif -%}
+        {%- if tag_open contains ' srcset="' -%}{%- assign sapp_lcp_srcset = tag_open | split: ' srcset="' | last | split: '"' | first -%}{%- endif -%}
+        {%- if tag_open contains ' sizes="' -%}{%- assign sapp_lcp_sizes = tag_open | split: ' sizes="' | last | split: '"' | first -%}{%- endif -%}
+        {%- if sapp_lcp_src != '' -%}{%- assign sapp_lcp_found = true -%}{%- endif -%}
+      {%- endif -%}
+    {%- endunless -%}
     {%- assign piece = '<img' | append: ch -%}
   {%- else -%}
     {%- assign rest = ch | remove_first: tag_open -%}
@@ -126,6 +148,15 @@
 {%- endfor -%}
 {%- assign sapp_html = sapp_img_out | join: '' -%}
 {%- assign sapp_html = sapp_html | replace: '--image-on-hover:', '--image-on-hover-defer:' -%}
+
+{%- comment -%} Inject the captured LCP preload at the very TOP of <head> (right
+  after the opening tag) so the preload scanner discovers it before anything else
+  in the head. Mobile-only, see note above. {%- endcomment -%}
+{%- if sapp_lcp_found and sapp_html contains '<head>' -%}
+  {%- capture sapp_lcp_link -%}<link rel="preload" as="image" fetchpriority="high" media="(max-width:767.98px)" href="{{ sapp_lcp_src }}"{% if sapp_lcp_srcset != '' %} imagesrcset="{{ sapp_lcp_srcset }}" imagesizes="{% if sapp_lcp_sizes != '' %}{{ sapp_lcp_sizes }}{% else %}100vw{% endif %}"{% endif %}>{%- endcapture -%}
+  {%- assign sapp_lcp_inject = '<head>' | append: sapp_lcp_link -%}
+  {%- assign sapp_html = sapp_html | replace_first: '<head>', sapp_lcp_inject -%}
+{%- endif -%}
 {%- endif -%}
 
 {%- comment -%}
