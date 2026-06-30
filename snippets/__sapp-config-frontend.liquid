@@ -7,8 +7,8 @@
   },
   "debug": false,
   "timeouts": {
-    "mobile":  { "preload": "1000", "scripts": "5500", "embeds": "6500", "other": "1900", "async": "3500" },
-    "desktop": { "preload": "500", "scripts": "5500", "embeds": "6500", "other": "1900", "async": "3500" }
+    "mobile":  { "preload": "1000", "scripts": "2500", "embeds": "3500", "other": "1000", "async": "4500" },
+    "desktop": { "preload": "500", "scripts": "2500", "embeds": "3500", "other": "1000", "async": "4500" }
   },
   {%- comment -%}
     OPTIONAL slow-connection profile. The backend selects it at start time when
@@ -20,8 +20,8 @@
     to skip it entirely for slow users. Must differ from `timeouts` to matter.
   {%- endcomment -%}
   "timeoutsSlow": {
-    "mobile":  { "preload": "2000", "scripts": "12000", "embeds": "15000", "other": "6000", "async": "10000" },
-    "desktop": { "preload": "1500", "scripts": "12000", "embeds": "15000", "other": "6000", "async": "10000" }
+    "mobile":  { "preload": "2500", "scripts": "6000", "embeds": "10000", "other": "3000", "async": "12000" },
+    "desktop": { "preload": "2000", "scripts": "6000", "embeds": "10000", "other": "3000", "async": "12000" }
   },
   {%- comment -%}
     "*" applies to every queue (a per-queue key overrides it). stagger trickles a
@@ -30,7 +30,9 @@
     like add-to-cart) and spread-out execution (main thread stays responsive).
   {%- endcomment -%}
   "queueOptions": {
-    "*":       { "stagger": 50, "burst": 3, "slice": 30 }
+    "*":       { "stagger": 50, "burst": 5, "slice": 30 },
+    "scripts": { "stagger": 50, "burst": 1, "slice": 30 },
+    "async":   { "stagger": 100, "burst": 1, "slice": 30 }
   },
   {%- comment -%}
     OPTIONAL gentler pacing for slow connections — selected at queue-run time by
@@ -40,7 +42,9 @@
     slice (yield to input sooner). Omit this block to use `queueOptions` always.
   {%- endcomment -%}
   "queueOptionsSlow": {
-    "*":       { "stagger": 90, "burst": 1, "slice": 15 }
+    "*":       { "stagger": 100, "burst": 3, "slice": 12 },
+    "scripts": { "stagger": 100, "burst": 1, "slice": 12 },
+    "async":   { "stagger": 200, "burst": 1, "slice": 12 }
   },
   "dispatchSyntheticEvents": true,
   "defaultMediaTrigger": "scroll",
