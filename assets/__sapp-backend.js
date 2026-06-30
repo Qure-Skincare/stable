@@ -15,6 +15,9 @@
     var forced = /[?&]sappconn=(slow|fast)/.exec(w.location.search);
     if (forced) slow = forced[1] === 'slow';
     else slow = !!(S.net && S.net.slow);
+    /* Publish the resolved decision so runQueue can pick queueOptionsSlow with
+       the same slow/fast trigger (measured net or ?sappconn= override). */
+    S.state.slow = slow;
     var profile = (slow && cfg.timeoutsSlow) ? cfg.timeoutsSlow : cfg.timeouts;
     return (S.state.isMobile ? profile.mobile : profile.desktop) || {};
   }

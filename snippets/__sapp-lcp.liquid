@@ -22,11 +22,17 @@ function loadScriptOnce(id, src, callback) {
 (function () {
   'use strict';
 
-  // How early (relative to the viewport) a deferred image starts loading once
-  // the observer is active. Larger = preload sooner; smaller = save more data.
+  {%- comment -%}
+    //How early (relative to the viewport) a deferred image starts loading once
+    //the observer is active. Larger = preload sooner; smaller = save more data.
+  {%- endcomment -%}
+
   var ROOT_MARGIN = '300px 0px';
 
-  // Safety net: release everything if the eager image never fires load/error.
+  {%- comment -%}
+    // Safety net: release everything if the eager image never fires load/error.
+  {%- endcomment -%}
+
   var FALLBACK_MS = 4000;
 
   function swap(img) {
@@ -36,18 +42,24 @@ function loadScriptOnce(id, src, callback) {
     if (ds) { img.setAttribute('src', ds); img.removeAttribute('data-src'); }
   }
 
-  // Two shared lazy-load observers, created in activate():
-  //   io       — per-image: swaps a single image when it nears the viewport.
-  //   sliderIo — per-slider-container: swaps EVERY image inside it at once.
+  {%- comment -%}
+    // Two shared lazy-load observers, created in activate():
+    //   io       — per-image: swaps a single image when it nears the viewport.
+    //   sliderIo — per-slider-container: swaps EVERY image inside it at once.
+  {%- endcomment -%}
+  
   var io = null;
   var sliderIo = null;
 
-  // Horizontal carousels translate off-screen slides outside the viewport, so a
-  // per-image observer never fires for them — they keep the 1x1 placeholder,
-  // which (being square) renders TALLER than the real image and, via the
-  // wrapper's flex stretch, inflates every slide's height. Loading a slider's
-  // images as a unit when the slider itself nears the viewport keeps each slide
-  // at its true proportions. Match the theme's Swiper roots.
+  {%- comment -%}
+    // Horizontal carousels translate off-screen slides outside the viewport, so a
+    // per-image observer never fires for them — they keep the 1x1 placeholder,
+    // which (being square) renders TALLER than the real image and, via the
+    // wrapper's flex stretch, inflates every slide's height. Loading a slider's
+    // images as a unit when the slider itself nears the viewport keeps each slide
+    // at its true proportions. Match the theme's Swiper roots.
+  {%- endcomment -%}
+
   var SLIDER_SEL = '[data-swiper], .swiper, .c-swiper';
 
   function swapAllIn(root) {
@@ -55,8 +67,11 @@ function loadScriptOnce(id, src, callback) {
     for (var i = 0; i < d.length; i++) swap(d[i]);
   }
 
-  // Route one deferred image: if it lives in a slider, lazy-load the whole
-  // slider (once); otherwise lazy-load the image on its own.
+  {%- comment -%}
+    // Route one deferred image: if it lives in a slider, lazy-load the whole
+    // slider (once); otherwise lazy-load the image on its own.
+  {%- endcomment -%}
+
   function registerImg(img) {
     if (!img.getAttribute('data-src') && !img.getAttribute('data-srcset')) return;
     var slider = img.closest ? img.closest(SLIDER_SEL) : null;
@@ -69,21 +84,27 @@ function loadScriptOnce(id, src, callback) {
     }
   }
 
-  // Register every not-yet-swapped deferred image under `root` (default: whole
-  // document). swap() strips data-src, so already-loaded images are skipped and
-  // re-observing is a harmless no-op.
+  {%- comment -%}
+    // Register every not-yet-swapped deferred image under `root` (default: whole
+    // document). swap() strips data-src, so already-loaded images are skipped and
+    // re-observing is a harmless no-op.
+  {%- endcomment -%}
+
   function observeDeferred(root) {
     var scope = (root && root.querySelectorAll) ? root : document;
     var deferred = scope.querySelectorAll('img[data-src], img[data-srcset]');
     for (var i = 0; i < deferred.length; i++) registerImg(deferred[i]);
   }
 
-  // Activate lazy loading for every deferred image, and keep doing so for images
-  // injected later. Theme code (bundle templates, modal sliders, AJAX sections)
-  // clones markup into the DOM long after this first pass — those images still
-  // carry data-src + a transparent-pixel src, so without picking them up they
-  // never load. A lightweight, image-only MutationObserver registers them with
-  // the observers for the page's lifetime.
+  {%- comment -%}
+    // Activate lazy loading for every deferred image, and keep doing so for images
+    // injected later. Theme code (bundle templates, modal sliders, AJAX sections)
+    // clones markup into the DOM long after this first pass — those images still
+    // carry data-src + a transparent-pixel src, so without picking them up they
+    // never load. A lightweight, image-only MutationObserver registers them with
+    // the observers for the page's lifetime.
+  {%- endcomment -%}
+
   function activate() {
     if ('IntersectionObserver' in window) {
       io = new IntersectionObserver(function (entries, obs) {
@@ -125,7 +146,10 @@ function loadScriptOnce(id, src, callback) {
     window.__sappLazy = observeDeferred;
   }
 
-  // Resolve once all eager (critical) images have finished — the LCP moment.
+  {%- comment -%}
+    // Resolve once all eager (critical) images have finished — the LCP moment.
+  {%- endcomment -%}
+
   function whenLcpReady(cb) {
     var eager = document.querySelectorAll('img[loading="eager"]');
     var pending = 0;
@@ -147,10 +171,13 @@ function loadScriptOnce(id, src, callback) {
     setTimeout(fire, FALLBACK_MS);    // safety net
   }
 
-  // Hover background images (--image-on-hover) are renamed server-side to
-  // --image-on-hover-defer so the CSS never fetches them. Restore the real
-  // property on first pointerenter — on touch devices (no hover) they stay
-  // unloaded forever, saving the bytes entirely.
+  {%- comment -%}
+    // Hover background images (--image-on-hover) are renamed server-side to
+    // --image-on-hover-defer so the CSS never fetches them. Restore the real
+    // property on first pointerenter — on touch devices (no hover) they stay
+    // unloaded forever, saving the bytes entirely.
+  {%- endcomment -%}
+
   function armHoverBackgrounds() {
     var els = document.querySelectorAll('[style*="--image-on-hover-defer"]');
     for (var i = 0; i < els.length; i++) {
@@ -163,10 +190,13 @@ function loadScriptOnce(id, src, callback) {
     }
   }
 
-  // Fonts are declared in an inert <style type="text/sapp-fonts"> so the browser
-  // can't fetch them during the LCP window. Activate them after the hero loads:
-  // cloning the rules into a live <style> registers the @font-face and the text
-  // swaps from the system fallback (font-display: swap).
+  {%- comment -%}
+    // Fonts are declared in an inert <style type="text/sapp-fonts"> so the browser
+    // can't fetch them during the LCP window. Activate them after the hero loads:
+    // cloning the rules into a live <style> registers the @font-face and the text
+    // swaps from the system fallback (font-display: swap).
+  {%- endcomment -%}
+
   function activateFonts() {
     var f = document.getElementById('sapp-fonts');
     if (!f) return;
@@ -175,15 +205,18 @@ function loadScriptOnce(id, src, callback) {
     document.head.appendChild(s);
   }
 
-  // Scripts marked type="text/sapp-lcp" are inert (the browser neither fetches
-  // nor runs them). After the hero loads, recreate them as real scripts:
-  //   - external (has data-src): set src, async=false to preserve order
-  //   - inline (no data-src): copy the body so it executes
-  // Materialize the inert LCP scripts and call onAllExternalDone() once every
-  // EXTERNAL one has finished executing. Inline scripts run synchronously on
-  // insert; external ones (async=false) execute in order, so waiting for their
-  // load/error events guarantees their globals (loadScriptOnce, is_gdpr_country,
-  // …) exist before the caller replays DOMContentLoaded.
+  {%- comment -%}
+    // Scripts marked type="text/sapp-lcp" are inert (the browser neither fetches
+    // nor runs them). After the hero loads, recreate them as real scripts:
+    //   - external (has data-src): set src, async=false to preserve order
+    //   - inline (no data-src): copy the body so it executes
+    // Materialize the inert LCP scripts and call onAllExternalDone() once every
+    // EXTERNAL one has finished executing. Inline scripts run synchronously on
+    // insert; external ones (async=false) execute in order, so waiting for their
+    // load/error events guarantees their globals (loadScriptOnce, is_gdpr_country,
+    // …) exist before the caller replays DOMContentLoaded.
+  {%- endcomment -%}
+
   function activateLcpScripts(onAllExternalDone) {
     var nodes = document.querySelectorAll('script[type="text/sapp-lcp"]');
     var pending = 0;
@@ -198,10 +231,14 @@ function loadScriptOnce(id, src, callback) {
       var node = nodes[i];
       var src = node.getAttribute('data-src');
       var s = document.createElement('script');
-      // Preserve the original script's own attributes (data-section, data-form,
-      // id, nonce, …) so code reading document.currentScript.getAttribute(...)
-      // still resolves them after materialization. Skip 'type' (must stay an
-      // executable classic script) and 'data-src' (promoted to src below).
+
+      {%- comment -%}
+        // Preserve the original script's own attributes (data-section, data-form,
+        // id, nonce, …) so code reading document.currentScript.getAttribute(...)
+        // still resolves them after materialization. Skip 'type' (must stay an
+        // executable classic script) and 'data-src' (promoted to src below).
+      {%- endcomment -%}
+
       var attrs = node.attributes;
       for (var a = 0; a < attrs.length; a++) {
         var an = attrs[a].name;
@@ -217,10 +254,14 @@ function loadScriptOnce(id, src, callback) {
       } else {
         s.textContent = node.textContent;
       }
-      // Mark as already handled so the sapp observer's MutationObserver skips it.
-      // Without this the freshly inserted, normal-type <script> is re-caught,
-      // blocked and re-queued — then runs a SECOND time once the queue fires.
-      // The browser already executes it here exactly once.
+
+      {%- comment -%}
+        // Mark as already handled so the sapp observer's MutationObserver skips it.
+        // Without this the freshly inserted, normal-type <script> is re-caught,
+        // blocked and re-queued — then runs a SECOND time once the queue fires.
+        // The browser already executes it here exactly once.
+      {%- endcomment -%}
+
       s.setAttribute('data-sapp-handled', '1');
       document.head.appendChild(s);
     }
@@ -230,16 +271,20 @@ function loadScriptOnce(id, src, callback) {
   // Connection below this measured effective downlink (kbps) is treated as slow.
   var SLOW_KBPS = 1500;
   var NET_STORE_KEY = 'sappKbps';
+
   // Size of the active fallback probe payload to fetch when nothing is passively
   // measurable (cache-busted), and a one-shot guard so it runs at most once.
   var PROBE_BYTES_MIN = 20000;
   var netProbeStarted = false;
 
-  // Real, size-independent effective downlink (kbps) from an already-loaded,
-  // same-origin image's Resource Timing: bytes / download-time. transferSize is
-  // 0 for cached or cross-origin-without-Timing-Allow-Origin resources, so those
-  // are skipped; same-origin images (the LCP hero, Shopify CDN) expose it.
-  // Returns null when nothing is measurable on this load (e.g. warm cache).
+  {%- comment -%}
+    // Real, size-independent effective downlink (kbps) from an already-loaded,
+    // same-origin image's Resource Timing: bytes / download-time. transferSize is
+    // 0 for cached or cross-origin-without-Timing-Allow-Origin resources, so those
+    // are skipped; same-origin images (the LCP hero, Shopify CDN) expose it.
+    // Returns null when nothing is measurable on this load (e.g. warm cache).
+  {%- endcomment -%}
+
   function measuredKbps() {
     try {
       var res = performance.getEntriesByType('resource');
@@ -253,10 +298,14 @@ function loadScriptOnce(id, src, callback) {
         if (!best || e.transferSize > best.transferSize) best = e;
       }
       if (best) return (best.transferSize * 8) / ((best.responseEnd - best.responseStart) / 1000) / 1000;
-      // Early fallback (before any image is measurable, e.g. on a slow link where
-      // the LCP image is still downloading): the HTML document itself is
-      // same-origin, downloaded first, and timed by DCL — so it already reflects
-      // the link speed and lets the queue pick its profile in time.
+
+      {%- comment -%}
+        // Early fallback (before any image is measurable, e.g. on a slow link where
+        // the LCP image is still downloading): the HTML document itself is
+        // same-origin, downloaded first, and timed by DCL — so it already reflects
+        // the link speed and lets the queue pick its profile in time.
+      {%- endcomment -%}
+
       var nav = performance.getEntriesByType('navigation')[0];
       if (nav && nav.transferSize > 0 && nav.responseEnd > nav.responseStart) {
         return (nav.transferSize * 8) / ((nav.responseEnd - nav.responseStart) / 1000) / 1000;
@@ -265,9 +314,12 @@ function loadScriptOnce(id, src, callback) {
     return null;
   }
 
-  // Build the net profile object. The slow decision: explicit saveData wins;
-  // else the measured kbps vs threshold; else the coarse navigator.connection
-  // hint; else (truly unknown) stay false — never degrade on unknown.
+  {%- comment -%}
+    // Build the net profile object. The slow decision: explicit saveData wins;
+    // else the measured kbps vs threshold; else the coarse navigator.connection
+    // hint; else (truly unknown) stay false — never degrade on unknown.
+  {%- endcomment -%}
+
   function buildNet(kbps, source) {
     var c = navigator.connection || navigator.mozConnection || navigator.webkitConnection || null;
     var slow = false;
@@ -285,18 +337,24 @@ function loadScriptOnce(id, src, callback) {
     };
   }
 
-  // Publish so it is always inspectable: window.__sapp.net (the speed widget
-  // object) + window.__sappNet (standalone, set even before the runtime exists).
+  {%- comment -%}
+    // Publish so it is always inspectable: window.__sapp.net (the speed widget
+    // object) + window.__sappNet (standalone, set even before the runtime exists).
+  {%- endcomment -%}
+
   function publishNet(net) {
     window.__sappNet = net;
     if (window.__sapp) window.__sapp.net = net;
   }
 
-  // Last-resort active probe: when nothing was passively measurable AND there is
-  // no stored history (e.g. bfcache restore, service-worker-served document),
-  // fetch a same-origin payload cache-busted and time it ourselves — so the
-  // connection is determined even then. Runs at most once; same-origin keeps the
-  // body CORS-readable; cache:'no-store' forces a real transfer.
+  {%- comment -%}
+    // Last-resort active probe: when nothing was passively measurable AND there is
+    // no stored history (e.g. bfcache restore, service-worker-served document),
+    // fetch a same-origin payload cache-busted and time it ourselves — so the
+    // connection is determined even then. Runs at most once; same-origin keeps the
+    // body CORS-readable; cache:'no-store' forces a real transfer.
+  {%- endcomment -%}
+
   function probeNetwork(onDone) {
     if (netProbeStarted) { onDone(null); return; }
     netProbeStarted = true;
@@ -335,8 +393,11 @@ function loadScriptOnce(id, src, callback) {
     } catch (e) { onDone(null); }
   }
 
-  // Resolve and publish the network profile. Passive first (image → document →
-  // localStorage); if still unknown, fire the active probe and re-publish.
+  {%- comment -%}
+    // Resolve and publish the network profile. Passive first (image → document →
+    // localStorage); if still unknown, fire the active probe and re-publish.
+  {%- endcomment -%}
+
   function measureNetwork() {
     var kbps = measuredKbps();
     var source = 'measured';
@@ -363,33 +424,45 @@ function loadScriptOnce(id, src, callback) {
   }
 
   function start() {
-    // Early network estimate (from the HTML document) so the backend can pick its
-    // timeout profile in time; refined from the LCP image in whenLcpReady below.
+    {%- comment -%}
+      // Early network estimate (from the HTML document) so the backend can pick its
+      // timeout profile in time; refined from the LCP image in whenLcpReady below.
+    {%- endcomment -%}
+
     measureNetwork();
     whenLcpReady(function () {
-      // Lever A — shared contract: the LCP critical window is now closed. The
-      // sapp observer reads this flag and lets any further runtime-injected,
-      // non-pre-deferred script (loadScriptOnce children, late apps) run
-      // immediately instead of blocking it and dragging it through the queue
-      // timeouts. Set BEFORE anything below can inject scripts.
+      {%- comment -%}
+        // Lever A — shared contract: the LCP critical window is now closed. The
+        // sapp observer reads this flag and lets any further runtime-injected,
+        // non-pre-deferred script (loadScriptOnce children, late apps) run
+        // immediately instead of blocking it and dragging it through the queue
+        // timeouts. Set BEFORE anything below can inject scripts.
+      {%- endcomment -%}
+      
       window.__sappLcpReady = true;
 
-      // Measure the real effective downlink now that the LCP image has loaded,
-      // and publish it on __sapp.net / window.__sappNet for any consumer.
+      {%- comment -%}
+        // Measure the real effective downlink now that the LCP image has loaded,
+        // and publish it on __sapp.net / window.__sappNet for any consumer.
+      {%- endcomment -%}
+
       measureNetwork();
 
       activate();
       activateFonts();
 
-      // Lever B — we run post-hero, so the real DOMContentLoaded already fired.
-      // LCP code that wraps work in a DOMContentLoaded listener (e.g.
-      // loadScriptOnce) would otherwise wait for the backend's SYNTHETIC DCL,
-      // which is gated behind every queue draining (~3.5s). Replay DCL once the
-      // external LCP scripts have executed — so their globals (loadScriptOnce,
-      // is_gdpr_country, …) already exist when the handlers run. Deferred theme
-      // scripts haven't executed yet, so they haven't registered DCL handlers
-      // and aren't affected; loadScriptOnce is idempotent, so the backend's
-      // later synthetic DCL re-firing the same handlers is a harmless no-op.
+      {%- comment -%}
+        // Lever B — we run post-hero, so the real DOMContentLoaded already fired.
+        // LCP code that wraps work in a DOMContentLoaded listener (e.g.
+        // loadScriptOnce) would otherwise wait for the backend's SYNTHETIC DCL,
+        // which is gated behind every queue draining (~3.5s). Replay DCL once the
+        // external LCP scripts have executed — so their globals (loadScriptOnce,
+        // is_gdpr_country, …) already exist when the handlers run. Deferred theme
+        // scripts haven't executed yet, so they haven't registered DCL handlers
+        // and aren't affected; loadScriptOnce is idempotent, so the backend's
+        // later synthetic DCL re-firing the same handlers is a harmless no-op.
+      {%- endcomment -%}
+
       activateLcpScripts(function () {
         if (document.readyState !== 'loading') {
           try {

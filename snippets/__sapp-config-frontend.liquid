@@ -30,9 +30,17 @@
     like add-to-cart) and spread-out execution (main thread stays responsive).
   {%- endcomment -%}
   "queueOptions": {
-    "*":       { "stagger": 50 },
-    "scripts": { "stagger": 50, "burst": 3 },
-    "async":   { "stagger": 50, "burst": 3 }
+    "*":       { "stagger": 50, "burst": 3, "slice": 30 }
+  },
+  {%- comment -%}
+    OPTIONAL gentler pacing for slow connections — selected at queue-run time by
+    the same trigger as timeoutsSlow (measured window.__sapp.net.slow, or forced
+    via ?sappconn=slow). Slow link ≈ narrow pipe + weak CPU, so: smaller burst
+    (fewer simultaneous downloads), larger stagger (more breathing room), smaller
+    slice (yield to input sooner). Omit this block to use `queueOptions` always.
+  {%- endcomment -%}
+  "queueOptionsSlow": {
+    "*":       { "stagger": 90, "burst": 1, "slice": 15 }
   },
   "dispatchSyntheticEvents": true,
   "defaultMediaTrigger": "scroll",

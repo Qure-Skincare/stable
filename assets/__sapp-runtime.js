@@ -319,45 +319,59 @@
     var t0 = Date.now();
     /* Per-queue options, with an optional "*" entry as the default for every
        queue (a per-queue key overrides it). Lets `stagger`/`slice` be set once
-       for all queues instead of repeated per name. */
-    var qo = cfg.queueOptions || {};
+       for all queues instead of repeated per name. On a slow connection use the
+       optional `queueOptionsSlow` profile (gentler pacing for a narrow pipe and
+       weak CPU); same slow/fast trigger as timeoutsSlow. Omit it → use
+       queueOptions always. */
+    var sappSlow = !!(w.__sapp && w.__sapp.state && w.__sapp.state.slow);
+    var qo = ((sappSlow && cfg.queueOptionsSlow) ? cfg.queueOptionsSlow : cfg.queueOptions) || {};
     var opts = {};
     var dk; for (dk in (qo['*'] || {})) opts[dk] = qo['*'][dk];
     for (dk in (qo[name] || {})) opts[dk] = qo[name][dk];
     var stagger = opts.stagger || 0;
-    var burst = opts.burst || 1;   // tasks per batch; 1 = classic one-by-one stagger
+    var burst = opts.burst || 1; if (burst < 1) burst = 1;
     var slice = opts.slice || 0;
-    if (stagger > 0) {
-      /* Run the queue in batches of `burst`, each batch `stagger` ms after the
-         previous. burst=1 → one task per tick (identical to plain stagger);
-         larger burst trickles in groups so the whole queue drains faster while
-         still yielding to input between batches and capping concurrency. */
-      if (burst < 1) burst = 1;
-      var batches = Math.ceil(q.length / burst);
-      for (var b = 0; b < batches; b++) {
-        (function (batchIndex) {
-          setTimeout(function () {
-            var s = batchIndex * burst, e = Math.min(s + burst, q.length);
-            for (var k = s; k < e; k++) runTask(q[k]);
-          }, batchIndex * stagger);
-        })(b);
-      }
-      setTimeout(function () { emit('queueDone', name, Date.now() - t0, q.length); }, batches * stagger);
-    } else if (slice > 0 && q.length > 1) {
-      var idx = 0;
-      (function chunk() {
-        var start = nowMs();
-        while (idx < q.length) {
-          runTask(q[idx++]);
-          if (nowMs() - start >= slice) break;
-        }
-        if (idx < q.length) { rIC(chunk, { timeout: SLICE_YIELD_TIMEOUT }); }
-        else { emit('queueDone', name, Date.now() - t0, q.length); }
-      })();
-    } else {
+
+    function done() { emit('queueDone', name, Date.now() - t0, q.length); }
+
+    /* No pacing configured → run the whole queue at once. */
+    if (stagger <= 0 && slice <= 0) {
       for (var j = 0; j < q.length; j++) runTask(q[j]);
-      emit('queueDone', name, Date.now() - t0, q.length);
+      done();
+      return;
     }
+
+    /* Single in-order pass — execution order is preserved (e.g. an inline that
+       sets window.config before its external library runs). The two knobs act
+       on the two script types they actually bottleneck, at the same time:
+         • stagger/burst pace EXTERNAL scripts (network) — at most `burst`
+           download kickoffs per chunk; external execution is async, so its
+           cheap insertion barely touches the main thread.
+         • slice paces INLINE scripts (CPU) — an inline runs synchronously here,
+           so a chunk stops once `slice` ms of work have elapsed.
+       A chunk ends as soon as either limit trips; the next chunk runs `stagger`
+       ms later (or on idle when only slice is set). With slice unset the chunk
+       is bounded to `burst` tasks — the classic stagger/burst behaviour. */
+    function isExternal(task) {
+      return !!(task.node && task.node.getAttribute && task.node.getAttribute('data-src'));
+    }
+    var idx = 0;
+    (function chunk() {
+      var start = nowMs(), ext = 0, count = 0;
+      while (idx < q.length) {
+        var task = q[idx++];
+        var external = isExternal(task);
+        runTask(task);
+        count++;
+        if (external && ++ext >= burst) break;             // network: burst external kickoffs/chunk
+        if (slice > 0 && nowMs() - start >= slice) break;  // CPU: slice ms of (inline) work/chunk
+        if (slice <= 0 && count >= burst) break;           // no slice → classic ≤burst tasks/chunk
+      }
+      if (idx < q.length) {
+        if (stagger > 0) setTimeout(chunk, stagger);
+        else rIC(chunk, { timeout: SLICE_YIELD_TIMEOUT });
+      } else { done(); }
+    })();
   }
 
   var debugOn = !!cfg.debug;
