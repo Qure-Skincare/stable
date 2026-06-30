@@ -1,0 +1,70 @@
+{%- comment -%}
+  Real User Monitoring (RUM) via Google's web-vitals (self-hosted attribution
+  build). Measures the Core Web Vitals — LCP / INP / CLS — plus FCP / TTFB in
+  every real visitor's browser and reports them to GTM (dataLayer) and PostHog.
+
+  Why: PSI is a lab test on a fixed device/network and never runs our slow-
+  connection profile, so it cannot show whether a given sapp config actually
+  helped real (CrUX) users. This is the only way to see field impact and to
+  A/B a deploy. The attribution build also names the culprit element/handler
+  for each metric (e.g. which interaction caused a slow INP) — input for INP work.
+
+  Loaded class="__init" so sapp leaves it untouched and it registers
+  immediately. web-vitals uses buffered PerformanceObservers, so metrics that
+  happened just before the library finished loading are still captured. Each
+  metric reports once, at finalization (page hide / interaction settle).
+{%- endcomment -%}
+<script class="__init">
+(function (w, d) {
+  if (w.__sappRUM) return;
+  w.__sappRUM = 1;
+
+  /* 0..1 — fraction of pageviews to report. 1 = every visitor. Lower it on
+     high-traffic stores to stay within analytics event quotas. */
+  var SAMPLE = 1;
+  if (Math.random() >= SAMPLE) return;
+
+  function rounded(metric) {
+    return metric.name === 'CLS'
+      ? Math.round(metric.value * 10000) / 10000   /* CLS is a small unitless score */
+      : Math.round(metric.value);                   /* others are milliseconds */
+  }
+
+  function report(metric) {
+    var a = metric.attribution || {};
+    var payload = {
+      metric_name: metric.name,
+      metric_value: rounded(metric),
+      metric_delta: Math.round(metric.delta),
+      metric_rating: metric.rating,           /* good | needs-improvement | poor */
+      metric_id: metric.id,
+      metric_nav_type: metric.navigationType,
+      /* the element/handler blamed for this metric — unified across the three */
+      metric_target: a.target || a.interactionTarget || a.largestShiftTarget || '',
+      metric_event: a.interactionType || '',
+      metric_load_state: a.loadState || '',
+      page_path: location.pathname
+    };
+
+    try { (w.dataLayer = w.dataLayer || []).push({ event: 'web-vitals', web_vitals: payload }); } catch (e) {}
+    try { if (w.posthog && w.posthog.capture) w.posthog.capture('web_vitals', payload); } catch (e) {}
+    if (w.__sappRUMDebug && w.console) console.log('[RUM]', payload.metric_name, payload.metric_value, payload.metric_rating, payload.metric_target);
+  }
+
+  function init() {
+    var WV = w.webVitals;
+    if (!WV) return;
+    WV.onLCP(report);
+    WV.onINP(report);
+    WV.onCLS(report);
+    WV.onFCP(report);
+    WV.onTTFB(report);
+  }
+
+  var s = d.createElement('script');
+  s.src = {{ '__sapp-web-vitals.js' | asset_url | json }};
+  s.async = true;
+  s.onload = init;
+  (d.head || d.documentElement).appendChild(s);
+})(window, document);
+</script>

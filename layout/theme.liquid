@@ -86,6 +86,7 @@
 
     {%- unless is_admin_interface -%}
         {% include '__sapp-include' %}
+        {% render '__sapp-web-vitals' %}
     {%- endunless -%}
   </head>
 
