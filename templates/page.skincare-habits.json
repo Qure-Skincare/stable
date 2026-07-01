@@ -1,0 +1,823 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "n_mi_faq_page_hero_qa_idf6hK": {
+      "type": "n_mi-faq-page-hero-qa",
+      "blocks": {
+        "icon_with_text_views": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "eye",
+            "text": "3,201"
+          }
+        },
+        "icon_with_text_shared": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "share",
+            "text": "743"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_views",
+        "icon_with_text_shared"
+      ],
+      "name": "t:sections.n_mi-faq-page-hero-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h1><strong>BEFORE YOU BUY ANOTHER ANTI-AGING CREAM</strong></h1><h1><strong>We're Sorry In Advance: 5 OLD Skincare Habits That Won't Survive Your First Month of Micro-Infusion</strong></h1>",
+        "text": "<p>Created In Partnership With <strong>Leading Dermatologists</strong></p>",
+        "image": "shopify://shop_images/micro_infusion-banner.webp",
+        "image_mobile": "shopify://shop_images/micro_infusion-bannerMob.webp"
+      }
+    },
+    "n_mi_faq_page_qa_NTk4id": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2>Before you start reading, five honest warnings. Not about side effects. About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</h2>",
+        "text": "<h2>About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</h2>"
+      }
+    },
+    "n_mi_faq_page_qa_ykbALR": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2><strong>01. Sorry, you'll stop hoping your collagen cream worked overnight. </strong></h2>",
+        "text": "<p>You bought it because the jar said collagen. Here's what the jar left off.</p><p>Your skin blocks almost anything larger than 500 Daltons. That's the real number dermatologists use… </p><p>A collagen molecule is about 300,000.</p><p>So it can't get in. Not \"slowly.\" Can't. It sits on top, feels nice for an hour, then rinses onto your pillow.*</p><p>Micro-Infusion goes beyond the barrier. The 24K gold-plated 0.5mm needles open thousands of tiny channels and deliver the serum underneath that protective layer to, where your skin can use it.</p><p><strong>Past the barrier, not onto it.</strong>*</p>"
+      }
+    },
+    "n_mi_faq_page_qa_73JLiz": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "img-to-left",
+        "updated_info": false,
+        "heading": "<h2><strong>02. Sorry, your 10-step routine is about to feel silly.</strong></h2>",
+        "text": "<p>Cleanser, three serums, an eye cream, a light moisturiser, and a heavy moisturiser. You layer them and hope something sinks in.</p><p>But they’re all faced with the same problem… They just can’t get through. Stack 10 premium products or even twenty on the outer layer and it's still a locked door.*</p><p>One Micro-Infusion treatment delivers your actives through the channels, bypassing the outer layer blocking everything, in just five to ten minutes.</p><p>And you only have to do it every two weeks. </p><p>Most of that shelf of lotions, potions, and serums just became optional. Sorry about the clutter.</p><p><strong>One step that works beats ten that don't.</strong></p>"
+      }
+    },
+    "n_mi_faq_page_qa_img_mobile_m7bRLM": {
+      "type": "n_mi-faq-page-qa-img-mobile",
+      "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "heading": "<h2><strong>03. Sorry, \"the clinic's too expensive\" stops being a reason.</strong></h2>",
+        "text": "<p>The microneedling facial people book before a red carpet runs $300+ every time you visit the clinic. Then there’s the headache of appointment booking, travel, and an afternoon flushed in public.</p><p>Micro-Infusion offers the same gold-plated-needle method. </p><p>Sealed serum, single-use head, delivered through micro-channels instead of applied on top. Except it's your bathroom, or your bedroom, or your lounge, and it's under $25 a treatment.</p><p>It won't replace everything a clinic does. But it will give you the absorption, the glow, and the upkeep, on your schedule, for a fraction of the price.</p><p><strong>Under $20 a treatment, versus $300+ in-clinic.</strong>* No appointment. No waiting room.</p>",
+        "image": "shopify://shop_images/micro_infusion-banner2.webp",
+        "image_mobile": "shopify://shop_images/micro_infusion-banner2-M.webp"
+      }
+    },
+    "n_mi_faq_page_set_up_qa_zk76tk": {
+      "type": "n_mi-faq-page-set-up-qa",
+      "blocks": {
+        "items_cCMXhm": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/mixed_mi_1_29e5a147-10ad-49d7-9c0e-30c5922af8f7.webp",
+            "image_mobile": "shopify://shop_images/mixed_mi_1-mob_c11e284b-465b-4bb5-a80d-cfa6c503a1ab.webp",
+            "text": "<h6>Prepare</h6><p>Twist open the Micro-Infusion device and fill with one ampule of serum.</p>"
+          }
+        },
+        "items_rM84Wc": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/mixed_mi_2_7451c44d-d11c-4e47-bf0a-d2d52a02d550.webp",
+            "image_mobile": "shopify://shop_images/mixed_mi_2-mob_8752139b-6bbe-4c28-987d-dd8da0b8b5ee.webp",
+            "text": "<h6>Treatment</h6><p>Start at the centre of the face and work your way outward to cover the full face.</p>"
+          }
+        },
+        "items_PCMpir": {
+          "type": "items",
+          "settings": {
+            "image": "shopify://shop_images/mixed_mi_3_6c965e55-1188-49fe-9d0c-9839086c51f7.webp",
+            "image_mobile": "shopify://shop_images/mixed_mi_3-mob_ac23f85d-efa3-4f0f-9104-7a637c72a0bb.webp",
+            "text": "<h6>Aftercare</h6><p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cCMXhm",
+        "items_rM84Wc",
+        "items_PCMpir"
+      ],
+      "name": "t:sections.n_mi-faq-page-set-up-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h2>Treatment</h2><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+        "image": "shopify://shop_images/mi-use-video.webp",
+        "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
+        "wistia_url": "ptw4q3aod8"
+      }
+    },
+    "n_mi_faq_page_qa_dt3Fhp": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2><strong>04. Sorry, the usual skin excuses are about to retire from your vocabulary.</strong></h2>",
+        "text": "<p>Your collagen starts dropping in your mid-twenties, a little more every year after. So every year there's a bit more you feel you have to apologise for, and a bit more distance between how old you look and how old you feel.</p><p>\"Ignore me, I look so tired.\" \"I look rough today.\" You get it in first, before anyone else can.</p><p>Micro-Infusion keeps your skin renewing on a two-week rhythm, so lines soften instead of setting in. <strong>87% saw smoother lines and wrinkles after twelve weeks.*</strong> </p><p>First there's less to apologise for. Then there's nothing.</p><p>We're a little sorry about taking away your opening line. Not sorry about the huge confidence boost that stops you needing it. </p><p><strong>Maintenance beats damage control.</strong>* The best time to start was your twenties. The second best is tonight.</p>"
+      }
+    },
+    "n_mi_faq_page_qa_img_mobile_CamYWx": {
+      "type": "n_mi-faq-page-qa-img-mobile",
+      "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "img-to-top",
+        "heading": "<h2><strong>05. Sorry, you're running out of reasons to hide in photos.</strong></h2>",
+        "text": "<p>You know your angles. You reach for the filter before you've even looked.</p><p>Glow isn't a filter effect, it's physics. Light bounces evenly off smooth, hydrated skin and scatters off dry, rough skin. </p><p>Plump, hydrate and renew your skin and you photograph the way the filter was faking. </p><p>91% reported more even tone and smoothness after twelve weeks.*</p><p>We're sorry about the filter. You'll forget you used to need it.</p><p><strong>The glow is real, not added in post.</strong>*</p>",
+        "image": "shopify://shop_images/micro_infusion-banner3.webp",
+        "image_mobile": "shopify://shop_images/micro_infusion-banner3-M.webp"
+      }
+    },
+    "n_mi_faq_page_qa_FBmpip": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "img-to-left",
+        "updated_info": false,
+        "heading": "<h2><strong>Why every cream you've owned did nothing</strong></h2>",
+        "text": "<h3><strong>It was never the ingredient. It was the delivery.</strong></h3><p>The industry sells you better ingredients in the one format that can't get them in. Beta Glucan copper peptides, vitamin C, PDRN all applied to a barrier built to block them. You've been paying for guests your skin never let inside.<br/><br/>The Qure Micro-Infusion System is designed to revitalize your skin through a precise and effective process:</p><p><strong>Micro-Needles:</strong> Tiny, gold needles (thinner than a human hair) create micro-channels in your skin. This helps stimulate collagen production and triggers your skin’s natural healing process.</p><p><strong>Serum Delivery:</strong> The micro-channels allow our scientifically-backed serums to penetrate deeply, delivering active ingredients exactly where they are needed to reduce the appearance of wrinkles, fine lines, and dark spots.</p><p><strong>Hydration and Plumping:</strong> The infusion process enhances your skin's ability to retain moisture, resulting in a plumper, more hydrated, and radiant looking complexion.</p><p>Use the Qure Micro-Infusion System for just 5 minutes every 2 weeks for a minimum of 3 months and <strong>enjoy smoother looking more youthful skin</strong> and a more confident you.</p>",
+        "image": "shopify://shop_images/mi_needle.webp"
+      }
+    },
+    "n_mi_faq_page_qa_img_mobile_HpGN7A": {
+      "type": "n_mi-faq-page-qa-img-mobile",
+      "disabled": true,
+      "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "img-to-top",
+        "heading": "<h2>How Much Does the Qure Micro-Infusion System Cost?</h2>",
+        "text": "<p>At Qure, we are dedicated to making advanced skincare solutions accessible and affordable for everyone.</p><p>We’ve priced our Micro-Infusion System competitively because we understand that quality skincare shouldn’t break the bank.</p><p>Professional treatments can be costly and time-consuming, but with Qure, <strong>you can achieve similar results at home for a fraction of the cost.</strong></p><p>The Qure Micro-Infusion System, which includes the device and a 6-month supply of serums, typically retails at $713.</p><p>However, for a limited time, you can get it for just $219 when you choose our best value bundle, <strong>saving you 70%.</strong></p><p>We believe everyone deserves to look and feel their best without the high costs of professional treatments.</p>",
+        "image": "shopify://shop_images/micro_infusion-banner4.webp",
+        "image_mobile": "shopify://shop_images/micro_infusion-banner4-M.webp"
+      }
+    },
+    "n_mi_faq_page_qa_qpwGRT": {
+      "type": "n_mi-faq-page-qa",
+      "disabled": true,
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2>Is the Qure Micro-Infusion System Safe?</h2>",
+        "text": "<p>Yes, the Qure Micro-Infusion System is very safe to use. It has been thoroughly tested and reviewed by leading dermatologists to ensure it meets the highest safety standards.</p><p>Our device uses gentle, 24k gold micro-needles and carefully formulated serums to provide effective results with minimal risk of irritation. You can confidently incorporate it into your skincare routine, knowing it’s designed with your skin’s health in mind.</p>"
+      }
+    },
+    "n_mi_faq_page_qa_hEykxe": {
+      "type": "n_mi-faq-page-qa",
+      "disabled": true,
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2>What If I Am Not Happy With My Purchase?</h2>",
+        "text": "<p>Yes, the Qure Micro-Infusion System is <strong>very safe to use</strong>. It has been <strong>thoroughly tested and reviewed</strong> by leading dermatologists to ensure it meets the highest safety standards.</p><p>Our device uses gentle, 24k gold micro-needles and carefully formulated serums to provide effective results with minimal risk of irritation.</p><p>You can confidently incorporate it into your skincare routine, knowing it’s designed with your skin’s health in mind.</p>"
+      }
+    },
+    "n_mi_faq_page_qa_xnhcN6": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2><strong>What to expect. Night 1 to Week 12.</strong></h2>",
+        "text": "<ol><li>Redness fades by morning. Skin looks plumper and dewier the next day.*</li><li> Fine lines look softer, tone more even, hydration finally holds.*</li><li>Texture refined, pores look smaller, breakouts settle. 83% saw less moderate acne by week eight.*</li><li>A new baseline. 87% smoother lines, 91% more even tone. You stop checking.*</li></ol><p>With competitive prices, responsive support, and flexible payment plans, Qure is committed to your skincare success.</p>"
+      }
+    },
+    "n_mi_faq_page_qa_GigNYq": {
+      "type": "n_mi-faq-page-qa",
+      "blocks": {
+        "cta_box_nHypXQ": {
+          "type": "cta_box",
+          "settings": {
+            "image": "shopify://shop_images/MI1.56monthDS_W-01.jpg",
+            "badge_text": "Limited Time Offer",
+            "heading": "<h5>TAKE CHARGE OF YOUR SKINCARE WITH QURE</h5>",
+            "text": "<p>For a limited time, enjoy up to 50% off when you choose our best bundle.</p><p>Click \"Check Availability\" below to see our current stock and secure your discount!</p>",
+            "button_label": "Check Availability",
+            "button_url": "#purchase-form",
+            "icon_with_text": "Free World-Wide Shipping over $100"
+          }
+        }
+      },
+      "block_order": [
+        "cta_box_nHypXQ"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": false,
+        "heading": "<h2>Flexible Payment Plans</h2>",
+        "text": "<p>We offer easy payment plans through Sezzle, AfterPay, and Klarna. Spread your payments over <strong>four interest-free monthly installments</strong> and start your skincare transformation today without the upfront cost.</p><p>Trust Qure to support you on your journey to healthier, more radiant skin.</p><p>Click \"Check Availability\" now, and let's start transforming your skin together!</p>"
+      }
+    },
+    "purchase_form_Lv5fWn": {
+      "type": "n-purchase-form",
+      "blocks": {
+        "nextships_5rd2bS": {
+          "type": "nextships",
+          "settings": {
+            "date": "9th May",
+            "percent": 66,
+            "date_soldout": "23rd  March",
+            "date_reserved": "9th May"
+          }
+        },
+        "payment_type_3zQTmH": {
+          "type": "payment_type",
+          "settings": {
+            "image": "shopify://shop_images/payment-icons-1.svg"
+          }
+        },
+        "payment_type_B6Pzbh": {
+          "type": "payment_type",
+          "settings": {
+            "image": "shopify://shop_images/Pay_Icons.svg"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Dark Spots",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
+            "preselected": false
+          }
+        },
+        "product_type_accordion_SQKQhNr": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Helps reveal a smoother-looking, more radiant complexion. Formulated to help improve the appearance of dark spots and uneven tone for skin that looks refreshed and luminous.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears uneven in tone or texture and shows visible dark spots or post-blemish marks.</p>"
+          }
+        },
+        "product_type_accordion_DQKQhNr": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is known for its soothing, hydrating, and balancing properties that help support skin comfort and barrier strength.<br/><br/><strong>Epidermal Growth Factor (EGF): </strong>A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong>A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid:</strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "product_7dL4ci": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "image": "shopify://shop_images/MI_3_month_DS.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-2-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8803188975,
+            "preselected": false,
+            "heading": "2 Month Supply",
+            "subheading": "(4 Treatments)",
+            "product_selling_plan_text": "Ships every 2 months",
+            "image": "shopify://shop_images/MI_1.5_2month_DS_1_b7d62a5a-e357-4d97-8ef5-ed298b073b50.webp",
+            "product_discount_percent": 14,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 4,
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "26th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779432175,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "Ships every 1 month",
+            "image": "shopify://shop_images/MI_1_month_DS.webp",
+            "product_discount_percent": 17,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Wrinkles",
+            "image": "shopify://shop_images/Wrinkles_2.png",
+            "preselected": true
+          }
+        },
+        "product_type_accordion_SVLXcAn": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Delivers lasting hydration to leave skin looking plumper, smoother, and refreshed. Helps reduce the look of fine lines and wrinkles while supporting visibly calm, balanced, and supple-feeling skin.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears dry, dull, or shows visible signs of aging such as fine lines, uneven tone, and temporary redness.</p>"
+          }
+        },
+        "product_type_accordion_DVLXcAn": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>GHK-Cu (Copper Peptide):</strong>A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779497711,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "image": "shopify://shop_images/MI_3_month_W.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 256,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-2-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8803156207,
+            "preselected": false,
+            "heading": "2 Month Supply",
+            "subheading": "(4 Treatments)",
+            "product_selling_plan_text": "Ships every 2 months",
+            "image": "shopify://shop_images/pdp_MI_1.5_2month_W_1_b78a804d-3461-4c87-be1f-767c19526aa8.webp",
+            "product_discount_percent": 14,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 4,
+            "left_items": 429,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779530479,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "Ships every 1 month",
+            "image": "shopify://shop_images/MI_1_month_W.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "disabled": true,
+          "settings": {
+            "heading": "Mixed",
+            "image": "shopify://shop_images/Mixed_3.png",
+            "preselected": false
+          }
+        },
+        "product_type_accordion_SYrPQrV": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Designed to support smoother, brighter-looking skin with balanced hydration. </p><p>Helps soften the look of fine lines while improving the appearance of dark spots and uneven tone, leaving skin looking refreshed, plumper, and more luminous.</p>"
+          }
+        },
+        "product_type_accordion_DYrPQrV": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Dark Spots Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/><strong>Wrinkles Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779563247,
+            "preselected": true,
+            "heading": "6 Month Supply PRE-ORDER",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "image": "shopify://shop_images/MI_6_month_DSW.webp",
+            "product_discount_percent": 16,
+            "soldout": false,
+            "preorder": true,
+            "total_treatments": 12,
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/MI_3_month_DSW.webp",
+            "product_discount_percent": 11,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 390,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/mi_1_month_dsw.webp",
+            "product_discount_percent": 10,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "nextships_5rd2bS",
+        "payment_type_3zQTmH",
+        "payment_type_B6Pzbh",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_type_accordion_SQKQhNr",
+        "product_type_accordion_DQKQhNr",
+        "product_7dL4ci",
+        "product_DBd4ef",
+        "product_Xf8A6C",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_type_accordion_SVLXcAn",
+        "product_type_accordion_DVLXcAn",
+        "product_EKAAzA",
+        "product_nyJ9n7",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_type_accordion_SYrPQrV",
+        "product_type_accordion_DYrPQrV",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "type": "list",
+        "heading": "Start the apology process.",
+        "text": "Subscribe and save up to 70%. Skip, swap, or cancel anytime. 30-day money-back guarantee.",
+        "image": "shopify://shop_images/tami-cropped.webp",
+        "klaviyo_form_name": "",
+        "form_name": "purchase-form",
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 62,
+        "delivery_switcher_position": "header",
+        "guarantee_period": "90",
+        "available-stocks": false
+      }
+    },
+    "n_trusted_reviews_A9yVqc": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_4erHLA": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ellie_6_treatments.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Ellie V.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_PUX8MB": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/mona-p.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Mona P.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Fade after just two treatments</h6><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_V9BJnc": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/andrea.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Andrea G.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Definitely be re-ordering</h6><p>“Still a newbie but so far so great! I have dermarolled for more than a decade -still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved- but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_7yp9Mc": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jessica-k.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jessica K.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Thrilled with the results!</h6><p>\"I have been using the mask & microneedling for 6 weeks & am truly impressed with the results. I have noticed a dramatic reduction in redness, an improvement in my dark spots, scars & overall skin tone & firmness, and a smoothing of fine lines & wrinkles.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_pcGQhR": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ela-o.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Ela O.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Shocked at the results</h6><p>“Shocked at the results after just one treatment!<br /> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment! Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_VgJrBY": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shelly.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Shelly S.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Looking better and better</h6><p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_mypXAc": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/chelsea.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Chelsea J.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Amazing results!</h6><p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_jmY7pk": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/akina.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Akina M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>It really works!!</h6><p>“I used three time so far. I can see the results from first time I used. I love this product but only thing is it’s take time to apply till used all serum per application. I tried many different way to press to my skin so the serum come out more but then a lot of time not.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_jMcgj3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jess.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jess.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>It really works!!</h6><p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_a8MWbC": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jennifer N.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_YimLXn": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/olivia_p.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Olivia P.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Give it a try!</h6><p>“I tried the Micro-Infusion because I’ve been working on the dark spots on my face for quite some time. After a couple of uses my face seems plumper, is glowing and the dark spots seem not as dark. Give it a try!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_PbzTEb": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/priya.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Priya P.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Plumper, more hydrated!</h6><p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_CiAJbj": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/kyla_r.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Kyla R.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Seeing results after 2 treatments!</h6><p>“I’ve had almost zero issues using this system and I’m starting to see results after the second treatment! The second needle cap was stubborn but I gently tapped it on my counter and voila! I was nervous after the first treatment but my worries have subsided. I’m really excited to see what happens next!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_4erHLA",
+        "slider_PUX8MB",
+        "slider_V9BJnc",
+        "slider_7yp9Mc",
+        "slider_pcGQhR",
+        "slider_VgJrBY",
+        "slider_mypXAc",
+        "slider_jmY7pk",
+        "slider_jMcgj3",
+        "slider_a8MWbC",
+        "slider_YimLXn",
+        "slider_PbzTEb",
+        "slider_CiAJbj"
+      ],
+      "name": "t:sections.n_trusted-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "light",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "button_label": "Check Availability",
+        "button_url": "#purchase-form"
+      }
+    },
+    "n_mi_faq_page_qa_BznMhH": {
+      "type": "n_mi-faq-page-qa",
+      "disabled": true,
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": true,
+        "heading": "<h6>Update 09/21/25</h6>",
+        "text": "<p><strong>To celebrate more women saying no to the hype and yes to simple skincare that works, we're offering a limited-time discount of up to 67% for this month only.</strong></p>"
+      }
+    }
+  },
+  "order": [
+    "n_mi_faq_page_hero_qa_idf6hK",
+    "n_mi_faq_page_qa_NTk4id",
+    "n_mi_faq_page_qa_ykbALR",
+    "n_mi_faq_page_qa_73JLiz",
+    "n_mi_faq_page_qa_img_mobile_m7bRLM",
+    "n_mi_faq_page_set_up_qa_zk76tk",
+    "n_mi_faq_page_qa_dt3Fhp",
+    "n_mi_faq_page_qa_img_mobile_CamYWx",
+    "n_mi_faq_page_qa_FBmpip",
+    "n_mi_faq_page_qa_img_mobile_HpGN7A",
+    "n_mi_faq_page_qa_qpwGRT",
+    "n_mi_faq_page_qa_hEykxe",
+    "n_mi_faq_page_qa_xnhcN6",
+    "n_mi_faq_page_qa_GigNYq",
+    "purchase_form_Lv5fWn",
+    "n_trusted_reviews_A9yVqc",
+    "n_mi_faq_page_qa_BznMhH"
+  ]
+}

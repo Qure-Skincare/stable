@@ -9,6 +9,42 @@
  */
 {
   "sections": {
+    "n_across_image_banner_qure_birthday": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "disclaimer_qb": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Excludes bundles, Micro-Infusion System, All&#8209;In&#8209;One Serum, and Dermal Mist."
+          }
+        },
+        "video_qb": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/qure-birthday-animation.webm"
+          }
+        }
+      },
+      "block_order": [
+        "disclaimer_qb",
+        "video_qb"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "disabled": true,
+      "settings": {
+        "use_own_file": false,
+        "modifier": "qure-birthday",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>26% OFF Sitewide</h1>",
+        "text": "<p>Birthday Sale</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/qure-birthday.webp",
+        "image_mobile": "shopify://shop_images/qure-birthday-mob.webp",
+        "button_label": "Shop Now and Save",
+        "button_url": "#"
+      }
+    },
     "n_across_image_banner_Jul4": {
       "type": "n_across-image-banner",
       "blocks": {
@@ -50,7 +86,7 @@
         "image": "shopify://shop_images/fourth-of-july.webp",
         "image_mobile": "shopify://shop_images/fourth-of-july-mob.webp",
         "button_label": "Buy Now & Save",
-        "button_url": "https://qureskincare.com/pages/qure-microinfusion-offer"
+        "button_url": "https://qureskincare.com/pages/microinfusion"
       }
     },
     "n_index-quick-links": {
@@ -865,6 +901,7 @@
     }
   },
   "order": [
+    "n_across_image_banner_qure_birthday",
     "n_across_image_banner_Jul4",
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
