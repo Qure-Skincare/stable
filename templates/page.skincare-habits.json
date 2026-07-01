@@ -229,6 +229,7 @@
       "block_order": [
         "cta_box_nHypXQ"
       ],
+      "disabled": true,
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
         "use_own_file": false,
@@ -789,6 +790,7 @@
     },
     "n_mi_faq_page_qa_BznMhH": {
       "type": "n_mi-faq-page-qa",
+      "disabled": true,
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
         "use_own_file": false,
