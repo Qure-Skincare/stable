@@ -46,11 +46,11 @@
 
                         {% if product_available == true %}
                             <form method="post" action="/cart/add" enctype="multipart/form-data">
-                            {% if black_friday_discount_percent > 0 %}
+                            {% comment %} {% if black_friday_discount_percent > 0 %} 
                                 <button type="submit" class="btn btn--primary btn--sm">{{ 'product.settings.cross-sell.buy-button-label' | t }} - <span class="igPrice">{{ product_black_friday_price }}</span></button>
-                            {% else %}
+                            {% else %}{% endcomment %}
                                 <button type="submit" class="btn btn--primary btn--sm">{{ 'product.settings.cross-sell.buy-button-label' | t }} - <span class="igPrice">{{ product_sale_price }}</span></button>
-                            {% endif %}
+                            {% comment %} {% endif %} {% endcomment %}
                             <input type="hidden" name="quantity" id="quantity" value="1">
                             <input type="hidden" name="id" value="{{ product_variant_id }}">
                             <input type="hidden" name="properties[_source]" value="pdp_upsell_new">
