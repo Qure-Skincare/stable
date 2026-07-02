@@ -29,8 +29,8 @@
         "disclaimer_qb",
         "video_qb"
       ],
-      "name": "t:sections.n_across-image-banner.name",
       "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
         "modifier": "qure-birthday",
