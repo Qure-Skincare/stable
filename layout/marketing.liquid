@@ -1,0 +1,90 @@
+{% include '__sapp-config-backend' %}
+
+{%- capture sapp_html -%}
+<!doctype html>
+<html lang="{{ shop.locale }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    {% if template contains 'product' and product.metafields.custom.custom_canonical_url != blank %}
+        <link rel="canonical" href="{{ product.metafields.custom.custom_canonical_url }}">
+    {% elsif template contains 'collection' and collection.metafields.custom.custom_canonical_url %}
+        <link rel="canonical" href="{{ collection.metafields.custom.custom_canonical_url }}">
+    {% else %}
+        <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
+
+    <meta name="p:domain_verify" content="67d2a1408f84408a05deffe883a0a523"/>
+    <meta name="google-site-verification" content="eJrHRDM9bifPc8Nf-ycIg275f3KrlSoWEHd5VM5M9LQ" />
+    <meta name="google-site-verification" content="N0QF9SQ35xUa1DQifP7jZgs_z2odMQBZlSB4L7n5fl4" /> 
+    <meta name="msvalidate.01" content="E6D2CFAEB841C8D3C13C6473265B99B6" />
+
+    {% render 'robots' %}
+
+    {% capture seo_title %}
+      {{ page_title }}
+      {% if current_tags %}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.tags' | t: tags: meta_tags -}}
+      {% endif %}
+      {% if current_page != 1 %}
+        &ndash; {{ 'general.page' | t: page: current_page }}
+      {% endif %}
+    {% endcapture %}
+
+    <title>{{ seo_title }}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- else -%}
+      <meta name="description" content="{{ seo_title | escape }}">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+
+    <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
+    <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/general.css" as="style" fetchpriority="low">
+    <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" as="style" fetchpriority="low">
+
+    <style>
+        :root {
+          {% if settings.primary-color != blank %}
+            --primary-color: {{ settings.primary-color }};
+          {% endif %}
+          {% if settings.discount-color != blank %}
+            --discount-color: {{ settings.discount-color }};
+          {% endif %}
+        }
+    </style>
+    
+    {{ content_for_header }}
+
+    {%- unless is_admin_interface -%}
+        {% include '__sapp-include' %}
+        {% render '__sapp-web-vitals' %}
+    {%- endunless -%}
+  </head>
+
+  <body class="{{ template | downcase }}">
+
+    <!-- Google Tag Manager (noscript) -->
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXV2ZDXR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- End Google Tag Manager (noscript) -->
+
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" /></noscript>
+    
+    <main>
+      {{ content_for_layout }}
+    </main>
+
+  </body>
+</html>
+{%- endcapture -%}
+{% include '__sapp-output' %}
