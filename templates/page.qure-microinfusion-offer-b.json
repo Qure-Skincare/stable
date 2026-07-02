@@ -1460,7 +1460,6 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/Mixed_3.png",
