@@ -34,10 +34,10 @@
       "name": "t:sections.n_mi-faq-page-hero-qa.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<h1><strong>BEFORE YOU BUY ANOTHER ANTI-AGING CREAM</strong></h1><h1><strong>We're Sorry In Advance: 5 OLD Skincare Habits That Won't Survive Your First Month of Micro-Infusion</strong></h1>",
+        "heading": "<p><strong>BEFORE YOU BUY ANOTHER ANTI-AGING CREAM</strong></p><h1>We're Sorry In Advance: 5 OLD Skincare Habits That Won't Survive Your First Month of Micro-Infusion</h1>",
         "text": "<p>Created In Partnership With <strong>Leading Dermatologists</strong></p>",
-        "image": "shopify://shop_images/micro_infusion-banner.webp",
-        "image_mobile": "shopify://shop_images/micro_infusion-bannerMob.webp"
+        "image": "shopify://shop_images/micro-infusion-listicle-hero.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-listicle-hero.webp"
       }
     },
     "n_mi_faq_page_qa_NTk4id": {
