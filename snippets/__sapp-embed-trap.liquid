@@ -1,0 +1,7 @@
+{%- capture sapp_head_trap -%}<template id="sapp-head-embed"></head></template></head>{%- endcapture -%}
+{%- capture sapp_body_trap -%}<template id="sapp-body-embed"></body></template><script id="sapp-init-embed"></script></body>{%- endcapture -%}
+
+{%- assign sapp_html_with_traps = sapp_html
+  | replace: '</head>', sapp_head_trap
+  | replace: '</body>', sapp_body_trap
+-%}

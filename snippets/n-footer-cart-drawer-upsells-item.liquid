@@ -12,7 +12,7 @@
 
     {% if product_available == true %}
         <div class="swiper-slide">
-            <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+            <img loading="lazy" src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
             <p>
                 {{ product_title }} <br />
                 {{ product_sale_price }}

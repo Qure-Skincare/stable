@@ -9,7 +9,7 @@
 <div class="flyout-cart__item">
     <div class="c-cart-tile">
         <a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}" class="c-cart-tile__image">
-            <img src="{{ cart_item_image | img_url: 'master' }}" alt="{{ cart_item_title | escape }}" />
+            <img loading="lazy" src="{{ cart_item_image | img_url: 'master' }}" alt="{{ cart_item_title | escape }}" />
         </a>
         <h2 class="c-cart-tile__name"><a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}">{{ cart_item_title }}</a></h2>
         <div class="c-cart-tile__reviews">

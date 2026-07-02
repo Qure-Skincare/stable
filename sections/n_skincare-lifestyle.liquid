@@ -18,7 +18,7 @@
             {% if block.type == 'numbered_list' %}
                 {% if block.settings.image != blank %}
                     <picture{% if forloop.index == 1 %} class="show"{% endif %}>
-                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                     </picture>
                 {% endif %}
             {% endif %}
@@ -30,7 +30,7 @@
                         <button{% if forloop.index == 1 %} class="active"{% endif %} type="button">{{ forloop.index }}</button>
                         {{ block.settings.text }}
                         {% if block.settings.image != blank %}
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                         {% endif %}
                     </li>
                 {% endif %}

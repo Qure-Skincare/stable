@@ -17,12 +17,11 @@
 {% endif %}
 
 <picture data-label-text="{{ block.settings.heading }}" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ block.settings.wistia_url }}">
-    <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
+    <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
 </picture>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
-        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
     });
 </script>

@@ -124,7 +124,7 @@
                     {% endif %}
 
                     <div class="helmet-home__users-experienced" onclick="infoModal.showModal()">
-                        <img src="https://qureskincaredns-stable.com/sections/helmet-home/images/qure-headgear-1589-2.webp" alt="">
+                        <img loading="lazy" src="https://qureskincaredns-stable.com/sections/helmet-home/images/qure-headgear-1589-2.webp" alt="">
                         {{ 'sections.hair-growth-helmet.header.info_html' | t }}
                     </div>
 
@@ -247,8 +247,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("wistia-player", "https://fast.wistia.com/player.js");
-        loadScriptOnce("swiper", "https://qureskincaredns-stable.com/assets/js/swiper.js");
+        loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
         loadScriptOnce("klaviyo-forms", "https://static.klaviyo.com/onsite/js/VtM5fu/klaviyo.js");
     });
 </script>

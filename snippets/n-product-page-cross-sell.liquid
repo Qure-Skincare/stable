@@ -38,9 +38,9 @@
                     {% assign feature_image = item.feature_image.value %}
                     <div class="swiper-slide">
                         {% if feature_image != blank %}
-                            <img src="{{ feature_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+                            <img loading="lazy" src="{{ feature_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
                         {% else %}
-                            <img src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
+                            <img loading="lazy" src="{{ product_featured_image | img_url: '240x' }}" alt="{{ product_title | escape }}" />
                         {% endif %}
                         <a href="{{ product_url }}" aria-label="{{ product_handle | escape }}">{{ product_title }}</a>
 

@@ -19,10 +19,24 @@
 <section class="{{ banner_class }}">
         <picture>
             {% if section.settings.image != blank %}
-                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+                <source media="(min-width:768px)"
+                    srcset="{{ section.settings.image | image_url: width: 768 }} 768w,
+                            {{ section.settings.image | image_url: width: 1024 }} 1024w,
+                            {{ section.settings.image | image_url: width: 1440 }} 1440w,
+                            {{ section.settings.image | image_url: width: 1920 }} 1920w"
+                    sizes="100vw" />
             {% endif %}
             {% if section.settings.image_mobile != blank %}
-                <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                <img loading="eager" fetchpriority="high"
+                    src="{{ section.settings.image_mobile | image_url: width: 800 }}"
+                    srcset="{{ section.settings.image_mobile | image_url: width: 360 }} 360w,
+                            {{ section.settings.image_mobile | image_url: width: 480 }} 480w,
+                            {{ section.settings.image_mobile | image_url: width: 768 }} 768w,
+                            {{ section.settings.image_mobile | image_url: width: 1080 }} 1080w"
+                    sizes="100vw"
+                    width="{{ section.settings.image_mobile.width }}"
+                    height="{{ section.settings.image_mobile.height }}"
+                    alt="{{ section.settings.image_mobile.alt | escape }}" />
             {% endif %}
         </picture>
         <div class="container">
@@ -74,7 +88,7 @@
                         {% for block in section.blocks %}
                             {% if block.type == 'app_store' and block.settings.link_url != blank and block.settings.image != blank %}
                                 <a href="{{ block.settings.link_url }}" target="_blank" rel="nofollow">
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 </a>
                             {% endif %}
                         {% endfor %}
@@ -108,7 +122,7 @@
                     <div class="special-bundle">
                         {% for block in section.blocks %}
                             {% if block.type == 'bundle' %}
-                                <a href="{{ block.settings.link_url }}"><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></a>
+                                <a href="{{ block.settings.link_url }}"><img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></a>
                                 {{ block.settings.text }}
                             {% endif %}
                         {% endfor %}
@@ -133,10 +147,10 @@
                             <div class="c-certified-box">
                             <ul>
                                 {% if block.settings.image_1 != blank %}
-                                    <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
+                                    <li><img loading="lazy" src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
                                 {% endif %}
                                 {% if block.settings.image_2 != blank %}
-                                    <li><img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
+                                    <li><img loading="lazy" src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
                                 {% endif %}
                                 {% if block.settings.badge_text != blank %}
                                     <li>{{ block.settings.badge_text }}</li>
@@ -207,7 +221,7 @@
                 {% if block.type == 'bottles' %}
                     {% if block.settings.image != blank %}
                         <div class="hero-mi-bottles">
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% if block.settings.label != blank %}
                                 <span>{{ block.settings.label }}</span>
                             {% endif %}
@@ -220,7 +234,7 @@
                 {% if block.type == 'image' %}
                     {% if block.settings.image != blank %}
                         <figure>
-                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                         </figure>
                     {% endif %}
                 {% endif %}
@@ -271,10 +285,10 @@
                         <div class="c-certified-box">
                         <ul>
                             {% if block.settings.image_1 != blank %}
-                                <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
+                                <li><img loading="lazy" src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
                             {% endif %}
                             {% if block.settings.image_2 != blank %}
-                                <li><img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
+                                <li><img loading="lazy" src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
                             {% endif %}
                             {% if block.settings.badge_text != blank %}
                                 <li>{{ block.settings.badge_text }}</li>

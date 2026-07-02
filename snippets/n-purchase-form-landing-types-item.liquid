@@ -7,7 +7,7 @@
                 <label for="{{ section.id }}-{{ block.id }}">
                     <input type="radio" class="color variant__input" name="purchase_form_lading_product_type_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" data-name="{{ block.settings.heading | escape }}" {% if block.settings.preselected == true %} checked{% endif %}>
                     {% if block.settings.image != blank %}
-                        <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.heading | escape }}" />
+                        <img loading="lazy" src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.heading | escape }}" />
                     {% endif %}
                     <span>{{ block.settings.heading }}</span>
                 </label>

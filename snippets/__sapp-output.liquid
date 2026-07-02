@@ -1,0 +1,7 @@
+{%- if sapp_passthrough or license_valid_liquid == false -%}
+  {{ sapp_html }}
+{%- else -%}
+  {%- include '__sapp-html-rewrite' -%}
+  {%- include '__sapp-embed-trap' -%}
+  {{ sapp_html_with_traps }}
+{%- endif -%}

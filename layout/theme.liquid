@@ -1,3 +1,6 @@
+{% include '__sapp-config-backend' %}
+
+{%- capture sapp_html -%}
 <!doctype html>
 <html lang="{{ shop.locale }}">
 
@@ -60,10 +63,9 @@
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css">
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css?rnd=1" />
-    
+    <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/general.css" as="style" fetchpriority="low">
+    <link rel="preload" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" as="style" fetchpriority="low">
+
     <style>
         :root {
           {% if settings.primary-color != blank %}
@@ -80,7 +82,12 @@
     {% render 'n-header-scripts' %}
 
     <script src="{{ 'n-datalayer.js' | asset_url }}"></script>
-    <script src="https://qureskincaredns-stable.com/shopify/js/country-detect.js"></script>
+    <script src="{{ 'n-country-detect.js' | asset_url }}"></script>
+
+    {%- unless is_admin_interface -%}
+        {% include '__sapp-include' %}
+        {% render '__sapp-web-vitals' %}
+    {%- endunless -%}
   </head>
 
   <body class="{{ template | downcase }}">
@@ -91,6 +98,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <!-- End Google Tag Manager (noscript) -->
+
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" /></noscript>
     
     {% sections 'n-header-group' %}
 
@@ -102,19 +114,10 @@
     {% render 'n-footer-scripts' %}
 
     <script src="https://qureskincaredns-stable.com/assets/js/vendor.js" defer="defer"></script>
-
-    <!-- Stamped -->
-
-<script>function myInit(){ StampedFn.init({ 
-apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', 
-sId: '198244' }); }</script>
-
-
-<script async onload="myInit()" type="text/javascript" src="
-https://cdn1.stamped.io/files/widget.min.js
-"></script>
-
-<!-- End Stamped -->
-
+    <script src="{{ 'n-swiper.js' | asset_url }}" defer="defer"></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" defer="defer"></script>
+    <script src="https://fast.wistia.com/player.js" defer="defer"></script>
   </body>
 </html>
+{%- endcapture -%}
+{% include '__sapp-output' %}

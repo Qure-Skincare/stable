@@ -44,7 +44,7 @@
       const product_rating = '{{ rating_value }}';
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('product-rating', 'https://qureskincaredns-stable.com/shopify/js/product-rating.js');
+        loadScriptOnce('product-rating', '{{ 'n-product-rating.js' | asset_url }}');
       });
     </script>
 {% endif %}

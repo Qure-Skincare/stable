@@ -33,7 +33,7 @@
         {% for block in slide_blocks %}
           <div class="swiper-slide">
             {% if block.settings.image != blank %}
-              <img src="{{ block.settings.image | image_url: width: 900 }}" alt="{{ block.settings.image.alt | escape }}" />
+              <img loading="lazy" src="{{ block.settings.image | image_url: width: 900 }}" alt="{{ block.settings.image.alt | escape }}" />
             {% endif %}
           </div>
         {% endfor %}
@@ -59,19 +59,13 @@
     </div>
 
     <div class="c-swiper-nav">
-      <button class="c-swiper-button-prev"></button>
+      <button class="c-swiper-button-prev" aria-label="prev"></button>
       <div class="c-swiper-pagination"></div>
-      <button class="c-swiper-button-next"></button>
+      <button class="c-swiper-button-next" aria-label="next"></button>
     </div>
 
   </div>
 </section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    loadScriptOnce("swiper", "https://qureskincaredns-stable.com/assets/js/swiper.js");
-  });
-</script>
 <!-- APP FEATURES END -->
 
 {% schema %}

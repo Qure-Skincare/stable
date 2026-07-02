@@ -24,7 +24,7 @@
             {% if tab_blocks.size > 0 %}
                 <ul class="e-pill-tabs" role="tablist">
                     {% for tab_block in tab_blocks %}
-                        <li>
+                        <li role="tab">
                             <button
                                 {% if tab_block.settings.active %}
                                     class="active"
@@ -79,7 +79,7 @@
                                             <div class="c-visual-compare-card">
                                                 {% if block.settings.image != blank %}
                                                     <picture>
-                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                     </picture>
                                                 {% endif %}
                                                 {% if block.settings.text != blank %}
@@ -94,9 +94,9 @@
                             {% endfor %}
                         </div>
                         <div class="c-swiper-nav">
-                            <button class="c-swiper-button-prev"></button>
+                            <button class="c-swiper-button-prev" aria-label="prev"></button>
                             <div class="c-swiper-pagination"></div>
-                            <button class="c-swiper-button-next"></button>
+                            <button class="c-swiper-button-next" aria-label="next"></button>
                         </div>
                     </div>
                 {% endif %}
@@ -105,7 +105,7 @@
                         {% assign block_tab_id = block.settings.section_id | strip | handleize %}
                         {% if block_tab_id == current_tab_id %}
                             <picture>
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             </picture>
                         {% endif %}
                     {% endif %}
@@ -153,11 +153,6 @@
         {% endfor %}
     </div>
 </section>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('swiper', 'https://qureskincaredns-stable.com/assets/js/swiper.js');
-    });
-</script>
 <!-- PRODUCT RESULTS END -->
 
 {% schema %}

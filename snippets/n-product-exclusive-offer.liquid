@@ -48,7 +48,7 @@
         <div class="c-exclusive-offer__item">
             {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'product-exclusive-offer-' %}
             {% if block.settings.image_product1 != blank %}
-                <img src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
+                <img loading="lazy" src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
             {% endif %}
             <div>{{ product_sale_price }}</div>
         </div>
@@ -57,7 +57,7 @@
         <div class="c-exclusive-offer__item">
             {% include 'get-product-data', product_handle: block.settings.product2, product_prefix: 'product-exclusive-offer-' %}
             {% if block.settings.image_product2 != blank %}
-                <img src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
+                <img loading="lazy" src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
             {% endif %}
             <div><del>{{ product_sale_price }}</del> <strong>{{ 'page.exclusive-offer.free' | t }}</strong></div>
         </div>

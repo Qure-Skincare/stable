@@ -22,7 +22,7 @@
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
             {% if section.settings.image != blank %}
-                <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
             {% else %}
                 {% render 'n-product-page-slider', product: product, page: page, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
                 {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}

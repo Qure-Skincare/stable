@@ -85,10 +85,9 @@
                   <span {{ btn_product_block.shopify_attributes }}>
                 {%- endif -%}
                 {%- if btn_product != blank and btn_product.featured_image != blank -%}
-                  <img
+                  <img loading="lazy" 
                     src="{{ btn_product.featured_image | image_url: width: 120 }}"
                     alt="{{ btn_product.featured_image.alt | default: btn_product.title | escape }}"
-                    loading="lazy"
                     width="{{ btn_product.featured_image.width }}"
                     height="{{ btn_product.featured_image.height }}"
                   />
@@ -150,10 +149,9 @@
               {%- if pane_product != blank -%}
                 <div {% if pane_block != blank %}{{ pane_block.shopify_attributes }}{% endif %}>
                   {%- if pane_product.featured_image != blank -%}
-                    <img
+                    <img loading="lazy"
                       src="{{ pane_product.featured_image | image_url: width: 800 }}"
                       alt="{{ pane_product.featured_image.alt | default: pane_product.title | escape }}"
-                      loading="lazy"
                       width="{{ pane_product.featured_image.width }}"
                       height="{{ pane_product.featured_image.height }}"
                     />

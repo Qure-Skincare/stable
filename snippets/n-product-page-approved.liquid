@@ -13,10 +13,10 @@
         <div class="c-approved-by">
             <ul>
                 {% if block.settings.image_1 != blank %}
-                    <li><img src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
+                    <li><img loading="lazy" src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
                 {% endif %}
                 {% if block.settings.image_2 != blank %}
-                    <li><img src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
+                    <li><img loading="lazy" src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
                 {% endif %}
             </ul>
             {{ block.settings.text }}

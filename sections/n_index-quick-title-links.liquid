@@ -12,14 +12,16 @@
             <ul>
                 {% for block in section.blocks %}
                     {% if block.type == 'items' %}
-                        <a href="{{ block.settings.link_url }}"{% if block.settings.new == true %} data-badge="{{ 'sections.n_index-quick-title-links.new' | t }}{% endif %}">
-                            {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}"/>
-                            {% endif %}
-                            {% if block.settings.heading != blank %}
-                                <span>{{ block.settings.heading }}</span>
-                            {% endif %}
-                        </a>
+                        <li>
+                            <a href="{{ block.settings.link_url }}" aria-label="{{ block.settings.heading | escape }}"{% if block.settings.new == true %} data-badge="{{ 'sections.n_index-quick-title-links.new' | t }}"{% endif %}>
+                                {% if block.settings.image != blank %}
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}"/>
+                                {% endif %}
+                                {% if block.settings.heading != blank %}
+                                    <span>{{ block.settings.heading }}</span>
+                                {% endif %}
+                            </a>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>

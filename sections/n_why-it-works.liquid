@@ -40,7 +40,7 @@
             <div class="why-it-works__components">
                 <div class="c-product-components{% if section.settings.modifier != 'none' %} c-product-components--{{ section.settings.modifier }}{% endif %}">
                     {% if section.settings.image != blank %}
-                        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape}}" />
+                        <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape}}" />
                     {% endif %}
                     {% for block in section.blocks %}
                         {% if block.type == 'accordion' %}

@@ -11,7 +11,7 @@
         <article>
             {{ section.settings.text }}
             {% if section.settings.image != blank %}
-                <img src="{{ section.settings.image | image_url }}" alt="Newsweek" />
+                <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="Newsweek" />
             {% endif %}
         </article>
     </div>

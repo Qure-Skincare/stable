@@ -43,7 +43,7 @@
                                 <div class="swiper-slide">
                                     <picture data-index="{{ forloop.index }}">
                                         {% if block.settings.image != blank %}
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         {% endif %}
                                     </picture>
                                     {% if block.settings.text != blank %}
@@ -56,9 +56,9 @@
                         {% endfor %}
                     </div>
                     <div class="c-swiper-nav">
-                        <button class="c-swiper-button-prev"></button>
+                        <button class="c-swiper-button-prev" aria-label="prev"></button>
                         <div class="c-swiper-pagination"></div>
-                        <button class="c-swiper-button-next"></button>
+                        <button class="c-swiper-button-next" aria-label="next"></button>
                     </div>
                 </div>
             {% else %}
@@ -87,7 +87,7 @@
                                             <source media="(min-width:768px)" srcset="{{ block.settings.image | image_url }}" />
                                         {% endif %}
                                         {% if block.settings.image_mobile != blank %}
-                                            <img src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                                            <img loading="lazy" src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
                                         {% endif %}
                                     </picture>
                                     {% if block.settings.text != blank %}
@@ -100,9 +100,9 @@
                         {% endfor %}
                     </div>
                     <div class="c-swiper-nav">
-                        <button class="c-swiper-button-prev"></button>
+                        <button class="c-swiper-button-prev" aria-label="prev"></button>
                         <div class="c-swiper-pagination"></div>
-                        <button class="c-swiper-button-next"></button>
+                        <button class="c-swiper-button-next" aria-label="next"></button>
                     </div>
                 </div>
             {% endif %}

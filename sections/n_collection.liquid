@@ -63,13 +63,13 @@
 
                 <div class="best-sellers__item">
                     <div class="c-product-tile">
-                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
+                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}" aria-label="{{ product_title | escape }}">
                             {% if product_media.size > 0 %}
                                 {% for media in product_media limit: 1 %}
-                                    <img src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                    <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" />
                                 {% endfor %}
                             {% elsif product.featured_image != blank %}
-                                <img src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" />
+                                <img loading="lazy" src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" />
                             {% endif %}
                             {% if n_show_trending %}
                                 <div class="e-pill-badge e-pill-badge--xs" style="--badge-base-color: #ff5429">{{ 'sections.n_collection.trending' | t }}</div>
@@ -80,7 +80,7 @@
                             {% endif %}
                         </a>
                         {% render 'n_collection-product-rating', product: product %}
-                        <a class="c-product-tile__name" href="{{ product_url }}">{{ product_title }}</a>
+                        <a class="c-product-tile__name" href="{{ product_url }}" aria-label="{{ product_title | escape }}">{{ product_title }}</a>
                         <div class="c-product-tile__price">
                             <div class="e-price e-price--strikethrough-old">
                                 <div class="e-price__main">
@@ -109,8 +109,8 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    loadScriptOnce('section-collection-block', 'https://qureskincaredns-stable.com/shopify/js/section-collection-block.js');
-    loadScriptOnce('collection', 'https://qureskincaredns-stable.com/shopify/js/collection.js');
+    loadScriptOnce('section-collection-block', '{{ 'n-section-collection-block.js' | asset_url }}');
+    loadScriptOnce('collection', '{{ 'n-collection.js' | asset_url }}');
   });
 </script>
 

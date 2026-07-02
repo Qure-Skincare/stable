@@ -31,7 +31,7 @@
                             {% for block in section.blocks %}
                                 {% if block.type == 'link' %}
                                     <a href="{{ block.settings.link_url }}" target="_blank" rel="nofollow">
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}">
                                     </a>
                                 {% endif %}
                             {% endfor %}

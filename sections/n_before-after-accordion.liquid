@@ -12,12 +12,12 @@
       <div class="c-trusted-review-card c-trusted-review-card--short">
         <picture>
           {% if section.settings.image != blank %}
-            <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+            <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
           {% endif %}
         </picture>
         <div class="e-author">
           {% if section.settings.flag != blank %}
-            <img src="{{ section.settings.flag | image_url }}" alt="{{ section.settings.flag.alt | escape }}" />
+            <img loading="lazy" src="{{ section.settings.flag | image_url }}" alt="{{ section.settings.flag.alt | escape }}" />
           {% endif %}
             {{ section.settings.username }}
         </div>
@@ -46,7 +46,7 @@
                     </article>
                   {% endif %}
                   {% if block.settings.image != blank %}
-                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                   {% endif %}
                 </details>
               {% endif %}

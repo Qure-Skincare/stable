@@ -39,7 +39,12 @@
                                 {% if block.settings.countdown %}
                                     <div class="announcement-bar-offer-countdown">
                                         <div class="container">
-                                            <p style="--colorize-color_: #ff5429"><a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a> {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                                            <p style="--colorize-color_: #ff5429">
+                                                {% if block.settings.button_label != blank %}
+                                                    <a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}</a> 
+                                                {% endif %}
+                                                {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                                            </p>
                                             <div class="e-countdown"{% if block.settings.from != blank %} data-deadline="{{ block.settings.from }}"{% endif %} data-offer-days="{{ block.settings.days }}" style="--colorize-color: #ff5429">
                                                 <div data-key="{{ 'announcement-bar.settings.days' | t }}">00</div>
                                                 <div data-key="{{ 'announcement-bar.settings.hours' | t }}">00</div>
@@ -49,7 +54,7 @@
                                         </div>
                                     </div>
                                 {% else %}
-                                    <a class="announcement-bar-link" href="{{ block.settings.button_url }}">
+                                    <a class="announcement-bar-link" href="{{ block.settings.button_url }}" aria-label="{{ block.settings.text | escape }}">
                                         {{ block.settings.text }}
                                         {% if block.settings.button_label != blank %}
                                             <span>{{ block.settings.button_label }}</span>
@@ -65,7 +70,12 @@
             {% if section.settings.countdown %}
                 <div class="announcement-bar-offer-countdown">
                     <div class="container">
-                        <p style="--colorize-color_: #ff5429"><a href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a> {{ section.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</p>
+                        <p style="--colorize-color_: #ff5429">
+                            {% if section.settings.button_label != blank %}
+                                <a href="{{ section.settings.button_url }}" aria-label="{{ section.settings.button_label | escape }}">{{ section.settings.button_label }}</a>
+                            {% endif %}
+                            {{ section.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                        </p>
                         <div class="e-countdown"{% if section.settings.from != blank %} data-deadline="{{ section.settings.from }}"{% endif %} data-offer-days="{{ section.settings.days }}" style="--colorize-color: #ff5429">
                             <div data-key="{{ 'announcement-bar.settings.days' | t }}">00</div>
                             <div data-key="{{ 'announcement-bar.settings.hours' | t }}">00</div>
@@ -75,12 +85,11 @@
                     </div>
                 </div>
             {% else %}
-                <a class="announcement-bar-link" href="{{ section.settings.button_url }}">
+                <a class="announcement-bar-link" href="{{ section.settings.button_url }}" aria-label="{{ section.settings.text | escape }}">
                     {{ section.settings.text }}
                     {% if section.settings.button_label != blank %}
                         <span>{{ section.settings.button_label }}</span>
                     {% endif %}
-                    
                 </a>
             {% endif %}
         {% endif %}

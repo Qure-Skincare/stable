@@ -100,17 +100,17 @@
                                         data-product-id="{{ product.id }}"
                                         data-selected-variant-id="{{ complete_system_variant.id }}"
                                     >
-                                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}">
+                                        <a class="c-product-tile__image" {% if n_tile_hover_url != blank %}style="--image-on-hover: url({{ n_tile_hover_url }})"{% endif %} href="{{ product_url }}" aria-label="{{ product_title | escape }}">
                                             {% if product_media.size > 0 %}
                                                 {% if complete_system_variant.featured_image != blank %}
-                                                    <img data-variant-image src="{{ complete_system_variant.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                    <img loading="lazy" data-variant-image src="{{ complete_system_variant.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                                 {% else %}
                                                     {% for media in product_media limit: 1 %}
-                                                        <img data-variant-image src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                        <img loading="lazy" data-variant-image src="{{ media | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                                     {% endfor %}
                                                 {% endif %}
                                             {% elsif product.featured_image != blank %}
-                                                <img data-variant-image src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
+                                                <img loading="lazy" data-variant-image src="{{ product.featured_image | img_url: '720x' }}" alt="{{ product_title | escape }}" width="720" height="720" />
                                             {% endif %}
                                             {%- if block.settings.am_or_pm_1 != 'none' -%}
                                                 <div class="c-product-tile__time">
@@ -130,7 +130,7 @@
 
                                         {% render 'n_collection-product-rating', product: product %}
                                         
-                                        <a class="c-product-tile__name" href="{{ product_url }}">{{ product_title }}</a>
+                                        <a class="c-product-tile__name" href="{{ product_url }}" aria-label="{{ product_title | escape }}">{{ product_title }}</a>
                                         {% if block.settings.description != blank %}
                                             <p class="c-product-tile__desc">{{ block.settings.description }}</p>
                                         {% endif %}
@@ -148,9 +148,9 @@
                         {% endfor %}
                     </div>
                     <div class="c-swiper-nav">
-                        <button class="c-swiper-button-prev"></button>
+                        <button class="c-swiper-button-prev" aria-label="prev"></button>
                         <div class="c-swiper-pagination"></div>
-                        <button class="c-swiper-button-next"></button>
+                        <button class="c-swiper-button-next" aria-label="next"></button>
                     </div>
                 </div>
             </div>

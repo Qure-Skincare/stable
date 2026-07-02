@@ -1,0 +1,198 @@
+{%- assign sapp_class_exceptions = 'sapp-init,sapp-config,"__init"' | split: ',' -%}
+{%- assign sapp_no_rewrite       = sapp_init_src | concat: sapp_class_exceptions -%}
+{%- assign sapp_skip_types     = 'application/json,application/ld+json,importmap,application/ecmascript,text/template,text/x-template,application/xhtml+xml' | split: ',' -%}
+
+{%- comment -%} Precompute the constant type="..." / type='...' needles once, not per tag. {%- endcomment -%}
+{%- assign sapp_type_needles = '' | split: ',' -%}
+{%- for t in sapp_skip_types -%}
+  {%- assign n1 = 'type="' | append: t | append: '"' -%}
+  {%- assign n2 = "type='" | append: t | append: "'" -%}
+  {%- assign na = n1 | split: '|SAPPNUL|' -%}
+  {%- assign nb = n2 | split: '|SAPPNUL|' -%}
+  {%- assign sapp_type_needles = sapp_type_needles | concat: na | concat: nb -%}
+{%- endfor -%}
+
+{%- if sapp_rewrite_script -%}
+{%- assign sapp_chunks = sapp_html | split: '<script' -%}
+{%- assign sapp_out = sapp_chunks[0] | split: '|SAPPNUL|' -%}
+{%- for ch in sapp_chunks offset: 1 -%}
+  {%- assign tag_open = ch | split: '>' | first -%}
+  {%- assign rest = ch | remove_first: tag_open -%}
+
+  {%- assign skip = false -%}
+
+  {%- for ex in sapp_no_rewrite -%}
+    {%- if tag_open contains ex -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+
+  {%- unless skip -%}
+    {%- for needle in sapp_type_needles -%}
+      {%- if tag_open contains needle -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+
+  {%- unless skip -%}
+    {%- for needle in sapp_init_innerhtml -%}
+      {%- if rest contains needle -%}{%- assign skip = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+
+  {%- comment -%}
+    LCP detection must respect the exception list: a skipped script (sapp-init,
+    sapp-config, "__init", sapp_init_src) must NEVER be turned inert, even when
+    its body happens to contain an LCP needle (e.g. the inlined orchestrator now
+    defines loadScriptOnce, which is also an sapp_lcp_innerhtml entry). Without
+    this guard the orchestrator itself gets type="text/sapp-lcp" and never runs.
+  {%- endcomment -%}
+  {%- assign is_lcp_script = false -%}
+  {%- unless skip -%}
+    {%- for ls in sapp_lcp_scripts -%}
+      {%- if tag_open contains ls -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+    {%- comment -%} Inline scripts opt in with the data-sapp-lcp attribute. {%- endcomment -%}
+    {%- if tag_open contains 'data-sapp-lcp' -%}{%- assign is_lcp_script = true -%}{%- endif -%}
+    {%- comment -%} Inline scripts matched by a substring of their body (skip the split when the list is empty). {%- endcomment -%}
+    {%- unless is_lcp_script -%}
+      {%- if sapp_lcp_innerhtml.size > 0 -%}
+        {%- assign sapp_body = rest | split: '</script' | first -%}
+        {%- for needle in sapp_lcp_innerhtml -%}
+          {%- if sapp_body contains needle -%}{%- assign is_lcp_script = true -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endunless -%}
+
+  {%- if is_lcp_script -%}
+    {%- assign new_open = tag_open
+      | replace: 'data-src=', '__SAPP_DS__'
+      | replace: 'src=', 'data-src='
+      | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- assign piece = '<script type="text/sapp-lcp"' | append: new_open | append: rest -%}
+  {%- elsif skip -%}
+    {%- assign piece = '<script' | append: ch -%}
+  {%- else -%}
+    {%- assign new_open = tag_open -%}
+    {%- assign orig_type = '' -%}
+    {%- if new_open contains 'type="module"' or new_open contains "type='module'" -%}
+      {%- assign orig_type = 'module' -%}
+    {%- endif -%}
+    {%- if new_open contains 'src=' -%}
+      {%- assign new_open = new_open
+        | replace: 'data-src=', '__SAPP_DS__'
+        | replace: 'src=', 'data-src='
+        | replace: '__SAPP_DS__', 'data-src=' -%}
+    {%- endif -%}
+    {%- if orig_type != '' -%}
+      {%- assign type_inject = ' type="javascript/sapp-loading" data-sapp-orig-type="' | append: orig_type | append: '"' -%}
+    {%- else -%}
+      {%- assign type_inject = ' type="javascript/sapp-loading"' -%}
+    {%- endif -%}
+    {%- assign piece = '<script' | append: type_inject | append: new_open | append: rest -%}
+  {%- endif -%}
+
+  {%- assign piece_arr = piece | split: '|SAPPNUL|' -%}
+  {%- assign sapp_out = sapp_out | concat: piece_arr -%}
+{%- endfor -%}
+{%- assign sapp_html = sapp_out | join: '' -%}
+{%- endif -%}
+
+{%- comment -%}
+  Transparent 1x1 GIF kept as a data-URI (no network request). Once src is
+  moved to data-src a deferred <img> has no source and the browser paints the
+  broken-image glyph; this placeholder fills src so the box stays empty/clean
+  until the observer swaps in the real image. width/height/CSS keep the layout.
+{%- endcomment -%}
+{%- assign sapp_pixel = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' -%}
+{%- if sapp_rewrite_img -%}
+{%- comment -%}
+  LCP preload (mobile-only). The theme marks its above-the-fold LCP image with
+  loading="eager" fetchpriority="high". We scan for the FIRST such <img> in
+  document order, mirror its src/srcset/sizes into a <link rel="preload"> and
+  inject it into <head> below — so even an LCP image deep in the body is
+  discovered immediately. Scoped to media="(max-width:767.98px)": on mobile the
+  <img> IS the LCP resource for every variant (hero/banner <picture> serve a
+  desktop <source> above 768px), so this preloads exactly the right file with
+  zero desktop double-download. Captured here, injected once after the loop.
+{%- endcomment -%}
+{%- assign sapp_lcp_found = false -%}
+{%- assign sapp_lcp_src = '' -%}
+{%- assign sapp_lcp_srcset = '' -%}
+{%- assign sapp_lcp_sizes = '' -%}
+{%- assign sapp_img_chunks = sapp_html | split: '<img' -%}
+{%- assign sapp_img_out = sapp_img_chunks[0] | split: '|SAPPNUL|' -%}
+{%- for ch in sapp_img_chunks offset: 1 -%}
+  {%- assign tag_open = ch | split: '>' | first -%}
+  {%- if tag_open contains 'loading="eager"' or tag_open contains "loading='eager'" -%}
+    {%- unless sapp_lcp_found -%}
+      {%- if tag_open contains 'fetchpriority="high"' or tag_open contains "fetchpriority='high'" -%}
+        {%- if tag_open contains ' src="' -%}{%- assign sapp_lcp_src = tag_open | split: ' src="' | last | split: '"' | first -%}{%- endif -%}
+        {%- if tag_open contains ' srcset="' -%}{%- assign sapp_lcp_srcset = tag_open | split: ' srcset="' | last | split: '"' | first -%}{%- endif -%}
+        {%- if tag_open contains ' sizes="' -%}{%- assign sapp_lcp_sizes = tag_open | split: ' sizes="' | last | split: '"' | first -%}{%- endif -%}
+        {%- if sapp_lcp_src != '' -%}{%- assign sapp_lcp_found = true -%}{%- endif -%}
+      {%- endif -%}
+    {%- endunless -%}
+    {%- assign piece = '<img' | append: ch -%}
+  {%- else -%}
+    {%- assign rest = ch | remove_first: tag_open -%}
+    {%- assign new_open = tag_open
+      | replace: 'data-src=', '|SAPPDS|'
+      | replace: 'data-srcset=', '|SAPPDSS|'
+      | replace: 'srcset=', 'data-srcset='
+      | replace: 'src=', 'data-src='
+      | replace: '|SAPPDSS|', 'data-srcset='
+      | replace: '|SAPPDS|', 'data-src=' -%}
+    {%- assign piece = '<img src="' | append: sapp_pixel | append: '"' | append: new_open | append: rest -%}
+  {%- endif -%}
+  {%- assign piece_arr = piece | split: '|SAPPNUL|' -%}
+  {%- assign sapp_img_out = sapp_img_out | concat: piece_arr -%}
+{%- endfor -%}
+{%- assign sapp_html = sapp_img_out | join: '' -%}
+{%- assign sapp_html = sapp_html | replace: '--image-on-hover:', '--image-on-hover-defer:' -%}
+
+{%- comment -%} Inject the captured LCP preload at the very TOP of <head> (right
+  after the opening tag) so the preload scanner discovers it before anything else
+  in the head. Mobile-only, see note above. {%- endcomment -%}
+{%- if sapp_lcp_found and sapp_html contains '<head>' -%}
+  {%- capture sapp_lcp_link -%}<link rel="preload" as="image" fetchpriority="high" media="(max-width:767.98px)" href="{{ sapp_lcp_src }}"{% if sapp_lcp_srcset != '' %} imagesrcset="{{ sapp_lcp_srcset }}" imagesizes="{% if sapp_lcp_sizes != '' %}{{ sapp_lcp_sizes }}{% else %}100vw{% endif %}"{% endif %}>{%- endcapture -%}
+  {%- assign sapp_lcp_inject = '<head>' | append: sapp_lcp_link -%}
+  {%- assign sapp_html = sapp_html | replace_first: '<head>', sapp_lcp_inject -%}
+{%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+  Media src deferral (iframe/video/audio). Each tag is toggled independently via
+  its sapp_rewrite_* flag — enabled tags join sapp_media_tags and get one pass
+  each (array + join, O(D)). All flags off → empty list → the loop never runs.
+{%- endcomment -%}
+{%- assign sapp_media_tags = '' | split: ',' -%}
+{%- if sapp_rewrite_iframe -%}{%- assign sapp_mt = 'iframe' | split: '~' -%}{%- assign sapp_media_tags = sapp_media_tags | concat: sapp_mt -%}{%- endif -%}
+{%- if sapp_rewrite_video  -%}{%- assign sapp_mt = 'video'  | split: '~' -%}{%- assign sapp_media_tags = sapp_media_tags | concat: sapp_mt -%}{%- endif -%}
+{%- if sapp_rewrite_audio  -%}{%- assign sapp_mt = 'audio'  | split: '~' -%}{%- assign sapp_media_tags = sapp_media_tags | concat: sapp_mt -%}{%- endif -%}
+
+{%- for tag in sapp_media_tags -%}
+  {%- assign sapp_open = '<' | append: tag -%}
+  {%- assign sapp_chunks = sapp_html | split: sapp_open -%}
+  {%- assign sapp_out = sapp_chunks[0] | split: '|SAPPNUL|' -%}
+  {%- for ch in sapp_chunks offset: 1 -%}
+    {%- assign tag_open = ch | split: '>' | first -%}
+    {%- if tag_open contains 'src=' -%}
+      {%- assign rest = ch | remove_first: tag_open -%}
+      {%- assign new_open = tag_open
+        | replace: 'data-src=', '__SAPP_DS__'
+        | replace: 'src=', 'data-src='
+        | replace: '__SAPP_DS__', 'data-src=' -%}
+      {%- assign piece = sapp_open | append: new_open | append: rest -%}
+    {%- else -%}
+      {%- assign piece = sapp_open | append: ch -%}
+    {%- endif -%}
+    {%- assign piece_arr = piece | split: '|SAPPNUL|' -%}
+    {%- assign sapp_out = sapp_out | concat: piece_arr -%}
+  {%- endfor -%}
+  {%- assign sapp_html = sapp_out | join: '' -%}
+{%- endfor -%}
+
+{%- assign sapp_html = sapp_html
+  | replace: 'function asyncLoad()', 'window.asyncLoad = function asyncLoad()'
+  | replace: 'var urls', 'var urls = asyncLoadArr'
+  | replace: 's.src = urls[i];', 'continue;'
+-%}

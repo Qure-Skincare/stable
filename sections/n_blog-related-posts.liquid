@@ -33,7 +33,7 @@
                         <div class="swiper-slide">
                             <div class="c-post-tile">
                                 <a href="{{ related_post.url }}" class="c-post-tile__image">
-                                    <img src="{{ related_post.image | image_url }}" alt="{{ related_post.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ related_post.image | image_url }}" alt="{{ related_post.image.alt | escape }}" />
                                     <div class="e-pill-badge e-pill-badge--sm">#{{ blog.title }}</div>
                                 </a>
                                 <div class="c-post-tile__content">
@@ -49,17 +49,12 @@
                     {% endfor %}
                 </div>
                 <div class="c-swiper-nav">
-                    <button class="c-swiper-button-prev"></button>
+                    <button class="c-swiper-button-prev" aria-label="prev"></button>
                     <div class="c-swiper-pagination"></div>
-                    <button class="c-swiper-button-next"></button>
+                    <button class="c-swiper-button-next" aria-label="next"></button>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/swiper.js");
-        });
-    </script>
     <!-- RELATED POSTS END -->
 {% endif %}

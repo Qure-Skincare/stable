@@ -56,12 +56,12 @@
                         <div class="c-trusted-review-card c-trusted-review-card--short">
                             {% if block.settings.image != blank %}
                                 <picture>
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 </picture>
                             {% endif %}
                             {% if block.settings.flag != blank and block.settings.username != blank %}
                                 <div class="e-author">
-                                    <img src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
                                     {{ block.settings.username }}
                                 </div>
                             {% endif %}
@@ -82,18 +82,13 @@
             {% endfor %}
         </div>
             <div class="c-swiper-nav">
-                <button class="c-swiper-button-prev"></button>
+                <button class="c-swiper-button-prev" aria-label="prev"></button>
                 <div class="c-swiper-pagination"></div>
-                <button class="c-swiper-button-next"></button>
+                <button class="c-swiper-button-next" aria-label="next"></button>
             </div>
         </div>
     </div>
 </section>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("swiper", "https://qureskincaredns-stable.com/assets/js/swiper.js");
-    });
-</script>
 <!-- ACHIEVE GOALS END -->
 
 {% schema %}

@@ -28,7 +28,7 @@
                     data-video-id="{{ block.settings.wistia_url }}"
                 >
                 {% if block.settings.image != blank %}
-                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                 {% endif %}
                 </picture>
             {% endif %}
@@ -40,7 +40,7 @@
     {% for block in section.blocks %}
         {% if block.type == 'image' %}
             <picture>
-                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
             </picture>
         {% endif %}
     {% endfor %}

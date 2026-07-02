@@ -1,0 +1,36 @@
+{%- assign sapp_passthrough = false -%}
+
+{%- if request.host contains 'myshopify.com' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+{%- if request.host contains 'shopifypreview.com' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+
+{%- assign sapp_path = request.path -%}
+{%- if sapp_path contains '/checkout' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+{%- if sapp_path contains '/account' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+{%- if sapp_path contains '/apps/' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+{%- if sapp_path contains '/pages/loyalty-program' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+{%- if sapp_path contains '/pages/affiliate-page' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+{%- if sapp_path contains '/products/hair-growth-helmet' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
+
+{%- assign license_valid_liquid = false -%}
+{%- assign sapp_license_token = 'cXVyZXNraW5jYXJlLmNvbWd0Z3RjTEEzQA==' -%}
+{%- assign sapp_license_expires = 1840633182 -%}
+{%- assign sapp_now = 'now' | date: '%s' | times: 1 -%}
+{%- if sapp_license_token != blank and sapp_now < sapp_license_expires -%}
+  {%- assign license_valid_liquid = true -%}
+{%- endif -%}
+
+{%- assign is_admin_interface = sapp_passthrough -%}
+
+{%- assign sapp_rewrite_script = true -%}
+{%- assign sapp_rewrite_img    = true -%}
+{%- assign sapp_rewrite_iframe = false -%}
+{%- assign sapp_rewrite_video  = false -%}
+{%- assign sapp_rewrite_audio  = false -%}
+
+{%- assign sapp_use_minified = true -%}
+
+{%- assign sapp_init_src = 'n-redirect.js' | split: ',' -%}
+{%- assign sapp_init_innerhtml = '' | split: ',' -%}
+
+{%- assign sapp_lcp_scripts = 'load_feature,__sapp-,load_feature,assets/js/,assets/n-,header.js,footer.js,qure-skincare.js' | split: ',' -%}
+{%- assign sapp_lcp_innerhtml = 'Shopify.locale,function asyncLoad(),loadScriptOnce,StampedFn.init' | split: ',' -%}

@@ -22,7 +22,7 @@
 
                     {% if bundle_product.variants.size > 1 %}
                         <li class="included_product">
-                            <a href="{{ bundle_url }}" target="_blank"><img class="variantImage" src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
+                            <a href="{{ bundle_url }}" target="_blank"><img loading="lazy" class="variantImage" src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
                             <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
                             {% if bundle_product.compare_at_price %}
                                 <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>
@@ -47,7 +47,7 @@
                         </li>
                     {% else %}
                         <li>
-                            <a href="{{ bundle_url }}" target="_blank"><img src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
+                            <a href="{{ bundle_url }}" target="_blank"><img loading="lazy" src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
                             <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
                             {% if bundle_product.compare_at_price %}
                                 <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>

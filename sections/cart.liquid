@@ -4,7 +4,7 @@
     <div class="container">
         {% if cart.item_count == 0 %}
             <div class="cart__empty">
-                <img src="https://qureskincaredns-stable.com/assets/images/empty-cart.svg" alt="{{ 'cart.static.settings.empty-header' | t }}" />
+                <img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/empty-cart.svg" alt="{{ 'cart.static.settings.empty-header' | t }}" />
                 <h2>{{ 'cart.static.settings.empty-header' | t }}</h2>
                 <p>{{ 'cart.static.settings.empty-text' | t }}</p>
                 {{ 'cart.static.settings.empty-button_html' | t: button_link: '/' }}
@@ -24,7 +24,7 @@
                         <div class="cart__row">
                             <div class="cart__cell">
                                 <a href="{{ cart_item_url }}" aria-label="{{ cart_item_title | escape }}">
-                                    <img src="{{ cart_item_image | img_url: 'master' }}" alt="{{ cart_item_title | escape }}" />
+                                    <img loading="lazy" src="{{ cart_item_image | img_url: 'master' }}" alt="{{ cart_item_title | escape }}" />
                                     {{ cart_item_title }}
                                 </a>
                             </div>
@@ -70,7 +70,7 @@
                 <div class="cart__footer">
                     <div class="cart-footer">
                         <div class="cart-footer__secure-ship">
-                            <img src="https://qureskincaredns-stable.com/assets/images/drawer/secure-ship.svg" alt="Secure Ship" />
+                            <img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/drawer/secure-ship.svg" alt="Secure Ship" />
                             <p>{{ 'cart.drawer.settings.insurance-text' | t }} + <strong>{{ global_insurance_price }}</strong></p>
                             <label class="e-switcher">
                                 <form method="post" action="/cart/add" enctype="multipart/form-data">
