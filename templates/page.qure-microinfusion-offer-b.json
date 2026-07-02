@@ -1325,7 +1325,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
             "product_discount_percent": 19,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 6,
             "left_items": 0,
