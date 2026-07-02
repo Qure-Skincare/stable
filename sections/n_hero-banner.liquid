@@ -7,57 +7,35 @@
     <link href="https://qureskincaredns-stable.com/sections/hero-banner/hero-banner.css" rel="stylesheet" type="text/css"> 
 {% endif %}
     <section class="hero-banner{% if section.settings.modifier != 'none' %} hero-banner--{{ section.settings.modifier }}{% endif %}">
-        {% if section.settings.image != blank %}
-            <picture>
-                {% if section.settings.image != blank %}
-                    <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}">
-                {% endif %}
-                {% if section.settings.image_mobile != blank %}
-                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}">
-                {% endif %}
-            </picture>
-        {% endif %}
-
-        {% for block in section.blocks %}
-            {% if block.type == 'web-video' %}
-                <div class="qure-birthday-video">
-                    <video autoplay="" loop="" muted="" playsinline="">
-                        {% if block.settings.video_url != blank %}
-                            <source src="{{ block.settings.video_url }}" type="video/webm" />
-                        {% endif %}
-                    </video>
-                </div>
+        <picture>
+            {% if section.settings.image != blank %}
+                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}">
             {% endif %}
-        {% endfor %}
-
+            {% if section.settings.image_mobile != blank %}
+                <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}">
+            {% endif %}
+        </picture>
         <div class="container">
             <article>
                 {% if section.settings.text != blank %}
-                    {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]<p>', '</small>'}}
+                    {{ section.settings.text }}
                 {% endif %}
 
-                {% assign has_text_block = false %}
-                {% for block in section.blocks %}
-                    {% if block.type == 'text'%}
-                        {% assign has_text_block = true %}
-                    {% endif %}
-                {% endfor %}
-                {% if has_text_block %}
-                    <ul>
-                        {% for block in section.blocks %}
-                            {% if block.type == 'text'%}
-                                <li>
-                                    {{ block.settings.text 
-                                    | replace: '<p>[small]', '<small>' 
-                                    | replace: '[/small]', '</small>' 
-                                    | replace: '<p>', '' 
-                                    | replace: '</p>', ''}}
+                
+                <ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'text'%}
+                            <li>
+                                {{ block.settings.text 
+                                | replace: '<p>[small]', '<small>' 
+                                | replace: '[/small]', '</small>' 
+                                | replace: '<p>', '' 
+                                | replace: '</p>', ''}}
 
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
 
             </article>
         </div>
@@ -91,10 +69,6 @@
                 {
                     "value": "easter",
                     "label": "t:sections.n_hero-banner.settings.modifier-options.easter"
-                },
-                {
-                    "value": "qure-birthday",
-                    "label": "t:sections.n_hero-banner.settings.modifier-options.qure-birthday"
                 }
             ]
         },
@@ -123,17 +97,6 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
-                }
-            ]
-        },
-        {
-            "type": "web-video",
-            "name": "t:common.web-video",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "video_url",
-                    "label": "t:common.video-url"
                 }
             ]
         }
