@@ -7,14 +7,14 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product-bundle": {
       "type": "n-product-bundle",
       "settings": {
-        "heading": "",
-        "reserved": false,
-        "soldout": false
+        "show_discount": true,
+        "rating": true,
+        "heading": ""
       }
     },
     "n_press_reviews_DDaUTN": {
@@ -67,6 +67,7 @@
       "settings": {
         "use_own_file": false,
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
     },
@@ -133,6 +134,7 @@
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
         "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help<em> improve the feel of firmness</em>, smooth texture, and <em>reduce the look of fine lines and wrinkles</em>.<br/><br/>The invisible micro-channels then deliver science-backed serums onto the skin’s surface, <em>tailored to address specific skin goals</em> — enhancing absorption and helping active ingredients work more effectively where they’re applied.</p>",
         "button_label": "",
