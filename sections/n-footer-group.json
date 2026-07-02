@@ -13,14 +13,17 @@
   "sections": {
     "footer-perks": {
       "type": "n-footer-perks",
+      "disabled": true,
       "settings": {}
     },
     "footer-form": {
       "type": "n-footer-form",
+      "disabled": true,
       "settings": {}
     },
     "footer": {
       "type": "n-footer",
+      "disabled": true,
       "settings": {}
     },
     "footer-drawer": {
