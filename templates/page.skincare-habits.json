@@ -47,12 +47,25 @@
         "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
-        "heading": "<h2>Before you start reading, five honest warnings. Not about side effects. About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</h2>",
-        "text": "<h2>About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</h2>"
+        "heading": "<p><strong>Before you start reading, five honest warnings. Not about side effects. About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</strong></p>",
+        "text": "<p><strong>About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</strong></p>"
+      }
+    },
+    "n_mi_faq_page_qa_img_mobile_HpGN7A": {
+      "type": "n_mi-faq-page-qa-img-mobile",
+      "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "img-to-top",
+        "heading": "<h2><strong>01. Sorry, you'll stop hoping your collagen cream worked overnight. </strong></h2>",
+        "text": "<p>You bought it because the jar said collagen. Here's what the jar left off.</p><p>Your skin blocks almost anything larger than 500 Daltons. That's the real number dermatologists use… </p><p>A collagen molecule is about 300,000.</p><p>So it can't get in. Not \"slowly.\" Can't. It sits on top, feels nice for an hour, then rinses onto your pillow.*</p><p>Micro-Infusion goes beyond the barrier. The 24K gold-plated 0.5mm needles open thousands of tiny channels and deliver the serum underneath that protective layer to, where your skin can use it.</p><p><strong>Past the barrier, not onto it.</strong>*</p>",
+        "image": "shopify://shop_images/micro_infusion-banner4.webp",
+        "image_mobile": "shopify://shop_images/micro_infusion-banner4-M.webp"
       }
     },
     "n_mi_faq_page_qa_ykbALR": {
       "type": "n_mi-faq-page-qa",
+      "disabled": true,
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
         "use_own_file": false,
@@ -64,6 +77,23 @@
     },
     "n_mi_faq_page_qa_73JLiz": {
       "type": "n_mi-faq-page-qa",
+      "blocks": {
+        "cta_box_HGazpE": {
+          "type": "cta_box",
+          "settings": {
+            "image": "shopify://shop_images/hero-mi-bottles.webp",
+            "badge_text": "Get 70% OFF THE 6 MONTHS SUPPLY",
+            "heading": "",
+            "text": "<p>Most of that shelf of lotions, potions, and serums just became optional. Sorry about the clutter.</p><p><strong>One step that works beats ten that don't.</strong></p>",
+            "button_label": "shop now",
+            "button_url": "",
+            "icon_with_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cta_box_HGazpE"
+      ],
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
         "use_own_file": false,
@@ -160,19 +190,6 @@
         "heading": "<h2><strong>Why every cream you've owned did nothing</strong></h2>",
         "text": "<h3><strong>It was never the ingredient. It was the delivery.</strong></h3><p>The industry sells you better ingredients in the one format that can't get them in. Beta Glucan copper peptides, vitamin C, PDRN all applied to a barrier built to block them. You've been paying for guests your skin never let inside.<br/><br/>The Qure Micro-Infusion System is designed to revitalize your skin through a precise and effective process:</p><p><strong>Micro-Needles:</strong> Tiny, gold needles (thinner than a human hair) create micro-channels in your skin. This helps stimulate collagen production and triggers your skin’s natural healing process.</p><p><strong>Serum Delivery:</strong> The micro-channels allow our scientifically-backed serums to penetrate deeply, delivering active ingredients exactly where they are needed to reduce the appearance of wrinkles, fine lines, and dark spots.</p><p><strong>Hydration and Plumping:</strong> The infusion process enhances your skin's ability to retain moisture, resulting in a plumper, more hydrated, and radiant looking complexion.</p><p>Use the Qure Micro-Infusion System for just 5 minutes every 2 weeks for a minimum of 3 months and <strong>enjoy smoother looking more youthful skin</strong> and a more confident you.</p>",
         "image": "shopify://shop_images/mi_needle.webp"
-      }
-    },
-    "n_mi_faq_page_qa_img_mobile_HpGN7A": {
-      "type": "n_mi-faq-page-qa-img-mobile",
-      "disabled": true,
-      "name": "t:sections.n_mi-faq-page-qa-img-mobile.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "img-to-top",
-        "heading": "<h2>How Much Does the Qure Micro-Infusion System Cost?</h2>",
-        "text": "<p>At Qure, we are dedicated to making advanced skincare solutions accessible and affordable for everyone.</p><p>We’ve priced our Micro-Infusion System competitively because we understand that quality skincare shouldn’t break the bank.</p><p>Professional treatments can be costly and time-consuming, but with Qure, <strong>you can achieve similar results at home for a fraction of the cost.</strong></p><p>The Qure Micro-Infusion System, which includes the device and a 6-month supply of serums, typically retails at $713.</p><p>However, for a limited time, you can get it for just $219 when you choose our best value bundle, <strong>saving you 70%.</strong></p><p>We believe everyone deserves to look and feel their best without the high costs of professional treatments.</p>",
-        "image": "shopify://shop_images/micro_infusion-banner4.webp",
-        "image_mobile": "shopify://shop_images/micro_infusion-banner4-M.webp"
       }
     },
     "n_mi_faq_page_qa_qpwGRT": {
@@ -803,6 +820,7 @@
   "order": [
     "n_mi_faq_page_hero_qa_idf6hK",
     "n_mi_faq_page_qa_NTk4id",
+    "n_mi_faq_page_qa_img_mobile_HpGN7A",
     "n_mi_faq_page_qa_ykbALR",
     "n_mi_faq_page_qa_73JLiz",
     "n_mi_faq_page_qa_img_mobile_m7bRLM",
@@ -810,7 +828,6 @@
     "n_mi_faq_page_qa_dt3Fhp",
     "n_mi_faq_page_qa_img_mobile_CamYWx",
     "n_mi_faq_page_qa_FBmpip",
-    "n_mi_faq_page_qa_img_mobile_HpGN7A",
     "n_mi_faq_page_qa_qpwGRT",
     "n_mi_faq_page_qa_hEykxe",
     "n_mi_faq_page_qa_xnhcN6",
