@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_product_header_gLYhrR": {
       "type": "n-product-header",
@@ -77,6 +77,7 @@
             "preselected": true,
             "heading": "6 Months Supply",
             "subheading": "(1 Bottle + 2 Refills)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/form-thumbnail-trio.webp",
             "product_discount_percent": 0,
@@ -99,6 +100,7 @@
             "preselected": false,
             "heading": "4 Months Supply",
             "subheading": "(1 Bottle + 1 Refills)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/form-thumbnail-duo.webp",
             "product_discount_percent": 0,
@@ -121,6 +123,7 @@
             "preselected": false,
             "heading": "2 Months Supply",
             "subheading": "(1 Bottle)",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/form-thumbnail-uno.webp",
             "product_discount_percent": 0,
@@ -154,6 +157,7 @@
             "preselected": true,
             "heading": "6 Months Supply",
             "subheading": "(1 Bottle + 2 Refills)",
+            "product_selling_plan_text": "",
             "text": "Ships every 6 months",
             "image": "shopify://shop_images/form-thumbnail-trio.webp",
             "product_discount_percent": 20,
@@ -176,6 +180,7 @@
             "preselected": false,
             "heading": "4 Months Supply",
             "subheading": "(1 Bottle + 1 Refills)",
+            "product_selling_plan_text": "",
             "text": "Ships every 4 months",
             "image": "shopify://shop_images/form-thumbnail-duo.webp",
             "product_discount_percent": 11,
@@ -198,6 +203,7 @@
             "preselected": false,
             "heading": "2 Months Supply",
             "subheading": "(1 Bottle)",
+            "product_selling_plan_text": "",
             "text": "Ships every 2 months",
             "image": "shopify://shop_images/form-thumbnail-uno.webp",
             "product_discount_percent": 10,
@@ -224,7 +230,11 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -361,6 +371,8 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h2>Why we chose methylene blue</h2>",
         "text": "<p>Besides its unique light-responsive properties, it’s a next-generation antioxidant studied for its role in skin longevity.</p><p>Research shows methylene blue can help reduce oxidative stress — one of the key contributors to visible skin aging — while supporting healthy fibroblast activity and overall skin resilience.</p><p>It has also been shown in skin models to support hydration and skin structure markers associated with firmer, healthier-looking skin.</p>",
         "sub_text": "",
