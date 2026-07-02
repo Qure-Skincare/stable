@@ -151,7 +151,7 @@
       "name": "t:sections.n_mi-faq-page-set-up-qa.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>Treatment</h2><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+        "text": "<h2>How to perform your treatment</h2><p><strong>Start at the centre of the face and work your way outward to cover the full face.</strong></p>",
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "ptw4q3aod8"
@@ -176,8 +176,8 @@
         "modifier": "img-to-top",
         "heading": "<h2><strong>05. Sorry, you're running out of reasons to hide in photos.</strong></h2>",
         "text": "<p>You know your angles. You reach for the filter before you've even looked.</p><p>Glow isn't a filter effect, it's physics. Light bounces evenly off smooth, hydrated skin and scatters off dry, rough skin. </p><p>Plump, hydrate and renew your skin and you photograph the way the filter was faking. </p><p>91% reported more even tone and smoothness after twelve weeks.*</p><p>We're sorry about the filter. You'll forget you used to need it.</p><p><strong>The glow is real, not added in post.</strong>*</p>",
-        "image": "shopify://shop_images/micro_infusion-banner3.webp",
-        "image_mobile": "shopify://shop_images/micro_infusion-banner3-M.webp"
+        "image": "shopify://shop_images/hero_valentine_banner_desktop.webp",
+        "image_mobile": "shopify://shop_images/hero_valentine_banner_mob.webp"
       }
     },
     "n_mi_faq_page_qa_FBmpip": {
@@ -187,8 +187,8 @@
         "use_own_file": false,
         "modifier": "img-to-left",
         "updated_info": false,
-        "heading": "<h2><strong>Why every cream you've owned did nothing</strong></h2>",
-        "text": "<h3><strong>It was never the ingredient. It was the delivery.</strong></h3><p>The industry sells you better ingredients in the one format that can't get them in. Beta Glucan copper peptides, vitamin C, PDRN all applied to a barrier built to block them. You've been paying for guests your skin never let inside.<br/><br/>The Qure Micro-Infusion System is designed to revitalize your skin through a precise and effective process:</p><p><strong>Micro-Needles:</strong> Tiny, gold needles (thinner than a human hair) create micro-channels in your skin. This helps stimulate collagen production and triggers your skin’s natural healing process.</p><p><strong>Serum Delivery:</strong> The micro-channels allow our scientifically-backed serums to penetrate deeply, delivering active ingredients exactly where they are needed to reduce the appearance of wrinkles, fine lines, and dark spots.</p><p><strong>Hydration and Plumping:</strong> The infusion process enhances your skin's ability to retain moisture, resulting in a plumper, more hydrated, and radiant looking complexion.</p><p>Use the Qure Micro-Infusion System for just 5 minutes every 2 weeks for a minimum of 3 months and <strong>enjoy smoother looking more youthful skin</strong> and a more confident you.</p>",
+        "heading": "<h2><strong>Why every cream you've owned did nothing? It was never the ingredient. It was the delivery.</strong></h2>",
+        "text": "<h2></h2><p>The industry sells you better ingredients in the one format that can't get them in. Beta Glucan copper peptides, vitamin C, PDRN all applied to a barrier built to block them. You've been paying for guests your skin never let inside.<br/><br/>The Qure Micro-Infusion System is designed to revitalize your skin through a precise and effective process:</p><p><strong>Micro-Needles:</strong> Tiny, gold needles (thinner than a human hair) create micro-channels in your skin. This helps stimulate collagen production and triggers your skin’s natural healing process.</p><p><strong>Serum Delivery:</strong> The micro-channels allow our scientifically-backed serums to penetrate deeply, delivering active ingredients exactly where they are needed to reduce the appearance of wrinkles, fine lines, and dark spots.</p><p><strong>Hydration and Plumping:</strong> The infusion process enhances your skin's ability to retain moisture, resulting in a plumper, more hydrated, and radiant looking complexion.</p><p>Use the Qure Micro-Infusion System for just 5 minutes every 2 weeks for a minimum of 3 months and <strong>enjoy smoother looking more youthful skin</strong> and a more confident you.</p>",
         "image": "shopify://shop_images/mi_needle.webp"
       }
     },
@@ -607,6 +607,17 @@
         "available-stocks": false
       }
     },
+    "n_mi_faq_page_qa_BznMhH": {
+      "type": "n_mi-faq-page-qa",
+      "name": "t:sections.n_mi-faq-page-qa.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "updated_info": true,
+        "heading": "<h6><strong>Last apology.</strong></h6>",
+        "text": "<p><strong>If smoother lines, a more even tone, and skin that behaves on camera sound like problems you can live with, this is five minutes every two weeks. Most people start with the 3-month plan.</strong></p>"
+      }
+    },
     "n_trusted_reviews_A9yVqc": {
       "type": "n_trusted-reviews",
       "blocks": {
@@ -803,18 +814,6 @@
         "button_label": "Check Availability",
         "button_url": "#purchase-form"
       }
-    },
-    "n_mi_faq_page_qa_BznMhH": {
-      "type": "n_mi-faq-page-qa",
-      "disabled": true,
-      "name": "t:sections.n_mi-faq-page-qa.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "updated_info": true,
-        "heading": "<h6>Update 09/21/25</h6>",
-        "text": "<p><strong>To celebrate more women saying no to the hype and yes to simple skincare that works, we're offering a limited-time discount of up to 67% for this month only.</strong></p>"
-      }
     }
   },
   "order": [
@@ -833,7 +832,7 @@
     "n_mi_faq_page_qa_xnhcN6",
     "n_mi_faq_page_qa_GigNYq",
     "purchase_form_Lv5fWn",
-    "n_trusted_reviews_A9yVqc",
-    "n_mi_faq_page_qa_BznMhH"
+    "n_mi_faq_page_qa_BznMhH",
+    "n_trusted_reviews_A9yVqc"
   ]
 }
