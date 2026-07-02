@@ -614,7 +614,7 @@
       "available-stocks": "Available until stocks last!",
       "buy-button-label": "Buy Now",
       "subscribe-button-label": "Subscribe Now",
-      "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
+      "subscribe-and-save-button-label": "Start My Treatment & Save {{ value }}%",
       "reserve-and-save-button-label": "Pre-Order Now & Save {{ value }}%",
       "reserve-button-label": "Pre-Order Now",
       "soldout-button-label": "Sold Out",
