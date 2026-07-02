@@ -333,7 +333,8 @@
         "best-seller": "Best seller",
         "trending": "Trending",
         "flex": "Flex",
-        "arrow-button": "Arrow button"
+        "arrow-button": "Arrow button",
+        "web-video": "Web video"
     },
     "blocks": {
         "block-card": {
@@ -448,7 +449,8 @@
                 "modifier-options": {
                     "none": "None",
                     "holidays": "Holidays",
-                    "easter": "Easter"
+                    "easter": "Easter",
+                    "qure-birthday": "Qure birthday"
                 }
             }
         },
