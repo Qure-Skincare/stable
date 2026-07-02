@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_hero_banner_ddhnmk": {
       "type": "n_hero-banner",
@@ -165,7 +165,8 @@
         "use_own_file": false,
         "background_color": "light",
         "text": "",
-        "button_label": ""
+        "button_label": "",
+        "button_url": ""
       }
     },
     "n_take_quiz_bs": {

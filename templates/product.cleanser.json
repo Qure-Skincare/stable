@@ -56,6 +56,7 @@
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
         "heading": "Daily Cleansing Gel",
         "rating": false,
+        "rating_type": "customers",
         "limited": false,
         "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>",
         "reserved": false,
@@ -89,6 +90,7 @@
             "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "3 bottles",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/cleanser-selector-trio.webp",
             "product_discount_percent": 0,
@@ -111,6 +113,7 @@
             "preselected": false,
             "heading": "4 Months Supply",
             "subheading": "2 bottles",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/cleanser-selector-duo.webp",
             "product_discount_percent": 0,
@@ -133,6 +136,7 @@
             "preselected": false,
             "heading": "2 Months Supply",
             "subheading": "1 bottle",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/cleanser-selector-uno.webp",
             "product_discount_percent": 0,
@@ -155,6 +159,10 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -168,6 +176,8 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h2>A cleanser that restores what others remove</h2>",
         "text": "<p>Most cleansers leave skin feeling tight.</p><p>That feeling isn’t clean - it’s moisture loss.</p><p>Many cleansers rely on strong surfactants to create a foamy, squeaky clean feel, often at the expense of your skin barrier.</p><p>Our cleanser is different. Instead of relying on water alone, the formula is powered by 50% glycerin, a moisture loving ingredient that helps skin hold onto hydration while you cleanse.</p>",
         "sub_text": "",
@@ -472,6 +482,27 @@
         "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
       }
     },
+    "17830002457c285fc3": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_UH8KqJ": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_UH8KqJ"
+      ],
+      "settings": {}
+    },
     "n_faq_cleanser": {
       "type": "n_faq",
       "blocks": {
@@ -537,6 +568,7 @@
     "n_features_marquee_cleanser",
     "n_accordion_tiles_square_cleanser",
     "n_page_microinfusion_complete_system_cleanser",
+    "17830002457c285fc3",
     "n_faq_cleanser"
   ]
 }
