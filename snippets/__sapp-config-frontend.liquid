@@ -7,8 +7,8 @@
   },
   "debug": false,
   "timeouts": {
-    "mobile":  { "preload": "1000", "scripts": "2500", "embeds": "3500", "other": "1000", "async": "4500" },
-    "desktop": { "preload": "500", "scripts": "2500", "embeds": "3500", "other": "1000", "async": "4500" }
+    "mobile":  { "preload": "1000", "scripts": "3500", "embeds": "4500", "other": "1000", "async": "5500" },
+    "desktop": { "preload": "500", "scripts": "3500", "embeds": "4500", "other": "1000", "async": "5500" }
   },
   {%- comment -%}
     OPTIONAL slow-connection profile. The backend selects it at start time when
@@ -32,6 +32,7 @@
   "queueOptions": {
     "*":       { "stagger": 50, "burst": 5, "slice": 30 },
     "scripts": { "stagger": 50, "burst": 1, "slice": 30 },
+    "embeds": { "stagger": 50, "burst": 3, "slice": 30 },
     "async":   { "stagger": 100, "burst": 1, "slice": 30 }
   },
   {%- comment -%}

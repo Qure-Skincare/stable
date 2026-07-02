@@ -16,7 +16,7 @@
                 {% if article.image != blank %}
                     <picture class="post-article__image">
                         <source media="(min-width:768px)" srcset="{{ article.image | image_url: width: 1200 }}" />
-                        <img loading="lazy" src="{{ article.image | image_url: width: 800 }}" alt="{{ article.image.alt | default: article.title | escape }}" />
+                        <img loading="eager" fetchpriority="high" src="{{ article.image | image_url: width: 800 }}" alt="{{ article.image.alt | default: article.title | escape }}" />
                     </picture>
                 {% endif %}
                 <div class="post-article__data">
