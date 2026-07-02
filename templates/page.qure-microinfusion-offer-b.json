@@ -1493,7 +1493,7 @@
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
             "product_discount_percent": 16,
             "soldout": false,
-            "preorder": true,
+            "preorder": false,
             "total_treatments": 12,
             "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
