@@ -69,7 +69,7 @@
         "product_RBCPe8": {
           "type": "product",
           "settings": {
-            "product": "blue-face-serum",
+            "product": "blue-face-serum-6-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "popular": false,
@@ -92,7 +92,7 @@
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "blue-face-serum",
+            "product": "blue-face-serum-4-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "popular": true,
