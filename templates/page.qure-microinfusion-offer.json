@@ -1701,6 +1701,13 @@
             "text": "<p>You get to experience minimal discomfort and maximum results with Qure's Micro-Infusion System.</p><p>Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>"
           }
         },
+        "accordion_G6DcYV": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Has the Micro-Infusion System been clinically evaluated for safety?",
+            "text": "<p>Yes. The Micro-Infusion System for Dark Spots and for Wrinkles underwent an independent clinical evaluation of dermatologic safety-in-use conducted by a Board-Certified Dermatologist. <br/><br/>31 subjects spanning all Fitzpatrick skin types (I–VI) completed the evaluation with no adverse reactions reported or observed. The products were deemed safe for their intended use.</p>"
+          }
+        },
         "accordion_XKGkaz": {
           "type": "accordion",
           "settings": {
@@ -1755,6 +1762,7 @@
         "accordion_hMHBPN",
         "accordion_x4LCUw",
         "accordion_pRtaH3",
+        "accordion_G6DcYV",
         "accordion_XKGkaz",
         "accordion_yEYwDi",
         "accordion_RaEjnm",

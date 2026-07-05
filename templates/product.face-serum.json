@@ -300,6 +300,8 @@
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -910,12 +912,12 @@
         "comparison_table_UY3pRQ": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h5>Qure <br />All-In-One Serum</h5>",
+            "heading": "<h5>Qure <br/>All-In-One Serum</h5>",
             "text_1": "Retinol, peptides, niacinamide, bakuchiol",
             "select_1": "checkmark",
             "text_2": "Targets 5+ concerns in one easy-to-use formula",
             "select_2": "checkmark",
-            "text_3": "One step, AM or PM",
+            "text_3": "One step - Morning",
             "select_3": "checkmark",
             "text_4": "Great value",
             "select_4": "checkmark",
