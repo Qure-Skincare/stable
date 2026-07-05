@@ -23,6 +23,10 @@ const replaceTextOnPage = (search, replacement) => {
 
 /* init */
 
+const mask = window.mask;
+const neck = window.neck;
+const discount_text = window.discount_text;
+
 if (mask && neck) {
     const sum = (mask.price_original || 0) + (neck.price_original || 0);
     const symbol = mask.price.replace(/[0-9.,\s-]/g, "");
@@ -42,17 +46,7 @@ if (mask && neck) {
     replaceTextOnPage("\\$299", neck.price);
 }
 
-document.querySelector('.c-buy-block form').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    __discount = 'FREEN&DOFFER';
-
-    input = [
-        { id: mask.variant_id, quantity: 1 },
-        { id: neck.variant_id, quantity: 1 }
-    ]
-
-    fetch('/discount/' + __discount).then(async () => {
-        addToCartJson(input);
-    });
-});
+/* The add-to-cart submit handler now lives in a class="__init" script inside
+   sections/n-form-inside-mask.liquid, so the button is wired immediately at parse
+   (not after the LCP window). This file only handles the (non-critical) price
+   cosmetics above; binding the submit here too would double-add on click. */
