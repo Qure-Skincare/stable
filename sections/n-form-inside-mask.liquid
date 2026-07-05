@@ -36,6 +36,7 @@
 
                     {% assign mask_handle = 'q-rejuvalight-pro-facewear-3' %}
                     {% include 'get-product-data', product_handle: mask_handle %}
+                    {% assign mask_variant_id = get_product_data.variants.first.id %}
 
                     <li>
                         <a href="/products/{{ get_product_data.handle }}">
@@ -54,6 +55,7 @@
 
                     {% assign neck_handle = 'neck-decolletage-led' %}
                     {% include 'get-product-data', product_handle: neck_handle %}
+                    {% assign neck_variant_id = get_product_data.variants.first.id %}
 
                     <li>
                         <a href="/products/{{ get_product_data.handle }}">
@@ -115,16 +117,77 @@
     </div>
 </section>
 
+<script class="__init">
+    /* class="__init" keeps this script OUT of the sapp proxy rewrite (same lane as
+       the __sapp-lcp orchestrator), so it executes at parse — immediately, not
+       after the LCP hero window. It wires the add-to-cart button using
+       server-rendered variant ids, so it needs neither the deferred
+       window.get_products_data nor the hero to load first. addToCartJson (slide
+       cart) is still LCP-loaded; we retry until it exists, so an early click
+       queues instead of being lost to a form reload. */
+    (function () {
+        var MASK_ID = {{ mask_variant_id | json }};
+        var NECK_ID = {{ neck_variant_id | json }};
+        var DISCOUNT = 'FREEN&DOFFER';
+
+        function bind() {
+            var form = document.querySelector('.c-buy-block form');
+            if (!form) { return document.addEventListener('DOMContentLoaded', bind, { once: true }); }
+            if (form.getAttribute('data-atc-bound')) return;
+            form.setAttribute('data-atc-bound', '1');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var items = [
+                    { id: MASK_ID, quantity: 1 },
+                    { id: NECK_ID, quantity: 1 }
+                ];
+                fetch('/discount/' + DISCOUNT).then(function () {
+                    (function add() {
+                        if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
+                            window.CartDrawer.addToCartJson(items);
+                        } else if (typeof addToCartJson === 'function') {
+                            addToCartJson(items);
+                        } else {
+                            setTimeout(add, 60);
+                        }
+                    })();
+                });
+            });
+        }
+
+        bind();
+    })();
+</script>
+
 <script>
+    {%- comment -%}
+      Do NOT read window.get_products_data at top level or on DOMContentLoaded: the
+      LCP orchestrator (__sapp-lcp) reorders/replays inert scripts, so the moment
+      this consumer runs is not guaranteed to be after get-product-data has defined
+      the global — and n-form-inside-mask.js captures window.mask ONCE at load, so
+      loading it too early (loadScriptOnce is idempotent) leaves the buy form with
+      no submit handler. Instead poll until both products exist, then expose them
+      on window and load the script exactly once with the data already in place.
+    {%- endcomment -%}
+    (function () {
+        var maskHandle = "{{ mask_handle }}";
+        var neckHandle = "{{ neck_handle }}";
 
-    const mask = window.get_products_data["{{ mask_handle }}"];
-    const neck = window.get_products_data["{{ neck_handle }}"];
+        function boot() {
+            var data = window.get_products_data;
+            if (typeof loadScriptOnce !== 'function' || !data || !data[maskHandle] || !data[neckHandle]) {
+                return setTimeout(boot, 50);
+            }
+            window.mask = data[maskHandle];
+            window.neck = data[neckHandle];
+            window.discount_text = '{{ 'sections.page-led-mask-offer-2-led-mask-form.settings.discount-text' | t }}';
 
-    const discount_text = '{{ 'sections.page-led-mask-offer-2-led-mask-form.settings.discount-text' | t }}';
+            loadScriptOnce('n-form-inside-mask', '{{ 'n-form-inside-mask.js' | asset_url }}');
+        }
 
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('n-form-inside-mask', '{{ 'n-form-inside-mask.js' | asset_url }}');
-    });
+        boot();
+    })();
 </script>
 
 <script>
