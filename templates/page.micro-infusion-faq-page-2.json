@@ -34,7 +34,7 @@
       "name": "t:sections.n_mi-faq-page-hero-qa.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<h1>Enjoy Smoother, Healthier Skin at Home in Just 5 Minutes with Our Micro-Infusion <em>System</em></h1>",
+        "heading": "<h1>Enjoy Smoother, Healthier Skin at <em>Home in Just 5 Minutes</em> with Our Micro-Infusion System</h1>",
         "text": "<p>Created In Partnership With <strong>Leading Dermatologists</strong></p>",
         "image": "shopify://shop_images/micro_infusion-banner.webp",
         "image_mobile": "shopify://shop_images/micro_infusion-bannerMob.webp"
