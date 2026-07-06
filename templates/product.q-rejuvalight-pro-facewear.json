@@ -1484,6 +1484,41 @@
             "heading": "Is Q-Rejuvalight Pro FDA-cleared?",
             "text": "<p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>"
           }
+        },
+        "accordion_FhjX8U": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How is Q-Rejuvalight Pro different from a basic LED mask I can buy at the drugstore?",
+            "text": "<p>Most drugstore masks rely on one or two fixed wavelengths and a single full-face setting, which limits how precisely they can target different concerns. The Q-Rejuvalight Pro is an FDA-cleared device that combines five clinical-grade wavelengths with customizable treatment across five facial zones, so you can address the look of aging on one area and breakouts on another in the same three-minute session. </p><p>It is also wireless and app-connected, which makes it far easier to stay consistent than a corded panel you have to sit still in front of. In short, you are paying for clinical-grade hardware and personalization rather than a one-size-fits-all glow.</p>"
+          }
+        },
+        "accordion_reQ7q8": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I have to buy the serums and add-ons, or does the Q-Rejuvalight Pro mask work on its own?",
+            "text": "<p>The mask is a complete treatment on its own and does not require any additional purchases to deliver its light therapy benefits. Add-ons like the Dermal Mist or the Micro-Infusion System are optional companions for people who want to layer in extra hydration or target specific concerns, but they are never a requirement. </p><p>In fact, we ask you to start treatments on clean, dry skin with no serums or moisturizers applied beforehand, so the mask performs exactly as intended whether or not you own anything else.</p>"
+          }
+        },
+        "accordion_rAjmLN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use Q-Rejuvalight Pro mask if I get Botox, fillers, or in-office facials?",
+            "text": "<p>Many customers use the Q-Rejuvalight Pro alongside professional treatments, and several dermatologists note they like it as an at-home complement between in-office visits. Because individual circumstances vary, we recommend confirming timing with the provider who performs your injectables or facials, especially in the days immediately following a procedure. </p><p>Used as a regular at-home ritual, the mask is designed to support your skin between appointments rather than replace your provider's guidance.</p>"
+          }
+        },
+        "accordion_jXXBz3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need my phone and the app every time, or can I just use the Q-Rejuvalight Pro mask?",
+            "text": "<p>You can run the Q-Rejuvalight Pro using the preset routines built directly into the device, so your phone is not required for a session. The companion app simply unlocks deeper customization, letting you tailor modes to each facial zone and set reminders so you never miss a treatment. </p><p>Think of the app as a helpful planner rather than a dependency, since the mask works fully on its own whenever you prefer to keep things simple.</p>"
+          }
+        },
+        "accordion_YaKLQD": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is Q-Rejuvalight Pro mask really worth the price compared to going to a clinic?",
+            "text": "<p>The Q-Rejuvalight Pro is a one-time investment rather than an ongoing series of paid appointments, which is where the value adds up over time. Instead of booking sessions around a clinic's availability, traveling, and paying per visit, you get a customizable, clinically backed treatment you can do at home in three minutes a day. </p><p>More frequent, consistent use also tends to produce more reliable results than occasional clinic visits. For shoppers who want professional-grade light therapy without the recurring cost and scheduling, the device is designed to pay for itself across the years it is built to last.</p>"
+          }
         }
       },
       "block_order": [
@@ -1494,7 +1529,12 @@
         "accordion_XwfF8A",
         "accordion_pMyiQL",
         "accordion_zDUzWe",
-        "accordion_pHWCFb"
+        "accordion_pHWCFb",
+        "accordion_FhjX8U",
+        "accordion_reQ7q8",
+        "accordion_rAjmLN",
+        "accordion_jXXBz3",
+        "accordion_YaKLQD"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
