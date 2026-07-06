@@ -17,8 +17,9 @@
                     <div class="e-hamburger__line"></div>
                 </div>
             </div>
-            <a href="{{ shop.url }}" class="header__logo">
-                <i class="e-icon e-icon-qure"></i>
+            <a href="{{ shop.url }}" class="header__logo" title="Qure">
+                {% comment %} <i class="e-icon e-icon-qure"></i> {% endcomment %}
+                {% render '__svg-logo' %}
             </a>
             <ul class="header__menu">
                 {% if black_friday_turn_on == true %}
@@ -36,11 +37,22 @@
                 {% endfor %}
             </ul>
             <ul class="header__icons">
-                <li><a href="{{ shop.url }}/pages/loyalty-program"><i class="e-icon e-icon-gift"></i></a></li>
-                <li><a href="{{ shop.url }}/account/login"><i class="e-icon e-icon-user"></i></a></li>
+                <li>
+                    <a href="{{ shop.url }}/pages/loyalty-program" aria-label="loyalty program">
+                        {% comment %} <i class="e-icon e-icon-gift"></i> {% endcomment %}
+                        {% render '__svg-icon-gift' %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ shop.url }}/account/login" aria-label="login">
+                        {% comment %} <i class="e-icon e-icon-user"></i> {% endcomment %}
+                         {% render '__svg-icon-user' %}
+                    </a>
+                </li>
                 <li>
                     <a class="show-flyout-cart" id="cartCanvasBtn" href="javascript:;">
-                        <i class="e-icon e-icon-cart"></i>
+                        {% comment %} <i class="e-icon e-icon-cart"></i> {% endcomment %}
+                        {% render '__svg-icon-cart' %}
                         <div class="cart-count">{{ cart.item_count }}</div>
                     </a>
                 </li>

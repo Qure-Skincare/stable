@@ -13,7 +13,7 @@
                         <div class="c-wistia__custom">
                             <figure>
                                 {% if section.settings.image != blank %}
-                                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                                 {% endif %}
                                 {% if section.settings.text_on_image != blank %}
                                     <figcaption>
@@ -40,12 +40,6 @@
         </article>
     </div>
 </section>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("wistia-player", "https://fast.wistia.com/player.js");
-    });
-</script>
 <!-- BASE SECTION END -->
 
 {% schema %}

@@ -1,0 +1,20 @@
+{%- unless sapp_passthrough -%}
+  {%- if license_valid_liquid -%}
+    {%- include '__sapp-config-frontend' -%}
+    {% render '__sapp-lcp' %}
+    {%- if sapp_use_minified -%}
+      <script src="{{ '__sapp-bundle.min.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-custom.js' | asset_url }}" defer="defer"></script>
+    {%- else -%}
+      <script src="{{ '__sapp-runtime.js'  | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-observer.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-backend.js'  | asset_url }}" defer="defer"></script>
+      <script src="{{ '__sapp-custom.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    <link rel="stylesheet" href="{{ '__sapp-custom.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ '__sapp-custom.css' | asset_url }}"></noscript>
+
+    {% render '__sapp-fonts' %}
+  {%- endif -%}
+{%- endunless -%}

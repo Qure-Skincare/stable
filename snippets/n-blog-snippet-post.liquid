@@ -2,7 +2,7 @@
     <div class="c-post-tile">
         <a href="{{ article.url }}" class="c-post-tile__image">
             {% if article.image != blank %}
-                <img src="{{ article.image | image_url: width: 530, height: 300, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="530" height="300" />
+                <img loading="lazy" src="{{ article.image | image_url: width: 530, height: 300, crop: 'center' }}" alt="{{ article.image.alt | default: article.title | escape }}" width="530" height="300" />
             {% endif %}
             <div class="e-pill-badge e-pill-badge--sm">#all</div>
         </a>

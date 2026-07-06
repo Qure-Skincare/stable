@@ -56,7 +56,7 @@
                             {% endif %}
 
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ product_title | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ product_title | escape }}" />
                             {% endif %}
                         </div>
                         <article class="c-bundle-card__main">
@@ -79,10 +79,10 @@
                             <div class="e-pay-options">
                                 Buy Now, Pay Later available
                                 <ul>
-                                    <li><img src="https://qureskincaredns-stable.com/assets/images/klarna.svg" alt="Klarna" /></li>
-                                    <li><img src="https://qureskincaredns-stable.com/assets/images/sezzle.svg" alt="Sezzle" /></li>
-                                    <li><img src="https://qureskincaredns-stable.com/assets/images/afterpay.svg" alt="Afterpay" /></li>
-                                    <li><img src="https://qureskincaredns-stable.com/assets/images/flex.svg" alt="Flex" /></li>
+                                    <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/klarna.svg" alt="Klarna" /></li>
+                                    <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/sezzle.svg" alt="Sezzle" /></li>
+                                    <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/afterpay.svg" alt="Afterpay" /></li>
+                                    <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/flex.svg" alt="Flex" /></li>
                                 </ul>
                             </div>
                         </div>

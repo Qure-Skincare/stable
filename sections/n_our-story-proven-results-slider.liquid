@@ -42,7 +42,7 @@
                             <div class="c-visual-compare-card">
                                 <picture>
                                     {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                     {% endif %}
                                 </picture>
                                 <article>
@@ -60,10 +60,7 @@
                                                 {% liquid
                                                     assign product_alt = block.settings.product_image.alt | default: block.settings.product_title
                                                 %}
-                                                <img
-                                                    src="{{ block.settings.product_image | image_url }}"
-                                                    alt="{{ product_alt | escape }}"
-                                                />
+                                                <img loading="lazy" src="{{ block.settings.product_image | image_url }}" alt="{{ product_alt | escape }}" />
                                             {% endif %}
                                             <span>{{ block.settings.product_title }}</span>
                                             <i class="e-icon e-icon-arrow"></i>
@@ -83,11 +80,6 @@
         </div>
     </div>
 </section>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("base-slider", "https://qureskincaredns-stable.com/sections/base-slider/base-slider.js");
-    });
-</script>
 
 {% schema %}
 {

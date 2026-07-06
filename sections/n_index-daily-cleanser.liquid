@@ -9,7 +9,7 @@
             <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
         {% endif %}
         {% if section.settings.image_mobile != blank %}
-            <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+            <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
         {% endif %}
     </picture>
     <div class="container">
@@ -30,7 +30,7 @@
                     <div class="e-pill-badge e-pill-badge--fill">{{ block.settings.badge_text }}</div>
                 {% endif %}
                 {% if block.settings.image != blank %}
-                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                 {% endif %}
             </div>
         {% endif %}

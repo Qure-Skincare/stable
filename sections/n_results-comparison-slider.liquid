@@ -44,7 +44,7 @@
                             <div class="c-visual-compare-card">
                                 <picture>
                                     {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                     {% endif %}
                                 </picture>
                                 <article>
@@ -61,18 +61,13 @@
                 {% endfor %}
             </div>
             <div class="c-swiper-nav">
-                <button class="c-swiper-button-prev"></button>
+                <button class="c-swiper-button-prev" aria-label="prev"></button>
                 <div class="c-swiper-pagination"></div>
-                <button class="c-swiper-button-next"></button>
+                <button class="c-swiper-button-next" aria-label="next"></button>
             </div>
         </div>
     </div>
-</section>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('base-slider', 'https://qureskincaredns-stable.com/sections/base-slider/base-slider.js');
-    });
-</script>  
+</section>  
 <!-- BASE SLIDER END -->
 
 

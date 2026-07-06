@@ -37,7 +37,7 @@
                     {% if block.type == 'section' %}
                         <div class="swiper-slide">
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% endif %}
                             {{ block.settings.heading }}
                             {{ block.settings.text }}
@@ -46,9 +46,9 @@
                 {% endfor %}
             </div>
             <div class="c-swiper-nav">
-                <button class="c-swiper-button-prev"></button>
+                <button class="c-swiper-button-prev" aria-label="prev"></button>
                 <div class="c-swiper-pagination"></div>
-                <button class="c-swiper-button-next"></button>
+                <button class="c-swiper-button-next" aria-label="next"></button>
             </div>
         </div>
         {% if section.settings.button_label != blank and section.settings.button_url != blank %}
@@ -59,10 +59,8 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("base-slider", "https://qureskincaredns-stable.com/sections/base-slider/base-slider.js");
         loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
         loadScriptOnce("youtube-popup", "https://qureskincaredns-stable.com/assets/js/yt-popup.js");
-        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
     });
 </script>
 <!-- BASE SLIDER END -->

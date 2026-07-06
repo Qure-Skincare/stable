@@ -25,7 +25,7 @@
     </p>
     {% if block.settings.image_product1 != blank %}
         <figure>
-            <img src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
+            <img loading="lazy" src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
             <figcaption class="e-pill-badge e-pill-badge--sm">{{ product_sale_price }}</figcaption>
         </figure>
     {% endif %}
@@ -33,7 +33,7 @@
     {% include 'get-product-data', product_handle: block.settings.product2, product_prefix: 'product-exclusive-offer-' %}
     <figure>
         {% if block.settings.image_product2 != blank %}
-            <img src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
+            <img loading="lazy" src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
         {% endif %}
         <figcaption class="e-pill-badge e-pill-badge--sm">
             <del>{{ product_sale_price }}</del>

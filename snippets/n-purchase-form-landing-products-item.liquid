@@ -85,7 +85,7 @@
                                 <div class="c-supply-selector__main">
                                     {% if block.settings.image != blank %}
                                         <picture class="c-supply-selector__image">
-                                            <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            <img loading="lazy" src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.image.alt | escape }}" />
                                         </picture>
                                     {% endif %}
 

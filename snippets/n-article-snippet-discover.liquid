@@ -5,7 +5,7 @@
 <figure class="inline-promo-card">
     <picture>
         <source media="(min-width:768px)" srcset="{{ 'article.snippets.discover.image' | t }}" />
-        <img src="{{ 'article.snippets.discover.image' | t }}" alt="{{ 'article.snippets.discover.image.alt' | t | escape }}" />
+        <img loading="lazy" src="{{ 'article.snippets.discover.image' | t }}" alt="{{ 'article.snippets.discover.image.alt' | t | escape }}" />
     </picture>
     <figcaption>
         {{ 'article.snippets.discover.header_html' | t }}

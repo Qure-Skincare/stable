@@ -39,7 +39,7 @@
                                             {% if block.settings.image != blank %}
                                                 {% assign image_url = block.settings.image | image_url %}
                                                 {% assign image_alt = block.settings.image.alt | escape %}
-                                                {% assign image_tag = '<picture><img src="' | append: image_url | append: '" alt="' | append: image_alt | append: '" /></picture>' %}
+                                                {% assign image_tag = '<picture><img loading="lazy" src="' | append: image_url | append: '" alt="' | append: image_alt | append: '" /></picture>' %}
                                                 {{ block.settings.text | replace: '<p>[image]</p>', image_tag }}
                                             {% else %}
                                                 {{ block.settings.text }}

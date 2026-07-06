@@ -47,22 +47,23 @@
                     {% endif %}
                     <div class="swiper-slide">
                         <div class="slide-image">
-                            <img src="{{ media | img_url: '720x' }}" alt="{{ title }}" data-url="{{ video_source_url }}" class="lvideo" />
+                            <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ title }}" data-url="{{ video_source_url }}" class="lvideo" />
                         </div>
                     </div>
                 {% else %}
                     <div class="swiper-slide">
                         <div class="slide-image">
-                            <img src="{{ media | img_url: '720x' }}" alt="{{ title | escape }}" data-product-handle="{{ title | escape }}" />
+                            <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ title | escape }}" data-product-handle="{{ title | escape }}" />
                             {% if watch_objects[index] != blank and watch_objects[index] != 'none' %}
-                                <div
-                                    class="watch-how-it-works watch-wistia-video"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#reusableWistiaModal"
-                                    data-video-id="{{ watch_objects[index] }}"
-                                >
-                                    <i class="e-icon e-icon-watch"></i>
-                                    <div><strong>Watch:</strong> How It Works</div>
+                                <div class="c-wistia c-wistia--custom">
+                                    <wistia-player media-id="{{ watch_objects[index] }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                        <div class="c-wistia__custom">
+                                            <a class="c-wistia__link" href="javascript:;">
+                                                <i class="e-icon e-icon-watch"></i>
+                                                <span><strong>Watch:</strong> How It Works</span>
+                                            </a>
+                                        </div>
+                                    </wistia-player>
                                 </div>
                             {% endif %}
                         </div>

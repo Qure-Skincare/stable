@@ -17,7 +17,7 @@
                     <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
                         {% if section.settings.video_image_cover != blank %}
                             <picture>
-                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                             </picture>
                         {% endif %}
                         {% if section.settings.text_on_image != blank %}
@@ -32,7 +32,7 @@
                     <figure class="lvideo"{% if section.settings.video_url != blank %} data-url="{{ section.settings.video_url }}"{% endif %}>
                         {% if section.settings.video_image_cover != blank %}
                             <picture>
-                                <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                             </picture>
                         {% endif %}
                         {% if section.settings.text_on_image != blank %}
@@ -62,7 +62,6 @@
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
         loadScriptOnce("youtube-popup", "https://qureskincaredns-stable.com/assets/js/yt-popup.js");
         loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
-        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
     });
 </script>
 

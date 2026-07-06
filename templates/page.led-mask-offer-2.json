@@ -35,6 +35,7 @@
         },
         "nextships_4QXeV7": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
             "date": "30th June",
             "percent": 76,
@@ -56,11 +57,12 @@
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
         "rating": false,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
-        "reserved": true,
+        "reserved": false,
         "soldout": false,
-        "button-label": "Reserve Now & Save $299",
+        "button-label": "Buy Now & Save $299",
         "button-url": "#buy-form"
       }
     },
@@ -1118,7 +1120,7 @@
         "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED System",
         "text": "1,893 purchased in last 48 hours",
         "limited": false,
-        "button-label": "RESERVE NOW & SAVE $299",
+        "button-label": "BUY NOW & SAVE $299",
         "button-url": "#buy-form"
       }
     }

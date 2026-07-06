@@ -12,7 +12,7 @@
             <source media="(min-width: 768px)" srcset="{{ section.settings.image | image_url }}" />
         {% endif %}
         {% if section.settings.image_mobile != blank %}
-            <img src="{{ section.settings.image_mobile | image_url }}" />
+            <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" />
         {% endif %}
     </picture>
     <div class="container">

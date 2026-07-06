@@ -104,7 +104,7 @@
                                     {% if section.settings.type != 'list' %}
                                         {% if block.settings.image != blank %}
                                             <picture class="c-supply-selector__image">
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                             </picture>
                                         {% endif %}
                                     {% endif %}

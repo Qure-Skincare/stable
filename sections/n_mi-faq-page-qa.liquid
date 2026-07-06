@@ -19,7 +19,7 @@
                     {{ section.settings.heading }}
                     {% if section.settings.image != blank %}
                         <picture>
-                            <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy" />
+                            <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                         </picture>
                     {% endif %}
                     {{ section.settings.text }}
@@ -29,7 +29,7 @@
                         <div class="cta-box">
                             {% if block.settings.image != blank %}
                                 <div class="cta-box__image">
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 </div>
                             {% endif %}
                         

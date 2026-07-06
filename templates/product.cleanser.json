@@ -56,6 +56,7 @@
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
         "heading": "Daily Cleansing Gel",
         "rating": false,
+        "rating_type": "customers",
         "limited": false,
         "description": "<p>The cleanser that doesn’t steal your moisture. Formulated with 50% glycerin instead of water, it cleanses in a way that leaves skin feeling hydrated, calm, and never tight.</p>",
         "reserved": false,
@@ -74,44 +75,23 @@
         "product_type_NEgEkq": {
           "type": "product_type",
           "settings": {
-            "heading": "",
-            "preselected": true
-          }
-        },
-        "product_gbPf3D1": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser-6-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "3 bottles",
-            "text": "",
-            "image": "shopify://shop_images/cleanser-selector-trio.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 0
+            "heading": "One time purchase",
+            "preselected": false
           }
         },
         "product_NEgEkq2": {
           "type": "product",
           "settings": {
             "product": "cleanser-4-month-bundle",
-            "product_variant_id": 0,
+            "product_variant_id": 48762730152175,
             "product_selling_plan": 0,
             "popular": false,
             "best": false,
             "preselected": false,
             "heading": "4 Months Supply",
             "subheading": "2 bottles",
-            "text": "",
+            "product_selling_plan_text": "120 Days Supply",
+            "text": "120 Days Supply",
             "image": "shopify://shop_images/cleanser-selector-duo.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -126,13 +106,14 @@
           "type": "product",
           "settings": {
             "product": "cleanser",
-            "product_variant_id": 0,
+            "product_variant_id": 48762174767343,
             "product_selling_plan": 0,
             "popular": false,
             "best": false,
             "preselected": false,
             "heading": "2 Months Supply",
             "subheading": "1 bottle",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/cleanser-selector-uno.webp",
             "product_discount_percent": 0,
@@ -143,18 +124,131 @@
             "preorder_date_reserved": "",
             "preorder_percent": 0
           }
+        },
+        "product_gbPf3D1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "cleanser-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "3 bottles",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-trio.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
+          }
+        },
+        "type_hX844i": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_TFajGU": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Subscribe & Save",
+            "preselected": true
+          }
+        },
+        "product_R7GWDT": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser-4-month-bundle",
+            "product_variant_id": 48762730152175,
+            "product_selling_plan": 8853324015,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "120 Days Supply",
+            "subheading": "(2 bottles)",
+            "product_selling_plan_text": "Ships every 4 months",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-duo.webp",
+            "product_discount_percent": 23,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_HdPftG": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "product_variant_id": 48762174767343,
+            "product_selling_plan": 8853291247,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "60 Days Supply",
+            "subheading": "(1 bottle)",
+            "product_selling_plan_text": "Ships every 2 months",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-uno.webp",
+            "product_discount_percent": 10,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_dDiAPk": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "cleanser-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "",
+            "subheading": "",
+            "product_selling_plan_text": "",
+            "text": "",
+            "product_discount_percent": 20,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
         }
       },
       "block_order": [
         "type_bPf3D2",
         "product_type_NEgEkq",
-        "product_gbPf3D1",
         "product_NEgEkq2",
-        "product_RBCPe11"
+        "product_RBCPe11",
+        "product_gbPf3D1",
+        "type_hX844i",
+        "product_type_TFajGU",
+        "product_R7GWDT",
+        "product_HdPftG",
+        "product_dDiAPk"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 31,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -168,6 +262,8 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h2>A cleanser that restores what others remove</h2>",
         "text": "<p>Most cleansers leave skin feeling tight.</p><p>That feeling isn’t clean - it’s moisture loss.</p><p>Many cleansers rely on strong surfactants to create a foamy, squeaky clean feel, often at the expense of your skin barrier.</p><p>Our cleanser is different. Instead of relying on water alone, the formula is powered by 50% glycerin, a moisture loving ingredient that helps skin hold onto hydration while you cleanse.</p>",
         "sub_text": "",
@@ -472,6 +568,27 @@
         "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
       }
     },
+    "17830002457c285fc3": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_UH8KqJ": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_UH8KqJ"
+      ],
+      "settings": {}
+    },
     "n_faq_cleanser": {
       "type": "n_faq",
       "blocks": {
@@ -537,6 +654,7 @@
     "n_features_marquee_cleanser",
     "n_accordion_tiles_square_cleanser",
     "n_page_microinfusion_complete_system_cleanser",
+    "17830002457c285fc3",
     "n_faq_cleanser"
   ]
 }

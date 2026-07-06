@@ -131,6 +131,7 @@
         "image-with-text": "Image with text",
         "username": "Username",
         "image": "Image",
+        "mobile-image": "Mobile image",
         "email-image": "Email image",
         "country-image": "Country image",
         "hover-image": "Hover image",
@@ -333,7 +334,8 @@
         "best-seller": "Best seller",
         "trending": "Trending",
         "flex": "Flex",
-        "arrow-button": "Arrow button"
+        "arrow-button": "Arrow button",
+        "web-video": "Web video"
     },
     "blocks": {
         "block-card": {
@@ -387,6 +389,8 @@
                     "sm": "Small banner",
                     "holidays-secondary": "Holidays secondary",
                     "fathers-day": "Fathers day",
+                    "fourth-of-july": "Fourth of July",
+                    "qure-birthday": "Qure birthday",
                     "doctorly": "Doctorly"
                 },
                 "badge-group": {
@@ -407,6 +411,12 @@
                 },
                 "bottles": {
                     "name": "Bottles (doctorly)"
+                },
+                "stars_image": {
+                    "name": "Stars image"
+                },
+                "treatment_result_badge": {
+                    "name": "Treatment result badge"
                 }
             }
         },
@@ -440,7 +450,8 @@
                 "modifier-options": {
                     "none": "None",
                     "holidays": "Holidays",
-                    "easter": "Easter"
+                    "easter": "Easter",
+                    "qure-birthday": "Qure birthday"
                 }
             }
         },

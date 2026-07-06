@@ -22,7 +22,7 @@
                     <div class="wistia_responsive_wrapper">
                       <div class="wistia_embed wistia_async_{{ block.settings.wistia_url }} seo=false videoFoam=true">
                         <div class="wistia_swatch">
-                          <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_url }}/swatch" alt="Watch: Doctorly">
+                          <img loading="lazy" src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_url }}/swatch" alt="Watch: Doctorly">
                         </div>
                       </div>
                     </div>
@@ -30,7 +30,7 @@
                 </div>
               {% endif %}
               {% if block.settings.image != blank %}
-                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}">
+                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}">
               {% endif %}
             </div>
           {%- endif -%}

@@ -88,7 +88,7 @@ const updateSection = (section_id, targetElement) => {
     const currentDrawer = document.getElementById(targetElement);
     if (!currentDrawer) return;
 
-    return fetch(location.pathname + '/?section_id=' + section_id)
+    return fetch(location.pathname + '/?section_id=' + section_id, { priority: 'high' })
             .then(res => res.text())
             .then(html => {
                 const temp = document.createElement('div');
@@ -128,13 +128,14 @@ const showCart = () => {
 const addToCart = (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
         method: 'POST',
+        priority: 'high',
         body: input
     })
     .then(response => response.json())
     .then(() => {
         toogleGift().then(() => {
             if (typeof footer_cart_drawer_discount !== 'undefined' && footer_cart_drawer_discount) {
-                fetch('/discount/' + footer_cart_drawer_discount).then(async () => {
+                fetch('/discount/' + footer_cart_drawer_discount, { priority: 'high' }).then(async () => {
                     const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCart' } });
                     document.dispatchEvent(event);
                 });
@@ -153,6 +154,7 @@ const addToCart = (input) => {
 const addToCartJson = (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
         method: 'POST',
+        priority: 'high',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: input })
     })
@@ -160,7 +162,7 @@ const addToCartJson = (input) => {
     .then(() => {
         toogleGift().then(() => {
             if (typeof footer_cart_drawer_discount !== 'undefined' && footer_cart_drawer_discount) {
-                fetch('/discount/' + footer_cart_drawer_discount).then(async () => {
+                fetch('/discount/' + footer_cart_drawer_discount, { priority: 'high' }).then(async () => {
                     const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartJson' } });
                     document.dispatchEvent(event);
                 });
@@ -179,6 +181,7 @@ const addToCartJson = (input) => {
 const changeCart = (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/change.js', {
         method: 'POST',
+        priority: 'high',
         body: input
     })
     .then(response => response.json())
@@ -204,6 +207,7 @@ const changeCart = (input) => {
 const clearCart = () => {
     fetch((window.Shopify?.routes?.root || '/') + 'cart/clear.js', {
         method: 'POST',
+        priority: 'high',
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
@@ -220,7 +224,7 @@ const clearCart = () => {
 }
 
 const getCartState = () => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart.js')
+    return fetch((window.Shopify?.routes?.root || '/') + 'cart.js', { priority: 'high' })
             .then(response => response.json())
             .then(cart => {
                 console.log('Cart state:', cart);
@@ -324,6 +328,7 @@ const toogleGift = async () => {
 const updateCart = async (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/update.js', {
         method: 'POST',
+        priority: 'high',
         body: input
     })
     .then(response => {
@@ -338,6 +343,7 @@ const updateCart = async (input) => {
 const addToCartMany = (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
         method: 'POST',
+        priority: 'high',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: input })
     })
@@ -354,6 +360,7 @@ const addToCartMany = (input) => {
 const updateCartMany = (updates) => {
     return fetch(window.Shopify.routes.root + 'cart/update.js', {
         method: 'POST',
+        priority: 'high',
         headers: {
           'Content-Type': 'application/json'
         },

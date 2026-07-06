@@ -22,7 +22,7 @@
 
                 <div class="c-upsell-card">
                     <picture>
-                        <img src="{{ product_featured_image | img_url: '400x' }}" alt="{{ product_title | escape }}" />
+                        <img loading="lazy" src="{{ product_featured_image | img_url: '400x' }}" alt="{{ product_title | escape }}" />
                     </picture>
                     {% if block.settings.badge_text != blank %}
                         <small>{{ block.settings.badge_text }}</small>

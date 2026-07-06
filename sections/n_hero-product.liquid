@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="c-swiper-thumbs-nav">
-                <button class="c-swiper-button-prev"></button>
+                <button class="c-swiper-button-prev" aria-label="prev"></button>
                 <div
                     class="c-swiper c-swiper-thumbs"
                     data-swiper='{
@@ -49,7 +49,7 @@
                         {% endif %}
                     </div>
                 </div>
-                <button class="c-swiper-button-next"></button>
+                <button class="c-swiper-button-next" aria-label="next"></button>
             </div>
         </div>
         <div class="hero-product__main">
@@ -85,7 +85,7 @@
                         {% for block in section.blocks %}
                             {% if block.type == 'certified-box' %}
                                 {% if block.settings.image !=blank %}
-                                    <li><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></li>
+                                    <li><img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></li>
                                 {% endif %}
                                 {% if block.settings.text != blank %}
                                     <li>{{ block.settings.text }}</li>
@@ -105,14 +105,12 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("swiper", "https://qureskincaredns-stable.com/assets/js/swiper.js");
         loadScriptOnce("countdown", "https://qureskincaredns-stable.com/assets/js/countdown.js");
         loadScriptOnce("youtube-popup", "https://qureskincaredns-stable.com/assets/js/yt-popup.js");
         loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
-        loadScriptOnce("wistia-script", "https://fast.wistia.com/assets/external/E-v1.js");
         loadScriptOnce("gallery-sticky-video", "https://qureskincaredns-stable.com/assets/js/gallery-sticky-video.js");
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
-        loadScriptOnce('n_bundle-header', '{{ 'n_bundle-header.js' | asset_url }}');
+        loadScriptOnce('n_bundle-header', '{{ 'n-bundle-header.js' | asset_url }}');
     });
 </script>
 <!-- HERO PRODUCT END -->

@@ -111,6 +111,7 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "use_own_file": false,
@@ -166,6 +167,7 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "settings": {
         "use_own_file": false,
         "hidden": true,
@@ -1295,7 +1297,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
             "preselected": true,
-            "heading": "6 Month Supply",
+            "heading": "6 Month Supply 4th July Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_6_month_DS.webp",
@@ -1380,7 +1382,7 @@
           "type": "product_type_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>GHK-Cu (Copper Peptide):</strong>A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
         "product_nyJ9n7": {
@@ -1390,7 +1392,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
             "preselected": true,
-            "heading": "6 Month Supply",
+            "heading": "6 Month Supply 4th July Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_6_month_W.webp",
@@ -1475,7 +1477,7 @@
           "type": "product_type_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Dark Spots Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/><strong>Wrinkles Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+            "text": "<p><strong>Dark Spots Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/><strong>Wrinkles Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
         "product_gbPf3J": {
@@ -1485,7 +1487,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
             "preselected": true,
-            "heading": "6 Month Supply",
+            "heading": "6 Month Supply 4th July Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
@@ -1699,6 +1701,13 @@
             "text": "<p>You get to experience minimal discomfort and maximum results with Qure's Micro-Infusion System.</p><p>Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>"
           }
         },
+        "accordion_G6DcYV": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Has the Micro-Infusion System been clinically evaluated for safety?",
+            "text": "<p>Yes. The Micro-Infusion System for Dark Spots and for Wrinkles underwent an independent clinical evaluation of dermatologic safety-in-use conducted by a Board-Certified Dermatologist. <br/><br/>31 subjects spanning all Fitzpatrick skin types (I–VI) completed the evaluation with no adverse reactions reported or observed. The products were deemed safe for their intended use.</p>"
+          }
+        },
         "accordion_XKGkaz": {
           "type": "accordion",
           "settings": {
@@ -1753,6 +1762,7 @@
         "accordion_hMHBPN",
         "accordion_x4LCUw",
         "accordion_pRtaH3",
+        "accordion_G6DcYV",
         "accordion_XKGkaz",
         "accordion_yEYwDi",
         "accordion_RaEjnm",

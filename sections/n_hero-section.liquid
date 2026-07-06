@@ -12,7 +12,7 @@
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
             {% endif %}
             {% if section.settings.image_mobile != blank %}
-                <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                <img loading="eager" fetchpriority="high" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
             {% endif %}
         </picture>
         <article class="hero-section__content">
@@ -27,7 +27,7 @@
                         <ul>
                             {% for block in section.blocks %}
                                 {% if block.type == 'approved-by' %}
-                                    <li><img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></li>
+                                    <li><img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></li>
                                 {% endif %}
                             {% endfor %}
                         </ul>
@@ -86,7 +86,7 @@
                             data-bs-toggle="modal"
                             data-bs-target="#shower2"
                         >
-                            <img src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                            <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                         </picture>
                     {% endif %}
                 </div>

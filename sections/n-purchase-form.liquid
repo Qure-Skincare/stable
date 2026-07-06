@@ -4,7 +4,8 @@
 
 {% include 'assoc-array', section: section, __parent_title: 'type', __separator: '###' %}
 
-<link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/treatment/treatment.css">
+<link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/treatment/treatment.css" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/treatment/treatment.css" /></noscript>
 
 <section id="purchase-form" class="treatment {{ section.id }} {% if section.settings.available-stocks %}treatment--announcement{% endif %}" data-announcement="{{ 'purchase-form.settings.available-stocks' | t }}">
     <div class="container">
@@ -19,7 +20,7 @@
 
             {% if section.settings.image != blank %}
                 <picture>
-                    <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" id="purchase_form_image" />
+                    <img loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" id="purchase_form_image" />
                 </picture>
             {% endif %}
         </article>

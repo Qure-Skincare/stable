@@ -18,7 +18,7 @@
         <div class="science-backed__content">
             {% if section.settings.image != blank %}
                 <picture>
-                    <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
                 </picture>
             {% endif %}
             {% if section.settings.text_mobile != blank %}
@@ -28,7 +28,7 @@
             {% endif %}
             <div class="science-backed__data">
                 {% if section.settings.left_image != blank %}
-                    <img src="{{ section.settings.left_image | image_url }}" alt="{{ section.settings.left_image.alt | escape }}" />
+                    <img loading="lazy" src="{{ section.settings.left_image | image_url }}" alt="{{ section.settings.left_image.alt | escape }}" />
                 {% endif %}
                 {{ section.settings.left_heading }}
                 {% assign has_left_text_with_image = false %}
@@ -80,7 +80,7 @@
                             {{ block.settings.text }}
                             {% if block.settings.country_image != blank and block.settings.username != blank %}
                                 <div class="e-author">
-                                    <img src="{{ block.settings.country_image | image_url }}" alt="{{ block.settings.country_image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.country_image | image_url }}" alt="{{ block.settings.country_image.alt | escape }}" />
                                     {{ block.settings.username }}
                                 </div>
                             {% endif %}
@@ -110,7 +110,7 @@
             {% if has_right_text_with_image %}
                 <div class="science-backed__data">
                     {% if section.settings.right_image != blank %}
-                        <img src="{{ section.settings.right_image | image_url }}" alt="{{ section.settings.right_image.alt | escape }}" />
+                        <img loading="lazy" src="{{ section.settings.right_image | image_url }}" alt="{{ section.settings.right_image.alt | escape }}" />
                     {% endif %}
                     {{ section.settings.right_heading }}
                     <ul>
@@ -152,7 +152,7 @@
                                 {{ block.settings.text }}
                                 {% if block.settings.country_image != blank and block.settings.username != blank %}
                                     <div class="e-author">
-                                        <img src="{{ block.settings.country_image | image_url }}" alt="{{ block.settings.country_image.alt | escape }}" />
+                                        <img loading="lazy" src="{{ block.settings.country_image | image_url }}" alt="{{ block.settings.country_image.alt | escape }}" />
                                         {{ block.settings.username }}
                                     </div>
                                 {% endif %}

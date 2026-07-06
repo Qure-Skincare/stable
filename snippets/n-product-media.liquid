@@ -18,11 +18,11 @@
                 {% assign video_source_url = media.sources[0].url %}
             {% endif %}
             <div class="swiper-slide">
-                <img src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
+                <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ title }}" data-url="{{ video_source_url }}" {% if thumbnails == false %}class="lvideo"{% endif %} />
             </div>
         {% else %}
             <div class="swiper-slide">
-                <img src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}">
+                <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}">
             </div>
         {% endif %}
     {% endfor %}

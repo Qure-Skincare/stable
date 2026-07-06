@@ -19,6 +19,7 @@
         },
         "price_A11": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_discount": false
           }
@@ -111,17 +112,18 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "product": "",
         "reverse": false,
         "seo_heading": "MICRO-INFUSION DART PATCHES",
         "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Reduces appearance of fine lines and wrinkles, under-eye darkness, and puffiness. </li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients beyond the surface for faster results.</li><li>Science backed, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
-        "button-url": "",
-        "approved": false
+        "button-url": ""
       }
     },
     "purchase-form-landing": {
@@ -159,6 +161,7 @@
             "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
             "product_selling_plan_text": "",
+            "text": "",
             "image": "shopify://shop_images/24-pairs.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -181,6 +184,7 @@
             "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
             "product_selling_plan_text": "",
+            "text": "",
             "image": "shopify://shop_images/16-pairs.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -203,6 +207,7 @@
             "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
             "product_selling_plan_text": "",
+            "text": "",
             "image": "shopify://shop_images/8-pairs.webp",
             "product_discount_percent": 0,
             "soldout": false,
@@ -236,6 +241,7 @@
             "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
             "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
             "image": "shopify://shop_images/24-pairs.webp",
             "product_discount_percent": 20,
             "soldout": false,
@@ -258,6 +264,7 @@
             "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
             "product_selling_plan_text": "Ships every 2 months",
+            "text": "",
             "image": "shopify://shop_images/16-pairs.webp",
             "product_discount_percent": 11,
             "soldout": false,
@@ -280,6 +287,7 @@
             "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
             "product_selling_plan_text": "Ships every 1 month",
+            "text": "",
             "image": "shopify://shop_images/8-pairs.webp",
             "product_discount_percent": 10,
             "soldout": false,
@@ -306,12 +314,16 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing",
+        "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
-        "hide_types": true,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30"
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_press_reviews_tDbz84": {
@@ -997,7 +1009,8 @@
         "modifier": "none",
         "text": "<h2>Our customer reviews</h2>",
         "button_label": "",
-        "button_url": ""
+        "button_url": "",
+        "arrow_button": false
       }
     },
     "175741252380d3b57f": {

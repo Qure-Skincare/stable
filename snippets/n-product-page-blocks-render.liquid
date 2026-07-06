@@ -30,7 +30,7 @@
         {% when 'limited-offer' %}
             {% render 'n-product-limited-time-offer', section: section, block: block %}
         {% when 'black-friday-discount' %}
-            {% render 'n-product-page-black-friday-discount', section: section, block: block %}
+            {% render 'n-product-page-black-friday-discount', section: section, block: block, black_friday_discount_percent: black_friday_discount_percent %}
         {% when 'exclusive-offer' %}
             {% include 'n-product-exclusive-offer', section: section, block: block %}
         {% when 'exclusive-offer-bundle' %}

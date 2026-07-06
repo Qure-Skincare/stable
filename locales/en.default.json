@@ -292,7 +292,7 @@
         "shipping": "Free US Shipping over $100",
         "science": "Backed by Science",
         "discount_text": "OFF",
-        "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='/pages/subscriptions' class='text-black text-decoration-underline'> See more details</a>."
+        "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='/pages/subscriptions' class='text-black text-decoration-underline' aria-label='see more'> See more details</a>."
       }
     },
     "page-led-mask-offer-2-led-mask-form": {
@@ -312,11 +312,11 @@
         "low-stock": "Out Of Stock- Pre Order Now ",
         "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
         "order-today": " Order today to lock in your deal and get FREE Shipping",
-        "button-label": "Reserve Now & Save $299",
+        "button-label": "Buy Now & Save $299",
         "guarantee-text": "90-Day Money-Back Guarantee",
         "shipping-text": "Free US Shipping over $100",
         "free": "FREE",
-        "button-text": "Reserve Now",
+        "button-text": "Buy Now",
         "discount-text": "% OFF",
         "sold": "Sold",
         "percent": "82%"
@@ -433,7 +433,7 @@
       "coming_soon": "Coming soon",
       "buy-button-bottom": {
         "heading_html": "OR pay 4 monthly payments of <span class='pay_today'>{{ product_price_divided }}</span> with",
-        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
+        "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline' aria-label='see more'>See More</a>.",
         "recommended_no_link_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.",
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "guaranteed_text_90": "90-Day Money-Back Guarantee",
@@ -613,8 +613,8 @@
     "settings": {
       "available-stocks": "Available until stocks last!",
       "buy-button-label": "Buy Now",
-      "subscribe-button-label": "Subscribe Now",
-      "subscribe-and-save-button-label": "Subscribe Now & Save {{ value }}%",
+      "subscribe-button-label": "Start My Treatment",
+      "subscribe-and-save-button-label": "Subscribe & Save {{ value }}%",
       "reserve-and-save-button-label": "Pre-Order Now & Save {{ value }}%",
       "reserve-button-label": "Pre-Order Now",
       "soldout-button-label": "Sold Out",
@@ -733,7 +733,7 @@
       "exclusive-bundles_html": "<strong>EXCLUSIVE</strong> BUNDLES",
       "easy-returns": "Easy 30-Day Returns",
       "shipping-text": "Free US Shipping",
-      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline'>See More</a>.",
+      "recommended_html": "<strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients. <a href='https://qureskincare.com/pages/derm-reviews' class='text-black text-decoration-underline' aria-label='see more'>See More</a>.",
       "bf_badge_image": "black-friday-silver-badge.webp"
     }
   },

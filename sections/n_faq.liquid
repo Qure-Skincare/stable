@@ -21,7 +21,7 @@
                                 <article class="c-accordion__content">
                                     {{ block.settings.text }}
                                     {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                     {% endif %}
                                 </article>
                             {% endif %}

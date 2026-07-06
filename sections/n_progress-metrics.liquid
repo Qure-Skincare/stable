@@ -38,7 +38,7 @@
                                 <div class="c-visual-compare-card">
                                     {% if block.settings.image != blank %}
                                         <picture>
-                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         </picture>
                                     {% endif %}
                                     {% if block.settings.text != blank %}
@@ -53,9 +53,9 @@
                     {% endfor %}
                 </div>
                 <div class="c-swiper-nav">
-                    <button class="c-swiper-button-prev"></button>
+                    <button class="c-swiper-button-prev" aria-label="prev"></button>
                     <div class="c-swiper-pagination"></div>
-                    <button class="c-swiper-button-next"></button>
+                    <button class="c-swiper-button-next" aria-label="next"></button>
                 </div>
             </div>
         {% endif %}
@@ -69,7 +69,7 @@
                     {% for block in section.blocks %}
                         {% if block.type == 'image' %}
                             {% assign image_tab_index = image_tab_index | plus: 1 %}
-                            <li>
+                            <li role="tab">
                                 <button {% if image_tab_index == 1 %}class="active"{% endif %} type="button" data-bs-toggle="tab" data-bs-target="#pill-tabs-{{ block.settings.heading | strip | handleize }}">{{ block.settings.heading }}</button>
                             </li>
                         {% endif %}
@@ -81,7 +81,7 @@
                         {% assign image_pane_index = image_pane_index | plus: 1 %}
                         <div class="c-pill-tabs__pane{% if image_pane_index == 1 %} show{% endif %}" id="pill-tabs-{{ block.settings.heading | strip | handleize }}">
                             {% if block.settings.image != blank %}
-                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                             {% endif %}
                         </div>
                     {% endif %}

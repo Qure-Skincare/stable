@@ -8,5 +8,5 @@
 {% enddoc %}
 
 <div class="best-sellers__item">
-    <a class="best-sellers__card" href="{% if block.settings.button-url != blank %}{{ block.settings.button-url }}{% else %}#{% endif %}">{% if block.settings.image != blank %}<img src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image.alt | escape }}" />{% endif %}</a>
+    <a class="best-sellers__card" href="{% if block.settings.button-url != blank %}{{ block.settings.button-url }}{% else %}#{% endif %}">{% if block.settings.image != blank %}<img loading="lazy" src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image.alt | escape }}" />{% endif %}</a>
 </div>

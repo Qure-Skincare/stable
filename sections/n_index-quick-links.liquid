@@ -28,7 +28,7 @@
                         <div class="swiper-slide">
                             <a href="{{ block.settings.url }}">
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
                                 {% if block.settings.heading != blank %}
                                     <span>{{ block.settings.heading }}</span>

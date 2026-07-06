@@ -1,0 +1,100 @@
+<script class="sapp-init" type="application/json" id="sapp-config">
+{
+  "license": {
+    "host": {{ shop.permanent_domain | json }},
+    "token": {{ sapp_license_token | json }},
+    "expiresAt": {{ sapp_license_expires }}
+  },
+  "debug": false,
+  "timeouts": {
+    "mobile":  { "preload": "1000", "scripts": "3500", "embeds": "4500", "other": "1000", "async": "5500" },
+    "desktop": { "preload": "500", "scripts": "3500", "embeds": "4500", "other": "1000", "async": "5500" }
+  },
+  {%- comment -%}
+    OPTIONAL slow-connection profile. The backend selects it at start time when
+    the measured network is slow (window.__sapp.net.slow — from the LCP/document
+    throughput probe), or when forced via ?sappconn=slow. Omit the block to always
+    use `timeouts`. Here the heavy queues are pushed far back so on a weak link
+    the pipe and main thread stay clear during the early-interaction window
+    (e.g. add-to-cart, which is LCP-lane and unaffected); set a queue to "none"
+    to skip it entirely for slow users. Must differ from `timeouts` to matter.
+  {%- endcomment -%}
+  "timeoutsSlow": {
+    "mobile":  { "preload": "2500", "scripts": "6000", "embeds": "10000", "other": "3000", "async": "12000" },
+    "desktop": { "preload": "2000", "scripts": "6000", "embeds": "10000", "other": "3000", "async": "12000" }
+  },
+  {%- comment -%}
+    "*" applies to every queue (a per-queue key overrides it). stagger trickles a
+    queue's scripts one-by-one with a fixed gap instead of firing the whole batch
+    at once — fewer simultaneous downloads (bandwidth stays free for user actions
+    like add-to-cart) and spread-out execution (main thread stays responsive).
+  {%- endcomment -%}
+  "queueOptions": {
+    "*":       { "stagger": 50, "burst": 5, "slice": 30 },
+    "scripts": { "stagger": 50, "burst": 1, "slice": 30 },
+    "embeds": { "stagger": 50, "burst": 3, "slice": 30 },
+    "async":   { "stagger": 100, "burst": 1, "slice": 30 }
+  },
+  {%- comment -%}
+    OPTIONAL gentler pacing for slow connections — selected at queue-run time by
+    the same trigger as timeoutsSlow (measured window.__sapp.net.slow, or forced
+    via ?sappconn=slow). Slow link ≈ narrow pipe + weak CPU, so: smaller burst
+    (fewer simultaneous downloads), larger stagger (more breathing room), smaller
+    slice (yield to input sooner). Omit this block to use `queueOptions` always.
+  {%- endcomment -%}
+  "queueOptionsSlow": {
+    "*":       { "stagger": 100, "burst": 3, "slice": 12 },
+    "scripts": { "stagger": 100, "burst": 1, "slice": 12 },
+    "async":   { "stagger": 200, "burst": 1, "slice": 12 }
+  },
+  "dispatchSyntheticEvents": true,
+  "defaultMediaTrigger": "scroll",
+  "rules": [
+    { 
+      "match": { "innerHTML": "ShopifyAnalytics" },
+      "queue": "loaded",
+      "trigger": "timeout"
+    },
+    { 
+      "match": { "innerHTML": "gtm.js" },
+      "queue": "preload",
+      "trigger": "timeout"
+    },
+    { 
+      "match": { "id": "web-pixels-manager-setup" },
+      "queue": "other",
+      "trigger": "timeout"
+    },
+    {%- comment -%} Triggers are scroll/touchstart only — NO `click`/`mousemove` — so the add-to-cart
+      click (and desktop hover) never wakes these heavier third parties on the cart interaction. The
+      reviews widget (widget.min.js) is additionally kicked by the rating-anchor fix in __sapp-custom.js
+      on a rating click, since there is no `click` trigger to load it for that flow. {%- endcomment -%}
+    {
+      "match": { "src": "portable-wallets" },
+      "queue": "event",
+      "trigger": ["scroll", "touchstart"]
+    },
+    {
+      "match": { "src": "E-v1.js" },
+      "queue": "event",
+      "trigger": ["scroll", "touchstart"]
+    },
+    {
+      "match": { "src": "player.js" },
+      "queue": "event",
+      "trigger": ["scroll", "touchstart"]
+    },
+    {
+      "match": { "src": "widget.min.js" },
+      "queue": "event",
+      "trigger": ["scroll", "touchstart"]
+    }
+  ],
+  "exceptions": {
+    "id":        ["sapp-config"],
+    "class":     ["sapp-init", "__init"],
+    "innerHTML": {{ sapp_init_innerhtml | json }},
+    "src":       {{ sapp_init_src | json }}
+  }
+}
+</script>

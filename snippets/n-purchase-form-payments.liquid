@@ -30,7 +30,7 @@
                                 <div class="c-payment-selector__text">
                                     {{ 'purchase-form.settings.onetime-payment' | t }}
                                     {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                        <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
                                     {% endif %}
                                 </div>
                             </label>
@@ -50,7 +50,7 @@
                                 <div class="c-payment-selector__text">
                                     {{ 'purchase-form.settings.monthly-payment' | t }}
                                     {% if block.settings.image != blank %}
-                                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                        <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
                                     {% endif %}
                                 </div>
                             </label>

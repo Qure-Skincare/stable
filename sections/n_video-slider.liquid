@@ -47,7 +47,7 @@
                                             {% if block.settings.video_url != blank %}
                                                 <picture class="lvideo" data-url="{{ block.settings.video_url }}">
                                                     {% if block.settings.image != blank %}
-                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                     {% endif %}
                                                 </picture>
                                             {% endif %}
@@ -59,7 +59,7 @@
                                                         data-bs-target="#reusableWistiaModal"
                                                         data-video-id="{{ block.settings.video_url }}"
                                                     >
-                                                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                 </picture>
                                             {% endif %}
                                         {% endif %}
@@ -80,9 +80,9 @@
                         {% endfor %}
                     </div>
                     <div class="c-swiper-nav">
-                        <button class="c-swiper-button-prev"></button>
+                        <button class="c-swiper-button-prev" aria-label="prev"></button>
                         <div class="c-swiper-pagination"></div>
-                        <button class="c-swiper-button-next"></button>
+                        <button class="c-swiper-button-next" aria-label="next"></button>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                                         {% if block.settings.video_url != blank %}
                                             <picture class="lvideo" data-url="{{ block.settings.video_url }}">
                                                 {% if block.settings.image != blank %}
-                                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                                 {% endif %}
                                             </picture>
                                         {% endif %}
@@ -136,7 +136,7 @@
                                                 data-bs-target="#reusableWistiaModal"
                                                 data-video-id="{{ block.settings.video_url }}"
                                             >
-                                                <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                             </picture>
                                         {% else %}
                                             <div class="wistia-embed-video">
@@ -144,7 +144,7 @@
                                                     <div class="wistia_responsive_wrapper">
                                                         <div class="wistia_embed wistia_async_{{ block.settings.video_url }} popover=true seo=false videoFoam=true">
                                                             <div class="wistia_swatch">
-                                                                <img src="https://fast.wistia.com/embed/medias/{{ block.settings.video_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);"/>
+                                                                <img loading="lazy" src="https://fast.wistia.com/embed/medias/{{ block.settings.video_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);"/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -157,9 +157,9 @@
                         {% endfor %}
                     </div>
                     <div class="c-swiper-nav">
-                        <button class="c-swiper-button-prev"></button>
+                        <button class="c-swiper-button-prev" aria-label="prev"></button>
                         <div class="c-swiper-pagination"></div>
-                        <button class="c-swiper-button-next"></button>
+                        <button class="c-swiper-button-next" aria-label="next"></button>
                     </div>
                 </div>
             </div>
@@ -169,8 +169,6 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('base-slider', 'https://qureskincaredns-stable.com/sections/base-slider/base-slider.js');
-        loadScriptOnce('wistia-script', 'https://fast.wistia.com/assets/external/E-v1.js');
         loadScriptOnce('video-slider', 'https://qureskincaredns-stable.com/assets/js/wistia-popup.js');
         loadScriptOnce('wistia-popup', 'https://qureskincaredns-stable.com/assets/js/wistia-popup.js');
         loadScriptOnce('youtube-popup', 'https://qureskincaredns-stable.com/assets/js/yt-popup.js');
