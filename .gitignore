@@ -1,5 +1,6 @@
 # Editor files #
 ######################
+.vscode/
 .vscode/*
 
 # OS generated files #
@@ -22,7 +23,6 @@ release
 
 .cursor
 .playwright-mcp
-.vscode/
 
 # Claude Code
 CLAUDE.md
