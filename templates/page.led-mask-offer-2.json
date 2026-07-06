@@ -56,9 +56,10 @@
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
         "rating": false,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
-        "reserved": true,
+        "reserved": false,
         "soldout": false,
         "button-label": "Reserve Now & Save $299",
         "button-url": "#buy-form"
