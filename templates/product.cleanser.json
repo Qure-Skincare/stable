@@ -79,29 +79,6 @@
             "preselected": false
           }
         },
-        "product_gbPf3D1": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser-6-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "3 bottles",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/cleanser-selector-trio.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 0
-          }
-        },
         "product_NEgEkq2": {
           "type": "product",
           "settings": {
@@ -148,6 +125,30 @@
             "preorder_percent": 0
           }
         },
+        "product_gbPf3D1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "cleanser-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "3 bottles",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-trio.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
+          }
+        },
         "type_hX844i": {
           "type": "type",
           "settings": {}
@@ -157,28 +158,6 @@
           "settings": {
             "heading": "Subscribe & Save",
             "preselected": true
-          }
-        },
-        "product_dDiAPk": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser-6-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "",
-            "subheading": "",
-            "product_selling_plan_text": "",
-            "text": "",
-            "product_discount_percent": 20,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
           }
         },
         "product_R7GWDT": {
@@ -224,19 +203,42 @@
             "preorder_date_reserved": "",
             "preorder_percent": 55
           }
+        },
+        "product_dDiAPk": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "cleanser-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "",
+            "subheading": "",
+            "product_selling_plan_text": "",
+            "text": "",
+            "product_discount_percent": 20,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
         }
       },
       "block_order": [
         "type_bPf3D2",
         "product_type_NEgEkq",
-        "product_gbPf3D1",
         "product_NEgEkq2",
         "product_RBCPe11",
+        "product_gbPf3D1",
         "type_hX844i",
         "product_type_TFajGU",
-        "product_dDiAPk",
         "product_R7GWDT",
-        "product_HdPftG"
+        "product_HdPftG",
+        "product_dDiAPk"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
