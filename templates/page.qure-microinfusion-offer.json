@@ -687,6 +687,19 @@
             "product_title": ""
           }
         },
+        "slider_dPBWEW": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_5_b0173f3a-3914-4db7-94ba-236f4cf89e4b.png",
+            "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
+            "username": "Helen M.",
+            "verified_customer": "Verified customer",
+            "text": "<p>“I purchased the mixed Micro-Infusion bundle to deal with hyper pigmentation, fine lines and wrinkles. I also have rosacea so was worried it could make it worse. However I’m so impressed with the initial results 3 treatments in. My skin looks clear and fresh! Previously the redness and pigmentation was visible even through foundation. I have more confidence now and hope my skin continues to improve with further treatments.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_eCGH8c": {
           "type": "slider",
           "settings": {
@@ -733,7 +746,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ela O.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br /> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br/> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -820,6 +833,7 @@
       },
       "block_order": [
         "slider_AbTEJa",
+        "slider_dPBWEW",
         "slider_eCGH8c",
         "slider_78E6pj",
         "slider_xqgHn6",
