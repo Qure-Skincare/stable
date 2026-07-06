@@ -1519,20 +1519,6 @@
             "heading": "Is Q-Rejuvalight Pro mask really worth the price compared to going to a clinic?",
             "text": "<p>The Q-Rejuvalight Pro is a one-time investment rather than an ongoing series of paid appointments, which is where the value adds up over time. Instead of booking sessions around a clinic's availability, traveling, and paying per visit, you get a customizable, clinically backed treatment you can do at home in three minutes a day. </p><p>More frequent, consistent use also tends to produce more reliable results than occasional clinic visits. For shoppers who want professional-grade light therapy without the recurring cost and scheduling, the device is designed to pay for itself across the years it is built to last.</p>"
           }
-        },
-        "accordion_FP4MCt": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Will the mask fit my face comfortably if I have a smaller or larger face?",
-            "text": "<p>The Q-Rejuvalight Pro is shaped to contour to a wide range of face shapes and sizes, with an adjustable strap that holds it securely and hands-free during your three-minute session. Because it is lightweight and wireless, you can move around the house while it runs rather than staying tethered to a wall outlet. </p><p>If you wear glasses, you simply remove them for treatment, and the included protective eyewear sits comfortably underneath the mask.</p>"
-          }
-        },
-        "accordion_VrbBkN": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Can more than one person in my household share the same mask?",
-            "text": "<p>Yes, the Q-Rejuvalight Pro can be used by multiple people, which is why many customers treat it as a shared household device. Each user can run their own preferred mode and track their individual routine through the app, so partners or family members are not locked into the same settings. We simply recommend wiping the inside of the mask clean between users, and reminding everyone to start on clean, dry skin so each person gets the intended benefit.</p>"
-          }
         }
       },
       "block_order": [
@@ -1548,9 +1534,7 @@
         "accordion_reQ7q8",
         "accordion_rAjmLN",
         "accordion_jXXBz3",
-        "accordion_YaKLQD",
-        "accordion_FP4MCt",
-        "accordion_VrbBkN"
+        "accordion_YaKLQD"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
