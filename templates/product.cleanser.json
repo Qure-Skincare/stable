@@ -81,7 +81,6 @@
         },
         "product_gbPf3D1": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "cleanser-6-month-bundle",
             "product_variant_id": 0,
@@ -162,7 +161,6 @@
         },
         "product_dDiAPk": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "cleanser-6-month-bundle",
             "product_variant_id": 0,
