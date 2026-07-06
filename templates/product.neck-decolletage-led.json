@@ -46,6 +46,7 @@
         },
         "nextships_BtDkBp": {
           "type": "nextships",
+          "disabled": true,
           "settings": {
             "date": "30th June",
             "percent": 71,
@@ -114,9 +115,10 @@
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
         "heading": "Smooth and firm the look of skin with the Neck & Décolletage LED System",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Smoother, firmer-looking skin on the neck and chest where early signs of aging appear.</li><li>Improves the appearance of discoloration, crepey texture and wrinkles.</li><li>Visibly enhances skin tone and leaves skin with a brighter, more radiant finish.</li></ul>",
-        "reserved": true,
+        "reserved": false,
         "soldout": false,
         "button-label": "",
         "button-url": ""
