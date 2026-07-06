@@ -149,6 +149,7 @@
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Unlock your best skin yet with our LED Face Mask",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and acne.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
@@ -1432,7 +1433,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What color wavelengths does Q-Rejuvalight Pro have?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically studied wavelengths of light:<br/></p><ul><li>Infrared light (880 nm): Helps support circulation, protects existing collagen, and enhances product absorption.</li><li>Deep Red (660 nm): Supports skin recovery to help fade the look of marks and smooth texture.</li><li>Red (630 nm): Helps improve the appearance of fine lines and wrinkles while soothing visible redness.</li><li>Amber (605 nm): Helps visibly even skin tone and calm the look of redness.</li><li>Blue (415 nm): Helps reduce the look of breakouts and calm the appearance of irritation.</li></ul><p>There are two treatment modes:<br/></p><p>The Skin Rejuvenating Mode combines red, deep red, infrared, and amber wavelengths. This blend is designed to help visibly smooth, firm, and refresh the look of skin.</p><p>The Skin Clearing Mode combines red and blue wavelengths to help improve the appearance of mild-to-moderate inflammatory acne, supporting a clearer-looking complexion.<br/></p>"
+            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically studied wavelengths of light, each chosen to target a different visible skin concern:<br/></p><ul><li>Infrared light (880 nm): Helps support circulation, protects existing collagen, and enhances product absorption.</li><li>Deep Red (660 nm): Supports skin recovery to help fade the appearance of marks and smooth texture.</li><li>Red (630 nm): Helps improve the appearance of fine lines and wrinkles while soothing visible redness.</li><li>Amber (605 nm): Helps visibly even skin tone and calm the look of redness.</li><li>Blue (415 nm): Helps reduce the look of breakouts and calm the appearance of irritation.</li></ul><p>There are two treatment modes:<br/></p><p>The Skin Rejuvenating Mode combines red, deep red, infrared, and amber wavelengths. This blend is designed to help visibly smooth, firm, and refresh the look of skin.</p><p>The Skin Clearing Mode combines red and blue wavelengths to help improve the appearance of mild-to-moderate inflammatory acne, supporting a clearer-looking complexion.<br/></p>"
           }
         },
         "accordion_ppXmJ8": {
