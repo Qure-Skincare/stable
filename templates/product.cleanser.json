@@ -246,7 +246,7 @@
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
+        "subscription_discount_max_percent": 31,
         "delivery_switcher_position": "header",
         "delivery_switcher_product": "",
         "type": "list",
