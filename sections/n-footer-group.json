@@ -23,7 +23,7 @@
     "footer": {
       "type": "n-footer",
       "settings": {
-        "exception": "get-my-guide-mi-wrinkles, get-my-guide-mi-dark-spots, get-my-guide-faucet, get-my-guide-shower, get-my-guide-neck, get-my-guide-helmet, get-my-guide-serum, get-my-guide-mist, get-the-guide-face-mask"
+        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"
       }
     },
     "footer-drawer": {

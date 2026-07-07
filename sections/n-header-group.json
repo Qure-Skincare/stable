@@ -58,7 +58,7 @@
         "text": "<p><a href=\"https://qureskincare.com/pages/microinfusion\" title=\"https://qureskincare.com/pages/microinfusion\"><strong>Limited Time 4th July Sale</strong></a><strong> - </strong>Save Up to 70% </p>",
         "button_label": "",
         "button_url": "",
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1, doctorly,qure-microinfusion-offer-b, qure-micro-infusion-landing-page-b, skincare-habits",
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1, doctorly,qure-microinfusion-offer-b, qure-micro-infusion-landing-page-b, skincare-habits, get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles",
         "from": "2026-06-29",
         "days": 9
       }
@@ -67,7 +67,7 @@
       "type": "n-header",
       "custom_css": [],
       "settings": {
-        "exception": "get-my-guide-mi-wrinkles, get-my-guide-mi-dark-spots, get-my-guide-faucet, get-my-guide-shower, get-my-guide-neck, get-my-guide-helmet, get-my-guide-serum, get-my-guide-mist, get-the-guide-face-mask"
+        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"
       }
     }
   },
