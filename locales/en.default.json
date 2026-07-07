@@ -462,7 +462,7 @@
         "reserved": "Reserved"
       },
       "product-rating": {
-        "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</span>"
+        "static_html": "<span><strong id='rating'>{{ rating }}</strong>/5 Rated by 10k+ Customers</span>"
       },
       "n-product-rating": {
         "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by Customers</small>",
