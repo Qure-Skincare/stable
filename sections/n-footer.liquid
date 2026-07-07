@@ -1,4 +1,18 @@
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
 
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% unless is_exception %}
 <footer class="footer">
     <div class="container">
         <div class="footer__content">
@@ -35,3 +49,17 @@
 </footer>
 
 <script src="https://qureskincaredns-stable.com/sections/footer/footer.js" defer="defer"></script>
+{% endunless %}
+
+{% schema %}
+{
+    "name": "t:sections-group.footer.name",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "exception",
+            "label": "t:common.exception"
+        }
+    ]
+}
+{% endschema %}

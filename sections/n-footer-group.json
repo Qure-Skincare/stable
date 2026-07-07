@@ -18,11 +18,15 @@
     },
     "footer-form": {
       "type": "n-footer-form",
-      "settings": {}
+      "settings": {
+        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"
+      }
     },
     "footer": {
       "type": "n-footer",
-      "settings": {}
+      "settings": {
+        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"
+      }
     },
     "footer-drawer": {
       "type": "n-footer-cart-drawer",
