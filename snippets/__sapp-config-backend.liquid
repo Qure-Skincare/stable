@@ -6,7 +6,6 @@
 {%- assign sapp_path = request.path -%}
 {%- if sapp_path contains '/checkout' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/a/' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
-{%- if sapp_path contains '/account' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/apps/' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/pages/loyalty-program' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
 {%- if sapp_path contains '/pages/affiliate-page' -%}{%- assign sapp_passthrough = true -%}{%- endif -%}
