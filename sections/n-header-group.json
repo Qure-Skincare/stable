@@ -66,7 +66,9 @@
     "header": {
       "type": "n-header",
       "custom_css": [],
-      "settings": {}
+      "settings": {
+        "exception": "get-my-guide-mi-wrinkles, get-my-guide-mi-dark-spots, get-my-guide-faucet, get-my-guide-shower, get-my-guide-neck, get-my-guide-helmet, get-my-guide-serum, get-my-guide-mist, get-the-guide-face-mask"
+      }
     }
   },
   "order": [
