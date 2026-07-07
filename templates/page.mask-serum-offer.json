@@ -9,12 +9,202 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "peek_cards_slider_msoReal": {
+      "type": "n_hair-growth-helmet-peek-cards-slider",
+      "blocks": {
+        "slider_ab1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_ab_1.webp",
+            "text": "<p>Visibly improved: <em>Less visible wrinkles.</em></p>"
+          }
+        },
+        "slider_ab3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_ab_3.webp",
+            "text": "<p>Visibly improved: <em>Less visible wrinkles.</em></p>"
+          }
+        },
+        "slider_ab2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/q_rejuv_ab_2.webp",
+            "text": "<p>Visibly improved: <em>Dark Spots</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "slider_ab1",
+        "slider_ab3",
+        "slider_ab2"
+      ],
+      "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Real results. LED Mask + Methylene Blue Serum</h2>",
+        "text": "<p>Join real people experiencing real transformations with consistent use of LED Mask + Methylene Blue serum.</p>",
+        "button_label": "Get Started",
+        "button_url": "#buy-form"
+      }
+    },
+    "trusted_recommended_msoExperts": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "background_color": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>\u201cMethylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.\u201d</p>",
+        "video_image_cover": "shopify://shop_images/dr-shah-maxfield-2.webp",
+        "text_on_image": "",
+        "wistia_url": false,
+        "video_url": "",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    },
+    "trusted_reviews_msoGlow": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_terri": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/terry-p.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Terri P.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Wish I started years ago</h6><p>\u201cAfter two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age\u2026. I wish this technology had been available when I was younger.\u201d</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_text": "Terri uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
+          }
+        },
+        "slider_hanna": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shower-result2.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Hanna L.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Hydrated more than ever</h6><p>\u201cI never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.\u201d</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_text": "Hanna uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
+          }
+        },
+        "slider_josie": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shower-result3.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Josie K.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Acne and dryness gone</h6><p>\u201cMy skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!\u201d</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_text": "Josie uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
+          }
+        },
+        "slider_anton": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/anton_8weeks.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Can\u2019t go a day without it</h6><p>\u201cStraight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, even toned, and looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.\u201d</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_text": "Anton uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
+          }
+        }
+      },
+      "block_order": [
+        "slider_terri",
+        "slider_hanna",
+        "slider_josie",
+        "slider_anton"
+      ],
+      "name": "t:sections.n_trusted-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "light",
+        "text": "<h2>Thousands are out-glowing their insecurities</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "faq_msoQuestions": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_included": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What's included in the subscription bundle?",
+            "text": ""
+          }
+        },
+        "accordion_billing": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How does the subscription billing work?",
+            "text": ""
+          }
+        },
+        "accordion_without_serum": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use the mask without the serum?",
+            "text": ""
+          }
+        },
+        "accordion_compatible": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Are they compatible with other serums and treatments?",
+            "text": ""
+          }
+        },
+        "accordion_results": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How soon will I see results?",
+            "text": ""
+          }
+        },
+        "accordion_sensitive": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this suitable for sensitive skin?",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_included",
+        "accordion_billing",
+        "accordion_without_serum",
+        "accordion_compatible",
+        "accordion_results",
+        "accordion_sensitive"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question? ",
+        "button_label": "Ask us ",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
     }
   },
   "order": [
-    "main"
+    "peek_cards_slider_msoReal",
+    "trusted_recommended_msoExperts",
+    "trusted_reviews_msoGlow",
+    "faq_msoQuestions"
   ]
 }
