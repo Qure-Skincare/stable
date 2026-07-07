@@ -60,7 +60,7 @@
     "black_friday_turn_on": false,
     "black_friday_discount": "",
     "black_friday_discount_percent": 0,
-    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,exclusive-holiday-bundle-deal-v2",
+    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,exclusive-holiday-bundle-deal-v2,microinfusion,micro-infusion-targeted-patches,face-serum,face-serum2,dermal-mist,qure-micro-infusion-landing-page-b,face-serum-b,retinol-face-serum,bundle-mi,micro-infusion-3-month-bundle-for-wrinkles,breakout-control-advanced1,",
     "enable_test": false,
     "event_name": "HOLIDAY SALE",
     "event_start_date": "2025-12-03",
@@ -116,11 +116,6 @@
         "settings": {
           "enable_cart_validation": true
         }
-      },
-      "17174303574952363282": {
-        "type": "shopify://apps/fondue-cashback-promotions/blocks/caseback-embed/dcfd972d-99c5-4526-b55b-2d76e990dec8",
-        "disabled": false,
-        "settings": {}
       },
       "11560147490181472608": {
         "type": "shopify://apps/rivo-loyalty-rewards-referrals/blocks/app-embed/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
