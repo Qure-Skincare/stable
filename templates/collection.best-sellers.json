@@ -23,7 +23,6 @@
         "web_video_qb"
       ],
       "name": "t:sections.n_hero-banner.name",
-      "disabled": true,
       "settings": {
         "use_own_file": false,
         "modifier": "qure-birthday",
@@ -32,6 +31,7 @@
     },
     "n_hero_banner_ddhnmk": {
       "type": "n_hero-banner",
+      "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": false,
@@ -94,6 +94,7 @@
     },
     "n_pills_nav_fXMjkJ": {
       "type": "n_pills-nav",
+      "disabled": true,
       "name": "t:sections.n_pills-nav.name",
       "settings": {
         "use_own_file": false
