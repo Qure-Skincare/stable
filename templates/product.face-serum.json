@@ -9,6 +9,94 @@
  */
 {
   "sections": {
+    "n_page_header_aio_GTMWN8": {
+      "type": "n-page-header-aio",
+      "blocks": {
+        "description_aio_Pftd3h": {
+          "type": "description-aio",
+          "settings": {
+            "title_1": "Minimizes the look of fine lines & wrinkles",
+            "text_1": "<p>Argireline® Peptides help visibly smooth the look of expression lines while Retinol helps improve the appearance of crow’s feet, forehead lines, and uneven texture for smoother and firmer skin.</p>",
+            "title_2": "Helps visibly fade dark spots",
+            "text_2": "<p>Vitamin C and Niacinamide work together to brighten stubborn hyperpigmentation, sun damage, and uneven patches - revealing the radiant, balanced complexion you'd happily show off bare.</p>",
+            "title_3": "Supports skin firmness",
+            "text_3": "<p>Bakuchiol, the gentle plant-based retinol alternative, helps firm the skin without harsh dryness and irritation. Skin feels softer, tighter, and looks lifted even on sensitive complexions.</p>",
+            "title_4": "Shields skin from daily damage",
+            "text_4": "<p>Vitamin E + Ferulic Acid form a powerhouse antioxidant defense, neutralizing free radicals from pollution, UV, and stress before they break down collagen or dull your natural glow.</p>",
+            "title_5": "Saves you hundreds every year",
+            "text_5": "<p>Replaces 5 products in one bottle, so you can save more each year. Instead of juggling separate serums, eye creams, brightening drops, and anti-aging treatments, one serum delivers everything you need for clinical-grade results.</p>"
+          }
+        },
+        "black_friday_discount_YC6RxC": {
+          "type": "black-friday-discount",
+          "settings": {}
+        },
+        "price_Wkz6TE": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_discount": false
+          }
+        },
+        "section_Fm4Acn": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "nextships_wDfYRM": {
+          "type": "nextships",
+          "disabled": true,
+          "settings": {
+            "date": "",
+            "percent": 48,
+            "date_soldout": "",
+            "date_reserved": ""
+          }
+        },
+        "experts_h3r7nX": {
+          "type": "experts",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>Qure cares a lot about the products they are putting out.</p>",
+            "username": "Dr. Shah,",
+            "position": "Dermatologist"
+          }
+        },
+        "faq_yELimf": {
+          "type": "faq",
+          "settings": {
+            "button_label": "Frequently Asked Questions",
+            "button_url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "description_aio_Pftd3h",
+        "black_friday_discount_YC6RxC",
+        "price_Wkz6TE",
+        "section_Fm4Acn",
+        "nextships_wDfYRM",
+        "experts_h3r7nX",
+        "faq_yELimf"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "product": "face-serum",
+        "reverse": false,
+        "seo_heading": "ANTI-AGING & 5-IN-1 SERUM",
+        "heading": "Embrace Ageless Confidence With 5-In-1 Face Serum",
+        "rating": true,
+        "limited": false,
+        "description": "",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": "",
+        "approved": false,
+        "price": "148$"
+      }
+    },
     "product_header_kHW3Cn": {
       "type": "n-product-header",
       "blocks": {
@@ -93,6 +181,7 @@
         "jumpto_hcQKEq",
         "jumpto_hQdAPf"
       ],
+      "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
         "product": "",
@@ -296,17 +385,17 @@
         "product_AJPQaQ"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
+        "form_name": "purchase-form-landing",
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "all-in-one-face-serum-6-month-bundle",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
-        "hide_bottom": false,
-        "hide_certified": false
+        "hide_bottom": true,
+        "hide_certified": true
       }
     },
     "n_logos_r846Fz": {
@@ -1110,6 +1199,7 @@
     }
   },
   "order": [
+    "n_page_header_aio_GTMWN8",
     "product_header_kHW3Cn",
     "purchase-form-landing",
     "n_logos_r846Fz",
