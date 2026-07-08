@@ -81,12 +81,12 @@
         "cta_box_HGazpE": {
           "type": "cta_box",
           "settings": {
-            "image": "shopify://shop_images/hero-mi-bottles.webp",
+            "image": "shopify://shop_images/MI_1.5_6month_DS_W.webp",
             "badge_text": "Get 70% OFF THE 6 MONTHS SUPPLY",
-            "heading": "",
+            "heading": "<h5>TAKE CHARGE OF YOUR SKINCARE WITH QURE</h5>",
             "text": "<p>Most of that shelf of lotions, potions, and serums just became optional. Sorry about the clutter.</p><p><strong>One step that works beats ten that don't.</strong></p>",
-            "button_label": "",
-            "button_url": "",
+            "button_label": "Check Availability",
+            "button_url": "#purchase-form",
             "icon_with_text": ""
           }
         }
