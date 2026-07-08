@@ -12,51 +12,35 @@
 
 <div class="c-accordion c-accordion--lines">
     <div class="c-accordion__list">
-        {% if product.metafields.custom.key_benefits != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
-        {% elsif page.metafields.custom.key_benefits != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
-        {% endif %}
-        {% if product.metafields.custom.how_it_works != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
-        {% elsif page.metafields.custom.how_it_works != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.how_it_works, index: 'second', title: 'How It Works' %}
-        {% endif %}
-        {% if product.metafields.custom.what_to_expect != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.what_to_expect, index: 'third', title: 'What To Expect' %}
-        {% elsif page.metafields.custom.what_to_expect != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.what_to_expect, index: 'third', title: 'What To Expect' %}
-        {% endif %}
-        {% if product.metafields.custom.what_s_included != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.what_s_included, index: 'fourth', title: 'What’s Included' %}
-        {% elsif page.metafields.custom.what_s_included != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.what_s_included, index: 'fourth', title: 'What’s Included' %}
-        {% endif %}
-        {% if product.metafields.custom.technical_specifications != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.technical_specifications, index: 'five', title: 'Technical Specifications' %}
-        {% elsif page.metafields.custom.technical_specifications != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.technical_specifications, index: 'five', title: 'Technical Specifications' %}
-        {% endif %}
-        {% if product.metafields.custom.full_ingredient_list != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.full_ingredient_list, index: 'six', title: 'Full ingredient list' %}
-        {% elsif page.metafields.custom.full_ingredient_list != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.full_ingredient_list, index: 'six', title: 'Full ingredient list' %}
-        {% endif %}
-        {%  if product.metafields.custom.how_to_use != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.how_to_use, index: 'seven', title: 'How To Use' %}
-        {% elsif page.metafields.custom.how_to_use != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.how_to_use, index: 'seven', title: 'How To Use' %}
-        {% endif %}
-        {% if product.metafields.custom.why_we_love_it != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.why_we_love_it, index: 'eight', title: 'Why We Love It' %}
-        {% elsif page.metafields.custom.why_we_love_it != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.why_we_love_it, index: 'eight', title: 'Why We Love It' %}
-        {% endif %}
-        {% if product.metafields.custom.clean_ingredients != blank %}
-            {% render 'n-product-page-collapsed-item' input: product.metafields.custom.clean_ingredients, index: 'nine', title: 'Clean Ingredients' %}
-        {% elsif page.metafields.custom.clean_ingredients != blank %}
-            {% render 'n-product-page-collapsed-item' input: page.metafields.custom.clean_ingredients, index: 'nine', title: 'Clean Ingredients' %}
-        {% endif %}
+        {%- assign default_order = 'key_benefits,how_it_works,what_to_expect,what_s_included,technical_specifications,full_ingredient_list,how_to_use,why_we_love_it,clean_ingredients' | split: ',' -%}
+
+        {%- assign order_keys = default_order -%}
+        {%- if product.metafields.custom.product_header_accordion_order != blank -%}
+            {%- assign order_keys = product.metafields.custom.product_header_accordion_order.value | split: ',' -%}
+        {%- elsif page.metafields.custom.product_header_accordion_order != blank -%}
+            {%- assign order_keys = page.metafields.custom.product_header_accordion_order.value | split: ',' -%}
+        {%- endif -%}
+
+        {%- for key in order_keys -%}
+            {%- assign key = key | strip -%}
+            {%- assign mf = product.metafields.custom[key] -%}
+            {%- if mf == blank -%}{%- assign mf = page.metafields.custom[key] -%}{%- endif -%}
+            {%- if mf != blank -%}
+                {%- case key -%}
+                    {%- when 'key_benefits' -%}{%- assign accordion_title = 'Key Benefits' -%}
+                    {%- when 'how_it_works' -%}{%- assign accordion_title = 'How It Works' -%}
+                    {%- when 'what_to_expect' -%}{%- assign accordion_title = 'What To Expect' -%}
+                    {%- when 'what_s_included' -%}{%- assign accordion_title = 'What’s Included' -%}
+                    {%- when 'technical_specifications' -%}{%- assign accordion_title = 'Technical Specifications' -%}
+                    {%- when 'full_ingredient_list' -%}{%- assign accordion_title = 'Full ingredient list' -%}
+                    {%- when 'how_to_use' -%}{%- assign accordion_title = 'How To Use' -%}
+                    {%- when 'why_we_love_it' -%}{%- assign accordion_title = 'Why We Love It' -%}
+                    {%- when 'clean_ingredients' -%}{%- assign accordion_title = 'Clean Ingredients' -%}
+                    {%- else -%}{%- continue -%}
+                {%- endcase -%}
+                {%- render 'n-product-page-collapsed-item' input: mf, title: accordion_title -%}
+            {%- endif -%}
+        {%- endfor -%}
     </div>
 
     {% if section %}

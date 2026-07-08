@@ -15,7 +15,7 @@
         "disclaimer_qb": {
           "type": "disclaimer",
           "settings": {
-            "text": "*Excludes bundles, Micro-Infusion System, All&#8209;In&#8209;One Serum, and Dermal Mist."
+            "text": "*Offer applies to selected items only."
           }
         },
         "video_qb": {
@@ -29,7 +29,6 @@
         "disclaimer_qb",
         "video_qb"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -42,7 +41,7 @@
         "image": "shopify://shop_images/qure-birthday.webp",
         "image_mobile": "shopify://shop_images/qure-birthday-mob.webp",
         "button_label": "Shop Now and Save",
-        "button_url": "#"
+        "button_url": "https://qureskincare.com/collections/best-sellers"
       }
     },
     "n_across_image_banner_Jul4": {
@@ -74,6 +73,7 @@
         "badge_jul4",
         "treatment_result_badge_jul4"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,

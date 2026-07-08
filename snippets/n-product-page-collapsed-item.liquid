@@ -2,11 +2,10 @@
   Renders a collapsed item for the product template
 
   @param {json} input - A json object.
-  @param {string} index - A string value.
   @param {string} title - A string value.
 
   @example
-  {% render 'n-product-bundle-collapsed-item' input: product.metafields.custom.key_benefits, index: 'first', title: 'Key Benefits' %}
+  {% render 'n-product-bundle-collapsed-item' input: product.metafields.custom.key_benefits, title: 'Key Benefits' %}
 {% enddoc %}
 
 {% capture marked_list %}{% render 'n_product-marked-list' %}{% endcapture %}

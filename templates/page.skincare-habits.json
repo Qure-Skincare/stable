@@ -34,7 +34,7 @@
       "name": "t:sections.n_mi-faq-page-hero-qa.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<p><strong>BEFORE YOU BUY ANOTHER ANTI-AGING CREAM</strong></p><h1>We're Sorry In Advance: 5 OLD Skincare Habits That Won't Survive Your First Month of Micro-Infusion</h1>",
+        "heading": "<p><strong>BEFORE YOU BUY ANOTHER ANTI-AGING CREAM</strong></p><h1>We're Sorry In Advance: <em>5 OLD Skincare Habits That Won't Survive</em> Your First Month of Micro-Infusion</h1>",
         "text": "<p>Created In Partnership With <strong>Leading Dermatologists</strong></p>",
         "image": "shopify://shop_images/micro-infusion-listicle-hero.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-listicle-hero.webp"
@@ -47,7 +47,7 @@
         "use_own_file": false,
         "modifier": "none",
         "updated_info": false,
-        "heading": "<p><strong>Before you start reading, five honest warnings. Not about side effects. About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</strong></p>",
+        "heading": "<p><strong>Before you start reading, five honest warnings. Not about side effects.</strong></p>",
         "text": "<p>About the habits that stop making sense the moment your serum gets below the surface instead of sitting on top of it.</p>"
       }
     },
@@ -81,12 +81,12 @@
         "cta_box_HGazpE": {
           "type": "cta_box",
           "settings": {
-            "image": "shopify://shop_images/hero-mi-bottles.webp",
+            "image": "shopify://shop_images/MI_1.5_6month_DS_W.webp",
             "badge_text": "Get 70% OFF THE 6 MONTHS SUPPLY",
-            "heading": "",
+            "heading": "<h5>TAKE CHARGE OF YOUR SKINCARE WITH QURE</h5>",
             "text": "<p>Most of that shelf of lotions, potions, and serums just became optional. Sorry about the clutter.</p><p><strong>One step that works beats ten that don't.</strong></p>",
-            "button_label": "",
-            "button_url": "",
+            "button_label": "Check Availability",
+            "button_url": "#purchase-form",
             "icon_with_text": ""
           }
         }
@@ -596,7 +596,7 @@
       "settings": {
         "type": "list",
         "heading": "Start the apology process.",
-        "text": "Subscribe and save up to 70%. Skip, swap, or cancel anytime. 30-day money-back guarantee.",
+        "text": "Subscribe and save up to 70%. Skip, swap, or cancel anytime. 90-day money-back guarantee.",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form",

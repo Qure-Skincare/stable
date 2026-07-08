@@ -76,11 +76,58 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
-            "preselected": true
+            "preselected": false
+          }
+        },
+        "product_NEgEkq2": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser-4-month-bundle",
+            "product_variant_id": 48762730152175,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "4 Months Supply",
+            "subheading": "2 bottles",
+            "product_selling_plan_text": "120 Days Supply",
+            "text": "120 Days Supply",
+            "image": "shopify://shop_images/cleanser-selector-duo.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
+          }
+        },
+        "product_RBCPe11": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "product_variant_id": 48762174767343,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "2 Months Supply",
+            "subheading": "1 bottle",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-uno.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 0
           }
         },
         "product_gbPf3D1": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "cleanser-6-month-bundle",
             "product_variant_id": 0,
@@ -102,52 +149,6 @@
             "preorder_percent": 0
           }
         },
-        "product_NEgEkq2": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser-4-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "4 Months Supply",
-            "subheading": "2 bottles",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/cleanser-selector-duo.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 0
-          }
-        },
-        "product_RBCPe11": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "2 Months Supply",
-            "subheading": "1 bottle",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/cleanser-selector-uno.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 0
-          }
-        },
         "type_hX844i": {
           "type": "type",
           "settings": {}
@@ -156,11 +157,58 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
-            "preselected": false
+            "preselected": true
+          }
+        },
+        "product_R7GWDT": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser-4-month-bundle",
+            "product_variant_id": 48762730152175,
+            "product_selling_plan": 8853324015,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "120 Days Supply",
+            "subheading": "(2 bottles)",
+            "product_selling_plan_text": "Ships every 4 months",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-duo.webp",
+            "product_discount_percent": 23,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_HdPftG": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "product_variant_id": 48762174767343,
+            "product_selling_plan": 8853291247,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "60 Days Supply",
+            "subheading": "(1 bottle)",
+            "product_selling_plan_text": "Ships every 2 months",
+            "text": "",
+            "image": "shopify://shop_images/cleanser-selector-uno.webp",
+            "product_discount_percent": 10,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
           }
         },
         "product_dDiAPk": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "cleanser-6-month-bundle",
             "product_variant_id": 0,
@@ -180,69 +228,25 @@
             "preorder_date_reserved": "",
             "preorder_percent": 55
           }
-        },
-        "product_R7GWDT": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser-4-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "",
-            "subheading": "",
-            "product_selling_plan_text": "",
-            "text": "",
-            "product_discount_percent": 11,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_HdPftG": {
-          "type": "product",
-          "settings": {
-            "product": "cleanser",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "",
-            "subheading": "",
-            "product_selling_plan_text": "",
-            "text": "",
-            "product_discount_percent": 10,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
         }
       },
       "block_order": [
         "type_bPf3D2",
         "product_type_NEgEkq",
-        "product_gbPf3D1",
         "product_NEgEkq2",
         "product_RBCPe11",
+        "product_gbPf3D1",
         "type_hX844i",
         "product_type_TFajGU",
-        "product_dDiAPk",
         "product_R7GWDT",
-        "product_HdPftG"
+        "product_HdPftG",
+        "product_dDiAPk"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
+        "subscription_discount_max_percent": 31,
         "delivery_switcher_position": "header",
         "delivery_switcher_product": "",
         "type": "list",

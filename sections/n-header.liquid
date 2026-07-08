@@ -7,6 +7,21 @@
 
 {% assign black_friday_turn_on = settings.black_friday_turn_on %}
 
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
+
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% unless is_exception %}
 <header class="header" id="header">
     <div class="container">
         <div class="header__navigation">
@@ -114,3 +129,17 @@
 </header>
 
 <script src="https://qureskincaredns-stable.com/sections/header/header.js" defer="defer"></script>
+{% endunless %}
+
+{% schema %}
+{
+    "name": "t:sections-group.header.name",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "exception",
+            "label": "t:common.exception"
+        }
+    ]
+}
+{% endschema %}
