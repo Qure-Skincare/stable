@@ -94,7 +94,6 @@
     },
     "n_pills_nav_fXMjkJ": {
       "type": "n_pills-nav",
-      "disabled": true,
       "name": "t:sections.n_pills-nav.name",
       "settings": {
         "use_own_file": false
