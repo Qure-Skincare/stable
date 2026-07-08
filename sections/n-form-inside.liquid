@@ -1,8 +1,20 @@
 {% assign shower_filter_handle = 'shower-filter' %}
 {% include 'get-product-data', product_handle: shower_filter_handle %}
+{% assign shower_white_id = '' %}
+{% assign shower_black_id = '' %}
+{% for variant in get_product_data.variants %}
+    {% if variant.title == 'White' %}{% assign shower_white_id = variant.id %}{% endif %}
+    {% if variant.title == 'Black' %}{% assign shower_black_id = variant.id %}{% endif %}
+{% endfor %}
 
 {% assign faucet_filter_handle = 'faucet-filter' %}
 {% include 'get-product-data', product_handle: faucet_filter_handle %}
+{% assign faucet_white_id = '' %}
+{% assign faucet_black_id = '' %}
+{% for variant in get_product_data.variants %}
+    {% if variant.title == 'White' %}{% assign faucet_white_id = variant.id %}{% endif %}
+    {% if variant.title == 'Black' %}{% assign faucet_black_id = variant.id %}{% endif %}
+{% endfor %}
 
 <!-- HERO PRODUCT -->
 <section class="hero-product hero-product--reverse hero-product--secondary" id="form-inside">
@@ -172,19 +184,95 @@
 
 {% capture button_text_subscribe %}{{ 'sections.page-qure-filters-offer-form.settings.button_label_save' | t }}{% endcapture %}
 
+<script class="__init">
+    /* class="__init" keeps this script OUT of the sapp proxy rewrite (same lane
+       as the __sapp-lcp orchestrator), so it executes at parse — immediately,
+       not after the LCP hero window. It wires the add-to-cart button using
+       server-rendered variant ids, so it needs neither the deferred
+       window.get_products_data nor the hero to load first. addToCartJson (slide
+       cart) is still LCP-loaded; we retry until it exists, so an early click
+       queues instead of being lost to a form reload. */
+    (function () {
+        var SHOWER = { white: {{ shower_white_id | json }}, black: {{ shower_black_id | json }} };
+        var FAUCET = { white: {{ faucet_white_id | json }}, black: {{ faucet_black_id | json }} };
+        var SHOWER_PLAN = 7175078127;
+        var FAUCET_PLAN = 7176421615;
+        var ONE_TIME_DISCOUNT = 'FAUCET100';
+
+        function add(items) {
+            if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
+                window.CartDrawer.addToCartJson(items);
+            } else if (typeof addToCartJson === 'function') {
+                addToCartJson(items);
+            } else {
+                setTimeout(function () { add(items); }, 60);
+            }
+        }
+
+        function bind() {
+            var form = document.querySelector('.c-buy-block form');
+            if (!form) { return document.addEventListener('DOMContentLoaded', bind, { once: true }); }
+            if (form.getAttribute('data-atc-bound')) return;
+            form.setAttribute('data-atc-bound', '1');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var subscribeEl = document.getElementById('subscribe');
+                var isSubscribe = subscribeEl && subscribeEl.checked;
+                var checked = document.querySelector('.qure__variant-item input[type="radio"]:checked');
+                var color = checked ? checked.id : '';
+                if (!color) return;
+
+                var items = color === 'black'
+                    ? [{ id: SHOWER.black, quantity: 1 }, { id: FAUCET.black, quantity: 1 }]
+                    : [{ id: SHOWER.white, quantity: 1 }, { id: FAUCET.white, quantity: 1 }];
+
+                if (isSubscribe) {
+                    items[0].selling_plan = SHOWER_PLAN;
+                    items[1].selling_plan = FAUCET_PLAN;
+                    add(items);
+                } else {
+                    fetch('/discount/' + ONE_TIME_DISCOUNT).then(function () { add(items); });
+                }
+            });
+        }
+
+        bind();
+    })();
+</script>
+
 <script>
-    const shower_selling_plan = 7175078127;
-    const faucet_selling_plan = 7176421615;
-    const discount_text = '{{ 'sections.page-qure-filters-offer-form.settings.discount_text' | t }}';
-    const button_text = '{{ 'sections.page-qure-filters-offer-form.settings.button_label' | t }}';
-    const button_text_subscribe = '{{ button_text_subscribe |  replace:  '&amp;', '&' }}';
+    {%- comment -%}
+      Do NOT read window.get_products_data at top level or on DOMContentLoaded:
+      the LCP orchestrator (__sapp-lcp) reorders/replays inert scripts, so the
+      moment this consumer runs is not guaranteed to be after get-product-data
+      has defined the global — that TypeError previously aborted this block, so
+      loadScriptOnce never ran and the buy form stayed dead. The button is now
+      wired above with server-rendered ids; this block only feeds the
+      (non-critical) price cosmetics, so poll until both products exist, expose
+      them on window and load the script exactly once.
+    {%- endcomment -%}
+    (function () {
+        var showerHandle = "{{ shower_filter_handle }}";
+        var faucetHandle = "{{ faucet_filter_handle }}";
 
-    const shower = window.get_products_data["{{ shower_filter_handle }}"];
-    const faucet = window.get_products_data["{{ faucet_filter_handle }}"];
+        function boot() {
+            var data = window.get_products_data;
+            if (typeof loadScriptOnce !== 'function' || !data || !data[showerHandle] || !data[faucetHandle]) {
+                return setTimeout(boot, 50);
+            }
+            window.shower = data[showerHandle];
+            window.faucet = data[faucetHandle];
+            window.discount_text = '{{ 'sections.page-qure-filters-offer-form.settings.discount_text' | t }}';
+            window.button_text = '{{ 'sections.page-qure-filters-offer-form.settings.button_label' | t }}';
+            window.button_text_subscribe = '{{ button_text_subscribe | replace: '&amp;', '&' }}';
 
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce('n-form-inside', '{{ 'n-form-inside.js' | asset_url }}');
-    });
+            loadScriptOnce('n-form-inside', '{{ 'n-form-inside.js' | asset_url }}');
+        }
+
+        boot();
+    })();
 </script>
 
 <script>
