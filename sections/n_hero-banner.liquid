@@ -33,7 +33,7 @@
         <div class="container">
             <article>
                 {% if section.settings.text != blank %}
-                    {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]<p>', '</small>'}}
+                    {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]</p>', '</small>' }}
                 {% endif %}
 
                 {% assign has_text_block = false %}

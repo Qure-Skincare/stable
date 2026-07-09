@@ -5,11 +5,11 @@
 <!-- BETTER TOGETHER -->
 <section class="better-together">
     <div class="container">
-        <article>
-            <small>WHY LED MASK + BLUE+ FACE SERUM</small>
-            <h2>Better together. Best results.</h2>
-            <p>The <strong>Q-Rejuvalight Pro LED Mask</strong> an <strong>Methylene Blue+ Face Serum</strong> are engineered as a single treatment system. The mask primes skin. Methylene blue delivers actives at the exact moment skin is most receptive, deeper than any topical alone.</p>
-        </article>
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]</p>', '</small>' }}
+            </article>
+        {% endif %}
         <div
             class="c-swiper"
             data-swiper='{
@@ -31,54 +31,25 @@
                 }
             }'>
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <figure>
-                        <img src="sections/better-together/images/better-together-1.webp" alt="Skin-Rejuvenating Mode" />
-                        <figcaption class="e-pill-badge e-pill-badge--sm">LED Mask</figcaption>
-                    </figure>
-                    <div>
-                        <h6>Skin-Rejuvenating Mode</h6>
-                        <p>Combines clinically-studied wavelengths to help address multiple skin concerns with just one device. 3-minute wireless daily treatment.</p>
-                        <dl>
-                            <dt>Skin-Clearing Mode 415nm · 630nm ·</dt>
-                            <dd>Helps support a clearer-looking complexion</dd>
-                            <dt>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</dt>
-                            <dd>Helps improve the look of fine lines and skin texture</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <figure>
-                        <img src="sections/better-together/images/better-together-2.webp" alt="Methylene Blue+ Serum" />
-                        <figcaption class="e-pill-badge e-pill-badge--sm">Methylene Blue+ Serum</figcaption>
-                    </figure>
-                    <div>
-                        <h6>Skin-Clearing Mode</h6>
-                        <p>Works in sync with LED light and for you on the days between. Formulated with methylene blue to help skin respond to each session, plus antioxidant support against daily environmental stressors.</p>
-                        <dl>
-                            <dt>415nm · 630nm ·</dt>
-                            <dd>Helps support a clearer-looking complexion</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <figure>
-                        <img src="sections/better-together/images/better-together-3.webp" alt="Together - 3 minutes" />
-                        <figcaption class="e-pill-badge e-pill-badge--sm">Together - 3 minutes</figcaption>
-                    </figure>
-                    <div>
-                        <h6>At-home results</h6>
-                        <p>Many users report visible improvement after first use. Visible smoothing of fine lines with continued use.</p>
-                        <dl>
-                            <dt>Results over time</dt>
-                            <dd>
-                                Smoother-looking fine lines with continued use<br />
-                                Dermatologist trusted formula<br />
-                                Trusted by board-certified dermatologists
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
+                {% for block in section.blocks %}
+                    {% if block.type == "item" %}
+                        <div class="swiper-slide">
+                            <figure>
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.badge_text != blank %}
+                                    <figcaption class="e-pill-badge e-pill-badge--sm">{{ block.settings.badge_text }}</figcaption>
+                                {% endif %}
+                            </figure>
+                            {% if block.settings.text != blank %}
+                                <div>
+                                    {{ block.settings.text }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
             <div class="c-swiper-nav">
                 <button class="c-swiper-button-prev"></button>
@@ -93,11 +64,35 @@
 {% schema %}
     {
         "name": "t:sections.n_better-together.name",
-            "settings": [
-                {
-                    
-                }
-            ]
-        
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "t:common.item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "badge_text",
+                        "label": "t:common.badge-text"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text"
+                    }
+                ]
+            }
+        ]
     }
 {% endschema %}

@@ -9,6 +9,44 @@
  */
 {
   "sections": {
+    "better_together_mso": {
+      "type": "n_better-together",
+      "blocks": {
+        "item_mask": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/better-together-1.webp",
+            "badge_text": "LED Mask",
+            "text": "<h6>Skin-Rejuvenating Mode</h6><p>Combines clinically-studied wavelengths to help address multiple skin concerns with just one device. 3-minute wireless daily treatment.</p><ul><li><strong>Skin-Clearing Mode 415nm \u00b7 630nm \u00b7</strong> Helps support a clearer-looking complexion</li><li><strong>Skin-Rejuvenating Mode \u00b7 630nm \u00b7 660nm \u00b7 880nm \u00b7</strong> Helps improve the look of fine lines and skin texture</li></ul>"
+          }
+        },
+        "item_serum": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/better-together-2.webp",
+            "badge_text": "Methylene Blue+ Serum",
+            "text": "<h6>Skin-Clearing Mode</h6><p>Works in sync with LED light and for you on the days between. Formulated with methylene blue to help skin respond to each session, plus antioxidant support against daily environmental stressors.</p><ul><li><strong>415nm \u00b7 630nm \u00b7</strong> Helps support a clearer-looking complexion</li></ul>"
+          }
+        },
+        "item_together": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/better-together-3.webp",
+            "badge_text": "Together - 3 minutes",
+            "text": "<h6>At-home results</h6><p>Many users report visible improvement after first use. Visible smoothing of fine lines with continued use.</p><ul><li><strong>Results over time</strong> Smoother-looking fine lines with continued use<br>Dermatologist trusted formula<br>Trusted by board-certified dermatologists</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "item_mask",
+        "item_serum",
+        "item_together"
+      ],
+      "name": "t:sections.n_better-together.name",
+      "settings": {
+        "text": "<p>[small]WHY LED MASK + BLUE+ FACE SERUM[/small]</p><h2>Better together. Best results.</h2><p>The <strong>Q-Rejuvalight Pro LED Mask</strong> an <strong>Methylene Blue+ Face Serum</strong> are engineered as a single treatment system. The mask primes skin. Methylene blue delivers actives at the exact moment skin is most receptive, deeper than any topical alone.</p>"
+      }
+    },
     "peek_cards_slider_msoReal": {
       "type": "n_hair-growth-helmet-peek-cards-slider",
       "blocks": {
@@ -202,6 +240,7 @@
     }
   },
   "order": [
+    "better_together_mso",
     "peek_cards_slider_msoReal",
     "trusted_recommended_msoExperts",
     "trusted_reviews_msoGlow",
