@@ -268,7 +268,7 @@
     },
     "page-qure-filters-offer-form": {
       "settings": {
-        "limited": "EXCLUSIVE OFFER",
+        "limited": "BIRTHDAY OFFER",
         "header": "Qure Shower Filter",
         "subheader": "+ FREE Faucet Filter",
         "warranty": "Warranty",
@@ -297,7 +297,7 @@
     },
     "page-led-mask-offer-2-led-mask-form": {
       "settings": {
-        "limited": "Exclusive OFFER",
+        "limited": "BIRTHDAY OFFER",
         "header": "Q-Rejuvalight Pro LED Mask",
         "subheader": "+ FREE Neck & Décolletage LED System",
         "warranty": "Warranty",
@@ -338,7 +338,7 @@
       "or_text": "or"
     },
     "faq-promo-banner": {
-      "limited_offer_text": "Limited Time Offer"
+      "limited_offer_text": "Limited Time Birthday Offer"
     },
     "richtext-simple": {
       "step_text": "Step"
