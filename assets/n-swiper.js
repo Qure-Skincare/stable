@@ -188,8 +188,9 @@ function queueSlider(el) {
     if (!(el instanceof HTMLElement)) return;
     if (el.hasAttribute('data-swiper-bound') || el.__swiperQueued) return;
     el.__swiperQueued = true;
-    if (sliderIO) sliderIO.observe(el);   // init when it nears the viewport
-    else enqueueInit(el);                 // no IO support → init (still spread out)
+    const notRendered = el.getClientRects().length === 0;
+    if (sliderIO && !notRendered) sliderIO.observe(el);   // init when it nears the viewport
+    else enqueueInit(el);                                  // hidden or no IO support → init now
 }
 
 // Queue existing sliders — only those in/near the viewport init now.
