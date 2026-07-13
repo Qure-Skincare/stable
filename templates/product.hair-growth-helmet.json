@@ -14,6 +14,7 @@
       "blocks": {
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_discount": true
           }
@@ -200,6 +201,7 @@
         "use_own_file": false,
         "heading": "<h2>See the change, feel the difference</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
+        "quote_text": "",
         "button_label": "Read the Study",
         "button_url": "#backed-by-real-results"
       }

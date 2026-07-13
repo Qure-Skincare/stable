@@ -20,6 +20,15 @@ const replaceTextOnPage = (search, replacement) => {
   }
 };
 
+/* init — consume the data the section exposed on window (never a lexical const
+   from the inline liquid script: under the LCP proxy that script may run after
+   this file and the binding would be undefined here). */
+
+const shower = window.shower;
+const faucet = window.faucet;
+const button_text = window.button_text;
+const button_text_subscribe = window.button_text_subscribe;
+
 const syncCart = async (input) => {
     const cart = await getCartState();
 
@@ -40,10 +49,6 @@ const syncCart = async (input) => {
     }
 }
 
-
-
-
-/* init */
 
 if (shower && faucet) {
     const sum = (shower.price_original || 0) + (faucet.price_original || 0);
@@ -83,41 +88,8 @@ document.querySelectorAll('.c-subscribe-selector__item').forEach(collapseEl => {
     });
 });
 
-document.querySelector('.c-buy-block form').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const isSubscribe = document.getElementById('subscribe').checked;
-    const variant = document.querySelector('.qure__variant-item input[type="radio"]:checked').id;
-
-    if(!variant)  return;
-
-    let input;
-
-    if(variant == 'white') {
-        input = [
-            { id: shower.variants.White, quantity: 1 },
-            { id: faucet.variants.White, quantity: 1 }
-        ]
-    }
-    else {
-        input = [
-            { id: shower.variants.Black, quantity: 1 },
-            { id: faucet.variants.Black, quantity: 1 }
-        ]
-    }
-
-    if (isSubscribe) {
-        input[0].selling_plan = shower_selling_plan;
-        input[1].selling_plan = faucet_selling_plan;
-
-        addToCartJson(input);
-    }
-    else {
-        __discount = 'FAUCET100';
-
-        fetch('/discount/' + __discount).then(async () => {
-            addToCartJson(input);
-        });
-
-    }
-});
+/* The add-to-cart submit handler now lives in a class="__init" script inside
+   sections/n-form-inside.liquid, so the button is wired immediately at parse
+   (not after the LCP window). This file only handles the (non-critical) price
+   cosmetics and button-label toggle above; binding the submit here too would
+   double-add on click. */

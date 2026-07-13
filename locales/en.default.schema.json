@@ -1414,6 +1414,9 @@
         "footer-cart-drawer": {
             "name": "Cart drawer"
         },
+        "footer-form": {
+            "name": "N footer form"
+        },
         "quote": {
             "name": "Quote"
         },

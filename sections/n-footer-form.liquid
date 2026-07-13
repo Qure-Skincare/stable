@@ -1,3 +1,18 @@
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
+
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% unless is_exception %}
 <!-- FOOTER PROMO -->
 <section class="footer-promo">
     <div class="container">
@@ -19,3 +34,17 @@
     </div>
 </section>
 <!-- FOOTER PROMO END -->
+{% endunless %}
+
+{% schema %}
+{
+    "name": "t:sections.footer-form.name",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "exception",
+            "label": "t:common.exception"
+        }
+    ]
+}
+{% endschema %}
