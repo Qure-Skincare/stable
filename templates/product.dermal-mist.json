@@ -9,6 +9,59 @@
  */
 {
   "sections": {
+    "n_page_header_aio_4Xzkwn": {
+      "type": "n-page-header-aio",
+      "blocks": {
+        "description_abmXhJ": {
+          "type": "description",
+          "settings": {}
+        },
+        "section_hRQanD": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "experts_kUiKni": {
+          "type": "experts",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>Qure cares a lot about the products they are putting out.</p>",
+            "username": "Dr. Shah,",
+            "position": "Dermatologist"
+          }
+        },
+        "faq_wxyzBi": {
+          "type": "faq",
+          "settings": {
+            "button_label": "Frequently Asked Questions",
+            "button_url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "description_abmXhJ",
+        "section_hRQanD",
+        "experts_kUiKni",
+        "faq_wxyzBi"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "product": "dermal-mist",
+        "reverse": false,
+        "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
+        "heading": "Refresh your skin anytime, anywhere with  Dermal Mist",
+        "rating": true,
+        "limited": false,
+        "description": "",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": "",
+        "approved": false,
+        "price": ""
+      }
+    },
     "product_header_c7eEXx": {
       "type": "n-product-header",
       "blocks": {
@@ -85,6 +138,7 @@
         "jumpto_wCrT8L",
         "jumpto_UfjfzQ"
       ],
+      "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
         "product": "",
@@ -288,7 +342,7 @@
         "product_AJPQaQ1"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
+        "form_name": "purchase-form-landing",
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 46,
@@ -959,6 +1013,7 @@
     }
   },
   "order": [
+    "n_page_header_aio_4Xzkwn",
     "product_header_c7eEXx",
     "purchase-form-landing",
     "purchase-form-landing-old",
