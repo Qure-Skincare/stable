@@ -293,7 +293,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 46,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "",
+        "delivery_switcher_product": "derma-mist-6-month-bundle",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
