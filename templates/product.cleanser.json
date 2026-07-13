@@ -24,6 +24,16 @@
           "type": "description",
           "settings": {}
         },
+        "exclusive_offer_cEGK4g": {
+          "type": "exclusive-offer",
+          "settings": {
+            "product": "cleanser-4-month-bundle",
+            "image_product1": "shopify://shop_images/cleanser-selector-duo.webp",
+            "product2": "headbands-wristbands",
+            "image_product2": "shopify://shop_images/Headband_and_Wristband.jpg",
+            "text": "<p>Free Gift Set with 4-Month Subscription</p>"
+          }
+        },
         "section_A0": {
           "type": "section",
           "settings": {
@@ -46,6 +56,7 @@
       "block_order": [
         "approved_6HL8Jr",
         "description_hnJud7",
+        "exclusive_offer_cEGK4g",
         "section_A0",
         "results_kJG7Dg"
       ],
