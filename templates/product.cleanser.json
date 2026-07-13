@@ -243,11 +243,11 @@
         "product_dDiAPk"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
+        "form_name": "purchase-form-landing",
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 31,
-        "delivery_switcher_position": "header",
+        "delivery_switcher_position": "footer",
         "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",
