@@ -45,6 +45,7 @@
         "experts_kUiKni",
         "faq_wxyzBi"
       ],
+      "disabled": true,
       "name": "t:sections.page-header.name",
       "settings": {
         "product": "dermal-mist",
@@ -138,7 +139,6 @@
         "jumpto_wCrT8L",
         "jumpto_UfjfzQ"
       ],
-      "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
         "product": "",
