@@ -521,7 +521,7 @@
       }
     },
     "peek_cards_slider_doctorly": {
-      "type": "n_hair-growth-helmet-peek-cards-slider",
+      "type": "n-peek-cards-slider",
       "blocks": {
         "slide_1": {
           "type": "slider",
@@ -558,9 +558,10 @@
         "slide_3",
         "slide_4"
       ],
-      "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
+      "name": "Peek cards slider",
       "settings": {
-        "use_own_file": false,
+        "modifier": "changes",
+        "background_color": "none",
         "heading": "<h2>From our user study: what consistent use actually does to your skin</h2>",
         "quote_image": "shopify://shop_images/experts-maxfield-shah-quote-inline.webp",
         "quote_text": "<p>\"These results are from participants in our user study. This is what consistent use looks like.\"</p>",

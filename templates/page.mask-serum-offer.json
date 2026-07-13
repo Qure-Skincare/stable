@@ -48,7 +48,7 @@
       }
     },
     "peek_cards_slider_msoReal": {
-      "type": "n_hair-growth-helmet-peek-cards-slider",
+      "type": "n-peek-cards-slider",
       "blocks": {
         "slider_ab1": {
           "type": "slider",
@@ -77,9 +77,10 @@
         "slider_ab3",
         "slider_ab2"
       ],
-      "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
+      "name": "Peek cards slider",
       "settings": {
-        "use_own_file": false,
+        "modifier": "changes",
+        "background_color": "bg",
         "heading": "<h2>Real results. LED Mask + Methylene Blue Serum</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of LED Mask + Methylene Blue serum.</p>",
         "button_label": "Get Started",

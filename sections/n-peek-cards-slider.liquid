@@ -1,12 +1,12 @@
 {% doc %}
-    Renders an image slider section for hair growth helmet page.
+    Renders a reusable "peek cards" image slider.
+    Keeps the shared `.peek-cards-slider` / `.changes-tile` CSS classes so the
+    existing section stylesheet applies. Modifier, background color and section
+    id follow the same settings convention as `n_base-section.liquid`.
 {% enddoc %}
 
 <!-- PEEK CARDS SLIDER -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/peek-cards-slider/peek-cards-slider.css" />
-{% endif %}
-<section class="peek-cards-slider peek-cards-slider--changes" id="see-the-change">
+<section class="peek-cards-slider{% if section.settings.background_color != 'none' %} peek-cards-slider--{{ section.settings.background_color }}{% endif %}{% if section.settings.modifier != 'none' %} peek-cards-slider--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article class="peek-cards-slider__content">
             {{ section.settings.heading }}
@@ -26,7 +26,7 @@
             {% if section.settings.button_url != blank and section.settings.button_label != blank %}
                 <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
             {% endif %}
-            
+
             <div
                 class="c-swiper"
                 data-swiper='{
@@ -75,15 +75,34 @@
 </section>
 <!-- PEEK CARDS SLIDER END -->
 
-{%  schema  %}
+{% schema %}
 {
-  "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
+  "name": "Peek cards slider",
   "settings": [
     {
-        "type": "checkbox",
-        "id": "use_own_file",
-        "label": "t:common.use-own-file",
-        "default": false
+        "type": "select",
+        "id": "modifier",
+        "label": "t:common.modifier",
+        "default": "changes",
+        "options": [
+            { "value": "none", "label": "t:common.none" },
+            { "value": "changes", "label": "Changes (before / after tiles)" }
+        ]
+    },
+    {
+        "type": "select",
+        "id": "background_color",
+        "label": "t:common.background-color",
+        "default": "none",
+        "options": [
+            { "value": "none", "label": "t:common.none" },
+            { "value": "bg", "label": "Tinted" }
+        ]
+    },
+    {
+        "type": "text",
+        "id": "section_id",
+        "label": "t:common.section_id"
     },
     {
         "type": "richtext",
@@ -133,7 +152,11 @@
             }
         ]
     }
+  ],
+  "presets": [
+    {
+        "name": "Peek cards slider"
+    }
   ]
 }
-
 {% endschema %}
