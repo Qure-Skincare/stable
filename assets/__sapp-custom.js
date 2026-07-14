@@ -39,7 +39,7 @@ window.__sapp.handlers = window.__sapp.handlers || {};
   if (w.__sappAnchorFix) return;
   w.__sappAnchorFix = 1;
 
-  var SEL = 'a[href="#stamped-main-widget"], .c-rating a[href^="#"]';
+  var SEL = 'a[href="#stamped-main-widget"], .c-rating a[href^="#"], a[href="#purchase-form"]';
   var HARD_CAP = 20000;     /* absolute max tracking time after the click */
   var IDLE_STOP = 1500;     /* stop this long after the document stops growing, once pinned */
   var EASE = 0.18;          /* fraction of the remaining distance covered per frame */
