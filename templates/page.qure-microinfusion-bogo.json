@@ -1598,7 +1598,7 @@
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form",
-        "subscription_product": "true",
+        "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
         "guarantee_period": "90",
