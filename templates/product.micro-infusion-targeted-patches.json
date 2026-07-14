@@ -15,16 +15,16 @@
         "description_aio_KQpyFk": {
           "type": "description-aio",
           "settings": {
-            "title_1": "",
-            "text_1": "",
-            "title_2": "",
-            "text_2": "",
-            "title_3": "",
-            "text_3": "",
-            "title_4": "",
-            "text_4": "",
-            "title_5": "",
-            "text_5": ""
+            "title_1": "Helps smooth the look of fine lines & wrinkles",
+            "text_1": "<p>Helps smooth the look of fine lines & wrinkles Retinol and Copper Tripeptide-1 are delivered through 80 ultra-fine, self-dissolving micro-darts, working overnight to help reduce the appearance of fine lines, wrinkles, and crow's feet.</p>",
+            "title_2": "Helps visibly brighten under-eyes & reduce puffiness",
+            "text_2": "<p>Helps visibly brighten under-eyes & reduce puffiness Caffeine helps energize the look of tired under-eye skin while helping reduce the appearance of puffiness — so eyes look more awake by morning.</p>",
+            "title_3": "Helps improve the appearance of skin texture",
+            "text_3": "<p>Helps improve the appearance of skin texture Niacinamide and Licorice Extract work together to visibly brighten the look of skin and support a more even-looking complexion.</p>",
+            "title_4": "Delivers targeted hydration overnight",
+            "text_4": "<p>Delivers targeted hydration overnight Sodium Hyaluronate helps plump the skin's surface for a smoother </p>",
+            "title_5": "Gentle enough for delicate, sensitive skin",
+            "text_5": "<p>Gentle enough for delicate, sensitive skin Dermatologically tested and non-irritating — safe for the delicate under-eye and expression-line areas these patches are designed for.</p>"
           }
         },
         "section_mp6gUV": {
@@ -36,16 +36,17 @@
         "experts_yXYCcq": {
           "type": "experts",
           "settings": {
-            "text": "",
-            "username": "",
-            "position": ""
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>Qure cares a lot about the products they are putting out.</p>",
+            "username": "Dr. Shah,",
+            "position": "Dermatologist"
           }
         },
         "faq_FRN4yi": {
           "type": "faq",
           "settings": {
             "button_label": "Frequently Asked Questions",
-            "button_url": ""
+            "button_url": "#faq"
           }
         }
       },
