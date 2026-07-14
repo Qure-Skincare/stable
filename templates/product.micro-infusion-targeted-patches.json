@@ -9,6 +9,69 @@
  */
 {
   "sections": {
+    "n_page_header_aio_c4awUX": {
+      "type": "n-page-header-aio",
+      "blocks": {
+        "description_aio_KQpyFk": {
+          "type": "description-aio",
+          "settings": {
+            "title_1": "",
+            "text_1": "",
+            "title_2": "",
+            "text_2": "",
+            "title_3": "",
+            "text_3": "",
+            "title_4": "",
+            "text_4": "",
+            "title_5": "",
+            "text_5": ""
+          }
+        },
+        "section_mp6gUV": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "experts_yXYCcq": {
+          "type": "experts",
+          "settings": {
+            "text": "",
+            "username": "",
+            "position": ""
+          }
+        },
+        "faq_FRN4yi": {
+          "type": "faq",
+          "settings": {
+            "button_label": "Frequently Asked Questions",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "description_aio_KQpyFk",
+        "section_mp6gUV",
+        "experts_yXYCcq",
+        "faq_FRN4yi"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "product": "",
+        "reverse": false,
+        "seo_heading": "MICRO-INFUSION DART PATCHES",
+        "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
+        "rating": true,
+        "limited": false,
+        "description": "",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": "",
+        "approved": false,
+        "price": ""
+      }
+    },
     "product_header_U6RBGz": {
       "type": "n-product-header",
       "blocks": {
@@ -110,6 +173,7 @@
         "jumpto_7JzPHz",
         "jumpto_YV6XMK"
       ],
+      "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
         "product": "",
@@ -1130,6 +1194,7 @@
     }
   },
   "order": [
+    "n_page_header_aio_c4awUX",
     "product_header_U6RBGz",
     "purchase-form-landing",
     "n_press_reviews_tDbz84",
