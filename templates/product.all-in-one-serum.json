@@ -19,6 +19,7 @@
         },
         "price_aio": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_discount": false
           }
