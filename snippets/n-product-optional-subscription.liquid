@@ -1,11 +1,6 @@
 {% doc %}
   Renders an optional subscription add-on widget for the product-header section.
 
-  Display data (image, title, price) is read straight from the products: the
-  main tile from the section product, the serum tile from `serum_product`. Only
-  the serum variant id and selling plan id (which the storefront product object
-  does not expose in this theme) come from block settings.
-
   @param {object} section - A section object.
   @param {object} block - An `optional-subscription` block object.
   @param {object} product - The section product (main product / LED mask).
@@ -22,8 +17,7 @@
     {% endfor %}
 {% endif %}
 
-{% include 'get-product-data' %}
-{% assign main_price = product_sale_price %}
+{% assign main_price = product.price | money_without_trailing_zeros %}
 
 {% assign serum = block.settings.product %}
 {% assign serum_variant_id = block.settings.serum_variant_id | default: serum.variants.first.id %}
