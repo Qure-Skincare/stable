@@ -9,25 +9,6 @@
  */
 {
   "sections": {
-    "n_page_header_aio_ccmqEU": {
-      "type": "n-page-header-aio",
-      "name": "t:sections.page-header.name",
-      "settings": {
-        "product": "",
-        "reverse": false,
-        "seo_heading": "",
-        "heading": "",
-        "rating": true,
-        "limited": false,
-        "description": "",
-        "reserved": false,
-        "soldout": false,
-        "button-label": "",
-        "button-url": "",
-        "approved": false,
-        "price": ""
-      }
-    },
     "n_product_header_gLYhrR": {
       "type": "n-product-header",
       "blocks": {
@@ -615,7 +596,6 @@
     }
   },
   "order": [
-    "n_page_header_aio_ccmqEU",
     "n_product_header_gLYhrR",
     "purchase-form-landing",
     "n_base_section_led_sync_blue_face_serum",
