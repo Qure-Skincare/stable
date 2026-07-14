@@ -142,7 +142,7 @@
       "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
-        "product": "",
+        "product": "dermal-mist",
         "reverse": false,
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Refresh your skin anytime, anywhere with  Dermal Mist",
