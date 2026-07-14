@@ -68,7 +68,7 @@
         "button_label": "Start your treatment",
         "button_line": false,
         "alert": "",
-        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 62%</p>",
+        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
         "marked_list": "",
         "wistia_url": "8ymvdqzx92"
       }
@@ -835,7 +835,7 @@
         "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Real stories, real results</h2>",
-        "button_label": "buy now SAVE UP TO 62%",
+        "button_label": "buy now SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -1091,7 +1091,7 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
-        "button_label": "buy now & SAVE UP TO 62%",
+        "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
     },
@@ -1577,7 +1577,7 @@
         "product_RBCPe8"
       ],
       "custom_css": [
-        ".e-features-list{display:none;}"
+        ".e-features-list {display: none;}"
       ],
       "settings": {
         "type": "list",
