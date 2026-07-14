@@ -2,3 +2,148 @@
     Renders a bundle usage section.
 {% enddoc %}
 
+<!-- BUNDLE USAGE -->
+<section class="bundle-usage">
+    <div class="container">
+        <article class="bundle-usage__content">
+            {{ section.settings.heading | replace: '<p>[small]', '<small>' | replace: '[/small]</p>', '</small>' }}
+            <ol class="bundle-usage__scale c-swiper-steps">
+                {% for block in section.blocks %}
+                    {% if block.type == 'slider' %}
+                        <li><span>{{ block.settings.step }}</span></li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+            <div class="bundle-usage__items">
+                <div
+                    class="c-swiper"
+                    data-swiper='{
+                        "slidesPerView": 1.4,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "steps-selector": ".c-swiper-steps",
+                        "watchSlidesProgress": true,
+                        "breakpoints": {
+                            "768": {
+                                "slidesPerView": 2,
+                                "spaceBetween": 24
+                            },
+                            "992": {
+                                "slidesPerView": 4
+                            }
+                        }
+                    }'>
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'slider' %}
+                                <div class="swiper-slide">
+                                    {% if block.settings.image != blank %}
+                                        <figure>
+                                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% if block.settings.badge != blank %}
+                                                <div class="e-pill-badge e-pill-badge--sm">
+                                                    <i class="e-icon e-icon-pm"></i>
+                                                    {{ block.settings.badge }}
+                                                </div>
+                                            {% endif %}
+                                        </figure>
+                                    {% endif %}
+                                    {{ block.settings.text }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="c-buy-block">
+                <div class="c-order-button">
+                    {% if section.settings.button_label != blank %}
+                        {% if section.settings.button_url != blank %}
+                            <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+                        {% else %}
+                            <button class="btn btn--primary" type="button">{{ section.settings.button_label }}</button>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                {% if section.settings.sub_text != blank %}
+                    <small>{{ section.settings.sub_text }}</small>
+                {% endif %}
+            </div>
+        </article>
+    </div>
+</section>
+<!-- BUNDLE USAGE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_bundle-usage.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        {
+            "type": "text",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slider",
+            "name": "t:common.slider",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "step",
+                    "label": "t:common.step"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge-text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_bundle-usage.name"
+        }
+    ]
+}
+{% endschema %}

@@ -50,6 +50,9 @@
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
         "exclusive-offer-bundle": "Exclusive bundle offer",
+        "optional-subscription": "Optional subscription",
+        "background": "Background",
+        "subscription-note": "Subscription note",
         "upsell-popup": "Upsell popup",
         "upsell-card": "Upsell card",
         "delivery": "Delivery",
@@ -335,7 +338,8 @@
         "trending": "Trending",
         "flex": "Flex",
         "arrow-button": "Arrow button",
-        "web-video": "Web video"
+        "web-video": "Web video",
+        "changes": "Changes"
     },
     "blocks": {
         "block-card": {
@@ -359,6 +363,24 @@
         },
         "n_404": {
             "name": "404"
+        },
+        "n_peek-cards-slider": {
+            "name": "Peek cards slider",
+            "settings": {
+                "modifier": {
+                    "options": {
+                        "changes": "Changes"
+                    }
+                },
+                "background_color": {
+                    "options": {
+                        "bg": "Tinted"
+                    }
+                }
+            }
+        },
+        "n_bundle-usage": {
+            "name": "Bundle usage"
         },
         "n_better-together": {
             "name": "Better together"

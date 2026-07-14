@@ -1,8 +1,5 @@
 {% doc %}
-    Renders a reusable "peek cards" image slider.
-    Keeps the shared `.peek-cards-slider` / `.changes-tile` CSS classes so the
-    existing section stylesheet applies. Modifier, background color and section
-    id follow the same settings convention as `n_base-section.liquid`.
+    Renders a reusable peek cards slider section.
 {% enddoc %}
 
 <!-- PEEK CARDS SLIDER -->
@@ -12,15 +9,8 @@
             {{ section.settings.heading }}
             {% if section.settings.quote_image != blank or section.settings.quote_text != blank %}
                 <div class="e-experts-quote-inline">
-                    {% if section.settings.quote_image != blank %}
-                        <img loading="lazy" src="{{ section.settings.quote_image | image_url }}" alt="{{ section.settings.quote_image.alt | escape }}" />
-                    {% endif %}
+                    <img loading="lazy" src="{{ section.settings.quote_image | image_url }}" alt="{{ section.settings.quote_image.alt | escape }}" />
                     {{ section.settings.quote_text }}
-                </div>
-            {% endif %}
-            {% if section.settings.text != blank %}
-                <div>
-                    {{ section.settings.text }}
                 </div>
             {% endif %}
             {% if section.settings.button_url != blank and section.settings.button_label != blank %}
@@ -77,7 +67,7 @@
 
 {% schema %}
 {
-  "name": "Peek cards slider",
+  "name": "t:sections.n_peek-cards-slider.name",
   "settings": [
     {
         "type": "select",
@@ -85,8 +75,14 @@
         "label": "t:common.modifier",
         "default": "changes",
         "options": [
-            { "value": "none", "label": "t:common.none" },
-            { "value": "changes", "label": "Changes (before / after tiles)" }
+            { 
+                "value": "none", 
+                "label": "t:common.none" 
+            },
+            { 
+                "value": "changes", 
+                "label": "t:sections.n_peek-cards-slider.settings.modifier.options.changes" 
+            }
         ]
     },
     {
@@ -95,8 +91,14 @@
         "label": "t:common.background-color",
         "default": "none",
         "options": [
-            { "value": "none", "label": "t:common.none" },
-            { "value": "bg", "label": "Tinted" }
+            { 
+                "value": "none", 
+                "label": "t:common.none" 
+            },
+            { 
+                "value": "bg", 
+                "label": "t:sections.n_peek-cards-slider.settings.background_color.options.bg" 
+            }
         ]
     },
     {
@@ -155,7 +157,7 @@
   ],
   "presets": [
     {
-        "name": "Peek cards slider"
+        "name": "t:sections.n_peek-cards-slider.name"
     }
   ]
 }

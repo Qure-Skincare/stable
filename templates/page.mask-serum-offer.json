@@ -47,6 +47,60 @@
         "text": "<p>[small]WHY LED MASK + BLUE+ FACE SERUM[/small]</p><h2>Better together. Best results.</h2><p>The <strong>Q-Rejuvalight Pro LED Mask</strong> an <strong>Methylene Blue+ Face Serum</strong> are engineered as a single treatment system. The mask primes skin. Methylene blue delivers actives at the exact moment skin is most receptive, deeper than any topical alone.</p>"
       }
     },
+    "bundle_usage_mso": {
+      "type": "n_bundle-usage",
+      "blocks": {
+        "slide_routine": {
+          "type": "slider",
+          "settings": {
+            "step": "Step",
+            "image": "shopify://shop_images/bundle-usage-1.webp",
+            "badge": "",
+            "text": "<h6>General Skincare Routine</h6><p>Cleanse the face thoroughly to remove dirt, oil, and any buildup, leaving the skin fresh and ready for the next step.</p>"
+          }
+        },
+        "slide_serum": {
+          "type": "slider",
+          "settings": {
+            "step": "Step",
+            "image": "shopify://shop_images/bundle-usage-2.webp",
+            "badge": "Night",
+            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ methylene blue serum to clean skin. Methylene blue is a cosmetic photosensitizer that helps prime skin to respond more effectively to LED light.</p>"
+          }
+        },
+        "slide_mask": {
+          "type": "slider",
+          "settings": {
+            "step": "Step",
+            "image": "shopify://shop_images/bundle-usage-3.webp",
+            "badge": "Night",
+            "text": "<h6>Q-Rejuvalight Pro LED Mask</h6><p>Put on the mask. LED light works in sync with the serum, helping each session deliver better-looking results. Hands-free. Wireless.</p>"
+          }
+        },
+        "slide_results": {
+          "type": "slider",
+          "settings": {
+            "step": "Results",
+            "image": "shopify://shop_images/bundle-usage-4.webp",
+            "badge": "",
+            "text": "<h6>See results</h6><p>Results come with consistency. Use it daily. Let the science work. No downtime or recovery.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_routine",
+        "slide_serum",
+        "slide_mask",
+        "slide_results"
+      ],
+      "name": "t:sections.n_bundle-usage.name",
+      "settings": {
+        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask + Methylene Blue Serum. 3 minutes.</h2>",
+        "button_label": "Get the Best Results Bundle",
+        "button_url": "#buy-form",
+        "sub_text": "30-Day Money-Back Guarantee \u2022 Free US Shipping"
+      }
+    },
     "peek_cards_slider_msoReal": {
       "type": "n-peek-cards-slider",
       "blocks": {
@@ -77,12 +131,11 @@
         "slider_ab3",
         "slider_ab2"
       ],
-      "name": "Peek cards slider",
+      "name": "t:sections.n_peek-cards-slider.name",
       "settings": {
         "modifier": "changes",
         "background_color": "bg",
-        "heading": "<h2>Real results. LED Mask + Methylene Blue Serum</h2>",
-        "text": "<p>Join real people experiencing real transformations with consistent use of LED Mask + Methylene Blue serum.</p>",
+        "heading": "<h2>Real results. LED Mask + Methylene Blue Serum</h2><p>Join real people experiencing real transformations with consistent use of LED Mask + Methylene Blue serum.</p>",
         "button_label": "Get Started",
         "button_url": "#buy-form"
       }
@@ -99,6 +152,50 @@
         "wistia_url": false,
         "video_url": "",
         "badge_text": "Dermatologist Reviewed"
+      }
+    },
+    "buy_form_mso": {
+      "type": "n-product-header",
+      "blocks": {
+        "special_offer": {
+          "type": "price",
+          "settings": {}
+        },
+        "features": {
+          "type": "description",
+          "settings": {}
+        },
+        "subscription": {
+          "type": "optional-subscription",
+          "settings": {
+            "heading": "Best Results Together",
+            "product": "blue-face-serum",
+            "subscription_note": "Every 2 months: Receive a Blue+ Serum Bottle",
+            "serum_variant_id": "49565278503151",
+            "selling_plan_id": "8856043759"
+          }
+        },
+        "buy": {
+          "type": "button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "special_offer",
+        "features",
+        "subscription",
+        "buy"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "section_id": "buy-form",
+        "product": "q-rejuvalight-pro-facewear",
+        "reverse": true,
+        "secondary": true,
+        "background": true,
+        "rating": false,
+        "heading": "LED Mask + Blue Plus Serum",
+        "description": "<ul><li>Warranty</li><li>FDA Cleared</li></ul>"
       }
     },
     "trusted_reviews_msoGlow": {
@@ -176,6 +273,48 @@
         "button_url": ""
       }
     },
+    "confident_skin_mso": {
+      "type": "n-product-header",
+      "blocks": {
+        "desc": {
+          "type": "description",
+          "settings": {}
+        },
+        "bundle": {
+          "type": "exclusive-offer-bundle",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear",
+            "product2": "blue-face-serum",
+            "text": "<p>Subscribe Now &amp; Get Led Mask and Blue+ Serum for Free</p>"
+          }
+        },
+        "cta": {
+          "type": "link",
+          "settings": {
+            "hide_bottom": false,
+            "guarantee_period": "30"
+          }
+        }
+      },
+      "block_order": [
+        "desc",
+        "bundle",
+        "cta"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "section_id": "hero-product",
+        "product": "q-rejuvalight-pro-facewear",
+        "reverse": true,
+        "secondary": true,
+        "background": false,
+        "rating": true,
+        "heading": "Confident Skin Starts Here",
+        "description": "<p>Pair advanced LED light therapy with our Blue+ Serum for a brighter, healthier-looking complexion.</p>",
+        "button-label": "Get the Best Results Bundle",
+        "button-url": "#buy-form"
+      }
+    },
     "faq_msoQuestions": {
       "type": "n_faq",
       "blocks": {
@@ -242,9 +381,12 @@
   },
   "order": [
     "better_together_mso",
+    "bundle_usage_mso",
     "peek_cards_slider_msoReal",
     "trusted_recommended_msoExperts",
+    "buy_form_mso",
     "trusted_reviews_msoGlow",
+    "confident_skin_mso",
     "faq_msoQuestions"
   ]
 }

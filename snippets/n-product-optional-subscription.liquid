@@ -1,0 +1,127 @@
+{% doc %}
+  Renders an optional subscription add-on widget for the product-header section.
+
+  Display data (image, title, price) is read straight from the products: the
+  main tile from the section product, the serum tile from `serum_product`. Only
+  the serum variant id and selling plan id (which the storefront product object
+  does not expose in this theme) come from block settings.
+
+  @param {object} section - A section object.
+  @param {object} block - An `optional-subscription` block object.
+  @param {object} product - The section product (main product / LED mask).
+
+  @example
+  {% render 'n-product-optional-subscription', section: section, block: block, product: product %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'optional-subscription' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% include 'get-product-data' %}
+{% assign main_price = product_sale_price %}
+
+{% assign serum = block.settings.product %}
+{% assign serum_variant_id = block.settings.serum_variant_id | default: serum.variants.first.id %}
+
+<div class="hero-product__optional-subscription">
+    <div class="c-optional-subscription">
+        <div class="c-optional-subscription__main">
+            {% if block.settings.heading != blank %}
+                <span>{{ block.settings.heading }}</span>
+            {% endif %}
+            {% if product.featured_image != blank %}
+                <img loading="lazy" src="{{ product.featured_image | image_url: width: 250 }}" alt="{{ product.title | escape }}" />
+            {% endif %}
+            <p>{{ product.title }}</p>
+            {% if main_price != blank %}
+                <div class="e-price e-price--highlight">
+                    <div class="e-price__main">
+                        <div class="e-price__current">{{ main_price }}</div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        <label class="c-optional-subscription__option">
+            <input type="checkbox" name="subscription" checked />
+            <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
+            {% if serum.featured_image != blank %}
+                <img loading="lazy" src="{{ serum.featured_image | image_url: width: 250 }}" alt="{{ serum.title | escape }}" />
+            {% endif %}
+            <p><strong>Subscribe</strong> {{ serum.title }}</p>
+            <div class="e-price e-price--highlight">
+                <div class="e-price__main">
+                    <div class="e-price__current">First bottle Free</div>
+                    {% if serum != blank %}
+                        <div class="e-price__old">{{ serum.price | money_without_trailing_zeros }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% if block.settings.subscription_note != blank %}
+                <small>{{ block.settings.subscription_note }}</small>
+            {% endif %}
+        </label>
+        <div class="c-optional-subscription__today">
+            <p>Today you pay</p>
+            <small>First bottle free</small>
+            {% if main_price != blank %}
+                <div class="e-price e-price--highlight">
+                    <div class="e-price__main">
+                        <div class="e-price__current">{{ main_price }}</div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script class="__init">
+    (function () {
+        var SECTION_ID = {{ section.settings.section_id | json }};
+        var SERUM_ID = {{ serum_variant_id | json }};
+        var SELLING_PLAN = {{ block.settings.selling_plan_id | json }};
+
+        function add(items) {
+            if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
+                window.CartDrawer.addToCartJson(items);
+            } else if (typeof addToCartJson === 'function') {
+                addToCartJson(items);
+            } else {
+                setTimeout(function () { add(items); }, 60);
+            }
+        }
+
+        function bind() {
+            var root = document.getElementById(SECTION_ID) || document;
+            var form = root.querySelector('.c-buy-block form');
+            if (!form) { return document.addEventListener('DOMContentLoaded', bind, { once: true }); }
+            if (form.getAttribute('data-atc-bound')) return;
+            form.setAttribute('data-atc-bound', '1');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var idInput = form.querySelector('[name="id"]');
+                var mainId = idInput ? idInput.value : null;
+                if (!mainId) return;
+
+                var items = [{ id: mainId, quantity: 1 }];
+
+                var checkbox = root.querySelector('.c-optional-subscription input[name="subscription"]');
+                if (checkbox && checkbox.checked && SERUM_ID) {
+                    var serum = { id: SERUM_ID, quantity: 1 };
+                    if (SELLING_PLAN) { serum.selling_plan = SELLING_PLAN; }
+                    items.push(serum);
+                }
+
+                add(items);
+            });
+        }
+
+        bind();
+    })();
+</script>
