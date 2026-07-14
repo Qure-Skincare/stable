@@ -79,6 +79,7 @@
         },
         "description_iPBNaS": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "section_A0": {
