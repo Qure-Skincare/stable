@@ -244,7 +244,7 @@
         "text_slider_RAiRHD": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>The Skincare Secret You've Been Missing</strong></p><p>Unfiltered tap water can strip your skin, cause irritation, and prevent your skincare from working its best. Once I switched to Qure Faucet Filter, my skin calmed down, I got way less breakouts and my skin was more hydrated -  finally looking the way I wanted it to.</p><p>[note_grey]<strong>Hook:</strong>вЂњSpending hundreds on skincare products but still not seeing results? I was too, until I realized the REAL problem wasn't my product - it was the water I was using.”[/note]</p>"
+            "text": "<p><strong>The Skincare Secret You've Been Missing</strong></p><p>Unfiltered tap water can strip your skin, cause irritation, and prevent your skincare from working its best. Once I switched to Qure Faucet Filter, my skin calmed down, I got way less breakouts and my skin was more hydrated -  finally looking the way I wanted it to.</p><p>[note_grey]<strong>Hook:</strong>“Spending hundreds on skincare products but still not seeing results? I was too, until I realized the REAL problem wasn't my product - it was the water I was using.”[/note]</p>"
           }
         },
         "text_slider_ymd9tD": {
@@ -336,7 +336,7 @@
         "use_own_file": false,
         "background_color": "grey",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>вЂњHarsh water can definitely damage your skin on daily basis and <em>it impacts everything</em> you are doing with your skincare.</p>",
+        "text": "<p>“Harsh water can definitely damage your skin on daily basis and <em>it impacts everything</em> you are doing with your skincare.</p>",
         "video_image_cover": "shopify://shop_images/doctor-maxfield.webp",
         "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
