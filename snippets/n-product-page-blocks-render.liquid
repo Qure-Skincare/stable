@@ -45,12 +45,14 @@
             {% render 'n-product-optional-subscription', section: section, block: block, product: product %}
         {% when 'button' %}
             {% assign has_optional_subscription = false %}
+            {% assign optional_subscription_layout = blank %}
             {% for _block in section.blocks %}
                 {% if _block.type == 'optional-subscription' %}
                     {% assign has_optional_subscription = true %}
+                    {% assign optional_subscription_layout = _block.settings.layout %}
                 {% endif %}
             {% endfor %}
-            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available, static: has_optional_subscription %}
+            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available, static: has_optional_subscription, optional_subscription_layout: optional_subscription_layout %}
         {% when 'video' %}
             {% render 'n-page-video', section: section, block: block %}
         {% when 'section' %}

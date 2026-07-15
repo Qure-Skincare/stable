@@ -28,8 +28,9 @@
         "optional_subscription_EnqgRY": {
           "type": "optional-subscription",
           "settings": {
+            "layout": "hero",
             "heading": "Best Results Together",
-            "product": "blue-face-serum-travel-size",
+            "product": "blue-face-serum",
             "subscription_note": "Every 2 months: Receive a new Blue+ Serum",
             "subscription_note_mode": "cancel",
             "serum_variant_id": "49565278503151",
@@ -82,8 +83,8 @@
         "description": "<p>Fine lines & acne look visibly reduced. Clinical LED + Methylene blue. <strong>First serum free ($79 value).</strong></p>",
         "reserved": false,
         "soldout": false,
-        "button-label": "",
-        "button-url": ""
+        "button-label": "Get LED Mask + First Serum Free",
+        "button-url": "#buy-form"
       }
     },
     "better_together_mso": {
@@ -236,7 +237,9 @@
       "blocks": {
         "special_offer": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_discount": true
+          }
         },
         "features": {
           "type": "description",
@@ -245,6 +248,7 @@
         "subscription": {
           "type": "optional-subscription",
           "settings": {
+            "layout": "buy-form",
             "heading": "Best Results Together",
             "product": "blue-face-serum",
             "subscription_note": "Every 2 months: Receive a BluePlus Serum Bottle",
@@ -255,7 +259,10 @@
         },
         "buy": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "hide_payments": true,
+            "hide_certified": true
+          }
         }
       },
       "block_order": [
@@ -272,7 +279,10 @@
         "secondary": true,
         "background": true,
         "rating": false,
+        "badge_text": "Best results",
+        "heading_level": "h2",
         "heading": "LED Mask + Blue Plus Serum",
+        "button-label": "Get the Best Results Bundle",
         "description": "<ul><li>Warranty</li><li>FDA Cleared</li></ul>"
       }
     },
@@ -361,11 +371,13 @@
         "bundle": {
           "type": "exclusive-offer-bundle",
           "settings": {
+            "heading": "Subscribe Now & Get Led Mask a",
             "product": "q-rejuvalight-pro-facewear",
             "image_product1": "shopify://shop_images/complete-bundle-mask.webp",
             "product2": "blue-face-serum",
             "image_product2": "shopify://shop_images/complete-bundle-blue-serum.webp",
-            "text": "<p>Pair advanced LED light therapy with our Blue+ Serum for a brighter, healthier-looking complexion.</p>"
+            "text": "",
+            "show_progress": false
           }
         },
         "cta": {
@@ -389,6 +401,7 @@
         "secondary": true,
         "background": false,
         "seo_heading": "",
+        "heading_level": "h2",
         "heading": "Confident Skin Starts Here",
         "rating": true,
         "rating_type": "customers",

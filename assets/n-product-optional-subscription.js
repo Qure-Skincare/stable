@@ -7,11 +7,24 @@
     var ATC_BOUND_ATTRIBUTE = 'data-atc-upsell-bound';
     var PENDING_ATTRIBUTE = 'data-atc-upsell-pending';
     var FALLBACK_ATTRIBUTE = 'data-atc-upsell-fallback';
+    var CHECKBOX_SELECTOR = '[data-optional-subscription] input[name="subscription"]';
+    var SYNC_EVENT = 'optional-subscription:sync';
+
+    function syncCheckboxes(source) {
+        document.querySelectorAll(CHECKBOX_SELECTOR).forEach(function (checkbox) {
+            if (checkbox === source) return;
+
+            checkbox.checked = source.checked;
+            checkbox.dispatchEvent(new Event(SYNC_EVENT));
+        });
+    }
 
     function getSection(root) {
+        var closestSection = root.closest('.hero-product');
+        if (closestSection) return closestSection;
+
         var sectionId = root.getAttribute('data-section-id');
-        var section = sectionId ? document.getElementById(sectionId) : null;
-        return section || root.closest('.hero-product');
+        return sectionId ? document.getElementById(sectionId) : null;
     }
 
     function initVisuals(root) {
@@ -61,6 +74,11 @@
         }
 
         checkbox.addEventListener('change', function () {
+            update(checkbox.checked, true);
+            syncCheckboxes(checkbox);
+        });
+
+        checkbox.addEventListener(SYNC_EVENT, function () {
             update(checkbox.checked, true);
         });
 
@@ -209,9 +227,13 @@
         var serumVariantId = root.getAttribute('data-serum-variant-id');
         var sellingPlanId = root.getAttribute('data-selling-plan-id');
 
-        if (subscriptionCheckbox && subscriptionCheckbox.checked && serumVariantId) {
+        if (subscriptionCheckbox && subscriptionCheckbox.checked) {
+            if (!serumVariantId || !sellingPlanId) {
+                throw new Error('Subscription variant or selling plan is not configured.');
+            }
+
             var serumItem = { id: serumVariantId, quantity: 1 };
-            if (sellingPlanId) serumItem.selling_plan = sellingPlanId;
+            serumItem.selling_plan = sellingPlanId;
             items.push(serumItem);
         }
 
@@ -267,7 +289,8 @@
         var section = getSection(root);
         var form = section && section.querySelector('.c-buy-block form');
 
-        if (!form || form.getAttribute(ATC_BOUND_ATTRIBUTE) === '1') return;
+        if (!form) return false;
+        if (form.getAttribute(ATC_BOUND_ATTRIBUTE) === '1') return true;
 
         form.setAttribute(ATC_BOUND_ATTRIBUTE, '1');
         form.addEventListener('submit', function (event) {
@@ -278,19 +301,36 @@
                 return;
             }
 
-            var items = collectItems(root, form);
+            var items;
+
+            try {
+                items = collectItems(root, form);
+            } catch (error) {
+                event.preventDefault();
+                handleFailure(form, error);
+                return;
+            }
+
             if (!items) return;
 
             event.preventDefault();
             setPending(form, true);
             addWithRetry(items, form, 0);
         });
+
+        return true;
     }
 
     function initOptionalSubscription(root) {
         if (!(root instanceof HTMLElement)) return;
         initVisuals(root);
+
         initAddToCart(root);
+        var checkbox = root.querySelector('input[name="subscription"]');
+
+        if (checkbox) {
+            checkbox.disabled = false;
+        }
     }
 
     function initAll(scope) {

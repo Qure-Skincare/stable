@@ -17,7 +17,10 @@
         class="c-swiper c-swiper-thumbs"
         data-swiper='{
             "slidesPerView": "{{ slidesPerView }}",
-            "spaceBetween": {{ spaceBetween }}
+            "spaceBetween": {{ spaceBetween }},
+            "watchSlidesProgress": true,
+            "freeMode": true,
+            "slideToClickedSlide": true
         }'>
         <div class="swiper-wrapper">
             {% if product.metafields.custom.carousel_media.value != blank %}

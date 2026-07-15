@@ -18,21 +18,22 @@
 {% endif %}
 
 {% assign main_price = product.price | money_without_trailing_zeros %}
+{% assign optional_layout = block.settings.layout | default: 'hero' %}
 
 {% assign serum = block.settings.product %}
-{% assign serum_variant_id = block.settings.serum_variant_id | default: serum.variants.first.id %}
+{% assign serum_variant = blank %}
+{% assign configured_variant_id = block.settings.serum_variant_id | append: '' %}
+{% if serum != blank and configured_variant_id != blank %}
+    {% for variant in serum.variants %}
+        {% assign variant_id = variant.id | append: '' %}
+        {% if variant_id == configured_variant_id %}
+            {% assign serum_variant = variant %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
 
-{% assign serum_variant = serum.selected_or_first_available_variant %}
-{% assign configured_variant_id = serum_variant_id | append: '' %}
-{% for variant in serum.variants %}
-    {% assign variant_id = variant.id | append: '' %}
-    {% if variant_id == configured_variant_id %}
-        {% assign serum_variant = variant %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-
-{% assign selling_plan_allocation = serum_variant.selling_plan_allocations.first %}
+{% assign selling_plan_allocation = blank %}
 {% assign configured_selling_plan_id = block.settings.selling_plan_id | append: '' %}
 {% if serum_variant != blank and configured_selling_plan_id != blank %}
     {% for allocation in serum_variant.selling_plan_allocations %}
@@ -86,9 +87,11 @@
             {% endif %}
         </div>
         <label class="c-optional-subscription__option">
-            <input type="checkbox" name="subscription" />
-            <input type="hidden" name="checked-image" value="{{ checked_image_url | escape }}" />
-            <input type="hidden" name="unchecked-image" value="{{ unchecked_image_url | escape }}" />
+            <input type="checkbox" name="subscription" disabled />
+            {% if optional_layout == 'hero' %}
+                <input type="hidden" name="checked-image" value="{{ checked_image_url | escape }}" />
+                <input type="hidden" name="unchecked-image" value="{{ unchecked_image_url | escape }}" />
+            {% endif %}
             <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
             {% if serum.featured_image != blank %}
                 <img loading="lazy" src="{{ serum.featured_image | image_url }}" alt="{{ serum.title | escape }}" />
@@ -120,11 +123,26 @@
                 </small>
             {% endif %}
         </label>
+        {% if optional_layout == 'buy-form' %}
+            <div class="c-optional-subscription__today">
+                <p>Today you pay</p>
+                <small>First bottle free</small>
+                {% if main_price != blank %}
+                    <div class="e-price e-price--highlight">
+                        <div class="e-price__main">
+                            <div class="e-price__current">{{ main_price }}</div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
     </div>
-    <div class="e-auto-ships" hidden>
-        <i class="e-icon e-icon-rotation-2"></i>
-        {{ 'purchase-form.settings.subscribe_text' | t }}
-    </div>
+    {% if optional_layout == 'hero' %}
+        <div class="e-auto-ships" hidden>
+            <i class="e-icon e-icon-rotation-2"></i>
+            {{ 'purchase-form.settings.subscribe_text' | t }}
+        </div>
+    {% endif %}
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {

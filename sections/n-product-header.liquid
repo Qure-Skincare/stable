@@ -12,13 +12,15 @@
 
 {% include 'get-product-data' %}
 
+{% assign slider_element_id = section.settings.section_id | prepend: '#' %}
+
 <section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}{% if section.settings.secondary == true %} hero-product--secondary{% endif %}{% if section.settings.background == true %} hero-product--bg{% endif %}" id="{{ section.settings.section_id }}">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
             {% if section.settings.image != blank %}
                 <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
             {% else %}
-                {% render 'n-product-page-slider', product: product, page: page, element_id: section.settings.section_id | prepend: '#', slidesPerView: 1, spaceBetween: 16 %}
+                {% render 'n-product-page-slider', product: product, page: page, element_id: slider_element_id, slidesPerView: 1, spaceBetween: 16 %}
                 {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
                 {% render 'n-product-page-slider-sticky-video', section: section %}
             {% endif %}
@@ -40,8 +42,16 @@
                 <p>{{ section.settings.seo_heading }}</p>
             {% endif %}
 
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge">{{ section.settings.badge_text }}</div>
+            {% endif %}
+
             {% if section.settings.heading != blank %}
-                <h1>{{ section.settings.heading }}</h1>
+                {% if section.settings.heading_level == 'h2' %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% else %}
+                    <h1>{{ section.settings.heading }}</h1>
+                {% endif %}
             {% endif %}
 
             {% include 'n-product-page-blocks-render' %}
@@ -101,6 +111,27 @@
             "type": "text",
             "id": "heading",
             "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        },
+        {
+            "type": "select",
+            "id": "heading_level",
+            "label": "t:common.heading-level",
+            "options": [
+                {
+                    "value": "h1",
+                    "label": "t:common.heading-1"
+                },
+                {
+                    "value": "h2",
+                    "label": "t:common.heading-2"
+                }
+            ],
+            "default": "h1"
         },
         {
             "type": "checkbox",
@@ -352,6 +383,11 @@
             "limit": 1,
             "settings": [
                 {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
                     "type": "product",
                     "id": "product",
                     "label": "t:common.product"
@@ -375,6 +411,12 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_progress",
+                    "label": "t:common.show-progress",
+                    "default": true
                 }
             ]
         },
@@ -383,6 +425,22 @@
             "name": "t:common.optional-subscription",
             "limit": 1,
             "settings": [
+                {
+                    "type": "select",
+                    "id": "layout",
+                    "label": "t:common.layout",
+                    "options": [
+                        {
+                            "value": "hero",
+                            "label": "t:common.hero-layout"
+                        },
+                        {
+                            "value": "buy-form",
+                            "label": "t:common.buy-form-layout"
+                        }
+                    ],
+                    "default": "hero"
+                },
                 {
                     "type": "text",
                     "id": "heading",
@@ -418,8 +476,7 @@
                 {
                     "type": "text",
                     "id": "serum_variant_id",
-                    "label": "t:common.variant",
-                    "default": "49565278503151"
+                    "label": "t:common.variant"
                 },
                 {
                     "type": "text",
