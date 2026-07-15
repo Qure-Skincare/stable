@@ -9,6 +9,80 @@
  */
 {
   "sections": {
+    "n_product_header_UTTDhr": {
+      "type": "n-product-header",
+      "blocks": {
+        "quote_wDQRrX": {
+          "type": "quote",
+          "settings": {
+            "quote_image": "shopify://shop_images/expert-quote-tag.webp",
+            "quote": "Science-backed and works well with light therapy.",
+            "username": "Dr.Shah",
+            "position": "Board-Certified Dermatologist"
+          }
+        },
+        "optional_subscription_EnqgRY": {
+          "type": "optional-subscription",
+          "settings": {
+            "heading": "Best Results Together",
+            "product": "blue-face-serum-travel-size",
+            "subscription_note": "",
+            "serum_variant_id": "49565278503151",
+            "selling_plan_id": "8856043759"
+          }
+        },
+        "description_QmGpF3": {
+          "type": "description",
+          "settings": {}
+        },
+        "approved_ngFyi7": {
+          "type": "approved",
+          "settings": {
+            "image_1": "shopify://shop_images/approved-by-1.webp",
+            "image_2": "shopify://shop_images/approved-by-2.webp",
+            "image_3": "shopify://shop_images/approved-by-3.webp",
+            "image_4": "shopify://shop_images/approved-by-4.webp",
+            "secondary": true,
+            "rating": true,
+            "rating_text": "500k+ customers",
+            "text": "<p>50+ dermatologists</p>"
+          }
+        },
+        "button_m49g68": {
+          "type": "button",
+          "settings": {
+            "hide_payments": false,
+            "hide_bottom": false,
+            "hide_certified": false
+          }
+        }
+      },
+      "block_order": [
+        "quote_wDQRrX",
+        "optional_subscription_EnqgRY",
+        "description_QmGpF3",
+        "approved_ngFyi7",
+        "button_m49g68"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "section_id": "hero-product",
+        "product": "q-rejuvalight-pro-facewear",
+        "reverse": false,
+        "secondary": false,
+        "background": false,
+        "seo_heading": "",
+        "heading": "LED Mask + Methylene Blue+ Face Serum. Best results.",
+        "rating": false,
+        "rating_type": "customers",
+        "limited": false,
+        "description": "<p>Fine lines & acne look visibly reduced. Clinical LED + Methylene blue. <strong>First serum free ($79 value).</strong></p>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
+      }
+    },
     "better_together_mso": {
       "type": "n_better-together",
       "blocks": {
@@ -284,8 +358,10 @@
           "type": "exclusive-offer-bundle",
           "settings": {
             "product": "q-rejuvalight-pro-facewear",
+            "image_product1": "shopify://shop_images/complete-bundle-mask.webp",
             "product2": "blue-face-serum",
-            "text": "<p>Subscribe Now &amp; Get Led Mask and Blue+ Serum for Free</p>"
+            "image_product2": "shopify://shop_images/complete-bundle-blue-serum.webp",
+            "text": "<p>Pair advanced LED light therapy with our Blue+ Serum for a brighter, healthier-looking complexion.</p>"
           }
         },
         "cta": {
@@ -308,9 +384,15 @@
         "reverse": true,
         "secondary": true,
         "background": false,
-        "rating": true,
+        "seo_heading": "",
         "heading": "Confident Skin Starts Here",
+        "rating": true,
+        "rating_type": "customers",
+        "limited": false,
         "description": "<p>Pair advanced LED light therapy with our Blue+ Serum for a brighter, healthier-looking complexion.</p>",
+        "image": "shopify://shop_images/7_6d210d39-7ff8-4c5b-b98e-c1614ede56e7.webp",
+        "reserved": false,
+        "soldout": false,
         "button-label": "Get the Best Results Bundle",
         "button-url": "#buy-form"
       }
@@ -380,6 +462,7 @@
     }
   },
   "order": [
+    "n_product_header_UTTDhr",
     "better_together_mso",
     "bundle_usage_mso",
     "peek_cards_slider_msoReal",

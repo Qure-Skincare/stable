@@ -1,0 +1,28 @@
+{% doc %}
+  Renders an expert quote tag 
+
+  @param {object} block - A `quote` block object.
+
+  @example
+  {% render 'n-product-expert-quote-tag', block: block %}
+{% enddoc %}
+
+{% if block.settings.quote != blank %}
+    <div class="e-expert-quote-tag" {{ block.shopify_attributes }}>
+        {% if block.settings.quote_image != blank %}
+            <span class="e-expert-quote-tag__avatar">
+                <img loading="lazy" src="{{ block.settings.quote_image | image_url }}" alt="{{ block.settings.quote_image.alt | escape }}" />
+            </span>
+        {% endif %}
+        <span class="e-expert-quote-tag__text">
+            <span class="e-expert-quote-tag__quote">{{ block.settings.quote }}</span>
+            {% if block.settings.username != blank or block.settings.position != blank %}
+                {% if block.settings.username != blank %}
+                    <span class="e-expert-quote-tag__author">
+                        <strong>{{ block.settings.username }}</strong>{% if block.settings.position != blank %} - {{ block.settings.position }}{% endif %}
+                    </span>
+                {% endif %}
+            {% endif %}
+        </span>
+    </div>
+{% endif %}

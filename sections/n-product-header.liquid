@@ -25,7 +25,7 @@
         </div>
         <div class="hero-product__main">
 
-            {% render 'n-product-page-approved', section: section %}
+            {% render 'n-product-page-approved', section: section, product: product %}
 
             {%- if product != blank -%}
                 {% if section.settings.rating != blank %}
@@ -497,6 +497,33 @@
             "settings": []
         },
         {
+            "type": "quote",
+            "name": "t:common.quote",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "quote_image",
+                    "label": "t:common.quote-image"
+                },
+                {
+                    "type": "text",
+                    "id": "quote",
+                    "label": "t:common.quote"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "position",
+                    "label": "t:common.position"
+                }
+            ]
+        },
+        {
             "type": "saveup-offer",
             "name": "t:common.saveup-offer",
             "limit": 1,
@@ -635,6 +662,17 @@
                     "id": "secondary",
                     "label": "t:common.secondary",
                     "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "rating",
+                    "label": "t:common.rating",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "rating_text",
+                    "label": "t:common.rating-text"
                 },
                 {
                     "type": "richtext",
