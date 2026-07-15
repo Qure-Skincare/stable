@@ -459,13 +459,13 @@
         "hide_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-6-month-bundle-for-wrinkles",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "90",
-        "hide_bottom": false,
-        "hide_certified": false
+        "hide_bottom": true,
+        "hide_certified": true
       }
     },
     "n_press_reviews_3zGerf": {
