@@ -636,6 +636,7 @@
       "subscribe": "Subscribe",
       "subscribe_percent": "70%",
       "subscribe_text": "Auto-ships · Cancel anytime · No commitment",
+      "cancel-anytime": "Cancel anytime",
       "onetime-payment": "One-time payment with:",
       "subscription-onetime-option": "One Time:",
       "subscription-days-option": "Every 90 days:",

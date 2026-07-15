@@ -400,6 +400,22 @@
                     "label": "t:common.subscription-note"
                 },
                 {
+                    "type": "select",
+                    "id": "subscription_note_mode",
+                    "label": "t:common.subscription-note-mode",
+                    "options": [
+                        {
+                            "value": "cancel",
+                            "label": "t:common.cancel-anytime"
+                        },
+                        {
+                            "value": "prices",
+                            "label": "t:common.price"
+                        }
+                    ],
+                    "default": "cancel"
+                },
+                {
                     "type": "text",
                     "id": "serum_variant_id",
                     "label": "t:common.variant",
@@ -409,6 +425,16 @@
                     "type": "text",
                     "id": "selling_plan_id",
                     "label": "t:common.selling_plan"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "checked_image",
+                    "label": "t:common.checked-image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "unchecked_image",
+                    "label": "t:common.unchecked-image"
                 }
             ]
         },

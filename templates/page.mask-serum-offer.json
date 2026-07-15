@@ -9,9 +9,13 @@
  */
 {
   "sections": {
-    "n_product_header_UTTDhr": {
+   "n_product_header_UTTDhr": {
       "type": "n-product-header",
       "blocks": {
+        "description_QmGpF3": {
+          "type": "description",
+          "settings": {}
+        },
         "quote_wDQRrX": {
           "type": "quote",
           "settings": {
@@ -26,14 +30,13 @@
           "settings": {
             "heading": "Best Results Together",
             "product": "blue-face-serum-travel-size",
-            "subscription_note": "",
+            "subscription_note": "Every 2 months: Receive a new Blue+ Serum",
+            "subscription_note_mode": "cancel",
             "serum_variant_id": "49565278503151",
-            "selling_plan_id": "8856043759"
+            "selling_plan_id": "8856043759",
+            "checked_image": "shopify://shop_images/8_fbeaf0f4-ff69-4dbf-8b69-96bcf7b06e7f.webp",
+            "unchecked_image": "shopify://shop_images/9.webp"
           }
-        },
-        "description_QmGpF3": {
-          "type": "description",
-          "settings": {}
         },
         "approved_ngFyi7": {
           "type": "approved",
@@ -58,9 +61,9 @@
         }
       },
       "block_order": [
+        "description_QmGpF3",
         "quote_wDQRrX",
         "optional_subscription_EnqgRY",
-        "description_QmGpF3",
         "approved_ngFyi7",
         "button_m49g68"
       ],
@@ -244,7 +247,8 @@
           "settings": {
             "heading": "Best Results Together",
             "product": "blue-face-serum",
-            "subscription_note": "Every 2 months: Receive a Blue+ Serum Bottle",
+            "subscription_note": "Every 2 months: Receive a BluePlus Serum Bottle",
+            "subscription_note_mode": "prices",
             "serum_variant_id": "49565278503151",
             "selling_plan_id": "8856043759"
           }

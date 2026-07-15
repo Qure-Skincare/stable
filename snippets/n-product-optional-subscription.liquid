@@ -22,14 +22,59 @@
 {% assign serum = block.settings.product %}
 {% assign serum_variant_id = block.settings.serum_variant_id | default: serum.variants.first.id %}
 
-<div class="hero-product__optional-subscription">
+{% assign serum_variant = serum.selected_or_first_available_variant %}
+{% assign configured_variant_id = serum_variant_id | append: '' %}
+{% for variant in serum.variants %}
+    {% assign variant_id = variant.id | append: '' %}
+    {% if variant_id == configured_variant_id %}
+        {% assign serum_variant = variant %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% assign selling_plan_allocation = serum_variant.selling_plan_allocations.first %}
+{% assign configured_selling_plan_id = block.settings.selling_plan_id | append: '' %}
+{% if serum_variant != blank and configured_selling_plan_id != blank %}
+    {% for allocation in serum_variant.selling_plan_allocations %}
+        {% assign selling_plan_id = allocation.selling_plan.id | append: '' %}
+        {% if selling_plan_id == configured_selling_plan_id %}
+            {% assign selling_plan_allocation = allocation %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% assign recurring_price = serum_variant.price %}
+{% assign recurring_compare_at_price = serum_variant.compare_at_price %}
+{% if selling_plan_allocation != blank %}
+    {% assign recurring_price = selling_plan_allocation.price %}
+    {% assign recurring_compare_at_price = selling_plan_allocation.compare_at_price %}
+{% endif %}
+
+{% assign checked_image_url = blank %}
+{% if block.settings.checked_image != blank %}
+    {% assign checked_image_url = block.settings.checked_image | image_url %}
+{% endif %}
+
+{% assign unchecked_image_url = blank %}
+{% if block.settings.unchecked_image != blank %}
+    {% assign unchecked_image_url = block.settings.unchecked_image | image_url %}
+{% endif %}
+
+<div
+    class="hero-product__optional-subscription"
+    data-optional-subscription
+    data-section-id="{{ section.settings.section_id | escape }}"
+    data-serum-variant-id="{{ serum_variant.id | escape }}"
+    data-selling-plan-id="{{ selling_plan_allocation.selling_plan.id | escape }}"
+>
     <div class="c-optional-subscription">
         <div class="c-optional-subscription__main">
             {% if block.settings.heading != blank %}
                 <span>{{ block.settings.heading }}</span>
             {% endif %}
             {% if product.featured_image != blank %}
-                <img loading="lazy" src="{{ product.featured_image | image_url: width: 250 }}" alt="{{ product.title | escape }}" />
+                <img loading="lazy" src="{{ product.featured_image | image_url }}" alt="{{ product.title | escape }}" />
             {% endif %}
             <p>{{ product.title }}</p>
             {% if main_price != blank %}
@@ -41,81 +86,48 @@
             {% endif %}
         </div>
         <label class="c-optional-subscription__option">
-            <input type="checkbox" name="subscription" checked />
+            <input type="checkbox" name="subscription" />
+            <input type="hidden" name="checked-image" value="{{ checked_image_url | escape }}" />
+            <input type="hidden" name="unchecked-image" value="{{ unchecked_image_url | escape }}" />
             <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
             {% if serum.featured_image != blank %}
-                <img loading="lazy" src="{{ serum.featured_image | image_url: width: 250 }}" alt="{{ serum.title | escape }}" />
+                <img loading="lazy" src="{{ serum.featured_image | image_url }}" alt="{{ serum.title | escape }}" />
             {% endif %}
             <p><strong>Subscribe</strong> {{ serum.title }}</p>
             <div class="e-price e-price--highlight">
                 <div class="e-price__main">
                     <div class="e-price__current">First bottle Free</div>
-                    {% if serum != blank %}
-                        <div class="e-price__old">{{ serum.price | money_without_trailing_zeros }}</div>
+                    {% if serum_variant.price > 0 %}
+                        <div class="e-price__old">{{ serum_variant.price | money_without_trailing_zeros }}</div>
                     {% endif %}
                 </div>
             </div>
             {% if block.settings.subscription_note != blank %}
-                <small>{{ block.settings.subscription_note }}</small>
+                <small>
+                    {{ block.settings.subscription_note }}
+                    {% if block.settings.subscription_note_mode == 'prices' %}
+                        {% if recurring_price > 0 %}
+                            (
+                            {% if recurring_compare_at_price > recurring_price %}
+                                <s>{{ recurring_compare_at_price | money_without_trailing_zeros }}</s>
+                            {% endif %}
+                            {{ recurring_price | money_without_trailing_zeros }}
+                            )
+                        {% endif %}
+                    {% else %}
+                        · <a href="/pages/subscriptions">{{ 'purchase-form.settings.cancel-anytime' | t }}</a>
+                    {% endif %}
+                </small>
             {% endif %}
         </label>
-        <div class="c-optional-subscription__today">
-            <p>Today you pay</p>
-            <small>First bottle free</small>
-            {% if main_price != blank %}
-                <div class="e-price e-price--highlight">
-                    <div class="e-price__main">
-                        <div class="e-price__current">{{ main_price }}</div>
-                    </div>
-                </div>
-            {% endif %}
-        </div>
+    </div>
+    <div class="e-auto-ships" hidden>
+        <i class="e-icon e-icon-rotation-2"></i>
+        {{ 'purchase-form.settings.subscribe_text' | t }}
     </div>
 </div>
-
-<script class="__init">
-    (function () {
-        var SECTION_ID = {{ section.settings.section_id | json }};
-        var SERUM_ID = {{ serum_variant_id | json }};
-        var SELLING_PLAN = {{ block.settings.selling_plan_id | json }};
-
-        function add(items) {
-            if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
-                window.CartDrawer.addToCartJson(items);
-            } else if (typeof addToCartJson === 'function') {
-                addToCartJson(items);
-            } else {
-                setTimeout(function () { add(items); }, 60);
-            }
-        }
-
-        function bind() {
-            var root = document.getElementById(SECTION_ID) || document;
-            var form = root.querySelector('.c-buy-block form');
-            if (!form) { return document.addEventListener('DOMContentLoaded', bind, { once: true }); }
-            if (form.getAttribute('data-atc-bound')) return;
-            form.setAttribute('data-atc-bound', '1');
-
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-
-                var idInput = form.querySelector('[name="id"]');
-                var mainId = idInput ? idInput.value : null;
-                if (!mainId) return;
-
-                var items = [{ id: mainId, quantity: 1 }];
-
-                var checkbox = root.querySelector('.c-optional-subscription input[name="subscription"]');
-                if (checkbox && checkbox.checked && SERUM_ID) {
-                    var serum = { id: SERUM_ID, quantity: 1 };
-                    if (SELLING_PLAN) { serum.selling_plan = SELLING_PLAN; }
-                    items.push(serum);
-                }
-
-                add(items);
-            });
-        }
-
-        bind();
-    })();
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('n-product-optional-subscription.js', '{{ 'n-product-optional-subscription.js' | asset_url }}');
+    });
 </script>
