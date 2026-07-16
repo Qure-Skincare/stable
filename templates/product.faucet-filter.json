@@ -12,6 +12,10 @@
     "product_header_YnMCRD": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "black_friday_discount_tmNq3D": {
           "type": "black-friday-discount",
           "settings": {}
@@ -73,6 +77,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "black_friday_discount_tmNq3D",
         "description_9VBwaX",
         "section_A0",

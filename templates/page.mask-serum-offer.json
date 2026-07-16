@@ -59,6 +59,21 @@
             "hide_bottom": false,
             "hide_certified": false
           }
+        },
+        "stats_wavelengths": {
+          "type": "stats",
+          "settings": {
+            "heading": "Clinically studied wavelengths",
+            "percent_value_1": 93,
+            "value_text_1": "",
+            "percent_scale_text_1": "Visible results next day",
+            "percent_value_2": 70,
+            "value_text_2": "",
+            "percent_scale_text_2": "Smoother lines in 8 weeks.",
+            "percent_value_3": 90,
+            "value_text_3": "3 min",
+            "percent_scale_text_3": "Per treatment no downtime"
+          }
         }
       },
       "block_order": [
@@ -66,7 +81,8 @@
         "quote_wDQRrX",
         "optional_subscription_EnqgRY",
         "approved_ngFyi7",
-        "button_m49g68"
+        "button_m49g68",
+        "stats_wavelengths"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
@@ -235,6 +251,10 @@
     "buy_form_mso": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "special_offer": {
           "type": "price",
           "settings": {
@@ -266,6 +286,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "special_offer",
         "features",
         "subscription",

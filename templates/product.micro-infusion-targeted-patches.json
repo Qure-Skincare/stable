@@ -12,6 +12,10 @@
     "product_header_U6RBGz": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "black_friday_discount_AXVH8g": {
           "type": "black-friday-discount",
           "disabled": true,
@@ -97,6 +101,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "black_friday_discount_AXVH8g",
         "price_A11",
         "description_iPBNaS",

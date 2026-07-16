@@ -12,6 +12,10 @@
     "page_header_6BFNQx": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "approved_c7Y6Gp": {
           "type": "approved",
           "settings": {
@@ -51,6 +55,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "approved_c7Y6Gp",
         "description_iSDNaK",
         "link_iPBNaS",

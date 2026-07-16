@@ -12,6 +12,10 @@
     "page_header_V5N4T9": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "gallery_sticky_video_63bnFe": {
           "type": "gallery-sticky-video",
           "settings": {
@@ -76,6 +80,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "gallery_sticky_video_63bnFe",
         "black_friday_discount_X3kBdA",
         "description_iSDNaK",

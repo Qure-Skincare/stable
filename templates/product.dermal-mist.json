@@ -12,6 +12,10 @@
     "product_header_c7eEXx": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "black_friday_discount_MCCNDL": {
           "type": "black-friday-discount",
           "settings": {}
@@ -75,6 +79,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "black_friday_discount_MCCNDL",
         "price_A11",
         "description_iPBNaS",

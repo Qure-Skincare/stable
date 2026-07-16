@@ -1,0 +1,46 @@
+{% doc %}
+  Renders the "stats" block.
+
+  Renders nothing if no `stats` block is added to the section.
+
+  @param {object} section - The current section object.
+
+  @example
+  {% render 'n-product-page-stats', section: section %}
+{% enddoc %}
+
+{% assign stats_blocks = section.blocks | where: 'type', 'stats' %}
+
+{% for block in stats_blocks %}
+    <div class="hero-product__studied" {{ block.shopify_attributes }}>
+        {% if block.settings.heading != blank %}
+            <p>{{ block.settings.heading }}</p>
+        {% endif %}
+        <ul class="c-percent-list">
+            {% if block.settings.percent_scale_text_1 != blank %}
+                <li>
+                    <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_1 }}">
+                        <span>{% if block.settings.value_text_1 != blank %}{{ block.settings.value_text_1 }}{% else %}{{ block.settings.percent_value_1 }}%{% endif %}</span>
+                    </div>
+                    <span>{{ block.settings.percent_scale_text_1 }}</span>
+                </li>
+            {% endif %}
+            {% if block.settings.percent_scale_text_2 != blank %}
+                <li>
+                    <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_2 }}">
+                        <span>{% if block.settings.value_text_2 != blank %}{{ block.settings.value_text_2 }}{% else %}{{ block.settings.percent_value_2 }}%{% endif %}</span>
+                    </div>
+                    <span>{{ block.settings.percent_scale_text_2 }}</span>
+                </li>
+            {% endif %}
+            {% if block.settings.percent_scale_text_3 != blank %}
+                <li>
+                    <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_3 }}">
+                        <span>{% if block.settings.value_text_3 != blank %}{{ block.settings.value_text_3 }}{% else %}{{ block.settings.percent_value_3 }}%{% endif %}</span>
+                    </div>
+                    <span>{{ block.settings.percent_scale_text_3 }}</span>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+{% endfor %}
