@@ -77,10 +77,10 @@
                             {% else %}
                             data-preselected="false"
                             {% endif %}
-                            {% if block.settings.gift != blank %}
+                            {% if subscription_is_on == true and block.settings.gift != blank %}
                             data-gift="{{ all_products[block.settings.gift].variants.first.id }}"
                             {% endif %}
-                            {% if block.settings.discount_code != blank %}
+                            {% if subscription_is_on == true and block.settings.discount_code != blank %}
                             data-discount-code="{{ block.settings.discount_code }}"
                             {% endif %}
                             data-variant-title="{{ product_title_tag }}"
