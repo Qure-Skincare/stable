@@ -7,9 +7,9 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-   "n_product_header_UTTDhr": {
+    "n_product_header_UTTDhr": {
       "type": "n-product-header",
       "blocks": {
         "description_QmGpF3": {
@@ -93,6 +93,8 @@
         "background": false,
         "seo_heading": "",
         "heading": "LED Mask + Methylene Blue+ Face Serum. Best results.",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
@@ -111,7 +113,7 @@
           "settings": {
             "image": "shopify://shop_images/better-together-1.webp",
             "badge_text": "LED Mask",
-            "text": "<h6>Skin-Rejuvenating Mode</h6><p>Combines clinically-studied wavelengths to help address multiple skin concerns with just one device. 3-minute wireless daily treatment.</p><ul><li><strong>Skin-Clearing Mode 415nm \u00b7 630nm \u00b7</strong> Helps support a clearer-looking complexion</li><li><strong>Skin-Rejuvenating Mode \u00b7 630nm \u00b7 660nm \u00b7 880nm \u00b7</strong> Helps improve the look of fine lines and skin texture</li></ul>"
+            "text": "<h6>Skin-Rejuvenating Mode</h6><p>Combines clinically-studied wavelengths to help address multiple skin concerns with just one device. 3-minute wireless daily treatment.</p><ul><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion</li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
           }
         },
         "item_serum": {
@@ -119,7 +121,7 @@
           "settings": {
             "image": "shopify://shop_images/better-together-2.webp",
             "badge_text": "Methylene Blue+ Serum",
-            "text": "<h6>Skin-Clearing Mode</h6><p>Works in sync with LED light and for you on the days between. Formulated with methylene blue to help skin respond to each session, plus antioxidant support against daily environmental stressors.</p><ul><li><strong>415nm \u00b7 630nm \u00b7</strong> Helps support a clearer-looking complexion</li></ul>"
+            "text": "<h6>Skin-Clearing Mode</h6><p>Works in sync with LED light and for you on the days between. Formulated with methylene blue to help skin respond to each session, plus antioxidant support against daily environmental stressors.</p><ul><li><strong>415nm · 630nm ·</strong> Helps support a clearer-looking complexion</li></ul>"
           }
         },
         "item_together": {
@@ -192,7 +194,7 @@
         "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask + Methylene Blue Serum. 3 minutes.</h2>",
         "button_label": "Get the Best Results Bundle",
         "button_url": "#buy-form",
-        "sub_text": "30-Day Money-Back Guarantee \u2022 Free US Shipping"
+        "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
       }
     },
     "peek_cards_slider_msoReal": {
@@ -229,7 +231,10 @@
       "settings": {
         "modifier": "changes",
         "background_color": "bg",
+        "section_id": "",
         "heading": "<h2>Real results. LED Mask + Methylene Blue Serum</h2><p>Join real people experiencing real transformations with consistent use of LED Mask + Methylene Blue serum.</p>",
+        "text": "",
+        "quote_text": "",
         "button_label": "Get Started",
         "button_url": "#buy-form"
       }
@@ -238,9 +243,10 @@
       "type": "n_trusted-recommended",
       "name": "t:sections.n_trusted-recommended.name",
       "settings": {
+        "use_own_file": false,
         "background_color": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>\u201cMethylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.\u201d</p>",
+        "text": "<p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.”</p>",
         "video_image_cover": "shopify://shop_images/dr-shah-maxfield-2.webp",
         "text_on_image": "",
         "wistia_url": false,
@@ -274,13 +280,15 @@
             "subscription_note": "Every 2 months: Receive a BluePlus Serum Bottle",
             "subscription_note_mode": "prices",
             "subscription_variant_id": "49565278503151",
-            "selling_plan_id": "8856043759"
+            "selling_plan_id": "8856043759",
+            "checked_image": "shopify://shop_images/6_88ef9585-acdc-4815-8e8e-c7139f7187a4.webp"
           }
         },
         "buy": {
           "type": "button",
           "settings": {
             "hide_payments": true,
+            "hide_bottom": false,
             "hide_certified": true
           }
         }
@@ -299,12 +307,18 @@
         "reverse": true,
         "secondary": true,
         "background": true,
-        "rating": false,
+        "seo_heading": "",
+        "heading": "LED Mask + Blue Plus Serum",
         "badge_text": "Best results",
         "heading_level": "h2",
-        "heading": "LED Mask + Blue Plus Serum",
+        "rating": false,
+        "rating_type": "customers",
+        "limited": false,
+        "description": "<ul><li>Warranty</li><li>FDA Cleared</li></ul>",
+        "reserved": false,
+        "soldout": false,
         "button-label": "Get the Best Results Bundle",
-        "description": "<ul><li>Warranty</li><li>FDA Cleared</li></ul>"
+        "button-url": ""
       }
     },
     "trusted_reviews_msoGlow": {
@@ -317,7 +331,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Terri P.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Wish I started years ago</h6><p>\u201cAfter two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age\u2026. I wish this technology had been available when I was younger.\u201d</p>",
+            "text": "<h6>Wish I started years ago</h6><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
             "product_text": "Terri uses...",
@@ -331,7 +345,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Hydrated more than ever</h6><p>\u201cI never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.\u201d</p>",
+            "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
             "product_text": "Hanna uses...",
@@ -345,7 +359,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Acne and dryness gone</h6><p>\u201cMy skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!\u201d</p>",
+            "text": "<h6>Acne and dryness gone</h6><p>“My skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
             "product_text": "Josie uses...",
@@ -359,7 +373,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Can\u2019t go a day without it</h6><p>\u201cStraight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, even toned, and looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.\u201d</p>",
+            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, even toned, and looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
             "product_text": "Anton uses...",
@@ -422,8 +436,9 @@
         "secondary": true,
         "background": false,
         "seo_heading": "",
-        "heading_level": "h2",
         "heading": "Confident Skin Starts Here",
+        "badge_text": "",
+        "heading_level": "h2",
         "rating": true,
         "rating_type": "customers",
         "limited": false,
@@ -493,9 +508,37 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
-        "button_label": "Ask us ",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    },
+    "cta_bar_mso": {
+      "type": "n-sticky-button",
+      "blocks": {
+        "optional_subscription": {
+          "type": "optional-subscription",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear",
+            "image": "shopify://shop_images/mask-and-serum-small-1.webp",
+            "price_note": "Free <del>$79</del>",
+            "rating": true,
+            "rating_text": "<strong>4.8/5</strong> Trusted by <strong>300k+</strong> Customers",
+            "subscription_variant_id": "49565278503151",
+            "selling_plan_id": "8856043759"
+          }
+        }
+      },
+      "block_order": [
+        "optional_subscription"
+      ],
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Pro LED Mask + Blue Plus Serum",
+        "text": "",
+        "limited": false,
+        "button-label": "Get LED Mask + First Serum Free",
+        "button-url": ""
       }
     }
   },
@@ -508,6 +551,7 @@
     "buy_form_mso",
     "trusted_reviews_msoGlow",
     "confident_skin_mso",
-    "faq_msoQuestions"
+    "faq_msoQuestions",
+    "cta_bar_mso"
   ]
 }

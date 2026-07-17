@@ -4,26 +4,74 @@
 
 {% include 'get-product-data', product_handle: product.handle, product_prefix: 'sticky-button-' %}
 
-
 <section class="cta-bar">
-    <div class="container">
-        {% if section.settings.heading != blank %}
-          <h6 class="cta-bar__title">{{ section.settings.heading }}</h6>
-        {% endif %}
-        {% if section.settings.button-url != blank %}
-            <div class="cta-bar__button">
-                <a class="btn btn--primary" href="{{ section.settings.button-url }}">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
+    {% for block in section.blocks %}
+        {% if block.type == 'optional-subscription' %}
+            <div class="container">
+                {% if block.settings.image != blank or block.settings.rating %}
+                    <div class="cta-bar__content">
+                        {% if block.settings.image != blank %}
+                            <img loading="lazy" src="{{ block.settings.image | image_url: width: 200 }}" alt="{{ section.settings.heading | escape }}" />
+                        {% endif %}
+                        {% if section.settings.heading != blank %}
+                            <h6>{{ section.settings.heading }}{% if block.settings.price_note != blank %} <span>{{ block.settings.price_note }}</span>{% endif %}</h6>
+                        {% endif %}
+                        {% if block.settings.rating %}
+                            <p>
+                                <span class="e-rating-stars" style="--rating: 4.8"></span>
+                                {{ block.settings.rating_text }}
+                            </p>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                <div class="cta-bar__button">
+                    {% if block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}<div class="c-buy-block">{% endif %}
+                    <form method="post" action="/cart/add" enctype="multipart/form-data">
+                        <button id="sticky-cta-button" type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
+                        <input type="hidden" name="quantity" id="quantity" value="1">
+                        <input type="hidden" name="id" value="{{ block.settings.product.selected_or_first_available_variant.id }}">
+                    </form>
+                    {% if block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}</div>{% endif %}
+                </div>
             </div>
-        {% else %}
-          <div class="cta-bar__button">
-            <form method="post" action="/cart/add" enctype="multipart/form-data">
-              <button id="sticky-cta-button" type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
-              <input type="hidden" name="quantity" id="quantity" value="1">
-              <input type="hidden" name="id" value="{{ product_variant_id }}">
-            </form>
-          </div>
+            {% if block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}
+                <div data-optional-subscription hidden data-subscription-variant-id="{{ block.settings.subscription_variant_id | escape }}" data-subscription-selling-plan-id="{{ block.settings.selling_plan_id | escape }}">
+                    <div class="c-optional-subscription">
+                        <label class="c-optional-subscription__option">
+                            <input type="checkbox" name="subscription" checked />
+                        </label>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        loadScriptOnce('n-product-optional-subscription.js', '{{ 'n-product-optional-subscription.js' | asset_url }}');
+                    });
+                </script>
+            {% endif %}
         {% endif %}
-    </div>
+    {% endfor %}
+
+    {% if section.blocks.size == 0 %}
+        <div class="container">
+            {% if section.settings.heading != blank %}
+              <h6 class="cta-bar__title">{{ section.settings.heading }}</h6>
+            {% endif %}
+            {% if section.settings.button-url != blank %}
+                <div class="cta-bar__button">
+                    <a class="btn btn--primary" href="{{ section.settings.button-url }}">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</a>
+                </div>
+            {% else %}
+              <div class="cta-bar__button">
+                <form method="post" action="/cart/add" enctype="multipart/form-data">
+                  <button id="sticky-cta-button" type="submit" class="btn btn--primary">{% if section.settings.button-label != blank %}{{ section.settings.button-label }}{% else %}{{ 'product.settings.buy-button-label' | t }}{% endif %}</button>
+                  <input type="hidden" name="quantity" id="quantity" value="1">
+                  <input type="hidden" name="id" value="{{ product_variant_id }}">
+                </form>
+              </div>
+            {% endif %}
+        </div>
+    {% endif %}
+
     {% if section.settings.text != blank %}
       <div class="cta-bar__bottom">{{ section.settings.text }}</div>
     {% endif %}
@@ -64,6 +112,51 @@
       "type": "text",
       "id": "button-url",
       "label": "t:common.button-url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "optional-subscription",
+      "name": "t:common.optional-subscription",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:common.product"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:common.image"
+        },
+        {
+          "type": "text",
+          "id": "price_note",
+          "label": "t:common.price"
+        },
+        {
+          "type": "checkbox",
+          "id": "rating",
+          "label": "t:common.rating",
+          "default": false
+        },
+        {
+          "type": "inline_richtext",
+          "id": "rating_text",
+          "label": "t:common.rating-text"
+        },
+        {
+          "type": "text",
+          "id": "subscription_variant_id",
+          "label": "t:common.variant"
+        },
+        {
+          "type": "text",
+          "id": "selling_plan_id",
+          "label": "t:common.selling_plan"
+        }
+      ]
     }
   ],
   "presets": [

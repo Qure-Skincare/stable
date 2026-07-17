@@ -12,7 +12,7 @@
 
 {% include 'get-product-data' %}
 
-{% assign slider_element_id = section.settings.section_id | prepend: '#' %}
+{% assign slider_element_id = section.settings.section_id | default: 'hero-product' | prepend: '#' %}
 
 {% assign gallery_first_image = blank %}
 {% for _block in section.blocks %}
