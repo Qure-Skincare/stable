@@ -16,6 +16,21 @@
           "type": "description",
           "settings": {}
         },
+        "description_aio_LKjwt8": {
+          "type": "description-aio",
+          "settings": {
+            "title_1": "Powered by hypochlorous acid (HOCl)",
+            "text_1": "<p>Powered by hypochlorous acid (HOCl) HOCl is a naturally-occurring, skin-compatible molecule widely recognized in skincare for its gentle, balancing properties — including supporting skin that's exposed to everyday bacteria and environmental buildup.</p>",
+            "title_2": "Helps calm the look and feel of stressed skin",
+            "text_2": "<p>Helps calm the look and feel of stressed skin Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion — without irritation.</p>",
+            "title_3": "Supports a fresh, balanced complexion",
+            "text_3": "<p>Supports a fresh, balanced complexion Perfect for skin that experiences breakouts, visible redness, or post-treatment sensitivity, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.</p>",
+            "title_4": "Protects against everyday environmental stressors",
+            "text_4": "<p>Protects against everyday environmental stressors A no-rinse refresher that helps skin feel more resilient and balanced, whether it's post-workout, post-treatment, or just a stressful day.</p>",
+            "title_5": "Fragrance-free, non-drying, gentle anytime",
+            "text_5": "<p>Fragrance-free, non-drying, gentle anytime It's fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>"
+          }
+        },
         "section_hRQanD": {
           "type": "section",
           "settings": {
@@ -41,11 +56,11 @@
       },
       "block_order": [
         "description_abmXhJ",
+        "description_aio_LKjwt8",
         "section_hRQanD",
         "experts_kUiKni",
         "faq_wxyzBi"
       ],
-      "disabled": true,
       "name": "t:sections.page-header.name",
       "settings": {
         "product": "dermal-mist",
@@ -79,6 +94,7 @@
         },
         "description_iPBNaS": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "section_A0": {
@@ -139,9 +155,10 @@
         "jumpto_wCrT8L",
         "jumpto_UfjfzQ"
       ],
+      "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
-        "product": "",
+        "product": "dermal-mist",
         "reverse": false,
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Refresh your skin anytime, anywhere with  Dermal Mist",

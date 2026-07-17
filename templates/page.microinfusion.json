@@ -9,6 +9,77 @@
  */
 {
   "sections": {
+    "n_page_header_aio_4YPcem": {
+      "type": "n-page-header-aio",
+      "blocks": {
+        "gallery_sticky_video_TMnKqm": {
+          "type": "gallery-sticky-video",
+          "settings": {
+            "video_url": "https://embed-ssl.wistia.com/deliveries/319787889bdc19966794f6256c114998b2301798.bin?disposition=attachment&filename=Kristina+premiere+MIcro+inf+AFTER+6.2+BOZEEE+%281%29.mp4"
+          }
+        },
+        "description_aio_3UwtbA": {
+          "type": "description-aio",
+          "settings": {
+            "title_1": "Reduces fine lines and smooths texture",
+            "text_1": "<p>Helps reduce the appearance of fine lines and smooths skin texture, while helping infuse active ingredients onto the skin's surface.</p>",
+            "title_2": "Virtually painless, right at home",
+            "text_2": "<p>Virtually painless and performed in the comfort and convenience of your home.</p>",
+            "title_3": "Minimal downtime, visible results",
+            "text_3": "<p>Minimal to no downtime, with visible improvements reported by customers.</p>",
+            "title_4": "Boosts absorption of active ingredients",
+            "text_4": "<p>Creates micro-channels that help your serums and treatments penetrate deeper, so active ingredients work more effectively.</p>",
+            "title_5": "Safe for regular, consistent use",
+            "text_5": "<p>Designed for repeated at-home sessions, so you can build on results week after week without irritation or downtime.</p>"
+          }
+        },
+        "section_pBAMEU": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "experts_xwpB9y": {
+          "type": "experts",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>Qure cares a lot about the products they are putting out.</p>",
+            "username": "Dr. Shah,",
+            "position": "Dermatologist"
+          }
+        },
+        "faq_hHqcXq": {
+          "type": "faq",
+          "settings": {
+            "button_label": "Frequently Asked Questions",
+            "button_url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_sticky_video_TMnKqm",
+        "description_aio_3UwtbA",
+        "section_pBAMEU",
+        "experts_xwpB9y",
+        "faq_hHqcXq"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "product": "",
+        "reverse": false,
+        "seo_heading": "",
+        "heading": "",
+        "rating": true,
+        "limited": false,
+        "description": "",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": "",
+        "approved": false,
+        "price": ""
+      }
+    },
     "page_header_V5N4T9": {
       "type": "n-product-header",
       "blocks": {
@@ -87,6 +158,7 @@
         "jumpto_A5",
         "jumpto_A6"
       ],
+      "disabled": true,
       "custom_css": [
         ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
       ],
@@ -387,13 +459,13 @@
         "hide_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-6-month-bundle-for-wrinkles",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "90",
-        "hide_bottom": false,
-        "hide_certified": false
+        "hide_bottom": true,
+        "hide_certified": true
       }
     },
     "n_press_reviews_3zGerf": {
@@ -1929,6 +2001,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "guarantee_period": "90",
         "available-stocks": true
       }
@@ -2082,6 +2155,7 @@
     }
   },
   "order": [
+    "n_page_header_aio_4YPcem",
     "page_header_V5N4T9",
     "purchase-form-landing",
     "n_press_reviews_3zGerf",

@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_product_header_aio": {
       "type": "n-product-header",
@@ -19,6 +19,7 @@
         },
         "price_aio": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_discount": false
           }
@@ -42,7 +43,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "product": "",
+        "product": "all-in-one-serum",
         "reverse": false,
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
@@ -73,13 +74,13 @@
         "product_otp_6m_aio": {
           "type": "product",
           "settings": {
-            "product": "all-in-one-serum",
-            "product_variant_id": 0,
+            "product": "all-in-one-serum-2-0-6-month-bundle",
+            "product_variant_id": 48228668834031,
             "product_selling_plan": 0,
             "popular": false,
             "best": true,
             "preselected": true,
-            "heading": "6 Months",
+            "heading": "180 Days Supply",
             "subheading": "(1 Bottle + 2 Refills)",
             "product_selling_plan_text": "",
             "text": "",
@@ -96,13 +97,13 @@
         "product_otp_4m_aio": {
           "type": "product",
           "settings": {
-            "product": "all-in-one-serum",
-            "product_variant_id": 0,
+            "product": "all-in-one-serum-2-0-4-month-bundle",
+            "product_variant_id": 48228679745775,
             "product_selling_plan": 0,
             "popular": true,
             "best": false,
             "preselected": false,
-            "heading": "4 Months",
+            "heading": "120 Days Supply",
             "subheading": "(1 Bottle + 1 Refills)",
             "product_selling_plan_text": "",
             "text": "",
@@ -125,7 +126,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "2 Months",
+            "heading": "60 Days Supply",
             "subheading": "(1 Bottle)",
             "product_selling_plan_text": "",
             "text": "",
@@ -153,13 +154,13 @@
         "product_sub_6m_aio": {
           "type": "product",
           "settings": {
-            "product": "all-in-one-serum",
-            "product_variant_id": 0,
+            "product": "all-in-one-serum-2-0-6-month-bundle",
+            "product_variant_id": 48228668834031,
             "product_selling_plan": 8441757935,
             "popular": false,
             "best": true,
             "preselected": true,
-            "heading": "6 Months",
+            "heading": "180 Days Supply",
             "subheading": "(1 Bottle + 2 Refills)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -176,13 +177,13 @@
         "product_sub_4m_aio": {
           "type": "product",
           "settings": {
-            "product": "all-in-one-serum",
-            "product_variant_id": 0,
+            "product": "all-in-one-serum-2-0-4-month-bundle",
+            "product_variant_id": 48228679745775,
             "product_selling_plan": 8441725167,
             "popular": true,
             "best": false,
             "preselected": false,
-            "heading": "4 Months",
+            "heading": "120 Days Supply",
             "subheading": "(1 Bottle + 1 Refills)",
             "product_selling_plan_text": "Ships every 4 months",
             "text": "",
@@ -205,7 +206,7 @@
             "popular": false,
             "best": false,
             "preselected": false,
-            "heading": "2 Months",
+            "heading": "60 Days Supply",
             "subheading": "(1 Bottle)",
             "product_selling_plan_text": "Ships every 2 months",
             "text": "",
@@ -237,12 +238,12 @@
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "all-in-one-serum-2-0-6-month-bundle",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
-        "hide_bottom": false,
+        "hide_bottom": true,
         "hide_certified": false
       }
     },
