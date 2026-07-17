@@ -1,26 +1,13 @@
 (function () {
     'use strict';
 
-    var RETRY_DELAY = 60;
-    var CART_BOUND_ATTRIBUTE = 'data-optional-subscription-cart-bound';
-    var PENDING_ATTRIBUTE = 'data-optional-subscription-pending';
+    const RETRY_DELAY = 200;
+    const MAX_RETRIES = 25;
 
-    function getSection(root) {
-        return root.closest('.hero-product');
-    }
+    const pendingForms = new WeakSet();
+    const bypassForms = new WeakSet();
 
-    function isConnected(node) {
-        if (typeof node.isConnected === 'boolean') {
-            return node.isConnected;
-        }
-        return document.documentElement.contains(node);
-    }
-
-    function isValidQuantity(value) {
-        return typeof value === 'number' && value >= 1 && value === value;
-    }
-
-    function getCartApi() {
+    const getCartApi = () => {
         if (
             window.CartDrawer &&
             typeof window.CartDrawer.addToCartJson === 'function'
@@ -33,47 +20,77 @@
         }
 
         return null;
-    }
+    };
 
-    function setPending(form, isPending) {
-        var submitButton = form.querySelector('[type="submit"]');
-
+    const setPending = (form, isPending) => {
         if (isPending) {
-            form.setAttribute(PENDING_ATTRIBUTE, '1');
+            pendingForms.add(form);
             form.setAttribute('aria-busy', 'true');
         } else {
-            form.removeAttribute(PENDING_ATTRIBUTE);
+            pendingForms.delete(form);
             form.removeAttribute('aria-busy');
         }
 
-        if (submitButton) {
+        form.querySelectorAll('[type="submit"]').forEach((submitButton) => {
             submitButton.disabled = isPending;
             submitButton.setAttribute('aria-disabled', isPending ? 'true' : 'false');
-        }
-    }
+        });
+    };
 
-    function handleFailure(form, error) {
+    const handleFailure = (form, error) => {
         console.error('[optional-subscription] Failed to add items to cart:', error);
         setPending(form, false);
-    }
+    };
 
-    function collectItems(root, form) {
-        var idInput = form.querySelector('[name="id"]');
-        var primaryVariantId = idInput && idInput.value;
+    const submitNative = (form) => {
+        bypassForms.add(form);
+        try {
+            if (typeof form.requestSubmit === 'function') {
+                form.requestSubmit();
+            } else {
+                HTMLFormElement.prototype.submit.call(form);
+            }
+        } finally {
+            bypassForms.delete(form);
+        }
+    };
+
+    const collectItems = (root, form) => {
+        const formData = new FormData(form);
+        const primaryVariantId = formData.get('id');
         if (!primaryVariantId) return null;
 
-        var quantityInput = form.querySelector('[name="quantity"]');
-        var quantity = quantityInput ? parseInt(quantityInput.value, 10) : 1;
-        if (!isValidQuantity(quantity)) quantity = 1;
+        let quantity = parseInt(formData.get('quantity'), 10);
+        if (!Number.isInteger(quantity) || quantity < 1) quantity = 1;
 
-        var items = [{ id: primaryVariantId, quantity: quantity }];
-        var subscriptionCheckbox = root.querySelector(
+        const primaryItem = { id: primaryVariantId, quantity: quantity };
+
+        const sellingPlan = formData.get('selling_plan');
+        if (sellingPlan) {
+            primaryItem.selling_plan = sellingPlan;
+        }
+
+        const properties = {};
+        let hasProperties = false;
+        formData.forEach((value, key) => {
+            const match = key.match(/^properties\[(.+)\]$/);
+            if (match) {
+                properties[match[1]] = value;
+                hasProperties = true;
+            }
+        });
+        if (hasProperties) {
+            primaryItem.properties = properties;
+        }
+
+        const items = [primaryItem];
+        const subscriptionCheckbox = root.querySelector(
             '.c-optional-subscription input[name="subscription"]'
         );
 
         if (subscriptionCheckbox && subscriptionCheckbox.checked) {
-            var subscriptionVariantId = root.getAttribute('data-subscription-variant-id');
-            var subscriptionSellingPlanId = root.getAttribute('data-subscription-selling-plan-id');
+            const subscriptionVariantId = root.getAttribute('data-subscription-variant-id');
+            const subscriptionSellingPlanId = root.getAttribute('data-subscription-selling-plan-id');
 
             if (!subscriptionVariantId || !subscriptionSellingPlanId) {
                 throw new Error('Subscription variant or selling plan is not configured.');
@@ -87,24 +104,30 @@
         }
 
         return items;
-    }
+    };
 
-    function addWithRetry(items, form) {
-        if (!isConnected(form)) {
+    const addWithRetry = (items, form, attempt) => {
+        if (!form.isConnected) {
             setPending(form, false);
             return;
         }
 
-        var cartApi = getCartApi();
+        const cartApi = getCartApi();
 
         if (!cartApi) {
-            setTimeout(function () {
-                addWithRetry(items, form);
+            if (attempt >= MAX_RETRIES) {
+                setPending(form, false);
+                submitNative(form);
+                return;
+            }
+
+            setTimeout(() => {
+                addWithRetry(items, form, attempt + 1);
             }, RETRY_DELAY);
             return;
         }
 
-        var result;
+        let result;
 
         try {
             result = cartApi(items);
@@ -115,10 +138,10 @@
 
         if (result && typeof result.then === 'function') {
             result.then(
-                function () {
+                () => {
                     setPending(form, false);
                 },
-                function (error) {
+                (error) => {
                     handleFailure(form, error);
                 }
             );
@@ -126,52 +149,48 @@
         }
 
         setPending(form, false);
-    }
+    };
 
-    function initCart(root) {
-        if (!(root instanceof HTMLElement)) return;
+    const handleSubmit = (event) => {
+        const form = event.target;
 
-        var section = getSection(root);
-        var form = section && section.querySelector('.c-buy-block form');
+        if (!(form instanceof HTMLFormElement)) return;
+        if (bypassForms.has(form)) return;
+        if (!form.matches('.c-buy-block form[action$="/cart/add"]')) return;
 
-        if (!form) return;
-        if (form.getAttribute(CART_BOUND_ATTRIBUTE) === '1') return;
+        const section = form.closest('.hero-product, .shopify-section');
+        const root = section && section.querySelector('[data-optional-subscription]');
+        if (!root) return;
 
-        form.setAttribute(CART_BOUND_ATTRIBUTE, '1');
-        form.addEventListener('submit', function (event) {
-            if (form.getAttribute(PENDING_ATTRIBUTE) === '1') {
-                event.preventDefault();
-                return;
-            }
+        const isStatic = form.getAttribute('data-static') === 'true';
 
-            var items;
-
-            try {
-                items = collectItems(root, form);
-            } catch (error) {
-                event.preventDefault();
-                handleFailure(form, error);
-                return;
-            }
-
-            if (!items) return;
-
+        if (pendingForms.has(form)) {
             event.preventDefault();
-            setPending(form, true);
-            addWithRetry(items, form);
-        });
-    }
-
-    function initAll(scope) {
-        if (scope.matches && scope.matches('[data-optional-subscription]')) {
-            initCart(scope);
+            if (!isStatic) event.stopImmediatePropagation();
+            return;
         }
-        scope.querySelectorAll('[data-optional-subscription]').forEach(initCart);
+
+        let items;
+
+        try {
+            items = collectItems(root, form);
+        } catch (error) {
+            event.preventDefault();
+            if (!isStatic) event.stopImmediatePropagation();
+            handleFailure(form, error);
+            return;
+        }
+
+        if (!items) return;
+
+        event.preventDefault();
+        if (!isStatic) event.stopImmediatePropagation();
+        setPending(form, true);
+        addWithRetry(items, form, 0);
+    };
+
+    if (!window.__optionalSubscriptionSubmitBound) {
+        window.__optionalSubscriptionSubmitBound = true;
+        document.addEventListener('submit', handleSubmit, true);
     }
-
-    initAll(document);
-
-    document.addEventListener('shopify:section:load', function (event) {
-        initAll(event.target);
-    });
 })();
