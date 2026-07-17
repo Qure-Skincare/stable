@@ -132,6 +132,7 @@ const addToCart = (input) => {
         body: input
     })
     .then(response => response.json())
+    .then(() => addProductGift(input))
     .then(() => {
         toogleGift().then(() => {
             if (typeof footer_cart_drawer_discount !== 'undefined' && footer_cart_drawer_discount) {
@@ -325,6 +326,39 @@ const toogleGift = async () => {
     await new Promise(resolve => setTimeout(resolve, 100));
 };
 
+const addProductGift = async (input) => {
+    // Only forms carrying both properties trigger the product gift (see n-purchase-form-landing.js).
+    if (!input || typeof input.get !== 'function') return;
+
+    const gift = input.get('properties[_gift]');
+    const discount_code = input.get('properties[_discount_code]');
+
+    if (!gift || !discount_code) return;
+
+    const cart = await getCartState();
+    if (!cart) return;
+
+    // Add the gift once — do not duplicate it on repeated add-to-cart calls.
+    const alreadyAdded = cart.items.some(item =>
+        item.properties && item.properties['_product_gift'] == gift
+    );
+
+    if (!alreadyAdded) {
+        await addToCartMany([{
+            id: gift,
+            properties: {
+                _product_gift: gift
+            },
+            quantity: 1
+        }]);
+    }
+
+    // Apply the accompanying discount code.
+    await fetch('/discount/' + discount_code, { priority: 'high' });
+
+    await new Promise(resolve => setTimeout(resolve, 100));
+};
+
 const updateCart = async (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/update.js', {
         method: 'POST',
@@ -377,6 +411,7 @@ const updateCartMany = (updates) => {
 
 window.CartDrawer = {
     toogleGift,
+    addProductGift,
     addToCartJson,
     getCartState,
     refreshDrawer

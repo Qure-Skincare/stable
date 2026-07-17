@@ -65,7 +65,7 @@
     <p class="c-exclusive-offer__desc">{{ block.settings.text |  replace: '<p>', '' |  replace: '</p>', '' | replace: '$299', product_sale_price }}</p>
 </div>
 
-{% if product != blank %}
+{% if product != blank and block.settings.discount_code != blank %}
     <script class="__init">
         (function () {
             var exclusiveKey1 = "product-exclusive-offer-{{ block.settings.product }}";
@@ -74,7 +74,7 @@
             // These do not depend on window.get_products_data — expose them right away.
             window.exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
             window.exclusive_product2_black_variant_id = '{{ exclusive_offer_product2_black_variant_id }}';
-            window.exclusive_offer_discount_code = {{ block.settings.discount_code | default: 'FREEN&DOFFER' | json }};
+            window.exclusive_offer_discount_code = '{{ block.settings.discount_code }}';
 
             // window.get_products_data is populated by another deferred inline script
             // (get-product-data). Under the LCP script activation the read order is not
