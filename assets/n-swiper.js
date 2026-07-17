@@ -70,8 +70,6 @@ function setupBaseSlider(el) {
             } else {
                 thumbSwiper = new Swiper(thumbsEl, thumbsOptions);
             }
-            // The main slider owns this thumbs instance. Prevent the global
-            // queue from initializing a second Swiper on the same element.
             thumbsEl.setAttribute('data-swiper-bound', 'true');
             config.thumbs = { swiper: thumbSwiper };
         }
