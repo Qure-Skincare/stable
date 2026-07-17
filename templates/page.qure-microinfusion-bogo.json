@@ -68,7 +68,7 @@
         "button_label": "Start your treatment",
         "button_line": false,
         "alert": "",
-        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
+        "sub_text": "<p><strong>Limited Time Offer:</strong> Buy 3 Get 3 Free</p>",
         "marked_list": "",
         "wistia_url": "8ymvdqzx92"
       }
@@ -111,6 +111,7 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "use_own_file": false,
@@ -495,6 +496,363 @@
         "wistia_url": ""
       }
     },
+    "purchase_form_PwCCh6": {
+      "type": "n-purchase-form",
+      "blocks": {
+        "nextships_5rd2bS": {
+          "type": "nextships",
+          "settings": {
+            "date": "9th May",
+            "percent": 66,
+            "date_soldout": "23rd  March",
+            "date_reserved": "9th May"
+          }
+        },
+        "payment_type_3zQTmH": {
+          "type": "payment_type",
+          "settings": {
+            "image": "shopify://shop_images/payment-icons-1.svg"
+          }
+        },
+        "payment_type_B6Pzbh": {
+          "type": "payment_type",
+          "settings": {
+            "image": "shopify://shop_images/Pay_Icons.svg"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Dark Spots",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
+            "preselected": false
+          }
+        },
+        "product_type_accordion_SQKQhNr": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Helps reveal a smoother-looking, more radiant complexion. Formulated to help improve the appearance of dark spots and uneven tone for skin that looks refreshed and luminous.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears uneven in tone or texture and shows visible dark spots or post-blemish marks.</p>"
+          }
+        },
+        "product_type_accordion_DQKQhNr": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is known for its soothing, hydrating, and balancing properties that help support skin comfort and barrier strength.<br/><br/><strong>Epidermal Growth Factor (EGF): </strong>A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong>A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid:</strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-3-get-3-free-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779235567,
+            "preselected": true,
+            "heading": "6 Month Supply - Buy 3 Get 3 Free",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "image": "shopify://shop_images/mi_dark_spot_6m_bogo.webp",
+            "product_discount_percent": 16,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 56,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "26th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_7dL4ci": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "image": "shopify://shop_images/MI_3_month_DS.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 252,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779432175,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "Ships every 1 month",
+            "image": "shopify://shop_images/MI_1_month_DS.webp",
+            "product_discount_percent": 17,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Wrinkles",
+            "image": "shopify://shop_images/Wrinkles_2.png",
+            "preselected": true
+          }
+        },
+        "product_type_accordion_SVLXcAn": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Delivers lasting hydration to leave skin looking plumper, smoother, and refreshed. Helps reduce the look of fine lines and wrinkles while supporting visibly calm, balanced, and supple-feeling skin.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears dry, dull, or shows visible signs of aging such as fine lines, uneven tone, and temporary redness.</p>"
+          }
+        },
+        "product_type_accordion_DVLXcAn": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-3-get-3-free-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779464943,
+            "preselected": true,
+            "heading": "6 Month Supply - Buy 3 Get 3 Free",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "image": "shopify://shop_images/mi_wrinkles_6_m_bogo.webp",
+            "product_discount_percent": 16,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 18,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779497711,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "image": "shopify://shop_images/MI_3_month_W.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 256,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779530479,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "Ships every 1 month",
+            "image": "shopify://shop_images/MI_1_month_W.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_YrPQrV": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Mixed",
+            "image": "shopify://shop_images/Mixed_3.png",
+            "preselected": false
+          }
+        },
+        "product_type_accordion_SYrPQrV": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p>Designed to support smoother, brighter-looking skin with balanced hydration. </p><p>Helps soften the look of fine lines while improving the appearance of dark spots and uneven tone, leaving skin looking refreshed, plumper, and more luminous.</p>"
+          }
+        },
+        "product_type_accordion_DYrPQrV": {
+          "type": "product_type_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Dark Spots Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/><strong>Wrinkles Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-3-get-3-free-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779563247,
+            "preselected": true,
+            "heading": "6 Month Supply - Buy 3 Get 3 Free",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "image": "shopify://shop_images/img_01.webp",
+            "product_discount_percent": 16,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 29,
+            "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/MI_3_month_DSW.webp",
+            "product_discount_percent": 11,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 390,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/mi_1_month_dsw.webp",
+            "product_discount_percent": 10,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "nextships_5rd2bS",
+        "payment_type_3zQTmH",
+        "payment_type_B6Pzbh",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_type_accordion_SQKQhNr",
+        "product_type_accordion_DQKQhNr",
+        "product_DBd4ef",
+        "product_7dL4ci",
+        "product_Xf8A6C",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_type_accordion_SVLXcAn",
+        "product_type_accordion_DVLXcAn",
+        "product_nyJ9n7",
+        "product_EKAAzA",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_type_accordion_SYrPQrV",
+        "product_type_accordion_DYrPQrV",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
+      ],
+      "settings": {
+        "type": "list",
+        "heading": "Choose your treatment",
+        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
+        "image": "shopify://shop_images/tami-cropped.webp",
+        "klaviyo_form_name": "",
+        "form_name": "purchase-form",
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
+        "guarantee_period": "90",
+        "available-stocks": false
+      }
+    },
     "n_features_marquee_vMOx3w": {
       "type": "n_features-marquee",
       "blocks": {
@@ -686,6 +1044,19 @@
             "product_title": ""
           }
         },
+        "slider_dPBWEW": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_5_b0173f3a-3914-4db7-94ba-236f4cf89e4b.png",
+            "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
+            "username": "Helen M.",
+            "verified_customer": "Verified customer",
+            "text": "<p>“I purchased the mixed Micro-Infusion bundle to deal with hyper pigmentation, fine lines and wrinkles. I also have rosacea so was worried it could make it worse. However I’m so impressed with the initial results 3 treatments in. My skin looks clear and fresh! Previously the redness and pigmentation was visible even through foundation. I have more confidence now and hope my skin continues to improve with further treatments.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_eCGH8c": {
           "type": "slider",
           "settings": {
@@ -732,7 +1103,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ela O.",
             "verified_customer": "Verified customer",
-            "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br /> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br/> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -819,6 +1190,7 @@
       },
       "block_order": [
         "slider_AbTEJa",
+        "slider_dPBWEW",
         "slider_eCGH8c",
         "slider_78E6pj",
         "slider_xqgHn6",
@@ -835,7 +1207,7 @@
         "use_own_file": false,
         "background_color": "none",
         "text": "<h2>Real stories, real results</h2>",
-        "button_label": "buy now SAVE UP TO 70%",
+        "button_label": "Buy 3 Get 3 Free",
         "button_url": "#purchase-form"
       }
     },
@@ -1091,7 +1463,7 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
-        "button_label": "buy now & SAVE UP TO 70%",
+        "button_label": "buy now & SAVE UP 76%",
         "button_url": "#purchase-form"
       }
     },
@@ -1239,361 +1611,6 @@
         "button-url": "#purchase-form"
       }
     },
-    "purchase_form_PwCCh6": {
-      "type": "n-purchase-form",
-      "blocks": {
-        "nextships_5rd2bS": {
-          "type": "nextships",
-          "settings": {
-            "date": "9th May",
-            "percent": 66,
-            "date_soldout": "23rd  March",
-            "date_reserved": "9th May"
-          }
-        },
-        "payment_type_3zQTmH": {
-          "type": "payment_type",
-          "settings": {
-            "image": "shopify://shop_images/payment-icons-1.svg"
-          }
-        },
-        "payment_type_B6Pzbh": {
-          "type": "payment_type",
-          "settings": {
-            "image": "shopify://shop_images/Pay_Icons.svg"
-          }
-        },
-        "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Dark Spots",
-            "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": false
-          }
-        },
-        "product_type_accordion_SQKQhNr": {
-          "type": "product_type_accordion",
-          "settings": {
-            "heading": "What can it do for your skin",
-            "text": "<p>Helps reveal a smoother-looking, more radiant complexion. Formulated to help improve the appearance of dark spots and uneven tone for skin that looks refreshed and luminous.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears uneven in tone or texture and shows visible dark spots or post-blemish marks.</p>"
-          }
-        },
-        "product_type_accordion_DQKQhNr": {
-          "type": "product_type_accordion",
-          "settings": {
-            "heading": "All Ingredients",
-            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is known for its soothing, hydrating, and balancing properties that help support skin comfort and barrier strength.<br/><br/><strong>Epidermal Growth Factor (EGF): </strong>A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong>A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid:</strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
-          }
-        },
-        "product_7dL4ci": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779235567,
-            "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
-            "product_discount_percent": 16,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 99,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "Ships every 3 months",
-            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 52,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "26th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_Xf8A6C": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779432175,
-            "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "Ships every 1 month",
-            "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "product_discount_percent": 17,
-            "soldout": true,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "type_aJwQ9q": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Wrinkles",
-            "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": true
-          }
-        },
-        "product_type_accordion_SVLXcAn": {
-          "type": "product_type_accordion",
-          "settings": {
-            "heading": "What can it do for your skin",
-            "text": "<p>Delivers lasting hydration to leave skin looking plumper, smoother, and refreshed. Helps reduce the look of fine lines and wrinkles while supporting visibly calm, balanced, and supple-feeling skin.</p><p><strong>Skin Concerns:</strong> Ideal for skin that appears dry, dull, or shows visible signs of aging such as fine lines, uneven tone, and temporary redness.</p>"
-          }
-        },
-        "product_type_accordion_DVLXcAn": {
-          "type": "product_type_accordion",
-          "settings": {
-            "heading": "All Ingredients",
-            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>GHK-Cu (Copper Peptide):</strong>A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>All ingredients:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
-          }
-        },
-        "product_nyJ9n7": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779464943,
-            "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
-            "product_discount_percent": 16,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 78,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_EKAAzA": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779497711,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "Ships every 3 months",
-            "image": "shopify://shop_images/MI_3_month_W.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 56,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_eiY89h": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779530479,
-            "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "Ships every 1 month",
-            "image": "shopify://shop_images/MI_1_month_W.webp",
-            "product_discount_percent": 17,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 2,
-            "left_items": 293,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "type_yDwWmt": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_YrPQrV": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Mixed",
-            "image": "shopify://shop_images/Mixed_3.png",
-            "preselected": false
-          }
-        },
-        "product_type_accordion_SYrPQrV": {
-          "type": "product_type_accordion",
-          "settings": {
-            "heading": "What can it do for your skin",
-            "text": "<p>Designed to support smoother, brighter-looking skin with balanced hydration. </p><p>Helps soften the look of fine lines while improving the appearance of dark spots and uneven tone, leaving skin looking refreshed, plumper, and more luminous.</p>"
-          }
-        },
-        "product_type_accordion_DYrPQrV": {
-          "type": "product_type_accordion",
-          "settings": {
-            "heading": "All Ingredients",
-            "text": "<p><strong>Dark Spots Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/><strong>Wrinkles Serum:</strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779563247,
-            "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "image": "shopify://shop_images/MI_6_month_DSW.webp",
-            "product_discount_percent": 16,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 28,
-            "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "",
-            "image": "shopify://shop_images/MI_3_month_DSW.webp",
-            "product_discount_percent": 11,
-            "soldout": true,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 390,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_RBCPe8": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "",
-            "image": "shopify://shop_images/mi_1_month_dsw.webp",
-            "product_discount_percent": 10,
-            "soldout": true,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "nextships_5rd2bS",
-        "payment_type_3zQTmH",
-        "payment_type_B6Pzbh",
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_type_accordion_SQKQhNr",
-        "product_type_accordion_DQKQhNr",
-        "product_7dL4ci",
-        "product_DBd4ef",
-        "product_Xf8A6C",
-        "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_type_accordion_SVLXcAn",
-        "product_type_accordion_DVLXcAn",
-        "product_nyJ9n7",
-        "product_EKAAzA",
-        "product_eiY89h",
-        "type_yDwWmt",
-        "product_type_YrPQrV",
-        "product_type_accordion_SYrPQrV",
-        "product_type_accordion_DYrPQrV",
-        "product_gbPf3J",
-        "product_NEgEkN",
-        "product_RBCPe8"
-      ],
-      "custom_css": [
-        ".e-features-list, .c-certified-box {display: none;}"
-      ],
-      "settings": {
-        "type": "list",
-        "heading": "Choose your treatment",
-        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
-        "image": "shopify://shop_images/tami-cropped.webp",
-        "klaviyo_form_name": "",
-        "form_name": "purchase-form",
-        "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-6-month-bundle-for-dark-spots",
-        "guarantee_period": "90",
-        "available-stocks": false
-      }
-    },
     "n_should_know_8jabz8": {
       "type": "n_should-know",
       "blocks": {
@@ -1676,7 +1693,7 @@
         "use_own_file": false,
         "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 62%",
+        "button_label": "BUY NOW & SAVE UP TO 76%",
         "button_url": "#purchase-form"
       }
     },
@@ -1702,6 +1719,13 @@
           "settings": {
             "heading": "Is it painful to use?",
             "text": "<p>You get to experience minimal discomfort and maximum results with Qure's Micro-Infusion System.</p><p>Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>"
+          }
+        },
+        "accordion_G6DcYV": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Has the Micro-Infusion System been clinically evaluated for safety?",
+            "text": "<p>Yes. The Micro-Infusion System for Dark Spots and for Wrinkles underwent an independent clinical evaluation of dermatologic safety-in-use conducted by a Board-Certified Dermatologist. <br/><br/>31 subjects spanning all Fitzpatrick skin types (I–VI) completed the evaluation with no adverse reactions reported or observed. The products were deemed safe for their intended use.</p>"
           }
         },
         "accordion_XKGkaz": {
@@ -1758,6 +1782,7 @@
         "accordion_hMHBPN",
         "accordion_x4LCUw",
         "accordion_pRtaH3",
+        "accordion_G6DcYV",
         "accordion_XKGkaz",
         "accordion_yEYwDi",
         "accordion_RaEjnm",
@@ -1788,6 +1813,7 @@
     "n_base_section_phJT4F",
     "n_highlight_egmbcj",
     "n_base_section_xzUU6n",
+    "purchase_form_PwCCh6",
     "n_features_marquee_vMOx3w",
     "n_video_slider_Gxn23M",
     "n_video_slider_PLEPyO",
@@ -1798,7 +1824,6 @@
     "n_highlight_rFRFiz",
     "n_science_backed_6ehGih",
     "sticky_cta_d9dC8X",
-    "purchase_form_PwCCh6",
     "n_should_know_8jabz8",
     "n_why_using_cj3RFv",
     "n_faq_RiGOh9"

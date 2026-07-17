@@ -1,10 +1,16 @@
 {% if section.settings.subscription_product == 'true' %}
-    <div class="c-selector-switcher c-selector-switcher--dark">
+    <div class="c-selector-switcher c-selector-switcher--{% if section.settings.delivery_switcher_position == 'header' %}dark{% else %}text{% endif %}">
         <ul class="e-pill-tabs e-pill-tabs--selector">
             <li>
                 <label>
                     <input name="delivery-type" type="radio" value="onetime" />
                     {{ 'purchase-form.settings.onetime' | t }}
+                    {% unless section.settings.delivery_switcher_position == 'header' %}
+                        {% if section.settings.delivery_switcher_product != blank %}
+                            {% include 'get-product-data', product_handle: section.settings.delivery_switcher_product, product_prefix: 'purchase-form-landing-delivery-switcher-product-' %}
+                            {{ product_sale_price }}
+                        {% endif %}
+                    {% endunless %}
                 </label>
             </li>
             <li>

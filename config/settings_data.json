@@ -60,7 +60,7 @@
     "black_friday_turn_on": true,
     "black_friday_discount": "QureBirthday5",
     "black_friday_discount_percent": 26,
-    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,exclusive-holiday-bundle-deal-v2,microinfusion,micro-infusion-targeted-patches,face-serum,face-serum2,dermal-mist,qure-micro-infusion-landing-page-b,face-serum-b,retinol-face-serum,bundle-mi,micro-infusion-3-month-bundle-for-wrinkles,breakout-control-advanced1,skincare-habits,doctorly",
+    "black_friday_discount_exception": "qure-microinfusion-offer,qure-microinfusion-offer-men,micro-infusion-acne,micro-infusion-dark-spots,micro-infusion-faq-page-2,exclusive-holiday-bundle-deal-new,qure-micro-infusion-landing-page-b,exclusive-holiday-bundle-deal-v2,microinfusion,micro-infusion-targeted-patches,face-serum,face-serum2,dermal-mist,qure-micro-infusion-landing-page-b,face-serum-b,retinol-face-serum,bundle-mi,micro-infusion-3-month-bundle-for-wrinkles,breakout-control-advanced1,skincare-habits,doctorly,all-in-one-serum",
     "enable_test": false,
     "event_name": "HOLIDAY SALE",
     "event_start_date": "2025-12-03",

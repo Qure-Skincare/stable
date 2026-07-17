@@ -238,7 +238,7 @@
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "header",
+        "delivery_switcher_position": "footer",
         "delivery_switcher_product": "",
         "type": "list",
         "klaviyo_form_name": "",

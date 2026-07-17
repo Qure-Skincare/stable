@@ -28,6 +28,16 @@
           "type": "description",
           "settings": {}
         },
+        "exclusive_offer_cEGK4g": {
+          "type": "exclusive-offer",
+          "settings": {
+            "product": "cleanser-4-month-bundle",
+            "image_product1": "shopify://shop_images/cleanser-selector-duo.webp",
+            "product2": "headbands-wristbands",
+            "image_product2": "shopify://shop_images/Headband_and_Wristband.jpg",
+            "text": "<p>Free <strong>Gift Set </strong>with 120-Day Subscription</p>"
+          }
+        },
         "section_A0": {
           "type": "section",
           "settings": {
@@ -51,6 +61,7 @@
         "accordion_migrated",
         "approved_6HL8Jr",
         "description_hnJud7",
+        "exclusive_offer_cEGK4g",
         "section_A0",
         "results_kJG7Dg"
       ],
@@ -194,7 +205,7 @@
             "product": "cleanser",
             "product_variant_id": 48762174767343,
             "product_selling_plan": 8853291247,
-            "popular": true,
+            "popular": false,
             "best": false,
             "preselected": false,
             "heading": "60 Days Supply",
@@ -248,16 +259,16 @@
         "product_dDiAPk"
       ],
       "settings": {
-        "form_name": "purchase-form-landing-subscription",
+        "form_name": "purchase-form-landing",
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 31,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "cleanser-4-month-bundle",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
-        "hide_bottom": false,
+        "hide_bottom": true,
         "hide_certified": true
       }
     },

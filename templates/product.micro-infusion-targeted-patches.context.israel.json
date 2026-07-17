@@ -9,7 +9,7 @@
  */
 {
   "context": {
-    "market": "asia"
+    "market": "israel"
   },
   "parent": "product.micro-infusion-targeted-patches.json",
   "sections": {

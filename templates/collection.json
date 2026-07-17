@@ -84,9 +84,9 @@
           "type": "product-item",
           "settings": {
             "image": "shopify://shop_images/pd-review.webp",
-            "text": "IвЂ™m shocked at the results after just one treatment! My skin looks so clear, glowy, and healthy.",
+            "text": "I'm shocked at the results after just one treatment! My skin looks so clear, glowy, and healthy.",
             "client": "Ela",
-            "text_mobile": "IвЂ™m shocked at the results after just one treatment!",
+            "text_mobile": "I'm shocked at the results after just one treatment!",
             "product": "q-rejuvalight-pro-facewear",
             "position": 1
           }
@@ -135,7 +135,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
-            "text": "<h6>My skin returned to life!</h6><p>вЂњI just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!вЂќ</p>",
+            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/Img_9.png",
             "product_text": "Ellie uses...",
@@ -149,7 +149,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
-            "text": "<h6>CanвЂ™t go a day without it</h6><p>вЂњStraight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.вЂќ</p>",
+            "text": "<h6>Can't go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Anton uses...",
@@ -163,7 +163,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Works better than I imagined!</h6><p>вЂњI am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.вЂќ</p>",
+            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/Img_9.png",
             "product_text": "Jennifer uses...",
@@ -180,7 +180,7 @@
       "settings": {
         "use_own_file": false,
         "background_color": "light",
-        "text": "<h2>Results youвЂ™ll see with your own eyes</h2>",
+        "text": "<h2>Results you'll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
       }
@@ -200,7 +200,7 @@
         "take_quiz_sub_DfRXwD": {
           "type": "take_quiz",
           "settings": {
-            "text": "<p>HereвЂ™s your personalized skincare routineвЂ¦</p>",
+            "text": "<p>Here's your personalized skincare routineвЂ¦</p>",
             "sub_text": "",
             "button_label": "",
             "button_url": ""
@@ -214,7 +214,7 @@
       "name": "t:sections.n_take-quiz.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You donвЂ™t have time for products that donвЂ™t work. WeвЂ™ll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
+        "text": "<h2>Unlock Your Personalized Skincare Routine</h2><p>You don't have time for products that don't work. We'll prescribe you a personalized routine with clinically proven products and tips - just for your skin.</p>"
       }
     }
   },
