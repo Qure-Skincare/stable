@@ -25,11 +25,11 @@
 
     <div class="swiper-wrapper">
         {% if product.metafields.custom.carousel_media.value != blank %}
-            {% render 'n-product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, size: '720x' %}
+            {% render 'n-product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, size: '720x', first_image: first_image %}
         {% elsif page.metafields.custom.carousel_media.value != blank %}
-            {% render 'n-product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, size: '720x' %}
+            {% render 'n-product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, size: '720x', first_image: first_image %}
         {% else %}
-            {% render 'n-product-media', product_media: product.media, size: '720x' %}
+            {% render 'n-product-media', product_media: product.media, size: '720x', first_image: first_image %}
         {% endif %}
     </div>
 </div>

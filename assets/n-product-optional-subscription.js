@@ -1,89 +1,12 @@
 (function () {
     'use strict';
 
-    var MAX_ATTEMPTS = 50;
     var RETRY_DELAY = 60;
-    var VISUALS_BOUND_ATTRIBUTE = 'data-optional-subscription-bound';
-    var ATC_BOUND_ATTRIBUTE = 'data-atc-upsell-bound';
-    var PENDING_ATTRIBUTE = 'data-atc-upsell-pending';
-    var FALLBACK_ATTRIBUTE = 'data-atc-upsell-fallback';
-    var CHECKBOX_SELECTOR = '[data-optional-subscription] input[name="subscription"]';
-    var SYNC_EVENT = 'optional-subscription:sync';
-
-    function syncCheckboxes(source) {
-        document.querySelectorAll(CHECKBOX_SELECTOR).forEach(function (checkbox) {
-            if (checkbox === source) return;
-
-            checkbox.checked = source.checked;
-            checkbox.dispatchEvent(new Event(SYNC_EVENT));
-        });
-    }
+    var CART_BOUND_ATTRIBUTE = 'data-optional-subscription-cart-bound';
+    var PENDING_ATTRIBUTE = 'data-optional-subscription-pending';
 
     function getSection(root) {
-        var closestSection = root.closest('.hero-product');
-        if (closestSection) return closestSection;
-
-        var sectionId = root.getAttribute('data-section-id');
-        return sectionId ? document.getElementById(sectionId) : null;
-    }
-
-    function initVisuals(root) {
-        if (root.hasAttribute(VISUALS_BOUND_ATTRIBUTE)) return;
-
-        var checkbox = root.querySelector('input[name="subscription"]');
-        var section = getSection(root);
-        if (!checkbox || !section) return;
-
-        var gallery = section.querySelector('.hero-product__gallery');
-        if (!gallery) return;
-
-        var mainSlider = gallery.querySelector('.c-swiper:not(.c-swiper-thumbs)');
-        var mainImage = mainSlider
-            ? mainSlider.querySelector('.swiper-wrapper > .swiper-slide:first-child img')
-            : gallery.querySelector(':scope > img');
-        var firstThumb = gallery.querySelector('.c-swiper-thumbs .swiper-slide:first-child');
-        var thumbImage = firstThumb ? firstThumb.querySelector('img') : null;
-        var autoShips = root.querySelector('.e-auto-ships');
-
-        var checkedImageInput = root.querySelector('input[name="checked-image"]');
-        var uncheckedImageInput = root.querySelector('input[name="unchecked-image"]');
-        var checkedImage = checkedImageInput ? checkedImageInput.value : '';
-        var uncheckedImage = uncheckedImageInput ? uncheckedImageInput.value : '';
-        var defaultMainImage = mainImage ? mainImage.getAttribute('src') : '';
-        var defaultThumbImage = thumbImage ? thumbImage.getAttribute('src') : '';
-
-        function getImageUrl(checked, fallback) {
-            var configuredImage = checked ? checkedImage : uncheckedImage;
-            return configuredImage || fallback;
-        }
-
-        function showFirstSlide() {
-            if (mainSlider && mainSlider.swiper && typeof mainSlider.swiper.slideTo === 'function') {
-                mainSlider.swiper.slideTo(0);
-            } else if (firstThumb) {
-                firstThumb.click();
-            }
-        }
-
-        function update(checked, navigateToFirstSlide) {
-            if (mainImage) mainImage.src = getImageUrl(checked, defaultMainImage);
-            if (thumbImage) thumbImage.src = getImageUrl(checked, defaultThumbImage);
-
-            if (autoShips) autoShips.hidden = !checked;
-            if (navigateToFirstSlide) showFirstSlide();
-        }
-
-        checkbox.addEventListener('change', function () {
-            update(checkbox.checked, true);
-            syncCheckboxes(checkbox);
-        });
-
-        checkbox.addEventListener(SYNC_EVENT, function () {
-            update(checkbox.checked, true);
-        });
-
-        root.setAttribute(VISUALS_BOUND_ATTRIBUTE, 'true');
-        update(checkbox.checked, false);
+        return root.closest('.hero-product');
     }
 
     function isConnected(node) {
@@ -129,118 +52,44 @@
         }
     }
 
-    function dispatchError(form, error) {
-        var event;
-        var detail = { error: error };
-
-        try {
-            if (typeof window.CustomEvent === 'function') {
-                event = new CustomEvent('atc-upsell:error', {
-                    bubbles: true,
-                    cancelable: false,
-                    detail: detail
-                });
-            } else {
-                event = document.createEvent('CustomEvent');
-                event.initCustomEvent('atc-upsell:error', true, false, detail);
-            }
-        } catch (eventError) {
-            console.error('[atc-upsell] Failed to create error event:', eventError);
-            return;
-        }
-
-        form.dispatchEvent(event);
-    }
-
     function handleFailure(form, error) {
-        console.error('[atc-upsell] Failed to add items to cart:', error);
+        console.error('[optional-subscription] Failed to add items to cart:', error);
         setPending(form, false);
-        dispatchError(form, error);
-    }
-
-    function nativeSubmit(form) {
-        setPending(form, false);
-        form.setAttribute(FALLBACK_ATTRIBUTE, '1');
-
-        try {
-            if (typeof form.requestSubmit === 'function') {
-                form.requestSubmit();
-            } else {
-                HTMLFormElement.prototype.submit.call(form);
-            }
-        } finally {
-            form.removeAttribute(FALLBACK_ATTRIBUTE);
-        }
-    }
-
-    function addDirectly(items, form) {
-        if (typeof window.fetch !== 'function') {
-            nativeSubmit(form);
-            return;
-        }
-
-        var routesRoot = (
-            window.Shopify &&
-            window.Shopify.routes &&
-            window.Shopify.routes.root
-        ) || '/';
-
-        window.fetch(routesRoot + 'cart/add.js', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ items: items })
-        })
-            .then(function (response) {
-                return response.json().then(function (payload) {
-                    if (!response.ok) {
-                        throw new Error(
-                            payload.description ||
-                            payload.message ||
-                            'Cart request failed with status ' + response.status
-                        );
-                    }
-                    return payload;
-                });
-            })
-            .then(function () {
-                setPending(form, false);
-                window.location.assign(routesRoot + 'cart');
-            })
-            .catch(function (error) {
-                handleFailure(form, error);
-            });
     }
 
     function collectItems(root, form) {
         var idInput = form.querySelector('[name="id"]');
-        var mainVariantId = idInput && idInput.value;
-        if (!mainVariantId) return null;
+        var primaryVariantId = idInput && idInput.value;
+        if (!primaryVariantId) return null;
 
         var quantityInput = form.querySelector('[name="quantity"]');
         var quantity = quantityInput ? parseInt(quantityInput.value, 10) : 1;
         if (!isValidQuantity(quantity)) quantity = 1;
 
-        var items = [{ id: mainVariantId, quantity: quantity }];
+        var items = [{ id: primaryVariantId, quantity: quantity }];
         var subscriptionCheckbox = root.querySelector(
             '.c-optional-subscription input[name="subscription"]'
         );
-        var serumVariantId = root.getAttribute('data-serum-variant-id');
-        var sellingPlanId = root.getAttribute('data-selling-plan-id');
 
         if (subscriptionCheckbox && subscriptionCheckbox.checked) {
-            if (!serumVariantId || !sellingPlanId) {
+            var subscriptionVariantId = root.getAttribute('data-subscription-variant-id');
+            var subscriptionSellingPlanId = root.getAttribute('data-subscription-selling-plan-id');
+
+            if (!subscriptionVariantId || !subscriptionSellingPlanId) {
                 throw new Error('Subscription variant or selling plan is not configured.');
             }
 
-            var serumItem = { id: serumVariantId, quantity: 1 };
-            serumItem.selling_plan = sellingPlanId;
-            items.push(serumItem);
+            items.push({
+                id: subscriptionVariantId,
+                quantity: 1,
+                selling_plan: subscriptionSellingPlanId
+            });
         }
 
         return items;
     }
 
-    function addWithRetry(items, form, attempt) {
+    function addWithRetry(items, form) {
         if (!isConnected(form)) {
             setPending(form, false);
             return;
@@ -249,14 +98,8 @@
         var cartApi = getCartApi();
 
         if (!cartApi) {
-            if (attempt >= MAX_ATTEMPTS) {
-                console.warn('[atc-upsell] Cart drawer API did not load; using direct cart request.');
-                addDirectly(items, form);
-                return;
-            }
-
             setTimeout(function () {
-                addWithRetry(items, form, attempt + 1);
+                addWithRetry(items, form);
             }, RETRY_DELAY);
             return;
         }
@@ -285,17 +128,17 @@
         setPending(form, false);
     }
 
-    function initAddToCart(root) {
+    function initCart(root) {
+        if (!(root instanceof HTMLElement)) return;
+
         var section = getSection(root);
         var form = section && section.querySelector('.c-buy-block form');
 
-        if (!form) return false;
-        if (form.getAttribute(ATC_BOUND_ATTRIBUTE) === '1') return true;
+        if (!form) return;
+        if (form.getAttribute(CART_BOUND_ATTRIBUTE) === '1') return;
 
-        form.setAttribute(ATC_BOUND_ATTRIBUTE, '1');
+        form.setAttribute(CART_BOUND_ATTRIBUTE, '1');
         form.addEventListener('submit', function (event) {
-            if (form.getAttribute(FALLBACK_ATTRIBUTE) === '1') return;
-
             if (form.getAttribute(PENDING_ATTRIBUTE) === '1') {
                 event.preventDefault();
                 return;
@@ -315,29 +158,15 @@
 
             event.preventDefault();
             setPending(form, true);
-            addWithRetry(items, form, 0);
+            addWithRetry(items, form);
         });
-
-        return true;
-    }
-
-    function initOptionalSubscription(root) {
-        if (!(root instanceof HTMLElement)) return;
-        initVisuals(root);
-
-        initAddToCart(root);
-        var checkbox = root.querySelector('input[name="subscription"]');
-
-        if (checkbox) {
-            checkbox.disabled = false;
-        }
     }
 
     function initAll(scope) {
         if (scope.matches && scope.matches('[data-optional-subscription]')) {
-            initOptionalSubscription(scope);
+            initCart(scope);
         }
-        scope.querySelectorAll('[data-optional-subscription]').forEach(initOptionalSubscription);
+        scope.querySelectorAll('[data-optional-subscription]').forEach(initCart);
     }
 
     initAll(document);

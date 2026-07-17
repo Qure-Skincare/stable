@@ -40,6 +40,11 @@
         {% assign index = forloop.index0 %}
         {% assign title = media |  replace: 'files/', '' | replace: '.webp', '' %}
 
+        {% assign media_src = media | img_url: size %}
+        {% if forloop.first and first_image != blank %}
+            {% assign media_src = first_image | img_url: size %}
+        {% endif %}
+
         {% if media.media_type == 'video' %}
             {% if media.sources[1].url != blank %}
                 {% assign video_source_url = media.sources[1].url %}
@@ -54,7 +59,7 @@
                 <div class="swiper-slide">
                     <img loading="lazy"
                         class="watch-wistia-video"
-                        src="{{ media | img_url: size }}"
+                        src="{{ media_src }}"
                         alt="{{ title | escape }}"
                         data-bs-toggle="modal"
                         data-bs-target="#reusableWistiaModal"
@@ -64,9 +69,9 @@
             {% else %}
                 <div class="swiper-slide">
                     {% if thumbnails == false and forloop.index == 1 %}
-                        <img loading="eager" fetchpriority="high" src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
+                        <img loading="eager" fetchpriority="high" src="{{ media_src }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
                     {% else %}
-                        <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
+                        <img loading="lazy" src="{{ media_src }}" alt="{{ title }}"{% if thumbnails == false %} data-product-handle="{{ title | escape }}"{% endif %}>
                     {% endif %}
                 </div>
             {% endif %}

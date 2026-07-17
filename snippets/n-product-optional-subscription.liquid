@@ -3,7 +3,7 @@
 
   @param {object} section - A section object.
   @param {object} block - An `optional-subscription` block object.
-  @param {object} product - The section product (main product / LED mask).
+  @param {object} product - The section product (main / primary product).
 
   @example
   {% render 'n-product-optional-subscription', section: section, block: block, product: product %}
@@ -20,14 +20,14 @@
 {% assign main_price = product.price | money_without_trailing_zeros %}
 {% assign optional_layout = block.settings.layout | default: 'hero' %}
 
-{% assign serum = block.settings.product %}
-{% assign serum_variant = blank %}
-{% assign configured_variant_id = block.settings.serum_variant_id | append: '' %}
-{% if serum != blank and configured_variant_id != blank %}
-    {% for variant in serum.variants %}
+{% assign subscription_product = block.settings.product %}
+{% assign subscription_variant = blank %}
+{% assign configured_variant_id = block.settings.subscription_variant_id | append: '' %}
+{% if subscription_product != blank and configured_variant_id != blank %}
+    {% for variant in subscription_product.variants %}
         {% assign variant_id = variant.id | append: '' %}
         {% if variant_id == configured_variant_id %}
-            {% assign serum_variant = variant %}
+            {% assign subscription_variant = variant %}
             {% break %}
         {% endif %}
     {% endfor %}
@@ -35,8 +35,8 @@
 
 {% assign selling_plan_allocation = blank %}
 {% assign configured_selling_plan_id = block.settings.selling_plan_id | append: '' %}
-{% if serum_variant != blank and configured_selling_plan_id != blank %}
-    {% for allocation in serum_variant.selling_plan_allocations %}
+{% if subscription_variant != blank and configured_selling_plan_id != blank %}
+    {% for allocation in subscription_variant.selling_plan_allocations %}
         {% assign selling_plan_id = allocation.selling_plan.id | append: '' %}
         {% if selling_plan_id == configured_selling_plan_id %}
             {% assign selling_plan_allocation = allocation %}
@@ -45,16 +45,16 @@
     {% endfor %}
 {% endif %}
 
-{% assign recurring_price = serum_variant.price %}
-{% assign recurring_compare_at_price = serum_variant.compare_at_price %}
+{% assign subscription_configured = false %}
+{% if block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}
+    {% assign subscription_configured = true %}
+{% endif %}
+
+{% assign recurring_price = subscription_variant.price %}
+{% assign recurring_compare_at_price = subscription_variant.compare_at_price %}
 {% if selling_plan_allocation != blank %}
     {% assign recurring_price = selling_plan_allocation.price %}
     {% assign recurring_compare_at_price = selling_plan_allocation.compare_at_price %}
-{% endif %}
-
-{% assign checked_image_url = blank %}
-{% if block.settings.checked_image != blank %}
-    {% assign checked_image_url = block.settings.checked_image | image_url %}
 {% endif %}
 
 {% assign unchecked_image_url = blank %}
@@ -65,9 +65,8 @@
 <div
     class="hero-product__optional-subscription"
     data-optional-subscription
-    data-section-id="{{ section.settings.section_id | escape }}"
-    data-serum-variant-id="{{ serum_variant.id | escape }}"
-    data-selling-plan-id="{{ selling_plan_allocation.selling_plan.id | escape }}"
+    data-subscription-variant-id="{{ block.settings.subscription_variant_id | escape }}"
+    data-subscription-selling-plan-id="{{ block.settings.selling_plan_id | escape }}"
 >
     <div class="c-optional-subscription">
         <div class="c-optional-subscription__main">
@@ -87,21 +86,20 @@
             {% endif %}
         </div>
         <label class="c-optional-subscription__option">
-            <input type="checkbox" name="subscription" disabled />
-            {% if optional_layout == 'hero' %}
-                <input type="hidden" name="checked-image" value="{{ checked_image_url | escape }}" />
+            <input type="checkbox" name="subscription"{% if subscription_configured %} checked{% endif %} />
+            {% if optional_layout == 'hero' and unchecked_image_url != blank %}
                 <input type="hidden" name="unchecked-image" value="{{ unchecked_image_url | escape }}" />
             {% endif %}
             <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
-            {% if serum.featured_image != blank %}
-                <img loading="lazy" src="{{ serum.featured_image | image_url }}" alt="{{ serum.title | escape }}" />
+            {% if subscription_product.featured_image != blank %}
+                <img loading="lazy" src="{{ subscription_product.featured_image | image_url }}" alt="{{ subscription_product.title | escape }}" />
             {% endif %}
-            <p><strong>Subscribe</strong> {{ serum.title }}</p>
+            <p><strong>Subscribe</strong> {{ subscription_product.title }}</p>
             <div class="e-price e-price--highlight">
                 <div class="e-price__main">
                     <div class="e-price__current">First bottle Free</div>
-                    {% if serum_variant.price > 0 %}
-                        <div class="e-price__old">{{ serum_variant.price | money_without_trailing_zeros }}</div>
+                    {% if subscription_variant.price > 0 %}
+                        <div class="e-price__old">{{ subscription_variant.price | money_without_trailing_zeros }}</div>
                     {% endif %}
                 </div>
             </div>
@@ -138,7 +136,7 @@
         {% endif %}
     </div>
     {% if optional_layout == 'hero' %}
-        <div class="e-auto-ships" hidden>
+        <div class="e-auto-ships">
             <i class="e-icon e-icon-rotation-2"></i>
             {{ 'purchase-form.settings.subscribe_text' | t }}
         </div>
@@ -146,6 +144,7 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('subscription-option', 'https://qureskincaredns-stable.com/sections/hero-product/js/subscription-option.js');
         loadScriptOnce('n-product-optional-subscription.js', '{{ 'n-product-optional-subscription.js' | asset_url }}');
     });
 </script>
