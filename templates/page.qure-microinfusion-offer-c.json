@@ -17,8 +17,8 @@
           "settings": {
             "countdown": false,
             "text": "<p>Free Shipping on Orders $100+ | US & UK Only</p>",
-            "button_label": "",
-            "button_url": "",
+            "button_label": "aaaa",
+            "button_url": "shopify://blogs/light-therapy",
             "from": "",
             "days": 5
           }
