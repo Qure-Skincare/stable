@@ -53,6 +53,7 @@
         "slider_1",
         "slider_2"
       ],
+      "disabled": true,
       "settings": {
         "slider": false,
         "countdown": true,
