@@ -11,28 +11,12 @@
   "sections": {
     "n_announcement_bar_kQaHkz": {
       "type": "n_announcement-bar",
-      "blocks": {
-        "slider_UxEaec": {
-          "type": "slider",
-          "settings": {
-            "countdown": false,
-            "text": "<p>Free Shipping on Orders $100+ | US & UK Only</p>",
-            "button_label": "",
-            "button_url": "",
-            "from": "",
-            "days": 5
-          }
-        }
-      },
-      "block_order": [
-        "slider_UxEaec"
-      ],
       "custom_css": [],
       "name": "t:sections.announcement-bar.name",
       "settings": {
         "slider": false,
         "countdown": false,
-        "text": "",
+        "text": "<p>Free Shipping on Orders $100+ | US & UK Only</p>",
         "button_label": "",
         "button_url": "",
         "exception": "",
