@@ -17,7 +17,7 @@
 {% endif %}
 
 {% unless is_exception %}
-<!-- ANNOUNCEMENT BAR [aaaaqqqq1] -->
+<!-- ANNOUNCEMENT BAR -->
 <div id="announcement-bar" class="announcement-bar">
     <div class="announcement-bar-content">
         {% if section.settings.slider %}
@@ -68,6 +68,7 @@
             </div>
         {% else %}
             {% if section.settings.countdown %}
+                <!-- aaaaqqqq1 -->
                 <div class="announcement-bar-offer-countdown">
                     <div class="container">
                         <p style="--colorize-color_: #ff5429">
@@ -85,6 +86,7 @@
                     </div>
                 </div>
             {% else %}
+                <!-- aaaaqqqq2 -->
                 <a class="announcement-bar-link" href="{{ section.settings.button_url }}" aria-label="{{ section.settings.text | escape }}">
                     {{ section.settings.text }}
                     {% if section.settings.button_label != blank %}
