@@ -27,6 +27,9 @@
       "block_order": [
         "slider_UxEaec"
       ],
+      "custom_css": [
+        ".announcement-bar{display: none;}"
+      ],
       "name": "t:sections.announcement-bar.name",
       "settings": {
         "slider": false,
