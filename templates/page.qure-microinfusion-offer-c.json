@@ -1291,7 +1291,7 @@
         },
         "product_7dL4ci": {
           "type": "product",
-          "disabled":true,
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -1387,7 +1387,7 @@
         },
         "product_nyJ9n7": {
           "type": "product",
-          "disabled":true,
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -1483,7 +1483,7 @@
         },
         "product_gbPf3J": {
           "type": "product",
-          "disabled":true,
+          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -1580,7 +1580,7 @@
         "product_RBCPe8"
       ],
       "custom_css": [
-        ".e-features-list, .c-certified-box {display: none;}"
+        ".e-features-list,.c-certified-box {display: none;}"
       ],
       "settings": {
         "type": "list",
@@ -1595,37 +1595,6 @@
         "delivery_switcher_product": "micro-infusion-6-month-bundle-for-dark-spots",
         "guarantee_period": "90",
         "available-stocks": false
-      }
-    },
-    "n_should_know_8jabz8": {
-      "type": "n_should-know",
-      "blocks": {
-        "text_slider_how": {
-          "type": "text_slider",
-          "settings": {
-            "text": "<p><strong>How To Use</strong></p><ol><li><strong>Fill the device:</strong> Open the device and pour in one ampoule of serum.</li><li><strong>Prepare the device:</strong> Twist on the needle head and leave upside down for 1–2 minutes.</li><li><strong>Begin infusion:</strong> Stamp evenly across the face with 2–3 passes, then pat in any remaining serum.</li></ol>",
-            "note": "<p><strong>Tip:</strong> Apply remaining serum after your treatment and allow it to absorb overnight.</p>"
-          }
-        },
-        "text_slider_safe": {
-          "type": "text_slider",
-          "settings": {
-            "text": "<p><strong>Safety Guidelines</strong></p><p>Micro-Infusion is a simple treatment you can do at-home. No appointments and no downtime. It’s designed to be safe and easy to use, as long as your skin is clean and healthy. </p><p>Avoid using Micro-Infusion on active breakouts or broken skin, as it may spread bacteria. Always use a fresh, sterile needle head for each treatment, and apply SPF after use to protect your skin.</p><p>If you’re pregnant or have a medical condition, check with your doctor first.</p>",
-            "note": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_slider_how",
-        "text_slider_safe"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_should-know.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>What you should know for the best results</h2><p>The Qure Micro-Infusion System is designed with your safety in mind.</p><p>Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimize the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.</p><p>Below are a few rules you should follow while using your Qure Micro-Infusion System:</p>",
-        "button_label": "See Detailed Treatment Guide",
-        "button_url": "https://qureskincare.com/pages/microinfusion-safety-guide"
       }
     },
     "n_why_using_cj3RFv": {
@@ -1777,9 +1746,24 @@
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
+    },
+    "n_announcement_bar_kQaHkz": {
+      "type": "n_announcement-bar",
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "slider": false,
+        "countdown": false,
+        "text": "",
+        "button_label": "",
+        "button_url": "",
+        "exception": "",
+        "from": "",
+        "days": 5
+      }
     }
   },
   "order": [
+    "n_announcement_bar_kQaHkz",
     "n_hero_section_xMcaXr",
     "n_hero_section_Kiu8T3",
     "n_hero_section_3uBXrT",
@@ -1802,7 +1786,6 @@
     "n_science_backed_6ehGih",
     "sticky_cta_d9dC8X",
     "purchase_form_PwCCh6",
-    "n_should_know_8jabz8",
     "n_why_using_cj3RFv",
     "n_faq_RiGOh9"
   ]
