@@ -38,7 +38,6 @@
         },
         "slider_2": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "countdown": false,
             "text": "<p><strong>Save 26% Site Wide </strong>- Limited Time Only</p>",
@@ -53,7 +52,6 @@
         "slider_1",
         "slider_2"
       ],
-      "disabled": true,
       "settings": {
         "slider": false,
         "countdown": true,
