@@ -57,11 +57,6 @@
     {% assign recurring_compare_at_price = selling_plan_allocation.compare_at_price %}
 {% endif %}
 
-{% assign unchecked_image_url = blank %}
-{% if block.settings.unchecked_image != blank %}
-    {% assign unchecked_image_url = block.settings.unchecked_image | image_url %}
-{% endif %}
-
 <div
     class="hero-product__optional-subscription"
     data-optional-subscription
@@ -87,8 +82,8 @@
         </div>
         <label class="c-optional-subscription__option">
             <input type="checkbox" name="subscription"{% if subscription_configured %} checked{% endif %} />
-            {% if optional_layout == 'hero' and unchecked_image_url != blank %}
-                <input type="hidden" name="unchecked-image" value="{{ unchecked_image_url | escape }}" />
+            {% if optional_layout == 'hero' and block.settings.unchecked_image != blank %}
+                <input type="hidden" name="unchecked-image" value="{{ block.settings.unchecked_image | image_url | escape }}" />
             {% endif %}
             <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
             {% if subscription_product.featured_image != blank %}

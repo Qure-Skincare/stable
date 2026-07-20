@@ -1,11 +1,15 @@
 (function () {
     'use strict';
 
-    const RETRY_DELAY = 200;
-    const MAX_RETRIES = 25;
+    const GLOBAL_FLAG = '__optionalSubscriptionSubmitBound';
+    const PENDING_ATTRIBUTE = 'data-optional-subscription-pending';
+    const WAS_DISABLED_ATTRIBUTE = 'data-optional-subscription-was-disabled';
 
-    const pendingForms = new WeakSet();
-    const bypassForms = new WeakSet();
+    const FORM_SELECTOR = 'form[action$="/cart/add"]';
+    const SECTION_SELECTOR = '.shopify-section, .hero-product';
+    const WIDGET_SELECTOR = '[data-optional-subscription]';
+    const CHECKBOX_SELECTOR =
+        '.c-optional-subscription input[name="subscription"]';
 
     const getCartApi = () => {
         if (
@@ -14,61 +18,74 @@
         ) {
             return window.CartDrawer.addToCartJson.bind(window.CartDrawer);
         }
+        if (typeof addToCartJson === 'function') {
+            return addToCartJson;
+        }
+        return null;
+    };
 
-        if (typeof window.addToCartJson === 'function') {
-            return window.addToCartJson.bind(window);
+    const setPending = (form, isPending) => {
+        const submitButton = form.querySelector('[type="submit"]');
+
+        if (isPending) {
+            form.setAttribute(PENDING_ATTRIBUTE, '1');
+            form.setAttribute('aria-busy', 'true');
+        } else {
+            form.removeAttribute(PENDING_ATTRIBUTE);
+            form.removeAttribute('aria-busy');
+        }
+
+        if (!submitButton) return;
+
+        if (isPending) {
+            if (submitButton.disabled) {
+                submitButton.setAttribute(WAS_DISABLED_ATTRIBUTE, '1');
+            }
+            submitButton.disabled = true;
+            submitButton.setAttribute('aria-disabled', 'true');
+            return;
+        }
+
+        const wasDisabled = submitButton.hasAttribute(WAS_DISABLED_ATTRIBUTE);
+
+        submitButton.disabled = wasDisabled;
+        submitButton.removeAttribute(WAS_DISABLED_ATTRIBUTE);
+
+        if (wasDisabled) {
+            submitButton.setAttribute('aria-disabled', 'true');
+        } else {
+            submitButton.removeAttribute('aria-disabled');
+        }
+    };
+
+    const findWidget = (form) => {
+        const section = form.closest(SECTION_SELECTOR);
+        if (!section) return null;
+
+        const widgets = section.querySelectorAll(WIDGET_SELECTOR);
+        if (widgets.length === 0) return null;
+        if (widgets.length === 1) return widgets[0];
+
+        for (const widget of widgets) {
+            if (widget.contains(form) || form.contains(widget)) {
+                return widget;
+            }
         }
 
         return null;
     };
 
-    const setPending = (form, isPending) => {
-        if (isPending) {
-            pendingForms.add(form);
-            form.setAttribute('aria-busy', 'true');
-        } else {
-            pendingForms.delete(form);
-            form.removeAttribute('aria-busy');
-        }
-
-        form.querySelectorAll('[type="submit"]').forEach((submitButton) => {
-            submitButton.disabled = isPending;
-            submitButton.setAttribute('aria-disabled', isPending ? 'true' : 'false');
-        });
-    };
-
-    const handleFailure = (form, error) => {
-        console.error('[optional-subscription] Failed to add items to cart:', error);
-        setPending(form, false);
-    };
-
-    const submitNative = (form) => {
-        bypassForms.add(form);
-        try {
-            if (typeof form.requestSubmit === 'function') {
-                form.requestSubmit();
-            } else {
-                HTMLFormElement.prototype.submit.call(form);
-            }
-        } finally {
-            bypassForms.delete(form);
-        }
-    };
-
-    const collectItems = (root, form) => {
-        const formData = new FormData(form);
-        const primaryVariantId = formData.get('id');
-        if (!primaryVariantId) return null;
+    const getPrimaryItem = (formData) => {
+        const id = formData.get('id');
+        if (!id) return null;
 
         let quantity = parseInt(formData.get('quantity'), 10);
         if (!Number.isInteger(quantity) || quantity < 1) quantity = 1;
 
-        const primaryItem = { id: primaryVariantId, quantity: quantity };
+        const item = { id, quantity };
 
         const sellingPlan = formData.get('selling_plan');
-        if (sellingPlan) {
-            primaryItem.selling_plan = sellingPlan;
-        }
+        if (sellingPlan) item.selling_plan = sellingPlan;
 
         const properties = {};
         let hasProperties = false;
@@ -79,118 +96,78 @@
                 hasProperties = true;
             }
         });
-        if (hasProperties) {
-            primaryItem.properties = properties;
-        }
+        if (hasProperties) item.properties = properties;
 
-        const items = [primaryItem];
-        const subscriptionCheckbox = root.querySelector(
-            '.c-optional-subscription input[name="subscription"]'
-        );
-
-        if (subscriptionCheckbox && subscriptionCheckbox.checked) {
-            const subscriptionVariantId = root.getAttribute('data-subscription-variant-id');
-            const subscriptionSellingPlanId = root.getAttribute('data-subscription-selling-plan-id');
-
-            if (!subscriptionVariantId || !subscriptionSellingPlanId) {
-                throw new Error('Subscription variant or selling plan is not configured.');
-            }
-
-            items.push({
-                id: subscriptionVariantId,
-                quantity: 1,
-                selling_plan: subscriptionSellingPlanId
-            });
-        }
-
-        return items;
+        return item;
     };
 
-    const addWithRetry = (items, form, attempt) => {
-        if (!form.isConnected) {
-            setPending(form, false);
+    const getSubscriptionItem = (widget) => {
+        const checkbox = widget.querySelector(CHECKBOX_SELECTOR);
+        if (!checkbox || !checkbox.checked) return null;
+
+        const id = widget.getAttribute('data-subscription-variant-id');
+        const sellingPlan = widget.getAttribute(
+            'data-subscription-selling-plan-id'
+        );
+
+        if (!id || !sellingPlan) {
+            console.warn(
+                '[optional-subscription] Subscription variant or selling plan is not configured. Adding primary product only.'
+            );
+            return null;
+        }
+
+        return { id, quantity: 1, selling_plan: sellingPlan };
+    };
+
+    const handleSubmit = (event) => {
+        const form = event.target;
+        if (!(form instanceof HTMLFormElement)) return;
+        if (!form.matches(FORM_SELECTOR)) return;
+
+        if (form.hasAttribute(PENDING_ATTRIBUTE)) {
+            event.preventDefault();
             return;
         }
+
+        const widget = findWidget(form);
+        if (!widget) return;
 
         const cartApi = getCartApi();
+        if (!cartApi) return;
 
-        if (!cartApi) {
-            if (attempt >= MAX_RETRIES) {
-                setPending(form, false);
-                submitNative(form);
-                return;
-            }
+        const primaryItem = getPrimaryItem(new FormData(form));
+        if (!primaryItem) return;
 
-            setTimeout(() => {
-                addWithRetry(items, form, attempt + 1);
-            }, RETRY_DELAY);
-            return;
-        }
+        const items = [primaryItem];
+        const subscriptionItem = getSubscriptionItem(widget);
+        if (subscriptionItem) items.push(subscriptionItem);
+
+        event.preventDefault();
+        setPending(form, true);
 
         let result;
 
         try {
             result = cartApi(items);
         } catch (error) {
-            handleFailure(form, error);
-            return;
-        }
-
-        if (result && typeof result.then === 'function') {
-            result.then(
-                () => {
-                    setPending(form, false);
-                },
-                (error) => {
-                    handleFailure(form, error);
-                }
+            console.error(
+                '[optional-subscription] Cart API threw synchronously, falling back to native submit:',
+                error
             );
+            setPending(form, false);
+            if (form.isConnected) form.submit();
             return;
         }
 
-        setPending(form, false);
+        Promise.resolve(result).then(
+            () => setPending(form, false),
+            () => setPending(form, false)
+        );
     };
 
-    const handleSubmit = (event) => {
-        const form = event.target;
-
-        if (!(form instanceof HTMLFormElement)) return;
-        if (bypassForms.has(form)) return;
-        if (!form.matches('.c-buy-block form[action$="/cart/add"]')) return;
-
-        const section = form.closest('.hero-product, .shopify-section');
-        const root = section && section.querySelector('[data-optional-subscription]');
-        if (!root) return;
-
-        const isStatic = form.getAttribute('data-static') === 'true';
-
-        if (pendingForms.has(form)) {
-            event.preventDefault();
-            if (!isStatic) event.stopImmediatePropagation();
-            return;
-        }
-
-        let items;
-
-        try {
-            items = collectItems(root, form);
-        } catch (error) {
-            event.preventDefault();
-            if (!isStatic) event.stopImmediatePropagation();
-            handleFailure(form, error);
-            return;
-        }
-
-        if (!items) return;
-
-        event.preventDefault();
-        if (!isStatic) event.stopImmediatePropagation();
-        setPending(form, true);
-        addWithRetry(items, form, 0);
-    };
-
-    if (!window.__optionalSubscriptionSubmitBound) {
-        window.__optionalSubscriptionSubmitBound = true;
+    if (!window[GLOBAL_FLAG]) {
+        window[GLOBAL_FLAG] = true;
         document.addEventListener('submit', handleSubmit, true);
     }
 })();

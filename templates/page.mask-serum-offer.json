@@ -276,11 +276,11 @@
           "settings": {
             "layout": "buy-form",
             "heading": "Best Results Together",
-            "product": "blue-face-serum",
+            "product": "",
             "subscription_note": "Every 2 months: Receive a BluePlus Serum Bottle",
             "subscription_note_mode": "prices",
-            "subscription_variant_id": "49565278503151",
-            "selling_plan_id": "8856043759",
+            "subscription_variant_id": "",
+            "selling_plan_id": "",
             "checked_image": "shopify://shop_images/6_88ef9585-acdc-4815-8e8e-c7139f7187a4.webp"
           }
         },
@@ -431,7 +431,7 @@
       "name": "t:sections.product-header.name",
       "settings": {
         "section_id": "hero-product",
-        "product": "q-rejuvalight-pro-facewear",
+        "product": "cleanser",
         "reverse": true,
         "secondary": true,
         "background": false,
