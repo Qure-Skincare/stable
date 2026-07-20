@@ -276,11 +276,11 @@
           "settings": {
             "layout": "buy-form",
             "heading": "Best Results Together",
-            "product": "",
+            "product": "blue-face-serum",
             "subscription_note": "Every 2 months: Receive a BluePlus Serum Bottle",
             "subscription_note_mode": "prices",
-            "subscription_variant_id": "",
-            "selling_plan_id": "",
+            "subscription_variant_id": "49565278503151",
+            "selling_plan_id": "8856043759",
             "checked_image": "shopify://shop_images/6_88ef9585-acdc-4815-8e8e-c7139f7187a4.webp"
           }
         },

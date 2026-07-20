@@ -1,8 +1,9 @@
 (function () {
     'use strict';
 
-    const GLOBAL_FLAG = '__optionalSubscriptionSubmitBound';
+    const GLOBAL_FLAG = '__optionalSubscriptionClickBound';
     const FORM_SELECTOR = 'form[action$="/cart/add"]';
+    const SUBMIT_SELECTOR = '[type="submit"]';
     const SECTION_SELECTOR = '.shopify-section, .hero-product';
     const WIDGET_SELECTOR = '[data-optional-subscription]';
     const CHECKBOX_SELECTOR =
@@ -51,10 +52,12 @@
         return null;
     };
 
-    const handleSubmit = (event) => {
-        const form = event.target;
-        if (!(form instanceof HTMLFormElement)) return;
-        if (!form.matches(FORM_SELECTOR)) return;
+    const handleClick = (event) => {
+        const button = event.target.closest(SUBMIT_SELECTOR);
+        if (!button) return;
+
+        const form = button.closest(FORM_SELECTOR);
+        if (!form) return;
 
         const widget = findWidget(form);
         if (!widget) return;
@@ -107,6 +110,6 @@
 
     if (!window[GLOBAL_FLAG]) {
         window[GLOBAL_FLAG] = true;
-        document.addEventListener('submit', handleSubmit, true);
+        document.addEventListener('click', handleClick);
     }
 })();
