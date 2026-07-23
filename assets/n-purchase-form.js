@@ -116,12 +116,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const preorder = this.getAttribute("data-preorder");
         const product_selling_plan = this.getAttribute("data-product-selling-plan");
         const block_id = this.getAttribute("data-block-id");
+        const gift = this.getAttribute("data-gift");
+        const discount_code = this.getAttribute("data-discount-code");
 
         updateProductFormButton(product_variant_id, soldout);
         clearPreorderBoxes();
         tooglePreorderBox(preorder, product_variant_id);
         backInStock(soldout);
         subscriptionForm(this,product_selling_plan);
+        giftForm(gift, discount_code);
 
         const purchase_form_pay_in_full = document.querySelector('.' + __section + " .purchase_form_pay_in_full");
         if (purchase_form_pay_in_full) {
@@ -165,6 +168,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500)
     }
 
+
+    function giftForm(gift, discount_code) {
+        const form = document.querySelector('.' + __section + ' .c-order-button form[action="/cart/add"]');
+        if (!form) return;
+
+        if(gift && discount_code)
+        {
+            setHiddenInput(form, 'properties[_gift]', gift);
+            setHiddenInput(form, 'properties[_discount_code]', discount_code);
+        }
+        else
+        {
+            removeHiddenInput(form, 'properties[_gift]');
+            removeHiddenInput(form, 'properties[_discount_code]');
+        }
+    }
+
+    function setHiddenInput(form, name, value) {
+        let input = form.querySelector('input[name="' + name + '"]');
+        if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = name;
+            form.appendChild(input);
+        }
+        input.value = value;
+    }
+
+    function removeHiddenInput(form, name) {
+        const input = form.querySelector('input[name="' + name + '"]');
+        if (input) {
+            input.remove();
+        }
+    }
 
     function subscriptionForm(element, product_selling_plan) {
         const details = document.getElementById('subscription-details');

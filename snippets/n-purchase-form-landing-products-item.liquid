@@ -66,7 +66,7 @@
                             data-soldout="{{ block.settings.soldout }}" 
                             data-preorder="{{ block.settings.preorder }}" 
                             data-product-type="{{ product_type }}"
-                            data-product-name="{{ block.settings.heading | escape }}",
+                            data-product-name="{{ block.settings.heading | escape }}"
                             {% if subscription_is_on == true and block.settings.product_selling_plan > 0 %}
                             data-product-selling-plan="{{ block.settings.product_selling_plan }}"
                             {% elsif subscription_section_is_on == true  and block.settings.product_selling_plan > 0 %}
@@ -76,6 +76,12 @@
                             data-preselected="{{ block.settings.preselected }}"
                             {% else %}
                             data-preselected="false"
+                            {% endif %}
+                            {% if subscription_is_on == true and block.settings.gift != blank %}
+                            data-gift="{{ all_products[block.settings.gift].variants.first.id }}"
+                            {% endif %}
+                            {% if subscription_is_on == true and block.settings.discount_code != blank %}
+                            data-discount-code="{{ block.settings.discount_code }}"
                             {% endif %}
                             data-variant-title="{{ product_title_tag }}"
                             data-product-price="{{ product_sale_price }}">

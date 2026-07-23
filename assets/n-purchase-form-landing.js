@@ -104,6 +104,8 @@ function __landing__handlerProductVariantSelector(e) {
     const preorder = this.getAttribute("data-preorder");
     const product_selling_plan = this.getAttribute("data-product-selling-plan");
     const variant_title = this.getAttribute("data-variant-title");
+    const gift = this.getAttribute("data-gift");
+    const discount_code = this.getAttribute("data-discount-code");
 
     __landing__updateProductCheckbox(this);
     __landing__updateProductFormButton(product_variant_id, soldout);
@@ -113,6 +115,7 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__updateStickyButton(variant_title);
     __landing__BackInStock(soldout);
     __landing__SubscriptionForm(this,product_selling_plan);
+    __landing__GiftForm(gift, discount_code);
 
     if(!product_selling_plan) {
         __landing_updateButtonLabel(this);
@@ -137,6 +140,40 @@ function __landing__handlerProductVariantSelector(e) {
         purchase_form_landing_event(__section_landing, this, product_variant_id);
     }, 500)
 
+}
+
+function __landing__GiftForm(gift, discount_code) {
+    const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
+    if (!form) return;
+
+    if(gift && discount_code)
+    {
+        __landing__setHiddenInput(form, 'properties[_gift]', gift);
+        __landing__setHiddenInput(form, 'properties[_discount_code]', discount_code);
+    }
+    else
+    {
+        __landing__removeHiddenInput(form, 'properties[_gift]');
+        __landing__removeHiddenInput(form, 'properties[_discount_code]');
+    }
+}
+
+function __landing__setHiddenInput(form, name, value) {
+    let input = form.querySelector('input[name="' + name + '"]');
+    if (!input) {
+        input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        form.appendChild(input);
+    }
+    input.value = value;
+}
+
+function __landing__removeHiddenInput(form, name) {
+    const input = form.querySelector('input[name="' + name + '"]');
+    if (input) {
+        input.remove();
+    }
 }
 
 function __landing__SubscriptionForm(element, product_selling_plan) {
