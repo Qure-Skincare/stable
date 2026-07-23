@@ -100,7 +100,7 @@
             "product": "all-in-one-serum-2-0-4-month-bundle",
             "product_variant_id": 48228679745775,
             "product_selling_plan": 0,
-            "popular": true,
+            "popular": false,
             "best": false,
             "preselected": false,
             "heading": "120 Days Supply",
@@ -155,8 +155,8 @@
           "type": "product",
           "settings": {
             "product": "all-in-one-serum-2-0-6-month-bundle",
-            "product_variant_id": 48228668834031,
-            "product_selling_plan": 8441757935,
+            "product_variant_id": 48228682236143,
+            "product_selling_plan": 8855060719,
             "popular": false,
             "best": true,
             "preselected": true,
@@ -179,8 +179,8 @@
           "settings": {
             "product": "all-in-one-serum-2-0-4-month-bundle",
             "product_variant_id": 48228679745775,
-            "product_selling_plan": 8441725167,
-            "popular": true,
+            "product_selling_plan": 8855027951,
+            "popular": false,
             "best": false,
             "preselected": false,
             "heading": "120 Days Supply",
@@ -201,8 +201,8 @@
           "type": "product",
           "settings": {
             "product": "all-in-one-serum",
-            "product_variant_id": 0,
-            "product_selling_plan": 8441692399,
+            "product_variant_id": 48228668834031,
+            "product_selling_plan": 8854995183,
             "popular": false,
             "best": false,
             "preselected": false,
@@ -591,7 +591,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br> Orders Over {$dyn}"
+            "text": "Free Shipping On Orders<br> Over 100$ in US"
           }
         },
         "image_with_text_reviewed_aio": {
@@ -754,12 +754,13 @@
         "product_led_mask_aio",
         "product_serum_aio"
       ],
+      "disabled": true,
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
-        "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
       }
     },
     "n_base_section_refill_aio": {
@@ -778,6 +779,27 @@
         "wistia_url": "tj97vrxlon",
         "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp"
       }
+    },
+    "17847993744d24ef5b": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_jfApb7": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_jfApb7"
+      ],
+      "settings": {}
     },
     "n_faq_aio": {
       "type": "n_faq",
@@ -901,6 +923,7 @@
     "n_accordion_tiles_square_aio",
     "n_complete_system_aio",
     "n_base_section_refill_aio",
+    "17847993744d24ef5b",
     "n_faq_aio",
     "sticky_cta_aio"
   ]

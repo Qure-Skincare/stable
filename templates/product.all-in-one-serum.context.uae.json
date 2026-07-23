@@ -1,0 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "uae"
+  },
+  "parent": "product.all-in-one-serum.json",
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_sub_2m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_sub_4m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_sub_6m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_otp_2m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_otp_4m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_otp_6m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
+    }
+  }
+}
