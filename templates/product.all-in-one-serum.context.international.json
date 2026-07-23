@@ -12,5 +12,41 @@
     "market": "international"
   },
   "parent": "product.all-in-one-serum.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_otp_6m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_otp_4m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_otp_2m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_sub_6m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_sub_4m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_sub_2m_aio": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
+    }
+  }
 }
