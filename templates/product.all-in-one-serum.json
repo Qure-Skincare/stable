@@ -754,12 +754,13 @@
         "product_led_mask_aio",
         "product_serum_aio"
       ],
+      "disabled": true,
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
-        "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
       }
     },
     "n_base_section_refill_aio": {
