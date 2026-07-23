@@ -591,7 +591,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br> Orders Over {$dyn}"
+            "text": "Free Shipping On Orders<br> Over 100$ in US"
           }
         },
         "image_with_text_reviewed_aio": {
