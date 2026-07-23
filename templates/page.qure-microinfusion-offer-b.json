@@ -1320,6 +1320,8 @@
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779399407,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1343,6 +1345,8 @@
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779432175,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1417,6 +1421,8 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1440,6 +1446,8 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779530479,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1514,6 +1522,8 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1538,6 +1548,8 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1583,7 +1595,7 @@
         "product_RBCPe8"
       ],
       "custom_css": [
-        ".e-features-list, .c-certified-box {display: none;}"
+        ".e-features-list,.c-certified-box {display: none;}"
       ],
       "settings": {
         "type": "list",
@@ -1594,7 +1606,7 @@
         "form_name": "purchase-form",
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "footer",
+        "delivery_switcher_position": "header",
         "delivery_switcher_product": "micro-infusion-6-month-bundle-for-dark-spots",
         "guarantee_period": "90",
         "available-stocks": false
