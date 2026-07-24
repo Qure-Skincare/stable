@@ -108,8 +108,40 @@
         addToCartJsonFn([primaryItem, subscriptionItem]);
     };
 
+    const syncSubscriptionLabel = (widget) => {
+        const section = widget.closest(SECTION_SELECTOR);
+        if (!section) return;
+
+        const checkbox = widget.querySelector(CHECKBOX_SELECTOR);
+        const button = section.querySelector('.add-cart-button[data-label-alt]');
+        if (!checkbox || !button) return;
+
+        const defaultLabel = button.getAttribute('data-label-default');
+        const altLabel = button.getAttribute('data-label-alt');
+        if (defaultLabel == null || altLabel == null) return;
+
+        button.innerHTML = checkbox.checked ? defaultLabel : altLabel;
+    };
+
+    const initLabelSync = () => {
+        document.querySelectorAll(WIDGET_SELECTOR).forEach((widget) => {
+            const checkbox = widget.querySelector(CHECKBOX_SELECTOR);
+            if (!checkbox) return;
+            syncSubscriptionLabel(widget);
+            checkbox.addEventListener('change', () =>
+                syncSubscriptionLabel(widget)
+            );
+        });
+    };
+
     if (!window[GLOBAL_FLAG]) {
         window[GLOBAL_FLAG] = true;
         document.addEventListener('click', handleClick);
+
+        if (document.readyState !== 'loading') {
+            initLabelSync();
+        } else {
+            document.addEventListener('DOMContentLoaded', initLabelSync);
+        }
     }
 })();

@@ -55,6 +55,7 @@
         "button_m49g68": {
           "type": "button",
           "settings": {
+            "button_light_label": "Get my Led Mask Now",
             "hide_payments": false,
             "hide_bottom": false,
             "hide_certified": false
