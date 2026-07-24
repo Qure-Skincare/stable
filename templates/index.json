@@ -505,11 +505,11 @@
           "type": "hover_image",
           "settings": {
             "heading": "All-In-One Face Serum",
-            "product": "face-serum",
-            "image_text": "tending",
-            "image": "shopify://shop_images/all-in-one-face-serum.webp",
+            "product": "all-in-one-serum",
+            "image_text": "trending",
+            "image": "shopify://shop_images/Img_4.jpg",
             "hover_image": "shopify://shop_images/Img_7.png",
-            "url": "https://qureskincare.com/products/face-serum",
+            "url": "https://qureskincare.com/products/all-in-one-serum",
             "rating_text": "380 Reviews"
           }
         },
