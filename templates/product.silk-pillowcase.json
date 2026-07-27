@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_AR9QDc": {
       "type": "n-product-header",
@@ -66,7 +66,6 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": false,
         "seo_heading": "PURE SILK PILLOWCASE",
         "heading": "Minimize the formation of wrinkles while you sleep",
         "rating": true,

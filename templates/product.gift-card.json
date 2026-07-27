@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_U6RBGz": {
       "type": "n-product-header",
@@ -39,7 +39,6 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "use_own_file": false,
         "seo_heading": "",
         "heading": "Qure Gift Card",
         "rating": true,
@@ -304,10 +303,10 @@
     },
     "n_you_may_also_like_HZi1bC": {
       "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
       "settings": {
         "use_own_file": false
-      },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      }
     }
   },
   "order": [

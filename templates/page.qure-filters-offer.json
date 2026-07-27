@@ -21,7 +21,8 @@
           "settings": {}
         },
         "link_iPBNaS": {
-          "type": "link"
+          "type": "link",
+          "settings": {}
         },
         "exclusive-offer-bundle_iaSzaK": {
           "type": "exclusive-offer-bundle",
@@ -50,9 +51,7 @@
         "reserved": false,
         "soldout": false,
         "button-label": "Buy One + Get One Free",
-        "button-url": "#form-inside",
-        "approved": false,
-        "use_own_file": false
+        "button-url": "#form-inside"
       }
     },
     "n_qure_filters_offer_quote_zqnAHh": {
@@ -715,18 +714,17 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "reverse": true,
         "seo_heading": "",
         "heading": "Protect your skin & save $99",
         "rating": true,
         "limited": false,
         "description": "<p>You’ve tried the products. You’ve changed your routine. But until you fix what’s coming out of the tap, your skin is always working uphill.</p><p>This is your chance to protect it at every step. In the shower and at the sink.</p>",
+        "image": "shopify://shop_images/protect_skin.webp",
         "reserved": false,
         "soldout": false,
         "button-label": "Buy One + Get One Free",
-        "button-url": "#form-inside",
-        "approved": false,
-        "reverse": true,
-        "image": "shopify://shop_images/protect_skin.webp"
+        "button-url": "#form-inside"
       }
     },
     "n_faq_dyCjhg": {
