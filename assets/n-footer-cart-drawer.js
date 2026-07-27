@@ -179,6 +179,18 @@ const addToCartJson = (input) => {
     });
 };
 
+// Guard against a "free-only" cart: when the qualifying paid product is removed,
+// its auto-added gift can linger, leaving item_count > 0 with total_price 0.
+// A cart that holds items but has zero value must be emptied entirely.
+const clearCartIfOnlyFreeItems = async () => {
+    const cart = await getCartState();
+    if (cart && cart.item_count > 0 && cart.total_price === 0) {
+        await clearCart();
+        return true;
+    }
+    return false;
+};
+
 const changeCart = (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/change.js', {
         method: 'POST',
@@ -187,7 +199,11 @@ const changeCart = (input) => {
     })
     .then(response => response.json())
     .then(() => {
-        toogleGift().then(() => {
+        toogleGift().then(async () => {
+            // Fallback cleanup after gift toggling: if only zero-value items remain, wipe the cart.
+            // clearCart() dispatches its own cart.requestComplete, so stop the normal flow here.
+            if (await clearCartIfOnlyFreeItems()) return;
+
             if (typeof syncCart === 'function') {
                 syncCart(input).then(() => {
                     const event = new CustomEvent('cart.requestComplete', { detail: { source: 'syncCart' } });
@@ -206,7 +222,7 @@ const changeCart = (input) => {
 };
 
 const clearCart = () => {
-    fetch((window.Shopify?.routes?.root || '/') + 'cart/clear.js', {
+    return fetch((window.Shopify?.routes?.root || '/') + 'cart/clear.js', {
         method: 'POST',
         priority: 'high',
         headers: {
