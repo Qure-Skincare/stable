@@ -70,7 +70,11 @@
             'data-subscription-selling-plan-id'
         );
 
+        // Stop the event entirely: other delegated cart handlers listen for the
+        // same click and would add the items a second time (duplicates in cart).
         event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
         const formData = new FormData(form);
 
         if (!checkbox || !checkbox.checked || !subscriptionId || !subscriptionSellingPlan) {
@@ -136,7 +140,9 @@
 
     if (!window[GLOBAL_FLAG]) {
         window[GLOBAL_FLAG] = true;
-        document.addEventListener('click', handleClick);
+        // Capture phase: runs before any bubble-phase cart handlers, so
+        // stopPropagation() reliably prevents duplicate add-to-cart calls.
+        document.addEventListener('click', handleClick, true);
 
         if (document.readyState !== 'loading') {
             initLabelSync();
