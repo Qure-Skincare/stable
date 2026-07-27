@@ -48,7 +48,7 @@
         <div class="c-exclusive-offer__item">
             {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'product-exclusive-offer-' %}
             {% if block.settings.image_product1 != blank %}
-                <img loading="lazy" src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
+                <img loading="eager" src="{{ block.settings.image_product1 | img_url: '250x' }}" alt="{{ block.settings.image_product1.alt | escape }}" />
             {% endif %}
             <div>{{ product_sale_price }}</div>
         </div>
@@ -57,7 +57,7 @@
         <div class="c-exclusive-offer__item">
             {% include 'get-product-data', product_handle: block.settings.product2, product_prefix: 'product-exclusive-offer-' %}
             {% if block.settings.image_product2 != blank %}
-                <img loading="lazy" src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
+                <img loading="eager" src="{{ block.settings.image_product2 | img_url: '250x' }}" alt="{{ block.settings.image_product2.alt | escape }}" />
             {% endif %}
             <div><del>{{ product_sale_price }}</del> <strong>{{ 'page.exclusive-offer.free' | t }}</strong></div>
         </div>
@@ -65,16 +65,40 @@
     <p class="c-exclusive-offer__desc">{{ block.settings.text |  replace: '<p>', '' |  replace: '</p>', '' | replace: '$299', product_sale_price }}</p>
 </div>
 
-{% if product != blank %}
-    <script>
-        const exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
-        const exclusive_product = window.get_products_data["product-exclusive-offer-{{ block.settings.product }}"];
-        const exclusive_product2 = window.get_products_data["product-exclusive-offer-{{ block.settings.product2 }}"];
-        const exclusive_product2_black_variant_id = '{{ exclusive_offer_product2_black_variant_id }}';
-        const exclusive_offer_discount_code = {{ block.settings.discount_code | default: 'FREEN&DOFFER' | json }};
+{% if product != blank and block.settings.discount_code != blank %}
+    <script class="__init">
+        (function () {
+            var exclusiveKey1 = "product-exclusive-offer-{{ block.settings.product }}";
+            var exclusiveKey2 = "product-exclusive-offer-{{ block.settings.product2 }}";
 
-        document.addEventListener("DOMContentLoaded", function () {
-          loadScriptOnce('n-product-exclusive-offer.js', '{{ 'n-product-exclusive-offer.js' | asset_url }}');
-        });
+            // These do not depend on window.get_products_data — expose them right away.
+            window.exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
+            window.exclusive_product2_black_variant_id = '{{ exclusive_offer_product2_black_variant_id }}';
+            window.exclusive_offer_discount_code = '{{ block.settings.discount_code }}';
+
+            // window.get_products_data is populated by another deferred inline script
+            // (get-product-data). Under the LCP script activation the read order is not
+            // guaranteed, so wait until the data is ready before touching it — reading a
+            // property of an undefined object throws otherwise.
+            var attempts = 0;
+            function initExclusiveOffer() {
+                var store = window.get_products_data;
+                if (!store || !store[exclusiveKey1]) {
+                    if (attempts++ < 60) {
+                        return setTimeout(initExclusiveOffer, 50);
+                    }
+                    return; // give up gracefully after ~3s instead of crashing
+                }
+                window.exclusive_product = store[exclusiveKey1];
+                window.exclusive_product2 = store[exclusiveKey2];
+                loadScriptOnce('n-product-exclusive-offer.js', '{{ 'n-product-exclusive-offer.js' | asset_url }}');
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener("DOMContentLoaded", initExclusiveOffer);
+            } else {
+                initExclusiveOffer();
+            }
+        })();
     </script>
 {% endif %}

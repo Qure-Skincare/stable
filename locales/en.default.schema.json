@@ -9,6 +9,7 @@
  */
  {
     "common": {
+        "discount_code": "Discount code",
         "false": "False",
         "true": "True",
         "delivery_switcher_position": "Delivery switcher position",
