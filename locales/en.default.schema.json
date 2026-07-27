@@ -48,9 +48,17 @@
         "from": "From",
         "discount": "Discount",
         "show": "Show",
+        "show-progress": "Show progress",
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
         "exclusive-offer-bundle": "Exclusive bundle offer",
+        "optional-subscription": "Optional subscription",
+        "background": "Background",
+        "subscription-note": "Subscription note",
+        "subscription-note-mode": "Subscription note mode",
+        "cancel-anytime": "Cancel anytime",
+        "checked-image": "Checked image",
+        "unchecked-image": "Unchecked image",
         "upsell-popup": "Upsell popup",
         "upsell-card": "Upsell card",
         "delivery": "Delivery",
@@ -96,6 +104,11 @@
         "text-with-image": "Text with image",
         "badge-text": "Badge text",
         "badge": "Badge",
+        "heading-level": "Heading level",
+        "heading-1": "Heading 1",
+        "heading-2": "Heading 2",
+        "hero-layout": "Hero",
+        "buy-form-layout": "Buy form",
         "review-header": "Review header",
         "review-text": "Review text",
         "review": "Review",
@@ -336,7 +349,8 @@
         "trending": "Trending",
         "flex": "Flex",
         "arrow-button": "Arrow button",
-        "web-video": "Web video"
+        "web-video": "Web video",
+        "changes": "Changes"
     },
     "blocks": {
         "block-card": {
@@ -360,6 +374,27 @@
         },
         "n_404": {
             "name": "404"
+        },
+        "n_peek-cards-slider": {
+            "name": "Peek cards slider",
+            "settings": {
+                "modifier": {
+                    "options": {
+                        "changes": "Changes"
+                    }
+                },
+                "background_color": {
+                    "options": {
+                        "bg": "Tinted"
+                    }
+                }
+            }
+        },
+        "n_bundle-usage": {
+            "name": "Bundle usage"
+        },
+        "n_better-together": {
+            "name": "Better together"
         },
         "n_before-after-accordion": {
             "name": "Before after accordion"

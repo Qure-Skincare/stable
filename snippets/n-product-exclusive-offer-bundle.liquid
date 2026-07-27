@@ -19,9 +19,15 @@
 
 <div class="c-complete-bundle">
     {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'product-exclusive-offer-' %}
+    {% assign bundle_heading = block.settings.heading %}
+    {% if bundle_heading == blank %}
+        {% assign bundle_heading = 'page.exclusive-offer-bundle.header' | t %}
+    {% endif %}
     <p>
-        <strong>{{ 'page.exclusive-offer-bundle.header' | t }}</strong>
-        {{ block.settings.text |  replace: '<p>', '' |  replace: '</p>', '' | replace: '$129', product_sale_price }}
+        <strong>{{ bundle_heading }}</strong>
+        {% if block.settings.text != blank %}
+            {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' | replace: '$129', product_sale_price }}
+        {% endif %}
     </p>
     {% if block.settings.image_product1 != blank %}
         <figure>
@@ -40,11 +46,13 @@
             <strong>{{ 'page.exclusive-offer-bundle.free' | t }}</strong>
         </figcaption>
     </figure>
-    <div class="e-progress _e-progress--nearly-full">
-        <p>{{ 'page.exclusive-offer-bundle.text' | t }}</p>
+    {% if block.settings.show_progress != false %}
+        <div class="e-progress _e-progress--nearly-full">
+            <p>{{ 'page.exclusive-offer-bundle.text' | t }}</p>
 
-        <div style="--progress: {{ 'page.exclusive-offer-bundle.percent' | t }}%">{{ 'page.exclusive-offer-bundle.percent' | t }}% {{ 'page.exclusive-offer-bundle.sold' | t }}</div>
-    </div>
+            <div style="--progress: {{ 'page.exclusive-offer-bundle.percent' | t }}%">{{ 'page.exclusive-offer-bundle.percent' | t }}% {{ 'page.exclusive-offer-bundle.sold' | t }}</div>
+        </div>
+    {% endif %}
 </div>
 
 {% if product != blank %}

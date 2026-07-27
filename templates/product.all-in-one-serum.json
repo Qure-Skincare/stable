@@ -12,6 +12,10 @@
     "n_product_header_aio": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "black_friday_discount_aio": {
           "type": "black-friday-discount",
           "disabled": true,
@@ -36,6 +40,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "black_friday_discount_aio",
         "price_aio",
         "description_aio",

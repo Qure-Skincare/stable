@@ -12,20 +12,29 @@
 
 {% include 'get-product-data' %}
 
-<section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}" id="hero-product">
+{% assign slider_element_id = section.settings.section_id | default: 'hero-product' | prepend: '#' %}
+
+{% assign gallery_first_image = blank %}
+{% for _block in section.blocks %}
+    {% if _block.type == 'optional-subscription' and _block.settings.checked_image != blank %}
+        {% assign gallery_first_image = _block.settings.checked_image %}
+    {% endif %}
+{% endfor %}
+
+<section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}{% if section.settings.secondary == true %} hero-product--secondary{% endif %}{% if section.settings.background == true %} hero-product--bg{% endif %}" id="{{ section.settings.section_id }}">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
             {% if section.settings.image != blank %}
                 <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
             {% else %}
-                {% render 'n-product-page-slider', product: product, page: page, element_id: '#hero-product', slidesPerView: 1, spaceBetween: 16 %}
-                {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12 %}
+                {% render 'n-product-page-slider', product: product, page: page, element_id: slider_element_id, slidesPerView: 1, spaceBetween: 16, first_image: gallery_first_image %}
+                {% render 'n-product-page-slider-thumbs', product: product, page: page, slidesPerView: 'auto', spaceBetween: 12, first_image: gallery_first_image %}
                 {% render 'n-product-page-slider-sticky-video', section: section %}
             {% endif %}
         </div>
         <div class="hero-product__main">
 
-            {% render 'n-product-page-approved', section: section %}
+            {% render 'n-product-page-approved', section: section, product: product %}
 
             {%- if product != blank -%}
                 {% if section.settings.rating != blank %}
@@ -40,16 +49,30 @@
                 <p>{{ section.settings.seo_heading }}</p>
             {% endif %}
 
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge">{{ section.settings.badge_text }}</div>
+            {% endif %}
+
             {% if section.settings.heading != blank %}
-                <h1>{{ section.settings.heading }}</h1>
+                {% if section.settings.heading_level == 'h2' %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% else %}
+                    <h1>{{ section.settings.heading }}</h1>
+                {% endif %}
             {% endif %}
 
             {% include 'n-product-page-blocks-render' %}
         </div>
         <div class="hero-product__extra">
+            {% render 'n-product-page-stats', section: section %}
             {% include 'n-product-upsell-card' %}
             {% include 'n-product-page-cross-sell', product: product %}
-            {% render 'n-product-page-collapsed', product: product, page: page %}
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'accordion' %}
+                        {% render 'n-product-page-collapsed', product: product, page: page, section: section %}
+                {% endcase %}
+            {% endfor %}
             {% render 'n-product-page-jumpto', section: section %}
         </div>
     </div>
@@ -64,6 +87,12 @@
     "name": "t:sections.product-header.name",
     "settings": [
         {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id",
+            "default": "hero-product"
+        },
+        {
             "type": "product",
             "id": "product",
             "label": "t:common.product"
@@ -75,6 +104,18 @@
             "default": false
         },
         {
+            "type": "checkbox",
+            "id": "secondary",
+            "label": "t:common.secondary",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "background",
+            "label": "t:common.background",
+            "default": false
+        },
+        {
             "type": "text",
             "id": "seo_heading",
             "label": "t:common.seo_heading"
@@ -83,6 +124,27 @@
             "type": "text",
             "id": "heading",
             "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        },
+        {
+            "type": "select",
+            "id": "heading_level",
+            "label": "t:common.heading-level",
+            "options": [
+                {
+                    "value": "h1",
+                    "label": "t:common.heading-1"
+                },
+                {
+                    "value": "h2",
+                    "label": "t:common.heading-2"
+                }
+            ],
+            "default": "h1"
         },
         {
             "type": "checkbox",
@@ -273,6 +335,75 @@
             ]
         },
         {
+            "type": "stats",
+            "name": "t:common.stats",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.heading-percent-scale"
+                },
+                {
+                    "type": "range",
+                    "id": "percent_value_1",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 90
+                },
+                {
+                    "type": "text",
+                    "id": "value_text_1",
+                    "label": "t:common.label-text"
+                },
+                {
+                    "type": "text",
+                    "id": "percent_scale_text_1",
+                    "label": "t:common.percent-scale-text"
+                },
+                {
+                    "type": "range",
+                    "id": "percent_value_2",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 90
+                },
+                {
+                    "type": "text",
+                    "id": "value_text_2",
+                    "label": "t:common.label-text"
+                },
+                {
+                    "type": "text",
+                    "id": "percent_scale_text_2",
+                    "label": "t:common.percent-scale-text"
+                },
+                {
+                    "type": "range",
+                    "id": "percent_value_3",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 90
+                },
+                {
+                    "type": "text",
+                    "id": "value_text_3",
+                    "label": "t:common.label-text"
+                },
+                {
+                    "type": "text",
+                    "id": "percent_scale_text_3",
+                    "label": "t:common.percent-scale-text"
+                }
+            ]
+        },
+        {
             "type": "section",
             "name": "t:common.section",
             "limit": 1,
@@ -339,6 +470,11 @@
             "limit": 1,
             "settings": [
                 {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
                     "type": "product",
                     "id": "product",
                     "label": "t:common.product"
@@ -362,6 +498,87 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_progress",
+                    "label": "t:common.show-progress",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "type": "optional-subscription",
+            "name": "t:common.optional-subscription",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "layout",
+                    "label": "t:common.layout",
+                    "options": [
+                        {
+                            "value": "hero",
+                            "label": "t:common.hero-layout"
+                        },
+                        {
+                            "value": "buy-form",
+                            "label": "t:common.buy-form-layout"
+                        }
+                    ],
+                    "default": "hero"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header",
+                    "default": "Best Results Together"
+                },
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "text",
+                    "id": "subscription_note",
+                    "label": "t:common.subscription-note"
+                },
+                {
+                    "type": "select",
+                    "id": "subscription_note_mode",
+                    "label": "t:common.subscription-note-mode",
+                    "options": [
+                        {
+                            "value": "cancel",
+                            "label": "t:common.cancel-anytime"
+                        },
+                        {
+                            "value": "prices",
+                            "label": "t:common.price"
+                        }
+                    ],
+                    "default": "cancel"
+                },
+                {
+                    "type": "text",
+                    "id": "subscription_variant_id",
+                    "label": "t:common.variant"
+                },
+                {
+                    "type": "text",
+                    "id": "selling_plan_id",
+                    "label": "t:common.selling_plan"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "checked_image",
+                    "label": "t:common.checked-image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "unchecked_image",
+                    "label": "t:common.unchecked-image"
                 }
             ]
         },
@@ -450,6 +667,39 @@
             "settings": []
         },
         {
+            "type": "accordion",
+            "name": "t:common.accordion",
+            "limit": 1,
+            "settings": []
+        },
+        {
+            "type": "quote",
+            "name": "t:common.quote",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "quote_image",
+                    "label": "t:common.quote-image"
+                },
+                {
+                    "type": "text",
+                    "id": "quote",
+                    "label": "t:common.quote"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "position",
+                    "label": "t:common.position"
+                }
+            ]
+        },
+        {
             "type": "saveup-offer",
             "name": "t:common.saveup-offer",
             "limit": 1,
@@ -460,6 +710,11 @@
             "name": "t:common.button",
             "limit": 1,
             "settings": [
+                {
+                    "type": "text",
+                    "id": "button_light_label",
+                    "label": "t:common.button-light-label"
+                },
                 {
                     "type": "checkbox",
                     "id": "hide_payments",
@@ -572,6 +827,33 @@
                     "type": "image_picker",
                     "id": "image_2",
                     "label": "t:common.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_3",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_4",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "secondary",
+                    "label": "t:common.secondary",
+                    "default": false
+                },
+                {
+                    "type": "checkbox",
+                    "id": "rating",
+                    "label": "t:common.rating",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "rating_text",
+                    "label": "t:common.rating-text"
                 },
                 {
                     "type": "richtext",

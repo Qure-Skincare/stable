@@ -640,6 +640,7 @@
       "subscribe": "Subscribe",
       "subscribe_percent": "70%",
       "subscribe_text": "Auto-ships · Cancel anytime · No commitment",
+      "cancel-anytime": "Cancel anytime",
       "onetime-payment": "One-time payment with:",
       "subscription-onetime-option": "One Time:",
       "subscription-days-option": "Every 90 days:",
@@ -650,7 +651,8 @@
       "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='/pages/contact-us' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
       "n-questions_html": "Have questions about about Micro-Infusion? <a href=/pages/contact-us class='btn btn--md btn--secondary'>Chat with us!</a>",
       "more_details_html": "<div class='fs-14'>Skip, pause or cancel anytime. <a href='/pages/subscriptions' class='text-decoration-underline' style='--base-color: #212428;'>See more details</a></div>",
-      "n_more_details_html": "<small>Skip, pause or cancel anytime. <a href='/pages/subscriptions'>See more details</a></small>"
+      "n_more_details_html": "<small>Skip, pause or cancel anytime. <a href='/pages/subscriptions'>See more details</a></small>",
+      "bundle_more_details_html": "<p><strong>Skip, pause/modify or cancel anytime.</strong> <a href='/pages/subscriptions'>See more details.</a></p>"
     }
   },
   "purchase-form-bundle": {

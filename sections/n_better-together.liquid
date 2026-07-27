@@ -1,0 +1,98 @@
+{% doc %}
+    Renders a section that shows a list of products that are better together.
+{% enddoc %}
+
+<!-- BETTER TOGETHER -->
+<section class="better-together">
+    <div class="container">
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]</p>', '</small>' }}
+            </article>
+        {% endif %}
+        <div
+            class="c-swiper"
+            data-swiper='{
+                "slidesPerView": 1.05,
+                "spaceBetween": 16,
+                "loop": false,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 3
+                    }
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == "item" %}
+                        <div class="swiper-slide">
+                            <figure>
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.badge_text != blank %}
+                                    <figcaption class="e-pill-badge e-pill-badge--sm">{{ block.settings.badge_text }}</figcaption>
+                                {% endif %}
+                            </figure>
+                            {% if block.settings.text != blank %}
+                                <div>
+                                    {{ block.settings.text }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- BETTER TOGETHER END -->
+
+{% schema %}
+    {
+        "name": "t:sections.n_better-together.name",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "t:common.item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "badge_text",
+                        "label": "t:common.badge-text"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "t:common.text"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

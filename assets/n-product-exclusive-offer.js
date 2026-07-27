@@ -30,7 +30,7 @@ async function handleClick(e) {
     }
 }
 
-var cartButtons = document.querySelectorAll('.add-cart-button, #sticky-cta-button, .helmet-home__ordering-btn');
+var cartButtons = document.querySelectorAll('.add-cart-button:not([data-label-alt]), #sticky-cta-button, .helmet-home__ordering-btn');
 
 cartButtons.forEach(function (btn) {
     if (!btn.disabled) {

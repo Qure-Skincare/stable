@@ -17,15 +17,18 @@
         class="c-swiper c-swiper-thumbs"
         data-swiper='{
             "slidesPerView": "{{ slidesPerView }}",
-            "spaceBetween": {{ spaceBetween }}
+            "spaceBetween": {{ spaceBetween }},
+            "watchSlidesProgress": true,
+            "freeMode": true,
+            "slideToClickedSlide": true
         }'>
         <div class="swiper-wrapper">
             {% if product.metafields.custom.carousel_media.value != blank %}
-                {% render 'n-product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, size: '240x', thumbnails: true %}
+                {% render 'n-product-page-media-carousel', input_media_carousel: product.metafields.custom.carousel_media.value, size: '240x', thumbnails: true, first_image: first_image %}
             {% elsif page.metafields.custom.carousel_media.value != blank %}
-                {% render 'n-product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, size: '240x', thumbnails: true %}
+                {% render 'n-product-page-media-carousel', input_media_carousel: page.metafields.custom.carousel_media.value, size: '240x', thumbnails: true, first_image: first_image %}
             {% else %}
-                {% render 'n-product-media', product_media: product.media, size: '240x' %}
+                {% render 'n-product-media', product_media: product.media, size: '240x', first_image: first_image %}
             {% endif %}
         </div>
     </div>

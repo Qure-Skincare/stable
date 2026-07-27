@@ -13,6 +13,7 @@
 
 {% assign reserved = false %}
 {% assign soldout = false %}
+{% assign section_button_label = section.settings.button_label | default: section.settings['button-label'] %}
 
 {% if block == blank %}
   {% for _block in section.blocks %}
@@ -33,7 +34,7 @@
 
 
 {%- if block.settings.show_discount != blank and product_discount != blank -%}
-    <div class="c-special-offer">
+    <div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
       <div class="e-price">
           <div class="e-price__main">
               <div class="e-price__current">{{ product_sale_price }}</div>
@@ -43,7 +44,7 @@
       <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ product_discount }}%</div>
   </div>
 
-  {% if reserved == false and soldout == false %}
+  {% if reserved == false and soldout == false and section_button_label == blank %}
     <script>
       let buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
 

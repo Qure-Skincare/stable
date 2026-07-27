@@ -12,6 +12,10 @@
     "n_product_header_cleanser": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "approved_6HL8Jr": {
           "type": "approved",
           "settings": {
@@ -54,6 +58,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "approved_6HL8Jr",
         "description_hnJud7",
         "exclusive_offer_cEGK4g",

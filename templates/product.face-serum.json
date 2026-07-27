@@ -100,6 +100,10 @@
     "product_header_kHW3Cn": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "black_friday_discount_A9": {
           "type": "black-friday-discount",
           "settings": {}
@@ -170,6 +174,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "black_friday_discount_A9",
         "price_A11",
         "description_iPBNaS",

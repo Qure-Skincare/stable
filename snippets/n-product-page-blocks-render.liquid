@@ -19,6 +19,8 @@
             {% render 'n-product-description', description: section.settings.description %}
         {% when 'description-aio' %}
             {% render 'n-product-description-aio', block: block %}
+        {% when 'quote' %}
+            {% render 'n-product-expert-quote-tag', block: block %}
         {% when 'price' %}
             {% if black_friday_discount_percent > 0 %}
                 {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
@@ -39,8 +41,18 @@
             {% include 'n-product-upsell-popup', section: section, block: block %}
         {% when 'nextships' %}        
             {% render 'n-product-page-next-ships', section: section %}
+        {% when 'optional-subscription' %}
+            {% render 'n-product-optional-subscription', section: section, block: block, product: product %}
         {% when 'button' %}
-            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
+            {% assign has_optional_subscription = false %}
+            {% assign optional_subscription_layout = blank %}
+            {% for _block in section.blocks %}
+                {% if _block.type == 'optional-subscription' %}
+                    {% assign has_optional_subscription = true %}
+                    {% assign optional_subscription_layout = _block.settings.layout %}
+                {% endif %}
+            {% endfor %}
+            {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available, static: has_optional_subscription, optional_subscription_layout: optional_subscription_layout %}
         {% when 'video' %}
             {% render 'n-page-video', section: section, block: block %}
         {% when 'section' %}

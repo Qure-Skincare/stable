@@ -11,6 +11,10 @@
 
 {% if product_media %}
     {% for media in product_media %}
+        {% assign media_src = media | img_url: size %}
+        {% if forloop.first and first_image != blank %}
+            {% assign media_src = first_image | img_url: size %}
+        {% endif %}
         {% if media.media_type == 'video' %}
             {% if media.sources[1].url != blank %}
                 {% assign video_source_url = media.sources[1].url %}
@@ -22,7 +26,7 @@
             </div>
         {% else %}
             <div class="swiper-slide">
-                <img loading="lazy" src="{{ media | img_url: size }}" alt="{{ media.alt | escape }}">
+                <img loading="lazy" src="{{ media_src }}" alt="{{ media.alt | escape }}">
             </div>
         {% endif %}
     {% endfor %}

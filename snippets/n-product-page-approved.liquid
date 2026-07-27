@@ -1,16 +1,17 @@
 {% doc %}
   Renders a product page approved snippet for the page-header section.
 
-  @param {object} - A section object.
+  @param {object} section - A section object.
+  @param {object} product - Optional. Used to pull the inline review rating.
 
   @example
-  {% render 'n-product-page-approved', section: section %}
+  {% render 'n-product-page-approved', section: section, product: product %}
 {% enddoc %}
 
 
 {% for block in section.blocks %}
     {% if block.type == 'approved' %}
-        <div class="c-approved-by">
+        <div class="c-approved-by{% if block.settings.secondary %} c-approved-by--secondary{% endif %}">
             <ul>
                 {% if block.settings.image_1 != blank %}
                     <li><img loading="lazy" src="{{ block.settings.image_1 | image_url }}" alt="{{ block.settings.image_1.alt | escape }}" /></li>
@@ -18,8 +19,25 @@
                 {% if block.settings.image_2 != blank %}
                     <li><img loading="lazy" src="{{ block.settings.image_2 | image_url }}" alt="{{ block.settings.image_2.alt | escape }}" /></li>
                 {% endif %}
+                {% if block.settings.image_3 != blank %}
+                    <li><img loading="lazy" src="{{ block.settings.image_3 | image_url }}" alt="{{ block.settings.image_3.alt | escape }}" /></li>
+                {% endif %}
+                {% if block.settings.image_4 != blank %}
+                    <li><img loading="lazy" src="{{ block.settings.image_4 | image_url }}" alt="{{ block.settings.image_4.alt | escape }}" /></li>
+                {% endif %}
             </ul>
-            {{ block.settings.text }}
+            {% if block.settings.rating %}
+                {% assign rating_count = product.metafields.reviews.rating_count.value %}
+                {% if rating_count > 5 %}
+                    {% assign show_rating = product.metafields.reviews.rating.value | slice: 0, 3 %}
+                {% else %}
+                    {% assign show_rating = '4.8' %}
+                {% endif %}
+                {% assign approved_text = block.settings.text | strip_html | strip %}
+                <p>{% if approved_text != blank %}{{ approved_text }} <span>&bull;</span> {% endif %}<a href="#stamped-main-widget"><strong>{{ show_rating }}/5</strong></a>{% if block.settings.rating_text != blank %} {{ block.settings.rating_text }}{% endif %}</p>
+            {% elsif block.settings.text != blank %}
+                {{ block.settings.text }}
+            {% endif %}
         </div>
     {% endif %}
 {% endfor %}

@@ -15,9 +15,11 @@
 {% assign soldout = null %}
 
 {% assign default_button_label = 'product.settings.buy-button-label' | t %}
+{% assign configured_button_label = section.settings.button_label | default: section.settings['button-label'] %}
+{% assign configured_button_url = section.settings.button_url | default: section.settings['button-url'] %}
 
-{% if section.settings.button_label != blank %}
-  {% assign default_button_label = section.settings.button_label %}
+{% if configured_button_label != blank %}
+  {% assign default_button_label = configured_button_label %}
 {% endif %}
 
 {% if product_price != null %}
@@ -60,14 +62,21 @@
   {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
 {% endif %}
 
+{%- assign subscription_alt_label = block.settings.button_light_label -%}
+{%- capture subscription_label_attrs -%}{%- if subscription_alt_label != blank and reserved != true and soldout != true %} data-label-default="{{ default_button_label | strip_html | escape }}" data-label-alt="{{ subscription_alt_label | strip_html | escape }}"{%- endif -%}{%- endcapture -%}
+
 <div class="c-buy-block">
     <div class="c-order-button">
-      <form method="post" action="/cart/add" enctype="multipart/form-data"{% if static %} data-static="true"{% endif %}>
-        <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}>{{ button-label }}</button>
-        <input type="hidden" name="quantity" id="quantity" value="1">
-        <input type="hidden" name="selling_plan" id="selling_plan" value="">
-        <input type="hidden" name="id" value="{{ product_variant_id }}">    
-      </form>
+      {% if configured_button_url != blank and reserved != true and soldout != true %}
+        <a href="{{ configured_button_url }}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}" aria-label="{{ button-label | strip_html | escape }}"{{ subscription_label_attrs }}>{{ button-label }}</a>
+      {% else %}
+        <form method="post" action="/cart/add" enctype="multipart/form-data"{% if static %} data-static="true"{% endif %}>
+          <button type="{% if soldout %}button{% else %}submit{% endif %}" class="btn btn--primary add-cart-button{% if skip_black_friday_label == true %} skip_black_friday_label{% endif %}"{% if soldout %} disabled{% endif %}{{ subscription_label_attrs }}>{{ button-label }}</button>
+          <input type="hidden" name="quantity" id="quantity" value="1">
+          <input type="hidden" name="selling_plan" id="selling_plan" value="">
+          <input type="hidden" name="id" value="{{ product_variant_id }}">
+        </form>
+      {% endif %}
 
       {% unless is_modal %}
         {% unless block.settings.hide_payments %}
@@ -82,6 +91,10 @@
             </div>
         {% endunless %}
       {% endunless %}
+
+      {% if optional_subscription_layout == 'buy-form' %}
+        {{ 'purchase-form.settings.bundle_more_details_html' | t }}
+      {% endif %}
     </div>
 
     {% unless is_modal %}

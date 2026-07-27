@@ -1,32 +1,22 @@
 {% doc %}
-    Renders an image slider section for hair growth helmet page.
+    Renders a reusable peek cards slider section.
 {% enddoc %}
 
 <!-- PEEK CARDS SLIDER -->
-{% if section.settings.use_own_file %}
-    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/peek-cards-slider/peek-cards-slider.css" />
-{% endif %}
-<section class="peek-cards-slider peek-cards-slider--changes" id="see-the-change">
+<section class="peek-cards-slider{% if section.settings.background_color != 'none' %} peek-cards-slider--{{ section.settings.background_color }}{% endif %}{% if section.settings.modifier != 'none' %} peek-cards-slider--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article class="peek-cards-slider__content">
             {{ section.settings.heading }}
             {% if section.settings.quote_image != blank or section.settings.quote_text != blank %}
                 <div class="e-experts-quote-inline">
-                    {% if section.settings.quote_image != blank %}
-                        <img loading="lazy" src="{{ section.settings.quote_image | image_url }}" alt="{{ section.settings.quote_image.alt | escape }}" />
-                    {% endif %}
+                    <img loading="lazy" src="{{ section.settings.quote_image | image_url }}" alt="{{ section.settings.quote_image.alt | escape }}" />
                     {{ section.settings.quote_text }}
-                </div>
-            {% endif %}
-            {% if section.settings.text != blank %}
-                <div>
-                    {{ section.settings.text }}
                 </div>
             {% endif %}
             {% if section.settings.button_url != blank and section.settings.button_label != blank %}
                 <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
             {% endif %}
-            
+
             <div
                 class="c-swiper"
                 data-swiper='{
@@ -75,15 +65,46 @@
 </section>
 <!-- PEEK CARDS SLIDER END -->
 
-{%  schema  %}
+{% schema %}
 {
-  "name": "t:sections.n_hair-growth-helmet-peek-cards-slider.name",
+  "name": "t:sections.n_peek-cards-slider.name",
   "settings": [
     {
-        "type": "checkbox",
-        "id": "use_own_file",
-        "label": "t:common.use-own-file",
-        "default": false
+        "type": "select",
+        "id": "modifier",
+        "label": "t:common.modifier",
+        "default": "changes",
+        "options": [
+            { 
+                "value": "none", 
+                "label": "t:common.none" 
+            },
+            { 
+                "value": "changes", 
+                "label": "t:sections.n_peek-cards-slider.settings.modifier.options.changes" 
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "id": "background_color",
+        "label": "t:common.background-color",
+        "default": "none",
+        "options": [
+            { 
+                "value": "none", 
+                "label": "t:common.none" 
+            },
+            { 
+                "value": "bg", 
+                "label": "t:sections.n_peek-cards-slider.settings.background_color.options.bg" 
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "id": "section_id",
+        "label": "t:common.section_id"
     },
     {
         "type": "richtext",
@@ -133,7 +154,11 @@
             }
         ]
     }
+  ],
+  "presets": [
+    {
+        "name": "t:sections.n_peek-cards-slider.name"
+    }
   ]
 }
-
 {% endschema %}

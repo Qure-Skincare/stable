@@ -12,6 +12,10 @@
     "product_header_U6RBGz": {
       "type": "n-product-header",
       "blocks": {
+        "accordion_migrated": {
+          "type": "accordion",
+          "settings": {}
+        },
         "description_iPBNaS": {
           "type": "description",
           "settings": {}
@@ -28,6 +32,7 @@
         }
       },
       "block_order": [
+        "accordion_migrated",
         "description_iPBNaS",
         "section_A0",
         "saveup-offer"
