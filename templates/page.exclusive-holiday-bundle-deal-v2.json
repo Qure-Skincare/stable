@@ -235,7 +235,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-pro1",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_acca69aa-ddf7-4405-98ea-9756b1cd3c48.png",
+            "image": "shopify://shop_images/LineRefineBundlePro.jpg",
             "preselected": false,
             "soldout": true,
             "reserved": false
@@ -890,6 +890,8 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
+        "rating": "",
+        "rating_text": "",
         "heading": "",
         "text": "<h2>Better skin starts here</h2><p>No fake promises, no fillers – just formulas that work. Our most-loved bundles are here for a limited time, with up to 55% off and results backed by clinical studies.</p>",
         "sub_text": "",
