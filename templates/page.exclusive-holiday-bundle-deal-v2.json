@@ -255,7 +255,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-essential",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Essential.png",
+            "image": "shopify://shop_images/LineRefineBundleEssential.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
