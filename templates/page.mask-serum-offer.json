@@ -265,7 +265,8 @@
         "special_offer": {
           "type": "price",
           "settings": {
-            "show_discount": true
+            "show_discount": true,
+            "bundle_compare": true
           }
         },
         "features": {
@@ -288,6 +289,8 @@
         "buy": {
           "type": "button",
           "settings": {
+            "button_light_label": "Get my Led Mask Now",
+            "keep_offer_label": true,
             "hide_payments": true,
             "hide_bottom": false,
             "hide_certified": true

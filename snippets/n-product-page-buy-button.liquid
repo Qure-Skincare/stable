@@ -63,7 +63,7 @@
 {% endif %}
 
 {%- assign subscription_alt_label = block.settings.button_light_label -%}
-{%- capture subscription_label_attrs -%}{%- if subscription_alt_label != blank and reserved != true and soldout != true %} data-label-default="{{ default_button_label | strip_html | escape }}" data-label-alt="{{ subscription_alt_label | strip_html | escape }}"{%- endif -%}{%- endcapture -%}
+{%- capture subscription_label_attrs -%}{%- if subscription_alt_label != blank and reserved != true and soldout != true -%}{%- if block.settings.keep_offer_label != blank %} data-label-offer-alt="{{ subscription_alt_label | strip_html | escape }}"{%- else %} data-label-default="{{ default_button_label | strip_html | escape }}" data-label-alt="{{ subscription_alt_label | strip_html | escape }}"{%- endif -%}{%- endif -%}{%- endcapture -%}
 
 <div class="c-buy-block">
     <div class="c-order-button">
