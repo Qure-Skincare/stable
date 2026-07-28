@@ -9,6 +9,77 @@
  */
 {
   "sections": {
+    "n_page_header_aio_UeEiNd": {
+      "type": "n-page-header-aio",
+      "blocks": {
+        "gallery_sticky_video_xfTjxY": {
+          "type": "gallery-sticky-video",
+          "settings": {
+            "video_url": "https://embed-ssl.wistia.com/deliveries/319787889bdc19966794f6256c114998b2301798.bin?disposition=attachment&filename=Kristina+premiere+MIcro+inf+AFTER+6.2+BOZEEE+%281%29.mp4"
+          }
+        },
+        "description_aio_hELrgf": {
+          "type": "description-aio",
+          "settings": {
+            "title_1": "Reduces fine lines and smooths texture",
+            "text_1": "<p>Helps reduce the appearance of fine lines and smooths skin texture, while helping infuse active ingredients onto the skin's surface.</p>",
+            "title_2": "Virtually painless, right at home",
+            "text_2": "<p>Virtually painless and performed in the comfort and convenience of your home.</p>",
+            "title_3": "Minimal downtime, visible results",
+            "text_3": "<p>Minimal to no downtime, with visible improvements reported by customers.</p>",
+            "title_4": "Boosts absorption of active ingredients",
+            "text_4": "<p>Creates micro-channels that help your serums and treatments penetrate deeper, so active ingredients work more effectively.</p>",
+            "title_5": "Safe for regular, consistent use",
+            "text_5": "<p>Designed for repeated at-home sessions, so you can build on results week after week without irritation or downtime.</p>"
+          }
+        },
+        "section_jBmCVL": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "experts_jCYiJe": {
+          "type": "experts",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>Qure cares a lot about the products they are putting out.</p>",
+            "username": "Dr. Shah,",
+            "position": "Dermatologist"
+          }
+        },
+        "faq_UNVKY9": {
+          "type": "faq",
+          "settings": {
+            "button_label": "Frequently Asked Questions",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "gallery_sticky_video_xfTjxY",
+        "description_aio_hELrgf",
+        "section_jBmCVL",
+        "experts_jCYiJe",
+        "faq_UNVKY9"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "product": "",
+        "reverse": false,
+        "seo_heading": "MICRO INFUSION FACIAL SYSTEM - AN ALTERNATIVE TO DERMA ROLLERS",
+        "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
+        "rating": true,
+        "limited": false,
+        "description": "",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": "",
+        "approved": false,
+        "price": ""
+      }
+    },
     "page_header_V5N4T9": {
       "type": "n-product-header",
       "blocks": {
@@ -87,15 +158,21 @@
         "jumpto_A5",
         "jumpto_A6"
       ],
+      "disabled": true,
       "custom_css": [
         ".vp-img > img {max-height: 50px !important; margin-bottom: 12px !important;}"
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "",
         "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
@@ -136,6 +213,8 @@
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "preselected": true,
@@ -159,6 +238,8 @@
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779399407,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -182,6 +263,8 @@
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779432175,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -217,6 +300,8 @@
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "preselected": true,
@@ -240,6 +325,8 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -263,6 +350,8 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779530479,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -298,6 +387,8 @@
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "preselected": true,
@@ -322,6 +413,8 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -346,6 +439,8 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -1671,6 +1766,8 @@
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
+            "gift": "",
+            "discount_code": "",
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -1694,6 +1791,8 @@
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779399407,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1717,6 +1816,8 @@
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779432175,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1752,6 +1853,8 @@
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
+            "gift": "",
+            "discount_code": "",
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -1775,6 +1878,8 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1798,6 +1903,8 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779530479,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1833,6 +1940,8 @@
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
+            "gift": "",
+            "discount_code": "",
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -1857,6 +1966,8 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1881,6 +1992,8 @@
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1929,6 +2042,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "guarantee_period": "90",
         "available-stocks": true
       }
@@ -2082,6 +2196,7 @@
     }
   },
   "order": [
+    "n_page_header_aio_UeEiNd",
     "page_header_V5N4T9",
     "purchase-form-landing",
     "n_press_reviews_3zGerf",
