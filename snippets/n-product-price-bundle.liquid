@@ -1,0 +1,62 @@
+{% doc %}
+  Renders product price with the bundle compare price: the section product plus the optional-subscription add-on
+
+  @param {product_sale_price} - A string value.
+  @param {product_price} - A number value.
+  @param {product_before_price} - A string value.
+  @param {product_discount} - A string value.
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-price-bundle', product_sale_price: '', product_price: '', product_before_price: '', product_discount: '', section: '', block: '' %}
+{% enddoc %}
+
+{% assign subscription_block = blank %}
+{% for _block in section.blocks %}
+    {% if _block.type == 'optional-subscription' %}
+        {% assign subscription_block = _block %}
+    {% endif %}
+{% endfor %}
+
+{% assign subscription_product = subscription_block.settings.product %}
+{% assign subscription_price = subscription_product.price %}
+{% assign configured_variant_id = subscription_block.settings.subscription_variant_id | append: '' %}
+
+{% if subscription_product != blank and configured_variant_id != blank %}
+    {% for variant in subscription_product.variants %}
+        {% assign variant_id = variant.id | append: '' %}
+        {% if variant_id == configured_variant_id %}
+            {% assign subscription_price = variant.price %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% assign bundle_discount = 0 %}
+
+{% if product_price > 0 and subscription_price > 0 %}
+    {% assign bundle_before_price_original = product_price | plus: subscription_price %}
+    {% assign bundle_before_price = bundle_before_price_original | money_without_trailing_zeros %}
+    {% assign bundle_discount_value = product_price | times: 1.0 | divided_by: bundle_before_price_original | minus: 1 | abs | times: 100 %}
+    {% assign bundle_discount_decimal = bundle_discount_value | modulo: 1 %}
+    {% if bundle_discount_decimal >= 0.5 %}
+        {% assign bundle_discount = bundle_discount_value | ceil %}
+    {% else %}
+        {% assign bundle_discount = bundle_discount_value | floor %}
+    {% endif %}
+{% endif %}
+
+{%- if bundle_discount > 0 -%}
+    <div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
+        <div class="e-price">
+            <div class="e-price__main">
+                <div class="e-price__current">{{ product_sale_price }}</div>
+                <div class="e-price__old">{{ bundle_before_price }}</div>
+            </div>
+        </div>
+        <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ bundle_discount }}%</div>
+    </div>
+{%- else -%}
+    {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
+{%- endif -%}

@@ -265,7 +265,8 @@
         "special_offer": {
           "type": "price",
           "settings": {
-            "show_discount": true
+            "show_discount": true,
+            "bundle_compare": true
           }
         },
         "features": {
