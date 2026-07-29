@@ -382,7 +382,7 @@
         "product_AJPQaQ1"
       ],
       "settings": {
-        "form_name": "purchase-form-landing",
+        "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 46,
