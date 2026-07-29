@@ -2037,6 +2037,9 @@
         "product_NEgEkN",
         "product_RBCPe8"
       ],
+      "custom_css": [
+        ".e-features-list,.c-certified-box {display: none;}"
+      ],
       "settings": {
         "type": "list",
         "heading": "Choose your treatment",
