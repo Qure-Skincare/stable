@@ -21,6 +21,9 @@
           "settings": {
             "image_1": "shopify://shop_images/doctor_img.png",
             "image_2": "shopify://shop_images/approved-by-2_87ff637d-d12b-4842-a174-f80d61ece182.webp",
+            "secondary": false,
+            "rating": false,
+            "rating_text": "",
             "text": "<p>Recommended by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
           }
         },
@@ -35,7 +38,8 @@
             "image_product1": "shopify://shop_images/cleanser-selector-duo.webp",
             "product2": "headbands-wristbands",
             "image_product2": "shopify://shop_images/Headband_and_Wristband.jpg",
-            "text": "<p>Free <strong>Gift Set </strong>with 120-Day Subscription</p>"
+            "text": "<p>Free <strong>Gift Set </strong>with 120-Day Subscription</p>",
+            "discount_code": ""
           }
         },
         "section_A0": {
@@ -67,10 +71,15 @@
       ],
       "name": "t:sections.n_product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
         "heading": "Daily Cleansing Gel",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
@@ -101,6 +110,8 @@
             "product": "cleanser-4-month-bundle",
             "product_variant_id": 48762730152175,
             "product_selling_plan": 0,
+            "gift": "headbands-wristbands",
+            "discount_code": "CleanserGift",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -124,6 +135,8 @@
             "product": "cleanser",
             "product_variant_id": 48762174767343,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -148,6 +161,8 @@
             "product": "cleanser-6-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": true,
@@ -207,6 +222,8 @@
             "product": "cleanser",
             "product_variant_id": 48762174767343,
             "product_selling_plan": 8853291247,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -231,6 +248,8 @@
             "product": "cleanser-6-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
