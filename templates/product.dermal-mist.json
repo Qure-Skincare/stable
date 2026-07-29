@@ -391,7 +391,7 @@
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
-        "hide_bottom": false,
+        "hide_bottom": true,
         "hide_certified": true
       }
     },
