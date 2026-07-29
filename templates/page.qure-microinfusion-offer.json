@@ -1609,6 +1609,9 @@
         "product_NEgEkN",
         "product_RBCPe8"
       ],
+      "custom_css": [
+        ".e-features-list,.c-certified-box {display: none;}"
+      ],
       "settings": {
         "type": "list",
         "heading": "Choose your treatment",
@@ -1621,7 +1624,7 @@
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-6-month-bundle-for-wrinkles",
         "guarantee_period": "90",
-        "available-stocks": true
+        "available-stocks": false
       }
     },
     "n_should_know_8jabz8": {
