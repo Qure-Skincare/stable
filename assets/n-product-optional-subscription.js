@@ -8,6 +8,8 @@
     const WIDGET_SELECTOR = '[data-optional-subscription]';
     const CHECKBOX_SELECTOR =
         '.c-optional-subscription input[name="subscription"]';
+    const BUTTON_SELECTOR =
+        '.add-cart-button[data-label-alt], .add-cart-button[data-label-offer-alt]';
 
     const getAddToCart = () => {
         if (
@@ -117,25 +119,53 @@
         if (!section) return;
 
         const checkbox = widget.querySelector(CHECKBOX_SELECTOR);
-        const button = section.querySelector('.add-cart-button[data-label-alt]');
+        const button = section.querySelector(BUTTON_SELECTOR);
         if (!checkbox || !button) return;
 
-        const defaultLabel = button.getAttribute('data-label-default');
-        const altLabel = button.getAttribute('data-label-alt');
-        if (defaultLabel == null || altLabel == null) return;
+        // With data-label-offer-alt the selected-state label is whatever ends up on the
+        // button (an offer script rewrites it), so it is captured instead of rendered.
+        const altLabel =
+            button.getAttribute('data-label-offer-alt') ||
+            button.getAttribute('data-label-alt');
+        if (altLabel == null) return;
 
-        button.innerHTML = checkbox.checked ? defaultLabel : altLabel;
+        if (checkbox.checked) {
+            const defaultLabel = button.getAttribute('data-label-default');
+            if (defaultLabel != null) {
+                button.innerHTML = defaultLabel;
+            }
+            return;
+        }
+
+        if (button.getAttribute('data-label-default') == null) {
+            button.setAttribute('data-label-default', button.innerHTML);
+            // Offer scripts skip [data-label-alt], so the captured label is not
+            // overwritten if one of them runs after the checkbox was cleared.
+            button.setAttribute('data-label-alt', altLabel);
+        }
+
+        button.innerHTML = altLabel;
+    };
+
+    const syncAllSubscriptionLabels = () => {
+        document.querySelectorAll(WIDGET_SELECTOR).forEach((widget) => {
+            syncSubscriptionLabel(widget);
+        });
+    };
+
+    const handleCheckboxChange = (event) => {
+        if (!event.target.matches(CHECKBOX_SELECTOR)) return;
+
+        // subscription-option.js mirrors the checkbox into every other widget on the
+        // page without firing change on the copies, and it may run after this handler,
+        // so every label is re-synced once the mirroring has settled.
+        syncAllSubscriptionLabels();
+        setTimeout(syncAllSubscriptionLabels, 0);
     };
 
     const initLabelSync = () => {
-        document.querySelectorAll(WIDGET_SELECTOR).forEach((widget) => {
-            const checkbox = widget.querySelector(CHECKBOX_SELECTOR);
-            if (!checkbox) return;
-            syncSubscriptionLabel(widget);
-            checkbox.addEventListener('change', () =>
-                syncSubscriptionLabel(widget)
-            );
-        });
+        syncAllSubscriptionLabels();
+        document.addEventListener('change', handleCheckboxChange);
     };
 
     if (!window[GLOBAL_FLAG]) {

@@ -15,6 +15,8 @@
 
 {% for block in section.blocks %}
     {% case block.type %}
+        {% when 'badge' %}
+            {% render 'n-product-badge', block: block %}
         {% when 'description' %}
             {% render 'n-product-description', description: section.settings.description %}
         {% when 'description-aio' %}
@@ -24,6 +26,8 @@
         {% when 'price' %}
             {% if black_friday_discount_percent > 0 %}
                 {% render 'n-product-price-special-offer', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_black_friday_price: product_black_friday_price, black_friday_discount: black_friday_discount %}
+            {%- elsif block.settings.bundle_compare != blank -%}
+                {% render 'n-product-price-bundle', product_sale_price: product_sale_price, product_price: product_price_original, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
             {%- else -%}
                 {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
             {%- endif -%}

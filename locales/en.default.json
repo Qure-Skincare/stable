@@ -480,8 +480,8 @@
       },
       "limited-offer": {
         "header": "Exclusive offer:",
-        "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} OFF</span> with code {{ code }}</p>",
-        "n_text_html": "<p>Get <span class='e-pill-save'>{{ sum }} OFF</span> with code {{ code }}</p>",
+        "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} </span> with code {{ code }}</p>",
+        "n_text_html": "<p>Get <span class='e-pill-save'>{{ sum }} </span> with code {{ code }}</p>",
         "days": "DAYS",
         "hours": "HOURS",
         "minutes": "MINUTES",
@@ -647,6 +647,7 @@
       "pay-today": "Pay today only",
       "per-treatment": "Only {{ price }} per treatment",
       "kit-left": "{{ count }} kits left",
+      "free-shipping": "🔥 Free shipping on this order",
       "monthly-payment": "Monthly interest-free payments with:",
       "questions_html": "<h6 class='fm-body fw-600 mb-0 fs-18'>Have questions about Micro-Infusion?</h6><a href='/pages/contact-us' class='btn btn-sm btn--secondary' style='--btn-secondary-bg: #fff;'>Chat with us!</a>",
       "n-questions_html": "Have questions about about Micro-Infusion? <a href=/pages/contact-us class='btn btn--md btn--secondary'>Chat with us!</a>",

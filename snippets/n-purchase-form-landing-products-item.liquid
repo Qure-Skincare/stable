@@ -169,6 +169,10 @@
                                         </div>
                                     {% endif %}
                                 {% endif %}
+
+                                {% if block.settings.free_shipping == true %}
+                                    <div class="c-supply-selector__hot-bottom">{{ 'purchase-form.settings.free-shipping' | t }}</div>
+                                {% endif %}
                             </label>
                         </li>
 

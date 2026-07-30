@@ -176,7 +176,7 @@
                                     </div>
                                 {% endif %}
 
-                                {% if section.settings.type == 'list' %}
+                                {% if section.settings.type == 'list' and block.settings.per_treatment %}
                                     {% case product_counter %}
                                         {% when 1 %}
                                             <div class="c-supply-selector__kits-left">
@@ -199,6 +199,10 @@
                                                 </div>
                                             </div>
                                     {% endcase %}
+                                {% endif %}
+
+                                {% if block.settings.free_shipping == true %}
+                                    <div class="c-supply-selector__hot-bottom">{{ 'purchase-form.settings.free-shipping' | t }}</div>
                                 {% endif %}
                             </label>
                         </li>

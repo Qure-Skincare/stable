@@ -25,7 +25,8 @@
           "type": "price",
           "disabled": true,
           "settings": {
-            "show_discount": false
+            "show_discount": false,
+            "bundle_compare": false
           }
         },
         "description_aio": {
@@ -48,10 +49,15 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "all-in-one-serum",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
         "rating_type": "dermatologists",
         "limited": false,
@@ -82,6 +88,8 @@
             "product": "all-in-one-serum-2-0-6-month-bundle",
             "product_variant_id": 48228668834031,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "preselected": true,
@@ -105,6 +113,8 @@
             "product": "all-in-one-serum-2-0-4-month-bundle",
             "product_variant_id": 48228679745775,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -128,6 +138,8 @@
             "product": "all-in-one-serum",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -162,6 +174,8 @@
             "product": "all-in-one-serum-2-0-6-month-bundle",
             "product_variant_id": 48228682236143,
             "product_selling_plan": 8855060719,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "preselected": true,
@@ -185,6 +199,8 @@
             "product": "all-in-one-serum-2-0-4-month-bundle",
             "product_variant_id": 48228679745775,
             "product_selling_plan": 8855027951,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -208,6 +224,8 @@
             "product": "all-in-one-serum",
             "product_variant_id": 48228668834031,
             "product_selling_plan": 8854995183,
+            "gift": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "preselected": false,
@@ -239,7 +257,7 @@
         "product_sub_2m_aio"
       ],
       "settings": {
-        "form_name": "purchase-form-landing",
+        "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
