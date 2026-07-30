@@ -15,6 +15,8 @@
 
 {% for block in section.blocks %}
     {% case block.type %}
+        {% when 'badge' %}
+            {% render 'n-product-badge', block: block %}
         {% when 'description' %}
             {% render 'n-product-description', description: section.settings.description %}
         {% when 'description-aio' %}

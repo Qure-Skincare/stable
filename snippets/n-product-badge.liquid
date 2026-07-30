@@ -1,0 +1,14 @@
+{% doc %}
+  Renders a badge snippet for the product-header/page-header section
+
+  @param {object} block - A section block object.
+
+  @example
+  {% render 'n-product-badge', block: block %}
+{% enddoc %}
+
+{% if block.settings.badge_text != blank %}
+    <div class="e-pill-badge e-pill-badge--sm" style="--badge-base-color: {{ block.settings.badge_color | default: '#ff5429' }}" {{ block.shopify_attributes }}>
+        <strong>{{ block.settings.badge_text }}</strong>
+    </div>
+{% endif %}
