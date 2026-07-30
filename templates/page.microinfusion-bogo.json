@@ -71,6 +71,9 @@
         "experts_jCYiJe",
         "faq_UNVKY9"
       ],
+      "custom_css": [
+        ".c-supply-selector__title {display: none;}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
         "product": "",
@@ -1784,6 +1787,7 @@
         },
         "product_DBd4ef": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -1791,8 +1795,8 @@
             "gift": "",
             "discount_code": "",
             "free_shipping": false,
-            "per_treatment": true,
-            "preselected": true,
+            "per_treatment": false,
+            "preselected": false,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
@@ -1811,6 +1815,7 @@
         },
         "product_7dL4ci": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
