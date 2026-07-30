@@ -1823,7 +1823,7 @@
             "gift": "",
             "discount_code": "",
             "free_shipping": false,
-            "per_treatment": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
