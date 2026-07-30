@@ -71,6 +71,9 @@
         "experts_jCYiJe",
         "faq_UNVKY9"
       ],
+      "custom_css": [
+        ".c-supply-selector__title {display: none;}"
+      ],
       "name": "t:sections.page-header.name",
       "settings": {
         "product": "",
@@ -217,6 +220,7 @@
         },
         "product_gbPf3J": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -225,6 +229,7 @@
             "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -242,6 +247,7 @@
         },
         "product_NEgEkN": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -250,6 +256,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -305,6 +312,7 @@
         },
         "product_nyJ9n7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -313,6 +321,7 @@
             "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -330,6 +339,7 @@
         },
         "product_EKAAzA": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -338,6 +348,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -385,6 +396,7 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
@@ -401,6 +413,7 @@
             "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -427,6 +440,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1771,56 +1785,6 @@
             "preselected": false
           }
         },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779235567,
-            "gift": "",
-            "discount_code": "",
-            "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "image": "shopify://shop_images/MI_1.5_6month_DSno_mist.webp",
-            "product_discount_percent": 16,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 367,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_7dL4ci": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
-            "gift": "",
-            "discount_code": "",
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "Ships every 3 months",
-            "image": "shopify://shop_images/MI_3_month_DS.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 519,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
         "product_Xf8A6C": {
           "type": "product",
           "settings": {
@@ -1830,6 +1794,7 @@
             "gift": "",
             "discount_code": "",
             "free_shipping": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1859,56 +1824,6 @@
             "preselected": true
           }
         },
-        "product_nyJ9n7": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779464943,
-            "gift": "",
-            "discount_code": "",
-            "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "image": "shopify://shop_images/MI_1.5_6month_DS_W-1_no_mist.webp",
-            "product_discount_percent": 16,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 256,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
-        "product_EKAAzA": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779497711,
-            "gift": "",
-            "discount_code": "",
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "Ships every 3 months",
-            "image": "shopify://shop_images/MI_3_month_W.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 187,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 93,
-            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
-          }
-        },
         "product_eiY89h": {
           "type": "product",
           "settings": {
@@ -1918,6 +1833,7 @@
             "gift": "",
             "discount_code": "",
             "free_shipping": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1941,6 +1857,7 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/Mixed_3.png",
@@ -1949,12 +1866,15 @@
         },
         "product_gbPf3J": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
             "gift": "",
             "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": true,
             "heading": "6 Month Supply Birthday Promo",
             "subheading": "(12 Treatments)",
@@ -1981,6 +1901,8 @@
             "product_selling_plan": 0,
             "gift": "",
             "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -2008,6 +1930,7 @@
             "gift": "",
             "discount_code": "",
             "free_shipping": true,
+            "per_treatment": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -2032,13 +1955,9 @@
         "payment_type_B6Pzbh",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_DBd4ef",
-        "product_7dL4ci",
         "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
-        "product_nyJ9n7",
-        "product_EKAAzA",
         "product_eiY89h",
         "type_yDwWmt",
         "product_type_YrPQrV",
@@ -2055,8 +1974,8 @@
         "form_name": "purchase-form-second",
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-6-month-bundle-for-wrinkles",
         "guarantee_period": "90",
         "available-stocks": true
       }
