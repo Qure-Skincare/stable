@@ -1850,7 +1850,7 @@
             "gift": "",
             "discount_code": "",
             "free_shipping": true,
-            "per_treatment": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
