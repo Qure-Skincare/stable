@@ -115,7 +115,7 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__updateStickyButton(variant_title);
     __landing__BackInStock(soldout);
     __landing__SubscriptionForm(this,product_selling_plan);
-    __landing__GiftForm(gift, discount_code);
+    __landing__applyDiscount(gift, discount_code);
 
     if(!product_selling_plan) {
         __landing_updateButtonLabel(this);
@@ -142,18 +142,25 @@ function __landing__handlerProductVariantSelector(e) {
 
 }
 
-function __landing__GiftForm(gift, discount_code) {
+function __landing__applyDiscount(gift, discount_code) {
     const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
     if (!form) return;
 
-    if(gift && discount_code)
+    if(gift)
     {
         __landing__setHiddenInput(form, 'properties[_gift]', gift);
-        __landing__setHiddenInput(form, 'properties[_discount_code]', discount_code);
     }
     else
     {
         __landing__removeHiddenInput(form, 'properties[_gift]');
+    }
+
+    if(discount_code)
+    {
+        __landing__setHiddenInput(form, 'properties[_discount_code]', discount_code);
+    }
+    else
+    {
         __landing__removeHiddenInput(form, 'properties[_discount_code]');
     }
 }

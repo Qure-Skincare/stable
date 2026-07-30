@@ -349,28 +349,30 @@ const addProductGift = async (input) => {
     const gift = input.get('properties[_gift]');
     const discount_code = input.get('properties[_discount_code]');
 
-    if (!gift || !discount_code) return;
-
     const cart = await getCartState();
     if (!cart) return;
 
-    // Add the gift once — do not duplicate it on repeated add-to-cart calls.
-    const alreadyAdded = cart.items.some(item =>
-        item.properties && item.properties['_product_gift'] == gift
-    );
+    if(gift) {
+        // Add the gift once — do not duplicate it on repeated add-to-cart calls.
+        const alreadyAdded = cart.items.some(item =>
+            item.properties && item.properties['_product_gift'] == gift
+        );
 
-    if (!alreadyAdded) {
-        await addToCartMany([{
-            id: gift,
-            properties: {
-                _product_gift: gift
-            },
-            quantity: 1
-        }]);
+        if (!alreadyAdded) {
+            await addToCartMany([{
+                id: gift,
+                properties: {
+                    _product_gift: gift
+                },
+                quantity: 1
+            }]);
+        }
     }
 
-    // Apply the accompanying discount code.
-    await fetch('/discount/' + discount_code, { priority: 'high' });
+    if(discount_code) {
+        // Apply the accompanying discount code.
+        await fetch('/discount/' + discount_code, { priority: 'high' });
+    }
 
     await new Promise(resolve => setTimeout(resolve, 100));
 };

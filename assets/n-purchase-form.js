@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         tooglePreorderBox(preorder, product_variant_id);
         backInStock(soldout);
         subscriptionForm(this,product_selling_plan);
-        giftForm(gift, discount_code);
+        applyDiscount(gift, discount_code);
 
         const purchase_form_pay_in_full = document.querySelector('.' + __section + " .purchase_form_pay_in_full");
         if (purchase_form_pay_in_full) {
@@ -169,18 +169,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    function giftForm(gift, discount_code) {
+    function applyDiscount(gift, discount_code) {
         const form = document.querySelector('.' + __section + ' .c-order-button form[action="/cart/add"]');
         if (!form) return;
 
-        if(gift && discount_code)
+        if(gift)
         {
             setHiddenInput(form, 'properties[_gift]', gift);
-            setHiddenInput(form, 'properties[_discount_code]', discount_code);
         }
         else
         {
             removeHiddenInput(form, 'properties[_gift]');
+        }
+
+        if(discount_code)
+        {
+            setHiddenInput(form, 'properties[_discount_code]', discount_code);
+        }
+        else
+        {
             removeHiddenInput(form, 'properties[_discount_code]');
         }
     }
