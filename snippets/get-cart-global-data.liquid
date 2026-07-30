@@ -9,6 +9,7 @@
 
 {% assign global_total_price = cart.total_price %}
 {% assign global_total_price_devided = global_total_price | divided_by: 100 %}
+{% assign global_free_shipping_discount = 'WELCOMEFREE' %}
 
 
 {% comment %} insurance settings {% endcomment %}
@@ -74,6 +75,19 @@
 {% assign global_shipping_price_limit = settings.shipping_price_limit %}
 
 {% if global_shipping_price_limit > 0 and global_total_price_devided > global_shipping_price_limit %}
+    {% assign global_shipping_price = null %}
+{% endif %}
+
+
+{% assign free_shipping_discount_code = false %}
+{% for item in cart.items %}
+    {% if item.properties['_discount_code'] == global_free_shipping_discount %}
+        {% assign free_shipping_discount_code = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+{% if free_shipping_discount_code %}
     {% assign global_shipping_price = null %}
 {% endif %}
 
