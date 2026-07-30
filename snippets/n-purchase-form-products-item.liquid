@@ -201,7 +201,7 @@
                                     {% endcase %}
                                 {% endif %}
 
-                                {% if block.settings.free_shipping == true %}
+                                {% if block.settings.free_shipping == true and subscription_is_on == true and block.settings.product_selling_plan > 0 %}
                                     <div class="c-supply-selector__hot-bottom">{{ 'purchase-form.settings.free-shipping' | t }}</div>
                                 {% endif %}
                             </label>
