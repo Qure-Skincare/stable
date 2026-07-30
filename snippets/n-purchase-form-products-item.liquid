@@ -176,7 +176,7 @@
                                     </div>
                                 {% endif %}
 
-                                {% if section.settings.type == 'list' %}
+                                {% if section.settings.type == 'list' and block.settings.per_treatment %}
                                     {% case product_counter %}
                                         {% when 1 %}
                                             <div class="c-supply-selector__kits-left">
