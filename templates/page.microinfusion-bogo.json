@@ -71,9 +71,6 @@
         "experts_jCYiJe",
         "faq_UNVKY9"
       ],
-      "custom_css": [
-        ".c-supply-selector__title {display: none;}"
-      ],
       "name": "t:sections.page-header.name",
       "settings": {
         "product": "",
@@ -220,6 +217,7 @@
         },
         "product_gbPf3J": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -246,6 +244,7 @@
         },
         "product_NEgEkN": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -310,6 +309,7 @@
         },
         "product_nyJ9n7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -336,6 +336,7 @@
         },
         "product_EKAAzA": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -392,6 +393,7 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
