@@ -18,6 +18,13 @@
             "video_url": "https://embed-ssl.wistia.com/deliveries/319787889bdc19966794f6256c114998b2301798.bin?disposition=attachment&filename=Kristina+premiere+MIcro+inf+AFTER+6.2+BOZEEE+%281%29.mp4"
           }
         },
+        "badge_QmL9tZ": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "LOCK IN 59% OFF FOR LIFE",
+            "badge_color": "#ff5429"
+          }
+        },
         "description_aio_hELrgf": {
           "type": "description-aio",
           "settings": {
@@ -58,6 +65,7 @@
       },
       "block_order": [
         "gallery_sticky_video_xfTjxY",
+        "badge_QmL9tZ",
         "description_aio_hELrgf",
         "section_jBmCVL",
         "experts_jCYiJe",
@@ -267,6 +275,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -354,6 +363,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -443,6 +453,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1818,6 +1829,7 @@
             "product_selling_plan": 8779432175,
             "gift": "",
             "discount_code": "",
+            "free_shipping": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1905,6 +1917,7 @@
             "product_selling_plan": 8779530479,
             "gift": "",
             "discount_code": "",
+            "free_shipping": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
@@ -1994,6 +2007,7 @@
             "product_selling_plan": 0,
             "gift": "",
             "discount_code": "",
+            "free_shipping": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
