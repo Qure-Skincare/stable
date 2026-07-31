@@ -42,7 +42,7 @@
     {% assign get_product_data = all_products[product_handle] %}
 {% endif %}
 
-{% assign product_discount = blank %}
+{% assign product_discount = 0 %}
 
 {% if get_product_data != blank %}
     {% assign product_id = get_product_data.id %}
