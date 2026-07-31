@@ -133,7 +133,7 @@
                                             {% endif %}
                                         </div>
 
-                                        {% if product_discount != blank %}
+                                        {% if product_discount > 0 %}
                                             <div class="c-supply-selector__save">
                                                 {% if section.settings.type != 'list' %}
                                                     <div class="e-pill-save e-pill-save--light"><span class="igSavePercent" data-variant-id="{{ product_variant_id }}">{{ product_discount }}</span>% {{ 'purchase-form.settings.off' | t }}</div>
