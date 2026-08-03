@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Dermal Mist Creative Content Guide</h1>",
         "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/dermal_mist-banner.webp",
         "image_mobile": "shopify://shop_images/dermal_mist-bannerM.webp",
         "button_label": "",
@@ -28,6 +31,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p><strong>Discover how to make the most of the Qure Dermal Mist with our creative content guide.</strong></p><p>This brief will help you elevate your skincare routine with the Qure Dermal Mist. Powered by hypochlorous acid spray and designed to prevent breakouts, this mist can be used to reduce impurities during the day or cleanse before your favorite Micro-Infusion treatment.</p>"
       }
     },
@@ -221,6 +225,7 @@
         },
         "video_slider_hdT34t": {
           "type": "video_slider",
+          "disabled": true,
           "settings": {
             "youtube_url": false,
             "video_url": "8gyyf2dcvi",
@@ -306,6 +311,7 @@
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>\"...Spray your skin to sanitize it before using your Micro-Infusion device. <em>It's absolutely genius</em>.\"</p>",
         "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
+        "text_on_image": "",
         "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
         "badge_text": "Dermatologist Reviewed"
