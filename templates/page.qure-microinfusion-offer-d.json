@@ -1642,9 +1642,9 @@
         "klaviyo_form_name": "",
         "form_name": "purchase-form",
         "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
+        "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-6-month-bundle-for-dark-spots",
+        "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",
         "guarantee_period": "90",
         "available-stocks": false
       }
