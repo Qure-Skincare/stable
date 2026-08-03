@@ -1106,7 +1106,7 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
-        "button_label": "buy now & SAVE UP TO 70%",
+        "button_label": "buy now & SAVE UP TO 65%",
         "button_url": "#purchase-form"
       }
     },
@@ -1375,7 +1375,7 @@
             "product_selling_plan_text": "Ships every 4 weeks",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
