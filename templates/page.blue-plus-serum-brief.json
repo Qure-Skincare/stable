@@ -9,12 +9,279 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "n_across_image_banner_Nq4WdH": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Blue+ Face Serum Creative Content Guide</h1>",
+        "text": "",
+        "image": "shopify://shop_images/blue-plus-serum.webp",
+        "image_mobile": "shopify://shop_images/blue-plus-serum-mob.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_intro_Kf7bWc": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<p><strong>Discover how to make the most of Qure's Blue+ Face Serum with our creative content guide.</strong></p><p>This brief will help you craft engaging content that shows how Blue+ works with the Q-Rejuvalight Pro LED Mask to amplify results from every LED session.</p>"
+      }
+    },
+    "n_guide_menu_Yt3jRm": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_Pd8wKa": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_Vx5nQe": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_Hb2mLt": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims",
+            "must_read": false
+          }
+        },
+        "menu_item_Rw9cZj": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_Tk6yFn": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_Ls4gXb": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_Pd8wKa",
+        "menu_item_Vx5nQe",
+        "menu_item_Hb2mLt",
+        "menu_item_Rw9cZj",
+        "menu_item_Tk6yFn",
+        "menu_item_Ls4gXb"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_guide_content_Wd7pAx": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_Jm3rTv": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Qure Blue+ Face Serum",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "link_Jm3rTv"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><p>Blue+ is a lightweight, LED-enhancing serum designed to be applied before an LED session, working with your Q-Rejuvalight Pro to help skin respond more effectively to light — without increasing intensity, heat, or irritation.</p><p>Hero active:</p><ul><li><strong>USP Methylene Blue (0.1%)</strong> - a cosmetic photosensitizer that helps skin absorb and convert LED light into stronger cellular signaling, amplifying results from both Skin-Clearing (blue light) and Skin-Rejuvenating (red light) modes.</li></ul><p>Supporting actives:</p><ul><li><strong>Calendula iActive</strong> soothes and comforts skin, with added antioxidant support for skin exposed to daily screen/blue light</li><li><strong>Niacinamide</strong> supports a healthy-looking barrier and more even-looking tone</li><li><strong>Beta-Glucan</strong> helps soothe the appearance of skin</li><li><strong>Sodium Hyaluronate</strong> delivers lightweight hydration</li><li><strong>Bisabolol + Allantoin</strong> support skin comfort</li><li><strong>Vitamin E (Tocopheryl Acetate)</strong> provides antioxidant support</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Bq5hMz": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_Nc8vRd": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Note:</strong> excess product may cause temporary staining — a pea-sized amount is all you need.</p>"
+          }
+        },
+        "quote_Ug2fTy": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Can be used daily, with or without your LED session</p>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_Nc8vRd",
+        "quote_Ug2fTy"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p><strong>How To Use (with Q-Rejuvalight Pro LED Mask):</strong></p><ol><li>Cleanse skin thoroughly.</li><li>Apply a pea-sized amount evenly to face and neck.</li><li>Allow a few minutes for absorption.</li><li>Apply the Q-Rejuvalight Pro LED Mask and run your selected treatment mode.</li><li>Do not rinse off — continue with your regular skincare routine after the LED session.</li></ol><p>[quote_1]</p><p><strong>How To Use (on its own):</strong></p><ol><li>Cleanse skin thoroughly.</li><li>Apply a pea-sized amount evenly to face and neck.</li><li>Massage in until fully absorbed.</li><li>Follow with your regular moisturizer or next skincare step.</li></ol><p>[quote_2]</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Xr6kDs": {
+      "type": "n_guide-content",
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims",
+        "text": "<h2>Product Claims</h2><p>Key claims:</p><ul><li>Formulated to enhance the biological effectiveness of LED light, helping each session work harder without increasing intensity or irritation.</li><li>Powered by USP Methylene Blue, a cosmetic photosensitizer that amplifies results from both Skin-Clearing and Skin-Rejuvenating LED modes.</li><li>Supports a soothed, comfortable skin feel during and after LED use.</li><li>Dermatologically tested, hypoallergenic, and suitable for sensitive skin.</li><li>Fragrance-free, vegan, and cruelty-free.</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Zy9tPw": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_Ke4bJq": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Remember to <strong>add a personal touch</strong> to the messaging, talk about how it feels going into your routine and any difference you've noticed in your sessions.</p><p>Examples:</p><ul><li>“My LED sessions actually feel like they're doing more now.”</li><li>“This is the step I never skip before my mask.”</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_Ke4bJq"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Messaging must include:</p><ul><li>Blue+ can be used before your LED session — it's designed to enhance the Q-Rejuvalight Pro, or on its own.</li><li>Powered by USP Methylene Blue, a photosensitizer that helps skin respond more effectively to LED light.</li><li>Compatible with both Skin-Clearing (blue light) and Skin-Rejuvenating (red light) modes.</li><li>Lightweight, fast-absorbing, and non-irritating — safe for sensitive skin.</li><li>Do not rinse off before your LED session; continue your normal routine afterward.</li><li>Visible results build with consistent LED + Blue+ use.</li></ul><p>[quote_1]</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_Ft3mQv": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_Hn7dCx": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/blue-plus-serum-brief-1.webp"
+          }
+        },
+        "image_slider_Wj2sLb": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/blue-plus-serum-brief-2.webp"
+          }
+        },
+        "quote_Ry8vNk": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #LEDtherapy #QureBluePlus</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_Hn7dCx",
+        "image_slider_Wj2sLb",
+        "quote_Ry8vNk"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Show the full routine: applying Blue+, then putting on the Q-Rejuvalight Pro LED Mask.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the serum in use (unless agreed otherwise).</li><li>Because the serum has a blue tint, a close-up of it on skin or on the applicator makes for a strong visual — feel free to highlight this.</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_Cv5nHt": {
+      "type": "n_guide-content",
+      "blocks": {
+        "wistia_slider_Qb6mZr": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "wuwofpexhl"
+          }
+        },
+        "wistia_slider_Dp9kTs": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "fgpztdeimx"
+          }
+        },
+        "wistia_slider_Ln4wBy": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "9kwcjxx5h5"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_slider_Qb6mZr",
+        "wistia_slider_Dp9kTs",
+        "wistia_slider_Ln4wBy"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_trusted_recommended_Mg7xVd": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "grey",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.”</p>",
+        "video_image_cover": "shopify://shop_images/dr-shah-maxfield-2.webp",
+        "wistia_url": false,
+        "video_url": "",
+        "badge_text": "Dermatologist Reviewed"
+      }
     }
   },
   "order": [
-    "main"
+    "n_across_image_banner_Nq4WdH",
+    "n_intro_Kf7bWc",
+    "n_guide_menu_Yt3jRm",
+    "n_guide_content_Wd7pAx",
+    "n_guide_content_Bq5hMz",
+    "n_guide_content_Xr6kDs",
+    "n_guide_content_Zy9tPw",
+    "n_guide_content_Ft3mQv",
+    "n_guide_content_Cv5nHt",
+    "n_trusted_recommended_Mg7xVd"
   ]
 }
