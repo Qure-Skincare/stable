@@ -30,7 +30,8 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": false
+            "show_discount": false,
+            "bundle_compare": false
           }
         },
         "description_A10": {
@@ -40,6 +41,8 @@
         "button_A9": {
           "type": "button",
           "settings": {
+            "button_light_label": "",
+            "keep_offer_label": false,
             "hide_payments": false,
             "hide_bottom": false,
             "hide_certified": false
@@ -53,7 +56,8 @@
             "image_product1": "shopify://shop_images/Img_16.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/ndBox.webp",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
+            "discount_code": ""
           }
         },
         "upsell-popup_mMzPq2": {
@@ -70,11 +74,10 @@
         },
         "limited_offer_A8": {
           "type": "limited-offer",
-          "disabled": true,
           "settings": {
             "sum": "$100",
             "code": "QURE100",
-            "days": 5
+            "days": 4
           }
         },
         "nextships_A7": {
@@ -150,10 +153,15 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "RED LIGHT MASK Q-REJUVALIGHT PRO",
         "heading": "Unlock your best skin yet with our LED Face Mask",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
         "limited": false,
