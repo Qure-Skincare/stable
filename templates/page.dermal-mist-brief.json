@@ -242,6 +242,7 @@
         },
         "video_slider_fQRDyw": {
           "type": "video_slider",
+          "disabled": true,
           "settings": {
             "youtube_url": false,
             "video_url": "70whuifdz9",
