@@ -634,6 +634,9 @@
         "product_NEgEkN",
         "product_RBCPe8"
       ],
+      "custom_css": [
+        ".e-features-list,.c-certified-box {display: none;}"
+      ],
       "settings": {
         "type": "list",
         "heading": "Start the apology process.",
@@ -642,7 +645,7 @@
         "klaviyo_form_name": "",
         "form_name": "purchase-form",
         "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
+        "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-wrinkles",
         "guarantee_period": "90",
