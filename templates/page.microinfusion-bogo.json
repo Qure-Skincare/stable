@@ -214,7 +214,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_6.png",
             "preselected": false
           }
@@ -278,7 +278,7 @@
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779432175,
+            "product_selling_plan": 8998256879,
             "gift": "",
             "discount_code": "WELCOMEFREE",
             "popular": false,
@@ -291,7 +291,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 59,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -306,7 +306,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
             "preselected": true
           }
@@ -1411,8 +1411,8 @@
         "section_id": "science-backed",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "text_mobile": "",
-        "left_heading": "<h4>For Dark Spots</h4>",
-        "right_heading": "<h4>For Wrinkles</h4>",
+        "left_heading": "<h4>Brightening</h4>",
+        "right_heading": "<h4>Rejuvenating</h4>",
         "left_image": "shopify://shop_images/Rectangle_389.png",
         "right_image": "shopify://shop_images/Rectangle_389_1.png"
       }
@@ -1781,7 +1781,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
@@ -1791,9 +1791,9 @@
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779432175,
+            "product_selling_plan": 8998256879,
             "gift": "",
-            "discount_code": "",
+            "discount_code": "WELCOMEFREE",
             "free_shipping": true,
             "per_treatment": false,
             "preselected": false,
@@ -1802,7 +1802,7 @@
             "product_selling_plan_text": "Ships every 4 weeks",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 59,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 165,
@@ -1820,7 +1820,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }
@@ -1843,8 +1843,8 @@
             "product_discount_percent": 59,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
+            "total_treatments": 2,
+            "left_items": 29,
             "preorder_text": "23rd January",
             "preorder_date_soldout": "7 January",
             "preorder_date_reserved": "8 January",

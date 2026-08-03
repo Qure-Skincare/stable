@@ -40,9 +40,9 @@
           "type": "slider",
           "settings": {
             "countdown": false,
-            "text": "<p><strong>Save 26% Site Wide </strong>- Limited Time Only</p>",
+            "text": "<p><strong>Save Up To 70% on Micro-Infusion </strong>- Limited Time Only</p>",
             "button_label": "Shop Now",
-            "button_url": "https://qureskincare.com/collections/best-sellers",
+            "button_url": "https://qureskincare.com/pages/microinfusion",
             "from": "",
             "days": 1
           }
@@ -53,8 +53,8 @@
         "slider_2"
       ],
       "settings": {
-        "slider": false,
-        "countdown": true,
+        "slider": true,
+        "countdown": false,
         "text": "<p><a href=\"https://qureskincare.com/collections/best-sellers\" title=\"https://qureskincare.com/collections/best-sellers\"><strong>Save 26% Site Wide</strong></a><strong> </strong>- Birthday Sale</p>",
         "button_label": "",
         "button_url": "",

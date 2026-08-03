@@ -1285,7 +1285,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
@@ -1375,10 +1375,10 @@
             "product_selling_plan_text": "Ships every 4 weeks",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
+            "total_treatments": 2,
+            "left_items": 19,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1393,7 +1393,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }

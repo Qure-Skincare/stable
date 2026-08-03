@@ -58,6 +58,7 @@
         "disclaimer_qb",
         "video_qb"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -195,7 +196,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,

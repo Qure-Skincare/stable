@@ -214,7 +214,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_6.png",
             "preselected": false
           }
@@ -306,7 +306,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
             "preselected": true
           }
@@ -1411,8 +1411,8 @@
         "section_id": "science-backed",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "text_mobile": "",
-        "left_heading": "<h4>For Dark Spots</h4>",
-        "right_heading": "<h4>For Wrinkles</h4>",
+        "left_heading": "<h4>Brightening</h4>",
+        "right_heading": "<h4>Rejuvenating</h4>",
         "left_image": "shopify://shop_images/Rectangle_389.png",
         "right_image": "shopify://shop_images/Rectangle_389_1.png"
       }
@@ -1781,7 +1781,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
@@ -1820,7 +1820,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }

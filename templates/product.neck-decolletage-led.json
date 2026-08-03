@@ -24,7 +24,8 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": true
+            "show_discount": false,
+            "bundle_compare": false
           }
         },
         "description_iPBNaS": {
@@ -34,6 +35,8 @@
         "button_A9": {
           "type": "button",
           "settings": {
+            "button_light_label": "",
+            "keep_offer_label": false,
             "hide_payments": false,
             "hide_bottom": false,
             "hide_certified": false
@@ -115,10 +118,15 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "RED LIGHT NECK & CHEST MASK",
         "heading": "Smooth and firm the look of skin with the Neck & Décolletage LED System",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
         "limited": false,

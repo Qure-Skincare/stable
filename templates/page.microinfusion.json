@@ -208,7 +208,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_6.png",
             "preselected": false
           }
@@ -225,7 +225,7 @@
             "best": true,
             "free_shipping": false,
             "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -244,7 +244,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
+            "product_selling_plan": 8988655855,
             "gift": "",
             "discount_code": "",
             "popular": false,
@@ -256,7 +256,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "text": "",
             "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
-            "product_discount_percent": 19,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
@@ -283,7 +283,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
@@ -298,7 +298,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
             "preselected": true
           }
@@ -315,7 +315,7 @@
             "best": true,
             "free_shipping": false,
             "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -334,7 +334,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
-            "product_selling_plan": 8779497711,
+            "product_selling_plan": 8988688623,
             "gift": "",
             "discount_code": "",
             "popular": false,
@@ -346,7 +346,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "text": "",
             "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
-            "product_discount_percent": 19,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "preorder_text": "",
@@ -405,7 +405,7 @@
             "best": true,
             "free_shipping": false,
             "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -1400,8 +1400,8 @@
         "section_id": "science-backed",
         "text": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "text_mobile": "",
-        "left_heading": "<h4>For Dark Spots</h4>",
-        "right_heading": "<h4>For Wrinkles</h4>",
+        "left_heading": "<h4>Brightening</h4>",
+        "right_heading": "<h4>Rejuvenating</h4>",
         "left_image": "shopify://shop_images/Rectangle_389.png",
         "right_image": "shopify://shop_images/Rectangle_389_1.png"
       }
@@ -1770,7 +1770,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
@@ -1786,7 +1786,7 @@
             "free_shipping": false,
             "per_treatment": true,
             "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_1.5_6month_DSno_mist.webp",
@@ -1807,7 +1807,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
+            "product_selling_plan": 8988655855,
             "gift": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1817,7 +1817,7 @@
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 3 months",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
-            "product_discount_percent": 19,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
@@ -1845,10 +1845,10 @@
             "product_selling_plan_text": "Ships every 1 month",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 2,
-            "left_items": 165,
+            "left_items": 16,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1863,7 +1863,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }
@@ -1879,7 +1879,7 @@
             "free_shipping": false,
             "per_treatment": true,
             "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_1.5_6month_DS_W-1_no_mist.webp",
@@ -1900,7 +1900,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
-            "product_selling_plan": 8779497711,
+            "product_selling_plan": 8988688623,
             "gift": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1910,7 +1910,7 @@
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 3 months",
             "image": "shopify://shop_images/MI_3_month_W.webp",
-            "product_discount_percent": 19,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
@@ -1972,7 +1972,7 @@
             "free_shipping": false,
             "per_treatment": true,
             "preselected": true,
-            "heading": "6 Month Supply Birthday Promo",
+            "heading": "6 Month Supply Promo",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_6_month_DSW.webp",
