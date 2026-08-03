@@ -267,6 +267,7 @@
         },
         "video_slider_jiLqYb": {
           "type": "video_slider",
+          "disabled": true,
           "settings": {
             "youtube_url": false,
             "video_url": "73f18l0mq1",
@@ -275,6 +276,7 @@
         },
         "video_slider_bbM3Gd": {
           "type": "video_slider",
+          "disabled": true,
           "settings": {
             "youtube_url": false,
             "video_url": "yerwu83f6q",
