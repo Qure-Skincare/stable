@@ -1285,7 +1285,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
@@ -1392,7 +1392,7 @@
         "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }
