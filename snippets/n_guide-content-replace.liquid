@@ -2,17 +2,30 @@
 {% assign wistia_video_is_shown = false %}
 {% assign image_is_shown = false %}
 
+{% assign processed_text = section.settings.text %}
+
+{% assign quote_number = 0 %}
 {% capture quote_content %}
     {% for block in section.blocks %}
         {% if block.type == 'quote' %}
-            <div class="c-note{% if block.settings.style == 'blue' %} c-note--info{% elsif block.settings.style == 'red' %} c-note--warning{% endif %}">
-                {% if block.settings.text != blank %}
-                    {{ block.settings.text }}
-                {% endif %}
-            </div>
+            {% assign quote_number = quote_number | plus: 1 %}
+            {% capture quote_note %}
+                <div class="c-note{% if block.settings.style == 'blue' %} c-note--info{% elsif block.settings.style == 'red' %} c-note--warning{% endif %}">
+                    {% if block.settings.text != blank %}
+                        {{ block.settings.text }}
+                    {% endif %}
+                </div>
+            {% endcapture %}
+            {% capture quote_placeholder %}<p>[quote_{{ quote_number }}]</p>{% endcapture %}
+            {% if processed_text contains quote_placeholder %}
+                {% assign processed_text = processed_text | replace: quote_placeholder, quote_note %}
+            {% else %}
+                {{ quote_note }}
+            {% endif %}
         {% endif %}
     {% endfor %}
 {% endcapture %}
+{% assign quote_content = quote_content | strip %}
 
 {% capture wistia_video_content %}
     {% for block in section.blocks %}
@@ -59,7 +72,6 @@
 {% endif %}
 
 {% if section.settings.text != blank %}
-    {% assign processed_text = section.settings.text %}
     
     {% if quote_content_is_shown == true %}
         {% if quote_content != blank %}
