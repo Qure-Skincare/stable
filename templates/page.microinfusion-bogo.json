@@ -278,7 +278,7 @@
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779432175,
+            "product_selling_plan": 8998256879,
             "gift": "",
             "discount_code": "WELCOMEFREE",
             "popular": false,
@@ -291,7 +291,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 59,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "preorder_text": "",
             "preorder_date_soldout": "",
