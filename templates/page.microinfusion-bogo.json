@@ -1781,7 +1781,7 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
@@ -1843,8 +1843,8 @@
             "product_discount_percent": 59,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
+            "total_treatments": 2,
+            "left_items": 29,
             "preorder_text": "23rd January",
             "preorder_date_soldout": "7 January",
             "preorder_date_reserved": "8 January",
