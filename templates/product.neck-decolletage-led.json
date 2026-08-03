@@ -24,7 +24,7 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": true,
+            "show_discount": false,
             "bundle_compare": false
           }
         },
