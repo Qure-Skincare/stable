@@ -44,7 +44,7 @@
     "shipping_icon": "shipping",
     "shipping_price": 10,
     "shipping_price_limit": 100,
-    "cart_gift1_title": "",
+    "cart_gift1_title": "Surprise Gift",
     "cart_gift1_product": "dermal-mist-travel-size",
     "cart_gift1_icon": "gift",
     "cart_gift1_price_limit": 250,
