@@ -40,7 +40,7 @@
           "type": "slider",
           "settings": {
             "countdown": false,
-            "text": "<p><strong>Save Up To 70% on Micro-Infusion </strong>- Limited Time</p>",
+            "text": "<p><strong>Save Up To 70% on Micro-Infusion</strong></p>",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/pages/microinfusion",
             "from": "",
