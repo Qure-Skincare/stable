@@ -100,8 +100,7 @@
 <!-- End: Northbeam pixel -->
 
 {% comment %} Intelligems Script  {% endcomment %}
-{% comment %}
-<script>
+<script class="__init">
 	window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
 	window._template = {
 		directory: "{{ template.directory }}",
@@ -112,8 +111,7 @@
 		window.igSetup = { addComparePriceProperty: true }
 	{% endif %}
 </script>
-<script type="module" blocking="render" fetchpriority="high" src="https://cdn.intelligems.io/esm/e5166ddbef7f/bundle.js" data-em-disable></script>
-{% endcomment %}
+<script class="__init" type="module" blocking="render" fetchpriority="high" src="https://cdn.intelligems.io/esm/e5166ddbef7f/bundle.js" data-em-disable></script>
 {% comment %} Intelligems Script - End {% endcomment %}
 
 <script type='text/javascript'>
