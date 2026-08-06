@@ -34,7 +34,8 @@
             "image_product1": "shopify://shop_images/Img_50.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
-            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>"
+            "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
+            "discount_code": ""
           }
         },
         "nextships_4QXeV7": {
@@ -57,10 +58,15 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "",
         "heading": "Feel Confident Makeup-Free with Q-Rejuvalight Pro",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
@@ -697,7 +703,7 @@
       "name": "Exclusive bundle",
       "settings": {
         "use_own_file": false,
-        "badge": "<p><strong>BIRTHDAY</strong> Offer</p>",
+        "badge": "<p><strong>SUMMER</strong> SALE</p>",
         "heading": "<p>Experience face and neck rejuvenation in one bundle</p>",
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
       }
