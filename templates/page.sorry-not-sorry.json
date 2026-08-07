@@ -188,7 +188,7 @@
         "modifier": "img-to-left",
         "updated_info": false,
         "heading": "<h2><strong>Why every cream she'd tried did nothing...</strong></h2>",
-        "text": "<p>The industry sells better ingredients in the one format that can't get them in. Beta Glucan, copper peptides, vitamin C, PDRN. All applied to a barrier built to block them.<br/><br/>The Qure Micro-Infusion System is designed to revitalize your skin through a precise and effective process:</p><p><strong>Micro-Needles:</strong> Tiny, gold needles (thinner than a human hair) create micro-channels in your skin. This helps stimulate collagen production and triggers your skin’s natural healing process.</p><p><strong>Serum Delivery:</strong> The micro-channels allow our scientifically-backed serums to penetrate deeply, delivering active ingredients exactly where they are needed to reduce the appearance of wrinkles, fine lines, and dark spots.</p><p><strong>Hydration and Plumping:</strong> The infusion process enhances your skin's ability to retain moisture, resulting in a plumper, more hydrated, and radiant looking complexion.</p><p>Use the Qure Micro-Infusion System for just 5 minutes every 2 weeks for a minimum of 3 months and <strong>enjoy smoother looking more youthful skin</strong> and a more confident you.</p>",
+        "text": "<p>The industry sells better ingredients in the one format that can't get them in. Beta Glucan, copper peptides, vitamin C, PDRN. All applied to a barrier built to block them.<br/><br/>The Qure Micro-Infusion System is designed to revitalize your skin through a precise and effective process:</p><p><strong>The micro-infusion Past the barrier:</strong> <br/>0.5mm needles open thousands of channels and deliver the serum underneath, where skin uses it. The same channels trigger skin's own renewal.*<br/>By week two the fine lines she'd been watching settle in had started to soften. Her tone looked more even. Her moisturiser actually felt like it was holding.*</p><p><strong>The cream On the surface:</strong> <br/>Sits on top. Blocked by the barrier, which stops molecules over 500 Daltons. Most of it evaporates or rubs off on your pillow.*</p><p></p>",
         "image": "shopify://shop_images/mi_needle.webp"
       }
     },
@@ -642,7 +642,7 @@
         "klaviyo_form_name": "",
         "form_name": "purchase-form",
         "subscription_product": "true",
-        "subscription_discount_max_percent": 65,
+        "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-wrinkles",
         "guarantee_period": "90",
