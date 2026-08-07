@@ -218,6 +218,7 @@
     },
     "n_mi_faq_page_qa_xnhcN6": {
       "type": "n_mi-faq-page-qa",
+      "disabled": true,
       "name": "t:sections.n_mi-faq-page-qa.name",
       "settings": {
         "use_own_file": false,
@@ -308,7 +309,6 @@
         },
         "product_DBd4ef": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -416,7 +416,6 @@
         },
         "product_nyJ9n7": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -502,7 +501,6 @@
         },
         "product_type_YrPQrV": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/Mixed_3.png",
@@ -525,7 +523,6 @@
         },
         "product_gbPf3J": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -660,7 +657,7 @@
         "modifier": "none",
         "updated_info": true,
         "heading": "<h6><strong>Last apology.</strong></h6>",
-        "text": "<p><strong>If smoother lines, a more even tone, and skin that behaves on camera sound like problems you can live with, this is five minutes every two weeks. Most people start with the 3-month plan.</strong></p>"
+        "text": "<p><strong>Actually, we're not sorry. <br/>Not about the husband who won't stop commenting. Not about the serums collecting dust. Not about the concealer with nothing left to do.</strong></p><p><strong>Five minutes. Every two weeks.</strong></p>"
       }
     },
     "n_trusted_reviews_A9yVqc": {
