@@ -184,6 +184,44 @@
         "wistia_url": ""
       }
     },
+    "n_press_reviews_lVZt5L": {
+      "type": "n_press-reviews",
+      "blocks": {
+        "image_with_text_1": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
+            "image": "shopify://shop_images/forbes.svg"
+          }
+        },
+        "image_with_text_2": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</h4>",
+            "image": "shopify://shop_images/bazzar.svg"
+          }
+        },
+        "image_with_text_3": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
+            "image": "shopify://shop_images/ps.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_1",
+        "image_with_text_2",
+        "image_with_text_3"
+      ],
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"spaceBetween\": 80"
+      }
+    },
     "n_trusted_recommended_MlYLp4": {
       "type": "n_trusted-recommended",
       "disabled": true,
@@ -310,45 +348,6 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Achieve your skincare goals</h2>"
-      }
-    },
-    "n_press_reviews_lVZt5L": {
-      "type": "n_press-reviews",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
-            "image": "shopify://shop_images/forbes.svg"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</h4>",
-            "image": "shopify://shop_images/bazzar.svg"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
-            "image": "shopify://shop_images/ps.svg"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_press-reviews.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>",
-        "slide": "none",
-        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_base_section_phJT4F": {
@@ -1101,7 +1100,7 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "none",
+        "modifier": "no-video",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
@@ -1836,11 +1835,11 @@
     "n_hero_section_xMcaXr",
     "n_hero_section_Kiu8T3",
     "n_hero_section_3uBXrT",
+    "n_press_reviews_lVZt5L",
     "n_trusted_recommended_MlYLp4",
     "n_our_advisors_jX3gJz",
     "n_base_section_3uBXrT",
     "n_achievement_goals_Pzxmim",
-    "n_press_reviews_lVZt5L",
     "n_base_section_phJT4F",
     "n_highlight_egmbcj",
     "n_base_section_xzUU6n",
