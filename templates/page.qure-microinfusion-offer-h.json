@@ -1070,15 +1070,15 @@
         "list_UakLx3": {
           "type": "items",
           "settings": {
-            "text": "<h3>Cleanse</h3><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\"><span style=\"text-decoration:underline\">Dermal Mist</span> </a>to refresh and prepare your skin further.</p>",
-            "image": "shopify://shop_images/mixed_mi_1.webp",
+            "text": "<h3>1.Stamp</h3><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\"><span style=\"text-decoration:underline\">Dermal Mist</span> </a>to refresh and prepare your skin further.</p>",
+            "image": "shopify://shop_images/micro-infusion-step-4.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
         },
         "list_q4irTP": {
           "type": "items",
           "settings": {
-            "text": "<h3>Prepare</h3><p>Twist off the cap of the serum vial and screw on the sterile needle head.</p>",
+            "text": "<h3>2.Infuse</h3><p>Twist off the cap of the serum vial and screw on the sterile needle head.</p>",
             "image": "shopify://shop_images/mixed_mi_2.webp",
             "image_mobile": "shopify://shop_images/mi-2-mob_0692c2e6-eb84-4d03-ac7a-f8f386d88f25.webp"
           }
@@ -1086,7 +1086,7 @@
         "list_MRCUbi": {
           "type": "items",
           "settings": {
-            "text": "<h3>Treat</h3><p>Remove the cap and stamp gently across your face using light pressure, working section-by-section.</p>",
+            "text": "<h3>3.Renew</h3><p>Remove the cap and stamp gently across your face using light pressure, working section-by-section.</p>",
             "image": "shopify://shop_images/mixed_mi_3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob_474650ff-a9f7-4ec8-b784-d9c7da333689.webp"
           }
@@ -1101,10 +1101,8 @@
       "settings": {
         "use_own_file": false,
         "modifier": "no-video",
-        "text": "<h2>See how quick and easy it is to use</h2>",
-        "image": "shopify://shop_images/mi-use-video.webp",
-        "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
-        "wistia_url": "6de5pg0r6e",
+        "text": "<h2>How Qure Refreshes Your Skin in 3 Easy Steps</h2>",
+        "wistia_url": "",
         "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
