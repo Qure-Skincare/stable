@@ -184,20 +184,207 @@
         "wistia_url": ""
       }
     },
-    "n_trusted_recommended_MlYLp4": {
-      "type": "n_trusted-recommended",
+    "n_hero_section_Q7mK2p": {
+      "type": "n_hero-section",
+      "blocks": {
+        "approved_by_1": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_2": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "approved_by_3": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-3.webp",
+            "text": ""
+          }
+        },
+        "approved_by_4": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-4.webp",
+            "text": ""
+          }
+        },
+        "benefit_cost_effective": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/hero-benefit-cost-effective.webp",
+            "text": "Cost-effective solution"
+          }
+        },
+        "benefit_five_minute": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/hero-benefit-five-minute.webp",
+            "text": "5-Minute DIY Facial"
+          }
+        },
+        "benefit_discomfort": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/hero-benefit-minimal-discomfort.webp",
+            "text": "Minimal discomfort"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_1",
+        "approved_by_2",
+        "approved_by_3",
+        "approved_by_4",
+        "benefit_cost_effective",
+        "benefit_five_minute",
+        "benefit_discomfort"
+      ],
       "disabled": true,
-      "name": "t:sections.n_trusted-recommended.name",
       "settings": {
         "use_own_file": false,
-        "background_color": "none",
-        "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>“The Qure Micro-Infusion System uses a <em>stamping motion</em> while simultaneously infusing serum through the needles. Rather than dragging needles across the skin, it creates controlled punctures, <em>helping the serum absorb</em> into the skin’s surface more effectively.”</p>",
-        "video_image_cover": "shopify://shop_images/shah-maxfield.webp",
-        "text_on_image": "",
-        "wistia_url": false,
-        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8&t=491s",
-        "badge_text": "Dermatologist Reviewed"
+        "hidden": false,
+        "modifier": "extended",
+        "show_logo": true,
+        "approved_position": "before_text",
+        "text": "<h1>Reduce the Look of Wrinkles and Dark Spots at Home.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "rating": "4.8",
+        "rating_text": "<strong>500,00+ Customers · 50+ Dermatologists</strong>",
+        "image": "shopify://shop_images/micro-infusion-hero.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
+        "button_url": "#purchase-form",
+        "button_label": "Save 70% Today",
+        "button_line": false,
+        "alert": "",
+        "sub_text": "",
+        "marked_list": "",
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "6de5pg0r6e",
+        "wistia_mode": "popover_button",
+        "video_button_label": "Watch Video"
+      }
+    },
+    "n_hero_section_V4rT8x": {
+      "type": "n_hero-section",
+      "blocks": {
+        "approved_by_1": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_2": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "approved_by_3": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-3.webp",
+            "text": ""
+          }
+        },
+        "approved_by_4": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-4.webp",
+            "text": "<p>BACKED BY:<br><strong>50+ Dermatologists &amp; 500K+ Customers</strong></p>"
+          }
+        },
+        "benefit_cost_effective": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/hero-benefit-cost-effective.webp",
+            "text": "Cost-effective solution"
+          }
+        },
+        "benefit_five_minute": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/hero-benefit-five-minute.webp",
+            "text": "5-Minute DIY Facial"
+          }
+        },
+        "benefit_discomfort": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/hero-benefit-minimal-discomfort.webp",
+            "text": "Minimal discomfort"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_1",
+        "approved_by_2",
+        "approved_by_3",
+        "approved_by_4",
+        "benefit_cost_effective",
+        "benefit_five_minute",
+        "benefit_discomfort"
+      ],
+      "disabled": true,
+      "settings": {
+        "use_own_file": false,
+        "hidden": false,
+        "modifier": "extended",
+        "show_logo": true,
+        "approved_position": "after_text",
+        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1>",
+        "rating": "",
+        "rating_text": "",
+        "image": "shopify://shop_images/micro-infusion-hero-3.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-3-mob.webp",
+        "button_url": "#purchase-form",
+        "button_label": "Save 70% Today",
+        "button_line": false,
+        "alert": "",
+        "sub_text": "",
+        "marked_list": "",
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "",
+        "wistia_mode": "modal",
+        "video_button_label": "Watch Video"
+      }
+    },
+    "n_hero_section_H9cW3n": {
+      "type": "n_hero-section",
+      "blocks": {},
+      "block_order": [],
+      "disabled": true,
+      "settings": {
+        "use_own_file": false,
+        "hidden": false,
+        "modifier": "third",
+        "show_logo": true,
+        "approved_position": "before_text",
+        "text": "<h1>Dr. Shah’s recommended solution for wrinkles and dark spots.</h1>",
+        "rating": "",
+        "rating_text": "",
+        "image": "shopify://shop_images/micro-infusion-hero-4.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-4-mob.webp",
+        "button_url": "#purchase-form",
+        "button_label": "Save up to 70%",
+        "button_line": false,
+        "alert": "",
+        "sub_text": "",
+        "marked_list": "<ul><li>Target wrinkles and dark spots</li><li>24K gold-plated microneedles</li><li>Virtually painless with little to no downtime</li></ul>",
+        "marked_list_position": "header",
+        "badge_text": "Trusted by 500K+ customers",
+        "wistia_url": "",
+        "wistia_mode": "modal",
+        "video_button_label": "Watch Video"
       }
     },
     "n_our_advisors_jX3gJz": {
@@ -310,45 +497,6 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Achieve your skincare goals</h2>"
-      }
-    },
-    "n_press_reviews_lVZt5L": {
-      "type": "n_press-reviews",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
-            "image": "shopify://shop_images/forbes.svg"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</h4>",
-            "image": "shopify://shop_images/bazzar.svg"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
-            "image": "shopify://shop_images/ps.svg"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_press-reviews.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>",
-        "slide": "none",
-        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_base_section_phJT4F": {
@@ -494,124 +642,6 @@
         "button_label": "",
         "button_url": "",
         "wistia_url": ""
-      }
-    },
-    "n_features_marquee_vMOx3w": {
-      "type": "n_features-marquee",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over $100"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "reviewed",
-            "text": "Dermatologist Reviewed"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "pay-later",
-            "text": "Buy Now, Pay Later Options Available"
-          }
-        },
-        "image_with_text_4": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "proven",
-            "text": "Proven Results, Backed By Science"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3",
-        "image_with_text_4"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_features-marquee.name",
-      "settings": {
-        "use_own_file": false
-      }
-    },
-    "n_video_slider_Gxn23M": {
-      "type": "n_video-slider",
-      "blocks": {
-        "slider_KCyQdt": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "youtube_url": false,
-            "video_url": "zs3ddb0qly"
-          }
-        },
-        "slider_kyTD8B": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "youtube_url": false,
-            "video_url": "v5e5op6ap7"
-          }
-        },
-        "slider_kmWfNL": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "youtube_url": false,
-            "video_url": "zhb1w8ise9"
-          }
-        },
-        "slider_Ae7VEM": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "youtube_url": false,
-            "video_url": "opfbh936fc"
-          }
-        },
-        "slider_VhUhEV": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "youtube_url": false,
-            "video_url": "nei98l696b"
-          }
-        },
-        "slider_CaQwEh": {
-          "type": "slider",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "youtube_url": false,
-            "video_url": "jcgxarsfbj"
-          }
-        }
-      },
-      "block_order": [
-        "slider_KCyQdt",
-        "slider_kyTD8B",
-        "slider_kmWfNL",
-        "slider_Ae7VEM",
-        "slider_VhUhEV",
-        "slider_CaQwEh"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_video-slider.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "text": "<h2>Confident skin starts here</h2>"
       }
     },
     "n_video_slider_PLEPyO": {
@@ -1650,37 +1680,6 @@
         "available-stocks": false
       }
     },
-    "n_should_know_8jabz8": {
-      "type": "n_should-know",
-      "blocks": {
-        "text_slider_how": {
-          "type": "text_slider",
-          "settings": {
-            "text": "<p><strong>How To Use</strong></p><ol><li><strong>Fill the device:</strong> Open the device and pour in one ampoule of serum.</li><li><strong>Prepare the device:</strong> Twist on the needle head and leave upside down for 1–2 minutes.</li><li><strong>Begin infusion:</strong> Stamp evenly across the face with 2–3 passes, then pat in any remaining serum.</li></ol>",
-            "note": "<p><strong>Tip:</strong> Apply remaining serum after your treatment and allow it to absorb overnight.</p>"
-          }
-        },
-        "text_slider_safe": {
-          "type": "text_slider",
-          "settings": {
-            "text": "<p><strong>Safety Guidelines</strong></p><p>Micro-Infusion is a simple treatment you can do at-home. No appointments and no downtime. It’s designed to be safe and easy to use, as long as your skin is clean and healthy. </p><p>Avoid using Micro-Infusion on active breakouts or broken skin, as it may spread bacteria. Always use a fresh, sterile needle head for each treatment, and apply SPF after use to protect your skin.</p><p>If you’re pregnant or have a medical condition, check with your doctor first.</p>",
-            "note": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_slider_how",
-        "text_slider_safe"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_should-know.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>What you should know for the best results</h2><p>The Qure Micro-Infusion System is designed with your safety in mind.</p><p>Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimize the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.</p><p>Below are a few rules you should follow while using your Qure Micro-Infusion System:</p>",
-        "button_label": "See Detailed Treatment Guide",
-        "button_url": "https://qureskincare.com/pages/microinfusion-safety-guide"
-      }
-    },
     "n_why_using_cj3RFv": {
       "type": "n_why-using",
       "blocks": {
@@ -1844,16 +1843,15 @@
     "n_hero_section_xMcaXr",
     "n_hero_section_Kiu8T3",
     "n_hero_section_3uBXrT",
-    "n_trusted_recommended_MlYLp4",
+    "n_hero_section_Q7mK2p",
+    "n_hero_section_V4rT8x",
+    "n_hero_section_H9cW3n",
     "n_our_advisors_jX3gJz",
     "n_base_section_3uBXrT",
     "n_achievement_goals_Pzxmim",
-    "n_press_reviews_lVZt5L",
     "n_base_section_phJT4F",
     "n_highlight_egmbcj",
     "n_base_section_xzUU6n",
-    "n_features_marquee_vMOx3w",
-    "n_video_slider_Gxn23M",
     "n_video_slider_PLEPyO",
     "n_trusted_reviews_DUlFYg",
     "n_comparison_UfAfRr",
@@ -1863,7 +1861,6 @@
     "n_science_backed_6ehGih",
     "sticky_cta_d9dC8X",
     "purchase_form_PwCCh6",
-    "n_should_know_8jabz8",
     "n_why_using_cj3RFv",
     "n_faq_RiGOh9"
   ]
