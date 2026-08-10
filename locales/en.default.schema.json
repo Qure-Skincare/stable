@@ -214,6 +214,8 @@
         "numbered-list": "Numbered list",
         "information-box": "Information box",
         "gift": "Gift",
+        "gift_image": "Gift image",
+        "gift_text": "Gift text",
         "product": "Product",
         "product_discount": "Product discount",
         "price": "Price",
