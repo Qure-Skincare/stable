@@ -579,7 +579,16 @@
             "name": "Guide content step by step"
         },
         "n_hero-section": {
-            "name": "Hero section"
+            "name": "Hero section",
+            "blocks": {
+                "benefit": {
+                    "settings": {
+                        "save-money": "Save money",
+                        "mi-quick": "Quick treatment",
+                        "mi-painless": "Minimal discomfort"
+                    }
+                }
+            }
         },
         "n_guide-content-image-block": {
             "name": "Guide content with image block",

@@ -32,7 +32,7 @@
 
             <div class="hero-section__content-header">
                 {% if section.settings.show_logo %}
-                    {% render '__svg-logo' %}
+                    <i class="e-icon e-icon-qure"></i>
                 {% endif %}
 
                 {% if approved_by_count > 0 and section.settings.approved_position == 'before_text' %}
@@ -130,8 +130,8 @@
                             {% for block in section.blocks %}
                                 {% if block.type == 'benefit' %}
                                     <li {{ block.shopify_attributes }}>
-                                        {% if block.settings.image != blank %}
-                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                        {% if block.settings.icon != blank %}
+                                            <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
                                         {% endif %}
                                         {% if block.settings.text != blank %}
                                             <span>{{ block.settings.text }}</span>
@@ -401,9 +401,23 @@
             "name": "t:common.benefit",
             "settings": [
                 {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "t:common.image"
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "save-money",
+                            "label": "t:sections.n_hero-section.blocks.benefit.settings.save-money"
+                        },
+                        {
+                            "value": "mi-quick",
+                            "label": "t:sections.n_hero-section.blocks.benefit.settings.mi-quick"
+                        },
+                        {
+                            "value": "mi-painless",
+                            "label": "t:sections.n_hero-section.blocks.benefit.settings.mi-painless"
+                        }
+                    ]
                 },
                 {
                     "type": "text",
