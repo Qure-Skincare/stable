@@ -22,20 +22,19 @@
       "block_order": [
         "badge_summer"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
         "modifier": "summer",
         "rating": "",
         "rating_text": "",
-        "heading": "<h1>Glow With Confidence This&nbsp;Summer</h1>",
-        "text": "<p>Buy LED Mask, Get Neck &amp; Décolletage LED <strong>FREE</strong></p>",
+        "heading": "<h1>Glow With Confidence This Summer</h1>",
+        "text": "<p>Buy LED Mask, Get Neck & Décolletage LED <strong>FREE</strong></p>",
         "sub_text": "",
         "image": "shopify://shop_images/summer.webp",
         "image_mobile": "shopify://shop_images/summer-mob.webp",
         "button_label": "Buy Now & Save $299",
-        "button_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear"
+        "button_url": "https://qureskincare.com/pages/led-mask-offer-2"
       }
     },
     "n_across_image_banner_qure_birthday": {
@@ -196,6 +195,7 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
