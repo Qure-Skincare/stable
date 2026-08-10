@@ -153,8 +153,22 @@
                                 {% if subscription_is_on == true and block.settings.gift != blank %}
                                     <div class="c-supply-selector__gift">
                                         <div class="gift-notice">
-                                            <figure>{{ 'purchase-form.settings.gift_image_html' | t }} <i class="e-icon e-icon-gift"></i></figure>
-                                            <p><strong>{{ 'purchase-form.settings.free_gift' | t }}</strong> {{ 'purchase-form.settings.gift' | t }}</p>
+                                            <figure>
+                                                {% if block.settings.gift_image != blank %}
+                                                    <img loading="lazy" src="{{ block.settings.gift_image | img_url: '250x' }}" alt="{{ block.settings.gift_text_image.alt | escape }}" />
+                                                {% else %}
+                                                    {{ 'purchase-form.settings.gift_image_html' | t }}
+                                                {% endif %}
+                                                <i class="e-icon e-icon-gift"></i>
+                                            </figure>
+                                            <p>
+                                                <strong>{{ 'purchase-form.settings.free_gift' | t }}</strong>
+                                                {% if block.settings.gift_text != blank %}
+                                                    {{ block.settings.gift_text }}
+                                                {% else %}
+                                                    {{ 'purchase-form.settings.gift' | t }}
+                                                {% endif %}
+                                            </p>
                                             <div class="e-pill-save">{{ all_products[block.settings.gift].price | money_without_trailing_zeros }} <strong>{{ 'purchase-form.settings.free' | t }}</strong></div>
                                         </div>
                                     </div>

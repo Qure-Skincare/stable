@@ -39,7 +39,7 @@
             "product2": "headbands-wristbands",
             "image_product2": "shopify://shop_images/Headband_and_Wristband.jpg",
             "text": "<p>Free <strong>Gift Set </strong>with 120-Day Subscription</p>",
-            "discount_code": "CleanserGift"
+            "discount_code": ""
           }
         },
         "section_A0": {
@@ -200,8 +200,10 @@
             "product": "cleanser-4-month-bundle",
             "product_variant_id": 48762730152175,
             "product_selling_plan": 8853324015,
-            "gift": "",
-            "discount_code": "",
+            "gift": "headbands-wristbands",
+            "gift_image": "shopify://shop_images/gift_headband_and_wristband.webp",
+            "gift_text": "Headbands & Wristbands",
+            "discount_code": "CleanserGift",
             "popular": false,
             "best": true,
             "free_shipping": false,
