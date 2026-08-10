@@ -39,7 +39,7 @@
             "product2": "headbands-wristbands",
             "image_product2": "shopify://shop_images/Headband_and_Wristband.jpg",
             "text": "<p>Free <strong>Gift Set </strong>with 120-Day Subscription</p>",
-            "discount_code": ""
+            "discount_code": "CleanserGift"
           }
         },
         "section_A0": {
@@ -114,6 +114,7 @@
             "discount_code": "CleanserGift",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "4 Months Supply",
             "subheading": "2 bottles",
@@ -139,6 +140,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "2 Months Supply",
             "subheading": "1 bottle",
@@ -165,6 +167,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": true,
             "heading": "6 Month Supply",
             "subheading": "3 bottles",
@@ -201,6 +204,7 @@
             "discount_code": "CleanserGift",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "120 Days Supply",
             "subheading": "(2 bottles)",
@@ -226,6 +230,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(1 bottle)",
@@ -252,6 +257,7 @@
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "",
             "subheading": "",
