@@ -37,87 +37,6 @@
         "button_url": "https://qureskincare.com/pages/led-mask-offer-2"
       }
     },
-    "n_across_image_banner_qure_birthday": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "disclaimer_qb": {
-          "type": "disclaimer",
-          "settings": {
-            "text": "*Offer applies to selected items only."
-          }
-        },
-        "video_qb": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/qure-birthday-animation.webm"
-          }
-        }
-      },
-      "block_order": [
-        "disclaimer_qb",
-        "video_qb"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "qure-birthday",
-        "rating": "",
-        "rating_text": "",
-        "heading": "<h1>26% OFF Sitewide</h1>",
-        "text": "<p>Birthday Sale</p>",
-        "sub_text": "",
-        "image": "shopify://shop_images/qure-birthday.webp",
-        "image_mobile": "shopify://shop_images/qure-birthday-mob.webp",
-        "button_label": "Shop Now and Save",
-        "button_url": "https://qureskincare.com/collections/best-sellers"
-      }
-    },
-    "n_across_image_banner_Jul4": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "stars_image_jul4": {
-          "type": "stars_image",
-          "settings": {
-            "image": "shopify://shop_images/fourth-of-july-stars.svg"
-          }
-        },
-        "badge_jul4": {
-          "type": "badge",
-          "settings": {
-            "badge_text": "4th of july SALE",
-            "image": "shopify://shop_images/fourth-of-july-flag.svg"
-          }
-        },
-        "treatment_result_badge_jul4": {
-          "type": "treatment_result_badge",
-          "settings": {
-            "image": "shopify://shop_images/fourth-of-july-percentage.svg",
-            "text": "<p>of testers saw visible results. <strong>After just one treatment!</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "stars_image_jul4",
-        "badge_jul4",
-        "treatment_result_badge_jul4"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "fourth-of-july",
-        "rating": "",
-        "rating_text": "",
-        "heading": "<h1>Give Your Skin the Celebration It Deserves</h1>",
-        "text": "<p>Up to 70% Off Micro-Infusion System</p>",
-        "sub_text": "",
-        "image": "shopify://shop_images/fourth-of-july.webp",
-        "image_mobile": "shopify://shop_images/fourth-of-july-mob.webp",
-        "button_label": "Buy Now & Save",
-        "button_url": "https://qureskincare.com/pages/microinfusion"
-      }
-    },
     "n_index-quick-links": {
       "type": "n_index-quick-links",
       "blocks": {
@@ -939,8 +858,6 @@
   },
   "order": [
     "n_across_image_banner_summer",
-    "n_across_image_banner_qure_birthday",
-    "n_across_image_banner_Jul4",
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
