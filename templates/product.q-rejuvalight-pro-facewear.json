@@ -40,14 +40,13 @@
         },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
-          "disabled": true,
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_16.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/ndBox.webp",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
-            "discount_code": ""
+            "discount_code": "FREEN&DOFFER"
           }
         },
         "button_A9": {
