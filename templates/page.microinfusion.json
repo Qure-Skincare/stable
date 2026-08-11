@@ -1817,7 +1817,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8988655855,
+            "product_selling_plan": 8779399407,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
@@ -1828,7 +1828,7 @@
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 3 months",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
-            "product_discount_percent": 25,
+            "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
