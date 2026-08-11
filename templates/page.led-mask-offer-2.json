@@ -1126,6 +1126,7 @@
     },
     "sticky_cta_xhjAY4": {
       "type": "n-sticky-button",
+      "disabled": true,
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Q-Rejuvalight Pro + Neck & Décolletage LED System",
