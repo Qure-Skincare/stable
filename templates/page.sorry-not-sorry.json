@@ -59,7 +59,7 @@
         "modifier": "img-to-top",
         "heading": "<h2><strong>01. </strong>Sorry your old routine wasn't getting you anywhere.</h2>",
         "text": "<p>You gave each one the full eight weeks. You followed the layering order. </p><p>You switched the retinol. You upgraded the vitamin C. You spent more than you'd admit on a peptide cream that felt nice for an hour.</p><p>Your skin looked roughly the same. </p><p>The lines settled in anyway. Foundation started catching where it never used to.<br/>The products weren't bad. You weren't doing it wrong. </p><p><strong>They just weren't getting where they needed to go…</strong></p>",
-        "image": "shopify://shop_images/Qure_main-copy_7.webp",
+        "image": "shopify://shop_images/Screenshot_2026-08-11_at_15.48.26.png",
         "image_mobile": "shopify://shop_images/Qure_main-copy_7.webp"
       }
     },
@@ -148,6 +148,7 @@
         "items_rM84Wc",
         "items_PCMpir"
       ],
+      "disabled": true,
       "name": "t:sections.n_mi-faq-page-set-up-qa.name",
       "settings": {
         "use_own_file": false,
