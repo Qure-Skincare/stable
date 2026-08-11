@@ -1416,7 +1416,6 @@
         },
         "product_nyJ9n7": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -1449,9 +1448,9 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8988688623,
-            "gift": "silk-pillowcase",
+            "gift": "",
             "gift_text": "",
-            "discount_code": "FREEM&I3",
+            "discount_code": "",
             "free_shipping": false,
             "per_treatment": true,
             "preselected": false,
