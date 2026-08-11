@@ -38,16 +38,6 @@
           "type": "description",
           "settings": {}
         },
-        "button_A9": {
-          "type": "button",
-          "settings": {
-            "button_light_label": "",
-            "keep_offer_label": false,
-            "hide_payments": false,
-            "hide_bottom": false,
-            "hide_certified": false
-          }
-        },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
           "settings": {
@@ -57,6 +47,16 @@
             "image_product2": "shopify://shop_images/ndBox.webp",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
             "discount_code": ""
+          }
+        },
+        "button_A9": {
+          "type": "button",
+          "settings": {
+            "button_light_label": "",
+            "keep_offer_label": false,
+            "hide_payments": false,
+            "hide_bottom": false,
+            "hide_certified": false
           }
         },
         "upsell-popup_mMzPq2": {
@@ -139,8 +139,8 @@
         "black_friday_discount_A12",
         "price_A11",
         "description_A10",
-        "button_A9",
         "exclusive-offer_iaSzaD",
+        "button_A9",
         "upsell-popup_mMzPq2",
         "limited_offer_A8",
         "nextships_A7",
