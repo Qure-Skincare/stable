@@ -360,8 +360,6 @@
     },
     "n_hero_section_H9cW3n": {
       "type": "n_hero-section",
-      "blocks": {},
-      "block_order": [],
       "disabled": true,
       "settings": {
         "use_own_file": false,
