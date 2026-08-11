@@ -80,6 +80,7 @@
       "blocks": {
         "cta_box_HGazpE": {
           "type": "cta_box",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/MI_1.5_6month_DS_W.webp",
             "badge_text": "Get 70% OFF THE 6 MONTHS SUPPLY",
