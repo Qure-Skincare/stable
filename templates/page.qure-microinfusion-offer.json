@@ -143,7 +143,9 @@
         "benefit_five_minute",
         "benefit_discomfort"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".hero-section {display: none;}"
+      ],
       "settings": {
         "use_own_file": false,
         "hidden": false,
@@ -230,7 +232,9 @@
         "benefit_five_minute",
         "benefit_discomfort"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".hero-section {display: none;}"
+      ],
       "settings": {
         "use_own_file": false,
         "hidden": false,
@@ -257,7 +261,9 @@
     },
     "n_hero_section_H9cW3n": {
       "type": "n_hero-section",
-      "disabled": true,
+      "custom_css": [
+        ".hero-section {display: none;}"
+      ],
       "settings": {
         "use_own_file": false,
         "hidden": false,
