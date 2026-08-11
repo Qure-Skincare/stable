@@ -1458,7 +1458,7 @@
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
             "image": "shopify://shop_images/MI_3_month_W.webp",
-            "product_discount_percent": 25,
+            "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
@@ -1650,7 +1650,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-3-month-bundle-for-wrinkles",
+        "delivery_switcher_product": "micro-infusion-6-month-bundle-for-wrinkles",
         "guarantee_period": "90",
         "available-stocks": false
       }
