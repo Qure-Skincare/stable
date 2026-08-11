@@ -40,6 +40,7 @@
         },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
+          "disabled": true,
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_53.png",
@@ -73,7 +74,6 @@
         },
         "limited_offer_A8": {
           "type": "limited-offer",
-          "disabled": true,
           "settings": {
             "sum": "$100",
             "code": "QURE100",
