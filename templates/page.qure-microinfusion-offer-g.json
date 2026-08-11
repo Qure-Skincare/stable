@@ -61,7 +61,11 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "none",
+        "show_logo": false,
+        "approved_position": "before_text",
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "rating": "",
+        "rating_text": "",
         "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
         "button_url": "#purchase-form",
@@ -70,7 +74,11 @@
         "alert": "",
         "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
         "marked_list": "",
-        "wistia_url": "8ymvdqzx92"
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "8ymvdqzx92",
+        "wistia_mode": "modal",
+        "video_button_label": "Watch Video"
       }
     },
     "n_hero_section_Kiu8T3": {
@@ -117,7 +125,11 @@
         "use_own_file": false,
         "hidden": true,
         "modifier": "none",
+        "show_logo": false,
+        "approved_position": "before_text",
         "text": "<h1>Fine lines & dark spots look smoother. No injections.</h1><p><strong>24K gold-plated microneedles.</strong> Qure's Micro-Infusion System delivers active serums deeper than traditional creams can reach.</p>",
+        "rating": "",
+        "rating_text": "",
         "image": "shopify://shop_images/micro-infusion-hero-b.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-b-mob.webp",
         "button_url": "#purchase-form",
@@ -126,7 +138,11 @@
         "alert": "<p><strong>Limited Time Offer:</strong> Less than one clinic visit.</p>",
         "sub_text": "",
         "marked_list": "",
-        "wistia_url": ""
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "",
+        "wistia_mode": "modal",
+        "video_button_label": "Watch Video"
       }
     },
     "n_hero_section_3uBXrT": {
@@ -172,7 +188,11 @@
         "use_own_file": false,
         "hidden": true,
         "modifier": "secondary",
+        "show_logo": false,
+        "approved_position": "before_text",
         "text": "<h1>Fine lines & dark spots look visibly reduced. No injections.</h1><p><strong>24K gold microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "rating": "",
+        "rating_text": "",
         "image": "shopify://shop_images/micro-infusion-hero-c.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-c-mob.webp",
         "button_url": "#purchase-form",
@@ -181,7 +201,11 @@
         "alert": "<p><strong>Limited Time Offer:</strong> Save Up to 70%.</p>",
         "sub_text": "",
         "marked_list": "",
-        "wistia_url": ""
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "",
+        "wistia_mode": "modal",
+        "video_button_label": "Watch Video"
       }
     },
     "n_trusted_recommended_MlYLp4": {
@@ -1349,7 +1373,7 @@
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
-            "product_discount_percent": 21,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
