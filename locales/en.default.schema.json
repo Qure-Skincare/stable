@@ -205,6 +205,10 @@
         "bundle": "Bundle",
         "bundle-text": "Bundle text",
         "wistia-url": "Wistia URL",
+        "wistia-mode": "Wistia mode",
+        "video-button-label": "Video button label",
+        "modal": "Modal",
+        "popover-button": "Popover button",
         "wistia-video": "Wistia video",
         "youtube-url": "YouTube URL",
         "numbered-list": "Numbered list",
@@ -259,7 +263,12 @@
         "slides-per-view": "Slides per view",
         "image-slider": "Image slider",
         "marked-list": "Marked list",
+        "marked-list-position": "Marked list position",
         "approved-by": "Approved by",
+        "approved-position": "Approved by position",
+        "before-text": "Before text",
+        "after-text": "After text",
+        "show-logo": "Show logo",
         "must-read": "Must read",
         "wistia-slider": "Wistia slider",
         "blue": "Blue",
@@ -350,9 +359,12 @@
         "eye": "Eye",
         "share": "Share",
         "benefits": "Benefits",
+        "benefit": "Benefit",
         "faq": "FAQ",
         "alert": "Alert",
         "secondary": "Secondary",
+        "extended": "Extended",
+        "third": "Third",
         "best-seller": "Best seller",
         "trending": "Trending",
         "flex": "Flex",
@@ -569,7 +581,16 @@
             "name": "Guide content step by step"
         },
         "n_hero-section": {
-            "name": "Hero section"
+            "name": "Hero section",
+            "blocks": {
+                "benefit": {
+                    "settings": {
+                        "save-money": "Save money",
+                        "mi-quick": "Quick treatment",
+                        "mi-painless": "Minimal discomfort"
+                    }
+                }
+            }
         },
         "n_guide-content-image-block": {
             "name": "Guide content with image block",

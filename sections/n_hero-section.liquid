@@ -12,17 +12,30 @@
                 <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
             {% endif %}
             {% if section.settings.image_mobile != blank %}
-                <img loading="eager" fetchpriority="high" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                <img {% if section.settings.hidden %}loading="lazy"{% else %}loading="eager" fetchpriority="high"{% endif %} src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
             {% endif %}
         </picture>
         <article class="hero-section__content">
+            {% assign approved_by_count = 0 %}
+            {% assign has_note = false %}
+            {% assign has_benefits = false %}
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'approved-by' %}
+                        {% assign approved_by_count = approved_by_count | plus: 1 %}
+                    {% when 'note' %}
+                        {% assign has_note = true %}
+                    {% when 'benefit' %}
+                        {% assign has_benefits = true %}
+                {% endcase %}
+            {% endfor %}
+
             <div class="hero-section__content-header">
-                    {% assign approved_by_count = 0 %}
-                    {% for block in section.blocks %}
-                        {% if block.type == 'approved-by' %}
-                            {% assign approved_by_count = approved_by_count | plus: 1 %}
-                        {% endif %}
-                    {% endfor %}
+                {% if section.settings.show_logo %}
+                    <i class="e-icon e-icon-qure"></i>
+                {% endif %}
+
+                {% if approved_by_count > 0 and section.settings.approved_position == 'before_text' %}
                     <div class="c-approved-by{% if approved_by_count > 3 %} c-approved-by--secondary{% endif %}">
                         <ul>
                             {% for block in section.blocks %}
@@ -31,16 +44,57 @@
                                 {% endif %}
                             {% endfor %}
                         </ul>
-                        {% for block in section.blocks %}
-                            {% if block.type == 'approved-by' %}
-                                {% if block.settings.text != blank %}
-                                    {{ block.settings.text }}
-                                {% endif %}
+                        <p>
+                            {% if section.settings.rating != blank %}
+                                <span class="e-rating-stars" style="--rating: {{ section.settings.rating }}"></span>
+                                <strong>{{ section.settings.rating }}/5</strong>{% if section.settings.rating_text != blank %}<br />{% endif %}
                             {% endif %}
-                        {% endfor %}
+                            {% if section.settings.rating_text != blank %}
+                                {{ section.settings.rating_text }}
+                            {% else %}
+                                {% for block in section.blocks %}
+                                    {% if block.type == 'approved-by' and block.settings.text != blank %}
+                                        {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        </p>
                     </div>
+                {% endif %}
+
                 {% if section.settings.text != blank %}
                     {{ section.settings.text }}
+                {% endif %}
+
+                {% if approved_by_count > 0 and section.settings.approved_position == 'after_text' %}
+                    <div class="c-approved-by{% if approved_by_count > 3 %} c-approved-by--secondary{% endif %}">
+                        <ul>
+                            {% for block in section.blocks %}
+                                {% if block.type == 'approved-by' %}
+                                    <li><img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <p>
+                            {% if section.settings.rating != blank %}
+                                <span class="e-rating-stars" style="--rating: {{ section.settings.rating }}"></span>
+                                <strong>{{ section.settings.rating }}/5</strong>{% if section.settings.rating_text != blank %}<br />{% endif %}
+                            {% endif %}
+                            {% if section.settings.rating_text != blank %}
+                                {{ section.settings.rating_text }}
+                            {% else %}
+                                {% for block in section.blocks %}
+                                    {% if block.type == 'approved-by' and block.settings.text != blank %}
+                                        {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        </p>
+                    </div>
+                {% endif %}
+
+                {% if section.settings.marked_list != blank and section.settings.marked_list_position == 'header' %}
+                    {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
                 {% endif %}
             </div>
             {% if section.settings.button_url != blank and section.settings.button_label != blank %}
@@ -51,40 +105,60 @@
                     {% if section.settings.alert != blank %}
                         <div class="c-info-bar c-info-bar--alert c-info-bar--fill">{{ section.settings.alert | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     {% endif %}
+                    {% if section.settings.badge_text != blank %}
+                        <div class="e-pill-badge e-pill-badge--sm">{{ section.settings.badge_text }}</div>
+                    {% endif %}
                         <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+                    {% if section.settings.wistia_url != blank and section.settings.wistia_mode == 'popover_button' %}
+                        <div class="c-wistia c-wistia--custom">
+                            <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                <div class="c-wistia__custom">
+                                    <a class="btn btn--secondary" href="javascript:;">{{ section.settings.video_button_label }}</a>
+                                </div>
+                            </wistia-player>
+                        </div>
+                    {% endif %}
                     {% if section.settings.sub_text != blank %}
                         <div class="c-info-bar">{{ section.settings.sub_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     {% endif %}
                 </div>
             {% endif %}
-            {% assign has_note = false %}
-            {% for block in section.blocks %}
-                {% if block.type == 'note' %}
-                    {% assign has_note = true %}
-                {% endif %}
-            {% endfor %}
-            {% if has_note %}
+            {% if has_note or has_benefits or section.settings.video_image_cover != blank or section.settings.marked_list != blank and section.settings.marked_list_position == 'footer' %}
                 <div class="hero-section__content-footer">
+                    {% if has_benefits %}
+                        <ul>
+                            {% for block in section.blocks %}
+                                {% if block.type == 'benefit' %}
+                                    <li {{ block.shopify_attributes }}>
+                                        {% if block.settings.icon != blank %}
+                                            <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                        {% endif %}
+                                        {% if block.settings.text != blank %}
+                                            <span>{{ block.settings.text }}</span>
+                                        {% endif %}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                     {% for block in section.blocks %}
                         {% if block.type == 'note' %}
                             {% if block.settings.text != blank %}
-                                <div class="hero-section__content-footer">
-                                    <div class="c-note">
-                                        <i class="e-icon e-icon-stars"></i>
-                                        {{ block.settings.text }}
-                                    </div>
+                                <div class="c-note">
+                                    <i class="e-icon e-icon-stars"></i>
+                                    {{ block.settings.text }}
                                 </div>
                             {% endif %}
                         {% endif %}
                     {% endfor %}
-                    {% if section.settings.marked_list != blank %}
+                    {% if section.settings.marked_list != blank and section.settings.marked_list_position == 'footer' %}
                         {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
                     {% endif %}
-                    {% if section.settings.video_image_cover != blank %}
+                    {% if section.settings.video_image_cover != blank and section.settings.wistia_mode == 'modal' %}
                         <picture
                             data-label-text="Watch: How To Use"
                             data-bs-toggle="modal"
-                            data-bs-target="#shower2"
+                            data-bs-target="#hero-video-{{ section.id }}"
                         >
                             <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
                         </picture>
@@ -94,8 +168,8 @@
         </article>
     </div>
 </section>
-{% if section.settings.wistia_url != blank %}
-    <div class="modal fade filter-modal" id="shower2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="shower2Label" style="display: none;" aria-hidden="true">
+{% if section.settings.wistia_url != blank and section.settings.wistia_mode == 'modal' %}
+    <div class="modal fade filter-modal" id="hero-video-{{ section.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="hero-video-label-{{ section.id }}" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
             <div class="modal-content">
                 <div class="modal-header border-0">
@@ -150,6 +224,36 @@
                 {
                     "value": "secondary",
                     "label": "t:common.secondary"
+                },
+                {
+                    "value": "extended",
+                    "label": "t:common.extended"
+                },
+                {
+                    "value": "third",
+                    "label": "t:common.third"
+                }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "show_logo",
+            "label": "t:common.show-logo",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "approved_position",
+            "label": "t:common.approved-position",
+            "default": "before_text",
+            "options": [
+                {
+                    "value": "before_text",
+                    "label": "t:common.before-text"
+                },
+                {
+                    "value": "after_text",
+                    "label": "t:common.after-text"
                 }
             ]
         },
@@ -157,6 +261,16 @@
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "rating",
+            "label": "t:common.rating"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "rating_text",
+            "label": "t:common.rating-text"
         },
         {
             "type": "image_picker",
@@ -200,9 +314,52 @@
             "label": "t:common.marked-list"
         },
         {
+            "type": "select",
+            "id": "marked_list_position",
+            "label": "t:common.marked-list-position",
+            "default": "footer",
+            "options": [
+                {
+                    "value": "header",
+                    "label": "t:common.header"
+                },
+                {
+                    "value": "footer",
+                    "label": "t:common.footer"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        },
+        {
             "type": "text",
             "id": "wistia_url",
             "label": "t:common.wistia-url"
+        },
+        {
+            "type": "select",
+            "id": "wistia_mode",
+            "label": "t:common.wistia-mode",
+            "default": "modal",
+            "options": [
+                {
+                    "value": "modal",
+                    "label": "t:common.modal"
+                },
+                {
+                    "value": "popover_button",
+                    "label": "t:common.popover-button"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "id": "video_button_label",
+            "label": "t:common.video-button-label",
+            "default": "Watch Video"
         },
         {
             "type": "image_picker",
@@ -232,6 +389,36 @@
             "name": "t:common.note",
             "limit": 1,
             "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "benefit",
+            "name": "t:common.benefit",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "save-money",
+                            "label": "t:sections.n_hero-section.blocks.benefit.settings.save-money"
+                        },
+                        {
+                            "value": "mi-quick",
+                            "label": "t:sections.n_hero-section.blocks.benefit.settings.mi-quick"
+                        },
+                        {
+                            "value": "mi-painless",
+                            "label": "t:sections.n_hero-section.blocks.benefit.settings.mi-painless"
+                        }
+                    ]
+                },
                 {
                     "type": "text",
                     "id": "text",
