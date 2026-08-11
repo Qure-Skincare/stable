@@ -97,7 +97,11 @@ const updateSection = (section_id, targetElement) => {
                 const newDrawer = temp.querySelector('#' + targetElement);
                 if (!newDrawer) return;
 
-                morphdom(currentDrawer, newDrawer);
+                morphdom(currentDrawer, newDrawer, {
+                    getNodeKey(node) {
+                        return node.nodeType === Node.ELEMENT_NODE ? node.getAttribute('id') : undefined;
+                    }
+                });
                 return;
             })    
             .then(result => {

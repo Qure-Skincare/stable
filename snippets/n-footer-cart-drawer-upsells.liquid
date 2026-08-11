@@ -8,13 +8,7 @@
 <div class="flyout-cart__upsells">
     <p>{{ 'cart.drawer.upsell.header' | t }}</p>
     <div
-        class="c-swiper"
-        data-swiper='{
-            "slidesPerView": "auto",
-            "spaceBetween": 12,
-            "loop": false,
-            "direction": "vertical"
-        }'>
+        class="c-swiper">
         <div class="swiper-wrapper">
             {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product1_handle %}
             {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product2_handle %}
