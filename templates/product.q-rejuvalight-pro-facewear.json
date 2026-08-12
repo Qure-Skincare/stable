@@ -154,7 +154,7 @@
       "name": "t:sections.product-header.name",
       "settings": {
         "section_id": "hero-product",
-        "product": "",
+        "product": "q-rejuvalight-pro-facewear-3",
         "reverse": false,
         "secondary": false,
         "background": false,
