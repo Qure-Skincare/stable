@@ -47,7 +47,7 @@
     "cart_gift1_title": "",
     "cart_gift1_product": "",
     "cart_gift1_icon": "none",
-    "cart_gift1_price_limit": 250,
+    "cart_gift1_price_limit": 0,
     "cart_gift2_title": "Free Silk Pillowcase",
     "cart_gift2_product": "silk-pillowcase",
     "cart_gift2_icon": "pillow",
