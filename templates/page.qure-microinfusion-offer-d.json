@@ -1445,6 +1445,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
             "gift": "dermal-mist-travel-size",
+            "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "Mini Dermal Mist",
             "discount_code": "FREEM&IMIST",
             "free_shipping": false,
