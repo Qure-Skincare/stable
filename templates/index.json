@@ -37,6 +37,35 @@
         "button_url": "https://qureskincare.com/pages/led-mask-offer-2"
       }
     },
+    "n_across_image_banner_Kp7wRm": {
+      "type": "n_across-image-banner",
+      "disabled": true,
+      "blocks": {
+        "badge_Kp7wRm": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "SUMMER SALE LIMITED OFFER"
+          }
+        }
+      },
+      "block_order": [
+        "badge_Kp7wRm"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "summer",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>FREE Neck & Décolletage LED</h1>",
+        "text": "<p>with your purchase of the Q-Rejuvalight Pro LED Mask</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/summer_4e3c6edd-1f94-4e0a-a681-287e646579d8.webp",
+        "image_mobile": "shopify://shop_images/summer-mob_807b3fa4-e167-4e5f-823a-c1a1adfd81de.webp",
+        "button_label": "Buy Now & Save $299",
+        "button_url": "https://qureskincare.com/pages/led-mask-offer-2"
+      }
+    },
     "n_index-quick-links": {
       "type": "n_index-quick-links",
       "blocks": {
@@ -858,6 +887,7 @@
   },
   "order": [
     "n_across_image_banner_summer",
+    "n_across_image_banner_Kp7wRm",
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
