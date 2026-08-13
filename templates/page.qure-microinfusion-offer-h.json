@@ -119,10 +119,11 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "use_own_file": false,
-        "hidden": true,
+        "hidden": false,
         "modifier": "none",
         "show_logo": false,
         "approved_position": "before_text",
@@ -182,9 +183,10 @@
         "approved_by_3",
         "approved_by_4"
       ],
+      "disabled": true,
       "settings": {
         "use_own_file": false,
-        "hidden": true,
+        "hidden": false,
         "modifier": "secondary",
         "show_logo": false,
         "approved_position": "before_text",
