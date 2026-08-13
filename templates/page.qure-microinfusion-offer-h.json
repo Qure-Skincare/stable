@@ -733,9 +733,9 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "no-video",
+        "modifier": "none",
         "text": "<h2>How Qure Refreshes Your Skin in 3 Easy Steps</h2>",
-        "wistia_url": "",
+        "wistia_url": "6de5pg0r6e",
         "button_label": "buy now & SAVE UP TO 70%",
         "button_url": "#purchase-form"
       }
