@@ -703,8 +703,8 @@
         "list_UakLx3": {
           "type": "items",
           "settings": {
-            "text": "<h3>1.Stamp</h3><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\"><span style=\"text-decoration:underline\">Dermal Mist</span> </a>to refresh and prepare your skin further.</p>",
-            "image": "shopify://shop_images/micro-infusion-step-4.webp",
+            "text": "<h3>Cleanse</h3><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"https://qureskincare.com/products/dermal-mist\"><span style=\"text-decoration:underline\">Dermal Mist</span> </a>to refresh and prepare your skin further.</p>",
+            "image": "shopify://shop_images/mixed_mi_1.webp",
             "image_mobile": "shopify://shop_images/mi-1-mob_10d274d3-9488-48b7-bc9c-4f36e48e9ce1.webp"
           }
         },
