@@ -1233,15 +1233,8 @@
           "type": "accordion",
           "settings": {
             "image": "shopify://shop_images/4.webp_2.png",
-            "heading": "",
-            "text": ""
-          }
-        },
-        "dialog_QkywFV": {
-          "type": "dialog",
-          "settings": {
-            "button_label": "",
-            "text": ""
+            "heading": "xxxx",
+            "text": "<p>hjvdvsajhdvjhasdvjhvasd </p>"
           }
         },
         "accordion_cFyEUt": {
@@ -1264,7 +1257,6 @@
       "block_order": [
         "accordion_nAL4wf",
         "accordion_7ERrPJ",
-        "dialog_QkywFV",
         "accordion_cFyEUt",
         "accordion_ApMxCA"
       ],
