@@ -742,6 +742,42 @@
         "button_url": "#purchase-form"
       }
     },
+    "n_progress_metrics_3jYjYU": {
+      "type": "n_progress-metrics",
+      "blocks": {
+        "percent_value_V4PBTi": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 57,
+            "text": "reported firmer-looking skin"
+          }
+        },
+        "percent_value_yayCDm": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 57,
+            "text": "saw visible results within 24 hours"
+          }
+        },
+        "compare_image_NDaBBV": {
+          "type": "compare_image",
+          "settings": {
+            "image": "shopify://shop_images/455174bdd8a7ae860554fe8b51313578d1d28e01_1_1.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "percent_value_V4PBTi",
+        "percent_value_yayCDm",
+        "compare_image_NDaBBV"
+      ],
+      "name": "t:sections.n_progress-metrics.name",
+      "settings": {
+        "use_own_file": false,
+        "text": ""
+      }
+    },
     "n_comparison_table_YFRWQi": {
       "type": "n_comparison-table",
       "blocks": {
@@ -1722,6 +1758,7 @@
     "n_video_slider_Gxn23M",
     "n_video_slider_PLEPyO",
     "n_easy_steps_AyUHT4",
+    "n_progress_metrics_3jYjYU",
     "n_comparison_table_YFRWQi",
     "n_trusted_reviews_DUlFYg",
     "n_highlight_rFRFiz",
