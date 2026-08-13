@@ -1218,6 +1218,62 @@
         "button-url": "#purchase-form"
       }
     },
+    "n_accordion_tiles_kL9RBW": {
+      "type": "n_accordion-tiles",
+      "blocks": {
+        "accordion_nAL4wf": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/4.webp_1.png",
+            "heading": "",
+            "text": "<p>Soothes and balances while supporting the skin barrier.</p>"
+          }
+        },
+        "accordion_7ERrPJ": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/4.webp_2.png",
+            "heading": "",
+            "text": ""
+          }
+        },
+        "dialog_QkywFV": {
+          "type": "dialog",
+          "settings": {
+            "button_label": "",
+            "text": ""
+          }
+        },
+        "accordion_cFyEUt": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/4.webp_3.png",
+            "heading": "",
+            "text": ""
+          }
+        },
+        "accordion_ApMxCA": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/4.webp_4.png",
+            "heading": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_nAL4wf",
+        "accordion_7ERrPJ",
+        "dialog_QkywFV",
+        "accordion_cFyEUt",
+        "accordion_ApMxCA"
+      ],
+      "name": "t:sections.n_accordion-tiles.name",
+      "settings": {
+        "use_own_file": false,
+        "text": ""
+      }
+    },
     "purchase_form_PwCCh6": {
       "type": "n-purchase-form",
       "blocks": {
@@ -1772,6 +1828,7 @@
     "n_highlight_rFRFiz",
     "n_science_backed_6ehGih",
     "sticky_cta_d9dC8X",
+    "n_accordion_tiles_kL9RBW",
     "purchase_form_PwCCh6",
     "n_should_know_8jabz8",
     "n_faq_RiGOh9"
