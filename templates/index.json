@@ -22,6 +22,7 @@
       "block_order": [
         "badge_summer"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -39,7 +40,6 @@
     },
     "n_across_image_banner_Kp7wRm": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "blocks": {
         "badge_Kp7wRm": {
           "type": "badge",
