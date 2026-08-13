@@ -268,7 +268,7 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "third",
-        "show_logo": true,
+        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Dr. Shah’s recommended solution for wrinkles and dark spots.</h1>",
         "rating": "",
