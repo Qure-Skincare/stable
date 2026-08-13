@@ -72,7 +72,7 @@
         "button_label": "See My Options",
         "button_line": false,
         "alert": "",
-        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
+        "sub_text": "<p>90-day money-back guarantee · Free shipping over $100</p>",
         "marked_list": "",
         "marked_list_position": "footer",
         "badge_text": "",
@@ -877,112 +877,6 @@
         "button_url": "#purchase-form"
       }
     },
-    "n_comparison_UfAfRr": {
-      "type": "n_comparison",
-      "blocks": {
-        "left_heading": {
-          "type": "left_heading",
-          "settings": {
-            "heading": "<h4>Qure Micro-Infusion System</h4>",
-            "image": "shopify://shop_images/mist_img_3.webp"
-          }
-        },
-        "right_heading": {
-          "type": "right_heading",
-          "settings": {
-            "heading": "<h4>Other At-Home Needling Devices</h4>",
-            "image": "shopify://shop_images/mist_img_4.webp"
-          }
-        },
-        "text_between": {
-          "type": "text_between",
-          "settings": {
-            "text": "VS"
-          }
-        },
-        "left_column_1": {
-          "type": "left_column",
-          "settings": {
-            "text": "Stamping doesn’t over-damage skin"
-          }
-        },
-        "right_column_1": {
-          "type": "right_column",
-          "settings": {
-            "text": "Rolling can cause damage to skin"
-          }
-        },
-        "left_column_2": {
-          "type": "left_column",
-          "settings": {
-            "text": "Little to no downtime & quick recovery"
-          }
-        },
-        "right_column_2": {
-          "type": "right_column",
-          "settings": {
-            "text": "Slower recovery & longer healing time"
-          }
-        },
-        "left_column_3": {
-          "type": "left_column",
-          "settings": {
-            "text": "New needle heads provide sharp, straight needles for every treatment - designed for better efficacy"
-          }
-        },
-        "right_column_3": {
-          "type": "right_column",
-          "settings": {
-            "text": "Needles become blunt after several uses & may cause unnecessary irritation which can affect results"
-          }
-        },
-        "left_column_4": {
-          "type": "left_column",
-          "settings": {
-            "text": "Minimized risk of infection due to disposable heads"
-          }
-        },
-        "right_column_4": {
-          "type": "right_column",
-          "settings": {
-            "text": "Risk of infection & irritation if not disinfected well"
-          }
-        },
-        "left_column_5": {
-          "type": "left_column",
-          "settings": {
-            "text": "Applies serum onto the skin to enhance absorption and visible results"
-          }
-        },
-        "right_column_5": {
-          "type": "right_column",
-          "settings": {
-            "text": "Less effective absorption of serum as applied topically"
-          }
-        }
-      },
-      "block_order": [
-        "left_heading",
-        "right_heading",
-        "text_between",
-        "left_column_1",
-        "right_column_1",
-        "left_column_2",
-        "right_column_2",
-        "left_column_3",
-        "right_column_3",
-        "left_column_4",
-        "right_column_4",
-        "left_column_5",
-        "right_column_5"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_comparison.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>Typically a more hygienic option than re-usable at-home rollers when used as directed</h2><p>Unlike at-home needle roller devices, Micro-Infusion requires little to no downtime, is virtually painless, and minimizes risk of infection and irritation.</p>"
-      }
-    },
     "n_comparison_table_YFRWQi": {
       "type": "n_comparison-table",
       "blocks": {
@@ -1703,61 +1597,6 @@
         "button_url": "https://qureskincare.com/pages/microinfusion-safety-guide"
       }
     },
-    "n_why_using_cj3RFv": {
-      "type": "n_why-using",
-      "blocks": {
-        "slider_YTrqVV": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "save-money",
-            "text": "Saves time, money and hassle compared to in-clinic treatments"
-          }
-        },
-        "slider_3HLnzt": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "mi-quick",
-            "text": "Quick & easy 5-minute DIY facial from the convenience of home"
-          }
-        },
-        "slider_kHUw7M": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "mi-painless",
-            "text": "Virtually painless, little to no downtime"
-          }
-        },
-        "slider_XHHhXh": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "two-in-one",
-            "text": "2-in-1 system refreshes the  look of skin for a visible  glow."
-          }
-        },
-        "slider_mqbMLE": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "perfect-transforming",
-            "text": "Perfect for transforming dull-looking skin before events"
-          }
-        }
-      },
-      "block_order": [
-        "slider_YTrqVV",
-        "slider_3HLnzt",
-        "slider_kHUw7M",
-        "slider_XHHhXh",
-        "slider_mqbMLE"
-      ],
-      "name": "t:sections.n_why-using.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
-        "button_url": "#purchase-form"
-      }
-    },
     "n_faq_RiGOh9": {
       "type": "n_faq",
       "blocks": {
@@ -1878,7 +1717,6 @@
     "n_video_slider_Gxn23M",
     "n_video_slider_PLEPyO",
     "n_trusted_reviews_DUlFYg",
-    "n_comparison_UfAfRr",
     "n_comparison_table_YFRWQi",
     "n_easy_steps_AyUHT4",
     "n_highlight_rFRFiz",
@@ -1886,7 +1724,6 @@
     "sticky_cta_d9dC8X",
     "purchase_form_PwCCh6",
     "n_should_know_8jabz8",
-    "n_why_using_cj3RFv",
     "n_faq_RiGOh9"
   ]
 }
