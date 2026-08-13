@@ -312,6 +312,7 @@
     },
     "n_base_section_3uBXrT": {
       "type": "n_base-section",
+      "disabled": true,
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
@@ -368,6 +369,7 @@
         "content_XrJqFM",
         "content_cQLdrN"
       ],
+      "disabled": true,
       "name": "t:sections.n_achievement-goals.name",
       "settings": {
         "use_own_file": false,
@@ -687,11 +689,117 @@
         "slider_fy9Whb",
         "slider_eMVGVa"
       ],
+      "disabled": true,
       "name": "t:sections.n_video-slider.name",
       "settings": {
         "use_own_file": false,
         "modifier": "three_cards",
         "text": ""
+      }
+    },
+    "n_comparison_table_YFRWQi": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_1": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Results in",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_2": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Customized",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_3": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Skin Safe",
+            "color": "colorize"
+          }
+        },
+        "comparison_table_heading_4": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Cost",
+            "color": "none"
+          }
+        },
+        "comparison_table_1": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/micro-infusion-system.webp",
+            "heading": "<h5>Qure <br/>Micro-Infusion System</h5>",
+            "text_1": "As little as 1-2 days",
+            "select_1": "checkmark",
+            "text_2": "Tailored to your needs",
+            "select_2": "checkmark",
+            "text_3": "Minimal downtime & virtually painless",
+            "select_3": "checkmark",
+            "text_4": "$20 per treatment",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_2": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/clinic-treatment.webp",
+            "heading": "<h5>Micro-Infusion<br/>Clinic Treatment</h5>",
+            "text_1": "As little as 1-2 days",
+            "select_1": "checkmark",
+            "text_2": "Tailored to your needs",
+            "select_2": "checkmark",
+            "text_3": "Minimal downtime",
+            "select_3": "checkmark",
+            "text_4": "$300+ per treatment",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_3": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/home-treatment.webp",
+            "heading": "<h5>Derma Roller<br/>At-Home Treatment</h5>",
+            "text_1": "A few days",
+            "select_1": "cross",
+            "text_2": "Not customized",
+            "select_2": "cross",
+            "text_3": "Potential side effects",
+            "select_3": "cross",
+            "text_4": "< $10 per treatment",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "disclaimer_1": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Based on publicly available information. For general comparison only."
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_1",
+        "comparison_table_heading_2",
+        "comparison_table_heading_3",
+        "comparison_table_heading_4",
+        "comparison_table_1",
+        "comparison_table_2",
+        "comparison_table_3",
+        "disclaimer_1"
+      ],
+      "name": "t:sections.n_comparison-table.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
     "n_trusted_reviews_DUlFYg": {
@@ -871,115 +979,10 @@
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": false,
-        "background_color": "none",
+        "background_color": "light",
         "text": "<h2>Real stories, real results</h2>",
         "button_label": "buy now SAVE UP TO 70%",
         "button_url": "#purchase-form"
-      }
-    },
-    "n_comparison_table_YFRWQi": {
-      "type": "n_comparison-table",
-      "blocks": {
-        "comparison_table_heading_1": {
-          "type": "comparison_table_heading",
-          "settings": {
-            "heading": "Results in",
-            "color": "none"
-          }
-        },
-        "comparison_table_heading_2": {
-          "type": "comparison_table_heading",
-          "settings": {
-            "heading": "Customized",
-            "color": "none"
-          }
-        },
-        "comparison_table_heading_3": {
-          "type": "comparison_table_heading",
-          "settings": {
-            "heading": "Skin Safe",
-            "color": "colorize"
-          }
-        },
-        "comparison_table_heading_4": {
-          "type": "comparison_table_heading",
-          "settings": {
-            "heading": "Cost",
-            "color": "none"
-          }
-        },
-        "comparison_table_1": {
-          "type": "comparison_table",
-          "settings": {
-            "image": "shopify://shop_images/micro-infusion-system.webp",
-            "heading": "<h5>Qure <br/>Micro-Infusion System</h5>",
-            "text_1": "As little as 1-2 days",
-            "select_1": "checkmark",
-            "text_2": "Tailored to your needs",
-            "select_2": "checkmark",
-            "text_3": "Minimal downtime & virtually painless",
-            "select_3": "checkmark",
-            "text_4": "$20 per treatment",
-            "select_4": "checkmark",
-            "text_5": "",
-            "select_5": "checkmark"
-          }
-        },
-        "comparison_table_2": {
-          "type": "comparison_table",
-          "settings": {
-            "image": "shopify://shop_images/clinic-treatment.webp",
-            "heading": "<h5>Micro-Infusion<br/>Clinic Treatment</h5>",
-            "text_1": "As little as 1-2 days",
-            "select_1": "checkmark",
-            "text_2": "Tailored to your needs",
-            "select_2": "checkmark",
-            "text_3": "Minimal downtime",
-            "select_3": "checkmark",
-            "text_4": "$300+ per treatment",
-            "select_4": "checkmark",
-            "text_5": "",
-            "select_5": "checkmark"
-          }
-        },
-        "comparison_table_3": {
-          "type": "comparison_table",
-          "settings": {
-            "image": "shopify://shop_images/home-treatment.webp",
-            "heading": "<h5>Derma Roller<br/>At-Home Treatment</h5>",
-            "text_1": "A few days",
-            "select_1": "cross",
-            "text_2": "Not customized",
-            "select_2": "cross",
-            "text_3": "Potential side effects",
-            "select_3": "cross",
-            "text_4": "< $10 per treatment",
-            "select_4": "checkmark",
-            "text_5": "",
-            "select_5": "checkmark"
-          }
-        },
-        "disclaimer_1": {
-          "type": "disclaimer",
-          "settings": {
-            "text": "Based on publicly available information. For general comparison only."
-          }
-        }
-      },
-      "block_order": [
-        "comparison_table_heading_1",
-        "comparison_table_heading_2",
-        "comparison_table_heading_3",
-        "comparison_table_heading_4",
-        "comparison_table_1",
-        "comparison_table_2",
-        "comparison_table_3",
-        "disclaimer_1"
-      ],
-      "name": "t:sections.n_comparison-table.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
     "n_easy_steps_AyUHT4": {
@@ -1716,8 +1719,8 @@
     "n_features_marquee_vMOx3w",
     "n_video_slider_Gxn23M",
     "n_video_slider_PLEPyO",
-    "n_trusted_reviews_DUlFYg",
     "n_comparison_table_YFRWQi",
+    "n_trusted_reviews_DUlFYg",
     "n_easy_steps_AyUHT4",
     "n_highlight_rFRFiz",
     "n_science_backed_6ehGih",
