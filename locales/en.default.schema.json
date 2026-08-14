@@ -778,7 +778,9 @@
                         "clinically-tested": "Clinically tested",
                         "cruelty-free": "Cruelty free",
                         "vegan": "Vegan",
-                        "gluten-free": "Gluten free"
+                        "gluten-free": "Gluten free",
+                        "reviewed": "Reviewed",
+                        "guarantee": "Guarantee"
                     }
                 }
             }
