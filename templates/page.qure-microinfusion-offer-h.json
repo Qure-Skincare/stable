@@ -705,7 +705,7 @@
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_1.webp",
-            "text": "<p>Proven to visually improve</p>"
+            "text": "<p>Proven to visually improve<br/><br/>[span]bla_bla[span]</p>"
           }
         },
         "compare_image_NDaBBV": {
