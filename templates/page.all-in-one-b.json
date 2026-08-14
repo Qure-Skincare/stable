@@ -377,12 +377,52 @@
         },
         "slider_vanessa_aio": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/vanessa.webp",
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Vanessa B.",
             "verified_customer": "Verified customer",
             "text": "<p><strong>My cystic acne is gone</strong></p><p>“So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_johanna_aio": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/johanna.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Johanna Y.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>All in for All-In-One Serum</strong></p><p>“I purchased this as part of my nightly routine as a few dark spots and some fine lines showing up. After using it consistently now for 6-8 weeks, I can honestly say the darker spots are lighter. My skin feels smooth and I see less fine lines! I will continue on this journey in hopes to see even more benefits like brighter, plump skin!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_jessica_aio": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jessica.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jessica R.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>Best experience</strong></p><p>“I had an excellent customer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100/100 , My skin had a small breakout, enlarged pores and was tired, with just one Micro-Infusion treatment it changed radically in 3 days, I will buy it again”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_tina_aio": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/tina.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Tina C.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>I look fresher</strong></p><p>“I am only 2 weeks in on using this product, my skin feels softer, hydrated and glowing. Friends have asked me what do I use on my face as I look fresher. I tell them Qure All in One Face Serum. I have give them your website to order their choice of products from your company 😁👍.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -414,19 +454,6 @@
             "product_title": ""
           }
         },
-        "slider_tina_aio": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/tina.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Tina C.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>I look fresher</strong></p><p>“I am only 2 weeks in on using this product, my skin feels softer, hydrated and glowing. Friends have asked me what do I use on my face as I look fresher. I tell them Qure All in One Face Serum. I have give them your website to order their choice of products from your company 😁👍.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_bethany_aio": {
           "type": "slider",
           "settings": {
@@ -448,19 +475,6 @@
             "username": "Lena A.",
             "verified_customer": "Verified customer",
             "text": "<p><strong>My skin feels tight</strong></p><p>“I tried this serum after trying all the others. I have found the fountain of youth! It started minimizing fine lines from the first use. My skin feels tight, but, not too tight. My face is softer than it has been in 20 years. I will not be using any serums on my face except QURE. I am thrilled with the results!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_jessica_aio": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/jessica.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jessica R.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Best experience</strong></p><p>“I had an excellent customer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100/100 , My skin had a small breakout, enlarged pores and was tired, with just one Micro-Infusion treatment it changed radically in 3 days, I will buy it again”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -491,33 +505,20 @@
             "product_text": "",
             "product_title": ""
           }
-        },
-        "slider_johanna_aio": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/johanna.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Johanna Y.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>All in for All-In-One Serum</strong></p><p>“I purchased this as part of my nightly routine as a few dark spots and some fine lines showing up. After using it consistently now for 6-8 weeks, I can honestly say the darker spots are lighter. My skin feels smooth and I see less fine lines! I will continue on this journey in hopes to see even more benefits like brighter, plump skin!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
         }
       },
       "block_order": [
         "slider_ana_aio",
         "slider_vanessa_aio",
+        "slider_johanna_aio",
+        "slider_jessica_aio",
+        "slider_tina_aio",
         "slider_cheryl_aio",
         "slider_dona_aio",
-        "slider_tina_aio",
         "slider_bethany_aio",
         "slider_lena_aio",
-        "slider_jessica_aio",
         "slider_dorothy_aio",
-        "slider_white_aio",
-        "slider_johanna_aio"
+        "slider_white_aio"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
