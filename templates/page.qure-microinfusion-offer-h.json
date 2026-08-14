@@ -1233,7 +1233,7 @@
           "type": "accordion",
           "settings": {
             "image": "shopify://shop_images/4.webp_2.png",
-            "heading": "xxxx",
+            "heading": "",
             "text": ""
           }
         },
@@ -1262,7 +1262,7 @@
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "text": ""
       }
     },
