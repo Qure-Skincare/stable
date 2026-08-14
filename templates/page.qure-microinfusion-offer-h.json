@@ -749,7 +749,7 @@
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_2.webp",
-            "text": "<p>xxxxx </p>"
+            "text": "<p>Proven to visually improve <br/><br/>[span]<strong>Fine Lines & Wrinkles</strong>[/span]</p>"
           }
         },
         "compare_image_6wWgNc": {
@@ -1686,36 +1686,6 @@
         "available-stocks": false
       }
     },
-    "1786695511810539eb": {
-      "type": "apps",
-      "blocks": {
-        "stamped_reviews_full_page_cftLVG": {
-          "type": "shopify://apps/stamped-reviews/blocks/full-page/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "product_image": true,
-            "take": 10,
-            "label_substitute": "",
-            "color_star": "",
-            "color_verified": "",
-            "color_text": "",
-            "color_link": "",
-            "review_ids": "",
-            "product_ids": "8963568664815",
-            "category": "",
-            "product_brand": "",
-            "tags": "",
-            "min_rating": "none",
-            "fill_empty": false,
-            "random": false,
-            "with_photos": false
-          }
-        }
-      },
-      "block_order": [
-        "stamped_reviews_full_page_cftLVG"
-      ],
-      "settings": {}
-    },
     "n_faq_RiGOh9": {
       "type": "n_faq",
       "blocks": {
@@ -1844,7 +1814,6 @@
     "sticky_cta_d9dC8X",
     "n_accordion_tiles_kL9RBW",
     "purchase_form_PwCCh6",
-    "1786695511810539eb",
     "n_faq_RiGOh9"
   ]
 }
