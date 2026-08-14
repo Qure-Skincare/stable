@@ -521,50 +521,6 @@
         "wistia_url": ""
       }
     },
-    "n_features_marquee_vMOx3w": {
-      "type": "n_features-marquee",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over $100"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "reviewed",
-            "text": "Dermatologist Reviewed"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "pay-later",
-            "text": "Buy Now, Pay Later Options Available"
-          }
-        },
-        "image_with_text_4": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "proven",
-            "text": "Proven Results, Backed By Science"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3",
-        "image_with_text_4"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_features-marquee.name",
-      "settings": {
-        "use_own_file": false
-      }
-    },
     "n_video_slider_Gxn23M": {
       "type": "n_video-slider",
       "blocks": {
@@ -1694,6 +1650,49 @@
         "available-stocks": false
       }
     },
+    "n_features_marquee_vMOx3w": {
+      "type": "n_features-marquee",
+      "blocks": {
+        "image_with_text_1": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "shipping-order",
+            "text": "Free Shipping in US <br>On Orders Over $100"
+          }
+        },
+        "image_with_text_2": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "reviewed",
+            "text": "Dermatologist Reviewed"
+          }
+        },
+        "image_with_text_3": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later Options Available"
+          }
+        },
+        "image_with_text_4": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "proven",
+            "text": "Proven Results, Backed By Science"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_1",
+        "image_with_text_2",
+        "image_with_text_3",
+        "image_with_text_4"
+      ],
+      "name": "t:sections.n_features-marquee.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
     "n_faq_RiGOh9": {
       "type": "n_faq",
       "blocks": {
@@ -1810,7 +1809,6 @@
     "n_base_section_phJT4F",
     "n_highlight_egmbcj",
     "n_base_section_xzUU6n",
-    "n_features_marquee_vMOx3w",
     "n_video_slider_Gxn23M",
     "n_video_slider_PLEPyO",
     "n_easy_steps_AyUHT4",
@@ -1822,6 +1820,7 @@
     "sticky_cta_d9dC8X",
     "n_accordion_tiles_kL9RBW",
     "purchase_form_PwCCh6",
+    "n_features_marquee_vMOx3w",
     "n_faq_RiGOh9"
   ]
 }
