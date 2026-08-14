@@ -1229,44 +1229,52 @@
     "n_accordion_tiles_kL9RBW": {
       "type": "n_accordion-tiles",
       "blocks": {
-        "accordion_nAL4wf": {
+        "accordion_GiYDNC": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/4.webp_1.png",
-            "heading": "",
+            "image": "shopify://shop_images/hydration.webp",
+            "heading": "Thermal Spring Water",
             "text": "<p>Soothes and balances while supporting the skin barrier.</p>"
           }
         },
-        "accordion_7ERrPJ": {
+        "accordion_39L4h7": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/4.webp_2.png",
-            "heading": "",
-            "text": ""
+            "image": "shopify://shop_images/peptide.webp",
+            "heading": "SH-Oligopeptide-1",
+            "text": "<p>A science-backed cosmetic peptide included to support smoother and healthier-looking skin.</p>"
           }
         },
-        "accordion_cFyEUt": {
+        "accordion_Mi3wym": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/4.webp_3.png",
-            "heading": "",
-            "text": ""
+            "image": "shopify://shop_images/even-tone.webp",
+            "heading": "Niacinamide",
+            "text": "<p>Helps improve the appearance of dull-looking skin while supporting a more even-looking complexion.</p>"
           }
         },
-        "accordion_ApMxCA": {
+        "accordion_PUpAid": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/4.webp_4.png",
-            "heading": "",
-            "text": ""
+            "image": "shopify://shop_images/brightening.webp",
+            "heading": "Tranexamic Acid",
+            "text": "<p>Helps improve the appearance of uneven-looking skin tone and supports a brighter-looking complexion.</p>"
+          }
+        },
+        "dialog_ffLzWC": {
+          "type": "dialog",
+          "settings": {
+            "button_label": "View full ingredient list",
+            "text": "<p><strong>Micro-Infusion Brightening Serum Ingredients:<br/></strong><br/>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/><strong>Micro-Infusion Rejuvenating Serum Ingredients:<br/><br/></strong>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p>"
           }
         }
       },
       "block_order": [
-        "accordion_nAL4wf",
-        "accordion_7ERrPJ",
-        "accordion_cFyEUt",
-        "accordion_ApMxCA"
+        "accordion_GiYDNC",
+        "accordion_39L4h7",
+        "accordion_Mi3wym",
+        "accordion_PUpAid",
+        "dialog_ffLzWC"
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
