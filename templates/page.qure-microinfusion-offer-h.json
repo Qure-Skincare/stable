@@ -705,7 +705,7 @@
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_1.webp",
-            "text": "<p>Proven to visually improve<br/><br/>[span]bla_bla[/span]</p>"
+            "text": "<p>Proven to visually improve<br/><br/>[span]<strong>bla_bla</strong>[/span]</p>"
           }
         },
         "compare_image_NDaBBV": {
@@ -1450,7 +1450,7 @@
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
-            "gift": "",
+            "gift": "dermal-mist-travel-size",
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "Travel Dermal Mist",
             "discount_code": "FREEM&I3MIST",
