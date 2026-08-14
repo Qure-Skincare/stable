@@ -712,7 +712,7 @@
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_2.webp",
-            "text": "<p>Proven to visually improve</p><p><br/>[span]Large Pores & Skin Texture[/span]</p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Large Pores & Skin Texture[/span]</p>"
           }
         },
         "compare_image_RExnBm": {
