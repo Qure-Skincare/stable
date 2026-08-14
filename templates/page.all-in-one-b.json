@@ -38,6 +38,18 @@
           "settings": {
             "section_id": "purchase-form-landing"
           }
+        },
+        "results_kHzmkm": {
+          "type": "results",
+          "settings": {
+            "heading": "",
+            "text1": "Most anti-wrinkle serums rely on one active ingredient. This one combines five — Retinol, Bakuchiol, Niacinamide, Vitamin C, and Argireline® Peptides — in one fragrance-free, dermatologist-reviewed formula.",
+            "percent_value_1": 23,
+            "text2": "",
+            "percent_value_2": 5,
+            "text3": "",
+            "percent_value_3": 5
+          }
         }
       },
       "block_order": [
@@ -45,7 +57,8 @@
         "black_friday_discount_aio",
         "price_aio",
         "description_aio",
-        "section_aio"
+        "section_aio",
+        "results_kHzmkm"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
