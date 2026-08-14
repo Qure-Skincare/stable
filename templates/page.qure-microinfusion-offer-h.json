@@ -1053,17 +1053,6 @@
         "button_url": "#purchase-form"
       }
     },
-    "n_highlight_rFRFiz": {
-      "type": "n_highlight",
-      "disabled": true,
-      "name": "t:sections.n_highlight.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "dark",
-        "text": "INCLUDED IN THE SYSTEM:",
-        "text_mobile": ""
-      }
-    },
     "n_science_backed_6ehGih": {
       "type": "n_science-backed",
       "blocks": {
@@ -1663,7 +1652,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping in US <br>On Orders Over $100"
+            "text": "Free Shipping in US On Orders Over $100"
           }
         },
         "image_with_text_2": {
@@ -1875,7 +1864,6 @@
     "n_progress_metrics_3jYjYU",
     "n_comparison_table_YFRWQi",
     "n_trusted_reviews_DUlFYg",
-    "n_highlight_rFRFiz",
     "n_science_backed_6ehGih",
     "sticky_cta_d9dC8X",
     "n_accordion_tiles_kL9RBW",
