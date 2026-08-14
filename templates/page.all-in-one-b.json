@@ -840,6 +840,20 @@
     "n_faq_aio": {
       "type": "n_faq",
       "blocks": {
+        "accordion_eDetRT": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this serum strong enough for deeper wrinkles, or just fine lines? ",
+            "text": "<p>Yes - the formula pairs Retinol with Argireline® Peptides, which are commonly used to help support the look of firmer, smoother skin alongside a retinoid. For fine lines you'll typically see visible softening first; more established lines respond with consistent use over several weeks. It's formulated to help address the appearance of both, not just early-stage lines.</p>"
+          }
+        },
+        "accordion_KgHrnm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What ingredients in the serum target wrinkles specifically? ",
+            "text": "<p>Retinol helps reduce the appearance of fine lines and wrinkles, while Argireline® Peptides help visibly smooth the appearance of expression lines. Bakuchiol offers a gentler, retinol-like option for more reactive skin.</p>"
+          }
+        },
         "accordion_who_aio": {
           "type": "accordion",
           "settings": {
@@ -847,8 +861,16 @@
             "text": "<p>You should use the All-In-One Serum if:</p><ul><li>Your skin is showing signs of aging</li><li>Your skin looks dull and tired</li><li>You want to improve the appearance of uneven skin tone and texture</li><li>Your skin has discoloration or uneven tone</li></ul><p>All-In-One Serum helps improve the appearance of these skin concerns. It’s a lightweight serum that helps revive dull-looking skin for smoother-, more radiant-looking results. Its clinically studied ingredients help support brighter-looking skin, instantly and over time.</p>"
           }
         },
+        "accordion_AP8gpT": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does the serum help prevent new fine lines, or only treat existing ones?",
+            "text": "<p>This formula is designed to help address the appearance of existing fine lines and wrinkles with consistent use. Think of it as an ongoing part of your routine rather than a one-time fix — visible signs of aging are best supported by staying consistent over time.</p>"
+          }
+        },
         "accordion_results_aio": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "When will I start to see results?",
             "text": "<p>Most people see improvement in a few weeks, but this can vary. Remember to stick with it - consistency is key!</p>"
@@ -856,6 +878,7 @@
         },
         "accordion_when_aio": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "When should I use the All-In-One Serum?",
             "text": "<p>The All-In-One Serum should be used once daily, after cleansing and before moisturizer. It’s suitable for both morning and evening routines.</p><p>To maximize the effectiveness, apply after your Q-Rejuvalight Pro LED Mask treatment.</p>"
@@ -863,6 +886,7 @@
         },
         "accordion_ingredients_aio": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "What is the full ingredient list?",
             "text": "<p>Water (Aqua), Caprylic/Capric Triglyceride, Propanediol, Glyceryl Oleate Citrate, Maltodextrin, Sodium Acrylates Copolymer, Glyceryl Caprylate, Niacinamide, Polyacrylate-13, Sucrose Dilaurate, Limnanthes Alba (Meadowfoam) Seed Oil, Bakuchiol, Retinyl Palmitate, Glycine Soja (Soybean) Oil, Lactic Acid, Tocopheryl Acetate, Caprylyl Glycol, Lecithin, 1,2-Hexanediol, 3-O-Ethyl Ascorbic Acid, Polyisobutene, Glyceryl Behenate, Sodium Cocoyl Glutamate, Glyceryl Undecylenate, Ferulic Acid, Mandelic Acid, Terminalia Ferdinandiana (Kakadu Plum) Fruit Extract, Sodium Hyaluronate, Pisum Sativum (Pea) Extract, Polysorbate 20, Retinol, Sorbitan Isostearate, Boswellia Serrata Extract, Glycerin, Leuconostoc/Radish Root Ferment Filtrate, Tocopherol, Tropolone, Camellia Sinensis (Green Tea) Leaf Extract, Ganoderma Lucidum (Mushroom) Extract, Acetyl Hexapeptide-8, Artemisia Umbelliformis Flower Extract, Ginkgo Biloba Leaf Extract, Citric Acid, Potassium Sorbate, Sodium Benzoate, Arginine.</p>"
@@ -870,6 +894,7 @@
         },
         "accordion_skin_types_aio": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "What skin types is the All-In-One Serum best for?",
             "text": "<p>This formula is dermatologically tested and suitable for all skin types, including sensitive skin, thanks to its balanced blend of active and calming ingredients. It is hypoallergenic and non-irritating.</p><p>It’s especially helpful if you’re targeting the appearance of fine lines, dullness, uneven skin tone, texture, or dryness.</p>"
@@ -877,6 +902,7 @@
         },
         "accordion_led_aio": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use this with the Q-Rejuvalight Pro LED Face Mask?",
             "text": "<p>Yes, this serum pairs perfectly with the Q-Rejuvalight Pro. For best results, use the mask on clean skin first, then follow with the All-In-One Serum to maximize absorption and benefits.</p>"
@@ -884,6 +910,7 @@
         },
         "accordion_refill_aio": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How does the refill system work?",
             "text": "<p>The refill system is designed so you keep the outer bottle and pump, and only replace the inner serum refill. To refill, detach the outer case from the base, remove the empty refill, slide in the new refill, then place the case back on and twist the base to open and unlock the nozzle. This reduces waste while keeping the same packaging experience.</p>"
@@ -891,7 +918,10 @@
         }
       },
       "block_order": [
+        "accordion_eDetRT",
+        "accordion_KgHrnm",
         "accordion_who_aio",
+        "accordion_AP8gpT",
         "accordion_results_aio",
         "accordion_when_aio",
         "accordion_ingredients_aio",
