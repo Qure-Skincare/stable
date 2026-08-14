@@ -745,18 +745,18 @@
     "n_progress_metrics_3jYjYU": {
       "type": "n_progress-metrics",
       "blocks": {
+        "compare_image_6wWgNc": {
+          "type": "compare_image",
+          "settings": {
+            "image": "shopify://shop_images/no_hype_1.webp",
+            "text": "<p>Proven to visually improve</p>"
+          }
+        },
         "compare_image_NDaBBV": {
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_2.webp",
-            "text": "<p>Proven to visually improve <br/><br/><strong>Fine Lines & Wrinkles</strong></p>"
-          }
-        },
-        "compare_image_6wWgNc": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_2.webp",
-            "text": ""
+            "text": "<p>Proven to visually improve <br/></p>"
           }
         },
         "percent_value_V4PBTi": {
@@ -788,8 +788,8 @@
         }
       },
       "block_order": [
-        "compare_image_NDaBBV",
         "compare_image_6wWgNc",
+        "compare_image_NDaBBV",
         "percent_value_V4PBTi",
         "percent_value_yayCDm",
         "percent_value_mPy3we",
