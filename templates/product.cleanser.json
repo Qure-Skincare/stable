@@ -315,7 +315,7 @@
         "rating": "",
         "rating_text": "",
         "heading": "<h2>A cleanser that restores what others remove</h2>",
-        "text": "<p>Most cleansers leave skin feeling tight.</p><p>That feeling isn’t clean - it’s moisture loss.</p><p>Many cleansers rely on strong surfactants to create a foamy, squeaky clean feel, often at the expense of your skin barrier.</p><p>Our cleanser is different. Instead of relying on water alone, the formula is powered by 50% glycerin, a moisture loving ingredient that helps skin hold onto hydration while you cleanse.</p>",
+        "text": "<p>Most cleansers leave skin feeling tight.  That feeling isn’t clean — it’s moisture loss.<br/><br/>Many cleansers rely on strong surfactants to create a foamy, squeaky-clean feel, often at the expense of your skin barrier. <br/><br/>Most cleansers strip. Ours restores — 50% glycerin, a formulation choice, not an afterthought.</p>",
         "sub_text": "",
         "image": "shopify://shop_images/cleanser-bg-image-1.webp",
         "image_mobile": "shopify://shop_images/cleanser-bg-image-1-mob.webp",
@@ -432,7 +432,7 @@
         "modifier_2": "none",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>Clinically tested, barrier approved</h2>",
+        "heading": "<h2>Clinically tested, barrier approved</h2><p><br/>Powered by our <strong>50% glycerin</strong> formula.</p>",
         "text": "",
         "image": "shopify://shop_images/cleanser-text-image-1.webp",
         "button_label": "",
