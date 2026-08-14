@@ -12,5 +12,41 @@
     "market": "us"
   },
   "parent": "page.all-in-one-b.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_otp_6m_aio": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_otp_4m_aio": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_otp_2m_aio": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_sub_6m_aio": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_sub_4m_aio": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_sub_2m_aio": {
+          "settings": {
+            "soldout": false
+          }
+        }
+      }
+    }
+  }
 }
