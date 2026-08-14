@@ -705,7 +705,7 @@
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_1.webp",
-            "text": "<p>Proven to visually improve<br/><br/>[span]<strong>bla_bla</strong>[/span]</p>"
+            "text": "<p>Proven to visually improve</p><p>[span]<strong>bla_bla</strong>[/span]</p>"
           }
         },
         "compare_image_NDaBBV": {
@@ -1709,7 +1709,7 @@
             "take": 6,
             "label_substitute": "",
             "color_star": "#000000",
-            "color_verified": "#C7E5DB",
+            "color_verified": "#c7e5db",
             "color_text": "",
             "color_link": "",
             "review_ids": "",
