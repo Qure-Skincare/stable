@@ -779,6 +779,12 @@
             "percent_value": 70,
             "text": "reported improved tone & texture"
           }
+        },
+        "disclaimer_VLcwT4": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Based on results after 6 treatments in a user study of 30 participants aged 25–65. Individual results may vary."
+          }
         }
       },
       "block_order": [
@@ -786,7 +792,8 @@
         "compare_image_6wWgNc",
         "percent_value_V4PBTi",
         "percent_value_yayCDm",
-        "percent_value_mPy3we"
+        "percent_value_mPy3we",
+        "disclaimer_VLcwT4"
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
