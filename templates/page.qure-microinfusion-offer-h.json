@@ -1262,7 +1262,7 @@
       ],
       "name": "t:sections.n_accordion-tiles.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "text": ""
       }
     },
