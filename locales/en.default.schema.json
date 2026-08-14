@@ -648,7 +648,11 @@
                         "shipping-order": "Shipping order",
                         "reviewed": "Reviewed",
                         "pay-later": "Pay later",
-                        "proven": "Proven"
+                        "proven": "Proven",
+                        "clinically-tested": "Clinically tested",
+                        "cruelty-free": "Cruelty free",
+                        "vegan": "Vegan",
+                        "gluten-free": "Gluten free"
                     }
                 }
             }
