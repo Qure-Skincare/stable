@@ -1772,6 +1772,27 @@
             "heading": "What is the 90-day money-back guarantee?",
             "text": "<p>We're confident you'll love your results. If after 90 days of consistent use you don't notice any improvement in your skin — firmer, brighter, or more youthful-looking — simply contact us and we'll refund your money in full. To qualify, you'll need to submit before-and-after photos taken after each 2-week treatment within the 90-day period.</p>"
           }
+        },
+        "accordion_FtanAy": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it safe for all skin types, including darker skin tones?",
+            "text": "<p>Yes. The Micro-Infusion System underwent an independent clinical safety evaluation conducted by a Board-Certified Dermatologist, with 31 subjects spanning all Fitzpatrick skin types (I–VI) — from the lightest to the deepest skin tones. No adverse reactions were reported or observed, and the products were deemed safe for their intended use. Qure also notes the treatment is particularly well-suited for melanin-rich skin, and one of the brand's dermatologist partners specifically highlights this benefit.</p>"
+          }
+        },
+        "accordion_bBmzYn": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use retinol or other actives after a treatment?",
+            "text": "<p>Not right away. Qure recommends avoiding retinoids, acids (AHAs/BHAs), vitamin C, and other exfoliating actives for at least 24 hours after treatment, since skin is more absorbent and sensitive immediately post-treatment. For the following 2–3 days, gradually reintroduce your normal routine, and if you use actives like retinol regularly, wait 48–72 hours before applying them again. Stick to gentle, hydrating products (simple cleansers and moisturizers) during that initial window, and always apply SPF 50+ the next morning.</p>"
+          }
+        },
+        "accordion_yWbem9": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it if I've had cosmetic injections?",
+            "text": "<p> You'll need to wait. Qure advises against using Micro-Infusion if you've recently had laser treatments, filler, or a chemical peel — the recommended waiting period is at least 2 weeks after any of these procedures before treating that area. If you're unsure or have ongoing cosmetic treatments, it's best to check with your dermatologist or injector first.</p>"
+          }
         }
       },
       "block_order": [
@@ -1785,7 +1806,10 @@
         "accordion_EdVfBj",
         "accordion_mkn8PY",
         "accordion_GarByL",
-        "accordion_7hBeMf"
+        "accordion_7hBeMf",
+        "accordion_FtanAy",
+        "accordion_bBmzYn",
+        "accordion_yWbem9"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
