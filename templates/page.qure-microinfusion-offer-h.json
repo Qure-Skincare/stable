@@ -762,15 +762,22 @@
         "percent_value_V4PBTi": {
           "type": "percent_value",
           "settings": {
-            "percent_value": 57,
+            "percent_value": 70,
             "text": "reported firmer-looking skin"
           }
         },
         "percent_value_yayCDm": {
           "type": "percent_value",
           "settings": {
-            "percent_value": 57,
+            "percent_value": 93,
             "text": "saw visible results within 24 hours"
+          }
+        },
+        "percent_value_mPy3we": {
+          "type": "percent_value",
+          "settings": {
+            "percent_value": 70,
+            "text": "reported improved tone & texture"
           }
         }
       },
@@ -778,12 +785,13 @@
         "compare_image_NDaBBV",
         "compare_image_6wWgNc",
         "percent_value_V4PBTi",
-        "percent_value_yayCDm"
+        "percent_value_yayCDm",
+        "percent_value_mPy3we"
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>Clinically Evaluated for Dermatologic Safety</h2><p>In an independent clinical evaluation of dermatologic safety-in-use, the Micro-Infusion System was tested across 31 subjects spanning all Fitzpatrick skin types (I–VI) — from the lightest to the deepest skin tones. No adverse reactions were reported or observed throughout the entire evaluation period. <br/><br/>Evaluated by a Board-Certified Dermatologist, <br/>Independent Testing Clinic, NJ, 2026.</p>"
+        "text": "<h2>Loved by Customers. <br/>Backed by Results.</h2><p></p>"
       }
     },
     "n_comparison_table_YFRWQi": {
