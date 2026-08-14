@@ -1679,36 +1679,35 @@
         "available-stocks": false
       }
     },
-    "n_should_know_8jabz8": {
-      "type": "n_should-know",
+    "1786695511810539eb": {
+      "type": "apps",
       "blocks": {
-        "text_slider_how": {
-          "type": "text_slider",
+        "stamped_reviews_full_page_cftLVG": {
+          "type": "shopify://apps/stamped-reviews/blocks/full-page/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
-            "text": "<p><strong>How To Use</strong></p><ol><li><strong>Fill the device:</strong> Open the device and pour in one ampoule of serum.</li><li><strong>Prepare the device:</strong> Twist on the needle head and leave upside down for 1–2 minutes.</li><li><strong>Begin infusion:</strong> Stamp evenly across the face with 2–3 passes, then pat in any remaining serum.</li></ol>",
-            "note": "<p><strong>Tip:</strong> Apply remaining serum after your treatment and allow it to absorb overnight.</p>"
-          }
-        },
-        "text_slider_safe": {
-          "type": "text_slider",
-          "settings": {
-            "text": "<p><strong>Safety Guidelines</strong></p><p>Micro-Infusion is a simple treatment you can do at-home. No appointments and no downtime. It’s designed to be safe and easy to use, as long as your skin is clean and healthy. </p><p>Avoid using Micro-Infusion on active breakouts or broken skin, as it may spread bacteria. Always use a fresh, sterile needle head for each treatment, and apply SPF after use to protect your skin.</p><p>If you’re pregnant or have a medical condition, check with your doctor first.</p>",
-            "note": ""
+            "product_image": true,
+            "take": 10,
+            "label_substitute": "",
+            "color_star": "",
+            "color_verified": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "8963568664815",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
           }
         }
       },
       "block_order": [
-        "text_slider_how",
-        "text_slider_safe"
+        "stamped_reviews_full_page_cftLVG"
       ],
-      "disabled": true,
-      "name": "t:sections.n_should-know.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>What you should know for the best results</h2><p>The Qure Micro-Infusion System is designed with your safety in mind.</p><p>Unlike popular at-home derma rollers, our stamper device features single-use sterile heads that help minimize the risk of infection or unnecessary skin damage caused by blunt and multi-use needles.</p><p>Below are a few rules you should follow while using your Qure Micro-Infusion System:</p>",
-        "button_label": "See Detailed Treatment Guide",
-        "button_url": "https://qureskincare.com/pages/microinfusion-safety-guide"
-      }
+      "settings": {}
     },
     "n_faq_RiGOh9": {
       "type": "n_faq",
@@ -1838,7 +1837,7 @@
     "sticky_cta_d9dC8X",
     "n_accordion_tiles_kL9RBW",
     "purchase_form_PwCCh6",
-    "n_should_know_8jabz8",
+    "1786695511810539eb",
     "n_faq_RiGOh9"
   ]
 }
