@@ -759,6 +759,13 @@
             "text": "<p>Proven to visually improve <br/></p>"
           }
         },
+        "compare_image_RExnBm": {
+          "type": "compare_image",
+          "settings": {
+            "image": "shopify://shop_images/no_hype_4.webp",
+            "text": "<p>Proven to visually improve</p>"
+          }
+        },
         "percent_value_V4PBTi": {
           "type": "percent_value",
           "settings": {
@@ -790,6 +797,7 @@
       "block_order": [
         "compare_image_6wWgNc",
         "compare_image_NDaBBV",
+        "compare_image_RExnBm",
         "percent_value_V4PBTi",
         "percent_value_yayCDm",
         "percent_value_mPy3we",
