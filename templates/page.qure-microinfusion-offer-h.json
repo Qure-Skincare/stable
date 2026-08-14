@@ -251,9 +251,8 @@
       "blocks": {
         "image_with_text_KwJn3P": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
-            "icon": "save-money",
+            "icon": "reviewed",
             "text": "Dermatologist Reviewed"
           }
         },
@@ -287,9 +286,8 @@
         },
         "image_with_text_XMaVaP": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
-            "icon": "save-money",
+            "icon": "guarantee",
             "text": "90-Day Guarantee"
           }
         }
