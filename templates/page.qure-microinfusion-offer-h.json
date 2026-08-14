@@ -246,6 +246,69 @@
         "settings": "\"spaceBetween\": 80"
       }
     },
+    "n_why_using_VyD4K9": {
+      "type": "n_why-using",
+      "blocks": {
+        "image_with_text_KwJn3P": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "Dermatologist Reviewed"
+          }
+        },
+        "image_with_text_cFjpet": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "Clinically  Tested"
+          }
+        },
+        "image_with_text_MQxLfH": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "Cruelty Free"
+          }
+        },
+        "image_with_text_M8Bp38": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "Vegan"
+          }
+        },
+        "image_with_text_6wEHfg": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "Gluten Free "
+          }
+        },
+        "image_with_text_XMaVaP": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "save-money",
+            "text": "90-Day Guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_KwJn3P",
+        "image_with_text_cFjpet",
+        "image_with_text_MQxLfH",
+        "image_with_text_M8Bp38",
+        "image_with_text_6wEHfg",
+        "image_with_text_XMaVaP"
+      ],
+      "name": "t:sections.n_why-using.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h2>Certified. Tested. Trusted.</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "n_trusted_recommended_MlYLp4": {
       "type": "n_trusted-recommended",
       "disabled": true,
@@ -1851,6 +1914,7 @@
     "n_hero_section_Kiu8T3",
     "n_hero_section_3uBXrT",
     "n_press_reviews_lVZt5L",
+    "n_why_using_VyD4K9",
     "n_trusted_recommended_MlYLp4",
     "n_our_advisors_jX3gJz",
     "n_base_section_3uBXrT",
