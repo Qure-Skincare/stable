@@ -273,14 +273,14 @@
         "image_with_text_M8Bp38": {
           "type": "image_with_text",
           "settings": {
-            "icon": "save-money",
+            "icon": "vegan",
             "text": "Vegan"
           }
         },
         "image_with_text_6wEHfg": {
           "type": "image_with_text",
           "settings": {
-            "icon": "save-money",
+            "icon": "gluten-free",
             "text": "Gluten Free "
           }
         },
