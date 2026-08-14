@@ -719,7 +719,7 @@
           "type": "compare_image",
           "settings": {
             "image": "shopify://shop_images/no_hype_4.webp",
-            "text": "<p>Proven to visually improve</p>"
+            "text": "<p>Proven to visually improve</p><p>[span]Fine Lines & Wrinkles[/span]</p>"
           }
         },
         "percent_value_V4PBTi": {
