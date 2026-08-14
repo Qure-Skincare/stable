@@ -14,6 +14,7 @@
       "blocks": {
         "gallery_sticky_video_TMnKqm": {
           "type": "gallery-sticky-video",
+          "disabled": true,
           "settings": {
             "video_url": "https://embed-ssl.wistia.com/deliveries/319787889bdc19966794f6256c114998b2301798.bin?disposition=attachment&filename=Kristina+premiere+MIcro+inf+AFTER+6.2+BOZEEE+%281%29.mp4"
           }
