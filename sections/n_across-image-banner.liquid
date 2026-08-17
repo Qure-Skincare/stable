@@ -10,7 +10,7 @@
     assign banner_class = 'across-image-banner'
     if mod == 'hero_reverse'
         assign banner_class = 'across-image-banner across-image-banner--hero across-image-banner--reverse'
-    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer'
+    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer' or mod == 'labor-day'
         assign banner_class = banner_class | append: ' across-image-banner--holidays across-image-banner--' | append: mod
     elsif mod != 'none' and mod != blank
         assign banner_class = banner_class | append: ' across-image-banner--' | append: mod
@@ -41,6 +41,17 @@
         </picture>
         <div class="container">
             <article>
+
+                {% for block in section.blocks %}
+                    {% if block.type == 'double_tag' %}
+                        {% if block.settings.badge_text != blank or block.settings.text != blank %}
+                            <div class="e-double-tag e-double-tag--pill">
+                                <strong>{{ block.settings.badge_text }}</strong>
+                                {{ block.settings.text }}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
 
                 {% for block in section.blocks %}
                     {% if block.type == 'stars_image' %}
@@ -375,6 +386,10 @@
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.summer"
                 },
                 {
+                    "value": "labor-day",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.labor-day"
+                },
+                {
                     "value": "flex",
                     "label": "t:common.flex"
                 },
@@ -592,6 +607,23 @@
                 "type": "image_picker",
                 "id": "image",
                 "label": "t:common.image"
+            }
+        ]
+    },
+    {
+        "type": "double_tag",
+        "name": "t:sections.n_across-image-banner.blocks.double_tag.name",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text"
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "t:common.text"
             }
         ]
     },

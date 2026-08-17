@@ -448,6 +448,7 @@
                     "fourth-of-july": "Fourth of July",
                     "qure-birthday": "Qure birthday",
                     "summer": "Summer sale",
+                    "labor-day": "Labor day",
                     "doctorly": "Doctorly"
                 },
                 "badge-group": {
@@ -471,6 +472,9 @@
                 },
                 "stars_image": {
                     "name": "Stars image"
+                },
+                "double_tag": {
+                    "name": "Double tag"
                 },
                 "treatment_result_badge": {
                     "name": "Treatment result badge"
