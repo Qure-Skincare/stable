@@ -110,20 +110,20 @@
     "better_together_mso": {
       "type": "n_better-together",
       "blocks": {
-        "item_mask": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/better-together-1.webp",
-            "badge_text": "LED Mask",
-            "text": "<h6>Skin-Rejuvenating Mode</h6><p>Combines clinically-studied wavelengths to help address multiple skin concerns with just one device. 3-minute wireless daily treatment.</p><ul><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion</li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
-          }
-        },
         "item_serum": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/better-together-2.webp",
             "badge_text": "Methylene Blue+ Serum",
-            "text": "<h6>Skin-Clearing Mode</h6><p>Works in sync with LED light and for you on the days between. Formulated with methylene blue to help skin respond to each session, plus antioxidant support against daily environmental stressors.</p><ul><li><strong>415nm · 630nm ·</strong> Helps support a clearer-looking complexion</li></ul>"
+            "text": "<h6>Blue+ Face Serum: <br/>Designed for the LED Mask</h6><p>An everyday serum, supercharged by LED. <br/><br/>Formulated with Methylene Blue to help skin respond to both LED modes: Skin-Clearing and Skin-Rejuvenating. It also provides antioxidant support against daily environmental stressors, with or without your LED session.</p>"
+          }
+        },
+        "item_mask": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Methylene_Blue_1.png",
+            "badge_text": "Two Modes, One Device",
+            "text": "<h6>Skin-Rejuvenating Mode</h6><p>3m daily LED treatment, using clinically studied wavelengths across both modes.</p><ul><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion<br/></li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
           }
         },
         "item_together": {
@@ -131,18 +131,18 @@
           "settings": {
             "image": "shopify://shop_images/better-together-3.webp",
             "badge_text": "Together - 3 minutes",
-            "text": "<h6>At-home results</h6><p>Many users report visible improvement after first use. Visible smoothing of fine lines with continued use.</p><ul><li><strong>Results over time</strong> Smoother-looking fine lines with continued use<br>Dermatologist trusted formula<br>Trusted by board-certified dermatologists</li></ul>"
+            "text": "<h6>At-home results</h6><p>Many users report visible improvement with consistent use. </p><ul><li><strong>Results over time<br/></strong> Smoother-looking fine lines with continued use<br/>Dermatologist trusted formula<br/>Trusted by board-certified dermatologists</li></ul>"
           }
         }
       },
       "block_order": [
-        "item_mask",
         "item_serum",
+        "item_mask",
         "item_together"
       ],
       "name": "t:sections.n_better-together.name",
       "settings": {
-        "text": "<p>[small]WHY LED MASK + BLUE+ FACE SERUM[/small]</p><h2>Better together. Best results.</h2><p>The <strong>Q-Rejuvalight Pro LED Mask</strong> an <strong>Methylene Blue+ Face Serum</strong> are engineered as a single treatment system. The mask primes skin. Methylene blue delivers actives at the exact moment skin is most receptive, deeper than any topical alone.</p>"
+        "text": "<p>[small]WHY LED MASK & BLUE+ FACE SERUM[/small]</p><h2>Better together. Best results.</h2><p>The <strong>Q-Rejuvalight Pro LED Mask</strong> & B<strong>lue+ Face Serum</strong> are designed to work as one system. Apply the serum first - it helps skin respond more to the LED light that follows, so each session works harder without extra time or heat.</p>"
       }
     },
     "bundle_usage_mso": {
@@ -163,7 +163,7 @@
             "step": "Step",
             "image": "shopify://shop_images/bundle-usage-2.webp",
             "badge": "Night",
-            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ methylene blue serum to clean skin. Methylene blue is a cosmetic photosensitizer that helps prime skin to respond more effectively to LED light.</p>"
+            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ to clean skin. Methylene blue is a cosmetic photosensitizer, meaning it helps skin respond better to the LED light that follows.</p>"
           }
         },
         "slide_mask": {
@@ -172,7 +172,7 @@
             "step": "Step",
             "image": "shopify://shop_images/bundle-usage-3.webp",
             "badge": "Night",
-            "text": "<h6>Q-Rejuvalight Pro LED Mask</h6><p>Put on the mask. LED light works in sync with the serum, helping each session deliver better-looking results. Hands-free. Wireless.</p>"
+            "text": "<h6>Q-Rejuvalight Pro LED Mask</h6><p>Apply Blue+ to clean skin. Methylene blue is a cosmetic photosensitizer, meaning it helps skin respond better to the LED light that follows.</p>"
           }
         },
         "slide_results": {
@@ -181,7 +181,7 @@
             "step": "Results",
             "image": "shopify://shop_images/bundle-usage-4.webp",
             "badge": "",
-            "text": "<h6>See results</h6><p>Results come with consistency. Use it daily. Let the science work. No downtime or recovery.</p>"
+            "text": "<h6>See results</h6><p>Results come with consistency. <br/>Use it daily. Let the science work. </p>"
           }
         }
       },
@@ -193,7 +193,7 @@
       ],
       "name": "t:sections.n_bundle-usage.name",
       "settings": {
-        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask + Methylene Blue Serum. 3 minutes.</h2>",
+        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask & Methylene Blue+ Serum.</h2>",
         "button_label": "Get the Best Results Bundle",
         "button_url": "#buy-form",
         "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -234,7 +234,7 @@
         "modifier": "changes",
         "background_color": "bg",
         "section_id": "",
-        "heading": "<h2>Real results. LED Mask + Methylene Blue Serum</h2><p>Join real people experiencing real transformations with consistent use of LED Mask + Methylene Blue serum.</p>",
+        "heading": "<h2>Real results. <br/>See the difference consistency can make. </h2><p>Join real people experiencing real transformations with consistent use of LED Mask.</p>",
         "text": "",
         "quote_text": "",
         "button_label": "Get Started",
