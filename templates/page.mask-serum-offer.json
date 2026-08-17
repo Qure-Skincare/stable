@@ -343,6 +343,19 @@
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
         },
+        "slider_rBTcBp": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/anton_8weeks.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p><h6></h6>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_text": "Anton uses..",
+            "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
+          }
+        },
         "slider_hanna": {
           "type": "slider",
           "settings": {
@@ -388,6 +401,7 @@
       },
       "block_order": [
         "slider_terri",
+        "slider_rBTcBp",
         "slider_hanna",
         "slider_josie",
         "slider_anton"
