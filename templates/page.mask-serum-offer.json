@@ -529,6 +529,41 @@
             "heading": "Is this suitable for sensitive skin?",
             "text": "<p>Yes — Blue+ Face Serum is dermatologically tested, hypoallergenic, and formulated to be non-irritating, including for sensitive skin.<br/><br/> Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed. <br/><br/> That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.  <br/><br/>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.  <br/><br/>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>"
           }
+        },
+        "accordion_KJjCcK": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will I feel anything during the LED + serum treatment?",
+            "text": "<p>Most users describe it as comfortable, with a warm, gentle sensation from the light.</p>"
+          }
+        },
+        "accordion_UGkr3e": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What if I don't see results — can I get a refund?",
+            "text": "<p>Yes — Qure purchases are backed by a 30-Day Money-Back Guarantee, so you can try the routine risk-free.</p>"
+          }
+        },
+        "accordion_jij76X": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often should I use the Blue+ Face Serum?",
+            "text": "<p>Apply before each LED session — however often you use your Q-Rejuvalight Pro LED Mask.</p>"
+          }
+        },
+        "accordion_wPkQUW": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need to wait before applying other products after using Blue+ Serum?",
+            "text": "<p>Do not rinse off the serum. Continue with your regular skincare routine after your LED session is complete.</p>"
+          }
+        },
+        "accordion_Jkztbx": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I apply makeup after my LED + serum routine?",
+            "text": "<p>We recommend completing your regular skincare routine after the LED session first; makeup can follow once that's done.</p>"
+          }
         }
       },
       "block_order": [
@@ -537,7 +572,12 @@
         "accordion_without_serum",
         "accordion_compatible",
         "accordion_results",
-        "accordion_sensitive"
+        "accordion_sensitive",
+        "accordion_KJjCcK",
+        "accordion_UGkr3e",
+        "accordion_jij76X",
+        "accordion_wPkQUW",
+        "accordion_Jkztbx"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
