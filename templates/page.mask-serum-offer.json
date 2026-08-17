@@ -356,6 +356,20 @@
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
         },
+        "slider_CTKbV7": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_66_e533a2ae-3765-4f9e-bccf-7f86a7919e8f.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Megan M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Plump & Glowy</h6><p>“After using this LED face mask consistently for a month, I can honestly say I’m impressed with the results. My skin looks noticeably healthier and more radiant, with a natural glow that wasn’t there before. It also feels fuller and more plump, and I’ve noticed a subtle softening of fine lines. The changes aren’t extreme or fake-looking—just a refreshed, well-rested version of my skin. I’ve really enjoyed adding this to my routine and will definitely continue using it.”</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_text": "Megan uses..",
+            "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
+          }
+        },
         "slider_hanna": {
           "type": "slider",
           "settings": {
@@ -402,6 +416,7 @@
       "block_order": [
         "slider_terri",
         "slider_rBTcBp",
+        "slider_CTKbV7",
         "slider_hanna",
         "slider_josie",
         "slider_anton"
