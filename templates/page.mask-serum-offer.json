@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_product_header_UTTDhr": {
       "type": "n-product-header",
@@ -56,6 +56,7 @@
           "type": "button",
           "settings": {
             "button_light_label": "Get my Led Mask Now",
+            "keep_offer_label": false,
             "hide_payments": false,
             "hide_bottom": false,
             "hide_certified": false
@@ -64,16 +65,16 @@
         "stats_wavelengths": {
           "type": "stats",
           "settings": {
-            "heading": "Clinically studied wavelengths",
-            "percent_value_1": 93,
+            "heading": "Combines clinically-studied wavelengths",
+            "percent_value_1": 87,
             "value_text_1": "",
-            "percent_scale_text_1": "Visible results next day",
-            "percent_value_2": 70,
+            "percent_scale_text_1": "of users reported smoother facial wrinkles and fine lines*",
+            "percent_value_2": 97,
             "value_text_2": "",
-            "percent_scale_text_2": "Smoother lines in 8 weeks.",
-            "percent_value_3": 90,
-            "value_text_3": "3 min",
-            "percent_scale_text_3": "Per treatment no downtime"
+            "percent_scale_text_2": "noticed improved skin tone and enhanced smoothness*",
+            "percent_value_3": 83,
+            "value_text_3": "",
+            "percent_scale_text_3": "of participants note a reduction of acne breakouts*"
           }
         }
       },
@@ -93,13 +94,13 @@
         "secondary": false,
         "background": false,
         "seo_heading": "",
-        "heading": "LED Mask + Methylene Blue+ Face Serum. Best results.",
+        "heading": "Two Steps, to visibly smoother-looking skin",
         "badge_text": "",
         "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
-        "description": "<p>Fine lines & acne look visibly reduced. Clinical LED + Methylene blue. <strong>First serum free ($79 value).</strong></p>",
+        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother, clearer-looking skin. <strong>First serum free ($79 value).</strong></p>",
         "reserved": false,
         "soldout": false,
         "button-label": "Get LED Mask + First Serum Free",
