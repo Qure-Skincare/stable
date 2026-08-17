@@ -388,14 +388,14 @@
         "slider_josie": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/shower-result3.webp",
+            "image": "shopify://shop_images/Rita.webp",
             "flag": "shopify://shop_images/america_f.webp",
-            "username": "Josie K.",
+            "username": "Rita W.",
             "verified_customer": "Verified customer",
-            "text": "<h6>Acne and dryness gone</h6><p>“My skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!”</p>",
+            "text": "<h6>Amazing</h6><p>“I am very pleased with the mask. I got struck with adult acne. Using the mask daily, and using adalapene gel before bed was the only thing that worked to bring my skin almost back to normal. I am so thankful. And it’s my daily 3 minute spa where I just sit and relax, after working all day, and absorb the rays.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
-            "product_text": "Josie uses...",
+            "product_text": "Rita uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
         },
