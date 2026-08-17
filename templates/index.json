@@ -9,6 +9,43 @@
  */
 {
   "sections": {
+    "n_across_image_banner_mR8kQ2": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "double_tag_mR8kQ2": {
+          "type": "double_tag",
+          "settings": {
+            "badge_text": "LABOR DAY OFFER",
+            "text": "SHOP NOW"
+          }
+        },
+        "stars_image_mR8kQ2": {
+          "type": "stars_image",
+          "settings": {
+            "image": "shopify://shop_images/labor-day-sale.svg"
+          }
+        }
+      },
+      "block_order": [
+        "double_tag_mR8kQ2",
+        "stars_image_mR8kQ2"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "labor-day",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1><span>70% OFF</span> Micro-Infusion</h1>",
+        "text": "<p>A moment to invest in the skin you work hard for</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/labor-day.webp",
+        "image_mobile": "shopify://shop_images/labor-day-mob.webp",
+        "button_label": "Buy Now & Save Up to 70%",
+        "button_url": "/pages/microinfusion"
+      }
+    },
     "n_across_image_banner_summer": {
       "type": "n_across-image-banner",
       "blocks": {
@@ -886,6 +923,7 @@
     }
   },
   "order": [
+    "n_across_image_banner_mR8kQ2",
     "n_across_image_banner_summer",
     "n_across_image_banner_Kp7wRm",
     "n_index-quick-links",
