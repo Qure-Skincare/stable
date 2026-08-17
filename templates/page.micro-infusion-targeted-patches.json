@@ -501,6 +501,12 @@
             "percent_value": 87,
             "text": "would recommend Micro-Infusion Targeted Patches to a friend."
           }
+        },
+        "disclaimer_pGFYKb": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "Claims based on visual assessment and self-perception, not physiological measurement."
+          }
         }
       },
       "block_order": [
@@ -508,7 +514,8 @@
         "compare_image_engFkK",
         "percent_value_hVNJgc",
         "percent_value_XU3dMm",
-        "percent_value_mFQBy7"
+        "percent_value_mFQBy7",
+        "disclaimer_pGFYKb"
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
