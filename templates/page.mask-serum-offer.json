@@ -492,42 +492,42 @@
           "type": "accordion",
           "settings": {
             "heading": "What's included in the subscription bundle?",
-            "text": ""
+            "text": "<p>Q-Rejuvalight Pro LED Mask + Blue+ Face Serum, delivered every 2 months. Includes access to app features and treatment tracking.</p>"
           }
         },
         "accordion_billing": {
           "type": "accordion",
           "settings": {
             "heading": "How does the subscription billing work?",
-            "text": ""
+            "text": "<p>You're billed every 2 months for a new Blue+ Face Serum refill. You can pause, skip, or cancel anytime.</p>"
           }
         },
         "accordion_without_serum": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use the mask without the serum?",
-            "text": ""
+            "text": "<p>Yes, the LED mask works on its own. Blue+ Face Serum is formulated to enhance how your skin responds to LED light — pairing them together is designed to help each session go further.</p>"
           }
         },
         "accordion_compatible": {
           "type": "accordion",
           "settings": {
             "heading": "Are they compatible with other serums and treatments?",
-            "text": ""
+            "text": "<p>Blue+ Face Serum is designed specifically for use before LED sessions. For the rest of your routine, apply other serums and treatments after your LED session, once the full cycle is complete.</p>"
           }
         },
         "accordion_results": {
           "type": "accordion",
           "settings": {
             "heading": "How soon will I see results?",
-            "text": ""
+            "text": "<p>Many users report visible improvements with consistent use over several weeks. Results can vary by individual.</p>"
           }
         },
         "accordion_sensitive": {
           "type": "accordion",
           "settings": {
             "heading": "Is this suitable for sensitive skin?",
-            "text": ""
+            "text": "<p>Yes — Blue+ Face Serum is dermatologically tested, hypoallergenic, and formulated to be non-irritating, including for sensitive skin.<br/><br/> Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed. <br/><br/> That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.  <br/><br/>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.  <br/><br/>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>"
           }
         }
       },
