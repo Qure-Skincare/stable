@@ -1144,8 +1144,30 @@
     "n_faq_eTwBPR": {
       "type": "n_faq",
       "blocks": {
+        "accordion_w7wb9V": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why did a patch win an eye-cream ranking? ",
+            "text": "<p>Because how a product is applied matters as much as what's in it. Eye creams sit on top of the thinnest skin on your face, where the formula often stays. Our 80 micro-darts are designed to apply retinol, copper peptides, caffeine, and niacinamide in a targeted, close-to-skin manner, for more direct skin contact than a cream alone. In an independent study of 30 subjects over 4 weeks of use, participants' skin was measured and showed a visible improvement after just one month. Individual results may vary.</p>"
+          }
+        },
+        "accordion_U6tnwX": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Are they only suitable for use around the eyes?",
+            "text": "<p>The best thing about our Micro-Infusion patches is that you can target different areas of concern — including under-eyes, crow's feet, smile lines, and forehead.</p>"
+          }
+        },
+        "accordion_XmQ964": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How quickly will I see results? ",
+            "text": "<p>Most people notice visible improvement within the 4-week window measured in our independent consumer study — 77% saw an improvement in the appearance of wrinkles at that point. Individual results may vary with consistent use.</p>"
+          }
+        },
         "accordion_z3H6yi": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How quickly will I see results?",
             "text": "<p>A natural derivative of vitamin A, this hero ingredient speeds up the removal of old skin cells to reveal your best, most rejuvenated skin underneath.</p>"
@@ -1153,6 +1175,7 @@
         },
         "accordion_yfwJdA": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How many patches come per box?",
             "text": "<p>There are 8 pairs per box. We recommend using the Patches 1-2 times per week, which means one box should last you 1 month. </p>"
@@ -1160,6 +1183,7 @@
         },
         "accordion_LMGP4E": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How long should I apply the patches for?",
             "text": "<p>For optimal results, we suggest applying the patches for a minimum of 2 hours, but preferably overnight.</p><p>Leaving the patches on while you sleep ensures that the serum has ample time to dissolve and penetrate into the skin, maximizing its effectiveness to give you the best results.</p><p>We recommend using 1-2 times per week.</p>"
@@ -1167,6 +1191,7 @@
         },
         "accordion_NMiyy6": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use the patches while pregnant or breast feeding?",
             "text": "<p>Yes! Many pregnant women avoid injectables, retinols, or any strong acids for anti-aging during this time, so many turn to Qure as a safer alternative. However, we always recommend speaking with a medical professional for advice prior to use.</p>"
@@ -1174,6 +1199,7 @@
         },
         "accordion_HXfTge": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Are they only suitable for use around the eyes?",
             "text": "<p>The best thing about our Micro-Infusion patches is that you can target different areas of concern. Whether it be under-eyes, crow’s feet, smile lines or frown lines.</p>"
@@ -1181,6 +1207,9 @@
         }
       },
       "block_order": [
+        "accordion_w7wb9V",
+        "accordion_U6tnwX",
+        "accordion_XmQ964",
         "accordion_z3H6yi",
         "accordion_yfwJdA",
         "accordion_LMGP4E",
