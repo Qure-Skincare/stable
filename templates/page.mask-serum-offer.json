@@ -153,7 +153,8 @@
           "settings": {
             "step": "Step",
             "image": "shopify://shop_images/bundle-usage-1.webp",
-            "badge": "",
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "none",
             "text": "<h6>General Skincare Routine</h6><p>Cleanse the face thoroughly to remove dirt, oil, and any buildup, leaving the skin fresh and ready for the next step.</p>"
           }
         },
@@ -162,8 +163,9 @@
           "settings": {
             "step": "Step",
             "image": "shopify://shop_images/bundle-usage-2.webp",
-            "badge": "Night",
-            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ to clean skin. Methylene blue is a cosmetic photosensitizer, meaning it helps skin respond better to the LED light that follows.</p>"
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm",
+            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ methylene blue serum to clean skin. Methylene blue is a cosmetic photosensitizer that helps prime skin to respond more effectively to LED light.</p>"
           }
         },
         "slide_mask": {
@@ -171,8 +173,9 @@
           "settings": {
             "step": "Step",
             "image": "shopify://shop_images/bundle-usage-3.webp",
-            "badge": "Night",
-            "text": "<h6>Q-Rejuvalight Pro LED Mask</h6><p>Apply Blue+ to clean skin. Methylene blue is a cosmetic photosensitizer, meaning it helps skin respond better to the LED light that follows.</p>"
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm",
+            "text": "<h6>Q-Rejuvalight Pro LED Mask</h6><p>Put on the mask. LED light works in sync with the serum, helping each session deliver better-looking results. Hands-free. Wireless.</p>"
           }
         },
         "slide_results": {
@@ -180,8 +183,9 @@
           "settings": {
             "step": "Results",
             "image": "shopify://shop_images/bundle-usage-4.webp",
-            "badge": "",
-            "text": "<h6>See results</h6><p>Results come with consistency. <br/>Use it daily. Let the science work. </p>"
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "none",
+            "text": "<h6>See results</h6><p>Results come with consistency. Use it daily. Let the science work. No downtime or recovery.</p>"
           }
         }
       },
@@ -193,7 +197,7 @@
       ],
       "name": "t:sections.n_bundle-usage.name",
       "settings": {
-        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask & Methylene Blue+ Serum.</h2>",
+        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask + Methylene Blue Serum. 3 minutes.</h2>",
         "button_label": "Get the Best Results Bundle",
         "button_url": "#buy-form",
         "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
