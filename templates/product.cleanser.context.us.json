@@ -12,5 +12,31 @@
     "market": "us"
   },
   "parent": "product.cleanser.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_NEgEkq2": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_RBCPe11": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_R7GWDT": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_HdPftG": {
+          "settings": {
+            "soldout": false
+          }
+        }
+      }
+    }
+  }
 }
