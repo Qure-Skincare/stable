@@ -610,6 +610,7 @@
         "step_ready",
         "step_rejuvenate"
       ],
+      "disabled": true,
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
