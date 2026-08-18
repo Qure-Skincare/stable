@@ -372,7 +372,7 @@
     },
     "exclusive-offer": {
       "header_html": "<div class='eo-header'><span>SUMMER</span><span> SALE</span></div>",
-      "n_header_html": "<div class='e-double-tag'><strong>SUMMER</strong> SALE</div>",
+      "n_header_html": "<div class='e-double-tag'><strong>Exclusive</strong> OFFER</div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
       "shipping-text": "Free US Shipping over $100",
