@@ -48,12 +48,20 @@
                                     {% if block.settings.image != blank %}
                                         <figure>
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            {% if block.settings.badge != blank %}
-                                                <div class="e-pill-badge e-pill-badge--sm">
-                                                    <i class="e-icon e-icon-pm"></i>
-                                                    {{ block.settings.badge }}
+                                            {%- if block.settings.am_or_pm_1 != 'none' -%}
+                                                <div class="time-badges">
+                                                    <div class="e-pill-badge e-pill-badge--sm">
+                                                        <i class="e-icon e-icon-{{ block.settings.am_or_pm_1 }}"></i>
+                                                        {% if block.settings.am_or_pm_1 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_1 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% endif %}
+                                                    </div>
+                                                    {%- if block.settings.am_or_pm_2 != 'none' -%}
+                                                        <div class="e-pill-badge e-pill-badge--sm">
+                                                            <i class="e-icon e-icon-{{ block.settings.am_or_pm_2 }}"></i>
+                                                            {% if block.settings.am_or_pm_2 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_2 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% endif %}
+                                                        </div>
+                                                    {%- endif -%}
                                                 </div>
-                                            {% endif %}
+                                            {%- endif -%}
                                         </figure>
                                     {% endif %}
                                     {{ block.settings.text }}
@@ -128,9 +136,44 @@
                     "label": "t:common.image"
                 },
                 {
-                    "type": "text",
-                    "id": "badge",
-                    "label": "t:common.badge-text"
+                    "type": "select",
+                    "id": "am_or_pm_1",
+                    "label": "t:common.am-or-pm",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "am",
+                            "label": "t:common.am"
+                        },
+                        {
+                            "value": "pm",
+                            "label": "t:common.pm"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "am_or_pm_2",
+                    "label": "t:common.am-or-pm",
+                    "default": "none",
+                    "options": [
+                        {
+                            "value": "am",
+                            "label": "t:common.am"
+                        },
+                        {
+                            "value": "pm",
+                            "label": "t:common.pm"
+                        },
+                        {
+                            "value": "none",
+                            "label": "t:common.none"
+                        }
+                    ]
                 },
                 {
                     "type": "richtext",
