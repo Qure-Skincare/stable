@@ -9,7 +9,8 @@
 <section class="base-section{% if section.settings.modifier_2 != 'none' %} base-section--{{ section.settings.modifier_2 }}{% endif %}{% if section.settings.modifier != 'none' %} base-section--{{ section.settings.modifier }}{% endif %}{% if section.settings.background_color == 'grey' %} base-section--grey{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article>
-                {{ section.settings.heading }}
+            {{ section.settings.heading }}
+
             {% if section.settings.image != blank %}
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ section.settings.image | image_url : width: 500 }}">
@@ -25,6 +26,7 @@
             {% endfor %}
             {% if has_accordion %}
                 <div>
+                    {{ section.settings.accordion_text }}
                     <div class="c-accordion c-accordion--lines c-accordion--arrow-icon">
                         <div class="c-accordion__list">
                             {% for block in section.blocks %}
@@ -405,6 +407,11 @@
             "type": "image_picker",
             "id": "video_image_cover",
             "label": "t:common.video-image-cover"
+        },
+        {
+            "type": "richtext",
+            "id": "accordion_text",
+            "label": "t:common.accordion-text"
         }
 ],
 "blocks": [
