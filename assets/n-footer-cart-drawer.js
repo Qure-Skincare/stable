@@ -129,6 +129,25 @@ const showCart = () => {
 
 /*  default functions   */
 
+const applyDiscount = (discount_code) => {
+    // Accepts a single code or a comma-separated list ("CODE1,CODE2");
+    // entries are trimmed and empty ones are dropped.
+
+    const codes = String(discount_code || '')
+        .split(',')
+        .map(code => code.trim())
+        .filter(Boolean);
+
+    if (codes.length === 0) return Promise.resolve();
+
+    return fetch((window.Shopify?.routes?.root || '/') + 'cart/update.js', {
+        method: 'POST',
+        priority: 'high',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ discount: codes.join(',') })
+    });
+};
+
 const addToCart = (input) => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
         method: 'POST',
@@ -139,16 +158,11 @@ const addToCart = (input) => {
     .then(() => addProductGift(input))
     .then(() => {
         toogleGift().then(() => {
-            if (typeof footer_cart_drawer_discount !== 'undefined' && footer_cart_drawer_discount) {
-                fetch('/discount/' + footer_cart_drawer_discount, { priority: 'high' }).then(async () => {
-                    const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCart' } });
-                    document.dispatchEvent(event);
-                });
-            }
-            else {
+            const discount = typeof footer_cart_drawer_discount !== 'undefined' ? footer_cart_drawer_discount : null;
+            applyDiscount(discount).then(() => {
                 const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCart' } });
                 document.dispatchEvent(event);
-            }
+            });
         });
     })
     .catch((error) => {
@@ -166,16 +180,11 @@ const addToCartJson = (input) => {
     .then(response => response.json())
     .then(() => {
         toogleGift().then(() => {
-            if (typeof footer_cart_drawer_discount !== 'undefined' && footer_cart_drawer_discount) {
-                fetch('/discount/' + footer_cart_drawer_discount, { priority: 'high' }).then(async () => {
-                    const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartJson' } });
-                    document.dispatchEvent(event);
-                });
-            }
-            else {
+            const discount = typeof footer_cart_drawer_discount !== 'undefined' ? footer_cart_drawer_discount : null;
+            applyDiscount(discount).then(() => {
                 const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartJson' } });
                 document.dispatchEvent(event);
-            }
+            });
         })
     })
     .catch((error) => {
@@ -375,7 +384,7 @@ const addProductGift = async (input) => {
 
     if(discount_code) {
         // Apply the accompanying discount code.
-        await fetch('/discount/' + discount_code, { priority: 'high' });
+        await applyDiscount(discount_code);
     }
 
     await new Promise(resolve => setTimeout(resolve, 100));
@@ -432,6 +441,7 @@ const updateCartMany = (updates) => {
 };
 
 window.CartDrawer = {
+    applyDiscount,
     toogleGift,
     addProductGift,
     addToCartJson,

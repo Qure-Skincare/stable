@@ -77,13 +77,13 @@
         "secondary": false,
         "background": false,
         "seo_heading": "Hydrating Face Cleanser - 50% Glycerin Formula",
-        "heading": "Daily Cleansing Gel",
+        "heading": "A Daily Cleansing Gel that doesn’t leave you tight",
         "badge_text": "",
         "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
-        "description": "<ul><li>Hydrates while it cleanses</li><li>Formulated with 50% glycerin, not water</li><li>Gentle enough for everyday use</li><li>Calms and comforts skin</li><li>Soft, comfortable skin</li></ul>",
+        "description": "<ul><li>Cleanses without leaving skin feel tight, dry, or stripped</li><li>Formulated with 50% glycerin — a hydrating ingredient, <br/>not filler water </li><li>Clinically shown to strengthen your skin barrier by 18.5%</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -428,7 +428,6 @@
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
-        "accordion_text": "<p>Powered by our <strong>50% glycerin</strong> formula.</p>",
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -438,7 +437,8 @@
         "image": "shopify://shop_images/cleanser-text-image-1.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": "<p>Powered by our <strong>50% glycerin</strong> formula.</p>"
       }
     },
     "n_features_marquee_cleanser": {
