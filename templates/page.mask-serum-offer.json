@@ -100,7 +100,7 @@
         "rating": false,
         "rating_type": "customers",
         "limited": false,
-        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother, clearer-looking skin. <strong>First serum free ($79 value).</strong></p>",
+        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother,<br/> clearer-looking skin. <strong>First serum free ($79 value).</strong></p>",
         "reserved": false,
         "soldout": false,
         "button-label": "Get LED Mask + First Serum Free",
