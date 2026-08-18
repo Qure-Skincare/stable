@@ -370,7 +370,8 @@
         "flex": "Flex",
         "arrow-button": "Arrow button",
         "web-video": "Web video",
-        "changes": "Changes"
+        "changes": "Changes",
+        "accordion-text": "Accordion text"
     },
     "blocks": {
         "block-card": {

@@ -428,6 +428,7 @@
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
+        "accordion_text": "<p>Powered by our <strong>50% glycerin</strong> formula.</p>",
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
@@ -619,6 +620,95 @@
         "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
       }
     },
+    "n_comparison_table_mK4pQx": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_1": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Glycerin content",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_2": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Base",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_3": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "After-feel",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_4": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Skin barrier",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_5": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Suitable for sensitive skin",
+            "color": "none"
+          }
+        },
+        "comparison_table_1": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/comparison-table-image-1.webp",
+            "heading": "<h5>Qure<br/>Cleanser</h5>",
+            "text_1": "50%",
+            "select_1": "checkmark",
+            "text_2": "Glycerin-based",
+            "select_2": "checkmark",
+            "text_3": "Hydrated, balanced",
+            "select_3": "checkmark",
+            "text_4": "+18.5% stronger (6-week study)",
+            "select_4": "checkmark",
+            "text_5": "Yes, hypoallergenic, dermatologist reviewed",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_2": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/comparison-table-image-2.webp",
+            "heading": "<h5>High-End<br/>Cleansers</h5>",
+            "text_1": "Up to ~15% at the high end",
+            "select_1": "cross",
+            "text_2": "Most leading cleansers are water-based",
+            "select_2": "cross",
+            "text_3": "Tight, stripped",
+            "select_3": "cross",
+            "text_4": "Not usually disclosed",
+            "select_4": "cross",
+            "text_5": "Often not formulated for it",
+            "select_5": "cross"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_1",
+        "comparison_table_heading_2",
+        "comparison_table_heading_3",
+        "comparison_table_heading_4",
+        "comparison_table_heading_5",
+        "comparison_table_1",
+        "comparison_table_2"
+      ],
+      "name": "t:sections.n_comparison-table.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "secondary",
+        "text": "<h2>How It Compares</h2>"
+      }
+    },
     "17830002457c285fc3": {
       "type": "apps",
       "blocks": {
@@ -706,6 +796,7 @@
     "n_features_marquee_cleanser",
     "n_accordion_tiles_square_cleanser",
     "n_page_microinfusion_complete_system_cleanser",
+    "n_comparison_table_mK4pQx",
     "17830002457c285fc3",
     "n_faq_cleanser"
   ]

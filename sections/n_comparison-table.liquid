@@ -6,7 +6,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/comparison-table/comparison-table.css" />
 {% endif %}
-<section class="comparison-table">
+<section class="comparison-table{% if section.settings.modifier != 'none' %} comparison-table--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
         {{ section.settings.text }}
         <div class="comparison-table__content">
@@ -21,6 +21,25 @@
             </ul>
             <div
                 class="c-swiper"
+                {% if section.settings.modifier == 'secondary' %}
+                data-swiper='{
+                    "slidesPerView": 1,
+                    "spaceBetween": 0,
+                    "pagination": {
+                        "el": ".comparison-table .c-swiper-pagination",
+                        "type": "custom"
+                    },
+                    "navigation": {
+                        "prevEl": ".comparison-table .c-swiper-button-prev",
+                        "nextEl": ".comparison-table .c-swiper-button-next"
+                    },
+                    "breakpoints": {
+                        "768": {
+                            "slidesPerView": 2
+                        }
+                    }
+                }'
+                {% else %}
                 data-swiper='{
                 "slidesPerView": 1,
                 "spaceBetween": 0,
@@ -41,7 +60,8 @@
                         "slidesPerView": 3
                     }
                 }
-            }'>
+            }'
+                {% endif %}>
                 <div class="swiper-wrapper">
                     {% for block in section.blocks %}
                         {% if block.type == 'comparison_table' %}
@@ -49,8 +69,12 @@
                                 <article>
                                     {% if block.settings.image != blank %}
                                         <picture>
-                                            <source media="(max-width: 767px)" srcset="{{ section.settings.image | image_url : width: 250 }}">
-                                            <img loading="lazy" src="{{ block.settings.image | image_url : width: 250 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% if section.settings.modifier == 'secondary' %}
+                                                <img src="{{ block.settings.image | image_url : width: 250 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% else %}
+                                                <source media="(max-width: 767px)" srcset="{{ section.settings.image | image_url : width: 250 }}">
+                                                <img loading="lazy" src="{{ block.settings.image | image_url : width: 250 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% endif %}
                                         </picture>
                                     {% endif %}
 
@@ -58,19 +82,19 @@
 
                                     <ul>
                                         {% if block.settings.text_1 != blank %}
-                                            <li><i class="e-icon e-icon-{{ block.settings.select_1 }}-fill"></i> <span>{{ block.settings.text_1 }}</span></li>
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_1 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_1 }}</span></li>
                                         {% endif %}
                                         {% if block.settings.text_2 != blank %}
-                                            <li><i class="e-icon e-icon-{{ block.settings.select_2 }}-fill"></i> <span>{{ block.settings.text_2 }}</span></li>
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_2 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_2 }}</span></li>
                                         {% endif %}
                                         {% if block.settings.text_3 != blank %}
-                                            <li><i class="e-icon e-icon-{{ block.settings.select_3 }}-fill"></i> <span>{{ block.settings.text_3 }}</span></li>
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_3 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_3 }}</span></li>
                                         {% endif %}
                                         {% if block.settings.text_4 != blank %}
-                                            <li><i class="e-icon e-icon-{{ block.settings.select_4 }}-fill"></i> <span>{{ block.settings.text_4 }}</span></li>
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_4 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_4 }}</span></li>
                                         {% endif %}
                                         {% if block.settings.text_5 != blank %}
-                                            <li><i class="e-icon e-icon-{{ block.settings.select_5 }}-fill"></i> <span>{{ block.settings.text_5 }}</span></li>
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_5 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_5 }}</span></li>
                                         {% endif %}
                                     </ul>
                                 </article>
@@ -81,11 +105,19 @@
             </div>
         </div>
         <div class="c-swiper-nav">
-            <button class="c-swiper-button-prev" aria-label="prev"></button>
-            <div class="c-swiper-pagination"></div>
-            <button class="c-swiper-button-next" aria-label="next"></button>
+            {% if section.settings.modifier == 'secondary' %}
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            {% else %}
+                <button class="c-swiper-button-prev" aria-label="prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next" aria-label="next"></button>
+            {% endif %}
         </div>
-        <small class="e-declaimer">Based on publicly available information. For general comparison only.</small>
+        {% unless section.settings.modifier == 'secondary' %}
+            <small class="e-declaimer">Based on publicly available information. For general comparison only.</small>
+        {% endunless %}
     </div>
 </section>
 <!-- COMPARISON TABLE END -->
@@ -99,6 +131,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "secondary",
+                    "label": "t:common.secondary"
+                }
+            ]
         },
         {
             "type": "richtext",
