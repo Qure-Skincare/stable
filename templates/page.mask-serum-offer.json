@@ -113,7 +113,7 @@
         "item_serum": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/better-together-2.webp",
+            "image": "shopify://shop_images/Methylene_Blue.webp",
             "badge_text": "Methylene Blue+ Serum",
             "text": "<h6>Blue+ Face Serum: <br/>Designed for the LED Mask</h6><p>An everyday serum, supercharged by LED. <br/><br/>Formulated with Methylene Blue to help skin respond to both LED modes: Skin-Clearing and Skin-Rejuvenating. It also provides antioxidant support against daily environmental stressors, with or without your LED session.</p>"
           }
