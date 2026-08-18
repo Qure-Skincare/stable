@@ -165,7 +165,7 @@
             "image": "shopify://shop_images/bundle-usage-2.webp",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm",
-            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ methylene blue serum to clean skin. Methylene blue is a cosmetic photosensitizer that helps prime skin to respond more effectively to LED light.</p>"
+            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ to clean skin. Methylene blue is a cosmetic photosensitizer, meaning it helps skin respond better to the LED light that follows.</p>"
           }
         },
         "slide_mask": {
@@ -185,7 +185,7 @@
             "image": "shopify://shop_images/bundle-usage-4.webp",
             "am_or_pm_1": "none",
             "am_or_pm_2": "none",
-            "text": "<h6>See results</h6><p>Results come with consistency. Use it daily. Let the science work. No downtime or recovery.</p>"
+            "text": "<h6>See results</h6><p>Results come with consistency. <br/>Use it daily. Let the science work. </p>"
           }
         }
       },
