@@ -624,7 +624,8 @@
         "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help<em> improve the feel of firmness</em>, smooth texture, and <em>reduce the look of fine lines and wrinkles</em>.<br/><br/>The invisible micro-channels then deliver science-backed serums onto the skin’s surface, <em>tailored to address specific skin goals</em> — enhancing absorption and helping active ingredients work more effectively where they’re applied.</p>",
         "button_label": "Shop Now",
         "button_url": "#buy_box",
-        "wistia_url": "a1pykz2tp0"
+        "wistia_url": "a1pykz2tp0",
+        "accordion_text": ""
       }
     },
     "n_progress_metrics_tJV9Dz": {
@@ -1016,6 +1017,19 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_tbw46p": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_1_7c6ee245-826f-4f00-87c0-251044a3fbcb.jpg",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Marilyn B.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Just starting but impressed so far.</h6><p>“I have done two treatments so far. I used the wrinkle serum first, and then the dark spot treatment. For my second treatment I added numbing cream around my mouth, since it is more sensitive and an area I really need to work on! I found it was easy to do, just put on the needle cap and use a continuous motion. My skin tends to be dry, so it soaked up the serum the first 2 of 3 passes. My skin felt truly softer and more plump after usage. I am excited to see the results I get after using this product in the future.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -1042,7 +1056,8 @@
         "slider_QUARee",
         "slider_LM98hx",
         "slider_fHBeR8",
-        "slider_3f6enG"
+        "slider_3f6enG",
+        "slider_tbw46p"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -1643,6 +1658,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
