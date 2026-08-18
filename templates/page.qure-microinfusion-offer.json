@@ -239,7 +239,7 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "extended",
-        "show_logo": true,
+        "show_logo": false,
         "approved_position": "after_text",
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1>",
         "rating": "",
