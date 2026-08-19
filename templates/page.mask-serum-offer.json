@@ -68,13 +68,13 @@
             "heading": "Combines clinically-studied wavelengths",
             "percent_value_1": 87,
             "value_text_1": "",
-            "percent_scale_text_1": "of users reported smoother facial wrinkles and fine lines*",
+            "percent_scale_text_1": "of users reported smoother wrinkles & fine lines*",
             "percent_value_2": 97,
             "value_text_2": "",
-            "percent_scale_text_2": "noticed improved skin tone and enhanced smoothness*",
+            "percent_scale_text_2": "noticed improved skin tone & smoothness*",
             "percent_value_3": 83,
             "value_text_3": "",
-            "percent_scale_text_3": "of participants note a reduction of acne breakouts*"
+            "percent_scale_text_3": "of participants reported fewer acne breakouts*"
           }
         }
       },
@@ -94,13 +94,13 @@
         "secondary": false,
         "background": false,
         "seo_heading": "",
-        "heading": "Two Steps, to visibly smoother-looking skin",
+        "heading": "Two Steps, to visibly <br> smoother-looking skin",
         "badge_text": "",
         "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
         "limited": false,
-        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother, clearer-looking skin. <strong>First serum free ($79 value).</strong></p>",
+        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother,<br/> clearer-looking skin. <strong>First serum free ($79 value).</strong></p>",
         "reserved": false,
         "soldout": false,
         "button-label": "Get LED Mask + First Serum Free",
@@ -113,7 +113,7 @@
         "item_serum": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/better-together-2.webp",
+            "image": "shopify://shop_images/Methylene_Blue.webp",
             "badge_text": "Methylene Blue+ Serum",
             "text": "<h6>Blue+ Face Serum: <br/>Designed for the LED Mask</h6><p>An everyday serum, supercharged by LED. <br/><br/>Formulated with Methylene Blue to help skin respond to both LED modes: Skin-Clearing and Skin-Rejuvenating. It also provides antioxidant support against daily environmental stressors, with or without your LED session.</p>"
           }
@@ -122,15 +122,15 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Methylene_Blue_1.png",
-            "badge_text": "Two Modes, One Device",
-            "text": "<h6>Skin-Rejuvenating Mode</h6><p>3m daily LED treatment, using clinically studied wavelengths across both modes.</p><ul><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion<br/></li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
+            "badge_text": "LED Mask",
+            "text": "<h6>Two Modes, One Device</h6><p>3m daily LED treatment, using clinically studied wavelengths across both modes.</p><ul><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion<br/></li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
           }
         },
         "item_together": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/better-together-3.webp",
-            "badge_text": "Together - 3 minutes",
+            "badge_text": "",
             "text": "<h6>At-home results</h6><p>Many users report visible improvement with consistent use. </p><ul><li><strong>Results over time<br/></strong> Smoother-looking fine lines with continued use<br/>Dermatologist trusted formula<br/>Trusted by board-certified dermatologists</li></ul>"
           }
         }
@@ -165,7 +165,7 @@
             "image": "shopify://shop_images/bundle-usage-2.webp",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm",
-            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ methylene blue serum to clean skin. Methylene blue is a cosmetic photosensitizer that helps prime skin to respond more effectively to LED light.</p>"
+            "text": "<h6>Blue+ Face Serum</h6><p>Apply Blue+ to clean skin. Methylene blue is a cosmetic photosensitizer, meaning it helps skin respond better to the LED light that follows.</p>"
           }
         },
         "slide_mask": {
@@ -185,7 +185,7 @@
             "image": "shopify://shop_images/bundle-usage-4.webp",
             "am_or_pm_1": "none",
             "am_or_pm_2": "none",
-            "text": "<h6>See results</h6><p>Results come with consistency. Use it daily. Let the science work. No downtime or recovery.</p>"
+            "text": "<h6>See results</h6><p>Results come with consistency. <br/>Use it daily. Let the science work. </p>"
           }
         }
       },
@@ -197,7 +197,7 @@
       ],
       "name": "t:sections.n_bundle-usage.name",
       "settings": {
-        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask + Methylene Blue Serum. 3 minutes.</h2>",
+        "heading": "<p>[small]HOW TO USE[/small]</p><h2>LED Mask & Methylene Blue+ Serum</h2>",
         "button_label": "Get the Best Results Bundle",
         "button_url": "#buy-form",
         "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -238,7 +238,7 @@
         "modifier": "changes",
         "background_color": "bg",
         "section_id": "",
-        "heading": "<h2>Real results. <br/>See the difference consistency can make. </h2><p>Join real people experiencing real transformations with consistent use of LED Mask.</p>",
+        "heading": "<h3>Real results. <br/>See the difference consistency can make. </h3><p>Join real people experiencing real transformations with consistent use of LED Mask.</p>",
         "text": "",
         "quote_text": "",
         "button_label": "Get Started",
@@ -342,7 +342,7 @@
             "verified_customer": "Verified customer",
             "text": "<h6>Wish I started years ago</h6><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger.”</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Terri uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
@@ -356,7 +356,7 @@
             "verified_customer": "Verified customer",
             "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p><h6></h6>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Anton uses..",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
@@ -370,7 +370,7 @@
             "verified_customer": "Verified customer",
             "text": "<h6>Plump & Glowy</h6><p>“After using this LED face mask consistently for a month, I can honestly say I’m impressed with the results. My skin looks noticeably healthier and more radiant, with a natural glow that wasn’t there before. It also feels fuller and more plump, and I’ve noticed a subtle softening of fine lines. The changes aren’t extreme or fake-looking—just a refreshed, well-rested version of my skin. I’ve really enjoyed adding this to my routine and will definitely continue using it.”</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Megan uses..",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
@@ -384,7 +384,7 @@
             "verified_customer": "Verified customer",
             "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Hanna uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
@@ -398,7 +398,7 @@
             "verified_customer": "Verified customer",
             "text": "<h6>Amazing</h6><p>“I am very pleased with the mask. I got struck with adult acne. Using the mask daily, and using adalapene gel before bed was the only thing that worked to bring my skin almost back to normal. I am so thankful. And it’s my daily 3 minute spa where I just sit and relax, after working all day, and absorb the rays.”</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Rita uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
@@ -412,7 +412,7 @@
             "verified_customer": "Verified customer",
             "text": "<h6>Thrilled with the results!</h6><p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. I haven’t had a single breakout since I started using the mask, plus I notice a definite smoothing of fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\"</p>",
             "product_url": "#",
-            "product_image": "shopify://shop_images/led-mask-and-blue-serum.webp",
+            "product_image": "shopify://shop_images/Img_10.png",
             "product_text": "Jessica uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask + Blue serum"
           }
@@ -445,7 +445,7 @@
         "bundle": {
           "type": "exclusive-offer-bundle",
           "settings": {
-            "heading": "Subscribe Now & Get Led Mask a",
+            "heading": "Subscribe Now & Get a Blue+ Serum Free",
             "product": "q-rejuvalight-pro-facewear",
             "image_product1": "shopify://shop_images/complete-bundle-mask.webp",
             "product2": "blue-face-serum",
