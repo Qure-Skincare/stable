@@ -29,7 +29,7 @@
             "title_3": "Minimal downtime, visible results",
             "text_3": "<p>Minimal to no downtime, with visible improvements reported by customers.</p>",
             "title_4": "Boosts absorption of active ingredients",
-            "text_4": "<p>Creates micro-channels that help your serums and treatments penetrate deeper, so active ingredients work more effectively.</p>",
+            "text_4": "<p>Creates micro-channels on the skin's surface that help your serum absorb more effectively, so active ingredients can work as intended.</p>",
             "title_5": "Safe for regular, consistent use",
             "text_5": "<p>Designed for repeated at-home sessions, so you can build on results week after week without irritation or downtime.</p>"
           }
@@ -68,8 +68,8 @@
       "settings": {
         "product": "",
         "reverse": false,
-        "seo_heading": "MICRO INFUSION FACIAL SYSTEM - AN ALTERNATIVE TO DERMA ROLLERS",
-        "heading": "Refresh the look of dull skin with the Micro-Infusion Facial System",
+        "seo_heading": "More Than a Serum — a Complete Micro-Infusion System",
+        "heading": "The Anti-Aging System Designed to Help Your Serum Actually Work",
         "rating": true,
         "limited": false,
         "description": "",
@@ -616,7 +616,8 @@
         "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help<em> improve the feel of firmness</em>, smooth texture, and <em>reduce the look of fine lines and wrinkles</em>.<br/><br/>The invisible micro-channels then deliver science-backed serums onto the skin’s surface, <em>tailored to address specific skin goals</em> — enhancing absorption and helping active ingredients work more effectively where they’re applied.</p>",
         "button_label": "Shop Now",
         "button_url": "#buy_box",
-        "wistia_url": "a1pykz2tp0"
+        "wistia_url": "a1pykz2tp0",
+        "accordion_text": ""
       }
     },
     "n_progress_metrics_tJV9Dz": {
@@ -1635,6 +1636,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
