@@ -5,48 +5,172 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('cart.requestComplete', (event) => {
-    if(footer_cart_drawer_template == 'cart') {
-        updateSection('cart', 'main-cart-dynamic-content')
-        .then(() => {
-            reloadDrawer(event);
-        })
-        .catch(console.error);
-    }
-    else {
-        reloadDrawer(event);
-    }
+    scheduleReload(event.detail || {});
 });
 
 
 
 /*  render  */
 
-const reloadDrawer = (array) => {
-    const source = array.detail.source;
+// Section Rendering API ids: theme section filenames (verified to resolve
+// both in GET /?sections= and in bundled Cart API responses).
+const SECTION_ID = 'n-footer-cart-drawer';
+const CART_SECTION_ID = 'cart';
 
-    updateSection('n-footer-cart-drawer', 'cart-dynamic-content').then(() => {
-        if (source === 'addToCart' || source === 'addToCartJson') {
-            showCart();
-            //toogleGift();
+const sectionsList = () => {
+    return footer_cart_drawer_template == 'cart'
+        ? SECTION_ID + ',' + CART_SECTION_ID
+        : SECTION_ID;
+};
+
+// Coalesce overlapping cart.requestComplete events into a single reload at a
+// time; the freshest detail wins, so concurrent morphs never interleave.
+let pendingReloadDetail = null;
+let reloadRunning = false;
+
+const scheduleReload = (detail) => {
+    pendingReloadDetail = detail;
+    if (reloadRunning) return;
+    reloadRunning = true;
+
+    (async () => {
+        while (pendingReloadDetail) {
+            const current = pendingReloadDetail;
+            pendingReloadDetail = null;
+            try {
+                await reloadDrawer(current);
+            } catch (error) {
+                console.error(error);
+            }
         }
+        reloadRunning = false;
+    })();
+};
 
+const reloadDrawer = async (detail) => {
+    const source = detail.source;
+
+    if (detail.sections && detail.sections[SECTION_ID]) {
+        await applySections(detail.sections);
+    }
+    else {
+        if (detail.sections) warnSectionsFallback();
+        await fetchSectionsGET();
+    }
+
+    if (source === 'addToCart' || source === 'addToCartJson') {
+        showCart();
+    }
+
+    if (detail.cart && typeof detail.cart.item_count === 'number') {
+        setCartCount(detail.cart.item_count);
+    }
+    else {
         getCartState().then(cart => {
-            document.querySelector('.cart-count').textContent = cart.item_count;
+            if (cart) setCartCount(cart.item_count);
         });
+    }
 
-        bindForms();
+    bindForms();
 
-        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js/swiper.js')
-    })
-    .catch(console.error);
-}
+    loadScriptOnce('footer-cart-drawer-swiper', 'https://qureskincaredns-stable.com/assets/js/swiper.js');
+};
 
 const refreshDrawer = () => {
-     return updateSection('n-footer-cart-drawer', 'cart-dynamic-content').then(() => {
+    return fetchSectionsGET().then(() => {
         bindForms();
-        loadScriptOnce(`footer-cart-drawer-swiper.js?v=${Date.now()}`, 'https://qureskincaredns-stable.com/assets/js/swiper.js')
-     });
-}
+        loadScriptOnce('footer-cart-drawer-swiper', 'https://qureskincaredns-stable.com/assets/js/swiper.js');
+    });
+};
+
+const setCartCount = (count) => {
+    const counter = document.querySelector('.cart-count');
+    if (counter) counter.textContent = count;
+};
+
+let sectionsFallbackWarned = false;
+const warnSectionsFallback = () => {
+    if (sectionsFallbackWarned) return;
+    sectionsFallbackWarned = true;
+    console.warn('Cart drawer: bundled sections missing in response, falling back to section fetch');
+};
+
+const nextFrame = () => new Promise(resolve => requestAnimationFrame(resolve));
+
+const morphSectionHtml = (html, targetId) => {
+    const current = document.getElementById(targetId);
+    if (!current) return;
+
+    const temp = document.createElement('div');
+    temp.innerHTML = html;
+
+    const next = temp.querySelector('#' + targetId);
+    if (!next) return;
+
+    morphdom(current, next, {
+        getNodeKey(node) {
+            return node.nodeType === Node.ELEMENT_NODE ? node.getAttribute('id') : undefined;
+        }
+    });
+};
+
+const applySections = async (sectionsObj, { allowGetFallback = true } = {}) => {
+    const drawerHtml = sectionsObj ? sectionsObj[SECTION_ID] : null;
+
+    if (drawerHtml == null) {
+        warnSectionsFallback();
+        if (allowGetFallback) {
+            await fetchSectionsGET();
+        }
+        else {
+            await legacyReload();
+        }
+        return;
+    }
+
+    morphSectionHtml(drawerHtml, 'cart-dynamic-content');
+
+    if (footer_cart_drawer_template == 'cart') {
+        const cartHtml = sectionsObj[CART_SECTION_ID];
+        if (cartHtml == null) {
+            await updateSection(CART_SECTION_ID, 'main-cart-dynamic-content');
+        }
+        else {
+            morphSectionHtml(cartHtml, 'main-cart-dynamic-content');
+        }
+    }
+
+    await nextFrame();
+};
+
+const fetchSectionsGET = () => {
+    return fetch(location.pathname + '/?sections=' + sectionsList(), { priority: 'high' })
+        .then(res => res.json())
+        .then(sections => applySections(sections, { allowGetFallback: false }))
+        .catch(async (error) => {
+            console.error('Error fetching cart sections:', error);
+            await legacyReload();
+        });
+};
+
+const legacyReload = async () => {
+    if (footer_cart_drawer_template == 'cart') {
+        await updateSection(CART_SECTION_ID, 'main-cart-dynamic-content');
+    }
+    await updateSection(SECTION_ID, 'cart-dynamic-content');
+};
+
+const updateSection = (section_id, targetElement) => {
+    const currentDrawer = document.getElementById(targetElement);
+    if (!currentDrawer) return;
+
+    return fetch(location.pathname + '/?section_id=' + section_id, { priority: 'high' })
+            .then(res => res.text())
+            .then(html => {
+                morphSectionHtml(html, targetElement);
+                return nextFrame();
+            });
+};
 
 const bindForms = () => {
     //clear all binds before if they are exist
@@ -84,44 +208,182 @@ const bindForms = () => {
     });
 }
 
-const updateSection = (section_id, targetElement) => {
-    const currentDrawer = document.getElementById(targetElement);
-    if (!currentDrawer) return;
-
-    return fetch(location.pathname + '/?section_id=' + section_id, { priority: 'high' })
-            .then(res => res.text())
-            .then(html => {
-                const temp = document.createElement('div');
-                temp.innerHTML = html;
-
-                const newDrawer = temp.querySelector('#' + targetElement);
-                if (!newDrawer) return;
-
-                morphdom(currentDrawer, newDrawer, {
-                    getNodeKey(node) {
-                        return node.nodeType === Node.ELEMENT_NODE ? node.getAttribute('id') : undefined;
-                    }
-                });
-                return;
-            })    
-            .then(result => {
-                if (!result) return result;
-                return new Promise(resolve => {
-                    requestAnimationFrame(() => {
-                        setTimeout(() => {
-                            requestAnimationFrame(() => resolve(result));
-                        }, 0);
-                    });
-                });
-            });
-};
-
 const showCart = () => {
     if(footer_cart_drawer_template != 'cart') {
         const cartDrawer = document.querySelector('.offcanvas-end');
         if (cartDrawer && !cartDrawer.classList.contains('show')) {
             document.getElementById('cartCanvasBtn')?.click();
         }
+    }
+};
+
+// `adding` shows the skeleton row for an incoming item (add flows only);
+// plain loading just dims the current content (change/clear flows).
+const setLoading = (state, adding = false) => {
+    const content = document.getElementById('cart-dynamic-content');
+    if (!content) return;
+    content.classList.toggle('is-loading', state);
+    content.classList.toggle('is-adding', state && adding);
+};
+
+
+
+/*  request helpers  */
+
+const cartPost = (path, body) => {
+    const isFormData = body instanceof FormData;
+
+    return fetch((window.Shopify?.routes?.root || '/') + path, {
+        method: 'POST',
+        priority: 'high',
+        headers: isFormData ? undefined : { 'Content-Type': 'application/json' },
+        body: isFormData ? body : JSON.stringify(body)
+    })
+    .then(response => response.json());
+};
+
+// Ask the Cart API to render the drawer (and cart page) sections in the same
+// response as the mutation, so no follow-up render request is needed.
+const withSections = (body) => {
+    if (body instanceof FormData) {
+        body.set('sections', sectionsList());
+        body.set('sections_url', window.location.pathname);
+        return body;
+    }
+    return Object.assign({}, body, {
+        sections: sectionsList(),
+        sections_url: window.location.pathname
+    });
+};
+
+const parseDiscountCodes = (value) => {
+    return String(value || '')
+        .split(',')
+        .map(code => code.trim())
+        .filter(Boolean);
+};
+
+const siteDiscount = () => {
+    return typeof footer_cart_drawer_discount !== 'undefined' ? footer_cart_drawer_discount : null;
+};
+
+// Threshold-gift decisions extracted from toogleGift: which gifts must be
+// added or removed given the current cart totals and the gift forms on page.
+const computeGiftOps = (cart) => {
+    const gifts_adding = [];
+    const gift_updating = {};
+
+    document.querySelectorAll('form.footer-cart-drawer-gift[action$="/cart/add"]').forEach((form) => {
+        const formData = new FormData(form);
+        const price_limit = formData.get('properties[_price_limit]');
+
+        const giftItem = cart.items.find(item =>
+            item.id === +(formData.get('id')) &&
+            item.properties &&
+            item.properties['_required_validation']
+        );
+
+        if (!giftItem) {
+            if (cart.total_price >= price_limit) {
+                gifts_adding.push({
+                    id: +(formData.get('id')),
+                    properties: {
+                        _required_validation: formData.get('properties[_required_validation]')
+                    },
+                    quantity: 1
+                });
+            }
+        }
+        else if (cart.total_price < price_limit) {
+            gift_updating[formData.get('id')] = 0;
+        }
+    });
+
+    return { gifts_adding, gift_updating };
+};
+
+// A product gift may stay in the cart only while its parent line (the one
+// whose properties[_gift] points at it) is present. When the parent is
+// removed, its conditional discount no longer applies and the "gift" would
+// linger as a paid line - so orphaned gifts are removed by line key.
+const computeOrphanGiftOps = (cart) => {
+    const updates = {};
+
+    cart.items.forEach(item => {
+        const giftRef = item.properties && item.properties['_product_gift'];
+        if (!giftRef) return;
+
+        const parentExists = cart.items.some(parent =>
+            parent.properties && parent.properties['_gift'] == giftRef
+        );
+
+        if (!parentExists) {
+            updates[item.key] = 0;
+        }
+    });
+
+    return updates;
+};
+
+// Apply pending gift mutations with the minimum number of requests; the last
+// mutating request carries the sections payload. Does not dispatch
+// intermediate events - the caller dispatches a single terminal event.
+const finishMutations = async (cart, giftOps, sectionsAlready) => {
+    const { gifts_adding, gift_updating } = giftOps;
+    const hasAdditions = gifts_adding.length > 0;
+    const hasRemovals = Object.keys(gift_updating).length > 0;
+
+    let sections = sectionsAlready || null;
+
+    if (hasAdditions && hasRemovals) {
+        await cartPost('cart/add.js', { items: gifts_adding });
+        const res = await cartPost('cart/update.js', withSections({ updates: gift_updating }));
+        cart = res;
+        sections = res.sections || sections;
+    }
+    else if (hasAdditions) {
+        const res = await cartPost('cart/add.js', withSections({ items: gifts_adding }));
+        sections = res.sections || sections;
+        // add.js returns only the added lines, so patch the count locally
+        cart = Object.assign({}, cart, {
+            item_count: cart.item_count + gifts_adding.reduce((total, item) => total + item.quantity, 0)
+        });
+    }
+    else if (hasRemovals) {
+        const res = await cartPost('cart/update.js', withSections({ updates: gift_updating }));
+        cart = res;
+        sections = res.sections || sections;
+    }
+
+    return { cart, sections };
+};
+
+const dispatchComplete = (source, extra) => {
+    const detail = Object.assign({ source }, extra || {});
+    const event = new CustomEvent('cart.requestComplete', { detail });
+    document.dispatchEvent(event);
+};
+
+// Paint the drawer as soon as a mutating response arrives, before the
+// gift/discount follow-ups finish. Later bundled sections re-morph on top.
+// The drawer stays in loading mode (dimmed, clicks blocked - including
+// checkout) until the caller ends the whole chain with setLoading(false);
+// here only the skeleton row is dropped since real content is painted.
+const earlyPaint = (sections) => {
+    if (!sections || !sections[SECTION_ID]) return;
+
+    try {
+        morphSectionHtml(sections[SECTION_ID], 'cart-dynamic-content');
+
+        if (footer_cart_drawer_template == 'cart' && sections[CART_SECTION_ID]) {
+            morphSectionHtml(sections[CART_SECTION_ID], 'main-cart-dynamic-content');
+        }
+
+        setLoading(true, false);
+        bindForms();
+    }
+    catch (error) {
+        console.error(error);
     }
 };
 
@@ -132,64 +394,122 @@ const showCart = () => {
 const applyDiscount = (discount_code) => {
     // Accepts a single code or a comma-separated list ("CODE1,CODE2");
     // entries are trimmed and empty ones are dropped.
-
-    const codes = String(discount_code || '')
-        .split(',')
-        .map(code => code.trim())
-        .filter(Boolean);
+    const codes = parseDiscountCodes(discount_code);
 
     if (codes.length === 0) return Promise.resolve();
 
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/update.js', {
-        method: 'POST',
-        priority: 'high',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ discount: codes.join(',') })
-    });
+    return cartPost('cart/update.js', { discount: codes.join(',') });
 };
 
-const addToCart = (input) => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
-        method: 'POST',
-        priority: 'high',
-        body: input
-    })
-    .then(response => response.json())
-    .then(() => addProductGift(input))
-    .then(() => {
-        toogleGift().then(() => {
-            const discount = typeof footer_cart_drawer_discount !== 'undefined' ? footer_cart_drawer_discount : null;
-            applyDiscount(discount).then(() => {
-                const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCart' } });
-                document.dispatchEvent(event);
-            });
-        });
-    })
-    .catch((error) => {
+const addToCart = async (input) => {
+    // Optimistic UI: open the drawer immediately, morph content on arrival.
+    showCart();
+    setLoading(true, true);
+
+    try {
+        const added = await cartPost('cart/add.js', withSections(input));
+        earlyPaint(added.sections);
+
+        // Single state fetch that drives all follow-up decisions.
+        let cart = await getCartState();
+        if (!cart) throw new Error('Unable to fetch cart state');
+
+        const gift = typeof input.get === 'function' ? input.get('properties[_gift]') : null;
+        const form_discount = typeof input.get === 'function' ? input.get('properties[_discount_code]') : null;
+
+        let sections = added.sections || null;
+
+        // Product gift (addProductGift semantics): add once, never duplicate.
+        // Skeleton row signals the incoming gift while it loads.
+        if (gift) {
+            const alreadyAdded = cart.items.some(item =>
+                item.properties && item.properties['_product_gift'] == gift
+            );
+
+            if (!alreadyAdded) {
+                setLoading(true, true);
+                const giftRes = await cartPost('cart/add.js', withSections({
+                    items: [{
+                        id: gift,
+                        properties: { _product_gift: gift },
+                        quantity: 1
+                    }]
+                }));
+                cart.item_count += 1;
+                if (giftRes.sections) {
+                    sections = giftRes.sections;
+                    earlyPaint(sections);
+                }
+            }
+        }
+
+        // Form-level and site-wide discounts merged into one update.js call;
+        // its response (post-discount totals) drives the gift threshold check.
+        const codes = [...new Set([
+            ...parseDiscountCodes(form_discount),
+            ...parseDiscountCodes(siteDiscount())
+        ])];
+
+        if (codes.length > 0) {
+            const res = await cartPost('cart/update.js', withSections({ discount: codes.join(',') }));
+            cart = res;
+            sections = res.sections || sections;
+            earlyPaint(res.sections);
+        }
+
+        const ops = computeGiftOps(cart);
+        Object.assign(ops.gift_updating, computeOrphanGiftOps(cart));
+        if (ops.gifts_adding.length > 0) {
+            setLoading(true, true);
+        }
+
+        const result = await finishMutations(cart, ops, sections);
+
+        setLoading(false);
+        dispatchComplete('addToCart', result);
+    }
+    catch (error) {
+        setLoading(false);
         console.error('Error cart adding:', error);
-    });
+    }
 };
 
-const addToCartJson = (input) => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
-        method: 'POST',
-        priority: 'high',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: input })
-    })
-    .then(response => response.json())
-    .then(() => {
-        toogleGift().then(() => {
-            const discount = typeof footer_cart_drawer_discount !== 'undefined' ? footer_cart_drawer_discount : null;
-            applyDiscount(discount).then(() => {
-                const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartJson' } });
-                document.dispatchEvent(event);
-            });
-        })
-    })
-    .catch((error) => {
+const addToCartJson = async (input) => {
+    showCart();
+    setLoading(true, true);
+
+    try {
+        const added = await cartPost('cart/add.js', withSections({ items: input }));
+        earlyPaint(added.sections);
+
+        let cart = await getCartState();
+        if (!cart) throw new Error('Unable to fetch cart state');
+
+        const codes = parseDiscountCodes(siteDiscount());
+
+        let sections = added.sections || null;
+        if (codes.length > 0) {
+            const res = await cartPost('cart/update.js', withSections({ discount: codes.join(',') }));
+            cart = res;
+            sections = res.sections || sections;
+            earlyPaint(res.sections);
+        }
+
+        const ops = computeGiftOps(cart);
+        Object.assign(ops.gift_updating, computeOrphanGiftOps(cart));
+        if (ops.gifts_adding.length > 0) {
+            setLoading(true, true);
+        }
+
+        const result = await finishMutations(cart, ops, sections);
+
+        setLoading(false);
+        dispatchComplete('addToCartJson', result);
+    }
+    catch (error) {
+        setLoading(false);
         console.error('Error cart adding:', error);
-    });
+    }
 };
 
 // Guard against a "free-only" cart: when the qualifying paid product is removed,
@@ -204,62 +524,63 @@ const clearCartIfOnlyFreeItems = async () => {
     return false;
 };
 
-const changeCart = (input) => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/change.js', {
-        method: 'POST',
-        priority: 'high',
-        body: input
-    })
-    .then(response => response.json())
-    .then(() => {
-        toogleGift().then(async () => {
-            // Fallback cleanup after gift toggling: if only zero-value items remain, wipe the cart.
-            // clearCart() dispatches its own cart.requestComplete, so stop the normal flow here.
-            if (await clearCartIfOnlyFreeItems()) return;
+const changeCart = async (input) => {
+    setLoading(true);
 
-            if (typeof syncCart === 'function') {
-                syncCart(input).then(() => {
-                    const event = new CustomEvent('cart.requestComplete', { detail: { source: 'syncCart' } });
-                    document.dispatchEvent(event);
-                });
-            }
-            else {
-                const event = new CustomEvent('cart.requestComplete', { detail: { source: 'changeCart' } });
-                document.dispatchEvent(event);
-            }
-        })
-    })
-    .catch((error) => {
+    try {
+        // change.js returns the full cart JSON plus rendered sections in one
+        // round-trip - typically the only request of the whole flow.
+        const res = await cartPost('cart/change.js', withSections(input));
+        earlyPaint(res.sections);
+
+        // Free-only cleanup from the response already in hand: if only
+        // zero-value items remain, wipe the cart and stop the normal flow.
+        if (res.item_count > 0 && res.total_price === 0) {
+            const cleared = await cartPost('cart/clear.js', withSections({}));
+            setLoading(false);
+            dispatchComplete('clearCart', { cart: cleared, sections: cleared.sections });
+            return;
+        }
+
+        const ops = computeGiftOps(res);
+        Object.assign(ops.gift_updating, computeOrphanGiftOps(res));
+        if (ops.gifts_adding.length > 0) {
+            setLoading(true, true);
+        }
+
+        const result = await finishMutations(res, ops, res.sections);
+
+        setLoading(false);
+
+        if (typeof syncCart === 'function') {
+            // syncCart may mutate the cart, so drop the pre-fetched sections
+            // and let the reload fetch a fresh render.
+            await syncCart(input);
+            dispatchComplete('syncCart', {});
+        }
+        else {
+            dispatchComplete('changeCart', result);
+        }
+    }
+    catch (error) {
+        setLoading(false);
         console.error('Error cart changing:', error);
-    });
+    }
 };
 
 const clearCart = () => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/clear.js', {
-        method: 'POST',
-        priority: 'high',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(cart => {
-        const event = new CustomEvent('cart.requestComplete', { detail: { source: 'clearCart' } });
-        document.dispatchEvent(event);
-    })
-    .catch(error => {
-        console.error('Error clearing cart:', error);
-    });
+    return cartPost('cart/clear.js', withSections({}))
+        .then(cart => {
+            dispatchComplete('clearCart', { cart, sections: cart.sections });
+        })
+        .catch(error => {
+            console.error('Error clearing cart:', error);
+        });
 }
 
 const getCartState = () => {
     return fetch((window.Shopify?.routes?.root || '/') + 'cart.js', { priority: 'high' })
             .then(response => response.json())
-            .then(cart => {
-                console.log('Cart state:', cart);
-                return cart; 
-            })
             .catch(error => {
                 console.error('Error fetching cart:', error);
                 return null;
@@ -305,44 +626,14 @@ const toogleInsurance = () => {
     });
 };
 
+// Public API kept behavior-compatible for external callers: dispatches its
+// own addToCartMany/updateCartMany events. Internal add/change flows use
+// computeGiftOps + finishMutations instead.
 const toogleGift = async () => {
-    const forms = document.querySelectorAll('form.footer-cart-drawer-gift[action$="/cart/add"]');
-
-    if (forms.length === 0) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-    };
-
-    const gifts_adding = [];
-    const gift_updating = {};
-
     const cart = await getCartState();
+    if (!cart) return;
 
-    for (const form of forms) {
-        const formData = new FormData(form);
-        const price_limit = formData.get('properties[_price_limit]');
-
-        const giftItem = cart.items.find(item => 
-            item.id === +(formData.get('id')) && 
-            item.properties && 
-            item.properties['_required_validation']
-        );
-
-        if (!giftItem) {
-            if (cart.total_price >= price_limit) {
-                gifts_adding.push({
-                    id: +(formData.get('id')),
-                    properties: {
-                        _required_validation: formData.get('properties[_required_validation]')
-                    },
-                    quantity: 1
-                });
-            }
-        } else {
-            if (cart.total_price < price_limit) {
-                gift_updating[formData.get('id')] = 0;
-            }
-        }
-    }
+    const { gifts_adding, gift_updating } = computeGiftOps(cart);
 
     if (gifts_adding.length > 0) {
         await addToCartMany(gifts_adding);
@@ -351,8 +642,6 @@ const toogleGift = async () => {
     if (Object.keys(gift_updating).length > 0) {
         await updateCartMany(gift_updating);
     }
-
-    await new Promise(resolve => setTimeout(resolve, 100));
 };
 
 const addProductGift = async (input) => {
@@ -386,58 +675,34 @@ const addProductGift = async (input) => {
         // Apply the accompanying discount code.
         await applyDiscount(discount_code);
     }
-
-    await new Promise(resolve => setTimeout(resolve, 100));
 };
 
 const updateCart = async (input) => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/update.js', {
-        method: 'POST',
-        priority: 'high',
-        body: input
-    })
-    .then(response => {
-        return response.json();
-    })
-    .catch((error) => {
-        console.error('Error cart updating:', error);
-        return null;
-    });
+    return cartPost('cart/update.js', input)
+        .catch((error) => {
+            console.error('Error cart updating:', error);
+            return null;
+        });
 };
 
 const addToCartMany = (input) => {
-    return fetch((window.Shopify?.routes?.root || '/') + 'cart/add.js', {
-        method: 'POST',
-        priority: 'high',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: input })
-    })
-    .then(response => response.json())
-    .then(() => {
-        const event = new CustomEvent('cart.requestComplete', { detail: { source: 'addToCartMany' } });
-        document.dispatchEvent(event);
-    })
-    .catch((error) => {
-        console.error('Error cart adding:', error);
-    });
+    return cartPost('cart/add.js', { items: input })
+        .then(() => {
+            dispatchComplete('addToCartMany');
+        })
+        .catch((error) => {
+            console.error('Error cart adding:', error);
+        });
 };
 
 const updateCartMany = (updates) => {
-    return fetch(window.Shopify.routes.root + 'cart/update.js', {
-        method: 'POST',
-        priority: 'high',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ updates })
-      })
-      .then(() => {
-        const event = new CustomEvent('cart.requestComplete', { detail: { source: 'updateCartMany' } });
-        document.dispatchEvent(event);
-      })
-      .catch((error) => {
-        console.error('Error updating cart:', error);
-      });
+    return cartPost('cart/update.js', { updates })
+        .then(() => {
+            dispatchComplete('updateCartMany');
+        })
+        .catch((error) => {
+            console.error('Error updating cart:', error);
+        });
 };
 
 window.CartDrawer = {
