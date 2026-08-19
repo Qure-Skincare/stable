@@ -701,6 +701,19 @@
     "n_trusted_reviews_DUlFYg": {
       "type": "n_trusted-reviews",
       "blocks": {
+        "slider_bRpWez": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/cheryl.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Cheryl T.",
+            "verified_customer": "Verified customer",
+            "text": "<p><strong>I see a difference!</strong></p><p>“I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 24weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_AbTEJa": {
           "type": "slider",
           "settings": {
@@ -859,6 +872,7 @@
         }
       },
       "block_order": [
+        "slider_bRpWez",
         "slider_AbTEJa",
         "slider_78E6pj",
         "slider_dPBWEW",
