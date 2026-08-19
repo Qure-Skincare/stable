@@ -240,7 +240,8 @@
         "image": "shopify://shop_images/skin_firming.webp",
         "button_label": "Shop Now",
         "button_url": "#hero_product",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_why_using_zc4dzf": {
@@ -584,6 +585,19 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_JqcGid": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/HeatherB.a.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Heather B.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Definitely see an improvement</h6><p>“Started using the LED mask on March 27th. Have used every day. Not a huge difference but I can definitely see a little improvement. So all of you impatient people like me, don't give up! Lol<br/>. Full disclosure, I also use whipped Tallow and Honey balm on my face.''</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -603,7 +617,8 @@
         "slider_cMhj7n",
         "slider_GHrdiH",
         "slider_Vw7rAy",
-        "slider_X4K3NE"
+        "slider_X4K3NE",
+        "slider_JqcGid"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -1167,7 +1182,8 @@
         "image": "shopify://shop_images/image_4.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_comparison_table_UNdXnK": {
@@ -1280,6 +1296,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>How Q-Rejuvalight compares</h2>"
       }
     },
