@@ -2,53 +2,7 @@
 
 <!-- FLYOUT CART -->
 
-<style>
-   /* While the cart settles, only the checkout area is locked — item rows
-      stay clickable so remove/qty actions are never swallowed. */
-   #cart-dynamic-content.is-loading .flyout-cart__footer {
-      pointer-events: none;
-   }
-   #cart-dynamic-content.is-loading .flyout-cart__list,
-   #cart-dynamic-content.is-loading .flyout-cart__footer,
-   #cart-dynamic-content.is-loading .flyout-cart__gifts {
-      opacity: .5;
-      transition: opacity .15s;
-   }
-   /* While an item is being added, the stale empty-state and upsells are
-      hidden and a skeleton row stands in for the incoming item. */
-   #cart-dynamic-content.is-adding .flyout-cart__placeholder,
-   #cart-dynamic-content.is-adding .flyout-cart__upsells {
-      display: none;
-   }
-   #cart-dynamic-content.is-adding .flyout-cart__count {
-      visibility: hidden;
-   }
-   /* Skeleton styled as a cart item card: image square + two text lines,
-      with a soft shimmer sweeping across. */
-   #cart-dynamic-content.is-adding .flyout-cart__body::before {
-      content: '';
-      display: block;
-      height: 104px;
-      margin: 16px 20px;
-      border: 1px solid #ececec;
-      border-radius: 12px;
-      background-color: #fff;
-      background-image:
-         linear-gradient(100deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.85) 50%, rgba(255,255,255,0) 70%),
-         linear-gradient(#f1f1f1, #f1f1f1),
-         linear-gradient(#f1f1f1, #f1f1f1),
-         linear-gradient(#f1f1f1, #f1f1f1);
-      background-repeat: no-repeat;
-      background-size: 220px 100%, 72px 72px, 45% 14px, 28% 14px;
-      background-position: -220px 0, 16px 15px, 104px 24px, 104px 52px;
-      animation: cart-skeleton 1.3s ease-in-out infinite;
-   }
-   @keyframes cart-skeleton {
-      to {
-         background-position: calc(100% + 220px) 0, 16px 15px, 104px 24px, 104px 52px;
-      }
-   }
-</style>
+<link rel="stylesheet" href="{{ 'n-footer-cart-drawer.css' | asset_url }}">
 
 <dialog class="flyout-cart offcanvas offcanvas-end" id="cartCanvas">
    <div id="cart-dynamic-content" class="flyout-cart__dynamic">
