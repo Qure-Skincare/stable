@@ -29,7 +29,7 @@
 
 {%- assign sapp_use_minified = true -%}
 
-{%- assign sapp_init_src = 'n-redirect.js' | split: ',' -%}
+{%- assign sapp_init_src = 'n-redirect.js,n-morphdom-umd.min.js,n-footer-cart-drawer.js' | split: ',' -%}
 {%- assign sapp_init_innerhtml = 'window.get_products_data =' | split: ',' -%}
 
 {%- assign sapp_lcp_scripts = 'load_feature,__sapp-,load_feature,assets/js/,assets/n-,header.js,footer.js,qure-skincare.js' | split: ',' -%}
