@@ -675,7 +675,7 @@
         "disclaimer_dpXTXU": {
           "type": "disclaimer",
           "settings": {
-            "text": "Based on results after 6 treatments in a user study of 30 participants aged 25–65."
+            "text": "Based on results after 6 treatments in a user study of 30 participants aged 25–65. <br>Individual results may vary."
           }
         }
       },
