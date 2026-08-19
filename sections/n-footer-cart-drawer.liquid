@@ -2,12 +2,14 @@
 
 <!-- FLYOUT CART -->
 
+<link rel="stylesheet" href="{{ 'n-footer-cart-drawer.css' | asset_url }}">
+
 <dialog class="flyout-cart offcanvas offcanvas-end" id="cartCanvas">
    <div id="cart-dynamic-content" class="flyout-cart__dynamic">
       {% render 'n-footer-cart-drawer-timer', timer: global_timer %}
       <div class="flyout-cart__wrapper">
          <div class="flyout-cart__header">
-               <div>{{ 'cart.drawer.settings.header' | t }} ({{ cart.item_count }})</div>
+               <div>{{ 'cart.drawer.settings.header' | t }} <span class="flyout-cart__count">({{ cart.item_count }})</span></div>
                <button
                   class="flyout-cart__close"
                   type="button"
