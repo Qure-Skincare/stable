@@ -1622,23 +1622,6 @@
             "text_5": "",
             "select_5": "checkmark"
           }
-        },
-        "comparison_table_YDrV8V": {
-          "type": "comparison_table",
-          "settings": {
-            "image": "shopify://shop_images/Frame_1073714809.png",
-            "heading": "<p><strong>Serum Alone</strong></p>",
-            "text_1": "",
-            "select_1": "checkmark",
-            "text_2": "",
-            "select_2": "checkmark",
-            "text_3": "",
-            "select_3": "checkmark",
-            "text_4": "",
-            "select_4": "checkmark",
-            "text_5": "",
-            "select_5": "checkmark"
-          }
         }
       },
       "block_order": [
@@ -1648,8 +1631,7 @@
         "comparison_table_heading_EQwp8P",
         "comparison_table_AjMtya",
         "comparison_table_Crr9fL",
-        "comparison_table_fTFnr6",
-        "comparison_table_YDrV8V"
+        "comparison_table_fTFnr6"
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
@@ -2149,18 +2131,18 @@
     "n_faq_3MXkK3": {
       "type": "n_faq",
       "blocks": {
-        "accordion_f9BVAb": {
+        "accordion_8pDqWq": {
           "type": "accordion",
           "settings": {
-            "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.<br/><br/>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments or even mix the two serums together!<br/><br/>Visible benefits of Micro-Infusion may include:<br/></p><p>More even-looking skin tone and texture</p><p>Glowing, refreshed-looking complexion</p><p>Softer-looking fine lines</p><p>Skin that feels renewed and rejuvenated<br/></p>"
+            "heading": "Is this a serum or a device?",
+            "text": "<p>It's both — a reusable micro-needling device paired with a clinically evaluated serum (Brightening or Rejuvenating), designed to work as one system rather than either part alone.</p>"
           }
         },
-        "accordion_eFyLye": {
+        "accordion_nmNfr8": {
           "type": "accordion",
           "settings": {
-            "heading": "How quickly will I see results?",
-            "text": "<p>Micro-Infusion treatment is an effective skin-boosting step, and many users report a visible radiance boost, glowy-looking complexion, and skin that feels more hydrated within a day or two after their first treatment.<br/><br/>The more consistently you use the treatment, the more visible improvements you’ll likely notice over time. This easy-at-home facial is perfect to use a day or two before a big event, when you want your complexion to look and feel refreshed.<br/><br/>Don’t forget to keep up with your everyday skincare routine to help maintain the results of your Micro-Infusion treatment and keep your skin looking its best long-term<br/><br/><strong>Timeline of Visible Results<br/></strong><br/><strong>After 1–2 Treatments (Weeks 1–4):</strong><br/></p><ul><li>Typically users experience mild redness post-treatment – this is a normal response!</li><li>Skin looks more hydrated, plumped, and refreshed.</li><li>Complexion appears smoother and more radiant.</li></ul><p><strong>After 4 Treatments (Around 8 Weeks):</strong><br/></p><ul><li>Fine lines begin to appear softened.</li><li>Skin tone looks more even and bright.</li><li>Hydration feels longer-lasting.</li></ul><p><strong>After 6+ Treatments (12 Weeks and Beyond):</strong><br/></p><ul><li>Complexion looks clearer and more balanced.</li><li>Skin feels firmer with improved elasticity.</li><li>Texture appears smoother and more refined.</li><li>Overall skin looks more resilient and youthful.</li></ul>"
+            "heading": "Why is Qure ranked #1 on Qure's own comparison page? ",
+            "text": "<p>Fair question — we publish that page, so we're upfront about it. The reason we rank ourselves first is delivery: most anti-aging serums stay mostly on the skin's surface, while our system pairs a clinical serum with a mechanism that helps it absorb more effectively. We lay out the exact criteria on that page so you can judge for yourself.</p>"
           }
         },
         "accordion_qjUJbC": {
@@ -2170,8 +2152,32 @@
             "text": "<p>You can expect minimal discomfort and maximum results with Qure’s Micro-Infusion System.<br/><br/>Although the needles themselves are finer than most at-home needling systems (making it more comfortable), the ultra-fine tips are thinner than a human hair, so you’ll feel only a mild sensation during treatment.<br/><br/>During the initial stages of use, you may experience a slight sensation or pricking feeling as the needles make contact with the skin, but you’ll quickly get used to the feeling.</p>"
           }
         },
+        "accordion_R83BDk": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is the 90-day money-back guarantee?",
+            "text": "<p>We're confident you'll love your results. If after 90 days of consistent use you don't notice any improvement in your skin — firmer, brighter, or more youthful-looking — simply contact us and we'll refund your money in full.</p>"
+          }
+        },
+        "accordion_f9BVAb": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "heading": "What are the benefits of Micro-Infusion?",
+            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.<br/><br/>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments or even mix the two serums together!<br/><br/>Visible benefits of Micro-Infusion may include:<br/></p><p>More even-looking skin tone and texture</p><p>Glowing, refreshed-looking complexion</p><p>Softer-looking fine lines</p><p>Skin that feels renewed and rejuvenated<br/></p>"
+          }
+        },
+        "accordion_eFyLye": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "heading": "How quickly will I see results?",
+            "text": "<p>Micro-Infusion treatment is an effective skin-boosting step, and many users report a visible radiance boost, glowy-looking complexion, and skin that feels more hydrated within a day or two after their first treatment.<br/><br/>The more consistently you use the treatment, the more visible improvements you’ll likely notice over time. This easy-at-home facial is perfect to use a day or two before a big event, when you want your complexion to look and feel refreshed.<br/><br/>Don’t forget to keep up with your everyday skincare routine to help maintain the results of your Micro-Infusion treatment and keep your skin looking its best long-term<br/><br/><strong>Timeline of Visible Results<br/></strong><br/><strong>After 1–2 Treatments (Weeks 1–4):</strong><br/></p><ul><li>Typically users experience mild redness post-treatment – this is a normal response!</li><li>Skin looks more hydrated, plumped, and refreshed.</li><li>Complexion appears smoother and more radiant.</li></ul><p><strong>After 4 Treatments (Around 8 Weeks):</strong><br/></p><ul><li>Fine lines begin to appear softened.</li><li>Skin tone looks more even and bright.</li><li>Hydration feels longer-lasting.</li></ul><p><strong>After 6+ Treatments (12 Weeks and Beyond):</strong><br/></p><ul><li>Complexion looks clearer and more balanced.</li><li>Skin feels firmer with improved elasticity.</li><li>Texture appears smoother and more refined.</li><li>Overall skin looks more resilient and youthful.</li></ul>"
+          }
+        },
         "accordion_bKWcJR": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Has the Micro-Infusion System been clinically evaluated for safety?",
             "text": "<p>Yes. The Micro-Infusion System for Dark Spots and for Wrinkles underwent an independent clinical evaluation of dermatologic safety-in-use conducted by a Board-Certified Dermatologist.  <br/><br/> 31 subjects spanning all Fitzpatrick skin types (I–VI) completed the evaluation with no adverse reactions reported or observed. The products were deemed safe for their intended use.</p>"
@@ -2179,6 +2185,7 @@
         },
         "accordion_TrnBHc": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How often can I use the treatment?",
             "text": "<p>We recommend performing a Micro-Infusion treatment every 2 weeks for best results.</p>"
@@ -2186,6 +2193,7 @@
         },
         "accordion_H4hWJF": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "When is the best time to do Micro-Infusion?",
             "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after the treatment. For more information on post treatment care, <a href=\"https://qureskincare.com/pages/microinfusion-safety-guide\" title=\"https://qureskincare.com/pages/microinfusion-safety-guide\">visit our safety guide</a></p>"
@@ -2193,6 +2201,7 @@
         },
         "accordion_CWAkdL": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use it around the eyes and on the neck?",
             "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different.<br/><br/>Performing Micro-Infusion on the neck can help improve the look of fine lines and rejuvenate the skin’s appearance. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and look of this area.</p>"
@@ -2200,6 +2209,7 @@
         },
         "accordion_pNEtik": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use a different serum with the Micro-Infusion device?",
             "text": "<p>No — only use the provided Qure serum with your Micro-Infusion Device.<br/><br/>Please keep in mind that not all serums are suitable for Micro-Infusion. Some may cause irritation and should be avoided. Our serums and ampoules are specifically developed for Qure’s Micro-Infusion System, with gentle, fragrance-free formulas designed with care for all skin types.</p>"
@@ -2207,6 +2217,7 @@
         },
         "accordion_NKHMct": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How is this different to micro-rolling?",
             "text": "<p>Micro-Infusion focuses on improving the skin’s appearance by creating micro-channels on the skin’s surface. It does not alter or affect skin structure or function.<br/><br/>With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision — helping the skin appear smoother and more radiant.</p>"
@@ -2214,31 +2225,27 @@
         },
         "accordion_hrY8T4": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Tranexamic Acid Notice",
             "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:<br/><br/>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, topical TXA in cosmetic formulations is permitted.<br/><br/>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.<br/><br/>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).<br/><br/>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our suport team</a> —we’re happy to help!</p>"
           }
-        },
-        "accordion_R83BDk": {
-          "type": "accordion",
-          "settings": {
-            "heading": "What is the 90-day money-back guarantee?",
-            "text": "<p>We're confident you'll love your results. If after 90 days of consistent use you don't notice any improvement in your skin — firmer, brighter, or more youthful-looking — simply contact us and we'll refund your money in full. To qualify, you'll need to submit before-and-after photos taken after each 2-week treatment within the 90-day period.</p>"
-          }
         }
       },
       "block_order": [
+        "accordion_8pDqWq",
+        "accordion_nmNfr8",
+        "accordion_qjUJbC",
+        "accordion_R83BDk",
         "accordion_f9BVAb",
         "accordion_eFyLye",
-        "accordion_qjUJbC",
         "accordion_bKWcJR",
         "accordion_TrnBHc",
         "accordion_H4hWJF",
         "accordion_CWAkdL",
         "accordion_pNEtik",
         "accordion_NKHMct",
-        "accordion_hrY8T4",
-        "accordion_R83BDk"
+        "accordion_hrY8T4"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
