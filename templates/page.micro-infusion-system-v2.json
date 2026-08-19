@@ -1622,6 +1622,23 @@
             "text_5": "",
             "select_5": "checkmark"
           }
+        },
+        "comparison_table_YDrV8V": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1073714809.png",
+            "heading": "<p><strong>Serum Alone</strong></p>",
+            "text_1": "",
+            "select_1": "checkmark",
+            "text_2": "",
+            "select_2": "checkmark",
+            "text_3": "",
+            "select_3": "checkmark",
+            "text_4": "",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
         }
       },
       "block_order": [
@@ -1631,7 +1648,8 @@
         "comparison_table_heading_EQwp8P",
         "comparison_table_AjMtya",
         "comparison_table_Crr9fL",
-        "comparison_table_fTFnr6"
+        "comparison_table_fTFnr6",
+        "comparison_table_YDrV8V"
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
