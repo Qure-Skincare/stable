@@ -33,6 +33,7 @@
         },
         "exclusive_offer_cEGK4g": {
           "type": "exclusive-offer",
+          "disabled": true,
           "settings": {
             "product": "cleanser-4-month-bundle",
             "image_product1": "shopify://shop_images/cleanser-selector-duo.webp",
