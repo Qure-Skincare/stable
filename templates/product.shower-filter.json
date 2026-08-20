@@ -479,7 +479,8 @@
         "button_label": "Shop Now",
         "button_url": "#hero-product",
         "wistia_url": ""
-      }
+      },
+      "disabled": true
     },
     "n_progress_metrics_X8KGmr": {
       "type": "n_progress-metrics",
@@ -1215,11 +1216,81 @@
         "button-label": "Subscribe & Save",
         "button-url": ""
       }
+    },
+    "n_across_gallery_qR4nYm": {
+      "type": "n_across-gallery",
+      "blocks": {
+        "image_k2NpQw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-1.webp"
+          }
+        },
+        "image_b8HmVt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-2.webp"
+          }
+        },
+        "image_wL9sXc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-3.webp"
+          }
+        },
+        "image_dF3rYa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-4.webp"
+          }
+        },
+        "image_pT6uZj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-5.webp"
+          }
+        },
+        "image_mN7eKg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-6.webp"
+          }
+        },
+        "image_cA1hWq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-7.webp"
+          }
+        },
+        "image_xY5oBd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-8.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_k2NpQw",
+        "image_b8HmVt",
+        "image_wL9sXc",
+        "image_dF3rYa",
+        "image_pT6uZj",
+        "image_mN7eKg",
+        "image_cA1hWq",
+        "image_xY5oBd"
+      ],
+      "name": "t:sections.n_across-gallery.name",
+      "settings": {
+        "text": "<h2>Meet the Qure Shower Filters</h2><p>At Qure, we believe great skin starts at the source, and that's the water you use every day. Both the Qure Shower Filter and Handheld Shower Filter help <em>reduce certain chemicals</em> and minerals found in tap water that can linger on your skin after showering</p>",
+        "button_label": "Shop Now",
+        "button_url": "#hero-product"
+      }
     }
   },
   "order": [
     "product_header_prNYyf",
     "purchase-form-landing",
+    "n_across_gallery_qR4nYm",
     "n_base_section_CGMUkn",
     "n_base_section_Lm3tAh",
     "n_progress_metrics_X8KGmr",

@@ -435,6 +435,9 @@
         "n_accordion-tiles": {
             "name": "Accordion tiles"
         },
+        "n_across-gallery": {
+            "name": "Across gallery"
+        },
         "n_across-image-banner": {
             "name": "Across image banner",
             "settings": {
