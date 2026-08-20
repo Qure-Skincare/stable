@@ -735,6 +735,9 @@
                 }
             }
         },
+        "n_set-up-toggle": {
+            "name": "Set up toggle"
+        },
         "n_product-settings": {
             "name": "Product settings",
             "blocks": {
