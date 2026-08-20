@@ -554,36 +554,36 @@
         "image_with_text_wzVEc4": {
           "type": "image_with_text",
           "settings": {
-            "icon": "save-money",
-            "text": "Saves time, money and hassle compared to in-clinic treatments"
+            "icon": "perfect-transforming",
+            "text": "Fine Lines & Wrinkles"
           }
         },
         "image_with_text_hnpYRM": {
           "type": "image_with_text",
           "settings": {
-            "icon": "mi-quick",
-            "text": "Quick & easy 5-minute DIY facial from the convenience of home"
+            "icon": "skin-firming",
+            "text": "Loss of Firmness"
           }
         },
         "image_with_text_jkNydH": {
           "type": "image_with_text",
           "settings": {
-            "icon": "mi-painless",
-            "text": "Virtually painless, little to no downtime"
+            "icon": "tone-balance",
+            "text": "Uneven Tone"
           }
         },
         "image_with_text_aqazaK": {
           "type": "image_with_text",
           "settings": {
-            "icon": "two-in-one",
-            "text": "2-in-1 system refreshes the look of skin for a visible glow."
+            "icon": "smooth-skin",
+            "text": "Texture & Dullness"
           }
         },
         "image_with_text_eLRX6b": {
           "type": "image_with_text",
           "settings": {
-            "icon": "perfect-transforming",
-            "text": "Perfect for transforming dull-looking skin before events"
+            "icon": "calms-redness",
+            "text": "Preventative Care"
           }
         }
       },
@@ -598,7 +598,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
+        "text": "<h2>What the System Targets</h2>",
         "button_label": "",
         "button_url": ""
       }
