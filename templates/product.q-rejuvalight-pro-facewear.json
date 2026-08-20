@@ -50,6 +50,14 @@
             "discount_code": "FREEN&DOFFER"
           }
         },
+        "limited_offer_A8": {
+          "type": "limited-offer",
+          "settings": {
+            "sum": "$100",
+            "code": "QURE100",
+            "days": 4
+          }
+        },
         "button_A9": {
           "type": "button",
           "settings": {
@@ -70,14 +78,6 @@
             "text": "<p>Wipe the inside surface of your mask with Hypochlorous Acid Dermal Mist - safe for both skin and LED devices.</p><ul><li>Sanitizes your mask surface between uses</li><li>Reducing skin bacteria before treatment</li><li>Calming visible redness & supporting skin barrier</li></ul><p>Includes full-size (100ml) + travel (15ml).</p>",
             "discount_code": "MASK&MOFFER",
             "discount_percent": 20
-          }
-        },
-        "limited_offer_A8": {
-          "type": "limited-offer",
-          "settings": {
-            "sum": "$100",
-            "code": "QURE100",
-            "days": 4
           }
         },
         "nextships_A7": {
@@ -140,9 +140,9 @@
         "price_A11",
         "description_A10",
         "exclusive-offer_iaSzaD",
+        "limited_offer_A8",
         "button_A9",
         "upsell-popup_mMzPq2",
-        "limited_offer_A8",
         "nextships_A7",
         "jumpto_A1",
         "jumpto_A2",
