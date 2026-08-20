@@ -37,42 +37,13 @@
         "modifier": "labor-day",
         "rating": "",
         "rating_text": "",
-        "heading": "<h1><span>70% OFF</span> Micro-Infusion</h1>",
+        "heading": "<h1>70% OFF Micro-Infusion</h1>",
         "text": "<p>A moment to invest in the skin you work hard for</p>",
         "sub_text": "",
         "image": "shopify://shop_images/labor-day.webp",
         "image_mobile": "shopify://shop_images/labor-day-mob.webp",
         "button_label": "Buy Now & Save Up to 70%",
         "button_url": "/pages/microinfusion"
-      }
-    },
-    "n_across_image_banner_summer": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "badge_summer": {
-          "type": "badge",
-          "settings": {
-            "badge_text": "SUMMER SALE LIMITED OFFER"
-          }
-        }
-      },
-      "block_order": [
-        "badge_summer"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "summer",
-        "rating": "",
-        "rating_text": "",
-        "heading": "<h1>Glow With Confidence This Summer</h1>",
-        "text": "<p>Buy LED Mask, Get Neck & Décolletage LED <strong>FREE</strong></p>",
-        "sub_text": "",
-        "image": "shopify://shop_images/summer.webp",
-        "image_mobile": "shopify://shop_images/summer-mob.webp",
-        "button_label": "Buy Now & Save $299",
-        "button_url": "https://qureskincare.com/pages/led-mask-offer-2"
       }
     },
     "n_across_image_banner_Kp7wRm": {
@@ -265,6 +236,31 @@
       "name": "t:sections.n_index-quick-title-links.name",
       "settings": {
         "use_own_file": false
+      }
+    },
+    "n_index-daily-cleanser": {
+      "type": "n_index-daily-cleanser",
+      "blocks": {
+        "gift_1": {
+          "type": "gift",
+          "settings": {
+            "image": "shopify://shop_images/daily-cleanser-gift.webp",
+            "badge_text": "Free Gift"
+          }
+        }
+      },
+      "block_order": [
+        "gift_1"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_index-daily-cleanser.name",
+      "settings": {
+        "text": "<h3>Daily Cleanser</h3><p>50% Glycerin. <strong>No Dryness.</strong> No Tightness.</p>",
+        "badge_text": "NEW",
+        "button_label": "Buy Now",
+        "button_url": "https://qureskincare.com/products/cleanser",
+        "image": "shopify://shop_images/daily-cleanser-bg.webp",
+        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp"
       }
     },
     "n_press_reviews_KgaUTN": {
@@ -469,31 +465,6 @@
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
-      }
-    },
-    "n_index-daily-cleanser": {
-      "type": "n_index-daily-cleanser",
-      "blocks": {
-        "gift_1": {
-          "type": "gift",
-          "settings": {
-            "image": "shopify://shop_images/daily-cleanser-gift.webp",
-            "badge_text": "Free Gift"
-          }
-        }
-      },
-      "block_order": [
-        "gift_1"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_index-daily-cleanser.name",
-      "settings": {
-        "text": "<h3>Daily Cleanser</h3><p>50% Glycerin. <strong>No Dryness.</strong> No Tightness.</p>",
-        "badge_text": "NEW",
-        "button_label": "Buy Now",
-        "button_url": "https://qureskincare.com/products/cleanser",
-        "image": "shopify://shop_images/daily-cleanser-bg.webp",
-        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp"
       }
     },
     "n_index-top-rated": {
@@ -794,7 +765,8 @@
         "image": "shopify://shop_images/skincare_rev.webp",
         "button_label": "Read Our Story",
         "button_url": "https://qureskincare.com/pages/our-story",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_our_advisors_LPVVBm": {
@@ -924,14 +896,13 @@
   },
   "order": [
     "n_across_image_banner_mR8kQ2",
-    "n_across_image_banner_summer",
     "n_across_image_banner_Kp7wRm",
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
+    "n_index-daily-cleanser",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
-    "n_index-daily-cleanser",
     "n_index-top-rated",
     "n_index-get-qure",
     "n_features_marquee_qXW6Gd",
