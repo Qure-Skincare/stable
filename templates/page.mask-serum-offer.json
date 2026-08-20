@@ -377,6 +377,7 @@
         },
         "slider_hanna": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shower-result2.webp",
             "flag": "shopify://shop_images/england_f.webp",
