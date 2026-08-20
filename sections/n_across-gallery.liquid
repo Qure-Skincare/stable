@@ -11,20 +11,17 @@
                 <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
             {% endif %}
         </article>
-        {% assign image_blocks = section.blocks | where: "type", "image" %}
-        {% if image_blocks.size > 0 %}
-            <ul class="across-gallery__images">
-                {% for block in section.blocks %}
-                    {% if block.type == 'image' %}
-                        {% if block.settings.image != blank %}
-                            <li>
-                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                            </li>
-                        {% endif %}
+        <ul class="across-gallery__images">
+            {% for block in section.blocks %}
+                {% if block.type == 'image' %}
+                    {% if block.settings.image != blank %}
+                        <li>
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        </li>
                     {% endif %}
-                {% endfor %}
-            </ul>
-        {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
     </div>
 </section>
 <!-- ACROSS GALLERY END -->
