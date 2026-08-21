@@ -946,7 +946,6 @@
       "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "full",
         "section_id": "ingredients",
         "heading": "<h2>Powerful ingredients. Backed by science.</h2>"
       }
