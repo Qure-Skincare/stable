@@ -11,7 +11,11 @@
     {% for block in section.blocks %}
         {% if block.type == 'jumpto' %}
             {% if block.settings.button-label != blank %}
-                <li><a href="{{ block.settings.button-url }}" class="patch-badge">{{ block.settings.button-label }}<i class="fa-regular fa-arrow-down fs-14"></i></a></li>
+                {% if section.settings.rating_type == 'trustpilot' %}
+                    <li><a href="{{ block.settings.button-url }}">{{ block.settings.button-label }} <i class="e-icon e-icon-arrow"></i></a></li>
+                {% else %}
+                    <li><a href="{{ block.settings.button-url }}" class="patch-badge">{{ block.settings.button-label }}<i class="fa-regular fa-arrow-down fs-14"></i></a></li>
+                {% endif %}
             {% endif %}
         {% endif %}
     {% endfor %}

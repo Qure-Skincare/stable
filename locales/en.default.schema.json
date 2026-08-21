@@ -143,6 +143,7 @@
         "rating-type": "Rating type",
         "rated-by-customers": "Rated by Customers",
         "backed-by-dermatologists": "Backed by Dermatologists",
+        "trustpilot": "Trustpilot",
         "link-text": "Link text",
         "image-header": "Image header",
         "image-text": "Image text",
@@ -350,6 +351,9 @@
         "unclogs-pores": "Unclogs pores",
         "hydration": "Hydration",
         "balances": "Balances",
+        "double-drop": "Double drop",
+        "certificate": "Certificate",
+        "verified-shield": "Verified shield",
         "shine": "Shine",
         "rotation": "Rotation",
         "easy-washing": "Easy washing",
@@ -694,6 +698,9 @@
                 }
             }
         },
+        "n_award-winning": {
+            "name": "Award winning"
+        },
         "n_product-you-may-also-like": {
             "name": "Product you may also like"
         },
@@ -728,7 +735,8 @@
             "name": "Easy steps",
             "settings": {
                 "modifier-options": {
-                    "no-video": "No video"
+                    "no-video": "No video",
+                    "custom": "Custom"
                 }
             }
         },
@@ -1302,7 +1310,12 @@
             "name": "Apply form"
         },
         "n_accordion-tiles-square": {
-            "name": "Accordion tiles square"
+            "name": "Accordion tiles square",
+            "settings": {
+                "modifier-options": {
+                    "full": "Full"
+                }
+            }
         },
         "beauty-benefits": {
             "name": "Beauty benefits"

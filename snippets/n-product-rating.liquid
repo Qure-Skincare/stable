@@ -12,7 +12,13 @@
 {% assign rating_value = product.metafields.reviews.rating.value %}
 {% assign rating_count = product.metafields.reviews.rating_count.value %}
 
-{% if rating_type == 'dermatologists' %}
+{% if rating_type == 'trustpilot' %}
+    <div class="c-rating c-rating--trustpilot">
+      <div class="e-rating-stars" style="--rating: 4.8"></div>
+      {{ 'product.settings.n-product-rating.trustpilot_html' | t: rating: '4.8' }}
+      <img src="https://qureskincaredns-stable.com/assets/images/trustpilot.webp" alt="Trustpilot" />
+    </div>
+{% elsif rating_type == 'dermatologists' %}
     {% if rating_count > 5 %}
         {% assign show_rating = rating_value | slice: 0, 3 %}
     {% else %}
