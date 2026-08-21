@@ -6,7 +6,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/accordion-tiles-square/accordion-tiles-square.css" />
 {% endif %}
-<section class="accordion-tiles accordion-tiles--square{% if section.settings.modifier == 'full' %} accordion-tiles--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+<section class="accordion-tiles accordion-tiles--square"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article>
             {{ section.settings.heading }}
@@ -16,7 +16,6 @@
                     "slidesPerView": 1.1,
                     "spaceBetween": 16,
                     "loop": false,
-                    {% if section.settings.modifier == 'full' %}
                     "pagination": {
                         "el": ".c-swiper-pagination",
                         "type": "custom"
@@ -25,13 +24,12 @@
                         "prevEl": ".c-swiper-button-prev",
                         "nextEl": ".c-swiper-button-next"
                     },
-                    {% endif %}
                     "breakpoints": {
                         "768": {
                             "slidesPerView": 2.1
                         },
                         "992": {
-                            "slidesPerView": {% if section.settings.modifier == 'full' %}3.3{% else %}3{% endif %},
+                            "slidesPerView": 3,
                             "spaceBetween": 32
                         }
                     }
@@ -53,13 +51,11 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-                {% if section.settings.modifier == 'full' %}
-                    <div class="c-swiper-nav">
-                        <button class="c-swiper-button-prev"></button>
-                        <div class="c-swiper-pagination"></div>
-                        <button class="c-swiper-button-next"></button>
-                    </div>
-                {% endif %}
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next"></button>
+                </div>
             </div>
 
             {% for block in section.blocks %}
@@ -96,22 +92,6 @@
       "id": "use_own_file",
       "label": "t:common.use-own-file",
       "default": false
-    },
-    {
-      "type": "select",
-      "id": "modifier",
-      "label": "t:common.modifier",
-      "default": "none",
-      "options": [
-        {
-          "value": "none",
-          "label": "t:common.none"
-        },
-        {
-          "value": "full",
-          "label": "t:sections.n_accordion-tiles-square.settings.modifier-options.full"
-        }
-      ]
     },
     {
       "type": "text",
