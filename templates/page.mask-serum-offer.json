@@ -35,7 +35,7 @@
             "subscription_note_mode": "cancel",
             "subscription_variant_id": "49565278503151",
             "selling_plan_id": "8856043759",
-            "checked_image": "shopify://shop_images/8_fbeaf0f4-ff69-4dbf-8b69-96bcf7b06e7f.webp",
+            "checked_image": "shopify://shop_images/Group_1437254068.webp",
             "unchecked_image": "shopify://shop_images/9.webp"
           }
         },
@@ -115,7 +115,7 @@
           "settings": {
             "image": "shopify://shop_images/Methylene_Blue.webp",
             "badge_text": "Methylene Blue+ Serum",
-            "text": "<h6>Blue+ Face Serum: <br/>Designed for the LED Mask</h6><p>An everyday serum, supercharged by LED. <br/><br/>Formulated with Methylene Blue to help skin respond to both LED modes: Skin-Clearing and Skin-Rejuvenating. It also provides antioxidant support against daily environmental stressors, with or without your LED session.</p>"
+            "text": "<h6>Blue+ Face Serum: <br/>Designed for the LED Mask</h6><ul><li>An everyday serum, supercharged by LED. <br/><br/>Formulated with Methylene Blue to help skin respond to both LED modes: Skin-Clearing and Skin-Rejuvenating. It also provides antioxidant support against daily environmental stressors, with or without your LED session.</li></ul>"
           }
         },
         "item_mask": {
@@ -123,7 +123,7 @@
           "settings": {
             "image": "shopify://shop_images/Methylene_Blue_1.png",
             "badge_text": "LED Mask",
-            "text": "<h6>Two Modes, One Device</h6><p>3-min daily LED treatment, using clinically-studied wavelengths across both modes.</p><ul><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion<br/></li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
+            "text": "<h6>Two Modes, One Device</h6><ul><li>3-min daily LED treatment, using clinically-studied wavelengths across both modes.<br/><br/></li><li><strong>Skin-Clearing Mode 415nm · 630nm ·</strong> Helps support a clearer-looking complexion<br/></li><li><strong>Skin-Rejuvenating Mode · 630nm · 660nm · 880nm ·</strong> Helps improve the look of fine lines and skin texture</li></ul>"
           }
         },
         "item_together": {
@@ -131,7 +131,7 @@
           "settings": {
             "image": "shopify://shop_images/better-together-3.webp",
             "badge_text": "",
-            "text": "<h6>At-home results</h6><p>Many users report visible improvement with consistent use. </p><ul><li><strong>Results over time<br/></strong> Smoother-looking fine lines with continued use<br/>Dermatologist trusted formula<br/>Trusted by board-certified dermatologists</li></ul>"
+            "text": "<h6>At-home results</h6><ul><li>Many users report visible improvement with consistent use. <br/><br/></li><li><strong>Results over time<br/></strong> Smoother-looking fine lines with continued use<br/>Dermatologist trusted formula<br/>Trusted by board-certified dermatologists</li></ul>"
           }
         }
       },
