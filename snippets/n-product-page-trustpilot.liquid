@@ -1,0 +1,54 @@
+{% doc %}
+  Renders the trustpilot product-header column: description, rating and icon list in main;
+  certified-box and money-back when called with extra.
+
+  @param {object} section - A section object.
+  @param {object} product - A product object.
+  @param {boolean} extra - When true, render extra-column certified-box and money-back.
+
+  @example
+  {% render 'n-product-page-trustpilot', section: section, product: product %}
+  {% render 'n-product-page-trustpilot', section: section, extra: true %}
+{% enddoc %}
+
+{% if extra %}
+    {% if section.settings.rating_type == 'trustpilot' %}
+        <div class="c-certified-box">
+            <ul>
+                <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
+                <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-2.webp" alt="Certified Dermatologists" /></li>
+                <li>+50</li>
+            </ul>
+            <p>{{ 'product.settings.buy-button-bottom.recommended_html' | t }}</p>
+        </div>
+    {% endif %}
+    {% for block in section.blocks %}
+        {% if block.type == 'money-back' %}
+            {% render 'n-product-money-back', section: section, block: block %}
+        {% endif %}
+    {% endfor %}
+{% elsif section.settings.rating_type == 'trustpilot' %}
+    {{ section.settings.description }}
+
+    {% if section.settings.rating != blank %}
+        {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
+    {% endif %}
+
+    {% capture icon_list %}
+        {% for block in section.blocks %}
+            {% if block.type == 'icon_with_text' %}
+                <li>
+                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                    {{ block.settings.text }}
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endcapture %}
+    {% if icon_list != blank %}
+        <article>
+            <ul>
+                {{ icon_list }}
+            </ul>
+        </article>
+    {% endif %}
+{% endif %}

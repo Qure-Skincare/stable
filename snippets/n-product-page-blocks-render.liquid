@@ -18,7 +18,9 @@
         {% when 'badge' %}
             {% render 'n-product-badge', block: block %}
         {% when 'description' %}
-            {% render 'n-product-description', description: section.settings.description %}
+            {% unless section.settings.rating_type == 'trustpilot' %}
+                {% render 'n-product-description', description: section.settings.description %}
+            {% endunless %}
         {% when 'description-aio' %}
             {% render 'n-product-description-aio', block: block %}
         {% when 'quote' %}
@@ -66,6 +68,8 @@
         {% when 'link' %}
             {% render 'n-page-link-button', section: section %}
         {% when 'money-back' %}
-            {% render 'n-product-money-back', section: section, block: block %}
+            {% unless section.settings.rating_type == 'trustpilot' %}
+                {% render 'n-product-money-back', section: section, block: block %}
+            {% endunless %}
         {% endcase %}
 {% endfor %}

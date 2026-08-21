@@ -5,9 +5,30 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/trusted-reviews/trusted-reviews.css" />
 {% endif %}
-<section class="trusted-reviews {% if section.settings.background_color != 'none' %}trusted-reviews--{{ section.settings.background_color }}{% endif %}" id="trusted-reviews">
+<section class="trusted-reviews{% if section.settings.modifier == 'trustpilot' %} trusted-reviews--trustpilot{% endif %}{% if section.settings.background_color != 'none' %} trusted-reviews--{{ section.settings.background_color }}{% endif %}" id="{{ section.settings.section_id | default: 'trusted-reviews' }}">
     <div class="container">
-        {{ section.settings.text }}
+        {% if section.settings.modifier == 'trustpilot' %}
+            <i class="e-icon e-icon-qure"></i>
+            {{ section.settings.heading }}
+            <div class="trustpilot-rating">
+                <div class="trustpilot-rating__stars">
+                    <a href="#">{{ 'sections.n_trusted-reviews.excellent' | t }}</a>
+                    <div class="e-rating-stars" style="--rating: 4.7"></div>
+                </div>
+                <div class="trustpilot-rating__rating">
+                    {{ 'sections.n_trusted-reviews.based_on_html' | t }}
+                    <img src="https://qureskincaredns-stable.com/assets/images/trustpilot.webp" alt="Trustpilot" />
+                </div>
+            </div>
+            <p class="e-disclaimer">{{ section.settings.disclaimer }}</p>
+        {% else %}
+            {{ section.settings.text }}
+        {% endif %}
+        {% if section.settings.modifier == 'trustpilot' %}
+        <div
+            class="c-swiper"
+            data-swiper='{"slidesPerView":1.1,"spaceBetween":16,"loop":false,"pagination":{"el":".c-swiper-pagination","type":"custom"},"navigation":{"prevEl":".c-swiper-button-prev","nextEl":".c-swiper-button-next"},"breakpoints":{"768":{"slidesPerView":2},"992":{"spaceBetween":24,"slidesPerView":3.3}}}'>
+        {% else %}
         <div
             class="c-swiper"
             data-swiper='{
@@ -32,6 +53,7 @@
                 }
             }
         }'>
+        {% endif %}
             <div class="swiper-wrapper">
                 {% for block in section.blocks %}
                     {% if block.type == 'slider' %}
@@ -53,6 +75,9 @@
                                         <div class="e-checkmark"></div>
                                         {{ block.settings.verified_customer }}
                                     </div>
+                                {% endif %}
+                                {% if block.settings.badge != blank %}
+                                    <div class="e-pill-badge e-pill-badge--sm">{{ block.settings.badge }}</div>
                                 {% endif %}
                                 {% if block.settings.text != blank %}
                                     <article>
@@ -116,6 +141,37 @@
                 ]
             },
             {
+                "type": "select",
+                "id": "modifier",
+                "label": "t:common.modifier",
+                "default": "none",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:common.none"
+                    },
+                    {
+                        "value": "trustpilot",
+                        "label": "t:common.trustpilot"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "t:common.section_id"
+            },
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "t:common.header"
+            },
+            {
+                "type": "text",
+                "id": "disclaimer",
+                "label": "t:common.disclaimer"
+            },
+            {
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
@@ -156,6 +212,11 @@
                     "id": "verified_customer",
                     "label": "t:common.verified-customer",
                     "default": "Verified customer"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge"
                 },
                 {
                     "type": "richtext",
