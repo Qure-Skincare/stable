@@ -1,0 +1,68 @@
+{% doc %}
+  Renders an across gallery section
+{% enddoc %}
+
+<!-- ACROSS GALLERY -->
+<section class="across-gallery">
+    <div class="container">
+        <article>
+            {{ section.settings.text }}
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+            {% endif %}
+        </article>
+        <ul class="across-gallery__images">
+            {% for block in section.blocks %}
+                {% if block.type == 'image' %}
+                    {% if block.settings.image != blank %}
+                        <li>
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<!-- ACROSS GALLERY END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_across-gallery.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_across-gallery.name"
+        }
+    ]
+}
+{% endschema %}

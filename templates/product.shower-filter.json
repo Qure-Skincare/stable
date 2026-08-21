@@ -464,6 +464,76 @@
         "wistia_url": ""
       }
     },
+    "n_across_gallery_qR4nYm": {
+      "type": "n_across-gallery",
+      "disabled": true,
+      "blocks": {
+        "image_k2NpQw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-1.webp"
+          }
+        },
+        "image_b8HmVt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-2.webp"
+          }
+        },
+        "image_wL9sXc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-3.webp"
+          }
+        },
+        "image_dF3rYa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-4.webp"
+          }
+        },
+        "image_pT6uZj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-5.webp"
+          }
+        },
+        "image_mN7eKg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-6.webp"
+          }
+        },
+        "image_cA1hWq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-7.webp"
+          }
+        },
+        "image_xY5oBd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-8.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_k2NpQw",
+        "image_b8HmVt",
+        "image_wL9sXc",
+        "image_dF3rYa",
+        "image_pT6uZj",
+        "image_mN7eKg",
+        "image_cA1hWq",
+        "image_xY5oBd"
+      ],
+      "name": "t:sections.n_across-gallery.name",
+      "settings": {
+        "text": "<h2>Meet the Qure Shower Filters</h2><p>At Qure, we believe great skin starts at the source, and that's the water you use every day. Both the Qure Shower Filter and Handheld Shower Filter help <em>reduce certain chemicals</em> and minerals found in tap water that can linger on your skin after showering</p>",
+        "button_label": "Shop Now",
+        "button_url": "#hero-product"
+      }
+    },
     "n_base_section_Lm3tAh": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
@@ -479,7 +549,8 @@
         "button_label": "Shop Now",
         "button_url": "#hero-product",
         "wistia_url": ""
-      }
+      },
+      "disabled": true
     },
     "n_progress_metrics_X8KGmr": {
       "type": "n_progress-metrics",
@@ -871,6 +942,100 @@
         "use_own_file": false
       }
     },
+    "n_set_up_toggle_wK3nRp": {
+      "type": "n_set-up-toggle",
+      "disabled": true,
+      "blocks": {
+        "tab_hNd8Vx": {
+          "type": "tab",
+          "settings": {
+            "label": "Handheld Shower",
+            "image": "shopify://shop_images/handheld-shower.webp",
+            "wistia_url": "bsfna2u1ja",
+            "video_image": "shopify://shop_images/handheld-shower-filter-use-video.webp",
+            "video_image_mobile": "shopify://shop_images/handheld-shower-filter-use-video-mob.webp"
+          }
+        },
+        "tab_sQ2mLp": {
+          "type": "tab",
+          "settings": {
+            "label": "Shower",
+            "image": "shopify://shop_images/shower.webp",
+            "wistia_url": "fsw2ted2a8",
+            "video_image": "shopify://shop_images/shower-filter-use-video.webp",
+            "video_image_mobile": "shopify://shop_images/shower-filter-use-video-mob.webp"
+          }
+        },
+        "step_pR7tYc": {
+          "type": "step",
+          "settings": {
+            "tab_id": "first",
+            "image": "shopify://shop_images/handheld-shower-filter-use-step-1.webp",
+            "image_mobile": "shopify://shop_images/handheld-shower-filter-use-step-1-mob.webp",
+            "text": "<h6>Detatch</h6><p>Unscrew your old handheld shower head from the hose by hand, or with a wrench (included) for more grip if needed.</p>"
+          }
+        },
+        "step_kL4wBn": {
+          "type": "step",
+          "settings": {
+            "tab_id": "first",
+            "image": "shopify://shop_images/handheld-shower-filter-use-step-2.webp",
+            "image_mobile": "shopify://shop_images/handheld-shower-filter-use-step-2-mob.webp",
+            "text": "<h6>Fit</h6><p>Wrap the plumber's tape (included) around the hose connector.</p>"
+          }
+        },
+        "step_mJ9aXe": {
+          "type": "step",
+          "settings": {
+            "tab_id": "first",
+            "image": "shopify://shop_images/handheld-shower-filter-use-step-3.webp",
+            "image_mobile": "shopify://shop_images/handheld-shower-filter-use-step-3-mob.webp",
+            "text": "<h6>Secure</h6><p>Twist the Qure Handheld Shower Filter onto the hose and tighten it securely with the wrench.</p>"
+          }
+        },
+        "step_vC5uZq": {
+          "type": "step",
+          "settings": {
+            "tab_id": "second",
+            "image": "shopify://shop_images/shower-filter-use-step-1.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-use-step-1-mob.webp",
+            "text": "<h6>Detatch</h6><p>Unscrew your old shower head by hand, or with a wrench (included) for more grip if needed.</p>"
+          }
+        },
+        "step_gT8dHy": {
+          "type": "step",
+          "settings": {
+            "tab_id": "second",
+            "image": "shopify://shop_images/shower-filter-use-step-2.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-use-step-2-mob.webp",
+            "text": "<h6>Fit</h6><p>Wrap the plumber tape (included) around the shower pipe.</p>"
+          }
+        },
+        "step_nF1oWk": {
+          "type": "step",
+          "settings": {
+            "tab_id": "second",
+            "image": "shopify://shop_images/shower-filter-use-step-3.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-use-step-3-mob.webp",
+            "text": "<h6>Secure</h6><p>Twist the Qure Shower Filter onto the pipe and tighten it securely with the wrench.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_hNd8Vx",
+        "tab_sQ2mLp",
+        "step_pR7tYc",
+        "step_kL4wBn",
+        "step_mJ9aXe",
+        "step_vC5uZq",
+        "step_gT8dHy",
+        "step_nF1oWk"
+      ],
+      "name": "t:sections.n_set-up-toggle.name",
+      "settings": {
+        "text": "<h2>Set up in 3 easy steps</h2>"
+      }
+    },
     "n_easy_steps_ntE9Cf": {
       "type": "n_easy-steps",
       "blocks": {
@@ -914,7 +1079,8 @@
         "wistia_url": "fsw2ted2a8",
         "button_label": "",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "n_product_settings_rDjiPj": {
       "type": "n_product-settings",
@@ -1221,6 +1387,7 @@
     "product_header_prNYyf",
     "purchase-form-landing",
     "n_base_section_CGMUkn",
+    "n_across_gallery_qR4nYm",
     "n_base_section_Lm3tAh",
     "n_progress_metrics_X8KGmr",
     "n_trusted_reviews_TczFHL",
@@ -1229,6 +1396,7 @@
     "n_why_it_works_gwdxhE",
     "n_video_slider_UbQYbp",
     "n_features_marquee_h4hRGq",
+    "n_set_up_toggle_wK3nRp",
     "n_easy_steps_ntE9Cf",
     "n_product_settings_rDjiPj",
     "n_comparison_WktgAV",

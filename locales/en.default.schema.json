@@ -439,6 +439,9 @@
         "n_accordion-tiles": {
             "name": "Accordion tiles"
         },
+        "n_across-gallery": {
+            "name": "Across gallery"
+        },
         "n_across-image-banner": {
             "name": "Across image banner",
             "settings": {
@@ -739,6 +742,9 @@
                     "custom": "Custom"
                 }
             }
+        },
+        "n_set-up-toggle": {
+            "name": "Set up toggle"
         },
         "n_product-settings": {
             "name": "Product settings",
