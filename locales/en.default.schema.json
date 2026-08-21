@@ -1310,7 +1310,12 @@
             "name": "Apply form"
         },
         "n_accordion-tiles-square": {
-            "name": "Accordion tiles square"
+            "name": "Accordion tiles square",
+            "settings": {
+                "modifier-options": {
+                    "full": "Full"
+                }
+            }
         },
         "beauty-benefits": {
             "name": "Beauty benefits"
