@@ -54,6 +54,8 @@
     {% assign product_variant_id = get_product_data.variants.first.id %}
     {% assign product_price_original = get_product_data.price %}
     {% assign product_price_compare_original = get_product_data.compare_at_price %}
+    {% assign product_price_diff_original = product_price_compare_original |  minus: product_price_original %}
+
     {% assign product_variants = get_product_data.variants %}
     {% assign product_tags = get_product_data.tags %}
     {% assign product_media = get_product_data.media %}
@@ -74,6 +76,8 @@
     {% endif %}
 
     {% assign product_price_divided = product_price_original | divided_by: 4 | money_without_trailing_zeros %}
+    {% assign product_price_divided_30 = product_price_original | divided_by: 30 | money_without_trailing_zeros %}
+    {% assign product_price_divided_90 = product_price_original | divided_by: 90 | money_without_trailing_zeros %}
     {% assign product_discount_value = product_price_original | times: 1.0 | divided_by: product_price_compare_original | minus: 1 | abs | times: 100 %}
     {% assign product_discount_decimal = product_discount_value | modulo: 1 -%}
     {% if product_discount_decimal >= 0.5 %}
@@ -84,6 +88,7 @@
     {% assign product_title_tag = product_title | strip_html | strip_newlines | strip | replace: ' ', '' | replace: ',', '_' | downcase %}
     {% assign product_price = product_price_original | money_without_trailing_zeros %}
     {% assign product_price_compare = product_price_compare_original | money_without_trailing_zeros %}
+    {% assign product_price_diff = product_price_diff_original | money_without_trailing_zeros %}
     {% assign product_sale_price = product_price %}
     {% assign product_before_price = product_price_compare %}
     {% assign product_url = product_handle | prepend: '/products/'  %}
@@ -109,7 +114,10 @@
 
         {% assign product_subscription_price_original = product_subscription_price_original | times: 100 %}
         {% assign product_subscription_price = product_subscription_price_original | money_without_trailing_zeros %}
+        {% assign product_subscription_price_diff = product_price_compare_original | minus: product_subscription_price_original | money_without_trailing_zeros %}
         {% assign product_subscription_price_divided = product_subscription_price_original | divided_by: 4 | money_without_trailing_zeros %}
+        {% assign product_subscription_price_divided_30 = product_subscription_price_original | divided_by: 30 | money_without_trailing_zeros %}
+        {% assign product_subscription_price_divided_90 = product_subscription_price_original | divided_by: 90 | money_without_trailing_zeros %}
         
         {% if product_price_compare_original != blank %}
           {% assign product_discount = product_price_original | minus: product_subscription_discount_delta | times: 1.0 | divided_by: product_price_compare_original | minus: 1 | abs | times: 100 | ceil %}
@@ -118,6 +126,8 @@
         {% endif %}
 
         {% assign product_price_divided = product_price_original | minus: product_subscription_discount_delta | divided_by: 4 | money_without_trailing_zeros %}
+        {% assign product_price_divided_30 = product_price_original | minus: product_subscription_discount_delta | divided_by: 30 | money_without_trailing_zeros %}
+        {% assign product_price_divided_90 = product_price_original | minus: product_subscription_discount_delta | divided_by: 90 | money_without_trailing_zeros %}
         
         {% if black_friday_discount_percent > 0 %}
           {% assign product_subscription_discount_delta = product_subscription_price_original | times: black_friday_discount_percent | divided_by: 100 %}      
@@ -132,7 +142,10 @@
 
           {% assign black_friday_product_subscription_price_original = black_friday_product_subscription_price_original | times: 100 %}
           {% assign black_friday_product_subscription_price = black_friday_product_subscription_price_original | money_without_trailing_zeros %}
+          {% assign black_friday_product_subscription_price_diff = product_price_compare_original | minus: black_friday_product_subscription_price_original %}
           {% assign black_friday_product_subscription_price_divided = black_friday_product_subscription_price_original | divided_by: 4 | money_without_trailing_zeros %} 
+          {% assign black_friday_product_subscription_price_divided_30 = black_friday_product_subscription_price_original | divided_by: 30 | money_without_trailing_zeros %} 
+          {% assign black_friday_product_subscription_price_divided_90 = black_friday_product_subscription_price_original | divided_by: 90 | money_without_trailing_zeros %} 
           {% assign subscription_discount_percent = black_friday_product_subscription_price_original | times: 1.0 | divided_by: product_price_original | minus: 1 | abs | times: 100 | floor %}
         {% endif %}
 
