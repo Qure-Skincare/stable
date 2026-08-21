@@ -55,7 +55,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Reviews",
-            "button-url": "#trusted-reviews"
+            "button-url": "#reviews"
           }
         },
         "jumpto_c5D6eF": {
@@ -78,13 +78,54 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
+        },
+        "icon_with_text_n1P2qR": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "balances",
+            "text": "Supports natural collagen production"
+          }
+        },
+        "icon_with_text_s3T4uV": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "double-drop",
+            "text": "Increases serums absorption"
+          }
+        },
+        "icon_with_text_w5X6yZ": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verified-shield",
+            "text": "See visible results after one treatment"
+          }
+        },
+        "icon_with_text_a7B8cD": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "certificate",
+            "text": "Recommended by Dermatoligists"
+          }
+        },
+        "money_back_e9F0gH": {
+          "type": "money-back",
+          "settings": {
+            "image": "shopify://shop_images/moneyback-90.webp",
+            "heading": "Try it now with zero risk.",
+            "text": "Our 90-day money-back guarantee."
+          }
         }
       },
       "block_order": [
         "description_a1B2cD",
+        "icon_with_text_n1P2qR",
+        "icon_with_text_s3T4uV",
+        "icon_with_text_w5X6yZ",
+        "icon_with_text_a7B8cD",
         "section_e3F4gH",
         "upsell_popup_i5J6kL",
         "accordion_m7N8oP",
+        "money_back_e9F0gH",
         "jumpto_q9R0sT",
         "jumpto_u1V2wX",
         "jumpto_y3Z4aB",
@@ -104,7 +145,7 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
-        "rating_type": "customers",
+        "rating_type": "trustpilot",
         "limited": false,
         "description": "<p>Reveal the appearance of <strong>firmer, younger &amp; more even-looking skin</strong> in just a few, easy at-home applications or <strong>get your money back!*</strong></p>",
         "reserved": false,

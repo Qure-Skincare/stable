@@ -36,14 +36,9 @@
 
             {% render 'n-product-page-approved', section: section, product: product %}
 
-            {%- if product != blank -%}
-                {% if section.settings.rating != blank %}
-                    {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
-                {% endif %}
-            {%- else -%}
-                {% render 'n-page-rating', section: section %}
-            {%- endif -%}
-
+            {% if section.settings.rating != blank and section.settings.rating_type != 'trustpilot' %}
+                {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
+            {% endif %}
 
             {% if section.settings.seo_heading != blank %}
                 <p>{{ section.settings.seo_heading }}</p>
@@ -61,6 +56,8 @@
                 {% endif %}
             {% endif %}
 
+            {% render 'n-product-page-trustpilot', section: section, product: product %}
+
             {% include 'n-product-page-blocks-render' %}
         </div>
         <div class="hero-product__extra">
@@ -73,6 +70,7 @@
                         {% render 'n-product-page-collapsed', product: product, page: page, section: section %}
                 {% endcase %}
             {% endfor %}
+            {% render 'n-product-page-trustpilot', section: section, extra: true %}
             {% render 'n-product-page-jumpto', section: section %}
         </div>
     </div>
@@ -165,6 +163,10 @@
                 {
                     "value": "dermatologists",
                     "label": "t:common.backed-by-dermatologists"
+                },
+                {
+                    "value": "trustpilot",
+                    "label": "t:common.trustpilot"
                 }
             ]
         },
@@ -416,10 +418,60 @@
             ]
         },
         {
+            "type": "icon_with_text",
+            "name": "t:common.icon-with-text",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "balances",
+                            "label": "t:common.balances"
+                        },
+                        {
+                            "value": "double-drop",
+                            "label": "t:common.double-drop"
+                        },
+                        {
+                            "value": "verified-shield",
+                            "label": "t:common.verified-shield"
+                        },
+                        {
+                            "value": "certificate",
+                            "label": "t:common.certificate"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
             "type": "money-back",
             "name": "t:common.money-back",
             "limit": 1,
-            "settings": []
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
         },
         {
             "type": "reviews-videos",

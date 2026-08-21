@@ -9,12 +9,20 @@
 {% enddoc %}
 
 {% if section.settings.rating != blank %}
-    <div class="c-rating c-rating--bg">
-        <div class="e-rating-stars" style="--rating: 4.8"></div>
-        {% if rating_text != blank %}
-            <span>{{ rating_text }}</span>
-        {% else %}
-            <a href="{% if section.settings.rating-url != blank %}{{ section.settings.rating-url }}{% else %}#stamped-main-widget{% endif %}">{{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}</a>
-        {% endif %}
-    </div>
+    {% if section.settings.rating_type == 'trustpilot' %}
+        <div class="c-rating c-rating--trustpilot">
+            <div class="e-rating-stars" style="--rating: 4.8"></div>
+            {{ 'product.settings.n-product-rating.trustpilot_html' | t: rating: '4.8' }}
+            <img src="https://qureskincaredns-stable.com/assets/images/trustpilot.webp" alt="Trustpilot" />
+        </div>
+    {% else %}
+        <div class="c-rating c-rating--bg">
+            <div class="e-rating-stars" style="--rating: 4.8"></div>
+            {% if rating_text != blank %}
+                <span>{{ rating_text }}</span>
+            {% else %}
+                <a href="{% if section.settings.rating-url != blank %}{{ section.settings.rating-url }}{% else %}#stamped-main-widget{% endif %}">{{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}</a>
+            {% endif %}
+        </div>
+    {% endif %}
 {% endif %}

@@ -466,7 +466,8 @@
       },
       "n-product-rating": {
         "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by 10k+ Customers</small>",
-        "dermatologists": "Backed by Dermatologists"
+        "dermatologists": "Backed by Dermatologists",
+        "trustpilot_html": "<a href='#'><strong>{{ rating }}</strong>/5 Rated by Customers</a>"
       },
       "product-buy-button-sticky": {
         "color": "Set color",
