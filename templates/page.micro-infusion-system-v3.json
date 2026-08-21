@@ -16,6 +16,34 @@
           "type": "description",
           "settings": {}
         },
+        "icon_with_text_n1P2qR": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "balances",
+            "text": "Supports natural collagen production"
+          }
+        },
+        "icon_with_text_s3T4uV": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "double-drop",
+            "text": "Increases serums absorption"
+          }
+        },
+        "icon_with_text_w5X6yZ": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verified-shield",
+            "text": "See visible results after one treatment"
+          }
+        },
+        "icon_with_text_a7B8cD": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "certificate",
+            "text": "Recommended by Dermatoligists"
+          }
+        },
         "section_e3F4gH": {
           "type": "section",
           "settings": {
@@ -36,6 +64,14 @@
         "accordion_m7N8oP": {
           "type": "accordion",
           "settings": {}
+        },
+        "money_back_e9F0gH": {
+          "type": "money-back",
+          "settings": {
+            "image": "shopify://shop_images/moneyback-90.webp",
+            "heading": "Try it now with zero risk.",
+            "text": "Our 90-day money-back guarantee."
+          }
         },
         "jumpto_q9R0sT": {
           "type": "jumpto",
@@ -78,42 +114,6 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
-        },
-        "icon_with_text_n1P2qR": {
-          "type": "icon_with_text",
-          "settings": {
-            "icon": "balances",
-            "text": "Supports natural collagen production"
-          }
-        },
-        "icon_with_text_s3T4uV": {
-          "type": "icon_with_text",
-          "settings": {
-            "icon": "double-drop",
-            "text": "Increases serums absorption"
-          }
-        },
-        "icon_with_text_w5X6yZ": {
-          "type": "icon_with_text",
-          "settings": {
-            "icon": "verified-shield",
-            "text": "See visible results after one treatment"
-          }
-        },
-        "icon_with_text_a7B8cD": {
-          "type": "icon_with_text",
-          "settings": {
-            "icon": "certificate",
-            "text": "Recommended by Dermatoligists"
-          }
-        },
-        "money_back_e9F0gH": {
-          "type": "money-back",
-          "settings": {
-            "image": "shopify://shop_images/moneyback-90.webp",
-            "heading": "Try it now with zero risk.",
-            "text": "Our 90-day money-back guarantee."
-          }
         }
       },
       "block_order": [
@@ -147,7 +147,7 @@
         "rating": true,
         "rating_type": "trustpilot",
         "limited": false,
-        "description": "<p>Reveal the appearance of <strong>firmer, younger &amp; more even-looking skin</strong> in just a few, easy at-home applications or <strong>get your money back!*</strong></p>",
+        "description": "<p>Reveal the appearance of <strong>firmer, younger & more even-looking skin</strong> in just a few, easy at-home applications or <strong>get your money back!*</strong></p>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -157,6 +157,15 @@
     "purchase-form-landing": {
       "type": "n-purchase-form-landing",
       "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "9th May",
+            "percent": 73,
+            "date_soldout": "23rd March",
+            "date_reserved": "9th May"
+          }
+        },
         "type_p1Q2rS": {
           "type": "type",
           "settings": {}
@@ -164,7 +173,7 @@
         "product_type_t3U4vW": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_6.png",
             "preselected": false
           }
@@ -175,9 +184,9 @@
             "product": "micro-infusion-6-month-bundle-for-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
-            "gift": "silk-pillowcase",
-            "gift_text": "Wrinkle-Reducing Silk Pillowcase",
-            "discount_code": "FREEM&I",
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -257,7 +266,7 @@
         "product_type_n3O4pQ": {
           "type": "product_type",
           "settings": {
-            "heading": "Wrinkles",
+            "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
             "preselected": true
           }
@@ -268,9 +277,9 @@
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
-            "gift": "silk-pillowcase",
-            "gift_text": "Wrinkle-Reducing Silk Pillowcase",
-            "discount_code": "FREEM&I",
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -361,9 +370,9 @@
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
-            "gift": "silk-pillowcase",
-            "gift_text": "Wrinkle-Reducing Silk Pillowcase",
-            "discount_code": "FREEM&I",
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -436,15 +445,6 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55
-          }
-        },
-        "nextships_4xp7uM": {
-          "type": "nextships",
-          "settings": {
-            "date": "9th May",
-            "percent": 73,
-            "date_soldout": "23rd March",
-            "date_reserved": "9th May"
           }
         }
       },
@@ -843,28 +843,28 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br /> Orders Over 100$"
+            "text": "Free Shipping On<br> Orders Over 100$"
           }
         },
         "image_with_text_2": {
           "type": "image_with_text",
           "settings": {
             "icon": "reviewed",
-            "text": "Dermatologist<br /> Reviewed"
+            "text": "Dermatologist<br> Reviewed"
           }
         },
         "image_with_text_3": {
           "type": "image_with_text",
           "settings": {
             "icon": "pay-later",
-            "text": "Buy Now, Pay Later<br /> Options Available"
+            "text": "Buy Now, Pay Later<br> Options Available"
           }
         },
         "image_with_text_4": {
           "type": "image_with_text",
           "settings": {
             "icon": "proven",
-            "text": "Proven Results,<br /> Backed By Science"
+            "text": "Proven Results,<br> Backed By Science"
           }
         }
       },
@@ -1133,8 +1133,8 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
-        "button_label": "Ask us ",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
