@@ -342,7 +342,6 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Of all the LED masks we’ve tried, this is <em>the best on the market right now...</em> It didn’t lose in any category...</p><p>There’s real science behind LED therapy, and <em>Qure makes it easy</em> to be consistent—which is what really drives results.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_img_bddb1870-8487-4f88-b6dd-ab063ea346f3.webp",

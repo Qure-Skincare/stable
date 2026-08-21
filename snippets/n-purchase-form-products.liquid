@@ -7,18 +7,35 @@
         {% include 'n-purchase-form-delivery-switcher' %}
     {% endif %}
 
-    <div class="c-supply-selector{% if section.settings.type != 'list' %}  c-supply-selector--tiles{% endif %}">
-        <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product' | t }}</p>
+    {% if section.settings.type == 'card' %}
+        <div class="c-supply-selector c-supply-selector--cards">
+            <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product' | t }}</p>
+            {% if section.settings.subscription_product == 'true' %}
+                {% include 'n-purchase-form-products-item-card' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
+                {% include 'n-purchase-form-products-item-card' array: __idsArray2, preorder_box: preorder_box, subscription_is_on: true %}
+                {% include 'n-purchase-form-products-item-card' array: __idsArray3, preorder_box: preorder_box, subscription_is_on: true %}
+            {% endif %}
 
-        {% if section.settings.subscription_product == 'true' %}
-            {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
-            {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box, subscription_is_on: true %}
-            {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box, subscription_is_on: true %}
-        {% endif %}
+            {% include 'n-purchase-form-products-item-card' array: __idsArray1, preorder_box: preorder_box %}
+            {% include 'n-purchase-form-products-item-card' array: __idsArray2, preorder_box: preorder_box %}
+            {% include 'n-purchase-form-products-item-card' array: __idsArray3, preorder_box: preorder_box %}
 
-        {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box %}
-        {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box %}
-        {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box %}
-        <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
-    </div>
+            <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
+        </div>
+    {% else %}
+        <div class="c-supply-selector{% if section.settings.type != 'list' %}  c-supply-selector--tiles{% endif %}">
+            <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product' | t }}</p>
+
+            {% if section.settings.subscription_product == 'true' %}
+                {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
+                {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box, subscription_is_on: true %}
+                {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box, subscription_is_on: true %}
+            {% endif %}
+
+            {% include 'n-purchase-form-products-item' array: __idsArray1, preorder_box: preorder_box %}
+            {% include 'n-purchase-form-products-item' array: __idsArray2, preorder_box: preorder_box %}
+            {% include 'n-purchase-form-products-item' array: __idsArray3, preorder_box: preorder_box %}
+            <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
+        </div>
+    {% endif %}
 </div>
