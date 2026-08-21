@@ -735,7 +735,8 @@
             "name": "Easy steps",
             "settings": {
                 "modifier-options": {
-                    "no-video": "No video"
+                    "no-video": "No video",
+                    "custom": "Custom"
                 }
             }
         },

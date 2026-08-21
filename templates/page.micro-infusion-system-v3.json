@@ -740,7 +740,7 @@
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "none",
+        "modifier": "custom",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
