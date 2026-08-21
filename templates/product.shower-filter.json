@@ -466,6 +466,7 @@
     },
     "n_across_gallery_qR4nYm": {
       "type": "n_across-gallery",
+      "disabled": true,
       "blocks": {
         "image_k2NpQw": {
           "type": "image",
@@ -943,6 +944,7 @@
     },
     "n_set_up_toggle_wK3nRp": {
       "type": "n_set-up-toggle",
+      "disabled": true,
       "blocks": {
         "tab_hNd8Vx": {
           "type": "tab",
