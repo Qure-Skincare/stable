@@ -327,7 +327,6 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "modifier": "none",
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office</em>.”</p>",
         "video_image_cover": "shopify://shop_images/shah-maxfield.webp",

@@ -9,31 +9,28 @@
  */
 {
   "markets": {
-    "canada": {
-      "parent": "@default"
-    },
     "australia": {
-      "parent": "@default"
-    },
-    "europe": {
       "parent": "@default"
     },
     "us": {
       "parent": "@default"
     },
-    "israel": {
+    "uae": {
       "parent": "@default"
     },
-    "united-kingdom": {
+    "canada": {
+      "parent": "@default"
+    },
+    "europe": {
+      "parent": "@default"
+    },
+    "israel": {
       "parent": "@default"
     },
     "international": {
       "parent": "@default"
     },
     "asia": {
-      "parent": "@default"
-    },
-    "uae": {
       "parent": "@default"
     }
   }

@@ -391,7 +391,7 @@ const earlyPaint = (sections) => {
 
 /*  default functions   */
 
-const applyDiscount = (discount_code) => {
+const applyDiscounts = (discount_code) => {
     // Accepts a single code or a comma-separated list ("CODE1,CODE2");
     // entries are trimmed and empty ones are dropped.
     const codes = parseDiscountCodes(discount_code);
@@ -673,7 +673,7 @@ const addProductGift = async (input) => {
 
     if(discount_code) {
         // Apply the accompanying discount code.
-        await applyDiscount(discount_code);
+        await applyDiscounts(discount_code);
     }
 };
 
@@ -706,7 +706,7 @@ const updateCartMany = (updates) => {
 };
 
 window.CartDrawer = {
-    applyDiscount,
+    applyDiscounts,
     toogleGift,
     addProductGift,
     addToCartJson,
