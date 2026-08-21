@@ -146,8 +146,6 @@ function __handlerProductVariantSelector(e) {
     subscriptionForm(this,product_selling_plan);
     applyDiscount(gift, discount_code);
 
-    console.log('aaaaqqqq2');
-
     const purchase_form_pay_in_full = document.querySelector('.' + __section + " .purchase_form_pay_in_full");
     if (purchase_form_pay_in_full) {
         const oldPrice = purchase_form_pay_in_full.querySelector(".e-price__old");
