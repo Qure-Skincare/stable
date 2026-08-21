@@ -478,6 +478,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Sandra L",
             "verified_customer": "Verified customer",
+            "badge": "Mouth Wrinkles",
             "text": "<p>“The vertical lines above my lip aged me more than anything else. Every two weeks with the wrinkle serum. By month two, the lines looked visibly smoother and my lipstick stopped bleeding into them. My skin there feels more hydrated day to day now.”</p>",
             "product_url": "",
             "product_text": "",
@@ -491,6 +492,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Angela R",
             "verified_customer": "Verified customer",
+            "badge": "Mouth Wrinkles",
             "text": "<p>“My lipstick used to feather into every line around my mouth. Every other week, 2-3 passes like the guide says. By treatment five, lipstick stayed put better and the lines themselves looked shallower. Stings for a few seconds on the lip line, then it's done.”</p>",
             "product_url": "",
             "product_text": "",
@@ -504,6 +506,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Michelle D",
             "verified_customer": "Verified customer",
+            "badge": "Mouth Wrinkles",
             "text": "<p>“I doubted an at-home tool could touch my deeper mouth lines. Committed to the full 3-month plan, every two weeks. By treatment seven, the lines looked visibly less pronounced and my skin there felt smoother than in years. My partner noticed before I said anything.”</p>",
             "product_url": "",
             "product_text": "",
@@ -517,6 +520,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Barbara S",
             "verified_customer": "Verified customer",
+            "badge": "Nasolabial Folds",
             "text": "<p>“I'd had nasolabial filler before but didn't love the added fullness. Every two weeks for three months with Qure instead. The folds around my nose and mouth look visibly softer with no added volume. I've pushed my filler appointments out much further now.”</p>",
             "product_url": "",
             "product_text": "",
@@ -530,6 +534,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Marissa T",
             "verified_customer": "Verified customer",
+            "badge": "Dark spots",
             "text": "<p>“Years of sun damage left dark spots across my cheeks that no serum ever touched. Every two weeks with the brightening serum, and by treatment four, my spots looked visibly faded and my tone looked more even. My foundation goes on smoother now too.”</p>",
             "product_url": "",
             "product_text": "",
@@ -543,6 +548,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Denise M",
             "verified_customer": "Verified customer",
+            "badge": "Smokers lines",
             "text": "<p>“I quit smoking years ago but the lines above my lip stuck around. A little sore for a few hours after each treatment, but nothing major. My before-and-afters are four weeks apart and the lines already look visibly softer. Really easy to use.”</p>",
             "product_url": "",
             "product_text": "",
@@ -556,6 +562,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Leslie B",
             "verified_customer": "Verified customer",
+            "badge": "Neck sagging",
             "text": "<p>“Truly impressed! After using for one month, I can see a drastic change in my neck area. Hoping my neck continues to improve with further treatments. Will be ordering again and have told several people about this product already.”</p>",
             "product_url": "",
             "product_text": "",
@@ -569,6 +576,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Rebecca S",
             "verified_customer": "Verified customer",
+            "badge": "Forehead wrinkles",
             "text": "<p>“After just one day, my skin already looked healthier and I could see a reduction in my forehead lines. Excited to see what happens over the next three months of consistent treatments every two weeks. Easy to fit into my nighttime routine.”</p>",
             "product_url": "",
             "product_text": "",
@@ -582,6 +590,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Carol B",
             "verified_customer": "Verified customer",
+            "badge": "Eye Wrinkles",
             "text": "<p>“I'm 61 and the lines by my eyes have bothered me for years. Every two weeks, five minutes, no downtime. By treatment four, my daughter noticed my eye area looked smoother in photos. The crepiness has softened and makeup doesn't settle into the lines like before.”</p>",
             "product_url": "",
             "product_text": "",
@@ -595,6 +604,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Diane R",
             "verified_customer": "Verified customer",
+            "badge": "Neck sagging",
             "text": "<p>“I always focused on my face and neglected my neck until it started sagging. Ten treatments over five months using the wrinkle serum on my neck, and the skin there looks visibly tighter and more toned. A slow, steady improvement that's kept me consistent.”</p>",
             "product_url": "",
             "product_text": "",
@@ -608,6 +618,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Susan A.",
             "verified_customer": "Verified customer",
+            "badge": "Neck sagging",
             "text": "<p>“My neck started showing horizontal creases and looser skin before anything else on my face did. Every two weeks for two months, and my neck skin looks visibly firmer and the creases look softer. My scarves stopped feeling like a necessity.”</p>",
             "product_url": "",
             "product_text": "",
@@ -632,9 +643,48 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
-        "text": "<h2>Customer Transformations</h2><p>Based on individual user experience. Results may vary.</p>",
+        "modifier": "trustpilot",
+        "section_id": "reviews",
+        "heading": "<h2>Customer Transformations</h2>",
+        "disclaimer": "Based on individual user experience. Results may vary.",
+        "text": "",
         "button_label": "",
         "button_url": ""
+      }
+    },
+    "n_award_winning_kT7pWx": {
+      "type": "n_award-winning",
+      "blocks": {
+        "slide_a1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-winning-beauty-awards-2024.webp",
+            "text": "<h4>Beauty Awards</h4><p>Winner 2024</p>"
+          }
+        },
+        "slide_a2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-winning-global-awards.webp",
+            "text": "<h4>Beauty Global Awards</h4><p>Winner 2025</p>"
+          }
+        },
+        "slide_a3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/award-winning-nb100-2025.webp",
+            "text": "<h4>NB100 Awards</h4><p>Winner 2025</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_a1",
+        "slide_a2",
+        "slide_a3"
+      ],
+      "name": "t:sections.n_award-winning.name",
+      "settings": {
+        "heading": "<h2>Dermatologist Backed, Award Winning</h2>"
       }
     },
     "n_base_section_r7YcHd": {
@@ -654,7 +704,7 @@
         "accordion_text": ""
       }
     },
-    "n_easy_steps_mN3vBq": {
+    "n_easy_steps_mN3vBe": {
       "type": "n_easy-steps",
       "blocks": {
         "items_c1": {
@@ -1090,8 +1140,9 @@
     "n_product_header_k8Qm2R",
     "purchase-form-landing",
     "n_trusted_reviews_pL4nWx",
+    "n_award_winning_kT7pWx",
     "n_base_section_r7YcHd",
-    "n_easy_steps_mN3vBq",
+    "n_easy_steps_mN3vBe",
     "n_progress_metrics_t9KsAf",
     "n_features_marquee_wE2jLu",
     "n_accordion_tiles_square_cH6dYp",

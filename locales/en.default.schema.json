@@ -698,6 +698,9 @@
                 }
             }
         },
+        "n_award-winning": {
+            "name": "Award winning"
+        },
         "n_product-you-may-also-like": {
             "name": "Product you may also like"
         },

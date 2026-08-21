@@ -79,6 +79,10 @@
       "new": "New",
       "reviews": "Reviews"
     },
+    "n_trusted-reviews": {
+      "excellent": "Excellent",
+      "based_on_html": "<a href='#'>Based on 4.8/5</a> reviews"
+    },
     "slider-featured-in": {
       "featured_text": "FEATURED IN"
     },
