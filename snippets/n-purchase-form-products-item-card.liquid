@@ -174,7 +174,11 @@
                                 {% if subscription_is_on == true and block.settings.gift != blank %}
                                     <div class="supply-card__gift">
                                         <div class="gift-notice">
-                                            {{ 'purchase-form.settings.gift_image_html' | t }}
+                                            {% if block.settings.gift_image != blank %}
+                                                <img loading="lazy" src="{{ block.settings.gift_image | img_url: '250x' }}" alt="{{ block.settings.gift_text_image.alt | escape }}" />
+                                            {% else %}
+                                                {{ 'purchase-form.settings.gift_image_html' | t }}
+                                            {% endif %}
                                             <p>
                                                 <strong>{{ 'purchase-form.settings.free_gift' | t }}</strong> 
                                                 {% if block.settings.gift_text != blank %}

@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product-bundle": {
       "type": "n-product-bundle",
@@ -26,9 +26,7 @@
         "nextships_5rd2bS"
       ],
       "settings": {
-        "heading": "",
-        "reserved": true,
-        "soldout": false
+        "heading": ""
       }
     },
     "n_press_reviews_DDaUTN": {
