@@ -501,34 +501,6 @@
             "product_title": ""
           }
         },
-        "slider_a2": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/angela-r.webp",
-            "flag": "shopify://shop_images/england_f.webp",
-            "username": "Angela R",
-            "verified_customer": "Verified customer",
-            "badge": "Mouth Wrinkles",
-            "text": "<p>“My lipstick used to feather into every line around my mouth. Every other week, 2-3 passes like the guide says. By treatment five, lipstick stayed put better and the lines themselves looked shallower. Stings for a few seconds on the lip line, then it's done.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_a3": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/michelle-d.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Michelle D",
-            "verified_customer": "Verified customer",
-            "badge": "Mouth Wrinkles",
-            "text": "<p>“I doubted an at-home tool could touch my deeper mouth lines. Committed to the full 3-month plan, every two weeks. By treatment seven, the lines looked visibly less pronounced and my skin there felt smoother than in years. My partner noticed before I said anything.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_a4": {
           "type": "slider",
           "settings": {
@@ -571,6 +543,20 @@
             "product_title": ""
           }
         },
+        "slider_a2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/angela-r.webp",
+            "flag": "shopify://shop_images/england_f.webp",
+            "username": "Angela R",
+            "verified_customer": "Verified customer",
+            "badge": "Mouth Wrinkles",
+            "text": "<p>“My lipstick used to feather into every line around my mouth. Every other week, 2-3 passes like the guide says. By treatment five, lipstick stayed put better and the lines themselves looked shallower. Stings for a few seconds on the lip line, then it's done.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_a7": {
           "type": "slider",
           "settings": {
@@ -594,6 +580,20 @@
             "verified_customer": "Verified customer",
             "badge": "Forehead wrinkles",
             "text": "<p>“After just one day, my skin already looked healthier and I could see a reduction in my forehead lines. Excited to see what happens over the next three months of consistent treatments every two weeks. Easy to fit into my nighttime routine.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_a3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/michelle-d.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Michelle D",
+            "verified_customer": "Verified customer",
+            "badge": "Mouth Wrinkles",
+            "text": "<p>“I doubted an at-home tool could touch my deeper mouth lines. Committed to the full 3-month plan, every two weeks. By treatment seven, the lines looked visibly less pronounced and my skin there felt smoother than in years. My partner noticed before I said anything.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -644,13 +644,13 @@
       },
       "block_order": [
         "slider_a1",
-        "slider_a2",
-        "slider_a3",
         "slider_a4",
         "slider_a5",
         "slider_a6",
+        "slider_a2",
         "slider_a7",
         "slider_a8",
+        "slider_a3",
         "slider_a9",
         "slider_b1",
         "slider_b2"
