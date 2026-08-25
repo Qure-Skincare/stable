@@ -348,7 +348,7 @@
             "preorder": true,
             "preorder_text": "",
             "preorder_date_soldout": "27 July",
-            "preorder_date_reserved": "15 july",
+            "preorder_date_reserved": "9 Sept",
             "preorder_percent": 55
           }
         },
@@ -601,7 +601,8 @@
         "text": "<p>Powered by hypochlorous acid (HOCl), Dermal Mist helps calm the look and feel of stressed skin and support a fresh, balanced complexion—without irritation.<br/></p><p>Perfect for skin that experiences <em>breakouts, visible redness, or post-treatment sensitivity</em>, this lightweight mist helps soothe the look of skin and protect against everyday environmental stressors.<br/></p><p>It’s fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
         "button_label": "SHOP NOW",
         "button_url": "#hero-product",
-        "wistia_url": "getx3xc27m"
+        "wistia_url": "getx3xc27m",
+        "accordion_text": ""
       }
     },
     "n_how_to_use_xnx9jj": {
@@ -738,7 +739,8 @@
         "image": "shopify://shop_images/hypo_acid.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_video_slider_HiYyrf": {
