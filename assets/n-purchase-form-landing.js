@@ -1,5 +1,8 @@
-const __section_landing = document.currentScript.getAttribute('data-section');
-const __form_landing = document.currentScript.getAttribute('data-form');
+// "var" instead of "const": this script is re-executed when the purchase form
+// section is swapped by the purchase-form selector (see n-product-page-async-section.js),
+// and a top-level "const" would throw "Identifier has already been declared".
+var __section_landing = document.currentScript.getAttribute('data-section');
+var __form_landing = document.currentScript.getAttribute('data-form');
 
 
 __landing__initTemplate(__landing__getProductType());

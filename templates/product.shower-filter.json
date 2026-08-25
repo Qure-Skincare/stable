@@ -7,6 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+ 
 {
   "sections": {
     "product_header_prNYyf": {
@@ -40,6 +41,17 @@
             "percent_value_2": 83,
             "text3": "agree hair feels less frizzy",
             "percent_value_3": 70
+          }
+        },
+        "purchase-form-selector": {
+          "type": "purchase-form-selector",
+          "settings": {
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "product": "Shower",
+            "form_name": "purchase-form-landing",
+            "image2": "shopify://shop_images/variant-handheld-shower.webp",
+            "product2": "Handheld Shower",
+            "form_name2": "purchase-form-landing-second"
           }
         },
         "nextships_nN4CpM": {
@@ -92,6 +104,7 @@
         "accordion_migrated",
         "black_friday_discount_eUhwh7",
         "description_9VBwaX",
+        "purchase-form-selector",
         "section_A0",
         "results",
         "nextships_nN4CpM",
@@ -154,6 +167,7 @@
             "subheading": "(Showerhead + 1 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-1-filters-white.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -176,6 +190,7 @@
             "subheading": "(Showerhead + 2 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-2-filters-white.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -198,6 +213,7 @@
             "subheading": "(Showerhead + 4 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-4-filters-white.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -232,6 +248,7 @@
             "subheading": "(Showerhead + 1 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-1-filters-black.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -254,6 +271,7 @@
             "subheading": "(Showerhead + 2 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-2-filters-black.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -276,6 +294,7 @@
             "subheading": "(Showerhead + 4 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-4-filters-black.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -310,6 +329,7 @@
             "subheading": "(Showerhead + 1 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-1-filters.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -332,6 +352,7 @@
             "subheading": "(Showerhead + 2 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-2-filters.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -354,6 +375,7 @@
             "subheading": "(Showerhead + 4 Filter)",
             "product_selling_plan_text": "",
             "text": "",
+            "image": "shopify://shop_images/shower-supply-4-filters.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
@@ -368,23 +390,140 @@
         "nextships_4xp7uM",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_NEgEkN",
-        "product_gbPf3J",
         "product_RBCPe8",
+        "product_gbPf3J",
+        "product_NEgEkN",
         "type_aJwQ9q",
         "product_type_VLXcAn",
-        "product_EKAAzA",
-        "product_nyJ9n7",
         "product_eiY89h",
+        "product_nyJ9n7",
+        "product_EKAAzA",
         "type_yDwWmt",
         "product_type_YrPQrV",
-        "product_hD69Aq",
+        "product_Xf8A6C",
         "product_DBd4ef",
-        "product_Xf8A6C"
+        "product_hD69Aq"
       ],
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
+        "color_types": true,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
+        "type": "list",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
+      }
+    },
+    "purchase-form-landing-second": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "2nd June",
+            "percent": 55,
+            "date_soldout": "5th May",
+            "date_reserved": "2nd June"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Silver",
+            "preselected": false
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-filter",
+            "product_variant_id": 50530832220399,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "Shower + 1 Filters",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/handheld-shower-supply-1-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-filter-6-month-bundle",
+            "product_variant_id": 50530923086063,
+            "product_selling_plan": 0,
+            "popular": true,
+            "best": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "Shower + 2 Filters",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/handheld-shower-supply-2-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55
+          }
+        },
+        "product_RBCPe8": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-filter-12-month-bundle",
+            "product_variant_id": 50530887827695,
+            "product_selling_plan": 0,
+            "popular": false,
+            "best": true,
+            "preselected": true,
+            "heading": "12 Months Supply",
+            "subheading": "Shower + 4 Filters",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/handheld-shower-supply-4-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_RBCPe8",
+        "product_gbPf3J",
+        "product_NEgEkN"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-second",
+        "hide_types": true,
+        "color_types": false,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
@@ -1386,6 +1525,7 @@
   "order": [
     "product_header_prNYyf",
     "purchase-form-landing",
+    "purchase-form-landing-second",
     "n_base_section_CGMUkn",
     "n_across_gallery_qR4nYm",
     "n_base_section_Lm3tAh",

@@ -1,5 +1,9 @@
-<div class="c-options-selector{% if section.settings.hide_types %} hide{% endif %}">
-    <p class="c-options-selector__title">{{ 'purchase-form.settings.select-type' | t }}</p>
+<div class="c-options-selector{% if section.settings.hide_types %} hide{% endif %}{% if section.settings.color_types %} c-options-selector--color{% endif %}">
+    {% if section.settings.color_types %}
+        <p class="c-options-selector__title">{{ 'purchase-form.settings.select-color' | t }}</p>
+    {% else %}
+        <p class="c-options-selector__title">{{ 'purchase-form.settings.select-type' | t }}</p>
+    {% endif %}
     <ul class="c-options-selector__list">
         {% render 'n-purchase-form-landing-types-item' array: __idsArray1 %}
         {% render 'n-purchase-form-landing-types-item' array: __idsArray2 %}

@@ -1,0 +1,41 @@
+{% doc %}
+  Renders a product/page purchase form selector snippet for the product-header section
+
+  @param {object} - A section object.
+  @param {object} - A block object.
+
+  @example
+  {% render 'n-product-page-purchase-form-selector', section: '', block: '' %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'purchase-form-selector' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<div class="c-options-selector">
+    <p class="c-options-selector__title">{{ 'product.settings.purchase-form-selector.header' | t }}</p>
+    <ul class="c-options-selector__list">
+        {% if block.settings.image != blank and block.settings.product != blank and block.settings.form_name != blank %}
+            <li>
+                <label>
+                    <input data-form="{{ block.settings.form_name }}" type="radio" name="type" checked />
+                    <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.product | escape }}" />
+                    <span>{{ block.settings.product }}</span>
+                </label>
+            </li>
+        {% endif %}
+        {% if block.settings.image2 != blank and block.settings.product2 != blank and block.settings.form_name2 != blank %}
+            <li>
+                <label>
+                    <input data-form="{{ block.settings.form_name2 }}" type="radio" name="type" />
+                    <img src="{{ block.settings.image2 | img_url: '250x' }}" alt="{{ block.settings.product2 | escape }}" />
+                    <span>{{ block.settings.product2 }}</span>
+                </label>
+            </li>
+        {% endif %}
+    </ul>
+</div>
