@@ -159,7 +159,11 @@ window.__sapp.handlers = window.__sapp.handlers || {};
   w.__sappWistiaKick = 1;
 
   var WISTIA_SRC = ['player.js', 'E-v1.js'];
-  var LINK_SEL = '.c-wistia__link';
+  /* Match ANY popover player, not a specific CSS class: the hero section (and
+     n_easy-steps, n_expert-reviews, n_base-section, ...) wrap the button in
+     .c-wistia__custom rather than .c-wistia__link, so a class-based selector missed
+     them and Wistia stayed parked until the first scroll — a dead first tap. */
+  var LINK_SEL = 'wistia-player[wistia-popover]';
   var kicked = false;
 
   function kickWistia() {
@@ -213,14 +217,16 @@ window.__sapp.handlers = window.__sapp.handlers || {};
     if (upgraded()) return;             /* Wistia ready — let it handle the click */
     e.preventDefault();
     e.stopPropagation();
-    var host = link.closest('wistia-player');
+    var host = link;                    /* LINK_SEL is the <wistia-player> host itself */
+    var clicked = e.target;
     kickWistia();
     if (w.customElements && customElements.whenDefined) {
       customElements.whenDefined('wistia-player').then(function () {
         /* the element upgrades on definition; give Wistia a tick to wire the popover,
-           then replay a fresh click (Wistia may have re-rendered the inner content). */
+           then replay a fresh click on the inner button (Wistia may have re-rendered
+           the inner content, so re-query it rather than reusing the stale node). */
         setTimeout(function () {
-          var l = (host && host.querySelector(LINK_SEL)) || link;
+          var l = host.querySelector('a, button') || (host.contains(clicked) ? clicked : host);
           try { l.click(); } catch (x) {}
         }, 80);
       });
