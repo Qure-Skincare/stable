@@ -252,7 +252,6 @@
       "block_order": [
         "gift_1"
       ],
-      "disabled": true,
       "name": "t:sections.n_index-daily-cleanser.name",
       "settings": {
         "text": "<h3>Daily Cleanser</h3><p>50% Glycerin. <strong>No Dryness.</strong> No Tightness.</p>",
