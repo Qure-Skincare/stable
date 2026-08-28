@@ -53,14 +53,15 @@
                                             {% endif %}
                                         {% else %}
                                             {% if block.settings.video_url != blank and block.settings.image != blank %}
-                                                <picture
-                                                        class="filter-card-video"
-                                                        data-bs-toggle="modal" 
-                                                        data-bs-target="#reusableWistiaModal"
-                                                        data-video-id="{{ block.settings.video_url }}"
-                                                    >
-                                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                                </picture>
+                                                <div class="c-wistia c-wistia--custom">
+                                                    <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                                        <div class="c-wistia__custom">
+                                                            <picture>
+                                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                            </picture>
+                                                        </div>
+                                                    </wistia-player>
+                                                </div>
                                             {% endif %}
                                         {% endif %}
 
@@ -131,24 +132,19 @@
                                         {% endif %}
                                     {% elsif block.settings.video_url != blank %}
                                         {% if block.settings.image != blank %}
-                                            <picture
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#reusableWistiaModal"
-                                                data-video-id="{{ block.settings.video_url }}"
-                                            >
-                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                            </picture>
-                                        {% else %}
-                                            <div class="wistia-embed-video">
-                                                <div class="wistia_responsive_padding">
-                                                    <div class="wistia_responsive_wrapper">
-                                                        <div class="wistia_embed wistia_async_{{ block.settings.video_url }} popover=true seo=false videoFoam=true">
-                                                            <div class="wistia_swatch">
-                                                                <img loading="lazy" src="https://fast.wistia.com/embed/medias/{{ block.settings.video_url }}/swatch" alt="Wistia video thumbnail" style="filter: blur(5px);"/>
-                                                            </div>
-                                                        </div>
+                                            <div class="c-wistia c-wistia--custom">
+                                                <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                                    <div class="c-wistia__custom">
+                                                        <picture>
+                                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        </picture>
                                                     </div>
-                                                </div>
+                                                </wistia-player>
+                                            </div>
+                                        {% else %}
+                                            <div class="c-wistia">
+                                                <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" inert></wistia-player>
+                                                <div class="c-wistia__play"></div>
                                             </div>
                                         {% endif %}
                                     {% endif %}
@@ -169,6 +165,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce('wistia', 'https://qureskincaredns-stable.com/assets/js/wistia.js');
         loadScriptOnce('video-slider', 'https://qureskincaredns-stable.com/assets/js/wistia-popup.js');
         loadScriptOnce('wistia-popup', 'https://qureskincaredns-stable.com/assets/js/wistia-popup.js');
         loadScriptOnce('youtube-popup', 'https://qureskincaredns-stable.com/assets/js/yt-popup.js');
