@@ -14,10 +14,10 @@
                 <div class="c-wistia c-wistia--custom">
                     <wistia-player media-id="{{ section.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
                         <div class="c-wistia__custom">
-                            <a class="c-wistia__link" href="javascript:;">
+                            <div class="c-wistia__link">
+                                <span>{{ 'sections.hair-growth-helmet.guide.watch_video' | t }}</span>
                                 <i class="e-icon e-icon-watch"></i>
-                                <span><strong>Watch:</strong> How It Works</span>
-                            </a>
+                            </div>
                         </div>
                     </wistia-player>
                 </div>
