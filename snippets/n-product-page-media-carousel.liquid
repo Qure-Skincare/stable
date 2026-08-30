@@ -57,14 +57,15 @@
         {% else %}
             {% if thumbnails == false and objects_array[index] != blank and objects_array[index] != 'none' %}
                 <div class="swiper-slide">
-                    <img loading="lazy"
-                        class="watch-wistia-video"
-                        src="{{ media_src }}"
-                        alt="{{ title | escape }}"
-                        data-bs-toggle="modal"
-                        data-bs-target="#reusableWistiaModal"
-                        data-video-id="{{ objects_array[index] }}"
-                    />
+                    <div class="c-wistia c-wistia--custom">
+                        <wistia-player media-id="{{ objects_array[index] }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                            <div class="c-wistia__custom">
+                                <picture>
+                                    <img loading="lazy" src="{{ media_src }}" alt="{{ title | escape }}" />
+                                </picture>
+                            </div>
+                        </wistia-player>
+                    </div>
                 </div>
             {% else %}
                 <div class="swiper-slide">
