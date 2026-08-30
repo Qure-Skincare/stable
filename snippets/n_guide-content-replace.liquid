@@ -30,20 +30,19 @@
 {% capture wistia_video_content %}
     {% for block in section.blocks %}
         {% if block.type == 'wistia_video' %}
-            {% if block.settings.wistia_url != blank %}
-                <picture
-                    {% if block.settings.desktop %}
-                        class="d-none d-lg-block"
-                    {% endif %} 
-                    data-label-text="{{ block.settings.label_text }}"
-                    data-bs-toggle="modal"
-                    data-bs-target="#reusableWistiaModal"
-                    data-video-id="{{ block.settings.wistia_url }}"
-                >
-                {% if block.settings.image != blank %}
-                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                {% endif %}
-                </picture>
+            {% if block.settings.wistia_url != blank and block.settings.image != blank %}
+                <div class="c-wistia c-wistia--custom{% if block.settings.desktop %} d-none d-lg-block{% endif %}">
+                    <wistia-player media-id="{{ block.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                        <div class="c-wistia__custom">
+                            <figure>
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% if block.settings.label_text != blank %}
+                                    <figcaption>{{ block.settings.label_text }}</figcaption>
+                                {% endif %}
+                            </figure>
+                        </div>
+                    </wistia-player>
+                </div>
             {% endif %}
         {% endif %}
     {% endfor %}
