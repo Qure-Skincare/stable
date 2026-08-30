@@ -154,47 +154,22 @@
                     {% if section.settings.marked_list != blank and section.settings.marked_list_position == 'footer' %}
                         {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
                     {% endif %}
-                    {% if section.settings.video_image_cover != blank and section.settings.wistia_mode == 'modal' %}
-                        <picture
-                            data-label-text="Watch: How To Use"
-                            data-bs-toggle="modal"
-                            data-bs-target="#hero-video-{{ section.id }}"
-                        >
-                            <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                        </picture>
+                    {% if section.settings.wistia_url != blank and section.settings.video_image_cover != blank and section.settings.wistia_mode == 'modal' %}
+                        <div class="c-wistia c-wistia--custom">
+                            <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                <div class="c-wistia__custom">
+                                    <picture>
+                                        <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                    </picture>
+                                </div>
+                            </wistia-player>
+                        </div>
                     {% endif %}
                 </div>
             {% endif %}
         </article>
     </div>
 </section>
-{% if section.settings.wistia_url != blank and section.settings.wistia_mode == 'modal' %}
-    <div class="modal fade filter-modal" id="hero-video-{{ section.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="hero-video-label-{{ section.id }}" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-md filter-dialog">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <div class="modal-body">
-                    <style>
-                        wistia-player[media-id='{{ section.settings.wistia_url }}']:not(:defined) {
-                            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/{{ section.settings.wistia_url }}/swatch');
-                            display: block;
-                            filter: blur(5px);
-                            padding-top: 177.78%;
-                        }
-                    </style>
-                    <div class="filter-modal-video">
-                        <wistia-player media-id="{{ section.settings.wistia_url }}" seo="false" aspect="0.5625"
-                            unique-id="wistia-{{ section.settings.wistia_url }}-23"></wistia-player>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endif %}
-
 {% schema %}
 {
     "name": "t:sections.n_hero-section.name",

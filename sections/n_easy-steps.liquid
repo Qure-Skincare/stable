@@ -9,31 +9,20 @@
 <section class="set-up{% if section.settings.modifier != 'none' and section.settings.modifier != 'custom' %} set-up--{{ section.settings.modifier }}{% endif %}" id="easy_steps">
     <div class="container">
         {% if section.settings.wistia_url != blank %}
-            {% if section.settings.modifier == 'custom' %}
-                <div class="c-wistia c-wistia--custom">
-                    <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
-                        <div class="c-wistia__custom">
-                            <picture>
-                                {% if section.settings.image != blank %}
-                                    <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
-                                {% endif %}
-                                {% if section.settings.image_mobile != blank %}
-                                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
-                                {% endif %}
-                            </picture>
-                        </div>
-                    </wistia-player>
-                </div>
-            {% else %}
-                <picture data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.wistia_url }}">
-                    {% if section.settings.image != blank %}
-                        <source media="(min-width:767px)" srcset="{{ section.settings.image | image_url }}" />
-                    {% endif %}
-                    {% if section.settings.image_mobile != blank %}
-                        <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
-                    {% endif %}
-                </picture>
-            {% endif %}
+            <div class="c-wistia c-wistia--custom">
+                <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                    <div class="c-wistia__custom">
+                        <picture>
+                            {% if section.settings.image != blank %}
+                                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+                            {% endif %}
+                            {% if section.settings.image_mobile != blank %}
+                                <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                            {% endif %}
+                        </picture>
+                    </div>
+                </wistia-player>
+            </div>
         {% endif %}
         {{ section.settings.text }}
         <ol>
