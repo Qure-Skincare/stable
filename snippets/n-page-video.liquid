@@ -16,9 +16,18 @@
     {% endfor %}
 {% endif %}
 
-<picture data-label-text="{{ block.settings.heading }}" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ block.settings.wistia_url }}">
-    <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
-</picture>
+<div class="c-wistia c-wistia--custom">
+    <wistia-player media-id="{{ block.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+        <div class="c-wistia__custom">
+            {% if block.settings.image != blank %}
+                <figure>
+                    <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}" />
+                    <figcaption>{{ block.settings.heading }}</figcaption>
+                </figure>
+            {% endif %}
+        </div>
+    </wistia-player>
+</div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
