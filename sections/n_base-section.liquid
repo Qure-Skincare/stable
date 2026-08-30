@@ -311,14 +311,6 @@
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
     });
 </script>
-{% if section.settings.wistia_url != blank and section.settings.video_image_cover == blank %}
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("wistia-player", "https://fast.wistia.com/player.js");
-        loadScriptOnce("wistia", "https://qureskincaredns-stable.com/assets/js/wistia.js");
-    });
-</script>
-{% endif %}
 <!-- BASE SECTION END -->
 
 {% schema %}
