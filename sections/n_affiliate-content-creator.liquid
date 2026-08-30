@@ -39,31 +39,22 @@
                 {% if block.type == 'video' %}
                     <li>
                         {% if block.settings.video_url_1 != blank %}
-                            <div class="wistia-embed-video">
-                                <div class="wistia_responsive_padding">
-                                    <div class="wistia_responsive_wrapper">
-                                        <div class="wistia_embed wistia_async_{{ block.settings.video_url_1 }} seo=false videoFoam=true"></div>
-                                    </div>
-                                </div>
+                            <div class="c-wistia">
+                                <wistia-player media-id="{{ block.settings.video_url_1 }}" wistia-popover="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" inert></wistia-player>
+                                <div class="c-wistia__play"></div>
                             </div>
                         {% endif %}
                         {% if block.settings.video_url_2 != blank %}
-                            <div class="wistia-embed-video">
-                                <div class="wistia_responsive_padding">
-                                    <div class="wistia_responsive_wrapper">
-                                        <div class="wistia_embed wistia_async_{{ block.settings.video_url_2 }} seo=false videoFoam=true"></div>
-                                    </div>
-                                </div>
+                            <div class="c-wistia">
+                                <wistia-player media-id="{{ block.settings.video_url_2 }}" wistia-popover="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" inert></wistia-player>
+                                <div class="c-wistia__play"></div>
                             </div>
                         {% endif %}
                         {% if block.settings.video_url_3 != blank %}
-                            <div class="wistia-embed-video">
-                            <div class="wistia_responsive_padding">
-                                <div class="wistia_responsive_wrapper">
-                                    <div class="wistia_embed wistia_async_{{ block.settings.video_url_3 }} seo=false videoFoam=true"></div>
-                                </div>
+                            <div class="c-wistia">
+                                <wistia-player media-id="{{ block.settings.video_url_3 }}" wistia-popover="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" inert></wistia-player>
+                                <div class="c-wistia__play"></div>
                             </div>
-                        </div>
                         {% endif %}
                     </li>
                 {% endif %}
@@ -74,6 +65,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
+        loadScriptOnce("wistia", "https://qureskincaredns-stable.com/assets/js/wistia.js");
     });
 </script>
 <!-- CONTENT CREATOR END -->
