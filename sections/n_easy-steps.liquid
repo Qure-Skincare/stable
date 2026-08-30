@@ -71,13 +71,6 @@
         {% endif %}
     </div>
 </section>
-{% if section.settings.wistia_url != blank and section.settings.modifier != 'custom' %}
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
-    });
-</script>
-{% endif %}
 <!-- SET UP END -->
 
 {% schema %}
