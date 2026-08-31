@@ -31,10 +31,6 @@
             {% endfor %}
 
             <div class="hero-section__content-header">
-                {% if section.settings.show_logo %}
-                    <i class="e-icon e-icon-qure"></i>
-                {% endif %}
-
                 {% if approved_by_count > 0 and section.settings.approved_position == 'before_text' %}
                     <div class="c-approved-by{% if approved_by_count > 3 %} c-approved-by--secondary{% endif %}">
                         <ul>
@@ -209,12 +205,6 @@
                     "label": "t:common.third"
                 }
             ]
-        },
-        {
-            "type": "checkbox",
-            "id": "show_logo",
-            "label": "t:common.show-logo",
-            "default": false
         },
         {
             "type": "select",
