@@ -78,7 +78,6 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "extended",
-        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Reduce the Look of Wrinkles and Dark Spots at Home.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "rating": "4.8",
@@ -151,7 +150,6 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "none",
-        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "rating": "",
@@ -241,7 +239,6 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "extended",
-        "show_logo": true,
         "approved_position": "after_text",
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1>",
         "rating": "",
@@ -271,7 +268,6 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "third",
-        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Dr. Shah’s recommended solution for wrinkles and dark spots.</h1>",
         "rating": "",
@@ -358,7 +354,6 @@
     },
     "n_achievement_goals_Pzxmim": {
       "type": "n_achievement-goals",
-      "disabled": true,
       "blocks": {
         "content_kPiDiQ": {
           "type": "image_with_text",
@@ -399,6 +394,7 @@
         "content_XrJqFM",
         "content_cQLdrN"
       ],
+      "disabled": true,
       "name": "t:sections.n_achievement-goals.name",
       "settings": {
         "use_own_file": false,
