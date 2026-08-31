@@ -626,15 +626,43 @@
             "product_title": ""
           }
         },
-        "slider_pJ4Kw1": {
+        "slider_9NRFNC": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/pamelaba.png",
-            "flag": "shopify://shop_images/usa_flag.svg",
-            "username": "Pamela S.",
+            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jennifer N.",
             "verified_customer": "Verified customer",
-            "badge": "Fine lines",
-            "text": "<p>“I’d looked into derma rollers before, but I was hesitant about how harsh and invasive they felt. When I found this as a gentler alternative on TikTok, I decided to give it a real shot. I’ve stuck with it consistently since March, and the results have been so encouraging. My forehead lines are noticeably softer now, and the fine lines around my eyes have visibly reduced. My skin looks more refreshed and awake instead of dull like before.”</p>",
+            "badge": "Smokers Lines",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_VyHb4h": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shelly.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Shelly S.",
+            "verified_customer": "Verified customer",
+            "badge": "Wrinkles",
+            "text": "<p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_rM6Vp2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_19_60a1c45f-d170-40bf-b9f4-b3ef4acc09da.png",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Rodrigo M.",
+            "verified_customer": "Verified customer",
+            "badge": "Skin Texture",
+            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -668,20 +696,6 @@
             "product_title": ""
           }
         },
-        "slider_rM6Vp2": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_19_60a1c45f-d170-40bf-b9f4-b3ef4acc09da.png",
-            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
-            "username": "Rodrigo M.",
-            "verified_customer": "Verified customer",
-            "badge": "Skin Texture",
-            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_hJ8Nc5": {
           "type": "slider",
           "settings": {
@@ -705,34 +719,6 @@
             "verified_customer": "Verified customer",
             "badge": "Wrinkles",
             "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_9NRFNC": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "badge": "Smokers Lines",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_VyHb4h": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/shelly.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Shelly S.",
-            "verified_customer": "Verified customer",
-            "badge": "Wrinkles",
-            "text": "<p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -765,20 +751,34 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_pJ4Kw1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/pamelaba.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Pamela S.",
+            "verified_customer": "Verified customer",
+            "badge": "Fine lines",
+            "text": "<p>“I’d looked into derma rollers before, but I was hesitant about how harsh and invasive they felt. When I found this as a gentler alternative on TikTok, I decided to give it a real shot. I’ve stuck with it consistently since March, and the results have been so encouraging. My forehead lines are noticeably softer now, and the fine lines around my eyes have visibly reduced. My skin looks more refreshed and awake instead of dull like before.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
         "slider_78E6pj",
-        "slider_pJ4Kw1",
-        "slider_mB2Ht7",
-        "slider_aF9Qs3",
-        "slider_rM6Vp2",
-        "slider_hJ8Nc5",
-        "slider_lF3Rk9",
         "slider_9NRFNC",
         "slider_VyHb4h",
+        "slider_rM6Vp2",
+        "slider_mB2Ht7",
+        "slider_aF9Qs3",
+        "slider_hJ8Nc5",
+        "slider_lF3Rk9",
         "slider_jT7Wd4",
-        "slider_e11ie1"
+        "slider_e11ie1",
+        "slider_pJ4Kw1"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
