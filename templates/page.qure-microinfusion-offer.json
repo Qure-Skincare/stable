@@ -626,20 +626,6 @@
             "product_title": ""
           }
         },
-        "slider_9NRFNC": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "badge": "Smokers Lines",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_VyHb4h": {
           "type": "slider",
           "settings": {
@@ -649,6 +635,20 @@
             "verified_customer": "Verified customer",
             "badge": "Wrinkles",
             "text": "<p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_9NRFNC": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jennifer N.",
+            "verified_customer": "Verified customer",
+            "badge": "Smokers Lines",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -769,8 +769,8 @@
       },
       "block_order": [
         "slider_78E6pj",
-        "slider_9NRFNC",
         "slider_VyHb4h",
+        "slider_9NRFNC",
         "slider_rM6Vp2",
         "slider_mB2Ht7",
         "slider_aF9Qs3",
