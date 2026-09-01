@@ -14,18 +14,24 @@
             {% endif %}
             {% if section.settings.wistia_url %}
                 {% if section.settings.video_url != blank %}
-                    <figure class="watch-wistia-video" data-bs-toggle="modal" data-bs-target="#reusableWistiaModal" data-video-id="{{ section.settings.video_url }}">
-                        {% if section.settings.video_image_cover != blank %}
-                            <picture>
-                                <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
-                            </picture>
-                        {% endif %}
-                        {% if section.settings.text_on_image != blank %}
-                            <figcaption>
-                                {{ section.settings.text_on_image | replace: '<p>', '' | replace: '</p>', '' }}
-                            </figcaption>
-                        {% endif %}
-                    </figure>
+                    <div class="c-wistia c-wistia--custom">
+                        <wistia-player media-id="{{ section.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                            <div class="c-wistia__custom">
+                                <figure>
+                                    {% if section.settings.video_image_cover != blank %}
+                                        <picture>
+                                            <img loading="lazy" src="{{ section.settings.video_image_cover | image_url }}" alt="{{ section.settings.video_image_cover.alt | escape }}" />
+                                        </picture>
+                                    {% endif %}
+                                    {% if section.settings.text_on_image != blank %}
+                                        <figcaption>
+                                            {{ section.settings.text_on_image | replace: '<p>', '' | replace: '</p>', '' }}
+                                        </figcaption>
+                                    {% endif %}
+                                </figure>
+                            </div>
+                        </wistia-player>
+                    </div>
                 {% endif %}
             {% else %}
                 {% if section.settings.video_image_cover != blank or section.settings.video_url != blank %}
@@ -61,7 +67,6 @@
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
         loadScriptOnce("youtube-popup", "https://qureskincaredns-stable.com/assets/js/yt-popup.js");
-        loadScriptOnce("wistia-popup", "https://qureskincaredns-stable.com/assets/js/wistia-popup.js");
     });
 </script>
 

@@ -268,6 +268,69 @@
         "wistia_url": ""
       }
     },
+    "n_across_gallery_p8Kq3R": {
+      "type": "n_across-gallery",
+      "disabled": true,
+      "blocks": {
+        "image_t2NxLm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-2.webp"
+          }
+        },
+        "image_v9WcHf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-10.webp"
+          }
+        },
+        "image_a4JsYp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-11.webp"
+          }
+        },
+        "image_m6BdKu": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-9.webp"
+          }
+        },
+        "image_c1QrZe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-4.webp"
+          }
+        },
+        "image_h7FtXn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-5.webp"
+          }
+        },
+        "image_w5LyPq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shower-filter-benefits-7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_t2NxLm",
+        "image_v9WcHf",
+        "image_a4JsYp",
+        "image_m6BdKu",
+        "image_c1QrZe",
+        "image_h7FtXn",
+        "image_w5LyPq"
+      ],
+      "name": "t:sections.n_across-gallery.name",
+      "settings": {
+        "text": "<h2>Maximum filtration, minimal effort</h2><p>The Qure Shower Filter and Handheld Shower Filter are designed to <em>remove up to 99% of chlorine</em> – and other hard water nasties like copper and lead – for healthy skin and hair.</p><p>For optimized showering that leaves you feeling (and looking) your best, swap out the Shower Filter Refill Cartridge every 3 months. This Refill Cartridge seamlessly fits both the Qure Shower Filter and Handheld Shower Filter systems, providing long-lasting filtration benefits.</p>",
+        "button_label": "Shop Now",
+        "button_url": "#hero-product"
+      }
+    },
     "n_base_section_Lm3tAh": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
@@ -675,49 +738,98 @@
         "use_own_file": false
       }
     },
-    "n_easy_steps_ntE9Cf": {
-      "type": "n_easy-steps",
+    "n_set_up_toggle_g3Vm8D": {
+      "type": "n_set-up-toggle",
+      "disabled": true,
       "blocks": {
-        "items_tx94Jg": {
-          "type": "items",
+        "tab_r4NkWp": {
+          "type": "tab",
           "settings": {
-            "text": "<h6>Remove</h6><p>Turn off the water. Open the filter housing and remove the old cartridge.</p>",
-            "image": "shopify://shop_images/Remove.webp",
-            "image_mobile": "shopify://shop_images/remove-m.webp"
+            "label": "Handheld Shower",
+            "image": "shopify://shop_images/handheld-shower.webp",
+            "wistia_url": "bsfna2u1ja",
+            "video_image": "shopify://shop_images/handheld-shower-filter-use-video.webp",
+            "video_image_mobile": "shopify://shop_images/handheld-shower-filter-use-video-mob.webp"
           }
         },
-        "items_3PLjd7": {
-          "type": "items",
+        "tab_y8HsLq": {
+          "type": "tab",
           "settings": {
-            "text": "<h6>Fit</h6><p>Firmly press the new filter into the housing. Screw the cover back clockwise until it's secure.</p>",
-            "image": "shopify://shop_images/Fit2.webp",
-            "image_mobile": "shopify://shop_images/fit-m.webp"
+            "label": "Shower",
+            "image": "shopify://shop_images/shower.webp",
+            "wistia_url": "bwhqvtar9u",
+            "video_image": "shopify://shop_images/shower-filter-refill-video.webp",
+            "video_image_mobile": "shopify://shop_images/shower-filter-refill-video-mob.webp"
           }
         },
-        "items_cgcPBm": {
-          "type": "items",
+        "step_b2CxTm": {
+          "type": "step",
           "settings": {
-            "text": "<h6>Flush</h6><p>Turn on the shower and let the system run for 1–2 minutes to flush out any loose particles.</p>",
-            "image": "shopify://shop_images/Flush.webp",
-            "image_mobile": "shopify://shop_images/fit-m.webp"
+            "tab_id": "first",
+            "image": "shopify://shop_images/shower-filter-refill-step-4.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-refill-step-4-mob.webp",
+            "text": "<h6>Remove</h6><p>Turn off the water. Open the filter housing and remove the old cartridge.</p>"
+          }
+        },
+        "step_f6JpWn": {
+          "type": "step",
+          "settings": {
+            "tab_id": "first",
+            "image": "shopify://shop_images/shower-filter-refill-step-5.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-refill-step-5-mob.webp",
+            "text": "<h6>Fit</h6><p>Firmly press the new filter into the housing. Screw the cover back clockwise until it's secure.</p>"
+          }
+        },
+        "step_d9QaKe": {
+          "type": "step",
+          "settings": {
+            "tab_id": "first",
+            "image": "shopify://shop_images/shower-filter-refill-step-6.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-refill-step-6-mob.webp",
+            "text": "<h6>Flush</h6><p>Turn on the shower and let the system run for 1–2 minutes to flush out any loose particles.</p>"
+          }
+        },
+        "step_n1UzYr": {
+          "type": "step",
+          "settings": {
+            "tab_id": "second",
+            "image": "shopify://shop_images/shower-filter-refill-step-1.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-refill-step-1-mob.webp",
+            "text": "<h6>Remove</h6><p>Turn off the water. Open the filter housing and remove the old cartridge.</p>"
+          }
+        },
+        "step_k5EmVc": {
+          "type": "step",
+          "settings": {
+            "tab_id": "second",
+            "image": "shopify://shop_images/shower-filter-refill-step-2.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-refill-step-2-mob.webp",
+            "text": "<h6>Fit</h6><p>Firmly press the new filter into the housing. Screw the cover back clockwise until it's secure.</p>"
+          }
+        },
+        "step_s7HwXj": {
+          "type": "step",
+          "settings": {
+            "tab_id": "second",
+            "image": "shopify://shop_images/shower-filter-refill-step-3.webp",
+            "image_mobile": "shopify://shop_images/shower-filter-refill-step-3-mob.webp",
+            "text": "<h6>Flush</h6><p>Turn on the shower and let the system run for 1–2 minutes to flush out any loose particles.</p>"
           }
         }
       },
       "block_order": [
-        "items_tx94Jg",
-        "items_3PLjd7",
-        "items_cgcPBm"
+        "tab_r4NkWp",
+        "tab_y8HsLq",
+        "step_b2CxTm",
+        "step_f6JpWn",
+        "step_d9QaKe",
+        "step_n1UzYr",
+        "step_k5EmVc",
+        "step_s7HwXj"
       ],
-      "name": "t:sections.n_easy-steps.name",
+      "name": "t:sections.n_set-up-toggle.name",
       "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "text": "<h2>How to replace your filter refill cartridge</h2>",
-        "image": "shopify://shop_images/shower-filter-refill-video.webp",
-        "image_mobile": "shopify://shop_images/shower-filter-refill-video-mob.webp",
-        "wistia_url": "bwhqvtar9u",
-        "button_label": "",
-        "button_url": ""
+        "text": "<h2>How to replace your filter refill cartridge</h2>"
       }
     },
     "n_comparison_WktgAV": {
@@ -963,6 +1075,7 @@
     "product_header_5nXYyf",
     "purchase-form-landing",
     "n_base_section_CGMUkn",
+    "n_across_gallery_p8Kq3R",
     "n_base_section_Lm3tAh",
     "n_progress_metrics_X8KGmr",
     "n_trusted_reviews_TczFHL",
@@ -971,7 +1084,7 @@
     "n_why_it_works_gwdxhE",
     "n_video_slider_UbQYbp",
     "n_features_marquee_h4hRGq",
-    "n_easy_steps_ntE9Cf",
+    "n_set_up_toggle_g3Vm8D",
     "n_comparison_WktgAV",
     "n_text_VGtQXJ",
     "175741161617f7c983",
