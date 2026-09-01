@@ -90,7 +90,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "Tech Specs",
-            "button-url": "#ingredients"
+            "button-url": "#easy_steps"
           }
         },
         "jumpto_WkF63R": {
