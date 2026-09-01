@@ -69,7 +69,7 @@
           "type": "jumpto",
           "settings": {
             "button-label": "How It Works",
-            "button-url": "#ingredients"
+            "button-url": "#easy_steps"
           }
         },
         "jumpto_P4RwRV": {
@@ -198,7 +198,8 @@
         "image": "shopify://shop_images/n-d-image.webp",
         "button_label": "Shop Now",
         "button_url": "#hero-product",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_why_using_pd6Va7": {
@@ -258,6 +259,7 @@
             "flag": "shopify://shop_images/canada_f.webp",
             "username": "Claudia M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Recommend to everyone</strong></p><p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
             "product_url": "",
             "product_text": "",
@@ -271,6 +273,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Sophia N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Visible improvements!</strong></p><p>“After years in the strong Aussie sun, I wanted to try LED therapy to refresh and rejuvenate my skin. I’m so glad I did — after using it daily, I’ve noticed real improvements! My skin looks firmer, smoother, and the appearance of sunspots has visibly reduced.”</p>",
             "product_url": "",
             "product_text": "",
@@ -284,6 +287,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ashley W.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Amazing products</strong></p><p>\"I've always taken care of my face but neglected my neck and chest skin so I've made it a top priority in the past year. Since using LED regularly, the pesky fine lines in the middle of my chest [look] so much smoother and my skin looks youthful again! And I love how this system has LEDs placed in the centre of the chest unlike other system.\"</p>",
             "product_url": "",
             "product_text": "",
@@ -297,6 +301,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Josie R.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Clearer, more even-looking skin</strong></p><p>“After dealing with breakouts and uneven tone, I'm thrilled with the results I've seen after using the Qure LED chest system. My skin looks clearer and more even, and I don’t feel the need to cover my neck and chest with makeup anymore.”</p>",
             "product_url": "",
             "product_text": "",
@@ -310,6 +315,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Brooke B.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Visible improvement so far!</strong></p><p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>",
             "product_url": "",
             "product_text": "",
@@ -323,6 +329,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Mary R.M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Smoother, refreshed-looking skin</strong></p><p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>",
             "product_url": "",
             "product_text": "",
@@ -342,6 +349,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
@@ -623,6 +634,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>How Qure compares</h2>"
       }
     },
