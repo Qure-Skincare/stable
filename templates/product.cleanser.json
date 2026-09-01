@@ -312,7 +312,7 @@
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "none",
+        "modifier": "text",
         "rating": "",
         "rating_text": "",
         "heading": "<h2>A cleanser that restores what others remove</h2>",
