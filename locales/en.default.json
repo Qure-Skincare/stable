@@ -504,6 +504,9 @@
         "header": "90-Day Money Back Guarantee",
         "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
       },
+      "purchase-form-selector": {
+        "header": "Select the type:"
+      },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
       },
@@ -625,6 +628,7 @@
       "soldout-button-label": "Sold Out",
       "select-type": "Select Your Product:",
       "select-product": "Select Your Supply:",
+      "select-color": "Select Color:",
       "select-product-variant": "Select Your Supply:",
       "select-product-delivery": "Select Your Delivery:",
       "notify-me-when-available": "Notify Me When Available",

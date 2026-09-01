@@ -5,9 +5,13 @@
             {% assign product_type_title = block.settings.heading | strip_newlines | strip | replace: ' ', '' | downcase %}
             <li class="purchase_form_lading_product_type_item" id="{{ section.id }}-{{ product_type_title }}">
                 <label for="{{ section.id }}-{{ block.id }}">
-                    <input type="radio" class="color variant__input" name="purchase_form_lading_product_type_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" data-name="{{ block.settings.heading | escape }}" {% if block.settings.preselected == true %} checked{% endif %}>
-                    {% if block.settings.image != blank %}
-                        <img loading="lazy" src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.heading | escape }}" />
+                    {% if section.settings.color_types %}
+                        <input type="radio" value="{{ block.settings.heading | downcase | escape }}" class="color variant__input" name="purchase_form_lading_product_type_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" data-name="{{ block.settings.heading | downcase | escape }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                    {% else %}
+                        <input type="radio" class="color variant__input" name="purchase_form_lading_product_type_{{ section.settings.form_name }}" id="{{ section.id }}-{{ block.id }}" data-name="{{ block.settings.heading | escape }}" {% if block.settings.preselected == true %} checked{% endif %}>
+                        {% if block.settings.image != blank %}
+                            <img loading="lazy" src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.heading | escape }}" />
+                        {% endif %}
                     {% endif %}
                     <span>{{ block.settings.heading }}</span>
                 </label>

@@ -9,6 +9,8 @@
  */
  {
     "common": {
+        "form_selector": "Form selector",
+        "form_name": "Form name",
         "discount_code": "Discount code",
         "false": "False",
         "true": "True",
@@ -1930,7 +1932,8 @@
             "settings": {
                 "klaviyo_form_name": "Klaviyo form name",
                 "form_name": "Form name",
-                "hide_types": "Hide product types"
+                "hide_types": "Hide product types",
+                "color_types": "Color types"
             },
             "blocks": {
                 "product": {

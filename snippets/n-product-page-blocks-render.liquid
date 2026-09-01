@@ -65,6 +65,8 @@
             {% render 'n-product-page-async-section', section: section, block: block %}
         {% when 'results' %}
             {% render 'n-product-page-results', section: section, block: block %}
+        {% when 'purchase-form-selector' %}
+            {% render 'n-product-page-purchase-form-selector', section: section, block: block %}
         {% when 'link' %}
             {% render 'n-page-link-button', section: section %}
         {% when 'money-back' %}
