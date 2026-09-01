@@ -157,57 +157,58 @@
     "purchase-form-landing": {
       "type": "n-purchase-form-landing",
       "blocks": {
-        "nextships_4xp7uM": {
+        "nextships_5rd2bS": {
           "type": "nextships",
           "settings": {
             "date": "9th May",
-            "percent": 73,
-            "date_soldout": "23rd March",
+            "percent": 66,
+            "date_soldout": "23rd  March",
             "date_reserved": "9th May"
           }
         },
-        "type_p1Q2rS": {
+        "type_hHPdgJ": {
           "type": "type",
           "settings": {}
         },
-        "product_type_t3U4vW": {
+        "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
             "heading": "Brightening",
-            "image": "shopify://shop_images/Dark_Spots_6.png",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
             "preselected": false
           }
         },
-        "product_x5Y6zA": {
+        "product_DBd4ef": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "product": "micro-infusion-6-month-bundle-3-get-3-free-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": false,
             "free_shipping": false,
-            "preselected": false,
-            "heading": "6 Month Supply",
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply - Buy 3 Get 3 Free",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
+            "image": "shopify://shop_images/mi_dark_spot_6m_bogo.webp",
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
+            "total_treatments": 12,
+            "left_items": 56,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "26th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_b7C8dE": {
+        "product_7dL4ci": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -215,25 +216,26 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": true,
             "free_shipping": false,
-            "preselected": true,
+            "per_treatment": true,
+            "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 3 months",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
+            "image": "shopify://shop_images/MI_3_month_DS.webp",
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "total_treatments": 6,
+            "left_items": 252,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_f9G0hI": {
+        "product_Xf8A6C": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
@@ -242,66 +244,68 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": false,
             "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "product_selling_plan_text": "Ships every 1 month",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
+            "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 2,
+            "left_items": 12,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "type_j1K2lM": {
+        "type_aJwQ9q": {
           "type": "type",
           "settings": {}
         },
-        "product_type_n3O4pQ": {
+        "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
             "heading": "Rejuvenating",
-            "image": "shopify://shop_images/Frame_1073714897.png",
+            "image": "shopify://shop_images/Wrinkles_2.png",
             "preselected": true
           }
         },
-        "product_r5S6tU": {
+        "product_nyJ9n7": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "product": "micro-infusion-6-month-bundle-3-get-3-free-wrinkles",
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": false,
             "free_shipping": false,
-            "preselected": false,
-            "heading": "6 Month Supply",
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply - Buy 3 Get 3 Free",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
-            "text": "",
-            "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
+            "image": "shopify://shop_images/mi_wrinkles_6_m_bogo.webp",
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 12,
+            "left_items": 18,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_v7W8xY": {
+        "product_EKAAzA": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -309,25 +313,26 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": true,
             "free_shipping": false,
-            "preselected": true,
+            "per_treatment": true,
+            "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 3 months",
-            "text": "",
-            "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
+            "image": "shopify://shop_images/MI_3_month_W.webp",
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 6,
+            "left_items": 256,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_z9A0bC": {
+        "product_eiY89h": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
@@ -336,66 +341,66 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": false,
             "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "product_selling_plan_text": "Ships every 1 month",
-            "text": "",
-            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
+            "image": "shopify://shop_images/MI_1_month_W.webp",
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 2,
+            "left_items": 20,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "type_d1E2fG": {
+        "type_yDwWmt": {
           "type": "type",
           "settings": {}
         },
-        "product_type_h3I4jK": {
+        "product_type_YrPQrV": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Mixed",
-            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "image": "shopify://shop_images/Mixed_3.png",
             "preselected": false
           }
         },
-        "product_l5M6nO": {
+        "product_gbPf3J": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product": "micro-infusion-6-month-bundle-3-get-3-free-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": true,
             "free_shipping": false,
+            "per_treatment": true,
             "preselected": true,
-            "heading": "6 Month Supply",
+            "heading": "6 Month Supply - Buy 3 Get 3 Free",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
+            "image": "shopify://shop_images/img_01.webp",
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "total_treatments": 12,
+            "left_items": 29,
+            "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 92
+            "preorder_percent": 93,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_p7Q8rS": {
+        "product_NEgEkN": {
           "type": "product",
           "disabled": true,
           "settings": {
@@ -405,25 +410,26 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": false,
             "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_3_month_DSW.webp",
-            "product_discount_percent": 19,
+            "image": "shopify://shop_images/MI_3_month_DSW.webp",
+            "product_discount_percent": 11,
             "soldout": true,
             "preorder": false,
+            "total_treatments": 6,
+            "left_items": 390,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
-        "product_t9U0vW": {
+        "product_RBCPe8": {
           "type": "product",
           "disabled": true,
           "settings": {
@@ -433,47 +439,48 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "popular": false,
-            "best": false,
             "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
-            "product_discount_percent": 17,
+            "image": "shopify://shop_images/mi_1_month_dsw.webp",
+            "product_discount_percent": 10,
             "soldout": true,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": "<ul><li>2 clinically formulated 4ml serums to treat your specific skin concerns (valued at $119)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         }
       },
       "block_order": [
-        "nextships_4xp7uM",
-        "type_p1Q2rS",
-        "product_type_t3U4vW",
-        "product_x5Y6zA",
-        "product_b7C8dE",
-        "product_f9G0hI",
-        "type_j1K2lM",
-        "product_type_n3O4pQ",
-        "product_r5S6tU",
-        "product_v7W8xY",
-        "product_z9A0bC",
-        "type_d1E2fG",
-        "product_type_h3I4jK",
-        "product_l5M6nO",
-        "product_p7Q8rS",
-        "product_t9U0vW"
+        "nextships_5rd2bS",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_DBd4ef",
+        "product_7dL4ci",
+        "product_Xf8A6C",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_nyJ9n7",
+        "product_EKAAzA",
+        "product_eiY89h",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_gbPf3J",
+        "product_NEgEkN",
+        "product_RBCPe8"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
-        "subscription_product": "true",
+        "subscription_product": "false",
         "subscription_discount_max_percent": 62,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",

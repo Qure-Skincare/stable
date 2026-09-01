@@ -285,7 +285,8 @@
           "type": "wistia_video",
           "settings": {
             "tab_id": "Shower Filter",
-            "wistia_url": "fsw2ted2a8"
+            "wistia_url": "fsw2ted2a8",
+            "image": "shopify://shop_images/shower-2.webp"
           }
         },
         "meet_heading_faucet": {
@@ -354,7 +355,8 @@
           "type": "wistia_video",
           "settings": {
             "tab_id": "Faucet Filter",
-            "wistia_url": "tev066z6pv"
+            "wistia_url": "tev066z6pv",
+            "image": "shopify://shop_images/faucet-2.webp"
           }
         }
       },

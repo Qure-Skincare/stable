@@ -15,10 +15,9 @@
         {% endif %}
         {% if section.settings.wistia_url != blank %}
             <div class="guide-welcome__video">
-                <div class="wistia_responsive_padding">
-                    <div class="wistia_responsive_wrapper">
-                        <div class="wistia_embed wistia_async_{{ section.settings.wistia_url }} seo=false videoFoam=true">&nbsp;</div>
-                    </div>
+                <div class="c-wistia c-wistia--is-playing">
+                    <wistia-player media-id="{{ section.settings.wistia_url }}" autoplay="true" muted="true" aspect="0.5625" end-video-behavior="loop" controls-visible-on-load="false" play-button="false"></wistia-player>
+                    <div class="c-wistia__play"></div>
                 </div>
             </div>
         {% endif %}

@@ -394,6 +394,7 @@
         "content_XrJqFM",
         "content_cQLdrN"
       ],
+      "disabled": true,
       "name": "t:sections.n_achievement-goals.name",
       "settings": {
         "use_own_file": false,
@@ -607,48 +608,6 @@
     "n_trusted_reviews_DUlFYg": {
       "type": "n_trusted-reviews",
       "blocks": {
-        "slider_AbTEJa": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/ellie_6_treatments.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ellie V.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_dPBWEW": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_5_b0173f3a-3914-4db7-94ba-236f4cf89e4b.png",
-            "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
-            "username": "Helen M.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p>“I purchased the mixed Micro-Infusion bundle to deal with hyper pigmentation, fine lines and wrinkles. I also have rosacea so was worried it could make it worse. However I’m so impressed with the initial results 3 treatments in. My skin looks clear and fresh! Previously the redness and pigmentation was visible even through foundation. I have more confidence now and hope my skin continues to improve with further treatments.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_eCGH8c": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/mona-p.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Mona P.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Fade after just two treatments</strong></p><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_78E6pj": {
           "type": "slider",
           "settings": {
@@ -656,36 +615,8 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Andrea G.",
             "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Definitely be re-ordering</strong></p><p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_xqgHn6": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/jessica-k.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jessica K.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Thrilled with the results!</strong></p><p>“I have been using the mask & microneedling for 6 weeks & am truly impressed with the results. I have noticed a dramatic reduction in redness, an improvement in my dark spots, scars & overall skin tone & firmness, and a smoothing of fine lines & wrinkles.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_Qab78U": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/ela-o.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ela O.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br/> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "badge": "Skin texture",
+            "text": "<p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -698,64 +629,8 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Shelly S.",
             "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Looking better and better</strong></p><p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_RrFY67": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/chelsea.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Chelsea J.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Amazing results!</strong></p><p>“Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.“</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_UXmznT": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/akina.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Akina M.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>It really works!!</strong></p><p>“I used three time so far. I can see the results from first time I used. I love this product but only thing is it’s take time to apply till used all serum per application. I tried many different way to press to my skin so the serum come out more but then a lot of time not.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_PQ3RbR": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/jess.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jess.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>It really works!!</strong></p><p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_6tprhW": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/priya.webp",
-            "flag": "shopify://shop_images/england_f.webp",
-            "username": "Priya P.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Plumper, more hydrated!</strong></p><p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
+            "badge": "Wrinkles",
+            "text": "<p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -768,8 +643,120 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "badge": "Smokers Lines",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_rM6Vp2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_19_60a1c45f-d170-40bf-b9f4-b3ef4acc09da.png",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Rodrigo M.",
+            "verified_customer": "Verified customer",
+            "badge": "Skin Texture",
+            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_mB2Ht7": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_1_7c6ee245-826f-4f00-87c0-251044a3fbcb.jpg",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Marilyn B.",
+            "verified_customer": "Verified customer",
+            "badge": "Forehead Wrinkles",
+            "text": "<p>“I have done two treatments so far. For my second treatment I added numbing cream around my mouth, since it is more sensitive and an area I really need to work on! I found it was easy to do, just put on the needle cap and use a continuous motion. My skin felt truly softer and more plump after usage. I am excited to see the results I get after using this product in the future.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_aF9Qs3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_59.webp",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Andrea F.",
+            "verified_customer": "Verified customer",
+            "badge": "Dark spots",
+            "text": "<p>“I’ve done three treatments now and have noticed my dark spots, scars and overall pigmentation has significantly improved. The bags below my eyes have lessened and my face looks brighter. I will definitely recommend this to my friends!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hJ8Nc5": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_49.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Hannah J.",
+            "verified_customer": "Verified customer",
+            "badge": "Glow",
+            "text": "<p>“I’ve used the micro-infusion dark spot bundle set only one and I can already tell a difference!! My skin is ✨GLOWING✨ I have had several people ask me what I’ve done different just from one use! I cannot wait to continue using this and see the continued progress I’ll have. 10000/10 recommend!!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_lF3Rk9": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
+            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "Lourdes F.",
+            "verified_customer": "Verified customer",
+            "badge": "Wrinkles",
+            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_jT7Wd4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_2_9c05b808-aa78-4254-8031-9fea7eda6afe.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Janeda T.",
+            "verified_customer": "Verified customer",
+            "badge": "Dark spots",
+            "text": "<p>“I’ve done two treatments so far since I got this and my gosh, I have an extreme loss of dark spots. My skin is smooth and I got the dark spot treatment, but it Oohh amazed at this I keep telling everybody about this I cannot believe what an amazing product this is I will continue to buy it, and I will not stop using this for a treatment that you would spend $300 in the salon for just one treatment, how amazing is it to be able to do it at home?”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_e11ie1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ellie_6_treatments.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Ellie V.",
+            "verified_customer": "Verified customer",
+            "badge": "Glow",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_pJ4Kw1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/pamelaba.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Pamela S.",
+            "verified_customer": "Verified customer",
+            "badge": "Fine lines",
+            "text": "<p>“I’d looked into derma rollers before, but I was hesitant about how harsh and invasive they felt. When I found this as a gentler alternative on TikTok, I decided to give it a real shot. I’ve stuck with it consistently since March, and the results have been so encouraging. My forehead lines are noticeably softer now, and the fine lines around my eyes have visibly reduced. My skin looks more refreshed and awake instead of dull like before.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -777,18 +764,17 @@
         }
       },
       "block_order": [
-        "slider_AbTEJa",
-        "slider_dPBWEW",
-        "slider_eCGH8c",
         "slider_78E6pj",
-        "slider_xqgHn6",
-        "slider_Qab78U",
         "slider_VyHb4h",
-        "slider_RrFY67",
-        "slider_UXmznT",
-        "slider_PQ3RbR",
-        "slider_6tprhW",
-        "slider_9NRFNC"
+        "slider_9NRFNC",
+        "slider_rM6Vp2",
+        "slider_mB2Ht7",
+        "slider_aF9Qs3",
+        "slider_hJ8Nc5",
+        "slider_lF3Rk9",
+        "slider_jT7Wd4",
+        "slider_e11ie1",
+        "slider_pJ4Kw1"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -1776,13 +1762,13 @@
     "n_hero_section_V4rT8x",
     "n_hero_section_H9cW3n",
     "n_our_advisors_jX3gJz",
+    "n_trusted_reviews_DUlFYg",
     "n_base_section_3uBXrT",
     "n_achievement_goals_Pzxmim",
     "n_base_section_phJT4F",
     "n_highlight_egmbcj",
     "n_base_section_xzUU6n",
     "n_video_slider_PLEPyO",
-    "n_trusted_reviews_DUlFYg",
     "n_comparison_UfAfRr",
     "n_comparison_table_YFRWQi",
     "n_easy_steps_AyUHT4",
