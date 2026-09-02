@@ -280,13 +280,13 @@
         "hide_types": true,
         "color_types": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
+        "subscription_discount_max_percent": 40,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "",
+        "delivery_switcher_product": "blue-face-serum-6-month-bundle",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
-        "hide_bottom": false,
+        "hide_bottom": true,
         "hide_certified": false
       }
     },
