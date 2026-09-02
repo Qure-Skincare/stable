@@ -15,7 +15,7 @@
   "sections": {
     "purchase-form-landing": {
       "settings": {
-        "hide_certified": true
+        "hide_certified": false
       },
       "blocks": {
         "product_RBCPe8": {
