@@ -22,6 +22,7 @@
         },
         "exclusive_offer_rW7RFk": {
           "type": "exclusive-offer",
+          "disabled": true,
           "settings": {
             "product": "",
             "product2": "",
@@ -93,6 +94,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": true,
@@ -119,6 +121,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": true,
             "best": false,
@@ -145,6 +148,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": false,
@@ -182,6 +186,7 @@
             "product_variant_id": 49572366483695,
             "product_selling_plan": 8779661551,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": true,
@@ -208,6 +213,7 @@
             "product_variant_id": 49572342530287,
             "product_selling_plan": 8779628783,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": true,
             "best": false,
@@ -234,6 +240,7 @@
             "product_variant_id": 49565278503151,
             "product_selling_plan": 8779596015,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": false,
@@ -269,6 +276,7 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
+        "color_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "footer",
@@ -293,7 +301,8 @@
         "text": "<p>LED therapy works by delivering light energy into the skin. But what you apply before your session matters.</p><p>Many serums are designed for overnight repair or active treatment — not for repeated light exposure. Some can interfere with LED light therapy, be irritating, or simply weren't formulated with LED in mind.</p><p>Blue+ is different.</p><p>It uses methylene blue, an antioxidant studied in light-exposure contexts, in a lightweight formula designed to sit comfortably on skin during LED sessions.</p>",
         "button_label": "Shop Now",
         "button_url": "#",
-        "wistia_url": "qk92k5wrnj"
+        "wistia_url": "qk92k5wrnj",
+        "accordion_text": ""
       }
     },
     "n_trusted_recommended_blue_face_serum": {
@@ -400,6 +409,7 @@
       "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
         "use_own_file": false,
+        "section_id": "",
         "heading": "<h2>Made gentle for all skin types</h2>"
       }
     },
@@ -434,7 +444,8 @@
         "button_label": "",
         "button_url": "",
         "wistia_url": "tj97vrxlon",
-        "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp"
+        "video_image_cover": "shopify://shop_images/blue-video-thumbnail-1.webp",
+        "accordion_text": ""
       }
     },
     "n_page_microinfusion_complete_system_blue_face_serum": {
