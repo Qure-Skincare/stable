@@ -14,7 +14,9 @@
   "parent": "product.blue-face-serum.json",
   "sections": {
     "purchase-form-landing": {
-      "settings": {},
+      "settings": {
+        "hide_certified": true
+      },
       "blocks": {
         "product_RBCPe8": {
           "settings": {
