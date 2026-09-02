@@ -276,6 +276,14 @@
           "type": "accordion",
           "settings": {}
         },
+        "limited_offer_rRiDiM": {
+          "type": "limited-offer",
+          "settings": {
+            "sum": "100$ Off",
+            "code": "XXXXX",
+            "days": 5
+          }
+        },
         "special_offer": {
           "type": "price",
           "settings": {
@@ -313,6 +321,7 @@
       },
       "block_order": [
         "accordion_migrated",
+        "limited_offer_rRiDiM",
         "special_offer",
         "features",
         "subscription",
