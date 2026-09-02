@@ -1155,7 +1155,7 @@
         "list_MRCUbi": {
           "type": "items",
           "settings": {
-            "text": "<h3>Treat</h3><p>Remove the cap and stamp gently across your face using light pressure, working section-by-section.</p>",
+            "text": "<h3>Treat</h3><p>Remove the cap and stamp gently across your face with light pressure, section by section.</p>",
             "image": "shopify://shop_images/mixed_mi_3.webp",
             "image_mobile": "shopify://shop_images/mi-3-mob_474650ff-a9f7-4ec8-b784-d9c7da333689.webp"
           }
@@ -1170,7 +1170,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "text": "<h2>See how quick and easy it is to use</h2>",
+        "text": "<h2>See How Quick and Easy It Is to Perform the Treatment</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
