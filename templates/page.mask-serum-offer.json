@@ -25,6 +25,14 @@
             "position": "Board-Certified Dermatologist"
           }
         },
+        "limited_offer_h84eH3": {
+          "type": "limited-offer",
+          "settings": {
+            "sum": "100$ Off",
+            "code": "XXXXXXXX",
+            "days": 8
+          }
+        },
         "optional_subscription_EnqgRY": {
           "type": "optional-subscription",
           "settings": {
@@ -81,6 +89,7 @@
       "block_order": [
         "description_QmGpF3",
         "quote_wDQRrX",
+        "limited_offer_h84eH3",
         "optional_subscription_EnqgRY",
         "approved_ngFyi7",
         "button_m49g68",
@@ -340,6 +349,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Terri P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Wish I started years ago</h6><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -354,6 +364,7 @@
             "flag": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p><h6></h6>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -368,6 +379,7 @@
             "flag": "shopify://shop_images/usa_flag.svg",
             "username": "Megan M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Plump & Glowy</h6><p>“After using this LED face mask consistently for a month, I can honestly say I’m impressed with the results. My skin looks noticeably healthier and more radiant, with a natural glow that wasn’t there before. It also feels fuller and more plump, and I’ve noticed a subtle softening of fine lines. The changes aren’t extreme or fake-looking—just a refreshed, well-rested version of my skin. I’ve really enjoyed adding this to my routine and will definitely continue using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -383,6 +395,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -397,6 +410,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Rita W.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Amazing</h6><p>“I am very pleased with the mask. I got struck with adult acne. Using the mask daily, and using adalapene gel before bed was the only thing that worked to bring my skin almost back to normal. I am so thankful. And it’s my daily 3 minute spa where I just sit and relax, after working all day, and absorb the rays.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -411,6 +425,7 @@
             "flag": "shopify://shop_images/usa_flag.svg",
             "username": "Jessica K.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Thrilled with the results!</h6><p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. I haven’t had a single breakout since I started using the mask, plus I notice a definite smoothing of fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\"</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -431,6 +446,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "light",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Thousands are out-glowing their insecurities</h2>",
         "button_label": "",
         "button_url": ""
