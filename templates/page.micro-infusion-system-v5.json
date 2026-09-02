@@ -18,6 +18,7 @@
         },
         "icon_with_text_n1P2qR": {
           "type": "icon_with_text",
+          "disabled": true,
           "settings": {
             "icon": "balances",
             "text": "Supports natural collagen production"
@@ -147,7 +148,7 @@
         "rating": true,
         "rating_type": "trustpilot",
         "limited": false,
-        "description": "<p>Reveal the appearance of <strong>firmer, younger & more even-looking skin</strong> in just a few, easy at-home applications or <strong>get your money back!*</strong></p>",
+        "description": "<p>Reveal the appearance of <strong>smoother, more radiant & more even-looking</strong> skin in just a few, easy at-home applications or <strong>get your money back!*</strong></p>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -473,6 +474,7 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
+        "color_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 62,
         "delivery_switcher_position": "footer",
