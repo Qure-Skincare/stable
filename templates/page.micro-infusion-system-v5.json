@@ -16,18 +16,18 @@
           "type": "description",
           "settings": {}
         },
-        "icon_with_text_s3T4uV": {
-          "type": "icon_with_text",
-          "settings": {
-            "icon": "double-drop",
-            "text": "Increases serum absorption"
-          }
-        },
         "icon_with_text_w5X6yZ": {
           "type": "icon_with_text",
           "settings": {
             "icon": "verified-shield",
             "text": "Many users start noticing changes with consistent use"
+          }
+        },
+        "icon_with_text_s3T4uV": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "double-drop",
+            "text": "Increases serum absorption"
           }
         },
         "icon_with_text_a7B8cD": {
@@ -42,6 +42,13 @@
           "settings": {
             "icon": "balances",
             "text": "Improves the look of fine lines and dark spots"
+          }
+        },
+        "icon_with_text_ra4igR": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "double-drop",
+            "text": "Suitable for all skin types, including sensitive skin"
           }
         },
         "section_e3F4gH": {
@@ -118,10 +125,11 @@
       },
       "block_order": [
         "description_a1B2cD",
-        "icon_with_text_s3T4uV",
         "icon_with_text_w5X6yZ",
+        "icon_with_text_s3T4uV",
         "icon_with_text_a7B8cD",
         "icon_with_text_n1P2qR",
+        "icon_with_text_ra4igR",
         "section_e3F4gH",
         "upsell_popup_i5J6kL",
         "accordion_m7N8oP",
