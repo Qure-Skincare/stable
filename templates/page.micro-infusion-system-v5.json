@@ -18,6 +18,7 @@
         },
         "icon_with_text_w5X6yZ": {
           "type": "icon_with_text",
+          "disabled": true,
           "settings": {
             "icon": "verified-shield",
             "text": "Many users start noticing changes with consistent use"
@@ -26,7 +27,7 @@
         "icon_with_text_s3T4uV": {
           "type": "icon_with_text",
           "settings": {
-            "icon": "double-drop",
+            "icon": "verified-shield",
             "text": "Increases serum absorption"
           }
         },
