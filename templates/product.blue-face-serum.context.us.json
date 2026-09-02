@@ -12,5 +12,41 @@
     "market": "us"
   },
   "parent": "product.blue-face-serum.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_RBCPe8": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_gbPf3J": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_x3jeL8": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_eiY89h": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_nyJ9n7": {
+          "settings": {
+            "soldout": false
+          }
+        },
+        "product_AJPQaQ": {
+          "settings": {
+            "soldout": false
+          }
+        }
+      }
+    }
+  }
 }
