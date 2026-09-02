@@ -1788,11 +1788,40 @@
           "type": "accordion",
           "settings": {
             "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.<br/><br/>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments or even mix the two serums together!<br/><br/>Visible benefits of Micro-Infusion may include:<br/></p><ul><li>More even-looking skin tone and texture</li><li>Glowing, refreshed-looking complexion</li><li>Softer-looking fine lines</li><li>Skin that feels renewed and rejuvenated</li></ul>"
+            "text": "<p>The stamping action of the Micro-Infusion System creates tiny micro-channels on the skin's surface, helping enhance serum absorption and visibly refresh the look of your complexion. Visible benefits may include a more even-looking skin tone and texture, a glowing, refreshed-looking complexion, and softer-looking fine lines.</p>"
+          }
+        },
+        "accordion_ABNmHx": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How is this different from a derma roller?",
+            "text": "<p>A derma roller rolls needles across the skin at an angle, with pressure and depth depending on your hand. Qure's Micro-Infusion System uses a straight, vertical stamp for more consistent contact, and pairs it with a science-backed serum infused directly into the micro-channels — something a derma roller doesn't include.</p><p>Qure's Micro-Infusion is typically more hygienic and safer than multiple-use tools like derma rollers when used as directed, because the needle head is single-use — you discard it after each treatment, which helps minimize the risk of infection and irritation. Derma rollers are reused, can become blunt with repeated use, and are difficult to fully sterilize at home.</p><p>Micro-Infusion focuses on improving the look of skin by creating micro-channels on the skin's surface. It does not alter or affect skin structure or function.</p>"
+          }
+        },
+        "accordion_bQqbgi": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How quickly will I see results?",
+            "text": "<p>Micro-Infusion is designed as a skin-boosting treatment — many people notice a radiance boost, smaller-looking pores, and a more hydrated, refreshed complexion within a day or two. The needles are finer than a human hair, so most people feel minimal to no discomfort, with perhaps a slight prickling sensation as the needles make contact.</p>"
+          }
+        },
+        "accordion_DtPdzK": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Has the Micro-Infusion System been evaluated for safety?",
+            "text": "<p>Yes. The Micro-Infusion System underwent an independent evaluation of dermatologic safety-in-use, conducted by a board-certified dermatologist. 31 subjects spanning all Fitzpatrick skin types (I–VI) completed the evaluation with no adverse reactions reported or observed. The product was deemed safe for its intended use when used as directed.</p>"
+          }
+        },
+        "accordion_AYcgRq": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often can I perform the treatment?",
+            "text": "<p>We recommend performing a Micro-Infusion treatment once every 2 weeks for the best-looking results.</p>"
           }
         },
         "accordion_x4LCUw": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How quickly will I see results?",
             "text": "<p>Micro-Infusion treatment is an effective skin booster treatment, and you’ll notice a radiance boost, smaller pores, more hydrated and overall a healthy fresh complexion in the next day or two.</p><p>Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>"
@@ -1800,6 +1829,7 @@
         },
         "accordion_pRtaH3": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Is it painful to use?",
             "text": "<p>You get to experience minimal discomfort and maximum results with Qure's Micro-Infusion System.</p><p>Although the needles themselves are actually longer than most at-home needling systems (making it more effective), the ultra-fine needles are thinner than a human hair, so that means you’ll feel minimal to no pain during treatment.</p><p>During the initial stages of treatment, you may experience a slight sensation or prickling feeling as the needles make contact with the skin but you’ll quickly get used to the feeling quickly.</p>"
@@ -1807,6 +1837,7 @@
         },
         "accordion_XKGkaz": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How often can I use the treatment?",
             "text": "<p>We recommend a Micro-Infusion treatment once every 2 weeks for the best results.</p>"
@@ -1814,6 +1845,7 @@
         },
         "accordion_yEYwDi": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "When is the best time to do Micro-Infusion?",
             "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after the treatment. For more information on post treatment care, <a href=\"https://qureskincare.com/pages/microinfusion-safety-guide?ref=49949480-3b91-401e-9cd9-888a90834e70\" title=\"https://qureskincare.com/pages/microinfusion-safety-guide?ref=49949480-3b91-401e-9cd9-888a90834e70\">visit our safety guide</a>.</p>"
@@ -1821,6 +1853,7 @@
         },
         "accordion_RaEjnm": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use it around the eyes and on the neck?",
             "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different!</p><p>Performing Micro-Infusion on the neck can help improve the appearance of fine lines, and rejuvenate skin. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and youthfulness of the skin.</p>"
@@ -1828,6 +1861,7 @@
         },
         "accordion_EdVfBj": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use a different serum with the Micro-Infusion device?",
             "text": "<p>No - only use the provided Qure serum with your Micro-Infusion Device.</p><p>Please keep in mind that not all serums are suitable for Micro-Infusion. Some may cause irritation and should be avoided! Our potent serum ampoules are specifically developed for our Micro-Infusion System, with gentle, fragrance-free formulas designed for deep delivery and low risk of sensitivity.</p>"
@@ -1835,6 +1869,7 @@
         },
         "accordion_mkn8PY": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "How is this different to micro-rolling?",
             "text": "<p>Micro-Infusion focuses on improving the skin’s appearance by creating micro-channels on the skin’s surface. It does not alter or affect skin structure or function.<br/><br/>With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision — helping the skin appear smoother and more radiant.</p>"
@@ -1842,6 +1877,7 @@
         },
         "accordion_GarByL": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Tranexamic Acid Notice",
             "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:</p><p>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, <strong>topical TXA in cosmetic formulations is permitted.</strong></p><p>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.</p><p>Our products are compliant with Australian regulartions. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).</p><p>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our support team</a>—we’re happy to help!</p>"
@@ -1857,6 +1893,10 @@
       },
       "block_order": [
         "accordion_hMHBPN",
+        "accordion_ABNmHx",
+        "accordion_bQqbgi",
+        "accordion_DtPdzK",
+        "accordion_AYcgRq",
         "accordion_x4LCUw",
         "accordion_pRtaH3",
         "accordion_XKGkaz",
