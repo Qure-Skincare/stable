@@ -9,6 +9,43 @@
  */
 {
   "sections": {
+    "n_across_image_banner_bluePlus": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "free_gift_bluePlus": {
+          "type": "free_gift",
+          "settings": {
+            "image": "shopify://shop_images/blue-plus-free-gift.webp",
+            "badge_text": "Free gift"
+          }
+        },
+        "disclaimer_bluePlus": {
+          "type": "disclaimer",
+          "settings": {
+            "text": "*Receive a Free Gift with 4 & 6-Month Subscriptions"
+          }
+        }
+      },
+      "block_order": [
+        "free_gift_bluePlus",
+        "disclaimer_bluePlus"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "disabled": true,
+      "settings": {
+        "use_own_file": false,
+        "modifier": "blue-plus",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>Discover the power of&nbsp;Blue+ Serum</h1>",
+        "text": "<p>Enhances LED session results. <br />Supports daily oxidative stress defense.</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/blue-plus.webp",
+        "image_mobile": "shopify://shop_images/blue-plus-mob.webp",
+        "button_label": "Shop Now",
+        "button_url": "/products/blue-face-serum"
+      }
+    },
     "n_across_image_banner_mR8kQ2": {
       "type": "n_across-image-banner",
       "blocks": {
@@ -907,6 +944,7 @@
     }
   },
   "order": [
+    "n_across_image_banner_bluePlus",
     "n_across_image_banner_mR8kQ2",
     "n_across_image_banner_Kp7wRm",
     "n_index-quick-links",

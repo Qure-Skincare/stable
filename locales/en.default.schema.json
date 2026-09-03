@@ -460,7 +460,8 @@
                     "summer": "Summer sale",
                     "labor-day": "Labor day",
                     "doctorly": "Doctorly",
-                    "text": "Text"
+                    "text": "Text",
+                    "blue-plus": "Blue+ serum"
                 },
                 "badge-group": {
                     "name": "Badge group"
@@ -483,6 +484,9 @@
                 },
                 "stars_image": {
                     "name": "Stars image"
+                },
+                "free_gift": {
+                    "name": "Free gift"
                 },
                 "double_tag": {
                     "name": "Double tag"

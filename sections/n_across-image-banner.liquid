@@ -43,6 +43,21 @@
             <article>
 
                 {% for block in section.blocks %}
+                    {% if block.type == 'free_gift' %}
+                        {% if block.settings.image != blank or block.settings.badge_text != blank %}
+                            <div class="free-gift">
+                                {% if block.settings.image != blank %}
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                                {% if block.settings.badge_text != blank %}
+                                    <div class="e-pill-save">{{ block.settings.badge_text }}</div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                {% for block in section.blocks %}
                     {% if block.type == 'double_tag' %}
                         {% if block.settings.badge_text != blank or block.settings.text != blank %}
                             <div class="e-double-tag e-double-tag--pill">
@@ -400,6 +415,10 @@
                 {
                     "value": "text",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.text"
+                },
+                {
+                    "value": "blue-plus",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.blue-plus"
                 }
             ]
         },
@@ -628,6 +647,24 @@
                 "type": "text",
                 "id": "text",
                 "label": "t:common.text"
+            }
+        ]
+    },
+    {
+        "type": "free_gift",
+        "name": "t:sections.n_across-image-banner.blocks.free_gift.name",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "badge_text",
+                "label": "t:common.badge-text",
+                "default": "Free gift"
             }
         ]
     },
