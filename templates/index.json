@@ -30,8 +30,8 @@
         "free_gift_bluePlus",
         "disclaimer_bluePlus"
       ],
-      "name": "t:sections.n_across-image-banner.name",
       "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
         "modifier": "blue-plus",
@@ -240,7 +240,7 @@
             "heading": "Q-Renew LLLT Helmet",
             "link_url": "/products/hair-growth-helmet",
             "image": "shopify://shop_images/Img_29.png",
-            "new": true
+            "new": false
           }
         },
         "item5": {
