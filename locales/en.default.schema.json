@@ -542,6 +542,15 @@
         "n_base-form": {
             "name": "Base form"
         },
+        "n_promo-strip": {
+            "name": "Promo strip",
+            "settings": {
+                "modifier-options": {
+                    "none": "None",
+                    "blue-plus": "Blue+ serum"
+                }
+            }
+        },
         "n_base-section": {
             "name": "Base section",
             "settings": {
