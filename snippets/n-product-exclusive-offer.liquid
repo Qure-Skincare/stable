@@ -66,39 +66,35 @@
 </div>
 
 {% if product != blank and block.settings.discount_code != blank %}
+    {% assign exclusive_offer_product1 = all_products[block.settings.product] %}
+    {% assign exclusive_offer_product1_variant_id = exclusive_offer_product1.variants.first.id %}
     <script class="__init">
         (function () {
-            var exclusiveKey1 = "product-exclusive-offer-{{ block.settings.product }}";
-            var exclusiveKey2 = "product-exclusive-offer-{{ block.settings.product2 }}";
-
-            // These do not depend on window.get_products_data — expose them right away.
+            // Everything the offer needs is rendered inline — no dependency on
+            // the deferred get-product-data store, so the interception arms
+            // immediately even when sapp activates scripts late on a slow link.
             window.exclusive_button_label = '{{ 'page.exclusive-offer.button-label' | t }} {{ product_sale_price }}';
+            window.exclusive_product_variant_id = '{{ exclusive_offer_product1_variant_id }}';
             window.exclusive_product2_black_variant_id = '{{ exclusive_offer_product2_black_variant_id }}';
             window.exclusive_offer_discount_code = '{{ block.settings.discount_code }}';
 
-            // window.get_products_data is populated by another deferred inline script
-            // (get-product-data). Under the LCP script activation the read order is not
-            // guaranteed, so wait until the data is ready before touching it — reading a
-            // property of an undefined object throws otherwise.
-            var attempts = 0;
-            function initExclusiveOffer() {
-                var store = window.get_products_data;
-                if (!store || !store[exclusiveKey1]) {
-                    if (attempts++ < 60) {
-                        return setTimeout(initExclusiveOffer, 50);
-                    }
-                    return; // give up gracefully after ~3s instead of crashing
-                }
-                window.exclusive_product = store[exclusiveKey1];
-                window.exclusive_product2 = store[exclusiveKey2];
+            function loadExclusiveOffer() {
                 loadScriptOnce('n-product-exclusive-offer.js', '{{ 'n-product-exclusive-offer.js' | asset_url }}');
             }
 
             if (document.readyState === 'loading') {
-                document.addEventListener("DOMContentLoaded", initExclusiveOffer);
+                document.addEventListener("DOMContentLoaded", loadExclusiveOffer);
             } else {
-                initExclusiveOffer();
+                loadExclusiveOffer();
             }
         })();
     </script>
 {% endif %}
+
+{% comment %}
+  The two get-product-data includes above leak product2's variables into the
+  parent include scope — a buy-button block rendered after this one would
+  submit product2's variant id. Re-run for the main product to restore
+  product_variant_id and the other shared variables.
+{% endcomment %}
+{% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'product-exclusive-offer-' %}
