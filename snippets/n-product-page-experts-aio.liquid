@@ -1,9 +1,10 @@
 {% doc %}
-  Renders the "experts" block (quote-card + certified-box) for the AIO
-  product header. Sits in `.hero-product__extra`, between the collapsed
+  Renders the "experts" block (quote-card + certified-box) for the product /
+  page header. Sits in `.hero-product__extra`, between the collapsed
   accordion and the jump-to nav.
 
-  Renders nothing if no `experts` block is added to the section.
+  Renders nothing if no `experts` block is added to the section. The
+  certified box is skipped unless the block sets `certified_image_1`.
 
   @param {object} section - The current section object.
 
@@ -33,15 +34,21 @@
                     </div>
                 {% endif %}
             </div>
-        {% endfor %}
 
-        <div class="c-certified-box">
-            <ul>
-                <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
-                <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-2.webp" alt="Certified Dermatologists" /></li>
-                <li>+50</li>
-            </ul>
-            <p>{{ 'product.settings.buy-button-bottom.recommended_no_link_html' | t }}</p>
-        </div>
+            {% if block.settings.certified_image_1 != blank %}
+                <div class="c-certified-box">
+                    <ul>
+                        <li><img loading="lazy" src="{{ block.settings.certified_image_1 | image_url }}" alt="{{ block.settings.certified_image_1.alt | escape }}" /></li>
+                        {% if block.settings.certified_image_2 != blank %}
+                            <li><img loading="lazy" src="{{ block.settings.certified_image_2 | image_url }}" alt="{{ block.settings.certified_image_2.alt | escape }}" /></li>
+                        {% endif %}
+                        {% if block.settings.certified_count != blank %}
+                            <li>{{ block.settings.certified_count }}</li>
+                        {% endif %}
+                    </ul>
+                    {{ block.settings.certified_text }}
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 {% endif %}

@@ -70,6 +70,7 @@
                         {% render 'n-product-page-collapsed', product: product, page: page, section: section %}
                 {% endcase %}
             {% endfor %}
+            {% render 'n-product-page-experts-aio', section: section %}
             {% render 'n-product-page-trustpilot', section: section, extra: true %}
             {% render 'n-product-page-jumpto', section: section %}
         </div>
@@ -762,6 +763,63 @@
             "settings": []
         },
         {
+            "type": "description-aio",
+            "name": "t:common.description-aio",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title_1",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_1",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "title_2",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_2",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "title_3",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_3",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "title_4",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_4",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "title_5",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_5",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
             "type": "accordion",
             "name": "t:common.accordion",
             "limit": 1,
@@ -769,7 +827,7 @@
         },
         {
             "type": "quote",
-            "name": "t:common.quote",
+            "name": "t:common.expert-quote-tag",
             "limit": 1,
             "settings": [
                 {
@@ -791,6 +849,55 @@
                     "type": "text",
                     "id": "position",
                     "label": "t:common.position"
+                }
+            ]
+        },
+        {
+            "type": "experts",
+            "name": "t:common.expert-quote-card",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "position",
+                    "label": "t:common.position"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "certified_image_1",
+                    "label": "t:common.certified-image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "certified_image_2",
+                    "label": "t:common.certified-image"
+                },
+                {
+                    "type": "text",
+                    "id": "certified_count",
+                    "label": "t:common.certified-count",
+                    "default": "+50"
+                },
+                {
+                    "type": "richtext",
+                    "id": "certified_text",
+                    "label": "t:common.certified-text",
+                    "default": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
                 }
             ]
         },

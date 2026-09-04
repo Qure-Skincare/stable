@@ -39,7 +39,11 @@
             "image": "shopify://shop_images/dr-shah-quote.webp",
             "text": "<p>Qure cares a lot about the products they are putting out.</p>",
             "username": "Dr. Shah,",
-            "position": "Dermatologist"
+            "position": "Dermatologist",
+            "certified_image_1": "shopify://shop_images/crt-1.webp",
+            "certified_image_2": "shopify://shop_images/crt-2.webp",
+            "certified_count": "+50",
+            "certified_text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
           }
         },
         "faq_FRN4yi": {
