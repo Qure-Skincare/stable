@@ -37,49 +37,13 @@
         "modifier": "blue-plus",
         "rating": "",
         "rating_text": "",
-        "heading": "<h1>Discover the power of&nbsp;Blue+ Serum</h1>",
-        "text": "<p>Enhances LED session results. <br />Supports daily oxidative stress defense.</p>",
+        "heading": "<h1>Discover the power of Blue+ Serum</h1>",
+        "text": "<p>Enhances LED session results. <br/>Supports daily oxidative stress defense.</p>",
         "sub_text": "",
         "image": "shopify://shop_images/blue-plus.webp",
         "image_mobile": "shopify://shop_images/blue-plus-mob.webp",
         "button_label": "Shop Now",
         "button_url": "/products/blue-face-serum"
-      }
-    },
-    "n_across_image_banner_mR8kQ2": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "double_tag_mR8kQ2": {
-          "type": "double_tag",
-          "settings": {
-            "badge_text": "LABOR DAY OFFER",
-            "text": "SHOP NOW"
-          }
-        },
-        "stars_image_mR8kQ2": {
-          "type": "stars_image",
-          "settings": {
-            "image": "shopify://shop_images/labor-day-sale.svg"
-          }
-        }
-      },
-      "block_order": [
-        "double_tag_mR8kQ2",
-        "stars_image_mR8kQ2"
-      ],
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "labor-day",
-        "rating": "",
-        "rating_text": "",
-        "heading": "<h1>70% OFF Micro-Infusion</h1>",
-        "text": "<p>A moment to invest in the skin you work hard for</p>",
-        "sub_text": "",
-        "image": "shopify://shop_images/labor-day.webp",
-        "image_mobile": "shopify://shop_images/labor-day-mob.webp",
-        "button_label": "Buy Now & Save Up to 70%",
-        "button_url": "/pages/microinfusion"
       }
     },
     "n_across_image_banner_Kp7wRm": {
@@ -188,7 +152,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -289,6 +252,7 @@
       "block_order": [
         "gift_1"
       ],
+      "disabled": true,
       "name": "t:sections.n_index-daily-cleanser.name",
       "settings": {
         "text": "<h3>Daily Cleanser</h3><p>50% Glycerin. <strong>No Dryness.</strong> No Tightness.</p>",
@@ -945,7 +909,6 @@
   },
   "order": [
     "n_across_image_banner_bluePlus",
-    "n_across_image_banner_mR8kQ2",
     "n_across_image_banner_Kp7wRm",
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
