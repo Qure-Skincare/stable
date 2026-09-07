@@ -1218,12 +1218,14 @@
         },
         "payment_type_3zQTmH": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Pay_Icons.svg"
           }
