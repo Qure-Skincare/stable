@@ -38,21 +38,22 @@
                         {% include 'n-purchase-form-delivery-switcher' %}
                     {% endif %}
 
-                    <ul class="buyer-opportunity">
-                        <li>
-                            <i class="e-icon e-icon-circle-check"></i>
-                            90-day money-back buarantee
-                        </li>
-                        <li>
-                            <i class="e-icon e-icon-circle-security"></i>
-                            Clinically &amp; third party tested
-                        </li>
-                        <li>
-                            <i class="e-icon e-icon-circle-delivery"></i>
-                            Free shipping over&nbsp;$100
-                        </li>
-                    </ul>
-
+                    {% if section.settings.type == 'card' %}
+                        <ul class="buyer-opportunity">
+                            <li>
+                                <i class="e-icon e-icon-circle-check"></i>
+                                90-day money-back buarantee
+                            </li>
+                            <li>
+                                <i class="e-icon e-icon-circle-security"></i>
+                                Clinically &amp; third party tested
+                            </li>
+                            <li>
+                                <i class="e-icon e-icon-circle-delivery"></i>
+                                Free shipping over&nbsp;$100
+                            </li>
+                        </ul>
+                    {% endif %}
                 </div>
             </div>
         </div>
