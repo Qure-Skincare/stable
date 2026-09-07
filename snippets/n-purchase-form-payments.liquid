@@ -8,6 +8,7 @@
 {% endfor %}
 
 {% unless section.settings.type == 'card' %}
+{% if payment_type_count > 0 %}
     <div class="treatment__step">
         <div class="c-payment-selector">
             <p class="c-payment-selector__title">{{ 'purchase-form.settings.payment-option' | t }}</p>
@@ -63,4 +64,5 @@
             </ul>
         </div>
     </div>
+{% endif %}
 {% endunless %}
