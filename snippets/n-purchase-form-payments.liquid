@@ -7,58 +7,60 @@
     {% endcase %}
 {% endfor %}
 
-<div class="treatment__step">
-    <div class="c-payment-selector">
-        <p class="c-payment-selector__title">{{ 'purchase-form.settings.payment-option' | t }}</p>
-        <ul class="c-payment-selector__list">
-            {% assign num = 0 %}
-            {%- for block in section.blocks -%}
-                {% if block.type == 'payment_type' %}
-                    {% if num == 0 %}
-                        <li class="c-payment-selector__item purchase_form_pay_in_full">
-                            <label class="c-payment-selector__label">
-                                <input type="radio" name="payment" checked="checked" />
-                                <div class="c-payment-selector__name">{{ 'purchase-form.settings.pay-full' | t }}</div>
-                                <div class="c-payment-selector__price">
-                                    <div class="e-price">
-                                        <div class="e-price__main">
-                                            <div class="e-price__current"></div>
-                                            <div class="e-price__old"></div>
+{% unless section.settings.type == 'card' %}
+    <div class="treatment__step">
+        <div class="c-payment-selector">
+            <p class="c-payment-selector__title">{{ 'purchase-form.settings.payment-option' | t }}</p>
+            <ul class="c-payment-selector__list">
+                {% assign num = 0 %}
+                {%- for block in section.blocks -%}
+                    {% if block.type == 'payment_type' %}
+                        {% if num == 0 %}
+                            <li class="c-payment-selector__item purchase_form_pay_in_full">
+                                <label class="c-payment-selector__label">
+                                    <input type="radio" name="payment" checked="checked" />
+                                    <div class="c-payment-selector__name">{{ 'purchase-form.settings.pay-full' | t }}</div>
+                                    <div class="c-payment-selector__price">
+                                        <div class="e-price">
+                                            <div class="e-price__main">
+                                                <div class="e-price__current"></div>
+                                                <div class="e-price__old"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="c-payment-selector__text">
-                                    {{ 'purchase-form.settings.onetime-payment' | t }}
-                                    {% if block.settings.image != blank %}
-                                        <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
-                                    {% endif %}
-                                </div>
-                            </label>
-                        </li>
-                    {% else %}
-                        <li class="c-payment-selector__item purchase_form_pay_today">
-                            <label class="c-payment-selector__label">
-                                <input type="radio" name="payment" />
-                                <div class="c-payment-selector__name">{{ 'purchase-form.settings.pay-today' | t }}</div>
-                                <div class="c-payment-selector__price">
-                                    <div class="e-price">
-                                        <div class="e-price__main">
-                                            <div class="e-price__current"></div>
+                                    <div class="c-payment-selector__text">
+                                        {{ 'purchase-form.settings.onetime-payment' | t }}
+                                        {% if block.settings.image != blank %}
+                                            <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                        {% endif %}
+                                    </div>
+                                </label>
+                            </li>
+                        {% else %}
+                            <li class="c-payment-selector__item purchase_form_pay_today">
+                                <label class="c-payment-selector__label">
+                                    <input type="radio" name="payment" />
+                                    <div class="c-payment-selector__name">{{ 'purchase-form.settings.pay-today' | t }}</div>
+                                    <div class="c-payment-selector__price">
+                                        <div class="e-price">
+                                            <div class="e-price__main">
+                                                <div class="e-price__current"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="c-payment-selector__text">
-                                    {{ 'purchase-form.settings.monthly-payment' | t }}
-                                    {% if block.settings.image != blank %}
-                                        <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
-                                    {% endif %}
-                                </div>
-                            </label>
-                        </li>
+                                    <div class="c-payment-selector__text">
+                                        {{ 'purchase-form.settings.monthly-payment' | t }}
+                                        {% if block.settings.image != blank %}
+                                            <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+                                        {% endif %}
+                                    </div>
+                                </label>
+                            </li>
+                        {% endif %}
+                        {%- assign num = num | plus: 1 -%}
                     {% endif %}
-                    {%- assign num = num | plus: 1 -%}
-                {% endif %}
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-</div>
+{% endunless %}

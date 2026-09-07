@@ -129,45 +129,36 @@
                                 <input type="radio" name="purchase_form_product_variant_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}"{% if block.settings.preselected == true %} checked{% endif %}>
                                 <div class="supply-card__content">
                                     <div class="supply-card__details">
-
                                         {% if product_subscription_price != blank %}
                                             <div class="e-pill-save">Save {{ product_subscription_price_diff }} Today</div>
                                         {% else %}
                                             <div class="e-pill-save">Save {{ product_price_diff }} Today</div>
                                         {% endif %}
-
-                                        
-                                        <div class="e-price">
-                                            <div class="e-price__main">
-                                                {% if product_subscription_price != blank %}
-                                                    <div class="e-price__current igSubPrice" data-variant-id="{{ product_variant_id }}">{{ product_subscription_price }}</div>
-                                                    {% if product_before_price != blank %}
-                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
-                                                    {% endif %}
-                                                {% else %}
-                                                    <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
-                                                    {% if product_before_price != blank %}
-                                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
-                                                    {% endif %}
-                                                {% endif %}
+                                        <div>
+                                            <div class="e-price">
+                                                <div class="e-price__main">
+                                                    <div class="e-price__current">{{ product_price_per_item }}</div>
+                                                </div>
                                             </div>
+                                            <small>/&nbsp;treatment</small>
                                         </div>
 
-                                        {% if block.settings.heading contains '90' %}
-                                            <p><strong>Just {{ product_price_divided_90 }}/day for first month</strong></p>
+                                        {% if product_subscription_price != blank %}
+                                            <p><strong class="igSubPrice" data-variant-id="{{ product_variant_id }}">Total {{ product_subscription_price }}</strong></p>
                                         {% else %}
-                                            <p><strong>Just {{ product_price_divided_30 }}/day for first month</strong></p>
+                                            <p><strong class="igPrice" data-variant-id="{{ product_variant_id }}">Total {{ product_sale_price }}</strong></p>
                                         {% endif %}
 
                                         {% if block.settings.included_text != blank %}
                                             {{ block.settings.included_text |  replace: '<ul>', '<ul class="c-marked-list c-marked-list--fill">' }}
                                         {% endif %}
                                     </div>
+
                                     <figure class="supply-card__image">
                                         {% if block.settings.image != blank %}
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         {% endif %}
-                                        <figcaption>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</figcaption>
+                                        <figcaption>{{ block.settings.subheading }}</figcaption>
                                     </figure>
                                 </div>
 
