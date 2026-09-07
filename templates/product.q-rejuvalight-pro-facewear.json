@@ -18,6 +18,7 @@
         },
         "gallery_sticky_video_ty3KMw": {
           "type": "gallery-sticky-video",
+          "disabled": true,
           "settings": {
             "video_url": "https://embed-ssl.wistia.com/deliveries/8f6d91b28ba7df92bcbcb43c882f0bf62e778bc5.bin?disposition=attachment&filename=led-mask-pdp-video.mp4"
           }
