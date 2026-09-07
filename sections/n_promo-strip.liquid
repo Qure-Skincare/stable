@@ -1,0 +1,101 @@
+{% doc %}
+    Renders a promo strip section
+{% enddoc %}
+
+<!-- PROMO STRIP -->
+<section class="promo-strip{% if section.settings.modifier != 'none' %} promo-strip--{{ section.settings.modifier }}{% endif %}">
+    <picture>
+        {% if section.settings.image != blank %}
+            <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+        {% endif %}
+        {% if section.settings.image_mobile != blank %}
+            <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+        {% endif %}
+    </picture>
+    <div class="container">
+        <article>
+            {{ section.settings.text }}
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+            {% endif %}
+        </article>
+    </div>
+    <div class="free-gift">
+        <div class="e-pill-badge e-pill-badge--fill">{{ section.settings.badge_text }}</div>
+        <div class="e-pill-badge e-pill-badge--ghost">{{ section.settings.price }}</div>
+        {% if section.settings.gift_image != blank %}
+            <img src="{{ section.settings.gift_image | image_url }}" alt="{{ section.settings.gift_image.alt | escape }}" />
+        {% endif %}
+    </div>
+</section>
+<!-- PROMO STRIP END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_promo-strip.name",
+    "settings": [
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "blue-plus",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:sections.n_promo-strip.settings.modifier-options.none"
+                },
+                {
+                    "value": "blue-plus",
+                    "label": "t:sections.n_promo-strip.settings.modifier-options.blue-plus"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text",
+            "default": "Free Gift"
+        },
+        {
+            "type": "text",
+            "id": "price",
+            "label": "t:common.price"
+        },
+        {
+            "type": "image_picker",
+            "id": "gift_image",
+            "label": "t:common.gift_image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_promo-strip.name"
+        }
+    ]
+}
+{% endschema %}
