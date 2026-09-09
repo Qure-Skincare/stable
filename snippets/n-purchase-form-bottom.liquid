@@ -1,0 +1,16 @@
+{% if section.settings.type == 'card' %}
+    <ul class="e-small-tiles-group">
+        <li>
+            <i class="e-icon e-icon-circle-check"></i>
+            {{ 'purchase-form.settings.bottom.card.guarantee' | t }}
+        </li>
+        <li>
+            <i class="e-icon e-icon-circle-security"></i>
+            {{ 'purchase-form.settings.bottom.card.tested' | t }}
+        </li>
+        <li>
+            <i class="e-icon e-icon-circle-delivery"></i>
+            {{ 'purchase-form.settings.bottom.card.shipping' | t }}
+        </li>
+    </ul>
+{% endif %}

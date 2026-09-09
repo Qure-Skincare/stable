@@ -57,7 +57,7 @@
                                     {% capture data-per %}{{ 'purchase-form.settings.soldout-button-label' | t }}{% endcapture %}
                                 {% endif %}
 
-                                <li class="purchase_form_product_variant_selector{% if block.settings.preselected == true %} active{% endif %}"
+                                <li class="purchase_form_landing_product_variant_selector{% if block.settings.preselected == true %} active{% endif %}"
                                     data-block-id="{{ block.id }}"
                                     data-tab="tab_{{ product_title_tag }}" 
                                     data-pay="{{ product_price_divided }}" 
@@ -126,7 +126,7 @@
 
                         <li class="c-supply-selector__item">
                             <div class="supply-card" for="{{ section.id }}-{{ product_title_tag }}" id="{{ block.id }}-tab">
-                                <input type="radio" name="purchase_form_product_variant_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}"{% if block.settings.preselected == true %} checked{% endif %}>
+                                <input type="radio" name="purchase_form_landing_product_variant_{{ section.settings.form_name }}" id="{{ section.id }}-{{ product_title_tag }}"{% if block.settings.preselected == true %} checked{% endif %}>
                                 <div class="supply-card__content">
                                     <div class="supply-card__details">
                                         {% if product_subscription_price != blank %}

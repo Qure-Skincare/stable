@@ -7,10 +7,10 @@
         {% render 'n-purchase-form-landing-klaviyo', section: section %}
         {% include 'n-purchase-form-landing-subscription' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
-
         {% if section.settings.delivery_switcher_position == 'footer' %}
             {% include 'n-purchase-form-landing-delivery-switcher' %}
         {% endif %}
+        {% render 'n-purchase-form-landing-bottom' %}
     </div>
     <script src="{{ 'n-purchase-form-landing.js' | asset_url }}" data-form="{{ section.settings.form_name }}" data-section="{{ section.id }}" defer></script>
 </template>
@@ -105,6 +105,10 @@
                     {
                         "value": "subscription",
                         "label": "t:common.subscription"
+                    },
+                    {
+                        "value": "card",
+                        "label": "t:common.card"
                     }
                 ],
                 "default": "box"
@@ -399,6 +403,20 @@
                         "default": false
                     },
                     {
+                        "type": "number",
+                        "id": "total_treatments",
+                        "label": "t:sections.purchase-form.blocks.product.settings.total_treatments",
+                        "info": "t:sections.purchase-form.blocks.product.settings.total_treatments_info",
+                        "default": 0
+                    },
+                    {
+                        "type": "number",
+                        "id": "left_items",
+                        "label": "t:sections.purchase-form.blocks.product.settings.left_items",
+                        "info": "t:sections.purchase-form.blocks.product.settings.left_items_info",
+                        "default": 0
+                    },
+                    {
                         "type": "text",
                         "id": "preorder_text",
                         "label": "t:sections.purchase-form-landing.blocks.product.settings.preorder_text"
@@ -422,6 +440,11 @@
                         "unit": "%",
                         "label": "t:common.percent",
                         "default": 55
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "included_text",
+                        "label": "t:sections.purchase-form.blocks.product.settings.included_text"
                     }
                 ]
             }       
