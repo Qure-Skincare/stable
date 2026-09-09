@@ -18,7 +18,7 @@
 
 
 {% if section.settings.type == 'card' %}
-    <div class="c-supply-selector c-supply-selector--cards">
+    <div class="c-supply-selector c-supply-selector--cards{% if section.settings.hide_variants %} hide{% endif %}">
         <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product' | t }}</p>
         {% if section.settings.subscription_product == 'true' %}
             {% include 'n-purchase-form-landing-products-item-card' array: __idsArray1, preorder_box: preorder_box, subscription_is_on: true %}
@@ -33,7 +33,7 @@
         <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
     </div>
 {% else %}
-    <div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}">
+    <div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}{% if section.settings.hide_variants %} hide{% endif %}">
         {% if section.settings.delivery_switcher_position == 'header' %}
             <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
         {% else %}

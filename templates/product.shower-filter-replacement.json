@@ -24,6 +24,23 @@
           "type": "description",
           "settings": {}
         },
+        "purchase-form-selector": {
+          "type": "purchase-form-selector",
+          "settings": {
+            "image": "shopify://shop_images/cartiage-1.webp",
+            "product": "Shower Refill",
+            "form_name": "purchase-form-landing",
+            "compatible_text": "Shower Head",
+            "compatible_image": "shopify://shop_images/variant-silver-1.webp",
+            "compatible_url": "https://qureskincare.com/products/shower-filter",
+            "image2": "shopify://shop_images/DSC03993_1.png",
+            "product2": "Handheld Shower Refill",
+            "form_name2": "purchase-form-landing-second",
+            "compatible_text2": "Handheld Shower Head",
+            "compatible_image2": "shopify://shop_images/handheld-shower.webp",
+            "compatible_url2": "https://qureskincare.com/products/shower-filter"
+          }
+        },
         "section_A0": {
           "type": "section",
           "settings": {
@@ -80,6 +97,7 @@
         "accordion_migrated",
         "black_friday_discount_8mFNP9",
         "description_9VBwaX",
+        "purchase-form-selector",
         "section_A0",
         "nextships_nN4CpM",
         "jumpto_jzQqUH",
@@ -90,11 +108,17 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "SHOWER FILTER REFILL CARTRIDGE",
         "heading": "Keep your skin & hair protected with the Shower Filter Refill",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Replace Shower Filter cartridge every 3 months for consistently hydrated, healthier hair and skin. </li><li>Removes up to 99% chlorine, heavy metals & contaminants that harms your skin and hair.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
@@ -111,10 +135,12 @@
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
+            "subscription_image": "shopify://shop_images/cartiage-1.webp",
             "subscription_discount_percent": 30,
             "product": "",
             "product_discount_percent": 30,
-            "onetime_text": "Qure Faucet Filter"
+            "onetime_text": "Qure Shower Filter Refill",
+            "onetime_image": "shopify://shop_images/cartiage-1.webp"
           }
         },
         "nextships_4xp7uM": {
@@ -143,11 +169,16 @@
             "product": "shower-filter-replacement",
             "product_variant_id": 46010772652271,
             "product_selling_plan": 6286082287,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": true,
             "heading": "White",
             "subheading": "",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/cartiage-1.webp",
             "product_discount_percent": 0,
@@ -161,15 +192,21 @@
         },
         "product_NEgEkN": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "shower-filter-replacement",
             "product_variant_id": 46010772685039,
             "product_selling_plan": 6286082287,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/cartiage-2.webp",
             "product_discount_percent": 0,
@@ -193,6 +230,99 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
+        "hide_variants": true,
+        "color_types": false,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
+        "type": "variant",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
+      }
+    },
+    "purchase-form-landing-second": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "subscription_7yq2vM": {
+          "type": "subscription",
+          "settings": {
+            "subscription_onetime_text": "",
+            "subscription_days_text": "Receive a new Filter Refill",
+            "subscription_image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg",
+            "subscription_discount_percent": 30,
+            "product": "",
+            "product_discount_percent": 30,
+            "onetime_text": "Qure Handheld Shower Filter Refill",
+            "onetime_image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg"
+          }
+        },
+        "nextships_5yq8vN": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_iIQehK": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_RLRiOs": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Handheld shower filter refill variants",
+            "preselected": false
+          }
+        },
+        "product_hcQg4K": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-refill",
+            "product_variant_id": 50530966438127,
+            "product_selling_plan": 9103245551,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "White",
+            "subheading": "",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "subscription_7yq2vM",
+        "nextships_5yq8vN",
+        "type_iIQehK",
+        "product_type_RLRiOs",
+        "product_hcQg4K"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-second",
+        "hide_types": true,
+        "hide_variants": true,
+        "color_types": false,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "variant",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -265,12 +395,12 @@
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_across_gallery_p8Kq3R": {
       "type": "n_across-gallery",
-      "disabled": true,
       "blocks": {
         "image_t2NxLm": {
           "type": "image",
@@ -345,7 +475,8 @@
         "image": "shopify://shop_images/shower_img.webp",
         "button_label": "Shop Now",
         "button_url": "#hero-product",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_progress_metrics_X8KGmr": {
@@ -410,6 +541,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Briony R.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Restored my curls!</h6><p>“When I discovered the curly girl method, I thought I had cracked the code to perfectly defined curls. Then one day my curls stopped curling, they became week, lump and shine free. I did some research and realized it was my water. I saw a big difference after only one wash - it turned out I had a bunch of build up on my hair. Thank you Qure for saving my curls!”</p>",
             "product_url": "",
             "product_text": "",
@@ -423,6 +555,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
             "product_url": "",
             "product_text": "",
@@ -436,6 +569,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Acne and dryness gone</h6><p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
             "product_url": "",
             "product_text": "",
@@ -449,6 +583,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Adele M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Skin and hair are glowing</h6><p>“I have been using this filter for a few weeks now and my hair is SO much healthier. Much more smooth, less frizzy, looks glossier and the shedding has reduced. And actually I'm even seeing my skin look more hydrated and glowier - bonus!!”</p>",
             "product_url": "",
             "product_text": "",
@@ -462,6 +597,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Kim L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
             "product_url": "",
             "product_text": "",
@@ -475,6 +611,7 @@
             "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
             "username": "Sarah G.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Brought my curls back to life!</h6><p>“I absolutely love this shower filter! The water at my place used to be awful, so I noticed a difference right after the first use. My hair isn’t as fuzzy anymore, and my curls actually come alive. It feels so much softer and healthier.”</p>",
             "product_url": "",
             "product_text": "",
@@ -488,6 +625,7 @@
             "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
             "username": "Adele M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>In love with Qure Faucet Filter!</h6><p>“Highly recommend! When I used to wash my face before, it got irritated and very dry. I was also really struggling with acne and flare-ups. Since washing my face with this filter, my face isn’t dry anymore and my skin has visibly cleared up. I love that it filters out any impurities which are harmful for my skin.”</p>",
             "product_url": "",
             "product_text": "",
@@ -501,6 +639,7 @@
             "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
             "username": "Sloane M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Noticeably Softer Skin & Cleaner Water After</strong></p><p>“I wasn’t expecting a shower filter to make this much of a difference, but I’m genuinely impressed. After installing it, I immediately noticed the water felt softer and less harsh on my skin and hair. Within a few showers, my skin felt less tight and dry, especially noticeable since I’m prone to dryness and irritation.”</p>",
             "product_url": "",
             "product_text": "",
@@ -522,6 +661,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>The results are crystal clear</h2>",
         "button_label": "",
         "button_url": ""
@@ -740,7 +883,6 @@
     },
     "n_set_up_toggle_g3Vm8D": {
       "type": "n_set-up-toggle",
-      "disabled": true,
       "blocks": {
         "tab_r4NkWp": {
           "type": "tab",
@@ -1052,6 +1194,7 @@
         },
         "variant_45xfGi": {
           "type": "variant",
+          "disabled": true,
           "settings": {
             "heading": "Black",
             "image": "shopify://shop_images/black_swatch.webp"
@@ -1062,6 +1205,7 @@
         "variant_43xxGi",
         "variant_45xfGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
@@ -1074,6 +1218,7 @@
   "order": [
     "product_header_5nXYyf",
     "purchase-form-landing",
+    "purchase-form-landing-second",
     "n_base_section_CGMUkn",
     "n_across_gallery_p8Kq3R",
     "n_base_section_Lm3tAh",

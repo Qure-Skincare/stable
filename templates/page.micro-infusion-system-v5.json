@@ -497,20 +497,6 @@
     "n_trusted_reviews_DUlFYg": {
       "type": "n_trusted-reviews",
       "blocks": {
-        "slider_78E6pj": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/andrea.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Andrea G.",
-            "verified_customer": "Verified customer",
-            "badge": "Skin texture",
-            "text": "<p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_VyHb4h": {
           "type": "slider",
           "settings": {
@@ -539,15 +525,15 @@
             "product_title": ""
           }
         },
-        "slider_rM6Vp2": {
+        "slider_jT7Wd4": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/Image_19_60a1c45f-d170-40bf-b9f4-b3ef4acc09da.png",
-            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
-            "username": "Rodrigo M.",
+            "image": "shopify://shop_images/Image_2_9c05b808-aa78-4254-8031-9fea7eda6afe.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Janeda T.",
             "verified_customer": "Verified customer",
-            "badge": "Skin Texture",
-            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
+            "badge": "Dark spots",
+            "text": "<p>“I’ve done two treatments so far since I got this and my gosh, I have an extreme loss of dark spots. My skin is smooth and I got the dark spot treatment, but it Oohh amazed at this I keep telling everybody about this I cannot believe what an amazing product this is I will continue to buy it, and I will not stop using this for a treatment that you would spend $300 in the salon for just one treatment, how amazing is it to be able to do it at home?”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -562,6 +548,48 @@
             "verified_customer": "Verified customer",
             "badge": "Forehead Wrinkles",
             "text": "<p>“I have done two treatments so far. For my second treatment I added numbing cream around my mouth, since it is more sensitive and an area I really need to work on! I found it was easy to do, just put on the needle cap and use a continuous motion. My skin felt truly softer and more plump after usage. I am excited to see the results I get after using this product in the future.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_78E6pj": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/andrea.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Andrea G.",
+            "verified_customer": "Verified customer",
+            "badge": "Sagging Skin",
+            "text": "<p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_lF3Rk9": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
+            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "Lourdes F.",
+            "verified_customer": "Verified customer",
+            "badge": "Wrinkles",
+            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_rM6Vp2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_19_60a1c45f-d170-40bf-b9f4-b3ef4acc09da.png",
+            "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
+            "username": "Rodrigo M.",
+            "verified_customer": "Verified customer",
+            "badge": "Acne Scares",
+            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -590,34 +618,6 @@
             "verified_customer": "Verified customer",
             "badge": "Glow",
             "text": "<p>“I’ve used the micro-infusion dark spot bundle set only one and I can already tell a difference!! My skin is ✨GLOWING✨ I have had several people ask me what I’ve done different just from one use! I cannot wait to continue using this and see the continued progress I’ll have. 10000/10 recommend!!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_lF3Rk9": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
-            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
-            "username": "Lourdes F.",
-            "verified_customer": "Verified customer",
-            "badge": "Wrinkles",
-            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_jT7Wd4": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_2_9c05b808-aa78-4254-8031-9fea7eda6afe.png",
-            "flag": "shopify://shop_images/usa_flag.svg",
-            "username": "Janeda T.",
-            "verified_customer": "Verified customer",
-            "badge": "Dark spots",
-            "text": "<p>“I’ve done two treatments so far since I got this and my gosh, I have an extreme loss of dark spots. My skin is smooth and I got the dark spot treatment, but it Oohh amazed at this I keep telling everybody about this I cannot believe what an amazing product this is I will continue to buy it, and I will not stop using this for a treatment that you would spend $300 in the salon for just one treatment, how amazing is it to be able to do it at home?”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -653,15 +653,15 @@
         }
       },
       "block_order": [
-        "slider_78E6pj",
         "slider_VyHb4h",
         "slider_9NRFNC",
-        "slider_rM6Vp2",
+        "slider_jT7Wd4",
         "slider_mB2Ht7",
+        "slider_78E6pj",
+        "slider_lF3Rk9",
+        "slider_rM6Vp2",
         "slider_aF9Qs3",
         "slider_hJ8Nc5",
-        "slider_lF3Rk9",
-        "slider_jT7Wd4",
         "slider_e11ie1",
         "slider_pJ4Kw1"
       ],
