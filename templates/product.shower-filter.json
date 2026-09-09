@@ -439,7 +439,8 @@
           "type": "product_type",
           "settings": {
             "heading": "Silver",
-            "preselected": false
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "preselected": true
           }
         },
         "product_NEgEkN": {
@@ -523,7 +524,7 @@
       "settings": {
         "form_name": "purchase-form-landing-second",
         "hide_types": true,
-        "color_types": false,
+        "color_types": true,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",

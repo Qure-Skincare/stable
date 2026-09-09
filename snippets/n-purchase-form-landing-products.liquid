@@ -16,7 +16,7 @@
     {% endfor %}
 {% endif %}
 
-<div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}">
+<div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}{% if section.settings.hide_variants %} hide{% endif %}">
     {% if section.settings.delivery_switcher_position == 'header' %}
         <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
     {% else %}

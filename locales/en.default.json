@@ -505,7 +505,8 @@
         "text": "You deserve results you can see. Try Micro-Infusion for 90 days, and if you’re not satisfied, simply get in touch with our team for a full refund!"
       },
       "purchase-form-selector": {
-        "header": "Select the type:"
+        "header": "Select the type:",
+        "compatible": "Compatible with"
       },
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"

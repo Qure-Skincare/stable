@@ -24,6 +24,23 @@
           "type": "description",
           "settings": {}
         },
+        "purchase-form-selector": {
+          "type": "purchase-form-selector",
+          "settings": {
+            "image": "shopify://shop_images/cartiage-1.webp",
+            "product": "Shower Refill",
+            "form_name": "purchase-form-landing",
+            "compatible_text": "Shower <br />Head",
+            "compatible_image": "shopify://shop_images/variant-silver-1.webp",
+            "compatible_url": "/products/shower-filter",
+            "image2": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg",
+            "product2": "Handheld Shower Refill",
+            "form_name2": "purchase-form-landing-second",
+            "compatible_text2": "Handheld <br />Shower Head",
+            "compatible_image2": "shopify://shop_images/handheld-shower.webp",
+            "compatible_url2": "/products/hand-shower-filter"
+          }
+        },
         "section_A0": {
           "type": "section",
           "settings": {
@@ -80,6 +97,7 @@
         "accordion_migrated",
         "black_friday_discount_8mFNP9",
         "description_9VBwaX",
+        "purchase-form-selector",
         "section_A0",
         "nextships_nN4CpM",
         "jumpto_jzQqUH",
@@ -111,10 +129,12 @@
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
+            "subscription_image": "shopify://shop_images/cartiage-1.webp",
             "subscription_discount_percent": 30,
             "product": "",
             "product_discount_percent": 30,
-            "onetime_text": "Qure Faucet Filter"
+            "onetime_text": "Qure Shower Filter Refill",
+            "onetime_image": "shopify://shop_images/cartiage-1.webp"
           }
         },
         "nextships_4xp7uM": {
@@ -161,6 +181,7 @@
         },
         "product_NEgEkN": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "shower-filter-replacement",
             "product_variant_id": 46010772685039,
@@ -193,6 +214,84 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
+        "hide_variants": true,
+        "type": "variant",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false
+      }
+    },
+    "purchase-form-landing-second": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "subscription_7yq2vM": {
+          "type": "subscription",
+          "settings": {
+            "subscription_onetime_text": "",
+            "subscription_days_text": "Receive a new Filter Refill",
+            "subscription_image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg",
+            "subscription_discount_percent": 30,
+            "product": "",
+            "product_discount_percent": 30,
+            "onetime_text": "Qure Handheld Shower Filter Refill",
+            "onetime_image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg"
+          }
+        },
+        "nextships_5yq8vN": {
+          "type": "nextships",
+          "settings": {
+            "date": "25 September",
+            "percent": 55,
+            "date_soldout": "28 July",
+            "date_reserved": "3 August"
+          }
+        },
+        "type_iIQehK": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_RLRiOs": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Handheld shower filter refill variants",
+            "preselected": false
+          }
+        },
+        "product_hcQg4K": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-refill",
+            "product_variant_id": 50530966438127,
+            "product_selling_plan": 9103245551,
+            "popular": false,
+            "best": false,
+            "preselected": true,
+            "heading": "White",
+            "subheading": "",
+            "text": "",
+            "image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55
+          }
+        }
+      },
+      "block_order": [
+        "subscription_7yq2vM",
+        "nextships_5yq8vN",
+        "type_iIQehK",
+        "product_type_RLRiOs",
+        "product_hcQg4K"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-second",
+        "hide_types": true,
+        "hide_variants": true,
         "type": "variant",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -1042,6 +1141,7 @@
     },
     "sticky_cta_6UGJ8F": {
       "type": "n-sticky-button-variants",
+      "disabled": true,
       "blocks": {
         "variant_43xxGi": {
           "type": "variant",
@@ -1052,6 +1152,7 @@
         },
         "variant_45xfGi": {
           "type": "variant",
+          "disabled": true,
           "settings": {
             "heading": "Black",
             "image": "shopify://shop_images/black_swatch.webp"
@@ -1074,6 +1175,7 @@
   "order": [
     "product_header_5nXYyf",
     "purchase-form-landing",
+    "purchase-form-landing-second",
     "n_base_section_CGMUkn",
     "n_across_gallery_p8Kq3R",
     "n_base_section_Lm3tAh",
