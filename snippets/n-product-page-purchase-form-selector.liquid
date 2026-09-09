@@ -25,6 +25,22 @@
                     <input data-form="{{ block.settings.form_name }}" type="radio" name="type" checked />
                     <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.product | escape }}" />
                     <span>{{ block.settings.product }}</span>
+                    {% if block.settings.compatible_text != blank %}
+                        <div class="c-info">
+                            <div class="c-info__icon"><i class="e-icon e-icon-i"></i></div>
+                            <div class="c-info__tooltip">
+                                <div class="c-info__filter-compatible">
+                                    <p><span class="e-checkmark"></span> {{ 'product.settings.purchase-form-selector.compatible' | t }}</p>
+                                    <a href="{% if block.settings.compatible_url != blank %}{{ block.settings.compatible_url }}{% else %}javascript:;{% endif %}">
+                                        <span>{{ block.settings.compatible_text }}</span>
+                                        {% if block.settings.compatible_image != blank %}
+                                            <img src="{{ block.settings.compatible_image | img_url: '250x' }}" alt="{{ block.settings.compatible_text | strip_html | escape }}" />
+                                        {% endif %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </label>
             </li>
         {% endif %}
@@ -34,8 +50,36 @@
                     <input data-form="{{ block.settings.form_name2 }}" type="radio" name="type" />
                     <img src="{{ block.settings.image2 | img_url: '250x' }}" alt="{{ block.settings.product2 | escape }}" />
                     <span>{{ block.settings.product2 }}</span>
+                    {% if block.settings.compatible_text2 != blank %}
+                        <div class="c-info">
+                            <div class="c-info__icon"><i class="e-icon e-icon-i"></i></div>
+                            <div class="c-info__tooltip">
+                                <div class="c-info__filter-compatible">
+                                    <p><span class="e-checkmark"></span> {{ 'product.settings.purchase-form-selector.compatible' | t }}</p>
+                                    <a href="{% if block.settings.compatible_url2 != blank %}{{ block.settings.compatible_url2 }}{% else %}javascript:;{% endif %}">
+                                        <span>{{ block.settings.compatible_text2 }}</span>
+                                        {% if block.settings.compatible_image2 != blank %}
+                                            <img src="{{ block.settings.compatible_image2 | img_url: '250x' }}" alt="{{ block.settings.compatible_text2 | strip_html | escape }}" />
+                                        {% endif %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </label>
             </li>
         {% endif %}
     </ul>
 </div>
+
+{% if block.settings.compatible_text != blank or block.settings.compatible_text2 != blank %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("popper", "https://qureskincaredns-stable.com/assets/js/popper.min.js", function () {
+                loadScriptOnce("tippy-bundle", "https://qureskincaredns-stable.com/assets/js/tippy-bundle.umd.min.js", function () {
+                    loadScriptOnce("tippy", "https://qureskincaredns-stable.com/assets/js/tippy.js");
+                });
+            });
+        });
+    </script>
+{% endif %}

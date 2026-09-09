@@ -34,6 +34,12 @@
             },
             {
                 "type": "checkbox",
+                "id": "hide_variants",
+                "label": "t:sections.purchase-form-landing.settings.hide_variants",
+                "default": false
+            },
+            {
+                "type": "checkbox",
                 "id": "color_types",
                 "label": "t:sections.purchase-form-landing.settings.color_types",
                 "default": false
@@ -164,6 +170,11 @@
                         "label": "t:sections.purchase-form-landing.blocks.product.settings.subscription_days_text"
                     },
                     {
+                        "type": "image_picker",
+                        "id": "subscription_image",
+                        "label": "t:common.image"
+                    },
+                    {
                         "type": "range",
                         "id": "subscription_discount_percent",
                         "min": 0,
@@ -196,6 +207,11 @@
                         "type": "text",
                         "id": "onetime_text",
                         "label": "t:common.text"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "onetime_image",
+                        "label": "t:common.image"
                     }
                 ]
             },

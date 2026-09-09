@@ -34,6 +34,11 @@
                     <li class="c-subscribe-selector__item save-subscription" data-per="{{ data-per }}" data-per-preorder="{{ 'purchase-form.settings.reserve-and-save-button-label' | t: value: subscription_discount_percent }}">
                         <label class="c-subscribe-selector__label">
                             <input type="radio" name="subscribe" checked="checked" />
+                            {% if block.settings.subscription_image != blank %}
+                                <div class="c-subscribe-selector__image">
+                                    <img loading="lazy" src="{{ block.settings.subscription_image | img_url: '250x' }}" alt="{{ block.settings.subscription_image.alt | escape }}" />
+                                </div>
+                            {% endif %}
                             <div class="c-subscribe-selector__name">
                                 {{ 'purchase-form.settings.subscribe' | t }}
                                 {% if subscription_discount_percent > 0 %}
@@ -95,6 +100,11 @@
                     <li class="c-subscribe-selector__item one_time_purchase">
                         <label class="c-subscribe-selector__label">
                             <input type="radio" name="subscribe" />
+                            {% if block.settings.onetime_image != blank %}
+                                <div class="c-subscribe-selector__image">
+                                    <img loading="lazy" src="{{ block.settings.onetime_image | img_url: '250x' }}" alt="{{ block.settings.onetime_image.alt | escape }}" />
+                                </div>
+                            {% endif %}
                             <div class="c-subscribe-selector__name">{{ 'purchase-form.settings.onetime' | t }}</div>
 
                             {% if black_friday_discount_percent > 0 %}

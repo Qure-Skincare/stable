@@ -11,6 +11,9 @@
     "common": {
         "form_selector": "Form selector",
         "form_name": "Form name",
+        "compatible_text": "Compatible product text",
+        "compatible_image": "Compatible product image",
+        "compatible_url": "Compatible product link",
         "discount_code": "Discount code",
         "false": "False",
         "true": "True",
@@ -1951,6 +1954,7 @@
                 "klaviyo_form_name": "Klaviyo form name",
                 "form_name": "Form name",
                 "hide_types": "Hide product types",
+                "hide_variants": "Hide variants row",
                 "color_types": "Color types"
             },
             "blocks": {
