@@ -7,7 +7,7 @@ var __form_landing = document.currentScript.getAttribute('data-form');
 
 __landing__initTemplate(__landing__getProductType());
 
-document.querySelectorAll('.' + __section_landing + ' .purchase_form_lading_product_type_item').forEach(function(element) {
+document.querySelectorAll('.' + __section_landing + ' .purchase_form_landing_product_type_item').forEach(function(element) {
     element.addEventListener('click', function(e) {
         if (e.target.tagName === 'INPUT') return; //to skip second click
         const id = this.id;
@@ -56,17 +56,17 @@ function __landing__initTemplate(source) {
 
 function __landing__getProductType() {
 
-    let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_lading_product_type_'+ __form_landing + '"]:checked');
+    let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_landing_product_type_'+ __form_landing + '"]:checked');
 
     if (!checkedInput) {
-        checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_lading_product_type_'+ __form_landing + '"]');
+        checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_landing_product_type_'+ __form_landing + '"]');
     }
     
     if (checkedInput) {
         checkedInput.checked = true;
-        const purchase_form_lading_product_type_item = checkedInput.closest('.purchase_form_lading_product_type_item');
-        if (purchase_form_lading_product_type_item && purchase_form_lading_product_type_item.id) {
-            return purchase_form_lading_product_type_item.id;
+        const purchase_form_landing_product_type_item = checkedInput.closest('.purchase_form_landing_product_type_item');
+        if (purchase_form_landing_product_type_item && purchase_form_landing_product_type_item.id) {
+            return purchase_form_landing_product_type_item.id;
         }
     }
 
@@ -74,27 +74,56 @@ function __landing__getProductType() {
 }
 
 function __landing__initProduct() {
-    let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_lading_product_variant_'+ __form_landing + '"]:checked');
 
-    if (!checkedInput) {
-        checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_lading_product_variant_'+ __form_landing + '"]');
-    }
+    if(!__landing__initProductCard()) {
 
-    if(checkedInput)
-    {
-        checkedInput.checked = true;
-        const purchase_form_lading_product_variant_selector = checkedInput.closest('.purchase_form_lading_product_variant_selector');
+        let checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_landing_product_variant_'+ __form_landing + '"]:checked');
 
-        if (purchase_form_lading_product_variant_selector) {
-            purchase_form_lading_product_variant_selector.click();
+        if (!checkedInput) {
+            checkedInput = document.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_landing_product_variant_'+ __form_landing + '"]');
         }
 
+        if(checkedInput)
+        {
+            checkedInput.checked = true;
+            const purchase_form_landing_product_variant_selector = checkedInput.closest('.purchase_form_landing_product_variant_selector');
 
-    }           
+            if (purchase_form_landing_product_variant_selector) {
+                purchase_form_landing_product_variant_selector.click();
+            }
+        }
+    }          
+}
+
+function __landing__initProductCard() {
+    const activeSelector = document.querySelector('.' + __section_landing + ' .supply-cards-labels li.purchase_form_landing_product_variant_selector.active');
+
+    if (activeSelector) {
+        const activeInput = __landing__getSelectorInput(activeSelector);
+        if (activeInput) activeInput.checked = true;
+        activeSelector.click();
+        return true;
+    }
+
+    return false;
+}
+
+function __landing__getSelectorInput(element)
+{
+    let input = element.querySelector('.' + __section_landing + 'input[type="radio"][name="purchase_form_landing_product_variant_'+ __form_landing + '"]');
+    if (input) return input;
+
+    const label = element.querySelector('label[for]');
+    if (label) {
+        input = document.getElementById(label.getAttribute('for'));
+        if (input && input.type === 'radio') return input;
+    }
+
+    return null;
 }
 
 function __landing__initScripts() {
-    document.querySelectorAll('.' + __section_landing + ' .purchase_form_lading_product_variant_selector').forEach(el => {
+    document.querySelectorAll('.' + __section_landing + ' .purchase_form_landing_product_variant_selector').forEach(el => {
         el.addEventListener('click', __landing__handlerProductVariantSelector);
     });
 }
@@ -109,6 +138,11 @@ function __landing__handlerProductVariantSelector(e) {
     const variant_title = this.getAttribute("data-variant-title");
     const gift = this.getAttribute("data-gift");
     const discount_code = this.getAttribute("data-discount-code");
+
+    if (this.matches('.supply-cards-labels li.purchase_form_landing_product_variant_selector')) {
+        document.querySelectorAll('.' + __section_landing + ' .supply-cards-labels li.purchase_form_landing_product_variant_selector.active').forEach(el => el.classList.remove('active'));
+        this.classList.add('active');
+    }
 
     __landing__updateProductCheckbox(this);
     __landing__updateProductFormButton(product_variant_id, soldout);
@@ -336,11 +370,11 @@ function __landing_isSellingPlanDisabled() {
 
 function __landing__updateProductCheckbox(element)
 {
-    document.querySelectorAll('.' + __section_landing + ' input[type="radio"][name="purchase_form_lading_product_variant_'+ __form_landing + '"').forEach(input => {
+    document.querySelectorAll('.' + __section_landing + ' input[type="radio"][name="purchase_form_landing_product_variant_'+ __form_landing + '"').forEach(input => {
       input.checked = false;
     });
 
-    const input = element.querySelector('.' + __section_landing + ' input[type="radio"][name="purchase_form_lading_product_variant_'+ __form_landing + '"');
+    const input = __landing__getSelectorInput(element);
     if (input) {
       input.checked = true;
     }
@@ -374,7 +408,7 @@ function __landing__setVariantFromUrl() {
   if (!variantId) return;
     
   if (variantId) {
-    const el = document.querySelector('.' + __section_landing + ' .purchase_form_lading_product_variant_selector[data-product_variant_id="' + variantId + '"]');
+    const el = document.querySelector('.' + __section_landing + ' .purchase_form_landing_product_variant_selector[data-product_variant_id="' + variantId + '"]');
     if (el) {
       el.click();
       params.delete("variant");
