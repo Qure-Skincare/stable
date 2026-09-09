@@ -160,7 +160,12 @@
                                         {% if block.settings.image != blank %}
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         {% endif %}
-                                        <figcaption>{{ block.settings.subheading }}</figcaption>
+
+                                        {% if product_subscription_price != blank %}
+                                            <figcaption>{{ block.settings.product_selling_plan_text }}</figcaption>
+                                        {% else %}
+                                            <figcaption>{{ block.settings.subheading }}</figcaption>
+                                        {% endif %}
                                     </figure>
                                 </div>
 
