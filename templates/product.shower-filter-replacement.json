@@ -32,7 +32,7 @@
             "form_name": "purchase-form-landing",
             "compatible_text": "Shower Head",
             "compatible_image": "shopify://shop_images/variant-silver-1.webp",
-            "compatible_url": "/products/shower-filter",
+            "compatible_url": "https://qureskincare.com/products/shower-filter",
             "image2": "shopify://shop_images/DSC03993_1.png",
             "product2": "Handheld Shower Refill",
             "form_name2": "purchase-form-landing-second",
