@@ -482,8 +482,8 @@
     },
     "n_promo_strip_kR4nW8": {
       "type": "n_promo-strip",
-      "name": "t:sections.n_promo-strip.name",
       "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "blue-plus",
         "text": "<h3>Save $100 on LED mask & Get Free Blue+ Serum</h3><p>Visibly firmer, more radiant skin as the seasons change</p>",
