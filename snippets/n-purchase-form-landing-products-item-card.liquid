@@ -134,19 +134,43 @@
                                         {% else %}
                                             <div class="e-pill-save">Save {{ product_price_diff }} Today</div>
                                         {% endif %}
-                                        <div>
+                                        {% if template.suffix == 'micro-infusion-system-v7' %}
                                             <div class="e-price">
                                                 <div class="e-price__main">
-                                                    <div class="e-price__current">{{ product_price_per_item }}</div>
+                                                    {% if product_subscription_price != blank %}
+                                                        <div class="e-price__current igSubPrice" data-variant-id="{{ product_variant_id }}">{{ product_subscription_price }}</div>
+                                                        {% if product_before_price != blank %}
+                                                            <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                        {% endif %}
+                                                    {% else %}
+                                                        <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
+                                                        {% if product_before_price != blank %}
+                                                            <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
+                                                        {% endif %}
+                                                    {% endif %}
                                                 </div>
                                             </div>
-                                            <small>/&nbsp;treatment</small>
-                                        </div>
 
-                                        {% if product_subscription_price != blank %}
-                                            <p><strong class="igSubPrice" data-variant-id="{{ product_variant_id }}">Total {{ product_subscription_price }}</strong></p>
+                                            {% if block.settings.heading contains '90' %}
+                                                <p><strong>Just {{ product_price_divided_90 }}/day for first month</strong></p>
+                                            {% else %}
+                                                <p><strong>Just {{ product_price_divided_30 }}/day for first month</strong></p>
+                                            {% endif %}
                                         {% else %}
-                                            <p><strong class="igPrice" data-variant-id="{{ product_variant_id }}">Total {{ product_sale_price }}</strong></p>
+                                            <div>
+                                                <div class="e-price">
+                                                    <div class="e-price__main">
+                                                        <div class="e-price__current">{{ product_price_per_item }}</div>
+                                                    </div>
+                                                </div>
+                                                <small>/&nbsp;treatment</small>
+                                            </div>
+
+                                            {% if product_subscription_price != blank %}
+                                                <p><strong class="igSubPrice" data-variant-id="{{ product_variant_id }}">Total {{ product_subscription_price }}</strong></p>
+                                            {% else %}
+                                                <p><strong class="igPrice" data-variant-id="{{ product_variant_id }}">Total {{ product_sale_price }}</strong></p>
+                                            {% endif %}
                                         {% endif %}
 
                                         {% if product_subscription_price != blank %}
@@ -161,7 +185,9 @@
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         {% endif %}
 
-                                        {% if product_subscription_price != blank %}
+                                        {% if template.suffix == 'micro-infusion-system-v7' %}
+                                            <figcaption>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</figcaption>
+                                        {% elsif product_subscription_price != blank %}
                                             <figcaption>{{ block.settings.product_selling_plan_text }}</figcaption>
                                         {% else %}
                                             <figcaption>{{ block.settings.subheading }}</figcaption>
