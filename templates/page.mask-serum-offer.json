@@ -27,10 +27,9 @@
         },
         "limited_offer_h84eH3": {
           "type": "limited-offer",
-          "disabled": true,
           "settings": {
             "sum": "100$ Off",
-            "code": "XXXXXXXX",
+            "code": "AUTUMNSALE",
             "days": 8
           }
         },
