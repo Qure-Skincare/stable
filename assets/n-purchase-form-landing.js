@@ -154,18 +154,14 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__SubscriptionForm(this,product_selling_plan);
     __landing__applyDiscount(gift, discount_code);
 
-    if(!product_selling_plan) {
+    // The subscribe label is set by __landing__updateSellingPlan only when the
+    // "Subscribe / One-Time" selector exists on the page. In every other case
+    // (no selector, sold out, or one-time chosen) use the variant's own label.
+    const subscriptionBox = document.getElementById('purchase_form_landing_subscription');
+    const useSubscribeLabel = product_selling_plan && soldout != 'true' && subscriptionBox && !__landing_isSellingPlanDisabled();
+
+    if (!useSubscribeLabel) {
         __landing_updateButtonLabel(this);
-    }
-    else {
-        if(soldout == 'true') {
-            __landing_updateButtonLabel(this);
-        }
-        else {
-            if(__landing_isSellingPlanDisabled()) {
-                __landing_updateButtonLabel(this);
-            }
-        }
     }
 
     const payTodayContainer = document.querySelector("." + __section_landing + " .pay_today");
@@ -221,7 +217,10 @@ function __landing__removeHiddenInput(form, name) {
 }
 
 function __landing__SubscriptionForm(element, product_selling_plan) {
-    __landing_updateButtonLabel(element);
+    // Button label is handled in __landing__handlerProductVariantSelector:
+    // __landing__updateSellingPlan sets the subscribe label, and the block after
+    // it falls back to the one-time label. Resetting it here would override the
+    // subscribe label with the variant's one-time "data-per".
 
     const details = document.getElementById('subscription-details');
 
