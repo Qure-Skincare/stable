@@ -238,10 +238,13 @@
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_NEgEkN": {
@@ -265,10 +268,13 @@
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_RBCPe8": {
@@ -292,10 +298,13 @@
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_aJwQ9q": {
@@ -331,10 +340,13 @@
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_EKAAzA": {
@@ -358,10 +370,13 @@
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_eiY89h": {
@@ -385,10 +400,13 @@
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_yDwWmt": {
@@ -424,10 +442,13 @@
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 92
+            "preorder_percent": 92,
+            "included_text": ""
           }
         },
         "product_DBd4ef": {
@@ -452,10 +473,13 @@
             "product_discount_percent": 19,
             "soldout": true,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_Xf8A6C": {
@@ -480,10 +504,13 @@
             "product_discount_percent": 17,
             "soldout": true,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -508,6 +535,7 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
+        "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
@@ -1071,6 +1099,20 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_TyyrYK": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_2_e6688089-4b80-4274-85ab-5c811d3628a7.jpg",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Jenny D.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Game changer.</h6><p>“This is an awesome product and does what it says. I have been using this for 7 months now and my skin is a lot smoother and younger, skin discoloration, melasma, and acne scars have faded a lot.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -1099,7 +1141,8 @@
         "slider_fHBeR8",
         "slider_3f6enG",
         "slider_tbw46p",
-        "slider_QakKaG"
+        "slider_QakKaG",
+        "slider_TyyrYK"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
