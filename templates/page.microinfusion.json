@@ -1371,7 +1371,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over $149"
+            "text": "Free Shipping On <br> Orders Over $149"
           }
         },
         "image_with_text_dBhwq7": {
