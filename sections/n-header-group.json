@@ -29,7 +29,7 @@
           "type": "slider",
           "settings": {
             "countdown": false,
-            "text": "<p>Free Shipping on Orders $100+ | US & UK Only</p>",
+            "text": "<p>Free Shipping on Orders $149+ | US & UK Only</p>",
             "button_label": "",
             "button_url": "",
             "from": "",
