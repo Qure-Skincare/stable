@@ -43,7 +43,7 @@
     "shipping_title": "Free Shipping U.S Only",
     "shipping_icon": "shipping",
     "shipping_price": 10,
-    "shipping_price_limit": 100,
+    "shipping_price_limit": 150,
     "cart_gift1_title": "",
     "cart_gift1_product": "",
     "cart_gift1_icon": "none",
