@@ -574,7 +574,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free US Shipping On Orders Over $149"
+            "text": "Free US Shipping On <br> Orders Over $149"
           }
         },
         "items_BUjmAT": {
