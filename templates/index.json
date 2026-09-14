@@ -482,7 +482,6 @@
     },
     "n_promo_strip_kR4nW8": {
       "type": "n_promo-strip",
-      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "blue-plus",
@@ -929,10 +928,10 @@
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
+    "n_promo_strip_kR4nW8",
     "n_index-daily-cleanser",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
-    "n_promo_strip_kR4nW8",
     "n_index-top-rated",
     "n_index-get-qure",
     "n_features_marquee_qXW6Gd",
