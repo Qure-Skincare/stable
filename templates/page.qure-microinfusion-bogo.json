@@ -78,7 +78,6 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "extended",
-        "show_logo": true,
         "approved_position": "before_text",
         "text": "<h1>Reduce the Look of Wrinkles and Dark Spots at Home.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "rating": "4.8",
@@ -145,13 +144,12 @@
         "approved_by_Cj34Up",
         "approved_by_DpRR3G"
       ],
-      "name": "t:sections.n_hero-section.name",
       "disabled": true,
+      "name": "t:sections.n_hero-section.name",
       "settings": {
         "use_own_file": false,
         "hidden": false,
         "modifier": "none",
-        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "rating": "",
@@ -215,7 +213,6 @@
         "use_own_file": false,
         "hidden": true,
         "modifier": "none",
-        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Fine lines & dark spots look smoother. No injections.</h1><p><strong>24K gold-plated microneedles.</strong> Qure's Micro-Infusion System delivers active serums deeper than traditional creams can reach.</p>",
         "rating": "",
@@ -312,7 +309,8 @@
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!<br/><br/><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p></p><ol><li>𝗦𝘁𝗮𝗺𝗽  Patented 24k gold-plated needles create micro-channels.</li><li>𝗜𝗻𝗳𝘂𝘀𝗲  <br/>Clinically formulated serum flows directly into the dermis, not on top of it.</li><li>𝗥𝗲𝗻𝗲𝘄𝘀 <br/>Helps skin look refreshed and visibly renewed.</li></ol>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": "a1pykz2tp0"
+        "wistia_url": "a1pykz2tp0",
+        "accordion_text": ""
       }
     },
     "n_achievement_goals_Pzxmim": {
@@ -452,7 +450,8 @@
         "text": "<p>Its tiny, almost painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p>",
         "button_label": "",
         "button_url": "#purchase-form",
-        "wistia_url": "a1pykz2tp0"
+        "wistia_url": "a1pykz2tp0",
+        "accordion_text": ""
       }
     },
     "n_highlight_egmbcj": {
@@ -544,7 +543,8 @@
         "image": "shopify://shop_images/qure-micro-infusion.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "purchase_form_PwCCh6": {
@@ -577,6 +577,7 @@
         },
         "product_type_QKQhNr": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
@@ -599,6 +600,7 @@
         },
         "product_DBd4ef": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-3-get-3-free-dark-spots",
             "product_variant_id": 0,
@@ -688,6 +690,7 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
@@ -710,6 +713,7 @@
         },
         "product_nyJ9n7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-3-get-3-free-wrinkles",
             "product_variant_id": 0,
@@ -1132,6 +1136,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "",
             "product_text": "",
@@ -1145,6 +1150,7 @@
             "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
             "username": "Helen M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p>“I purchased the mixed Micro-Infusion bundle to deal with hyper pigmentation, fine lines and wrinkles. I also have rosacea so was worried it could make it worse. However I’m so impressed with the initial results 3 treatments in. My skin looks clear and fresh! Previously the redness and pigmentation was visible even through foundation. I have more confidence now and hope my skin continues to improve with further treatments.”</p>",
             "product_url": "",
             "product_text": "",
@@ -1158,6 +1164,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Mona P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Fade after just two treatments</strong></p><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
             "product_url": "",
             "product_text": "",
@@ -1171,6 +1178,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Andrea G.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Definitely be re-ordering</strong></p><p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
             "product_url": "",
             "product_text": "",
@@ -1184,6 +1192,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jessica K.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Thrilled with the results!</strong></p><p>“I have been using the mask & microneedling for 6 weeks & am truly impressed with the results. I have noticed a dramatic reduction in redness, an improvement in my dark spots, scars & overall skin tone & firmness, and a smoothing of fine lines & wrinkles.”</p>",
             "product_url": "",
             "product_text": "",
@@ -1197,6 +1206,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ela O.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br/> I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment!Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
             "product_url": "",
             "product_text": "",
@@ -1210,6 +1220,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Shelly S.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Looking better and better</strong></p><p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
             "product_url": "",
             "product_text": "",
@@ -1223,6 +1234,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Chelsea J.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Amazing results!</strong></p><p>“Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.“</p>",
             "product_url": "",
             "product_text": "",
@@ -1236,6 +1248,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Akina M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>It really works!!</strong></p><p>“I used three time so far. I can see the results from first time I used. I love this product but only thing is it’s take time to apply till used all serum per application. I tried many different way to press to my skin so the serum come out more but then a lot of time not.”</p>",
             "product_url": "",
             "product_text": "",
@@ -1249,6 +1262,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jess.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>It really works!!</strong></p><p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
             "product_url": "",
             "product_text": "",
@@ -1262,6 +1276,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Priya P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Plumper, more hydrated!</strong></p><p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
             "product_url": "",
             "product_text": "",
@@ -1275,6 +1290,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "",
             "product_text": "",
@@ -1300,6 +1316,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Real stories, real results</h2>",
         "button_label": "Buy 3 Get 3 Free",
         "button_url": "#purchase-form"
@@ -1513,6 +1533,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
