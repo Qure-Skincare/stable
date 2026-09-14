@@ -237,7 +237,7 @@
         "background_color": "none",
         "section_id": "",
         "heading": "<h2>Helps address multiple skin concerns with just one device</h2>",
-        "text": "<p>A portable, FDA-cleared, at-home LED light therapy device that is <em>clinically validated</em> to <em>improve the appearance of wrinkles</em> and mild to moderate inflammatory acne.<br/><br/>Q-Rejuvalight Pro uses five clinically backed light wavelengths to deliver light energy designed to <em>target multiple visible skin concerns,</em> supporting clearer-looking, smoother-looking skin where topical care can’t reach.</p>",
+        "text": "<p><strong>The world's first customizable LED mask</strong>. A portable, FDA-cleared, at-home LED light therapy device that is <em>clinically validated</em> to <em>improve the appearance of wrinkles</em> and mild to moderate inflammatory acne.<br/><br/>Q-Rejuvalight Pro uses five clinically backed light wavelengths to deliver light energy designed to <em>target multiple visible skin concerns,</em> supporting clearer-looking, smoother-looking skin where topical care can’t reach.</p>",
         "image": "shopify://shop_images/skin_firming.webp",
         "button_label": "Shop Now",
         "button_url": "#hero_product",
@@ -1110,7 +1110,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free US Shipping over $100"
+            "text": "Free US Shipping over $149"
           }
         },
         "image_with_text_dBhwq7": {
