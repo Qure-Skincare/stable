@@ -90,11 +90,17 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "FAUCET FILTER REFILL CARTRIDGER",
         "heading": "Keep the good skin flowing with the Faucet Filter Refill",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Qure Faucet Filter Refill cartridge provides up to 3 months or 13,000 liters of purified, filtered water.</li><li>Shown to reduce up to 99% of possible irritants for clearer-looking, hydrated skin.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
@@ -143,20 +149,28 @@
             "product": "faucet-filter-refill",
             "product_variant_id": 45852989653231,
             "product_selling_plan": 6180143343,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": true,
             "heading": "White",
             "subheading": "",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/faucet_refill-w.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "25 july",
             "preorder_date_reserved": "50 may",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_NEgEkN": {
@@ -165,20 +179,28 @@
             "product": "faucet-filter-refill",
             "product_variant_id": 45852989620463,
             "product_selling_plan": 6180143343,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "Black",
             "subheading": "",
+            "product_selling_plan_text": "",
             "text": "",
             "image": "shopify://shop_images/faucet_refill-b.webp",
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -193,6 +215,12 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
+        "hide_variants": false,
+        "color_types": false,
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
         "type": "variant",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
@@ -265,7 +293,8 @@
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_base_section_Fx3gV9": {
@@ -282,7 +311,8 @@
         "image": "shopify://shop_images/facewashing_faucet.webp",
         "button_label": "SHOP NOW",
         "button_url": "#hero-product",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_progress_metrics_X8KGmr": {
@@ -354,6 +384,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Kim L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
             "product_url": "",
             "product_text": "",
@@ -367,6 +398,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
             "product_url": "",
             "product_text": "",
@@ -380,6 +412,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Dryness gone</h6><p>“My skin looks much clearer thanks to Qure! I use the LED mask and water filter daily and...my complexion looks so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!”</p>",
             "product_url": "",
             "product_text": "",
@@ -393,6 +426,7 @@
             "flag": "shopify://shop_images/eng-flag.webp",
             "username": "Chinenye O.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>The filter is an essential</strong></p><p>“My skin was very reactive so the water was definitely affecting my skin but the filter was the best choice for me. It really helped me not worry about the water affecting my skin anti and now my skin is a lot better. I’m just dealing with spots”</p>",
             "product_url": "",
             "product_text": "",
@@ -410,6 +444,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>The results are crystal clear</h2>",
         "button_label": "",
         "button_url": ""
@@ -611,7 +649,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free US Shipping On<br>Orders Over 100$"
+            "text": "Free US Shipping On Orders Over $149"
           }
         },
         "image_with_text_dBhwq7": {
