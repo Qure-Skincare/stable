@@ -432,7 +432,7 @@
             "discount_code": "",
             "popular": false,
             "best": true,
-            "free_shipping": false,
+            "free_shipping": true,
             "preselected": true,
             "heading": "6 Month Supply Autumn Sale",
             "subheading": "(12 Treatments)",
