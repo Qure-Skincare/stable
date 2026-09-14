@@ -209,10 +209,13 @@
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_b7C8dE": {
@@ -223,10 +226,10 @@
             "product_selling_plan": 8779399407,
             "gift": "",
             "gift_text": "",
-            "discount_code": "",
+            "discount_code": "WELCOMEFREE",
             "popular": false,
             "best": true,
-            "free_shipping": false,
+            "free_shipping": true,
             "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -236,10 +239,13 @@
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_f9G0hI": {
@@ -263,10 +269,13 @@
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_j1K2lM": {
@@ -303,10 +312,13 @@
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_v7W8xY": {
@@ -317,10 +329,10 @@
             "product_selling_plan": 8779497711,
             "gift": "",
             "gift_text": "",
-            "discount_code": "",
+            "discount_code": "WELCOMEFREE",
             "popular": false,
             "best": true,
-            "free_shipping": false,
+            "free_shipping": true,
             "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -330,10 +342,13 @@
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 93
+            "preorder_percent": 93,
+            "included_text": ""
           }
         },
         "product_z9A0bC": {
@@ -357,10 +372,13 @@
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_d1E2fG": {
@@ -398,10 +416,13 @@
             "product_discount_percent": 16,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 92
+            "preorder_percent": 92,
+            "included_text": ""
           }
         },
         "product_p7Q8rS": {
@@ -426,10 +447,13 @@
             "product_discount_percent": 19,
             "soldout": true,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_t9U0vW": {
@@ -454,10 +478,13 @@
             "product_discount_percent": 17,
             "soldout": true,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -482,6 +509,7 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
+        "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 62,
