@@ -1918,7 +1918,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
-            "free_shipping": false,
+            "free_shipping": true,
             "per_treatment": true,
             "preselected": true,
             "heading": "6 Month Supply",
