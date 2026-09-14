@@ -238,6 +238,21 @@
         "use_own_file": false
       }
     },
+    "n_promo_strip_kR4nW8": {
+      "type": "n_promo-strip",
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "blue-plus",
+        "text": "<h3>Save $100 on LED mask & Get Free Blue+ Serum</h3><p>Visibly firmer, more radiant skin as the seasons change</p>",
+        "button_label": "Buy Now",
+        "button_url": "/pages/mask-serum-offer",
+        "image": "shopify://shop_images/blue-plus_079da3f8-0271-49d0-8c1f-01c68d9844b4.webp",
+        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
+        "badge_text": "Free Gift",
+        "price": "$79",
+        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp"
+      }
+    },
     "n_index-daily-cleanser": {
       "type": "n_index-daily-cleanser",
       "blocks": {
@@ -478,21 +493,6 @@
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
-      }
-    },
-    "n_promo_strip_kR4nW8": {
-      "type": "n_promo-strip",
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "blue-plus",
-        "text": "<h3>Save $100 on LED mask & Get Free Blue+ Serum</h3><p>Visibly firmer, more radiant skin as the seasons change</p>",
-        "button_label": "Buy Now",
-        "button_url": "/pages/mask-serum-offer",
-        "image": "shopify://shop_images/blue-plus_079da3f8-0271-49d0-8c1f-01c68d9844b4.webp",
-        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
-        "badge_text": "Free Gift",
-        "price": "$79",
-        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp"
       }
     },
     "n_index-top-rated": {
