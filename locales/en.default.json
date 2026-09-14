@@ -293,7 +293,7 @@
         "button_label_save": "Subscribe Now & Save",
         "waranty_html": "<strong class='fw-600'>Covered by our Lifetime Warranty. </strong><br> Backed by our 30-Day Money-Back Guarantee.",
         "dermatologist": "Dermatologist Reviewed",
-        "shipping": "Free US Shipping over $100",
+        "shipping": "Free US Shipping over $149",
         "science": "Backed by Science",
         "discount_text": "OFF",
         "more_details_html": "<strong class='fw-600'>Skip pause/modify or cancel anytime.</strong> <br> <a href='/pages/subscriptions' class='text-black text-decoration-underline' aria-label='see more'> See more details</a>."
@@ -318,7 +318,7 @@
         "order-today": " Order today to lock in your deal and get FREE Shipping",
         "button-label": "Buy Now & Save $299",
         "guarantee-text": "90-Day Money-Back Guarantee",
-        "shipping-text": "Free US Shipping over $100",
+        "shipping-text": "Free US Shipping over $149",
         "free": "FREE",
         "button-text": "Buy Now",
         "discount-text": "% OFF",
@@ -379,7 +379,7 @@
       "n_header_html": "<div class='e-double-tag'><strong>Exclusive</strong> OFFER</div>",
       "guarantee-text": "1-Year Guarantee",
       "button-label": "Buy Now & Save",
-      "shipping-text": "Free US Shipping over $100",
+      "shipping-text": "Free US Shipping over $149",
       "free": "FREE"
     },
     "exclusive-offer-bundle": {
@@ -442,7 +442,7 @@
         "guaranteed_text": "30-Day Money-Back Guarantee",
         "guaranteed_text_90": "90-Day Money-Back Guarantee",
         "guaranteed_text_year": "1-Year Guarantee",
-        "shipping_text": "Free US Shipping over $100"
+        "shipping_text": "Free US Shipping over $149"
       },
       "saveup-offer": {
         "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
@@ -451,7 +451,7 @@
       },
       "benefits-list": {
         "guaranteed_text": "90-Day Money-Back Guarantee",
-        "shipping_text": "Free US Shipping over $100",
+        "shipping_text": "Free US Shipping over $149",
         "science_text": "Backed by Science"
       },
       "cross-sell": {
@@ -794,8 +794,8 @@
     "settings": {
       "slider-1": {
         "header": "Free US Shipping",
-        "text": "Enjoy free delivery when you spend $100 USD or more.",
-        "text-mobile": "Free shipping on orders over $100 USD.",
+        "text": "Enjoy free delivery when you spend $149 USD or more.",
+        "text-mobile": "Free shipping on orders over $149 USD.",
         "image": "box.svg"
       },
       "slider-2": {
