@@ -14,7 +14,9 @@
   "parent": "product.cleanser.json",
   "sections": {
     "purchase-form-landing": {
-      "settings": {},
+      "settings": {
+        "klaviyo_form_name": ""
+      },
       "blocks": {
         "product_NEgEkq2": {
           "settings": {
