@@ -7,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- 
 {
   "sections": {
     "product_header_prNYyf": {
@@ -25,6 +24,21 @@
           "type": "description",
           "settings": {}
         },
+        "purchase-form-selector": {
+          "type": "purchase-form-selector",
+          "settings": {
+            "image": "shopify://shop_images/variant-silver-1.webp",
+            "product": "Shower",
+            "form_name": "purchase-form-landing",
+            "compatible_text": "",
+            "compatible_url": "",
+            "image2": "shopify://shop_images/variant-handheld-shower.webp",
+            "product2": "Handheld Shower",
+            "form_name2": "purchase-form-landing-second",
+            "compatible_text2": "",
+            "compatible_url2": ""
+          }
+        },
         "section_A0": {
           "type": "section",
           "settings": {
@@ -41,17 +55,6 @@
             "percent_value_2": 83,
             "text3": "agree hair feels less frizzy",
             "percent_value_3": 70
-          }
-        },
-        "purchase-form-selector": {
-          "type": "purchase-form-selector",
-          "settings": {
-            "image": "shopify://shop_images/variant-silver-1.webp",
-            "product": "Shower",
-            "form_name": "purchase-form-landing",
-            "image2": "shopify://shop_images/variant-handheld-shower.webp",
-            "product2": "Handheld Shower",
-            "form_name2": "purchase-form-landing-second"
           }
         },
         "nextships_nN4CpM": {
@@ -116,10 +119,15 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
         "product": "",
         "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "Shower & Handheld Shower Filter",
         "heading": "Save your hair and skin from dryness and irritation",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
         "limited": false,
@@ -154,60 +162,18 @@
             "preselected": true
           }
         },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "product_variant_id": 45909763522799,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "3 Months Supply",
-            "subheading": "(Showerhead + 1 Filter)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/shower-supply-1-filters-white.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "shower-bundle-6-month-white",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": true,
-            "best": false,
-            "preselected": false,
-            "heading": "6 Months Supply",
-            "subheading": "(Showerhead + 2 Filter)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/shower-supply-2-filters-white.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "27 July",
-            "preorder_date_reserved": "15 july",
-            "preorder_percent": 55
-          }
-        },
         "product_RBCPe8": {
           "type": "product",
           "settings": {
             "product": "shower-white-12-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "(Showerhead + 4 Filter)",
@@ -217,10 +183,73 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "shower-bundle-6-month-white",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": true,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "(Showerhead + 2 Filter)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/shower-supply-2-filters-white.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45909763522799,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Showerhead + 1 Filter)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/shower-supply-1-filters-white.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_aJwQ9q": {
@@ -235,60 +264,18 @@
             "preselected": false
           }
         },
-        "product_EKAAzA": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "product_variant_id": 45909763490031,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "3 Months Supply",
-            "subheading": "(Showerhead + 1 Filter)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/shower-supply-1-filters-black.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_nyJ9n7": {
-          "type": "product",
-          "settings": {
-            "product": "shower-black-6-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": true,
-            "best": false,
-            "preselected": false,
-            "heading": "6 Months Supply",
-            "subheading": "(Showerhead + 2 Filter)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/shower-supply-2-filters-black.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
         "product_eiY89h": {
           "type": "product",
           "settings": {
             "product": "shower-black-12-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "(Showerhead + 4 Filter)",
@@ -298,10 +285,73 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_nyJ9n7": {
+          "type": "product",
+          "settings": {
+            "product": "shower-black-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": true,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "(Showerhead + 2 Filter)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/shower-supply-2-filters-black.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 45909763490031,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Showerhead + 1 Filter)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/shower-supply-1-filters-black.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_yDwWmt": {
@@ -316,60 +366,18 @@
             "preselected": false
           }
         },
-        "product_hD69Aq": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "product_variant_id": 46544976969967,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "3 Months Supply",
-            "subheading": "(Showerhead + 1 Filter)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/shower-supply-1-filters.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 72
-          }
-        },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "shower-silver-6-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "popular": true,
-            "best": false,
-            "preselected": false,
-            "heading": "6 Months Supply",
-            "subheading": "(Showerhead + 2 Filter)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/shower-supply-2-filters.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 72
-          }
-        },
         "product_Xf8A6C": {
           "type": "product",
           "settings": {
             "product": "shower-silver-12-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "(Showerhead + 4 Filter)",
@@ -379,10 +387,73 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "shower-silver-6-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": true,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "(Showerhead + 2 Filter)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/shower-supply-2-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 72,
+            "included_text": ""
+          }
+        },
+        "product_hD69Aq": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "product_variant_id": 46544976969967,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "(Showerhead + 1 Filter)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/shower-supply-1-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 72,
+            "included_text": ""
           }
         }
       },
@@ -407,6 +478,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": false,
+        "hide_variants": false,
         "color_types": true,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
@@ -443,60 +515,18 @@
             "preselected": true
           }
         },
-        "product_NEgEkN": {
-          "type": "product",
-          "settings": {
-            "product": "hand-shower-filter",
-            "product_variant_id": 50530832220399,
-            "product_selling_plan": 0,
-            "popular": false,
-            "best": false,
-            "preselected": false,
-            "heading": "3 Months Supply",
-            "subheading": "Shower + 1 Filters",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/handheld-shower-supply-1-filters.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "settings": {
-            "product": "hand-shower-filter-6-month-bundle",
-            "product_variant_id": 50530923086063,
-            "product_selling_plan": 0,
-            "popular": true,
-            "best": false,
-            "preselected": false,
-            "heading": "6 Months Supply",
-            "subheading": "Shower + 2 Filters",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/handheld-shower-supply-2-filters.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "preorder_text": "",
-            "preorder_date_soldout": "27 July",
-            "preorder_date_reserved": "15 july",
-            "preorder_percent": 55
-          }
-        },
         "product_RBCPe8": {
           "type": "product",
           "settings": {
             "product": "hand-shower-filter-12-month-bundle",
             "product_variant_id": 50530887827695,
             "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "12 Months Supply",
             "subheading": "Shower + 4 Filters",
@@ -506,10 +536,73 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-filter-6-month-bundle",
+            "product_variant_id": 50530923086063,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": true,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "6 Months Supply",
+            "subheading": "Shower + 2 Filters",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/handheld-shower-supply-2-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "27 July",
+            "preorder_date_reserved": "15 july",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_NEgEkN": {
+          "type": "product",
+          "settings": {
+            "product": "hand-shower-filter",
+            "product_variant_id": 50530832220399,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Months Supply",
+            "subheading": "Shower + 1 Filters",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/handheld-shower-supply-1-filters.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -524,6 +617,7 @@
       "settings": {
         "form_name": "purchase-form-landing-second",
         "hide_types": true,
+        "hide_variants": false,
         "color_types": true,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
@@ -601,12 +695,12 @@
         "text": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.</p>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_across_gallery_qR4nYm": {
       "type": "n_across-gallery",
-      "disabled": true,
       "blocks": {
         "image_k2NpQw": {
           "type": "image",
@@ -667,6 +761,7 @@
         "image_cA1hWq",
         "image_xY5oBd"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-gallery.name",
       "settings": {
         "text": "<h2>Meet the Qure Shower Filters</h2><p>At Qure, we believe great skin starts at the source, and that's the water you use every day. Both the Qure Shower Filter and Handheld Shower Filter help <em>reduce certain chemicals</em> and minerals found in tap water that can linger on your skin after showering</p>",
@@ -676,6 +771,7 @@
     },
     "n_base_section_Lm3tAh": {
       "type": "n_base-section",
+      "disabled": true,
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
@@ -688,9 +784,9 @@
         "image": "shopify://shop_images/shower_img.webp",
         "button_label": "Shop Now",
         "button_url": "#hero-product",
-        "wistia_url": ""
-      },
-      "disabled": true
+        "wistia_url": "",
+        "accordion_text": ""
+      }
     },
     "n_progress_metrics_X8KGmr": {
       "type": "n_progress-metrics",
@@ -754,6 +850,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Briony R.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Restored my curls!</h6><p>“When I discovered the curly girl method, I thought I had cracked the code to perfectly defined curls. Then one day my curls stopped curling, they became week, lump and shine free. I did some research and realized it was my water. I saw a big difference after only one wash - it turned out I had a bunch of build up on my hair. Thank you Qure for saving my curls!”</p>",
             "product_url": "",
             "product_text": "",
@@ -767,6 +864,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Hydrated more than ever</h6><p>“I never had major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin always felt so dry no matter what moisturizer I used. I didn't change anything in my skincare routine except filtered water. I'm never washing my face with anything less than Q-urified water because my skin feels so much better.”</p>",
             "product_url": "",
             "product_text": "",
@@ -780,6 +878,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Acne and dryness gone</h6><p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
             "product_url": "",
             "product_text": "",
@@ -793,6 +892,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Adele M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Skin and hair are glowing</h6><p>“I have been using this filter for a few weeks now and my hair is SO much healthier. Much more smooth, less frizzy, looks glossier and the shedding has reduced. And actually I'm even seeing my skin look more hydrated and glowier - bonus!!”</p>",
             "product_url": "",
             "product_text": "",
@@ -806,6 +906,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Kim L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Source of my unclear skin</h6><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
             "product_url": "",
             "product_text": "",
@@ -819,6 +920,7 @@
             "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
             "username": "Sarah G.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Brought my curls back to life!</h6><p>“I absolutely love this shower filter! The water at my place used to be awful, so I noticed a difference right after the first use. My hair isn’t as fuzzy anymore, and my curls actually come alive. It feels so much softer and healthier.”</p>",
             "product_url": "",
             "product_text": "",
@@ -832,6 +934,7 @@
             "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
             "username": "Adele M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>In love with Qure Faucet Filter!</h6><p>“Highly recommend! When I used to wash my face before, it got irritated and very dry. I was also really struggling with acne and flare-ups. Since washing my face with this filter, my face isn’t dry anymore and my skin has visibly cleared up. I love that it filters out any impurities which are harmful for my skin.”</p>",
             "product_url": "",
             "product_text": "",
@@ -845,7 +948,22 @@
             "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
             "username": "Sloane M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Noticeably Softer Skin & Cleaner Water After</strong></p><p>“I wasn’t expecting a shower filter to make this much of a difference, but I’m genuinely impressed. After installing it, I immediately noticed the water felt softer and less harsh on my skin and hair. Within a few showers, my skin felt less tight and dry, especially noticeable since I’m prone to dryness and irritation.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_NXxkmm": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Tami T.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Qure showerhead</h6><p>“I didn't have any idea how great a filtered showerhead would be for my hair and skin look and feel so much better. I've always had filters on water I drink but never one for showers. Skin and hair not only feels good but you can see the difference.  Highly recommend Qure Showerhead.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -860,12 +978,17 @@
         "slider_dYqN0a",
         "slider_XK19xG",
         "slider_HkNCaH",
-        "slider_R98WyX"
+        "slider_R98WyX",
+        "slider_NXxkmm"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>The results are crystal clear</h2>",
         "button_label": "",
         "button_url": ""
@@ -1084,7 +1207,6 @@
     },
     "n_set_up_toggle_wK3nRp": {
       "type": "n_set-up-toggle",
-      "disabled": true,
       "blocks": {
         "tab_hNd8Vx": {
           "type": "tab",
@@ -1171,6 +1293,7 @@
         "step_gT8dHy",
         "step_nF1oWk"
       ],
+      "disabled": true,
       "name": "t:sections.n_set-up-toggle.name",
       "settings": {
         "text": "<h2>Set up in 3 easy steps</h2>"
@@ -1209,6 +1332,7 @@
         "items_3PLjd7",
         "items_cgcPBm"
       ],
+      "disabled": true,
       "name": "t:sections.n_easy-steps.name",
       "settings": {
         "use_own_file": false,
@@ -1219,8 +1343,7 @@
         "wistia_url": "fsw2ted2a8",
         "button_label": "",
         "button_url": ""
-      },
-      "disabled": true
+      }
     },
     "n_product_settings_rDjiPj": {
       "type": "n_product-settings",
