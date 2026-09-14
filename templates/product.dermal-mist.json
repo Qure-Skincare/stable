@@ -231,10 +231,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_NEgEkN": {
@@ -258,10 +261,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_RBCPe8": {
@@ -285,10 +291,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_aJwQ9q1": {
@@ -323,10 +332,13 @@
             "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_nyJ9n71": {
@@ -350,10 +362,13 @@
             "product_discount_percent": 11,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "27 July",
             "preorder_date_reserved": "9 Sept",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_AJPQaQ1": {
@@ -377,10 +392,13 @@
             "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -400,6 +418,7 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
+        "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 46,
@@ -456,10 +475,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_NEgEkN": {
@@ -483,10 +505,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_RBCPe8": {
@@ -510,10 +535,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -529,6 +557,7 @@
       "settings": {
         "form_name": "purchase-form-landing",
         "hide_types": true,
+        "hide_variants": false,
         "color_types": false,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
@@ -683,7 +712,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br> Orders Over 100$"
+            "text": "Free Shipping On <br> Orders Over $149"
           }
         },
         "image_with_text_dBhwq7": {
