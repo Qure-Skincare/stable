@@ -662,7 +662,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over 100$ in US"
+            "text": "Free Shipping On Orders <br> Over 149$ in US"
           }
         },
         "image_with_text_reviewed_aio": {
