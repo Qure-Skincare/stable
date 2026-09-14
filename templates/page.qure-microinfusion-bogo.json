@@ -897,7 +897,7 @@
             "product_selling_plan_text": "",
             "image": "shopify://shop_images/mi_1_month_dsw.webp",
             "product_discount_percent": 10,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 19,
