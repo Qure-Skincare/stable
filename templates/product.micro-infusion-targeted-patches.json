@@ -236,9 +236,11 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
@@ -248,10 +250,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_gbPf3J": {
@@ -261,9 +266,11 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
@@ -273,10 +280,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_x3jeL8": {
@@ -286,9 +296,11 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
@@ -298,10 +310,13 @@
             "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "type_aJwQ9q": {
@@ -322,9 +337,11 @@
             "product_variant_id": 0,
             "product_selling_plan": 8441757935,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": true,
+            "free_shipping": false,
             "preselected": true,
             "heading": "90 Days Supply",
             "subheading": "(3 boxes, 24 pairs)",
@@ -334,10 +351,13 @@
             "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_nyJ9n7": {
@@ -347,9 +367,11 @@
             "product_variant_id": 0,
             "product_selling_plan": 8441725167,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "60 Days Supply",
             "subheading": "(2 boxes, 16 pairs)",
@@ -359,10 +381,13 @@
             "product_discount_percent": 11,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
         "product_AJPQaQ": {
@@ -372,9 +397,11 @@
             "product_variant_id": 0,
             "product_selling_plan": 8441692399,
             "gift": "",
+            "gift_text": "",
             "discount_code": "",
             "popular": false,
             "best": false,
+            "free_shipping": false,
             "preselected": false,
             "heading": "30 Days Supply",
             "subheading": "(1 box, 8 pairs)",
@@ -384,10 +411,13 @@
             "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
-            "preorder_percent": 55
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
@@ -407,6 +437,8 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": true,
+        "hide_variants": false,
+        "color_types": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 40,
         "delivery_switcher_position": "footer",
@@ -453,7 +485,8 @@
         "text": "<p>These advanced patches feature 80 ultra-fine, self-dissolving micro-darts designed to target and help <em>improve the appearance of fine lines, under-eye puffiness, and dark circles.</em><br/><br/>While traditional patches lay flat on the skin, the micro-dart design allows the serum to be applied in a more targeted, close-to-skin manner for enhanced contact and absorption. <br/><br/>Precisely engineered, the patches help support smoother-looking, more refreshed skin with consistent cosmetic use — including on delicate under-eye areas.</p>",
         "button_label": "Shop Now",
         "button_url": "#",
-        "wistia_url": "f4cj3x9e99"
+        "wistia_url": "f4cj3x9e99",
+        "accordion_text": ""
       }
     },
     "n_progress_metrics_CNFt9V": {
@@ -518,6 +551,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Katie.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Dark circles less visible</strong></p><p>“Didn't expect it to work but they proved me wrong. It looks much more clear in person than the photos. My dark circles and puffiness are less visible. There's no pain at all they're comfortable while wearing to sleep.\"</p>",
             "product_url": "",
             "product_text": "",
@@ -531,6 +565,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Shannon",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Love these patches!</strong></p><p>“I found these as a targeted solution for the look of my laugh lines. These impressed me so much that now I want to tape them all over my face to target the appearance of all of my wrinkles. They’ve become an essential part of my skincare routine, and I highly recommend them.”</p>",
             "product_url": "",
             "product_text": "",
@@ -544,6 +579,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Cassandra",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Can see the difference after one use!</strong></p><p>“I did the patches last night and I swear just after one use I already see a change. The difference in the look of my under-eye is wild!”</p>",
             "product_url": "",
             "product_text": "",
@@ -557,6 +593,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Mary",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Love these patches!</strong></p><p>“I started to see fine lines around my eyes and I think these patches work wonders! I wear them overnight and they didn't come off. I'VE SEEN A HUGE DIFFERENCE, leaving my skin looking smoother and firmer after just a few uses. Highly recommend!”</p>",
             "product_url": "",
             "product_text": "",
@@ -570,6 +607,7 @@
             "flag": "shopify://shop_images/usa_flag.svg",
             "username": "Lisa N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Thin skin feels hydrated</strong></p><p>“I just tried out the Qure Micro-Infusion Patches for one night and let me tell you, my skin felt so hydrated and refreshed when I woke up. I could even see a subtle improvement in the look of my fine lines already. I can only imagine how much better it'll look with consistent use! For now, I can definitely say my skin looks smoother.”</p>",
             "product_url": "",
             "product_text": "",
@@ -583,6 +621,7 @@
             "flag": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
             "username": "Harper",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Plumped up wrinkles</strong></p><p>“I've been using these patches once a week. I'm absolutely stoked with the results. I'm already noticing a gradual improvement in the look of my laugh lines. I'm really looking forward to seeing even more changes as I keep using them in my routine.”</p>",
             "product_url": "",
             "product_text": "",
@@ -596,6 +635,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Lucy",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Reduced my dark circles</strong></p><p>“My under eye area is usually very sensitive and I was hesitant about these patches because they have little cones and I was afraid they would irritate my skin. They turned out to do wonders for the look of my dark circles and I don't think I look tired anymore! I used them 2x a week...The shipping was very fast too!”</p>",
             "product_url": "",
             "product_text": "",
@@ -609,6 +649,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Damiano",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Tired under-eye</strong></p><p>“After struggling with puffy eyes and dark circles, I turned to eye patches for a solution. The results were remarkable. The puffiness visibly reduced, and the dark circles lightened with a more even tone. The patches provided a fresh, revitalized look, giving my eyes a much-needed boost. These are now a staple in my skincare routine!”</p>",
             "product_url": "",
             "product_text": "",
@@ -622,6 +663,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Andrea",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Blown away by the results</strong></p><p>“I am loving these new micro-infusion patches. I put these patches anywhere I have concerns, number 11’s, under eyes, marionette lines, forehead- you choose! You can put these on clean skin and leave on at least 2-3 hours, but I sleep in them over night! I do them once a week and I am blown away by the results!\"</p>",
             "product_url": "",
             "product_text": "",
@@ -635,6 +677,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Denise",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>I’m loving the results so far</strong></p><p>\"I’m loving the results so far and look forward to continuing!\"</p>",
             "product_url": "",
             "product_text": "",
@@ -658,6 +701,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
@@ -762,7 +809,8 @@
         "image": "shopify://shop_images/tg-frame.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_easy_steps_jMexbd": {
@@ -817,7 +865,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br> Orders Over 100$"
+            "text": "Free Shipping On Orders Over $149"
           }
         },
         "image_with_text_dBhwq7": {
