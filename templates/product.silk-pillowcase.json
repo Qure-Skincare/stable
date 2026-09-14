@@ -24,7 +24,8 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": false
+            "show_discount": false,
+            "bundle_compare": false
           }
         },
         "description_iPBNaS": {
@@ -33,7 +34,13 @@
         },
         "button_A9": {
           "type": "button",
-          "settings": {}
+          "settings": {
+            "button_light_label": "",
+            "keep_offer_label": false,
+            "hide_payments": false,
+            "hide_bottom": false,
+            "hide_certified": false
+          }
         },
         "limited_offer_A8": {
           "type": "limited-offer",
@@ -66,13 +73,23 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "section_id": "hero-product",
+        "product": "",
+        "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "PURE SILK PILLOWCASE",
         "heading": "Minimize the formation of wrinkles while you sleep",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": true,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Causes less friction against the skin, helping minimize the formation of sleep lines and wrinkles.</li><li>Reduces the accumulation of oils and bacteria that can clog pores and cause acne.</li><li>Helps to retain moisture: Absorbs less face cream, helping you maintain hydration for a more healthy-looking complexion.</li></ul>",
         "reserved": false,
-        "soldout": false
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
     "n_logos_69iJ8B": {
@@ -134,13 +151,16 @@
       "settings": {
         "use_own_file": false,
         "modifier": "reverse",
+        "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Meet the easiest skincare swap you'll ever make</h2>",
         "text": "<p>You spend over 2,500 hours a year with your pillow, so what it’s made of matters.</p><p>Our silk pillowcase <em>reduces friction on your skin</em> and hair while you sleep, helping prevent sleep creases, minimize tugging on delicate facial skin, and reduce breakage and frizz. It’s a small switch that supports cell renewal overnight—and keeps both your skin and hair looking smoother over time.</p>",
         "image": "shopify://shop_images/pillowcase_img.webp",
         "button_label": "Shop now",
         "button_url": "#",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_features_marquee_Jd3wG4": {
@@ -150,7 +170,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br>Orders Over 100$"
+            "text": "Free Shipping On <br> Orders Over $149"
           }
         },
         "image_with_text_Qwe4LW": {
