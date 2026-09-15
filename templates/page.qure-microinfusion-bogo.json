@@ -1186,6 +1186,34 @@
             "product_title": ""
           }
         },
+        "slider_78E6pj": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/andrea.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Andrea G.",
+            "verified_customer": "Verified customer",
+            "badge": "Sagging Skin",
+            "text": "<p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_EAt9Md": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
+            "flag": "shopify://shop_images/uk_flag.svg",
+            "username": "Lourdes F.",
+            "verified_customer": "Verified customer",
+            "badge": "Wrinkles",
+            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_AbTEJa": {
           "type": "slider",
           "settings": {
@@ -1223,20 +1251,6 @@
             "verified_customer": "Verified customer",
             "badge": "",
             "text": "<p><strong>Fade after just two treatments</strong></p><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_78E6pj": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/andrea.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Andrea G.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>Definitely be re-ordering</strong></p><p>“Still a newbie but so far so great! I have dermarolled for more than a decade-still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved-but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -1332,10 +1346,11 @@
         "slider_9NRFNC",
         "slider_MpbCrH",
         "slider_DdW3gF",
+        "slider_78E6pj",
+        "slider_EAt9Md",
         "slider_AbTEJa",
         "slider_dPBWEW",
         "slider_eCGH8c",
-        "slider_78E6pj",
         "slider_xqgHn6",
         "slider_Qab78U",
         "slider_RrFY67",
