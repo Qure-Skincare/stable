@@ -1,0 +1,146 @@
+{% doc %}
+  Renders a two-product "what's included" bundle list plus a buy block for the
+  product-header section: item 1 is sold at its own price, item 2 ships free.
+
+  @param {object} section - A section object.
+  @param {object} block - A block object.
+
+  @example
+  {% render 'n-product-bundle-purchase', section: section, block: block %}
+{% enddoc %}
+
+{% if block == blank %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'bundle-purchase' %}
+            {% assign block = _block %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'bundle-purchase-' %}
+{% assign item1_handle = product_handle %}
+{% assign item1_title = product_title %}
+{% assign item1_price_display = product_sale_price %}
+{% assign item1_price_original = product_price_original %}
+{% assign item1_variant_id = product_variant_id %}
+{% assign item1_image = block.settings.image_product1 | default: product_featured_image %}
+
+{% include 'get-product-data', product_handle: block.settings.product2, product_prefix: 'bundle-purchase-' %}
+{% assign item2_handle = product_handle %}
+{% assign item2_title = product_title %}
+{% assign item2_price_display = product_sale_price %}
+{% assign item2_price_original = product_price_original %}
+{% assign item2_variant_id = product_variant_id %}
+{% assign item2_image = block.settings.image_product2 | default: product_featured_image %}
+
+{% assign bundle_total_original = item1_price_original | plus: item2_price_original %}
+{% assign bundle_total_display = bundle_total_original | money_without_trailing_zeros %}
+
+<hr />
+<div class="c-bundle-included">
+    <p class="c-bundle-included__tile">{{ 'page.bundle-purchase.title' | t }}</p>
+    <ul class="c-bundle-included__list">
+        <li>
+            <a href="{{ item1_handle | prepend: '/products/' }}">
+                <img loading="lazy" src="{{ item1_image | img_url: '250x' }}" alt="{{ item1_image.alt | escape }}" />
+            </a>
+            <div>
+                <a href="{{ item1_handle | prepend: '/products/' }}">{{ item1_title }}</a>
+                {% if block.settings.item1_text != blank %}
+                    <small>{{ block.settings.item1_text }}</small>
+                {% endif %}
+                <div class="e-price">
+                    <div class="e-price__main">
+                        <div class="e-price__current">{{ item1_price_display }}</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="{{ item2_handle | prepend: '/products/' }}">
+                <img loading="lazy" src="{{ item2_image | img_url: '250x' }}" alt="{{ item2_image.alt | escape }}" />
+            </a>
+            <div>
+                <a href="{{ item2_handle | prepend: '/products/' }}">{{ item2_title }}</a>
+                {% if block.settings.item2_text != blank %}
+                    <small>{{ block.settings.item2_text }}</small>
+                {% endif %}
+                <div class="e-price e-price--highlight">
+                    <div class="e-price__main">
+                        <div class="e-price__current">{{ 'page.bundle-purchase.free' | t }}</div>
+                        <div class="e-price__old">{{ item2_price_display }}</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <hr />
+    <div class="c-bundle-included__amount">
+        <p>{{ 'page.bundle-purchase.instant-savings' | t }}: {{ item2_price_display }}</p>
+        <div class="e-price">
+            <div class="e-price__main">
+                <div class="e-price__current">{{ item1_price_display }}</div>
+                <div class="e-price__old">{{ bundle_total_display }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c-buy-block">
+    <div class="e-progress _e-progress--nearly-full e-progress--low-stock">
+        <p>{{ 'page.bundle-purchase.low-stock' | t }}</p>
+        <small>{{ 'page.bundle-purchase.low-stock-text' | t }}</small>
+        <div style="--progress: {{ block.settings.progress_percent | default: 75 }}%">{{ block.settings.progress_percent | default: 75 }}% {{ 'page.bundle-purchase.sold' | t }}</div>
+    </div>
+    <div class="e-get-free-shipping">{{ 'page.bundle-purchase.free-shipping-banner' | t }}</div>
+    <div class="c-order-button">
+        <form method="post" action="/cart/add" enctype="multipart/form-data" data-static="true">
+            <button type="submit" class="btn btn--primary add-cart-button">
+                {{ 'page.bundle-purchase.button-label' | t }} {{ item2_price_display }}
+                <i class="e-icon e-icon-arrow"></i>
+            </button>
+            <input type="hidden" name="quantity" value="1">
+            <input type="hidden" name="id" value="{{ item1_variant_id }}">
+        </form>
+    </div>
+    <div class="c-buy-block__payment-logos">
+        <img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/full-payment-logos.svg" alt="Full payment logos" />
+    </div>
+    <ul class="e-features-list">
+        <li>
+            <i class="e-icon e-icon-one-year"></i>
+            {{ 'page.bundle-purchase.guarantee-text' | t }}
+        </li>
+        <li>
+            <i class="e-icon e-icon-shipping-order"></i>
+            {{ 'page.bundle-purchase.shipping-text' | t }}
+        </li>
+    </ul>
+</div>
+
+{% if block.settings.discount_code != blank %}
+    {% comment %}
+      Reuse the existing "add product A + product B and apply discount code"
+      mechanism (assets/n-product-exclusive-offer.js), the canonical
+      implementation for exactly this recipe elsewhere in the theme — no new
+      add-to-cart script. It intercepts clicks on `.add-cart-button` globally,
+      relabels it, and adds both variants + the discount code via
+      `window.CartDrawer.addToCartJson`.
+    {% endcomment %}
+    <script>
+        const exclusive_button_label = '{{ 'page.bundle-purchase.button-label' | t }} {{ item2_price_display }}';
+        const exclusive_product_variant_id = '{{ item1_variant_id }}';
+        const exclusive_product2_black_variant_id = '{{ item2_variant_id }}';
+        const exclusive_offer_discount_code = {{ block.settings.discount_code | json }};
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-exclusive-offer.js', '{{ 'n-product-exclusive-offer.js' | asset_url }}');
+        });
+    </script>
+{% endif %}
+
+{% comment %}
+  The two get-product-data includes above leave item2's values in the parent
+  scope — restore the main product's globals for anything rendered after this
+  block in the same loop.
+{% endcomment %}
+{% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'bundle-purchase-' %}

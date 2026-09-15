@@ -1,5 +1,5 @@
 {% doc %}
-    Renders a static faq section for development.
+    Renders a dynamic faq section for page led-mask-offer-2.
 {% enddoc %}
 
 <!-- HAVE QUESTIONS -->
@@ -8,162 +8,57 @@
 {% endif %}
 <div class="have-questions" id="faq">
     <div class="container">
-        <h2>Have questions?</h2>
+        {{ section.settings.heading }}
         <div class="c-accordion c-accordion--lines">
             <div class="c-accordion__list">
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">Technical specifications</summary>
-                    <article class="c-accordion__content">
-                        <div class="devices-technical">
-                            <ul class="devices-technical__buttons" role="tablist">
-                                <li>
-                                    <button class="active" type="button" data-bs-toggle="tab" data-bs-target="#device-mask">Q-Rejuvalight Pro LED Mask</button>
-                                </li>
-                                <li>
-                                    <button type="button" data-bs-toggle="tab" data-bs-target="#device-decolletage">Neck &amp; Décolletage LED</button>
-                                </li>
-                            </ul>
-                            <div class="devices-technical__pane show" id="device-mask">
-                                <div class="devices-technical__section">
-                                    <p>Treatment details</p>
-                                    <ul>
-                                        <li>
-                                            <i class="e-icon e-icon-treatment-time"></i>
-                                            <div><strong>TREATMENT TIME:</strong> 3 minutes</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-switcher"></i>
-                                            <div><strong>TREATMENT MODES:</strong> Skin Rejuvenating, Skin Clearing, customized treatment</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-calendar"></i>
-                                            <div><strong>USE:</strong> Use daily after cleansing, before topical skincare</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-hand"></i>
-                                            <div><strong>OPERATION:</strong> Wireless, hands-free app (Android and iOS)</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr />
-                                <div class="devices-technical__section">
-                                    <p>Tech specs</p>
-                                    <ul>
-                                        <li>
-                                            <i class="e-icon e-icon-wave"></i>
-                                            <div><strong>WAVELENGTH:</strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-leds"></i>
-                                            <div><strong>LEDs:</strong> 160 dual core</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-certificate"></i>
-                                            <div><strong>CERTIFICATES:</strong> FDA, TGA, CE, UKCA</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-hand"></i>
-                                            <div><strong>CHARGING TIME:</strong> 2 hours</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="devices-technical__pane" id="device-decolletage">
-                                <div class="devices-technical__section">
-                                    <p>Treatment details</p>
-                                    <ul>
-                                        <li>
-                                            <i class="e-icon e-icon-treatment-time"></i>
-                                            <div><strong>TREATMENT TIME:</strong> 10 minutes</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-calendar"></i>
-                                            <div><strong>USE:</strong> Use 5-7 times per week after on cleansed, dry skin</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-hand"></i>
-                                            <div><strong>OPERATION:</strong> Wireless, hands-free with controller</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr />
-                                <div class="devices-technical__section">
-                                    <p>Tech specs</p>
-                                    <ul>
-                                        <li>
-                                            <i class="e-icon e-icon-wave"></i>
-                                            <div><strong>WAVELENGTH:</strong> 633nm (Red), 830nm (Near-Infrared)</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-leds"></i>
-                                            <div><strong>LEDs:</strong> 55 dual core</div>
-                                        </li>
-                                        <li>
-                                            <i class="e-icon e-icon-hand"></i>
-                                            <div><strong>CHARGING TIME:</strong> 4 hours</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">How quickly will I see results?</summary>
-                    <article class="c-accordion__content">
-                        <p>Every individual may respond differently to specific wavelengths of light, and results will depend on the goal you want to address.</p>
-                        <p>Most users report visible improvements in the look of breakouts and redness sooner than expected. Smoother-looking lines, improved tone, and a firmer appearance may take longer.</p>
-                        <p>Changes are often gradual, so we recommend taking “before and after” photos to track your results. Consistency is key for maintaining improvements over time.</p>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">How often can I use these treatments?</summary>
-                    <article class="c-accordion__content">
-                        <p>You can use both the Q-Rejuvalight Pro Mask and the Neck & Décolletage LED Device daily. In fact, consistent daily use is recommended for best results.</p>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">Do I need to wear eye protection when I use the Q-Rejuvalight Pro?</summary>
-                    <article class="c-accordion__content">
-                        <p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p>
-                        <p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p>
-                        <p>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">Is LED light therapy safe for all skin types?</summary>
-                    <article class="c-accordion__content">
-                        <p>Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed.</p>
-                        <p>That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.</p>
-                        <p>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.</p>
-                        <p>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">Does the Q-Rejuvalight Pro come with warranty?</summary>
-                    <article class="c-accordion__content">
-                        <p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">At what age and when is the best time to start using LED light therapy?</summary>
-                    <article class="c-accordion__content">
-                        <p>Most people can benefit from LED light therapty. Whether the goal is to treat acne, help reduce the visible signs of aging, or both, prevention is better than correction. The sooner the Q-Rejuvalight Pro becomes part of your routine, the better!</p>
-                    </article>
-                </details>
-                <details class="c-accordion__item">
-                    <summary class="c-accordion__summary">Is Q-Rejuvalight Pro FDA-cleared?</summary>
-                    <article class="c-accordion__content">
-                        <p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>
-                    </article>
-                </details>
+                {% for block in section.blocks %}
+                    {% if block.type == 'accordion' %}
+                        <details class="c-accordion__item">
+                            {% if block.settings.heading != blank %}
+                                <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
+                            {% endif %}
+                            <article class="c-accordion__content">
+                                {% if block.settings.show_technical_specs %}
+                                    {% render 'n-page-led-mask-offer-2-faq-technical-specs' %}
+                                {% elsif block.settings.text != blank %}
+                                    {{ block.settings.text }}
+                                {% endif %}
+                            </article>
+                        </details>
+                    {% endif %}
+                {% endfor %}
             </div>
-            <div class="c-accordion__ask-us">
-                Don't see your question? <a href="https://qureskincare.customerdesk.io/#rp-customer-widget-home" class="btn btn-sm btn--secondary">Ask us <i class="e-icon e-icon-arrow"></i></a>
-            </div>
+            {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <div class="c-accordion__ask-us">
+                    {{ section.settings.text }}<a href="{{ section.settings.button_url }}" class="btn btn-sm btn--secondary">{{ section.settings.button_label }}<i class="e-icon e-icon-arrow"></i></a>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
+
+{% if section.blocks.size > 0 %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {% for block in section.blocks %}
+                {% if block.type == 'accordion' and block.settings.show_technical_specs != true %}
+                {
+                    "@type": "Question",
+                    "name": {{ block.settings.heading | json }},
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": {{ block.settings.text | strip_html | json }}
+                    }
+                }{% unless forloop.last %},{% endunless %}
+                {% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+{% endif %}
 <!-- HAVE QUESTIONS END -->
 
 {% schema %}
@@ -175,6 +70,53 @@
          "id": "use_own_file",
          "label": "t:common.use-own-file",
          "default": false
+      },
+      {
+          "type": "richtext",
+          "id": "heading",
+          "label": "t:common.header",
+          "default": "<h2>Have questions?</h2>"
+      },
+      {
+          "type": "text",
+          "id": "text",
+          "label": "t:common.text",
+          "default": "Don't see your question? "
+      },
+      {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:common.button-label",
+          "default": "Ask us "
+      },
+      {
+          "type": "url",
+          "id": "button_url",
+          "label": "t:common.button-url"
+      }
+  ],
+  "blocks": [
+      {
+          "type": "accordion",
+          "name": "t:common.accordion",
+          "settings": [
+              {
+                  "type": "text",
+                  "id": "heading",
+                  "label": "t:common.header"
+              },
+              {
+                  "type": "checkbox",
+                  "id": "show_technical_specs",
+                  "label": "t:common.show-technical-specs",
+                  "default": false
+              },
+              {
+                  "type": "richtext",
+                  "id": "text",
+                  "label": "t:common.text"
+              }
+          ]
       }
   ]
 }
