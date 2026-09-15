@@ -577,6 +577,7 @@
         },
         "product_type_QKQhNr": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
@@ -599,6 +600,7 @@
         },
         "product_DBd4ef": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-3-get-3-free-dark-spots",
             "product_variant_id": 0,
@@ -656,6 +658,7 @@
         },
         "product_Xf8A6C": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -688,6 +691,7 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
@@ -710,6 +714,7 @@
         },
         "product_nyJ9n7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-3-get-3-free-wrinkles",
             "product_variant_id": 0,
@@ -767,6 +772,7 @@
         },
         "product_eiY89h": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -878,9 +884,8 @@
         },
         "product_RBCPe8": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
@@ -892,7 +897,7 @@
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
             "product_selling_plan_text": "",
-            "image": "shopify://shop_images/MI_1.5_1month_DS.webp",
+            "image": "shopify://shop_images/MI_1.5_1month_W.jpg",
             "product_discount_percent": 10,
             "soldout": false,
             "preorder": false,
