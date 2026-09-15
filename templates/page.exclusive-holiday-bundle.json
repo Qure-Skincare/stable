@@ -234,10 +234,10 @@
         "product_Ykma4b": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-pro1",
+            "product": "clear-skin-reset",
             "image": "shopify://shop_images/LineRefineBundlePro.jpg",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
