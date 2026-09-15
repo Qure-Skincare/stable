@@ -59,7 +59,7 @@
       "settings": {
         "use_own_file": false,
         "modifier": "stats",
-        "text": "<h4>Cleared by the FDA. Ranked #1 by independent reviewers.</h4><p><br/>Most at-home LED masks make claims. Q-Rejuvalight Pro carries an actual FDA clearance — K230042 — covering both acne and fine lines, which is why it topped our own Top-5 FDA-Approved Mask ranking.</p>",
+        "text": "<h2>Cleared by the FDA. Ranked #1 by independent reviewers.<br/>Most at-home LED masks make claims. </h2>",
         "button_label": "",
         "button_url": "",
         "arrow_button": false
