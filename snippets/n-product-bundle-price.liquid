@@ -1,0 +1,52 @@
+{% doc %}
+  Renders the "c-special-offer" price + savings pill for a two-product bundle
+  (main product + free bonus item). The percent is computed from the real
+  prices of both products (bonus item's price ÷ combined original price) —
+  NOT from the main product's own compare_at_price, which may be unset or not
+  reflect this specific bundle. Reads product/product2 from the sibling
+  'bundle-purchase' block in the same section rather than duplicating
+  settings.
+
+  @param {object} section - A section object.
+
+  @example
+  {% render 'n-product-bundle-price', section: section %}
+{% enddoc %}
+
+{% assign bundle_block = blank %}
+{% for _block in section.blocks %}
+    {% if _block.type == 'bundle-purchase' %}
+        {% assign bundle_block = _block %}
+    {% endif %}
+{% endfor %}
+
+{% include 'get-product-data', product_handle: bundle_block.settings.product, product_prefix: 'bundle-price-' %}
+{% assign main_price_display = product_sale_price %}
+{% assign main_price_original = product_price_original %}
+
+{% include 'get-product-data', product_handle: bundle_block.settings.product2, product_prefix: 'bundle-price-' %}
+{% assign bonus_price_original = product_price_original %}
+
+{% assign bundle_total_original = main_price_original | plus: bonus_price_original %}
+
+{% if bundle_total_original > 0 %}
+    {% assign bundle_before_price = bundle_total_original | money_without_trailing_zeros %}
+    {% assign save_percent = bonus_price_original | times: 100.0 | divided_by: bundle_total_original | round %}
+
+    <div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
+        <div class="e-price">
+            <div class="e-price__main">
+                <div class="e-price__current">{{ main_price_display }}</div>
+                <div class="e-price__old">{{ bundle_before_price }}</div>
+            </div>
+        </div>
+        <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ save_percent }}%</div>
+    </div>
+{% endif %}
+
+{% comment %}
+  The two get-product-data includes above leave the bonus item's values in the
+  parent scope — restore the section's main product globals for anything
+  rendered after this block in the same loop.
+{% endcomment %}
+{% include 'get-product-data', product_handle: section.settings.product, product_prefix: 'bundle-price-' %}

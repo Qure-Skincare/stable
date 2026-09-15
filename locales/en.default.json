@@ -388,6 +388,18 @@
       "percent": "60",
       "free": "FREE",
       "sold": "Sold"
+    },
+    "bundle-purchase": {
+      "title": "What’s Included",
+      "free": "FREE",
+      "instant-savings": "INSTANT SAVINGS",
+      "low-stock": "Low Stock",
+      "low-stock-text": "Due to high demand, this offer is only available while stock lasts.",
+      "free-shipping-banner": "Order today to lock in your deal and get FREE Shipping",
+      "sold": "Sold",
+      "button-label": "Shop Now & Save",
+      "guarantee-text": "1-Year Guarantee",
+      "shipping-text": "Free Shipping over $100"
     }
   },
   "special-offer": {
