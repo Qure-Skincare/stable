@@ -792,6 +792,20 @@
             "product_title": ""
           }
         },
+        "slider_8rHqJN": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_2_d9b6df50-759c-431f-9d2f-5703924f0c2c.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Sandy G.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>I see a visible change...</h6><p>“I started using the micro infusion this past May, which is the first non-smiling photo, and the second non-smiling one was taken last week... I had Morpheus 8 treatment for my face last year ($1,800 later), and it did absolutely nothing, but I think I see a visible change with the micro infusion. I am still only a few months in, so I'm hoping that I'll eventually build more collagen to fill in the hollowness, remove more of the jowls, and hopefully lose more of the lip lines. I'd also like to mention that I started on the nightly serum a few months ago, which I really like.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_xqgHn6": {
           "type": "slider",
           "settings": {
@@ -1134,6 +1148,7 @@
         "slider_qPwgBB",
         "slider_QUARee",
         "slider_6GYBm3",
+        "slider_8rHqJN",
         "slider_xqgHn6",
         "slider_kKHAqa",
         "slider_78E6pj",
