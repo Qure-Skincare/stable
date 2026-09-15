@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product-bundle": {
+      "type": "n-product-bundle",
+      "settings": {
+        "show_discount": true,
+        "rating": true,
+        "heading": "Breakout Control Advanced with Red Light Therapy"
+      }
+    },
+    "n_base_section_RnXaHd": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "reverse",
+        "modifier_2": "simple-grid",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>Red Light Therapy at Home</h2>",
+        "text": "<p>Experience the transformative power of <strong>Red Light Therapy</strong> from the comfort of your home. No need for expensive salon visits or long treatment times-just a few minutes with our <strong>Breakout Control Advanced</strong> bundle provides the therapeutic benefits of <strong>LED light therapy</strong>, helping to clear acne, reduce inflammation, and promote healthier skin.<br/><br/>This at-home treatment delivers targeted results with ease, allowing you to seamlessly incorporate <strong>Red Light Therapy</strong> into your daily skincare routine. With consistent use, you’ll enjoy smoother, clearer skin, all while saving time and money on in-clinic treatments. <strong>Red Light Therapy</strong> has never been more accessible or effective-your skin will thank you!</p>",
+        "image": "shopify://shop_images/skin_firming.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": ""
+      }
+    },
+    "n_press_reviews_DDaUTN": {
+      "type": "n_press-reviews",
+      "blocks": {
+        "image_with_text_rczj6t": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
+            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+          }
+        },
+        "image_with_text_WhtWNQ": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”</h4>",
+            "image": "shopify://shop_images/women-health.svg"
+          }
+        },
+        "image_with_text_rwJFRA": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”</h4>",
+            "image": "shopify://shop_images/Popsugar_logo.svg"
+          }
+        },
+        "image_with_text_GcMQyX": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”</h4>",
+            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
+          }
+        },
+        "image_with_text_xNnbxX": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</h4>",
+            "image": "shopify://shop_images/gq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_rczj6t",
+        "image_with_text_WhtWNQ",
+        "image_with_text_rwJFRA",
+        "image_with_text_GcMQyX",
+        "image_with_text_xNnbxX"
+      ],
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
+      }
+    },
+    "n_trusted_reviews_mRLHtt": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_iCfR9d": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Jessica_rejuv.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jessica K.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Thrilled with the results!</h6><p>\"I am 45 so I am fighting signs of aging, but also still dealing with acne flare ups. ...I notice a definite smoothing of [the look of] fine wrinkles on my cheeks & around my eyes. I recommend this product to anyone. Well worth the investment.\" </p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/q-rejuvalight-mask.webp",
+            "product_text": "Jessica uses..",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
+          }
+        },
+        "slider_xqHC8P": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/anton-m.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
+            "product_text": "Anton uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
+          }
+        },
+        "slider_ea3hLd": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Diane.webp",
+            "flag": "shopify://shop_images/canada_f.svg",
+            "username": "Diane F.",
+            "verified_customer": "Verified customer",
+            "text": "<h6>Amazing</h6><p>“I love my mask, I use it everyday! Just 3 min and we go on. I have been using it for 1 month and feel my skin is smoother and the tone is more uniform. I am very satisfied!”</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/q-rejuvalight-mask.webp",
+            "product_text": "Diane uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
+          }
+        }
+      },
+      "block_order": [
+        "slider_iCfR9d",
+        "slider_xqHC8P",
+        "slider_ea3hLd"
+      ],
+      "name": "t:sections.n_trusted-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "light",
+        "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_faq_8ra9aV": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_kJHtcE": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How Red Light Therapy Works for Acne?",
+            "text": "<p>Harness the power of <strong>Red Light Therapy</strong> to penetrate deep into the skin, targeting the root causes of acne. The therapeutic wavelengths of light reduce inflammation, calm redness, and kill acne-causing bacteria, giving you healthier skin with consistent use. <strong>LED light therapy</strong> is clinically proven to help clear up blemishes and prevent new breakouts from forming.</p>"
+          }
+        },
+        "accordion_Hj9wiN": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why Choose Breakout Control Advanced?",
+            "text": "<p>Our <strong>Breakout Control Advanced</strong> treatment uses clinically proven LED light wavelengths to support clearer, healthier-looking skin. By combining <strong>Blue and Red Light Therapy</strong>, this mode is designed to help reduce the appearance of breakouts and blemishes while remaining gentle and non-invasive.<br/><br/>Blue light targets surface-level skin concerns, while red light helps soothe visible redness and support overall skin balance. With regular use, this light-based approach helps improve the appearance of acne-prone skin over time, promoting a calmer, more even-looking complexion—without harsh chemicals, irritation, or downtime.</p>"
+          }
+        },
+        "accordion_iTKLYy": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How To Achieve Acne-Free, Radiant Skin?",
+            "text": "<p>Perfect for all skin types, <strong>Breakout Control Advanced</strong> is designed to treat acne without causing dryness or irritation. Experience the combined benefits of <strong>Red Light Therapy</strong> and advanced skincare technology for visible results in fewer treatments. With consistent use, you’ll enjoy smooth, radiant skin that feels healthier and looks clearer.</p>"
+          }
+        },
+        "accordion_rX6w8W": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is an HSA or FSA and what are the benefits?",
+            "text": "<p>HSA (Health Savings Account) and FSA (Flexible Spending Account) are tax-advantaged accounts that let you use pre-tax dollars for qualified health and wellness purchases - giving you an instant discount equal to your tax rate. FSAs are employer-sponsored with use-it-or-lose-it rules; HSAs are tied to high-deductible health plans and roll over year to year.</p>"
+          }
+        },
+        "accordion_tWLNDh": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is a qualified customer?",
+            "text": "<p>A qualified customer is any individual with an active HSA (Health Savings Account) or FSA (Flexible Spending Account) who is purchasing an eligible product. Most people with employer-sponsored health benefits or a high-deductible health plan qualify.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_kJHtcE",
+        "accordion_Hj9wiN",
+        "accordion_iTKLYy",
+        "accordion_rX6w8W",
+        "accordion_tWLNDh"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>What To Expect:</h2>",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    },
+    "n_you_may_also_like_uZi1bC": {
+      "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
+      "settings": {
+        "use_own_file": false
+      }
+    }
+  },
+  "order": [
+    "product-bundle",
+    "n_base_section_RnXaHd",
+    "n_press_reviews_DDaUTN",
+    "n_trusted_reviews_mRLHtt",
+    "n_faq_8ra9aV",
+    "n_you_may_also_like_uZi1bC"
+  ]
+}
