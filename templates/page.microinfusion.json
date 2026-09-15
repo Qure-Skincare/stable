@@ -2311,6 +2311,13 @@
             "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different.<br/><br/>Performing Micro-Infusion on the neck can help improve the look of fine lines and rejuvenate the skin’s appearance. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and look of this area.</p>"
           }
         },
+        "accordion_qcA4XL": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use Micro-Infusion if I have facial hair or a beard?",
+            "text": "<p>Yes. Micro-Infusion should be performed directly on clean, exposed skin. Short stubble is generally fine, as long as the device can make full contact with the skin. </p><p>For longer or denser facial hair, we recommend trimming or shaving the treatment area beforehand for easier, more even coverage. If you prefer not to shave, treat only areas where the skin can be clearly exposed and the device can make direct contact.</p>"
+          }
+        },
         "accordion_pNEtik": {
           "type": "accordion",
           "settings": {
@@ -2348,6 +2355,7 @@
         "accordion_TrnBHc",
         "accordion_H4hWJF",
         "accordion_CWAkdL",
+        "accordion_qcA4XL",
         "accordion_pNEtik",
         "accordion_NKHMct",
         "accordion_hrY8T4",
