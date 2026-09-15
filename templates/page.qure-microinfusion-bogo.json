@@ -1214,6 +1214,34 @@
             "product_title": ""
           }
         },
+        "slider_T3GtD4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_19_60a1c45f-d170-40bf-b9f4-b3ef4acc09da.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Rodrigo M.",
+            "verified_customer": "Verified customer",
+            "badge": "Acne Scares",
+            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_AUE78y": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_59.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Andrea F.",
+            "verified_customer": "Verified customer",
+            "badge": "Dark spots",
+            "text": "<p>“I’ve done three treatments now and have noticed my dark spots, scars and overall pigmentation has significantly improved. The bags below my eyes have lessened and my face looks brighter. I will definitely recommend this to my friends!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_AbTEJa": {
           "type": "slider",
           "settings": {
@@ -1348,6 +1376,8 @@
         "slider_DdW3gF",
         "slider_78E6pj",
         "slider_EAt9Md",
+        "slider_T3GtD4",
+        "slider_AUE78y",
         "slider_AbTEJa",
         "slider_dPBWEW",
         "slider_eCGH8c",
