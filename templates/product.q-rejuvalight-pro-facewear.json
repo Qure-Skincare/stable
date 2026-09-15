@@ -363,6 +363,20 @@
     "n_trusted_reviews_LNcYzb": {
       "type": "n_trusted-reviews",
       "blocks": {
+        "slider_fxVb6Y": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_1_1.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Quang H.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<p><strong>I am impressed!</strong></p><p>“My skin looks so much clearer after 28 weeks with the Q-Rejuvalight Pro. Such an easy add to my routine!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_eyGA9z": {
           "type": "slider",
           "settings": {
@@ -620,6 +634,7 @@
         }
       },
       "block_order": [
+        "slider_fxVb6Y",
         "slider_eyGA9z",
         "slider_HYJYjr",
         "slider_whdTd9",
