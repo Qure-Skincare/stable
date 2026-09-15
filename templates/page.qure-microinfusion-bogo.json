@@ -1242,6 +1242,20 @@
             "product_title": ""
           }
         },
+        "slider_T6Jpci": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_49.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Hannah J.",
+            "verified_customer": "Verified customer",
+            "badge": "Glow",
+            "text": "<p>“I’ve used the micro-infusion dark spot bundle set only one and I can already tell a difference!! My skin is ✨GLOWING✨ I have had several people ask me what I’ve done different just from one use! I cannot wait to continue using this and see the continued progress I’ll have. 10000/10 recommend!!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_AbTEJa": {
           "type": "slider",
           "settings": {
@@ -1249,8 +1263,22 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "badge": "Glow",
+            "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_JpgfUV": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/pamelaba.png",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Pamela S.",
+            "verified_customer": "Verified customer",
+            "badge": "Fine lines",
+            "text": "<p>“I’d looked into derma rollers before, but I was hesitant about how harsh and invasive they felt. When I found this as a gentler alternative on TikTok, I decided to give it a real shot. I’ve stuck with it consistently since March, and the results have been so encouraging. My forehead lines are noticeably softer now, and the fine lines around my eyes have visibly reduced. My skin looks more refreshed and awake instead of dull like before.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -1258,6 +1286,7 @@
         },
         "slider_dPBWEW": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Image_5_b0173f3a-3914-4db7-94ba-236f4cf89e4b.png",
             "flag": "shopify://shop_images/england_f_3a90e77c-3bac-43d1-84e6-3a2e91e0c7e2.webp",
@@ -1272,6 +1301,7 @@
         },
         "slider_eCGH8c": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/mona-p.webp",
             "flag": "shopify://shop_images/america_f.webp",
@@ -1286,6 +1316,7 @@
         },
         "slider_xqgHn6": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/jessica-k.webp",
             "flag": "shopify://shop_images/america_f.webp",
@@ -1300,6 +1331,7 @@
         },
         "slider_Qab78U": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ela-o.webp",
             "flag": "shopify://shop_images/america_f.webp",
@@ -1314,6 +1346,7 @@
         },
         "slider_RrFY67": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/chelsea.webp",
             "flag": "shopify://shop_images/america_f.webp",
@@ -1328,6 +1361,7 @@
         },
         "slider_UXmznT": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/akina.webp",
             "flag": "shopify://shop_images/america_f.webp",
@@ -1342,6 +1376,7 @@
         },
         "slider_PQ3RbR": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/jess.webp",
             "flag": "shopify://shop_images/america_f.webp",
@@ -1356,6 +1391,7 @@
         },
         "slider_6tprhW": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/priya.webp",
             "flag": "shopify://shop_images/england_f.webp",
@@ -1378,7 +1414,9 @@
         "slider_EAt9Md",
         "slider_T3GtD4",
         "slider_AUE78y",
+        "slider_T6Jpci",
         "slider_AbTEJa",
+        "slider_JpgfUV",
         "slider_dPBWEW",
         "slider_eCGH8c",
         "slider_xqgHn6",
