@@ -221,6 +221,41 @@
             "text": "<p>Yes — this bundle includes the exact Q-Rejuvalight Pro mask referenced in that ranking, paired with Dermal Mist.</p><p></p>"
           }
         },
+        "accordion_jynpxL": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is Q-Rejuvalight Pro FDA approved or FDA cleared?",
+            "text": "<p>It's FDA-cleared, not FDA-approved. Clearance (510(k), number K230042) means the FDA reviewed data showing the device is safe and effective for its stated uses — acne and fine lines. \"Approval\" is a different, separate FDA pathway used for drugs and higher-risk devices.</p>"
+          }
+        },
+        "accordion_infEpj": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What does K230042 mean?",
+            "text": "<p>K230042 is the official FDA 510(k) clearance number assigned to Q-Rejuvalight Pro. You can look up any device's clearance directly on the FDA's public database using this number.</p>"
+          }
+        },
+        "accordion_dLzmmJ": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is FDA clearance the same as a medical-grade guarantee?",
+            "text": "<p>FDA clearance confirms the device met safety and effectiveness requirements for its cleared uses. It doesn't mean the device is \"medical grade\" or guarantees individual results — those depend on consistent use and individual skin response.</p>"
+          }
+        },
+        "accordion_ccRViw": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does FDA clearance cover both the mask and the mist?",
+            "text": "<p>No. The FDA clearance (K230042) applies only to the Q-Rejuvalight Pro LED Mask, for acne and fine lines. Dermal Mist is a cosmetic product and is not FDA-cleared.</p>"
+          }
+        },
+        "accordion_A7F79h": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I verify the clearance myself?",
+            "text": "<p>Yes. Search \"K230042\" on the FDA's 510(k) Premarket Notification database to see the official clearance record.</p>"
+          }
+        },
         "accordion_kJHtcE": {
           "type": "accordion",
           "disabled": true,
@@ -264,6 +299,11 @@
       "block_order": [
         "accordion_H77CJU",
         "accordion_p49Fyw",
+        "accordion_jynpxL",
+        "accordion_infEpj",
+        "accordion_dLzmmJ",
+        "accordion_ccRViw",
+        "accordion_A7F79h",
         "accordion_kJHtcE",
         "accordion_Hj9wiN",
         "accordion_iTKLYy",
