@@ -17,6 +17,54 @@
         "heading": "FDA-Cleared Red Light Therapy for Acne & Fine Lines"
       }
     },
+    "n_text_epkkfr": {
+      "type": "n_text",
+      "blocks": {
+        "text_4EyYkd": {
+          "type": "text",
+          "settings": {
+            "heading": "K230042",
+            "text": "FDA clearance number"
+          }
+        },
+        "text_3gwGqC": {
+          "type": "text",
+          "settings": {
+            "heading": "#1",
+            "text": "Top-5 FDA-Approved Mask review"
+          }
+        },
+        "text_xwH3wN": {
+          "type": "text",
+          "settings": {
+            "heading": "2",
+            "text": "Cleared for: acne + fine lines"
+          }
+        },
+        "text_kNRkKp": {
+          "type": "text",
+          "settings": {
+            "heading": "10k+",
+            "text": "Customers, 4.8/5 rated"
+          }
+        }
+      },
+      "block_order": [
+        "text_4EyYkd",
+        "text_3gwGqC",
+        "text_xwH3wN",
+        "text_kNRkKp"
+      ],
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "stats",
+        "text": "<h4>Cleared by the FDA. Ranked #1 by independent reviewers.</h4><p><br/>Most at-home LED masks make claims. Q-Rejuvalight Pro carries an actual FDA clearance — K230042 — covering both acne and fine lines, which is why it topped our own Top-5 FDA-Approved Mask ranking.</p>",
+        "button_label": "",
+        "button_url": "",
+        "arrow_button": false
+      }
+    },
     "n_base_section_RnXaHd": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
@@ -26,8 +74,8 @@
         "modifier_2": "simple-grid",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>Red Light Therapy at Home</h2>",
-        "text": "<p>Experience the transformative power of <strong>Red Light Therapy</strong> from the comfort of your home. No need for expensive salon visits or long treatment times-just a few minutes with our <strong>Breakout Control Advanced</strong> bundle provides the therapeutic benefits of <strong>LED light therapy</strong>, helping to clear acne, reduce inflammation, and promote healthier skin.<br/><br/>This at-home treatment delivers targeted results with ease, allowing you to seamlessly incorporate <strong>Red Light Therapy</strong> into your daily skincare routine. With consistent use, you’ll enjoy smoother, clearer skin, all while saving time and money on in-clinic treatments. <strong>Red Light Therapy</strong> has never been more accessible or effective-your skin will thank you!</p>",
+        "heading": "<h2>FDA-Cleared, At Home</h2>",
+        "text": "<p>Q-Rejuvalight Pro carries an actual FDA clearance — K230042 — for both acne and fine lines. No need for expensive salon visits: just a few minutes a day delivers the same cleared benefits from home. This is the exact device ranked #1 in our Top-5 FDA-Approved Mask review.</p>",
         "image": "shopify://shop_images/skin_firming.webp",
         "button_label": "",
         "button_url": "",
@@ -221,6 +269,7 @@
   },
   "order": [
     "product-bundle",
+    "n_text_epkkfr",
     "n_base_section_RnXaHd",
     "n_press_reviews_DDaUTN",
     "n_trusted_reviews_mRLHtt",
