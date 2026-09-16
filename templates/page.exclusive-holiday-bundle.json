@@ -276,10 +276,10 @@
         "product_eiHVrp": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-pro1",
-            "image": "shopify://shop_images/Fade_FirmBundlePro.jpg",
+            "product": "skin-foundation-system",
+            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
