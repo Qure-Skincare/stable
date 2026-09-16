@@ -338,7 +338,7 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
