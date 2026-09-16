@@ -344,6 +344,16 @@
             "soldout": false,
             "reserved": false
           }
+        },
+        "product_efxkeJ": {
+          "type": "product",
+          "settings": {
+            "product": "hair-loss-prevention-system",
+            "image": "shopify://shop_images/HairlossPreventionS.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
         }
       },
       "block_order": [
@@ -361,7 +371,8 @@
         "product_type_YrPQrV",
         "product_KKbDAE",
         "product_gia3hC",
-        "product_gNjH9L"
+        "product_gNjH9L",
+        "product_efxkeJ"
       ],
       "settings": {
         "heading": "Choose Your Bundle",
