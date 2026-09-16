@@ -181,7 +181,6 @@
         },
         "product_type_QKQhNr": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
