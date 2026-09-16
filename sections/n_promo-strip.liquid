@@ -14,19 +14,24 @@
     </picture>
     <div class="container">
         <article>
-            {{ section.settings.text }}
+            {{ section.settings.text | replace: '[ribbon_icon]', '<i class="e-icon e-icon-ribbon"></i>' }}
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                 <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
             {% endif %}
         </article>
     </div>
-    <div class="free-gift">
-        <div class="e-pill-badge e-pill-badge--fill">{{ section.settings.badge_text }}</div>
-        <div class="e-pill-badge e-pill-badge--ghost">{{ section.settings.price }}</div>
-        {% if section.settings.gift_image != blank %}
-            <img src="{{ section.settings.gift_image | image_url }}" alt="{{ section.settings.gift_image.alt | escape }}" />
-        {% endif %}
-    </div>
+    {% if section.settings.gift_image != blank %}
+        <div class="free-gift">
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge e-pill-badge--fill">{{ section.settings.badge_text }}</div>
+            {% endif %}
+            {% if section.settings.price != blank %}
+                <div class="e-pill-badge e-pill-badge--ghost">{{ section.settings.price }}</div>
+            {% endif %}
+            <img loading="lazy" src="{{ section.settings.gift_image | image_url }}" alt="{{ section.settings.gift_image.alt | escape }}" />
+            {{ section.settings.gift_text }}
+        </div>
+    {% endif %}
 </section>
 <!-- PROMO STRIP END -->
 
@@ -47,6 +52,10 @@
                 {
                     "value": "blue-plus",
                     "label": "t:sections.n_promo-strip.settings.modifier-options.blue-plus"
+                },
+                {
+                    "value": "against-cancer",
+                    "label": "t:sections.n_promo-strip.settings.modifier-options.against-cancer"
                 }
             ]
         },
@@ -78,8 +87,7 @@
         {
             "type": "text",
             "id": "badge_text",
-            "label": "t:common.badge-text",
-            "default": "Free Gift"
+            "label": "t:common.badge-text"
         },
         {
             "type": "text",
@@ -90,6 +98,11 @@
             "type": "image_picker",
             "id": "gift_image",
             "label": "t:common.gift_image"
+        },
+        {
+            "type": "richtext",
+            "id": "gift_text",
+            "label": "t:common.gift_text"
         }
     ],
     "presets": [

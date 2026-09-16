@@ -550,7 +550,8 @@
             "settings": {
                 "modifier-options": {
                     "none": "None",
-                    "blue-plus": "Blue+ serum"
+                    "blue-plus": "Blue+ serum",
+                    "against-cancer": "Against cancer"
                 }
             }
         },
