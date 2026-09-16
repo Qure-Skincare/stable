@@ -220,26 +220,26 @@
         "product_DBd4ef": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots-copy",
-            "product_variant_id": 50773557641455,
-            "product_selling_plan": 9146663151,
-            "gift": "all-in-one-2-0-travel-size",
-            "gift_image": "shopify://shop_images/silver_showerhead_tsp1.jpg",
-            "gift_text": "All-In-One Face Serum with 2 month supply",
-            "discount_code": "",
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "gift": "",
+            "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
+            "gift_text": "",
+            "discount_code": "WELCOMEFREE",
             "popular": false,
             "best": false,
             "free_shipping": false,
             "preselected": true,
-            "heading": "60-day supply!",
-            "subheading": "4 treatments",
-            "product_selling_plan_text": "4 treatments & All In One serum every 8 weeks",
+            "heading": "90-day supply!",
+            "subheading": "6 treatments",
+            "product_selling_plan_text": "6 treatments every 12 weeks",
             "text": "",
-            "image": "shopify://shop_images/MI_1.5_2month_DS_W_1_83928709-e6b2-4afa-a190-a0f92779d0a3.jpg",
-            "product_discount_percent": 7,
+            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
+            "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 4,
+            "total_treatments": 6,
             "left_items": 52,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "26th May",
@@ -254,7 +254,6 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
@@ -263,7 +262,6 @@
         },
         "product_eiY89h": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -294,7 +292,6 @@
         },
         "product_EKAAzA": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -338,7 +335,7 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": true,
+        "hide_types": false,
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
