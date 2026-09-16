@@ -220,13 +220,13 @@
         "product_DBd4ef": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
+            "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots-copy",
+            "product_variant_id": 50773557641455,
+            "product_selling_plan": 9146663151,
             "gift": "all-in-one-serum-copy",
-            "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
-            "gift_text": "vvvvv",
-            "discount_code": "FREEM&IAIO",
+            "gift_image": "shopify://shop_images/silver_showerhead_tsp1.jpg",
+            "gift_text": "free Serum",
+            "discount_code": "",
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -254,6 +254,7 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
@@ -262,6 +263,7 @@
         },
         "product_eiY89h": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -292,6 +294,7 @@
         },
         "product_EKAAzA": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
