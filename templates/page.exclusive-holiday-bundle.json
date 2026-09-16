@@ -234,8 +234,8 @@
         "product_Ykma4b": {
           "type": "product",
           "settings": {
-            "product": "clear-skin-reset",
-            "image": "shopify://shop_images/ClearSkinReset.jpg",
+            "product": "skin-confidence-system",
+            "image": "shopify://shop_images/Skin_Confidence_System.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
