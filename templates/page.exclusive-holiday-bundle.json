@@ -286,10 +286,10 @@
         "product_xJpDep": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-advanced",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_bca77af6-6e1b-438c-a8ef-b0ed81d4638b.png",
+            "product": "even-firm-system",
+            "image": "shopify://shop_images/Even_FirmSystem.jpg",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
