@@ -2319,6 +2319,13 @@
             "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after the treatment. For more information on post treatment care, <a href=\"https://qureskincare.com/pages/microinfusion-safety-guide\" title=\"https://qureskincare.com/pages/microinfusion-safety-guide\">visit our safety guide</a></p>"
           }
         },
+        "accordion_YQ46xw": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will my face be red afterwards? Can I do this before work or a big event?",
+            "text": "<p>Mild redness right after a treatment is normal and expected - it's a sign the micro-channels have been created - and for most users it settles within hours. That's why we recommend treating at night before bed: you sleep while the serum absorbs and wake up with the redness typically gone. </p><p>You should avoid direct sun and makeup for 24 hours after treatment, so don't do a session the morning of an important meeting or event. Instead, plan it 1-2 days beforehand - many users find that's exactly when the fresh, glowy look peaks.</p>"
+          }
+        },
         "accordion_CWAkdL": {
           "type": "accordion",
           "settings": {
@@ -2347,11 +2354,39 @@
             "text": "<p>Micro-Infusion focuses on improving the skin’s appearance by creating micro-channels on the skin’s surface. It does not alter or affect skin structure or function.<br/><br/>With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision — helping the skin appear smoother and more radiant.</p>"
           }
         },
-        "accordion_hrY8T4": {
+        "accordion_CBDJft": {
           "type": "accordion",
           "settings": {
-            "heading": "Tranexamic Acid Notice",
-            "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:<br/><br/>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, topical TXA in cosmetic formulations is permitted.<br/><br/>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.<br/><br/>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).<br/><br/>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our suport team</a> —we’re happy to help!</p>"
+            "heading": "How much does each treatment really cost compared to getting microneedling done at a clinic?",
+            "text": "<p>A single professional microneedling session typically costs $300 or more, and a full course usually requires several visits. With the Micro-Infusion System, each at-home treatment works out to roughly $20, with the starter bundle priced at $119 and additional savings available through the Subscribe & Save option. </p><p>You also save the time and travel of clinic appointments, and interest-free installment options (Klarna, Sezzle, Afterpay, Flex) are available at checkout. Keep in mind that an at-home 0.5 mm system is a cosmetic treatment focused on the skin's surface appearance - it's a convenient, affordable complement to professional care rather than a medical procedure.</p>"
+          }
+        },
+        "accordion_qDfVed": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What exactly comes in the box, and what will I need to keep buying afterwards?",
+            "text": "<p>Your kit includes the Micro-Infusion device, sterile single-use needle heads, your choice of serum vials (Brightening or Rejuvenating), and a detailed user guide that walks you through setup and treatment step by step. </p><p>Because each needle head is designed to be used once and then disposed of for hygiene reasons, you'll need fresh needle heads and serum vials for future treatments - that's what the refill bundles and the Subscribe & Save plan cover. </p><p>At the recommended pace of one treatment every 2 weeks, a monthly bundle keeps you supplied without over-ordering, and the subscription can be cancelled anytime.</p>"
+          }
+        },
+        "accordion_NeCCEi": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How do I choose between the Brightening serum and the Rejuvenating serum?",
+            "text": "<p>Choose based on your primary skin concern.<br/><br/>The Brightening Serum is built around tranexamic acid and niacinamide, which target the look of hyperpigmentation, sun spots, and uneven tone. Pick this one if discoloration is your main concern.<br/><br/>The Rejuvenating Serum features Copper Tripeptide-1, a standout peptide in the formula, alongside beta-glucan and sodium hyaluronate to hydrate, visibly plump, and soften the look of fine lines. The copper peptide also gives the serum its distinctive blue appearance. Pick this one if your main goals are smoother, firmer-looking skin and visible signs of ageing.<br/><br/>Both are vegan, cruelty-free, fragrance-free, and formulated on a soothing thermal water base suitable for sensitive skin. And you don’t have to stick to just one: you can alternate serums between treatments or mix the two together in one session.</p>"
+          }
+        },
+        "accordion_kpWCjY": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Who should avoid this treatment, and can I use it alongside retinol or other strong actives?",
+            "text": "<p>Skip Micro-Infusion on skin that is actively broken out, irritated, sunburned, or has open wounds, and wait until the skin has fully calmed before treating that area. On treatment night, keep the rest of your routine simple: pause strong actives like retinoids and exfoliating acids for a 24-48 hours before and after the treatment, since the micro-channels temporarily increase absorption and these ingredients can sting or irritate freshly treated skin.<br/><br/>If you are pregnant or nursing, please do not use this product.<br/><br/>If you have a diagnosed skin condition, are under a dermatologist's care, or are using prescription skincare, check with your doctor before starting. When in doubt, consult your doctor or healthcare professional before starting this treatment.</p>"
+          }
+        },
+        "accordion_qbhFjG": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I've never done anything like this before - is it hard to mess up at home?",
+            "text": "<p>The system is designed specifically for first-timers, and a full session takes about 5 minutes. The process is simple: cleanse your face, attach a sterile needle head to the serum vial and let it soak for 1-2 minutes, then gently stamp across your skin section by section with light pressure - the device's stamping design controls the depth for you, so there's no technique to master the way there is with rolling tools. </p><p>The main rules to remember are: use light pressure, do only one gentle pass around the eyes, never reuse a needle head, and stick to the every-2-weeks schedule. The included user guide covers everything step by step, and the Qure app can help you customize your treatments.</p>"
           }
         },
         "accordion_R83BDk": {
@@ -2359,6 +2394,14 @@
           "settings": {
             "heading": "What is the 90-day money-back guarantee?",
             "text": "<p>We're confident you'll love your results. If after 90 days of consistent use you don't notice any improvement in your skin — firmer, brighter, or more youthful-looking — simply contact us and we'll refund your money in full. To qualify, you'll need to submit before-and-after photos taken after each 2-week treatment within the 90-day period.</p>"
+          }
+        },
+        "accordion_hrY8T4": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "heading": "Tranexamic Acid Notice",
+            "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:<br/><br/>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, topical TXA in cosmetic formulations is permitted.<br/><br/>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.<br/><br/>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).<br/><br/>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our suport team</a> —we’re happy to help!</p>"
           }
         }
       },
@@ -2369,12 +2412,18 @@
         "accordion_bKWcJR",
         "accordion_TrnBHc",
         "accordion_H4hWJF",
+        "accordion_YQ46xw",
         "accordion_CWAkdL",
         "accordion_qcA4XL",
         "accordion_pNEtik",
         "accordion_NKHMct",
-        "accordion_hrY8T4",
-        "accordion_R83BDk"
+        "accordion_CBDJft",
+        "accordion_qDfVed",
+        "accordion_NeCCEi",
+        "accordion_kpWCjY",
+        "accordion_qbhFjG",
+        "accordion_R83BDk",
+        "accordion_hrY8T4"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
