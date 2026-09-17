@@ -329,7 +329,7 @@
           "type": "product",
           "settings": {
             "product": "total-radiance-system",
-            "image": "shopify://shop_images/RadianceDuo.jpg",
+            "image": "shopify://shop_images/TotalRadianceSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
