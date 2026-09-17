@@ -187,7 +187,8 @@
             "free_label": "",
             "subscription_note": "Every 4 weeks: Receive a new All-In-One Serum",
             "subscription_note_mode": "prices",
-            "hide_on_onetime": false
+            "hide_on_onetime": false,
+            "show_checkbox": false
           }
         },
         "type_hHPdgJ": {
@@ -242,6 +243,7 @@
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": true,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -315,6 +317,7 @@
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": true,
             "popular": false,
             "best": false,
             "free_shipping": false,

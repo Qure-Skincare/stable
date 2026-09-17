@@ -20,6 +20,14 @@
     // the one-time tab. Absent on pages without the switcher, so this is inert there.
     const DELIVERY_RADIO_SELECTOR =
         'input[type="radio"][name="delivery-type-landing"]';
+    // purchase-form-landing only as well: a widget can follow the supply card the
+    // visitor picked, and only the cards whose product block opted in carry the offer
+    // attribute - the subscription templates render it, the one-time ones never do.
+    const SUPPLY_CARD_SELECTOR = '.purchase_form_landing_product_variant_selector';
+    const OFFER_CARD_ATTRIBUTE = 'data-optional-subscription-offer';
+    const CONTROLLED_WIDGET_SELECTOR =
+        WIDGET_SELECTOR + '[data-hide-on-onetime="true"], ' +
+        WIDGET_SELECTOR + '[data-require-offer-card="true"]';
     const SUPPRESSED_FLAG = 'optionalSubscriptionSuppressed';
 
     const getAddToCart = () => {
@@ -214,32 +222,66 @@
         setTimeout(syncAllSubscriptionLabels, 0);
     };
 
-    // Widgets flagged with data-hide-on-onetime are taken out of the page while the
-    // landing form's delivery switcher sits on "one-time". Hidden inline because the
-    // component's own display rule would win over a class, and flagged on the dataset
-    // so handleClick treats a hidden widget as opted out.
-    const syncOnetimeVisibility = () => {
+    const isOnetimeDelivery = () => {
         const checked = document.querySelector(DELIVERY_RADIO_SELECTOR + ':checked');
-        const onetime = checked ? checked.value === 'onetime' : false;
+        return checked ? checked.value === 'onetime' : false;
+    };
+
+    // The card layout marks the picked supply card with .active, the list layout only
+    // checks the radio inside it.
+    const getSelectedSupplyCard = () => {
+        const active = document.querySelector(SUPPLY_CARD_SELECTOR + '.active');
+        if (active) return active;
+
+        const checked = document.querySelector(
+            SUPPLY_CARD_SELECTOR + ' input[type="radio"]:checked'
+        );
+        return checked ? checked.closest(SUPPLY_CARD_SELECTOR) : null;
+    };
+
+    // Widgets flagged with data-hide-on-onetime are taken out of the page while the
+    // landing form's delivery switcher sits on "one-time"; widgets flagged with
+    // data-require-offer-card only while the picked supply card offers the add-on.
+    // Hidden inline because the component's own display rule would win over a class,
+    // and flagged on the dataset so handleClick treats a hidden widget as opted out.
+    const syncWidgetVisibility = () => {
+        const onetime = isOnetimeDelivery();
+        const card = getSelectedSupplyCard();
+        const offered = card ? card.hasAttribute(OFFER_CARD_ATTRIBUTE) : false;
 
         document
-            .querySelectorAll(WIDGET_SELECTOR + '[data-hide-on-onetime="true"]')
+            .querySelectorAll(CONTROLLED_WIDGET_SELECTOR)
             .forEach((widget) => {
-                widget.style.display = onetime ? 'none' : '';
-                widget.dataset[SUPPRESSED_FLAG] = onetime ? 'true' : 'false';
+                const hidden =
+                    (widget.getAttribute('data-hide-on-onetime') === 'true' && onetime) ||
+                    (widget.getAttribute('data-require-offer-card') === 'true' && !offered);
+
+                widget.style.display = hidden ? 'none' : '';
+                widget.dataset[SUPPRESSED_FLAG] = hidden ? 'true' : 'false';
             });
     };
 
     const handleDeliveryChange = (event) => {
         if (!event.target.matches(DELIVERY_RADIO_SELECTOR)) return;
-        syncOnetimeVisibility();
+        syncWidgetVisibility();
+    };
+
+    // n-purchase-form-landing.js re-renders the cards on every tab switch and clicks
+    // the selected one itself, so both a visitor click and that programmatic one land
+    // here. The deferred pass reads the selection once that handler has moved .active.
+    const handleSupplyCardClick = (event) => {
+        if (!event.target.closest(SUPPLY_CARD_SELECTOR)) return;
+
+        syncWidgetVisibility();
+        setTimeout(syncWidgetVisibility, 0);
     };
 
     const initLabelSync = () => {
         syncAllSubscriptionLabels();
-        syncOnetimeVisibility();
+        syncWidgetVisibility();
         document.addEventListener('change', handleCheckboxChange);
         document.addEventListener('change', handleDeliveryChange);
+        document.addEventListener('click', handleSupplyCardClick);
     };
 
     if (!window[GLOBAL_FLAG]) {

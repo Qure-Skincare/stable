@@ -1,7 +1,9 @@
 {% doc %}
   Renders the "first bottle free + subscription" gift row for the
   purchase-form-landing section, between the supply cards and the buy button.
-  The row only announces the gift - there is no opt-in for the visitor.
+  By default the row only announces the gift; with the block's `show_checkbox`
+  setting on it becomes a checkbox the visitor can clear to opt out. Ticking
+  `optional_subscription` on a product block limits the row to that supply card.
 
   n-product-optional-subscription.js appends the configured variant as a second
   line item carrying the selling plan on every add-to-cart, so the selected supply
@@ -85,6 +87,19 @@
         {% assign free_label = 'purchase-form.settings.first_free' | t %}
     {% endif %}
 
+    {% comment %}
+        Supply cards carry data-optional-subscription-offer when their product block
+        opts in, and only in the subscription templates. As soon as one card opts in
+        the row follows the selection: it shows for those cards and stays out of the
+        cart for every other one. Sections where no card opts in are unaffected.
+    {% endcomment %}
+    {% assign requires_offer_card = false %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'product' and _block.settings.optional_subscription %}
+            {% assign requires_offer_card = true %}
+        {% endif %}
+    {% endfor %}
+
     <div
         class="hero-product__optional-subscription"
         data-optional-subscription
@@ -92,6 +107,7 @@
         data-subscription-variant-id="{{ block.settings.subscription_variant_id | escape }}"
         data-subscription-selling-plan-id="{{ block.settings.selling_plan_id | escape }}"
         {% if block.settings.hide_on_onetime %}data-hide-on-onetime="true"{% endif %}
+        {% if requires_offer_card %}data-require-offer-card="true"{% endif %}
     >
         <div class="c-optional-subscription">
             {% comment %}
@@ -103,15 +119,10 @@
                     <span>{{ block.settings.heading }}</span>
                 </div>
             {% endif %}
-            {% comment %}
-                The serum is included, not opted into, so the row shows no control: the
-                wrapper is a div (a label would forward its clicks to the input) and the
-                input is disabled on top of being hidden. It stays in the markup because
-                n-product-optional-subscription.js reads its checked state - a disabled
-                input still reports checked - to append the subscription line item.
-            {% endcomment %}
-            <div class="c-optional-subscription__option">
-                <input type="checkbox" name="subscription" checked hidden disabled />
+            {% capture optional_subscription_row %}
+                {% if block.settings.show_checkbox %}
+                    <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
+                {% endif %}
                 {% if subscription_image != blank %}
                     <img loading="lazy" src="{{ subscription_image | image_url }}" width="{{ subscription_image.width }}" height="{{ subscription_image.height }}" alt="{{ subscription_title | escape }}" />
                 {% endif %}
@@ -141,7 +152,30 @@
                         {% endif %}
                     </small>
                 {% endif %}
-            </div>
+            {% endcapture %}
+
+            {% if block.settings.show_checkbox %}
+                {% comment %}
+                    Opt-out row: the label forwards its clicks to the input, so the whole
+                    row toggles the subscription the way the product-header widget does.
+                {% endcomment %}
+                <label class="c-optional-subscription__option">
+                    <input type="checkbox" name="subscription" checked />
+                    {{ optional_subscription_row }}
+                </label>
+            {% else %}
+                {% comment %}
+                    The serum is included, not opted into, so the row shows no control: the
+                    wrapper is a div (a label would forward its clicks to the input) and the
+                    input is disabled on top of being hidden. It stays in the markup because
+                    n-product-optional-subscription.js reads its checked state - a disabled
+                    input still reports checked - to append the subscription line item.
+                {% endcomment %}
+                <div class="c-optional-subscription__option">
+                    <input type="checkbox" name="subscription" checked hidden disabled />
+                    {{ optional_subscription_row }}
+                </div>
+            {% endif %}
         </div>
     </div>
 
