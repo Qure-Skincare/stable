@@ -183,7 +183,7 @@
             "subscription_variant_id": "50773161476335",
             "selling_plan_id": "9146630383",
             "title": "All-In-One Serum",
-            "image": "shopify://shop_images/all-in-one-serum.webp",
+            "image": "shopify://shop_images/Img_57.png",
             "free_label": "",
             "subscription_note": "Every 4 weeks: Receive a new All-In-One Serum",
             "subscription_note_mode": "prices",
@@ -359,7 +359,7 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
