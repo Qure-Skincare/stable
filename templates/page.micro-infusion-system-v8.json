@@ -186,7 +186,7 @@
             "image": "shopify://shop_images/Img_57.png",
             "free_label": "",
             "subscription_note": "All-In-One Face Serum with 2 month supply",
-            "subscription_note_mode": "prices",
+            "subscription_note_mode": "cancel",
             "hide_on_onetime": false,
             "show_checkbox": false
           }
