@@ -1968,6 +1968,13 @@
                         "subscription_days_text": "Days text",
                         "subscription_discount": "Subscription discount"
                     }
+                },
+                "optional-subscription": {
+                    "settings": {
+                        "title": "Product title override",
+                        "free_label": "Free label",
+                        "hide_on_onetime": "Hide on one-time delivery"
+                    }
                 }
             }
         },
