@@ -175,6 +175,22 @@
             "date_reserved": "9th May"
           }
         },
+        "optional_subscription_Yd3Kq7": {
+          "type": "optional-subscription",
+          "settings": {
+            "heading": "Add Your Free Serum:",
+            "product": "all-in-one-serum-copy",
+            "subscription_variant_id": "50773161476335",
+            "selling_plan_id": "9146630383",
+            "title": "All-In-One Serum",
+            "image": "shopify://shop_images/all-in-one-serum.webp",
+            "free_label": "",
+            "subscription_note": "Every 4 weeks: Receive a new All-In-One Serum",
+            "subscription_note_mode": "prices",
+            "hide_on_onetime": false,
+            "show_checkbox": false
+          }
+        },
         "type_hHPdgJ": {
           "type": "type",
           "settings": {}
@@ -227,6 +243,7 @@
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": true,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -300,6 +317,7 @@
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": true,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -324,6 +342,7 @@
       },
       "block_order": [
         "nextships_4xp7uM",
+        "optional_subscription_Yd3Kq7",
         "type_hHPdgJ",
         "product_type_QKQhNr",
         "product_Xf8A6C",

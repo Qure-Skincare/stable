@@ -57,6 +57,7 @@
         "discount": "Discount",
         "show": "Show",
         "show-progress": "Show progress",
+        "show-checkbox": "Show checkbox",
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
         "exclusive-offer-bundle": "Exclusive bundle offer",
@@ -1967,6 +1968,13 @@
                         "subscription_onetime_text": "Onetime text",
                         "subscription_days_text": "Days text",
                         "subscription_discount": "Subscription discount"
+                    }
+                },
+                "optional-subscription": {
+                    "settings": {
+                        "title": "Product title override",
+                        "free_label": "Free label",
+                        "hide_on_onetime": "Hide on one-time delivery"
                     }
                 }
             }

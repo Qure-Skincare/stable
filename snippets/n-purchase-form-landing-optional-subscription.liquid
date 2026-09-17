@@ -1,0 +1,201 @@
+{% doc %}
+  Renders the "first bottle free + subscription" gift row for the
+  purchase-form-landing section, between the supply cards and the buy button.
+  By default the row only announces the gift; with the block's `show_checkbox`
+  setting on it becomes a checkbox the visitor can clear to opt out. Ticking
+  `optional_subscription` on a product block limits the row to that supply card.
+
+  n-product-optional-subscription.js appends the configured variant as a second
+  line item carrying the selling plan on every add-to-cart, so the selected supply
+  card stays the primary line. The "first bottle free" price itself lives in the
+  selling plan (SKIO), not in the theme - the theme only passes the selling plan id.
+
+  Renders nothing unless an `optional-subscription` block with both a variant id
+  and a selling plan id is present, so every other template that uses this
+  section is unaffected.
+
+  @param {object} section - A section object.
+
+  @example
+  {% render 'n-purchase-form-landing-optional-subscription', section: section %}
+{% enddoc %}
+
+{% assign block = blank %}
+{% for _block in section.blocks %}
+    {% if _block.type == 'optional-subscription' %}
+        {% assign block = _block %}
+    {% endif %}
+{% endfor %}
+
+{% if block != blank and block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}
+
+    {% assign subscription_product = block.settings.product %}
+
+    {% assign subscription_variant = blank %}
+    {% assign configured_variant_id = block.settings.subscription_variant_id | append: '' %}
+    {% if subscription_product != blank %}
+        {% for variant in subscription_product.variants %}
+            {% assign variant_id = variant.id | append: '' %}
+            {% if variant_id == configured_variant_id %}
+                {% assign subscription_variant = variant %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign selling_plan_allocation = blank %}
+    {% assign configured_selling_plan_id = block.settings.selling_plan_id | append: '' %}
+    {% if subscription_variant != blank %}
+        {% for allocation in subscription_variant.selling_plan_allocations %}
+            {% assign selling_plan_id = allocation.selling_plan.id | append: '' %}
+            {% if selling_plan_id == configured_selling_plan_id %}
+                {% assign selling_plan_allocation = allocation %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign recurring_price = subscription_variant.price %}
+    {% assign recurring_compare_at_price = subscription_variant.compare_at_price %}
+    {% if selling_plan_allocation != blank %}
+        {% assign recurring_price = selling_plan_allocation.price %}
+        {% assign recurring_compare_at_price = selling_plan_allocation.compare_at_price %}
+
+        {% comment %}
+            allocation.price is the FIRST delivery, which is 0 on a "first bottle free"
+            plan. What the customer pays from the second delivery on is the last price
+            adjustment of the allocation (the plan carries order_count: 1 at 100% off,
+            then the ongoing discount), so the note is taken from there.
+        {% endcomment %}
+        {% for adjustment in selling_plan_allocation.price_adjustments %}
+            {% assign recurring_price = adjustment.price %}
+        {% endfor %}
+    {% endif %}
+
+    {% assign subscription_title = block.settings.title %}
+    {% if subscription_title == blank %}
+        {% assign subscription_title = subscription_product.title %}
+    {% endif %}
+
+    {% assign subscription_image = block.settings.image %}
+    {% if subscription_image == blank %}
+        {% assign subscription_image = subscription_product.featured_image %}
+    {% endif %}
+
+    {% assign free_label = block.settings.free_label %}
+    {% if free_label == blank %}
+        {% assign free_label = 'purchase-form.settings.first_free' | t %}
+    {% endif %}
+
+    {% comment %}
+        Supply cards carry data-optional-subscription-offer when their product block
+        opts in, and only in the subscription templates. As soon as one card opts in
+        the row follows the selection: it shows for those cards and stays out of the
+        cart for every other one. Sections where no card opts in are unaffected.
+    {% endcomment %}
+    {% assign requires_offer_card = false %}
+    {% for _block in section.blocks %}
+        {% if _block.type == 'product' and _block.settings.optional_subscription %}
+            {% assign requires_offer_card = true %}
+        {% endif %}
+    {% endfor %}
+
+    <div
+        class="hero-product__optional-subscription"
+        data-optional-subscription
+        data-main-form-only
+        data-subscription-variant-id="{{ block.settings.subscription_variant_id | escape }}"
+        data-subscription-selling-plan-id="{{ block.settings.selling_plan_id | escape }}"
+        {% if block.settings.hide_on_onetime %}data-hide-on-onetime="true"{% endif %}
+        {% if requires_offer_card %}data-require-offer-card="true"{% endif %}
+    >
+        <div class="c-optional-subscription">
+            {% comment %}
+                Only the heading goes into __main: on this form the price and the image
+                belong to the selected supply card, not to a single section product.
+            {% endcomment %}
+            {% if block.settings.heading != blank %}
+                <div class="c-optional-subscription__main">
+                    <span>{{ block.settings.heading }}</span>
+                </div>
+            {% endif %}
+            {% capture optional_subscription_row %}
+                {% if block.settings.show_checkbox %}
+                    <div class="custom-checkbox"><i class="e-icon e-icon-checkmark"></i></div>
+                {% endif %}
+                {% if subscription_image != blank %}
+                    <img loading="lazy" src="{{ subscription_image | image_url }}" width="{{ subscription_image.width }}" height="{{ subscription_image.height }}" alt="{{ subscription_title | escape }}" />
+                {% endif %}
+                <p><strong>{{ subscription_title }}</strong></p>
+                <div class="e-price e-price--highlight">
+                    <div class="e-price__main">
+                        <div class="e-price__current">{{ free_label }}</div>
+                        {% if subscription_variant.price > 0 %}
+                            <div class="e-price__old">{{ subscription_variant.price | money_without_trailing_zeros }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if block.settings.subscription_note != blank %}
+                    <small>
+                        {{ block.settings.subscription_note }}
+                        {% if block.settings.subscription_note_mode == 'prices' %}
+                            {% if recurring_price > 0 %}
+                                (
+                                {% if recurring_compare_at_price > recurring_price %}
+                                    <s>{{ recurring_compare_at_price | money_without_trailing_zeros }}</s>
+                                {% endif %}
+                                {{ recurring_price | money_without_trailing_zeros }}
+                                )
+                            {% endif %}
+                        {% else %}
+                            · <a href="/pages/subscriptions">{{ 'purchase-form.settings.cancel-anytime' | t }}</a>
+                        {% endif %}
+                    </small>
+                {% endif %}
+            {% endcapture %}
+
+            {% if block.settings.show_checkbox %}
+                {% comment %}
+                    Opt-out row: the label forwards its clicks to the input, so the whole
+                    row toggles the subscription the way the product-header widget does.
+                {% endcomment %}
+                <label class="c-optional-subscription__option">
+                    <input type="checkbox" name="subscription" checked />
+                    {{ optional_subscription_row }}
+                </label>
+            {% else %}
+                {% comment %}
+                    The serum is included, not opted into, so the row shows no control: the
+                    wrapper is a div (a label would forward its clicks to the input) and the
+                    input is disabled on top of being hidden. It stays in the markup because
+                    n-product-optional-subscription.js reads its checked state - a disabled
+                    input still reports checked - to append the subscription line item.
+                {% endcomment %}
+                <div class="c-optional-subscription__option">
+                    <input type="checkbox" name="subscription" checked hidden disabled />
+                    {{ optional_subscription_row }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        // This snippet ships inside the purchase form's <template id="async">, which
+        // n-product-page-async-section.js injects after DOMContentLoaded has already
+        // fired - so when the event is past the script is requested straight away.
+        // loadScriptOnce is id-guarded, so a repeated form swap does not re-add it.
+        (function () {
+            var load = function () {
+                loadScriptOnce('n-product-optional-subscription.js', '{{ 'n-product-optional-subscription.js' | asset_url }}');
+            };
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', load);
+            }
+            else {
+                load();
+            }
+        })();
+    </script>
+
+{% endif %}

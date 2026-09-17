@@ -84,6 +84,9 @@
                                     {% if subscription_is_on == true and block.settings.discount_code != blank %}
                                     data-discount-code="{{ block.settings.discount_code }}"
                                     {% endif %}
+                                    {% if subscription_is_on == true and block.settings.optional_subscription %}
+                                    data-optional-subscription-offer="true"
+                                    {% endif %}
                                     data-product-price="{{ product_sale_price }}">
 
                                     <label for="{{ section.id }}-{{ product_title_tag }}">
