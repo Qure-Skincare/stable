@@ -15,7 +15,8 @@
   "sections": {
     "purchase-form-landing": {
       "settings": {
-        "hide_certified": false
+        "hide_certified": false,
+        "klaviyo_form_name": ""
       },
       "blocks": {
         "product_RBCPe8": {
