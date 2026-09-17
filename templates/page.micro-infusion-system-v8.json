@@ -186,7 +186,7 @@
             "image": "shopify://shop_images/Img_57.png",
             "free_label": "",
             "subscription_note": "Smoother and softer-looking skin (2-month supply)",
-            "subscription_note_mode": "cancel",
+            "subscription_note_mode": "prices",
             "hide_on_onetime": false,
             "show_checkbox": false
           }
