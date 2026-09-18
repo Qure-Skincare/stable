@@ -265,48 +265,6 @@
           "type": "type",
           "settings": {}
         },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Dark Spots & Wrinkles",
-            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
-            "preselected": false
-          }
-        },
-        "product_eiHVrp": {
-          "type": "product",
-          "settings": {
-            "product": "skin-foundation-system",
-            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_xJpDep": {
-          "type": "product",
-          "settings": {
-            "product": "even-firm-system",
-            "image": "shopify://shop_images/Even_FirmSystem.jpg",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_xwqzya": {
-          "type": "product",
-          "settings": {
-            "product": "total-skin-renewal-system",
-            "image": "shopify://shop_images/TotalSkinRenewalSystem.jpg",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "type_yDwWmt": {
-          "type": "type",
-          "settings": {}
-        },
         "product_type_YrPQrV": {
           "type": "product_type",
           "settings": {
@@ -345,8 +303,17 @@
             "reserved": false
           }
         },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Dark Spots & Wrinkles",
+            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
+            "preselected": false
+          }
+        },
         "product_efxkeJ": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hair-loss-prevention-system",
             "image": "shopify://shop_images/HairlossPreventionS.jpg",
@@ -354,6 +321,40 @@
             "soldout": false,
             "reserved": false
           }
+        },
+        "product_eiHVrp": {
+          "type": "product",
+          "settings": {
+            "product": "skin-foundation-system",
+            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xJpDep": {
+          "type": "product",
+          "settings": {
+            "product": "even-firm-system",
+            "image": "shopify://shop_images/Even_FirmSystem.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xwqzya": {
+          "type": "product",
+          "settings": {
+            "product": "total-skin-renewal-system",
+            "image": "shopify://shop_images/TotalSkinRenewalSystem.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
         }
       },
       "block_order": [
@@ -363,16 +364,16 @@
         "product_8hJgNj",
         "product_BJXNMB",
         "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_eiHVrp",
-        "product_xJpDep",
-        "product_xwqzya",
-        "type_yDwWmt",
         "product_type_YrPQrV",
         "product_KKbDAE",
         "product_gia3hC",
         "product_gNjH9L",
-        "product_efxkeJ"
+        "product_type_VLXcAn",
+        "product_efxkeJ",
+        "product_eiHVrp",
+        "product_xJpDep",
+        "product_xwqzya",
+        "type_yDwWmt"
       ],
       "settings": {
         "heading": "Choose Your Bundle",
