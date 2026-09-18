@@ -12,7 +12,7 @@
 
 <div class="c-accordion c-accordion--lines">
     <div class="c-accordion__list">
-        {%- assign default_order = 'key_benefits,how_it_works,what_to_expect,what_s_included,technical_specifications,full_ingredient_list,how_to_use,why_we_love_it,clean_ingredients' | split: ',' -%}
+        {%- assign default_order = 'key_benefits,how_it_works,what_to_expect,what_s_included,about_your_free_gift,technical_specifications,full_ingredient_list,how_to_use,why_we_love_it,clean_ingredients' | split: ',' -%}
 
         {%- assign order_keys = default_order -%}
         {%- if product.metafields.custom.product_header_accordion_order != blank -%}
@@ -31,6 +31,7 @@
                     {%- when 'how_it_works' -%}{%- assign accordion_title = 'How It Works' -%}
                     {%- when 'what_to_expect' -%}{%- assign accordion_title = 'What To Expect' -%}
                     {%- when 'what_s_included' -%}{%- assign accordion_title = 'What’s Included' -%}
+                    {%- when 'about_your_free_gift' -%}{%- assign accordion_title = 'About your free Gift' -%}
                     {%- when 'technical_specifications' -%}{%- assign accordion_title = 'Technical Specifications' -%}
                     {%- when 'full_ingredient_list' -%}{%- assign accordion_title = 'Full ingredient list' -%}
                     {%- when 'how_to_use' -%}{%- assign accordion_title = 'How To Use' -%}
