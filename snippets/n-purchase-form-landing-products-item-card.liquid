@@ -137,7 +137,7 @@
                                         {% else %}
                                             <div class="e-pill-save">Save {{ product_price_diff }} Today</div>
                                         {% endif %}
-                                        {% if template.suffix == 'micro-infusion-system-v7' %}
+                                        {% if template.suffix == 'micro-infusion-system-v7' or template.suffix == 'micro-infusion-system-v8' %}
                                             <div class="e-price">
                                                 <div class="e-price__main">
                                                     {% if product_subscription_price != blank %}
@@ -188,7 +188,7 @@
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         {% endif %}
 
-                                        {% if template.suffix == 'micro-infusion-system-v7' %}
+                                        {% if template.suffix == 'micro-infusion-system-v7' or template.suffix == 'micro-infusion-system-v8' %}
                                             <figcaption>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</figcaption>
                                         {% elsif product_subscription_price != blank %}
                                             <figcaption>{{ block.settings.product_selling_plan_text }}</figcaption>

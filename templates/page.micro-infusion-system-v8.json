@@ -370,7 +370,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "90",
         "hide_bottom": true,
-        "hide_certified": true
+        "hide_certified": true,
+        "hide_title_on_subscription": true
       }
     },
     "n_trusted_reviews_DUlFYg": {
