@@ -250,7 +250,8 @@
         "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
         "badge_text": "Free Gift",
         "price": "$79",
-        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp"
+        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp",
+        "gift_text": ""
       }
     },
     "n_index-daily-cleanser": {
@@ -422,7 +423,7 @@
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
             "product_image": "shopify://shop_images/Img_56.png",
             "product_text": "Claudia uses...",
-            "product_title": "Neck & Décollatage LED Device"
+            "product_title": "Neck & Décolletage LED System"
           }
         },
         "slider_bjVaKx": {
@@ -467,7 +468,7 @@
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
             "product_image": "shopify://shop_images/Img_56.png",
             "product_text": "Mary uses...",
-            "product_title": "Neck & Décollatage LED Device"
+            "product_title": "Neck & Décolletage LED System"
           }
         }
       },
@@ -522,7 +523,10 @@
         "button_label": "Support Now",
         "button_url": "#",
         "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp"
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "",
+        "price": "",
+        "gift_text": ""
       }
     },
     "n_index-top-rated": {
