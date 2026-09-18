@@ -284,9 +284,9 @@
         "product_eiY89h": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779530479,
+            "product_selling_plan": 9150726383,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
@@ -299,7 +299,7 @@
             "subheading": "2 treatments",
             "product_selling_plan_text": "2 treatments every 4 weeks",
             "text": "",
-            "image": "shopify://shop_images/MI_1_month_W.webp",
+            "image": "shopify://shop_images/MI_1.5_1month_W_7e2ac492-f531-40c6-a990-c7034d5b2337.jpg",
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
