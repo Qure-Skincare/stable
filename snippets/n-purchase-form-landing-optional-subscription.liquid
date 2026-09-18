@@ -147,7 +147,7 @@
                                 {{ recurring_price | money_without_trailing_zeros }}
                                 )
                             {% endif %}
-                        {% else %}
+                        {% elsif block.settings.subscription_note_mode == 'cancel' %}
                             · <a href="/pages/subscriptions">{{ 'purchase-form.settings.cancel-anytime' | t }}</a>
                         {% endif %}
                     </small>
