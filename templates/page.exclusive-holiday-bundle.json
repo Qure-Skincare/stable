@@ -303,14 +303,6 @@
             "reserved": false
           }
         },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Dark Spots & Wrinkles",
-            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
-            "preselected": false
-          }
-        },
         "product_efxkeJ": {
           "type": "product",
           "disabled": true,
@@ -320,6 +312,18 @@
             "preselected": false,
             "soldout": false,
             "reserved": false
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Dark Spots & Wrinkles",
+            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
+            "preselected": false
           }
         },
         "product_eiHVrp": {
@@ -351,10 +355,6 @@
             "soldout": false,
             "reserved": false
           }
-        },
-        "type_yDwWmt": {
-          "type": "type",
-          "settings": {}
         }
       },
       "block_order": [
@@ -368,12 +368,12 @@
         "product_KKbDAE",
         "product_gia3hC",
         "product_gNjH9L",
-        "product_type_VLXcAn",
         "product_efxkeJ",
+        "type_yDwWmt",
+        "product_type_VLXcAn",
         "product_eiHVrp",
         "product_xJpDep",
-        "product_xwqzya",
-        "type_yDwWmt"
+        "product_xwqzya"
       ],
       "settings": {
         "heading": "Choose Your Bundle",
