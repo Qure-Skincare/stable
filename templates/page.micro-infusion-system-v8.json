@@ -178,15 +178,15 @@
         "optional_subscription_Yd3Kq7": {
           "type": "optional-subscription",
           "settings": {
-            "heading": "Add Your Free Serum:",
+            "heading": "Gift included",
             "product": "all-in-one-serum-copy",
             "subscription_variant_id": "50773161476335",
             "selling_plan_id": "9146630383",
-            "title": "All-In-One Serum",
-            "image": "shopify://shop_images/all-in-one-serum.webp",
+            "title": "Pro Aging Daily Serum",
+            "image": "shopify://shop_images/Img_57.png",
             "free_label": "",
-            "subscription_note": "Every 4 weeks: Receive a new All-In-One Serum",
-            "subscription_note_mode": "none",
+            "subscription_note": "Smoother and softer-looking skin (2-month supply)",
+            "subscription_note_mode": "cancel",
             "hide_on_onetime": false,
             "show_checkbox": false
           }
@@ -197,6 +197,7 @@
         },
         "product_type_QKQhNr": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
@@ -205,6 +206,7 @@
         },
         "product_Xf8A6C": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -212,6 +214,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -235,6 +238,7 @@
         },
         "product_DBd4ef": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -280,12 +284,13 @@
         "product_eiY89h": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779530479,
+            "product_selling_plan": 9150726383,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -294,7 +299,7 @@
             "subheading": "2 treatments",
             "product_selling_plan_text": "2 treatments every 4 weeks",
             "text": "",
-            "image": "shopify://shop_images/MI_1_month_W.webp",
+            "image": "shopify://shop_images/MI_1.5_1month_W_7e2ac492-f531-40c6-a990-c7034d5b2337.jpg",
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
@@ -310,9 +315,9 @@
         "product_EKAAzA": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779497711,
+            "product_selling_plan": 9149710575,
             "gift": "",
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
@@ -322,21 +327,21 @@
             "best": false,
             "free_shipping": false,
             "preselected": true,
-            "heading": "90-day supply!",
-            "subheading": "6 treatments",
-            "product_selling_plan_text": "6 treatments every 12 weeks",
+            "heading": "60-day supply!",
+            "subheading": "4 treatments",
+            "product_selling_plan_text": "4 treatments every 8 weeks",
             "text": "",
-            "image": "shopify://shop_images/MI_3_month_W.webp",
-            "product_discount_percent": 19,
+            "image": "shopify://shop_images/MI_1.5_2month_DS_W.jpg",
+            "product_discount_percent": 20,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 6,
+            "total_treatments": 4,
             "left_items": 56,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 93,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+            "included_text": "<ul><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li><li><strong>Free </strong>PRO Aging Serum</li></ul>"
           }
         }
       },
@@ -354,11 +359,11 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": false,
+        "hide_types": true,
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 62,
+        "subscription_discount_max_percent": 47,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",
         "type": "card",

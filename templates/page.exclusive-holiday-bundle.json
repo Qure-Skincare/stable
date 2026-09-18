@@ -226,8 +226,8 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Signs of Aging",
-            "image": "shopify://shop_images/category-signs-of-aging.webp",
+            "heading": "Micro-Infusion Systems",
+            "image": "shopify://shop_images/Micro-Infusion_Systems_Category_d575325d-6fb6-4867-9b39-806e15023dc8.webp",
             "preselected": true
           }
         },
@@ -265,53 +265,11 @@
           "type": "type",
           "settings": {}
         },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Dark Spots & Wrinkles",
-            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
-            "preselected": false
-          }
-        },
-        "product_eiHVrp": {
-          "type": "product",
-          "settings": {
-            "product": "skin-foundation-system",
-            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_xJpDep": {
-          "type": "product",
-          "settings": {
-            "product": "even-firm-system",
-            "image": "shopify://shop_images/Even_FirmSystem.jpg",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "product_xwqzya": {
-          "type": "product",
-          "settings": {
-            "product": "total-skin-renewal-system",
-            "image": "shopify://shop_images/TotalSkinRenewalSystem.jpg",
-            "preselected": false,
-            "soldout": false,
-            "reserved": false
-          }
-        },
-        "type_yDwWmt": {
-          "type": "type",
-          "settings": {}
-        },
         "product_type_YrPQrV": {
           "type": "product_type",
           "settings": {
-            "heading": "Acne & Breakouts",
-            "image": "shopify://shop_images/category-acne-breakouts.webp",
+            "heading": "LED Performance Systems",
+            "image": "shopify://shop_images/LED_Performance_Systems_Category.webp",
             "preselected": false
           }
         },
@@ -347,9 +305,52 @@
         },
         "product_efxkeJ": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hair-loss-prevention-system",
             "image": "shopify://shop_images/HairlossPreventionS.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "type_yDwWmt": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Skin Health Systems",
+            "image": "shopify://shop_images/Skin_Health_Systems_Category.webp",
+            "preselected": false
+          }
+        },
+        "product_eiHVrp": {
+          "type": "product",
+          "settings": {
+            "product": "skin-foundation-system",
+            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xJpDep": {
+          "type": "product",
+          "settings": {
+            "product": "even-firm-system",
+            "image": "shopify://shop_images/Even_FirmSystem.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_xwqzya": {
+          "type": "product",
+          "settings": {
+            "product": "total-skin-renewal-system",
+            "image": "shopify://shop_images/TotalSkinRenewalSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -363,16 +364,16 @@
         "product_8hJgNj",
         "product_BJXNMB",
         "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_eiHVrp",
-        "product_xJpDep",
-        "product_xwqzya",
-        "type_yDwWmt",
         "product_type_YrPQrV",
         "product_KKbDAE",
         "product_gia3hC",
         "product_gNjH9L",
-        "product_efxkeJ"
+        "product_efxkeJ",
+        "type_yDwWmt",
+        "product_type_VLXcAn",
+        "product_eiHVrp",
+        "product_xJpDep",
+        "product_xwqzya"
       ],
       "settings": {
         "heading": "Choose Your Bundle",

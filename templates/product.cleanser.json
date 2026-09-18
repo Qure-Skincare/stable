@@ -114,6 +114,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -144,6 +145,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -175,6 +177,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -217,6 +220,7 @@
             "gift_image": "shopify://shop_images/gift_headband_and_wristband.webp",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -247,6 +251,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -278,6 +283,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -807,6 +813,28 @@
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
+    },
+    "n_sticky_button_variants_8EfCRU": {
+      "type": "n-sticky-button-variants",
+      "blocks": {
+        "variant_WmrQaK": {
+          "type": "variant",
+          "settings": {
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "variant_WmrQaK"
+      ],
+      "disabled": true,
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "",
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [
@@ -820,6 +848,7 @@
     "n_page_microinfusion_complete_system_cleanser",
     "n_comparison_table_mK4pQx",
     "17830002457c285fc3",
-    "n_faq_cleanser"
+    "n_faq_cleanser",
+    "n_sticky_button_variants_8EfCRU"
   ]
 }
