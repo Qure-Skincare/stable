@@ -156,6 +156,8 @@
 
                                             {% if block.settings.heading contains '90' %}
                                                 <p><strong>Just {{ product_price_divided_90 }}/day for first month</strong></p>
+                                            {% elsif block.settings.heading contains '60' %}
+                                                <p><strong>Just {{ product_price_divided_60 }}/day for first month</strong></p>
                                             {% else %}
                                                 <p><strong>Just {{ product_price_divided_30 }}/day for first month</strong></p>
                                             {% endif %}
