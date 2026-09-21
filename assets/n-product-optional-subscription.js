@@ -145,10 +145,15 @@
         const properties = readFormProperties(formData);
         if (Object.keys(properties).length > 0) primaryItem.properties = properties;
 
+        // The add-on is priced by its selling plan, not by the primary product, so
+        // nothing in the cart ties the two lines together. The parent variant id is
+        // stored on the add-on line so the cart drawer's orphan cleanup can remove
+        // it once the primary line is gone (see computeOrphanGiftOps).
         const subscriptionItem = {
             id: subscriptionId,
             quantity: 1,
-            selling_plan: subscriptionSellingPlan
+            selling_plan: subscriptionSellingPlan,
+            properties: { _optional_subscription_parent: String(id) }
         };
 
         const addToCartJsonFn = getAddToCartJson();

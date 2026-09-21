@@ -306,19 +306,38 @@ const computeGiftOps = (cart) => {
 // whose properties[_gift] points at it) is present. When the parent is
 // removed, its conditional discount no longer applies and the "gift" would
 // linger as a paid line - so orphaned gifts are removed by line key.
+//
+// The same applies to the optional-subscription add-on (see
+// n-product-optional-subscription.js): its line carries
+// properties[_optional_subscription_parent] = parent variant id, and it is
+// removed once no line with that variant id remains in the cart.
 const computeOrphanGiftOps = (cart) => {
     const updates = {};
 
     cart.items.forEach(item => {
-        const giftRef = item.properties && item.properties['_product_gift'];
-        if (!giftRef) return;
+        if (!item.properties) return;
 
-        const parentExists = cart.items.some(parent =>
-            parent.properties && parent.properties['_gift'] == giftRef
-        );
+        const giftRef = item.properties['_product_gift'];
+        if (giftRef) {
+            const parentExists = cart.items.some(parent =>
+                parent.properties && parent.properties['_gift'] == giftRef
+            );
 
-        if (!parentExists) {
-            updates[item.key] = 0;
+            if (!parentExists) {
+                updates[item.key] = 0;
+            }
+            return;
+        }
+
+        const parentRef = item.properties['_optional_subscription_parent'];
+        if (parentRef) {
+            const parentExists = cart.items.some(parent =>
+                parent.key !== item.key && String(parent.id) === String(parentRef)
+            );
+
+            if (!parentExists) {
+                updates[item.key] = 0;
+            }
         }
     });
 
