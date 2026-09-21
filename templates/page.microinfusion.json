@@ -226,6 +226,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": true,
@@ -256,6 +257,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": true,
@@ -286,6 +288,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -328,6 +331,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": true,
@@ -358,6 +362,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": true,
@@ -388,6 +393,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -430,6 +436,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": true,
@@ -461,6 +468,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -492,6 +500,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -545,7 +554,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "90",
         "hide_bottom": true,
-        "hide_certified": true
+        "hide_certified": true,
+        "hide_title_on_subscription": false
       }
     },
     "n_press_reviews_3zGerf": {
@@ -2281,7 +2291,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.<br/><br/>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments or even mix the two serums together!<br/><br/>Visible benefits of Micro-Infusion may include:<br/></p><p>More even-looking skin tone and texture</p><p>Glowing, refreshed-looking complexion</p><p>Softer-looking fine lines</p><p>Skin that feels renewed and rejuvenated<br/></p>"
+            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.<br/><br/>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.<br/><br/>You can switch up your treatments by alternating the serums every two weeks.<br/><br/>Visible benefits of Micro-Infusion may include:<br/></p><p>More even-looking skin tone and texture</p><p>Glowing, refreshed-looking complexion</p><p>Softer-looking fine lines</p><p>Skin that feels renewed and rejuvenated<br/></p>"
           }
         },
         "accordion_eFyLye": {
