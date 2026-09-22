@@ -1414,33 +1414,6 @@
             "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
           }
         },
-        "product_bwjPcj": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "per_treatment": true,
-            "preselected": false,
-            "heading": "180 days",
-            "subheading": "",
-            "product_selling_plan_text": "",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
         "type_aJwQ9q": {
           "type": "type",
           "settings": {}
@@ -1526,10 +1499,12 @@
         },
         "type_9hWqHH": {
           "type": "type",
+          "disabled": true,
           "settings": {}
         },
         "product_type_eNahTw": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "jndnjdjnd",
             "image": "shopify://shop_images/blue-video-thumbnail-2.webp",
@@ -1538,6 +1513,7 @@
         },
         "product_9p7fXz": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -1574,7 +1550,6 @@
         "product_type_accordion_DQKQhNr",
         "product_Xf8A6C",
         "product_DBd4ef",
-        "product_bwjPcj",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_type_accordion_SVLXcAn",
