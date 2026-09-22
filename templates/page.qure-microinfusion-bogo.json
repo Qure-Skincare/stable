@@ -313,54 +313,6 @@
         "accordion_text": ""
       }
     },
-    "n_achievement_goals_Pzxmim": {
-      "type": "n_achievement-goals",
-      "blocks": {
-        "content_kPiDiQ": {
-          "type": "image_with_text",
-          "settings": {
-            "tab_heading": "Minimize Fine Lines & Wrinkles",
-            "image": "shopify://shop_images/tami.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "badge_text": "Verified",
-            "username": "Tami T.",
-            "text": "<h3>Minimize Fine Lines and Wrinkles</h3><p>Smooth, plump, and refresh your skin’s appearance from within. Qure’s Micro-Infusion helps improve the look of collagen-depleted skin, restores hydration, and supports the skin’s natural barrier — all in one step.</p><p>[hr]</p><ul><li>Deeply hydrates to leave skin dewy and plump</li><li>Visibly softens fine lines for a smoother, more youthful look</li><li>Strengthens the skin barrier to support long-lasting firmness</li></ul>"
-          }
-        },
-        "content_XrJqFM": {
-          "type": "image_with_text",
-          "settings": {
-            "tab_heading": "Improve Tone & Texture",
-            "image": "shopify://shop_images/monika.webp",
-            "flag": "shopify://shop_images/australia_f.webp",
-            "badge_text": "Verified",
-            "username": "Monika J.",
-            "text": "<h3>Improve Tone & Texture</h3><p>Gentle microneedling device boosts cell turnover and delivers brightening ingredients deep into the skin to visibly smooth, clarify, and even out tone.</p><p>[hr]</p><ul><li>Refines rough texture by promoting skin renewal</li><li>Fades dark spots and post-acne marks for a more even tone</li><li>Helps minimize the look of pores for a smoother, clearer complexion</li></ul>"
-          }
-        },
-        "content_cQLdrN": {
-          "type": "image_with_text",
-          "settings": {
-            "tab_heading": "Boost Skin’s Glow",
-            "image": "shopify://shop_images/ellie.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "badge_text": "Verified",
-            "username": "Ellie V.",
-            "text": "<h3>Boost Glow and Radiance</h3><p>Restore skin glow by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p><p>[hr]</p><ul><li>Brightens dull skin for a healthy, radiant complexion</li><li>Enhances serum absorption for more visible results</li><li>Leaves skin looking firmer, smoother, and refreshed</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "content_kPiDiQ",
-        "content_XrJqFM",
-        "content_cQLdrN"
-      ],
-      "name": "t:sections.n_achievement-goals.name",
-      "settings": {
-        "use_own_file": false,
-        "heading": "<h2>Achieve your skincare goals</h2>"
-      }
-    },
     "n_press_reviews_lVZt5L": {
       "type": "n_press-reviews",
       "blocks": {
@@ -1151,7 +1103,7 @@
             "free_shipping": false,
             "per_treatment": true,
             "preselected": true,
-            "heading": "6 Month Supply - Buy 3 Get 3 Free",
+            "heading": "6 Month Supply - Buy 3 Get 3 Free Autumn Sale",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/img_01.webp",
@@ -1264,6 +1216,54 @@
         "delivery_switcher_product": "",
         "guarantee_period": "90",
         "available-stocks": false
+      }
+    },
+    "n_achievement_goals_Pzxmim": {
+      "type": "n_achievement-goals",
+      "blocks": {
+        "content_kPiDiQ": {
+          "type": "image_with_text",
+          "settings": {
+            "tab_heading": "Minimize Fine Lines & Wrinkles",
+            "image": "shopify://shop_images/tami.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "badge_text": "Verified",
+            "username": "Tami T.",
+            "text": "<h3>Minimize Fine Lines and Wrinkles</h3><p>Smooth, plump, and refresh your skin’s appearance from within. Qure’s Micro-Infusion helps improve the look of collagen-depleted skin, restores hydration, and supports the skin’s natural barrier — all in one step.</p><p>[hr]</p><ul><li>Deeply hydrates to leave skin dewy and plump</li><li>Visibly softens fine lines for a smoother, more youthful look</li><li>Strengthens the skin barrier to support long-lasting firmness</li></ul>"
+          }
+        },
+        "content_XrJqFM": {
+          "type": "image_with_text",
+          "settings": {
+            "tab_heading": "Improve Tone & Texture",
+            "image": "shopify://shop_images/monika.webp",
+            "flag": "shopify://shop_images/australia_f.webp",
+            "badge_text": "Verified",
+            "username": "Monika J.",
+            "text": "<h3>Improve Tone & Texture</h3><p>Gentle microneedling device boosts cell turnover and delivers brightening ingredients deep into the skin to visibly smooth, clarify, and even out tone.</p><p>[hr]</p><ul><li>Refines rough texture by promoting skin renewal</li><li>Fades dark spots and post-acne marks for a more even tone</li><li>Helps minimize the look of pores for a smoother, clearer complexion</li></ul>"
+          }
+        },
+        "content_cQLdrN": {
+          "type": "image_with_text",
+          "settings": {
+            "tab_heading": "Boost Skin’s Glow",
+            "image": "shopify://shop_images/ellie.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "badge_text": "Verified",
+            "username": "Ellie V.",
+            "text": "<h3>Boost Glow and Radiance</h3><p>Restore skin glow by infusing hydrating, brightening ingredients deep into the skin for a fresh, radiant finish that lasts.</p><p>[hr]</p><ul><li>Brightens dull skin for a healthy, radiant complexion</li><li>Enhances serum absorption for more visible results</li><li>Leaves skin looking firmer, smoother, and refreshed</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "content_kPiDiQ",
+        "content_XrJqFM",
+        "content_cQLdrN"
+      ],
+      "name": "t:sections.n_achievement-goals.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Achieve your skincare goals</h2>"
       }
     },
     "n_features_marquee_vMOx3w": {
