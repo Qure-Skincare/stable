@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "n_experts-pick": {
+      "counter": "0%"
+    },
     "n_expert-reviews": {
       "watch": "Watch:"
     },

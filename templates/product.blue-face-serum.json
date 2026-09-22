@@ -412,6 +412,44 @@
         "wistia_url": "5p8ej4e9m3"
       }
     },
+    "n_experts_pick_blue_face_serum": {
+      "type": "n_experts-pick",
+      "blocks": {
+        "percent_clarity": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Clarity & Tone</h6><p>Evens out tone over time</p>",
+            "percent": 100
+          }
+        },
+        "percent_glow": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Radiant Glow</h6><p>Less fatigued, more vibrant</p>",
+            "percent": 100
+          }
+        },
+        "percent_texture": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Smooth Texture</h6><p>Softer with consistent use</p>",
+            "percent": 100
+          }
+        }
+      },
+      "block_order": [
+        "percent_clarity",
+        "percent_glow",
+        "percent_texture"
+      ],
+      "name": "t:sections.n_experts-pick.name",
+      "settings": {
+        "section_id": "",
+        "badge_text": "Dermatologist Reviewed",
+        "text": "<h2>Recommended by Experts</h2><p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> — and a smart addition for anyone using LED light therapy.”</p>",
+        "image": "shopify://shop_images/dr-shah-maxfield-2.webp"
+      }
+    },
     "n_features_marquee_blue_face_serum": {
       "type": "n_features-marquee",
       "blocks": {
@@ -743,6 +781,7 @@
     "n_features_overview_blue_face_serum",
     "n_base_section_led_sync_blue_face_serum",
     "n_ingredients_video_blue_face_serum",
+    "n_experts_pick_blue_face_serum",
     "n_features_marquee_blue_face_serum",
     "n_accordion_tiles_square_blue_face_serum",
     "n_across_image_banner_blue_face_serum",

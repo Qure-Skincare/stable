@@ -1354,6 +1354,9 @@
         "n_ingredients-video": {
             "name": "Ingredients video"
         },
+        "n_experts-pick": {
+            "name": "Experts pick"
+        },
         "beauty-benefits": {
             "name": "Beauty benefits"
         },

@@ -1,0 +1,105 @@
+{% doc %}
+  Renders an experts pick section with quote, image and animated percent tiles.
+{% enddoc %}
+
+<section class="experts-pick"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        <article>
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge">
+                    <span class="e-checkmark"></span>
+                    {{ section.settings.badge_text }}
+                </div>
+            {% endif %}
+            {{ section.settings.text }}
+        </article>
+
+        {% if section.settings.image != blank %}
+            <picture>
+                <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+            </picture>
+        {% endif %}
+
+        {% assign percent_blocks = section.blocks | where: 'type', 'percent' %}
+        {% if percent_blocks.size > 0 %}
+            <div class="ingredient-tiles">
+                {% for block in section.blocks %}
+                    {% if block.type == 'percent' %}
+                        <div class="e-ingredient-info" style="--percent: {{ block.settings.percent }}" data-percent="{{ block.settings.percent }}">
+                            <div class="e-ingredient-info__row">
+                                <div class="e-ingredient-info__text">
+                                    {{ block.settings.text }}
+                                </div>
+                                <div class="e-ingredient-info__counter">{{ 'sections.n_experts-pick.counter' | t }}</div>
+                            </div>
+                            <div class="e-ingredient-info__track">
+                                <div class="e-ingredient-info__fill"></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("experts-pick", "https://qureskincaredns-stable.com/sections/experts-pick/experts-pick.js");
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_experts-pick.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "percent",
+            "name": "t:common.percent",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "range",
+                    "id": "percent",
+                    "label": "t:common.percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "default": 100
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_experts-pick.name"
+        }
+    ]
+}
+{% endschema %}
