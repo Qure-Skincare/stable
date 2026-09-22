@@ -403,6 +403,15 @@
         "accordion_text": ""
       }
     },
+    "n_ingredients_video_blue_face_serum": {
+      "type": "n_ingredients-video",
+      "name": "t:sections.n_ingredients-video.name",
+      "settings": {
+        "section_id": "",
+        "modifier": "blue-serum",
+        "wistia_url": "5p8ej4e9m3"
+      }
+    },
     "n_features_marquee_blue_face_serum": {
       "type": "n_features-marquee",
       "blocks": {
@@ -733,6 +742,7 @@
     "purchase-form-landing",
     "n_features_overview_blue_face_serum",
     "n_base_section_led_sync_blue_face_serum",
+    "n_ingredients_video_blue_face_serum",
     "n_features_marquee_blue_face_serum",
     "n_accordion_tiles_square_blue_face_serum",
     "n_across_image_banner_blue_face_serum",

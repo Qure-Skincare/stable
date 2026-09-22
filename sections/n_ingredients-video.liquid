@@ -1,0 +1,55 @@
+{% doc %}
+  Renders a full-width ingredients video section.
+{% enddoc %}
+
+<section class="ingredients-video{% if section.settings.modifier != 'none' %} ingredients-video--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        {% if section.settings.wistia_url != blank %}
+            <div class="ingredients-video__source">
+                <div class="c-wistia c-wistia--is-playing c-wistia--always-playing">
+                    <wistia-player media-id="{{ section.settings.wistia_url }}" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" muted silent-autoplay="false" play-bar-control="false" play-pause-control="false" volume-control="false" settings-control="false" fullscreen-control="false"></wistia-player>
+                    <div class="c-wistia__play"></div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "t:sections.n_ingredients-video.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "blue-serum",
+                    "label": "t:common.blue-serum"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_ingredients-video.name"
+        }
+    ]
+}
+{% endschema %}
