@@ -1414,6 +1414,33 @@
             "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
           }
         },
+        "product_bwjPcj": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "",
+            "subheading": "",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
         "type_aJwQ9q": {
           "type": "type",
           "settings": {}
@@ -1547,6 +1574,7 @@
         "product_type_accordion_DQKQhNr",
         "product_Xf8A6C",
         "product_DBd4ef",
+        "product_bwjPcj",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_type_accordion_SVLXcAn",
