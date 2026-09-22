@@ -1496,6 +1496,45 @@
             "preorder_percent": 93,
             "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
           }
+        },
+        "type_9hWqHH": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_eNahTw": {
+          "type": "product_type",
+          "settings": {
+            "heading": "jndnjdjnd",
+            "image": "shopify://shop_images/blue-video-thumbnail-2.webp",
+            "preselected": false
+          }
+        },
+        "product_9p7fXz": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "",
+            "subheading": "",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
         }
       },
       "block_order": [
@@ -1513,7 +1552,10 @@
         "product_type_accordion_SVLXcAn",
         "product_type_accordion_DVLXcAn",
         "product_eiY89h",
-        "product_EKAAzA"
+        "product_EKAAzA",
+        "type_9hWqHH",
+        "product_type_eNahTw",
+        "product_9p7fXz"
       ],
       "custom_css": [
         ".e-features-list,.c-certified-box {display: none;}"
