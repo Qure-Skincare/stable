@@ -1357,6 +1357,9 @@
         "n_experts-pick": {
             "name": "Experts pick"
         },
+        "n_customers-video": {
+            "name": "Customers video"
+        },
         "beauty-benefits": {
             "name": "Beauty benefits"
         },

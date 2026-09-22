@@ -543,6 +543,102 @@
         "heading": "<h2>Made gentle for all skin types</h2>"
       }
     },
+    "n_customers_video_blue_face_serum": {
+      "type": "n_customers-video",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=wuIjXhlFUTU",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_5": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_6": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_7": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4",
+        "video_5",
+        "video_6",
+        "video_7"
+      ],
+      "name": "t:sections.n_customers-video.name",
+      "settings": {
+        "section_id": "",
+        "text": "<h2>Confident skin starts here</h2>"
+      }
+    },
     "n_across_image_banner_blue_face_serum": {
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
@@ -784,6 +880,7 @@
     "n_experts_pick_blue_face_serum",
     "n_features_marquee_blue_face_serum",
     "n_accordion_tiles_square_blue_face_serum",
+    "n_customers_video_blue_face_serum",
     "n_across_image_banner_blue_face_serum",
     "n_base_section_refill_blue_face_serum",
     "n_page_microinfusion_complete_system_blue_face_serum",
