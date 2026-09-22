@@ -383,7 +383,8 @@
         "section_id": "",
         "modifier": "blue-serum",
         "heading": "<h2>Meet the active blue</h2>",
-        "text": "<p>A smarter ritual for skin that lives under LEDs, screens, and everyday light.</p>"
+        "text": "<p>A smarter ritual for skin that lives under LEDs, screens, and everyday light.</p>",
+        "image": "shopify://shop_images/blue.webp"
       }
     },
     "n_base_section_led_sync_blue_face_serum": {
@@ -447,7 +448,7 @@
         "section_id": "",
         "badge_text": "Dermatologist Reviewed",
         "text": "<h2>Recommended by Experts</h2><p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> — and a smart addition for anyone using LED light therapy.”</p>",
-        "image": "shopify://shop_images/dr-shah-maxfield-2.webp"
+        "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
     "n_features_marquee_blue_face_serum": {
@@ -457,7 +458,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br>Orders Over $149"
+            "text": "Free Shipping On<br>Orders Over $100"
           }
         },
         "image_with_text_reviewed": {
@@ -670,7 +671,7 @@
         "button_label": "",
         "button_url": "",
         "wistia_url": "",
-        "image": "shopify://shop_images/Frame_1000004192.jpg",
+        "image": "shopify://shop_images/blue-video-thumbnail-2.webp",
         "video_image_cover": "",
         "accordion_text": ""
       }
@@ -866,7 +867,7 @@
       "settings": {
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Subscribe & Save {dyn}%",
+        "button-label": "",
         "button-url": ""
       }
     }
