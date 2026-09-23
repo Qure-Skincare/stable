@@ -52,7 +52,6 @@
           "type": "upsell-card",
           "settings": {
             "product": "q-rejuvalight-pro-facewear-blue-serum",
-            "image": "shopify://shop_images/bundle-thumbnail.webp",
             "badge_text": "Bundle & Save",
             "text": "<h6>Qure LED Routine Set</h6><p>Visibly reduce redness and signs of aging with our Q-Rejuvalight Pro LED Mask and Blue+ Face Serum duo.</p>"
           }
