@@ -64,7 +64,316 @@
       }
     },
     "header": {
-      "type": "n-header",
+      "type": "n-header-new",
+      "blocks": {
+        "tab_bestsellers": {
+          "type": "nav-tab",
+          "settings": {
+            "title": "Shop Bestsellers",
+            "pill": "",
+            "url": "",
+            "panel": "shop_bestsellers",
+            "heading": "Shop Bestsellers",
+            "button_label": "Shop all",
+            "button_url": "https://qureskincare.com/collections/best-sellers"
+          },
+          "blocks": {
+            "bestsellers_cards": {
+              "type": "nav-cards",
+              "settings": {},
+              "blocks": {
+                "bestsellers_card_1": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Micro-Infusion System",
+                    "label": "",
+                    "badge": "Reduce Fine Lines",
+                    "url": "https://qureskincare.com/pages/microinfusion",
+                    "image": "shopify://shop_images/header-promo-card-image-1.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "bestsellers_card_2": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "All-In-One Serum",
+                    "label": "",
+                    "badge": "Support skin as it changes",
+                    "url": "https://qureskincare.com/products/all-in-one-serum",
+                    "image": "shopify://shop_images/header-promo-card-image-2.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "bestsellers_card_3": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Red-Light Mask",
+                    "label": "",
+                    "badge": "Treat Wrinkles",
+                    "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+                    "image": "shopify://shop_images/header-promo-card-image-3.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "bestsellers_card_4": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Q-Renew LLLT Helmet",
+                    "label": "",
+                    "badge": "Thicker hair over time",
+                    "url": "https://qureskincare.com/products/hair-growth-helmet",
+                    "image": "shopify://shop_images/header-promo-card-image-4.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": true
+                  },
+                  "blocks": {}
+                },
+                "bestsellers_card_5": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Bundle & Save",
+                    "label": "",
+                    "badge": "Save up to 55%",
+                    "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+                    "image": "shopify://shop_images/header-promo-card-image-5.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "bestsellers_card_1",
+                "bestsellers_card_2",
+                "bestsellers_card_3",
+                "bestsellers_card_4",
+                "bestsellers_card_5"
+              ]
+            }
+          },
+          "block_order": [
+            "bestsellers_cards"
+          ]
+        },
+        "tab_benefits": {
+          "type": "nav-tab",
+          "settings": {
+            "title": "Shop by Benefits",
+            "pill": "",
+            "url": "",
+            "panel": "shop_benefits",
+            "heading": "Shop by Benefits",
+            "button_label": "Shop all",
+            "button_url": "https://qureskincare.com/collections/best-sellers"
+          },
+          "blocks": {
+            "benefits_cards": {
+              "type": "nav-cards",
+              "settings": {},
+              "blocks": {
+                "benefits_card_1": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Youth Aging",
+                    "label": "",
+                    "badge": "",
+                    "url": "https://qureskincare.com/collections/best-sellers",
+                    "image": "shopify://shop_images/header-promo-card-image-6.webp",
+                    "image_style": "background",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-6-mob.webp",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "benefits_card_2": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Hair Repair",
+                    "label": "",
+                    "badge": "",
+                    "url": "https://qureskincare.com/collections/best-sellers",
+                    "image": "shopify://shop_images/header-promo-card-image-7.webp",
+                    "image_style": "background",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-7-mob.webp",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "benefits_card_3": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Bright & Even Tone",
+                    "label": "",
+                    "badge": "",
+                    "url": "https://qureskincare.com/collections/best-sellers",
+                    "image": "shopify://shop_images/header-promo-card-image-8.webp",
+                    "image_style": "background",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-8-mob.webp",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "benefits_card_4": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Clear-Looking Skin",
+                    "label": "",
+                    "badge": "",
+                    "url": "https://qureskincare.com/collections/best-sellers",
+                    "image": "shopify://shop_images/header-promo-card-image-9.webp",
+                    "image_style": "background",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-9-mob.webp",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "benefits_card_5": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Bundle & Save",
+                    "label": "",
+                    "badge": "Save up to 55%",
+                    "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+                    "image": "shopify://shop_images/header-promo-card-image-5.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "benefits_card_1",
+                "benefits_card_2",
+                "benefits_card_3",
+                "benefits_card_4",
+                "benefits_card_5"
+              ]
+            }
+          },
+          "block_order": [
+            "benefits_cards"
+          ]
+        },
+        "tab_bundle": {
+          "type": "nav-tab",
+          "settings": {
+            "title": "Bundle & Save",
+            "pill": "Save up to 55%",
+            "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
+            "panel": "none",
+            "heading": "",
+            "button_label": "",
+            "button_url": ""
+          },
+          "blocks": {}
+        },
+        "mobile_shop_all": {
+          "type": "nav-mobile-button",
+          "settings": {
+            "label": "Shop all",
+            "url": "https://qureskincare.com/collections/best-sellers"
+          },
+          "blocks": {}
+        },
+        "tab_learn_more": {
+          "type": "nav-tab",
+          "settings": {
+            "title": "Learn More",
+            "pill": "",
+            "url": "",
+            "panel": "learn_more",
+            "heading": "",
+            "button_label": "",
+            "button_url": ""
+          },
+          "blocks": {
+            "learn_links_help": {
+              "type": "nav-links",
+              "settings": {
+                "heading": "Help & Support",
+                "menu": "new-main-support"
+              },
+              "blocks": {}
+            },
+            "learn_links_more": {
+              "type": "nav-links",
+              "settings": {
+                "heading": "Learn More",
+                "menu": "new-main-learn-more"
+              },
+              "blocks": {}
+            },
+            "learn_cards": {
+              "type": "nav-cards",
+              "settings": {},
+              "blocks": {
+                "learn_card_1": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Q-Rejuvalight Pro Guide",
+                    "label": "Help Center",
+                    "badge": "",
+                    "url": "https://qureskincare.com/pages/q-rejuvalight-pro-led-mask-guide",
+                    "image": "shopify://shop_images/header-promo-card-image-10.webp",
+                    "image_style": "background",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "learn_card_2": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Micro-Infusion Guide",
+                    "label": "Help Center",
+                    "badge": "",
+                    "url": "https://qureskincare.com/pages/microinfusion-safety-guide",
+                    "image": "shopify://shop_images/header-promo-card-image-11.webp",
+                    "image_style": "background",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "learn_card_3": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "Book Your Free Call",
+                    "label": "Skin Consultation",
+                    "badge": "",
+                    "url": "#book_a_call",
+                    "image": "shopify://shop_images/header-promo-card-image-12.webp",
+                    "image_style": "background",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "learn_card_1",
+                "learn_card_2",
+                "learn_card_3"
+              ]
+            }
+          },
+          "block_order": [
+            "learn_links_help",
+            "learn_links_more",
+            "learn_cards"
+          ]
+        }
+      },
+      "block_order": [
+        "tab_bestsellers",
+        "tab_benefits",
+        "tab_bundle",
+        "mobile_shop_all",
+        "tab_learn_more"
+      ],
       "custom_css": [],
       "settings": {
         "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"

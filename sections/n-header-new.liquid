@@ -1,0 +1,155 @@
+{% doc %}
+  Renders header section
+
+  @example
+  {% section 'n-header' %}
+{% enddoc %}
+
+{% assign black_friday_turn_on = settings.black_friday_turn_on %}
+
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
+
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% unless is_exception %}
+
+
+<style>
+    /* TODO: When new header will done, move this styles in style files */
+    .announcement-bar {
+        background: #c7e5dc !important;
+    }
+</style>
+
+{% liquid
+  # nav-tab blocks output their menu item wrapped in <!--nav-menu--> markers,
+  # followed by their dropdown panel. Split them into the top menu and the panels area.
+  capture nav_blocks
+    content_for 'blocks'
+  endcapture
+
+  assign nav_parts = nav_blocks | split: '<!--nav-menu-->'
+  assign nav_menu = ''
+  assign nav_panels = ''
+  for part in nav_parts
+    if part contains '<!--/nav-menu-->'
+      assign menu_and_panel = part | split: '<!--/nav-menu-->'
+      assign nav_menu = nav_menu | append: menu_and_panel[0]
+      assign nav_panels = nav_panels | append: menu_and_panel[1]
+    else
+      assign nav_panels = nav_panels | append: part
+    endif
+  endfor
+%}
+
+<!-- HEADER -->
+<link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/header-new/header-new.css" />
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__navigation">
+            <div class="header__hamburger">
+                <div class="e-hamburger" id="hamburger">
+                    <div class="e-hamburger__line"></div>
+                    <div class="e-hamburger__line"></div>
+                    <div class="e-hamburger__line"></div>
+                </div>
+            </div>
+            <a class="header__logo" href="{{ routes.root_url }}" title="Qure">
+                <svg viewBox="0 0 74 35" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.57 24.07a11.51 11.51 0 0 0 3.71.915c.445.051 1.212.026 1.187.026 1.498-.03 2.977-.35 4.354-.94a13.13 13.13 0 0 0 3.908-2.67 12.942 12.942 0 0 0 2.697-3.965 12.068 12.068 0 0 0 1.014-4.905c0-1.754-.347-3.38-1.014-4.906a12.923 12.923 0 0 0-2.697-3.99 12.827 12.827 0 0 0-3.908-2.67A11.527 11.527 0 0 0 12.195 0a11.4 11.4 0 0 0-4.6.966A12.147 12.147 0 0 0 3.71 3.635a12.923 12.923 0 0 0-2.697 3.99A12.175 12.175 0 0 0 0 12.531c0 1.754.346 3.406.99 4.905.692 1.526 1.583 2.847 2.696 3.966a13.018 13.018 0 0 0 3.883 2.668h.001Zm7.866-.635c-.89.585-1.98.89-3.24.89-1.238 0-2.326-.28-3.217-.915-.915-.585-1.657-1.424-2.226-2.466-.594-1.042-1.014-2.287-1.286-3.736a25.48 25.48 0 0 1-.42-4.702c0-1.678.148-3.254.42-4.703.297-1.449.717-2.694 1.286-3.762.569-1.067 1.311-1.88 2.226-2.49.89-.61 1.98-.916 3.24-.916 1.263 0 2.326.305 3.241.915.89.61 1.633 1.45 2.227 2.491.593 1.043 1.014 2.313 1.261 3.737.272 1.449.42 3.025.42 4.728 0 1.728-.148 3.304-.42 4.727-.272 1.449-.692 2.694-1.286 3.736-.569 1.043-1.311 1.881-2.226 2.466Zm50.76-3.533c-.421.534-.99.966-1.707 1.347-.718.382-1.584.56-2.598.56a6.28 6.28 0 0 1-2.201-.382 4.549 4.549 0 0 1-1.732-1.194c-.445-.509-.791-1.17-1.063-1.958l9.3-4.346s-.024-1.601-1.459-3.559c-.52-.686-1.262-1.143-2.078-1.55-.816-.407-1.731-.61-2.746-.61-.99 0-1.93.203-2.844.635a7.27 7.27 0 0 0-2.424 1.78 8.892 8.892 0 0 0-1.683 2.745c-.42 1.067-.643 2.237-.643 3.558 0 1.144.173 2.212.52 3.177.346.992.84 1.856 1.509 2.568.643.737 1.434 1.296 2.35 1.728.915.407 1.93.635 3.067.635 1.756 0 3.191-.483 4.304-1.423 1.113-.94 1.88-2.16 2.325-3.584l-.198-.127h.001Zm-9.747-5.617c.045-.702.144-1.399.297-2.085.148-.66.371-1.245.643-1.728.272-.508.594-.89 1.014-1.17a2.372 2.372 0 0 1 1.386-.431c.84 0 1.46.356 1.904 1.093.446.711.644 2.389.644 3.965v1.017l-5.566 2.72a10.883 10.883 0 0 1-.322-2.72v-.661ZM39.876 24.528h-3.884v-3.482l-.024-.026c-.223.458-.495.915-.817 1.398a5.93 5.93 0 0 1-1.113 1.27c-.42.382-.915.713-1.46.941-.575.26-1.199.39-1.83.382-1.385 0-2.424-.483-3.141-1.475-.718-.99-1.064-2.287-1.064-3.94V8.694H30.6v10.65c0 .94.198 1.677.618 2.21.42.535 1.04.789 1.83.789.693 0 1.238-.178 1.683-.534a3.94 3.94 0 0 0 1.088-1.372V8.693h4.057v15.835ZM24.44 27.654c-1.658 0-3.191.152-4.577.432-1.385.28-2.597.737-3.636 1.322-1.014.61-1.83 1.372-2.4 2.287-.568.915-.865 2.034-.865 3.305h-.668v-.28c.05-1.55.346-3.05.915-4.473a13.871 13.871 0 0 1 2.598-4.016c1.088-1.17 2.374-2.085 3.859-2.77a11.225 11.225 0 0 1 4.774-1.043v5.236ZM49.102 9.556a5.45 5.45 0 0 1 1.41-.99c.52-.255.94-.382 1.509-.357v4.728h-.322c-.148-.203-.371-.381-.643-.56a8.54 8.54 0 0 0-.841-.431 5.595 5.595 0 0 0-.841-.305c-.272-.077-.495-.127-.693-.127-.247 0-.544.101-.866.305a4.102 4.102 0 0 0-.915.864l.025 11.844h-4.131v-6.735l.025-9.1H46.9v3.254c.254-.283.526-.603.816-.944l.149-.175c.396-.457.791-.89 1.237-1.27v-.001Z" />
+                    <path d="M69.613 9.844v.45h-.74v2.334h-.556v-2.334h-.739v-.45h2.035Zm3.595 0v2.784h-.556v-1.81l-.743 1.81h-.422l-.747-1.81v1.81h-.556V9.844h.632l.882 2.07.882-2.07h.628Z" />
+                </svg>
+            </a>
+            <ul class="header__menu">
+                {% if black_friday_turn_on == true %}
+                    {% assign special_offer_header = 'special-offer.menu.header' | t %}
+                    {% if special_offer_header != '' %}
+                        <li><a class="promo-animation" href="{{ 'special-offer.menu.link' | t }}" aria-label="{{ special_offer_header | escape }}"><span>{{ special_offer_header }}</span></a></li>
+                    {% endif %}
+                {% endif %}
+                {{ nav_menu }}
+            </ul>
+            <ul class="header__icons">
+                <li>
+                    <a href="{{ pages['loyalty-program'].url | default: '/pages/loyalty-program' }}" aria-label="loyalty program">
+                        <svg viewBox="0 0 30 30" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.13 15.85h-.297a1.996 1.996 0 0 1-1.996-1.996v-2.291c0-1.102.894-1.996 1.996-1.996h.891a3.717 3.717 0 0 1 3.111-5.729c1.328-.022 2.645.592 3.75 1.82.541.601 1.019 1.339 1.416 2.183.397-.844.876-1.582 1.416-2.183 1.105-1.228 2.422-1.842 3.75-1.82a3.719 3.719 0 0 1 3.705 3.715 3.71 3.71 0 0 1-.594 2.014h.888c1.102 0 1.996.894 1.996 1.996v2.291a1.996 1.996 0 0 1-1.996 1.996h-.294v7.171a3.141 3.141 0 0 1-3.142 3.142H9.272a3.138 3.138 0 0 1-2.221-.921 3.138 3.138 0 0 1-.921-2.221V15.85Zm8.02-4.583H5.833a.296.296 0 0 0-.296.296v2.291c0 .164.133.296.296.296h8.317v-2.883Zm6.007-1.7a2.016 2.016 0 1 0 0-4.029h-.015c-.881-.015-1.728.443-2.461 1.258-.642.713-1.168 1.665-1.548 2.771h4.024Zm-6.288 0c-.38-1.106-.905-2.058-1.548-2.771-.733-.815-1.58-1.273-2.461-1.258h-.015a2.015 2.015 0 1 0 0 4.029h4.024Zm1.981 4.583h8.316a.295.295 0 0 0 .296-.296v-2.291a.295.295 0 0 0-.296-.296H15.85v2.883Zm0 10.312h4.88a1.439 1.439 0 0 0 1.442-1.441V15.85H15.85v8.612ZM7.83 15.85v7.171a1.439 1.439 0 0 0 1.442 1.441h4.878V15.85H7.83Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ routes.account_login_url }}" aria-label="login">
+                        <svg viewBox="0 0 30 30" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><path d="M15 28.038C7.8 28.038 1.962 22.2 1.962 15S7.8 1.962 15 1.962 28.038 7.8 28.038 15 22.2 28.038 15 28.038Zm7.984-4.988A11.302 11.302 0 0 0 26.337 15c0-6.262-5.075-11.337-11.337-11.337S3.663 8.738 3.663 15c0 3.148 1.282 5.996 3.353 8.05a8.169 8.169 0 0 1 4.722-5.782 5.725 5.725 0 1 1 6.524 0 8.169 8.169 0 0 1 4.722 5.782ZM8.551 24.326A11.288 11.288 0 0 0 15 26.337c2.396 0 4.618-.743 6.449-2.011a6.462 6.462 0 0 0-12.898 0ZM15 16.587a4.025 4.025 0 1 0 0-8.05 4.025 4.025 0 0 0 0 8.05Z" /></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="show-flyout-cart" id="cartCanvasBtn" href="javascript:;" aria-label="cart">
+                        <svg viewBox="0 0 30 30" width="30" height="30">
+                            <path
+                                d="M20.537,7.64L22.101,7.64L22.489,7.688L22.841,7.83C23.036,7.939 23.222,8.096 23.381,8.304C23.634,8.636 23.808,9.09 23.849,9.588L23.85,9.611L24.702,25.346L24.704,25.392C24.704,25.923 24.55,26.429 24.298,26.804C24.14,27.038 23.95,27.217 23.749,27.341L23.378,27.507L22.962,27.568L7.076,27.568L6.647,27.522L6.26,27.361C6.049,27.237 5.853,27.055 5.693,26.816C5.56,26.619 5.453,26.384 5.384,26.125C5.32,25.886 5.29,25.63 5.295,25.374L5.296,25.354L6,9.632L6.002,9.607C6.039,9.106 6.212,8.648 6.465,8.313C6.624,8.102 6.81,7.943 7.006,7.834L7.358,7.689L7.741,7.64L9.464,7.64C9.492,6.264 10.075,4.948 11.099,3.973C12.134,2.988 13.537,2.431 15,2.431C16.464,2.431 17.866,2.988 18.901,3.973C19.925,4.948 20.508,6.264 20.537,7.64ZM9.463,9.339L7.82,9.34C7.746,9.438 7.71,9.576 7.698,9.722L6.995,25.427C6.994,25.516 7.005,25.604 7.027,25.687C7.045,25.755 7.069,25.817 7.103,25.868L22.877,25.868L22.887,25.855C22.966,25.738 23.001,25.578 23.003,25.412L22.153,9.707C22.139,9.566 22.103,9.434 22.032,9.339L20.538,9.339L20.538,12.657C20.538,13.126 20.157,13.507 19.688,13.507C19.219,13.507 18.838,13.126 18.838,12.657L18.838,9.339L11.162,9.339L11.162,12.657C11.163,13.126 10.782,13.507 10.313,13.507C9.843,13.507 9.463,13.126 9.463,12.657L9.463,9.339ZM18.836,7.64C18.808,6.725 18.41,5.854 17.729,5.204C17.005,4.515 16.023,4.131 15,4.131C13.977,4.131 12.995,4.515 12.272,5.204C11.59,5.854 11.193,6.725 11.164,7.64L18.836,7.64Z" />
+                        </svg>
+                        <div class="cart-count">{{ cart.item_count }}</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__content-wrapper">
+            <div class="header__mobile-top">
+                <a href="{{ routes.root_url }}" aria-label="Qure"><i class="e-icon e-icon-qure"></i></a>
+                <button type="button" id="dismiss-menu" aria-label="close menu"><i class="e-icon e-icon-thin-cross"></i></button>
+            </div>
+            {{ nav_panels }}
+            <div class="header__account-link">
+                <a href="{{ routes.account_url }}">My Account</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<script src="https://qureskincaredns-stable.com/sections/header-new/header-new.js" defer="defer"></script>
+
+{% if request.design_mode %}
+    <script>
+        // Theme editor: open the dropdown that contains the selected block
+        document.addEventListener('shopify:block:select', (e) => {
+            const pane = e.target.closest('#header .header__content');
+            document.querySelectorAll('#header .header__content.show-on-hover').forEach((el) => {
+                if (el !== pane) el.classList.remove('show-on-hover');
+            });
+            if (pane) pane.classList.add('show-on-hover');
+        });
+        document.addEventListener('shopify:block:deselect', () => {
+            document.querySelectorAll('#header .header__content.show-on-hover').forEach((el) => el.classList.remove('show-on-hover'));
+        });
+    </script>
+{% endif %}
+{% endunless %}
+
+{% schema %}
+{
+    "name": "t:sections-group.header.name",
+    "blocks": [
+        { "type": "nav-tab" },
+        { "type": "nav-mobile-button" }
+    ],
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "exception",
+            "label": "t:common.exception"
+        }
+    ]
+}
+{% endschema %}

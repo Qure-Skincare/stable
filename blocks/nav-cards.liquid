@@ -1,0 +1,20 @@
+{% doc %}
+  Renders a list of header navigation cards.
+{% enddoc %}
+
+<ul class="header__content-cards" {{ block.shopify_attributes }}>
+    {% content_for 'blocks' %}
+</ul>
+
+{% schema %}
+{
+    "name": "Nav cards",
+    "tag": null,
+    "blocks": [
+        { "type": "nav-card" }
+    ],
+    "presets": [
+        { "name": "Nav cards" }
+    ]
+}
+{% endschema %}
