@@ -363,7 +363,7 @@
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 47,
+        "subscription_discount_max_percent": 60,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",
         "type": "card",

@@ -19,10 +19,12 @@
     (e.g. add-to-cart, which is LCP-lane and unaffected); set a queue to "none"
     to skip it entirely for slow users. Must differ from `timeouts` to matter.
   {%- endcomment -%}
+  {%- comment -%}
   "timeoutsSlow": {
     "mobile":  { "preload": "2500", "scripts": "6000", "embeds": "10000", "other": "3000", "async": "12000" },
     "desktop": { "preload": "2000", "scripts": "6000", "embeds": "10000", "other": "3000", "async": "12000" }
   },
+  {%- endcomment -%}
   {%- comment -%}
     "*" applies to every queue (a per-queue key overrides it). stagger trickles a
     queue's scripts one-by-one with a fixed gap instead of firing the whole batch
@@ -42,11 +44,13 @@
     (fewer simultaneous downloads), larger stagger (more breathing room), smaller
     slice (yield to input sooner). Omit this block to use `queueOptions` always.
   {%- endcomment -%}
+  {%- comment -%}
   "queueOptionsSlow": {
     "*":       { "stagger": 100, "burst": 3, "slice": 12 },
     "scripts": { "stagger": 100, "burst": 1, "slice": 12 },
     "async":   { "stagger": 200, "burst": 1, "slice": 12 }
   },
+  {%- endcomment -%}
   "dispatchSyntheticEvents": true,
   "defaultMediaTrigger": "scroll",
   "rules": [

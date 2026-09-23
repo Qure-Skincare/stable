@@ -760,6 +760,20 @@
             "product_title": ""
           }
         },
+        "slider_ngWjpX": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_5.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Deanna P.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Pure magic!!!</h6><p>“I've completed 4 microneedling treatments since mid-June, and the difference is incredible. I started with severe acne, scarring, and uneven texture, and after just 4 sessions my skin looks and feels completely different—clearer, smoother, more even. I actually feel confident without makeup now. I've recommended this company to everyone. 100% worth it!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_qPwgBB": {
           "type": "slider",
           "settings": {
@@ -1155,6 +1169,7 @@
       },
       "block_order": [
         "slider_AbTEJa",
+        "slider_ngWjpX",
         "slider_qPwgBB",
         "slider_QUARee",
         "slider_6GYBm3",

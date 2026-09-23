@@ -663,6 +663,7 @@
       "subscription-days-option": "Every 90 days:",
       "pay-today": "Pay today only",
       "per-treatment": "Only {{ price }} per treatment",
+      "per-day": "Just {{ price }} per day",
       "kit-left": "{{ count }} kits left",
       "free-shipping": "🔥 Free shipping on this order",
       "monthly-payment": "Monthly interest-free payments with:",

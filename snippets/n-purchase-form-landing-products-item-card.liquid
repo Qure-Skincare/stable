@@ -91,7 +91,7 @@
 
                                     <label for="{{ section.id }}-{{ product_title_tag }}">
                                         {{ block.settings.heading | replace: '(PRE-ORDER)', '' | strip }}
-                                        {% if block.settings.heading contains '90' %}
+                                        {% if block.settings.heading contains '90' or block.settings.heading contains '3 Month' %}
                                             <div class="e-pill-badge e-pill-badge--xxs">{{ 'purchase-form.settings.best-value' | t }}</div>
                                         {% endif %}
                                     </label>
@@ -137,7 +137,7 @@
                                         {% else %}
                                             <div class="e-pill-save">Save {{ product_price_diff }} Today</div>
                                         {% endif %}
-                                        {% if template.suffix == 'micro-infusion-system-v7' or template.suffix == 'micro-infusion-system-v8' %}
+                                        {% if template.suffix == 'micro-infusion-system-v5' or template.suffix == 'micro-infusion-system-v7' or template.suffix == 'micro-infusion-system-v8' %}
                                             <div class="e-price">
                                                 <div class="e-price__main">
                                                     {% if product_subscription_price != blank %}
@@ -154,12 +154,12 @@
                                                 </div>
                                             </div>
 
-                                            {% if block.settings.heading contains '90' %}
-                                                <p><strong>Just {{ product_price_divided_90 }}/day for first month</strong></p>
-                                            {% elsif block.settings.heading contains '60' %}
-                                                <p><strong>Just {{ product_price_divided_60 }}/day for first month</strong></p>
+                                            {% if block.settings.heading contains '90' or block.settings.heading contains '3 Month' %}
+                                                <p><strong>{{ 'purchase-form.settings.per-day' | t: price: product_price_divided_90 }}</strong></p>
+                                            {% elsif block.settings.heading contains '60' or block.settings.heading contains '2 Month' %}
+                                                <p><strong>{{ 'purchase-form.settings.per-day' | t: price: product_price_divided_60 }}</strong></p>
                                             {% else %}
-                                                <p><strong>Just {{ product_price_divided_30 }}/day for first month</strong></p>
+                                                <p><strong>{{ 'purchase-form.settings.per-day' | t: price: product_price_divided_30 }}</strong></p>
                                             {% endif %}
                                         {% else %}
                                             <div>
@@ -190,7 +190,7 @@
                                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                         {% endif %}
 
-                                        {% if template.suffix == 'micro-infusion-system-v7' or template.suffix == 'micro-infusion-system-v8' %}
+                                        {% if template.suffix == 'micro-infusion-system-v5' or template.suffix == 'micro-infusion-system-v7' or template.suffix == 'micro-infusion-system-v8' %}
                                             <figcaption>{{ 'purchase-form.settings.per-treatment' | t: price: product_price_per_item }}</figcaption>
                                         {% elsif product_subscription_price != blank %}
                                             <figcaption>{{ block.settings.product_selling_plan_text }}</figcaption>

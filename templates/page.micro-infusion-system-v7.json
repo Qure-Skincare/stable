@@ -196,6 +196,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -214,7 +215,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
           }
         },
         "product_DBd4ef": {
@@ -227,6 +228,7 @@
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -269,6 +271,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -287,7 +290,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
           }
         },
         "product_EKAAzA": {
@@ -300,6 +303,7 @@
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -346,7 +350,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "90",
         "hide_bottom": true,
-        "hide_certified": true
+        "hide_certified": true,
+        "hide_title_on_subscription": false
       }
     },
     "n_trusted_reviews_DUlFYg": {
