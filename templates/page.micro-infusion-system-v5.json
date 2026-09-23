@@ -201,9 +201,9 @@
             "best": false,
             "free_shipping": false,
             "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "Ships every 1 month",
+            "heading": "30-day supply",
+            "subheading": "2 treatments",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 17,
@@ -215,7 +215,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": ""
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
           }
         },
         "product_b7C8dE": {
