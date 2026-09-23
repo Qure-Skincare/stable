@@ -20,7 +20,7 @@
           }
         },
         "description_aio_3UwtbA": {
-          "type": "description-aio",
+          "type": "description-collapsed",
           "settings": {
             "title_1": "Reduces fine lines and smooths texture",
             "text_1": "<p>Helps reduce the appearance of fine lines and smooths skin texture, while helping infuse active ingredients onto the skin's surface.</p>",

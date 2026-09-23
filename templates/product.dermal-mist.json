@@ -17,7 +17,7 @@
           "settings": {}
         },
         "description_aio_LKjwt8": {
-          "type": "description-aio",
+          "type": "description-collapsed",
           "settings": {
             "title_1": "Powered by hypochlorous acid (HOCl)",
             "text_1": "<p>Powered by hypochlorous acid (HOCl) HOCl is a naturally-occurring, skin-compatible molecule widely recognized in skincare for its gentle, balancing properties — including supporting skin that's exposed to everyday bacteria and environmental buildup.</p>",

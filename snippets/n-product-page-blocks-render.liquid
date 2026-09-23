@@ -21,8 +21,8 @@
             {% unless section.settings.rating_type == 'trustpilot' %}
                 {% render 'n-product-description', description: section.settings.description %}
             {% endunless %}
-        {% when 'description-aio' %}
-            {% render 'n-product-description-aio', block: block %}
+        {% when 'description-collapsed' %}
+            {% render 'n-product-description-collapsed', block: block %}
         {% when 'quote' %}
             {% render 'n-product-expert-quote-tag', block: block %}
         {% when 'price' %}

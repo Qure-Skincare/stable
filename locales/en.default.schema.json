@@ -136,7 +136,7 @@
         "green": "Green",
         "light-green": "Light green",
         "description": "Description",
-        "description-aio": "Description (AIO)",
+        "description-collapsed": "Description (collapsed)",
         "jumpto": "Jump to",
         "nextships": "Next Ships",
         "date": "Date",
