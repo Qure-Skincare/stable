@@ -39,7 +39,7 @@
                     {%- when 'clean_ingredients' -%}{%- assign accordion_title = 'Clean Ingredients' -%}
                     {%- else -%}{%- continue -%}
                 {%- endcase -%}
-                {%- render 'n-product-page-collapsed-item' input: mf, title: accordion_title -%}
+                {%- render 'n-product-page-collapsed-item', input: mf, title: accordion_title -%}
             {%- endif -%}
         {%- endfor -%}
     </div>

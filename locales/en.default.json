@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "n_experts-pick": {
+      "counter": "0%"
+    },
     "n_expert-reviews": {
       "watch": "Watch:"
     },
@@ -511,9 +514,11 @@
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
       },
-      "description-aio": {
+      "description-collapsed": {
         "show_more": "Show more"
       },
+      "marked_list_html": "<ul class=\"c-marked-list\"><li>Suitable for sensitive skin</li><li>Hypoallergenic and allergy tested</li><li>Free from fragrance and PEG</li><li>Vegan and cruelty-free</li></ul>",
+      "benefit_grid": "check-circle|Clarity & Tone|Evens out tone over time; sun|Radiant Glow|Less fatigued, more vibrant; droplet|Radiant Glow|Less fatigued, more vibrant; shield|Long-Term Resilience|Calmer, stronger skin",
       "upsell-popup": {
         "button-label": "Add to Cart –",
         "continue": "Continue to Cart"

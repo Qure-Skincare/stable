@@ -1,14 +1,18 @@
 {% doc %}
-  Renders a collapsed item for the product template
+  Renders one product-header accordion item from a rich text metafield.
 
-  @param {json} input - A json object.
-  @param {string} title - A string value.
+  A paragraph whose whole text is `[hr]`, `[marked_list]` or `[benefit_grid]`
+  is output without a `<p>` wrapper. `[marked_list]` and `[benefit_grid]`
+  print HTML from `product.settings.marked_list_html`. `[benefit_grid]`
+  reads `product.settings.benefit_grid`: tiles separated by semicolons,
+  each tile is `icon|title|text`.
+
+  @param {object} input - Rich text metafield.
+  @param {string} title - Accordion summary.
 
   @example
-  {% render 'n-product-bundle-collapsed-item' input: product.metafields.custom.key_benefits, title: 'Key Benefits' %}
+  {% render 'n-product-page-collapsed-item', input: product.metafields.custom.key_benefits, title: 'Key Benefits' %}
 {% enddoc %}
-
-{% capture marked_list %}{% render 'n_product-marked-list' %}{% endcapture %}
 
 {% if input != blank %}
   {% assign included_json = input.value | parse_json %}
@@ -21,24 +25,42 @@
                 {% when 'list' %}
                   <ul>
                     {% for list_item in item.children %}
-                      <li>{{ list_item.children[0].value 
-                        | replace: '[hr]', '<hr />' 
-                        | replace: '[br]', '<br />' 
-                        | replace: '[marked_list]', marked_list
-                        }}</li>
+                      <li>{{ list_item.children[0].value | replace: '[hr]', '<hr />' | replace: '[br]', '<br />' }}</li>
                     {% endfor %}
                   </ul>
                 {% when 'paragraph' %}
-                  <p>
-                    {% for paragraph_item in item.children %}
-                      {{ paragraph_item.value 
-                      | replace: '[hr]', '<hr />' 
-                      | replace: '[br]', '<br />' 
-                      | replace: '[marked_list]', marked_list }}
-                    {% endfor %}
-                  </p>
+                  {% capture paragraph_text %}{% for paragraph_item in item.children %}{{ paragraph_item.value }}{% endfor %}{% endcapture %}
+                  {% assign paragraph_text = paragraph_text | strip %}
+                  {% case paragraph_text %}
+                    {% when '[hr]' %}
+                      <hr />
+                    {% when '[marked_list]' %}
+                      {{ 'product.settings.marked_list_html' | t }}
+                    {% when '[benefit_grid]' %}
+                      <ul class="c-benefit-grid c-benefit-grid--sm">
+                        {% assign benefit_rows = 'product.settings.benefit_grid' | t | replace: '&amp;', '&' | replace: '&#38;', '&' | split: ';' %}
+                        {% for row in benefit_rows %}
+                          {% assign parts = row | strip | split: '|' %}
+                          {% if parts.size > 1 %}
+                            <li class="c-benefit-grid__item">
+                              <span class="c-benefit-grid__icon"><i class="e-icon e-icon-{{ parts[0] | strip }}"></i></span>
+                              <div class="c-benefit-grid__content">
+                                <strong class="c-benefit-grid__title">{{ parts[1] | strip | escape }}</strong>
+                                <p class="c-benefit-grid__text">{{ parts[2] | strip | escape }}</p>
+                              </div>
+                            </li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    {% else %}
+                      <p>
+                        {% for paragraph_item in item.children %}
+                          {{ paragraph_item.value | replace: '[hr]', '<hr />' | replace: '[br]', '<br />' }}
+                        {% endfor %}
+                      </p>
+                  {% endcase %}
               {% endcase %}
-            {% endfor %}
+          {% endfor %}
       </article>
   </details>
 {% endif %}

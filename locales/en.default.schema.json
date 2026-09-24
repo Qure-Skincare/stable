@@ -136,7 +136,7 @@
         "green": "Green",
         "light-green": "Light green",
         "description": "Description",
-        "description-aio": "Description (AIO)",
+        "description-collapsed": "Description (collapsed)",
         "jumpto": "Jump to",
         "nextships": "Next Ships",
         "date": "Date",
@@ -213,6 +213,7 @@
         "bundle": "Bundle",
         "bundle-text": "Bundle text",
         "wistia-url": "Wistia URL",
+        "wistia-url-mobile": "Wistia URL mobile",
         "wistia-mode": "Wistia mode",
         "video-button-label": "Video button label",
         "modal": "Modal",
@@ -285,6 +286,7 @@
         "must-read": "Must read",
         "wistia-slider": "Wistia slider",
         "blue": "Blue",
+        "blue-serum": "Blue serum",
         "red": "Red",
         "step-by-step": "Step by step",
         "step": "Step",
@@ -297,6 +299,8 @@
         "icon-with-text": "Icon with text",
         "simple": "Simple",
         "fine-lines": "Fine lines",
+        "antioxidant": "Antioxidant",
+        "droplet": "Droplet",
         "wrinkles": "Wrinkles",
         "dark-spots": "Dark spots",
         "blemishes": "Blemishes",
@@ -1344,6 +1348,18 @@
         },
         "n_accordion-tiles-square": {
             "name": "Accordion tiles square"
+        },
+        "n_features-overview": {
+            "name": "Features overview"
+        },
+        "n_ingredients-video": {
+            "name": "Ingredients video"
+        },
+        "n_experts-pick": {
+            "name": "Experts pick"
+        },
+        "n_customers-video": {
+            "name": "Customers video"
         },
         "beauty-benefits": {
             "name": "Beauty benefits"
