@@ -16,9 +16,21 @@
           "type": "accordion",
           "settings": {}
         },
-        "description_iPBNaS": {
-          "type": "description",
-          "settings": {}
+        "description_collapsed_blue": {
+          "type": "description-collapsed",
+          "settings": {
+            "title_1": "Enhances how skin responds to LED light",
+            "text_1": "<p>Enhances how skin responds to LED light USP Methylene Blue is a cosmetic photosensitizer that helps convert LED light into a stronger skin response — so every Q-Rejuvalight Pro session works harder, without increasing intensity or heat.</p>",
+            "title_2": "Helps target the appearance of congestion &amp; blemishes",
+            "text_2": "<p>Helps target the appearance of congestion &amp; blemishes Paired with Blue Light (Skin-Clearing Mode), it supports skin-clearing activity for a clearer-looking complexion — without harsh or drying actives.</p>",
+            "title_3": "Hydrates and soothes while it protects",
+            "text_3": "<p>Hydrates and soothes while it protects Sodium Hyaluronate and Aloe Vera support hydration, while Methylene Blue and Vitamin E work as antioxidants — helping protect skin from the visible effects of everyday environmental stressors.</p>",
+            "title_4": "Soothes skin from daily digital blue light exposure",
+            "text_4": "<p>Soothes skin from daily digital blue light exposure Calendula iActive helps comfort skin exposed to screens all day — phones, laptops, and everyday digital blue light — with no LED mask required.</p>",
+            "title_5": "Lightweight, fast-absorbing, fits any routine",
+            "text_5": "<p>Lightweight, fast-absorbing, fits any routine An ultra-lightweight, fast-absorbing texture that layers easily under makeup or the rest of your routine, with or without an LED session.</p>",
+            "line": false
+          }
         },
         "exclusive_offer_rW7RFk": {
           "type": "exclusive-offer",
@@ -47,7 +59,7 @@
       },
       "block_order": [
         "accordion_migrated",
-        "description_iPBNaS",
+        "description_collapsed_blue",
         "exclusive_offer_rW7RFk",
         "section_A0",
         "upsell_card_blue"
@@ -64,7 +76,7 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
-        "rating_type": "dermatologists",
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Built with Methylene Blue, one of medicine's most studied compounds</li><li>Enhances how skin responds to LED light</li><li>Helps skin retain moisture, leaving it visibly plumper-looking</li><li>Powerful antioxidant that protects skin exposed to blue light from digital devices.</li></ul>",
         "reserved": false,
@@ -309,6 +321,84 @@
         "hide_certified": false
       }
     },
+    "n_features_overview_blue_face_serum": {
+      "type": "n_features-overview",
+      "blocks": {
+        "component_methylene_blue": {
+          "type": "component",
+          "settings": {
+            "modifier": "reverse",
+            "heading": "Methylene Blue",
+            "text": "A powerful antioxidant that enhances LED response"
+          }
+        },
+        "component_beta_glucan": {
+          "type": "component",
+          "settings": {
+            "modifier": "none",
+            "heading": "Beta-Glucan",
+            "text": "Deeply soothing and hydrating"
+          }
+        },
+        "component_calendula": {
+          "type": "component",
+          "settings": {
+            "modifier": "none",
+            "heading": "Calendula iActive",
+            "text": "Calming properties"
+          }
+        },
+        "benefit_color_story": {
+          "type": "benefit",
+          "settings": {
+            "icon": "fine-lines",
+            "heading": "The Color Story",
+            "text": "That signature blue isn't a filter or added dye - it's the ingredient itself, Methylene Blue. What you see is literally the active."
+          }
+        },
+        "benefit_primes_led": {
+          "type": "benefit",
+          "settings": {
+            "icon": "verified-shield",
+            "heading": "Primes skin for LED",
+            "text": "Methylene blue is a cosmetic photosensitizer - it helps skin respond more effectively to every LED session. Same routine. More from it. Deeper synergy with every red and blue light session."
+          }
+        },
+        "benefit_antioxidant": {
+          "type": "benefit",
+          "settings": {
+            "icon": "antioxidant",
+            "heading": "Antioxidant Support",
+            "text": "Powerful antioxidant support with zero harsh or drying actives. Helps support skin exposed to daily blue light from your phone, laptop, and everything in between."
+          }
+        },
+        "benefit_hydration": {
+          "type": "benefit",
+          "settings": {
+            "icon": "droplet",
+            "heading": "Hydration Boost",
+            "text": "Helps skin retain moisture, leaving it visibly plumper and more balanced after each use."
+          }
+        }
+      },
+      "block_order": [
+        "component_methylene_blue",
+        "component_beta_glucan",
+        "component_calendula",
+        "benefit_color_story",
+        "benefit_primes_led",
+        "benefit_antioxidant",
+        "benefit_hydration"
+      ],
+      "name": "t:sections.n_features-overview.name",
+      "settings": {
+        "section_id": "",
+        "modifier": "blue-serum",
+        "heading": "<h2>Meet the active blue</h2>",
+        "text": "<p>A smarter ritual for skin that lives under LEDs, screens, and everyday light.</p>",
+        "image": "shopify://shop_images/blue.webp"
+      }
+    },
     "n_base_section_led_sync_blue_face_serum": {
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
@@ -318,27 +408,60 @@
         "modifier_2": "none",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>Skincare that works in sync with LED light</h2>",
-        "text": "<p>LED therapy works by delivering light energy into the skin. But what you apply before your session matters.</p><p>Many serums are designed for overnight repair or active treatment — not for repeated light exposure. Some can interfere with LED light therapy, be irritating, or simply weren't formulated with LED in mind.</p><p>Blue+ is different.</p><p>It uses methylene blue, an antioxidant studied in light-exposure contexts, in a lightweight formula designed to sit comfortably on skin during LED sessions.</p>",
+        "heading": "<h2>A Daily Antioxidant, Backed by Science</h2>",
+        "text": "<p>Skin faces constant stress — from pollution, blue light, and everyday oxidative damage. Most serums only focus on repair after the fact.</p><p>Blue+ is different. It's built around methylene blue, a next-generation antioxidant studied for calming the look of stressed skin, evening the look of tone, and supporting long-term resilience.</p><p>It's lightweight, fast-absorbing, and fits into any routine — morning or night.</p><p>Already using LED light therapy? Blue+ is formulated to sit comfortably on skin during sessions, too.</p>",
         "button_label": "Shop Now",
         "button_url": "#",
         "wistia_url": "qk92k5wrnj",
         "accordion_text": ""
       }
     },
-    "n_trusted_recommended_blue_face_serum": {
-      "type": "n_trusted-recommended",
-      "name": "t:sections.n_trusted-recommended.name",
+    "n_ingredients_video_blue_face_serum": {
+      "type": "n_ingredients-video",
+      "name": "t:sections.n_ingredients-video.name",
       "settings": {
-        "use_own_file": false,
-        "background_color": "none",
-        "heading": "<h2>Trusted and Recommended by Experts</h2>",
-        "text": "<p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.”</p>",
-        "video_image_cover": "shopify://shop_images/dr-shah-maxfield-2.webp",
-        "text_on_image": "",
-        "wistia_url": false,
-        "video_url": "",
-        "badge_text": "Dermatologist Reviewed"
+        "section_id": "",
+        "modifier": "blue-serum",
+        "wistia_url": "zftm6ecnt6",
+        "wistia_url_mobile": "8rkjozy7ch"
+      }
+    },
+    "n_experts_pick_blue_face_serum": {
+      "type": "n_experts-pick",
+      "blocks": {
+        "percent_clarity": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Clarity & Tone</h6><p>Evens out tone over time</p>",
+            "percent": 100
+          }
+        },
+        "percent_glow": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Radiant Glow</h6><p>Less fatigued, more vibrant</p>",
+            "percent": 100
+          }
+        },
+        "percent_texture": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Smooth Texture</h6><p>Softer with consistent use</p>",
+            "percent": 100
+          }
+        }
+      },
+      "block_order": [
+        "percent_clarity",
+        "percent_glow",
+        "percent_texture"
+      ],
+      "name": "t:sections.n_experts-pick.name",
+      "settings": {
+        "section_id": "",
+        "badge_text": "Dermatologist Reviewed",
+        "text": "<h2>Recommended by Experts</h2><p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> — and a smart addition for anyone using LED light therapy.”</p>",
+        "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
     "n_features_marquee_blue_face_serum": {
@@ -348,7 +471,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On US <br> Orders Over $149"
+            "text": "Free Shipping On<br>Orders Over $100"
           }
         },
         "image_with_text_reviewed": {
@@ -434,6 +557,103 @@
         "heading": "<h2>Made gentle for all skin types</h2>"
       }
     },
+    "n_customers_video_blue_face_serum": {
+      "type": "n_customers-video",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=wuIjXhlFUTU",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_5": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_6": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_7": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4",
+        "video_5",
+        "video_6",
+        "video_7"
+      ],
+      "name": "t:sections.n_customers-video.name",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "text": "<h2>Confident skin starts here</h2>"
+      }
+    },
     "n_across_image_banner_blue_face_serum": {
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
@@ -464,8 +684,9 @@
         "text": "<p>Our new refillable system means less waste and better value over time.</p><p>[normal]</p><ol><li>Remove the lid of your base by pushing the button on the base.</li><li>Pull the top off and slide out the empty refill container.</li><li>Slide in your new refill container and slide the top over the refill.</li></ol>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": "tj97vrxlon",
-        "video_image_cover": "shopify://shop_images/Frame_1000004192.jpg",
+        "wistia_url": "",
+        "image": "shopify://shop_images/blue-video-thumbnail-2.webp",
+        "video_image_cover": "",
         "accordion_text": ""
       }
     },
@@ -668,10 +889,13 @@
   "order": [
     "n_product_header_gLYhrR",
     "purchase-form-landing",
+    "n_features_overview_blue_face_serum",
     "n_base_section_led_sync_blue_face_serum",
-    "n_trusted_recommended_blue_face_serum",
+    "n_ingredients_video_blue_face_serum",
+    "n_experts_pick_blue_face_serum",
     "n_features_marquee_blue_face_serum",
     "n_accordion_tiles_square_blue_face_serum",
+    "n_customers_video_blue_face_serum",
     "n_across_image_banner_blue_face_serum",
     "n_base_section_refill_blue_face_serum",
     "n_page_microinfusion_complete_system_blue_face_serum",

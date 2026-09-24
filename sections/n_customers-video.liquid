@@ -1,0 +1,157 @@
+{% doc %}
+  Renders a customers video slider.
+{% enddoc %}
+
+<section class="customers-video"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        {{ section.settings.text }}
+        <button class="customers-video-prev" type="button"><i class="e-icon e-icon-arrow"></i></button>
+        <button class="customers-video-next" type="button"><i class="e-icon e-icon-arrow"></i></button>
+    </div>
+    {% assign video_blocks = section.blocks | where: 'type', 'video' %}
+    {% if video_blocks.size > 0 %}
+        <div
+            class="c-swiper"
+            data-swiper='{
+                "slidesPerView": 1.2,
+                "spaceBetween": 6,
+                "loop": false,
+                "navigation": {
+                    "prevEl": ".customers-video-prev",
+                    "nextEl": ".customers-video-next"
+                },
+                "breakpoints": {
+                    "480": {
+                        "slidesPerView": 2.2
+                    },
+                    "768": {
+                        "slidesPerView": 3
+                    },
+                    "992": {
+                        "slidesPerView": 4
+                    }
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'video' %}
+                        {% if block.settings.video_url != blank %}
+                            <div class="swiper-slide">
+                                <div class="c-customer-video-card">
+                                    {% if block.settings.youtube_url %}
+                                        <figure class="lvideo" data-url="{{ block.settings.video_url }}">
+                                            {% if block.settings.image != blank %}
+                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                            {% endif %}
+                                            {% if block.settings.text != blank %}
+                                                <figcaption>
+                                                    {% if block.settings.username != blank %}
+                                                        <span>{{ block.settings.username }}</span>
+                                                    {% endif %}
+                                                    {{ block.settings.text }}
+                                                    {% if block.settings.badge_text != blank %}
+                                                        <small>{{ block.settings.badge_text }}</small>
+                                                    {% endif %}
+                                                </figcaption>
+                                            {% endif %}
+                                        </figure>
+                                    {% else %}
+                                        <div class="c-wistia c-wistia--custom">
+                                            <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                                <div class="c-wistia__custom">
+                                                    <figure>
+                                                        {% if block.settings.image != blank %}
+                                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        {% endif %}
+                                                        {% if block.settings.text != blank %}
+                                                            <figcaption>
+                                                                {% if block.settings.username != blank %}
+                                                                    <span>{{ block.settings.username }}</span>
+                                                                {% endif %}
+                                                                {{ block.settings.text }}
+                                                                {% if block.settings.badge_text != blank %}
+                                                                    <small>{{ block.settings.badge_text }}</small>
+                                                                {% endif %}
+                                                            </figcaption>
+                                                        {% endif %}
+                                                    </figure>
+                                                </div>
+                                            </wistia-player>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("youtube-popup", "https://qureskincaredns-stable.com/assets/js/yt-popup.js");
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_customers-video.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "video",
+            "name": "t:common.video",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "youtube_url",
+                    "label": "t:common.youtube-url",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "video_url",
+                    "label": "t:common.video-url"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "badge_text",
+                    "label": "t:common.badge-text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_customers-video.name"
+        }
+    ]
+}
+{% endschema %}
