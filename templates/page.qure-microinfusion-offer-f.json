@@ -9,79 +9,6 @@
  */
 {
   "sections": {
-    "n_hero_section_xMcaXr": {
-      "type": "n_hero-section",
-      "blocks": {
-        "approved_by_aW7ELB": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/approved-by-1.webp",
-            "text": ""
-          }
-        },
-        "approved_by_7K9PVt": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/approved-by-2.webp",
-            "text": ""
-          }
-        },
-        "approved_by_brPqPE": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/image_8_5294b392-76fa-4d5c-b135-a504683d3c2c.png",
-            "text": ""
-          }
-        },
-        "approved_by_Cj34Up": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/image_7_3248f920-bfe4-43a3-ba3e-784a1e6f0c60.png",
-            "text": "<p>Backed by <strong>Skin Experts</strong></p>"
-          }
-        },
-        "approved_by_DpRR3G": {
-          "type": "approved-by",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/approved-by-2.webp",
-            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "approved_by_aW7ELB",
-        "approved_by_7K9PVt",
-        "approved_by_brPqPE",
-        "approved_by_Cj34Up",
-        "approved_by_DpRR3G"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_hero-section.name",
-      "settings": {
-        "use_own_file": false,
-        "hidden": false,
-        "modifier": "none",
-        "show_logo": false,
-        "approved_position": "before_text",
-        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
-        "rating": "",
-        "rating_text": "",
-        "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
-        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
-        "button_url": "#purchase-form",
-        "button_label": "Start your treatment",
-        "button_line": false,
-        "alert": "",
-        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
-        "marked_list": "",
-        "marked_list_position": "footer",
-        "badge_text": "",
-        "wistia_url": "8ymvdqzx92",
-        "wistia_mode": "modal",
-        "video_button_label": "Watch Video"
-      }
-    },
     "n_hero_section_EJzFVD": {
       "type": "n_hero-section",
       "blocks": {
@@ -151,7 +78,6 @@
         "use_own_file": false,
         "hidden": false,
         "modifier": "extended",
-        "show_logo": true,
         "approved_position": "before_text",
         "text": "<h1>Reduce the Look of Wrinkles and Dark Spots at Home.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
         "rating": "4.8",
@@ -159,7 +85,7 @@
         "image": "shopify://shop_images/micro-infusion-hero.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob_1.webp",
         "button_url": "#purchase-form",
-        "button_label": "Save 70% Today",
+        "button_label": "Save 72% Today",
         "button_line": false,
         "alert": "",
         "sub_text": "",
@@ -168,6 +94,78 @@
         "badge_text": "",
         "wistia_url": "6de5pg0r6e",
         "wistia_mode": "popover_button",
+        "video_button_label": "Watch Video"
+      }
+    },
+    "n_hero_section_xMcaXr": {
+      "type": "n_hero-section",
+      "blocks": {
+        "approved_by_aW7ELB": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_7K9PVt": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "approved_by_brPqPE": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/image_8_5294b392-76fa-4d5c-b135-a504683d3c2c.png",
+            "text": ""
+          }
+        },
+        "approved_by_Cj34Up": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/image_7_3248f920-bfe4-43a3-ba3e-784a1e6f0c60.png",
+            "text": "<p>Backed by <strong>Skin Experts</strong></p>"
+          }
+        },
+        "approved_by_DpRR3G": {
+          "type": "approved-by",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_aW7ELB",
+        "approved_by_7K9PVt",
+        "approved_by_brPqPE",
+        "approved_by_Cj34Up",
+        "approved_by_DpRR3G"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_hero-section.name",
+      "settings": {
+        "use_own_file": false,
+        "hidden": false,
+        "modifier": "none",
+        "approved_position": "before_text",
+        "text": "<h1>Visibly reduce the appearance of wrinkles and dark spots - without injectables.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "rating": "",
+        "rating_text": "",
+        "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
+        "button_url": "#purchase-form",
+        "button_label": "Start your treatment",
+        "button_line": false,
+        "alert": "",
+        "sub_text": "<p><strong>Limited Time Offer:</strong> Save Up to 70%</p>",
+        "marked_list": "",
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "8ymvdqzx92",
+        "wistia_mode": "modal",
         "video_button_label": "Watch Video"
       }
     },
@@ -215,7 +213,6 @@
         "use_own_file": false,
         "hidden": true,
         "modifier": "none",
-        "show_logo": false,
         "approved_position": "before_text",
         "text": "<h1>Fine lines & dark spots look smoother. No injections.</h1><p><strong>24K gold-plated microneedles.</strong> Qure's Micro-Infusion System delivers active serums deeper than traditional creams can reach.</p>",
         "rating": "",
@@ -920,7 +917,7 @@
         "heading": "",
         "disclaimer": "",
         "text": "<h2>Real stories, real results</h2>",
-        "button_label": "buy now SAVE UP TO 70%",
+        "button_label": "buy now SAVE UP TO 72%",
         "button_url": "#purchase-form"
       }
     },
@@ -1177,7 +1174,7 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "6de5pg0r6e",
-        "button_label": "buy now & SAVE UP TO 70%",
+        "button_label": "buy now & SAVE UP TO 72%",
         "button_url": "#purchase-form"
       }
     },
@@ -1339,12 +1336,14 @@
         },
         "payment_type_3zQTmH": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Pay_Icons.svg"
           }
@@ -1378,7 +1377,7 @@
         "product_DBd4ef": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "product": "6-month-bundle-micro-infusion-brightening",
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
             "gift": "",
@@ -1395,7 +1394,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
-            "left_items": 439,
+            "left_items": 39,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "26th May",
             "preorder_date_reserved": "26th June",
@@ -1423,7 +1422,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
-            "left_items": 252,
+            "left_items": 52,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
@@ -1448,10 +1447,10 @@
             "product_selling_plan_text": "Ships every 1 month",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
-            "left_items": 0,
+            "left_items": 12,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1488,7 +1487,7 @@
         "product_nyJ9n7": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "product": "6-month-bundle-micro-infusion-rejuvenating",
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
             "gift": "",
@@ -1505,7 +1504,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
-            "left_items": 429,
+            "left_items": 29,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1533,7 +1532,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
-            "left_items": 256,
+            "left_items": 26,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1560,8 +1559,8 @@
             "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
+            "total_treatments": 20,
+            "left_items": 23,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
@@ -1598,7 +1597,7 @@
         "product_gbPf3J": {
           "type": "product",
           "settings": {
-            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product": "6-month-bundle-micro-infusion-rejuvenating-brightening",
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
             "gift": "",
@@ -1615,7 +1614,7 @@
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
-            "left_items": 392,
+            "left_items": 14,
             "preorder_text": "Your Delivery Timeline: next batch ships June 26th: Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
@@ -1804,7 +1803,7 @@
         "use_own_file": false,
         "modifier": "none",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 72%",
         "button_url": "#purchase-form"
       }
     },
