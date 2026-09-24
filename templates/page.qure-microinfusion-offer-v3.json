@@ -1603,8 +1603,8 @@
         "slider_YTrqVV": {
           "type": "image_with_text",
           "settings": {
-            "icon": "save-money",
-            "text": "Saves time, money and hassle compared to in-clinic treatments"
+            "icon": "tone-balance",
+            "text": "Fades the look of dark spots and uneven tone without a clinic visit"
           }
         },
         "slider_3HLnzt": {
@@ -1625,14 +1625,14 @@
           "type": "image_with_text",
           "settings": {
             "icon": "two-in-one",
-            "text": "2-in-1 system refreshes the  look of skin for a visible  glow."
+            "text": "Delivers brightening actives directly where pigment forms — not just on the surface"
           }
         },
         "slider_mqbMLE": {
           "type": "image_with_text",
           "settings": {
             "icon": "perfect-transforming",
-            "text": "Perfect for transforming dull-looking skin before events"
+            "text": "Perfect for achieving a radiant, even complexion before an event"
           }
         }
       },
@@ -1720,6 +1720,7 @@
         },
         "accordion_GarByL": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Tranexamic Acid Notice",
             "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:</p><p>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, <strong>topical TXA in cosmetic formulations is permitted.</strong></p><p>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.</p><p>Our products are compliant with Australian regulartions. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).</p><p>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our support team</a>—we’re happy to help!</p>"
