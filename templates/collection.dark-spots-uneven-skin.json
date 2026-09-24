@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_hero_banner_zUyTB8": {
       "type": "n_hero-banner",
@@ -15,9 +15,30 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "text": "<h1>Dark Spots & Hyperpigmentation</h1>",
+        "text": "<h2>Bright & Even Tone</h2>",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
+      }
+    },
+    "n_breadcrumb_fXMjkJ": {
+      "type": "n_breadcrumb",
+      "name": "t:sections.n_breadcrumb.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_pills_nav_fXMjkJ": {
+      "type": "n_pills-nav",
+      "name": "t:sections.n_pills-nav.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_collection_fXMjkJ": {
+      "type": "n_collection",
+      "name": "t:sections.n_collection.name",
+      "settings": {
+        "use_own_file": false
       }
     },
     "n_features_marquee_7YOxGy": {
@@ -48,7 +69,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "proven",
-            "text": "Proven Results, <br /> Backed By Science"
+            "text": "Proven Results, <br> Backed By Science"
           }
         }
       },
@@ -63,27 +84,6 @@
         "use_own_file": false
       }
     },
-    "n_breadcrumb_fXMjkJ": {
-      "type": "n_breadcrumb",
-      "name": "t:sections.n_breadcrumb.name",
-      "settings": {
-        "use_own_file": false
-      }
-    },
-    "n_pills_nav_fXMjkJ": {
-      "type": "n_pills-nav",
-      "name": "t:sections.n_pills-nav.name",
-      "settings": {
-        "use_own_file": false
-      }
-    },
-    "n_collection_fXMjkJ": {
-      "type": "n_collection",
-      "name": "t:sections.n_collection.name",
-      "settings": {
-        "use_own_file": false
-      }
-    },
     "n_trusted_reviews_mRLHtt": {
       "type": "n_trusted-reviews",
       "blocks": {
@@ -94,6 +94,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
@@ -108,6 +109,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Can't go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -122,6 +124,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
@@ -139,6 +142,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "light",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Results you'll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
@@ -179,10 +186,10 @@
   },
   "order": [
     "n_hero_banner_zUyTB8",
-    "n_features_marquee_7YOxGy",
     "n_breadcrumb_fXMjkJ",
     "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
+    "n_features_marquee_7YOxGy",
     "n_trusted_reviews_mRLHtt",
     "n_take_quiz_DfRXwD"
   ]
