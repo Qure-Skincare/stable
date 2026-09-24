@@ -824,10 +824,18 @@
             "heading": "120 Days",
             "image": "shopify://shop_images/cleanser-selector-duo.webp"
           }
+        },
+        "variant_xGQahG": {
+          "type": "variant",
+          "settings": {
+            "heading": "60 Days",
+            "image": "shopify://shop_images/cleanser-selector-uno.webp"
+          }
         }
       },
       "block_order": [
-        "variant_WmrQaK"
+        "variant_WmrQaK",
+        "variant_xGQahG"
       ],
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
