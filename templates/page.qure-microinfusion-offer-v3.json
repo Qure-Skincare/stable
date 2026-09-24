@@ -930,10 +930,10 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/micro-infusion-system.webp",
-            "heading": "<h5>Qure <br/>Micro-Infusion System</h5>",
+            "heading": "<h5>Qure&nbsp;<br/>Micro-Infusion System</h5>",
             "text_1": "As little as 1-2 days",
             "select_1": "checkmark",
-            "text_2": "Tailored to your needs",
+            "text_2": "Direct, through micro-channels",
             "select_2": "checkmark",
             "text_3": "Minimal downtime & virtually painless",
             "select_3": "checkmark",
@@ -947,14 +947,14 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/clinic-treatment.webp",
-            "heading": "<h5>Micro-Infusion<br/>Clinic Treatment</h5>",
-            "text_1": "As little as 1-2 days",
+            "heading": "<h5>Rx Spot Cream</h5>",
+            "text_1": "8–12+ weeks typical",
             "select_1": "checkmark",
-            "text_2": "Tailored to your needs",
+            "text_2": "Surface diffusion",
             "select_2": "checkmark",
-            "text_3": "Minimal downtime",
+            "text_3": "Common irritation/dryness with prolonged use",
             "select_3": "checkmark",
-            "text_4": "$300+ per treatment",
+            "text_4": "Rx cost + dermatologist visit",
             "select_4": "checkmark",
             "text_5": "",
             "select_5": "checkmark"
@@ -964,14 +964,14 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/home-treatment.webp",
-            "heading": "<h5>Derma Roller<br/>At-Home Treatment</h5>",
-            "text_1": "A few days",
-            "select_1": "cross",
-            "text_2": "Not customized",
-            "select_2": "cross",
-            "text_3": "Potential side effects",
-            "select_3": "cross",
-            "text_4": "< $10 per treatment",
+            "heading": "<h5>OTC Dark Spot Serum</h5>",
+            "text_1": "8–12+ weeks typical",
+            "select_1": "checkmark",
+            "text_2": "Surface diffusion",
+            "select_2": "checkmark",
+            "text_3": "Varies by formulation",
+            "select_3": "checkmark",
+            "text_4": "$20–$40 per jar",
             "select_4": "checkmark",
             "text_5": "",
             "select_5": "checkmark"
@@ -1223,7 +1223,7 @@
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_type_accordion_SQKQhNr": {
@@ -1281,7 +1281,7 @@
             "discount_code": "FREEM&I3MIST",
             "free_shipping": false,
             "per_treatment": true,
-            "preselected": false,
+            "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
@@ -1335,7 +1335,7 @@
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_type_accordion_SVLXcAn": {
@@ -1393,7 +1393,7 @@
             "discount_code": "FREEM&I3MIST",
             "free_shipping": false,
             "per_treatment": true,
-            "preselected": false,
+            "preselected": true,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
