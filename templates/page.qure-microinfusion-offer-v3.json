@@ -946,7 +946,7 @@
         "comparison_table_2": {
           "type": "comparison_table",
           "settings": {
-            "image": "shopify://shop_images/clinic-treatment.webp",
+            "image": "shopify://shop_images/face_cream.png",
             "heading": "<h5>Rx Spot Cream</h5>",
             "text_1": "8–12+ weeks typical",
             "select_1": "checkmark",
@@ -963,7 +963,7 @@
         "comparison_table_3": {
           "type": "comparison_table",
           "settings": {
-            "image": "shopify://shop_images/home-treatment.webp",
+            "image": "shopify://shop_images/comparison-table-image-2.webp",
             "heading": "<h5>OTC Dark Spot Serum</h5>",
             "text_1": "8–12+ weeks typical",
             "select_1": "checkmark",
