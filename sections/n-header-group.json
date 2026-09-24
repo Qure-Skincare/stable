@@ -64,7 +64,7 @@
       }
     },
     "header": {
-      "type": "n-header-new",
+      "type": "n-header",
       "blocks": {
         "tab_bestsellers": {
           "type": "nav-tab",
