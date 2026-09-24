@@ -1,0 +1,106 @@
+{% doc %}
+  Renders a header navigation tab: the menu item and its dropdown panel.
+  The menu item is wrapped in <!--nav-menu--> markers so the parent section
+  (sections/n-header.liquid) can move it into the top menu.
+{% enddoc %}
+
+{% liquid
+  assign panel = block.settings.panel
+%}
+
+<!--nav-menu-->
+<li{% if panel == 'none' %} {{ block.shopify_attributes }}{% endif %}>
+    {% if panel == 'none' %}
+        <a href="{{ block.settings.url | default: '#' }}">
+    {% else %}
+        <a href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}">
+    {% endif %}
+        <span>{{ block.settings.title }}</span>
+        {% if block.settings.pill != blank %}
+            <span class="e-pill-save">{{ block.settings.pill }}</span>
+        {% endif %}
+    </a>
+</li>
+<!--/nav-menu-->
+
+{% if panel != 'none' %}
+    <div class="header__content" id="{{ panel }}" {{ block.shopify_attributes }}>
+        <div class="header__content-container container">
+            {% if block.settings.heading != blank %}
+                <div class="header__content-title">
+                    <h3>{{ block.settings.heading }}</h3>
+                    {% if block.settings.button_label != blank %}
+                        <a class="btn btn--primary btn--md" href="{{ block.settings.button_url | default: '#' }}">{{ block.settings.button_label }}</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+            {% content_for 'blocks' %}
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Nav tab",
+    "tag": null,
+    "blocks": [
+        { "type": "nav-cards" },
+        { "type": "nav-links" }
+    ],
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Menu title",
+            "default": "Menu item"
+        },
+        {
+            "type": "text",
+            "id": "pill",
+            "label": "Pill text",
+            "info": "Optional badge next to the menu title, e.g. \"Save up to 55%\""
+        },
+        {
+            "type": "url",
+            "id": "url",
+            "label": "Link",
+            "info": "Used when the tab has no dropdown, and on mobile"
+        },
+        {
+            "type": "select",
+            "id": "panel",
+            "label": "Dropdown layout",
+            "options": [
+                { "value": "none", "label": "No dropdown (plain link)" },
+                { "value": "shop_bestsellers", "label": "Product cards" },
+                { "value": "shop_benefits", "label": "Image cards" },
+                { "value": "learn_more", "label": "Link columns + cards" }
+            ],
+            "default": "none",
+            "info": "Each layout can be used by one tab only"
+        },
+        {
+            "type": "header",
+            "content": "Dropdown title"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button link"
+        }
+    ],
+    "presets": [
+        { "name": "Nav tab" }
+    ]
+}
+{% endschema %}

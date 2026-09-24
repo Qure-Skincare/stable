@@ -1,0 +1,97 @@
+{% doc %}
+  Renders a header navigation card with an image.
+{% enddoc %}
+
+{% liquid
+  assign image = block.settings.image
+  assign image_mobile = block.settings.image_mobile
+  assign title = block.settings.title | escape
+%}
+
+<li{% if block.settings.hide_on_mobile %} class="d-none d-md-block"{% endif %} {{ block.shopify_attributes }}>
+    <a href="{{ block.settings.url | default: '#' }}">
+        {% if block.settings.label != blank %}
+            <small>{{ block.settings.label }}</small>
+        {% endif %}
+        <span>{{ block.settings.title }}</span>
+        {% if block.settings.badge != blank %}
+            <span class="e-pill-badge e-pill-badge--fill">{{ block.settings.badge }}</span>
+        {% endif %}
+        {% if image != blank %}
+            {% if block.settings.image_style == 'background' %}
+                <picture>
+                    {% if image_mobile != blank %}
+                        <source media="(min-width:992px)" srcset="{{ image | image_url: width: 344 }}" />
+                        {{ image_mobile | image_url: width: 600 | image_tag: loading: 'lazy', alt: title, width: nil, height: nil, widths: '300, 450, 600', sizes: '50vw' }}
+                    {% else %}
+                        {{ image | image_url: width: 344 | image_tag: loading: 'lazy', alt: title, width: nil, height: nil, widths: '172, 344', sizes: '172px' }}
+                    {% endif %}
+                </picture>
+            {% else %}
+                {{ image | image_url: width: 344 | image_tag: loading: 'lazy', alt: title, width: nil, height: nil, widths: '172, 344', sizes: '172px' }}
+            {% endif %}
+        {% endif %}
+    </a>
+</li>
+
+{% schema %}
+{
+    "name": "Nav card",
+    "tag": null,
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Card title"
+        },
+        {
+            "type": "text",
+            "id": "label",
+            "label": "Label above title",
+            "info": "Small orange text, e.g. \"Help Center\""
+        },
+        {
+            "type": "text",
+            "id": "badge",
+            "label": "Badge",
+            "info": "The badge of the last card is highlighted"
+        },
+        {
+            "type": "url",
+            "id": "url",
+            "label": "Link"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "select",
+            "id": "image_style",
+            "label": "Image style",
+            "options": [
+                { "value": "product", "label": "Product (below text)" },
+                { "value": "background", "label": "Background (fills card)" }
+            ],
+            "default": "product"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Mobile image",
+            "info": "Background style only"
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_on_mobile",
+            "label": "Hide on mobile",
+            "default": false
+        }
+    ],
+    "presets": [
+        { "name": "Nav card" }
+    ]
+}
+{% endschema %}
