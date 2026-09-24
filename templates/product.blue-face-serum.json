@@ -422,7 +422,8 @@
       "settings": {
         "section_id": "",
         "modifier": "blue-serum",
-        "wistia_url": "5p8ej4e9m3"
+        "wistia_url": "zftm6ecnt6",
+        "wistia_url_mobile": "8rkjozy7ch"
       }
     },
     "n_experts_pick_blue_face_serum": {
@@ -647,6 +648,7 @@
         "video_7"
       ],
       "name": "t:sections.n_customers-video.name",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "text": "<h2>Confident skin starts here</h2>"

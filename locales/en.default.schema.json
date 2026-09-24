@@ -213,6 +213,7 @@
         "bundle": "Bundle",
         "bundle-text": "Bundle text",
         "wistia-url": "Wistia URL",
+        "wistia-url-mobile": "Wistia URL mobile",
         "wistia-mode": "Wistia mode",
         "video-button-label": "Video button label",
         "modal": "Modal",
