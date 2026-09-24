@@ -330,7 +330,8 @@
         "klaviyo_form_name": "Xw9a5v",
         "guarantee_period": "30",
         "hide_bottom": true,
-        "hide_certified": true
+        "hide_certified": true,
+        "hide_title_on_subscription": false
       }
     },
     "n_across_image_banner_cleanser": {
@@ -820,19 +821,19 @@
         "variant_WmrQaK": {
           "type": "variant",
           "settings": {
-            "heading": ""
+            "heading": "120 Days",
+            "image": "shopify://shop_images/cleanser-selector-duo.webp"
           }
         }
       },
       "block_order": [
         "variant_WmrQaK"
       ],
-      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
-        "text": "",
-        "button-label": "",
+        "text": "80 Units Reserved in last 48 hours",
+        "button-label": "Subscribe & Save {dyn}%",
         "button-url": ""
       }
     }
