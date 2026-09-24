@@ -68,6 +68,7 @@
     },
     "n_base_section_zWkqBN": {
       "type": "n_base-section",
+      "disabled": true,
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
@@ -91,7 +92,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over $100"
+            "text": "Free Shipping On Orders Over $149"
           }
         },
         "image_with_text_AUjmAT": {
