@@ -353,6 +353,18 @@
         "button_url": ""
       }
     },
+    "n_text_recovery_mask": {
+      "type": "n_text",
+      "name": "t:sections.n_text.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "row",
+        "text": "<h2>Kind to skin. Serious about recovery.</h2><p>Developed for skin after Micro-Infusion, as well as dry, sensitive, and stressed skin. The formula and ultra-soft TENCEL material are designed to sit comfortably on skin while delivering soothing hydration.</p>",
+        "button_label": "Shop Now",
+        "button_url": "#",
+        "arrow_button": false
+      }
+    },
     "n_customers_video_recovery_mask": {
       "type": "n_customers-video",
       "blocks": {
@@ -538,6 +550,7 @@
     "n_features_marquee_recovery_mask",
     "n_experts_pick_recovery_mask",
     "n_across_gallery_recovery_mask",
+    "n_text_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
     "sticky_cta_recovery_mask"

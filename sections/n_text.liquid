@@ -34,7 +34,7 @@
                     {% if section.settings.arrow_button %}
                         <a href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
                     {% else %}
-                        <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }} <i class="e-icon e-icon-arrow"></i> </a>
+                        <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
                     {% endif %}
                 {% endif %}
                 {% assign has_text = false %}
@@ -123,6 +123,10 @@
                 {
                     "value": "flex",
                     "label": "t:common.flex"
+                },
+                {
+                    "value": "row",
+                    "label": "t:common.row"
                 }
             ]
         },
