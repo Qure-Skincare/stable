@@ -459,6 +459,78 @@
         "badge_text": "Refrigerate sealed pouch for cooling"
       }
     },
+    "n_before_after_slider_recovery_mask": {
+      "type": "n_before-after-slider",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "image_before": "shopify://shop_images/ba-slider-1-before.webp",
+            "before_text": "Before",
+            "image_after": "shopify://shop_images/ba-slider-1-after.webp",
+            "after_text": "After 4 weeks",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Briony R.",
+            "verified_customer": "Verified customer",
+            "heading": "Younger skin",
+            "text": "<p>\"The results are so so great. My sun damage is gone. My confidence at 50 years old is booming.\"</p>"
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "image_before": "shopify://shop_images/ba-slider-1-before.webp",
+            "before_text": "Before",
+            "image_after": "shopify://shop_images/ba-slider-1-after.webp",
+            "after_text": "After 4 weeks",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Briony R.",
+            "verified_customer": "Verified customer",
+            "heading": "Younger skin",
+            "text": "<p>\"The results are so so great. My sun damage is gone. My confidence at 50 years old is booming.\"</p>"
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "image_before": "shopify://shop_images/ba-slider-1-before.webp",
+            "before_text": "Before",
+            "image_after": "shopify://shop_images/ba-slider-1-after.webp",
+            "after_text": "After 4 weeks",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Briony R.",
+            "verified_customer": "Verified customer",
+            "heading": "Younger skin",
+            "text": "<p>\"The results are so so great. My sun damage is gone. My confidence at 50 years old is booming.\"</p>"
+          }
+        },
+        "review_4": {
+          "type": "review",
+          "settings": {
+            "image_before": "shopify://shop_images/ba-slider-1-before.webp",
+            "before_text": "Before",
+            "image_after": "shopify://shop_images/ba-slider-1-after.webp",
+            "after_text": "After 4 weeks",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Briony R.",
+            "verified_customer": "Verified customer",
+            "heading": "Younger skin",
+            "text": "<p>\"The results are so so great. My sun damage is gone. My confidence at 50 years old is booming.\"</p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4"
+      ],
+      "name": "t:sections.n_before-after-slider.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h6>BACKED BY TESTING</h6><h2>Evidence</h2>"
+      }
+    },
     "n_customers_video_recovery_mask": {
       "type": "n_customers-video",
       "blocks": {
@@ -647,6 +719,7 @@
     "n_text_recovery_mask",
     "n_base_slider_recovery_mask",
     "n_usage_steps_recovery_mask",
+    "n_before_after_slider_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
     "sticky_cta_recovery_mask"

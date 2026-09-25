@@ -283,6 +283,8 @@
         "approved-position": "Approved by position",
         "before-text": "Before text",
         "after-text": "After text",
+        "before": "Before",
+        "after": "After",
         "show-logo": "Show logo",
         "must-read": "Must read",
         "wistia-slider": "Wistia slider",
@@ -738,6 +740,9 @@
                     "grey": "Grey"
                 }
             }
+        },
+        "n_before-after-slider": {
+            "name": "Before after slider"
         },
         "n_award-winning": {
             "name": "Award winning"
