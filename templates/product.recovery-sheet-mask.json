@@ -235,6 +235,124 @@
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
+    "n_across_gallery_recovery_mask": {
+      "type": "n_across-gallery",
+      "blocks": {
+        "pill_dry": {
+          "type": "pill",
+          "settings": {
+            "text": "When skin feels dry"
+          }
+        },
+        "pill_micro": {
+          "type": "pill",
+          "settings": {
+            "text": "After Micro-Infusion"
+          }
+        },
+        "pill_travel": {
+          "type": "pill",
+          "settings": {
+            "text": "After travel"
+          }
+        },
+        "pill_post": {
+          "type": "pill",
+          "settings": {
+            "text": "Post-treatment care"
+          }
+        },
+        "pill_sun": {
+          "type": "pill",
+          "settings": {
+            "text": "After sun exposure"
+          }
+        },
+        "pill_event": {
+          "type": "pill",
+          "settings": {
+            "text": "Before a big event"
+          }
+        },
+        "pill_season": {
+          "type": "pill",
+          "settings": {
+            "text": "During seasonal dryness"
+          }
+        },
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-1.webp"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-2.webp"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-3.webp"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-4.webp"
+          }
+        },
+        "image_5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-5.webp"
+          }
+        },
+        "image_6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-6.webp"
+          }
+        },
+        "image_7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-7.webp"
+          }
+        },
+        "image_8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovery-mask-8.webp"
+          }
+        }
+      },
+      "block_order": [
+        "pill_dry",
+        "pill_micro",
+        "pill_travel",
+        "pill_post",
+        "pill_sun",
+        "pill_event",
+        "pill_season",
+        "image_1",
+        "image_2",
+        "image_3",
+        "image_4",
+        "image_5",
+        "image_6",
+        "image_7",
+        "image_8"
+      ],
+      "name": "t:sections.n_across-gallery.name",
+      "settings": {
+        "text": "<h6>FOR YOUR SKIN’S NEEDS</h6><h2>When to Use</h2><p>Give your skin an extra boost of hydration and comfort whenever it feels dry, stressed, or in need of a reset.</p>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "n_customers_video_recovery_mask": {
       "type": "n_customers-video",
       "blocks": {
@@ -419,6 +537,7 @@
     "n_accordion_tiles_square_recovery_mask",
     "n_features_marquee_recovery_mask",
     "n_experts_pick_recovery_mask",
+    "n_across_gallery_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
     "sticky_cta_recovery_mask"
