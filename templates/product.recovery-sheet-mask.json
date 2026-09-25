@@ -406,6 +406,59 @@
         "button_url": "#"
       }
     },
+    "n_usage_steps_recovery_mask": {
+      "type": "n_usage-steps",
+      "blocks": {
+        "step_prepare": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-recovery-mask-1.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-1-mob.webp",
+            "heading": "1. Prepare",
+            "text": "<p>After Micro-Infusion, apply the mask directly to skin. If using it on its own, start with clean, dry skin.</p>"
+          }
+        },
+        "step_take_out": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-recovery-mask-2.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-2-mob.webp",
+            "heading": "2. Take the mask out",
+            "text": "<p>Carefully unfold the mask and smooth it over your face, aligning the eye and mouth openings.</p>"
+          }
+        },
+        "step_place": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-recovery-mask-3.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-3-mob.webp",
+            "heading": "3. Place mask on face",
+            "text": "<p>Leave the mask on for 15-20 minutes while you relax.</p>"
+          }
+        },
+        "step_rinse": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-recovery-mask-4.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-4-mob.webp",
+            "heading": "4. Do not rinse",
+            "text": "<p>Gently remove and discard the mask. Do not rinse. Pat or massage any remaining serum into the skin until absorbed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_prepare",
+        "step_take_out",
+        "step_place",
+        "step_rinse"
+      ],
+      "name": "t:sections.n_usage-steps.name",
+      "settings": {
+        "heading": "<h6>SIMPLE 15-MINUTE RITUAL</h6><h2>How to Use</h2>",
+        "badge": "Pro tip",
+        "badge_text": "Refrigerate sealed pouch for cooling"
+      }
+    },
     "n_customers_video_recovery_mask": {
       "type": "n_customers-video",
       "blocks": {
@@ -593,6 +646,7 @@
     "n_across_gallery_recovery_mask",
     "n_text_recovery_mask",
     "n_base_slider_recovery_mask",
+    "n_usage_steps_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
     "sticky_cta_recovery_mask"

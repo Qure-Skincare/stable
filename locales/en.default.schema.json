@@ -808,6 +808,9 @@
         "n_how-to-use": {
             "name": "How to use"
         },
+        "n_usage-steps": {
+            "name": "Usage steps"
+        },
         "n_achievement-goals": {
             "name": "Achievement goals slider"
         },
