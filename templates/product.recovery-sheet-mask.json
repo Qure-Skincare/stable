@@ -365,6 +365,47 @@
         "arrow_button": false
       }
     },
+    "n_base_slider_recovery_mask": {
+      "type": "n_base-slider",
+      "blocks": {
+        "slide_post_treatment": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/why-work-recovery-mask-1.webp",
+            "heading": "<h6>A post-treatment step, not an extra.</h6>",
+            "text": "<p>After Micro-Infusion, a cooling mask is standard aftercare in clinics, not optional. Recovery+ brings that same step home.</p>"
+          }
+        },
+        "slide_cool": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/why-work-recovery-mask-2.webp",
+            "heading": "<h6>Cool on contact. Calm by morning.</h6>",
+            "text": "<p>30 ml of a concentrated hydration stack, polyglutamic acid, beta-glucan, cica, ectoin, sealed into a soft TENCEL sheet that hugs the face without pilling or discomfort.</p>"
+          }
+        },
+        "slide_safe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/why-work-recovery-mask-3.webp",
+            "heading": "<h6>Safe on the skin that needs it most.</h6>",
+            "text": "<p>HRIPT-tested and dermatologist-approved for sensitive and reactive skin, because post-Micro-Infusion skin has zero room for irritation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_post_treatment",
+        "slide_cool",
+        "slide_safe"
+      ],
+      "name": "t:sections.n_base-slider.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h6>THE QURE APPROACH</h6><h2>Why it Exists</h2>",
+        "button_label": "Get Started",
+        "button_url": "#"
+      }
+    },
     "n_customers_video_recovery_mask": {
       "type": "n_customers-video",
       "blocks": {
@@ -551,6 +592,7 @@
     "n_experts_pick_recovery_mask",
     "n_across_gallery_recovery_mask",
     "n_text_recovery_mask",
+    "n_base_slider_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
     "sticky_cta_recovery_mask"

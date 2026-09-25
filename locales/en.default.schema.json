@@ -565,6 +565,9 @@
                 }
             }
         },
+        "n_base-slider": {
+            "name": "Base slider"
+        },
         "n_base-section": {
             "name": "Base section",
             "settings": {
