@@ -531,6 +531,93 @@
         "heading": "<h6>BACKED BY TESTING</h6><h2>Evidence</h2>"
       }
     },
+    "n_complete_system_recovery_mask": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_cleanser": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "variant_title": "",
+            "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_dermal_mist": {
+          "type": "product",
+          "settings": {
+            "product": "dermal-mist",
+            "variant_title": "",
+            "description": "Kills bacteria and prepares skin for a safer Micro-Infusion treatment.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_micro_infusion": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "variant_title": "",
+            "description": "Activates your skin’s renewal process and helps improve the look of fine lines, texture, and uneven tone.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_recovery_mask": {
+          "type": "product",
+          "settings": {
+            "product": "recovery-sheet-mask",
+            "variant_title": "",
+            "description": "Developed for skin after Micro-Infusion, as well as dry, sensitive, and stressed skin. The formula and ultra-soft TENCEL material are designed to sit comfortably on skin while delivering soothing hydration.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_cleanser",
+        "product_dermal_mist",
+        "product_micro_infusion",
+        "product_recovery_mask",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "name": "t:sections.n_page-microinfusion-complete-system.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "bg",
+        "heading": "<h2>Complete the Qure system</h2>",
+        "button_label": "Add Full System to Cart",
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
     "n_customers_video_recovery_mask": {
       "type": "n_customers-video",
       "blocks": {
@@ -720,6 +807,7 @@
     "n_base_slider_recovery_mask",
     "n_usage_steps_recovery_mask",
     "n_before_after_slider_recovery_mask",
+    "n_complete_system_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
     "sticky_cta_recovery_mask"
