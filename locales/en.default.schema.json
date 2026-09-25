@@ -301,6 +301,8 @@
         "fine-lines": "Fine lines",
         "antioxidant": "Antioxidant",
         "droplet": "Droplet",
+        "waves": "Waves",
+        "wand": "Wand",
         "wrinkles": "Wrinkles",
         "dark-spots": "Dark spots",
         "blemishes": "Blemishes",
@@ -743,7 +745,8 @@
             "settings": {
                 "modifier-options": {
                     "faucet-filter": "Faucet filter",
-                    "shower-filter": "Shower filter"
+                    "shower-filter": "Shower filter",
+                    "recovery-mask": "Recovery mask"
                 }
             },
             "blocks": {

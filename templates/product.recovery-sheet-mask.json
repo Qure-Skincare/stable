@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_YnMCRC": {
       "type": "n-product",
@@ -16,131 +16,411 @@
         "show_discount": true
       }
     },
-    "n_press_reviews_HDaUTN": {
-      "type": "n_press-reviews",
+    "n_why_it_works_recovery_mask": {
+      "type": "n_why-it-works",
       "blocks": {
-        "image_with_text_rczj6t": {
-          "type": "image_with_text",
+        "accordion_skin_types": {
+          "type": "accordion",
           "settings": {
-            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
-            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+            "section_id": "",
+            "component": "none",
+            "heading": "Suitable for all skin types",
+            "text": "<p>Formulated for dry, sensitive, and stressed skin, whether after Micro-Infusion or whenever skin needs extra comfort.</p>",
+            "icon": "verified-shield"
           }
         },
-        "image_with_text_WhtWNQ": {
-          "type": "image_with_text",
+        "accordion_hydration": {
+          "type": "accordion",
           "settings": {
-            "text": "<h4>“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”</h4>",
-            "image": "shopify://shop_images/women-health.svg"
+            "section_id": "",
+            "component": "none",
+            "heading": "Deep hydration",
+            "text": "<p>Polyglutamic Acid helps lock in moisture and leave skin feeling hydrated long after the mask is removed.</p>",
+            "icon": "droplet-2"
           }
         },
-        "image_with_text_rwJFRA": {
-          "type": "image_with_text",
+        "accordion_redness": {
+          "type": "accordion",
           "settings": {
-            "text": "<h4>“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”</h4>",
-            "image": "shopify://shop_images/Popsugar_logo.svg"
+            "section_id": "",
+            "component": "none",
+            "heading": "Visible redness relief",
+            "text": "<p>With Centella Asiatica to help calm the appearance of visible redness and leave skin feeling soothed.</p>",
+            "icon": "waves-2"
           }
         },
-        "image_with_text_GcMQyX": {
-          "type": "image_with_text",
+        "accordion_routine": {
+          "type": "accordion",
           "settings": {
-            "text": "<h4>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”</h4>",
-            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
+            "section_id": "",
+            "component": "none",
+            "heading": "Fits into your routine",
+            "text": "<p>Reach for it after a long flight, whenever skin feels dry or stressed, or after your next Micro-Infusion treatment.</p>",
+            "icon": "wand"
           }
         },
-        "image_with_text_xNnbxX": {
-          "type": "image_with_text",
+        "component_polyglutamic": {
+          "type": "component",
           "settings": {
-            "text": "<h4>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</h4>",
-            "image": "shopify://shop_images/gq.svg"
+            "modifier": "none",
+            "heading": "Polyglutamic acid",
+            "text": "Hydration"
+          }
+        },
+        "component_ectoin": {
+          "type": "component",
+          "settings": {
+            "modifier": "reverse",
+            "heading": "Ectoin",
+            "text": "Protection"
+          }
+        },
+        "component_beta_glucan": {
+          "type": "component",
+          "settings": {
+            "modifier": "none",
+            "heading": "Beta-Glucan",
+            "text": "Calming"
           }
         }
       },
       "block_order": [
-        "image_with_text_rczj6t",
-        "image_with_text_WhtWNQ",
-        "image_with_text_rwJFRA",
-        "image_with_text_GcMQyX",
-        "image_with_text_xNnbxX"
+        "accordion_skin_types",
+        "accordion_hydration",
+        "accordion_redness",
+        "accordion_routine",
+        "component_polyglutamic",
+        "component_ectoin",
+        "component_beta_glucan"
       ],
-      "name": "t:sections.n_press-reviews.name",
+      "name": "t:sections.n_why-it-works.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>",
-        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
+        "modifier": "recovery-mask",
+        "text": "<h6>QURE RECOVERY+ MASK</h6><h2>Why Choose Recovery+?</h2><p>Our soothing mask floods your skin with everything you need to soothe and calm post-treatment skin.</p>",
+        "image": "shopify://shop_images/recovery-mask.webp",
+        "image_mobile": "shopify://shop_images/recovery-mask-mob.webp",
+        "badge_text": "Instant Cooling Effect!",
+        "disclaimer": "For post-Micro-Infusion care, or whenever skin needs extra comfort."
       }
     },
-    "n_trusted_reviews_HRLHtt": {
-      "type": "n_trusted-reviews",
+    "n_accordion_tiles_square_recovery_mask": {
+      "type": "n_accordion-tiles-square",
       "blocks": {
-        "slider_iCfR9d": {
-          "type": "slider",
+        "accordion_hydration": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/ellie-v.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ellie V.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Ellie uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "image": "shopify://shop_images/methylene-blue-2-tile.webp",
+            "heading": "Hydration",
+            "text": "<h6>Polyglutamic Acid</h6><p>Helps lock in moisture, reduce moisture loss, and leave skin looking visibly plumper and more hydrated.</p><h6>Sodium Hyaluronate</h6><p>A form of hyaluronic acid that helps attract and retain moisture for softer, more hydrated-looking skin.</p>"
           }
         },
-        "slider_xqHC8P": {
-          "type": "slider",
+        "accordion_calming": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/anton-m.webp",
-            "flag": "shopify://shop_images/australia_f.webp",
-            "username": "Anton M.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
-            "product_text": "Anton uses...",
-            "product_title": "Q-Rejuvalight Pro LED Mask"
+            "image": "shopify://shop_images/niacinamide-2-tile.webp",
+            "heading": "Calming",
+            "text": "<h6>Beta-Glucan</h6><p>Helps calm the appearance of visible redness and support the skin’s moisture barrier.</p><h6>Centella Asiatica</h6><p>A well-known soothing botanical that helps calm stressed-looking skin and support the skin barrier.</p>"
           }
         },
-        "slider_ea3hLd": {
-          "type": "slider",
+        "accordion_protection": {
+          "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/jennifer-n.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "image": "shopify://shop_images/beta-glucan-3-tile.webp",
+            "heading": "Protection",
+            "text": "<h6>Ectoin</h6><p>Helps protect skin from environmental stressors and support the skin barrier.</p><h6>Allantoin</h6><p>Helps soothe dry, stressed skin, reduce visible flaking, and leave skin feeling softer and more comfortable.</p>"
+          }
+        },
+        "popup_ingredients": {
+          "type": "popup",
+          "settings": {
+            "button_label": "View Full Ingredient List",
+            "popup_id": "fullIngredient",
+            "text": "<p><strong>Recovery+ Sheet Mask Ingredients</strong></p><p>Glycerin, Aqua (Water), Sodium Cocoyl Glutamate, Disodium Cocoamphodiacetate, Lactic Acid, Sodium Chloride, Squalane, Aloe Barbadensis Leaf Juice Powder, Panthenol, Camellia Sinensis (Green Tea) Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Sodium Phytate, Caprylhydroxamic Acid, Glyceryl Caprylate</p>",
+            "sub_text": "<ul><li>Fragrance-free</li><li>Silicone-free</li><li>Cruelty-free</li><li>Non-drying</li><li>Hypoallergenic</li><li>Safe for sensitive skin</li></ul>"
           }
         }
       },
       "block_order": [
-        "slider_iCfR9d",
-        "slider_xqHC8P",
-        "slider_ea3hLd"
+        "accordion_hydration",
+        "accordion_calming",
+        "accordion_protection",
+        "popup_ingredients"
       ],
-      "name": "t:sections.n_trusted-reviews.name",
+      "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
         "use_own_file": false,
-        "background_color": "light",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": "",
-        "button_url": ""
+        "section_id": "",
+        "heading": "<h6>FORMULATED WITH PURPOSE</h6><h2>Powerful Ingredients</h2>"
       }
     },
-    "n_you_may_also_like_HZi1bC": {
-      "type": "n_product-you-may-also-like",
+    "n_features_marquee_recovery_mask": {
+      "type": "n_features-marquee",
+      "blocks": {
+        "image_with_text_shipping": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br>Orders Over $100"
+          }
+        },
+        "image_with_text_reviewed": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "reviewed",
+            "text": "Dermatologist<br>Reviewed"
+          }
+        },
+        "image_with_text_pay_later": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br>Options Available"
+          }
+        },
+        "image_with_text_proven": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "proven",
+            "text": "Proven Results,<br>Backed By Science"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_shipping",
+        "image_with_text_reviewed",
+        "image_with_text_pay_later",
+        "image_with_text_proven"
+      ],
+      "name": "t:sections.n_features-marquee.name",
       "settings": {
         "use_own_file": false
+      }
+    },
+    "n_experts_pick_recovery_mask": {
+      "type": "n_experts-pick",
+      "blocks": {
+        "percent_clarity": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Clarity & Tone</h6><p>Evens out tone over time</p>",
+            "percent": 100
+          }
+        },
+        "percent_glow": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Radiant Glow</h6><p>Less fatigued, more vibrant</p>",
+            "percent": 100
+          }
+        },
+        "percent_texture": {
+          "type": "percent",
+          "settings": {
+            "text": "<h6>Smooth Texture</h6><p>Softer with consistent use</p>",
+            "percent": 100
+          }
+        }
       },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      "block_order": [
+        "percent_clarity",
+        "percent_glow",
+        "percent_texture"
+      ],
+      "name": "t:sections.n_experts-pick.name",
+      "settings": {
+        "section_id": "",
+        "badge_text": "",
+        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the Recovery+ Sheet Mask after Micro-Infusion because it provides an immediate cooling sensation, helps calm the appearance of visible redness, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
+        "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
+      }
+    },
+    "n_customers_video_recovery_mask": {
+      "type": "n_customers-video",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "youtube_url": true,
+            "video_url": "https://www.youtube.com/watch?v=wuIjXhlFUTU",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_5": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_6": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        },
+        "video_7": {
+          "type": "video",
+          "settings": {
+            "youtube_url": false,
+            "video_url": "opfbh936fc",
+            "image": "shopify://shop_images/customer-video-card-1.webp",
+            "username": "Ellie V.",
+            "text": "<p>I've seen a huge change in my skin. The dullness is gone and my fine lines are visibly softened.</p>",
+            "badge_text": "Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4",
+        "video_5",
+        "video_6",
+        "video_7"
+      ],
+      "name": "t:sections.n_customers-video.name",
+      "settings": {
+        "section_id": "",
+        "text": "<h2>Confident skin starts here</h2>"
+      }
+    },
+    "n_faq_recovery_mask": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_benefit": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How will the Recovery+ Sheet Mask benefit my hair/skin?",
+            "text": "<p>The Recovery+ Sheet Mask removes harmful impurities like heavy metals, chlorine, and unwanted minerals from your water, helping to protect your skin and hair from damage caused by hard water.</p><p>By filtering out water impurities, the Recovery+ Sheet Mask helps reduce dryness, irritation, and brittleness, leaving your skin hydrated and your hair smoother and more manageable.</p>"
+          }
+        },
+        "accordion_showerheads": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it compatible with all showerheads?",
+            "text": "<p>The Recovery+ Sheet Mask fits most standard showerheads, but we recommend checking your showerhead's specifications to ensure compatibility.</p>"
+          }
+        },
+        "accordion_pressure": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does it affect water pressure?",
+            "text": "<p>The Recovery+ Sheet Mask is designed to maintain water pressure while effectively filtering impurities. You’ll enjoy clean water without compromising your shower experience.</p>"
+          }
+        },
+        "accordion_certified": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is the Recovery+ Sheet Mask certified, tested, and safe to use?",
+            "text": "<p>Yes — it’s third-party tested to meet NSF water filtration standards and made with certified BPA-free, non-toxic, and skin-friendly materials. It’s also leak-resistant and built to last.</p>"
+          }
+        },
+        "accordion_replace": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need to change/replace the filter?",
+            "text": "<p>The Recovery+ Sheet Mask lasts approximately 3 months, depending on your water quality and usage. We recommend replacing it after 3 months for optimal performance.</p>"
+          }
+        },
+        "accordion_install": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How easy is it to install?",
+            "text": "<p>Yes, the Recovery+ Sheet Mask is designed for easy, tool-free installation. It fits most standard showerheads, so you can quickly start enjoying clean, filtered water.</p>"
+          }
+        },
+        "accordion_subscribe": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why should I subscribe?",
+            "text": "<p>Regularly replacing your Recovery+ Sheet Mask ensures it continues to effectively remove chlorine, heavy metals, and impurities from your water. Over time, the filtration media becomes saturated, reducing its ability to provide clean, skin-friendly water.</p><p>By subscribing, you prevent buildup of contaminants that can diminish the filter’s effectiveness, and consistently reduce exposure to harmful chemicals that cause hair and skin irritation and dryness.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_benefit",
+        "accordion_showerheads",
+        "accordion_pressure",
+        "accordion_certified",
+        "accordion_replace",
+        "accordion_install",
+        "accordion_subscribe"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    },
+    "sticky_cta_recovery_mask": {
+      "type": "n-sticky-button",
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Regularly replacing",
+        "text": "580 Units Reserved in last 48 hours",
+        "button-label": "Subscribe & Save 30%",
+        "button-url": ""
+      }
     }
   },
   "order": [
     "product_header_YnMCRC",
-    "n_press_reviews_HDaUTN",
-    "n_trusted_reviews_HRLHtt",
-    "n_you_may_also_like_HZi1bC"
+    "n_why_it_works_recovery_mask",
+    "n_accordion_tiles_square_recovery_mask",
+    "n_features_marquee_recovery_mask",
+    "n_experts_pick_recovery_mask",
+    "n_customers_video_recovery_mask",
+    "n_faq_recovery_mask",
+    "sticky_cta_recovery_mask"
   ]
 }
