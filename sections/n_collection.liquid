@@ -14,10 +14,6 @@
 
                 {% include 'get-product-data', product_handle: product.handle, product_prefix: 'collection-' %}
 
-                {% if product_handle contains 'micro-infusion' %}
-                    {% assign product_url = '/pages/microinfusion' %}
-                {% endif %}
-
                 {% assign n_tile_hover_url = '' %}
                 {% for media in product_media limit: 2 %}
                     {% if forloop.index == 2 %}
