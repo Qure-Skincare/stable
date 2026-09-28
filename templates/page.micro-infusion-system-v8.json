@@ -309,35 +309,35 @@
             "preselected": true
           }
         },
-        "product_eiY89h": {
+        "product_XTFEhB": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
-            "product_selling_plan": 8779530479,
+            "product_selling_plan": 0,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
-            "best": false,
+            "best": true,
             "free_shipping": false,
-            "preselected": false,
-            "heading": "30-day supply",
-            "subheading": "2 treatments",
-            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
             "text": "",
-            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
-            "product_discount_percent": 17,
+            "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 2,
-            "left_items": 29,
+            "total_treatments": 0,
+            "left_items": 0,
             "preorder_text": "",
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
+            "included_text": ""
           }
         },
         "product_EKAAzA": {
@@ -371,6 +371,37 @@
             "preorder_percent": 93,
             "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
           }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779530479,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "30-day supply",
+            "subheading": "2 treatments",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "text": "",
+            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 29,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
+          }
         }
       },
       "block_order": [
@@ -383,8 +414,9 @@
         "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
-        "product_eiY89h",
-        "product_EKAAzA"
+        "product_XTFEhB",
+        "product_EKAAzA",
+        "product_eiY89h"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
