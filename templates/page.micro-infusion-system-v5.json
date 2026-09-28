@@ -187,6 +187,37 @@
             "preselected": false
           }
         },
+        "product_b7C8dE": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "WELCOMEFREE",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "(6 treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
+            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
         "product_f9G0hI": {
           "type": "product",
           "settings": {
@@ -216,37 +247,6 @@
             "preorder_date_reserved": "",
             "preorder_percent": 55,
             "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
-          }
-        },
-        "product_b7C8dE": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "WELCOMEFREE",
-            "optional_subscription": false,
-            "popular": false,
-            "best": false,
-            "free_shipping": false,
-            "preselected": true,
-            "heading": "90-day supply!",
-            "subheading": "6 treatments",
-            "product_selling_plan_text": "Ships every 3 months",
-            "text": "6 treatments every 12 weeks",
-            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
           }
         },
         "product_x5Y6zA": {
@@ -293,37 +293,6 @@
             "preselected": true
           }
         },
-        "product_z9A0bC": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779530479,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "optional_subscription": false,
-            "popular": false,
-            "best": false,
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "30-day supply",
-            "subheading": "2 treatments",
-            "product_selling_plan_text": "2 treatments every 4 weeks",
-            "text": "",
-            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
-            "product_discount_percent": 17,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 2,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
-          }
-        },
         "product_v7W8xY": {
           "type": "product",
           "settings": {
@@ -353,6 +322,37 @@
             "preorder_date_reserved": "",
             "preorder_percent": 93,
             "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "product_z9A0bC": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779530479,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "30-day supply",
+            "subheading": "2 treatments",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "text": "",
+            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
           }
         },
         "product_r5S6tU": {
@@ -501,13 +501,13 @@
         "nextships_4xp7uM",
         "type_p1Q2rS",
         "product_type_t3U4vW",
-        "product_f9G0hI",
         "product_b7C8dE",
+        "product_f9G0hI",
         "product_x5Y6zA",
         "type_j1K2lM",
         "product_type_n3O4pQ",
-        "product_z9A0bC",
         "product_v7W8xY",
+        "product_z9A0bC",
         "product_r5S6tU",
         "type_d1E2fG",
         "product_type_h3I4jK",
