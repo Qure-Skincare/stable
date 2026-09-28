@@ -198,7 +198,6 @@
         },
         "product_type_QKQhNr": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
@@ -207,7 +206,6 @@
         },
         "product_Xf8A6C": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -239,7 +237,6 @@
         },
         "product_DBd4ef": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
@@ -360,7 +357,7 @@
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
-        "hide_types": true,
+        "hide_types": false,
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
