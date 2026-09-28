@@ -524,7 +524,7 @@
         "subscription_discount_max_percent": 62,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",
-        "type": "card",
+        "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "90",
         "hide_bottom": true,
