@@ -747,7 +747,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I place a return or exchange?",
-            "text": "<p>Please submit your return via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">our portal here</a> for products you'd like to exchange or return, and we'll take care of the rest.</p>",
+            "text": "<p>Please submit your return via <a href=\"https://qureskincare.com/pages/returns-exchanges\" title=\"https://qureskincare.com/pages/returns-exchanges\">our portal here</a> for products you'd like to exchange or return, and we'll take care of the rest.</p>",
             "section_id": ""
           }
         },
