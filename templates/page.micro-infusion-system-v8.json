@@ -401,7 +401,7 @@
         "guarantee_period": "90",
         "hide_bottom": true,
         "hide_certified": true,
-        "hide_title_on_subscription": true
+        "hide_title_on_subscription": false
       }
     },
     "n_trusted_reviews_DUlFYg": {
