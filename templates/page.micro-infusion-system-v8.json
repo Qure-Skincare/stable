@@ -281,7 +281,7 @@
             "best": false,
             "free_shipping": false,
             "preselected": false,
-            "heading": "30-day supply",
+            "heading": "1 Month Supply",
             "subheading": "2 treatments",
             "product_selling_plan_text": "2 treatments every 4 weeks",
             "text": "",
@@ -401,7 +401,7 @@
         "guarantee_period": "90",
         "hide_bottom": true,
         "hide_certified": true,
-        "hide_title_on_subscription": true
+        "hide_title_on_subscription": false
       }
     },
     "n_trusted_reviews_DUlFYg": {
