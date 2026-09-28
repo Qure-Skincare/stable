@@ -58,7 +58,7 @@
                                     <small>{{ block.settings.text }}</small>
                                 </div>
                             </div>
-                        {% elsif block.type == 'accordion' and block.settings.heading != blank %}
+                        {% elsif block.type == 'accordion' and block.settings.heading != blank and block.settings.section_id != blank %}
                             <div class="e-component-pointer{% if block.settings.component != 'none' %} e-component-pointer--{{ block.settings.component }}{% endif %}">
                                 <hr />
                                 <a href="#{{ block.settings.section_id | handleize }}">{{ block.settings.heading }}</a>

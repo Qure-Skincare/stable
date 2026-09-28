@@ -10,10 +10,200 @@
 {
   "sections": {
     "product_header_YnMCRC": {
-      "type": "n-product",
+      "type": "n-product-header",
+      "blocks": {
+        "description_recovery_mask": {
+          "type": "description",
+          "settings": {}
+        },
+        "section_purchase_form": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "accordion_recovery_mask": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "jumpto_results": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#improve_skin"
+          }
+        },
+        "jumpto_reviews": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Reviews",
+            "button-url": "#crystal_clear"
+          }
+        },
+        "jumpto_how_to_use": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#easy_steps"
+          }
+        },
+        "jumpto_how_it_works": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How It Works",
+            "button-url": "#why_it_works"
+          }
+        },
+        "jumpto_faqs": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "description_recovery_mask",
+        "section_purchase_form",
+        "accordion_recovery_mask",
+        "jumpto_results",
+        "jumpto_reviews",
+        "jumpto_how_to_use",
+        "jumpto_how_it_works",
+        "jumpto_faqs"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "show_discount": true
+        "section_id": "hero-product",
+        "product": "recovery-sheet-mask",
+        "reverse": false,
+        "secondary": false,
+        "background": false,
+        "seo_heading": "",
+        "heading": "Recovery+ Sheet Mask",
+        "badge_text": "",
+        "heading_level": "h1",
+        "rating": true,
+        "rating_type": "customers",
+        "limited": false,
+        "description": "<p>An intensive, serum-soaked mask with <strong>Polyglutamic Acid, Beta-Glucan, Cica &amp; Ectoin</strong> to replenish dry, freshly-treated skin.</p><ul><li>Helps calm <strong>visible redness</strong> and support the skin barrier</li><li>Floods skin with <strong>moisture</strong>, leaving it soft, replenished, and comfortable.</li><li>A cooling <strong>15–20 minute</strong> reset, after Micro-Infusion or whenever skin needs extra care.</li></ul>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
+      }
+    },
+    "purchase-form-landing": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "type_onetime": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_onetime": {
+          "type": "product_type",
+          "settings": {
+            "heading": "One time purchase",
+            "preselected": false
+          }
+        },
+        "product_onetime": {
+          "type": "product",
+          "settings": {
+            "product": "recovery-sheet-mask",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "1 box 6 masks",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/mask-supply-3.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "type_subscription": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_subscription": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Subscribe & Save",
+            "preselected": true
+          }
+        },
+        "product_subscription": {
+          "type": "product",
+          "settings": {
+            "product": "recovery-sheet-mask",
+            "product_variant_id": 50722752364783,
+            "product_selling_plan": 9181266159,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "1 box 6 masks",
+            "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
+            "image": "shopify://shop_images/mask-supply-3.webp",
+            "product_discount_percent": 10,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "type_onetime",
+        "product_type_onetime",
+        "product_onetime",
+        "type_subscription",
+        "product_type_subscription",
+        "product_subscription"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-subscription",
+        "hide_types": true,
+        "hide_variants": false,
+        "color_types": false,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 10,
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "recovery-sheet-mask",
+        "type": "list",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "n_why_it_works_recovery_mask": {
@@ -710,7 +900,7 @@
       ],
       "name": "t:sections.n_customers-video.name",
       "settings": {
-        "section_id": "",
+        "section_id": "crystal_clear",
         "text": "<h2>Confident skin starts here</h2>"
       }
     },
@@ -798,6 +988,7 @@
   },
   "order": [
     "product_header_YnMCRC",
+    "purchase-form-landing",
     "n_why_it_works_recovery_mask",
     "n_accordion_tiles_square_recovery_mask",
     "n_features_marquee_recovery_mask",
