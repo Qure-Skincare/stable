@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Blue+ Face Serum Creative Content Guide</h1>",
         "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/blue-plus-serum.webp",
         "image_mobile": "shopify://shop_images/blue-plus-serum-mob.webp",
         "button_label": "",
@@ -28,6 +31,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p><strong>Discover how to make the most of Qure's Blue+ Face Serum with our creative content guide.</strong></p><p>This brief will help you craft engaging content that shows how Blue+ works with the Q-Rejuvalight Pro LED Mask to amplify results from every LED session.</p>"
       }
     },
@@ -216,7 +220,7 @@
         "active": false,
         "must_read": false,
         "heading": "Creative Direction",
-        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Show the full routine: applying Blue+, then putting on the Q-Rejuvalight Pro LED Mask.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the serum in use (unless agreed otherwise).</li><li>Because the serum has a blue tint, a close-up of it on skin or on the applicator makes for a strong visual — feel free to highlight this.</li></ul>",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Please do not wear makeup (unless to show makeup removal).</li><li>Show the full routine: applying Blue+, then putting on the Q-Rejuvalight Pro LED Mask.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the serum in use (unless agreed otherwise).</li><li>Because the serum has a blue tint, a close-up of it on skin or on the applicator makes for a strong visual — feel free to highlight this.</li><li>In the first 3 seconds, clearly showcase the serum’s vibrant blue colour and immediately apply it to the skin to create a visually striking hook</li></ul>",
         "slides_per_view": "2"
       }
     },
@@ -266,6 +270,7 @@
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> designed for use with LED light therapy.”</p>",
         "video_image_cover": "shopify://shop_images/dr-shah-maxfield-2.webp",
+        "text_on_image": "",
         "wistia_url": false,
         "video_url": "",
         "badge_text": "Dermatologist Reviewed"
