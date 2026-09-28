@@ -404,12 +404,20 @@ function __landing__updateProductFormButton(product_variant_id, soldout) {
         const button = form.querySelector('.add-cart-button');
 
         if (idInput) {
+            // A sold-out button gets type="button": the BookEasy app re-enables every
+            // type="submit" button of a /cart/add form once its scripts load.
             if (soldout === 'true') {
                 idInput.value = "";
-                if (button) button.disabled = true;
+                if (button) {
+                    button.type = 'button';
+                    button.disabled = true;
+                }
             } else {
                 idInput.value = product_variant_id;
-                if (button) button.disabled = false;
+                if (button) {
+                    button.type = 'submit';
+                    button.disabled = false;
+                }
             }
         }
     }
