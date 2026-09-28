@@ -36,7 +36,7 @@
     </div>
 {% else %}
     <div class="c-supply-selector{% if section.settings.type != 'list' %} c-supply-selector--tiles{% endif %}{% if section.settings.hide_variants %} hide{% endif %}">
-        {% if section.settings.delivery_switcher_position == 'header' %}
+        {% if section.settings.delivery_switcher_position == 'header' or section.settings.subscription_product != 'true' %}
             <p class="c-supply-selector__title">{{ 'purchase-form.settings.select-product-variant' | t }}</p>
         {% else %}
             <p class="c-supply-selector__title"{{ supply_selector_title_attributes }}>{{ 'purchase-form.settings.subscribe-and-save' | t }}</p>
