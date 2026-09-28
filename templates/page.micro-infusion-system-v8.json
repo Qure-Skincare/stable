@@ -388,7 +388,7 @@
         "product_EKAAzA"
       ],
       "settings": {
-        "form_name": "purchase-form-landing",
+        "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
         "hide_variants": false,
         "color_types": false,
