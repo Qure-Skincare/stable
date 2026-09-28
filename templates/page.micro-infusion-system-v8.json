@@ -390,7 +390,7 @@
       "settings": {
         "form_name": "purchase-form-landing-subscription",
         "hide_types": false,
-        "hide_variants": false,
+        "hide_variants": true,
         "color_types": false,
         "subscription_product": "false",
         "subscription_discount_max_percent": 60,
