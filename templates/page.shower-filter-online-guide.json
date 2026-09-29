@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Shower Filter Guide</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before installing and using your Qure&nbsp;Shower Filter.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/shower-filter-guide.webp",
         "image_mobile": "shopify://shop_images/shower-filter-guide-mob.webp",
         "button_label": "",
@@ -30,7 +33,8 @@
           "type": "wistia_video",
           "settings": {
             "wistia_url": "9562sh5iwf",
-            "image": "shopify://shop_images/how-to-use-shower.webp"
+            "image": "shopify://shop_images/how-to-use-shower.webp",
+            "label_text": "Watch: How To Use"
           }
         }
       },
@@ -40,6 +44,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p><strong>The Qure Shower Filter</strong> is designed to remove harmful impurities from your water, ensuring your skin remains clear, hydrated, and free from irritants.</p><p>This guide will walk you through the installation process so you can start enjoying cleaner, skin-friendly water in just a few minutes.</p>"
       }
     },
@@ -124,6 +129,7 @@
         "step_by_step_iJNnYR": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-step-1.webp",
             "text": "<h6>Step 1</h6><p>Remove your old showerhead by unscrewing it from the wall or shower arm.</p>"
           }
@@ -131,6 +137,7 @@
         "step_by_step_KBkKG3": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-step-2.webp",
             "text": "<h6>Step 2</h6><p>Attach your new Qure filter by twisting the filter onto the shower pipe.</p><p>Make sure the rubber washer is inside to prevent leaks.</p>"
           }
@@ -138,6 +145,7 @@
         "step_by_step_HKGe7w": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-step-3.webp",
             "text": "<h6>Step 3</h6><p>Tighten until secure. Make sure it's snug but not forced.</p>"
           }
@@ -145,6 +153,7 @@
         "step_by_step_GhGLbX": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-step-4.webp",
             "text": "<h6>Step 4</h6><p>Let it run for 2-3 minutes to flush out any loose particles.</p><p>Done! You're ready to enjoy filtered, skin-friendly water.</p>"
           }
@@ -154,7 +163,8 @@
           "settings": {
             "desktop": true,
             "wistia_url": "9562sh5iwf",
-            "image": "shopify://shop_images/how-to-use-shower.webp"
+            "image": "shopify://shop_images/how-to-use-shower.webp",
+            "label_text": "Watch: How To Use"
           }
         },
         "quote_KqVc6F": {
@@ -188,6 +198,7 @@
         "step_by_step_EgndKU": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-replace-step-1.webp",
             "text": "<h6>Step 1</h6><p>Turn off the shower. Rotate the shower cover counterclockwise to remove it.</p>"
           }
@@ -195,6 +206,7 @@
         "step_by_step_xggPcF": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-replace-step-2.webp",
             "text": "<h6>Step 2</h6><p>Remove the old cartridge and replace with a new cartridge. Firmly press the new cartridge into the filter housing.</p>"
           }
@@ -202,6 +214,7 @@
         "step_by_step_iKiiwJ": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-replace-step-3.webp",
             "text": "<h6>Step 3</h6><p>Replace the shower cover and turn clockwise to secure it.</p>"
           }
@@ -209,6 +222,7 @@
         "step_by_step_zzitBL": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/shower-replace-step-4.webp",
             "text": "<h6>Step 4</h6><p>Turn on the shower and let the system flush for 2-3 minutes to wash out any initial impurities.</p>"
           }
@@ -218,7 +232,8 @@
           "settings": {
             "desktop": false,
             "wistia_url": "bwhqvtar9u",
-            "image": "shopify://shop_images/replace_filter.webp"
+            "image": "shopify://shop_images/replace_filter.webp",
+            "label_text": "Watch: How To Use"
           }
         }
       },
@@ -376,7 +391,7 @@
         "active": false,
         "must_read": false,
         "heading": "Warranty Information",
-        "text": "<h2>Warranty Information</h2><p>We offer a lifetime warranty for the original purchaser, covering defects in materials and workmanship.</p><p>This warranty does not cover misuse, improper care, foreign objects, the filter cartridge, or issues arising from unauthorized components (e.g., malfunctions, reduced performance, or property damage).</p><p>To make a claim, <a href=\"http://127.0.0.1:5500/page.shower-filter-online-guide.html#\">contact our customer support</a> via email or live chat.</p><p>Be sure to include your name, proof of purchase, device serial number, and a description of the issue.</p>",
+        "text": "<h2>Warranty Information</h2><p>We offer a lifetime warranty for the original purchaser, covering defects in materials and workmanship.</p><p>This warranty does not cover misuse, improper care, foreign objects, the filter cartridge, or issues arising from unauthorized components (e.g., malfunctions, reduced performance, or property damage).</p><p>To make a claim,&nbsp;<a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact our customer support</a>&nbsp;via email or live chat.</p><p>Be sure to include your name, proof of purchase, device serial number, and a description of the issue.</p>",
         "slides_per_view": ""
       }
     },
