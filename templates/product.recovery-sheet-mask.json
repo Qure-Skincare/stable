@@ -288,7 +288,7 @@
         "use_own_file": false,
         "modifier": "recovery-mask",
         "text": "<h6>QURE RECOVERY+ MASK</h6><h2>Why Choose Recovery+?</h2><p>Our soothing mask floods your skin with everything you need to soothe and calm post-treatment skin.</p>",
-        "image": "shopify://shop_images/recovery-mask.webp",
+        "image": "shopify://shop_images/Recovery_Sheet_Mask-render-01_1_1_f0d6713a-8e2f-428a-ac7f-c34e8d64c629.webp",
         "image_mobile": "shopify://shop_images/recovery-mask-mob.webp",
         "badge_text": "Instant Cooling Effect!",
         "disclaimer": "For post-Micro-Infusion care, or whenever skin needs extra comfort."
@@ -981,6 +981,7 @@
       "settings": {
         "heading": "Regularly replacing",
         "text": "580 Units Reserved in last 48 hours",
+        "limited": false,
         "button-label": "Subscribe & Save 30%",
         "button-url": ""
       }
