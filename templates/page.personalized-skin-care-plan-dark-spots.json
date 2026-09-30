@@ -17,12 +17,14 @@
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Your results are in.</h2>",
         "text": "<p><strong>Let’s fade the look of dark spots!</strong></p><p>We’ve created a straightforward, no-nonsense program designed to help visibly brighten and even out your complexion — so your skin looks clearer, smoother, and more radiant with consistency.</p>",
         "image": "shopify://shop_images/transform_aging_ds.webp",
         "button_label": "Shop Now",
         "button_url": "#skincare_goals",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_we-suggest_yfwGg": {
@@ -43,6 +45,7 @@
             "button_label_selected": "Added!",
             "review_heading": "“I noticed results straight away!",
             "review_subheading": "Now I can’t go a day without the Q-Rejuvalight Mask.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         },
@@ -51,8 +54,8 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "card_title": "",
-            "product_image": "shopify://shop_images/mi-prod.webp",
-            "product_hover_image": "shopify://shop_images/hov_img_2.webp",
+            "product_image": "shopify://shop_images/MI_3_month_DS_602c52c1-6892-4448-9299-17a742be532e.webp",
+            "product_hover_image": "shopify://shop_images/micro-infusion-hero_eeab258e-b8ad-4d90-9a64-3198d9c07c06.webp",
             "results_image": "shopify://shop_images/mi_ds.webp",
             "review_video": "https://www.youtube.com/embed/Jqw2lZirHz4?autoplay=1&mute=1",
             "text": "<p>A quick at-home facial that stamps your skin with ultra-fine, clinical-grade needles to boost collagen and smooth fine lines.</p>",
@@ -61,15 +64,16 @@
             "button_label_selected": "Added!",
             "review_heading": "“Even my esthetician is hooked!",
             "review_subheading": "And I can now visit beauty clinics less often.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         },
         "suggest_kDMBBt": {
           "type": "suggest_card",
           "settings": {
-            "product": "face-serum",
+            "product": "all-in-one-serum",
             "card_title": "",
-            "product_image": "shopify://shop_images/all-in-prod.webp",
+            "product_image": "shopify://shop_images/silver_AIO.webp",
             "product_hover_image": "shopify://shop_images/hov_img_3.webp",
             "results_image": "shopify://shop_images/all_in_res_acne.webp",
             "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1",
@@ -79,6 +83,7 @@
             "button_label_selected": "Added!",
             "review_heading": "“This product is a keeper.",
             "review_subheading": "My skin looks better than ever after just 2 weeks.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         },
@@ -97,6 +102,7 @@
             "button_label_selected": "Added!",
             "review_heading": "“I’m surprised how much younger my neck looks",
             "review_subheading": "and my skin looks and feels more rejuvenated.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         }
@@ -226,6 +232,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Mona P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Fade after just two treatments</strong></p><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/mi-bundle.webp",
@@ -240,6 +247,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Brooke B.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Visible improvement so far!</strong></p><p>“After only 3 weeks of use, I’ve noticed visible improvements in the texture and tone of my skin. I had uneven tone from sun exposure, so I plan to keep using it consistently for best results. I’m already seeing a difference and couldn’t be happier!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp",
@@ -254,6 +262,7 @@
             "flag": "shopify://shop_images/hong_kong_f.webp",
             "username": "",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>The best serum!</strong></p><p>“I can't believe it! In just 2 months of using this serum, the results on my skin are absolutely amazing. I no longer have to rely on heavy makeup and concealer to cover up any imperfections. This serum has truly worked wonders for me!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/all-in-one-serum.webp",
@@ -268,6 +277,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, even toned, and looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -282,6 +292,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Mary R. M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Outstanding</strong></p><p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp",
@@ -296,6 +307,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Olivia P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Give it a try!</strong></p><p>“I tried the Micro-Infusion because I’ve been working on the dark spots on my face for quite some time. After a couple of uses my face seems plumper, is glowing and the dark spots seem not as dark. Give it a try!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/mi-bundle.webp",
@@ -310,6 +322,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Priya P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Plumper, more hydrated!</strong></p><p>“After the first use of Micro-Infusion, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/mi-bundle.webp",
@@ -331,6 +344,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>No promises, just proof</h2>",
         "button_label": "",
         "button_url": ""
@@ -572,7 +589,13 @@
     "sticky_cta_hd4dLE": {
       "type": "n-sticky-button-boxes",
       "name": "t:sections.sticky-button.name",
-      "settings": {}
+      "settings": {
+        "heading": "",
+        "text": "",
+        "limited": false,
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [

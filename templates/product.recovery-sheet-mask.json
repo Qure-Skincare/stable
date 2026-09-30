@@ -288,7 +288,7 @@
         "use_own_file": false,
         "modifier": "recovery-mask",
         "text": "<h6>QURE RECOVERY+ MASK</h6><h2>Why Choose Recovery+?</h2><p>Our soothing mask floods your skin with everything you need to soothe and calm post-treatment skin.</p>",
-        "image": "shopify://shop_images/recovery-mask.webp",
+        "image": "shopify://shop_images/recovery-mask_86e9fdf6-9f29-4cda-9271-017070be844d.webp",
         "image_mobile": "shopify://shop_images/recovery-mask-mob.webp",
         "badge_text": "Instant Cooling Effect!",
         "disclaimer": "For post-Micro-Infusion care, or whenever skin needs extra comfort."
@@ -421,7 +421,7 @@
       "settings": {
         "section_id": "",
         "badge_text": "",
-        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the Recovery+ Sheet Mask after Micro-Infusion because it provides an immediate cooling sensation, helps calm the appearance of visible redness, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
+        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the <strong>Recovery+ Sheet Mask</strong> after Micro-Infusion because it provides an immediate cooling sensation, <strong>helps calm the appearance of visible redness</strong>, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
@@ -715,6 +715,7 @@
         "review_3",
         "review_4"
       ],
+      "disabled": true,
       "name": "t:sections.n_before-after-slider.name",
       "settings": {
         "use_own_file": false,
@@ -898,6 +899,7 @@
         "video_6",
         "video_7"
       ],
+      "disabled": true,
       "name": "t:sections.n_customers-video.name",
       "settings": {
         "section_id": "crystal_clear",
@@ -910,50 +912,50 @@
         "accordion_benefit": {
           "type": "accordion",
           "settings": {
-            "heading": "How will the Recovery+ Sheet Mask benefit my hair/skin?",
-            "text": "<p>The Recovery+ Sheet Mask removes harmful impurities like heavy metals, chlorine, and unwanted minerals from your water, helping to protect your skin and hair from damage caused by hard water.</p><p>By filtering out water impurities, the Recovery+ Sheet Mask helps reduce dryness, irritation, and brittleness, leaving your skin hydrated and your hair smoother and more manageable.</p>"
+            "heading": "Can I use this after clinical microneedling?",
+            "text": "<p>Yes. The Recovery+ Sheet Mask is formulated to mirror the cooling protocol used in clinics after treatments like Dermapen and SkinPen. It's made for freshly treated, sensitized skin, so it suits post-treatment care whether you've had an at-home Micro-Infusion session or a clinical microneedling treatment. If you're ever unsure, check with your provider first.</p>"
           }
         },
         "accordion_showerheads": {
           "type": "accordion",
           "settings": {
-            "heading": "Is it compatible with all showerheads?",
-            "text": "<p>The Recovery+ Sheet Mask fits most standard showerheads, but we recommend checking your showerhead's specifications to ensure compatibility.</p>"
+            "heading": "How often should I use it?",
+            "text": "<p>Once a week works well for most people, in line with a weekly Micro-Infusion routine — each box holds 6 masks, a 3-month supply. You can also reach for it any time skin feels dry, stressed, or in need of extra care, even outside your treatment days.</p>"
           }
         },
         "accordion_pressure": {
           "type": "accordion",
           "settings": {
-            "heading": "Does it affect water pressure?",
-            "text": "<p>The Recovery+ Sheet Mask is designed to maintain water pressure while effectively filtering impurities. You’ll enjoy clean water without compromising your shower experience.</p>"
+            "heading": "Why shouldn't I wash it off?",
+            "text": "<p>The serum is formulated to keep working after you remove the mask. Rinsing washes away the moisture and calming actives before they've had a chance to fully absorb. Instead, pat any leftover serum into your skin, leave it on overnight, and cleanse as normal the next morning.</p>"
           }
         },
         "accordion_certified": {
           "type": "accordion",
           "settings": {
-            "heading": "Is the Recovery+ Sheet Mask certified, tested, and safe to use?",
-            "text": "<p>Yes — it’s third-party tested to meet NSF water filtration standards and made with certified BPA-free, non-toxic, and skin-friendly materials. It’s also leak-resistant and built to last.</p>"
+            "heading": "Does it contain synthetic fragrance?",
+            "text": "<p>No. The Recovery+ Sheet Mask is fragrance-free, and also free from parabens and PEG — made for sensitive, reactive, and freshly treated skin.</p>"
           }
         },
         "accordion_replace": {
           "type": "accordion",
           "settings": {
-            "heading": "Do I need to change/replace the filter?",
-            "text": "<p>The Recovery+ Sheet Mask lasts approximately 3 months, depending on your water quality and usage. We recommend replacing it after 3 months for optimal performance.</p>"
+            "heading": "Is it suitable for sensitive skin?",
+            "text": "<p>Yes. It's dermatologist tested, hypoallergenic, and formulated to be non-irritating — including on sensitive and reactive skin. If you have a specific skin condition or aren't sure, it's worth checking with your dermatologist first.</p>"
           }
         },
         "accordion_install": {
           "type": "accordion",
           "settings": {
-            "heading": "How easy is it to install?",
-            "text": "<p>Yes, the Recovery+ Sheet Mask is designed for easy, tool-free installation. It fits most standard showerheads, so you can quickly start enjoying clean, filtered water.</p>"
+            "heading": "What are the key ingredients?",
+            "text": "<p>The mask is built around a hydrating and calming actives stack: Polyglutamic Acid and Sodium Hyaluronate to draw in and hold moisture, Centella Asiatica (Cica) and Beta-Glucan to help calm the appearance of redness, and Ectoin and Allantoin to help soothe and support skin's barrier.</p>"
           }
         },
         "accordion_subscribe": {
           "type": "accordion",
           "settings": {
-            "heading": "Why should I subscribe?",
-            "text": "<p>Regularly replacing your Recovery+ Sheet Mask ensures it continues to effectively remove chlorine, heavy metals, and impurities from your water. Over time, the filtration media becomes saturated, reducing its ability to provide clean, skin-friendly water.</p><p>By subscribing, you prevent buildup of contaminants that can diminish the filter’s effectiveness, and consistently reduce exposure to harmful chemicals that cause hair and skin irritation and dryness.</p>"
+            "heading": "Can I use it even if I haven't done Micro-Infusion?",
+            "text": "<p>Yes. While it's formulated for post-Micro-Infusion recovery, it also works well on its own, anytime skin feels dry, stressed, or in need of extra care — no treatment required.</p>"
           }
         }
       },
@@ -981,6 +983,7 @@
       "settings": {
         "heading": "Regularly replacing",
         "text": "580 Units Reserved in last 48 hours",
+        "limited": false,
         "button-label": "Subscribe & Save 30%",
         "button-url": ""
       }
