@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_across_image_banner_Jhry7T": {
       "type": "n_across-image-banner",
@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Get started with Q‑Rejuvalight Pro</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the device.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/q-rejuvalight-pro-mask_4178f8e9-a37c-4441-8dc3-78a1966c5618.webp",
         "image_mobile": "shopify://shop_images/q-rejuvalight-pro-mask-mob_0b67aaa9-7ceb-4339-96b7-bdd0f7a326d0.webp",
         "button_label": "",
@@ -41,6 +44,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p><strong>The Qure Q-Rejuvalight Pro LED Mask</strong> is an at-home LED light therapy device designed to target fine lines, breakouts, and dullness in just one 3-minute treatment.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
       }
     },
@@ -111,12 +115,43 @@
         "use_own_file": false
       }
     },
+    "n_guide_shedule_dY167v": {
+      "type": "n_guide-shedule",
+      "blocks": {
+        "link_jVzXrL": {
+          "type": "link",
+          "settings": {
+            "link_url": "https://apps.apple.com/us/app/qure-skincare/id1670113821",
+            "image": "shopify://shop_images/app_store_200x_ac25bdd1-4c0d-4f5c-9133-6481e5c7d85a.svg"
+          }
+        },
+        "link_jVzju7": {
+          "type": "link",
+          "settings": {
+            "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure&ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340&pli=1",
+            "image": "shopify://shop_images/google_play_200x_bbd57f1c-4ffd-4010-9f3c-62438d152aa6.svg"
+          }
+        }
+      },
+      "block_order": [
+        "link_jVzXrL",
+        "link_jVzju7"
+      ],
+      "name": "t:sections.n_guide-shedule.name",
+      "settings": {
+        "active": false,
+        "must_read": false,
+        "heading": "Schedule & Set Reminders",
+        "text": "<h2>Schedule & Set Reminders</h2><p>The Qure app is designed to make your Q-Rejuvalight Pro routine feel effortless.</p><p>It guides each session, keeps track of your treatments, and helps consistency build naturally over time, without needing to think about timing or progress.</p>"
+      }
+    },
     "n_guide_content_step_abi9bF": {
       "type": "n_guide-content-step",
       "blocks": {
         "step_by_step_JF67Bn": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/q-rejuvalight-pro-step-1_e2d527e9-861d-4c96-b54d-5dc5318eaf88.webp",
             "text": "<h6>Step 1</h6><p>Set up your mask by attaching the adjustable strap.</p><p>With the logos facing down, slide the strap into the first clip. Loop the strap through the adjustor and second clip. </p>"
           }
@@ -124,6 +159,7 @@
         "step_by_step_eQEzeJ": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/q-rejuvalight-pro-step-2_be5d4ec2-ece3-43c4-9822-23c13ef963cb.webp",
             "text": "<h6>Step 2</h6><p>Secure the strap with the provided pin on the inner side of the mask.</p>"
           }
@@ -131,6 +167,7 @@
         "step_by_step_Te3GP7": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/q-rejuvalight-pro-step-3_96e3327a-e8f5-40c2-8325-6f5a2803c032.webp",
             "text": "<h6>Step 3</h6><p>Insert goggles from the inside of the mask. </p><p>Ensure that the smaller side of the goggles go in first.</p>"
           }
@@ -138,6 +175,7 @@
         "step_by_step_tQ9VtV": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/q-rejuvalight-pro-step-4_f322baf5-59d9-4635-b243-f8d19f81047e.webp",
             "text": "<h6>Step 4</h6><p>Prepare your skin for your treatment by cleansing and dry thoroughly.</p><p>[note_green]<strong>Tip:</strong>Use our Dermal Mist to further cleanse and prepare your skin.[/note]</p>"
           }
@@ -145,6 +183,7 @@
         "step_by_step_qxHmBK": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/q-rejuvalight-pro-step-5_6736dd64-1d94-4e1e-b77c-e8144d84824d.webp",
             "text": "<h6>Step 5</h6><p>Press and hold the power button ON for 2-3 seconds until the indicator light turns on.</p><p>Position the mask on your face. Adjust the straps to fit your face comfortably.</p>"
           }
@@ -152,6 +191,7 @@
         "step_by_step_WnrY8L": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "image": "shopify://shop_images/q-rejuvalight-pro-step-6_8c9bfa6f-f329-4c5e-8e88-ce01533ba462.webp",
             "text": "<h6>Step 6</h6><p>Choose your treatment either in the Qure app or directly on the mask.</p><p>Press the power button once for Skin Rejuvenation mode, or press it twice for Skin Clearing mode.</p>"
           }
@@ -169,7 +209,7 @@
           "type": "quote",
           "settings": {
             "style": "red",
-            "text": "<p><strong>Light sensitivity test:</strong>We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
+            "text": "<p><strong>Light sensitivity test: </strong>We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
           }
         }
       },
@@ -248,36 +288,6 @@
         "must_read": false,
         "heading": "Treatment Modes",
         "text": "<h2>Treatment Modes</h2><p>The Q-Rejuvalight Pro Mask has two complete treatment settings: Skin Rejuvenating or Skin Clearing.</p><p>Press the power button once for Skin Rejuvenating mode, or press it twice for Skin Clearing mode.</p>"
-      }
-    },
-    "n_guide_shedule_dY167v": {
-      "type": "n_guide-shedule",
-      "blocks": {
-        "link_jVzXrL": {
-          "type": "link",
-          "settings": {
-            "link_url": "https://apps.apple.com/us/app/qure-skincare/id1670113821",
-            "image": "shopify://shop_images/app_store_200x_ac25bdd1-4c0d-4f5c-9133-6481e5c7d85a.svg"
-          }
-        },
-        "link_jVzju7": {
-          "type": "link",
-          "settings": {
-            "link_url": "https://play.google.com/store/apps/details?id=com.lighttreeventures.qure&ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340&pli=1",
-            "image": "shopify://shop_images/google_play_200x_bbd57f1c-4ffd-4010-9f3c-62438d152aa6.svg"
-          }
-        }
-      },
-      "block_order": [
-        "link_jVzXrL",
-        "link_jVzju7"
-      ],
-      "name": "t:sections.n_guide-shedule.name",
-      "settings": {
-        "active": false,
-        "must_read": false,
-        "heading": "Schedule & Set Reminders",
-        "text": "<h2>Schedule & Set Reminders</h2><p>The Qure app is designed to make your Q-Rejuvalight Pro routine feel effortless.</p><p>It guides each session, keeps track of your treatments, and helps consistency build naturally over time, without needing to think about timing or progress.</p>"
       }
     },
     "n_guide_content_zTqxWp": {
