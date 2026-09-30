@@ -421,7 +421,7 @@
       "settings": {
         "section_id": "",
         "badge_text": "",
-        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the Recovery+ Sheet Mask after Micro-Infusion because it provides an immediate cooling sensation, helps calm the appearance of visible redness, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
+        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the <strong>Recovery+ Sheet Mask</strong> after Micro-Infusion because it provides an immediate cooling sensation, <strong>helps calm the appearance of visible redness</strong>, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
