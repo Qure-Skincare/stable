@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_product_header_k8Qm2R": {
       "type": "n-product-header",
@@ -539,7 +539,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/progress-showcase-1.webp",
-            "badge": "Dark Spots",
+            "badge": "Fine Lines and Wrinkles",
             "percent_value": 70,
             "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
             "disclaimer": "Based on a user study of 30 participants aged 25-65"
