@@ -73,8 +73,7 @@
           "settings": {
             "product": "all-in-one-serum",
             "card_title": "",
-            "product_image": "shopify://shop_images/silver_showerhead_tsp_3.webp",
-            "product_hover_image": "shopify://shop_images/Blue_Intro_7a91fd12-b8b4-4aa2-8476-c076e6a9f74b.webp",
+            "product_hover_image": "shopify://shop_images/hov_img_3.webp",
             "results_image": "shopify://shop_images/all-in-result.webp",
             "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1",
             "text": "<p>A multi-tasking formula designed to hydrate, brighten, and strengthen skin barrier in one step.</p>",
