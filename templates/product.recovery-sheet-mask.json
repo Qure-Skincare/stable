@@ -392,6 +392,7 @@
       "blocks": {
         "percent_clarity": {
           "type": "percent",
+          "disabled": true,
           "settings": {
             "text": "<h6>Clarity & Tone</h6><p>Evens out tone over time</p>",
             "percent": 100
@@ -399,6 +400,7 @@
         },
         "percent_glow": {
           "type": "percent",
+          "disabled": true,
           "settings": {
             "text": "<h6>Radiant Glow</h6><p>Less fatigued, more vibrant</p>",
             "percent": 100
@@ -406,6 +408,7 @@
         },
         "percent_texture": {
           "type": "percent",
+          "disabled": true,
           "settings": {
             "text": "<h6>Smooth Texture</h6><p>Softer with consistent use</p>",
             "percent": 100
@@ -971,7 +974,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
