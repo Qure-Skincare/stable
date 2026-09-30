@@ -725,7 +725,12 @@
             "name": "Comparison table"
         },
         "n_faq": {
-            "name": "FAQ"
+            "name": "FAQ",
+            "settings": {
+                "advisor-heading": "Advisor heading",
+                "advisor-text": "Advisor text",
+                "advisor-url": "Advisor link"
+            }
         },
         "n_guarantee": {
             "name": "Guarantee"
@@ -733,12 +738,61 @@
         "n_progress-metrics": {
             "name": "Progress metrics"
         },
+        "n_progress-showcase": {
+            "name": "Progress showcase"
+        },
+        "n_expert-feature": {
+            "name": "Expert feature",
+            "settings": {
+                "author": "Author",
+                "caption": "Caption"
+            }
+        },
+        "n_mi-overview": {
+            "name": "MI overview",
+            "settings": {
+                "features-heading": "Features heading",
+                "wistia-url-mobile": "Wistia URL mobile"
+            }
+        },
+        "n_mi-ingredients": {
+            "name": "MI ingredients",
+            "blocks": {
+                "left-column": {
+                    "name": "Left column"
+                },
+                "right-column": {
+                    "name": "Right column"
+                },
+                "left-accordion": {
+                    "name": "Left accordion"
+                },
+                "right-accordion": {
+                    "name": "Right accordion"
+                }
+            }
+        },
+        "n_experts-grid": {
+            "name": "Experts grid",
+            "blocks": {
+                "expert": {
+                    "name": "Expert",
+                    "settings": {
+                        "name": "Name",
+                        "role": "Role"
+                    }
+                }
+            }
+        },
         "n_trusted-reviews": {
             "name": "Trusted reviews",
             "settings": {
                 "background-color-options": {
                     "light": "Light",
                     "grey": "Grey"
+                },
+                "modifier-options": {
+                    "dotted-nav": "Dotted navigation"
                 }
             }
         },

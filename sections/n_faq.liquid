@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/have-questions/have-questions.css" />
 {% endif %}
 
-<div class="have-questions" id="faq">
+<div class="have-questions{% if section.settings.modifier == 'light' %} have-questions--light{% endif %}" id="faq">
     <div class="container">
         {{ section.settings.heading }}
         <div class="c-accordion c-accordion--lines">
@@ -35,6 +35,20 @@
                 </div>
             {% endif %}
         </div>
+        {% if section.settings.advisor_heading != blank %}
+            <a class="team-advisor" href="{{ section.settings.advisor_url }}">
+                <figure>
+                    {% if section.settings.advisor_image != blank %}
+                        <img loading="lazy" src="{{ section.settings.advisor_image | image_url }}" alt="{{ section.settings.advisor_heading | escape }}" />
+                    {% endif %}
+                    <figcaption><i class="e-icon e-icon-q"></i></figcaption>
+                </figure>
+                <strong>{{ section.settings.advisor_heading }}</strong>
+                {% if section.settings.advisor_text != blank %}
+                    <span>{{ section.settings.advisor_text }}</span>
+                {% endif %}
+            </a>
+        {% endif %}
     </div>
 </div>
 
@@ -70,9 +84,45 @@
             "default": false
         },
         {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "light",
+                    "label": "t:common.light"
+                }
+            ]
+        },
+        {
             "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "advisor_image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "text",
+            "id": "advisor_heading",
+            "label": "t:sections.n_faq.settings.advisor-heading"
+        },
+        {
+            "type": "text",
+            "id": "advisor_text",
+            "label": "t:sections.n_faq.settings.advisor-text"
+        },
+        {
+            "type": "url",
+            "id": "advisor_url",
+            "label": "t:sections.n_faq.settings.advisor-url"
         },
         {
             "type": "text",

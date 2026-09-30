@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "n_progress-showcase": {
+      "previous": "Previous",
+      "next": "Next"
+    },
     "n_experts-pick": {
       "counter": "0%"
     },

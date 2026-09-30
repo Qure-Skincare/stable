@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/trusted-reviews/trusted-reviews.css" />
 {% endif %}
-<section class="trusted-reviews{% if section.settings.modifier == 'trustpilot' %} trusted-reviews--trustpilot{% endif %}{% if section.settings.background_color != 'none' %} trusted-reviews--{{ section.settings.background_color }}{% endif %}" id="{{ section.settings.section_id | default: 'trusted-reviews' }}">
+<section class="trusted-reviews{% if section.settings.modifier == 'trustpilot' %} trusted-reviews--trustpilot{% endif %}{% if section.settings.modifier == 'dotted-nav' %} trusted-reviews--dotted-nav{% endif %}{% if section.settings.background_color != 'none' %} trusted-reviews--{{ section.settings.background_color }}{% endif %}" id="{{ section.settings.section_id | default: 'trusted-reviews' }}">
     <div class="container">
         {% if section.settings.modifier == 'trustpilot' %}
             <i class="e-icon e-icon-qure"></i>
@@ -25,34 +25,81 @@
             {{ section.settings.text }}
         {% endif %}
         {% if section.settings.modifier == 'trustpilot' %}
-        <div
-            class="c-swiper"
-            data-swiper='{"slidesPerView":1.1,"spaceBetween":16,"loop":false,"pagination":{"el":".c-swiper-pagination","type":"custom"},"navigation":{"prevEl":".c-swiper-button-prev","nextEl":".c-swiper-button-next"},"breakpoints":{"768":{"slidesPerView":2},"992":{"spaceBetween":24,"slidesPerView":3 }}}'>
-        {% else %}
-        <div
-            class="c-swiper"
-            data-swiper='{
-            "slidesPerView": 1.1,
-            "spaceBetween": 16,
-            "loop": false,
-            "pagination": {
-                "el": ".c-swiper-pagination",
-                "type": "custom"
-            },
-            "navigation": {
-                "prevEl": ".c-swiper-button-prev",
-                "nextEl": ".c-swiper-button-next"
-            },
-            "breakpoints": {
-                "768": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 24
+            <div
+                class="c-swiper"
+                data-swiper='{
+                "slidesPerView": 1.1,
+                "spaceBetween": 16,
+                "loop": false,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
                 },
-                "992": {
-                    "slidesPerView": 3
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 2
+                    },
+                    "992": {
+                        "spaceBetween": 24,
+                        "slidesPerView": 3
+                    }
                 }
-            }
-        }'>
+            }'>
+        {% elsif section.settings.modifier == 'dotted-nav' %}
+            {% assign reviews_scope = section.settings.section_id | default: 'trusted-reviews' %}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                "slidesPerView": 1.1,
+                "spaceBetween": 16,
+                "loop": false,
+                "pagination": {
+                    "el": "#{{ reviews_scope }} .c-swiper-pagination",
+                    "clickable": true
+                },
+                "navigation": {
+                    "prevEl": "#{{ reviews_scope }} .c-swiper-button-prev",
+                    "nextEl": "#{{ reviews_scope }} .c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 2
+                    },
+                    "992": {
+                        "spaceBetween": 24,
+                        "slidesPerView": 3
+                    }
+                }
+            }'>
+        {% else %}
+            <div
+                class="c-swiper"
+                data-swiper='{
+                "slidesPerView": 1.1,
+                "spaceBetween": 16,
+                "loop": false,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 2,
+                        "spaceBetween": 24
+                    },
+                    "992": {
+                        "slidesPerView": 3
+                    }
+                }
+            }'>
         {% endif %}
             <div class="swiper-wrapper">
                 {% for block in section.blocks %}
@@ -64,24 +111,29 @@
                                         <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                     </picture>
                                 {% endif %}
-                                {% if block.settings.flag != blank and block.settings.username != blank %}
-                                    <div class="e-author">
-                                        <img loading="lazy" src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
-                                        {{ block.settings.username }}
-                                    </div>
-                                {% endif %}
-                                {% if block.settings.verified_customer != blank %}
-                                    <div class="e-verified-customer">
-                                        <div class="e-checkmark"></div>
-                                        {{ block.settings.verified_customer }}
-                                    </div>
-                                {% endif %}
+                                {% unless section.settings.modifier == 'dotted-nav' %}
+                                    {% if block.settings.flag != blank and block.settings.username != blank %}
+                                        <div class="e-author">
+                                            <img loading="lazy" src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
+                                            {{ block.settings.username }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.verified_customer != blank %}
+                                        <div class="e-verified-customer">
+                                            <div class="e-checkmark"></div>
+                                            {{ block.settings.verified_customer }}
+                                        </div>
+                                    {% endif %}
+                                {% endunless %}
                                 {% if block.settings.badge != blank %}
                                     <div class="e-pill-badge e-pill-badge--sm">{{ block.settings.badge }}</div>
                                 {% endif %}
                                 {% if block.settings.text != blank %}
                                     <article>
                                         {{ block.settings.text }}
+                                        {% if section.settings.modifier == 'dotted-nav' and block.settings.username != blank %}
+                                            <small>{{ block.settings.username }}</small>
+                                        {% endif %}
                                     </article>
                                 {% endif %}
                                 {% if block.settings.product_url != blank %}
@@ -153,6 +205,10 @@
                     {
                         "value": "trustpilot",
                         "label": "t:common.trustpilot"
+                    },
+                    {
+                        "value": "dotted-nav",
+                        "label": "t:sections.n_trusted-reviews.settings.modifier-options.dotted-nav"
                     }
                 ]
             },

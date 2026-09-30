@@ -1,0 +1,109 @@
+{% doc %}
+  Renders a single expert quote beside a short explanation.
+{% enddoc %}
+
+<!-- EXPERT FEATURE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/expert-feature/expert-feature.css" />
+{% endif %}
+
+<section class="expert-feature">
+    <div class="container">
+        {{ section.settings.heading }}
+        {% if section.settings.text != blank %}
+            <article>
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+        <div class="expert-card">
+            {% if section.settings.quote != blank %}
+                <blockquote>{{ section.settings.quote }}</blockquote>
+            {% endif %}
+            <div class="expert-card__author">
+                <div>
+                    {% if section.settings.author != blank %}
+                        <span>{{ section.settings.author }}</span>
+                    {% endif %}
+                    {% if section.settings.caption != blank %}
+                        <small>{{ section.settings.caption }}</small>
+                    {% endif %}
+                </div>
+                {% if section.settings.badge != blank %}
+                    <div class="e-pill-badge e-pill-badge--xs">{{ section.settings.badge }}</div>
+                {% endif %}
+            </div>
+            {% if section.settings.image != blank or section.settings.image_mobile != blank %}
+                <picture>
+                    {% if section.settings.image != blank %}
+                        <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+                    {% endif %}
+                    {% if section.settings.image_mobile != blank %}
+                        <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+                    {% elsif section.settings.image != blank %}
+                        <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    {% endif %}
+                </picture>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!-- EXPERT FEATURE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_expert-feature.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "textarea",
+            "id": "quote",
+            "label": "t:common.quote"
+        },
+        {
+            "type": "text",
+            "id": "author",
+            "label": "t:sections.n_expert-feature.settings.author"
+        },
+        {
+            "type": "text",
+            "id": "caption",
+            "label": "t:sections.n_expert-feature.settings.caption"
+        },
+        {
+            "type": "text",
+            "id": "badge",
+            "label": "t:common.badge"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_expert-feature.name"
+        }
+    ]
+}
+{% endschema %}
