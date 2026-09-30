@@ -1,0 +1,126 @@
+{% doc %}
+  Renders a usage steps slider.
+{% enddoc %}
+
+<section class="usage-steps">
+    <div class="container">
+        <article>
+            {{ section.settings.heading }}
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge e-pill-badge--fill">
+                    <i class="e-icon e-icon-snow"></i>
+                    <div><span>{{ section.settings.badge }}</span> {{ section.settings.badge_text }}</div>
+                </div>
+            {% endif %}
+        </article>
+    </div>
+    <div class="container">
+        <div
+            class="c-swiper"
+            data-swiper='{
+                "slidesPerView": 1.1,
+                "spaceBetween": 16,
+                "loop": false,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "slidesPerView": 2.2,
+                        "spaceBetween": 24
+                    }
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% assign step_index = 0 %}
+                {% for block in section.blocks %}
+                    {% if block.type == 'step' %}
+                        {% assign step_index = step_index | plus: 1 %}
+                        <div class="swiper-slide">
+                            <picture data-index="{{ step_index }}">
+                                {% if block.settings.image != blank %}
+                                    <source media="(min-width:768px)" srcset="{{ block.settings.image | image_url }}" />
+                                {% endif %}
+                                {% if block.settings.image_mobile != blank %}
+                                    <img loading="lazy" src="{{ block.settings.image_mobile | image_url }}" alt="{{ block.settings.image_mobile.alt | escape }}" />
+                                {% endif %}
+                            </picture>
+                            <article>
+                                {% if block.settings.heading != blank %}
+                                    <h6>{{ block.settings.heading }}</h6>
+                                {% endif %}
+                                {{ block.settings.text }}
+                            </article>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "t:sections.n_usage-steps.name",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "badge",
+            "label": "t:common.badge"
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "step",
+            "name": "t:common.step",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_mobile",
+                    "label": "t:common.image-mobile"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_usage-steps.name"
+        }
+    ]
+}
+{% endschema %}

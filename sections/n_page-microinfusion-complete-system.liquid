@@ -6,14 +6,16 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/complete-system/complete-system.css" />
 {% endif %}
-<section class="complete-system">
+<section class="complete-system{% if section.settings.modifier != 'none' %} complete-system--{{ section.settings.modifier }}{% endif %}">
     <div class="container">
         <article class="complete-system__content">
             {{ section.settings.heading }}
             <ol class="complete-system__scale c-swiper-steps">
                 {% for block in section.blocks %}
                     {% if block.type == 'step' %}
-                        <li><span>{{ block.settings.step }}</span></li>
+                        {% if block.settings.step != blank %}
+                            <li><span>{{ block.settings.step }}</span></li>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
             </ol>
@@ -223,6 +225,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "bg",
+                    "label": "t:common.background"
+                }
+            ]
         },
         {
             "type": "richtext",

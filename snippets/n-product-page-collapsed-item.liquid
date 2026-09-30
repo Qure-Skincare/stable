@@ -1,17 +1,24 @@
 {% doc %}
   Renders one product-header accordion item from a rich text metafield.
 
-  A paragraph whose whole text is `[hr]`, `[marked_list]` or `[benefit_grid]`
-  is output without a `<p>` wrapper. `[marked_list]` and `[benefit_grid]`
-  print HTML from `product.settings.marked_list_html`. `[benefit_grid]`
-  reads `product.settings.benefit_grid`: tiles separated by semicolons,
-  each tile is `icon|title|text`.
+  A paragraph whose whole text is `[hr]`, `[marked_list]`, `[benefit_grid]`
+  or `[spec_table]` is output without a `<p>` wrapper. `[marked_list]` prints
+  `product.settings.marked_list_html`. `[benefit_grid]` reads
+  `custom.benefit_grid`: tiles separated by semicolons, each tile is
+  `icon|title|text`. A tile that starts with `disclaimer` is `disclaimer|icon|text`
+  and renders under the grid.
+  `[spec_table]` reads `custom.spec_table`: rows separated by semicolons, each
+  row is `label|value`. A product value is used first, then the page value.
+  A paragraph containing `[icon:name]` prints `e-icon-name` before the remaining text.
+  A heading is printed as `<h3>`.
 
   @param {object} input - Rich text metafield.
   @param {string} title - Accordion summary.
+  @param {object} product - Product whose replacement metafields are read first.
+  @param {object} page - Page whose replacement metafields are read second.
 
   @example
-  {% render 'n-product-page-collapsed-item', input: product.metafields.custom.key_benefits, title: 'Key Benefits' %}
+  {% render 'n-product-page-collapsed-item', input: product.metafields.custom.key_benefits, title: 'Key Benefits', product: product, page: page %}
 {% enddoc %}
 
 {% if input != blank %}
@@ -22,12 +29,44 @@
       <article class="c-accordion__content">
           {% for item in included_json.children %}
               {% case item.type %}
-                {% when 'list' %}
-                  <ul>
-                    {% for list_item in item.children %}
-                      <li>{{ list_item.children[0].value | replace: '[hr]', '<hr />' | replace: '[br]', '<br />' }}</li>
+                {% when 'heading' %}
+                  <h3>
+                    {% for text_node in item.children %}
+                      {{ text_node.value }}
                     {% endfor %}
-                  </ul>
+                  </h3>
+                {% when 'list' %}
+                  {% if item.listType == 'ordered' %}
+                    <ol>
+                  {% else %}
+                    <ul>
+                  {% endif %}
+                    {% for list_item in item.children %}
+                      <li>
+                        {% for child in list_item.children %}
+                          {% if child.type == 'heading' %}
+                            <h3>
+                              {% for text_node in child.children %}
+                                {{ text_node.value }}
+                              {% endfor %}
+                            </h3>
+                          {% elsif child.bold and child.italic %}
+                            <strong><em>{{ child.value }}</em></strong>
+                          {% elsif child.bold %}
+                            <strong>{{ child.value }}</strong>
+                          {% elsif child.italic %}
+                            <em>{{ child.value }}</em>
+                          {% else %}
+                            {{ child.value | replace: '[hr]', '<hr />' | replace: '[br]', '<br />' }}
+                          {% endif %}
+                        {% endfor %}
+                      </li>
+                    {% endfor %}
+                  {% if item.listType == 'ordered' %}
+                    </ol>
+                  {% else %}
+                    </ul>
+                  {% endif %}
                 {% when 'paragraph' %}
                   {% capture paragraph_text %}{% for paragraph_item in item.children %}{{ paragraph_item.value }}{% endfor %}{% endcapture %}
                   {% assign paragraph_text = paragraph_text | strip %}
@@ -37,27 +76,79 @@
                     {% when '[marked_list]' %}
                       {{ 'product.settings.marked_list_html' | t }}
                     {% when '[benefit_grid]' %}
-                      <ul class="c-benefit-grid c-benefit-grid--sm">
-                        {% assign benefit_rows = 'product.settings.benefit_grid' | t | replace: '&amp;', '&' | replace: '&#38;', '&' | split: ';' %}
-                        {% for row in benefit_rows %}
-                          {% assign parts = row | strip | split: '|' %}
-                          {% if parts.size > 1 %}
-                            <li class="c-benefit-grid__item">
-                              <span class="c-benefit-grid__icon"><i class="e-icon e-icon-{{ parts[0] | strip }}"></i></span>
-                              <div class="c-benefit-grid__content">
-                                <strong class="c-benefit-grid__title">{{ parts[1] | strip | escape }}</strong>
-                                <p class="c-benefit-grid__text">{{ parts[2] | strip | escape }}</p>
-                              </div>
-                            </li>
+                      {% assign benefit_source = product.metafields.custom.benefit_grid.value | default: page.metafields.custom.benefit_grid.value %}
+                      {% assign disclaimer_icon = blank %}
+                      {% assign disclaimer_text = blank %}
+                      {% if benefit_source != blank %}
+                        {% capture benefit_cards %}
+                          {% assign benefit_rows = benefit_source | replace: '&amp;', '&' | replace: '&#38;', '&' | split: ';' %}
+                          {% for row in benefit_rows %}
+                            {% assign parts = row | strip | split: '|' %}
+                            {% if parts[0] == 'disclaimer' %}
+                              {% assign disclaimer_icon = parts[1] | strip %}
+                              {% assign disclaimer_text = parts[2] | strip %}
+                            {% elsif parts.size > 1 %}
+                              <li class="c-benefit-grid__item">
+                                <span class="c-benefit-grid__icon"><i class="e-icon e-icon-{{ parts[0] | strip }}"></i></span>
+                                <div class="c-benefit-grid__content">
+                                  <strong class="c-benefit-grid__title">{{ parts[1] | strip | escape }}</strong>
+                                  <p class="c-benefit-grid__text">{{ parts[2] | strip | escape }}</p>
+                                </div>
+                              </li>
+                            {% endif %}
+                          {% endfor %}
+                        {% endcapture %}
+                        {% assign benefit_cards = benefit_cards | strip %}
+                        {% if benefit_cards != blank %}
+                          <ul class="c-benefit-grid c-benefit-grid--sm">
+                            {{ benefit_cards }}
+                          </ul>
+                        {% endif %}
+                      {% endif %}
+                      {% if disclaimer_text != blank %}
+                        <p class="e-declaimer">
+                          {% if disclaimer_icon != blank %}
+                            <i class="e-icon e-icon-{{ disclaimer_icon }}"></i>
                           {% endif %}
-                        {% endfor %}
-                      </ul>
+                          {{ disclaimer_text }}
+                        </p>
+                      {% endif %}
+                    {% when '[spec_table]' %}
+                      {% assign spec_source = product.metafields.custom.spec_table.value | default: page.metafields.custom.spec_table.value %}
+                      {% if spec_source != blank %}
+                        <table>
+                          {% assign spec_rows = spec_source | split: ';' %}
+                          {% for row in spec_rows %}
+                            {% assign parts = row | strip | split: '|' %}
+                            {% if parts.size > 1 %}
+                              <tr>
+                                <td>{{ parts[0] | strip | escape }}</td>
+                                <td><strong>{{ parts[1] | strip | escape }}</strong></td>
+                              </tr>
+                            {% endif %}
+                          {% endfor %}
+                        </table>
+                      {% endif %}
                     {% else %}
-                      <p>
-                        {% for paragraph_item in item.children %}
-                          {{ paragraph_item.value | replace: '[hr]', '<hr />' | replace: '[br]', '<br />' }}
-                        {% endfor %}
-                      </p>
+                      {% if paragraph_text contains '[icon:' %}
+                        {% assign icon_name = paragraph_text | split: '[icon:' | last | split: ']' | first | strip %}
+                        {% assign icon_token = '[icon:' | append: icon_name | append: ']' %}
+                        <p><i class="e-icon e-icon-{{ icon_name }}"></i> {{ paragraph_text | remove: icon_token | strip }}</p>
+                      {% else %}
+                        <p>
+                          {% for paragraph_item in item.children %}
+                            {% if paragraph_item.bold and paragraph_item.italic %}
+                              <strong><em>{{ paragraph_item.value }}</em></strong>
+                            {% elsif paragraph_item.bold %}
+                              <strong>{{ paragraph_item.value }}</strong>
+                            {% elsif paragraph_item.italic %}
+                              <em>{{ paragraph_item.value }}</em>
+                            {% else %}
+                              {{ paragraph_item.value | replace: '[hr]', '<hr />' | replace: '[br]', '<br />' }}
+                            {% endif %}
+                          {% endfor %}
+                        </p>
+                      {% endif %}
                   {% endcase %}
               {% endcase %}
           {% endfor %}

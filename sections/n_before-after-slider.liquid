@@ -1,0 +1,177 @@
+{% doc %}
+  Renders a before-and-after trusted reviews slider.
+{% enddoc %}
+
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/trusted-reviews/trusted-reviews.css" />
+{% endif %}
+<section class="trusted-reviews trusted-reviews--ba-slider">
+    <div class="container">
+        {{ section.settings.heading }}
+        <div
+            class="c-swiper"
+            data-swiper='{
+                "slidesPerView": 1.1,
+                "spaceBetween": 16,
+                "loop": false,
+                "allowTouchMove": false,
+                "pagination": {
+                    "el": ".c-swiper-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": ".c-swiper-button-prev",
+                    "nextEl": ".c-swiper-button-next"
+                },
+                "breakpoints": {
+                    "768": {
+                        "allowTouchMove": true,
+                        "slidesPerView": 2
+                    },
+                    "992": {
+                        "spaceBetween": 24,
+                        "slidesPerView": 3
+                    }
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'review' %}
+                        <div class="swiper-slide">
+                            <div class="c-trusted-review-card">
+                                <div class="c-ba-slider" style="--position: 50%">
+                                    <figure class="c-ba-slider__image-before">
+                                        {% if block.settings.image_before != blank %}
+                                            <img loading="lazy" src="{{ block.settings.image_before | image_url }}" alt="{{ block.settings.image_before.alt | escape }}" />
+                                        {% endif %}
+                                        {% if block.settings.before_text != blank %}
+                                            <figcaption>{{ block.settings.before_text }}</figcaption>
+                                        {% endif %}
+                                    </figure>
+                                    <figure class="c-ba-slider__image-after">
+                                        {% if block.settings.image_after != blank %}
+                                            <img loading="lazy" src="{{ block.settings.image_after | image_url }}" alt="{{ block.settings.image_after.alt | escape }}" />
+                                        {% endif %}
+                                        {% if block.settings.after_text != blank %}
+                                            <figcaption>{{ block.settings.after_text }}</figcaption>
+                                        {% endif %}
+                                    </figure>
+                                    <input class="c-ba-slider__input" type="range" min="0" max="100" step="1" value="50" aria-label="" />
+                                    <div class="c-ba-slider__arrows">
+                                        <i class="e-icon e-icon-arrow-back"></i>
+                                        <i class="e-icon e-icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="e-author">
+                                    {% if block.settings.flag != blank %}
+                                        <img loading="lazy" src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.username | escape }}" />
+                                    {% endif %}
+                                    {{ block.settings.username }}
+                                </div>
+                                {% if block.settings.verified_customer != blank %}
+                                    <div class="e-verified-customer">
+                                        <div class="e-checkmark"></div>
+                                        {{ block.settings.verified_customer }}
+                                    </div>
+                                {% endif %}
+                                <article>
+                                    {% if block.settings.heading != blank %}
+                                        <h6>{{ block.settings.heading }}</h6>
+                                    {% endif %}
+                                    {{ block.settings.text }}
+                                </article>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="c-swiper-nav">
+                <button class="c-swiper-button-prev"></button>
+                <div class="c-swiper-pagination"></div>
+                <button class="c-swiper-button-next"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("ba-slider", "https://qureskincaredns-stable.com/assets/js/c-ba-slider.js");
+    });
+</script>
+
+{% schema %}
+{
+    "name": "t:sections.n_before-after-slider.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "review",
+            "name": "t:common.review",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_before",
+                    "label": "t:common.before"
+                },
+                {
+                    "type": "text",
+                    "id": "before_text",
+                    "label": "t:common.before-text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_after",
+                    "label": "t:common.after"
+                },
+                {
+                    "type": "text",
+                    "id": "after_text",
+                    "label": "t:common.after-text"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "flag",
+                    "label": "t:common.flag"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "verified_customer",
+                    "label": "t:common.verified-customer"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_before-after-slider.name"
+        }
+    ]
+}
+{% endschema %}

@@ -113,6 +113,7 @@
         "text-on-image": "Text on image",
         "text-with-image": "Text with image",
         "badge-text": "Badge text",
+        "pill": "Pill",
         "badge": "Badge",
         "heading-level": "Heading level",
         "heading-1": "Heading 1",
@@ -151,6 +152,7 @@
         "rated-by-customers": "Rated by Customers",
         "backed-by-dermatologists": "Backed by Dermatologists",
         "trustpilot": "Trustpilot",
+        "reviews": "Reviews",
         "link-text": "Link text",
         "image-header": "Image header",
         "image-text": "Image text",
@@ -282,6 +284,8 @@
         "approved-position": "Approved by position",
         "before-text": "Before text",
         "after-text": "After text",
+        "before": "Before",
+        "after": "After",
         "show-logo": "Show logo",
         "must-read": "Must read",
         "wistia-slider": "Wistia slider",
@@ -301,6 +305,8 @@
         "fine-lines": "Fine lines",
         "antioxidant": "Antioxidant",
         "droplet": "Droplet",
+        "waves": "Waves",
+        "wand": "Wand",
         "wrinkles": "Wrinkles",
         "dark-spots": "Dark spots",
         "blemishes": "Blemishes",
@@ -388,6 +394,7 @@
         "best-seller": "Best seller",
         "trending": "Trending",
         "flex": "Flex",
+        "row": "Row",
         "arrow-button": "Arrow button",
         "web-video": "Web video",
         "changes": "Changes",
@@ -561,6 +568,9 @@
                 }
             }
         },
+        "n_base-slider": {
+            "name": "Base slider"
+        },
         "n_base-section": {
             "name": "Base section",
             "settings": {
@@ -732,6 +742,9 @@
                 }
             }
         },
+        "n_before-after-slider": {
+            "name": "Before after slider"
+        },
         "n_award-winning": {
             "name": "Award winning"
         },
@@ -743,7 +756,8 @@
             "settings": {
                 "modifier-options": {
                     "faucet-filter": "Faucet filter",
-                    "shower-filter": "Shower filter"
+                    "shower-filter": "Shower filter",
+                    "recovery-mask": "Recovery mask"
                 }
             },
             "blocks": {
@@ -799,6 +813,9 @@
         },
         "n_how-to-use": {
             "name": "How to use"
+        },
+        "n_usage-steps": {
+            "name": "Usage steps"
         },
         "n_achievement-goals": {
             "name": "Achievement goals slider"

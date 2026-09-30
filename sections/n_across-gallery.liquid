@@ -7,6 +7,16 @@
     <div class="container">
         <article>
             {{ section.settings.text }}
+            {% assign pill_blocks = section.blocks | where: 'type', 'pill' %}
+            {% if pill_blocks.size > 0 %}
+                <ul>
+                    {% for block in pill_blocks %}
+                        {% if block.settings.text != blank %}
+                            <li><div class="e-pill-badge e-pill-badge--sm">{{ block.settings.text }}</div></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                 <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
             {% endif %}
@@ -55,6 +65,17 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "pill",
+            "name": "t:common.pill",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
                 }
             ]
         }
