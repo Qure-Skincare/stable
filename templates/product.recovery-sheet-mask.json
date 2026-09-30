@@ -715,6 +715,7 @@
         "review_3",
         "review_4"
       ],
+      "disabled": true,
       "name": "t:sections.n_before-after-slider.name",
       "settings": {
         "use_own_file": false,
@@ -898,6 +899,7 @@
         "video_6",
         "video_7"
       ],
+      "disabled": true,
       "name": "t:sections.n_customers-video.name",
       "settings": {
         "section_id": "crystal_clear",
