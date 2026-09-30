@@ -1,0 +1,134 @@
+{% doc %}
+  Renders the Micro-Infusion overview: copy, desktop and mobile videos, and target areas.
+{% enddoc %}
+
+<!-- MI OVERVIEW -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/mi-overview/mi-overview.css" />
+{% endif %}
+
+<section class="mi-overview"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        <div class="mi-overview__titles">
+            {% if section.settings.subheader != blank %}
+                <h6>{{ section.settings.subheader }}</h6>
+            {% endif %}
+            {% if section.settings.heading != blank %}
+                <h2>{{ section.settings.heading }}</h2>
+            {% endif %}
+        </div>
+        {% if section.settings.wistia_url != blank %}
+            <div class="mi-overview__video d-none d-sm-block">
+                <div class="c-wistia c-wistia--is-playing c-wistia--always-playing">
+                    <wistia-player media-id="{{ section.settings.wistia_url }}" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" muted silent-autoplay="false" play-bar-control="false" play-pause-control="false" volume-control="false" settings-control="false" fullscreen-control="false"></wistia-player>
+                    <div class="c-wistia__play"></div>
+                </div>
+            </div>
+        {% endif %}
+        {% if section.settings.wistia_url_mobile != blank %}
+            <div class="mi-overview__video d-sm-none">
+                <div class="c-wistia c-wistia--is-playing c-wistia--always-playing">
+                    <wistia-player media-id="{{ section.settings.wistia_url_mobile }}" autoplay="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" muted silent-autoplay="false" play-bar-control="false" play-pause-control="false" volume-control="false" settings-control="false" fullscreen-control="false"></wistia-player>
+                    <div class="c-wistia__play"></div>
+                </div>
+            </div>
+        {% endif %}
+        {% if section.settings.text != blank %}
+            <article class="mi-overview__text">
+                {{ section.settings.text }}
+            </article>
+        {% endif %}
+        <div class="mi-overview__features">
+            {% if section.settings.features_heading != blank %}
+                <h3>{{ section.settings.features_heading }}</h3>
+            {% endif %}
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == 'area' %}
+                        <li {{ block.shopify_attributes }}>
+                            {% if block.settings.image != blank %}
+                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% endif %}
+                            {% if block.settings.heading != blank %}
+                                <span>{{ block.settings.heading }}</span>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- MI OVERVIEW END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_mi-overview.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "text",
+            "id": "subheader",
+            "label": "t:common.subheader"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url_mobile",
+            "label": "t:sections.n_mi-overview.settings.wistia-url-mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "features_heading",
+            "label": "t:sections.n_mi-overview.settings.features-heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "area",
+            "name": "t:common.image-with-text",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_mi-overview.name"
+        }
+    ]
+}
+{% endschema %}
