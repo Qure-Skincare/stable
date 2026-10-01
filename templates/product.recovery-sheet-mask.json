@@ -351,14 +351,14 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free Shipping On<br>Orders Over $100"
+            "text": "Free Shipping On<br>Orders Over $149"
           }
         },
         "image_with_text_reviewed": {
           "type": "image_with_text",
           "settings": {
             "icon": "reviewed",
-            "text": "Dermatologist<br>Reviewed"
+            "text": "DermatologistReviewed"
           }
         },
         "image_with_text_pay_later": {
