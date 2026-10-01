@@ -75,7 +75,7 @@
         ".hero-section {display: block;}"
       ],
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "hidden": false,
         "modifier": "extended",
         "approved_position": "before_text",

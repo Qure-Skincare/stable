@@ -101,16 +101,6 @@
 
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/general.css" />
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/{{ template | downcase }}.css" />
-    {% if template == 'page.micro-infusion-system-v5'
-      or template == 'page.micro-infusion-system-v6'
-      or template == 'page.micro-infusion-system-v8'
-      or template == 'page.qure-microinfusion-bogo'
-      or template == 'page.qure-microinfusion-offer'
-      or template == 'page.qure-microinfusion-offer-f'
-      or template == 'page.microinfusion'
-    %}
-      <link rel="stylesheet" href="{{ template | downcase | append: '.css' | asset_url }}">
-    {% endif %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" /></noscript>
     
