@@ -782,7 +782,7 @@
       ],
       "name": "t:sections.n_mi-ingredients.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "section_id": "ingredients",
         "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
       }
