@@ -599,17 +599,10 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-<<<<<<< HEAD
         "use_own_file": false,
         "background_color": "light",
         "modifier": "dotted-nav",
         "section_id": "reviews",
-=======
-        "use_own_file": true,
-        "background_color": "none",
-        "modifier": "none",
-        "section_id": "",
->>>>>>> production
         "heading": "",
         "disclaimer": "",
         "text": "<h2>Real stories, real results</h2>",
@@ -789,7 +782,7 @@
       ],
       "name": "t:sections.n_mi-ingredients.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "section_id": "ingredients",
         "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
       }
@@ -945,312 +938,6 @@
         "button_url": "#hero-product"
       }
     },
-<<<<<<< HEAD
-=======
-    "n_progress_metrics_t9KsAf": {
-      "type": "n_progress-metrics",
-      "blocks": {
-        "compare_image_1": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_1.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Fine Lines & Wrinkles[/span]</p>"
-          }
-        },
-        "compare_image_2": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_2.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Large Pores & Skin Texture[/span]</p>"
-          }
-        },
-        "compare_image_3": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_3.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Dark Spots & Texture[/span]</p>"
-          }
-        },
-        "compare_image_4": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_4.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Uneven Skin Tone[/span]</p>"
-          }
-        },
-        "percent_value_1": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 70,
-            "text": "of participants say their fine lines looked smoother."
-          }
-        },
-        "percent_value_2": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 93,
-            "text": "noticed results the next day after their first Micro-Infusion treatment."
-          }
-        },
-        "percent_value_3": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 70,
-            "text": "of participants say their skin looked brighter and more even toned."
-          }
-        },
-        "disclaimer_1": {
-          "type": "disclaimer",
-          "settings": {
-            "text": "Based on results after 6 treatments in a user study of 30 participants aged 25–65."
-          }
-        }
-      },
-      "block_order": [
-        "compare_image_1",
-        "compare_image_2",
-        "compare_image_3",
-        "compare_image_4",
-        "percent_value_1",
-        "percent_value_2",
-        "percent_value_3",
-        "disclaimer_1"
-      ],
-      "name": "t:sections.n_progress-metrics.name",
-      "settings": {
-        "use_own_file": true,
-        "text": "<h2>Qure is Clinically Proven</h2><p>In an independent clinical evaluation of dermatologic safety-in-use, the Micro-Infusion System was tested across 31 subjects spanning all Fitzpatrick skin types (I–VI) — from the lightest to the deepest skin tones. No adverse reactions were reported or observed throughout the entire evaluation period.</p><p>Evaluated by a Board-Certified Dermatologist,&nbsp;<br/>Independent Testing Clinic, NJ, 2026.</p>"
-      }
-    },
-    "n_features_marquee_wE2jLu": {
-      "type": "n_features-marquee",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "shipping-order",
-            "text": "Free Shipping On <br> Orders Over 100$"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "reviewed",
-            "text": "Dermatologist<br> Reviewed"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "pay-later",
-            "text": "Buy Now, Pay Later<br> Options Available"
-          }
-        },
-        "image_with_text_4": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "proven",
-            "text": "Proven Results,<br> Backed By Science"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3",
-        "image_with_text_4"
-      ],
-      "name": "t:sections.n_features-marquee.name",
-      "settings": {
-        "use_own_file": true
-      }
-    },
-    "n_accordion_tiles_square_cH6dYp": {
-      "type": "n_accordion-tiles-square",
-      "blocks": {
-        "accordion_1": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/odycea-onsen-sui-thermal-water-tile.webp",
-            "heading": "Odycea Onsen-Sui Thermal Water",
-            "text": "<p>Mineral-rich spring water from France that hydrates and calms skin.</p>"
-          }
-        },
-        "accordion_2": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/epidermal-growth-factor-tile.webp",
-            "heading": "EGF (Epidermal Growth Factor)",
-            "text": "<p>Helps skin look smoother and more refreshed, and helps reduce the look of fine lines.</p>"
-          }
-        },
-        "accordion_3": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/tranexamic-acid-tile.webp",
-            "heading": "Tranexamic Acid",
-            "text": "<p>Visibly brightens skin and fades the look of dark spots.</p>"
-          }
-        },
-        "accordion_4": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/niacinamide-tile.webp",
-            "heading": "Niacinamide",
-            "text": "<p>Helps even out tone and minimize the look of pores.</p>"
-          }
-        },
-        "accordion_5": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/beta-glucan-2-tile.webp",
-            "heading": "Beta Glucan",
-            "text": "<p>A powerful hydrator that helps skin feel supple and moisturized.</p>"
-          }
-        },
-        "accordion_6": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/sodium-hyaluronate-tile.webp",
-            "heading": "Sodium Hyaluronate",
-            "text": "<p>Draws in moisture for visibly smoother, plumper-looking skin.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_1",
-        "accordion_2",
-        "accordion_3",
-        "accordion_4",
-        "accordion_5",
-        "accordion_6"
-      ],
-      "name": "t:sections.n_accordion-tiles-square.name",
-      "settings": {
-        "use_own_file": true,
-        "section_id": "ingredients",
-        "heading": "<h2>Powerful ingredients. Backed by science.</h2>"
-      }
-    },
-    "n_our_advisors_bX8qMz": {
-      "type": "n_our-advisors",
-      "blocks": {
-        "accordion_1": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Shah <br/>Board Certified Dermatologist</p>",
-            "text": "<p>“This treatment is an at-home option for those who want to avoid the hassle or cost of going to the office.”</p>",
-            "image": "shopify://shop_images/shah.webp"
-          }
-        },
-        "accordion_2": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Maxfield <br/>Board Certified Dermatologist</p>",
-            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to help what you’re doing for your skincare routine.”</p>",
-            "image": "shopify://shop_images/maxfield.webp"
-          }
-        },
-        "accordion_3": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Tripathi <br/>Double Board Certified Facial Plastic Surgeon</p>",
-            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
-            "image": "shopify://shop_images/tripathi.webp"
-          }
-        },
-        "accordion_4": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Stephens <br/>Board Certified Dermatologist</p>",
-            "text": "<p>“The Qure Micro-Infusion stamping device offers a safe and effective solution for a variety of different skin conditions.”</p>",
-            "image": "shopify://shop_images/stephens.webp"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_1",
-        "accordion_2",
-        "accordion_3",
-        "accordion_4"
-      ],
-      "name": "t:sections.our-advisors.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>Formulated by Experts <br/>Recommended by Dermatologists</h2>"
-      }
-    },
-    "n_guarantee_fA4tRn": {
-      "type": "n_guarantee",
-      "name": "t:sections.n_guarantee.name",
-      "settings": {
-        "use_own_file": true,
-        "image": "shopify://shop_images/icon.webp",
-        "heading": "<h2>Try it now with zero risk.&nbsp;<br/>Our 90-day money-back guarantee.</h2>",
-        "text": "<p>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.</p><p>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>"
-      }
-    },
-    "n_press_reviews_sJ1kCv": {
-      "type": "n_press-reviews",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
-            "image": "shopify://shop_images/forbes.svg"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</h4>",
-            "image": "shopify://shop_images/bazzar.svg"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
-            "image": "shopify://shop_images/ps.svg"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3"
-      ],
-      "name": "t:sections.n_press-reviews.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "text": "<h6>FEATURED IN</h6>",
-        "slide": "none",
-        "settings": "\"spaceBetween\": 80"
-      }
-    },
-    "1787305754b910c884": {
-      "type": "apps",
-      "blocks": {
-        "stamped_reviews_main_widget_J7xHAY": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "Micro-Infusion",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "stamped_reviews_main_widget_J7xHAY"
-      ],
-      "settings": {}
-    },
->>>>>>> production
     "n_faq_gD5hPw": {
       "type": "n_faq",
       "blocks": {
@@ -1340,7 +1027,6 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
-<<<<<<< HEAD
         "modifier": "light",
         "heading": "<h2>Have questions?</h2>",
         "advisor_image": "shopify://shop_images/advisor.webp",
@@ -1350,16 +1036,6 @@
         "text": "",
         "button_label": "",
         "button_url": ""
-=======
-        "modifier": "none",
-        "heading": "<h2>Have questions?</h2>",
-        "advisor_heading": "",
-        "advisor_text": "",
-        "advisor_url": "",
-        "text": "Don't see your question?",
-        "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
->>>>>>> production
       }
     },
     "sticky_cta_uQ7eTx": {
