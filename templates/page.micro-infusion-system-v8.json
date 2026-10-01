@@ -820,6 +820,283 @@
         "features_heading": "6 Target Areas - 1 Solution"
       }
     },
+    "purchase_form_PwCCh6": {
+      "type": "n-purchase-form",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "9th May",
+            "percent": 73,
+            "date_soldout": "23rd March",
+            "date_reserved": "9th May"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Brightening",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
+            "preselected": false
+          }
+        },
+        "product_VTMiGm": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-bundle-micro-infusion-brightening-copy",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": true,
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 18,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "6 treatments every 12 weeks",
+            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 52,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "26th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779432175,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "2 treatments",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "image": "shopify://shop_images/MI_1_month_DS.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 19,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Rejuvenating",
+            "image": "shopify://shop_images/Wrinkles_2.png",
+            "preselected": true
+          }
+        },
+        "product_XTFEhB": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-bundle-micro-infusion-rejuvenating-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779497711,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "6 treatments every 12 weeks",
+            "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 56,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 93,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779530479,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 29,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
+          }
+        },
+        "type_MchbTN": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_wxFyLr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Mixed",
+            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "preselected": false
+          }
+        },
+        "product_Dc9ahY": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-bundle-micro-infusion-rejuvenating-brightening-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_VTMiGm",
+        "product_DBd4ef",
+        "product_Xf8A6C",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_XTFEhB",
+        "product_EKAAzA",
+        "product_eiY89h",
+        "type_MchbTN",
+        "product_type_wxFyLr",
+        "product_Dc9ahY"
+      ],
+      "disabled": true,
+      "settings": {
+        "type": "list",
+        "heading": "Choose your treatment",
+        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
+        "image": "shopify://shop_images/tami-cropped.webp",
+        "klaviyo_form_name": "",
+        "form_name": "purchase-form",
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
+        "guarantee_period": "90",
+        "available-stocks": false
+      }
+    },
     "n_mi_ingredients_v5": {
       "type": "n_mi-ingredients",
       "blocks": {
@@ -1173,275 +1450,6 @@
         "limited": false,
         "button-label": "Choose Your Supply",
         "button-url": "#hero-product"
-      }
-    },
-    "purchase_form_PwCCh6": {
-      "type": "n-purchase-form",
-      "blocks": {
-        "nextships_4xp7uM": {
-          "type": "nextships",
-          "settings": {
-            "date": "9th May",
-            "percent": 73,
-            "date_soldout": "23rd March",
-            "date_reserved": "9th May"
-          }
-        },
-        "type_hHPdgJ": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_QKQhNr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Brightening",
-            "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": false
-          }
-        },
-        "product_VTMiGm": {
-          "type": "product",
-          "settings": {
-            "product": "6-month-bundle-micro-infusion-brightening-copy",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": true,
-            "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "",
-            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 18,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "6 treatments every 12 weeks",
-            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 52,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "26th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
-          }
-        },
-        "product_Xf8A6C": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779432175,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "2 treatments",
-            "product_selling_plan_text": "2 treatments every 4 weeks",
-            "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "product_discount_percent": 17,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 2,
-            "left_items": 19,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
-          }
-        },
-        "type_aJwQ9q": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_VLXcAn": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Rejuvenating",
-            "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": true
-          }
-        },
-        "product_XTFEhB": {
-          "type": "product",
-          "settings": {
-            "product": "6-month-bundle-micro-infusion-rejuvenating-1",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "",
-            "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "product_EKAAzA": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779497711,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "6 treatments every 12 weeks",
-            "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
-            "product_discount_percent": 19,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 6,
-            "left_items": 56,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 93,
-            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
-          }
-        },
-        "product_eiY89h": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779530479,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "2 treatments every 4 weeks",
-            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
-            "product_discount_percent": 17,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 2,
-            "left_items": 29,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
-          }
-        },
-        "type_MchbTN": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_wxFyLr": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Mixed",
-            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
-            "preselected": false
-          }
-        },
-        "product_Dc9ahY": {
-          "type": "product",
-          "settings": {
-            "product": "6-month-bundle-micro-infusion-rejuvenating-brightening-1",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "nextships_4xp7uM",
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_VTMiGm",
-        "product_DBd4ef",
-        "product_Xf8A6C",
-        "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_XTFEhB",
-        "product_EKAAzA",
-        "product_eiY89h",
-        "type_MchbTN",
-        "product_type_wxFyLr",
-        "product_Dc9ahY"
-      ],
-      "settings": {
-        "type": "list",
-        "heading": "Choose your treatment",
-        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
-        "image": "shopify://shop_images/tami-cropped.webp",
-        "klaviyo_form_name": "",
-        "form_name": "purchase-form",
-        "subscription_product": "false",
-        "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
-        "guarantee_period": "90",
-        "available-stocks": false
       }
     }
   },
