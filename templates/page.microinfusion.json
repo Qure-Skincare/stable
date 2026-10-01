@@ -620,7 +620,7 @@
       "type": "n_expert-feature",
       "name": "t:sections.n_expert-feature.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "heading": "<h2>Does Micro-Infusion hurt?</h2>",
         "text": "<p>Qure Micro-Infusion is designed to be virtually painless. Its tiny, 0.5 mm gold-plated microneedles gently stamp the skin, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the tiny microneedles create channels that help your skin absorb Qure's serum for smoother-looking, more radiant skin.</p>",
         "quote": "\"What I really like about Qure Micro-Infusion is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.\"",
