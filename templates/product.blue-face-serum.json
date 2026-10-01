@@ -209,7 +209,7 @@
             "product": "blue-face-serum-6-month-bundle",
             "product_variant_id": 49572366483695,
             "product_selling_plan": 8779661551,
-            "gift": "cosmetic-travel-bag",
+            "gift": "",
             "gift_image": "shopify://shop_images/Gift.png",
             "gift_text": "Qure Cosmetic Travel Bag",
             "discount_code": "FREEB&SBAG",
@@ -780,6 +780,7 @@
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
         "quote": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -850,7 +851,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
