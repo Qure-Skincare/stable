@@ -25,6 +25,17 @@
     "announcement-bar": {
       "type": "n_announcement-bar",
       "blocks": {
+        "slider_feYWqY": {
+          "type": "slider",
+          "settings": {
+            "countdown": false,
+            "text": "<p>Breast Cancer Awareness Month: <strong>$3 donated</strong> per order</p>",
+            "button_label": "",
+            "button_url": "",
+            "from": "",
+            "days": 5
+          }
+        },
         "slider_1": {
           "type": "slider",
           "settings": {
@@ -49,6 +60,7 @@
         }
       },
       "block_order": [
+        "slider_feYWqY",
         "slider_1",
         "slider_2"
       ],
