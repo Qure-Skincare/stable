@@ -527,7 +527,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "background_color": "none",
         "modifier": "none",
         "section_id": "",
@@ -706,8 +706,8 @@
       ],
       "name": "t:sections.n_progress-metrics.name",
       "settings": {
-        "use_own_file": false,
-        "text": "<h2>Qure is Clinically Proven</h2><p>In an independent clinical evaluation of dermatologic safety-in-use, the Micro-Infusion System was tested across 31 subjects spanning all Fitzpatrick skin types (I–VI) — from the lightest to the deepest skin tones. No adverse reactions were reported or observed throughout the entire evaluation period.</p><p>Evaluated by a Board-Certified Dermatologist, <br/>Independent Testing Clinic, NJ, 2026.</p>"
+        "use_own_file": true,
+        "text": "<h2>Qure is Clinically Proven</h2><p>In an independent clinical evaluation of dermatologic safety-in-use, the Micro-Infusion System was tested across 31 subjects spanning all Fitzpatrick skin types (I–VI) — from the lightest to the deepest skin tones. No adverse reactions were reported or observed throughout the entire evaluation period.</p><p>Evaluated by a Board-Certified Dermatologist,&nbsp;<br/>Independent Testing Clinic, NJ, 2026.</p>"
       }
     },
     "n_features_marquee_wE2jLu": {
@@ -750,7 +750,7 @@
       ],
       "name": "t:sections.n_features-marquee.name",
       "settings": {
-        "use_own_file": false
+        "use_own_file": true
       }
     },
     "n_accordion_tiles_square_cH6dYp": {
@@ -815,7 +815,7 @@
       ],
       "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "section_id": "ingredients",
         "heading": "<h2>Powerful ingredients. Backed by science.</h2>"
       }
@@ -872,9 +872,9 @@
       "type": "n_guarantee",
       "name": "t:sections.n_guarantee.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "image": "shopify://shop_images/icon.webp",
-        "heading": "<h2>Try it now with zero risk. <br/>Our 90-day money-back guarantee.</h2>",
+        "heading": "<h2>Try it now with zero risk.&nbsp;<br/>Our 90-day money-back guarantee.</h2>",
         "text": "<p>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.</p><p>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>"
       }
     },
@@ -911,6 +911,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"spaceBetween\": 80"
@@ -1026,7 +1027,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
