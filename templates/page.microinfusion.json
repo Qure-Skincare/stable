@@ -31,7 +31,8 @@
             "title_4": "Boosts absorption of active ingredients",
             "text_4": "<p>Creates micro-channels that help your serums and treatments penetrate deeper, so active ingredients work more effectively.</p>",
             "title_5": "Safe for regular, consistent use",
-            "text_5": "<p>Designed for repeated at-home sessions, so you can build on results week after week without irritation or downtime.</p>"
+            "text_5": "<p>Designed for repeated at-home sessions, so you can build on results week after week without irritation or downtime.</p>",
+            "line": true
           }
         },
         "section_pBAMEU": {
@@ -231,7 +232,7 @@
             "best": true,
             "free_shipping": true,
             "preselected": true,
-            "heading": "6 Month Supply Autumn Sale",
+            "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -336,7 +337,7 @@
             "best": true,
             "free_shipping": true,
             "preselected": true,
-            "heading": "6 Month Supply Autumn Sale",
+            "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -441,7 +442,7 @@
             "best": true,
             "free_shipping": true,
             "preselected": true,
-            "heading": "6 Month Supply Autumn Sale",
+            "heading": "6 Month Supply",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
@@ -591,6 +592,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"spaceBetween\": 80"
@@ -1293,6 +1295,7 @@
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
         "quote": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -2453,7 +2456,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

@@ -238,6 +238,38 @@
         "use_own_file": false
       }
     },
+    "n_promo_strip_bF3xQk": {
+      "type": "n_promo-strip",
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "FREE TOTE BAG",
+        "price": "",
+        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
+        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
+      }
+    },
+    "n_promo_strip_wR8mHd": {
+      "type": "n_promo-strip",
+      "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "",
+        "price": "",
+        "gift_text": ""
+      }
+    },
     "n_promo_strip_kR4nW8": {
       "type": "n_promo-strip",
       "disabled": true,
@@ -496,38 +528,6 @@
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
-      }
-    },
-    "n_promo_strip_bF3xQk": {
-      "type": "n_promo-strip",
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "against-cancer",
-        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
-        "button_label": "Support Now",
-        "button_url": "shopify://collections/best-sellers",
-        "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
-        "badge_text": "FREE TOTE BAG",
-        "price": "",
-        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
-        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
-      }
-    },
-    "n_promo_strip_wR8mHd": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "against-cancer",
-        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
-        "button_label": "Support Now",
-        "button_url": "#",
-        "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
-        "badge_text": "",
-        "price": "",
-        "gift_text": ""
       }
     },
     "n_index-top-rated": {
@@ -963,12 +963,12 @@
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
+    "n_promo_strip_bF3xQk",
+    "n_promo_strip_wR8mHd",
     "n_promo_strip_kR4nW8",
     "n_index-daily-cleanser",
     "n_press_reviews_KgaUTN",
     "n_trusted_reviews_ecfpDp",
-    "n_promo_strip_bF3xQk",
-    "n_promo_strip_wR8mHd",
     "n_index-top-rated",
     "n_index-get-qure",
     "n_features_marquee_qXW6Gd",
