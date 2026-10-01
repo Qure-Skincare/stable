@@ -480,6 +480,78 @@
         "hide_title_on_subscription": false
       }
     },
+    "n_progress_showcase_v5": {
+      "type": "n_progress-showcase",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-1.webp",
+            "badge": "Fine Lines and Wrinkles",
+            "percent_value": 70,
+            "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-2.webp",
+            "badge": "Dark Spots",
+            "percent_value": 90,
+            "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
+        "slide_3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-3.webp",
+            "badge": "Fine Lines and Wrinkles",
+            "percent_value": 70,
+            "text": "<p>of participants say their fine lines looked smoother.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
+        "slide_4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-4.webp",
+            "badge": "Dark Spots",
+            "percent_value": 93,
+            "text": "<p>noticed results the next day after their first Micro-Infusion treatment.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        }
+      },
+      "block_order": [
+        "slide_1",
+        "slide_2",
+        "slide_3",
+        "slide_4"
+      ],
+      "name": "t:sections.n_progress-showcase.name",
+      "settings": {
+        "use_own_file": false,
+        "section_id": "improve_skin",
+        "text": "<h2>Visible results backed by our clinical study</h2>"
+      }
+    },
+    "n_expert_feature_v5": {
+      "type": "n_expert-feature",
+      "name": "t:sections.n_expert-feature.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Does Micro-Infusion hurt?</h2>",
+        "text": "<p>Qure Micro-Infusion is designed to be virtually painless. Its tiny, 0.5 mm gold-plated microneedles gently stamp the skin, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the tiny microneedles create channels that help your skin absorb Qure's serum for smoother-looking, more radiant skin.</p>",
+        "quote": "\"What I really like about Qure Micro-Infusion is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.\"",
+        "author": "Dr. Shah",
+        "caption": "1.2M followers",
+        "badge": "Board Certified Dermatologist",
+        "image": "shopify://shop_images/dr-shah.webp",
+        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
+      }
+    },
     "n_trusted_reviews_DUlFYg": {
       "type": "n_trusted-reviews",
       "blocks": {
@@ -553,6 +625,20 @@
             "product_title": ""
           }
         },
+        "slider_lF3Rk9": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
+            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "Lourdes F.",
+            "verified_customer": "Verified customer",
+            "badge": "Wrinkles",
+            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_rM6Vp2": {
           "type": "slider",
           "settings": {
@@ -595,20 +681,6 @@
             "product_title": ""
           }
         },
-        "slider_lF3Rk9": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
-            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
-            "username": "Lourdes F.",
-            "verified_customer": "Verified customer",
-            "badge": "Wrinkles",
-            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_e11ie1": {
           "type": "slider",
           "settings": {
@@ -644,59 +716,24 @@
         "slider_jT7Wd4",
         "slider_mB2Ht7",
         "slider_78E6pj",
+        "slider_lF3Rk9",
         "slider_rM6Vp2",
         "slider_aF9Qs3",
         "slider_hJ8Nc5",
-        "slider_lF3Rk9",
         "slider_e11ie1",
         "slider_pJ4Kw1"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": false,
-        "background_color": "none",
-        "modifier": "none",
-        "section_id": "",
+        "background_color": "light",
+        "modifier": "dotted-nav",
+        "section_id": "reviews",
         "heading": "",
         "disclaimer": "",
         "text": "<h2>Real stories, real results</h2>",
         "button_label": "",
-        "button_url": "#purchase-form"
-      }
-    },
-    "n_award_winning_kT7pWx": {
-      "type": "n_award-winning",
-      "blocks": {
-        "slide_a1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-winning-beauty-awards-2024.webp",
-            "text": "<h4>Beauty Awards</h4><p>Winner 2024</p>"
-          }
-        },
-        "slide_a2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-winning-global-awards.webp",
-            "text": "<h4>Beauty Global Awards</h4><p>Winner 2025</p>"
-          }
-        },
-        "slide_a3": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/award-winning-nb100-2025.webp",
-            "text": "<h4>NB100 Awards</h4><p>Winner 2025</p>"
-          }
-        }
-      },
-      "block_order": [
-        "slide_a1",
-        "slide_a2",
-        "slide_a3"
-      ],
-      "name": "t:sections.n_award-winning.name",
-      "settings": {
-        "heading": "<h2>Dermatologist Backed, Award Winning</h2>"
+        "button_url": ""
       }
     },
     "n_base_section_r7YcHd": {
@@ -704,16 +741,282 @@
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "reverse",
+        "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
-        "section_id": "how_it_works",
-        "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
-        "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin's surface to help smooth texture and reduce the look of fine lines and wrinkles</p><p>The invisible micro-channels then deliver <em><strong>science-backed serums</strong></em> onto the skin's surface, tailored to address specific skin goals — enhancing absorption and helping <em><strong>active ingredients </strong></em>work more effectively where they're applied.</p>",
-        "button_label": "Shop Now",
-        "button_url": "#hero-product",
-        "wistia_url": "a1pykz2tp0",
+        "section_id": "",
+        "heading": "<h2>Clinic-inspired results. Without&nbsp;the&nbsp;clinic price.</h2>",
+        "text": "<p>Save over $3,000 a year with Qure Micro-Infusion.</p><p>[marked_list]</p><ul><li>5-minute treatment</li><li>No appointments or travel</li><li>Professional-inspired glow from home</li></ul><p>*Estimated using two Qure treatments per month at $20 per treatment versus one $300+ in-clinic treatment per month. Prices and treatment frequency vary.</p>",
+        "image": "shopify://shop_images/mi-price-diagrams.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "",
         "accordion_text": ""
+      }
+    },
+    "n_mi_overview_v5": {
+      "type": "n_mi-overview",
+      "blocks": {
+        "area_1": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/forehead-wrinkles.webp",
+            "heading": "Forehead Wrinkles"
+          }
+        },
+        "area_2": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/eye-wrinkles.webp",
+            "heading": "Eye Wrinkles"
+          }
+        },
+        "area_3": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/smokers-wrinkles.webp",
+            "heading": "Smoker’s Wrinkles"
+          }
+        },
+        "area_4": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/limp-neck.webp",
+            "heading": "Limp Neck"
+          }
+        },
+        "area_5": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/laugh-lines.webp",
+            "heading": "Laugh Lines"
+          }
+        },
+        "area_6": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/pigmentation-marks.webp",
+            "heading": "Age Spots & Pigmentation marks"
+          }
+        }
+      },
+      "block_order": [
+        "area_1",
+        "area_2",
+        "area_3",
+        "area_4",
+        "area_5",
+        "area_6"
+      ],
+      "name": "t:sections.n_mi-overview.name",
+      "settings": {
+        "use_own_file": false,
+        "section_id": "how_it_works",
+        "subheader": "How it works",
+        "heading": "Go beyond surface-level skincare",
+        "wistia_url": "8ohyliirnv",
+        "wistia_url_mobile": "a1pykz2tp0",
+        "text": "<p>Traditional creams are applied to the skin’s surface, where the skin barrier can limit how effectively active ingredients are absorbed.</p><p>Qure uses ultra-fine, 24K gold-plated 0.5 mm microneedles to create tiny microchannels on the skin’s surface. As you stamp, concentrated serums are applied with precision, helping active ingredients absorb more effectively where they’re needed.</p>",
+        "features_heading": "6 Target Areas - 1 Solution"
+      }
+    },
+    "n_mi_ingredients_v5": {
+      "type": "n_mi-ingredients",
+      "blocks": {
+        "left_heading": {
+          "type": "left_heading",
+          "settings": {
+            "image": "shopify://shop_images/dark-spots_d7bcd9e4-63e1-4bf8-afc1-875800cde11b.webp",
+            "text": "<h3>Dark Spots</h3><h6>MICRO-INFUSION SERUM</h6><p>Targets dark spots and uneven tone for a clearer, brighter complexion.</p>"
+          }
+        },
+        "left_column_1": {
+          "type": "left_column",
+          "settings": {
+            "icon": "perfect-transforming",
+            "text": "Brightens look of skin"
+          }
+        },
+        "left_column_2": {
+          "type": "left_column",
+          "settings": {
+            "icon": "two-in-one",
+            "text": "Reduces look of dark spots"
+          }
+        },
+        "left_column_3": {
+          "type": "left_column",
+          "settings": {
+            "icon": "even-looking",
+            "text": "Even-looking tone"
+          }
+        },
+        "left_accordion": {
+          "type": "left_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.</p><p><strong>Niacinamide:</strong> A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.</p><p><strong>Tranexamic Acid:</strong> A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.</p><p><strong>All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
+          }
+        },
+        "right_heading": {
+          "type": "right_heading",
+          "settings": {
+            "image": "shopify://shop_images/wrinkles_81c769db-e1d4-4377-86e8-324dd4e64e51.webp",
+            "text": "<h3>Wrinkles</h3><h6>MICRO-INFUSION SERUM</h6><p>Boosts hydration & smooths fine lines for plumper, younger-looking skin.</p>"
+          }
+        },
+        "right_column_1": {
+          "type": "right_column",
+          "settings": {
+            "icon": "smooths",
+            "text": "Smooths fine lines"
+          }
+        },
+        "right_column_2": {
+          "type": "right_column",
+          "settings": {
+            "icon": "calms-redness",
+            "text": "Calms visible redness"
+          }
+        },
+        "right_column_3": {
+          "type": "right_column",
+          "settings": {
+            "icon": "deeply-hydrates",
+            "text": "Deeply hydrates"
+          }
+        },
+        "right_accordion": {
+          "type": "right_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p><strong>Beta Glucan:</strong> A deeply hydrating ingredient that helps the skin feel soothed, soft, and supple. Supports the look of a healthy skin barrier.</p><p><strong>GHK-Cu (Copper Peptide):</strong> A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.</p><p><strong>Sodium Hyaluronate:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_column_1",
+        "left_column_2",
+        "left_column_3",
+        "left_accordion",
+        "right_heading",
+        "right_column_1",
+        "right_column_2",
+        "right_column_3",
+        "right_accordion"
+      ],
+      "name": "t:sections.n_mi-ingredients.name",
+      "settings": {
+        "use_own_file": false,
+        "section_id": "ingredients",
+        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
+      }
+    },
+    "n_experts_grid_v5": {
+      "type": "n_experts-grid",
+      "blocks": {
+        "expert_1": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/shah_55a79f40-8353-4a7d-ad53-704ff2ef065e.webp",
+            "name": "Dr. Shah",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_2": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/maxfield_c5ad7eb1-74ec-44ad-832e-03cef413d310.webp",
+            "name": "Dr. Maxfield",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_3": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/brown.webp",
+            "name": "Dr. Alekandra Brown",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_4": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/zubritsky.webp",
+            "name": "Dr. Lindsey Zubritsky",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_5": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/stephens_fab58e4c-3158-45cc-9c9f-38a3e8083899.webp",
+            "name": "Dr. Alexis Stephens",
+            "role": "Internal Medicine Doctor"
+          }
+        },
+        "expert_6": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/tripati.webp",
+            "name": "Dr. Prem Tripati",
+            "role": "Facial Plastic Surgeon"
+          }
+        }
+      },
+      "block_order": [
+        "expert_1",
+        "expert_2",
+        "expert_3",
+        "expert_4",
+        "expert_5",
+        "expert_6"
+      ],
+      "name": "t:sections.n_experts-grid.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "Trusted and Recommended by Skin Experts",
+        "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
+      }
+    },
+    "n_press_reviews_sJ1kCv": {
+      "type": "n_press-reviews",
+      "blocks": {
+        "image_with_text_1": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
+            "image": "shopify://shop_images/forbes.svg"
+          }
+        },
+        "image_with_text_2": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.</h4>",
+            "image": "shopify://shop_images/bazzar.svg"
+          }
+        },
+        "image_with_text_3": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
+            "image": "shopify://shop_images/ps.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_1",
+        "image_with_text_2",
+        "image_with_text_3"
+      ],
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "light",
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_easy_steps_mN3vBe": {
@@ -757,311 +1060,9 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "8ymvdqzx92",
-        "button_label": "",
-        "button_url": ""
+        "button_label": "buy now & SAVE up to 70%",
+        "button_url": "#hero-product"
       }
-    },
-    "n_progress_metrics_t9KsAf": {
-      "type": "n_progress-metrics",
-      "blocks": {
-        "compare_image_1": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_1.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Fine Lines & Wrinkles[/span]</p>"
-          }
-        },
-        "compare_image_2": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_2.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Large Pores & Skin Texture[/span]</p>"
-          }
-        },
-        "compare_image_3": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_3.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Dark Spots & Texture[/span]</p>"
-          }
-        },
-        "compare_image_4": {
-          "type": "compare_image",
-          "settings": {
-            "image": "shopify://shop_images/no_hype_4.webp",
-            "text": "<p>Proven to visually improve</p><p>[span]Uneven Skin Tone[/span]</p>"
-          }
-        },
-        "percent_value_1": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 70,
-            "text": "of participants say their fine lines looked smoother."
-          }
-        },
-        "percent_value_2": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 93,
-            "text": "noticed results the next day after their first Micro-Infusion treatment."
-          }
-        },
-        "percent_value_3": {
-          "type": "percent_value",
-          "settings": {
-            "percent_value": 70,
-            "text": "of participants say their skin looked brighter and more even toned."
-          }
-        },
-        "disclaimer_1": {
-          "type": "disclaimer",
-          "settings": {
-            "text": "Based on results after 6 treatments in a user study of 30 participants aged 25–65."
-          }
-        }
-      },
-      "block_order": [
-        "compare_image_1",
-        "compare_image_2",
-        "compare_image_3",
-        "compare_image_4",
-        "percent_value_1",
-        "percent_value_2",
-        "percent_value_3",
-        "disclaimer_1"
-      ],
-      "name": "t:sections.n_progress-metrics.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>Qure is Clinically Proven</h2><p>In an independent clinical evaluation of dermatologic safety-in-use, the Micro-Infusion System was tested across 31 subjects spanning all Fitzpatrick skin types (I–VI) — from the lightest to the deepest skin tones. No adverse reactions were reported or observed throughout the entire evaluation period.</p><p>Evaluated by a Board-Certified Dermatologist, <br/>Independent Testing Clinic, NJ, 2026.</p>"
-      }
-    },
-    "n_features_marquee_wE2jLu": {
-      "type": "n_features-marquee",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "shipping-order",
-            "text": "Free Shipping On<br> Orders Over 100$"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "reviewed",
-            "text": "Dermatologist<br> Reviewed"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "pay-later",
-            "text": "Buy Now, Pay Later<br> Options Available"
-          }
-        },
-        "image_with_text_4": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "proven",
-            "text": "Proven Results,<br> Backed By Science"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3",
-        "image_with_text_4"
-      ],
-      "name": "t:sections.n_features-marquee.name",
-      "settings": {
-        "use_own_file": false
-      }
-    },
-    "n_accordion_tiles_square_cH6dYp": {
-      "type": "n_accordion-tiles-square",
-      "blocks": {
-        "accordion_1": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/odycea-onsen-sui-thermal-water-tile.webp",
-            "heading": "Odycea Onsen-Sui Thermal Water",
-            "text": "<p>Mineral-rich spring water from France that hydrates and calms skin.</p>"
-          }
-        },
-        "accordion_2": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/epidermal-growth-factor-tile.webp",
-            "heading": "EGF (Epidermal Growth Factor)",
-            "text": "<p>Helps skin look smoother and more refreshed, and helps reduce the look of fine lines.</p>"
-          }
-        },
-        "accordion_3": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/tranexamic-acid-tile.webp",
-            "heading": "Tranexamic Acid",
-            "text": "<p>Visibly brightens skin and fades the look of dark spots.</p>"
-          }
-        },
-        "accordion_4": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/niacinamide-tile.webp",
-            "heading": "Niacinamide",
-            "text": "<p>Helps even out tone and minimize the look of pores.</p>"
-          }
-        },
-        "accordion_5": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/beta-glucan-2-tile.webp",
-            "heading": "Beta Glucan",
-            "text": "<p>A powerful hydrator that helps skin feel supple and moisturized.</p>"
-          }
-        },
-        "accordion_6": {
-          "type": "accordion",
-          "settings": {
-            "image": "shopify://shop_images/sodium-hyaluronate-tile.webp",
-            "heading": "Sodium Hyaluronate",
-            "text": "<p>Draws in moisture for visibly smoother, plumper-looking skin.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_1",
-        "accordion_2",
-        "accordion_3",
-        "accordion_4",
-        "accordion_5",
-        "accordion_6"
-      ],
-      "name": "t:sections.n_accordion-tiles-square.name",
-      "settings": {
-        "use_own_file": false,
-        "section_id": "ingredients",
-        "heading": "<h2>Powerful ingredients. Backed by science.</h2>"
-      }
-    },
-    "n_our_advisors_bX8qMz": {
-      "type": "n_our-advisors",
-      "blocks": {
-        "accordion_1": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Shah <br/>Board Certified Dermatologist</p>",
-            "text": "<p>“This treatment is an at-home option for those who want to avoid the hassle or cost of going to the office.”</p>",
-            "image": "shopify://shop_images/shah.webp"
-          }
-        },
-        "accordion_2": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Maxfield <br/>Board Certified Dermatologist</p>",
-            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to help what you’re doing for your skincare routine.”</p>",
-            "image": "shopify://shop_images/maxfield.webp"
-          }
-        },
-        "accordion_3": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Tripathi <br/>Double Board Certified Facial Plastic Surgeon</p>",
-            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
-            "image": "shopify://shop_images/tripathi.webp"
-          }
-        },
-        "accordion_4": {
-          "type": "accordion",
-          "settings": {
-            "heading": "<p>Dr. Stephens <br/>Board Certified Dermatologist</p>",
-            "text": "<p>“The Qure Micro-Infusion stamping device offers a safe and effective solution for a variety of different skin conditions.”</p>",
-            "image": "shopify://shop_images/stephens.webp"
-          }
-        }
-      },
-      "block_order": [
-        "accordion_1",
-        "accordion_2",
-        "accordion_3",
-        "accordion_4"
-      ],
-      "name": "t:sections.our-advisors.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h2>Formulated by Experts <br/>Recommended by Dermatologists</h2>"
-      }
-    },
-    "n_guarantee_fA4tRn": {
-      "type": "n_guarantee",
-      "name": "t:sections.n_guarantee.name",
-      "settings": {
-        "use_own_file": false,
-        "image": "shopify://shop_images/icon.webp",
-        "heading": "<h2>Try it now with zero risk. <br/>Our 90-day money-back guarantee.</h2>",
-        "text": "<p>We’re confident you’ll love your results — but if you don’t, we’ve got you covered.</p><p>Try the Micro-Infusion System for 90 days at-home. If you’re not seeing smoother, more radiant skin, simply return it for a full refund.</p>"
-      }
-    },
-    "n_press_reviews_sJ1kCv": {
-      "type": "n_press-reviews",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
-            "image": "shopify://shop_images/forbes.svg"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“A true microneedling treatment - creating microchannels that increase collagen and elastin production and product absorption.”</h4>",
-            "image": "shopify://shop_images/bazzar.svg"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
-            "image": "shopify://shop_images/ps.svg"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3"
-      ],
-      "name": "t:sections.n_press-reviews.name",
-      "settings": {
-        "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>",
-        "slide": "none",
-        "settings": "\"spaceBetween\": 80"
-      }
-    },
-    "1787305754b910c884": {
-      "type": "apps",
-      "blocks": {
-        "stamped_reviews_main_widget_J7xHAY": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "Micro-Infusion",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "stamped_reviews_main_widget_J7xHAY"
-      ],
-      "settings": {}
     },
     "n_faq_gD5hPw": {
       "type": "n_faq",
@@ -1152,10 +1153,15 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "light",
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question?",
-        "button_label": "Ask us",
-        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+        "advisor_image": "shopify://shop_images/advisor.webp",
+        "advisor_heading": "Get free skin consultation",
+        "advisor_text": "Chat with our skincare team for personalized advice",
+        "advisor_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
+        "text": "",
+        "button_label": "",
+        "button_url": ""
       }
     },
     "sticky_cta_uQ7eTx": {
@@ -1168,22 +1174,290 @@
         "button-label": "Choose Your Supply",
         "button-url": "#hero-product"
       }
+    },
+    "purchase_form_PwCCh6": {
+      "type": "n-purchase-form",
+      "blocks": {
+        "nextships_4xp7uM": {
+          "type": "nextships",
+          "settings": {
+            "date": "9th May",
+            "percent": 73,
+            "date_soldout": "23rd March",
+            "date_reserved": "9th May"
+          }
+        },
+        "type_hHPdgJ": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_QKQhNr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Brightening",
+            "image": "shopify://shop_images/Dark_Spots_4.png",
+            "preselected": false
+          }
+        },
+        "product_VTMiGm": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-bundle-micro-infusion-brightening-copy",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": true,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 18,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "6 treatments every 12 weeks",
+            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 52,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "26th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779432175,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "2 treatments",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "image": "shopify://shop_images/MI_1_month_DS.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 19,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "type_aJwQ9q": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_VLXcAn": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Rejuvenating",
+            "image": "shopify://shop_images/Wrinkles_2.png",
+            "preselected": true
+          }
+        },
+        "product_XTFEhB": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-bundle-micro-infusion-rejuvenating-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/PDP_MI_6_month_W.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_EKAAzA": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779497711,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "6 treatments every 12 weeks",
+            "image": "shopify://shop_images/PDP_MI_3_month_W.webp",
+            "product_discount_percent": 19,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 6,
+            "left_items": 56,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 93,
+            "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
+          }
+        },
+        "product_eiY89h": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779530479,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "2 treatments every 4 weeks",
+            "image": "shopify://shop_images/PDP_MI_1_month_W.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 29,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li><strong>17% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li></ul>"
+          }
+        },
+        "type_MchbTN": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_wxFyLr": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Mixed",
+            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "preselected": false
+          }
+        },
+        "product_Dc9ahY": {
+          "type": "product",
+          "settings": {
+            "product": "6-month-bundle-micro-infusion-rejuvenating-brightening-1",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "nextships_4xp7uM",
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_VTMiGm",
+        "product_DBd4ef",
+        "product_Xf8A6C",
+        "type_aJwQ9q",
+        "product_type_VLXcAn",
+        "product_XTFEhB",
+        "product_EKAAzA",
+        "product_eiY89h",
+        "type_MchbTN",
+        "product_type_wxFyLr",
+        "product_Dc9ahY"
+      ],
+      "settings": {
+        "type": "list",
+        "heading": "Choose your treatment",
+        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
+        "image": "shopify://shop_images/tami-cropped.webp",
+        "klaviyo_form_name": "",
+        "form_name": "purchase-form",
+        "subscription_product": "false",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "header",
+        "delivery_switcher_product": "",
+        "guarantee_period": "90",
+        "available-stocks": false
+      }
     }
   },
   "order": [
     "n_product_header_k8Qm2R",
     "purchase-form-landing",
+    "n_progress_showcase_v5",
+    "n_expert_feature_v5",
     "n_trusted_reviews_DUlFYg",
-    "n_award_winning_kT7pWx",
     "n_base_section_r7YcHd",
-    "n_easy_steps_mN3vBe",
-    "n_progress_metrics_t9KsAf",
-    "n_features_marquee_wE2jLu",
-    "n_accordion_tiles_square_cH6dYp",
-    "n_our_advisors_bX8qMz",
-    "n_guarantee_fA4tRn",
+    "n_mi_overview_v5",
+    "purchase_form_PwCCh6",
+    "n_mi_ingredients_v5",
+    "n_experts_grid_v5",
     "n_press_reviews_sJ1kCv",
-    "1787305754b910c884",
+    "n_easy_steps_mN3vBe",
     "n_faq_gD5hPw",
     "sticky_cta_uQ7eTx"
   ]
