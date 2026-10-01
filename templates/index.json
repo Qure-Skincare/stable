@@ -30,6 +30,7 @@
         "free_gift_bluePlus",
         "disclaimer_bluePlus"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -151,7 +152,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -240,6 +240,7 @@
     },
     "n_promo_strip_kR4nW8": {
       "type": "n_promo-strip",
+      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "blue-plus",
@@ -328,6 +329,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
@@ -498,13 +500,12 @@
     },
     "n_promo_strip_bF3xQk": {
       "type": "n_promo-strip",
-      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "against-cancer",
         "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
         "button_label": "Support Now",
-        "button_url": "#",
+        "button_url": "shopify://collections/best-sellers",
         "image": "shopify://shop_images/against-cancer.webp",
         "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
         "badge_text": "FREE TOTE BAG",
