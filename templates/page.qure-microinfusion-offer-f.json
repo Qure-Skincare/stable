@@ -75,7 +75,7 @@
         ".hero-section {display: block;}"
       ],
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "hidden": false,
         "modifier": "extended",
         "approved_position": "before_text",
@@ -149,7 +149,7 @@
       ],
       "name": "t:sections.n_progress-showcase.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "section_id": "improve_skin",
         "text": "<h2>Visible results backed by our clinical study</h2>"
       }
@@ -158,7 +158,7 @@
       "type": "n_expert-feature",
       "name": "t:sections.n_expert-feature.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "<h2>Does Micro-Infusion hurt?</h2>",
         "text": "<p>Qure Micro-Infusion is designed to be virtually painless. Its tiny, 0.5 mm gold-plated microneedles gently stamp the skin, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the tiny microneedles create channels that help your skin absorb Qure's serum for smoother-looking, more radiant skin.</p>",
         "quote": "\"What I really like about Qure Micro-Infusion is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.\"",
@@ -342,7 +342,7 @@
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "background_color": "light",
         "modifier": "dotted-nav",
         "section_id": "reviews",
@@ -357,7 +357,7 @@
       "type": "n_base-section",
       "name": "t:sections.n_base-section.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
@@ -427,7 +427,7 @@
       ],
       "name": "t:sections.n_mi-overview.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "section_id": "how_it_works",
         "subheader": "How it works",
         "heading": "Go beyond surface-level skincare",
@@ -924,7 +924,7 @@
       ],
       "name": "t:sections.n_mi-ingredients.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "section_id": "ingredients",
         "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
       }
@@ -991,7 +991,7 @@
       ],
       "name": "t:sections.n_experts-grid.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
@@ -1028,7 +1028,7 @@
       ],
       "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "light",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
@@ -1070,7 +1070,7 @@
       ],
       "name": "t:sections.n_easy-steps.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "custom",
         "text": "<h2>See how quick and easy it is to use</h2>",
         "image": "shopify://shop_images/mi-use-video.webp",
@@ -1168,7 +1168,7 @@
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": true,
+        "use_own_file": false,
         "modifier": "light",
         "heading": "<h2>Have questions?</h2>",
         "advisor_image": "shopify://shop_images/advisor.webp",
