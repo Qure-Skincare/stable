@@ -2,7 +2,7 @@
   Renders a usage steps slider.
 {% enddoc %}
 
-<section class="usage-steps">
+<section class="usage-steps"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article>
             {{ section.settings.heading }}
@@ -73,6 +73,11 @@
 {
     "name": "t:sections.n_usage-steps.name",
     "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
         {
             "type": "richtext",
             "id": "heading",

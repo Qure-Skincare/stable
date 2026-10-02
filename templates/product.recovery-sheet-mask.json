@@ -647,6 +647,7 @@
       ],
       "name": "t:sections.n_usage-steps.name",
       "settings": {
+        "section_id": "easy_steps",
         "heading": "<h6>SIMPLE 15-MINUTE RITUAL</h6><h2>How to Use</h2>",
         "badge": "Pro tip",
         "badge_text": "Refrigerate sealed pouch for cooling"
