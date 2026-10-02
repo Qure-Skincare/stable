@@ -1,0 +1,56 @@
+{% doc %}
+  Swaps the product header heading and description by the ?bc= URL value
+  (quiz "biggest challenge" answer). Strict, case-sensitive key match. The
+  server renders the * block copy (or the section copy without a * block),
+  so a missing or unmatched ?bc= needs no swap.
+  Pushes quiz_bc to dataLayer and stores it as a cart attribute.
+
+  @param {object} section - A section object.
+  @param {array} blocks - dynamic-params blocks of the section.
+
+  @example
+  {% render 'n-product-dynamic-params', section: section, blocks: dp_blocks %}
+{% enddoc %}
+
+{%- if blocks.size > 0 -%}
+<script class="__init">
+    /* class="__init" keeps this script OUT of the sapp rewrite so the copy is
+       swapped synchronously during parsing, before first paint (no flicker/CLS). */
+    (function () {
+        var key = new URLSearchParams(location.search).get('bc');
+        if (key === null) return;
+
+        var variants = {
+            {%- for block in blocks -%}
+                {%- assign dp_key = block.settings.key | strip -%}
+                {%- if dp_key != blank and dp_key != '*' %}
+            {{ dp_key | json }}: { h: {{ block.settings.heading | json }}, s: {{ block.settings.description | json }} },
+                {%- endif -%}
+            {%- endfor %}
+        };
+        var matched = Object.prototype.hasOwnProperty.call(variants, key);
+
+        if (matched) {
+            var copy = variants[key];
+            var heading = document.querySelector('[data-dp-h="{{ section.id }}"]');
+            var description = document.querySelector('[data-dp-s="{{ section.id }}"]');
+            if (heading && copy.h) heading.textContent = copy.h;
+            if (description && copy.s) description.outerHTML = copy.s;
+        }
+
+        (window.dataLayer = window.dataLayer || []).push({ event: 'quiz_bc', bc: key, bc_matched: matched });
+
+        window.addEventListener('load', function () {
+            try {
+                if (sessionStorage.getItem('quiz_bc') === key) return;
+                sessionStorage.setItem('quiz_bc', key);
+            } catch (e) {}
+            fetch('/cart/update.js', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ attributes: { quiz_bc: key } })
+            });
+        });
+    })();
+</script>
+{%- endif -%}

@@ -1,0 +1,35 @@
+{% doc %}
+  Returns the dynamic-params (?bc=) data for the product header section:
+  dp_blocks, dp_heading, dp_description, dp_heading_attr.
+  The * block copy replaces the section heading/description as the server
+  default; the data-dp-* attributes mark the elements the script swaps.
+  Without dynamic-params blocks the section copy and markup stay unchanged.
+
+  @example
+  {% include 'get-dynamic-params-data' %}
+{% enddoc %}
+
+{%- liquid
+  assign dp_blocks = section.blocks | where: 'type', 'dynamic-params'
+  assign dp_heading_attr = ''
+  assign dp_heading = section.settings.heading
+  assign dp_description = section.settings.description
+  for dp_block in dp_blocks
+    assign dp_key = dp_block.settings.key | strip
+    if dp_key == '*'
+      if dp_block.settings.heading != blank
+        assign dp_heading = dp_block.settings.heading
+      endif
+      if dp_block.settings.description != blank
+        assign dp_description = dp_block.settings.description
+      endif
+    endif
+  endfor
+  if dp_blocks.size > 0
+    assign dp_heading_attr = ' data-dp-h="' | append: section.id | append: '"'
+    if dp_description != blank
+      assign dp_description_attr = ' data-dp-s="' | append: section.id | append: '">'
+      assign dp_description = dp_description | replace_first: '>', dp_description_attr
+    endif
+  endif
+-%}
