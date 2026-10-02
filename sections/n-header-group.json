@@ -192,7 +192,7 @@
                 "benefits_card_1": {
                   "type": "nav-card",
                   "settings": {
-                    "title": "Youth Aging",
+                    "title": "Age Defense",
                     "label": "",
                     "badge": "",
                     "url": "https://qureskincare.com/collections/fine-line-wrinkles",
@@ -238,9 +238,9 @@
                     "label": "",
                     "badge": "",
                     "url": "https://qureskincare.com/collections/dark-spots",
-                    "image": "shopify://shop_images/header-promo-card-image-9.webp",
+                    "image": "shopify://shop_images/header-promo-card-image-6.webp",
                     "image_style": "background",
-                    "image_mobile": "shopify://shop_images/header-promo-card-image-9-mob.webp",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-6-mob.webp",
                     "hide_on_mobile": false
                   },
                   "blocks": {}
