@@ -53,7 +53,11 @@
             </div>
         </div>
         <div class="hero-product__main">
-            {% if section.settings.bundle_text != blank %}
+            {% if settings.black_friday_turn_on %}
+                <div class="e-bf-label e-bf-label--md">
+                    <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-label-md.webp" alt="Black Friday" />
+                </div>
+            {% elsif section.settings.bundle_text != blank %}
                 <div class="e-double-tag">{{ section.settings.bundle_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
             {% endif %}
             {{ section.settings.heading }}
