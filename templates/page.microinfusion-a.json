@@ -1011,7 +1011,7 @@
             "product_selling_plan_text": "Ships every 1 month",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 16,
