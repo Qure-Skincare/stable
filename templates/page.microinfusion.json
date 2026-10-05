@@ -301,7 +301,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
