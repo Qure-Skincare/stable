@@ -677,6 +677,20 @@
             "product_title": ""
           }
         },
+        "slider_UY7HtA": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_6dbabd21-2275-47dc-bd8e-878cc74a305f.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Tiffany G.",
+            "verified_customer": "Verified customer",
+            "badge": "Glow",
+            "text": "<p>“My skin feels absolutely amazing after 6 weeks of use. It is glowing and more clear than it has ever been. I wish I had discovered this earlier in life.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_mB2Ht7": {
           "type": "slider",
           "settings": {
@@ -794,6 +808,7 @@
         "slider_VyHb4h",
         "slider_9NRFNC",
         "slider_jT7Wd4",
+        "slider_UY7HtA",
         "slider_mB2Ht7",
         "slider_78E6pj",
         "slider_lF3Rk9",
