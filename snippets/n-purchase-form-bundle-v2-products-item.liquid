@@ -51,8 +51,18 @@
                 <div id="{{ product_handle }}" class="bundles__item custom__block">
                     <div class="c-bundle-card">
                         <div class="c-bundle-card__image" onclick="{{ product_dialog }}.showModal()">
-                            {% if product_discount != blank %}
-                                <div class="e-pill-save">{{ 'purchase-form-bundle.settings.discount-text' | t }} {{ product_discount }}%</div>
+                            {% if product_discount > 0 %}
+                                {% if section.settings.special_offer_badge %}
+                                    <div class="e-bf-badge e-bf-badge--silver e-bf-badge--md">
+                                        <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-badge-silver.webp" alt="Black Friday" />
+                                        <div class="e-bf-badge__content">
+                                            <strong>{{ product_discount }}%</strong>
+                                            <span>{{ 'product.settings.discount-text' | t }}</span>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <div class="e-pill-save">{{ 'purchase-form-bundle.settings.discount-text' | t }} {{ product_discount }}%</div>
+                                {% endif %}
                             {% endif %}
 
                             {% if block.settings.image != blank %}
