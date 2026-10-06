@@ -52,7 +52,7 @@
                     <div class="c-bundle-card">
                         <div class="c-bundle-card__image" onclick="{{ product_dialog }}.showModal()">
                             {% if product_discount > 0 %}
-                                {% if settings.black_friday_turn_on %}
+                                {% if section.settings.special_offer_badge %}
                                     <div class="e-bf-badge e-bf-badge--silver e-bf-badge--md">
                                         <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-badge-silver.webp" alt="Black Friday" />
                                         <div class="e-bf-badge__content">
