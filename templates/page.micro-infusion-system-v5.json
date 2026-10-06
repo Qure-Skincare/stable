@@ -122,6 +122,62 @@
             "button-label": "FAQs",
             "button-url": "#faq"
           }
+        },
+        "dynamic_params_bcWr1n": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "wrinkles",
+            "heading": "Your Micro Infusion System™ for wrinkles",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System to visibly soften the look of your wrinkles. See results in just a few easy at-home applications or <strong>get your money back!*</strong></p>"
+          }
+        },
+        "dynamic_params_bcFn2l": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "fine-lines",
+            "heading": "Your Micro Infusion System™ for fine lines",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System to visibly smooth the look of your fine lines. See results in just a few easy at-home applications or <strong>get your money back!*</strong></p>"
+          }
+        },
+        "dynamic_params_bcSg3k": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "saggy-skin",
+            "heading": "Your Micro Infusion System™ for sagging skin",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System to help your skin look firmer and more lifted. See results in just a few easy at-home applications or <strong>get your money back!*</strong></p>"
+          }
+        },
+        "dynamic_params_bcCr4p": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "crepe-skin",
+            "heading": "Your Micro Infusion System™ for crepey skin",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System to help thin, crinkled skin look smoother. See results in just a few easy at-home applications or <strong>get your money back!*</strong></p>"
+          }
+        },
+        "dynamic_params_bcDs5t": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "dark-spots",
+            "heading": "Your Micro Infusion System™ for dark spots",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System to visibly fade the look of your dark spots. See results in just a few easy at-home applications or <strong>get your money back!*</strong></p>"
+          }
+        },
+        "dynamic_params_bcPt6y": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "patchy-skin",
+            "heading": "Your Micro Infusion System™ for patchy skin",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System to help your skin tone look more even. See results in just a few easy at-home applications or <strong>get your money back!*</strong></p>"
+          }
+        },
+        "dynamic_params_bcFb7k": {
+          "type": "dynamic-params",
+          "settings": {
+            "key": "*",
+            "heading": "The Micro Infusion System™",
+            "description": "<p>Based on your answers, we recommend the Micro Infusion System for visibly smoother, more radiant, and more even-looking skin. See results in just a few applications or <strong>get your money back!*</strong></p>"
+          }
         }
       },
       "block_order": [
@@ -140,7 +196,14 @@
         "jumpto_y3Z4aB",
         "jumpto_c5D6eF",
         "jumpto_g7H8iJ",
-        "jumpto_k9L0mN"
+        "jumpto_k9L0mN",
+        "dynamic_params_bcWr1n",
+        "dynamic_params_bcFn2l",
+        "dynamic_params_bcSg3k",
+        "dynamic_params_bcCr4p",
+        "dynamic_params_bcDs5t",
+        "dynamic_params_bcPt6y",
+        "dynamic_params_bcFb7k"
       ],
       "name": "t:sections.product-header.name",
       "settings": {
@@ -238,7 +301,7 @@
             "text": "",
             "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 0,

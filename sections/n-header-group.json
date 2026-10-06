@@ -51,7 +51,7 @@
           "type": "slider",
           "settings": {
             "countdown": false,
-            "text": "<p><strong>Save Up To 70% on Micro-Infusion</strong></p>",
+            "text": "<p><strong>Prime Day - Up To 70% on Micro-Infusion</strong></p>",
             "button_label": "Shop Now",
             "button_url": "https://qureskincare.com/pages/microinfusion",
             "from": "",
@@ -70,7 +70,7 @@
         "text": "<p><a href=\"https://qureskincare.com/collections/best-sellers\" title=\"https://qureskincare.com/collections/best-sellers\"><strong>Save 26% Site Wide</strong></a><strong> </strong>- Birthday Sale</p>",
         "button_label": "",
         "button_url": "",
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1, doctorly,qure-microinfusion-offer-b, qure-micro-infusion-landing-page-b, skincare-habits, get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles, qure-microinfusion-bogo,qure-micro-infusion-landing-page-c,qure-micro-infusion-landing-page-d,qure-micro-infusion-landing-page-e,qure-micro-infusion-landing-page-f,qure-micro-infusion-landing-page-g,pages/sorry-not-sorry,pages/qure-micro-infusion-landing-page-h,micro-infusion-system-v3,micro-infusion-system-v5,micro-infusion-system-v6,micro-infusion-system-v7,micro-infusion-system-v8",
+        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, microinfusion1, doctorly,qure-microinfusion-offer-b, qure-micro-infusion-landing-page-b, skincare-habits, get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles, qure-microinfusion-bogo,qure-micro-infusion-landing-page-c,qure-micro-infusion-landing-page-d,qure-micro-infusion-landing-page-e,qure-micro-infusion-landing-page-f,qure-micro-infusion-landing-page-g,pages/sorry-not-sorry,pages/qure-micro-infusion-landing-page-h,micro-infusion-system-v3,micro-infusion-system-v5,micro-infusion-system-v6,micro-infusion-system-v7,micro-infusion-system-v8,micro-infusion-system-v10,micro-infusion-system-v11,micro-infusion-system-v12,micro-infusion-system-v13,micro-infusion-system-v14,micro-infusion-system-v15,micro-infusion-system-v16",
         "from": "2026-07-14",
         "days": 20
       }
@@ -112,7 +112,7 @@
                   "settings": {
                     "title": "All-In-One Serum",
                     "label": "",
-                    "badge": "Support skin as it changes",
+                    "badge": "Targets Aging & Dark Spots",
                     "url": "https://qureskincare.com/products/all-in-one-serum",
                     "image": "shopify://shop_images/header-promo-card-image-2.webp",
                     "image_style": "product",
@@ -123,9 +123,9 @@
                 "bestsellers_card_3": {
                   "type": "nav-card",
                   "settings": {
-                    "title": "Red-Light Mask",
+                    "title": "Q-Rejuvalight Mask",
                     "label": "",
-                    "badge": "Treat Wrinkles",
+                    "badge": "Multi-Light Therapy",
                     "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
                     "image": "shopify://shop_images/header-promo-card-image-3.webp",
                     "image_style": "product",
@@ -151,7 +151,7 @@
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
-                    "badge": "Save up to 55%",
+                    "badge": "Save up to 57%",
                     "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
                     "image": "shopify://shop_images/header-promo-card-image-5.webp",
                     "image_style": "product",
@@ -192,13 +192,13 @@
                 "benefits_card_1": {
                   "type": "nav-card",
                   "settings": {
-                    "title": "Youth Aging",
+                    "title": "Age Defense",
                     "label": "",
                     "badge": "",
                     "url": "https://qureskincare.com/collections/fine-line-wrinkles",
-                    "image": "shopify://shop_images/header-promo-card-image-6.webp",
+                    "image": "shopify://shop_images/header-promo-card-image-9.webp",
                     "image_style": "background",
-                    "image_mobile": "shopify://shop_images/header-promo-card-image-6-mob.webp",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-9-mob.webp",
                     "hide_on_mobile": false
                   },
                   "blocks": {}
@@ -238,9 +238,9 @@
                     "label": "",
                     "badge": "",
                     "url": "https://qureskincare.com/collections/dark-spots",
-                    "image": "shopify://shop_images/header-promo-card-image-9.webp",
+                    "image": "shopify://shop_images/header-promo-card-image-6.webp",
                     "image_style": "background",
-                    "image_mobile": "shopify://shop_images/header-promo-card-image-9-mob.webp",
+                    "image_mobile": "shopify://shop_images/header-promo-card-image-6-mob.webp",
                     "hide_on_mobile": false
                   },
                   "blocks": {}

@@ -28,7 +28,8 @@
             "title_4": "Protects against everyday environmental stressors",
             "text_4": "<p>Protects against everyday environmental stressors A no-rinse refresher that helps skin feel more resilient and balanced, whether it's post-workout, post-treatment, or just a stressful day.</p>",
             "title_5": "Fragrance-free, non-drying, gentle anytime",
-            "text_5": "<p>Fragrance-free, non-drying, gentle anytime It's fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>"
+            "text_5": "<p>Fragrance-free, non-drying, gentle anytime It's fragrance-free, non-drying, and gentle enough to use anytime, anywhere, even over makeup.</p>",
+            "line": true
           }
         },
         "section_hRQanD": {
@@ -72,6 +73,7 @@
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
         "heading": "Refresh your skin anytime, anywhere with  Dermal Mist",
         "rating": true,
+        "rating_type": "trustpilot",
         "limited": false,
         "description": "",
         "reserved": false,
@@ -434,7 +436,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": true,
-        "hide_certified": true
+        "hide_certified": true,
+        "hide_title_on_subscription": false
       }
     },
     "purchase-form-landing-old": {
@@ -576,7 +579,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "n_logos_d77Mmj": {
@@ -1076,7 +1080,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

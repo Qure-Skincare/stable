@@ -164,7 +164,7 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
-        "rating_type": "customers",
+        "rating_type": "trustpilot",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and acne.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
@@ -222,6 +222,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p>FEATURED IN</p>",
         "slide": "none",
         "settings": "\"slidesPerView\": 5"
@@ -1608,7 +1609,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

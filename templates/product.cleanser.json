@@ -82,9 +82,9 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": false,
-        "rating_type": "customers",
+        "rating_type": "dermatologists",
         "limited": false,
-        "description": "<ul><li>Cleanses without leaving skin feel tight, dry, or stripped</li><li>Formulated with 50% glycerin — a hydrating ingredient, <br/>not filler water </li><li>Clinically shown to strengthen your skin barrier by 18.5%</li></ul>",
+        "description": "<ul><li>Cleanses without leaving skin feel tight, dry, or stripped</li><li>Formulated with 50% glycerin — a hydrating ingredient,&nbsp;<br/>not filler water&nbsp;</li><li>Clinically shown to strengthen your skin barrier by 18.5%</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -644,6 +644,7 @@
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
         "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
@@ -809,7 +810,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

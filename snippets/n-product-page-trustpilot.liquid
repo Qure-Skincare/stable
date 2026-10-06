@@ -5,6 +5,7 @@
   @param {object} section - A section object.
   @param {object} product - A product object.
   @param {boolean} extra - When true, render extra-column certified-box and money-back.
+  @param {string} [description] - Description HTML; defaults to section.settings.description.
 
   @example
   {% render 'n-product-page-trustpilot', section: section, product: product %}
@@ -28,7 +29,7 @@
         {% endif %}
     {% endfor %}
 {% elsif section.settings.rating_type == 'trustpilot' %}
-    {{ section.settings.description }}
+    {{ description | default: section.settings.description }}
 
     {% if section.settings.rating != blank %}
         {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
