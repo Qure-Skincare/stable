@@ -64,7 +64,8 @@
         "text": "",
         "button_label": "SHOP & SAVE UP TO 57%",
         "button_url": "#purchase-form-bundle",
-        "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>"
+        "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>",
+        "special_offer_badge": true
       }
     },
     "n_press_reviews_bundle_v2": {
@@ -116,6 +117,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
@@ -379,6 +381,7 @@
         "heading": "Choose Your Bundle",
         "text": "",
         "hide_types": true,
+        "special_offer_badge": false,
         "form_name": "purchase-form-bundle-v2"
       }
     },
@@ -975,7 +978,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
