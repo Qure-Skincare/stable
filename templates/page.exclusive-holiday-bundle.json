@@ -381,7 +381,7 @@
         "heading": "Choose Your Bundle",
         "text": "",
         "hide_types": true,
-        "special_offer_badge": false,
+        "special_offer_badge": true,
         "form_name": "purchase-form-bundle-v2"
       }
     },
