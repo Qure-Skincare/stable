@@ -81,11 +81,11 @@
         "tab_bestsellers": {
           "type": "nav-tab",
           "settings": {
-            "title": "Shop Bestsellers",
+            "title": "Shop All Products",
             "pill": "",
             "url": "",
             "panel": "shop_bestsellers",
-            "heading": "Shop Bestsellers",
+            "heading": "Shop Products",
             "button_label": "Shop all",
             "button_url": "https://qureskincare.com/collections/best-sellers"
           },
