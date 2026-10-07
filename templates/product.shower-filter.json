@@ -775,7 +775,6 @@
         "image_cA1hWq",
         "image_xY5oBd"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-gallery.name",
       "settings": {
         "text": "<h2>Meet the Qure Shower Filters</h2><p>At Qure, we believe great skin starts at the source, and that's the water you use every day. Both the Qure Shower Filter and Handheld Shower Filter help <em>reduce certain chemicals</em> and minerals found in tap water that can linger on your skin after showering</p>",
@@ -1120,7 +1119,7 @@
         "use_own_file": false,
         "modifier": "shower-filter",
         "text": "<h2>Why It Works</h2><p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/shower-filter_bc590c03-1d3c-48fb-8379-f75a9cc587d9.webp",
+        "image": "shopify://shop_images/shower-filter_39430929-45aa-4fd2-8cb4-384cb8581dde.webp",
         "badge_text": "",
         "disclaimer": ""
       }
@@ -1309,7 +1308,6 @@
         "step_gT8dHy",
         "step_nF1oWk"
       ],
-      "disabled": true,
       "name": "t:sections.n_set-up-toggle.name",
       "settings": {
         "text": "<h2>Set up in 3 easy steps</h2>"
