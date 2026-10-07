@@ -1310,8 +1310,8 @@
       ],
       "name": "t:sections.n_set-up-toggle.name",
       "settings": {
-        "text": "<h2>Set up in 3 easy steps</h2>",
-        "section_id": "set-up-toggle"
+        "section_id": "set_up_toggle",
+        "text": "<h2>Set up in 3 easy steps</h2>"
       }
     },
     "n_easy_steps_ntE9Cf": {
