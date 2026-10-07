@@ -635,20 +635,6 @@
     "n_trusted_reviews_DUlFYg": {
       "type": "n_trusted-reviews",
       "blocks": {
-        "slider_EP7mCD": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Image_1f29c6a5-c02d-4091-9ad2-fa6f64312573.webp",
-            "flag": "shopify://shop_images/usa_flag.svg",
-            "username": "Kirstine B.",
-            "verified_customer": "Verified customer",
-            "badge": "Acne & Dark Spots",
-            "text": "<p>“I have sensitive skin and easily breaks out. Micro needling really helped with my dark spots and I think it also calmed down my break outs. I have been dealing with break outs for 2 years and couldn’t find any solution. Good thing I found this and it’s a work of art. ”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
         "slider_VyHb4h": {
           "type": "slider",
           "settings": {
@@ -658,20 +644,6 @@
             "verified_customer": "Verified customer",
             "badge": "Wrinkles",
             "text": "<p>“I have used the Qure Micro- Infusion System for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_9NRFNC": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "badge": "Smokers Lines",
-            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -700,6 +672,20 @@
             "verified_customer": "Verified customer",
             "badge": "Glow",
             "text": "<p>“My skin feels absolutely amazing after 6 weeks of use. It is glowing and more clear than it has ever been. I wish I had discovered this earlier in life.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_EP7mCD": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_1f29c6a5-c02d-4091-9ad2-fa6f64312573.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Kirstine B.",
+            "verified_customer": "Verified customer",
+            "badge": "Acne & Dark Spots",
+            "text": "<p>“I have sensitive skin and easily breaks out. Micro needling really helped with my dark spots and I think it also calmed down my break outs. I have been dealing with break outs for 2 years and couldn’t find any solution. Good thing I found this and it’s a work of art. ”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -816,14 +802,27 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_9NRFNC": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Jennifer_1_treatment.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Jennifer N.",
+            "verified_customer": "Verified customer",
+            "badge": "Smokers Lines",
+            "text": "<p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
-        "slider_EP7mCD",
         "slider_VyHb4h",
-        "slider_9NRFNC",
         "slider_jT7Wd4",
         "slider_UY7HtA",
+        "slider_EP7mCD",
         "slider_mB2Ht7",
         "slider_78E6pj",
         "slider_lF3Rk9",
@@ -831,7 +830,8 @@
         "slider_aF9Qs3",
         "slider_hJ8Nc5",
         "slider_e11ie1",
-        "slider_pJ4Kw1"
+        "slider_pJ4Kw1",
+        "slider_9NRFNC"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
