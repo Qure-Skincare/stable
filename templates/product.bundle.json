@@ -180,6 +180,21 @@
         "button_url": ""
       }
     },
+    "n_trusted_recommended_eaARfU": {
+      "type": "n_trusted-recommended",
+      "name": "t:sections.n_trusted-recommended.name",
+      "settings": {
+        "use_own_file": false,
+        "background_color": "none",
+        "heading": "<h2>Trusted and Recommended by Experts</h2>",
+        "text": "<p>“This treatment is an at-home option for those who want to <em>avoid the hassle or cost of going to the office”.</em></p>",
+        "video_image_cover": "shopify://shop_images/shah-maxfield.webp",
+        "text_on_image": "",
+        "wistia_url": false,
+        "video_url": "https://www.youtube.com/watch?v=JPWycy8cwN8",
+        "badge_text": "Dermatologist Reviewed"
+      }
+    },
     "n_you_may_also_like_uZi1bC": {
       "type": "n_product-you-may-also-like",
       "name": "t:sections.n_product-you-may-also-like.name",
@@ -193,6 +208,7 @@
     "product-bundle-old",
     "n_press_reviews_DDaUTN",
     "n_trusted_reviews_mRLHtt",
+    "n_trusted_recommended_eaARfU",
     "n_you_may_also_like_uZi1bC"
   ]
 }
