@@ -179,6 +179,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"spaceBetween\": 80"
@@ -752,7 +753,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
