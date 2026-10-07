@@ -9,6 +9,13 @@
  */
 {
   "sections": {
+    "n_progress-showcase": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "n_experts-pick": {
+      "counter": "0%"
+    },
     "n_expert-reviews": {
       "watch": "Watch:"
     },
@@ -110,7 +117,7 @@
         "info_html": "<p>89% of users felt more confident about their hair after 16 weeks.</p><strong>Will Q-Renew work for me?</strong>",
         "reserve_button": "Pre Order Now",
         "reserve": "Available for Pre-Order",
-        "reserve_date": "Next Batch Ships 23rd September",
+        "reserve_date": "Next Batch Ships 30th October",
         "whitelist": "Join the Waitlist",
         "whitelist_date": "Expected Jan. 2026",
         "unavailable": "Unavailable"
@@ -483,7 +490,8 @@
       "n-product-rating": {
         "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by 10k+ Customers</small>",
         "dermatologists": "Backed by Dermatologists",
-        "trustpilot_html": "<a href='#'><strong>{{ rating }}</strong>/5 Rated by Customers</a>"
+        "trustpilot_html": "<a href='#'><strong>{{ rating }}</strong>/5 Rated by Customers</a>",
+        "reviews_html": "<a href='#stamped-main-widget'><strong id='rating'>{{ rating }}</strong>/5 • {{ count }} reviews</a>"
       },
       "product-buy-button-sticky": {
         "color": "Set color",
@@ -523,9 +531,10 @@
       "reviews-videos": {
         "header": "Hear What People Are Saying About Qure"
       },
-      "description-aio": {
+      "description-collapsed": {
         "show_more": "Show more"
       },
+      "marked_list_html": "<ul class=\"c-marked-list\"><li>Suitable for sensitive skin</li><li>Hypoallergenic and allergy tested</li><li>Free from fragrance and PEG</li><li>Vegan and cruelty-free</li></ul>",
       "upsell-popup": {
         "button-label": "Add to Cart –",
         "continue": "Continue to Cart"
@@ -655,6 +664,7 @@
       "gift_image_html": "<img src='https://qureskincaredns-stable.com/sections/treatment/images/pillowcase-gift.webp' alt='Silk Pillowcase' />",
       "free_gift": "Free Gift!",
       "free": "FREE",
+      "first_free": "First bottle Free",
       "treatment": "treatment",
       "best-results": "Best Results",
       "payment-option": "Select A Payment Option",
@@ -669,6 +679,7 @@
       "subscription-days-option": "Every 90 days:",
       "pay-today": "Pay today only",
       "per-treatment": "Only {{ price }} per treatment",
+      "per-day": "Just {{ price }} per day",
       "kit-left": "{{ count }} kits left",
       "free-shipping": "🔥 Free shipping on this order",
       "monthly-payment": "Monthly interest-free payments with:",
@@ -681,7 +692,7 @@
         "card": {
           "guarantee": "90-day money-back guarantee",
           "tested": "Clinically &amp; third party tested",
-          "shipping": "Free shipping over&nbsp;$100"
+          "shipping": "Free shipping over&nbsp;$149"
         }
       }
     }

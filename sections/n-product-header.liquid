@@ -11,6 +11,7 @@
 -%}
 
 {% include 'get-product-data' %}
+{% include 'get-dynamic-params-data' %}
 
 {% assign slider_element_id = section.settings.section_id | default: 'hero-product' | prepend: '#' %}
 
@@ -48,17 +49,25 @@
                 <div class="e-pill-badge">{{ section.settings.badge_text }}</div>
             {% endif %}
 
-            {% if section.settings.heading != blank %}
+            {% if dp_heading != blank %}
                 {% if section.settings.heading_level == 'h2' %}
-                    <h2>{{ section.settings.heading }}</h2>
+                    <h2{{ dp_heading_attr }}>{{ dp_heading }}</h2>
                 {% else %}
-                    <h1>{{ section.settings.heading }}</h1>
+                    <h1{{ dp_heading_attr }}>{{ dp_heading }}</h1>
                 {% endif %}
             {% endif %}
 
-            {% render 'n-product-page-trustpilot', section: section, product: product %}
+            {% render 'n-product-page-trustpilot', section: section, product: product, description: dp_description %}
+
+            {% if section.settings.rating_type == 'trustpilot' %}
+                {% render 'n-product-dynamic-params', section: section, blocks: dp_blocks %}
+            {% endif %}
 
             {% include 'n-product-page-blocks-render' %}
+
+            {% unless section.settings.rating_type == 'trustpilot' %}
+                {% render 'n-product-dynamic-params', section: section, blocks: dp_blocks %}
+            {% endunless %}
         </div>
         <div class="hero-product__extra">
             {% render 'n-product-page-stats', section: section %}
@@ -168,6 +177,10 @@
                 {
                     "value": "trustpilot",
                     "label": "t:common.trustpilot"
+                },
+                {
+                    "value": "reviews",
+                    "label": "t:common.reviews"
                 }
             ]
         },
@@ -713,6 +726,11 @@
                     "label": "t:common.product"
                 },
                 {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
                     "type": "text",
                     "id": "badge_text",
                     "label": "t:common.text"
@@ -863,8 +881,8 @@
             "settings": []
         },
         {
-            "type": "description-aio",
-            "name": "t:common.description-aio",
+            "type": "description-collapsed",
+            "name": "t:common.description-collapsed",
             "limit": 1,
             "settings": [
                 {
@@ -916,6 +934,12 @@
                     "type": "richtext",
                     "id": "text_5",
                     "label": "t:common.text"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "line",
+                    "label": "t:common.line",
+                    "default": true
                 }
             ]
         },
@@ -1167,6 +1191,28 @@
                     "type": "richtext",
                     "id": "text",
                     "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "dynamic-params",
+            "name": "t:common.dynamic-params",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "key",
+                    "label": "t:common.dynamic-params-key",
+                    "info": "t:common.dynamic-params-key-info"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "description",
+                    "label": "t:common.description"
                 }
             ]
         }

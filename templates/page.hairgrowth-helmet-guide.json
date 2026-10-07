@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Get started with the Q‑Renew LLLT Helmet</h1>",
         "text": "<h6>IMPORTANT NOTICE:</h6><p>Please read the complete instruction manual carefully before using the device.</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/helmet_banner.webp",
         "image_mobile": "shopify://shop_images/helmet_banner_mob.webp",
         "button_label": "",
@@ -41,6 +44,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p><strong>The Q-Renew LLLT Helmet</strong> is designed to support you in your journey toward fuller, healthier-looking hair. Whether you're just beginning your routine or maintaining results, this device fits seamlessly into your lifestyle.</p><p>This guide will show you exactly how to use it, care for it, and get the best results from your treatments.</p>"
       }
     },
@@ -101,6 +105,7 @@
         "step_by_step_9kt87n": {
           "type": "step_by_step",
           "settings": {
+            "modifier": "text_with_image",
             "text": "<ol><li>Ensure your hair is clean, dry, and worn down (no clips or ties).</li><li>Unplug the helmet from the charging base. Press the Q button to turn it on.</li><li>Use the LCD screen to select your treatment zone (if applicable). Press Play to begin.</li><li>Place the helmet on your head and adjust fit using the back dial. The light activates only when properly positioned.</li><li>To pause, remove the helmet; placing it back on will resume the session. Each session lasts 12 minutes and ends automatically.</li></ol>"
           }
         },
@@ -117,7 +122,7 @@
           "type": "quote",
           "settings": {
             "style": "red",
-            "text": "<p><strong>Light sensitivity test:</strong>We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 3-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
+            "text": "<p><strong>Light sensitivity test: </strong>We recommend performing a light sensitivity test 24 hours before using this device for your first treatment. To perform this, apply the product to your inner forearm, ensuring the light shines directly onto the skin. Use it for a full 12-minute treatment. Wait for 24 hours. If you experience pain, discomfort, or redness lasting more than 2 hours, you might be light-sensitive. Please consult a doctor for advice before continuing use.</p>"
           }
         }
       },

@@ -1,0 +1,37 @@
+{% doc %}
+  Renders the collapsed product description: a `<ul class="collapsed-list">`
+  with up to 5 title/text pairs and a "Show more / Show less" toggle.
+
+  @param {object} block - A section block of type `description-collapsed`.
+
+  @example
+  {% render 'n-product-description-collapsed', block: block %}
+{% enddoc %}
+
+{% capture items %}
+    {% if block.settings.title_1 != blank or block.settings.text_1 != blank %}
+      <li><span>{{ block.settings.title_1 }}</span>{{ block.settings.text_1 }}</li>
+    {% endif %}
+    {% if block.settings.title_2 != blank or block.settings.text_2 != blank %}
+      <li><span>{{ block.settings.title_2 }}</span>{{ block.settings.text_2 }}</li>
+    {% endif %}
+    {% if block.settings.title_3 != blank or block.settings.text_3 != blank %}
+      <li><span>{{ block.settings.title_3 }}</span>{{ block.settings.text_3 }}</li>
+    {% endif %}
+    {% if block.settings.title_4 != blank or block.settings.text_4 != blank %}
+      <li><span>{{ block.settings.title_4 }}</span>{{ block.settings.text_4 }}</li>
+    {% endif %}
+    {% if block.settings.title_5 != blank or block.settings.text_5 != blank %} 
+      <li><span>{{ block.settings.title_5 }}</span>{{ block.settings.text_5 }}</li>
+    {% endif %}
+{% endcapture %}
+
+{% if items != blank %}
+    <article>
+        <ul class="collapsed-list">{{ items }}</ul>
+        <a href="javascript:;" onclick="this.textContent = this.closest('article').classList.toggle('show-more') ? 'Show less' : 'Show more'"> {{ 'product.settings.description-collapsed.show_more' | t }} </a>
+    </article>
+    {% if block.settings.line %}
+        <hr />
+    {% endif %}
+{% endif %}

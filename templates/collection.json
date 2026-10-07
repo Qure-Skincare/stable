@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_hero_banner_zUyTB8": {
       "type": "n_hero-banner",
@@ -18,49 +18,6 @@
         "text": "<h1>Shop our best sellers</h1>",
         "image": "shopify://shop_images/best-seller-banner.webp",
         "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
-      }
-    },
-    "n_features_marquee_7YOxGy": {
-      "type": "n_features-marquee",
-      "blocks": {
-        "image_with_text_3xewxx": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "shipping-order",
-            "text": "Free Shipping On Orders Over $100"
-          }
-        },
-        "image_with_text_AUjmAT": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "reviewed",
-            "text": "Dermatologist Reviewed"
-          }
-        },
-        "image_with_text_Ub9bKD": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "pay-later",
-            "text": "Buy Now, Pay Later Options Available"
-          }
-        },
-        "image_with_text_CVMfzL": {
-          "type": "image_with_text",
-          "settings": {
-            "icon": "proven",
-            "text": "Proven Results, <br /> Backed By Science"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_3xewxx",
-        "image_with_text_AUjmAT",
-        "image_with_text_Ub9bKD",
-        "image_with_text_CVMfzL"
-      ],
-      "name": "t:sections.n_features-marquee.name",
-      "settings": {
-        "use_own_file": false
       }
     },
     "n_breadcrumb_fXMjkJ": {
@@ -111,18 +68,64 @@
     },
     "n_base_section_zWkqBN": {
       "type": "n_base-section",
+      "disabled": true,
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
-        "heading": "<h2>Save up to 55% on Exclusive Bundles</h2>",
+        "section_id": "",
+        "heading": "<h2>Save up to 57% on Exclusive Bundles</h2>",
         "text": "<p>Everything your skin needs, bundled for less.</p><p>Everything your skin needs, bundled for less. Shop our exclusive sets while they last.</p>",
-        "image": "shopify://shop_images/bundle_d5ea1950-0efe-439d-9833-c4e123bcdab1.webp",
-        "button_label": "Shop & Save 55%",
+        "image": "shopify://shop_images/pd_bundle-1.webp",
+        "button_label": "Shop & Save 57%",
         "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
+      }
+    },
+    "n_features_marquee_7YOxGy": {
+      "type": "n_features-marquee",
+      "blocks": {
+        "image_with_text_3xewxx": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "shipping-order",
+            "text": "Free Shipping On Orders Over $149"
+          }
+        },
+        "image_with_text_AUjmAT": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "reviewed",
+            "text": "Dermatologist Reviewed"
+          }
+        },
+        "image_with_text_Ub9bKD": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later Options Available"
+          }
+        },
+        "image_with_text_CVMfzL": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "proven",
+            "text": "Proven Results, <br> Backed By Science"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_3xewxx",
+        "image_with_text_AUjmAT",
+        "image_with_text_Ub9bKD",
+        "image_with_text_CVMfzL"
+      ],
+      "name": "t:sections.n_features-marquee.name",
+      "settings": {
+        "use_own_file": false
       }
     },
     "n_trusted_reviews_mRLHtt": {
@@ -135,6 +138,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/Img_9.png",
@@ -149,6 +153,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Can't go a day without it</h6><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -163,6 +168,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/Img_9.png",
@@ -180,6 +186,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "light",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Results you'll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
@@ -220,11 +230,11 @@
   },
   "order": [
     "n_hero_banner_zUyTB8",
-    "n_features_marquee_7YOxGy",
     "n_breadcrumb_fXMjkJ",
     "n_pills_nav_fXMjkJ",
     "n_collection_fXMjkJ",
     "n_base_section_zWkqBN",
+    "n_features_marquee_7YOxGy",
     "n_trusted_reviews_mRLHtt",
     "n_take_quiz_DfRXwD"
   ]

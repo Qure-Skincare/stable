@@ -30,6 +30,7 @@
         "free_gift_bluePlus",
         "disclaimer_bluePlus"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -151,7 +152,6 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -238,8 +238,41 @@
         "use_own_file": false
       }
     },
+    "n_promo_strip_bF3xQk": {
+      "type": "n_promo-strip",
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "FREE TOTE BAG",
+        "price": "",
+        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
+        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
+      }
+    },
+    "n_promo_strip_wR8mHd": {
+      "type": "n_promo-strip",
+      "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "",
+        "price": "",
+        "gift_text": ""
+      }
+    },
     "n_promo_strip_kR4nW8": {
       "type": "n_promo-strip",
+      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "blue-plus",
@@ -250,7 +283,8 @@
         "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
         "badge_text": "Free Gift",
         "price": "$79",
-        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp"
+        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp",
+        "gift_text": ""
       }
     },
     "n_index-daily-cleanser": {
@@ -327,6 +361,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
@@ -343,10 +378,10 @@
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will&nbsp;not regret in purchasing it. I really see the change in my skin. Outstanding job&nbsp;QURE!”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/Img_e0a95963-8b98-4d19-aa73-5d21385abdbf.png",
-            "product_text": "Ellie uses",
+            "product_text": "Ellie uses...",
             "product_title": "Micro-Infusion Facial System"
           }
         },
@@ -361,7 +396,7 @@
             "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
             "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "product_image": "shopify://shop_images/Img_53.png",
-            "product_text": "Anton uses..",
+            "product_text": "Anton uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
@@ -422,7 +457,7 @@
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
             "product_image": "shopify://shop_images/Img_56.png",
             "product_text": "Claudia uses...",
-            "product_title": "Neck & Décollatage LED Device"
+            "product_title": "Neck & Décolletage LED System"
           }
         },
         "slider_bjVaKx": {
@@ -467,7 +502,7 @@
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
             "product_image": "shopify://shop_images/Img_56.png",
             "product_text": "Mary uses...",
-            "product_title": "Neck & Décollatage LED Device"
+            "product_title": "Neck & Décolletage LED System"
           }
         }
       },
@@ -928,6 +963,8 @@
     "n_index-quick-links",
     "n_across_image_banner_TNGNLJ",
     "n_index-quick-title-links",
+    "n_promo_strip_bF3xQk",
+    "n_promo_strip_wR8mHd",
     "n_promo_strip_kR4nW8",
     "n_index-daily-cleanser",
     "n_press_reviews_KgaUTN",

@@ -395,6 +395,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"spaceBetween\": 80"
@@ -1374,7 +1375,7 @@
             "product_selling_plan_text": "2 treatments every 4 weeks",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
             "product_discount_percent": 17,
-            "soldout": false,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 2,
             "left_items": 19,
@@ -1496,6 +1497,48 @@
             "preorder_percent": 93,
             "included_text": "<ul><li><strong>62% off</strong> every order</li><li><strong>HSA/FSA</strong> eligible</li><li><strong>Free</strong> shipping today</li></ul>"
           }
+        },
+        "type_9hWqHH": {
+          "type": "type",
+          "disabled": true,
+          "settings": {}
+        },
+        "product_type_eNahTw": {
+          "type": "product_type",
+          "disabled": true,
+          "settings": {
+            "heading": "jndnjdjnd",
+            "image": "shopify://shop_images/blue-video-thumbnail-2.webp",
+            "preselected": false
+          }
+        },
+        "product_9p7fXz": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": false,
+            "heading": "",
+            "subheading": "",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
         }
       },
       "block_order": [
@@ -1513,7 +1556,10 @@
         "product_type_accordion_SVLXcAn",
         "product_type_accordion_DVLXcAn",
         "product_eiY89h",
-        "product_EKAAzA"
+        "product_EKAAzA",
+        "type_9hWqHH",
+        "product_type_eNahTw",
+        "product_9p7fXz"
       ],
       "custom_css": [
         ".e-features-list,.c-certified-box {display: none;}"
@@ -1708,7 +1754,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

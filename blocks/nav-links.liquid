@@ -1,0 +1,42 @@
+{% doc %}
+  Renders a header navigation column of links from a menu.
+{% enddoc %}
+
+{% liquid
+  assign menu = block.settings.menu
+  assign heading = block.settings.heading | default: menu.title
+%}
+
+<div class="header__content-menu" {{ block.shopify_attributes }}>
+    {% if heading != blank %}
+        <h6 data-toggle="accordion">{{ heading }}</h6>
+    {% endif %}
+    <ul>
+        {% for link in menu.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% schema %}
+{
+    "name": "Nav links",
+    "tag": null,
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "info": "Defaults to the menu title"
+        },
+        {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu"
+        }
+    ],
+    "presets": [
+        { "name": "Nav links" }
+    ]
+}
+{% endschema %}

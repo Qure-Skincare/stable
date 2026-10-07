@@ -17,12 +17,14 @@
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Your results are in.</h2>",
         "text": "<p><strong>Let’s transform your signs of aging!</strong></p><p>We put together a straightforward, no-nonsense program just for you and your skin. It’s aimed to help you reduce the signs of aging, fine lines and wrinkles, keep your skin smooth, and your confidence high.</p>",
         "image": "shopify://shop_images/transform_aging_76e1fe26-12a3-49d5-910f-9f03791bdc0b.webp",
         "button_label": "Shop Now",
         "button_url": "#",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_we-suggest_yfwGg": {
@@ -43,6 +45,7 @@
             "button_label_selected": "Added!",
             "review_heading": "“I noticed results straight away!",
             "review_subheading": "Now I can’t go a day without the Q-Rejuvalight Mask.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         },
@@ -51,7 +54,7 @@
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "card_title": "",
-            "product_image": "shopify://shop_images/mi-prod.webp",
+            "product_image": "shopify://shop_images/MI_3_month_W.webp",
             "product_hover_image": "shopify://shop_images/hov_img_2.webp",
             "results_image": "shopify://shop_images/mi-result.webp",
             "review_video": "https://www.youtube.com/embed/JPWycy8cwN8?autoplay=1&mute=1",
@@ -61,15 +64,15 @@
             "button_label_selected": "Added!",
             "review_heading": "“Even my esthetician is hooked!",
             "review_subheading": "And I can now visit beauty clinics less often.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         },
         "suggest_kDMBBt": {
           "type": "suggest_card",
           "settings": {
-            "product": "face-serum",
+            "product": "all-in-one-serum",
             "card_title": "",
-            "product_image": "shopify://shop_images/all-in-prod.webp",
             "product_hover_image": "shopify://shop_images/hov_img_3.webp",
             "results_image": "shopify://shop_images/all-in-result.webp",
             "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1",
@@ -79,6 +82,7 @@
             "button_label_selected": "Added!",
             "review_heading": "“This product is a keeper.",
             "review_subheading": "My skin looks better than ever after just 2 weeks.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         },
@@ -97,6 +101,7 @@
             "button_label_selected": "Added!",
             "review_heading": "“I’m surprised how much younger my neck looks",
             "review_subheading": "and my skin looks and feels more rejuvenated.”",
+            "review_attribution": "",
             "rating": 4.5
           }
         }
@@ -226,6 +231,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system.webp",
@@ -240,6 +246,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Terri P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Wish I had this technology years ago!</strong></p><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -254,6 +261,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system.webp",
@@ -268,6 +276,7 @@
             "flag": "shopify://shop_images/canada_f.webp",
             "username": "Claudia",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Recommend to everyone</strong></p><p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this device.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp",
@@ -282,6 +291,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Cheryl T.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>I see a difference!</strong></p><p>“I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 2 weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/all-in-one-serum.webp",
@@ -296,6 +306,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Mary R. M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Smoother, refreshed-looking skin</strong></p><p>“I’m so impressed with the improvement! I noticed a difference after a few weeks. The skin on my neck and chest looks smoother, more even, and refreshed. Fine lines look softer, sun spots appear lighter, and my skin feels rejuvenated. The system is easy to use — I love that I can clip the controller to my robe and multitask while using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp",
@@ -316,6 +327,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>No promises, just proof</h2>",
         "button_label": "",
         "button_url": ""
@@ -557,7 +572,13 @@
     "sticky_cta_hd4dLE": {
       "type": "n-sticky-button-boxes",
       "name": "t:sections.sticky-button.name",
-      "settings": {}
+      "settings": {
+        "heading": "",
+        "text": "",
+        "limited": false,
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [

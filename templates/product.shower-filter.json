@@ -129,7 +129,7 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
-        "rating_type": "customers",
+        "rating_type": "trustpilot",
         "limited": false,
         "description": "<ul><li>Clinically proven to increase skin moisture by 15%, and scalp moisture by 22% after just 8 weeks.</li><li>Removes up to 99% of chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin and hair.</li><li>Reduces limescale buildup, which can dry out skin and hair, for smoother, softer results.</li></ul>",
         "reserved": false,
@@ -171,6 +171,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -201,6 +202,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": true,
             "best": false,
             "free_shipping": false,
@@ -231,6 +233,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -273,6 +276,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -303,6 +307,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": true,
             "best": false,
             "free_shipping": false,
@@ -333,6 +338,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -375,6 +381,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -405,6 +412,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": true,
             "best": false,
             "free_shipping": false,
@@ -435,6 +443,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -488,7 +497,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "purchase-form-landing-second": {
@@ -524,6 +534,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -554,6 +565,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": true,
             "best": false,
             "free_shipping": false,
@@ -584,6 +596,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -627,7 +640,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "n_base_section_CGMUkn": {
@@ -1106,7 +1120,9 @@
         "use_own_file": false,
         "modifier": "shower-filter",
         "text": "<h2>Why It Works</h2><p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/shower-filter_bc590c03-1d3c-48fb-8379-f75a9cc587d9.webp"
+        "image": "shopify://shop_images/shower-filter_bc590c03-1d3c-48fb-8379-f75a9cc587d9.webp",
+        "badge_text": "",
+        "disclaimer": ""
       }
     },
     "n_video_slider_UbQYbp": {
@@ -1600,7 +1616,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

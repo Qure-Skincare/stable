@@ -64,7 +64,8 @@
         "text": "",
         "button_label": "SHOP & SAVE UP TO 57%",
         "button_url": "#purchase-form-bundle",
-        "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>"
+        "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>",
+        "special_offer_badge": true
       }
     },
     "n_press_reviews_bundle_v2": {
@@ -116,6 +117,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
@@ -226,26 +228,26 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Signs of Aging",
-            "image": "shopify://shop_images/category-signs-of-aging.webp",
+            "heading": "Micro-Infusion Systems",
+            "image": "shopify://shop_images/Micro-Infusion_Systems_Category_d575325d-6fb6-4867-9b39-806e15023dc8.webp",
             "preselected": true
           }
         },
         "product_Ykma4b": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-pro1",
-            "image": "shopify://shop_images/LineRefineBundlePro.jpg",
+            "product": "skin-confidence-system",
+            "image": "shopify://shop_images/Skin_Confidence_System.jpg",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
         "product_8hJgNj": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-advanced",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Advanced_53750926-1d13-46d0-ac0c-8647271fb8b5.png",
+            "product": "skin-renewal-system",
+            "image": "shopify://shop_images/SkinRenewalSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -254,8 +256,8 @@
         "product_BJXNMB": {
           "type": "product",
           "settings": {
-            "product": "line-refine-bundle-essential",
-            "image": "shopify://shop_images/LineRefineBundleEssential.jpg",
+            "product": "total-skin-confidence-system",
+            "image": "shopify://shop_images/TotalSkinConfidenceSystem_d9cc18d9-d425-4da7-87f2-4f765c0fd522.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -265,39 +267,50 @@
           "type": "type",
           "settings": {}
         },
-        "product_type_VLXcAn": {
+        "product_type_YrPQrV": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots & Wrinkles",
-            "image": "shopify://shop_images/category-dark-spots-wrinkles.webp",
+            "heading": "LED Performance Systems",
+            "image": "shopify://shop_images/LED_Performance_Systems_Category.webp",
             "preselected": false
           }
         },
-        "product_eiHVrp": {
+        "product_KKbDAE": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-pro1",
-            "image": "shopify://shop_images/Fade_FirmBundlePro.jpg",
+            "product": "q-rejuvalight-pro-facewear-blue-serum",
+            "image": "shopify://shop_images/RadianceDuo.jpg",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
-        "product_xJpDep": {
+        "product_gia3hC": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-advanced",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_bca77af6-6e1b-438c-a8ef-b0ed81d4638b.png",
+            "product": "total-radiance-system",
+            "image": "shopify://shop_images/TotalRadianceSystem.jpg",
             "preselected": false,
-            "soldout": true,
+            "soldout": false,
             "reserved": false
           }
         },
-        "product_xwqzya": {
+        "product_gNjH9L": {
           "type": "product",
           "settings": {
-            "product": "fade-firm-bundle-essential",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Essential_c2159393-3df4-4662-8cc1-dcdc8358e564.png",
+            "product": "clear-skin-reset",
+            "image": "shopify://shop_images/ClearSkinReset.jpg",
+            "preselected": false,
+            "soldout": false,
+            "reserved": false
+          }
+        },
+        "product_efxkeJ": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "hair-loss-prevention-system",
+            "image": "shopify://shop_images/HairlossPreventionS.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -307,39 +320,39 @@
           "type": "type",
           "settings": {}
         },
-        "product_type_YrPQrV": {
+        "product_type_VLXcAn": {
           "type": "product_type",
           "settings": {
-            "heading": "Acne & Breakouts",
-            "image": "shopify://shop_images/category-acne-breakouts.webp",
+            "heading": "Skin Health Systems",
+            "image": "shopify://shop_images/Skin_Health_Systems_Category.webp",
             "preselected": false
           }
         },
-        "product_KKbDAE": {
+        "product_eiHVrp": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-pro",
-            "image": "shopify://shop_images/Breakout_Control_Pro_8de66a6b-fcc0-4094-9631-1e8ecfea484c.png",
+            "product": "skin-foundation-system",
+            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
           }
         },
-        "product_gia3hC": {
+        "product_xJpDep": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-advanced1",
-            "image": "shopify://shop_images/Breakout_Control_Advanced_51fc5ee9-bf6a-4054-ae80-c310f78cdc70.png",
+            "product": "even-firm-system",
+            "image": "shopify://shop_images/Even_FirmSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
           }
         },
-        "product_gNjH9L": {
+        "product_xwqzya": {
           "type": "product",
           "settings": {
-            "product": "breakout-control-essential",
-            "image": "shopify://shop_images/Breakout_Control_Essentials_77973ba3-73e9-4d44-911f-ca59f04f4d30.png",
+            "product": "total-skin-renewal-system",
+            "image": "shopify://shop_images/TotalSkinRenewalSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -353,20 +366,22 @@
         "product_8hJgNj",
         "product_BJXNMB",
         "type_aJwQ9q",
-        "product_type_VLXcAn",
-        "product_eiHVrp",
-        "product_xJpDep",
-        "product_xwqzya",
-        "type_yDwWmt",
         "product_type_YrPQrV",
         "product_KKbDAE",
         "product_gia3hC",
-        "product_gNjH9L"
+        "product_gNjH9L",
+        "product_efxkeJ",
+        "type_yDwWmt",
+        "product_type_VLXcAn",
+        "product_eiHVrp",
+        "product_xJpDep",
+        "product_xwqzya"
       ],
       "settings": {
         "heading": "Choose Your Bundle",
         "text": "",
         "hide_types": true,
+        "special_offer_badge": true,
         "form_name": "purchase-form-bundle-v2"
       }
     },
@@ -963,7 +978,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"

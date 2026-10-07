@@ -1,0 +1,30 @@
+{% doc %}
+  Renders a full-width button in the mobile header drawer.
+{% enddoc %}
+
+<div class="header__shop-all-button" {{ block.shopify_attributes }}>
+    <a class="btn btn-primary" href="{{ block.settings.url | default: '#' }}">{{ block.settings.label }}</a>
+</div>
+
+{% schema %}
+{
+    "name": "Mobile button",
+    "tag": null,
+    "settings": [
+        {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Shop all"
+        },
+        {
+            "type": "url",
+            "id": "url",
+            "label": "Link"
+        }
+    ],
+    "presets": [
+        { "name": "Mobile button" }
+    ]
+}
+{% endschema %}

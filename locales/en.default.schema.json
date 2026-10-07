@@ -23,6 +23,7 @@
         "hidden": "Hidden",
         "hide_bottom": "Hide bottom",
         "hide_certified": "Hide certified-by",
+        "hide_title_on_subscription": "Hide title on subscription",
         "hide_payments": "Hide payments",
         "available-stocks": "Available text",
         "guarantee_period": "Guarantee period",
@@ -57,6 +58,7 @@
         "discount": "Discount",
         "show": "Show",
         "show-progress": "Show progress",
+        "show-checkbox": "Show checkbox",
         "link": "Link",
         "exclusive-offer": "Exclusive-offer",
         "exclusive-offer-bundle": "Exclusive bundle offer",
@@ -117,6 +119,7 @@
         "text-on-image": "Text on image",
         "text-with-image": "Text with image",
         "badge-text": "Badge text",
+        "pill": "Pill",
         "badge": "Badge",
         "heading-level": "Heading level",
         "heading-1": "Heading 1",
@@ -140,8 +143,11 @@
         "green": "Green",
         "light-green": "Light green",
         "description": "Description",
-        "description-aio": "Description (AIO)",
+        "description-collapsed": "Description (collapsed)",
         "jumpto": "Jump to",
+        "dynamic-params": "Dynamic params",
+        "dynamic-params-key": "URL ?bc= value",
+        "dynamic-params-key-info": "Exact match, case-sensitive (e.g. dark-spots). Use * for the default copy shown when ?bc= is missing or unmatched; without a * block the section heading and description are shown.",
         "nextships": "Next Ships",
         "date": "Date",
         "percent": "Percent",
@@ -155,6 +161,7 @@
         "rated-by-customers": "Rated by Customers",
         "backed-by-dermatologists": "Backed by Dermatologists",
         "trustpilot": "Trustpilot",
+        "reviews": "Reviews",
         "link-text": "Link text",
         "image-header": "Image header",
         "image-text": "Image text",
@@ -216,7 +223,9 @@
         "heading-percent-scale": "Header percent scale",
         "bundle": "Bundle",
         "bundle-text": "Bundle text",
+        "special-offer-badge": "Show special offer badge",
         "wistia-url": "Wistia URL",
+        "wistia-url-mobile": "Wistia URL mobile",
         "wistia-mode": "Wistia mode",
         "video-button-label": "Video button label",
         "modal": "Modal",
@@ -285,10 +294,13 @@
         "approved-position": "Approved by position",
         "before-text": "Before text",
         "after-text": "After text",
+        "before": "Before",
+        "after": "After",
         "show-logo": "Show logo",
         "must-read": "Must read",
         "wistia-slider": "Wistia slider",
         "blue": "Blue",
+        "blue-serum": "Blue serum",
         "red": "Red",
         "step-by-step": "Step by step",
         "step": "Step",
@@ -301,6 +313,10 @@
         "icon-with-text": "Icon with text",
         "simple": "Simple",
         "fine-lines": "Fine lines",
+        "antioxidant": "Antioxidant",
+        "droplet": "Droplet",
+        "waves": "Waves",
+        "wand": "Wand",
         "wrinkles": "Wrinkles",
         "dark-spots": "Dark spots",
         "blemishes": "Blemishes",
@@ -388,6 +404,7 @@
         "best-seller": "Best seller",
         "trending": "Trending",
         "flex": "Flex",
+        "row": "Row",
         "arrow-button": "Arrow button",
         "web-video": "Web video",
         "changes": "Changes",
@@ -556,9 +573,13 @@
             "settings": {
                 "modifier-options": {
                     "none": "None",
-                    "blue-plus": "Blue+ serum"
+                    "blue-plus": "Blue+ serum",
+                    "against-cancer": "Against cancer"
                 }
             }
+        },
+        "n_base-slider": {
+            "name": "Base slider"
         },
         "n_base-section": {
             "name": "Base section",
@@ -714,7 +735,12 @@
             "name": "Comparison table"
         },
         "n_faq": {
-            "name": "FAQ"
+            "name": "FAQ",
+            "settings": {
+                "advisor-heading": "Advisor heading",
+                "advisor-text": "Advisor text",
+                "advisor-url": "Advisor link"
+            }
         },
         "n_guarantee": {
             "name": "Guarantee"
@@ -722,14 +748,66 @@
         "n_progress-metrics": {
             "name": "Progress metrics"
         },
+        "n_progress-showcase": {
+            "name": "Progress showcase"
+        },
+        "n_expert-feature": {
+            "name": "Expert feature",
+            "settings": {
+                "author": "Author",
+                "caption": "Caption"
+            }
+        },
+        "n_mi-overview": {
+            "name": "MI overview",
+            "settings": {
+                "features-heading": "Features heading",
+                "wistia-url-mobile": "Wistia URL mobile"
+            }
+        },
+        "n_mi-ingredients": {
+            "name": "MI ingredients",
+            "blocks": {
+                "left-column": {
+                    "name": "Left column"
+                },
+                "right-column": {
+                    "name": "Right column"
+                },
+                "left-accordion": {
+                    "name": "Left accordion"
+                },
+                "right-accordion": {
+                    "name": "Right accordion"
+                }
+            }
+        },
+        "n_experts-grid": {
+            "name": "Experts grid",
+            "blocks": {
+                "expert": {
+                    "name": "Expert",
+                    "settings": {
+                        "name": "Name",
+                        "role": "Role"
+                    }
+                }
+            }
+        },
         "n_trusted-reviews": {
             "name": "Trusted reviews",
             "settings": {
                 "background-color-options": {
                     "light": "Light",
                     "grey": "Grey"
+                },
+                "modifier-options": {
+                    "dotted-nav": "Dotted navigation"
                 }
             }
+        },
+        "n_before-after-slider": {
+            "name": "Before after slider"
         },
         "n_award-winning": {
             "name": "Award winning"
@@ -742,7 +820,8 @@
             "settings": {
                 "modifier-options": {
                     "faucet-filter": "Faucet filter",
-                    "shower-filter": "Shower filter"
+                    "shower-filter": "Shower filter",
+                    "recovery-mask": "Recovery mask"
                 }
             },
             "blocks": {
@@ -798,6 +877,9 @@
         },
         "n_how-to-use": {
             "name": "How to use"
+        },
+        "n_usage-steps": {
+            "name": "Usage steps"
         },
         "n_achievement-goals": {
             "name": "Achievement goals slider"
@@ -1347,6 +1429,18 @@
         },
         "n_accordion-tiles-square": {
             "name": "Accordion tiles square"
+        },
+        "n_features-overview": {
+            "name": "Features overview"
+        },
+        "n_ingredients-video": {
+            "name": "Ingredients video"
+        },
+        "n_experts-pick": {
+            "name": "Experts pick"
+        },
+        "n_customers-video": {
+            "name": "Customers video"
         },
         "beauty-benefits": {
             "name": "Beauty benefits"
@@ -1972,6 +2066,13 @@
                         "subscription_onetime_text": "Onetime text",
                         "subscription_days_text": "Days text",
                         "subscription_discount": "Subscription discount"
+                    }
+                },
+                "optional-subscription": {
+                    "settings": {
+                        "title": "Product title override",
+                        "free_label": "Free label",
+                        "hide_on_onetime": "Hide on one-time delivery"
                     }
                 }
             }

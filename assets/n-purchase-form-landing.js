@@ -149,7 +149,7 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__clearPreorderBoxes();
     __landing__tooglePreorderBox(preorder, product_variant_id);
     __landing__updateSellingPlan(this, product_selling_plan, soldout, preorder);
-    __landing__updateStickyButton(variant_title);
+    __landing__updateStickyButton(variant_title, this);
     __landing__BackInStock(soldout);
     __landing__SubscriptionForm(this,product_selling_plan);
     __landing__applyDiscount(gift, discount_code);
@@ -255,21 +255,36 @@ function __landing__BackInStock(soldout) {
     }
 }
 
-function __landing__updateStickyButton(variant_title) {
-    if(!variant_title)  return;
-
-    const input = document.querySelector('.cta-bar__selector input[type="radio"][data-variant-title="' + variant_title + '"]');
-    if (input) {
+function __landing__updateStickyButton(variant_title, element) {
+    const input = __landing__findStickyInput(variant_title, element);
+    if (input && !input.checked) {
         input.checked = true;
 
-        //click
+        // "change" refreshes the sticky dropdown label (cta-bar.js). No "click" here:
+        // the sticky bar selects the form option on click, which would loop back to this handler.
         input.dispatchEvent(new Event('change', { bubbles: true }));
-        input.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
     }
 
     if (typeof selectOption === "function") {
         selectOption(variant_title);
     }
+}
+
+// Sticky options are matched by title first. When titles differ
+// (e.g. "6 Months" in the sticky bar vs "180 Days Supply" in the form), match by position.
+function __landing__findStickyInput(variant_title, element) {
+    const inputs = [...document.querySelectorAll('.cta-bar__selector input[type="radio"]')];
+    if (!inputs.length) return null;
+
+    if (variant_title) {
+        const byTitle = inputs.find(input => input.getAttribute('data-variant-title') === variant_title);
+        if (byTitle) return byTitle;
+    }
+
+    if (!element || !element.parentElement) return null;
+
+    const selectors = [...element.parentElement.children].filter(el => el.classList.contains('purchase_form_landing_product_variant_selector'));
+    return inputs[selectors.indexOf(element)] || null;
 }
 
 function __landing_updateButtonLabel(element) {
@@ -389,12 +404,20 @@ function __landing__updateProductFormButton(product_variant_id, soldout) {
         const button = form.querySelector('.add-cart-button');
 
         if (idInput) {
+            // A sold-out button gets type="button": the BookEasy app re-enables every
+            // type="submit" button of a /cart/add form once its scripts load.
             if (soldout === 'true') {
                 idInput.value = "";
-                if (button) button.disabled = true;
+                if (button) {
+                    button.type = 'button';
+                    button.disabled = true;
+                }
             } else {
                 idInput.value = product_variant_id;
-                if (button) button.disabled = false;
+                if (button) {
+                    button.type = 'submit';
+                    button.disabled = false;
+                }
             }
         }
     }

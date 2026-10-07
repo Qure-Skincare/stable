@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_across_image_banner_dx4yWG": {
       "type": "n_across-image-banner",
@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Easy Returns &amp; Exchanges</h1>",
         "text": "<p>Shop with confidence at Qure</p>",
+        "sub_text": "",
         "image": "shopify://shop_images/return-hero.webp",
         "image_mobile": "shopify://shop_images/return-hero-mob.webp",
         "button_label": "",
@@ -31,12 +34,14 @@
         "modifier": "none",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Simple Hassle-Free Returns</h2>",
         "text": "<p>At Qure, we want you to feel confident with your purchase. That's why we offer easy returns and exchanges.</p><h2>30-Day Money Back Guarantee</h2><p>Changed your mind? Returns can be initiated within 30 days upon receiving your order to qualify for our money back guarantee.</p>",
         "image": "shopify://shop_images/hf-returns.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_base_section_Biaw6t": {
@@ -47,12 +52,14 @@
         "modifier": "reverse",
         "modifier_2": "simple-grid",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Our Return Policy</h2>",
         "text": "<p>Here's the low-down on the terms and conditions that apply to the guarantee. You can read <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">full T&amp;Cs here</a>.</p><ul><li>30 days to return OR exchange for a  refund.</li><li>Returns first need to be approved by Qure support. </li><li>Shipping charges are non-refundable.</li><li>A Restocking Fee of $10 will be deducted from the refund.</li></ul>",
         "image": "shopify://shop_images/FKP_1182v1_3_aabb1a9b-3572-4265-b230-36e35bfe6471.png",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_returns_exchanges_how_to_use_CxHGKn": {
@@ -147,8 +154,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "sm",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h2>Feeling good in your skin is so much more than skin deep.</h2>",
         "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/skin-d.webp",
         "image_mobile": "shopify://shop_images/skin-m.webp",
         "button_label": "",
@@ -169,7 +179,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What should I do if I received the wrong item?",
-            "text": "<p>If you received a product different from the one that you ordered, please <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>  and we'll be sure to make this right!</p>"
+            "text": "<p>If you received a product different from the one that you ordered, please visit our <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>  and we'll be sure to make this right!</p>"
           }
         },
         "accordion_ALTiK3": {

@@ -1,0 +1,290 @@
+{% doc %}
+  Renders two Micro-Infusion serum cards. Each card is split into a heading block, icon blocks, and an accordion block, separately for the left and right card.
+{% enddoc %}
+
+<!-- MI INGREDIENTS -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/mi-ingredients/mi-ingredients.css" />
+{% endif %}
+
+<section class="mi-ingredients"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        <article class="mi-ingredients__text">
+            {{ section.settings.text }}
+        </article>
+        <div class="mi-ingredients__card">
+            {% for block in section.blocks %}
+                {% if block.type == 'left_heading' and block.settings.image != blank %}
+                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" {{ block.shopify_attributes }} />
+                {% endif %}
+            {% endfor %}
+            <article>
+                {% for block in section.blocks %}
+                    {% if block.type == 'left_heading' %}
+                        {{ block.settings.text }}
+                    {% endif %}
+                {% endfor %}
+                <ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'left_column' %}
+                            {% if block.settings.icon != blank %}
+                                <li {{ block.shopify_attributes }}>
+                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                    {{ block.settings.text }}
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </article>
+            {% for block in section.blocks %}
+                {% if block.type == 'left_accordion' %}
+                    <div class="c-accordion c-accordion--lines" {{ block.shopify_attributes }}>
+                        <div class="c-accordion__list">
+                            <details class="c-accordion__item">
+                                {% if block.settings.heading != blank %}
+                                    <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <article class="c-accordion__content">
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                            </details>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="mi-ingredients__card">
+            {% for block in section.blocks %}
+                {% if block.type == 'right_heading' and block.settings.image != blank %}
+                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" {{ block.shopify_attributes }} />
+                {% endif %}
+            {% endfor %}
+            <article>
+                {% for block in section.blocks %}
+                    {% if block.type == 'right_heading' %}
+                        {{ block.settings.text }}
+                    {% endif %}
+                {% endfor %}
+                <ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'right_column' %}
+                            {% if block.settings.icon != blank %}
+                                <li {{ block.shopify_attributes }}>
+                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                    {{ block.settings.text }}
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </article>
+            {% for block in section.blocks %}
+                {% if block.type == 'right_accordion' %}
+                    <div class="c-accordion c-accordion--lines" {{ block.shopify_attributes }}>
+                        <div class="c-accordion__list">
+                            <details class="c-accordion__item">
+                                {% if block.settings.heading != blank %}
+                                    <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
+                                {% endif %}
+                                {% if block.settings.text != blank %}
+                                    <article class="c-accordion__content">
+                                        {{ block.settings.text }}
+                                    </article>
+                                {% endif %}
+                            </details>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- MI INGREDIENTS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_mi-ingredients.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "left_heading",
+            "name": "t:common.left-header",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "right_heading",
+            "name": "t:common.right-header",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "left_column",
+            "name": "t:sections.n_mi-ingredients.blocks.left-column.name",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "default": "perfect-transforming",
+                    "options": [
+                        {
+                            "value": "perfect-transforming",
+                            "label": "t:common.perfect-transforming"
+                        },
+                        {
+                            "value": "two-in-one",
+                            "label": "t:common.two-in-one"
+                        },
+                        {
+                            "value": "even-looking",
+                            "label": "t:common.even-looking"
+                        },
+                        {
+                            "value": "smooths",
+                            "label": "t:common.smooths"
+                        },
+                        {
+                            "value": "calms-redness",
+                            "label": "t:common.calms-redness"
+                        },
+                        {
+                            "value": "deeply-hydrates",
+                            "label": "t:common.deeply-hydrates"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "right_column",
+            "name": "t:sections.n_mi-ingredients.blocks.right-column.name",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "default": "perfect-transforming",
+                    "options": [
+                        {
+                            "value": "perfect-transforming",
+                            "label": "t:common.perfect-transforming"
+                        },
+                        {
+                            "value": "two-in-one",
+                            "label": "t:common.two-in-one"
+                        },
+                        {
+                            "value": "even-looking",
+                            "label": "t:common.even-looking"
+                        },
+                        {
+                            "value": "smooths",
+                            "label": "t:common.smooths"
+                        },
+                        {
+                            "value": "calms-redness",
+                            "label": "t:common.calms-redness"
+                        },
+                        {
+                            "value": "deeply-hydrates",
+                            "label": "t:common.deeply-hydrates"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "left_accordion",
+            "name": "t:sections.n_mi-ingredients.blocks.left-accordion.name",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "right_accordion",
+            "name": "t:sections.n_mi-ingredients.blocks.right-accordion.name",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_mi-ingredients.name"
+        }
+    ]
+}
+{% endschema %}

@@ -82,9 +82,9 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": false,
-        "rating_type": "customers",
+        "rating_type": "dermatologists",
         "limited": false,
-        "description": "<ul><li>Cleanses without leaving skin feel tight, dry, or stripped</li><li>Formulated with 50% glycerin — a hydrating ingredient, <br/>not filler water </li><li>Clinically shown to strengthen your skin barrier by 18.5%</li></ul>",
+        "description": "<ul><li>Cleanses without leaving skin feel tight, dry, or stripped</li><li>Formulated with 50% glycerin — a hydrating ingredient,&nbsp;<br/>not filler water&nbsp;</li><li>Clinically shown to strengthen your skin barrier by 18.5%</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -114,6 +114,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -144,6 +145,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -175,6 +177,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -217,6 +220,7 @@
             "gift_image": "shopify://shop_images/gift_headband_and_wristband.webp",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": true,
             "free_shipping": false,
@@ -247,6 +251,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -278,6 +283,7 @@
             "gift": "",
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
             "free_shipping": false,
@@ -321,10 +327,11 @@
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "cleanser-4-month-bundle",
         "type": "list",
-        "klaviyo_form_name": "",
+        "klaviyo_form_name": "Xw9a5v",
         "guarantee_period": "30",
         "hide_bottom": true,
-        "hide_certified": true
+        "hide_certified": true,
+        "hide_title_on_subscription": false
       }
     },
     "n_across_image_banner_cleanser": {
@@ -637,6 +644,7 @@
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
         "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
@@ -802,10 +810,44 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    },
+    "n_sticky_button_variants_8EfCRU": {
+      "type": "n-sticky-button-variants",
+      "blocks": {
+        "variant_WmrQaK": {
+          "type": "variant",
+          "settings": {
+            "heading": "120 Days",
+            "image": "shopify://shop_images/cleanser-selector-duo.webp"
+          }
+        },
+        "variant_xGQahG": {
+          "type": "variant",
+          "settings": {
+            "heading": "60 Days",
+            "image": "shopify://shop_images/cleanser-selector-uno.webp"
+          }
+        }
+      },
+      "block_order": [
+        "variant_WmrQaK",
+        "variant_xGQahG"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "80 Units Reserved in last 48 hours",
+        "button-label": "Subscribe & Save {dyn}%",
+        "button-url": ""
       }
     }
   },
@@ -820,6 +862,7 @@
     "n_page_microinfusion_complete_system_cleanser",
     "n_comparison_table_mK4pQx",
     "17830002457c285fc3",
-    "n_faq_cleanser"
+    "n_faq_cleanser",
+    "n_sticky_button_variants_8EfCRU"
   ]
 }

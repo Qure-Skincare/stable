@@ -6,7 +6,7 @@
  {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/press-reviews/press-reviews.css" />
  {% endif %}
-<section class="press-reviews">
+<section class="press-reviews{% if section.settings.modifier == 'light' %} press-reviews--light{% endif %}">
     <div class="container">
         {{ section.settings.text }}
         <div
@@ -74,6 +74,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "light",
+                    "label": "t:common.light"
+                }
+            ]
         },
         {
             "type": "richtext",

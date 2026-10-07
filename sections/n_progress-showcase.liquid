@@ -1,0 +1,141 @@
+{% doc %}
+  Renders a progress showcase: a photo slider linked to a metrics slider.
+{% enddoc %}
+
+<!-- PROGRESS SHOWCASE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/progress-showcase/progress-showcase.css" />
+{% endif %}
+
+{% assign showcase_id = section.settings.section_id | default: section.id %}
+
+<section class="progress-showcase" id="{{ showcase_id }}">
+    <div class="container">
+        {{ section.settings.text }}
+        <div
+            class="c-swiper"
+            data-swiper-thumbs="#{{ showcase_id }} .c-swiper-metrics"
+            data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 0,
+                "pagination": {
+                    "el": "#{{ showcase_id }} .progress-showcase__nav-pagination",
+                    "type": "custom"
+                },
+                "navigation": {
+                    "prevEl": "#{{ showcase_id }} .progress-showcase__nav-prev",
+                    "nextEl": "#{{ showcase_id }} .progress-showcase__nav-next"
+                }
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'slide' and block.settings.image != blank %}
+                        <div class="swiper-slide" {{ block.shopify_attributes }}>
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div
+            class="c-swiper c-swiper-metrics"
+            data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 16,
+                "allowTouchMove": false
+            }'>
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    {% if block.type == 'slide' %}
+                        <div class="swiper-slide">
+                            {% if block.settings.badge != blank %}
+                                <div class="e-pill-badge e-pill-badge--sm">{{ block.settings.badge }}</div>
+                            {% endif %}
+                            <div class="progress-desc" style="--progress-value: {{ block.settings.percent_value }}%">
+                                <div>
+                                    <h6>{{ block.settings.percent_value }}%</h6>
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                            {% if block.settings.disclaimer != blank %}
+                                <small>{{ block.settings.disclaimer }}</small>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="progress-showcase__nav">
+            <button class="progress-showcase__nav-prev" type="button"><i class="e-icon e-icon-chevron"></i> {{ 'sections.n_progress-showcase.previous' | t }}</button>
+            <div class="progress-showcase__nav-pagination"></div>
+            <button class="progress-showcase__nav-next" type="button">{{ 'sections.n_progress-showcase.next' | t }} <i class="e-icon e-icon-chevron"></i></button>
+        </div>
+    </div>
+</section>
+<!-- PROGRESS SHOWCASE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_progress-showcase.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "t:common.slider",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge"
+                },
+                {
+                    "type": "range",
+                    "id": "percent_value",
+                    "label": "t:common.percent-value",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "%",
+                    "default": 70
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "disclaimer",
+                    "label": "t:common.disclaimer"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_progress-showcase.name"
+        }
+    ]
+}
+{% endschema %}

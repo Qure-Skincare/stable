@@ -5,7 +5,14 @@
     function updateTitle() {
         var checked = document.querySelector('input[name="delivery-type-landing"]:checked');
         if (!title || !checked) return;
-        title.innerHTML = checked.value === 'subscription' ? subscribe_and_save : one_time_purchase;
+
+        var subscription = checked.value === 'subscription';
+
+        if (title.hasAttribute('data-hide-on-subscription')) {
+            title.style.display = subscription ? 'none' : '';
+        }
+
+        title.innerHTML = subscription ? subscribe_and_save : one_time_purchase;
     }
 
     radios.forEach(function (radio) {

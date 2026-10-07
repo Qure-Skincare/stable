@@ -17,12 +17,14 @@
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Your results are in.</h2>",
         "text": "<p><strong>Let’s transform your breakouts!</strong></p><p>We know how confidence destroying acne can be, but with the right plan in place, you're just a few steps away from clearer, happier, healthier-looking skin. We've created a personalized routine just for you to help tackle acne and keep your skin radiant and glowing.</p>",
         "image": "shopify://shop_images/transform_aging_acne.webp",
         "button_label": "Shop Now",
         "button_url": "#skincare_goals",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_we-suggest_yfwGg": {
@@ -33,7 +35,7 @@
           "settings": {
             "product": "q-rejuvalight-pro-facewear",
             "card_title": "",
-            "product_image": "shopify://shop_images/q-rej-product.webp",
+            "product_image": "shopify://shop_images/mask_led_qure.webp",
             "product_hover_image": "shopify://shop_images/hov_img_1.webp",
             "results_image": "shopify://shop_images/q-rej_result_acne.webp",
             "review_video": "https://www.youtube.com/embed/jwKN4SH4yz8?autoplay=1&mute=1",
@@ -70,9 +72,9 @@
         "suggest_kDMBBt": {
           "type": "suggest_card",
           "settings": {
-            "product": "face-serum",
+            "product": "all-in-one-serum",
             "card_title": "",
-            "product_image": "shopify://shop_images/all-in-prod.webp",
+            "product_image": "shopify://shop_images/silver_showerhead_tsp1.jpg",
             "product_hover_image": "shopify://shop_images/hov_img_3.webp",
             "results_image": "shopify://shop_images/all-in-result.webp",
             "review_video": "https://www.youtube.com/embed/PJt57LcFEQk?autoplay=1&mute=1",
@@ -218,6 +220,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -232,6 +235,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Hanna L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Hydrated more than ever</strong></p><p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what I used. I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less that Q-urified water because my skin is so much better.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/shwr_uses.webp",
@@ -246,6 +250,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Sophie R.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Amazing!!</strong></p><p>“Amazing! Has made such a massive on my acne. Still getting breakouts but they disappear way quicker. Took maybe 2 days to start working. Pics are about 3 weeks difference.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -260,6 +265,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Josie K.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Acne and dryness gone</strong></p><p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/shwr_uses.webp",
@@ -274,6 +280,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Vanessa B.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>My cystic acne is gone</strong></p><p>“So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/all-in-one-serum.webp",
@@ -288,6 +295,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Saskia Z.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Best investment for my skin</strong></p><p>“It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn’t recommend it highly enough!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -302,6 +310,7 @@
             "flag": "shopify://shop_images/canada_f.webp",
             "username": "Bethany N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Changed my life!</strong></p><p>“This product has changed my life! My skin feels brighter, clearer and way more even! I’ll use this for the rest of my life!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/all-in-one-serum.webp",
@@ -316,6 +325,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Kim L.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Source of my unclear skin</strong></p><p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/neck-decolletage-led-device.webp",
@@ -330,6 +340,7 @@
             "flag": "shopify://shop_images/canada_f.webp",
             "username": "Jovana S.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Saw a difference within 3 days</strong></p><p>“Incredible! The item is so well made, I had cystic acne on my jaw that went away within a week of use and my skin felt very soft. I have gotten 3 other people to purchase this product and will continue to rave about it!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
@@ -353,6 +364,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>No promises, just proof</h2>",
         "button_label": "",
         "button_url": ""
@@ -594,7 +609,13 @@
     "sticky_cta_hd4dLE": {
       "type": "n-sticky-button-boxes",
       "name": "t:sections.sticky-button.name",
-      "settings": {}
+      "settings": {
+        "heading": "",
+        "text": "",
+        "limited": false,
+        "button-label": "",
+        "button-url": ""
+      }
     }
   },
   "order": [

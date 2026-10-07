@@ -19,10 +19,11 @@
             {% render 'n-product-badge', block: block %}
         {% when 'description' %}
             {% unless section.settings.rating_type == 'trustpilot' %}
-                {% render 'n-product-description', description: section.settings.description %}
+                {% assign _description = dp_description | default: section.settings.description %}
+                {% render 'n-product-description', description: _description %}
             {% endunless %}
-        {% when 'description-aio' %}
-            {% render 'n-product-description-aio', block: block %}
+        {% when 'description-collapsed' %}
+            {% render 'n-product-description-collapsed', block: block %}
         {% when 'quote' %}
             {% render 'n-product-expert-quote-tag', block: block %}
         {% when 'subheading' %}

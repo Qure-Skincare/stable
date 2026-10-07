@@ -1,0 +1,145 @@
+{% doc %}
+  Renders header section
+
+  @example
+  {% section 'n-header' %}
+{% enddoc %}
+
+{% assign black_friday_turn_on = settings.black_friday_turn_on %}
+
+{% if section.settings.exception != blank %}
+    {% assign exception_list = section.settings.exception | split: ',' %}
+    {% assign path_lower = request.path | downcase %}
+
+    {% for exception in exception_list %}
+        {% assign exception = exception | downcase %}
+        {% capture _exception %}{{ exception | replace: ' ', '' }}{% endcapture %}
+        {% if exception != blank and path_lower contains _exception %}
+            {% assign is_exception = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% unless is_exception %}
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__navigation">
+            <div class="header__hamburger">
+                <div class="e-hamburger" id="hamburger">
+                    <div class="e-hamburger__line"></div>
+                    <div class="e-hamburger__line"></div>
+                    <div class="e-hamburger__line"></div>
+                </div>
+            </div>
+            <a href="{{ shop.url }}" class="header__logo" title="Qure">
+                {% comment %} <i class="e-icon e-icon-qure"></i> {% endcomment %}
+                {% render '__svg-logo' %}
+            </a>
+            <ul class="header__menu">
+                {% if black_friday_turn_on == true %}
+                    {% assign special_offer_header = 'special-offer.menu.header' | t %}
+                    {% if special_offer_header != '' %}
+                        <li><a class="promo-animation" href="{{ 'special-offer.menu.link' | t }}" aria-label="{{ 'special-offer.menu.header' | t }}">{{ special_offer_header }}</a></li>
+                    {% endif %}
+                {% endif %}
+                {% for link in linklists['main-header'].links %}
+                    {% unless forloop.first %}
+                        <li>
+                            <a href="javascript:;" data-target="{{ link.title | downcase | replace: ' ', '_' | escape }}" aria-label="{{ link.title | escape }}">{{ link.title }}</a>
+                        </li>
+                    {% endunless %}
+                {% endfor %}
+            </ul>
+            <ul class="header__icons">
+                <li>
+                    <a href="{{ shop.url }}/pages/loyalty-program" aria-label="loyalty program">
+                        {% comment %} <i class="e-icon e-icon-gift"></i> {% endcomment %}
+                        {% render '__svg-icon-gift' %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ shop.url }}/account/login" aria-label="login">
+                        {% comment %} <i class="e-icon e-icon-user"></i> {% endcomment %}
+                         {% render '__svg-icon-user' %}
+                    </a>
+                </li>
+                <li>
+                    <a class="show-flyout-cart" id="cartCanvasBtn" href="javascript:;">
+                        {% comment %} <i class="e-icon e-icon-cart"></i> {% endcomment %}
+                        {% render '__svg-icon-cart' %}
+                        <div class="cart-count">{{ cart.item_count }}</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="header__tabs" role="tablist">
+            {% if black_friday_turn_on == true %}
+                {% if special_offer_header != '' %}
+                    <li><a class="promo-animation" href="{{ 'special-offer.menu.link' | t }}" aria-label="{{ 'special-offer.menu.header' | t }}">{{ special_offer_header }}</a></li>
+                {% endif %}
+            {% endif %}
+            {% for link in linklists['main-header'].links %}
+                {% unless forloop.first %}
+                    <li>
+                        <a{% if forloop.index == 2 %} class="active"{% endif %} href="#{{ link.title | downcase | replace: ' ', '_' | escape }}" aria-label="{{ link.title | escape }}" data-bs-toggle="tab">{{ link.title }}</a>
+                    </li>
+                {% endunless %}
+            {% endfor %}
+        </ul>
+        <div class="header__content-wrapper">
+            <div class="header__content show" id="products">
+                <div class="header__content-container container">
+                    {% render 'n-header-menu', menu_title: 'Products' %}
+                    {% render 'n-header-slider', menu_title: 'Products', thumbs: '#header', slide_per_view: 1, class: 'btn--discount' %}
+                </div>
+            </div>
+            <div class="header__content" id="help_center">
+                <div class="header__content-container container">
+                    {% render 'n-header-menu', menu_title: 'Help Center' %}
+                    {% render 'n-header-slider', menu_title: 'Help Center', slide_per_view: 1.2 %}
+                </div>
+            </div>
+            <div class="header__content" id="learn_more">
+                <div class="header__content-container container">
+                    {% render 'n-header-menu', menu_title: 'Learn More' %}
+                    {% render 'n-header-slider', menu_title: 'Learn More', slide_per_view: 1.2 %}
+                </div>
+            </div>
+            <ul class="header__general-links">
+                {% for link in linklists['main-mobile-drawer-menu'].links %}
+                    {% case link.title %}
+                        {% when 'Customer Account' %}
+                            {% capture icon %}<i class="e-icon e-icon-user"></i>{% endcapture %}
+                        {% when 'FAQs' %}
+                            {% capture icon %}<i class="e-icon e-icon-shipping"></i>{% endcapture %}
+                        {% when 'Contact Us' %}
+                            {% capture icon %}<i class="e-icon e-icon-faq"></i>{% endcapture %}
+                        {% when 'Shipping & Returns' %}
+                            {% capture icon %}<i class="e-icon e-icon-letter"></i>{% endcapture %}
+                        {% else %}
+                            {% capture icon %}<i class="e-icon"></i>{% endcapture %}
+                    {% endcase %}
+
+                    <li><a href="{{ link.url }}" aria-label="{{ link.title | escape }}">{{ icon }} <span>{{ link.title }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</header>
+
+<script src="https://qureskincaredns-stable.com/sections/header/header.js" defer="defer"></script>
+{% endunless %}
+
+{% schema %}
+{
+    "name": "t:sections-group.header.name",
+    "settings": [
+        {
+            "type": "textarea",
+            "id": "exception",
+            "label": "t:common.exception"
+        }
+    ]
+}
+{% endschema %}
