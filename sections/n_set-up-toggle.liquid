@@ -3,7 +3,7 @@
 {% enddoc %}
 
 <!-- SET UP TOGGLE -->
-<section class="set-up-toggle">
+<section class="set-up-toggle" {% if section.settings.section_id != blank %} id="{{ section.settings.section_id | downcase |  handleize }}"{% endif %}>
     <div class="container">
         {% assign tab_index = 0 %}
         {% for block in section.blocks %}
@@ -105,6 +105,11 @@
 {
     "name": "t:sections.n_set-up-toggle.name",
     "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
         {
             "type": "richtext",
             "id": "text",
