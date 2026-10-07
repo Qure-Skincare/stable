@@ -730,9 +730,60 @@
       }
     },
     "n-form-inside-mask_QgKWfH": {
-      "type": "n-form-inside-mask",
-      "name": "t:sections.n-form-inside.name",
-      "settings": {}
+      "type": "n-product-header",
+      "blocks": {
+        "subheading_QgKWfH": {
+          "type": "subheading",
+          "settings": {
+            "text": "+ FREE Neck & Décolletage LED System"
+          }
+        },
+        "price_QgKWfH": {
+          "type": "bundle-price",
+          "settings": {}
+        },
+        "description_QgKWfH": {
+          "type": "description",
+          "settings": {}
+        },
+        "bundle_purchase_QgKWfH": {
+          "type": "bundle-purchase",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear",
+            "image_product1": "shopify://shop_images/Img_50.png",
+            "item1_text": "FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.",
+            "product2": "neck-decolletage-led",
+            "image_product2": "shopify://shop_images/Frame_1073714744.png",
+            "item2_text": "Clinically proven to smooth and firm where aging shows first.",
+            "discount_code": "FREEN&DOFFER",
+            "progress_percent": 75
+          }
+        },
+        "accordion_QgKWfH": {
+          "type": "accordion",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subheading_QgKWfH",
+        "price_QgKWfH",
+        "description_QgKWfH",
+        "bundle_purchase_QgKWfH",
+        "accordion_QgKWfH"
+      ],
+      "name": "t:sections.page-header.name",
+      "settings": {
+        "section_id": "buy-form",
+        "product": "q-rejuvalight-pro-facewear",
+        "reverse": true,
+        "secondary": true,
+        "background": false,
+        "heading": "Q-Rejuvalight Pro LED Mask",
+        "badge_text": "Limited Time Offer",
+        "heading_level": "h2",
+        "rating": false,
+        "description": "<ul><li>Lifetime Warranty</li><li>FDA Cleared</li></ul><p>Elevate your LED routine with full face and neck coverage for consistent all-over results.</p>"
+      }
     },
     "n_features_marquee_4YPxHy": {
       "type": "n_features-marquee",
@@ -1142,9 +1193,81 @@
     },
     "n_page-led-mask-offer-2-faq_led_mask_offer_2": {
       "type": "n_page-led-mask-offer-2-faq",
+      "blocks": {
+        "accordion_technical_specs": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Technical specifications",
+            "show_technical_specs": true
+          }
+        },
+        "accordion_results": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How quickly will I see results?",
+            "text": "<p>Every individual may respond differently to specific wavelengths of light, and results will depend on the goal you want to address.</p><p>Most users report visible improvements in the look of breakouts and redness sooner than expected. Smoother-looking lines, improved tone, and a firmer appearance may take longer.</p><p>Changes are often gradual, so we recommend taking “before and after” photos to track your results. Consistency is key for maintaining improvements over time.</p>"
+          }
+        },
+        "accordion_frequency": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often can I use these treatments?",
+            "text": "<p>You can use both the Q-Rejuvalight Pro Mask and the Neck & Décolletage LED Device daily. In fact, consistent daily use is recommended for best results.</p>"
+          }
+        },
+        "accordion_eye_protection": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need to wear eye protection when I use the Q-Rejuvalight Pro?",
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p><p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>"
+          }
+        },
+        "accordion_skin_types": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is LED light therapy safe for all skin types?",
+            "text": "<p>Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed.</p><p>That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.</p><p>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.</p><p>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>"
+          }
+        },
+        "accordion_warranty": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does the Q-Rejuvalight Pro come with warranty?",
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>"
+          }
+        },
+        "accordion_age": {
+          "type": "accordion",
+          "settings": {
+            "heading": "At what age and when is the best time to start using LED light therapy?",
+            "text": "<p>Most people can benefit from LED light therapty. Whether the goal is to treat acne, help reduce the visible signs of aging, or both, prevention is better than correction. The sooner the Q-Rejuvalight Pro becomes part of your routine, the better!</p>"
+          }
+        },
+        "accordion_fda": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is Q-Rejuvalight Pro FDA-cleared?",
+            "text": "<p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_technical_specs",
+        "accordion_results",
+        "accordion_frequency",
+        "accordion_eye_protection",
+        "accordion_skin_types",
+        "accordion_warranty",
+        "accordion_age",
+        "accordion_fda"
+      ],
       "name": "t:sections.n_faq.name",
       "settings": {
-        "use_own_file": false
+        "use_own_file": false,
+        "heading": "<h2>Have questions?</h2>",
+        "text": "Don't see your question? ",
+        "button_label": "Ask us ",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
     "sticky_cta_xhjAY4": {
