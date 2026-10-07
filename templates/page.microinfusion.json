@@ -635,6 +635,20 @@
     "n_trusted_reviews_DUlFYg": {
       "type": "n_trusted-reviews",
       "blocks": {
+        "slider_EP7mCD": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_1f29c6a5-c02d-4091-9ad2-fa6f64312573.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Kirstine B.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
         "slider_VyHb4h": {
           "type": "slider",
           "settings": {
@@ -740,7 +754,7 @@
             "flag": "shopify://shop_images/america-flag_f1f6c160-90c6-4ba9-8bfc-d9039a28d2af.webp",
             "username": "Rodrigo M.",
             "verified_customer": "Verified customer",
-            "badge": "Acne Scares",
+            "badge": "Acne Scars",
             "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
             "product_url": "",
             "product_text": "",
@@ -805,6 +819,7 @@
         }
       },
       "block_order": [
+        "slider_EP7mCD",
         "slider_VyHb4h",
         "slider_9NRFNC",
         "slider_jT7Wd4",
