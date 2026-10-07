@@ -24,7 +24,8 @@
             "title_4": "Delivers targeted hydration overnight",
             "text_4": "<p>Delivers targeted hydration overnight Sodium Hyaluronate helps plump the skin's surface for a smoother </p>",
             "title_5": "Gentle enough for delicate, sensitive skin",
-            "text_5": "<p>Gentle enough for delicate, sensitive skin Dermatologically tested and non-irritating — safe for the delicate under-eye and expression-line areas these patches are designed for.</p>"
+            "text_5": "<p>Gentle enough for delicate, sensitive skin Dermatologically tested and non-irritating — safe for the delicate under-eye and expression-line areas these patches are designed for.</p>",
+            "line": true
           }
         },
         "section_mp6gUV": {
@@ -67,6 +68,7 @@
         "seo_heading": "MICRO-INFUSION DART PATCHES",
         "heading": "Smooth and firm the look of skin with Micro-Infusion Targeted Patches",
         "rating": true,
+        "rating_type": "trustpilot",
         "limited": false,
         "description": "",
         "reserved": false,
@@ -474,6 +476,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "one-slide",
         "settings": "\"spaceBetween\": 80"
@@ -1230,7 +1233,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
