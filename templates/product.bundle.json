@@ -7,19 +7,24 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product-bundle": {
       "type": "n-product-bundle",
       "settings": {
         "show_discount": true,
-        "rating": true
+        "rating": true,
+        "heading": ""
       }
     },
     "product-bundle-old": {
       "type": "n-product-bundle",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "show_discount": false,
+        "rating": true,
+        "heading": ""
+      }
     },
     "n_press_reviews_DDaUTN": {
       "type": "n_press-reviews",
@@ -70,7 +75,9 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
     },
@@ -84,6 +91,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
@@ -98,11 +106,27 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
             "product_text": "Anton uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask"
+          }
+        },
+        "slider_HzbCJW": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ana.webp",
+            "flag": "shopify://shop_images/australia_f_69a48b5f-3193-49ab-a443-904ca676d1db.webp",
+            "username": "Ana L.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<p><strong>Amazing<br/><br/></strong>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the Micro-Infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "product_url": "https://qureskincare.com/products/face-serum",
+            "product_image": "shopify://shop_images/Img_60.png",
+            "product_text": "Ana uses..",
+            "product_title": "All In One Serum"
           }
         },
         "slider_ea3hLd": {
@@ -112,6 +136,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
@@ -123,12 +148,17 @@
       "block_order": [
         "slider_iCfR9d",
         "slider_xqHC8P",
+        "slider_HzbCJW",
         "slider_ea3hLd"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
         "use_own_file": false,
         "background_color": "light",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
@@ -136,10 +166,10 @@
     },
     "n_you_may_also_like_uZi1bC": {
       "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
       "settings": {
         "use_own_file": false
-      },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      }
     }
   },
   "order": [
