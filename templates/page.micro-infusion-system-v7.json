@@ -945,14 +945,14 @@
           "type": "accordion",
           "settings": {
             "heading": "What are the benefits of Micro-Infusion?",
-            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion.</p><p>The serum you choose during your Micro-Infusion treatment will deliver visible results over time. Very fine needles help apply concentrated ingredients exactly where they’re needed to target specific skin concerns with precision.</p><p>You can switch up your treatments or even mix the two serums together!</p><p>Visible benefits of Micro-Infusion may include:</p><ul><li>More even-looking skin tone and texture</li><li>Glowing, refreshed-looking complexion</li><li>Softer-looking fine lines</li><li>Skin that feels renewed and rejuvenated</li></ul>"
+            "text": "<p>The stamping action of the Micro-Infusion device creates tiny micro-channels on the surface of the skin, helping to enhance the absorption of active ingredients and visibly refresh the complexion. <strong>The ultra-fine, 24K gold-plated needles</strong> help apply concentrated ingredients exactly where they're needed to target specific skin concerns with precision, <strong>and the serum you choose delivers visible results over time. You can switch between the two serums from treatment to treatment.</strong></p><p>Visible benefits of Micro-Infusion may include:</p><ul><li>More even-looking skin tone and texture</li><li>Glowing, refreshed-looking complexion</li><li>Softer-looking fine lines</li><li>Skin that feels renewed and rejuvenated</li><li><strong>Plumper, more hydrated-looking skin and visibly minimized pores</strong></li></ul>"
           }
         },
         "accordion_2": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
-            "text": "<p>Micro-Infusion treatment is an effective skin-boosting step, and many users report a visible radiance boost, glowy-looking complexion, and skin that feels more hydrated within a day or two after their first treatment.</p><p>The more consistently you use the treatment, the more visible improvements you’ll likely notice over time. This easy-at-home facial is perfect to use a day or two before a big event, when you want your complexion to look and feel refreshed.</p><p>Don’t forget to keep up with your everyday skincare routine to help maintain the results of your Micro-Infusion treatment and keep your skin looking its best long-term.</p>"
+            "text": "<p>Micro-Infusion treatment is an effective skin-boosting step, and many users report a visible radiance boost, glowy-looking complexion, and skin that feels more hydrated within a day or two after their first treatment. <strong>In a user study of 30 participants aged 25-65, 93% noticed results the day after their first treatment.</strong></p><p>The more consistently you use the treatment, the more visible improvements you'll likely notice over time. This easy at-home facial is perfect to use a day or two before a big event, when you want your complexion to look and feel refreshed. Don't forget to keep up with your everyday skincare routine to help maintain the results of your Micro-Infusion treatment and keep your skin looking its best long-term.</p>"
           }
         },
         "accordion_3": {
@@ -965,47 +965,111 @@
         "accordion_4": {
           "type": "accordion",
           "settings": {
-            "heading": "Is it painful to use?",
-            "text": "<p>You can expect minimal discomfort and maximum results with Qure’s Micro-Infusion System.</p><p>Although the needles themselves are finer than most at-home needling systems (making it more comfortable), the ultra-fine tips are thinner than a human hair, so you’ll feel only a mild sensation during treatment.</p><p>During the initial stages of use, you may experience a slight sensation or pricking feeling as the needles make contact with the skin, but you’ll quickly get used to the feeling.</p>"
+            "heading": "What does the treatment feel like? Will it hurt?",
+            "text": "<p>You can expect minimal discomfort and maximum results with Qure’s Micro-Infusion System.&nbsp;</p><p>Although the needles themselves are finer than most at-home needling systems (making it more comfortable), the ultra-fine tips are thinner than a human hair, so you'll feel only a mild sensation during treatment.&nbsp;</p><p>During the initial stages of use, you may experience a slight sensation or pricking feeling as the needles make contact with the skin, but you'll quickly get used to the feeling. <strong>Most users describe it as a light tingling or gentle pressure rather than pain, and a full session takes only about 5 minutes.</strong></p>"
+          }
+        },
+        "accordion_EtUAfq": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Has the Micro-Infusion System been clinically evaluated for safety?",
+            "text": "<p><strong>Yes. The system has been independently evaluated for safety.</strong> The Micro-Infusion System for Dark Spots and for Wrinkles underwent an independent clinical evaluation of dermatologic safety-in-use conducted by a Board-Certified Dermatologist. 31 subjects spanning all Fitzpatrick skin types (I-VI) completed the evaluation with no adverse reactions reported or observed, and the products were deemed safe for their intended use.&nbsp;</p><p><strong>In addition, every needle head is EO-sterilized, single-use, and disposable, so you start each treatment with a fresh, sterile head - one of the most important hygiene factors in any at-home needling routine.</strong></p>"
           }
         },
         "accordion_5": {
           "type": "accordion",
           "settings": {
-            "heading": "How often can I use the treatment?",
-            "text": "<p>We recommend performing a Micro-Infusion treatment every 2 weeks for best results.</p>"
+            "heading": "How often should I do a treatment to get the best results?",
+            "text": "<p>We recommend performing a Micro-Infusion treatment every 2 weeks for best results.&nbsp;</p><p><strong>This spacing gives your skin time to rest and renew between sessions while keeping results building consistently - more frequent use is not better and may irritate the skin. Always use a fresh, sterile needle head for each treatment, and stay consistent: the most visible improvements in tone, texture, and fine lines typically show up after 4-6 treatments over 8-12 weeks.</strong></p>"
           }
         },
         "accordion_6": {
           "type": "accordion",
           "settings": {
             "heading": "When is the best time to do Micro-Infusion?",
-            "text": "<p>We recommend doing the treatment at night before bed. Avoid being in the sun and using makeup for 24 hours after treatment. For more information on post-treatment care, <a href=\"https://qureskincare.com/pages/microinfusion-safety-guide\" title=\"Safety guide\">visit our safety guide</a>.</p>"
+            "text": "<p>We recommend doing the treatment at night before bed, <strong>so the serum can absorb overnight while your skin is in repair mode</strong>. Avoid being in the sun and using makeup for 24 hours after the treatment. <strong>If you're preparing for a special occasion, plan your session 1-2 days before the event so any mild redness has settled and your skin looks its freshest.</strong>&nbsp;</p><p>For more information on post-treatment care, <a href=\"https://qureskincare.com/pages/microinfusion-safety-guide\" title=\"Safety guide\">visit our safety guide</a>.</p>"
           }
         },
         "accordion_7": {
           "type": "accordion",
           "settings": {
-            "heading": "Can I use it around the eyes and on the neck?",
-            "text": "<p>Yes, you can use Micro-Infusion around the eye area to help smooth crow’s feet. Just ensure to apply a very gentle pressure and only do one pass. Monitor your skin accordingly as everyone’s skin is different.</p><p>Performing Micro-Infusion on the neck can help improve the look of fine lines and rejuvenate the skin’s appearance. It can target issues such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and look of this area.</p>"
+            "heading": "Where can I use it? Is it okay around my eyes and on my neck?",
+            "text": "<p><strong>Micro-Infusion can be used on the face, around the eye area, and on the neck.</strong> Around the eyes, it can help smooth the look of crow's feet - just ensure you apply very gentle pressure and only do one pass. Monitor your skin accordingly, as everyone's skin is different.</p><p>Performing Micro-Infusion on the neck can help improve the look of fine lines and rejuvenate the skin's appearance. It can target concerns such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and look of this area.</p>"
           }
         },
         "accordion_8": {
           "type": "accordion",
           "settings": {
             "heading": "Can I use a different serum with the Micro-Infusion device?",
-            "text": "<p>No — only use the provided Qure serum with your Micro-Infusion Device.</p><p>Please keep in mind that not all serums are suitable for Micro-Infusion. Some may cause irritation and should be avoided. Our serums and ampoules are specifically developed for Qure’s Micro-Infusion System, with gentle, fragrance-free formulas designed with care for all skin types.</p>"
+            "text": "<p>No. Only use the Qure serums provided for use with your Micro-Infusion Device.</p><p>Please keep in mind that not all serums are suitable for Micro-Infusion. Some formulas may cause irritation and should be avoided, as the micro-channels created during treatment can increase absorption, meaning a formula that is suitable for use on the skin’s surface may not be appropriate for Micro-Infusion.</p><p>Qure serums and ampoules are specifically developed for the Qure Micro-Infusion System, with gentle, fragrance-free formulas designed with care for all skin types. The formulas are also tested for properties such as viscosity, texture and flow to ensure they work correctly with Qure needle heads and deliver serum as intended.</p><p>Because other formulas have not been tested for compatibility with the Qure Micro-Infusion System, we can only guarantee the safety, performance and proper serum flow of Qure formulas when used with the device.</p>"
           }
         },
         "accordion_9": {
           "type": "accordion",
           "settings": {
-            "heading": "How is this different to micro-rolling?",
-            "text": "<p>Micro-Infusion focuses on improving the skin’s appearance by creating micro-channels on the skin’s surface. It does not alter or affect skin structure or function.</p><p>With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision — helping the skin appear smoother and more radiant.</p>"
+            "heading": "How is this different from a standard derma roller I can buy for a few dollars?",
+            "text": "<p>Micro-Infusion focuses on improving the skin's appearance by creating micro-channels on the skin's surface. It does not alter or affect skin structure or function. With Micro-Infusion, you not only enjoy the visible benefits of micro-needling, but also deliver science-backed ingredients to targeted areas with precision - helping the skin appear smoother and more radiant.</p><p><strong>The practical differences from a typical rolling device come down to three things:</strong></p><ol><li><strong>The motion: Micro-Infusion uses a vertical stamping action, while rollers drag needles through the skin at an angle, which can cause more surface irritation.&nbsp;</strong></li><li><strong>Hygiene: Micro-Infusion needle heads are EO-sterilized and single-use, whereas rollers are reused again and again, dulling over time and carrying a higher risk of bacteria buildup.&nbsp;</strong></li><li><strong>Delivery: The serum is infused through the device as you stamp, rather than being applied separately and hoping it absorbs.</strong></li></ol>"
+          }
+        },
+        "accordion_eC8zDT": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How much does each treatment really cost compared to getting microneedling done at a clinic?",
+            "text": "<p>A single professional microneedling session typically costs $300 or more, and a full course usually requires several visits. With the Micro-Infusion System, each at-home treatment works out to roughly $20, with the starter bundle priced at $119 and additional savings available through the Subscribe & Save option.&nbsp;</p><p>You also save the time and travel of clinic appointments, and interest-free installment options (Klarna, Sezzle, Afterpay, Flex) are available at checkout. Keep in mind that an at-home 0.5 mm system is a cosmetic treatment focused on the skin's surface appearance - it's a convenient, affordable complement to professional care rather than a medical procedure.</p>"
+          }
+        },
+        "accordion_EgydNy": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What exactly comes in the box, and what will I need to keep buying afterwards?",
+            "text": "<p>Your kit includes sterile single-use needle heads, your choice of serum vials (Brightening or Rejuvenating), and a detailed user guide that walks you through setup and treatment step by step.&nbsp;</p><p>Because each needle head is designed to be used once and then disposed of for hygiene reasons, you'll need fresh needle heads and serum vials for future treatments - that's what the refill bundles and the Subscribe & Save plan cover.&nbsp;</p><p>At the recommended pace of one treatment every 2 weeks, a monthly bundle keeps you supplied without over-ordering, and the subscription can be cancelled anytime.</p>"
+          }
+        },
+        "accordion_cM7FCp": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How do I choose between the Brightening serum and the Rejuvenating serum?",
+            "text": "<p>Choose based on your primary concern.&nbsp;</p><p>The Brightening serum is built around tranexamic acid and niacinamide, which target the look of hyperpigmentation, sun spots, and uneven tone - pick this one if discoloration bothers you more than lines.&nbsp;</p><p>The Rejuvenating serum leans on beta-glucan and sodium hyaluronate to deeply hydrate and visibly plump the skin, softening the look of fine lines - pick this one if your main goals are smoothing and firmness.&nbsp;</p><p>Both are vegan, cruelty-free, fragrance-free, and formulated on a soothing thermal water base suitable for sensitive skin. And you don't have to commit forever: you can alternate serums between treatments.</p>"
+          }
+        },
+        "accordion_pXR9A3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will my face be red afterwards? Can I do this before work or a big event?",
+            "text": "<p>Mild redness right after a treatment is normal and expected - it's a sign the micro-channels have been created - and for most users it settles within hours. That's why we recommend treating at night before bed: you sleep while the serum absorbs and wake up with the redness typically gone.&nbsp;</p><p>You should avoid direct sun and makeup for 24 hours after treatment, so don't do a session the morning of an important meeting or event. Instead, plan it 1-2 days beforehand - many users find that's exactly when the fresh, glowy look peaks.</p>"
+          }
+        },
+        "accordion_fJbwQG": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Who should avoid this treatment, and can I use it alongside retinol or other strong actives?",
+            "text": "<p>Skip Micro-Infusion on skin that is actively broken out, irritated, sunburned, or has open wounds, and wait until the skin has fully calmed before treating that area. On treatment night, keep the rest of your routine simple: pause strong actives like retinoids and exfoliating acids for 24-48 hours before and after the treatment, since the micro-channels temporarily increase absorption and these ingredients can sting or irritate freshly treated skin.</p><p>If you are pregnant or nursing, please do not use this product.<br/><br/>If you have a diagnosed skin condition, are under a dermatologist's care, or are using prescription skincare, check with your doctor before starting. When in doubt, consult your doctor or healthcare professional before starting this treatment.</p>"
+          }
+        },
+        "accordion_TR3Tag": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I've never done anything like this before - is it hard to mess up at home?",
+            "text": "<p>The system is designed specifically for first-timers, and a full session takes about 5 minutes. The process is simple: cleanse your face, attach a sterile needle head to the serum vial and let it soak for 1-2 minutes, then gently stamp across your skin section by section with light pressure - the device's stamping design controls the depth for you, so there's no technique to master the way there is with rolling tools.&nbsp;</p><p>The main rules to remember are: use light pressure, do only one gentle pass around the eyes, never reuse a needle head, and stick to the every-2-weeks schedule. The included user guide covers everything step by step, and the Qure app can help you customize your treatments.</p>"
+          }
+        },
+        "accordion_3ApVAH": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use Micro-Infusion if I have facial hair or a beard?",
+            "text": "<p>Yes. Micro-Infusion should be performed directly on clean, exposed skin. Short stubble is generally fine, as long as the device can make full contact with the skin.<br/><br/>For longer or denser facial hair, we recommend trimming or shaving the treatment area beforehand for easier, more even coverage. If you prefer not to shave, treat only areas where the skin can be clearly exposed and the device can make direct contact.</p>"
+          }
+        },
+        "accordion_EQPkbQ": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is the 90-day money-back guarantee?",
+            "text": "<p>We're confident you'll love your results. If after 90 days of consistent use you don't notice any improvement in your skin - firmer, brighter, or more youthful-looking - simply contact us and we'll refund your money in full. To qualify, you'll need to submit before-and-after photos taken after each 2-week treatment within the 90-day period.&nbsp;</p><p><strong>In practice, that means taking a quick photo roughly every two weeks as you go - a good habit anyway, since gradual changes are much easier to see in photos than in the mirror.</strong></p>"
           }
         },
         "accordion_10": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Tranexamic Acid Notice",
             "text": "<p>If you live in Australia, you may receive a notice from Border Force regarding tranexamic acid (TXA) in your order. Here’s what you need to know:</p><p>In Australia, TXA is classified as a Schedule 4 (prescription-only) drug only when used orally or by injection for treating melasma or other medical conditions. However, <strong>topical TXA in cosmetic formulations is permitted.</strong></p><p>Our serums are purely for cosmetic use and do not claim to treat medical conditions. They are applied topically (not injected) and are classified as a cosmetic product rather than a prescription medicine.</p><p>Our products are compliant with Australian regulations. Facial serums containing up to 3% TXA for cosmetic purposes are not classified as prescription-only medicines and do not require inclusion in the Australian Register of Therapeutic Goods (ARTG).</p><p>If Border Force requires clarification, you can provide the information above to confirm that the product complies with Australian regulations. If further details are needed, they can refer to the Therapeutic Goods Administration (TGA) guidelines on cosmetic formulations.</p><p>If you need further assistance, feel free to <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"Contact support\">contact our support team</a> — we’re happy to help!</p>"
@@ -1017,11 +1081,20 @@
         "accordion_2",
         "accordion_3",
         "accordion_4",
+        "accordion_EtUAfq",
         "accordion_5",
         "accordion_6",
         "accordion_7",
         "accordion_8",
         "accordion_9",
+        "accordion_eC8zDT",
+        "accordion_EgydNy",
+        "accordion_cM7FCp",
+        "accordion_pXR9A3",
+        "accordion_fJbwQG",
+        "accordion_TR3Tag",
+        "accordion_3ApVAH",
+        "accordion_EQPkbQ",
         "accordion_10"
       ],
       "name": "t:sections.n_faq.name",
