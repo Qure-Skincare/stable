@@ -129,6 +129,21 @@
             "product_title": "All In One Serum"
           }
         },
+        "slider_JA8YJN": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Claudia.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Claudia M.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<p><strong>Recommend to everyone</strong></p><p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
+            "product_url": "https://qureskincare.com/products/neck-decolletage-led",
+            "product_image": "shopify://shop_images/Neck-Decolletage-LED-Device_box-render.png",
+            "product_text": "Claudia uses..",
+            "product_title": " Neck & Décolletage LED System"
+          }
+        },
         "slider_ea3hLd": {
           "type": "slider",
           "settings": {
@@ -149,6 +164,7 @@
         "slider_iCfR9d",
         "slider_xqHC8P",
         "slider_HzbCJW",
+        "slider_JA8YJN",
         "slider_ea3hLd"
       ],
       "name": "t:sections.n_trusted-reviews.name",
