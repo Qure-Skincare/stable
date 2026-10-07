@@ -59,7 +59,7 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
-        "rating_type": "dermatologists",
+        "rating_type": "trustpilot",
         "limited": false,
         "description": "<ul><li>Helps reduce the appearance of fine lines and uneven skin tone, for smoother-, firmer-looking skin.</li><li>Save money buying multiple skincare products to treat various concerns.</li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vitamin C, Vitamin E, Ferulic Acid.</li></ul>",
         "reserved": false,
@@ -852,6 +852,7 @@
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
         "quote": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -961,7 +962,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
