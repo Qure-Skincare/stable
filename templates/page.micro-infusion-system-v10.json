@@ -198,7 +198,7 @@
             "discount_code": "WELCOMEFREE,EXTRAOFF",
             "optional_subscription": false,
             "popular": false,
-            "best": false,
+            "best": true,
             "free_shipping": true,
             "preselected": true,
             "heading": "3 Month Supply",
