@@ -1,0 +1,19 @@
+{%- comment -%}
+  Qure AI skincare advisor: loader for the chat widget and its silent add-to-cart.
+  Render once from layout/theme.liquid, in <head> or before </body>:  {% render 'ai-advisor' %}
+
+  The widget comes from https://widget.qureskincare.dev. The optional text setting
+  `ai_advisor_origin` points it elsewhere, e.g. http://127.0.0.1:3001 for a local server.
+{%- endcomment -%}
+{%- liquid
+  assign advisor_origin = settings.ai_advisor_origin | strip | default: 'https://widget.qureskincare.dev'
+  assign last_char = advisor_origin | slice: -1
+  if last_char == '/'
+    assign cut = advisor_origin | size | minus: 1
+    assign advisor_origin = advisor_origin | slice: 0, cut
+  endif
+-%}
+{%- unless request.design_mode or template.name == 'password' -%}
+  <script src="{{ 'ai-advisor-cart.js' | asset_url }}" defer></script>
+  <script src="{{ advisor_origin }}/widget.js" data-country="{{ localization.country.iso_code }}" defer></script>
+{%- endunless -%}

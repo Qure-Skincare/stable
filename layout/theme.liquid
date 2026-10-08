@@ -88,6 +88,8 @@
         {% include '__sapp-include' %}
         {% render '__sapp-web-vitals' %}
     {%- endunless -%}
+
+    {% comment %} {% include 'ai-advisor' %} {% endcomment %}
   </head>
 
   <body class="{{ template | downcase }}">
