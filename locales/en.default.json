@@ -911,7 +911,7 @@
         "recurring_subtotal_label": "Our Guarantee"
       },
       "subscriptions": {
-        "recurring_totals": "."
+        "recurring_totals": " "
       }
     }
   }
