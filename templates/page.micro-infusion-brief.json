@@ -15,8 +15,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Micro-Infusion Creative Content Guide</h1>",
         "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/mi__banner.webp",
         "image_mobile": "shopify://shop_images/mi_banner--mob.webp",
         "button_label": "",
@@ -396,7 +399,7 @@
         "text_slider_N4pjRB": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Why Didn't I Try This Sooner?</strong></p><p>Cost-effective alternative to in-clinic treatments. Highlight ease, convenience, and noticeable results.</p><p>[note_grey]<strong>Hook:</strong>“I spent $$$ on facials—then I found this at-home tool that changed everything.”[/note]</p>"
+            "text": "<p><strong>Talk about saving money compared to in clinic treatments.</strong></p><ul><li>Show how Qure can cost less than regular in clinic treatments.</li><li>Compare the money spent on treatments with an at home skincare routine</li><li>Show treatment receipts, appointments, expensive products, or a side by side cost comparison</li></ul><p>[note_grey]<strong>Hook:</strong>“I used to spend so much on treatments. Now I do this at home.”[/note]</p>"
           }
         },
         "text_slider_PWphPp": {
@@ -529,6 +532,7 @@
         "heading": "<h2>Trusted and Recommended by Experts</h2>",
         "text": "<p>“This treatment is an <em>at-home</em> option for those who want to <em>avoid the hassle or cost of going to the office</em>.”</p>",
         "video_image_cover": "shopify://shop_images/doctor_shah_desk.webp",
+        "text_on_image": "",
         "wistia_url": false,
         "video_url": "https://www.youtube.com/watch?v=mVdncsTAXiA",
         "badge_text": "Dermatologist Reviewed"
