@@ -125,6 +125,7 @@
         },
         "dynamic_params_bcWr1n": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "wrinkles",
             "heading": "Your Micro Infusion System™ for wrinkles",
@@ -133,6 +134,7 @@
         },
         "dynamic_params_bcFn2l": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "fine-lines",
             "heading": "Your Micro Infusion System™ for fine lines",
@@ -141,6 +143,7 @@
         },
         "dynamic_params_bcSg3k": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "saggy-skin",
             "heading": "Your Micro Infusion System™ for sagging skin",
@@ -149,6 +152,7 @@
         },
         "dynamic_params_bcCr4p": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "crepe-skin",
             "heading": "Your Micro Infusion System™ for crepey skin",
@@ -157,6 +161,7 @@
         },
         "dynamic_params_bcDs5t": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "dark-spots",
             "heading": "Your Micro Infusion System™ for dark spots",
@@ -165,6 +170,7 @@
         },
         "dynamic_params_bcPt6y": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "patchy-skin",
             "heading": "Your Micro Infusion System™ for patchy skin",
@@ -173,6 +179,7 @@
         },
         "dynamic_params_bcFb7k": {
           "type": "dynamic-params",
+          "disabled": true,
           "settings": {
             "key": "*",
             "heading": "The Micro Infusion System™",
