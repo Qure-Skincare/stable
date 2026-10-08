@@ -905,6 +905,9 @@
         "purchase_options_subscription_agreement_label": "This order includes an auto-renewing subscription. You'll be charged the recurring amount shown until cancelled. Cancel anytime in your account or by contacting us.",
         "purchase_options_subscription_consent_text": "You'll be charged the recurring amount shown until cancelled. Cancel anytime in your account or by contacting us. See {{ subscription_policy }}.",
         "purchase_options_subscription_cancellation_instructions": "See {{ subscription_policy }}."
+      },
+      "order_summary": {
+        "recurring_total_tooltip": "If you don't love Qure, we’ll refund your order anytime within the first 30 days"
       }
     }
   }
