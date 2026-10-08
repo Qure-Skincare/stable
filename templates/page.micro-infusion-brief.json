@@ -399,7 +399,7 @@
         "text_slider_N4pjRB": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Talk about saving money compared to in clinic treatments.</strong></p><ul><li>Show how Qure can cost less than regular in clinic treatments.</li><li>Compare the money spent on treatments with an at home skincare routine</li><li>Show treatment receipts, appointments, expensive products, or a side by side cost comparison</li></ul><p>[note_grey]<strong>Hook:</strong>“I used to spend so much on treatments. Now I do this at home.”[/note]</p>"
+            "text": "<p><strong>Talk about saving money compared to in clinic treatments.</strong></p><ul><li>Show how Qure can cost less than regular in clinic treatments.</li><li>Compare the money spent on treatments with an at home skincare routine</li><li>Show treatment receipts, appointments, expensive products, or a side by side cost comparison</li></ul><p>[note_grey]<strong>Hook:</strong>“I used to spend so much on treatments. Now I do this at home.”</p><p>Show the price difference on screen[/note]</p>"
           }
         },
         "text_slider_PWphPp": {
@@ -411,19 +411,25 @@
         "text_slider_CwbFGJ": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Does It Hurt?</strong></p><p>Although it sounds intimidating, micro-infusion uses ultra-fine, gold-plated needles that gently create tiny, micro-channels— enhancing serum absorption and it feels like velcro.</p><p>[note_grey]<strong>Hook:</strong>“Stabbing your face with needles! Sounds terrifying, but here is a reason why you might want to do this.”[/note]</p>"
+            "text": "<p><strong>Skepticism</strong></p><ul><li>Start with a real doubt or concern.</li></ul><p>[note_grey]<strong>Hook:</strong>“I thought this was just another TikTok skincare trend.”<br/><br/>Then explain what changed your mind. Show your routine and why you now use it[/note]</p>"
           }
         },
         "text_slider_QNEici": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>What Skincare Feels Like When It Actually Absorbs</strong></p><p>Highlight enhanced absorption, micro-channel delivery, and ingredient efficacy.</p><p>[note_grey]<strong>Hook:</strong>“Here's why your anti-aging creams are disappointing you...”"
+            "text": "<p><strong>Use quick 3 reasons videos</strong></p><p>[note_grey]<strong>Hook:</strong>“3 reasons women over 40 love this routine”<br/>“3 reasons I stopped booking expensive treatments”<br/>“3 things I wish I knew about fine lines sooner”[/note]</p>"
           }
         },
         "text_slider_ztbtYC": {
           "type": "text_slider",
           "settings": {
-            "text": "<p><strong>Stubborn Dark Spots?</strong></p><p>Topical creams often sit on the surface, but micro-infusion delivers brightening ingredients beneath the skin barrier—helping to fade stubborn dark spots more effectively by targeting them at the source.</p><p>[note_grey]<strong>Hook:</strong>“Have dark marks like this that won't seem to fade with creams? Here's what you need to know”[/note]</p>"
+            "text": "<p><strong>Answer common questions</strong></p><ul><li>Focus on one question per video</li></ul><p>[note_grey]<strong>Hook:</strong>“Is it safe for sensitive skin?”<br/>“Does it hurt?”<br/>“Is it worth the money?”<br/>“Will this work if I already use retinol?”<br/><br/>Put the question on screen, then answer it directly[/note]</p>"
+          }
+        },
+        "text_slider_GGUdxP": {
+          "type": "text_slider",
+          "settings": {
+            "text": "<p><strong>Try half face experiments</strong></p><ul><li>Treat one side of your face and use the other side as the comparison</li><li>Use the same lighting and close up shots</li><li>This works well for glow, texture, fine lines, or firmness</li><li>Start by showing the split face straight away</li></ul>"
           }
         }
       },
@@ -432,7 +438,8 @@
         "text_slider_PWphPp",
         "text_slider_CwbFGJ",
         "text_slider_QNEici",
-        "text_slider_ztbtYC"
+        "text_slider_ztbtYC",
+        "text_slider_GGUdxP"
       ],
       "name": "t:sections.n_guide-content.name",
       "settings": {
