@@ -29,7 +29,8 @@
         {% endif %}
     {% endfor %}
 {% elsif section.settings.rating_type == 'trustpilot' %}
-    {{ description | default: section.settings.description }}
+    {% assign _tp_description = description | default: section.settings.description %}
+    {% render 'n-product-description', description: _tp_description %}
 
     {% if section.settings.rating != blank %}
         {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}

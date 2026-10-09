@@ -59,7 +59,9 @@
 
             {% render 'n-product-page-trustpilot', section: section, product: product, description: dp_description %}
 
+            {% assign skip_hero_blocks = false %}
             {% if section.settings.rating_type == 'trustpilot' %}
+                {% assign skip_hero_blocks = true %}
                 {% render 'n-product-dynamic-params', section: section, blocks: dp_blocks %}
             {% endif %}
 

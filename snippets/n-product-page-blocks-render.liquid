@@ -18,7 +18,7 @@
         {% when 'badge' %}
             {% render 'n-product-badge', block: block %}
         {% when 'description' %}
-            {% unless section.settings.rating_type == 'trustpilot' %}
+            {% unless skip_hero_blocks %}
                 {% assign _description = dp_description | default: section.settings.description %}
                 {% render 'n-product-description', description: _description %}
             {% endunless %}
@@ -79,7 +79,7 @@
         {% when 'link' %}
             {% render 'n-page-link-button', section: section %}
         {% when 'money-back' %}
-            {% unless section.settings.rating_type == 'trustpilot' %}
+            {% unless skip_hero_blocks %}
                 {% render 'n-product-money-back', section: section, block: block %}
             {% endunless %}
         {% endcase %}
