@@ -1054,7 +1054,7 @@
             "gift_text": "",
             "discount_code": "WELCOMEFREE",
             "free_shipping": true,
-            "per_treatment": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
