@@ -42,7 +42,7 @@
           "type": "icon_with_text",
           "settings": {
             "icon": "balances",
-            "text": "Improves the look of fine lines and dark spots"
+            "text": "Helps refine skin texture for smoother-looking skin and visibly softer scars"
           }
         },
         "icon_with_text_ra4igR": {
@@ -150,13 +150,13 @@
         "secondary": false,
         "background": false,
         "seo_heading": "",
-        "heading": "Your Micro Infusion System™ for fine lines",
+        "heading": "Refresh your skin and visibly smooth the look of acne scars",
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
         "rating_type": "trustpilot",
         "limited": false,
-        "description": "<p>Based on your answers, we recommend the Micro Infusion System to visibly smooth the look of your fine lines. See results in just a few easy at-home applications or get your money back!*</p>",
+        "description": "<ul><li>With consistent use, skin looks smoother and marks appear less visible - with most users noticing visible improvement after a few sessions</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -283,10 +283,12 @@
         },
         "type_j1K2lM": {
           "type": "type",
+          "disabled": true,
           "settings": {}
         },
         "product_type_n3O4pQ": {
           "type": "product_type",
+          "disabled": true,
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
@@ -295,6 +297,7 @@
         },
         "product_v7W8xY": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -326,6 +329,7 @@
         },
         "product_z9A0bC": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -535,22 +539,22 @@
     "n_progress_showcase_v5": {
       "type": "n_progress-showcase",
       "blocks": {
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-2.webp",
+            "badge": "Dark Spots & Acne",
+            "percent_value": 90,
+            "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
         "slide_1": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/progress-showcase-1.webp",
             "badge": "Fine Lines and Wrinkles",
             "percent_value": 70,
-            "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
-            "disclaimer": "Based on a user study of 30 participants aged 25-65"
-          }
-        },
-        "slide_2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/progress-showcase-2.webp",
-            "badge": "Dark Spots",
-            "percent_value": 90,
             "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
             "disclaimer": "Based on a user study of 30 participants aged 25-65"
           }
@@ -577,8 +581,8 @@
         }
       },
       "block_order": [
-        "slide_1",
         "slide_2",
+        "slide_1",
         "slide_3",
         "slide_4"
       ],

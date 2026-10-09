@@ -87,7 +87,7 @@
             "panel": "shop_bestsellers",
             "heading": "Shop Products",
             "button_label": "Shop all",
-            "button_url": "https://qureskincare.com/collections/best-sellers"
+            "button_url": "https://qureskincare.com/collections/all-products"
           },
           "blocks": {
             "bestsellers_cards": {
@@ -127,7 +127,7 @@
                     "label": "",
                     "badge": "Multi-Light Therapy",
                     "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
-                    "image": "shopify://shop_images/header-promo-card-image-3.webp",
+                    "image": "shopify://shop_images/LED_mask_b3be69d9-166f-4b1d-b5c1-f5252ced4789.png",
                     "image_style": "product",
                     "hide_on_mobile": false
                   },

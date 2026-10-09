@@ -18,7 +18,10 @@
         },
         "link_iPBNaS": {
           "type": "link",
-          "settings": {}
+          "settings": {
+            "hide_bottom": true,
+            "guarantee_period": "30"
+          }
         },
         "description_iSDNaK": {
           "type": "description",
@@ -81,9 +84,17 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "section_id": "hero-product",
+        "product": "",
+        "reverse": false,
+        "secondary": false,
+        "background": false,
         "seo_heading": "",
         "heading": "Refresh your skin and visibly smooth the look of acne scars",
+        "badge_text": "",
+        "heading_level": "h1",
         "rating": false,
+        "rating_type": "customers",
         "limited": false,
         "description": "<ul><li>Helps refine skin texture for smoother-looking skin and visibly softer scars</li><li>Easy 5-minute treatment that supports skin renewal for a more even-toned complexion</li><li>With consistent use, skin looks smoother and marks appear less visible — with most users noticing visible improvement after a few sessions</li></ul>",
         "reserved": false,
@@ -125,7 +136,9 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
         "settings": "\"spaceBetween\": 80"
       }
     },
@@ -157,11 +170,13 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Qure’s Micro-Infusion goes where your skin cream can’t…</h2>",
-        "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help <em>improve the feel of firmness</em>, smooth texture, and <em><strong>reduce the look of fine lines</strong></em> and wrinkles.</p>",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "text": "<p>Its tiny, almost painless, 24K gold-plated, EO-sterilized (ethylene oxide) 0.5 mm microneedles gently press onto the skin’s surface to help&nbsp;<em>improve the feel of firmness</em>, smooth texture, and&nbsp;<em><strong>reduce the look of fine lines</strong></em> and wrinkles.</p>",
+        "button_label": "BUY NOW & SAVE UP TO 62%",
         "button_url": "#purchase-form",
-        "wistia_url": "a1pykz2tp0"
+        "wistia_url": "a1pykz2tp0",
+        "accordion_text": ""
       }
     },
     "n_highlight_9YPFUJ": {
@@ -217,7 +232,7 @@
         "buy_button_GrUCRT": {
           "type": "buy_button",
           "settings": {
-            "button_label": "BUY NOW & SAVE UP TO 70%",
+            "button_label": "BUY NOW & SAVE UP TO 62%",
             "button_url": "#purchase-form"
           }
         }
@@ -236,11 +251,14 @@
         "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Introducing the Qure Micro-Infusion System</h2>",
-        "text": "<p>[note_grey]“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”[/note]</p><p>[marked_list]</p><ul><li>Visibly improves the appearance of <strong>acne scars</strong> and smooths texture</li><li>Wake up with <strong>radiant, more even-toned</strong> skin</li><li>Minimal to no downtime, and <strong>virtually painless</strong></li><li>Easy to use <strong>5-minute</strong> treatment</li></ul>",
+        "text": "<p>[note_grey]“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”[/note]</p><p>[marked_list]</p><ul><li>Visibly improves the appearance of&nbsp;<strong>acne scars</strong>&nbsp;and smooths texture</li><li>Wake up with&nbsp;<strong>radiant, more even-toned</strong>&nbsp;skin</li><li>Minimal to no downtime, and&nbsp;<strong>virtually painless</strong></li><li>Easy to use&nbsp;<strong>5-minute</strong>&nbsp;treatment</li></ul>",
         "image": "shopify://shop_images/mi_serum-show.webp",
         "button_label": "",
-        "wistia_url": ""
+        "button_url": "",
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_achievement_goals_RNWFFC": {
@@ -415,12 +433,14 @@
         "modifier": "reverse",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Dual action for twice the results</h2>",
         "text": "<p>Qure’s Micro-Infusion System has a one-two punch, making it uniquely effective.</p><p></p><p>[step]</p><ul><li>First, it uses tiny 24K gold-plated, EO-sterilized needles (thinner than a hair) to gently press against your skin. This helps visibly smooth and refine the look of fine lines.</li><li>Next, it delivers serum through the tiny surface channels created, helping your skin better absorb the ingredients.</li></ul><p></p><p>Perfect for anyone wanting to add a fresh, dewy, glowing look to their skin, especially before an event or occasion.</p>",
         "image": "shopify://shop_images/dual_action-women.webp",
         "button_label": "",
         "button_url": "",
-        "wistia_url": ""
+        "wistia_url": "",
+        "accordion_text": ""
       }
     },
     "n_why_using_cj4RFv": {
@@ -474,7 +494,7 @@
         "use_own_file": false,
         "modifier": "bg",
         "text": "<h2>5 reasons why everyone is using the Qure Micro-Infusion System</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 62%",
         "button_url": "#purchase-form"
       }
     },
@@ -560,6 +580,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Chelsea J.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Amazing results!</strong></p><p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"</p>",
             "product_url": "",
             "product_text": "",
@@ -573,6 +594,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Mona P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Fade after just two treatments</strong></p><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
             "product_url": "",
             "product_text": "",
@@ -586,6 +608,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Akina M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>It really works!!</strong></p><p>“I used three time so far. I can see the results from first time I used. I love this product but only thing is it’s take time to apply till used all serum per application. I tried many different way to press to my skin so the serum come out more but then a lot of time not.”</p>",
             "product_url": "",
             "product_text": "",
@@ -599,6 +622,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ela O.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Shocked at the results</strong></p><p>“Shocked at the results after just one treatment!<br />I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment! Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
             "product_url": "",
             "product_text": "",
@@ -612,6 +636,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Jess.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>It really works!!</strong></p><p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
             "product_url": "",
             "product_text": "",
@@ -625,6 +650,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "",
             "product_text": "",
@@ -638,6 +664,7 @@
             "flag": "shopify://shop_images/england_f.webp",
             "username": "Priya P.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<p><strong>Plumper, more hydrated!</strong></p><p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
             "product_url": "",
             "product_text": "",
@@ -658,8 +685,12 @@
       "settings": {
         "use_own_file": false,
         "background_color": "none",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 62%",
         "button_url": "#purchase-form"
       }
     },
@@ -870,6 +901,7 @@
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h2>Get a professional-inspired glow from home without the clinic visit</h2>"
       }
     },
@@ -914,7 +946,7 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "ptw4q3aod8",
-        "button_label": "buy now & SAVE UP TO 70%",
+        "button_label": "buy now & SAVE UP TO 62%",
         "button_url": "#purchase-form"
       }
     },
@@ -955,10 +987,11 @@
       "settings": {
         "use_own_file": false,
         "modifier": "single",
+        "section_id": "",
         "text": "",
         "text_mobile": "<h2>Science-Backed Micro-Infusion Serums</h2><p>Choose the exact serum to use in your Micro-Infusion treatment, or get both and mix them together to experience a complete set of benefits that addresses your specific skin concerns.</p>",
         "image": "shopify://shop_images/serums-lady.webp",
-        "left_heading": "<h3>Rejuvenating Serum</h3><p>For Dark Spots</p>",
+        "left_heading": "<h3>Brightening Serum</h3><p>For Dark Spots</p>",
         "right_heading": "",
         "left_image": "shopify://shop_images/Dark_Spots_7.png"
       }
@@ -987,12 +1020,14 @@
         },
         "payment_type_3zQTmH": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Pay_Icons.svg"
           }
@@ -1004,38 +1039,28 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": false
-          }
-        },
-        "product_DBd4ef": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "preselected": true,
-            "heading": "6 Month Supply Promo",
-            "subheading": "(12 Treatments)",
-            "image": "shopify://shop_images/MI_6_month_DS.webp",
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 115,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+            "preselected": true
           }
         },
         "product_7dL4ci": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779399407,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
+            "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
@@ -1051,11 +1076,20 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779432175,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": false,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "Ships every 1 months",
             "image": "shopify://shop_images/MI_1_month_DS.webp",
-            "soldout": false,
+            "product_discount_percent": 17,
+            "soldout": true,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -1064,6 +1098,35 @@
             "preorder_date_reserved": "",
             "preorder_percent": 55,
             "included_text": "<ul><li>6 clinically formulated 4ml serums to treat your specific skin concerns (valued at $375)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
+          }
+        },
+        "product_DBd4ef": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply Promo",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "image": "shopify://shop_images/MI_6_month_DS.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 115,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": "<ul><li>12 clinically formulated 4ml serums to treat your specific skin concerns (valued at $719)</li><li>US shipping (valued at $25)</li><li>Risk-free 90 days money-back guarantee to trial</li></ul>"
           }
         },
         "type_aJwQ9q": {
@@ -1083,9 +1146,18 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": true,
             "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
@@ -1101,9 +1173,18 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
@@ -1119,9 +1200,18 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -1150,9 +1240,18 @@
           "type": "product",
           "settings": {
             "product": "microinfusion-offer-6-month-supply",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": true,
             "heading": "6 Month Supply  End Of Summer Sale",
             "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
@@ -1168,9 +1267,18 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-2-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "total_treatments": 6,
@@ -1186,9 +1294,18 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -1207,9 +1324,9 @@
         "payment_type_B6Pzbh",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_DBd4ef",
         "product_7dL4ci",
         "product_Xf8A6C",
+        "product_DBd4ef",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_nyJ9n7",
@@ -1225,9 +1342,15 @@
         "type": "list",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
-        "image": "shopify://shop_images/tami-cropped.webp",
+        "image": "shopify://shop_images/Image-1_converted.webp",
         "klaviyo_form_name": "",
-        "form_name": "purchase-form-second"
+        "form_name": "purchase-form-second",
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 62,
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",
+        "guarantee_period": "90",
+        "available-stocks": false
       }
     },
     "n_should_know_TVdVVw": {
@@ -1341,7 +1464,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
@@ -1354,7 +1481,7 @@
         "heading": "Micro-Infusion Facial System",
         "text": "393 purchased in last 48 hours",
         "limited": false,
-        "button-label": "BUY NOW & SAVE UP TO 70%",
+        "button-label": "BUY NOW & SAVE UP TO 62%",
         "button-url": "#purchase-form"
       }
     }
