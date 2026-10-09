@@ -1344,10 +1344,10 @@
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form-second",
-        "subscription_product": "false",
+        "subscription_product": "true",
         "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "header",
-        "delivery_switcher_product": "",
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-3-month-bundle-for-dark-spots",
         "guarantee_period": "30",
         "available-stocks": false
       }
