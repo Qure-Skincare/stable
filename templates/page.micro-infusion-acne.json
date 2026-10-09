@@ -1342,7 +1342,7 @@
         "type": "list",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
-        "image": "shopify://shop_images/tami-cropped.webp",
+        "image": "shopify://shop_images/Image-1_converted.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form-second",
         "subscription_product": "true",
