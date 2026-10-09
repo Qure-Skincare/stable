@@ -22,6 +22,17 @@
                 <input type="hidden" name="quantity" id="quantity" value="1">
                 <input type="hidden" name="id" value="{{ product_variant_id }}">
                 <input type="hidden" name="properties[_source]" value="slide_cart_upsell">
+                {% if ql_arm != blank %}
+                    <input type="hidden" name="properties[_ql_arm]" value="{{ ql_arm | escape }}">
+                    <input type="hidden" name="properties[_ql_seg]" value="{% if localization.country.iso_code == 'US' %}us{% else %}row{% endif %}">
+                {% endif %}
+                {% if ql_pos != blank %}
+                    <input type="hidden" name="properties[_ql_pos]" value="{{ ql_pos }}">
+                {% endif %}
+                {% if ql_anchor != blank %}
+                    <input type="hidden" name="properties[_ql_anchor]" value="{{ ql_anchor }}">
+                    <input type="hidden" name="properties[_ql_lv]" value="{{ ql_lv | escape }}">
+                {% endif %}
             </form>
         </div>
     {% endif %}

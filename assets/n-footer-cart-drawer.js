@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     bindForms();
+    qlSyncArm();
 });
 
 document.addEventListener('cart.requestComplete', (event) => {
@@ -74,6 +75,10 @@ const reloadDrawer = async (detail) => {
     bindForms();
 
     loadScriptOnce('footer-cart-drawer-swiper', 'https://qureskincaredns-stable.com/assets/js/swiper.js');
+
+    // Carts filled by other scripts (bundles, native form posts) never went
+    // through qlEnsureArm.
+    await qlSyncArm();
 };
 
 const refreshDrawer = () => {
@@ -224,6 +229,47 @@ const setLoading = (state, adding = false) => {
     if (!content) return;
     content.classList.toggle('is-loading', state);
     content.classList.toggle('is-adding', state && adding);
+};
+
+
+
+/*  dynamic upsells A/B arm  */
+
+// The <head> script puts every visitor in an arm (window.QL.arm). The arm has
+// to sit on the cart as the `_ql_arm` attribute: Liquid reads it to choose the
+// upsell list, and Shopify copies it onto the order for QureLab.
+const qlNeedsArm = () => {
+    const arm = window.QL && window.QL.arm;
+    const content = document.getElementById('cart-dynamic-content');
+    return Boolean(arm && content && content.dataset.qlArm !== arm);
+};
+
+// Before an add: stamp the cart first, so the drawer rendered by the add
+// already shows the right list. Fails open — an unstamped cart shows the
+// regular upsells and its order stays outside the test.
+const qlEnsureArm = async () => {
+    if (!qlNeedsArm()) return;
+    try {
+        await cartPost('cart/update.js', { attributes: { _ql_arm: window.QL.arm } });
+        document.getElementById('cart-dynamic-content').dataset.qlArm = window.QL.arm;
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+// For a cart that already has items but no (or an outdated) arm: stamp it and
+// re-render the drawer.
+const qlSyncArm = async () => {
+    if (!qlNeedsArm() || !document.querySelector('#cart-dynamic-content .flyout-cart__list')) return;
+    try {
+        const res = await cartPost('cart/update.js', withSections({ attributes: { _ql_arm: window.QL.arm } }));
+        if (res.sections && res.sections[SECTION_ID]) {
+            await applySections(res.sections);
+            bindForms();
+        }
+    } catch (error) {
+        console.error(error);
+    }
 };
 
 
@@ -426,6 +472,7 @@ const addToCart = async (input) => {
     setLoading(true, true);
 
     try {
+        await qlEnsureArm();
         const added = await cartPost('cart/add.js', withSections(input));
         earlyPaint(added.sections);
 
@@ -498,6 +545,7 @@ const addToCartJson = async (input) => {
     setLoading(true, true);
 
     try {
+        await qlEnsureArm();
         const added = await cartPost('cart/add.js', withSections({ items: input }));
         earlyPaint(added.sections);
 

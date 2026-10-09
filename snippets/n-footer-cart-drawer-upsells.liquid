@@ -5,16 +5,41 @@
   {% include 'n-footer-cart-drawer-upsells' %}
 {% enddoc %}
 
+{%- liquid
+  comment
+    Dynamic upsells A/B. The visitor's arm sits on the cart as the `_ql_arm`
+    attribute ("<experiment>:c" or "<experiment>:t"), written by
+    n-footer-cart-drawer.js. Only the test arm in "ab" mode gets the QureLab
+    list; everyone else gets the products from the theme settings.
+  endcomment
+  assign ql_arm = ''
+  assign ql_dynamic = false
+  assign ql_anchor = ''
+  assign ql_pos = ''
+  assign ql_lv = ''
+  if settings.dynamic_upsells_mode == 'aa' or settings.dynamic_upsells_mode == 'ab'
+    assign ql_arm = cart.attributes['_ql_arm'] | default: ''
+    assign ql_test_arm = settings.dynamic_upsells_experiment | default: 'du1' | append: ':t'
+    if settings.dynamic_upsells_mode == 'ab' and ql_arm == ql_test_arm
+      assign ql_dynamic = true
+    endif
+  endif
+-%}
+
 <div class="flyout-cart__upsells">
     <p>{{ 'cart.drawer.upsell.header' | t }}</p>
     <div
         class="c-swiper">
         <div class="swiper-wrapper">
-            {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product1_handle %}
-            {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product2_handle %}
-            {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product3_handle %}
-            {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product4_handle %}
-            {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product5_handle %}
+            {% if ql_dynamic %}
+                {% include 'n-footer-cart-drawer-upsells-dynamic' %}
+            {% else %}
+                {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product1_handle %}
+                {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product2_handle %}
+                {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product3_handle %}
+                {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product4_handle %}
+                {% include 'n-footer-cart-drawer-upsells-item', product_handle: global_upsell_product5_handle %}
+            {% endif %}
         </div>
     </div>
 </div>

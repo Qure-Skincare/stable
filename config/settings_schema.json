@@ -182,7 +182,21 @@
       { "type": "product", "id": "cart_upsell2_product", "label": "Product #2" },
       { "type": "product", "id": "cart_upsell3_product", "label": "Product #3" },
       { "type": "product", "id": "cart_upsell4_product", "label": "Product #4" },
-      { "type": "product", "id": "cart_upsell5_product", "label": "Product #5" }
+      { "type": "product", "id": "cart_upsell5_product", "label": "Product #5" },
+      { "type": "header", "content": "Dynamic upsells (QureLab)" },
+      {
+        "type": "select",
+        "id": "dynamic_upsells_mode",
+        "label": "Mode",
+        "options": [
+          { "value": "off", "label": "Off - everyone sees the products above" },
+          { "value": "aa", "label": "Dry run - visitors are split, everyone still sees the products above" },
+          { "value": "ab", "label": "Test - the test group sees QureLab recommendations" }
+        ],
+        "default": "off"
+      },
+      { "type": "text", "id": "dynamic_upsells_experiment", "label": "Experiment id", "default": "du1", "info": "Letters and digits only. Change it to start a fresh split." },
+      { "type": "range", "id": "dynamic_upsells_split", "label": "Share of visitors in the test group", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 }
     ]
   },
   {

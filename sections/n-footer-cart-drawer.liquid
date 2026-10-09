@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ 'n-footer-cart-drawer.css' | asset_url }}">
 
 <dialog class="flyout-cart offcanvas offcanvas-end" id="cartCanvas">
-   <div id="cart-dynamic-content" class="flyout-cart__dynamic">
+   <div id="cart-dynamic-content" class="flyout-cart__dynamic" data-ql-arm="{{ cart.attributes['_ql_arm'] | escape }}">
       {% render 'n-footer-cart-drawer-timer', timer: global_timer %}
       <div class="flyout-cart__wrapper">
          <div class="flyout-cart__header">

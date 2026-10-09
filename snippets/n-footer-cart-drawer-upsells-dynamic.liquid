@@ -1,0 +1,86 @@
+{% doc %}
+  Renders the QureLab ("dynamic upsells") cards for the cart drawer.
+
+  Every product carries a ranked list in `qurelab.dynamic_upsells`. Cart items
+  are walked from the most expensive down: first one offer per item, then the
+  rest of their lists, then the products from the theme settings, until two
+  cards are shown. Skipped: products already in the cart, out of stock, already
+  shown, or of the same category as a cart item.
+
+  @example
+  {% include 'n-footer-cart-drawer-upsells-dynamic' %}
+{% enddoc %}
+
+{%- liquid
+  assign ql_max = 2
+  assign ql_shown = 0
+  assign ql_taken = '|'
+  assign ql_cats = '|'
+  for ql_item in cart.items
+    assign ql_taken = ql_taken | append: ql_item.product_id | append: '|'
+    assign ql_cat = ql_item.product.metafields.qurelab.dynamic_upsells_category.value | default: ql_item.product.handle
+    assign ql_cats = ql_cats | append: ql_cat | append: '|'
+  endfor
+  assign ql_anchors = cart.items | sort: 'final_price' | reverse
+-%}
+
+{%- for ql_pass in (1..2) -%}
+    {%- for ql_a in ql_anchors -%}
+        {%- if ql_shown >= ql_max -%}{%- break -%}{%- endif -%}
+        {%- liquid
+          assign ql_title = ql_a.title | downcase
+          assign ql_skip = false
+          if ql_a.final_price == 0 or ql_a.gift_card or ql_title contains 'shipping insurance'
+            assign ql_skip = true
+          endif
+          if ql_a.properties['_gift'] or ql_a.properties['_product_gift'] or ql_a.properties['_required_validation']
+            assign ql_skip = true
+          endif
+        -%}
+        {%- if ql_skip -%}{%- continue -%}{%- endif -%}
+
+        {%- for ql_r in ql_a.product.metafields.qurelab.dynamic_upsells.value -%}
+            {%- if ql_shown >= ql_max -%}{%- break -%}{%- endif -%}
+            {%- liquid
+              assign ql_id_key = '|' | append: ql_r.id | append: '|'
+              assign ql_r_cat = ql_r.metafields.qurelab.dynamic_upsells_category.value | default: ql_r.handle
+              assign ql_cat_key = '|' | append: ql_r_cat | append: '|'
+            -%}
+            {%- if ql_r.available != true or ql_taken contains ql_id_key or ql_cats contains ql_cat_key -%}{%- continue -%}{%- endif -%}
+
+            {% include 'n-footer-cart-drawer-upsells-item', product_handle: ql_r.handle, ql_anchor: ql_a.product_id, ql_pos: ql_shown, ql_lv: ql_a.product.metafields.qurelab.dynamic_upsells_v.value %}
+
+            {%- liquid
+              assign ql_taken = ql_taken | append: ql_r.id | append: '|'
+              assign ql_cats = ql_cats | append: ql_r_cat | append: '|'
+              assign ql_shown = ql_shown | plus: 1
+            -%}
+            {%- comment -%} First pass: one offer per cart item. {%- endcomment -%}
+            {%- if ql_pass == 1 -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endfor -%}
+
+{%- comment -%} Not enough recommendations: fill up with the theme-settings products. {%- endcomment -%}
+{%- if ql_shown < ql_max -%}
+    {%- capture ql_fallbacks -%}
+        {{- global_upsell_product1_handle }},{{ global_upsell_product2_handle }},{{ global_upsell_product3_handle }},{{ global_upsell_product4_handle }},{{ global_upsell_product5_handle -}}
+    {%- endcapture -%}
+    {%- assign ql_fallbacks = ql_fallbacks | split: ',' -%}
+    {%- for ql_handle in ql_fallbacks -%}
+        {%- if ql_shown >= ql_max -%}{%- break -%}{%- endif -%}
+        {%- if ql_handle == blank -%}{%- continue -%}{%- endif -%}
+        {%- liquid
+          assign ql_p = all_products[ql_handle]
+          assign ql_id_key = '|' | append: ql_p.id | append: '|'
+        -%}
+        {%- if ql_p == blank or ql_p.available != true or ql_taken contains ql_id_key -%}{%- continue -%}{%- endif -%}
+
+        {% include 'n-footer-cart-drawer-upsells-item', product_handle: ql_handle, ql_anchor: '', ql_pos: ql_shown, ql_lv: '' %}
+
+        {%- liquid
+          assign ql_taken = ql_taken | append: ql_p.id | append: '|'
+          assign ql_shown = ql_shown | plus: 1
+        -%}
+    {%- endfor -%}
+{%- endif -%}
