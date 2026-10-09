@@ -232,7 +232,7 @@
         "buy_button_GrUCRT": {
           "type": "buy_button",
           "settings": {
-            "button_label": "BUY NOW & SAVE UP TO 70%",
+            "button_label": "BUY NOW & SAVE UP TO 62%",
             "button_url": "#purchase-form"
           }
         }
@@ -253,7 +253,7 @@
         "background_color": "none",
         "section_id": "",
         "heading": "<h2>Introducing the Qure Micro-Infusion System</h2>",
-        "text": "<p>[note_grey]“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”[/note]</p><p>[marked_list]</p><ul><li>Visibly improves the appearance of <strong>acne scars</strong> and smooths texture</li><li>Wake up with <strong>radiant, more even-toned</strong> skin</li><li>Minimal to no downtime, and <strong>virtually painless</strong></li><li>Easy to use <strong>5-minute</strong> treatment</li></ul>",
+        "text": "<p>[note_grey]“<strong>Even my esthetician is hooked!</strong>And I can now visit beauty clinics less often.”[/note]</p><p>[marked_list]</p><ul><li>Visibly improves the appearance of&nbsp;<strong>acne scars</strong>&nbsp;and smooths texture</li><li>Wake up with&nbsp;<strong>radiant, more even-toned</strong>&nbsp;skin</li><li>Minimal to no downtime, and&nbsp;<strong>virtually painless</strong></li><li>Easy to use&nbsp;<strong>5-minute</strong>&nbsp;treatment</li></ul>",
         "image": "shopify://shop_images/mi_serum-show.webp",
         "button_label": "",
         "button_url": "",
