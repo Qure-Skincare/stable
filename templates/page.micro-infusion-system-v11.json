@@ -539,22 +539,22 @@
     "n_progress_showcase_v5": {
       "type": "n_progress-showcase",
       "blocks": {
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-2.webp",
+            "badge": "Dark Spots & Acne",
+            "percent_value": 90,
+            "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
         "slide_1": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/progress-showcase-1.webp",
             "badge": "Fine Lines and Wrinkles",
             "percent_value": 70,
-            "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
-            "disclaimer": "Based on a user study of 30 participants aged 25-65"
-          }
-        },
-        "slide_2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/progress-showcase-2.webp",
-            "badge": "Dark Spots",
-            "percent_value": 90,
             "text": "<p>agreed their skin looked better after Micro-Infusion treatments.</p>",
             "disclaimer": "Based on a user study of 30 participants aged 25-65"
           }
@@ -581,8 +581,8 @@
         }
       },
       "block_order": [
-        "slide_1",
         "slide_2",
+        "slide_1",
         "slide_3",
         "slide_4"
       ],
