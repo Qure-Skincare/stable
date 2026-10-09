@@ -87,7 +87,7 @@
             "panel": "shop_bestsellers",
             "heading": "Shop Products",
             "button_label": "Shop all",
-            "button_url": "https://qureskincare.com/collections/best-sellers"
+            "button_url": "https://qureskincare.com/collections/all-products"
           },
           "blocks": {
             "bestsellers_cards": {
