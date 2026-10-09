@@ -1,3 +1,35 @@
+{%- if settings.dynamic_upsells_mode == 'aa' or settings.dynamic_upsells_mode == 'ab' -%}
+<script>
+  // Dynamic upsells A/B: put this visitor in an arm. Uses the same visitor id
+  // as QureLab's collect.js, so QureLab can recompute the arm for any event.
+  (function () {
+    try {
+      var KEY = '_sc_cid';
+      var id = localStorage.getItem(KEY);
+      if (!id) {
+        id = window.crypto && crypto.randomUUID
+          ? crypto.randomUUID()
+          : Date.now().toString(16) + '-' + Math.random().toString(16).slice(2);
+        localStorage.setItem(KEY, id);
+      }
+      var experiment = {{ settings.dynamic_upsells_experiment | default: 'du1' | json }};
+      var split = {{ settings.dynamic_upsells_split | default: 50 }};
+      // FNV-1a hash of "experiment:visitor" -> bucket 0..99
+      var text = experiment + ':' + id;
+      var hash = 0x811c9dc5;
+      for (var i = 0; i < text.length; i++) {
+        hash ^= text.charCodeAt(i);
+        hash = Math.imul(hash, 0x01000193);
+      }
+      var bucket = (hash >>> 0) % 100;
+      window.QL = { arm: experiment + ':' + (bucket < split ? 't' : 'c') };
+    } catch (e) {
+      // No storage (private mode): the visitor stays outside the test.
+    }
+  })();
+</script>
+{%- endif -%}
+
 <!-- Google Tag Manager -->
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
