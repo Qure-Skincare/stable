@@ -1039,9 +1039,9 @@
         "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Dark Spots",
+            "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_4.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_7dL4ci": {
