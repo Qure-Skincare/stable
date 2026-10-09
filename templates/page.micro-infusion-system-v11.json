@@ -42,7 +42,7 @@
           "type": "icon_with_text",
           "settings": {
             "icon": "balances",
-            "text": "Improves the look of fine lines and dark spots"
+            "text": "Helps refine skin texture for smoother-looking skin and visibly softer scars"
           }
         },
         "icon_with_text_ra4igR": {
@@ -150,13 +150,13 @@
         "secondary": false,
         "background": false,
         "seo_heading": "",
-        "heading": "Your Micro Infusion System™ for fine lines",
+        "heading": "Refresh your skin and visibly smooth the look of acne scars",
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
         "rating_type": "trustpilot",
         "limited": false,
-        "description": "<p>Based on your answers, we recommend the Micro Infusion System to visibly smooth the look of your fine lines. See results in just a few easy at-home applications or get your money back!*</p>",
+        "description": "<ul><li>With consistent use, skin looks smoother and marks appear less visible - with most users noticing visible improvement after a few sessions</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -283,6 +283,7 @@
         },
         "type_j1K2lM": {
           "type": "type",
+          "disabled": true,
           "settings": {}
         },
         "product_type_n3O4pQ": {
