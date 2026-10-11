@@ -1,0 +1,114 @@
+{% doc %}
+  Renders the "As Seen On The Internet" section: a social profile link, a grid of post images, and a community button.
+{% enddoc %}
+
+<!-- WE ONLINE -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/we-online/we-online.css" />
+{% endif %}
+
+<section class="we-online">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <h2>{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.handle != blank or section.settings.avatar != blank %}
+            <a href="{{ section.settings.profile_url | default: '#' }}">
+                {% if section.settings.avatar != blank %}
+                    <img loading="lazy" src="{{ section.settings.avatar | image_url }}" alt="{{ section.settings.avatar.alt | escape }}" />
+                {% endif %}
+                {% if section.settings.handle != blank %}
+                    <strong>{{ section.settings.handle }}</strong>
+                {% endif %}
+                {% if section.settings.followers != blank %}
+                    <span>{{ section.settings.followers }}</span>
+                {% endif %}
+            </a>
+        {% endif %}
+        <ul>
+            {% for block in section.blocks %}
+                {% if block.type == 'post' and block.settings.image != blank %}
+                    <li {{ block.shopify_attributes }}>
+                        <a href="{{ block.settings.url | default: '#' }}"><img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" /></a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        {% if section.settings.button_label != blank %}
+            <a class="btn btn--secondary" href="{{ section.settings.button_url | default: '#' }}">{{ section.settings.button_label }}</a>
+        {% endif %}
+    </div>
+</section>
+<!-- WE ONLINE END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_we-online.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "avatar",
+            "label": "t:sections.n_we-online.settings.avatar"
+        },
+        {
+            "type": "text",
+            "id": "handle",
+            "label": "t:sections.n_we-online.settings.handle"
+        },
+        {
+            "type": "text",
+            "id": "followers",
+            "label": "t:sections.n_we-online.settings.followers"
+        },
+        {
+            "type": "url",
+            "id": "profile_url",
+            "label": "t:sections.n_we-online.settings.profile_url"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "post",
+            "name": "t:sections.n_we-online.blocks.post.name",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "t:common.link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_we-online.name"
+        }
+    ]
+}
+{% endschema %}

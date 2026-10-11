@@ -1,0 +1,117 @@
+{% doc %}
+  Renders the "Our Story" section: a heading, an author bio, and a media link that opens a video.
+{% enddoc %}
+
+<!-- OUR STORY -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/our-story/our-story.css" />
+{% endif %}
+
+<section class="our-story">
+    <div class="container">
+        <div class="our-story__content">
+            <hgroup class="our-story__heading">
+                {% if section.settings.subheading != blank %}
+                    <h6>{{ section.settings.subheading }}</h6>
+                {% endif %}
+                {% if section.settings.heading != blank %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% endif %}
+            </hgroup>
+            <article class="our-story__author">
+                <figure>
+                    {% if section.settings.author_image != blank %}
+                        <img loading="lazy" src="{{ section.settings.author_image | image_url }}" alt="{{ section.settings.author_image.alt | escape }}" />
+                    {% endif %}
+                    <figcaption>
+                        {% if section.settings.author_name != blank %}
+                            <strong>{{ section.settings.author_name }}</strong>
+                        {% endif %}
+                        {% if section.settings.author_role != blank %}
+                            <span>{{ section.settings.author_role }}</span>
+                        {% endif %}
+                    </figcaption>
+                </figure>
+                {% if section.settings.author_text != blank %}
+                    {{ section.settings.author_text }}
+                {% endif %}
+            </article>
+        </div>
+        {% if section.settings.media_image != blank %}
+            <a class="our-story__media" href="{{ section.settings.media_url | default: '#' }}">
+                <img loading="lazy" src="{{ section.settings.media_image | image_url }}" alt="{{ section.settings.media_image.alt | escape }}" />
+                {% if section.settings.media_label != blank %}
+                    <span class="our-story__button">
+                        {{ section.settings.media_label }}
+                        <span><i class="e-icon e-icon-play-triangle"></i></span>
+                    </span>
+                {% endif %}
+            </a>
+        {% endif %}
+    </div>
+</section>
+<!-- OUR STORY END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_our-story.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "t:common.subheading"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "author_image",
+            "label": "t:sections.n_our-story.settings.author_image"
+        },
+        {
+            "type": "text",
+            "id": "author_name",
+            "label": "t:sections.n_our-story.settings.author_name"
+        },
+        {
+            "type": "text",
+            "id": "author_role",
+            "label": "t:sections.n_our-story.settings.author_role"
+        },
+        {
+            "type": "richtext",
+            "id": "author_text",
+            "label": "t:sections.n_our-story.settings.author_text"
+        },
+        {
+            "type": "image_picker",
+            "id": "media_image",
+            "label": "t:sections.n_our-story.settings.media_image"
+        },
+        {
+            "type": "text",
+            "id": "media_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "media_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_our-story.name"
+        }
+    ]
+}
+{% endschema %}

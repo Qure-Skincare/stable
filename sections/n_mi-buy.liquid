@@ -1,0 +1,201 @@
+{% doc %}
+  Renders the Micro-Infusion buy block: product copy, a subscription supply option with
+  server-rendered pricing, and a working add-to-cart button (subscription selling plan).
+{% enddoc %}
+
+<!-- BASE SECTION MI BUY -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/base-section/base-section.css" />
+{% endif %}
+
+{% if section.settings.product != blank %}
+    {% assign subscription_discount_percent = section.settings.subscription_discount_percent %}
+    {% include 'get-product-data', product_handle: section.settings.product.handle %}
+
+    <section class="base-section base-section--reverse base-section--mi-buy">
+        <div class="container">
+            <article>
+                {% if section.settings.heading != blank %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% endif %}
+                {% if section.settings.image != blank %}
+                    <picture>
+                        <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    </picture>
+                {% endif %}
+                {% if section.settings.text != blank %}
+                    <div>{{ section.settings.text }}</div>
+                {% endif %}
+                <div class="c-buy-block">
+                    <div class="mi-supply">
+                        <input type="radio" name="mi-supply" checked />
+                        {% if section.settings.supply_badge != blank %}
+                            <span class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ section.settings.supply_badge }}</span>
+                        {% endif %}
+                        <div class="mi-supply__main">
+                            {{ section.settings.supply_title }}
+                            <div class="e-price">
+                                <div class="e-price__main">
+                                    <div class="e-price__current">{{ product_subscription_price | default: product_price }}</div>
+                                    {% if product_price_compare_original > 0 %}
+                                        <div class="e-price__old">{{ product_price_compare }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mi-supply__desc">
+                            {% if section.settings.per_treatment != blank %}
+                                <p>{{ section.settings.per_treatment }}</p>
+                            {% endif %}
+                            <ul class="c-marked-list">
+                                {% for block in section.blocks %}
+                                    {% if block.type == 'feature' and block.settings.text != blank %}
+                                        <li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-order-button">
+                        <button class="btn btn--primary" type="button" data-variant-id="{{ product_variant_id }}" data-selling-plan="{{ section.settings.selling_plan_id }}">{{ section.settings.button_label | default: 'Add to Cart' }}</button>
+                    </div>
+                    {% if section.settings.disclaimer != blank %}
+                        <small>{{ section.settings.disclaimer }}</small>
+                    {% endif %}
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script class="__init">
+        /* class="__init" keeps this out of the LCP proxy rewrite so it binds at parse.
+           Variant id + selling plan are server-rendered on the button, so this needs
+           neither window.get_products_data nor the hero. CartDrawer.addToCartJson is
+           LCP-loaded, so retry until it exists instead of losing an early click. */
+        (function () {
+            function add(items) {
+                if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
+                    window.CartDrawer.addToCartJson(items);
+                } else if (typeof addToCartJson === 'function') {
+                    addToCartJson(items);
+                } else {
+                    setTimeout(function () { add(items); }, 60);
+                }
+            }
+
+            function bind() {
+                var buttons = document.querySelectorAll('.base-section--mi-buy .c-order-button button');
+                if (!buttons.length) { return document.addEventListener('DOMContentLoaded', bind, { once: true }); }
+                buttons.forEach(function (button) {
+                    if (button.getAttribute('data-atc-bound')) return;
+                    button.setAttribute('data-atc-bound', '1');
+                    button.addEventListener('click', function () {
+                        var id = parseInt(button.getAttribute('data-variant-id'), 10);
+                        if (!id) return;
+                        var item = { id: id, quantity: 1 };
+                        var plan = button.getAttribute('data-selling-plan');
+                        if (plan) { item.selling_plan = parseInt(plan, 10); }
+                        add([item]);
+                    });
+                });
+            }
+
+            bind();
+        })();
+    </script>
+{% endif %}
+<!-- BASE SECTION MI BUY END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_mi-buy.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "product",
+            "id": "product",
+            "label": "t:sections.n_mi-buy.settings.product"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "supply_badge",
+            "label": "t:sections.n_mi-buy.settings.supply_badge"
+        },
+        {
+            "type": "text",
+            "id": "supply_title",
+            "label": "t:sections.n_mi-buy.settings.supply_title",
+            "default": "3 Month Supply"
+        },
+        {
+            "type": "text",
+            "id": "per_treatment",
+            "label": "t:sections.n_mi-buy.settings.per_treatment"
+        },
+        {
+            "type": "range",
+            "id": "subscription_discount_percent",
+            "label": "t:sections.n_mi-buy.settings.subscription_discount_percent",
+            "min": 0,
+            "max": 90,
+            "step": 1,
+            "unit": "%",
+            "default": 0
+        },
+        {
+            "type": "text",
+            "id": "selling_plan_id",
+            "label": "t:sections.n_mi-buy.settings.selling_plan_id"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label",
+            "default": "Add to Cart"
+        },
+        {
+            "type": "text",
+            "id": "disclaimer",
+            "label": "t:sections.n_mi-buy.settings.disclaimer"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "feature",
+            "name": "t:sections.n_mi-buy.blocks.feature.name",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_mi-buy.name"
+        }
+    ]
+}
+{% endschema %}

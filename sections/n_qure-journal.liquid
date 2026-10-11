@@ -1,0 +1,120 @@
+{% doc %}
+  Renders the "Qure journal" blog slider. Pulls articles from the blog chosen by handle.
+{% enddoc %}
+
+<!-- QURE JOURNAL -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/qure-journal/qure-journal.css" />
+{% endif %}
+
+{% assign journal_blog = blogs[section.settings.blog] %}
+{% if journal_blog != blank and journal_blog.articles.size > 0 %}
+    <section class="qure-journal">
+        <div class="container">
+            <article>
+                <hgroup>
+                    {% if section.settings.subheading != blank %}
+                        <h6>{{ section.settings.subheading }}</h6>
+                    {% endif %}
+                    {% if section.settings.heading != blank %}
+                        <h2>{{ section.settings.heading }}</h2>
+                    {% endif %}
+                </hgroup>
+            </article>
+            <div
+                class="c-swiper"
+                data-swiper='{
+                    "slidesPerView": 1.1,
+                    "spaceBetween": 16,
+                    "loop": false,
+                    "pagination": {
+                        "el": ".c-swiper-pagination",
+                        "type": "custom"
+                    },
+                    "navigation": {
+                        "prevEl": ".c-swiper-button-prev",
+                        "nextEl": ".c-swiper-button-next"
+                    },
+                    "breakpoints": {
+                        "768": {
+                            "slidesPerView": 3
+                        },
+                        "1200": {
+                            "slidesPerView": 4
+                        }
+                    }
+                }'>
+                <div class="swiper-wrapper">
+                    {% for post in journal_blog.articles limit: section.settings.limit %}
+                        <div class="swiper-slide">
+                            <article>
+                                {% if post.image != blank %}
+                                    <img loading="lazy" src="{{ post.image | image_url: width: 530, height: 300, crop: 'center' }}" alt="{{ post.image.alt | escape }}" />
+                                {% endif %}
+                                <small>{{ 'blog.choose.read_time' | t }}</small>
+                                <h3>{{ post.title }}</h3>
+                                <p>{{ post.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+                                <a class="btn btn--secondary btn--md" href="{{ post.url }}">{{ section.settings.button_label | default: 'Read Article' }}</a>
+                            </article>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="c-swiper-nav">
+                    <button class="c-swiper-button-prev" aria-label="prev"></button>
+                    <div class="c-swiper-pagination"></div>
+                    <button class="c-swiper-button-next" aria-label="next"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+<!-- QURE JOURNAL END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_qure-journal.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "t:common.subheading"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "blog",
+            "label": "t:sections.n_qure-journal.settings.blog",
+            "info": "t:sections.n_qure-journal.settings.blog_info"
+        },
+        {
+            "type": "range",
+            "id": "limit",
+            "label": "t:sections.n_qure-journal.settings.limit",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "default": 8
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_qure-journal.name"
+        }
+    ]
+}
+{% endschema %}
