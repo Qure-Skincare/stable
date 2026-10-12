@@ -137,13 +137,13 @@
         "use_own_file": false,
         "product": "micro-infusion-3-month-bundle-for-wrinkles",
         "heading": "<h2>Micro-Infusion System</h2>",
-        "image": "shopify://shop_images/micro_infusion_system.webp",
+        "image": "shopify://shop_images/Frame_2147235831.png",
         "text": "<p>Reveal smoother-, firmer-, more radiant-looking skin at home. Micro-Infusion Rejuvenating is designed to help visibly refresh tired-looking skin with a simple treatment that pairs your Micro-Infusion device with the Blue Serum for glow, hydration, and rejuvenation.</p>",
         "supply_badge": "Save 62% • Best Value",
         "supply_title": "3 Month Supply",
         "per_treatment": "<p>2 treatments • $49.50/treatment</p>",
-        "subscription_discount_percent": 0,
-        "selling_plan_id": "",
+        "subscription_discount_percent": 19,
+        "selling_plan_id": "8779497711",
         "button_label": "Add to Cart",
         "disclaimer": "We recommend 3 months of consistent use for best results."
       }
@@ -151,88 +151,152 @@
     "n_trusted_reviews_ecfpDp": {
       "type": "n_trusted-reviews",
       "blocks": {
-        "slider_kim": {
+        "slider_eerPKi": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/ellie_6_treatments.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Kim L.",
+            "image": "shopify://shop_images/Image_12_7a7b017a-c3dc-48b6-b46d-8381372cc87c.png",
+            "flag": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "Ellie V.",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will&nbsp;not regret in purchasing it. I really see the change in my skin. Outstanding job&nbsp;QURE!”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_be4c4dfe-5224-4bc0-9bbe-d976a9e5ba31.webp",
-            "product_text": "Kim uses...",
+            "product_image": "shopify://shop_images/Img_e0a95963-8b98-4d19-aa73-5d21385abdbf.png",
+            "product_text": "Ellie uses...",
             "product_title": "Micro-Infusion Facial System"
           }
         },
-        "slider_mona": {
+        "slider_exNrQ9": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/mona-p.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Mona P.",
+            "image": "shopify://shop_images/Image_13_bc21b22b-9f3d-4021-b82f-dd20246c38f8.png",
+            "flag": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "Anton M.",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>Fade after just two treatments</h6><p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
+            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
             "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask_ad021a69-1ad1-4744-9917-9610bbc49237.webp",
-            "product_text": "Mona uses...",
+            "product_image": "shopify://shop_images/Img_53.png",
+            "product_text": "Anton uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
-        "slider_andrea": {
+        "slider_TeRddM": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/andrea.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Andrea G.",
+            "image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
+            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "Jennifer N.",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>Definitely be re-ordering</h6><p>“Still a newbie but so far so great! I have dermarolled for more than a decade -still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved- but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
+            "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_be4c4dfe-5224-4bc0-9bbe-d976a9e5ba31.webp",
-            "product_text": "Andrea uses...",
+            "product_image": "shopify://shop_images/Img_e0a95963-8b98-4d19-aa73-5d21385abdbf.png",
+            "product_text": "Jennifer uses...",
             "product_title": "Micro-Infusion Facial System"
           }
         },
-        "slider_jessica": {
+        "slider_38xPQm": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/jessica-k.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jessica K.",
+            "image": "shopify://shop_images/Image_15_4c3b7577-4da7-4f8d-894d-302159d2581e.png",
+            "flag": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "Terri P.",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>Thrilled with the results!</h6><p>\"I have been using the mask & microneedling for 6 weeks & am truly impressed with the results. I have noticed a dramatic reduction in redness, an improvement in my dark spots, scars & overall skin tone & firmness, and a smoothing of fine lines & wrinkles.\"</p>",
+            "text": "<h6>Wish I had this technology years ago!</h6><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
+            "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
+            "product_image": "shopify://shop_images/Img_53.png",
+            "product_text": "Terri uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
+          }
+        },
+        "slider_LpAF74": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/cassandra.webp",
+            "flag": "shopify://shop_images/america_f_3d0e5b48-9006-49eb-b959-ec7fa14baea6.webp",
+            "username": "Cassandra",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Can see the difference after one use!</h6><p>\"I did the patches last night and I swear just after one use I already see a result. The difference in my under-eye is wild!\"</p>",
             "product_url": "https://qureskincare.com/products/micro-infusion-targeted-patches",
-            "product_image": "shopify://shop_images/micro-infusion-targeted-patches_49d9f8d2-7b18-4c96-bdf0-1a78ef620052.webp",
-            "product_text": "Jessica uses...",
+            "product_image": "shopify://shop_images/Img_55.png",
+            "product_text": "Cassandra uses...",
             "product_title": "Micro-Infusion Targeted Patches"
           }
         },
-        "slider_ela": {
+        "slider_eV7nBd": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/ela-o.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ela O.",
+            "image": "shopify://shop_images/Claudia.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Claudia",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>Shocked at the results</h6><p>“Shocked at the results after just one treatment! I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after my first treatment! Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "text": "<h6>Recommend to everyone</h6><p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this product.”</p>",
             "product_url": "https://qureskincare.com/products/neck-decolletage-led",
-            "product_image": "shopify://shop_images/neck-decolletage-led-device_8abbfbff-c781-461d-a78f-c4e8448d2126.webp",
-            "product_text": "Ela uses...",
-            "product_title": "Neck & Décolletage LED Device"
+            "product_image": "shopify://shop_images/Img_56.png",
+            "product_text": "Claudia uses...",
+            "product_title": "Neck & Décolletage LED System"
+          }
+        },
+        "slider_bjVaKx": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/ana.webp",
+            "flag": "shopify://shop_images/england_f_7b85ce69-2b67-4245-a148-3dd808fc574a.webp",
+            "username": "Ana L.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Amazing</h6><p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask,  and doing a few treatments of the Micro-Infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "product_url": "https://qureskincare.com/products/all-in-one-serum",
+            "product_image": "shopify://shop_images/Img_57.png",
+            "product_text": "Ana uses...",
+            "product_title": "All-In-One Serum"
+          }
+        },
+        "slider_yC7yhD": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/bj-nerdi.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "BJ Nardi",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Completed qured my acne</h6><p>“This is the first time in TWO YEARS that I don’t have active acne on my face. I’ve been using my Qure for 1 month now and it has completely qured my acne. It’s gone AND it’s healing all my scars and pox marks. I was literally on the verge of suicide because of my horrible skin. This device SAVED MY LIFE!!!.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_cMYwQa": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Mary.webp",
+            "flag": "shopify://shop_images/canada_f.webp",
+            "username": "Mary R. M.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Outstanding</h6><p>“I’m so impressed with the results! I noticed a difference after a few weeks. I am so surprised at how much younger the skin on my neck/chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask whilst using.”</p>",
+            "product_url": "https://qureskincare.com/products/neck-decolletage-led",
+            "product_image": "shopify://shop_images/Img_56.png",
+            "product_text": "Mary uses...",
+            "product_title": "Neck & Décolletage LED System"
           }
         }
       },
       "block_order": [
-        "slider_kim",
-        "slider_mona",
-        "slider_andrea",
-        "slider_jessica",
-        "slider_ela"
+        "slider_eerPKi",
+        "slider_exNrQ9",
+        "slider_TeRddM",
+        "slider_38xPQm",
+        "slider_LpAF74",
+        "slider_eV7nBd",
+        "slider_bjVaKx",
+        "slider_yC7yhD",
+        "slider_cMYwQa"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -442,11 +506,28 @@
         "button_label": "Join Our Community",
         "button_url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
       }
+    },
+    "n_promo_strip_bF3xQk": {
+      "type": "n_promo-strip",
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "FREE TOTE BAG",
+        "price": "",
+        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
+        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
+      }
     }
   },
   "order": [
     "n_across_image_banner_bluePlus",
     "n_top_products_Qr7mXa",
+    "n_promo_strip_bF3xQk",
     "n_mi_buy_Lp3dWc",
     "n_trusted_reviews_ecfpDp",
     "n_experts_grid_Zk9bHt",
