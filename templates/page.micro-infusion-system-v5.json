@@ -1186,6 +1186,27 @@
         "button_url": "#hero-product"
       }
     },
+    "179180819564ec0402": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_eAXeAz": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_eAXeAz"
+      ],
+      "settings": {}
+    },
     "n_faq_gD5hPw": {
       "type": "n_faq",
       "blocks": {
@@ -1383,6 +1404,7 @@
     "n_experts_grid_v5",
     "n_press_reviews_sJ1kCv",
     "n_easy_steps_mN3vBe",
+    "179180819564ec0402",
     "n_faq_gD5hPw",
     "sticky_cta_uQ7eTx"
   ]
