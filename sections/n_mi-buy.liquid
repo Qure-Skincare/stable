@@ -12,6 +12,11 @@
     {% assign subscription_discount_percent = section.settings.subscription_discount_percent %}
     {% include 'get-product-data', product_handle: section.settings.product.handle %}
 
+    {%- assign mi_selling_plan = section.settings.selling_plan_id -%}
+    {%- if mi_selling_plan == blank -%}
+        {%- assign mi_selling_plan = section.settings.product.selling_plan_groups.first.selling_plans.first.id -%}
+    {%- endif -%}
+
     <section class="base-section base-section--reverse base-section--mi-buy">
         <div class="container">
             <article>
@@ -53,7 +58,7 @@
                         </div>
                     </div>
                     <div class="c-order-button">
-                        <button type="button" class="btn btn--primary js-add-bundle" data-cart-items='[{"id":{{ product_variant_id }},"quantity":1{% if section.settings.selling_plan_id != blank %},"selling_plan":{{ section.settings.selling_plan_id }}{% endif %}}]'{% if product_available == false %} disabled{% endif %}>{{ section.settings.button_label | default: 'Add to Cart' }}</button>
+                        <button type="button" class="btn btn--primary" data-cart-items='[{"id":{{ product_variant_id }},"quantity":1{% if mi_selling_plan != blank %},"selling_plan":{{ mi_selling_plan }}{% endif %}}]'{% if product_available == false %} disabled{% endif %}>{{ section.settings.button_label | default: 'Add to Cart' }}</button>
                     </div>
                     {% if section.settings.disclaimer != blank %}
                         <small>{{ section.settings.disclaimer }}</small>
@@ -65,7 +70,14 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            loadScriptOnce("n_add-bundle", "{{ 'n-add-bundle.js' | asset_url }}");
+            document.querySelectorAll(".base-section--mi-buy .c-order-button button").forEach(function (button) {
+                button.addEventListener("click", function () {
+                    if (!window.CartDrawer || typeof window.CartDrawer.addToCartJson !== "function") return;
+                    var items;
+                    try { items = JSON.parse(button.getAttribute("data-cart-items")); } catch (e) { return; }
+                    window.CartDrawer.addToCartJson(items);
+                });
+            });
         });
     </script>
 {% endif %}
