@@ -490,7 +490,7 @@
       "n-product-rating": {
         "static_html": "<small><strong id='rating'>{{ rating }}</strong>/5 Rated by 10k+ Customers</small>",
         "dermatologists": "Backed by Dermatologists",
-        "trustpilot_html": "<a href='#'><strong>{{ rating }}</strong>/5 Rated by Customers</a>",
+        "trustpilot_html": "<a href='#'><strong>{{ rating }}</strong>  (1,634)</a>",
         "reviews_html": "<a href='#stamped-main-widget'><strong id='rating'>{{ rating }}</strong>/5 • {{ count }} reviews</a>"
       },
       "product-buy-button-sticky": {

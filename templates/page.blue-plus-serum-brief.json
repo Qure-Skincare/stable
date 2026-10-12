@@ -227,28 +227,29 @@
     "n_guide_content_Cv5nHt": {
       "type": "n_guide-content",
       "blocks": {
-        "wistia_slider_Qb6mZr": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": "wuwofpexhl"
-          }
-        },
         "wistia_slider_Dp9kTs": {
           "type": "wistia_slider",
           "settings": {
-            "wistia_url": "fgpztdeimx"
+            "wistia_url": "ouvi5t5dlb"
+          }
+        },
+        "wistia_slider_Qb6mZr": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "mt15tcj1sn"
           }
         },
         "wistia_slider_Ln4wBy": {
           "type": "wistia_slider",
+          "disabled": true,
           "settings": {
             "wistia_url": "9kwcjxx5h5"
           }
         }
       },
       "block_order": [
-        "wistia_slider_Qb6mZr",
         "wistia_slider_Dp9kTs",
+        "wistia_slider_Qb6mZr",
         "wistia_slider_Ln4wBy"
       ],
       "name": "t:sections.n_guide-content.name",
