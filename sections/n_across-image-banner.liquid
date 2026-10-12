@@ -184,9 +184,7 @@
                                     <li>{{ block.settings.badge_text }}</li>
                                 {% endif %}
                             </ul>
-                            {% if block.settings.text != blank %}
-                                {{ block.settings.text }}
-                            {% endif %}
+                            {{ block.settings.text }}
                         </div>
                         {% endif %}
                     {% endif %}
@@ -322,9 +320,7 @@
                                 <li>{{ block.settings.badge_text }}</li>
                             {% endif %}
                         </ul>
-                        {% if block.settings.text != blank %}
-                            {{ block.settings.text }}
-                        {% endif %}
+                        {{ block.settings.text }}
                     </div>
                     {% endif %}
                 {% endif %}

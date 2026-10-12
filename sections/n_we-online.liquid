@@ -9,9 +9,7 @@
 
 <section class="we-online">
     <div class="container">
-        {% if section.settings.heading != blank %}
-            <h2>{{ section.settings.heading }}</h2>
-        {% endif %}
+        {{ section.settings.heading }}
         {% if section.settings.handle != blank or section.settings.avatar != blank %}
             <a href="{{ section.settings.profile_url | default: '#' }}">
                 {% if section.settings.avatar != blank %}
@@ -52,7 +50,7 @@
             "default": false
         },
         {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         },

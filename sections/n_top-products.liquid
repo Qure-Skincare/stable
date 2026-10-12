@@ -9,9 +9,7 @@
 
 <section class="top-products">
     <div class="container">
-        {% if section.settings.heading != blank %}
-            <h2>{{ section.settings.heading }}</h2>
-        {% endif %}
+        {{ section.settings.heading }}
         <ul>
             {% for block in section.blocks %}
                 {% if block.type == 'product_tile' %}
@@ -50,7 +48,7 @@
             "default": false
         },
         {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         }

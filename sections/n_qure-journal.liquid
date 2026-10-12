@@ -13,12 +13,7 @@
         <div class="container">
             <article>
                 <hgroup>
-                    {% if section.settings.subheading != blank %}
-                        <h6>{{ section.settings.subheading }}</h6>
-                    {% endif %}
-                    {% if section.settings.heading != blank %}
-                        <h2>{{ section.settings.heading }}</h2>
-                    {% endif %}
+                    {{ section.settings.heading }}
                 </hgroup>
             </article>
             <div
@@ -81,12 +76,7 @@
             "default": false
         },
         {
-            "type": "text",
-            "id": "subheading",
-            "label": "t:common.subheading"
-        },
-        {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         },

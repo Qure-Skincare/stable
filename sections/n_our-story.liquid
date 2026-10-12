@@ -11,12 +11,7 @@
     <div class="container">
         <div class="our-story__content">
             <hgroup class="our-story__heading">
-                {% if section.settings.subheading != blank %}
-                    <h6>{{ section.settings.subheading }}</h6>
-                {% endif %}
-                {% if section.settings.heading != blank %}
-                    <h2>{{ section.settings.heading }}</h2>
-                {% endif %}
+                {{ section.settings.heading }}
             </hgroup>
             <article class="our-story__author">
                 <figure>
@@ -32,9 +27,7 @@
                         {% endif %}
                     </figcaption>
                 </figure>
-                {% if section.settings.author_text != blank %}
-                    {{ section.settings.author_text }}
-                {% endif %}
+                {{ section.settings.author_text }}
             </article>
         </div>
         {% if section.settings.media_image != blank %}
@@ -63,12 +56,7 @@
             "default": false
         },
         {
-            "type": "text",
-            "id": "subheading",
-            "label": "t:common.subheading"
-        },
-        {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         },

@@ -15,9 +15,7 @@
     <section class="base-section base-section--reverse base-section--mi-buy">
         <div class="container">
             <article>
-                {% if section.settings.heading != blank %}
-                    <h2>{{ section.settings.heading }}</h2>
-                {% endif %}
+                {{ section.settings.heading }}
                 {% if section.settings.image != blank %}
                     <picture>
                         <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
@@ -44,9 +42,7 @@
                             </div>
                         </div>
                         <div class="mi-supply__desc">
-                            {% if section.settings.per_treatment != blank %}
-                                <p>{{ section.settings.per_treatment }}</p>
-                            {% endif %}
+                            {{ section.settings.per_treatment }}
                             <ul class="c-marked-list">
                                 {% for block in section.blocks %}
                                     {% if block.type == 'feature' and block.settings.text != blank %}
@@ -57,7 +53,7 @@
                         </div>
                     </div>
                     <div class="c-order-button">
-                        <button class="btn btn--primary" type="button" data-variant-id="{{ product_variant_id }}" data-selling-plan="{{ section.settings.selling_plan_id }}">{{ section.settings.button_label | default: 'Add to Cart' }}</button>
+                        <button type="button" class="btn btn--primary js-add-bundle" data-cart-items='[{"id":{{ product_variant_id }},"quantity":1{% if section.settings.selling_plan_id != blank %},"selling_plan":{{ section.settings.selling_plan_id }}{% endif %}}]'{% if product_available == false %} disabled{% endif %}>{{ section.settings.button_label | default: 'Add to Cart' }}</button>
                     </div>
                     {% if section.settings.disclaimer != blank %}
                         <small>{{ section.settings.disclaimer }}</small>
@@ -67,41 +63,10 @@
         </div>
     </section>
 
-    <script class="__init">
-        /* class="__init" keeps this out of the LCP proxy rewrite so it binds at parse.
-           Variant id + selling plan are server-rendered on the button, so this needs
-           neither window.get_products_data nor the hero. CartDrawer.addToCartJson is
-           LCP-loaded, so retry until it exists instead of losing an early click. */
-        (function () {
-            function add(items) {
-                if (window.CartDrawer && typeof window.CartDrawer.addToCartJson === 'function') {
-                    window.CartDrawer.addToCartJson(items);
-                } else if (typeof addToCartJson === 'function') {
-                    addToCartJson(items);
-                } else {
-                    setTimeout(function () { add(items); }, 60);
-                }
-            }
-
-            function bind() {
-                var buttons = document.querySelectorAll('.base-section--mi-buy .c-order-button button');
-                if (!buttons.length) { return document.addEventListener('DOMContentLoaded', bind, { once: true }); }
-                buttons.forEach(function (button) {
-                    if (button.getAttribute('data-atc-bound')) return;
-                    button.setAttribute('data-atc-bound', '1');
-                    button.addEventListener('click', function () {
-                        var id = parseInt(button.getAttribute('data-variant-id'), 10);
-                        if (!id) return;
-                        var item = { id: id, quantity: 1 };
-                        var plan = button.getAttribute('data-selling-plan');
-                        if (plan) { item.selling_plan = parseInt(plan, 10); }
-                        add([item]);
-                    });
-                });
-            }
-
-            bind();
-        })();
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("n_add-bundle", "{{ 'n-add-bundle.js' | asset_url }}");
+        });
     </script>
 {% endif %}
 <!-- BASE SECTION MI BUY END -->
@@ -122,7 +87,7 @@
             "label": "t:sections.n_mi-buy.settings.product"
         },
         {
-            "type": "text",
+            "type": "richtext",
             "id": "heading",
             "label": "t:common.header"
         },
@@ -148,7 +113,7 @@
             "default": "3 Month Supply"
         },
         {
-            "type": "text",
+            "type": "richtext",
             "id": "per_treatment",
             "label": "t:sections.n_mi-buy.settings.per_treatment"
         },
