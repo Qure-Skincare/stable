@@ -1,5 +1,5 @@
 {% doc %}
-  Renders the "Our Story" section: a heading, an author bio, and a media link that opens a video.
+  Renders the "Our Story" section: a heading, an author bio, and a Wistia popover video with a custom poster.
 {% enddoc %}
 
 <!-- OUR STORY -->
@@ -30,16 +30,24 @@
                 {{ section.settings.author_text }}
             </article>
         </div>
-        {% if section.settings.media_image != blank %}
-            <a class="our-story__media" href="{{ section.settings.media_url | default: '#' }}">
-                <img loading="lazy" src="{{ section.settings.media_image | image_url }}" alt="{{ section.settings.media_image.alt | escape }}" />
-                {% if section.settings.media_label != blank %}
-                    <span class="our-story__button">
-                        {{ section.settings.media_label }}
-                        <span><i class="e-icon e-icon-play-triangle"></i></span>
-                    </span>
-                {% endif %}
-            </a>
+        {% if section.settings.wistia_url != blank %}
+            <div class="c-wistia c-wistia--custom">
+                <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                    <div class="c-wistia__custom">
+                        <div class="our-story__media">
+                            {% if section.settings.media_image != blank %}
+                                <img loading="lazy" src="{{ section.settings.media_image | image_url }}" alt="{{ section.settings.media_image.alt | escape }}" />
+                            {% endif %}
+                            {% if section.settings.media_label != blank %}
+                                <div class="our-story__button">
+                                    {{ section.settings.media_label }}
+                                    <span><i class="e-icon e-icon-play-triangle"></i></span>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </wistia-player>
+            </div>
         {% endif %}
     </div>
 </section>
@@ -91,9 +99,9 @@
             "label": "t:common.button-label"
         },
         {
-            "type": "url",
-            "id": "media_url",
-            "label": "t:common.button-url"
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
         }
     ],
     "presets": [
