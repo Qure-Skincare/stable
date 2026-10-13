@@ -1,0 +1,113 @@
+{% doc %}
+  Renders the "Our Story" section: a heading, an author bio, and a Wistia popover video with a custom poster.
+{% enddoc %}
+
+<!-- OUR STORY -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/our-story/our-story.css" />
+{% endif %}
+
+<section class="our-story">
+    <div class="container">
+        <div class="our-story__content">
+            <hgroup class="our-story__heading">
+                {{ section.settings.heading }}
+            </hgroup>
+            <article class="our-story__author">
+                <figure>
+                    {% if section.settings.author_image != blank %}
+                        <img loading="lazy" src="{{ section.settings.author_image | image_url }}" alt="{{ section.settings.author_image.alt | escape }}" />
+                    {% endif %}
+                    <figcaption>
+                        {% if section.settings.author_name != blank %}
+                            <strong>{{ section.settings.author_name }}</strong>
+                        {% endif %}
+                        {% if section.settings.author_role != blank %}
+                            <span>{{ section.settings.author_role }}</span>
+                        {% endif %}
+                    </figcaption>
+                </figure>
+                {{ section.settings.author_text }}
+            </article>
+        </div>
+        {% if section.settings.wistia_url != blank %}
+            <div class="c-wistia c-wistia--custom">
+                <wistia-player media-id="{{ section.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                    <div class="c-wistia__custom">
+                        <div class="our-story__media">
+                            {% if section.settings.media_image != blank %}
+                                <img loading="lazy" src="{{ section.settings.media_image | image_url }}" alt="{{ section.settings.media_image.alt | escape }}" />
+                            {% endif %}
+                            {% if section.settings.media_label != blank %}
+                                <div class="our-story__button">
+                                    {{ section.settings.media_label }}
+                                    <span><i class="e-icon e-icon-play-triangle"></i></span>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </wistia-player>
+            </div>
+        {% endif %}
+    </div>
+</section>
+<!-- OUR STORY END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_our-story.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "author_image",
+            "label": "t:sections.n_our-story.settings.author_image"
+        },
+        {
+            "type": "text",
+            "id": "author_name",
+            "label": "t:sections.n_our-story.settings.author_name"
+        },
+        {
+            "type": "text",
+            "id": "author_role",
+            "label": "t:sections.n_our-story.settings.author_role"
+        },
+        {
+            "type": "richtext",
+            "id": "author_text",
+            "label": "t:sections.n_our-story.settings.author_text"
+        },
+        {
+            "type": "image_picker",
+            "id": "media_image",
+            "label": "t:sections.n_our-story.settings.media_image"
+        },
+        {
+            "type": "text",
+            "id": "media_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "text",
+            "id": "wistia_url",
+            "label": "t:common.wistia-url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_our-story.name"
+        }
+    ]
+}
+{% endschema %}
