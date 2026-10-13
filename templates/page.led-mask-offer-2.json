@@ -730,8 +730,20 @@
       }
     },
     "n-form-inside-mask_QgKWfH": {
-      "type": "n-product-header",
+      "type": "n_product-header-bundle",
       "blocks": {
+        "image_Hk3pTw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Img_50.png"
+          }
+        },
+        "image_Rc8vLn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1073714744.png"
+          }
+        },
         "subheading_QgKWfH": {
           "type": "subheading",
           "settings": {
@@ -765,13 +777,15 @@
         }
       },
       "block_order": [
+        "image_Hk3pTw",
+        "image_Rc8vLn",
         "subheading_QgKWfH",
         "price_QgKWfH",
         "description_QgKWfH",
         "bundle_purchase_QgKWfH",
         "accordion_QgKWfH"
       ],
-      "name": "t:sections.page-header.name",
+      "name": "t:sections.n_product-header-bundle.name",
       "settings": {
         "section_id": "buy-form",
         "product": "q-rejuvalight-pro-facewear",
@@ -781,7 +795,6 @@
         "heading": "Q-Rejuvalight Pro LED Mask",
         "badge_text": "Limited Time Offer",
         "heading_level": "h2",
-        "rating": false,
         "description": "<ul><li>Lifetime Warranty</li><li>FDA Cleared</li></ul><p>Elevate your LED routine with full face and neck coverage for consistent all-over results.</p>"
       }
     },

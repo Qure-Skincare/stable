@@ -1078,6 +1078,9 @@
         "n_hero-product": {
             "name": "Hero product"
         },
+        "n_product-header-bundle": {
+            "name": "Product header — bundle"
+        },
         "n_qure-filters-offer-meet-filters": {
             "name": "Meet filters"
         },
