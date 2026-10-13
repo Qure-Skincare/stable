@@ -494,28 +494,28 @@
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-1.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/Db6psjvIl_H/"
           }
         },
         "post_2": {
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-2.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/DcMtn57Iv3o/"
           }
         },
         "post_3": {
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-3.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/DczWbDyo7SH/"
           }
         },
         "post_4": {
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-4.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/DDEgw8bSp3_/"
           }
         }
       },
