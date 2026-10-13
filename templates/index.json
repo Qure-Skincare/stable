@@ -93,6 +93,55 @@
         "heading": "<h2>Get the Qure</h2>"
       }
     },
+    "n_promo_strip_bF3xQk": {
+      "type": "n_promo-strip",
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "FREE TOTE BAG",
+        "price": "",
+        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
+        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
+      }
+    },
+    "n_promo_strip_wR8mHd": {
+      "type": "n_promo-strip",
+      "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "against-cancer",
+        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
+        "button_label": "Support Now",
+        "button_url": "shopify://collections/best-sellers",
+        "image": "shopify://shop_images/against-cancer.webp",
+        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
+        "badge_text": "",
+        "price": "",
+        "gift_text": ""
+      }
+    },
+    "n_promo_strip_kR4nW8": {
+      "type": "n_promo-strip",
+      "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "blue-plus",
+        "text": "<h3>Save $100 on LED mask & Get Free Blue+ Serum</h3><p>Visibly firmer, more radiant skin as the seasons change</p>",
+        "button_label": "Buy Now",
+        "button_url": "/pages/mask-serum-offer",
+        "image": "shopify://shop_images/blue-plus_079da3f8-0271-49d0-8c1f-01c68d9844b4.webp",
+        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
+        "badge_text": "Free Gift",
+        "price": "$79",
+        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp",
+        "gift_text": ""
+      }
+    },
     "n_mi_buy_Lp3dWc": {
       "type": "n_mi-buy",
       "blocks": {
@@ -445,28 +494,28 @@
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-1.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/Db6psjvIl_H/"
           }
         },
         "post_2": {
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-2.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/DcMtn57Iv3o/"
           }
         },
         "post_3": {
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-3.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/DczWbDyo7SH/"
           }
         },
         "post_4": {
           "type": "post",
           "settings": {
             "image": "shopify://shop_images/post-4.webp",
-            "url": "#"
+            "url": "https://www.instagram.com/p/DDEgw8bSp3_/"
           }
         }
       },
@@ -483,58 +532,9 @@
         "avatar": "shopify://shop_images/avatar.webp",
         "handle": "@qureskincare",
         "followers": "257K followers",
-        "profile_url": "#",
+        "profile_url": "https://www.instagram.com/qureskincare",
         "button_label": "Join Our Community",
         "button_url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
-      }
-    },
-    "n_promo_strip_bF3xQk": {
-      "type": "n_promo-strip",
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "against-cancer",
-        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
-        "button_label": "Support Now",
-        "button_url": "shopify://collections/best-sellers",
-        "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
-        "badge_text": "FREE TOTE BAG",
-        "price": "",
-        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
-        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
-      }
-    },
-    "n_promo_strip_wR8mHd": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "against-cancer",
-        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
-        "button_label": "Support Now",
-        "button_url": "shopify://collections/best-sellers",
-        "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
-        "badge_text": "",
-        "price": "",
-        "gift_text": ""
-      }
-    },
-    "n_promo_strip_kR4nW8": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "blue-plus",
-        "text": "<h3>Save $100 on LED mask & Get Free Blue+ Serum</h3><p>Visibly firmer, more radiant skin as the seasons change</p>",
-        "button_label": "Buy Now",
-        "button_url": "/pages/mask-serum-offer",
-        "image": "shopify://shop_images/blue-plus_079da3f8-0271-49d0-8c1f-01c68d9844b4.webp",
-        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
-        "badge_text": "Free Gift",
-        "price": "$79",
-        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp",
-        "gift_text": ""
       }
     }
   },
