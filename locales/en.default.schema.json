@@ -492,7 +492,8 @@
                     "labor-day": "Labor day",
                     "doctorly": "Doctorly",
                     "text": "Text",
-                    "blue-plus": "Blue+ serum"
+                    "blue-plus": "Blue+ serum",
+                    "quiz": "Quiz"
                 },
                 "badge-group": {
                     "name": "Badge group"
@@ -784,6 +785,9 @@
         },
         "n_experts-grid": {
             "name": "Experts grid",
+            "settings": {
+                "awards": "Awards"
+            },
             "blocks": {
                 "expert": {
                     "name": "Expert",
@@ -791,6 +795,71 @@
                         "name": "Name",
                         "role": "Role"
                     }
+                },
+                "award": {
+                    "name": "Award"
+                }
+            }
+        },
+        "n_top-products": {
+            "name": "Top products",
+            "blocks": {
+                "product_tile": {
+                    "name": "Product tile",
+                    "settings": {
+                        "name": "Name",
+                        "badge_text": "Badge text",
+                        "badge_fill": "Filled badge"
+                    }
+                }
+            }
+        },
+        "n_our-story": {
+            "name": "Our story",
+            "settings": {
+                "author_image": "Author image",
+                "author_name": "Author name",
+                "author_role": "Author role",
+                "author_text": "Author text",
+                "media_image": "Media image"
+            }
+        },
+        "n_we-online": {
+            "name": "We online",
+            "settings": {
+                "avatar": "Avatar",
+                "handle": "Handle",
+                "followers": "Followers",
+                "profile_url": "Profile link"
+            },
+            "blocks": {
+                "post": {
+                    "name": "Post"
+                }
+            }
+        },
+        "n_qure-journal": {
+            "name": "Qure journal",
+            "settings": {
+                "blog": "Blog handle",
+                "blog_info": "The handle of the blog to pull articles from (e.g. \"news\").",
+                "limit": "Articles to show"
+            }
+        },
+        "n_mi-buy": {
+            "name": "MI buy block",
+            "settings": {
+                "product": "Product",
+                "supply_badge": "Supply badge",
+                "supply_title": "Supply title",
+                "per_treatment": "Per-treatment text",
+                "subscription_discount_percent": "Subscription discount",
+                "selling_plan_id": "Selling plan ID",
+                "disclaimer": "Disclaimer"
+            },
+            "blocks": {
+                "feature": {
+                    "name": "Feature"
                 }
             }
         },

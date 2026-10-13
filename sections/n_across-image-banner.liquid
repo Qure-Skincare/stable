@@ -10,6 +10,8 @@
     assign banner_class = 'across-image-banner'
     if mod == 'hero_reverse'
         assign banner_class = 'across-image-banner across-image-banner--hero across-image-banner--reverse'
+    elsif mod == 'quiz'
+        assign banner_class = 'across-image-banner across-image-banner--reverse across-image-banner--quiz'
     elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer' or mod == 'labor-day'
         assign banner_class = banner_class | append: ' across-image-banner--holidays across-image-banner--' | append: mod
     elsif mod != 'none' and mod != blank
@@ -156,7 +158,7 @@
                 {% endif %}
 
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' %}btn--primary-white{% else %}btn--primary{% endif %}">{{ section.settings.button_label }}</a>
+                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' or section.settings.modifier == 'quiz' %}btn--primary-white{% else %}btn--primary{% endif %}">{{ section.settings.button_label }}</a>
                 {% endif %}
 
                 {% for block in section.blocks %}
@@ -182,9 +184,7 @@
                                     <li>{{ block.settings.badge_text }}</li>
                                 {% endif %}
                             </ul>
-                            {% if block.settings.text != blank %}
-                                {{ block.settings.text }}
-                            {% endif %}
+                            {{ block.settings.text }}
                         </div>
                         {% endif %}
                     {% endif %}
@@ -320,9 +320,7 @@
                                 <li>{{ block.settings.badge_text }}</li>
                             {% endif %}
                         </ul>
-                        {% if block.settings.text != blank %}
-                            {{ block.settings.text }}
-                        {% endif %}
+                        {{ block.settings.text }}
                     </div>
                     {% endif %}
                 {% endif %}
@@ -419,6 +417,10 @@
                 {
                     "value": "blue-plus",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.blue-plus"
+                },
+                {
+                    "value": "quiz",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.quiz"
                 }
             ]
         },

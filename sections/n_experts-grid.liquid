@@ -1,5 +1,6 @@
 {% doc %}
   Renders a grid of experts with a photo, name, and role.
+  Enable the "Awards" setting to show the awards row and the "--awards" variant (Q icon badge on each expert).
 {% enddoc %}
 
 <!-- EXPERTS GRID -->
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/experts-grid/experts-grid.css" />
 {% endif %}
 
-<section class="experts-grid">
+<section class="experts-grid{% if section.settings.awards %} experts-grid--awards{% endif %}">
     <div class="container">
         <article>
             {% if section.settings.heading != blank %}
@@ -16,12 +17,34 @@
             {% if section.settings.text != blank %}
                 {{ section.settings.text }}
             {% endif %}
+            {% if section.settings.awards %}
+                <ol>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'award' %}
+                            <li {{ block.shopify_attributes }}>
+                                {% if block.settings.image != blank %}
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+            {% endif %}
             <ul>
                 {% for block in section.blocks %}
                     {% if block.type == 'expert' %}
                         <li {{ block.shopify_attributes }}>
-                            {% if block.settings.image != blank %}
-                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                            {% if section.settings.awards %}
+                                <figure>
+                                    {% if block.settings.image != blank %}
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                    <figcaption><i class="e-icon e-icon-q"></i></figcaption>
+                                </figure>
+                            {% else %}
+                                {% if block.settings.image != blank %}
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
                             {% endif %}
                             <div>
                                 {% if block.settings.name != blank %}
@@ -48,6 +71,12 @@
             "type": "checkbox",
             "id": "use_own_file",
             "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "awards",
+            "label": "t:sections.n_experts-grid.settings.awards",
             "default": false
         },
         {
@@ -80,6 +109,17 @@
                     "type": "text",
                     "id": "role",
                     "label": "t:sections.n_experts-grid.blocks.expert.settings.role"
+                }
+            ]
+        },
+        {
+            "type": "award",
+            "name": "t:sections.n_experts-grid.blocks.award.name",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
                 }
             ]
         }
