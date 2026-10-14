@@ -1,0 +1,284 @@
+{% doc %}
+  Renders a trimmed product header for a two-product bundle offer: an admin-managed
+  image gallery (image blocks), heading, subheading, bundle price, description,
+  bundle purchase form and the product accordion.
+{% enddoc %}
+
+{%- liquid
+  if product == blank
+    if section.settings.product != blank
+      assign product = section.settings.product
+    endif
+  endif
+-%}
+
+{% include 'get-product-data' %}
+
+{% assign section_id = section.settings.section_id | default: 'hero-product' %}
+{% assign gallery_blocks = section.blocks | where: 'type', 'image' %}
+
+<section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}{% if section.settings.secondary == true %} hero-product--secondary{% endif %}{% if section.settings.background == true %} hero-product--bg{% endif %}" id="{{ section_id }}">
+    <div class="hero-product__container container">
+        <div class="hero-product__gallery">
+            <div
+                class="c-swiper"
+                data-swiper-thumbs="#{{ section_id }} .c-swiper-thumbs"
+                data-swiper='{
+                    "slidesPerView": 1,
+                    "spaceBetween": 16,
+                    "navigation": {
+                        "prevEl": "#{{ section_id }} .c-swiper-button-prev",
+                        "nextEl": "#{{ section_id }} .c-swiper-button-next"
+                    }
+                }'>
+                <div class="swiper-wrapper">
+                    {% if gallery_blocks.size > 0 %}
+                        {% for block in gallery_blocks %}
+                            {% if block.settings.image != blank %}
+                                <div class="swiper-slide" {{ block.shopify_attributes }}>
+                                    {% if forloop.first %}
+                                        <img loading="eager" fetchpriority="high" src="{{ block.settings.image | image_url: width: 720 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% else %}
+                                        <img loading="lazy" src="{{ block.settings.image | image_url: width: 720 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        {% render 'n-product-media', product_media: product.media, size: '720x' %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="c-swiper-thumbs-nav">
+                <button class="c-swiper-button-prev" aria-label="prev"></button>
+                <div
+                    class="c-swiper c-swiper-thumbs"
+                    data-swiper='{
+                        "slidesPerView": "auto",
+                        "spaceBetween": 12,
+                        "watchSlidesProgress": true,
+                        "freeMode": true,
+                        "slideToClickedSlide": true
+                    }'>
+                    <div class="swiper-wrapper">
+                        {% if gallery_blocks.size > 0 %}
+                            {% for block in gallery_blocks %}
+                                {% if block.settings.image != blank %}
+                                    <div class="swiper-slide">
+                                        <img loading="lazy" src="{{ block.settings.image | image_url: width: 240 }}" alt="{{ block.settings.image.alt | escape }}" />
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            {% render 'n-product-media', product_media: product.media, size: '240x' %}
+                        {% endif %}
+                    </div>
+                </div>
+                <button class="c-swiper-button-next" aria-label="next"></button>
+            </div>
+        </div>
+        <div class="hero-product__main">
+            {% if section.settings.badge_text != blank %}
+                <div class="e-pill-badge">{{ section.settings.badge_text }}</div>
+            {% endif %}
+
+            {% if section.settings.heading != blank %}
+                {% if section.settings.heading_level == 'h2' %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% else %}
+                    <h1>{{ section.settings.heading }}</h1>
+                {% endif %}
+            {% endif %}
+
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'subheading' %}
+                        {% if block.settings.text != blank %}
+                            <h4 {{ block.shopify_attributes }}>{{ block.settings.text }}</h4>
+                        {% endif %}
+                    {% when 'bundle-price' %}
+                        {% include 'n-product-bundle-price', section: section %}
+                    {% when 'description' %}
+                        {% render 'n-product-description', description: section.settings.description %}
+                    {% when 'bundle-purchase' %}
+                        {% include 'n-product-bundle-purchase', section: section, block: block %}
+                {% endcase %}
+            {% endfor %}
+        </div>
+        <div class="hero-product__extra">
+            {% for block in section.blocks %}
+                {% if block.type == 'accordion' %}
+                    {% render 'n-product-page-collapsed', product: product, page: page, section: section %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "t:sections.n_product-header-bundle.name",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id",
+            "default": "hero-product"
+        },
+        {
+            "type": "product",
+            "id": "product",
+            "label": "t:common.product"
+        },
+        {
+            "type": "checkbox",
+            "id": "reverse",
+            "label": "t:common.reverse",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "secondary",
+            "label": "t:common.secondary",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "background",
+            "label": "t:common.background",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "badge_text",
+            "label": "t:common.badge-text"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "select",
+            "id": "heading_level",
+            "label": "t:common.heading-level",
+            "options": [
+                {
+                    "value": "h1",
+                    "label": "t:common.heading-1"
+                },
+                {
+                    "value": "h2",
+                    "label": "t:common.heading-2"
+                }
+            ],
+            "default": "h1"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "t:common.description"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "t:common.image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                }
+            ]
+        },
+        {
+            "type": "subheading",
+            "name": "t:common.subheading",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "bundle-price",
+            "name": "t:common.bundle-price",
+            "limit": 1,
+            "settings": []
+        },
+        {
+            "type": "description",
+            "name": "t:common.description",
+            "limit": 1,
+            "settings": []
+        },
+        {
+            "type": "bundle-purchase",
+            "name": "t:common.bundle-purchase",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product1",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "item1_text",
+                    "label": "t:common.bundle-item1-text"
+                },
+                {
+                    "type": "product",
+                    "id": "product2",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_product2",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "item2_text",
+                    "label": "t:common.bundle-item2-text"
+                },
+                {
+                    "type": "text",
+                    "id": "discount_code",
+                    "label": "t:common.discount_code"
+                },
+                {
+                    "type": "range",
+                    "id": "progress_percent",
+                    "label": "t:common.percent",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "default": 75
+                }
+            ]
+        },
+        {
+            "type": "accordion",
+            "name": "t:common.accordion",
+            "limit": 1,
+            "settings": []
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_product-header-bundle.name"
+        }
+    ]
+}
+{% endschema %}
