@@ -466,18 +466,17 @@
             "wistia_url": "pon2pbncds"
           }
         },
+        "wistia_slider_tyGjj3": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "nagtfgn77q"
+          }
+        },
         "wistia_slider_AjMtbX": {
           "type": "wistia_slider",
           "disabled": true,
           "settings": {
             "wistia_url": "opfbh936fc"
-          }
-        },
-        "wistia_slider_tyGjj3": {
-          "type": "wistia_slider",
-          "disabled": true,
-          "settings": {
-            "wistia_url": "hczgk9ilv0"
           }
         },
         "wistia_slider_UDchGb": {
@@ -519,8 +518,8 @@
       "block_order": [
         "wistia_slider_G9maDr",
         "wistia_slider_8mC9PG",
-        "wistia_slider_AjMtbX",
         "wistia_slider_tyGjj3",
+        "wistia_slider_AjMtbX",
         "wistia_slider_UDchGb",
         "wistia_slider_pDGEgN",
         "wistia_slider_PNKnjY",
