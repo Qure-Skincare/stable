@@ -735,13 +735,25 @@
         "image_Hk3pTw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Img_50.png"
+            "image": "shopify://shop_images/neckdecled.png"
           }
         },
         "image_Rc8vLn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_1073714744.png"
+            "image": "shopify://shop_images/download_da355889-af55-4b24-8a3f-a05bc201b04c.jpg"
+          }
+        },
+        "image_fYwAgF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LED_Mask_Intro_1.png"
+          }
+        },
+        "image_VxCkEV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/N_D_Mask_Intro.webp"
           }
         },
         "subheading_QgKWfH": {
@@ -779,6 +791,8 @@
       "block_order": [
         "image_Hk3pTw",
         "image_Rc8vLn",
+        "image_fYwAgF",
+        "image_VxCkEV",
         "subheading_QgKWfH",
         "price_QgKWfH",
         "description_QgKWfH",
@@ -792,8 +806,8 @@
         "reverse": true,
         "secondary": true,
         "background": false,
-        "heading": "Q-Rejuvalight Pro LED Mask",
         "badge_text": "Limited Time Offer",
+        "heading": "Q-Rejuvalight Pro LED Mask",
         "heading_level": "h2",
         "description": "<ul><li>Lifetime Warranty</li><li>FDA Cleared</li></ul><p>Elevate your LED routine with full face and neck coverage for consistent all-over results.</p>"
       }
@@ -1211,13 +1225,15 @@
           "type": "accordion",
           "settings": {
             "heading": "Technical specifications",
-            "show_technical_specs": true
+            "show_technical_specs": true,
+            "text": ""
           }
         },
         "accordion_results": {
           "type": "accordion",
           "settings": {
             "heading": "How quickly will I see results?",
+            "show_technical_specs": false,
             "text": "<p>Every individual may respond differently to specific wavelengths of light, and results will depend on the goal you want to address.</p><p>Most users report visible improvements in the look of breakouts and redness sooner than expected. Smoother-looking lines, improved tone, and a firmer appearance may take longer.</p><p>Changes are often gradual, so we recommend taking “before and after” photos to track your results. Consistency is key for maintaining improvements over time.</p>"
           }
         },
@@ -1225,6 +1241,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How often can I use these treatments?",
+            "show_technical_specs": false,
             "text": "<p>You can use both the Q-Rejuvalight Pro Mask and the Neck & Décolletage LED Device daily. In fact, consistent daily use is recommended for best results.</p>"
           }
         },
@@ -1232,6 +1249,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Do I need to wear eye protection when I use the Q-Rejuvalight Pro?",
+            "show_technical_specs": false,
             "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.</p><p>Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our unwavering commitment to your safety, we decided to take the initiative to include FREE light blocking protective eyewear with our Q-Rejuvalight Pro LED mask that works seamlessly during your treatment.</p>"
           }
         },
@@ -1239,6 +1257,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is LED light therapy safe for all skin types?",
+            "show_technical_specs": false,
             "text": "<p>Yes — the Q-Rejuvalight Pro is designed for use across all skin types when used as directed.</p><p>That said, skin types V and VI (on the Fitzpatrick scale) may be more sensitive to visible light due to higher melanin levels, leading to increased photo-absorption and a small risk of pigmentation changes.</p><p>Because of this, we advise that those with darker skin tones or pigment-prone skin consult with their dermatologist before use to determine proper settings and usage frequency.</p><p>Many users with deeper skin tones have used the device safely and shared positive outcomes when protocols were followed carefully.</p>"
           }
         },
@@ -1246,6 +1265,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Does the Q-Rejuvalight Pro come with warranty?",
+            "show_technical_specs": false,
             "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! Proudly designed in Australia.</p>"
           }
         },
@@ -1253,6 +1273,7 @@
           "type": "accordion",
           "settings": {
             "heading": "At what age and when is the best time to start using LED light therapy?",
+            "show_technical_specs": false,
             "text": "<p>Most people can benefit from LED light therapty. Whether the goal is to treat acne, help reduce the visible signs of aging, or both, prevention is better than correction. The sooner the Q-Rejuvalight Pro becomes part of your routine, the better!</p>"
           }
         },
@@ -1260,6 +1281,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is Q-Rejuvalight Pro FDA-cleared?",
+            "show_technical_specs": false,
             "text": "<p>Yes! The Q-Rejuvalight Pro LED Mask is the world’s first customizable, FDA-cleared at-home LED device designed for the treatment of wrinkles and mild-to-moderate inflammatory acne. You can find more details about the clearance on the FDA website (K230042).</p>"
           }
         }
@@ -1278,8 +1300,8 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Have questions?</h2>",
-        "text": "Don't see your question? ",
-        "button_label": "Ask us ",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
       }
     },
