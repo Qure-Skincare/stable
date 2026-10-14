@@ -623,7 +623,7 @@
         "step_place": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/usage-steps-recovery-mask-3.webp",
+            "image": "shopify://shop_images/recoverymaskq.webp",
             "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-3-mob.webp",
             "heading": "3. Place mask on face",
             "text": "<p>Leave the mask on for 15-20 minutes while you relax.</p>"
@@ -632,7 +632,7 @@
         "step_rinse": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/usage-steps-recovery-mask-4.webp",
+            "image": "shopify://shop_images/recoverymaskstepd.webp",
             "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-4-mob.webp",
             "heading": "4. Do not rinse",
             "text": "<p>Gently remove and discard the mask. Do not rinse. Pat or massage any remaining serum into the skin until absorbed.</p>"
