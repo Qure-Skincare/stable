@@ -485,6 +485,12 @@
             "image": "shopify://shop_images/recovery-mask-2.webp"
           }
         },
+        "image_Vw69Pw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/maskrechowtouse.webp"
+          }
+        },
         "image_3": {
           "type": "image",
           "settings": {
@@ -495,6 +501,18 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/recovery-mask-4.webp"
+          }
+        },
+        "image_feNYJA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mask_recov_Benefits-1.webp"
+          }
+        },
+        "image_dzL6RP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/recovbenefitsmask.webp"
           }
         },
         "image_5": {
@@ -532,8 +550,11 @@
         "pill_season",
         "image_1",
         "image_2",
+        "image_Vw69Pw",
         "image_3",
         "image_4",
+        "image_feNYJA",
+        "image_dzL6RP",
         "image_5",
         "image_6",
         "image_7",
