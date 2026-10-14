@@ -27,6 +27,7 @@
         },
         "limited_offer_h84eH3": {
           "type": "limited-offer",
+          "disabled": true,
           "settings": {
             "sum": "100$ Off",
             "code": "AUTUMNSALE",
@@ -109,7 +110,7 @@
         "rating": false,
         "rating_type": "customers",
         "limited": false,
-        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother, clearer-looking skin. <br/><strong>First serum free ($79 value).</strong></p>",
+        "description": "<p>Pair the <strong>LED Mask with Blue+ Serum</strong> for visibly smoother, clearer-looking skin.&nbsp;<br/><strong>First serum free ($79 value).</strong></p>",
         "reserved": false,
         "soldout": false,
         "button-label": "Get LED Mask + First Serum Free",
@@ -616,7 +617,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
