@@ -196,7 +196,8 @@
         "default": "off"
       },
       { "type": "text", "id": "dynamic_upsells_experiment", "label": "Experiment id", "default": "du1", "info": "Letters and digits only. Change it to start a fresh split." },
-      { "type": "range", "id": "dynamic_upsells_split", "label": "Share of visitors in the test group", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 }
+      { "type": "range", "id": "dynamic_upsells_split", "label": "Share of visitors in the test group", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+      { "type": "checkbox", "id": "dynamic_upsells_us_only", "label": "Only visitors from the USA", "default": false, "info": "Off: visitors from all countries take part." }
     ]
   },
   {
