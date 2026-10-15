@@ -5,37 +5,59 @@
   {% include 'n-footer-cart-drawer-bar' %}
 {% enddoc %}
 
-{% if global_bar_gift1_limit > 0 or global_bar_gift2_limit > 0 %}
-    <div class="flyout-cart__gifts">
-        {% if global_bar_percent == 100 %}
-            <p>{{ 'cart.drawer.settings.bar_header_completed_html' | t }}</p>
-        {% else %}
-            <p>{{ 'cart.drawer.settings.bar_header_html' | t: add_more: global_bar_add_more, product_title: global_bar_product_title, product_price: global_bar_product_price }}</p>
-        {% endif %}
-        
-        <ul style="--gifts-progress: {{ global_bar_percent }}%;">
+{% assign black_friday_turn_on = settings.black_friday_turn_on %}
+
+{% if black_friday_turn_on %}
+    <div class="flyout-cart__unlocked">
+        <p>{{ 'cart.drawer.settings.bf_unlocked' | t }}</p>
+        <ul>
             {% if global_bar_shipping_limit > 0 %}
-                <li {% if global_total_price_devided >= global_bar_shipping_limit %}class="active"{% endif %} style="--gifts-icon-pos: 20%">
-                    <i class="e-icon{% if global_total_price_devided >= global_bar_shipping_limit %} e-icon-checkmark{% else %} e-icon-{{ global_bar_shipping_icon }}{% endif %}"></i>
-                    <span>{{ global_bar_shipping_limit | times: 100 | money_without_trailing_zeros }}</span>
+                <li{% if global_total_price_devided >= global_bar_shipping_limit %} class="unlocked"{% endif %}>
+                    <small>{{ global_bar_shipping_title }}</small>
+                    <span><i class="e-icon e-icon-truck"></i></span>
                 </li>
             {% endif %}
-
-
-            {% if global_bar_gift1_limit > 0 %}
-                <li {% if global_total_price_devided >= global_bar_gift1_limit %}class="active"{% endif %} style="--gifts-icon-pos: {% if global_bar_gift2_limit > 0 %}50{% else %}80{% endif %}%">
-                    <i class="e-icon{% if global_total_price_devided >= global_bar_gift1_limit %} e-icon-checkmark{% else %} e-icon-{{ global_bar_gift1_icon }}{% endif %}"></i>
-                    <span>{{ global_bar_gift1_limit | times: 100 | money_without_trailing_zeros }}</span>
-                </li>
-            {% endif %}
-
-
             {% if global_bar_gift2_limit > 0 %}
-                <li {% if global_total_price_devided >= global_bar_gift2_limit %}class="active"{% endif %} style="--gifts-icon-pos: 80%">
-                    <i class="e-icon{% if global_total_price_devided >= global_bar_gift2_limit %} e-icon-checkmark{% else %} e-icon-{{ global_bar_gift2_icon }}{% endif %}"></i>
-                    <span>{{ global_bar_gift2_limit | times: 100 | money_without_trailing_zeros }}</span>
+                <li{% if global_total_price_devided >= global_bar_gift2_limit %} class="unlocked"{% endif %}>
+                    <small>{{ global_bar_gift2_title }}</small>
+                    <span><i class="e-icon e-icon-pillow-fill"></i></span>
                 </li>
             {% endif %}
         </ul>
     </div>
+{% else %}
+    {% if global_bar_gift1_limit > 0 or global_bar_gift2_limit > 0 %}
+        <div class="flyout-cart__gifts">
+            {% if global_bar_percent == 100 %}
+                <p>{{ 'cart.drawer.settings.bar_header_completed_html' | t }}</p>
+            {% else %}
+                <p>{{ 'cart.drawer.settings.bar_header_html' | t: add_more: global_bar_add_more, product_title: global_bar_product_title, product_price: global_bar_product_price }}</p>
+            {% endif %}
+            
+            <ul style="--gifts-progress: {{ global_bar_percent }}%;">
+                {% if global_bar_shipping_limit > 0 %}
+                    <li {% if global_total_price_devided >= global_bar_shipping_limit %}class="active"{% endif %} style="--gifts-icon-pos: 20%">
+                        <i class="e-icon{% if global_total_price_devided >= global_bar_shipping_limit %} e-icon-checkmark{% else %} e-icon-{{ global_bar_shipping_icon }}{% endif %}"></i>
+                        <span>{{ global_bar_shipping_limit | times: 100 | money_without_trailing_zeros }}</span>
+                    </li>
+                {% endif %}
+
+
+                {% if global_bar_gift1_limit > 0 %}
+                    <li {% if global_total_price_devided >= global_bar_gift1_limit %}class="active"{% endif %} style="--gifts-icon-pos: {% if global_bar_gift2_limit > 0 %}50{% else %}80{% endif %}%">
+                        <i class="e-icon{% if global_total_price_devided >= global_bar_gift1_limit %} e-icon-checkmark{% else %} e-icon-{{ global_bar_gift1_icon }}{% endif %}"></i>
+                        <span>{{ global_bar_gift1_limit | times: 100 | money_without_trailing_zeros }}</span>
+                    </li>
+                {% endif %}
+
+
+                {% if global_bar_gift2_limit > 0 %}
+                    <li {% if global_total_price_devided >= global_bar_gift2_limit %}class="active"{% endif %} style="--gifts-icon-pos: 80%">
+                        <i class="e-icon{% if global_total_price_devided >= global_bar_gift2_limit %} e-icon-checkmark{% else %} e-icon-{{ global_bar_gift2_icon }}{% endif %}"></i>
+                        <span>{{ global_bar_gift2_limit | times: 100 | money_without_trailing_zeros }}</span>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    {% endif %}
 {% endif %}

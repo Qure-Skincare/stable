@@ -205,7 +205,9 @@
       { "type": "checkbox", "id": "black_friday_turn_on", "label": "Special offer Turn on" },
       { "type": "text", "id": "black_friday_discount", "label": "Discount" },
       { "type": "range", "id": "black_friday_discount_percent", "label": "Percent", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 26 },
-      { "type": "textarea", "id": "black_friday_discount_exception", "label": "Exception" }
+      { "type": "textarea", "id": "black_friday_discount_exception", "label": "Exception" },
+      { "type": "text", "id": "black_friday_countdown_from", "label": "Countdown from", "info": "Date format: YYYY-MM-DD" },
+      { "type": "range", "id": "black_friday_countdown_days", "label": "Countdown days", "min": 1, "max": 30, "step": 1, "unit": "day", "default": 5 }
     ]
   },
   {

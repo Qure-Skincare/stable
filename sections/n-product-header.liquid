@@ -49,6 +49,14 @@
                 <div class="e-pill-badge">{{ section.settings.badge_text }}</div>
             {% endif %}
 
+            {%  assign black_friday_turn_on = settings.black_friday_turn_on %}
+
+            {% if black_friday_turn_on %}
+                <div class="e-bf-label e-bf-label--md">
+                    <img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-label-md.webp" alt="Black Friday" />
+                </div>
+            {% endif %}
+            
             {% if dp_heading != blank %}
                 {% if section.settings.heading_level == 'h2' %}
                     <h2{{ dp_heading_attr }}>{{ dp_heading }}</h2>

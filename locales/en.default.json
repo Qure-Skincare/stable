@@ -424,7 +424,8 @@
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "cart": {
-      "savings": "EXCLUSIVE SAVINGS"
+      "savings": "EXCLUSIVE SAVINGS",
+      "offer-savings": "BLACK FRIDAY SAVINGS"
     }
   },
   "n-announcement-bar-gamification": {
@@ -607,6 +608,7 @@
         "notification_time_end": "Time is up!",
         "bar_header_html": "You’re {{ add_more }} way from <strong>a {{ product_title }}</strong> (worth {{ product_price }})",
         "bar_header_completed_html": "Congrats! You've unlocked your <strong>Free Gifts!</strong>",
+        "bf_unlocked": "You’ve unlocked:",
         "header": "Your Cart",
         "item-text-2days": "In stock. Shipped within 2 days",
         "reviews": "Reviews",
@@ -618,7 +620,8 @@
         "guarantee-text": "Backed by our 30-Day Money-Back Guarantee",
         "checkout": "CHECKOUT",
         "preorder": "Pre-order.",
-        "ships": "Ships"
+        "ships": "Ships",
+        "bf_sale_ends_in": "Black Friday Sale Ends In:"
       },
       "empty": {
         "header": "Your cart is empty..",
