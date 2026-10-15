@@ -7,16 +7,36 @@
 
 {% if timer > 0 %}
    {% if cart.item_count > 0 %}
-      <cart-notification>
-         <div class="cart-countdown-time" data-countdown-time="{{ timer }}" data-timeout-message="{{ 'cart.drawer.settings.notification_time_end' | t }}">
-               <span class="">{{ 'cart.drawer.settings.notification_html' | t }}</span>
-               <span class="cart-counter d-flex">
-                     <span class="cart-counter-block countdown-timer-minute">00</span>
-                     <span class="cart-counter-block countdown-timer-sec">00</span>
-               </span>
-               <span class="countdown-message"></span>
-         </div>
-      </cart-notification>
+
+      {%  assign black_friday_turn_on = settings.black_friday_turn_on %}
+
+      {% if black_friday_turn_on %}
+         <div class="flyout-cart__bf-countdown">
+            <p>{{ 'cart.drawer.settings.bf_sale_ends_in' | t }}</p>
+            <div class="e-countdown"{% if settings.black_friday_countdown_from != blank %} data-deadline="{{ settings.black_friday_countdown_from }}"{% endif %} data-offer-days="{{ settings.black_friday_countdown_days }}">
+                <div data-key="{{ 'product.settings.limited-offer.days' | t }}">00</div>
+                <div data-key="{{ 'product.settings.limited-offer.hours' | t }}">00</div>
+                <div data-key="{{ 'product.settings.limited-offer.minutes' | t }}">00</div>
+                <div data-key="{{ 'product.settings.limited-offer.seconds' | t }}">00</div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                loadScriptOnce("n-announcement-bar.js", "{{ 'n-announcement-bar.js' | asset_url }}");
+            });
+        </script>
+      {% else %}
+         <cart-notification>
+            <div class="cart-countdown-time" data-countdown-time="{{ timer }}" data-timeout-message="{{ 'cart.drawer.settings.notification_time_end' | t }}">
+                  <span class="">{{ 'cart.drawer.settings.notification_html' | t }}</span>
+                  <span class="cart-counter d-flex">
+                        <span class="cart-counter-block countdown-timer-minute">00</span>
+                        <span class="cart-counter-block countdown-timer-sec">00</span>
+                  </span>
+                  <span class="countdown-message"></span>
+            </div>
+         </cart-notification>
+      {% endif %}
    {% endif %}
 
    <!-- countdown-timer start  -->

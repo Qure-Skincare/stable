@@ -1,7 +1,7 @@
 (function () {
     var TZ = 'America/Los_Angeles';
     var DAY_MS = 86400000;
-    var SCOPE_SELECTOR = '#announcement-bar .e-countdown';
+    var SCOPE_SELECTOR = '#announcement-bar .e-countdown, .flyout-cart__bf-countdown .e-countdown';
 
     function pad2(n) {
         return String(n).padStart(2, '0');
