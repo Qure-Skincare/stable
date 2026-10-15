@@ -1,0 +1,58 @@
+{% doc %}
+  Renders the "free Blue+ serum with the mask" promo block for the product-header
+  section. While the block is on the page the main buy button adds the serum
+  (`subscription_variant_id` + `selling_plan_id`, SKIO) next to the section product,
+  through the same hidden widget n-sticky-button uses with
+  n-product-optional-subscription.js. With `link` set the buy button (and the sticky
+  CTA) navigates to that URL - the Skio one-click link - instead of adding to cart.
+
+  @param {object} section - A section object.
+  @param {object} block - A `blue-serum-free` block object.
+
+  @example
+  {% render 'n-product-blue-serum-free', section: section, block: block %}
+{% enddoc %}
+
+<div class="c-blue-serum-free" {{ block.shopify_attributes }}>
+    <strong>{{ block.settings.title }}</strong>
+    <span class="e-pill-save">{{ block.settings.value }}</span>
+    <small class="e-declaimer">{{ block.settings.note }}</small>
+    {% if block.settings.image != blank %}
+        <picture>
+            {% if block.settings.image_mobile != blank %}
+                <source media="(min-width: 992px)" srcset="{{ block.settings.image | image_url: width: 600 }}" />
+            {% endif %}
+            {% assign mobile_image = block.settings.image_mobile | default: block.settings.image %}
+            <img loading="lazy" src="{{ mobile_image | image_url: width: 600 }}" width="{{ mobile_image.width }}" height="{{ mobile_image.height }}" alt="{{ block.settings.product.title | escape }}" />
+        </picture>
+    {% endif %}
+</div>
+
+{% if block.settings.link != blank %}
+    <script>
+        const blue_serum_free_link = {{ block.settings.link | json }};
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-blue-serum-free.js', '{{ 'n-product-blue-serum-free.js' | asset_url }}');
+        });
+    </script>
+{% elsif block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}
+    <div
+        data-optional-subscription
+        data-main-form-only
+        hidden
+        data-subscription-variant-id="{{ block.settings.subscription_variant_id | escape }}"
+        data-subscription-selling-plan-id="{{ block.settings.selling_plan_id | escape }}"
+    >
+        <div class="c-optional-subscription">
+            <label class="c-optional-subscription__option">
+                <input type="checkbox" name="subscription" checked />
+            </label>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-optional-subscription.js', '{{ 'n-product-optional-subscription.js' | asset_url }}');
+        });
+    </script>
+{% endif %}
