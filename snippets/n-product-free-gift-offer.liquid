@@ -1,6 +1,6 @@
 {% doc %}
-  Renders the "free Blue+ serum with the mask" promo block for the product-header
-  section. n-product-blue-serum-free.js takes over the main buy button and the
+  Renders a "free gift with the product" promo block for the product-header and page-header
+  sections. n-product-free-gift-offer.js takes over the main buy button and the
   sticky CTA while the block is on the page:
   - with `link` set (the Skio one-click URL pasted as is), the click navigates to a
     /cart/add URL rebuilt from it: section product first, then the link's items,
@@ -9,10 +9,10 @@
     `selling_plan_id` are added through the cart drawer.
 
   @param {object} section - A section object.
-  @param {object} block - A `blue-serum-free` block object.
+  @param {object} block - A `free-gift-offer` block object.
 
   @example
-  {% render 'n-product-blue-serum-free', section: section, block: block %}
+  {% render 'n-product-free-gift-offer', section: section, block: block %}
 {% enddoc %}
 
 <div class="c-blue-serum-free" {{ block.shopify_attributes }}>
@@ -32,12 +32,12 @@
 
 {% if block.settings.link != blank or block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}
     <script>
-        const blue_serum_free_link = {{ block.settings.link | json }};
-        const blue_serum_free_variant_id = {{ block.settings.subscription_variant_id | json }};
-        const blue_serum_free_selling_plan_id = {{ block.settings.selling_plan_id | json }};
+        const free_gift_offer_link = {{ block.settings.link | json }};
+        const free_gift_offer_variant_id = {{ block.settings.subscription_variant_id | json }};
+        const free_gift_offer_selling_plan_id = {{ block.settings.selling_plan_id | json }};
 
         document.addEventListener("DOMContentLoaded", function () {
-            loadScriptOnce('n-product-blue-serum-free.js', '{{ 'n-product-blue-serum-free.js' | asset_url }}');
+            loadScriptOnce('n-product-free-gift-offer.js', '{{ 'n-product-free-gift-offer.js' | asset_url }}');
         });
     </script>
 {% endif %}

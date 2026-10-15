@@ -60,8 +60,8 @@
             "days": 4
           }
         },
-        "blue_serum_free_kR7mXd": {
-          "type": "blue-serum-free",
+        "free_gift_offer_kR7mXd": {
+          "type": "free-gift-offer",
           "settings": {
             "title": "<p><strong>FREE Blue+ Face Serum With<br>Q-Rejuvalight Pro LED Mask</strong></p>",
             "value": "Value $79",
@@ -157,7 +157,7 @@
         "description_A10",
         "exclusive-offer_iaSzaD",
         "limited_offer_A8",
-        "blue_serum_free_kR7mXd",
+        "free_gift_offer_kR7mXd",
         "button_A9",
         "upsell-popup_mMzPq2",
         "nextships_A7",

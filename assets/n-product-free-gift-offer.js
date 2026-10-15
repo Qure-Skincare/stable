@@ -1,16 +1,16 @@
 (function () {
     'use strict';
 
-    const GLOBAL_FLAG = '__blueSerumFreeClickBound';
+    const GLOBAL_FLAG = '__freeGiftOfferClickBound';
     const BLOCK_SELECTOR = '.c-blue-serum-free';
     const SECTION_SELECTOR = '.shopify-section, .hero-product';
     const BUTTON_SELECTOR =
         '.c-buy-block form[action$="/cart/add"] [type="submit"], #sticky-cta-button';
     const ITEM_PARAM = /^items\[(\d+)\]\[(id|selling_plan|quantity)\]$/;
 
-    const link = typeof blue_serum_free_link === 'string' ? blue_serum_free_link : '';
-    const variantId = typeof blue_serum_free_variant_id === 'string' ? blue_serum_free_variant_id : '';
-    const sellingPlanId = typeof blue_serum_free_selling_plan_id === 'string' ? blue_serum_free_selling_plan_id : '';
+    const link = typeof free_gift_offer_link === 'string' ? free_gift_offer_link : '';
+    const variantId = typeof free_gift_offer_variant_id === 'string' ? free_gift_offer_variant_id : '';
+    const sellingPlanId = typeof free_gift_offer_selling_plan_id === 'string' ? free_gift_offer_selling_plan_id : '';
 
     if (window[GLOBAL_FLAG]) return;
     if (!link && !(variantId && sellingPlanId)) return;
@@ -107,7 +107,7 @@
                 }
             ]);
         } catch (err) {
-            console.error('blue-serum-free addToCart failed:', err);
+            console.error('free-gift-offer addToCart failed:', err);
         } finally {
             inFlight = false;
         }
