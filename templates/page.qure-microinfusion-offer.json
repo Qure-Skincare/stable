@@ -451,12 +451,14 @@
         },
         "payment_type_3zQTmH": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Pay_Icons.svg"
           }
@@ -1000,6 +1002,7 @@
       "name": "t:sections.n_experts-grid.name",
       "settings": {
         "use_own_file": false,
+        "awards": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
