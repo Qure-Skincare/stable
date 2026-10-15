@@ -1,0 +1,43 @@
+{% doc %}
+  Renders a "free gift with the product" promo block for the product-header and page-header
+  sections. n-product-free-gift-offer.js takes over the main buy button and the
+  sticky CTA while the block is on the page:
+  - with `link` set (the Skio one-click URL pasted as is), the click navigates to a
+    /cart/add URL rebuilt from it: section product first, then the link's items,
+    landing on the link's own return_to; /cart/clear is dropped;
+  - otherwise the section product and `subscription_variant_id` with
+    `selling_plan_id` are added through the cart drawer.
+
+  @param {object} section - A section object.
+  @param {object} block - A `free-gift-offer` block object.
+
+  @example
+  {% render 'n-product-free-gift-offer', section: section, block: block %}
+{% enddoc %}
+
+<div class="c-blue-serum-free" {{ block.shopify_attributes }}>
+    {{ block.settings.title }}
+    <span class="e-pill-save">{{ block.settings.value }}</span>
+    <small class="e-declaimer">{{ block.settings.note }}</small>
+    {% if block.settings.image != blank %}
+        <picture>
+            {% if block.settings.image_mobile != blank %}
+                <source media="(min-width: 992px)" srcset="{{ block.settings.image | image_url: width: 600 }}" />
+            {% endif %}
+            {% assign mobile_image = block.settings.image_mobile | default: block.settings.image %}
+            <img loading="lazy" src="{{ mobile_image | image_url: width: 600 }}" width="{{ mobile_image.width }}" height="{{ mobile_image.height }}" alt="{{ block.settings.product.title | escape }}" />
+        </picture>
+    {% endif %}
+</div>
+
+{% if block.settings.link != blank or block.settings.subscription_variant_id != blank and block.settings.selling_plan_id != blank %}
+    <script>
+        const free_gift_offer_link = {{ block.settings.link | json }};
+        const free_gift_offer_variant_id = {{ block.settings.subscription_variant_id | json }};
+        const free_gift_offer_selling_plan_id = {{ block.settings.selling_plan_id | json }};
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce('n-product-free-gift-offer.js', '{{ 'n-product-free-gift-offer.js' | asset_url }}');
+        });
+    </script>
+{% endif %}
