@@ -63,7 +63,7 @@
         "blue_serum_free_kR7mXd": {
           "type": "blue-serum-free",
           "settings": {
-            "title": "FREE Blue+ Face Serum With <br />Q-Rejuvalight Pro LED Mask",
+            "title": "<p><strong>FREE Blue+ Face Serum With<br>Q-Rejuvalight Pro LED Mask</strong></p>",
             "value": "Value $79",
             "note": "No code needed. Auto added in cart.",
             "image": "shopify://shop_images/blue-free.webp",
@@ -71,7 +71,7 @@
             "product": "blue-face-serum",
             "subscription_variant_id": "49565278503151",
             "selling_plan_id": "8856043759",
-            "link": ""
+            "link": "https://qureskincare.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%255B0%255D%255Bid%255D%3D49565278503151%26items%255B0%255D%255Bselling_plan%255D%3D8856043759%26items%255B0%255D%255Bquantity%255D%3D1%26return_to%3D%252Fcheckout"
           }
         },
         "button_A9": {
@@ -1453,20 +1453,6 @@
     },
     "sticky_cta_AFkFxe": {
       "type": "n-sticky-button",
-      "blocks": {
-        "optional_subscription_Yq3Lmw": {
-          "type": "optional-subscription",
-          "settings": {
-            "product": "q-rejuvalight-pro-facewear-3",
-            "rating": false,
-            "subscription_variant_id": "49565278503151",
-            "selling_plan_id": "8856043759"
-          }
-        }
-      },
-      "block_order": [
-        "optional_subscription_Yq3Lmw"
-      ],
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Q-Rejuvalight Pro LED Mask",
