@@ -1,4 +1,11 @@
+{%- comment -%}
+  Dynamic upsells A/B. With "Only visitors from the USA" on, only visitors whose
+  Shopify country is the US take part; everyone else gets no arm, sees the
+  regular upsells and stays outside the test. The same check sits in
+  n-footer-cart-drawer-upsells.liquid.
+{%- endcomment -%}
 {%- if settings.dynamic_upsells_mode == 'aa' or settings.dynamic_upsells_mode == 'ab' -%}
+{%- if settings.dynamic_upsells_us_only == false or localization.country.iso_code == 'US' -%}
 <script>
   // Dynamic upsells A/B: put this visitor in an arm. Uses the same visitor id
   // as QureLab's collect.js, so QureLab can recompute the arm for any event.
@@ -28,6 +35,7 @@
     }
   })();
 </script>
+{%- endif -%}
 {%- endif -%}
 
 <!-- Google Tag Manager -->
