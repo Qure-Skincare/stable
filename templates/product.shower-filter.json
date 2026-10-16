@@ -1655,11 +1655,12 @@
         "variant_45xfGi",
         "variant_45sxGi"
       ],
+      "disabled": true,
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
         "heading": "",
         "text": "580 Units Reserved in last 48 hours",
-        "button-label": "Subscribe & Save",
+        "button-label": "Buy Now",
         "button-url": ""
       }
     }
