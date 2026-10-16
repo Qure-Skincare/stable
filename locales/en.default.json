@@ -428,14 +428,6 @@
       "offer-savings": "BLACK FRIDAY SAVINGS"
     }
   },
-  "n-announcement-bar-gamification": {
-    "settings": {
-      "days": "days",
-      "hours": "hours",
-      "minutes": "minutes",
-      "seconds": "seconds"
-    }
-  },
   "announcement-bar": {
     "settings": {
       "days": "days",
