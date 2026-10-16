@@ -85,7 +85,7 @@
         "image": "shopify://shop_images/micro-infusion-hero.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hero-mob_1.webp",
         "button_url": "#purchase-form",
-        "button_label": "Save 70% Today",
+        "button_label": "Save 62% Today",
         "button_line": false,
         "alert": "",
         "sub_text": "",
@@ -451,12 +451,14 @@
         },
         "payment_type_3zQTmH": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Pay_Icons.svg"
           }
@@ -1000,6 +1002,7 @@
       "name": "t:sections.n_experts-grid.name",
       "settings": {
         "use_own_file": false,
+        "awards": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
@@ -1084,7 +1087,7 @@
         "image": "shopify://shop_images/mi-use-video.webp",
         "image_mobile": "shopify://shop_images/mi-use-video-mob.webp",
         "wistia_url": "8ymvdqzx92",
-        "button_label": "buy now & SAVE up to 70%",
+        "button_label": "buy now & SAVE up to 62%",
         "button_url": "#hero-product"
       }
     },

@@ -11,6 +11,8 @@
     attribute ("<experiment>:c" or "<experiment>:t"), written by
     n-footer-cart-drawer.js. Only the test arm in "ab" mode gets the QureLab
     list; everyone else gets the products from the theme settings.
+    With "Only visitors from the USA" on (see n-header-scripts), a cart that
+    still carries an arm from another country gets the regular upsells, unlabelled.
   endcomment
   assign ql_arm = ''
   assign ql_dynamic = false
@@ -18,10 +20,12 @@
   assign ql_pos = ''
   assign ql_lv = ''
   if settings.dynamic_upsells_mode == 'aa' or settings.dynamic_upsells_mode == 'ab'
-    assign ql_arm = cart.attributes['_ql_arm'] | default: ''
-    assign ql_test_arm = settings.dynamic_upsells_experiment | default: 'du1' | append: ':t'
-    if settings.dynamic_upsells_mode == 'ab' and ql_arm == ql_test_arm
-      assign ql_dynamic = true
+    if settings.dynamic_upsells_us_only == false or localization.country.iso_code == 'US'
+      assign ql_arm = cart.attributes['_ql_arm'] | default: ''
+      assign ql_test_arm = settings.dynamic_upsells_experiment | default: 'du1' | append: ':t'
+      if settings.dynamic_upsells_mode == 'ab' and ql_arm == ql_test_arm
+        assign ql_dynamic = true
+      endif
     endif
   endif
 -%}

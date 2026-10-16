@@ -235,13 +235,16 @@ const setLoading = (state, adding = false) => {
 
 /*  dynamic upsells A/B arm  */
 
-// The <head> script puts every visitor in an arm (window.QL.arm). The arm has
-// to sit on the cart as the `_ql_arm` attribute: Liquid reads it to choose the
-// upsell list, and Shopify copies it onto the order for QureLab.
+// The <head> script puts every visitor in the test in an arm (window.QL.arm);
+// visitors outside it (another country when the test is USA-only) get none. The arm has to sit on the cart as the `_ql_arm` attribute:
+// Liquid reads it to choose the upsell list, and Shopify copies it onto the
+// order for QureLab. A cart whose arm the visitor no longer has (another
+// country, test switched off) is cleared, so its order stays outside the test.
+const qlArm = () => (window.QL && window.QL.arm) || '';
+
 const qlNeedsArm = () => {
-    const arm = window.QL && window.QL.arm;
     const content = document.getElementById('cart-dynamic-content');
-    return Boolean(arm && content && content.dataset.qlArm !== arm);
+    return Boolean(content && (content.dataset.qlArm || '') !== qlArm());
 };
 
 // Before an add: stamp the cart first, so the drawer rendered by the add
@@ -250,19 +253,19 @@ const qlNeedsArm = () => {
 const qlEnsureArm = async () => {
     if (!qlNeedsArm()) return;
     try {
-        await cartPost('cart/update.js', { attributes: { _ql_arm: window.QL.arm } });
-        document.getElementById('cart-dynamic-content').dataset.qlArm = window.QL.arm;
+        await cartPost('cart/update.js', { attributes: { _ql_arm: qlArm() } });
+        document.getElementById('cart-dynamic-content').dataset.qlArm = qlArm();
     } catch (error) {
         console.error(error);
     }
 };
 
-// For a cart that already has items but no (or an outdated) arm: stamp it and
-// re-render the drawer.
+// For a cart that already has items but no, an outdated or a stray arm: stamp
+// or clear it and re-render the drawer.
 const qlSyncArm = async () => {
     if (!qlNeedsArm() || !document.querySelector('#cart-dynamic-content .flyout-cart__list')) return;
     try {
-        const res = await cartPost('cart/update.js', withSections({ attributes: { _ql_arm: window.QL.arm } }));
+        const res = await cartPost('cart/update.js', withSections({ attributes: { _ql_arm: qlArm() } }));
         if (res.sections && res.sections[SECTION_ID]) {
             await applySections(res.sections);
             bindForms();
