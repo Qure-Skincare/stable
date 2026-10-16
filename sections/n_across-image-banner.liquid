@@ -12,7 +12,7 @@
         assign banner_class = 'across-image-banner across-image-banner--hero across-image-banner--reverse'
     elsif mod == 'quiz'
         assign banner_class = 'across-image-banner across-image-banner--reverse across-image-banner--quiz'
-    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer' or mod == 'labor-day'
+    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer' or mod == 'labor-day' or mod == 'bf'
         assign banner_class = banner_class | append: ' across-image-banner--holidays across-image-banner--' | append: mod
     elsif mod != 'none' and mod != blank
         assign banner_class = banner_class | append: ' across-image-banner--' | append: mod
@@ -401,6 +401,10 @@
                 {
                     "value": "labor-day",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.labor-day"
+                },
+                {
+                    "value": "bf",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.bf"
                 },
                 {
                     "value": "flex",
