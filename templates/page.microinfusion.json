@@ -830,6 +830,20 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_GwmLL3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_2_52233357-1670-4cbf-82a6-a7fe5105b0cb.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Angelina R.",
+            "verified_customer": "Verified customer",
+            "badge": "Rejuvenation",
+            "text": "<p>“I have to say I was a little skeptical about this product but I have to say each time I have used it my face feels moisturized & rejuvenated! I absolutely love this! Not to mention the difference I have seen in the tightness of my face & neck since using this product. I am a fan & will continue using!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -846,7 +860,8 @@
         "slider_e11ie1",
         "slider_pJ4Kw1",
         "slider_9NRFNC",
-        "slider_cdVmwE"
+        "slider_cdVmwE",
+        "slider_GwmLL3"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
