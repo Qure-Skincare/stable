@@ -1,5 +1,7 @@
 {% doc %}
-  Renders an announcement bar gamification section
+  Renders an announcement bar gamification section: reward progress tiers
+  (shared with the cart drawer via get-cart-global-data) and the global
+  special-offer countdown.
 {% enddoc %}
 
 
@@ -19,40 +21,80 @@
 
 
 {% unless is_exception %}
-  <!-- ANNOUNCEMENT BAR -->
-  <style>
-    .announcement-bar-offer-countdown p {
-      color: {{ section.settings.color }} !important;
-    }
-  </style>
-  <div id="announcement-bar" class="announcement-bar" style="--ans-bar-font-size: 16px; --anc-bar-font-weight: 400">
-      <div class="container">
-          <div class="announcement-bar-content text-center">
-              <div class="announcement-bar-offer-countdown">
-                  {% if section.settings.heading != blank %}
-                    {{ section.settings.heading }}
-                  {% endif %}
+  {% include 'get-cart-global-data' %}
 
-                  <div class="e-countdown"{% if section.settings.from != blank %} data-from="{{ section.settings.from }}"{% endif %} style="--colorize-color: #ff5429">
-                      <div data-key="{{ 'n-announcement-bar-gamification.settings.days' | t }}">00</div>
-                      <div data-key="{{ 'n-announcement-bar-gamification.settings.hours' | t }}">00</div>
-                      <div data-key="{{ 'n-announcement-bar-gamification.settings.minutes' | t }}">00</div>
-                      <div data-key="{{ 'n-announcement-bar-gamification.settings.seconds' | t }}">00</div>
-                  </div>
+  {% assign shipping_progress = 0 %}
+  {% if global_bar_shipping_limit > 0 %}
+    {% assign shipping_progress = global_total_price_devided | times: 100 | divided_by: global_bar_shipping_limit | at_most: 100 %}
+  {% endif %}
+
+  {% assign gift2_progress = 0 %}
+  {% if global_bar_gift2_limit > global_bar_shipping_limit %}
+    {% assign gift2_extra = global_total_price_devided | minus: global_bar_shipping_limit | at_least: 0 %}
+    {% assign gift2_diff = global_bar_gift2_limit | minus: global_bar_shipping_limit %}
+    {% assign gift2_progress = gift2_extra | times: 100 | divided_by: gift2_diff | at_most: 100 %}
+  {% endif %}
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div id="announcement-bar" class="announcement-bar" data-section-id="{{ section.id }}">
+      <div class="announcement-bar-content">
+          <div class="bf-reward-progress">
+              {% if global_bar_percent == 100 %}
+                <p class="bf-reward-progress__text">{{ 'cart.drawer.settings.bar_header_completed_html' | t }}</p>
+              {% else %}
+                <p class="bf-reward-progress__text">{{ 'cart.drawer.settings.bar_header_html' | t: add_more: global_bar_add_more, product_title: global_bar_product_title, product_price: global_bar_product_price }}</p>
+              {% endif %}
+
+              <div class="bf-reward-progress__unlocked">
+                  <ul>
+                      {% if global_bar_shipping_limit > 0 %}
+                          <li{% if global_total_price_devided >= global_bar_shipping_limit %} class="unlocked"{% endif %}>
+                              {% if global_total_price_devided >= global_bar_shipping_limit %}
+                                <i class="e-icon e-icon-checkmark"></i>
+                              {% else %}
+                                <div style="--reward-progress: {{ shipping_progress }}%"></div>
+                              {% endif %}
+                              <small>{{ global_bar_shipping_title }}</small>
+                              <span><i class="e-icon e-icon-truck"></i></span>
+                          </li>
+                      {% endif %}
+                      {% if global_bar_gift2_limit > 0 %}
+                          <li{% if global_total_price_devided >= global_bar_gift2_limit %} class="unlocked"{% endif %}>
+                              {% if global_total_price_devided >= global_bar_gift2_limit %}
+                                <i class="e-icon e-icon-checkmark"></i>
+                              {% else %}
+                                <div style="--reward-progress: {{ gift2_progress }}%"></div>
+                              {% endif %}
+                              <small>{{ global_bar_gift2_title }}</small>
+                              <span><i class="e-icon e-icon-pillow-fill"></i></span>
+                          </li>
+                      {% endif %}
+                  </ul>
               </div>
+
+              {% if settings.black_friday_turn_on %}
+                <div class="bf-reward-progress__countdown">
+                    <p>{{ 'cart.drawer.settings.bf_sale_ends_in' | t }}</p>
+                    <div class="e-countdown"{% if settings.black_friday_countdown_from != blank %} data-deadline="{{ settings.black_friday_countdown_from }}"{% endif %} data-offer-days="{{ settings.black_friday_countdown_days }}">
+                        <div data-key="{{ 'product.settings.limited-offer.days' | t }}">00</div>
+                        <div data-key="{{ 'product.settings.limited-offer.hours' | t }}">00</div>
+                        <div data-key="{{ 'product.settings.limited-offer.minutes' | t }}">00</div>
+                        <div data-key="{{ 'product.settings.limited-offer.seconds' | t }}">00</div>
+                    </div>
+                </div>
+              {% endif %}
           </div>
       </div>
   </div>
 
-  {% if section.settings.days > 0 %}
-      <script>
-          let customDays = {{ section.settings.days }} - 1;
-
-          document.addEventListener("DOMContentLoaded", function () {
-              loadScriptOnce("n-announcement-bar-gamification.js", "{{ 'n-announcement-bar-gamification.js' | asset_url }}");
-          });
-      </script>
-  {% endif %}
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          loadScriptOnce("n-announcement-bar-gamification.js", "{{ 'n-announcement-bar-gamification.js' | asset_url }}");
+          {% if settings.black_friday_turn_on %}
+            loadScriptOnce("n-announcement-bar.js", "{{ 'n-announcement-bar.js' | asset_url }}");
+          {% endif %}
+      });
+  </script>
   <!-- ANNOUNCEMENT BAR END -->
 {% endunless %}
 
@@ -61,36 +103,9 @@
   "name": "t:sections.announcement-bar-gamification.name",
   "settings": [
     {
-      "type": "richtext",
-      "id": "heading",
-      "label": "t:common.header"
-    },
-    {
-        "type": "color",
-        "id": "color",
-        "label": "t:common.color",
-        "default": "#000000"
-    },
-    { 
-      "type": "textarea", 
-      "id": "exception", 
-      "label": "t:common.exception" 
-    },
-    {
-          "type": "text",
-          "id": "from",
-          "label": "t:common.from",
-          "info": "Date format: YYYY-MM-DD"
-    },
-    {
-        "type": "range",
-        "id": "days",
-        "min": 1,
-        "max": 30,
-        "step": 1,
-        "unit": "day",
-        "label": "t:common.days",
-        "default": 5
+      "type": "textarea",
+      "id": "exception",
+      "label": "t:common.exception"
     }
   ],
   "presets": [
