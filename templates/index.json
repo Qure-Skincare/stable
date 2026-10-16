@@ -9,6 +9,35 @@
  */
 {
   "sections": {
+    "n_across_image_banner_Kd7pRw": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "disabled": true,
+      "blocks": {
+        "stars_image_Yt3mQz": {
+          "type": "stars_image",
+          "settings": {
+            "image": "shopify://shop_images/bf-bundles-label.webp"
+          }
+        }
+      },
+      "block_order": [
+        "stars_image_Yt3mQz"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "bf",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>Save Up to <span>57%</span></h1>",
+        "text": "<p>Your favourite skincare. Perfectly bundled together.</p>",
+        "sub_text": "",
+        "image": "shopify://shop_images/bf-home.webp",
+        "image_mobile": "shopify://shop_images/bf-home-mob.webp",
+        "button_label": "Shop Bundles Now",
+        "button_url": "/pages/exclusive-holiday-bundle-deal-new"
+      }
+    },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
