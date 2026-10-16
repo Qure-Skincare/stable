@@ -816,6 +816,20 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_cdVmwE": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_1_316faeaa-c3b1-4dc5-ae99-86554a2e2afb.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Elizabeth Z.",
+            "verified_customer": "Verified customer",
+            "badge": "Fine lines & Wrinkles",
+            "text": "<p>“I purchased the 6-month mixed micro-infusion supply and have been using the rejuvenating product targeted at my lines and wrinkles. I just finished my 6th treatment, and the results are fantastic. My face has noticeably softened, and the overall progress has been awesome. I look forward to the next 3 months of more results!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -831,7 +845,8 @@
         "slider_hJ8Nc5",
         "slider_e11ie1",
         "slider_pJ4Kw1",
-        "slider_9NRFNC"
+        "slider_9NRFNC",
+        "slider_cdVmwE"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
@@ -1441,6 +1456,7 @@
       "name": "t:sections.n_experts-grid.name",
       "settings": {
         "use_own_file": false,
+        "awards": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
