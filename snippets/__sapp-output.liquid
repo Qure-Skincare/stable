@@ -3,5 +3,9 @@
 {%- else -%}
   {%- include '__sapp-html-rewrite' -%}
   {%- include '__sapp-embed-trap' -%}
+  {%- if sapp_ready_guard and sapp_html_with_traps contains '<head>' -%}
+    {%- capture sapp_ready_guard_html -%}<head>{% render '__sapp-event-guard' %}{%- endcapture -%}
+    {%- assign sapp_html_with_traps = sapp_html_with_traps | replace_first: '<head>', sapp_ready_guard_html -%}
+  {%- endif -%}
   {{ sapp_html_with_traps }}
 {%- endif -%}

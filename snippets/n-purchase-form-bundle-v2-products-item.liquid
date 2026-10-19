@@ -34,7 +34,7 @@
                     {% capture data-per %}{{ 'purchase-form.settings.reserve-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
                 {% endif %}
 
-                {% if block.settings.soldout == true %}
+                {% if block.settings.soldout == true or product_available == false %}
                     {% capture data-per %}{{ 'purchase-form.settings.soldout-button-label' | t }}{% endcapture %}
                 {% endif %}
 
@@ -44,7 +44,7 @@
                     {% capture button-label %}{{ 'product.settings.reserved-button-label' | t }}{% endcapture %}
                 {% endif %}
                 
-                {% if block.settings.soldout == true %}
+                {% if block.settings.soldout == true or product_available == false %}
                     {% capture button-label %}{{ 'product.settings.soldout-button-label' | t }}{% endcapture %}
                 {% endif %}
 
