@@ -1,20 +1,301 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "n_our_advisors_kR7mQe": {
+      "type": "n_our-advisors",
+      "blocks": {
+        "accordion_Yb3nTa": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Shah <br/>Board Certified Dermatologist</p>",
+            "text": "<p>“This treatment is an at-home option for those who want to avoid the hassle or cost of going to the office.”</p>",
+            "image": "shopify://shop_images/shah.webp"
+          }
+        },
+        "accordion_Hc8pWq": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Maxfield <br/>Board Certified Dermatologist</p>",
+            "text": "<p>“Qure do studies on this, taking a look at how effective it is, so you can have confidence it’s going to help what you’re doing for your skincare routine.”</p>",
+            "image": "shopify://shop_images/maxfield.webp"
+          }
+        },
+        "accordion_Nf2vJx": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Tripathi <br/>Double Board Certified Facial Plastic Surgeon</p>",
+            "text": "<p>“I love that Qure Skincare products go beyond just topical treatments, helping to maintain the results of in-office procedures.”</p>",
+            "image": "shopify://shop_images/tripathi.webp"
+          }
+        },
+        "accordion_Zg6dLm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "<p>Dr. Stephens <br/>Board Certified Dermatologist</p>",
+            "text": "<p>“The Qure Micro-Infusion stamping device offers a safe and effective solution for a variety of different skin conditions.”</p>",
+            "image": "shopify://shop_images/stephens.webp"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Yb3nTa",
+        "accordion_Hc8pWq",
+        "accordion_Nf2vJx",
+        "accordion_Zg6dLm"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "text": "<h2>Trusted and Recommended by Skin Experts</h2>"
+      }
+    },
+    "n_base_section_Wp4tXs": {
+      "type": "n_base-section",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "modifier_2": "none",
+        "background_color": "none",
+        "heading": "<h2>Go beyond surface-level haircare</h2>",
+        "text": "<p>Traditional serums sit on top of the scalp or rinse away. Once a week, the Micro-Infusion Pro Hair System uses 0.5mm 24k gold-plated needles to create tiny micro-channels, <strong>designed to help deliver serum actives directly to the scalp surface where they're needed most.</strong> On the days in between, the Hair Renewal Serum keeps your scalp conditioned.</p><p>The patent-pending system uses tiny, virtually painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp</strong>Virtually painless micro-stamping with 0.5mm needles on a sterile, single-use tip.</li><li><strong>Infuse</strong>Designed to help deliver serum actives directly to the scalp surface.</li><li><strong>Renews</strong>Supports the look of fuller, denser-looking hair over time.</li></ul>",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "jhwgazmjv8"
+      }
+    },
+    "n_usage_steps_Dm9eVb": {
+      "type": "n_usage-steps",
+      "blocks": {
+        "step_Qa5rKn": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-hair-bundle-1.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-hair-bundle-1-mob.webp",
+            "heading": "1. Prepare",
+            "text": "<p>Start with a clean, dry scalp so the needle head glides smoothly.</p>"
+          }
+        },
+        "step_Tx7hPc": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-hair-bundle-2.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-hair-bundle-2-mob.webp",
+            "heading": "2. Micro-Infusion Pro Hair System",
+            "text": "<p>Once a week, gently stamp the device across your scalp to help the Micro-Infusion Hair Serum reach the scalp surface.</p>"
+          }
+        },
+        "step_Bw2jFy": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-hair-bundle-3.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-hair-bundle-3-mob.webp",
+            "heading": "3. Hair Renewal Serum",
+            "text": "<p>On nights in between, massage a few drops into your scalp to keep it conditioned.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_Qa5rKn",
+        "step_Tx7hPc",
+        "step_Bw2jFy"
+      ],
+      "settings": {
+        "section_id": "",
+        "heading": "<h2>Step by step</h2>",
+        "badge": "",
+        "badge_text": ""
+      }
+    },
+    "n_page_microinfusion_complete_system_Gv8cRt": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_Lk3sNd": {
+          "type": "product",
+          "settings": {
+            "product": "shower-filter",
+            "variant_title": "",
+            "description": "Cleanse with filtered water to help reduce potential irritants and remove unwanted impurities from your hair and scalp.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_Fq6wZh": {
+          "type": "product",
+          "settings": {
+            "product": "hair-growth-helmet",
+            "variant_title": "",
+            "description": "Use 5-7* per week, always on a clean, dry scalp and always before applying any serum.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "product_Rj9uMv": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-hair-system",
+            "variant_title": "",
+            "description": "Use 1* per week. On this day: Can use Helmet first.",
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "none"
+          }
+        },
+        "product_Xe4bQw": {
+          "type": "product",
+          "settings": {
+            "product": "hair-renewal-serum",
+            "variant_title": "",
+            "description": "Use every night except the Micro-Infusion night. On regular nights: Helmet first → Hair Renewal Serum second.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
+          }
+        },
+        "step_Cn7yHd": {
+          "type": "step",
+          "settings": {
+            "step": "Restrict"
+          }
+        },
+        "step_Pm2kVf": {
+          "type": "step",
+          "settings": {
+            "step": "Refresh"
+          }
+        },
+        "step_Ut5gJb": {
+          "type": "step",
+          "settings": {
+            "step": "Replenish"
+          }
+        },
+        "step_Ws8nLq": {
+          "type": "step",
+          "settings": {
+            "step": "Repair"
+          }
+        }
+      },
+      "block_order": [
+        "product_Lk3sNd",
+        "product_Fq6wZh",
+        "product_Rj9uMv",
+        "product_Xe4bQw",
+        "step_Cn7yHd",
+        "step_Pm2kVf",
+        "step_Ut5gJb",
+        "step_Ws8nLq"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "heading": "<h2>Complete your Qure Hair System</h2>",
+        "button_label": "Add the complete routine",
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
+    "n_faq_Jd6pEy": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_Mh3xTq": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What's included in the Two-Step Hair System?",
+            "text": "<p>The 3-Month Kit includes 6 Micro-Infusion Pro Hair System devices, each with a sterile, single-use tip and 4 mL of infusion serum, plus a <strong>60 mL Hair Renewal Serum, free.</strong> Use the device for your treatment and the serum on the nights in between.</p>"
+          }
+        },
+        "accordion_Vr9cWn": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How does subscription billing work?",
+            "text": "<p>Your subscription renews every 1 or 3 months, depending on the plan you choose, and ships automatically. You can pause, skip or cancel anytime in your account.</p>"
+          }
+        },
+        "accordion_Kb4zLs": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use the Micro-Infusion Pro Hair System without the Hair Renewal Serum?",
+            "text": "<p>Yes. Each treatment comes with its own infusion serum, so the device works on its own. For the complete routine, we recommend adding the Hair Renewal Serum on the nights in between.</p>"
+          }
+        },
+        "accordion_Gy7fPd": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is the Micro-Infusion Pro Hair System compatible with other hair treatments?",
+            "text": "<p>We recommend starting with the system on its own. If you use other scalp or hair treatments, avoid applying them on your Micro-Infusion treatment day. If you use prescription treatments, check with your dermatologist first.</p>"
+          }
+        },
+        "accordion_Qt2mHx": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How soon will I see results?",
+            "text": "<p>Visible changes take time. The system is designed to support the appearance of fuller, denser-looking hair over several weeks of consistent use.</p>"
+          }
+        },
+        "accordion_Ne8vBk": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is this suitable for sensitive scalps?",
+            "text": "<p>Patch test first. Don't use on irritated, broken or sunburned skin, and stop use if irritation occurs. If you have a scalp condition or are unsure, check with your dermatologist.</p>"
+          }
+        },
+        "accordion_Zp5jRc": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will I feel anything during the Micro-Infusion treatment?",
+            "text": "<p>The micro-stamping is designed to be virtually painless. You may feel light pressure on the scalp, and a mild tingling is possible</p>"
+          }
+        },
+        "accordion_Lw6dYf": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Peppermint Oil Notice",
+            "text": "<p>The Hair Renewal Serum contains peppermint oil for a cooling, invigorating feel, and a light tingling sensation may occur on application. The infusion serum used with the device does not contain peppermint oil. Avoid contact with eyes, and stop use if irritation occurs.</p>"
+          }
+        },
+        "accordion_Hs3qUm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often should I use the Hair Renewal Serum?",
+            "text": "<p>Nightly on non-infusion nights. On your weekly Micro-Infusion treatment day, skip the serum, since the infusion serum covers that day.</p>"
+          }
+        },
+        "accordion_Cx9tKe": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Do I need to wait before applying other products after using the Hair Renewal Serum?",
+            "text": "<p>Apply the serum to a clean, dry scalp and let it absorb before applying other products.</p>"
+          }
+        },
+        "accordion_Rb7nWv": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How is this different from Minoxidil or hair supplements?",
+            "text": "<p>The Two-Step Hair System is a cosmetic scalp routine, not a drug or a supplement. It's designed to support the appearance of fuller, denser-looking hair with consistent use, and it is not intended to treat hair loss.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Mh3xTq",
+        "accordion_Vr9cWn",
+        "accordion_Kb4zLs",
+        "accordion_Gy7fPd",
+        "accordion_Qt2mHx",
+        "accordion_Ne8vBk",
+        "accordion_Zp5jRc",
+        "accordion_Lw6dYf",
+        "accordion_Hs3qUm",
+        "accordion_Cx9tKe",
+        "accordion_Rb7nWv"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "heading": "<h2>Have questions?</h2>"
+      }
     }
   },
   "order": [
-    "main"
+    "n_our_advisors_kR7mQe",
+    "n_base_section_Wp4tXs",
+    "n_usage_steps_Dm9eVb",
+    "n_page_microinfusion_complete_system_Gv8cRt",
+    "n_faq_Jd6pEy"
   ]
 }
