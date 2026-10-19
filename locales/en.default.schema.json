@@ -365,6 +365,10 @@
         "even-looking": "Even looking",
         "smooths": "Smooths",
         "deeply-hydrates": "Deeply hydrates",
+        "micro-stamping": "Micro-stamping",
+        "hair": "Hair",
+        "fast": "Fast",
+        "cooling": "Cooling",
         "guarantee": "Guarantee",
         "shipping-order": "Shipping order",
         "reverse": "Reverse",
@@ -658,13 +662,7 @@
                     }
                 },
                 "feature": {
-                    "name": "Short feature",
-                    "settings": {
-                        "micro-stamping": "Micro-stamping",
-                        "hair": "Hair",
-                        "fast": "Fast",
-                        "cooling": "Cooling"
-                    }
+                    "name": "Short feature"
                 }
             }
         },

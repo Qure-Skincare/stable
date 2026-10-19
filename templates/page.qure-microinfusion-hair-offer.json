@@ -202,6 +202,103 @@
         "button_url": "#buy_box"
       }
     },
+    "n_mi_ingredients_Bt4yXk": {
+      "type": "n_mi-ingredients",
+      "blocks": {
+        "left_heading_Qw7nFs": {
+          "type": "left_heading",
+          "settings": {
+            "image": "shopify://shop_images/mi-2-device-rejuvenating-1.webp",
+            "badge": "Weekly",
+            "text": "<h3>Thinning Areas</h3><h6>MICRO-INFUSION PRO HAIR SYSTEM</h6><p>Creates precise micro-channels at the scalp surface to help deliver serum actives where they’re needed.</p>"
+          }
+        },
+        "left_column_Hs2mVd": {
+          "type": "left_column",
+          "settings": {
+            "icon": "hair",
+            "text": "Targets the look of thinning"
+          }
+        },
+        "left_column_Kp9cRj": {
+          "type": "left_column",
+          "settings": {
+            "icon": "micro-stamping",
+            "text": "Supports denser, fuller-looking hair"
+          }
+        },
+        "left_column_Zm5tLq": {
+          "type": "left_column",
+          "settings": {
+            "icon": "fast",
+            "text": "5-minute weekly treatment"
+          }
+        },
+        "left_accordion_Nx8bGw": {
+          "type": "left_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p>Pisum Sativum (Pea) Sprout Extract<br/>Helps target the look of thinning, for visibly denser-looking hair.</p><p>Acetyl Tetrapeptide-3 / Clover Flower Extract<br/>Helps improve the appearance of scalp vitality and hair fullness.</p><p>Copper Tripeptide-1<br/>Supports the look of stronger, resilient-looking hair.</p><p>Niacinamide<br/>Helps condition and hydrate the scalp.</p><p>Caffeine<br/>Provides an energizing, invigorating sensation on the scalp.</p><p>Larix / Green Tea / Zinc / Glycine Complex<br/>Helps the scalp look and feel more balanced with regular use.</p><p>Pyrrolidinyl Diaminopyrimidine Oxide<br/>Supports the look of smoother, more resilient-looking strands.</p><p>Dihydroxypropyl Arginine HCl<br/>Supports a smoother, more comfortable-feeling scalp.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "right_heading_Vc3jWe": {
+          "type": "right_heading",
+          "settings": {
+            "image": "shopify://shop_images/mi-2-device-rejuvenating-2.webp",
+            "badge": "Nightly",
+            "text": "<h3>Scalp Hydration</h3><h6>HAIR RENEWAL SERUM</h6><p>A lightweight, dropper-applied serum for nightly use on non-infusion nights.</p>"
+          }
+        },
+        "right_column_Ly6kPt": {
+          "type": "right_column",
+          "settings": {
+            "icon": "smooths",
+            "text": "Conditions & hydrates scalp"
+          }
+        },
+        "right_column_Gd4rNb": {
+          "type": "right_column",
+          "settings": {
+            "icon": "cooling",
+            "text": "Invigorating, cooling feel"
+          }
+        },
+        "right_column_Tf7wHm": {
+          "type": "right_column",
+          "settings": {
+            "icon": "deeply-hydrates",
+            "text": "Antioxidant-rich formula"
+          }
+        },
+        "right_accordion_Jq2sXz": {
+          "type": "right_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p>Pisum Sativum (Pea) Sprout Extract<br/>Helps target the look of thinning, for visibly denser-looking hair.</p><p>Acetyl Tetrapeptide-3 / Clover Flower Extract<br/>Helps improve the appearance of scalp vitality and hair fullness.</p><p>Copper Tripeptide-1<br/>Supports the look of stronger, resilient-looking hair.</p><p>Niacinamide<br/>Helps condition and hydrate the scalp.</p><p>Caffeine<br/>Provides an energizing, invigorating sensation on the scalp.</p><p>Larix / Green Tea / Zinc / Glycine Complex<br/>Helps the scalp look and feel more balanced with regular use.</p><p>Pyrrolidinyl Diaminopyrimidine Oxide<br/>Supports the look of smoother, more resilient-looking strands.</p><p>Dihydroxypropyl Arginine HCl<br/>Supports a smoother, more comfortable-feeling scalp.</p><p>Peppermint Oil (Hair Renewal Serum only)<br/>Delivers a cooling, refreshing feel on application.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_heading_Qw7nFs",
+        "left_column_Hs2mVd",
+        "left_column_Kp9cRj",
+        "left_column_Zm5tLq",
+        "left_accordion_Nx8bGw",
+        "right_heading_Vc3jWe",
+        "right_column_Ly6kPt",
+        "right_column_Gd4rNb",
+        "right_column_Tf7wHm",
+        "right_accordion_Jq2sXz"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "section_id": "",
+        "text": "<h2>Two products. Complete care.</h2><p>Use Micro-Infusion Pro weekly, and Hair Renewal Serum nightly, for complete scalp care.</p>",
+        "button_label": "Add Full System to Cart",
+        "button_url": "#buy_box",
+        "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
     "n_usage_steps_Dm9eVb": {
       "type": "n_usage-steps",
       "blocks": {
@@ -437,6 +534,7 @@
     "n_our_advisors_kR7mQe",
     "n_base_section_Wp4tXs",
     "n_bundled_together_Hq5nVz",
+    "n_mi_ingredients_Bt4yXk",
     "n_usage_steps_Dm9eVb",
     "n_page_microinfusion_complete_system_Gv8cRt",
     "n_faq_Jd6pEy"
