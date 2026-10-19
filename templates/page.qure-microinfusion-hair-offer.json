@@ -441,7 +441,7 @@
             "product": "micro-infusion-pro-hair-system",
             "variant_title": "",
             "description": "Use 1* per week. On this day: Can use Helmet first.",
-            "am_or_pm_1": "none",
+            "am_or_pm_1": "weekly",
             "am_or_pm_2": "none"
           }
         },

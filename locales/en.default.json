@@ -37,7 +37,8 @@
     "n_page-microinfusion-complete-system": {
       "settings": {
         "am_text": "Day",
-        "pm_text": "Night"
+        "pm_text": "Night",
+        "weekly_text": "Weekly"
       }
     },
     "n_affiliate-page-apply-form": {

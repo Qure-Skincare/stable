@@ -117,13 +117,13 @@
                                             {%- if block.settings.am_or_pm_1 != 'none' -%}
                                                 <div class="c-product-tile__time">
                                                   <div class="e-pill-badge e-pill-badge--sm">
-                                                    <i class="e-icon e-icon-{{ block.settings.am_or_pm_1 }}"></i>
-                                                    {% if block.settings.am_or_pm_1 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_1 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% endif %}
+                                                    <i class="e-icon e-icon-{% if block.settings.am_or_pm_1 == 'weekly' %}calendar{% else %}{{ block.settings.am_or_pm_1 }}{% endif %}"></i>
+                                                    {% if block.settings.am_or_pm_1 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_1 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% elsif block.settings.am_or_pm_1 == 'weekly' %} {{ 'sections.n_page-microinfusion-complete-system.settings.weekly_text' | t }}{% endif %}
                                                   </div>
                                                   {%- if block.settings.am_or_pm_2 != 'none' -%}
                                                     <div class="e-pill-badge e-pill-badge--sm">
-                                                      <i class="e-icon e-icon-{{ block.settings.am_or_pm_2 }}"></i>
-                                                      {% if block.settings.am_or_pm_2 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_2 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% endif %}
+                                                      <i class="e-icon e-icon-{% if block.settings.am_or_pm_2 == 'weekly' %}calendar{% else %}{{ block.settings.am_or_pm_2 }}{% endif %}"></i>
+                                                      {% if block.settings.am_or_pm_2 == 'am' %} {{ 'sections.n_page-microinfusion-complete-system.settings.am_text' | t }}{% elsif block.settings.am_or_pm_2 == 'pm' %} {{ 'sections.n_page-microinfusion-complete-system.settings.pm_text' | t }}{% elsif block.settings.am_or_pm_2 == 'weekly' %} {{ 'sections.n_page-microinfusion-complete-system.settings.weekly_text' | t }}{% endif %}
                                                     </div>
                                                   {%- endif -%}
                                                 </div>
@@ -301,13 +301,17 @@
                         "value": "am", 
                         "label": "t:common.am" 
                         },
-                        { 
-                        "value": "pm", 
-                        "label": "t:common.pm" 
+                        {
+                        "value": "pm",
+                        "label": "t:common.pm"
                         },
-                        { 
-                        "value": "none", 
-                        "label": "t:common.none" 
+                        {
+                        "value": "weekly",
+                        "label": "t:common.weekly"
+                        },
+                        {
+                        "value": "none",
+                        "label": "t:common.none"
                         }
                     ]
                 },
@@ -321,13 +325,17 @@
                         "value": "am",
                         "label": "t:common.am" 
                         },
-                        { 
-                        "value": "pm", 
-                        "label": "t:common.pm" 
+                        {
+                        "value": "pm",
+                        "label": "t:common.pm"
                         },
-                        { 
-                        "value": "none", 
-                        "label": "t:common.none" 
+                        {
+                        "value": "weekly",
+                        "label": "t:common.weekly"
+                        },
+                        {
+                        "value": "none",
+                        "label": "t:common.none"
                         }
                     ]
                 }
