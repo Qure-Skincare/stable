@@ -28,12 +28,10 @@
                                     {{ cart_item_title }}
                                 </a>
                             </div>
-                            {% if gift_exists or insurance_exists or selling_plan_exists %}
-                                <div class="cart__cell">
+                            <div class="cart__cell">
+                                {% if gift_exists or insurance_exists or selling_plan_exists %}
                                     1
-                                </div>
-                            {% else %}
-                                <div class="cart__cell">
+                                {% else %}
                                     <div class="e-quantity">
                                         <form id="{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
                                             <button type="submit"><i class="e-icon e-icon-minus"></i></button>
@@ -47,13 +45,15 @@
                                             <input type="hidden" name="id" value="{{ cart_item_key }}">
                                         </form>
                                     </div>
+                                {% endif %}
+                                {% unless gift_exists %}
                                     <form id="static_{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data" class="text-center">
                                         <button type="submit" class="btn-remove">{{ 'cart.static.settings.remove' | t }}</button>
                                         <input type="hidden" name="quantity" value="0">
                                         <input type="hidden" name="id" value="{{ cart_item_key }}">
                                     </form>
-                                </div>
-                            {% endif %}
+                                {% endunless %}
+                            </div>
                             <div class="cart__cell">
                                 <div class="e-price">
                                     <div class="e-price__main">

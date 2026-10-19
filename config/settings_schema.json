@@ -119,9 +119,10 @@
   },
 
   {
-    "name": "Cart drawer timer",
+    "name": "Cart drawer settings",
     "settings": [
-      { "type": "range", "id": "cart_timer", "label": "Timer", "min": 0, "max": 20, "step": 1, "unit": "min", "default": 15 }
+      { "type": "range", "id": "cart_timer", "label": "Timer", "min": 0, "max": 20, "step": 1, "unit": "min", "default": 15 },
+      { "type": "checkbox", "id": "cart_insurance_default_on", "label": "Shipping insurance on by default", "default": true }
     ]
   },
   {
@@ -136,7 +137,7 @@
       { "type": "text", "id": "shipping_title", "label": "Title" },
       { "type": "text", "id": "shipping_icon", "label": "Icon" },
       { "type": "number", "id": "shipping_price", "label": "Price" },
-      { "type": "range", "id": "shipping_price_limit", "label": "Price limit", "min": 0, "max": 1000, "step": 10, "unit": "$", "default": 200 },
+      { "type": "number", "id": "shipping_price_limit", "label": "Price limit, $", "default": 200 },
 
       { "type": "header", "content": "Gift #1" },
       { "type": "text", "id": "cart_gift1_title", "label": "Title" },
