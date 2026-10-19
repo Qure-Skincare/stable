@@ -12,5 +12,23 @@
     "market": "us"
   },
   "parent": "page.micro-infusion-system-v5.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_b7C8dE": {
+          "settings": {
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
+          }
+        },
+        "product_v7W8xY": {
+          "settings": {
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
+          }
+        }
+      }
+    }
+  }
 }
