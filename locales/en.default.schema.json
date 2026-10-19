@@ -655,6 +655,15 @@
                         "mi-quick": "Quick treatment",
                         "mi-painless": "Minimal discomfort"
                     }
+                },
+                "feature": {
+                    "name": "Short feature",
+                    "settings": {
+                        "micro-stamping": "Micro-stamping",
+                        "hair": "Hair",
+                        "fast": "Fast",
+                        "cooling": "Cooling"
+                    }
                 }
             }
         },

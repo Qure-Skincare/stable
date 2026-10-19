@@ -1,5 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "n_hero_section_Pz6kRw": {
+      "type": "n_hero-section",
+      "blocks": {
+        "approved_by_Tn4mHq": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_Vb8sLe": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "quote_Kd3wNy": {
+          "type": "quote",
+          "settings": {
+            "quote_image": "shopify://shop_images/expert-quote-tag.webp",
+            "quote": "\"A clinic-inspired approach to scalp health, right at home.\"",
+            "username": "Dr.Shah",
+            "position": "Board-Certified Dermatologist"
+          }
+        },
+        "feature_Gm7xQc": {
+          "type": "feature",
+          "settings": {
+            "icon": "micro-stamping",
+            "text": "Precision Micro-Stamping Technology"
+          }
+        },
+        "feature_Rs2vJt": {
+          "type": "feature",
+          "settings": {
+            "icon": "hair",
+            "text": "Targets the Look<br /> of Thinning"
+          }
+        },
+        "feature_Wq9bYf": {
+          "type": "feature",
+          "settings": {
+            "icon": "smooths",
+            "text": "Designed to Work Better Together"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_Tn4mHq",
+        "approved_by_Vb8sLe",
+        "quote_Kd3wNy",
+        "feature_Gm7xQc",
+        "feature_Rs2vJt",
+        "feature_Wq9bYf"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "hidden": false,
+        "modifier": "none",
+        "approved_position": "before_text",
+        "text": "<p>The Perfect Pair, Bundled Together</p><h1>Two Steps to Visibly <br/> Fuller-Looking Hair</h1><p><strong>Pair the Micro-Infusion Pro Hair System with Hair Renewal Serum</strong> for a simple, science-backed routine.</p>",
+        "rating": "",
+        "rating_text": "100+ dermatologists • <a href=\"#\"><strong>4.7\/5<\/strong><\/a> 750k+ customers",
+        "image": "shopify://shop_images/micro-infusion-hair.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hair-mob.webp",
+        "button_url": "#buy_box",
+        "button_label": "Start My Hair Transformation",
+        "button_line": false,
+        "alert": "",
+        "sub_text": "",
+        "marked_list": "",
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "",
+        "wistia_mode": "modal",
+        "video_button_label": ""
+      }
+    },
     "n_our_advisors_kR7mQe": {
       "type": "n_our-advisors",
       "blocks": {
@@ -292,6 +380,7 @@
     }
   },
   "order": [
+    "n_hero_section_Pz6kRw",
     "n_our_advisors_kR7mQe",
     "n_base_section_Wp4tXs",
     "n_usage_steps_Dm9eVb",

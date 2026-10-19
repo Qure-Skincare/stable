@@ -19,6 +19,7 @@
             {% assign approved_by_count = 0 %}
             {% assign has_note = false %}
             {% assign has_benefits = false %}
+            {% assign has_features = false %}
             {% for block in section.blocks %}
                 {% case block.type %}
                     {% when 'approved-by' %}
@@ -27,6 +28,8 @@
                         {% assign has_note = true %}
                     {% when 'benefit' %}
                         {% assign has_benefits = true %}
+                    {% when 'feature' %}
+                        {% assign has_features = true %}
                 {% endcase %}
             {% endfor %}
 
@@ -46,7 +49,7 @@
                                 <strong>{{ section.settings.rating }}/5</strong>{% if section.settings.rating_text != blank %}<br />{% endif %}
                             {% endif %}
                             {% if section.settings.rating_text != blank %}
-                                {{ section.settings.rating_text }}
+                                {{ section.settings.rating_text | replace: '•', '<span>&bull;</span>' }}
                             {% else %}
                                 {% for block in section.blocks %}
                                     {% if block.type == 'approved-by' and block.settings.text != blank %}
@@ -77,7 +80,7 @@
                                 <strong>{{ section.settings.rating }}/5</strong>{% if section.settings.rating_text != blank %}<br />{% endif %}
                             {% endif %}
                             {% if section.settings.rating_text != blank %}
-                                {{ section.settings.rating_text }}
+                                {{ section.settings.rating_text | replace: '•', '<span>&bull;</span>' }}
                             {% else %}
                                 {% for block in section.blocks %}
                                     {% if block.type == 'approved-by' and block.settings.text != blank %}
@@ -93,6 +96,13 @@
                     {{ section.settings.marked_list | replace: '<ul>', '<ul class="c-marked-list">' }}
                 {% endif %}
             </div>
+            {% for block in section.blocks %}
+                {% if block.type == 'quote' and block.settings.quote != blank %}
+                    <div class="hero-section__content-other">
+                        {% render 'n-product-expert-quote-tag', block: block %}
+                    </div>
+                {% endif %}
+            {% endfor %}
             {% if section.settings.button_url != blank and section.settings.button_label != blank %}
                 <div class="hero-section__content-button">
                     {% if section.settings.button_line %}
@@ -117,6 +127,20 @@
                     {% if section.settings.sub_text != blank %}
                         <div class="c-info-bar">{{ section.settings.sub_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
                     {% endif %}
+                </div>
+            {% endif %}
+            {% if has_features %}
+                <div class="hero-section__content-other">
+                    <ul class="e-short-features-list">
+                        {% for block in section.blocks %}
+                            {% if block.type == 'feature' and block.settings.text != blank %}
+                                <li {{ block.shopify_attributes }}>
+                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                    {{ block.settings.text }}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
             {% endif %}
             {% if has_note or has_benefits or section.settings.video_image_cover != blank or section.settings.marked_list != blank and section.settings.marked_list_position == 'footer' %}
@@ -381,6 +405,75 @@
                         {
                             "value": "mi-painless",
                             "label": "t:sections.n_hero-section.blocks.benefit.settings.mi-painless"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "quote",
+            "name": "t:common.expert-quote-tag",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "quote_image",
+                    "label": "t:common.quote-image"
+                },
+                {
+                    "type": "text",
+                    "id": "quote",
+                    "label": "t:common.quote"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "position",
+                    "label": "t:common.position"
+                }
+            ]
+        },
+        {
+            "type": "feature",
+            "name": "t:sections.n_hero-section.blocks.feature.name",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "icon",
+                    "label": "t:common.icon",
+                    "options": [
+                        {
+                            "value": "micro-stamping",
+                            "label": "t:sections.n_hero-section.blocks.feature.settings.micro-stamping"
+                        },
+                        {
+                            "value": "hair",
+                            "label": "t:sections.n_hero-section.blocks.feature.settings.hair"
+                        },
+                        {
+                            "value": "smooths",
+                            "label": "t:common.smooths"
+                        },
+                        {
+                            "value": "fast",
+                            "label": "t:sections.n_hero-section.blocks.feature.settings.fast"
+                        },
+                        {
+                            "value": "cooling",
+                            "label": "t:sections.n_hero-section.blocks.feature.settings.cooling"
+                        },
+                        {
+                            "value": "deeply-hydrates",
+                            "label": "t:common.deeply-hydrates"
                         }
                     ]
                 },
