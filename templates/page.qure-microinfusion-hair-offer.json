@@ -299,6 +299,76 @@
         "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
       }
     },
+    "n_routine_steps_Mv6pDh": {
+      "type": "n_routine-steps",
+      "blocks": {
+        "group_Ck8wTn": {
+          "type": "group",
+          "settings": {
+            "heading": "Micro-Infusion Pro Hair System",
+            "badge": "Weekly",
+            "slides_per_view": 3
+          }
+        },
+        "step_Rq3xLb": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/mi-hair-system-1.svg",
+            "text": "Remove the cap. Sterile, single-use."
+          }
+        },
+        "step_Hd9mVs": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/mi-hair-system-2.svg",
+            "text": "Stamp on clean, dry scalp."
+          }
+        },
+        "step_Ws5kFe": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/mi-hair-system-3.svg",
+            "text": "Finish with any remaining serum."
+          }
+        },
+        "group_Nt2yPj": {
+          "type": "group",
+          "settings": {
+            "heading": "Hair Renewal Serum",
+            "badge": "Nightly",
+            "slides_per_view": 2
+          }
+        },
+        "step_Lg7bQz": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/hair-renewal-serum-1.svg",
+            "text": "Unscrew the cap and lift out the dropper."
+          }
+        },
+        "step_Xf4cRm": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/hair-renewal-serum-2.svg",
+            "text": "Massage 4-6 drops into your scalp. No rinse."
+          }
+        }
+      },
+      "block_order": [
+        "group_Ck8wTn",
+        "step_Rq3xLb",
+        "step_Hd9mVs",
+        "step_Ws5kFe",
+        "group_Nt2yPj",
+        "step_Lg7bQz",
+        "step_Xf4cRm"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "section_id": "",
+        "heading": "<h6>HOW TO USE</h6><h2>Your 5-Minute Weekly Routine</h2>"
+      }
+    },
     "n_usage_steps_Dm9eVb": {
       "type": "n_usage-steps",
       "blocks": {
@@ -535,6 +605,7 @@
     "n_base_section_Wp4tXs",
     "n_bundled_together_Hq5nVz",
     "n_mi_ingredients_Bt4yXk",
+    "n_routine_steps_Mv6pDh",
     "n_usage_steps_Dm9eVb",
     "n_page_microinfusion_complete_system_Gv8cRt",
     "n_faq_Jd6pEy"

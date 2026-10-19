@@ -894,6 +894,17 @@
         "n_product-you-may-also-like": {
             "name": "Product you may also like"
         },
+        "n_routine-steps": {
+            "name": "Routine steps",
+            "blocks": {
+                "group": {
+                    "name": "Steps group",
+                    "settings": {
+                        "slides_per_view": "Slides per view (desktop)"
+                    }
+                }
+            }
+        },
         "n_bundled-together": {
             "name": "Bundled together",
             "settings": {
