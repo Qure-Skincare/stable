@@ -149,6 +149,59 @@
         "wistia_url": "jhwgazmjv8"
       }
     },
+    "n_bundled_together_Hq5nVz": {
+      "type": "n_bundled-together",
+      "blocks": {
+        "component_Yx3dKm": {
+          "type": "component",
+          "settings": {
+            "heading": "Hair Renewal Serum",
+            "badge": "Nightly",
+            "text": "Helps provide lasting scalp hydration"
+          }
+        },
+        "component_Lc7tPb": {
+          "type": "component",
+          "settings": {
+            "heading": "Micro-Infusion Pro Hair",
+            "badge": "Weekly",
+            "text": "Helps target the appearance of thinning areas"
+          }
+        },
+        "component_Rn2wGs": {
+          "type": "component",
+          "settings": {
+            "heading": "Together",
+            "badge": "Weekly + Nightly",
+            "text": "Visibly fuller, more resilient-looking hair"
+          }
+        },
+        "quote_Fj8mQe": {
+          "type": "quote",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>It's a simple, at-home system that is both quick and highly effective.</p>",
+            "username": "Dr. Shah",
+            "position": "Dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "component_Yx3dKm",
+        "component_Lc7tPb",
+        "component_Rn2wGs",
+        "quote_Fj8mQe"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "section_id": "",
+        "modifier": "hair",
+        "heading": "<h2>The Micro-Infusion Pro Hair System + Hair Renewal Serum</h2>",
+        "image": "shopify://shop_images/mi-hair-bungle.webp",
+        "button_label": "Shop Now",
+        "button_url": "#buy_box"
+      }
+    },
     "n_usage_steps_Dm9eVb": {
       "type": "n_usage-steps",
       "blocks": {
@@ -383,6 +436,7 @@
     "n_hero_section_Pz6kRw",
     "n_our_advisors_kR7mQe",
     "n_base_section_Wp4tXs",
+    "n_bundled_together_Hq5nVz",
     "n_usage_steps_Dm9eVb",
     "n_page_microinfusion_complete_system_Gv8cRt",
     "n_faq_Jd6pEy"

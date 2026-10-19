@@ -896,6 +896,14 @@
         "n_product-you-may-also-like": {
             "name": "Product you may also like"
         },
+        "n_bundled-together": {
+            "name": "Bundled together",
+            "settings": {
+                "modifier-options": {
+                    "hair": "Hair"
+                }
+            }
+        },
         "n_why-it-works": {
             "name": "Why it works",
             "settings": {
