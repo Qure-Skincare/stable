@@ -21,6 +21,12 @@
             "discount_code": "WELCOMEFREE",
             "free_shipping": true
           }
+        },
+        "product_EKAAzA": {
+          "settings": {
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
+          }
         }
       }
     }
