@@ -590,6 +590,7 @@
                 "modifier-options": {
                     "none": "None",
                     "reverse": "Reverse",
+                    "haircare": "Haircare",
                     "simple-grid": "Simple grid"
                 },
                 "background-color-options": {
