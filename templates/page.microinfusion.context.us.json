@@ -12,5 +12,23 @@
     "market": "us"
   },
   "parent": "page.microinfusion.json",
-  "sections": {}
+  "sections": {
+    "purchase-form-landing": {
+      "settings": {},
+      "blocks": {
+        "product_NEgEkN": {
+          "settings": {
+            "free_shipping": true,
+            "discount_code": "WELCOMEFREE"
+          }
+        },
+        "product_EKAAzA": {
+          "settings": {
+            "free_shipping": true,
+            "discount_code": "WELCOMEFREE"
+          }
+        }
+      }
+    }
+  }
 }
