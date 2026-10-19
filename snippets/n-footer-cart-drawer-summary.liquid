@@ -14,7 +14,16 @@
             <p>{{ 'cart.drawer.settings.insurance-text' | t }} + <strong>{{ global_insurance_price }}</strong></p>
             <label class="e-switcher">
                 <form method="post" action="/cart/add" enctype="multipart/form-data">
-                    <input type="checkbox" id="insurance" name="insurance" {% if summary_insurance_exists %} checked{% endif %}/>
+                    <input
+                        type="checkbox"
+                        id="insurance"
+                        name="insurance"
+                        data-line-key="{{ global_insurance_line_key }}"
+                        data-line-variant="{{ global_insurance_line_variant_id }}"
+                        data-has-products="{{ global_cart_has_paid_products }}"
+                        data-default-on="{{ settings.cart_insurance_default_on }}"
+                        {% if summary_insurance_exists %} checked{% endif %}
+                    />
                     <span></span>
                     <input type="hidden" name="quantity" id="quantity" value="{% if summary_insurance_exists %}0{% else %}1{% endif %}">
                     <input type="hidden" id="insurance_id" name="id" value="{{ global_insurance_variant_id }}">

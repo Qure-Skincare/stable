@@ -14,28 +14,52 @@
 
 {% comment %} insurance settings {% endcomment %}
 
-{% if global_total_price_devided > 0 and global_total_price_devided <= 75 %}
+{% comment %}
+    The tier is picked from the cart total without the insurance line itself,
+    so adding insurance never moves the cart into a higher tier. The current
+    insurance line and the presence of paid products drive the default-on
+    toggle in n-footer-cart-drawer.js.
+{% endcomment %}
+{% assign global_insurance_line_key = '' %}
+{% assign global_insurance_line_variant_id = '' %}
+{% assign global_cart_has_paid_products = false %}
+{% assign insurance_tier_total = global_total_price %}
+
+{% for line in cart.items %}
+    {% assign __line_title = line.title | downcase %}
+    {% if __line_title contains 'shipping insurance' %}
+        {% assign global_insurance_line_key = line.key %}
+        {% assign global_insurance_line_variant_id = line.variant_id %}
+        {% assign insurance_tier_total = insurance_tier_total | minus: line.final_line_price %}
+    {% elsif line.final_line_price > 0 %}
+        {% assign global_cart_has_paid_products = true %}
+    {% endif %}
+{% endfor %}
+
+{% assign insurance_tier_total_devided = insurance_tier_total | divided_by: 100 %}
+
+{% if insurance_tier_total_devided > 0 and insurance_tier_total_devided <= 75 %}
     {% assign insurancePrice = 150 %}
     {% assign insuranceId = 43291834220783 %}
-{% elsif global_total_price_devided >= 76 and global_total_price_devided <= 100 %}
+{% elsif insurance_tier_total_devided >= 76 and insurance_tier_total_devided <= 100 %}
     {% assign insurancePrice = 150 %}
     {% assign insuranceId = 43326164566255 %}
-{% elsif global_total_price_devided >= 101 and global_total_price_devided <= 200 %}
+{% elsif insurance_tier_total_devided >= 101 and insurance_tier_total_devided <= 200 %}
     {% assign insurancePrice = 280 %}
     {% assign insuranceId = 43326164599023 %}
-{% elsif global_total_price_devided >= 201 and global_total_price_devided <= 250 %}
+{% elsif insurance_tier_total_devided >= 201 and insurance_tier_total_devided <= 250 %}
     {% assign insurancePrice = 325 %}
     {% assign insuranceId = 43326164631791 %}
-{% elsif global_total_price_devided >= 251 and global_total_price_devided <= 300 %}
+{% elsif insurance_tier_total_devided >= 251 and insurance_tier_total_devided <= 300 %}
     {% assign insurancePrice = 390 %}
     {% assign insuranceId = 43326164664559 %}
-{% elsif global_total_price_devided >= 301 and global_total_price_devided <= 400 %}
+{% elsif insurance_tier_total_devided >= 301 and insurance_tier_total_devided <= 400 %}
     {% assign insurancePrice = 420 %}
     {% assign insuranceId = 43326164697327 %}
-{% elsif global_total_price_devided >= 401 and global_total_price_devided <= 1000 %}
+{% elsif insurance_tier_total_devided >= 401 and insurance_tier_total_devided <= 1000 %}
     {% assign insurancePrice = 420 %}
     {% assign insuranceId = 43326164697327 %}
-{% elsif global_total_price_devided >= 1001 %}
+{% elsif insurance_tier_total_devided >= 1001 %}
     {% assign insurancePrice = 1800 %}
     {% assign insuranceId = 43326855282927 %}
 {% endif %}
@@ -72,7 +96,7 @@
 {% comment %} shipping settings {% endcomment %}
 
 {% assign global_shipping_price = settings.shipping_price | times: 100 | money_without_trailing_zeros %}
-{% assign global_shipping_price_limit = settings.shipping_price_limit %}
+{% assign global_shipping_price_limit = settings.shipping_price_limit | default: 0 %}
 
 {% if global_shipping_price_limit > 0 and global_total_price_devided > global_shipping_price_limit %}
     {% assign global_shipping_price = null %}
@@ -100,7 +124,7 @@
 
 {% comment %} define bar variables {% endcomment %}
  
-{% assign global_bar_shipping_limit = settings.shipping_price_limit %}
+{% assign global_bar_shipping_limit = settings.shipping_price_limit | default: 0 %}
 {% assign global_bar_shipping_price = settings.shipping_price %}
 {% assign global_bar_shipping_title = settings.shipping_title %}
 {% assign global_bar_shipping_icon = settings.shipping_icon %}

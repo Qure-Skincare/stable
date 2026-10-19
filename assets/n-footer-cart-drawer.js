@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     bindForms();
-    qlSyncArm();
+    qlSyncArm().then(ensureInsurance);
 });
 
 document.addEventListener('cart.requestComplete', (event) => {
@@ -79,6 +79,11 @@ const reloadDrawer = async (detail) => {
     // Carts filled by other scripts (bundles, native form posts) never went
     // through qlEnsureArm.
     await qlSyncArm();
+
+    // Skipped after its own request, so a rejected insurance update can't loop.
+    if (source !== 'insurance') {
+        await ensureInsurance();
+    }
 };
 
 const refreshDrawer = () => {
@@ -597,6 +602,14 @@ const clearCartIfOnlyFreeItems = async () => {
 const changeCart = async (input) => {
     setLoading(true);
 
+    // Removing the insurance line by hand counts as switching the toggle off.
+    if (typeof input.get === 'function' && Number(input.get('quantity')) === 0) {
+        const insuranceKey = document.querySelector('#cart-dynamic-content input#insurance')?.dataset.lineKey;
+        if (insuranceKey && input.get('id') === insuranceKey) {
+            setInsuranceDeclined(true);
+        }
+    }
+
     try {
         // change.js returns the full cart JSON plus rendered sections in one
         // round-trip - typically the only request of the whole flow.
@@ -604,8 +617,9 @@ const changeCart = async (input) => {
         earlyPaint(res.sections);
 
         // Free-only cleanup from the response already in hand: if only
-        // zero-value items remain, wipe the cart and stop the normal flow.
-        if (res.item_count > 0 && res.total_price === 0) {
+        // zero-value items (and shipping insurance) remain, wipe the cart and
+        // stop the normal flow.
+        if (res.item_count > 0 && (res.total_price === 0 || !hasPaidProducts(res))) {
             const cleared = await cartPost('cart/clear.js', withSections({}));
             setLoading(false);
             dispatchComplete('clearCart', { cart: cleared, sections: cleared.sections });
@@ -661,6 +675,91 @@ const getCartState = () => {
 
 /*  special functions   */
 
+// Shipping insurance is on by default (theme setting "Cart drawer settings"):
+// a cart with paid products gets the insurance line of its price tier unless
+// the shopper switched the toggle off. That choice lasts until the cart is
+// emptied.
+const INSURANCE_DECLINED_KEY = 'cart_insurance_declined';
+
+const isInsuranceDeclined = () => {
+    try {
+        return localStorage.getItem(INSURANCE_DECLINED_KEY) === '1';
+    } catch (error) {
+        return false;
+    }
+};
+
+const setInsuranceDeclined = (declined) => {
+    try {
+        if (declined) localStorage.setItem(INSURANCE_DECLINED_KEY, '1');
+        else localStorage.removeItem(INSURANCE_DECLINED_KEY);
+    } catch (error) {}
+};
+
+const isInsuranceItem = (item) => /shipping insurance/i.test(item.title || '');
+
+const hasPaidProducts = (cart) => {
+    return (cart.items || []).some(item => item.final_line_price > 0 && !isInsuranceItem(item));
+};
+
+// Reads the server-rendered drawer (see get-cart-global-data): adds the
+// insurance line, moves it to the current tier, or wipes a cart that holds
+// nothing but insurance and free items.
+let insuranceSyncing = false;
+
+const ensureInsurance = async () => {
+    const content = document.getElementById('cart-dynamic-content');
+    if (!content || insuranceSyncing) return;
+
+    const checkbox = content.querySelector('input[type="checkbox"]#insurance');
+
+    if (!checkbox) {
+        setInsuranceDeclined(false);
+        return;
+    }
+
+    const lineVariant = checkbox.dataset.lineVariant;
+    const targetVariant = checkbox.form?.querySelector('#insurance_id')?.value;
+    const hasProducts = checkbox.dataset.hasProducts === 'true';
+    const defaultOn = checkbox.dataset.defaultOn === 'true';
+
+    let request = null;
+
+    if (!hasProducts) {
+        if (lineVariant) request = ['cart/clear.js', {}, 'clearCart'];
+    }
+    else if (!targetVariant) {
+        return;
+    }
+    else if (!lineVariant) {
+        if (defaultOn && !isInsuranceDeclined()) {
+            request = ['cart/update.js', { updates: { [targetVariant]: 1 } }, 'insurance'];
+        }
+    }
+    else if (lineVariant !== targetVariant) {
+        request = ['cart/update.js', { updates: { [lineVariant]: 0, [targetVariant]: 1 } }, 'insurance'];
+    }
+
+    if (!request) return;
+
+    const [path, body, source] = request;
+
+    insuranceSyncing = true;
+    setLoading(true);
+
+    try {
+        const res = await cartPost(path, withSections(body));
+        dispatchComplete(source, { cart: res, sections: res.sections });
+    }
+    catch (error) {
+        console.error('Error syncing insurance:', error);
+    }
+    finally {
+        insuranceSyncing = false;
+        setLoading(false);
+    }
+};
+
 const toogleInsurance = () => {
     document.querySelectorAll('form[action$="/cart/add"]:has(input[type="checkbox"]#insurance)').forEach((form) => {
         const checkbox = form.querySelector('input[type="checkbox"]#insurance');
@@ -668,6 +767,8 @@ const toogleInsurance = () => {
         if (!checkbox) return;
 
         checkbox.addEventListener('change', () => {
+            setInsuranceDeclined(!checkbox.checked);
+
             getCartState().then(cart => {
                 const insuranceItem = cart.items.find(item => item.title.includes('Shipping Insurance'));
 
