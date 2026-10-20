@@ -1,0 +1,74 @@
+{%- comment -%}
+  Ready-event guard. Injected as the very first <script> in <head> by
+  __sapp-output, so it wraps every DOMContentLoaded/load listener added to
+  document/window — including excluded (sapp_init_src) scripts that run natively.
+
+  The browser fires DOMContentLoaded and load once. sapp replays them for late
+  scripts: the LCP orchestrator replays DOMContentLoaded after the LCP scripts,
+  and the backend dispatches synthetic DOMContentLoaded/load after every queue
+  drains (dispatchSyntheticEvents). dispatchEvent reaches ALL listeners, so code
+  that already initialised ran again (re-rendered sections, closed dialogs,
+  duplicated bindings). A document-level DOMContentLoaded with bubbles:true also
+  reaches window, so the extra window dispatch invoked window listeners twice.
+
+  The guard restores native semantics: each listener runs at most once per
+  target/type/capture. Late listeners still receive the first replay.
+{%- endcomment -%}
+<script class="__init">
+(function (w, d) {
+  'use strict';
+  var proto = w.EventTarget && w.EventTarget.prototype;
+  if (!proto || !w.WeakMap || proto.__sappReadyGuard) return;
+  proto.__sappReadyGuard = true;
+
+  var TYPES = { DOMContentLoaded: 1, load: 1 };
+  var add = proto.addEventListener;
+  var remove = proto.removeEventListener;
+  var wrappers = new WeakMap();
+
+  function isCapture(opts) {
+    return typeof opts === 'boolean' ? opts : !!(opts && opts.capture);
+  }
+
+  function guarded(target, type, fn) {
+    return (target === d || target === w) && TYPES[type] === 1 && fn &&
+      (typeof fn === 'function' || typeof fn.handleEvent === 'function');
+  }
+
+  function keyOf(target, type, opts) {
+    return (target === d ? 'd:' : 'w:') + type + ':' + isCapture(opts);
+  }
+
+  proto.addEventListener = function (type, fn, opts) {
+    if (!guarded(this, type, fn)) return add.call(this, type, fn, opts);
+    var entry = wrappers.get(fn);
+    if (!entry) { entry = {}; wrappers.set(fn, entry); }
+    var key = keyOf(this, type, opts);
+    if (!entry[key]) {
+      var done = false;
+      var once = !!(opts && typeof opts === 'object' && opts.once);
+      entry[key] = function (e) {
+        if (done) return;
+        done = true;
+        {%- comment -%} The browser drops a once listener itself; forget the wrapper so re-adding fn works. {%- endcomment -%}
+        if (once) delete entry[key];
+        return typeof fn === 'function' ? fn.call(this, e) : fn.handleEvent(e);
+      };
+    }
+    return add.call(this, type, entry[key], opts);
+  };
+
+  proto.removeEventListener = function (type, fn, opts) {
+    if (guarded(this, type, fn)) {
+      var entry = wrappers.get(fn);
+      var key = keyOf(this, type, opts);
+      if (entry && entry[key]) {
+        remove.call(this, type, entry[key], opts);
+        delete entry[key];
+        return;
+      }
+    }
+    return remove.call(this, type, fn, opts);
+  };
+})(window, document);
+</script>

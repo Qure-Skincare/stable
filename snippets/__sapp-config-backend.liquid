@@ -29,6 +29,8 @@
 
 {%- assign sapp_use_minified = true -%}
 
+{%- assign sapp_ready_guard = true -%}
+
 {%- assign sapp_init_src = 'n-redirect.js,n-morphdom-umd.min.js,n-footer-cart-drawer.js' | split: ',' -%}
 {%- assign sapp_init_innerhtml = 'window.get_products_data =' | split: ',' -%}
 
