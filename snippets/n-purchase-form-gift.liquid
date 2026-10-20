@@ -4,7 +4,7 @@
   @param {object} section - purchase form section
 
   @example
-  {% render 'n-purchase-form-gift', section: section %}
+  {% include 'n-purchase-form-gift' %}
 {% enddoc %}
 {% assign block = section.blocks | where: 'type', 'gift' | first %}
 {% if block != blank %}

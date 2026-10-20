@@ -32,7 +32,7 @@
                     {% render 'n-purchase-form-klaviyo', section: section %}
                     {% render 'n-purchase-form-payments' section: section %}
                 </div>
-                {% render 'n-purchase-form-gift', section: section %}
+                {% include 'n-purchase-form-gift' %}
                 <div class="treatment__buy">
                     {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true %}
                     {% if section.settings.delivery_switcher_position == 'footer' %}

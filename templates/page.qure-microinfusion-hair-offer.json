@@ -440,7 +440,7 @@
         "product_Rj9uMv": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-pro-hair-system",
+            "product": "micro-infusion-pro-hair-system-3-month-bundle",
             "variant_title": "",
             "description": "Use 1* per week. On this day: Can use Helmet first.",
             "am_or_pm_1": "weekly",
@@ -623,7 +623,7 @@
         "product_Wq4mLs": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-pro-hair-system",
+            "product": "micro-infusion-pro-hair-system-3-month-bundle",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "hair-renewal-serum",
@@ -650,7 +650,7 @@
         "product_Zn6pDk": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-pro-hair-system",
+            "product": "micro-infusion-pro-hair-system-2-treatments",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "hair-renewal-serum",
@@ -702,7 +702,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-pro-hair-system",
+        "delivery_switcher_product": "micro-infusion-pro-hair-system-3-month-bundle",
         "guarantee_period": "30",
         "available-stocks": false,
         "hide_product_types": true,
