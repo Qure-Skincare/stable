@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "n_hero_section_Pz6kRw": {
       "type": "n_hero-section",
@@ -46,7 +46,7 @@
           "type": "feature",
           "settings": {
             "icon": "hair",
-            "text": "Targets the Look<br /> of Thinning"
+            "text": "Targets the Look<br> of Thinning"
           }
         },
         "feature_Wq9bYf": {
@@ -72,7 +72,7 @@
         "approved_position": "before_text",
         "text": "<p>The Perfect Pair, Bundled Together</p><h1>Two Steps to Visibly <br/> Fuller-Looking Hair</h1><p><strong>Pair the Micro-Infusion Pro Hair System with Hair Renewal Serum</strong> for a simple, science-backed routine.</p>",
         "rating": "",
-        "rating_text": "100+ dermatologists • <a href=\"#\"><strong>4.7\/5<\/strong><\/a> 750k+ customers",
+        "rating_text": "100+ dermatologists • <a href=\"#\"><strong>4.7/5</strong></a> 750k+ customers",
         "image": "shopify://shop_images/micro-infusion-hair.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hair-mob.webp",
         "button_url": "#buy_box",
@@ -142,11 +142,13 @@
         "modifier": "haircare",
         "modifier_2": "none",
         "background_color": "none",
+        "section_id": "",
         "heading": "<h2>Go beyond surface-level haircare</h2>",
         "text": "<p>Traditional serums sit on top of the scalp or rinse away. Once a week, the Micro-Infusion Pro Hair System uses 0.5mm 24k gold-plated needles to create tiny micro-channels, <strong>designed to help deliver serum actives directly to the scalp surface where they're needed most.</strong> On the days in between, the Hair Renewal Serum keeps your scalp conditioned.</p><p>The patent-pending system uses tiny, virtually painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp</strong>Virtually painless micro-stamping with 0.5mm needles on a sterile, single-use tip.</li><li><strong>Infuse</strong>Designed to help deliver serum actives directly to the scalp surface.</li><li><strong>Renews</strong>Supports the look of fuller, denser-looking hair over time.</li></ul>",
         "button_label": "",
         "button_url": "",
-        "wistia_url": "jhwgazmjv8"
+        "wistia_url": "jhwgazmjv8",
+        "accordion_text": ""
       }
     },
     "n_bundled_together_Hq5nVz": {
@@ -244,7 +246,7 @@
         "right_heading_Vc3jWe": {
           "type": "right_heading",
           "settings": {
-            "image": "shopify://shop_images/mi-2-device-rejuvenating-2.webp",
+            "image": "shopify://shop_images/mi-2-device-rejuvenating-2_c649156e-25ff-4e1d-be22-ca0e6d17ffcf.webp",
             "badge": "Nightly",
             "text": "<h3>Scalp Hydration</h3><h6>HAIR RENEWAL SERUM</h6><p>A lightweight, dropper-applied serum for nightly use on non-infusion nights.</p>"
           }
@@ -595,7 +597,13 @@
       "settings": {
         "use_own_file": false,
         "modifier": "none",
-        "heading": "<h2>Have questions?</h2>"
+        "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": ""
       }
     }
   },
