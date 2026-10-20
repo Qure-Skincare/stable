@@ -2203,7 +2203,9 @@
         "purchase-form": {
             "name": "Purchase form",
             "settings": {
-                "form_name": "Form name"
+                "form_name": "Form name",
+                "hide_product_types": "Hide product types",
+                "subscription_details": "Show subscription details under supply"
             },
             "blocks": {
                 "product": {
