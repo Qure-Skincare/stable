@@ -1008,28 +1008,12 @@
     },
     "sticky_cta_recovery_mask": {
       "type": "n-sticky-button",
-      "blocks": {
-        "optional_subscription_dezzN4": {
-          "type": "optional-subscription",
-          "settings": {
-            "product": "",
-            "price_note": "vvvv",
-            "rating": false,
-            "rating_text": "hhhhh",
-            "subscription_variant_id": "6565765",
-            "selling_plan_id": "5675765"
-          }
-        }
-      },
-      "block_order": [
-        "optional_subscription_dezzN4"
-      ],
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Recovery+ Sheet Mask",
         "text": "80 Units Reserved in last 48 hours",
         "limited": false,
-        "button-label": "Subscribe & Save 17%",
+        "button-label": "Buy Now",
         "button-url": ""
       }
     }
