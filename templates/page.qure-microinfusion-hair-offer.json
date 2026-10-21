@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "n_hero_section_Pz6kRw": {
       "type": "n_hero-section",
@@ -70,10 +70,10 @@
         "hidden": false,
         "modifier": "none",
         "approved_position": "before_text",
-        "text": "<p>The Perfect Pair, Bundled Together</p><h1>Two Steps to Visibly <br/> Fuller-Looking Hair</h1><p><strong>Pair the Micro-Infusion Pro Hair System with Hair Renewal Serum</strong> for a simple, science-backed routine.</p>",
+        "text": "<p>The Perfect Pair, Bundled Together</p><h1>Two Steps to Visibly&nbsp;<br/>&nbsp;Fuller-Looking Hair</h1><p><strong>Pair the Micro-Infusion Pro Hair System with Hair Renewal Serum</strong> for a simple, science-backed routine.</p>",
         "rating": "",
         "rating_text": "100+ dermatologists • <a href=\"#\"><strong>4.7/5</strong></a> 750k+ customers",
-        "image": "shopify://shop_images/micro-infusion-hair.webp",
+        "image": "shopify://shop_images/mihairherobanner.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-hair-mob.webp",
         "button_url": "#purchase-form",
         "button_label": "Start My Hair Transformation",
@@ -415,6 +415,113 @@
         "badge_text": ""
       }
     },
+    "purchase_form_Rk7nVw": {
+      "type": "n-purchase-form",
+      "blocks": {
+        "type_Hm3kQz": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_Vb8nRt": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Hair",
+            "preselected": true
+          }
+        },
+        "product_Wq4mLs": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-hair-system-3-month-bundle",
+            "product_variant_id": 0,
+            "product_selling_plan": 9330426095,
+            "gift": "hair-renewal-serum",
+            "gift_selling_plan": 9330622703,
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": true,
+            "preselected": true,
+            "heading": "6 Month Supply",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 12 weeks",
+            "product_discount_percent": 25,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 12,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_Zn6pDk": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-hair-system-2-treatments",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "free_shipping": false,
+            "per_treatment": false,
+            "preselected": false,
+            "heading": "1 Months Supply",
+            "subheading": "(2 Micro-Infusion Treatments)",
+            "product_selling_plan_text": "",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 2,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "gift_Pt5rXc": {
+          "type": "gift",
+          "settings": {
+            "product": "hair-renewal-serum",
+            "image": "shopify://shop_images/scalp-hydration-small.png",
+            "heading": "Hair Renewal Serum",
+            "text": "Helps provide lasting scalp hydration"
+          }
+        }
+      },
+      "block_order": [
+        "type_Hm3kQz",
+        "product_type_Vb8nRt",
+        "product_Wq4mLs",
+        "product_Zn6pDk",
+        "gift_Pt5rXc"
+      ],
+      "settings": {
+        "modifier": "secondary",
+        "type": "list",
+        "heading": "Choose your treatment",
+        "text": "",
+        "image": "shopify://shop_images/mi_hair_month.webp",
+        "klaviyo_form_name": "",
+        "form_name": "purchase-form",
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 70,
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-pro-hair-system-3-month-bundle",
+        "guarantee_period": "30",
+        "available-stocks": false,
+        "hide_product_types": true,
+        "subscription_details": true,
+        "hide_bottom": true,
+        "hide_certified": true
+      }
+    },
     "n_page_microinfusion_complete_system_Gv8cRt": {
       "type": "n_page-microinfusion-complete-system",
       "blocks": {
@@ -606,113 +713,6 @@
         "text": "",
         "button_label": "",
         "button_url": ""
-      }
-    },
-    "purchase_form_Rk7nVw": {
-      "type": "n-purchase-form",
-      "blocks": {
-        "type_Hm3kQz": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_Vb8nRt": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Hair",
-            "preselected": true
-          }
-        },
-        "product_Wq4mLs": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-pro-hair-system-3-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 9330426095,
-            "gift": "hair-renewal-serum",
-            "gift_selling_plan": 9330622703,
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "per_treatment": true,
-            "preselected": true,
-            "heading": "6 Month Supply",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 12 weeks",
-            "product_discount_percent": 25,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 12,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "product_Zn6pDk": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-pro-hair-system-2-treatments",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_selling_plan": 0,
-            "gift_text": "",
-            "discount_code": "",
-            "free_shipping": false,
-            "per_treatment": false,
-            "preselected": false,
-            "heading": "1 Months Supply",
-            "subheading": "(2 Micro-Infusion Treatments)",
-            "product_selling_plan_text": "",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 2,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "gift_Pt5rXc": {
-          "type": "gift",
-          "settings": {
-            "product": "hair-renewal-serum",
-            "image": "shopify://shop_images/scalp-hydration-small.png",
-            "heading": "Hair Renewal Serum",
-            "text": "Helps provide lasting scalp hydration"
-          }
-        }
-      },
-      "block_order": [
-        "type_Hm3kQz",
-        "product_type_Vb8nRt",
-        "product_Wq4mLs",
-        "product_Zn6pDk",
-        "gift_Pt5rXc"
-      ],
-      "settings": {
-        "modifier": "secondary",
-        "type": "list",
-        "heading": "Choose your treatment",
-        "text": "",
-        "image": "shopify://shop_images/mi_hair_month.webp",
-        "klaviyo_form_name": "",
-        "form_name": "purchase-form",
-        "subscription_product": "true",
-        "subscription_discount_max_percent": 70,
-        "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-pro-hair-system-3-month-bundle",
-        "guarantee_period": "30",
-        "available-stocks": false,
-        "hide_product_types": true,
-        "subscription_details": true,
-        "hide_bottom": true,
-        "hide_certified": true
       }
     }
   },
