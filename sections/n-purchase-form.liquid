@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/treatment/treatment.css" media="print" onload="this.media='all'" />
 <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/treatment/treatment.css" /></noscript>
 
-<section id="purchase-form" class="treatment {{ section.id }} {% if section.settings.available-stocks %}treatment--announcement{% endif %}" data-announcement="{{ 'purchase-form.settings.available-stocks' | t }}">
+<section id="purchase-form" class="treatment {{ section.id }} {% if section.settings.available-stocks %}treatment--announcement{% endif %}{% if section.settings.modifier != 'none' %} treatment--{{ section.settings.modifier }}{% endif %}" data-announcement="{{ 'purchase-form.settings.available-stocks' | t }}">
     <div class="container">
         <article class="treatment__content">
             {% if section.settings.heading != blank %}
@@ -32,6 +32,7 @@
                     {% render 'n-purchase-form-klaviyo', section: section %}
                     {% render 'n-purchase-form-payments' section: section %}
                 </div>
+                {% include 'n-purchase-form-gift' %}
                 <div class="treatment__buy">
                     {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true %}
                     {% if section.settings.delivery_switcher_position == 'footer' %}
@@ -73,6 +74,22 @@
     "name":"t:sections.purchase-form.name",
     "class":"purchase-form",
     "settings":[
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "secondary",
+                    "label": "t:common.secondary"
+                }
+            ],
+            "default": "none"
+        },
         {
             "type": "select",
             "id": "type",
@@ -186,6 +203,30 @@
             "type": "checkbox",
             "id": "available-stocks",
             "label": "t:common.available-stocks",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_product_types",
+            "label": "t:sections.purchase-form.settings.hide_product_types",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "subscription_details",
+            "label": "t:sections.purchase-form.settings.subscription_details",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_bottom",
+            "label": "t:common.hide_bottom",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_certified",
+            "label": "t:common.hide_certified",
             "default": false
         }
     ],
@@ -302,6 +343,12 @@
                     "type": "product",
                     "id": "gift",
                     "label": "t:common.gift"
+                },
+                {
+                    "type": "number",
+                    "id": "gift_selling_plan",
+                    "label": "t:sections.purchase-form.blocks.product.settings.gift_selling_plan",
+                    "default": 0
                 },
                 {
                     "type": "image_picker",
@@ -421,6 +468,33 @@
                     "type": "richtext",
                     "id": "included_text",
                     "label": "t:sections.purchase-form.blocks.product.settings.included_text"
+                }
+            ]
+        },
+        {
+            "type": "gift",
+            "name": "t:common.gift",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "t:common.product"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
                 }
             ]
         },

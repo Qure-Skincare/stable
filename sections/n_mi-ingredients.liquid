@@ -21,6 +21,9 @@
             <article>
                 {% for block in section.blocks %}
                     {% if block.type == 'left_heading' %}
+                        {% if block.settings.badge != blank %}
+                            <span class="e-pill-badge e-pill-badge--xxs e-pill-badge--fill">{{ block.settings.badge }}</span>
+                        {% endif %}
                         {{ block.settings.text }}
                     {% endif %}
                 {% endfor %}
@@ -65,6 +68,9 @@
             <article>
                 {% for block in section.blocks %}
                     {% if block.type == 'right_heading' %}
+                        {% if block.settings.badge != blank %}
+                            <span class="e-pill-badge e-pill-badge--xxs e-pill-badge--fill">{{ block.settings.badge }}</span>
+                        {% endif %}
                         {{ block.settings.text }}
                     {% endif %}
                 {% endfor %}
@@ -100,6 +106,14 @@
                 {% endif %}
             {% endfor %}
         </div>
+        {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+            <div class="mi-ingredients__button">
+                <div class="c-order-button">
+                    <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+                </div>
+                <small>{{ section.settings.sub_text }}</small>
+            </div>
+        {% endif %}
     </div>
 </section>
 <!-- MI INGREDIENTS END -->
@@ -123,6 +137,21 @@
             "type": "richtext",
             "id": "text",
             "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        },
+        {
+            "type": "text",
+            "id": "sub_text",
+            "label": "t:common.sub-text"
         }
     ],
     "blocks": [
@@ -135,6 +164,11 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge"
                 },
                 {
                     "type": "richtext",
@@ -152,6 +186,11 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge"
                 },
                 {
                     "type": "richtext",
@@ -193,6 +232,22 @@
                         {
                             "value": "deeply-hydrates",
                             "label": "t:common.deeply-hydrates"
+                        },
+                        {
+                            "value": "micro-stamping",
+                            "label": "t:common.micro-stamping"
+                        },
+                        {
+                            "value": "hair",
+                            "label": "t:common.hair"
+                        },
+                        {
+                            "value": "fast",
+                            "label": "t:common.fast"
+                        },
+                        {
+                            "value": "cooling",
+                            "label": "t:common.cooling"
                         }
                     ]
                 },
@@ -236,6 +291,22 @@
                         {
                             "value": "deeply-hydrates",
                             "label": "t:common.deeply-hydrates"
+                        },
+                        {
+                            "value": "micro-stamping",
+                            "label": "t:common.micro-stamping"
+                        },
+                        {
+                            "value": "hair",
+                            "label": "t:common.hair"
+                        },
+                        {
+                            "value": "fast",
+                            "label": "t:common.fast"
+                        },
+                        {
+                            "value": "cooling",
+                            "label": "t:common.cooling"
                         }
                     ]
                 },

@@ -38,4 +38,7 @@
             <div id="{{ section.settings.form_name }}-body-{{ section.id }}"></div>
         </div>
     {% endif %}
+    {% if section.settings.subscription_product == 'true' and section.settings.subscription_details == true %}
+        <p class="subscription-details">{{ 'purchase-form.settings.n_more_details_html' | t }}</p>
+    {% endif %}
 </div>

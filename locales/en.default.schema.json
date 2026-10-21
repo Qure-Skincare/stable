@@ -273,6 +273,7 @@
         "right-feedback": "Right feedback",
         "am": "AM",
         "pm": "PM",
+        "weekly": "Weekly",
         "none": "None",
         "two-cards": "Two cards",
         "three-cards": "Three cards",
@@ -365,6 +366,10 @@
         "even-looking": "Even looking",
         "smooths": "Smooths",
         "deeply-hydrates": "Deeply hydrates",
+        "micro-stamping": "Micro-stamping",
+        "hair": "Hair",
+        "fast": "Fast",
+        "cooling": "Cooling",
         "guarantee": "Guarantee",
         "shipping-order": "Shipping order",
         "reverse": "Reverse",
@@ -590,6 +595,7 @@
                 "modifier-options": {
                     "none": "None",
                     "reverse": "Reverse",
+                    "haircare": "Haircare",
                     "simple-grid": "Simple grid"
                 },
                 "background-color-options": {
@@ -655,6 +661,9 @@
                         "mi-quick": "Quick treatment",
                         "mi-painless": "Minimal discomfort"
                     }
+                },
+                "feature": {
+                    "name": "Short feature"
                 }
             }
         },
@@ -885,6 +894,25 @@
         },
         "n_product-you-may-also-like": {
             "name": "Product you may also like"
+        },
+        "n_routine-steps": {
+            "name": "Routine steps",
+            "blocks": {
+                "group": {
+                    "name": "Steps group",
+                    "settings": {
+                        "slides_per_view": "Slides per view (desktop)"
+                    }
+                }
+            }
+        },
+        "n_bundled-together": {
+            "name": "Bundled together",
+            "settings": {
+                "modifier-options": {
+                    "hair": "Hair"
+                }
+            }
         },
         "n_why-it-works": {
             "name": "Why it works",
@@ -2175,7 +2203,9 @@
         "purchase-form": {
             "name": "Purchase form",
             "settings": {
-                "form_name": "Form name"
+                "form_name": "Form name",
+                "hide_product_types": "Hide product types",
+                "subscription_details": "Show subscription details under supply"
             },
             "blocks": {
                 "product": {
@@ -2187,7 +2217,8 @@
                         "total_treatments": "Total treatments",
                         "total_treatments_info": "Use this setting to show the number of treatments in product variant",
                         "left_items": "Left items",
-                        "left_items_info": "Use this setting to show the number of items left in stock."
+                        "left_items_info": "Use this setting to show the number of items left in stock.",
+                        "gift_selling_plan": "Gift selling plan"
                     }
                 }
             }

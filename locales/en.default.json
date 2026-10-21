@@ -37,7 +37,8 @@
     "n_page-microinfusion-complete-system": {
       "settings": {
         "am_text": "Day",
-        "pm_text": "Night"
+        "pm_text": "Night",
+        "weekly_text": "Weekly"
       }
     },
     "n_affiliate-page-apply-form": {
@@ -660,6 +661,7 @@
       "free_gift": "Free Gift!",
       "free": "FREE",
       "first_free": "First bottle Free",
+      "gift_included": "Gift included",
       "treatment": "treatment",
       "best-results": "Best Results",
       "payment-option": "Select A Payment Option",

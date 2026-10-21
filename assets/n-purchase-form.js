@@ -132,6 +132,7 @@ function __handlerProductVariantSelector(e) {
     const product_selling_plan = this.getAttribute("data-product-selling-plan");
     const block_id = this.getAttribute("data-block-id");
     const gift = this.getAttribute("data-gift");
+    const gift_selling_plan = this.getAttribute("data-gift-selling-plan");
     const discount_code = this.getAttribute("data-discount-code");
 
     if (this.matches('.supply-cards-labels li.purchase_form_product_variant_selector')) {
@@ -144,7 +145,7 @@ function __handlerProductVariantSelector(e) {
     tooglePreorderBox(preorder, product_variant_id);
     backInStock(soldout);
     subscriptionForm(this,product_selling_plan);
-    applyDiscount(gift, discount_code);
+    applyDiscount(gift, discount_code, gift_selling_plan);
 
     const purchase_form_pay_in_full = document.querySelector('.' + __section + " .purchase_form_pay_in_full");
     if (purchase_form_pay_in_full) {
@@ -189,7 +190,10 @@ function __handlerProductVariantSelector(e) {
 }
 
 
-function applyDiscount(gift, discount_code) {
+function applyDiscount(gift, discount_code, gift_selling_plan) {
+    const giftBox = document.querySelector('.' + __section + ' .treatment__gift');
+    if (giftBox) giftBox.classList.toggle('hide', !gift);
+
     const form = document.querySelector('.' + __section + ' .c-order-button form[action="/cart/add"]');
     if (!form) return;
 
@@ -200,6 +204,15 @@ function applyDiscount(gift, discount_code) {
     else
     {
         removeHiddenInput(form, 'properties[_gift]');
+    }
+
+    if(gift && gift_selling_plan)
+    {
+        setHiddenInput(form, 'properties[_gift_selling_plan]', gift_selling_plan);
+    }
+    else
+    {
+        removeHiddenInput(form, 'properties[_gift_selling_plan]');
     }
 
     if(discount_code)

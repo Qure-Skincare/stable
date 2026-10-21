@@ -1,0 +1,28 @@
+{% doc %}
+  Renders the gift box of a purchase form section from its `gift` block: badge, image, name, text and the gift product price struck out.
+
+  @param {object} section - purchase form section
+
+  @example
+  {% include 'n-purchase-form-gift' %}
+{% enddoc %}
+{% assign block = section.blocks | where: 'type', 'gift' | first %}
+{% if block != blank %}
+    {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-gift-' %}
+    <div class="treatment__gift" {{ block.shopify_attributes }}>
+        <div class="e-pill-save">{{ 'purchase-form.settings.gift_included' | t }}</div>
+        <div class="treatment__gift-box">
+            {% if block.settings.image != blank %}
+                <img loading="lazy" src="{{ block.settings.image | image_url: width: 120 }}" alt="{{ block.settings.heading | escape }}" />
+            {% endif %}
+            <div>
+                <strong>{{ block.settings.heading }}</strong>
+                <span>{{ block.settings.text }}</span>
+            </div>
+            <p>
+                <span>{{ 'purchase-form.settings.first_free' | t }}</span>
+                <span>{% if product_sale_price != blank %}<del>{{ product_sale_price }}</del> {% endif %}{{ 'purchase-form.settings.free' | t | capitalize }}</span>
+            </p>
+        </div>
+    </div>
+{% endif %}

@@ -49,17 +49,19 @@
                             {% endif %}
                         {% endif %}
 
-                        {% capture product-included-dropdown %}
-                            {{ product-included-dropdown }}
-                            <div class="info-items__item" id="purchase_form_info_item_{{ block.id }}">
-                                <details>
-                                    <summary>What is in the {{ block.settings.heading }}? <i class="e-icon e-icon-chevron"></i></summary>
-                                    <article>
-                                        {{ block.settings.included_text }}
-                                    </article>
-                                </details>
-                            </div>
-                        {% endcapture %}
+                        {% if block.settings.included_text != blank %}
+                            {% capture product-included-dropdown %}
+                                {{ product-included-dropdown }}
+                                <div class="info-items__item" id="purchase_form_info_item_{{ block.id }}">
+                                    <details>
+                                        <summary>What is in the {{ block.settings.heading }}? <i class="e-icon e-icon-chevron"></i></summary>
+                                        <article>
+                                            {{ block.settings.included_text }}
+                                        </article>
+                                    </details>
+                                </div>
+                            {% endcapture %}
+                        {% endif %}
 
                         {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
@@ -98,6 +100,9 @@
                             {% endif %}
                             {% if subscription_is_on == true and block.settings.gift != blank %}
                             data-gift="{{ all_products[block.settings.gift].variants.first.id }}"
+                            {% endif %}
+                            {% if subscription_is_on == true and block.settings.gift != blank and block.settings.gift_selling_plan > 0 %}
+                            data-gift-selling-plan="{{ block.settings.gift_selling_plan }}"
                             {% endif %}
                             {% if subscription_is_on == true and block.settings.discount_code != blank %}
                             data-discount-code="{{ block.settings.discount_code }}"
@@ -166,7 +171,8 @@
                                     </div>
                                 {% endif %}
 
-                                {% if subscription_is_on == true and block.settings.gift != blank %}
+                                {% assign gift_block = section.blocks | where: 'type', 'gift' | first %}
+                                {% if subscription_is_on == true and block.settings.gift != blank and gift_block == blank %}
                                     <div class="c-supply-selector__gift">
                                         <div class="gift-notice">
                                             <figure>

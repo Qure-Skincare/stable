@@ -1,0 +1,152 @@
+{% doc %}
+  Renders routine steps: a heading and one swiper per `group` block, each group followed by its `step` blocks.
+{% enddoc %}
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/routine-steps/routine-steps.css" />
+{% endif %}
+<section class="routine-steps"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        <hgroup class="routine-steps__titles">
+            {{ section.settings.heading }}
+        </hgroup>
+        {% assign group_open = false %}
+        {% assign step_index = 0 %}
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when 'group' %}
+                    {% if group_open %}
+                            </div>
+                            <div class="c-swiper-nav">
+                                <button class="c-swiper-button-prev"></button>
+                                <div class="c-swiper-pagination"></div>
+                                <button class="c-swiper-button-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% assign group_open = true %}
+                    {% assign step_index = 0 %}
+                    <div class="routine-steps__swiper" {{ block.shopify_attributes }}>
+                        <strong>{{ block.settings.heading }}</strong>
+                        {% if block.settings.badge != blank %}
+                            <div class="e-pill-badge e-pill-badge--xs e-pill-badge--fill">{{ block.settings.badge }}</div>
+                        {% endif %}
+                        <div
+                            class="c-swiper"
+                            data-swiper='{
+                                "slidesPerView": 1.2,
+                                "spaceBetween": 16,
+                                "loop": false,
+                                "pagination": {
+                                    "el": ".c-swiper-pagination",
+                                    "type": "custom"
+                                },
+                                "navigation": {
+                                    "prevEl": ".c-swiper-button-prev",
+                                    "nextEl": ".c-swiper-button-next"
+                                },
+                                "breakpoints": {
+                                    "768": {
+                                        "slidesPerView": {{ block.settings.slides_per_view }}
+                                    }
+                                }
+                            }'
+                        >
+                            <div class="swiper-wrapper">
+                {% when 'step' %}
+                    {% if group_open %}
+                        {% assign step_index = step_index | plus: 1 %}
+                        <div class="swiper-slide" {{ block.shopify_attributes }}>
+                            <picture data-index="{{ step_index }}">
+                                {% if block.settings.image != blank %}
+                                    <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                {% endif %}
+                            </picture>
+                            <p>{{ block.settings.text }}</p>
+                        </div>
+                    {% endif %}
+            {% endcase %}
+        {% endfor %}
+        {% if group_open %}
+                            </div>
+                            <div class="c-swiper-nav">
+                                <button class="c-swiper-button-prev"></button>
+                                <div class="c-swiper-pagination"></div>
+                                <button class="c-swiper-button-next"></button>
+                            </div>
+                        </div>
+                    </div>
+        {% endif %}
+    </div>
+</section>
+{% schema %}
+{
+    "name": "t:sections.n_routine-steps.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "group",
+            "name": "t:sections.n_routine-steps.blocks.group.name",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge"
+                },
+                {
+                    "type": "range",
+                    "id": "slides_per_view",
+                    "label": "t:sections.n_routine-steps.blocks.group.settings.slides_per_view",
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "default": 3
+                }
+            ]
+        },
+        {
+            "type": "step",
+            "name": "t:common.step",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_routine-steps.name"
+        }
+    ]
+}
+{% endschema %}

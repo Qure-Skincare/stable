@@ -1,0 +1,163 @@
+{% doc %}
+  Renders a bundled together section: heading, product components with pointers, expert quote card and a button.
+{% enddoc %}
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/bundled-together/bundled-together.css" />
+{% endif %}
+<section class="bundled-together"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+    <div class="container">
+        {{ section.settings.heading }}
+        <div class="c-product-components{% if section.settings.modifier != 'none' %} c-product-components--{{ section.settings.modifier }}{% endif %}">
+            {% if section.settings.image != blank %}
+                <picture>
+                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                </picture>
+            {% endif %}
+            {% for block in section.blocks %}
+                {% if block.type == 'component' %}
+                    <div class="e-component-pointer" {{ block.shopify_attributes }}>
+                        <hr />
+                        <div>
+                            <strong>
+                                {{ block.settings.heading }}
+                                {% if block.settings.badge != blank %}
+                                    <span class="e-pill-badge e-pill-badge--xxs">{{ block.settings.badge }}</span>
+                                {% endif %}
+                            </strong>
+                            <small>{{ block.settings.text }}</small>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% for block in section.blocks %}
+            {% if block.type == 'quote' %}
+                <div class="e-quote-card" {{ block.shopify_attributes }}>
+                    <i class="e-icon e-icon-quote"></i>
+                    {% if block.settings.image != blank %}
+                        <picture>
+                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.username | escape }}" />
+                        </picture>
+                    {% endif %}
+                    {{ block.settings.text }}
+                    <div>
+                        <strong>{{ block.settings.username }},</strong>
+                        <small>{{ block.settings.position }}</small>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        {% if section.settings.button_url != blank and section.settings.button_label != blank %}
+            <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+        {% endif %}
+    </div>
+</section>
+{% schema %}
+{
+    "name": "t:sections.n_bundled-together.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "hair",
+                    "label": "t:sections.n_bundled-together.settings.modifier-options.hair"
+                }
+            ]
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:common.image"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:common.button-label"
+        },
+        {
+            "type": "url",
+            "id": "button_url",
+            "label": "t:common.button-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "component",
+            "name": "t:common.component",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "t:common.header"
+                },
+                {
+                    "type": "text",
+                    "id": "badge",
+                    "label": "t:common.badge"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
+        },
+        {
+            "type": "quote",
+            "name": "t:common.expert-quote-card",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                },
+                {
+                    "type": "text",
+                    "id": "username",
+                    "label": "t:common.username"
+                },
+                {
+                    "type": "text",
+                    "id": "position",
+                    "label": "t:common.position"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_bundled-together.name"
+        }
+    ]
+}
+{% endschema %}

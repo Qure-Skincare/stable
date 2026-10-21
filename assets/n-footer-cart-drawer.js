@@ -489,6 +489,7 @@ const addToCart = async (input) => {
         if (!cart) throw new Error('Unable to fetch cart state');
 
         const gift = typeof input.get === 'function' ? input.get('properties[_gift]') : null;
+        const gift_selling_plan = typeof input.get === 'function' ? input.get('properties[_gift_selling_plan]') : null;
         const form_discount = typeof input.get === 'function' ? input.get('properties[_discount_code]') : null;
 
         let sections = added.sections || null;
@@ -502,13 +503,13 @@ const addToCart = async (input) => {
 
             if (!alreadyAdded) {
                 setLoading(true, true);
-                const giftRes = await cartPost('cart/add.js', withSections({
-                    items: [{
-                        id: gift,
-                        properties: { _product_gift: gift },
-                        quantity: 1
-                    }]
-                }));
+                const giftItem = {
+                    id: gift,
+                    properties: { _product_gift: gift },
+                    quantity: 1
+                };
+                if (gift_selling_plan) giftItem.selling_plan = gift_selling_plan;
+                const giftRes = await cartPost('cart/add.js', withSections({ items: [giftItem] }));
                 cart.item_count += 1;
                 if (giftRes.sections) {
                     sections = giftRes.sections;
@@ -820,6 +821,7 @@ const addProductGift = async (input) => {
     if (!input || typeof input.get !== 'function') return;
 
     const gift = input.get('properties[_gift]');
+    const gift_selling_plan = input.get('properties[_gift_selling_plan]');
     const discount_code = input.get('properties[_discount_code]');
 
     const cart = await getCartState();
@@ -832,13 +834,15 @@ const addProductGift = async (input) => {
         );
 
         if (!alreadyAdded) {
-            await addToCartMany([{
+            const giftItem = {
                 id: gift,
                 properties: {
                     _product_gift: gift
                 },
                 quantity: 1
-            }]);
+            };
+            if (gift_selling_plan) giftItem.selling_plan = gift_selling_plan;
+            await addToCartMany([giftItem]);
         }
     }
 
