@@ -19,13 +19,13 @@
     "footer-form": {
       "type": "n-footer-form",
       "settings": {
-        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"
+        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles, black-friday26-early-access"
       }
     },
     "footer": {
       "type": "n-footer",
       "settings": {
-        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles"
+        "exception": "get-the-guide-face-mask, get-the-guide-mist, get-the-guide-serum, get-the-guide-helmet, get-the-guide-neck, get-the-guide-shower, get-the-guide-faucet, get-the-guide-dark-spots, get-the-guide-wrinkles, black-friday26-early-access"
       }
     },
     "footer-drawer": {
