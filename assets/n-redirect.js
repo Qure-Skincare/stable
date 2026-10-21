@@ -5,3 +5,7 @@ if (window.location.pathname.includes('/products/micro-infusion-limited-edition-
 if (window.location.pathname.includes('/pages/micro-infusion-limited-edition-bundle-1')) {
   window.location.replace('/pages/qure-microinfusion-offer');
 }
+
+if (window.location.pathname.replace(/\/$/, '') === '/pages/exclusive-holiday-bundle' && !/(^|; )qure_bf26_early_access=/.test(document.cookie)) {
+  window.location.replace('/pages/black-friday26-early-access');
+}
