@@ -18,13 +18,28 @@
       "blocks": {
         "product_NEgEkN": {
           "settings": {
-            "free_shipping": true,
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
+          }
+        },
+        "product_EKAAzA": {
+          "settings": {
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
+          }
+        }
+      }
+    },
+    "purchase_form_Lj9cVS": {
+      "settings": {},
+      "blocks": {
+        "product_7dL4ci": {
+          "settings": {
             "discount_code": "WELCOMEFREE"
           }
         },
         "product_EKAAzA": {
           "settings": {
-            "free_shipping": true,
             "discount_code": "WELCOMEFREE"
           }
         }
