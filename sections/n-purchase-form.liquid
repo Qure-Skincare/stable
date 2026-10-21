@@ -216,6 +216,18 @@
             "id": "subscription_details",
             "label": "t:sections.purchase-form.settings.subscription_details",
             "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_bottom",
+            "label": "t:common.hide_bottom",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_certified",
+            "label": "t:common.hide_certified",
+            "default": false
         }
     ],
     "blocks":[
@@ -331,6 +343,12 @@
                     "type": "product",
                     "id": "gift",
                     "label": "t:common.gift"
+                },
+                {
+                    "type": "number",
+                    "id": "gift_selling_plan",
+                    "label": "t:sections.purchase-form.blocks.product.settings.gift_selling_plan",
+                    "default": 0
                 },
                 {
                     "type": "image_picker",

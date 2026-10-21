@@ -2217,7 +2217,8 @@
                         "total_treatments": "Total treatments",
                         "total_treatments_info": "Use this setting to show the number of treatments in product variant",
                         "left_items": "Left items",
-                        "left_items_info": "Use this setting to show the number of items left in stock."
+                        "left_items_info": "Use this setting to show the number of items left in stock.",
+                        "gift_selling_plan": "Gift selling plan"
                     }
                 }
             }
