@@ -35,12 +35,14 @@
       "blocks": {
         "product_7dL4ci": {
           "settings": {
-            "discount_code": "WELCOMEFREE"
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
           }
         },
         "product_EKAAzA": {
           "settings": {
-            "discount_code": "WELCOMEFREE"
+            "discount_code": "WELCOMEFREE",
+            "free_shipping": true
           }
         }
       }
