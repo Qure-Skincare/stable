@@ -34,7 +34,7 @@
                 {% endif %}
                 <div class="bf-early-access__countdown">
                     <p><i class="e-icon e-icon-clock"></i> {{ section.settings.countdown_text }}</p>
-                    <div class="e-countdown" data-start-date="{{ section.settings.start }}" data-offer-days="{{ section.settings.days }}">
+                    <div class="e-countdown" data-start-date="{{ settings.black_friday_countdown_from }}" data-offer-days="{{ settings.black_friday_countdown_days }}">
                         <div data-key="days">00</div>
                         <div data-key="hours">00</div>
                         <div data-key="minutes">00</div>
@@ -62,7 +62,7 @@
 </section>
 <script>
     const bfEarlyAccess = {
-        days: {{ section.settings.days }}
+        days: {{ settings.black_friday_countdown_days }}
     };
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce("countdown", "https://qureskincaredns-stable.com/assets/js/countdown.js");
@@ -119,22 +119,6 @@
             "type": "text",
             "id": "countdown_text",
             "label": "t:common.text"
-        },
-        {
-            "type": "text",
-            "id": "start",
-            "label": "t:common.start",
-            "info": "Date format: YYYY-MM-DD"
-        },
-        {
-            "type": "range",
-            "id": "days",
-            "label": "t:common.days",
-            "min": 1,
-            "max": 90,
-            "step": 1,
-            "unit": "day",
-            "default": 30
         },
         {
             "type": "header",
