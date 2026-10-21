@@ -1,0 +1,193 @@
+{% doc %}
+  Black Friday early-access gate: password form that redirects to the hidden sale page,
+  countdown until the sale opens for everyone, and a minimal footer with legal links.
+{% enddoc %}
+
+<!-- BF EARLY ACCESS -->
+{% if section.settings.use_own_file %}
+    <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/bf-early-access/bf-early-access.css" />
+{% endif %}
+
+<section class="bf-early-access">
+    <div class="bf-early-access__content">
+        <div class="container">
+            <article>
+                <hgroup>
+                    {% if section.settings.bf_label != blank %}
+                        <div class="e-bf-label e-bf-label--lg">
+                            <img src="{{ section.settings.bf_label | image_url }}" alt="{{ section.settings.bf_label.alt | escape }}" />
+                        </div>
+                    {% endif %}
+                    <h1>{{ section.settings.heading }} <span>{{ section.settings.heading_accent }}</span></h1>
+                </hgroup>
+                <div class="c-subscribe-form">
+                    <label for="early-access-password">{{ section.settings.label }}</label>
+                    <form>
+                        <input type="password" id="early-access-password" name="password" placeholder="{{ section.settings.placeholder | escape }}" />
+                        <button aria-label="{{ section.settings.placeholder | escape }}"><i class="e-icon e-icon-arrow"></i></button>
+                    </form>
+                </div>
+                {% if section.settings.image != blank %}
+                    <picture>
+                        <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                    </picture>
+                {% endif %}
+                <div class="bf-early-access__countdown">
+                    <p><i class="e-icon e-icon-clock"></i> {{ section.settings.countdown_text }}</p>
+                    <div class="e-countdown" data-start-date="{{ section.settings.start }}" data-offer-days="{{ section.settings.days }}">
+                        <div data-key="days">00</div>
+                        <div data-key="hours">00</div>
+                        <div data-key="minutes">00</div>
+                        <div data-key="seconds">00</div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="bf-early-access__bottom">
+        <div class="container">
+            <p>{{ section.settings.copyright }}</p>
+            <ul>
+                {% for block in section.blocks %}
+                    <li {{ block.shopify_attributes }}><a href="{{ block.settings.url }}" target="_blank">{{ block.settings.label }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% if section.settings.background != blank %}
+        <picture class="bf-early-access__bg">
+            <img src="{{ section.settings.background | image_url }}" alt="{{ section.settings.background.alt | escape }}" />
+        </picture>
+    {% endif %}
+</section>
+<script>
+    const bfEarlyAccess = {
+        redirect: {{ section.settings.redirect_url | json }},
+        days: {{ section.settings.days }}
+    };
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("countdown", "https://qureskincaredns-stable.com/assets/js/countdown.js");
+        loadScriptOnce("n_bf-early-access.js", "{{ 'n_bf-early-access.js' | asset_url }}");
+    });
+</script>
+<!-- BF EARLY ACCESS END -->
+
+{% schema %}
+{
+    "name": "t:sections.n_bf-early-access.name",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "use_own_file",
+            "label": "t:common.use-own-file",
+            "default": false
+        },
+        {
+            "type": "image_picker",
+            "id": "bf_label",
+            "label": "t:common.badge"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.header"
+        },
+        {
+            "type": "text",
+            "id": "heading_accent",
+            "label": "t:sections.n_bf-early-access.settings.heading_accent"
+        },
+        {
+            "type": "header",
+            "content": "t:sections.n_bf-early-access.settings.password_header"
+        },
+        {
+            "type": "text",
+            "id": "label",
+            "label": "t:common.label-text"
+        },
+        {
+            "type": "text",
+            "id": "placeholder",
+            "label": "t:sections.n_bf-early-access.settings.placeholder",
+            "default": "Password"
+        },
+        {
+            "type": "url",
+            "id": "redirect_url",
+            "label": "t:sections.n_bf-early-access.settings.redirect_url"
+        },
+        {
+            "type": "header",
+            "content": "t:sections.n_bf-early-access.settings.countdown_header"
+        },
+        {
+            "type": "text",
+            "id": "countdown_text",
+            "label": "t:common.text"
+        },
+        {
+            "type": "text",
+            "id": "start",
+            "label": "t:common.start",
+            "info": "Date format: YYYY-MM-DD"
+        },
+        {
+            "type": "range",
+            "id": "days",
+            "label": "t:common.days",
+            "min": 1,
+            "max": 90,
+            "step": 1,
+            "unit": "day",
+            "default": 30
+        },
+        {
+            "type": "header",
+            "content": "t:sections.n_bf-early-access.settings.images"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.n_bf-early-access.settings.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "background",
+            "label": "t:sections.n_bf-early-access.settings.background"
+        },
+        {
+            "type": "header",
+            "content": "t:common.footer"
+        },
+        {
+            "type": "text",
+            "id": "copyright",
+            "label": "t:sections.n_bf-early-access.settings.copyright"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "link",
+            "name": "t:common.link",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "label",
+                    "label": "t:common.link-text"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "t:common.link-url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_bf-early-access.name"
+        }
+    ]
+}
+{% endschema %}
