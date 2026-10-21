@@ -62,7 +62,6 @@
 </section>
 <script>
     const bfEarlyAccess = {
-        redirect: {{ section.settings.redirect_url | json }},
         days: {{ section.settings.days }}
     };
     document.addEventListener("DOMContentLoaded", function () {
@@ -111,11 +110,6 @@
             "id": "placeholder",
             "label": "t:sections.n_bf-early-access.settings.placeholder",
             "default": "Password"
-        },
-        {
-            "type": "url",
-            "id": "redirect_url",
-            "label": "t:sections.n_bf-early-access.settings.redirect_url"
         },
         {
             "type": "header",
