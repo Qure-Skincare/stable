@@ -9,12 +9,43 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "n_bf_early_access_Kp7Wq2": {
+      "type": "n_bf-early-access",
+      "blocks": {
+        "link_Rt4mZe": {
+          "type": "link",
+          "settings": {
+            "label": "Terms of Service",
+            "url": "/pages/terms-and-conditions"
+          }
+        },
+        "link_Vb8nHc": {
+          "type": "link",
+          "settings": {
+            "label": "Privacy Policy",
+            "url": "/pages/privacy-page"
+          }
+        }
+      },
+      "block_order": [
+        "link_Rt4mZe",
+        "link_Vb8nHc"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "bf_label": "shopify://shop_images/bf-label-lg.webp",
+        "heading": "Buy before anyone else whilst stocks last.",
+        "heading_accent": "Save up to 57%",
+        "label": "Enter early with your unique password:",
+        "placeholder": "Password",
+        "countdown_text": "Sale opens for everyone in:",
+        "image": "shopify://shop_images/inline.webp",
+        "background": "shopify://shop_images/bg.webp",
+        "copyright": "© 2025 Qure™ Skincare. All rights reserved."
+      }
     }
   },
   "order": [
-    "main"
+    "n_bf_early_access_Kp7Wq2"
   ]
 }

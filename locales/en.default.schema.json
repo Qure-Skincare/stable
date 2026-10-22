@@ -794,6 +794,19 @@
                 }
             }
         },
+        "n_bf-early-access": {
+            "name": "BF early access",
+            "settings": {
+                "heading_accent": "Header accent",
+                "password_header": "Password gate",
+                "placeholder": "Placeholder",
+                "countdown_header": "Countdown",
+                "images": "Images",
+                "image": "Inline image (mobile)",
+                "background": "Background image (desktop)",
+                "copyright": "Copyright"
+            }
+        },
         "n_experts-grid": {
             "name": "Experts grid",
             "settings": {
