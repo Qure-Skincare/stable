@@ -1005,6 +1005,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": true,
@@ -1033,6 +1034,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779399407,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1061,6 +1063,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779432175,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1101,6 +1104,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": true,
@@ -1129,6 +1133,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1157,6 +1162,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779530479,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1197,6 +1203,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": true,
@@ -1226,6 +1233,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1255,6 +1263,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1301,9 +1310,10 @@
         ".e-features-list,.c-certified-box {display: none;}"
       ],
       "settings": {
+        "modifier": "none",
         "type": "list",
         "heading": "Choose your treatment",
-        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
+        "text": "All orders have 90-Day Money-Back Guarantee",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form-second",
@@ -1312,7 +1322,11 @@
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-6-month-bundle-for-wrinkles",
         "guarantee_period": "90",
-        "available-stocks": true
+        "available-stocks": true,
+        "hide_product_types": false,
+        "subscription_details": false,
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_mi_ingredients_v5": {
@@ -1322,7 +1336,8 @@
           "type": "left_heading",
           "settings": {
             "image": "shopify://shop_images/dark-spots_d7bcd9e4-63e1-4bf8-afc1-875800cde11b.webp",
-            "text": "<h3>Dark Spots</h3><h6>MICRO-INFUSION SERUM</h6><p>Targets dark spots and uneven tone for a clearer, brighter complexion.</p>"
+            "badge": "",
+            "text": "<h3>Brightening</h3><h6>MICRO-INFUSION SERUM</h6><p>Targets dark spots and uneven tone for a clearer, brighter complexion.</p>"
           }
         },
         "left_column_1": {
@@ -1357,7 +1372,8 @@
           "type": "right_heading",
           "settings": {
             "image": "shopify://shop_images/wrinkles_81c769db-e1d4-4377-86e8-324dd4e64e51.webp",
-            "text": "<h3>Wrinkles</h3><h6>MICRO-INFUSION SERUM</h6><p>Boosts hydration & smooths fine lines for plumper, younger-looking skin.</p>"
+            "badge": "",
+            "text": "<h3>Rejuvenating</h3><h6>MICRO-INFUSION SERUM</h6><p>Boosts hydration & smooths fine lines for plumper, younger-looking skin.</p>"
           }
         },
         "right_column_1": {
@@ -1405,7 +1421,10 @@
       "settings": {
         "use_own_file": false,
         "section_id": "ingredients",
-        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
+        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>",
+        "button_label": "",
+        "button_url": "",
+        "sub_text": ""
       }
     },
     "n_experts_grid_v5": {
