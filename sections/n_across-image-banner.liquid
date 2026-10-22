@@ -17,17 +17,11 @@
     elsif mod != 'none' and mod != blank
         assign banner_class = banner_class | append: ' across-image-banner--' | append: mod
     endif
-    assign video_url = blank
-    for block in section.blocks
-        if block.type == 'video'
-            assign video_url = block.settings.video_url
-        endif
-    endfor
 -%}
 <section class="{{ banner_class }}">
-        {% if mod == 'mask' and video_url != blank %}
+        {% if section.settings.video_url != blank %}
         <video autoplay="" loop="" muted="" playsinline="">
-            <source src="{{ video_url }}" type="video/webm" />
+            <source src="{{ section.settings.video_url }}" type="video/webm" />
         </video>
         {% else %}
         <picture>
@@ -55,12 +49,6 @@
         {% endif %}
         <div class="container">
             <article>
-
-                {% for block in section.blocks %}
-                    {% if block.type == 'save_pill' %}
-                        <div class="e-pill-save">{{ block.settings.badge_text }}</div>
-                    {% endif %}
-                {% endfor %}
 
                 {% for block in section.blocks %}
                     {% if block.type == 'free_gift' %}
@@ -347,7 +335,7 @@
         </div>
 
         {% for block in section.blocks %}
-            {% if block.type == 'video' and mod != 'mask' %}
+            {% if block.type == 'video' %}
                 {% if block.settings.video_url != blank %}
                     <div class="qure-birthday-video">
                         <video autoplay="" loop="" muted="" playsinline="">
@@ -484,6 +472,11 @@
             "type": "image_picker",
             "id": "image_mobile",
             "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "video_url",
+            "label": "t:common.video-url"
         },
         {
             "type": "text",
@@ -782,18 +775,6 @@
                 "type": "text",
                 "id": "label",
                 "label": "t:common.text"
-            }
-        ]
-    },
-    {
-        "type": "save_pill",
-        "name": "t:sections.n_across-image-banner.blocks.save-pill.name",
-        "limit": 1,
-        "settings": [
-            {
-                "type": "text",
-                "id": "badge_text",
-                "label": "t:common.badge-text"
             }
         ]
     },
