@@ -69,7 +69,8 @@
         </div>
     </section>
 
-    <script>
+    {%- comment -%} data-sapp-lcp: run on page load, otherwise sapp delays the binding until the first interaction and that first click is lost {%- endcomment -%}
+    <script data-sapp-lcp>
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll(".base-section--mi-buy .c-order-button button").forEach(function (button) {
                 button.addEventListener("click", function () {
