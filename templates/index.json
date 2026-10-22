@@ -29,11 +29,12 @@
         "modifier": "bf",
         "rating": "",
         "rating_text": "",
-        "heading": "<h1>Save Up to <span>57%</span></h1>",
+        "heading": "<h1>Save Up to 57%</h1>",
         "text": "<p>Your favourite skincare. Perfectly bundled together.</p>",
         "sub_text": "",
         "image": "shopify://shop_images/bf-home.webp",
         "image_mobile": "shopify://shop_images/bf-home-mob.webp",
+        "video_url": "",
         "button_label": "Shop Bundles Now",
         "button_url": "/pages/exclusive-holiday-bundle-deal-new"
       }
@@ -51,7 +52,6 @@
       "block_order": [
         "free_gift_Hq2nWd"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -63,11 +63,12 @@
         "sub_text": "",
         "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/mask-video.webm",
         "button_label": "Shop Now",
-        "button_url": "shopify://products/recovery-sheet-mask"
+        "button_url": "https://qureskincare.com/products/recovery-sheet-mask"
       }
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -79,6 +80,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob.webp",
+        "video_url": "",
         "button_label": "Shop All Best Sellers",
         "button_url": "shopify://collections/best-sellers"
       }
@@ -514,6 +516,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/quiz.webp",
         "image_mobile": "shopify://shop_images/quiz-mob.webp",
+        "video_url": "",
         "button_label": "Take the Quiz",
         "button_url": "/pages/skin-consultation"
       }
