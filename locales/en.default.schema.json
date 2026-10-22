@@ -500,7 +500,8 @@
                     "doctorly": "Doctorly",
                     "text": "Text",
                     "blue-plus": "Blue+ serum",
-                    "quiz": "Quiz"
+                    "quiz": "Quiz",
+                    "mask": "Mask video"
                 },
                 "badge-group": {
                     "name": "Badge group"
@@ -517,6 +518,9 @@
                 },
                 "pill": {
                     "name": "Pill badge (doctorly)"
+                },
+                "save-pill": {
+                    "name": "Save pill (NEW)"
                 },
                 "bottles": {
                     "name": "Bottles (doctorly)"

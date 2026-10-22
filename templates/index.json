@@ -38,6 +38,40 @@
         "button_url": "/pages/exclusive-holiday-bundle-deal-new"
       }
     },
+    "n_across_image_banner_Mv8kTq": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "save_pill_Hq2nWd": {
+          "type": "save_pill",
+          "settings": {
+            "badge_text": "NEW"
+          }
+        },
+        "video_Rt5cXm": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/mask-video.webm"
+          }
+        }
+      },
+      "block_order": [
+        "save_pill_Hq2nWd",
+        "video_Rt5cXm"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "mask",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>Recovery+ Sheet Mask</h1>",
+        "text": "<p>Visibly calms, deeply hydrates and cools skin in <strong>20 minutes</strong></p>",
+        "sub_text": "",
+        "button_label": "Shop Now",
+        "button_url": "shopify://products/recovery-sheet-mask"
+      }
+    },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
       "name": "t:sections.n_across-image-banner.name",
@@ -569,6 +603,7 @@
   },
   "order": [
     "n_across_image_banner_Kd7pRw",
+    "n_across_image_banner_Mv8kTq",
     "n_across_image_banner_TNGNLJ",
     "n_top_products_Qr7mXa",
     "n_promo_strip_bF3xQk",
