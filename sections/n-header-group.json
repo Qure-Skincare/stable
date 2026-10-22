@@ -21,6 +21,18 @@
     "announcement-bar": {
       "type": "n_announcement-bar",
       "blocks": {
+        "slider_GC7n6V": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "countdown": false,
+            "text": "<p><strong>Free Neck & Décolletage LED</strong> with Q-Rejuvalight Pro</p>",
+            "button_label": "",
+            "button_url": "",
+            "from": "",
+            "days": 5
+          }
+        },
         "slider_feYWqY": {
           "type": "slider",
           "settings": {
@@ -56,6 +68,7 @@
         }
       },
       "block_order": [
+        "slider_GC7n6V",
         "slider_feYWqY",
         "slider_1",
         "slider_2"
