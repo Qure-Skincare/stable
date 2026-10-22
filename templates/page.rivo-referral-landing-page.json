@@ -68,58 +68,6 @@
       ],
       "settings": {}
     },
-    "rivo_how_it_works_EdjPgU": {
-      "type": "rivo-how-it-works",
-      "blocks": {
-        "step_YXLe3X": {
-          "type": "step",
-          "settings": {
-            "title": "Share Your Unique Link",
-            "description": "Send your personal referral link to friends via email, text, or social media — it takes seconds."
-          }
-        },
-        "step_XB7by7": {
-          "type": "step",
-          "settings": {
-            "title": "They Get 10% Off Their First Order",
-            "description": "Your friend saves on science-backed skincare that actually works. Win-win."
-          }
-        },
-        "step_pHnD6R": {
-          "type": "step",
-          "settings": {
-            "title": "You Earn 150 Points",
-            "description": "Once they complete their purchase, 150 points land in your account — ready to use on your next order."
-          }
-        }
-      },
-      "block_order": [
-        "step_YXLe3X",
-        "step_XB7by7",
-        "step_pHnD6R"
-      ],
-      "name": "Rivo How It Works",
-      "settings": {
-        "background_color": "rgba(0,0,0,0)",
-        "text_color": "#212428",
-        "muted_text_color": "#212428",
-        "accent_color": "#212428",
-        "line_color": "#212428",
-        "badge_text": "",
-        "badge_bg_color": "#ffffff59",
-        "badge_border_color": "#3a2a1c59",
-        "badge_text_color": "#2a1e12",
-        "heading": "Share the Glow, Get Rewarded",
-        "body": "<p>Refer a friend and you'll both benefit. They save on their first order, and you earn points toward your next purchase.</p>",
-        "button_label": "Join The Sweetness Squad",
-        "button_link": "",
-        "button_hover_text_color": "#ffffff",
-        "right_intro": "",
-        "step_number_text_color": "#ffffff",
-        "section_padding_top": 56,
-        "section_padding_bottom": 56
-      }
-    },
     "faq_xz4dFb": {
       "type": "n_faq",
       "blocks": {
@@ -211,7 +159,6 @@
   "order": [
     "rivo-loyalty-landing-page",
     "1771368496e759eea8",
-    "rivo_how_it_works_EdjPgU",
     "faq_xz4dFb"
   ]
 }

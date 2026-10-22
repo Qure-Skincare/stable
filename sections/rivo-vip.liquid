@@ -1,0 +1,1032 @@
+{%- comment -%}
+  RIVO: VIP TIERS — comparison table mirror (v16)
+  Mirrors Rivo's live VIP tier table into a 3-column comparison grid.
+  Install in sections/ and add the Rivo VIP Tiers app block.
+{%- endcomment -%}
+
+{%- liquid
+  assign label_w = section.settings.label_col_width | default: 220
+  assign radius = section.settings.panel_radius | default: 16
+-%}
+
+<div class="qv-tiers qv-tiers-{{ section.id }}" id="qv-tiers-{{ section.id }}" data-qv-root>
+
+  {%- if section.settings.section_title != blank or section.settings.section_subtitle != blank -%}
+    <div class="qv-head">
+      {%- if section.settings.section_title != blank -%}
+        <h2 class="qv-title">{{ section.settings.section_title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.section_subtitle != blank -%}
+        <p class="qv-sub">{{ section.settings.section_subtitle }}</p>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="qv-progress" data-qv-progress hidden></div>
+
+  <div class="qv-panel" data-qv-panel>
+    <div class="qv-grid" data-qv-grid></div>
+  </div>
+
+  {%- if section.settings.legend != blank -%}
+    <p class="qv-legend">{{ section.settings.legend }}</p>
+  {%- endif -%}
+
+  {%- if request.design_mode -%}
+    <div class="qv-note" data-qv-note hidden>
+      Rivo's VIP Tiers block isn't rendering yet. Add the Rivo app block to this section
+      and make sure VIP Tiers is enabled in Rivo &rarr; Loyalty page.
+    </div>
+  {%- endif -%}
+
+  <div class="qv-source" data-qv-source>
+    {%- for block in section.blocks -%}
+      {% render block %}
+    {%- endfor -%}
+  </div>
+</div>
+
+<script type="application/json" id="qv-cfg-{{ section.id }}">
+{
+  "boldRows": {{ section.settings.bold_rows | default: '' | json }},
+  "yesTokens": {{ section.settings.yes_tokens | default: 'yes, true, included, ✓' | json }},
+  "hideExternal": {{ section.settings.hide_external | default: true | json }},
+  "giftRow": {{ section.settings.progress_gift_row | default: 'Free Product' | json }},
+  "giftBadge": {{ section.settings.progress_gift_badge | default: 'Free Gift!' | json }},
+  "currentLabel": {{ section.settings.current_tier_label | default: 'Your tier' | json }},
+  "cellImages": [
+    {%- assign emitted = 0 -%}
+    {%- for i in (1..4) -%}
+      {%- assign k_img = 'perk_img_' | append: i -%}
+      {%- assign k_row = 'perk_img_row_' | append: i -%}
+      {%- assign k_tier = 'perk_img_tier_' | append: i -%}
+      {%- assign k_label = 'perk_img_label_' | append: i -%}
+      {%- assign img = section.settings[k_img] -%}
+      {%- if img != blank -%}
+        {%- if emitted > 0 -%},{%- endif -%}
+        {%- assign emitted = emitted | plus: 1 -%}
+        {
+          "row": {{ section.settings[k_row] | default: '' | json }},
+          "tier": {{ section.settings[k_tier] | default: 1 | json }},
+          "label": {{ section.settings[k_label] | default: '' | json }},
+          "src": {{ img | image_url: width: 300 | json }}
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  ],
+  "tiers": [
+    {
+      "bg": {{ section.settings.tier1_bg | default: '#FFFFFF' | json }},
+      "short": {{ section.settings.tier1_short | default: '' | json }},
+      "iconStyle": {{ section.settings.tier1_icon_style | default: 'light' | json }},
+      "icon": {% if section.settings.tier1_icon %}{{ section.settings.tier1_icon | image_url: width: 240 | json }}{% else %}null{% endif %}
+    },
+    {
+      "bg": {{ section.settings.tier2_bg | default: '#F7F7F8' | json }},
+      "short": {{ section.settings.tier2_short | default: '' | json }},
+      "iconStyle": {{ section.settings.tier2_icon_style | default: 'light' | json }},
+      "icon": {% if section.settings.tier2_icon %}{{ section.settings.tier2_icon | image_url: width: 240 | json }}{% else %}null{% endif %}
+    },
+    {
+      "bg": {{ section.settings.tier3_bg | default: '#EDF2FA' | json }},
+      "short": {{ section.settings.tier3_short | default: '' | json }},
+      "iconStyle": {{ section.settings.tier3_icon_style | default: 'dark' | json }},
+      "icon": {% if section.settings.tier3_icon %}{{ section.settings.tier3_icon | image_url: width: 240 | json }}{% else %}null{% endif %}
+    },
+    {
+      "bg": {{ section.settings.tier4_bg | default: '#F4F1EA' | json }},
+      "short": {{ section.settings.tier4_short | default: '' | json }},
+      "iconStyle": {{ section.settings.tier4_icon_style | default: 'light' | json }},
+      "icon": {% if section.settings.tier4_icon %}{{ section.settings.tier4_icon | image_url: width: 240 | json }}{% else %}null{% endif %}
+    }
+  ],
+  "sel": {
+    "root": {{ section.settings.sel_root | default: '#rivo-vip-tiers' | json }},
+    "title": {{ section.settings.sel_title | default: '.rivo-lp-section-title' | json }},
+    "subtitle": {{ section.settings.sel_subtitle | default: '.rivo-lp-section-subtitle' | json }},
+    "container": {{ section.settings.sel_container | default: '.rivo-vip-tier-container' | json }},
+    "table": {{ section.settings.sel_table | default: '.rivo-vip-tier-table' | json }}
+  }
+}
+</script>
+
+<style>
+.qv-tiers-{{ section.id }} {
+  --qv-ink: {{ section.settings.ink | default: '#1B1D21' }};
+  --qv-muted: {{ section.settings.muted | default: '#6B7280' }};
+  --qv-line: {{ section.settings.line | default: '#E5E7EB' }};
+  --qv-panel-bg: {{ section.settings.panel_bg | default: '#FFFFFF' }};
+  --qv-icon-ring: {{ section.settings.icon_ring | default: '#D9DCE1' }};
+  --qv-icon-dark: {{ section.settings.icon_dark | default: '#17171B' }};
+  --qv-mark: {{ section.settings.mark_color | default: '#4B5563' }};
+  --qv-progress-fill: {{ section.settings.progress_fill_brand | default: '#FF5429' }};
+  --qv-current: {{ section.settings.current_tier_color | default: '#FF5429' }};
+  --qv-current-badge-bg: {{ section.settings.current_badge_bg | default: '#FDE8DD' }};
+  --qv-current-badge-text: {{ section.settings.current_badge_text | default: '#C1502E' }};
+  --qv-label-w: {{ label_w }}px;
+  --qv-radius: {{ radius }}px;
+  --qv-serif: {{ section.settings.serif_stack | default: "'Canela', Georgia, 'Times New Roman', serif" }};
+  --qv-sans: {{ section.settings.sans_stack | default: "'TT Commons', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" }};
+  --qv-cols: 3;
+
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: {{ section.settings.pad_top | default: 72 }}px 24px {{ section.settings.pad_bottom | default: 88 }}px;
+  background: {{ section.settings.section_bg | default: '#FFFFFF' }};
+  color: var(--qv-ink);
+  font-family: var(--qv-sans);
+}
+.qv-tiers-{{ section.id }} *, .qv-tiers-{{ section.id }} *::before, .qv-tiers-{{ section.id }} *::after { box-sizing: border-box; }
+
+/* ---------- header ---------- */
+.qv-tiers-{{ section.id }} .qv-head { max-width: 760px; margin: 0 auto 40px; text-align: center; }
+.qv-tiers-{{ section.id }} .qv-title {
+  margin: 0 0 14px; font-family: var(--qv-serif); font-size: 38px; font-weight: 300;
+  line-height: 42px; letter-spacing: -.01em; color: var(--qv-ink);
+}
+.qv-tiers-{{ section.id }} .qv-sub { margin: 0; font-size: 16px; line-height: 1.5; color: var(--qv-ink); }
+
+/* ---------- panel ---------- */
+.qv-tiers-{{ section.id }} .qv-panel {
+  max-width: {{ section.settings.max_width | default: 1180 }}px; margin: 0 auto;
+  background: var(--qv-panel-bg);
+  border: 1px solid var(--qv-line); border-radius: var(--qv-radius); overflow: hidden;
+}
+.qv-tiers-{{ section.id }} .qv-grid {
+  display: grid;
+  grid-template-columns: var(--qv-label-w) repeat(var(--qv-cols), minmax(0, 1fr));
+  align-items: stretch;
+}
+
+/* ---------- cells ---------- */
+.qv-tiers-{{ section.id }} .qv-cell {
+  display: flex; align-items: center; min-width: 0;
+  padding: {{ section.settings.row_pad | default: 14 }}px 18px;
+}
+.qv-tiers-{{ section.id }} .qv-cell--label {
+  justify-content: flex-start; padding-left: 20px; padding-right: 16px;
+  font-size: 15px; line-height: 1.35; color: var(--qv-ink);
+}
+.qv-tiers-{{ section.id }} .qv-cell--tier {
+  justify-content: center; text-align: center; border-left: 1px solid var(--qv-line);
+  font-size: 18px; line-height: 1.35; color: var(--qv-ink);
+}
+.qv-tiers-{{ section.id }} .qv-cell--bold { font-weight: 600; }
+
+/* ---------- current tier highlight ---------- */
+.qv-tiers-{{ section.id }} .qv-cell--current {
+  border-left-color: transparent;
+  box-shadow: inset 1.5px 0 0 var(--qv-current), inset -1.5px 0 0 var(--qv-current);
+}
+/* rounded ends, same radius as the gift cards */
+.qv-tiers-{{ section.id }} .qv-cell--head.qv-cell--current {
+  border-radius: 14px 14px 0 0;
+  box-shadow: inset 1.5px 0 0 var(--qv-current), inset -1.5px 0 0 var(--qv-current), inset 0 1.5px 0 var(--qv-current);
+}
+.qv-tiers-{{ section.id }} .qv-cell--last.qv-cell--current {
+  border-radius: 0 0 14px 14px;
+  box-shadow: inset 1.5px 0 0 var(--qv-current), inset -1.5px 0 0 var(--qv-current), inset 0 -1.5px 0 var(--qv-current);
+}
+/* pill label at the top of the current column, styled like the Free Gift badges */
+.qv-tiers-{{ section.id }} .qv-cell--head { position: relative; }
+.qv-tiers-{{ section.id }} .qv-cell--head.qv-cell--current { padding-top: calc({{ section.settings.head_pad_top | default: 34 }}px + 36px); }
+.qv-tiers-{{ section.id }} .qv-tier-current-badge {
+  display: none; position: absolute; top: 16px; left: 50%; transform: translateX(-50%);
+  padding: 4px 12px; border-radius: 999px; white-space: nowrap;
+  background: var(--qv-current-badge-bg); color: var(--qv-current-badge-text);
+  font-size: 14px; font-weight: 600; line-height: 1.3;
+}
+.qv-tiers-{{ section.id }} .qv-cell--current .qv-tier-current-badge { display: block; }
+
+/* ---------- tier header ---------- */
+.qv-tiers-{{ section.id }} .qv-cell--head {
+  flex-direction: column; justify-content: flex-end;
+  padding-top: {{ section.settings.head_pad_top | default: 34 }}px; padding-bottom: 26px;
+}
+.qv-tiers-{{ section.id }} .qv-cell--label.qv-cell--head { padding: 0; }
+.qv-tiers-{{ section.id }} .qv-tier-icon {
+  display: grid; place-items: center;
+  width: {{ section.settings.icon_circle | default: 88 }}px; height: {{ section.settings.icon_circle | default: 88 }}px;
+  margin-bottom: 16px; border-radius: 50%;
+  border: 1px solid var(--qv-icon-ring); background: #FFFFFF; color: var(--qv-ink);
+  overflow: hidden;
+}
+
+.qv-tier-icon svg path {
+  stroke-width: 0.8 !important;
+}
+.qv-tiers-{{ section.id }} .qv-tier-icon--dark {
+  background: var(--qv-icon-dark); border-color: var(--qv-icon-dark); color: #FFFFFF;
+}
+.qv-tiers-{{ section.id }} .qv-tier-icon img,
+.qv-tiers-{{ section.id }} .qv-tier-icon svg {
+  display: block; width: 56%; height: 56%; object-fit: contain;
+}
+.qv-tiers-{{ section.id }} .qv-tier-name {
+  font-family: var(--qv-serif); font-size: 26px; font-weight: 400; line-height: 1.15;
+  letter-spacing: -.01em; color: var(--qv-ink);
+}
+.qv-tiers-{{ section.id }} .qv-tier-threshold {
+  margin-top: 6px; font-size: 15px; font-weight: 600; color: var(--qv-ink);
+}
+.qv-tiers-{{ section.id }} .qv-tier-badge {
+  margin-top: 8px; padding: 4px 10px; border-radius: 999px;
+  border: 1px solid var(--qv-ink); font-size: 11px; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase;
+}
+
+/* ---------- value marks ---------- */
+.qv-tiers-{{ section.id }} .qv-val { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+.qv-tiers-{{ section.id }} .qv-mark { display: inline-flex; flex: 0 0 auto; color: var(--qv-mark); }
+.qv-tiers-{{ section.id }} .qv-mark svg { display: block; width: 20px; height: 20px; }
+.qv-tiers-{{ section.id }} .qv-val-img {
+  flex: 0 0 auto;
+  width: {{ section.settings.perk_img_size | default: 46 }}px;
+  height: {{ section.settings.perk_img_size | default: 46 }}px;
+  object-fit: contain; border-radius: 6px;
+}
+.qv-tiers-{{ section.id }} .qv-val-text { min-width: 0; }
+/* "150 points" style values stay on one line */
+.qv-tiers-{{ section.id }} .qv-val-text--points { white-space: nowrap; }
+
+/* ---------- misc ---------- */
+.qv-tiers-{{ section.id }} .qv-legend {
+  max-width: {{ section.settings.max_width | default: 1180 }}px; margin: 20px auto 0;
+  font-size: 13px; line-height: 1.5; color: var(--qv-muted);
+}
+.qv-tiers-{{ section.id }} .qv-note {
+  max-width: 60ch; margin: 24px auto 0; padding: 16px 18px;
+  border: 1px dashed var(--qv-muted); font-size: 13px; line-height: 1.6; color: var(--qv-muted);
+}
+/* the live Rivo block stays mounted but clipped (never display:none — Alpine
+   needs it); its progress bar and tier table are both read into custom
+   markup below instead of being shown directly */
+.qv-tiers-{{ section.id }} .qv-source {
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  margin: 0 !important; padding: 0 !important; overflow: hidden !important;
+  clip-path: inset(50%) !important; opacity: 0 !important; pointer-events: none !important;
+}
+
+/* ---------- VIP progress stepper (mirrors Rivo's live progress bar) ---------- */
+.qv-tiers-{{ section.id }} .qv-progress {
+  max-width: {{ section.settings.max_width | default: 1180 }}px; margin: 0 auto 40px;
+  text-align: center;
+}
+.qv-tiers-{{ section.id }} .qv-progress[hidden] { display: none; }
+.qv-tiers-{{ section.id }} .qv-progress-title {
+  margin: 0 0 28px; font-family: var(--qv-serif); font-style: italic; font-weight: 400;
+  font-size: 30px; line-height: 1.2; color: var(--qv-ink);
+}
+.qv-tiers-{{ section.id }} .qv-progress-track {
+  display: flex; align-items: center; justify-content: center; gap: 0;
+  padding-bottom: 48px;
+}
+/* room for the gift cards under the tiers */
+.qv-tiers-{{ section.id }} .qv-progress-track--gifts { padding-bottom: 150px; }
+.qv-tiers-{{ section.id }} .qv-progress-node {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  flex: 0 0 auto;
+}
+.qv-tiers-{{ section.id }} .qv-progress-pill {
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px;
+  border: 1px solid var(--qv-ink); border-radius: 999px; background: var(--qv-panel-bg);
+  font-size: 14px; font-weight: 600; color: var(--qv-ink); white-space: nowrap;
+}
+.qv-tiers-{{ section.id }} .qv-progress-pill img,
+.qv-tiers-{{ section.id }} .qv-progress-pill svg { display: block; width: 16px; height: 16px; object-fit: contain; flex: 0 0 auto; }
+.qv-tiers-{{ section.id }} .qv-progress-line {
+  flex: 1 1 auto; height: 3px; background: var(--qv-ink);
+  position: relative; min-width: 16px;
+}
+.qv-tiers-{{ section.id }} .qv-progress-line-fill {
+  position: absolute; left: 0; top: 0; height: 100%; background: var(--qv-progress-fill);
+}
+.qv-tiers-{{ section.id }} .qv-progress-below {
+  position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+  margin-top: 12px; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  width: max-content; max-width: 200px;
+}
+.qv-tiers-{{ section.id }} .qv-progress-caption {
+  margin: 0; font-size: 13px; line-height: 1.4; color: var(--qv-muted);
+}
+/* "you are $X away" text hidden on desktop; shown on mobile for the current tier */
+.qv-tiers-{{ section.id }} .qv-progress-away { display: none; }
+.qv-tiers-{{ section.id }} .qv-progress-gift {
+  display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 0; padding: 12px 16px;
+  border: 1px solid var(--qv-line); border-radius: 14px; background: var(--qv-panel-bg);
+  color: var(--qv-ink); text-align: center;
+}
+.qv-tiers-{{ section.id }} .qv-progress-gift img { width: 40px; height: 40px; object-fit: contain; border-radius: 6px; }
+.qv-tiers-{{ section.id }} .qv-progress-gift-name {
+  font-size: 15px; font-weight: 600; line-height: 1.25; white-space: nowrap;
+}
+.qv-tiers-{{ section.id }} .qv-progress-gift-badge {
+  padding: 4px 12px; border-radius: 999px;
+  background: {{ section.settings.progress_gift_bg | default: '#FDE8DD' }};
+  color: {{ section.settings.progress_gift_text | default: '#C1502E' }};
+  font-size: 14px; font-weight: 600; line-height: 1.3; white-space: nowrap;
+}
+
+/* short tier names only swap in on phones, and only when one was provided */
+.qv-tiers-{{ section.id }} .qv-name-short { display: none; }
+
+/* ---------- tablet: same table, tighter ---------- */
+@media (max-width: 900px) and (min-width: 768px) {
+  .qv-tiers-{{ section.id }} { padding: 48px 16px 56px; }
+  .qv-tiers-{{ section.id }} .qv-title { font-size: 32px; }
+  .qv-tiers-{{ section.id }} .qv-grid { grid-template-columns: 170px repeat(var(--qv-cols), minmax(0, 1fr)); }
+  .qv-tiers-{{ section.id }} .qv-cell { padding: 12px 10px; font-size: 14px; }
+  .qv-tiers-{{ section.id }} .qv-cell--label { padding-left: 14px; font-size: 14px; }
+  .qv-tiers-{{ section.id }} .qv-tier-icon { width: 64px; height: 64px; margin-bottom: 12px; }
+  .qv-tiers-{{ section.id }} .qv-tier-name { font-size: 20px; }
+  .qv-tiers-{{ section.id }} .qv-tier-threshold { font-size: 13px; }
+}
+
+/* ---------- phone: everything shrinks to fit, no horizontal scroll ---------- */
+@media (max-width: 767px) {
+  .qv-tiers-{{ section.id }} {
+    --qv-mobile-pad-x: 12px;
+    padding: {{ section.settings.pad_top_mobile | default: 40 }}px var(--qv-mobile-pad-x) {{ section.settings.pad_bottom_mobile | default: 48 }}px;
+  }
+  .qv-tiers-{{ section.id }} .qv-head { margin-bottom: 24px; }
+  .qv-tiers-{{ section.id }} .qv-title { font-size: {{ section.settings.title_size_mobile | default: 34 }}px; margin-bottom: 10px; }
+  .qv-tiers-{{ section.id }} .qv-sub { font-size: 16px; line-height: 1.45; }
+
+  /* edge-to-edge on phones: bleed past the section's own side padding, no side border/radius */
+  .qv-tiers-{{ section.id }} .qv-panel {
+    overflow: hidden;
+    width: auto;
+    margin-left: calc(-1 * var(--qv-mobile-pad-x));
+    margin-right: calc(-1 * var(--qv-mobile-pad-x));
+    border: none;
+    border-top: 1px solid var(--qv-line);
+    border-radius: 0;
+  }
+  .qv-tiers-{{ section.id }} .qv-grid {
+    min-width: 0;
+    grid-template-columns: {{ section.settings.label_col_mobile | default: 30 }}% repeat(var(--qv-cols), minmax(0, 1fr));
+  }
+
+  .qv-tiers-{{ section.id }} .qv-cell {
+    padding: {{ section.settings.row_pad_mobile | default: 26 }}px 6px;
+    font-size: {{ section.settings.value_text_mobile | default: 15 }}px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .qv-tiers-{{ section.id }} .qv-cell--label {
+    padding-left: 12px; padding-right: 8px;
+    font-size: {{ section.settings.label_text_mobile | default: 14 }}px;
+    color: var(--qv-muted);
+  }
+  .qv-tiers-{{ section.id }} .qv-cell--tier { font-size: 16px; }
+
+  .qv-tiers-{{ section.id }} .qv-cell--head { padding-top: 20px; padding-bottom: 16px; }
+  .qv-tiers-{{ section.id }} .qv-cell--head.qv-cell--current { padding-top: 50px; }
+  .qv-tiers-{{ section.id }} .qv-tier-current-badge { top: 12px; padding: 3px 8px; font-size: 11px; }
+  {%- if section.settings.hide_icons_mobile %}
+  .qv-tiers-{{ section.id }} .qv-tier-icon { display: none; }
+  {%- else %}
+  .qv-tiers-{{ section.id }} .qv-tier-icon { width: 40px; height: 40px; margin-bottom: 8px; }
+  {%- endif %}
+  {%- if section.settings.hide_threshold_mobile %}
+  .qv-tiers-{{ section.id }} .qv-tier-threshold { display: none; }
+  {%- else %}
+  .qv-tiers-{{ section.id }} .qv-tier-threshold { margin-top: 6px; font-size: 16px; line-height: 1.3; font-weight: 400}
+  {%- endif %}
+  .qv-tiers-{{ section.id }} .qv-tier-name {
+    font-size: {{ section.settings.tier_name_size_mobile | default: 24 }}px;
+    font-weight: 600; line-height: 1.2;
+  }
+  .qv-tiers-{{ section.id }} .qv-tier-name--dual .qv-name-full { display: none; }
+  .qv-tiers-{{ section.id }} .qv-tier-name--dual .qv-name-short { display: inline; font-weight: 300; font-size: 24px; }
+
+  .qv-tiers-{{ section.id }} .qv-val { flex-direction: column; gap: 8px; }
+  .qv-tiers-{{ section.id }} .qv-mark svg { width: 22px; height: 22px; }
+  .qv-tiers-{{ section.id }} .qv-val-img { width: 36px; height: 36px; }
+  .qv-tiers-{{ section.id }} .qv-val-text { font-size: {{ section.settings.value_text_mobile | default: 15 }}px; font-weight: 500; }
+  .qv-tiers-{{ section.id }} .qv-legend { font-size: 15px; }
+
+  .qv-tiers-{{ section.id }} .qv-progress-title { font-size: 24px; margin-bottom: 20px; }
+  .qv-tiers-{{ section.id }} .qv-progress { margin-bottom: 24px; }
+
+  /* progress bar: compact circles for non-target tiers, full pill for next tier */
+  .qv-tiers-{{ section.id }} .qv-progress-track { overflow: visible; justify-content: center; padding: 0 8px 60px; }
+  .qv-tiers-{{ section.id }} .qv-progress-track--gifts { padding-bottom: 170px; }
+  /* fixed width so neighbouring gift cards can't overlap */
+  .qv-tiers-{{ section.id }} .qv-progress-gift { width: 100px; padding: 10px 8px; gap: 6px; }
+  .qv-tiers-{{ section.id }} .qv-progress-gift-name { font-size: 13px; white-space: normal; overflow-wrap: break-word; }
+  .qv-tiers-{{ section.id }} .qv-progress-gift-badge { font-size: 12px; padding: 3px 8px; }
+  .qv-tiers-{{ section.id }} .qv-progress-pill {
+    padding: 10px; border-radius: 50%; gap: 0;
+  }
+  .qv-tiers-{{ section.id }} .qv-progress-pill-name { display: none; }
+  .qv-tiers-{{ section.id }} .qv-progress-pill svg,
+  .qv-tiers-{{ section.id }} .qv-progress-pill img { width: 22px; height: 22px; }
+  .qv-tiers-{{ section.id }} .qv-progress-node--next .qv-progress-pill {
+    padding: 7px 16px; border-radius: 999px; gap: 8px;
+  }
+  .qv-tiers-{{ section.id }} .qv-progress-node--next .qv-progress-pill-name { display: inline; }
+  .qv-tiers-{{ section.id }} .qv-progress-node--current .qv-progress-away { display: block; }
+  .qv-tiers-{{ section.id }} .qv-progress-node--current .qv-progress-threshold { display: none; }
+  .qv-tiers-{{ section.id }} .qv-progress-line { min-width: 24px; }
+  .qv-tiers-{{ section.id }} .qv-progress-below { max-width: 140px; }
+  /* pin edge captions inward so they don't overflow the viewport */
+  .qv-tiers-{{ section.id }} .qv-progress-node:first-child .qv-progress-below {
+    left: 0; transform: none; align-items: flex-start; text-align: left;
+  }
+  .qv-tiers-{{ section.id }} .qv-progress-node:last-child .qv-progress-below {
+    left: auto; right: 0; transform: none; align-items: flex-end; text-align: right;
+  }
+}
+
+/* very narrow phones — one more step down so 4 tiers still fit */
+@media (max-width: 380px) {
+  .qv-tiers-{{ section.id }} .qv-cell { padding-left: 4px; padding-right: 4px; font-size: 14px; }
+  .qv-tiers-{{ section.id }} .qv-cell--label { padding-left: 10px; font-size: 13px; }
+  .qv-tiers-{{ section.id }} .qv-val-text { font-size: 14px; }
+  .qv-tiers-{{ section.id }} .qv-tier-name { font-size: 20px; }
+}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('qv-tiers-{{ section.id }}');
+  var cfgEl = document.getElementById('qv-cfg-{{ section.id }}');
+  if (!root || !cfgEl) { return; }
+
+  var cfg;
+  try { cfg = JSON.parse(cfgEl.textContent); } catch (e) { console.error('[qv-tiers] bad config', e); return; }
+
+  var grid = root.querySelector('[data-qv-grid]');
+  var source = root.querySelector('[data-qv-source]');
+  var note = root.querySelector('[data-qv-note]');
+  var progressEl = root.querySelector('[data-qv-progress]');
+  var busy = false, lastSig = null, tries = 0;
+
+  var CHECK = '<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M8.2 12.3l2.6 2.6 5-5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var CROSS = '<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M9.3 9.3l5.4 5.4M14.7 9.3l-5.4 5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+
+  var FALLBACK_ICONS = [
+    '<svg viewBox="0 0 12 15" fill="none"><path d="M5.78947 14C7.05972 14 8.27794 13.4954 9.17614 12.5972C10.0743 11.699 10.5789 10.4808 10.5789 9.21053C10.5789 7.84211 9.89474 6.54211 8.52632 5.44737C7.1579 4.35263 6.13158 2.71053 5.78947 1C5.44737 2.71053 4.42105 4.35263 3.05263 5.44737C1.68421 6.54211 1 7.84211 1 9.21053C1 10.4808 1.5046 11.699 2.4028 12.5972C3.30101 13.4954 4.51923 14 5.78947 14Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    '<svg viewBox="0 0 14 16" fill="none"><path d="M6.6 0.75L12.45 3.99987V11.6727L6.6 14.9227L0.75 11.6727V3.99987L6.6 0.75Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M6.60094 3.78125L10.2409 5.58168V9.95415L6.60094 11.7547L2.96094 9.95415V5.58168L6.60094 3.78125Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M6.60156 0.734375L6.60156 3.65938" stroke="currentColor" stroke-width="1"/><path d="M12.4521 4.0625L10.2422 5.68735" stroke="currentColor" stroke-width="1"/><path d="M12.2896 11.6406L10.2422 10.0156" stroke="currentColor" stroke-width="1"/><path d="M6.60156 14.7063L6.60156 11.7812" stroke="currentColor" stroke-width="1"/><path d="M0.75 11.6406L2.95997 10.0156" stroke="currentColor" stroke-width="1"/><path d="M0.75 4.0625L2.95999 5.68735" stroke="currentColor" stroke-width="1"/></svg>',
+    '<svg viewBox="0 0 15 15" fill="none"><path d="M7.5 1L14 5.875L7.5 13.9999L1 5.875L7.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M1 5.85333L4.25 3.6963L7.5 1L10.75 3.6963L14 5.85333" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M1 5.85156H14" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M7.58594 1V5.85333" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M4.29297 3.77344L7.5863 5.85344" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M10.7059 3.77344L7.58594 5.85344" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M7.58594 5.85156V13.9983" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M1 5.85156L7.58667 13.9983" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M14.0859 5.94531L7.58594 13.7453" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/></svg>',
+    '<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="13" stroke="currentColor" stroke-width="1"/><path d="M24 15l2.6 5.6 6 .9-4.3 4.3 1 6.1-5.3-2.9-5.3 2.9 1-6.1-4.3-4.3 6-.9L24 15Z" stroke="currentColor" stroke-width="0.8" stroke-linejoin="round"/></svg>'
+  ];
+
+  var EMPTY = ['', '-', '–', '—', 'n/a', 'na', 'no', 'false', 'x', '✕', '✗'];
+
+  function txt(el) { return el ? (el.textContent || '').replace(/ /g, ' ').replace(/\s+/g, ' ').trim() : ''; }
+  function norm(v) { return String(v || '').toLowerCase().replace(/\s+/g, ' ').trim(); }
+  function esc(v) {
+    return String(v || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function first(scope, list) {
+    for (var i = 0; i < list.length; i++) {
+      if (!list[i]) { continue; }
+      var el = null;
+      try { el = scope.querySelector(list[i]); } catch (e) { el = null; }
+      if (el) { return el; }
+    }
+    return null;
+  }
+  function csvSet(value) {
+    var out = {};
+    String(value || '').split(',').forEach(function (item) {
+      var key = norm(item);
+      if (key) { out[key] = true; }
+    });
+    return out;
+  }
+
+  var YES = csvSet(cfg.yesTokens);
+  var BOLD = csvSet(cfg.boldRows);
+
+  var CELL_IMG = {};
+  (cfg.cellImages || []).forEach(function (entry) {
+    if (!entry || !entry.src) { return; }
+    var tier = parseInt(entry.tier, 10) || 1;
+    CELL_IMG[norm(entry.row) + '::' + tier] = { src: entry.src, label: entry.label || '', row: entry.row || '' };
+  });
+  function imgFor(rowLabel, tierIndex) {
+    return CELL_IMG[norm(rowLabel) + '::' + (tierIndex + 1)] || null;
+  }
+  function giftForTier(tierIndex, data) {
+    var found = null;
+    Object.keys(CELL_IMG).forEach(function (key) {
+      if (found) { return; }
+      var parts = key.split('::');
+      if (parseInt(parts[1], 10) === tierIndex + 1) { found = CELL_IMG[key]; }
+    });
+    if (!found) { return null; }
+    var label = found.label;
+    if (!label && found.row && data) {
+      var row = data.rows.filter(function (r) { return norm(r.label) === norm(found.row); })[0];
+      if (row && row.values[tierIndex]) { label = txt(row.values[tierIndex]); }
+    }
+    return { src: found.src, label: label || '' };
+  }
+  /* gift under a progress tier: perk image entry first, then the Rivo gift row's value */
+  function progressGift(data, tierIndex) {
+    var own = giftForTier(tierIndex, data);
+    if (own && own.label) { return own; }
+    if (!cfg.giftRow) { return own; }
+    var row = data.rows.filter(function (r) { return norm(r.label) === norm(cfg.giftRow); })[0];
+    var cell = row && row.values[tierIndex];
+    if (!cell) { return own; }
+    var raw = txt(cell);
+    if (!raw || YES[norm(raw)] || !isIncluded(cell, raw)) { return own; }
+    return { src: own ? own.src : '', label: raw };
+  }
+  function parseMoney(str) {
+    var m = /[\d,.]+/.exec(String(str || ''));
+    return m ? parseFloat(m[0].replace(/,/g, '')) : NaN;
+  }
+
+  function tierCfg(i) { return cfg.tiers[i] || cfg.tiers[cfg.tiers.length - 1]; }
+
+  function columnKey(el) {
+    if (!el) { return ''; }
+    for (var i = 0; i < el.classList.length; i++) {
+      if (/^rivo-tier-column-/.test(el.classList[i])) { return el.classList[i]; }
+    }
+    return '';
+  }
+  function hasCheckMark(cell) {
+    if (cell.querySelector('[class*="no-mark"], [class*="cross"], [class*="times"]')) { return false; }
+    return !!cell.querySelector('svg, [class*="check"], [class*="tick"], [class*="yes"]');
+  }
+  function isIncluded(cell, raw) {
+    if (cell.querySelector('.rivo-tier-no-mark, [class*="no-mark"], [class*="cross"]')) { return false; }
+    if (cell.querySelector('img')) { return true; }
+    if (EMPTY.indexOf(norm(raw)) === -1) { return true; }
+    return hasCheckMark(cell);
+  }
+
+  /* ---------- read the live Rivo table ---------- */
+  function extract(table) {
+    var heads = [].slice.call(table.querySelectorAll('.rivo-vip-tier-table-thead-tier-cell'));
+    var names = [].slice.call(table.querySelectorAll('.rivo-vip-tier-table-row-perk-name'));
+    var cells = [].slice.call(table.querySelectorAll('.rivo-vip-tier-table-row-perk-value'));
+    if (!heads.length || !names.length) { return null; }
+
+    var tiers = heads.map(function (head, i) {
+      var key = columnKey(head);
+      var img = head.querySelector('img');
+      var imgSrc = img ? (img.getAttribute('src') || img.getAttribute('data-src') || '').trim() : '';
+      return {
+        index: i,
+        key: key,
+        name: txt(first(head, ['.rivo-th-tier-name', '[class*="tier-name"]'])) || txt(head),
+        threshold: txt(first(head, ['.rivo-th-tier-threshold', '[class*="tier-threshold"]'])),
+        iconSrc: imgSrc || null,
+        cells: cells.filter(function (cell) { return key && cell.classList.contains(key); })
+      };
+    });
+
+    var rows = names.map(function (nameEl, j) {
+      return {
+        label: txt(nameEl),
+        values: tiers.map(function (tier) { return tier.cells[j] || null; })
+      };
+    }).filter(function (row) { return !!row.label; });
+
+    return { tiers: tiers, rows: rows };
+  }
+
+  /* ---------- markup ---------- */
+  function iconMarkup(tier) {
+    var conf = tierCfg(tier.index);
+    var src = conf.icon;
+    var inner = src
+      ? '<img data-qv-tier-icon="' + tier.index + '" src="' + esc(src) + '" alt="" loading="lazy">'
+      : (FALLBACK_ICONS[tier.index] || FALLBACK_ICONS[FALLBACK_ICONS.length - 1]);
+    var dark = conf.iconStyle === 'dark' ? ' qv-tier-icon--dark' : '';
+    return '<span class="qv-tier-icon' + dark + '">' + inner + '</span>';
+  }
+  function pillIconMarkup(tier) {
+    var conf = tierCfg(tier.index);
+    var src = conf.icon;
+    return src
+      ? '<img data-qv-tier-icon="' + tier.index + '" src="' + esc(src) + '" alt="" loading="lazy">'
+      : (FALLBACK_ICONS[tier.index] || FALLBACK_ICONS[FALLBACK_ICONS.length - 1]);
+  }
+  function wireIconFallback(container) {
+    if (!container) { return; }
+    var imgs = container.querySelectorAll('img[data-qv-tier-icon]');
+    Array.prototype.forEach.call(imgs, function (img) {
+      img.addEventListener('error', function onErr() {
+        img.removeEventListener('error', onErr);
+        var idx = parseInt(img.getAttribute('data-qv-tier-icon'), 10) || 0;
+        var wrap = document.createElement('span');
+        wrap.innerHTML = FALLBACK_ICONS[idx] || FALLBACK_ICONS[FALLBACK_ICONS.length - 1];
+        if (wrap.firstChild) { img.replaceWith(wrap.firstChild); }
+      });
+    });
+  }
+  function nameMarkup(tier) {
+    var short = (tierCfg(tier.index).short || '').trim();
+    if (!short || norm(short) === norm(tier.name)) {
+      return '<span class="qv-tier-name">' + esc(tier.name) + '</span>';
+    }
+    return '<span class="qv-tier-name qv-tier-name--dual">' +
+      '<span class="qv-name-full">' + esc(tier.name) + '</span>' +
+      '<span class="qv-name-short">' + esc(short) + '</span>' +
+    '</span>';
+  }
+  function headMarkup(tier) {
+    var conf = tierCfg(tier.index);
+    return '<div class="qv-cell qv-cell--tier qv-cell--head" data-qv-col="' + tier.index + '" style="background:' + esc(conf.bg) + '">' +
+      iconMarkup(tier) +
+      nameMarkup(tier) +
+      (tier.threshold ? '<span class="qv-tier-threshold">' + esc(tier.threshold) + '</span>' : '') +
+      (cfg.currentLabel ? '<span class="qv-tier-current-badge">' + esc(cfg.currentLabel) + '</span>' : '') +
+    '</div>';
+  }
+  function valueMarkup(cell, rowLabel, tierIndex) {
+    var override = imgFor(rowLabel, tierIndex);
+    var raw = cell ? txt(cell) : '';
+
+    if (override) {
+      var text = override.label || (YES[norm(raw)] ? '' : raw);
+      return '<span class="qv-val">' +
+        '<img class="qv-val-img" src="' + esc(override.src) + '" alt="" loading="lazy">' +
+        (text ? '<span class="qv-val-text">' + esc(text) + '</span>' : '') +
+      '</span>';
+    }
+
+    if (!cell) { return '<span class="qv-val"><span class="qv-mark">' + CROSS + '</span></span>'; }
+    var img = cell.querySelector('img');
+    if (!isIncluded(cell, raw)) {
+      return '<span class="qv-val"><span class="qv-mark">' + CROSS + '</span></span>';
+    }
+    var parts = '';
+    if (img) {
+      parts += '<img class="qv-val-img" src="' + esc(img.getAttribute('src')) + '" alt="" loading="lazy">';
+    } else if (hasCheckMark(cell)) {
+      parts += '<span class="qv-mark">' + CHECK + '</span>';
+    }
+    if (raw && !YES[norm(raw)]) {
+      var pts = /^[\d,.]+\s*points?$/i.test(raw) ? ' qv-val-text--points' : '';
+      parts += '<span class="qv-val-text' + pts + '">' + esc(raw) + '</span>';
+    }
+    if (!parts) { parts = '<span class="qv-mark">' + CHECK + '</span>'; }
+    return '<span class="qv-val">' + parts + '</span>';
+  }
+  function build(data) {
+    var html = '<div class="qv-cell qv-cell--label qv-cell--head"></div>';
+    html += data.tiers.map(headMarkup).join('');
+
+    data.rows.forEach(function (row, r) {
+      var bold = BOLD[norm(row.label)] ? ' qv-cell--bold' : '';
+      var last = r === data.rows.length - 1 ? ' qv-cell--last' : '';
+      html += '<div class="qv-cell qv-cell--label">' + esc(row.label) + '</div>';
+      row.values.forEach(function (cell, i) {
+        html += '<div class="qv-cell qv-cell--tier' + bold + last + '" data-qv-col="' + i + '" style="background:' + esc(tierCfg(i).bg) + '">' +
+          valueMarkup(cell, row.label, i) + '</div>';
+      });
+    });
+
+    grid.style.setProperty('--qv-cols', String(data.tiers.length));
+    root.style.setProperty('--qv-cols', String(data.tiers.length));
+    grid.innerHTML = html;
+    wireIconFallback(grid);
+  }
+
+  /* ---------- current tier highlight ---------- */
+  function alpineStore(name) {
+    try { if (window.Alpine && typeof window.Alpine.store === 'function') { return window.Alpine.store(name); } } catch (e) {}
+    return null;
+  }
+  function currentTierIndex(data, info) {
+    var c = alpineStore('customer');
+    var tierInfo = c && c.current_vip_tier_info;
+    var name = tierInfo && tierInfo.tier && tierInfo.tier.name;
+    if (name) {
+      for (var i = 0; i < data.tiers.length; i++) {
+        if (norm(data.tiers[i].name) === norm(name)) { return i; }
+      }
+    }
+    return info && info.currentIndex >= 0 ? info.currentIndex : -1;
+  }
+  function markCurrent(idx) {
+    var cells = grid.querySelectorAll('[data-qv-col]');
+    Array.prototype.forEach.call(cells, function (cell) {
+      cell.classList.toggle('qv-cell--current', idx >= 0 && parseInt(cell.getAttribute('data-qv-col'), 10) === idx);
+    });
+  }
+
+  /* ---------- read the live Rivo progress bar ---------- */
+  function splitProgressLabel(label) {
+    var m = /[$£€]\s?[\d,.]+/.exec(label || '');
+    var amount = m ? m[0] : '';
+    return { name: (amount ? label.replace(amount, '') : label || '').trim(), value: parseMoney(amount) };
+  }
+  function extractProgress(rivoRoot, tiers) {
+    var box = first(rivoRoot, ['.rivo-vip-tier-progress-container', '[class*="tier-progress-container"]']);
+    if (!box || window.getComputedStyle(box).display === 'none') { return null; }
+
+    var bar = first(box, ['.rivo-account-progress-bar', '[class*="account-progress-bar"]']);
+    var pct = 0;
+    if (bar) {
+      var m = /([\d.]+)\s*%/.exec((bar.getAttribute('style') || ''));
+      if (m) { pct = Math.max(0, Math.min(100, parseFloat(m[1]) || 0)); }
+    }
+
+    var cur = splitProgressLabel(txt(first(box, ['.rivo-account-progress-current-tier-label-container', '[class*="current-tier-label"]'])));
+    var next = splitProgressLabel(txt(first(box, ['.rivo-account-progress-next-tier-label-container', '[class*="next-tier-label"]'])));
+
+    function indexByName(name) {
+      var target = norm(name);
+      if (!target) { return -1; }
+      for (var i = 0; i < tiers.length; i++) {
+        if (norm(tiers[i].name) === target) { return i; }
+      }
+      return -1;
+    }
+
+    return {
+      pct: pct,
+      currentIndex: indexByName(cur.name),
+      nextIndex: indexByName(next.name),
+      currentValue: cur.value,
+      nextValue: next.value,
+      nextName: next.name
+    };
+  }
+
+  /* ---------- build the clean progress stepper ---------- */
+  function buildProgress(data, info) {
+    if (!progressEl) { return; }
+    if (!info || info.currentIndex < 0) { progressEl.hidden = true; return; }
+
+    var remaining = null;
+    if (info.nextIndex >= 0 && !isNaN(info.currentValue) && !isNaN(info.nextValue)) {
+      remaining = Math.round((1 - info.pct / 100) * (info.nextValue - info.currentValue));
+    }
+    var highlightIndex = info.nextIndex >= 0 ? info.nextIndex : info.currentIndex;
+
+    var html = '';
+    var hasGift = false;
+    data.tiers.forEach(function (tier, i) {
+      var cls = 'qv-progress-node';
+      if (i === info.currentIndex) cls += ' qv-progress-node--current';
+      if (i === highlightIndex) cls += ' qv-progress-node--next';
+
+      html += '<div class="' + cls + '">';
+      html += '<span class="qv-progress-pill">' + pillIconMarkup(tier) + '<span class="qv-progress-pill-name">' + esc(tier.name) + '</span></span>';
+
+      var below = '';
+      if (tier.threshold) {
+        below += '<p class="qv-progress-caption qv-progress-threshold">' + esc(tier.threshold) + '</p>';
+      }
+      if (i === info.currentIndex && info.nextIndex >= 0 && remaining !== null && !isNaN(remaining) && remaining > 0) {
+        below += '<p class="qv-progress-caption qv-progress-away">You are $' + remaining.toLocaleString() + ' away from ' + esc(info.nextName) + '</p>';
+      }
+      var gift = progressGift(data, i);
+      if (gift && gift.label) {
+        hasGift = true;
+        below += '<div class="qv-progress-gift">' +
+          (gift.src ? '<img src="' + esc(gift.src) + '" alt="" loading="lazy">' : '') +
+          '<span class="qv-progress-gift-name">' + esc(gift.label.replace(/^free\s+/i, '')) + '</span>' +
+          (cfg.giftBadge ? '<span class="qv-progress-gift-badge">' + esc(cfg.giftBadge) + '</span>' : '') +
+        '</div>';
+      }
+      if (below) {
+        html += '<div class="qv-progress-below">' + below + '</div>';
+      }
+
+      html += '</div>';
+      if (i < data.tiers.length - 1) {
+        var fillPct = i < info.currentIndex ? 100 : (i === info.currentIndex ? info.pct : 0);
+        html += '<div class="qv-progress-line"><span class="qv-progress-line-fill" style="width:' + fillPct + '%"></span></div>';
+      }
+    });
+    progressEl.innerHTML = '<div class="qv-progress-track' + (hasGift ? ' qv-progress-track--gifts' : '') + '">' + html + '</div>';
+    progressEl.hidden = false;
+    wireIconFallback(progressEl);
+    fitProgress();
+  }
+
+  /* phones: reserve only the space the captions and gift cards actually need */
+  var MOBILE = window.matchMedia('(max-width: 767px)');
+  function fitProgress() {
+    var track = progressEl && progressEl.querySelector('.qv-progress-track');
+    if (!track || progressEl.hidden) { return; }
+    if (!MOBILE.matches) { track.style.removeProperty('padding-bottom'); return; }
+    track.style.setProperty('padding-bottom', '0px');
+    var bottom = track.getBoundingClientRect().bottom;
+    var lowest = bottom;
+    Array.prototype.forEach.call(track.querySelectorAll('.qv-progress-below'), function (el) {
+      lowest = Math.max(lowest, el.getBoundingClientRect().bottom);
+    });
+    track.style.setProperty('padding-bottom', Math.ceil(lowest - bottom + 8) + 'px');
+  }
+
+  /* ---------- run ---------- */
+  function hard(el, props) {
+    if (!el) { return; }
+    Object.keys(props).forEach(function (k) { el.style.setProperty(k, props[k], 'important'); });
+  }
+  var CLIP = {
+    'position': 'absolute', 'width': '1px', 'height': '1px', 'min-height': '0',
+    'margin': '0', 'padding': '0', 'border': '0', 'overflow': 'hidden',
+    'clip-path': 'inset(50%)', 'opacity': '0', 'pointer-events': 'none'
+  };
+
+  function clipSources() {
+    if (source) {
+      var toClip = source.querySelectorAll(
+        [cfg.sel.title, cfg.sel.subtitle, cfg.sel.table, 'table', 'thead', 'tbody', '[class*="tier-table"]', '[class*="tier-column"]']
+          .filter(Boolean).join(', ')
+      );
+      Array.prototype.forEach.call(toClip, function (el) { hard(el, CLIP); });
+    }
+
+    if (!cfg.hideExternal) { return; }
+    var others = document.querySelectorAll('#rivo-vip-tiers, [id^="rivo-vip-tiers"], [class*="rivo-vip-tier-container"]');
+    Array.prototype.forEach.call(others, function (el) {
+      if (root.contains(el)) { return; }
+      if (el.closest('[data-qv-root]')) { return; }
+      hard(el, CLIP);
+      el.setAttribute('aria-hidden', 'true');
+      var shell = el.closest('.shopify-section, .shopify-app-block');
+      if (shell && !shell.querySelector('[data-qv-root]') && !txt(shell)) {
+        hard(shell, { 'height': '0', 'min-height': '0', 'margin': '0', 'padding': '0', 'overflow': 'hidden' });
+      }
+    });
+  }
+
+  function apply() {
+    clipSources();
+
+    var rivoRoot = first(root, [cfg.sel.root, '#rivo-vip-tiers', '[id*="vip-tier"]']) || source;
+    var table = rivoRoot ? first(rivoRoot, [cfg.sel.table, '.rivo-vip-tier-table', 'table']) : null;
+    if (!table) { if (note) { note.hidden = false; } return false; }
+
+    var data = extract(table);
+    if (!data || !data.tiers.length) { if (note) { note.hidden = false; } return false; }
+    if (note) { note.hidden = true; }
+
+    busy = true;
+
+    var sig = txt(table) + '|' + data.tiers.length;
+    if (sig !== lastSig) {
+      lastSig = sig;
+      build(data);
+    }
+    var progressInfo = extractProgress(rivoRoot, data.tiers);
+    buildProgress(data, progressInfo);
+    markCurrent(currentTierIndex(data, progressInfo));
+    window.requestAnimationFrame(function () { busy = false; });
+    return true;
+  }
+
+  /* polling: fast initial scan, then slow background poll for live updates */
+  var timer = window.setInterval(function () {
+    tries += 1;
+    if (apply() || tries >= 80) {
+      window.clearInterval(timer);
+      window.setInterval(function () { if (!busy) { apply(); } }, 2000);
+    }
+  }, 150);
+
+  document.addEventListener('shopify:section:load', function (event) {
+    if (event.target && event.target.contains(root)) { lastSig = null; apply(); }
+  });
+  var resizeQueued = false;
+  window.addEventListener('resize', function () {
+    if (resizeQueued) { return; }
+    resizeQueued = true;
+    window.requestAnimationFrame(function () { resizeQueued = false; fitProgress(); });
+  });
+  clipSources();
+  apply();
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Rivo: VIP Tiers v16",
+  "tag": "section",
+  "class": "qv-tiers-section",
+  "settings": [
+    { "type": "header", "content": "Header" },
+    { "type": "text", "id": "section_title", "label": "Title", "default": "VIP Tiers" },
+    { "type": "textarea", "id": "section_subtitle", "label": "Subtitle", "default": "Every purchase, referral, and review gets you closer to your next reward." },
+    { "type": "textarea", "id": "legend", "label": "Fine print (optional)" },
+    { "type": "checkbox", "id": "hide_external", "label": "Hide duplicate Rivo VIP tier blocks elsewhere on the page", "default": true, "info": "Leave on if Rivo's native table renders a second time below this section." },
+
+    { "type": "header", "content": "Layout" },
+    { "type": "range", "id": "max_width", "label": "Table max width", "min": 800, "max": 1600, "step": 20, "unit": "px", "default": 1180 },
+    { "type": "range", "id": "label_col_width", "label": "Left label column width", "min": 140, "max": 340, "step": 10, "unit": "px", "default": 220 },
+    { "type": "range", "id": "panel_radius", "label": "Panel corner radius", "min": 0, "max": 32, "step": 2, "unit": "px", "default": 16 },
+    { "type": "range", "id": "row_pad", "label": "Row height padding", "min": 8, "max": 28, "step": 2, "unit": "px", "default": 14 },
+    { "type": "range", "id": "head_pad_top", "label": "Tier header top padding", "min": 16, "max": 64, "step": 2, "unit": "px", "default": 34 },
+    { "type": "range", "id": "icon_circle", "label": "Tier icon circle size", "min": 56, "max": 130, "step": 2, "unit": "px", "default": 88 },
+    { "type": "range", "id": "pad_top", "label": "Space above section", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 72 },
+    { "type": "range", "id": "pad_bottom", "label": "Space below section", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 88 },
+
+    { "type": "header", "content": "Tier 1" },
+    { "type": "text", "id": "tier1_short", "label": "Short name (phones only)", "default": "Insider", "info": "Blank = use the full Rivo tier name." },
+    { "type": "color", "id": "tier1_bg", "label": "Column background", "default": "#FFFFFF" },
+    { "type": "image_picker", "id": "tier1_icon", "label": "Icon image (overrides Rivo's)" },
+    { "type": "select", "id": "tier1_icon_style", "label": "Icon circle", "default": "light", "options": [{ "value": "light", "label": "White circle, dark icon" }, { "value": "dark", "label": "Dark circle, white icon" }] },
+
+    { "type": "header", "content": "Tier 2" },
+    { "type": "text", "id": "tier2_short", "label": "Short name (phones only)", "default": "Expert", "info": "Blank = use the full Rivo tier name." },
+    { "type": "color", "id": "tier2_bg", "label": "Column background", "default": "#F7F7F8" },
+    { "type": "image_picker", "id": "tier2_icon", "label": "Icon image (overrides Rivo's)" },
+    { "type": "select", "id": "tier2_icon_style", "label": "Icon circle", "default": "light", "options": [{ "value": "light", "label": "White circle, dark icon" }, { "value": "dark", "label": "Dark circle, white icon" }] },
+
+    { "type": "header", "content": "Tier 3" },
+    { "type": "text", "id": "tier3_short", "label": "Short name (phones only)", "default": "Elite", "info": "Blank = use the full Rivo tier name." },
+    { "type": "color", "id": "tier3_bg", "label": "Column background", "default": "#EDF2FA" },
+    { "type": "image_picker", "id": "tier3_icon", "label": "Icon image (overrides Rivo's)" },
+    { "type": "select", "id": "tier3_icon_style", "label": "Icon circle", "default": "dark", "options": [{ "value": "light", "label": "White circle, dark icon" }, { "value": "dark", "label": "Dark circle, white icon" }] },
+
+    { "type": "header", "content": "Tier 4 (only if you add a 4th tier in Rivo)" },
+    { "type": "text", "id": "tier4_short", "label": "Short name (phones only)", "info": "Blank = use the full Rivo tier name." },
+    { "type": "color", "id": "tier4_bg", "label": "Column background", "default": "#F4F1EA" },
+    { "type": "image_picker", "id": "tier4_icon", "label": "Icon image (overrides Rivo's)" },
+    { "type": "select", "id": "tier4_icon_style", "label": "Icon circle", "default": "light", "options": [{ "value": "light", "label": "White circle, dark icon" }, { "value": "dark", "label": "Dark circle, white icon" }] },
+
+    { "type": "header", "content": "Current tier highlight" },
+    { "type": "text", "id": "current_tier_label", "label": "Badge text", "default": "Your tier", "info": "Pill at the top of the signed-in member's tier column. Leave blank to hide it." },
+    { "type": "color", "id": "current_tier_color", "label": "Outline color", "default": "#FF5429" },
+    { "type": "color", "id": "current_badge_bg", "label": "Badge background", "default": "#FDE8DD" },
+    { "type": "color", "id": "current_badge_text", "label": "Badge text color", "default": "#C1502E" },
+
+    { "type": "header", "content": "Mobile (phones)", "info": "The table always fits the screen width on phones — these control how much it shrinks." },
+    { "type": "checkbox", "id": "hide_icons_mobile", "label": "Hide tier icons on phones", "default": true },
+    { "type": "checkbox", "id": "hide_threshold_mobile", "label": "Hide the spend threshold on phones", "default": false },
+    { "type": "range", "id": "label_col_mobile", "label": "Label column width", "min": 20, "max": 45, "step": 1, "unit": "%", "default": 30 },
+    { "type": "range", "id": "label_text_mobile", "label": "Row label size", "min": 9, "max": 24, "step": 1, "unit": "px", "default": 14 },
+    { "type": "range", "id": "value_text_mobile", "label": "Value size", "min": 9, "max": 24, "step": 1, "unit": "px", "default": 15 },
+    { "type": "range", "id": "tier_name_size_mobile", "label": "Tier name size", "min": 11, "max": 32, "step": 1, "unit": "px", "default": 24 },
+    { "type": "range", "id": "title_size_mobile", "label": "Section title size", "min": 20, "max": 44, "step": 1, "unit": "px", "default": 34 },
+    { "type": "range", "id": "row_pad_mobile", "label": "Row height padding", "min": 4, "max": 30, "step": 1, "unit": "px", "default": 26 },
+    { "type": "range", "id": "pad_top_mobile", "label": "Space above section", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "pad_bottom_mobile", "label": "Space below section", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 48 },
+
+    { "type": "header", "content": "Perk images", "info": "Attach an image to one specific cell — e.g. the free product shown next to \"Free Product\" in tiers 2 and 3. Row name must match the perk label in Rivo." },
+    { "type": "range", "id": "perk_img_size", "label": "Thumbnail size", "min": 24, "max": 90, "step": 2, "unit": "px", "default": 46 },
+
+    { "type": "image_picker", "id": "perk_img_1", "label": "Image 1" },
+    { "type": "text", "id": "perk_img_row_1", "label": "Image 1 — row name", "default": "Free Product" },
+    { "type": "range", "id": "perk_img_tier_1", "label": "Image 1 — tier column", "min": 1, "max": 4, "step": 1, "default": 2 },
+    { "type": "text", "id": "perk_img_label_1", "label": "Image 1 — label (blank = use Rivo's text)" },
+
+    { "type": "image_picker", "id": "perk_img_2", "label": "Image 2" },
+    { "type": "text", "id": "perk_img_row_2", "label": "Image 2 — row name", "default": "Free Product" },
+    { "type": "range", "id": "perk_img_tier_2", "label": "Image 2 — tier column", "min": 1, "max": 4, "step": 1, "default": 3 },
+    { "type": "text", "id": "perk_img_label_2", "label": "Image 2 — label (blank = use Rivo's text)" },
+
+    { "type": "image_picker", "id": "perk_img_3", "label": "Image 3" },
+    { "type": "text", "id": "perk_img_row_3", "label": "Image 3 — row name" },
+    { "type": "range", "id": "perk_img_tier_3", "label": "Image 3 — tier column", "min": 1, "max": 4, "step": 1, "default": 1 },
+    { "type": "text", "id": "perk_img_label_3", "label": "Image 3 — label (blank = use Rivo's text)" },
+
+    { "type": "image_picker", "id": "perk_img_4", "label": "Image 4" },
+    { "type": "text", "id": "perk_img_row_4", "label": "Image 4 — row name" },
+    { "type": "range", "id": "perk_img_tier_4", "label": "Image 4 — tier column", "min": 1, "max": 4, "step": 1, "default": 1 },
+    { "type": "text", "id": "perk_img_label_4", "label": "Image 4 — label (blank = use Rivo's text)" },
+
+    { "type": "header", "content": "Rows" },
+    { "type": "textarea", "id": "bold_rows", "label": "Rows shown in bold (comma separated)", "default": "Points Per $1 spent" },
+    { "type": "textarea", "id": "yes_tokens", "label": "Values shown as a check only (comma separated)", "default": "yes, true, included, ✓, x" },
+
+    { "type": "header", "content": "Colors" },
+    { "type": "color", "id": "section_bg", "label": "Section background", "default": "#FFFFFF" },
+    { "type": "color", "id": "panel_bg", "label": "Panel background", "default": "#FFFFFF" },
+    { "type": "color", "id": "ink", "label": "Primary text", "default": "#1B1D21" },
+    { "type": "color", "id": "muted", "label": "Secondary text", "default": "#6B7280" },
+    { "type": "color", "id": "line", "label": "Borders / dividers", "default": "#E5E7EB" },
+    { "type": "color", "id": "icon_ring", "label": "Icon circle border", "default": "#D9DCE1" },
+    { "type": "color", "id": "icon_dark", "label": "Dark icon circle fill", "default": "#17171B" },
+    { "type": "color", "id": "mark_color", "label": "Check / cross color", "default": "#4B5563" },
+
+    { "type": "header", "content": "VIP progress bar" },
+    { "type": "color", "id": "progress_fill_brand", "label": "Progress line color", "default": "#FF5429" },
+    { "type": "text", "id": "progress_gift_row", "label": "Free product row name", "default": "Free Product", "info": "Must match the perk name in Rivo. Its value shows as a gift card under each tier that has one." },
+    { "type": "text", "id": "progress_gift_badge", "label": "Gift badge text", "default": "Free Gift!" },
+    { "type": "color", "id": "progress_gift_bg", "label": "Gift badge background", "default": "#FDE8DD" },
+    { "type": "color", "id": "progress_gift_text", "label": "Gift badge text color", "default": "#C1502E" },
+
+    { "type": "header", "content": "Typography" },
+    { "type": "text", "id": "serif_stack", "label": "Serif stack (titles, tier names)", "default": "'Canela', Georgia, 'Times New Roman', serif" },
+    { "type": "text", "id": "sans_stack", "label": "Sans stack (everything else)", "default": "'TT Commons', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" },
+
+    { "type": "header", "content": "Advanced (Rivo selectors)" },
+    { "type": "text", "id": "sel_root", "label": "Rivo block selector", "default": "#rivo-vip-tiers" },
+    { "type": "text", "id": "sel_title", "label": "Title node", "default": ".rivo-lp-section-title" },
+    { "type": "text", "id": "sel_subtitle", "label": "Sub-line node", "default": ".rivo-lp-section-subtitle" },
+    { "type": "text", "id": "sel_container", "label": "Tier container", "default": ".rivo-vip-tier-container" },
+    { "type": "text", "id": "sel_table", "label": "Tier table", "default": ".rivo-vip-tier-table" }
+  ],
+  "blocks": [{ "type": "@app" }],
+  "max_blocks": 1,
+  "presets": [{ "name": "Rivo: VIP Tiers" }]
+}
+{% endschema %}

@@ -1,10 +1,9 @@
 {% comment %}
 RIVO: REDEEM PRODUCTS SECTION
 True horizontal carousel:
-- Desktop: 2 cards (odd count -> 1)
-- Mobile: 1 card
-- No card peeking
-- Smooth scrolling
+- Desktop: 3 cards at a time (fewer only if there are fewer rewards than that)
+- Mobile: 1 full-width card, with overlay arrows beside it so it reads as scrollable
+- Cards are sized so no card is ever partially shown
 {% endcomment %}
 
 <div
@@ -44,16 +43,20 @@ True horizontal carousel:
 /* Custom Title & Subtitle Styles */
 .rivo-redeem-header {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .rivo-redeem-title {
-  font-size: 32px;
+  font-family: 'Canela', Georgia, serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 42px;
   margin: 0 0 10px;
   color: #212428;
 }
 
 .rivo-redeem-subtitle {
+  font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -65,7 +68,8 @@ True horizontal carousel:
 
 @media (max-width: 749px) {
   .rivo-redeem-title {
-    font-size: 24px;
+    font-size: 26px;
+    line-height: 1.15;
   }
   .rivo-redeem-subtitle {
     font-size: 14px;
@@ -77,14 +81,21 @@ True horizontal carousel:
 
   /* defaults */
   --rivo-gap: 20px;
-  --rivo-per-view: 2;
+  --rivo-per-view: 3;
+  --rivo-card-width: 300px;
+  --rivo-nav-btn: 38px;
+  --rivo-nav-gap: 10px;
 
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  max-width: 970px; 
+  gap: var(--rivo-nav-gap);
+  /* wide enough for --rivo-per-view full-size cards plus both nav buttons, so cards never have to shrink to fit */
+  max-width: calc(
+    (var(--rivo-per-view) * var(--rivo-card-width)) + ((var(--rivo-per-view) - 1) * var(--rivo-gap)) +
+    (2 * var(--rivo-nav-btn)) + (2 * var(--rivo-nav-gap)) + 40px
+  );
   margin: auto;
 }
 
@@ -99,33 +110,39 @@ True horizontal carousel:
   display: none !important;
 }
 
-/* odd number of cards → force 1 per view */
-.rivo-redeem#rivo-redeem-products-{{ section.id }}.rivo-odd-count #rivo-ways-to-redeem {
-  --rivo-per-view: 1;
-}
+/* fewer rewards than the desktop target → JS caps --rivo-per-view down to the actual count */
 
-/* mobile → always 1 per view */
+/* mobile → 1 full-width card; arrows float beside it instead of taking row space */
 @media (max-width: 749px) {
   .rivo-redeem#rivo-redeem-products-{{ section.id }} #rivo-ways-to-redeem {
     --rivo-per-view: 1;
+    --rivo-card-width: 100%;
+    max-width: 100%;
+    padding: 16px 44px;
   }
   .rivo-redeem#rivo-redeem-products-{{ section.id }}
   #rivo-ways-to-redeem .rivo-lp-cards-container {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
     /* makes snap/scroll feel correct with padding */
-    scroll-padding-left: 16px;
-    scroll-padding-right: 16px;
-    max-width: 100%;
+    scroll-padding-left: 0;
+    scroll-padding-right: 0;
   }
-  
+
   .rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
+  .rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn--prev { left: 4px; }
+  .rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn--next { right: 4px; }
 }
 
-/* track */
+/* track — sized to an exact multiple of (card + gap) so a card can never peek in */
 .rivo-redeem#rivo-redeem-products-{{ section.id }}
 #rivo-ways-to-redeem .rivo-lp-cards-container {
   display: flex !important;
@@ -138,13 +155,18 @@ True horizontal carousel:
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 
-  gap: 8px;
+  box-sizing: border-box;
+  gap: var(--rivo-gap);
   padding: 0 !important;
 
   scrollbar-width: none;
   padding-top: 0 !important;
-  margin-top: 0;
-  flex: 1;
+  margin: 0;
+  flex: 0 0 auto;
+  width: min(
+    100%,
+    calc((var(--rivo-per-view) * var(--rivo-card-width)) + ((var(--rivo-per-view) - 1) * var(--rivo-gap)))
+  );
   max-width: 100%;
 }
 .rivo-redeem#rivo-redeem-products-{{ section.id }}
@@ -170,15 +192,14 @@ True horizontal carousel:
   display: none !important;
 }
 
-/* cards */
+/* cards — fixed width on desktop, driven by --rivo-card-width; 100% of the track on mobile */
 .rivo-redeem#rivo-redeem-products-{{ section.id }}
 #rivo-ways-to-redeem .rivo-card {
-  flex: 0 0 calc(
-    (100% - (var(--rivo-gap) * (var(--rivo-per-view) - 1)))
-    / var(--rivo-per-view)
-  ) !important;
+  box-sizing: border-box;
+  flex: 0 0 var(--rivo-card-width) !important;
+  width: var(--rivo-card-width) !important;
+  max-width: var(--rivo-card-width) !important;
 
-  max-width: 300px !important;
   scroll-snap-align: start;
   padding: 12px!important;
   position: relative;
@@ -201,32 +222,13 @@ True horizontal carousel:
   width: 90%;
 }
 
-{% if customer %}
-.rivo-redeem #rivo-ways-to-redeem .rivo-card-title {
-  min-height: 70px;
-}
-{% endif %}
-
 /* =========================================================
    CTA
    ========================================================= */
 
-.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon svg {
+.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon svg,
+.rivo-arrow-icon {
   display: none;
-}
-
-.rivo-redeem #rivo-ways-to-redeem .rivo-arrow-icon::after {
-  content: "Redeem now";
-  background: #000;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 10px;
 }
 
 {% unless customer %}
@@ -268,14 +270,23 @@ True horizontal carousel:
 
 .rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn {
   flex-shrink: 0;
-  width: 38px;
-  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   border-radius: 999px;
-  background: #000;
-  color: #fff;
-  border: none;
+  background: #fff;
+  color: #212428;
+  border: 1.5px solid #212428;
   cursor: pointer;
   z-index: 10;
+}
+
+.rivo-redeem#rivo-redeem-products-{{ section.id }} .rivo-carousel-btn svg {
+  width: 16px;
+  height: 16px;
+  display: block;
 }
 
 .rivo-carousel-btn--prev { order: -1; }
@@ -330,9 +341,18 @@ True horizontal carousel:
     );
   }
 
-  function applyOddRule(container) {
+  const DESKTOP_PER_VIEW = 3;
+
+  function applyPerViewRule(container, ways) {
     const cards = container.querySelectorAll('.rivo-card');
-    section.classList.toggle('rivo-odd-count', cards.length % 2 === 1);
+    const isMobile = window.matchMedia('(max-width: 749px)').matches;
+    if (isMobile) {
+      // let the mobile media query's own --rivo-per-view: 1 take over
+      ways.style.removeProperty('--rivo-per-view');
+      return;
+    }
+    const perView = cards.length > 0 ? Math.min(DESKTOP_PER_VIEW, cards.length) : DESKTOP_PER_VIEW;
+    ways.style.setProperty('--rivo-per-view', perView);
   }
 
   function initCarousel() {
@@ -340,17 +360,19 @@ True horizontal carousel:
     const ways = section.querySelector('#rivo-ways-to-redeem');
     if (!container || !ways) return;
 
-    applyOddRule(container);
+    applyPerViewRule(container, ways);
 
     if (ways.querySelector('.rivo-carousel-btn')) return;
 
     const prev = document.createElement('button');
     prev.className = 'rivo-carousel-btn rivo-carousel-btn--prev';
-    prev.innerHTML = '&#10094;';
+    prev.setAttribute('aria-label', 'Previous rewards');
+    prev.innerHTML = '<svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
     const next = document.createElement('button');
     next.className = 'rivo-carousel-btn rivo-carousel-btn--next';
-    next.innerHTML = '&#10095;';
+    next.setAttribute('aria-label', 'Next rewards');
+    next.innerHTML = '<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
     ways.append(prev, next);
 
@@ -372,7 +394,7 @@ True horizontal carousel:
 
     container.addEventListener('scroll', update);
     window.addEventListener('resize', () => {
-      applyOddRule(container);
+      applyPerViewRule(container, ways);
       update();
     });
 
@@ -398,7 +420,7 @@ True horizontal carousel:
 
 {% schema %}
 {
-  "name": "Rivo: Redeem Coupons",
+  "name": "Rivo: Redeem Coupons v2",
   "settings": [
     { "type": "color", "id": "section_bg", "label": "Background Color", "default": "#ffffff" },
     { "type": "text", "id": "section_title", "label": "Section Title", "default": "Redeem Your Rewards" },
@@ -407,6 +429,6 @@ True horizontal carousel:
     { "type": "textarea", "id": "hide_reward_ids", "label": "Hide Rewards on This Section" }
   ],
   "blocks": [{ "type": "@app" }],
-  "presets": [{ "name": "Rivo: Redeem Coupons" }]
+  "presets": [{ "name": "Rivo: Redeem Coupons v2" }]
 }
 {% endschema %}
