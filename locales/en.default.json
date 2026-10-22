@@ -906,9 +906,6 @@
       "order_summary": {
         "recurring_total_tooltip": "If you don't love Qure, we’ll refund your order anytime within the first 30 days",
         "recurring_subtotal_label": "Our Guarantee"
-      },
-      "subscriptions": {
-        "recurring_totals": " "
       }
     }
   }
