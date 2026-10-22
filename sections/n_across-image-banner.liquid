@@ -19,6 +19,11 @@
     endif
 -%}
 <section class="{{ banner_class }}">
+        {% if section.settings.video_url != blank %}
+        <video autoplay="" loop="" muted="" playsinline="">
+            <source src="{{ section.settings.video_url }}" type="video/webm" />
+        </video>
+        {% else %}
         <picture>
             {% if section.settings.image != blank %}
                 <source media="(min-width:768px)"
@@ -41,6 +46,7 @@
                     alt="{{ section.settings.image_mobile.alt | escape }}" />
             {% endif %}
         </picture>
+        {% endif %}
         <div class="container">
             <article>
 
@@ -425,6 +431,10 @@
                 {
                     "value": "quiz",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.quiz"
+                },
+                {
+                    "value": "mask",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.mask"
                 }
             ]
         },
@@ -462,6 +472,11 @@
             "type": "image_picker",
             "id": "image_mobile",
             "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "video_url",
+            "label": "t:common.video-url"
         },
         {
             "type": "text",
