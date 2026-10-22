@@ -743,13 +743,23 @@ const ensureInsurance = async () => {
 
     if (!request) return;
 
-    const [path, body, source] = request;
+    const [path, body] = request;
+    let source = request[2];
 
     insuranceSyncing = true;
     setLoading(true);
 
     try {
-        const res = await cartPost(path, withSections(body));
+        let res = await cartPost(path, withSections(body));
+
+        // The drawer markup can be stale: the products may have been removed while
+        // this request was in flight (fast removal, another tab). Never leave the
+        // insurance line alone in the cart.
+        if (source === 'insurance' && res.item_count > 0 && !hasPaidProducts(res)) {
+            res = await cartPost('cart/clear.js', withSections({}));
+            source = 'clearCart';
+        }
+
         dispatchComplete(source, { cart: res, sections: res.sections });
     }
     catch (error) {
