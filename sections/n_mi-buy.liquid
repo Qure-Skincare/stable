@@ -58,7 +58,8 @@
                         </div>
                     </div>
                     <div class="c-order-button">
-                        <button type="button" class="btn btn--primary" data-cart-items='[{"id":{{ product_variant_id }},"quantity":1{% if mi_selling_plan != blank %},"selling_plan":{{ mi_selling_plan }}{% endif %}}]'{% if product_available == false %} disabled{% endif %}>{{ section.settings.button_label | default: 'Add to Cart' }}</button>
+                        {%- comment -%} _source attributes the order to this block; data-collect-variant-id feeds the impression/click beacons (qure-skincare.js) {%- endcomment -%}
+                        <button type="button" class="btn btn--primary" data-collect-variant-id="{{ product_variant_id }}" data-cart-items='[{"id":{{ product_variant_id }},"quantity":1{% if mi_selling_plan != blank %},"selling_plan":{{ mi_selling_plan }}{% endif %},"properties":{"_source":"home_mi_buy"}}]'{% if product_available == false %} disabled{% endif %}>{{ section.settings.button_label | default: 'Add to Cart' }}</button>
                     </div>
                     {% if section.settings.disclaimer != blank %}
                         <small>{{ section.settings.disclaimer }}</small>
