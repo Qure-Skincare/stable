@@ -1,0 +1,655 @@
+{% comment %}
+RIVO: Ways to Earn grouped three-column layout. Mobile: tap-to-expand accordion.
+Paste into a Shopify section file.
+{% endcomment %}
+{%- liquid
+  assign icon_size = section.settings.icon_size | default: 26
+  assign pill_bg = section.settings.pill_bg_v2 | default: '#FFEDE7'
+  assign pill_text = section.settings.pill_text_v2 | default: '#17171B'
+  assign row_height = section.settings.row_height_v5 | default: 54
+  assign row_gap = section.settings.row_gap_v5 | default: 8
+-%}
+<div
+  id="rivo-earn-{{ section.id }}"
+  class="rivo-earn"
+  style="background-color: {{ section.settings.section_bg }}"
+>
+  {% if section.settings.section_title != blank or section.settings.section_subtitle != blank %}
+    <div class="rivo-earn__header">
+      {% if section.settings.section_title != blank %}
+        <h2 class="rivo-earn__title">{{ section.settings.section_title }}</h2>
+      {% endif %}
+      {% if section.settings.section_subtitle != blank %}
+        <p class="rivo-earn__subtitle">{{ section.settings.section_subtitle }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="rivo-earn__panel">
+    {%- comment -%} ---------- COLUMN 1 ---------- {%- endcomment -%}
+    <div class="rivo-earn__col" data-earn-col-index="0" data-collapsed="false">
+      <div class="rivo-earn__col-head" role="button" tabindex="0" aria-expanded="true" aria-controls="rivo-earn-body-{{ section.id }}-0">
+        <div class="rivo-earn__col-head-text">
+          <div class="rivo-earn__col-title">{{ section.settings.col1_title }}</div>
+          {% if section.settings.col1_subtitle != blank %}<div class="rivo-earn__col-subtitle">{{ section.settings.col1_subtitle }}</div>{% endif %}
+        </div>
+        {% if section.settings.col1_badge != blank %}
+          <span class="rivo-earn__badge">{{ section.settings.col1_badge }}</span>
+        {% elsif section.settings.col1_icon != blank %}
+          <span class="rivo-earn__col-icon">
+            {{ section.settings.col1_icon | image_url: width: 160 | image_tag: loading: 'lazy', alt: section.settings.col1_title }}
+          </span>
+        {% else %}
+          <span class="rivo-earn__col-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="{{ icon_size }}" height="{{ icon_size }}" fill="none"><path d="M11 3.5c.3 2.9 1.6 4.2 4.5 4.5-2.9.3-4.2 1.6-4.5 4.5-.3-2.9-1.6-4.2-4.5-4.5 2.9-.3 4.2-1.6 4.5-4.5Z" fill="currentColor"/><path d="M17.5 13v3.5M17.5 20v1.5M14 17.5h2M19.5 17.5H21M15.2 15.2l1.1 1.1M18.9 18.9l1 1M19.9 15.2l-1.1 1.1M16.3 18.9l-1.1 1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+        {% endif %}
+        <span class="rivo-earn__col-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+      </div>
+      <div class="rivo-earn__col-body" id="rivo-earn-body-{{ section.id }}-0">
+        <div class="rivo-earn__col-body-inner">
+          <div class="rivo-earn__list" data-earn-list></div>
+        </div>
+      </div>
+    </div>
+    {%- comment -%} ---------- COLUMN 2 ---------- {%- endcomment -%}
+    <div class="rivo-earn__col" data-earn-col-index="1" data-collapsed="true">
+      <div class="rivo-earn__col-head" role="button" tabindex="0" aria-expanded="false" aria-controls="rivo-earn-body-{{ section.id }}-1">
+        <div class="rivo-earn__col-head-text">
+          <div class="rivo-earn__col-title">{{ section.settings.col2_title }}</div>
+          {% if section.settings.col2_subtitle != blank %}<div class="rivo-earn__col-subtitle">{{ section.settings.col2_subtitle }}</div>{% endif %}
+        </div>
+        {% if section.settings.col2_badge != blank %}
+          <span class="rivo-earn__badge">{{ section.settings.col2_badge }}</span>
+        {% elsif section.settings.col2_icon != blank %}
+          <span class="rivo-earn__col-icon">
+            {{ section.settings.col2_icon | image_url: width: 160 | image_tag: loading: 'lazy', alt: section.settings.col2_title }}
+          </span>
+        {% else %}
+          <span class="rivo-earn__col-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="{{ icon_size }}" height="{{ icon_size }}" fill="none"><circle cx="12" cy="12" r="2.6" fill="currentColor"/><path d="M12 2.5v3.6M12 17.9v3.6M2.5 12h3.6M17.9 12h3.6M5.2 5.2l2.6 2.6M16.2 16.2l2.6 2.6M18.8 5.2l-2.6 2.6M7.8 16.2l-2.6 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+        {% endif %}
+        <span class="rivo-earn__col-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+      </div>
+      <div class="rivo-earn__col-body" id="rivo-earn-body-{{ section.id }}-1">
+        <div class="rivo-earn__col-body-inner">
+          <div class="rivo-earn__list" data-earn-list></div>
+        </div>
+      </div>
+    </div>
+    {%- comment -%} ---------- COLUMN 3 ---------- {%- endcomment -%}
+    <div class="rivo-earn__col" data-earn-col-index="2" data-collapsed="true">
+      <div class="rivo-earn__col-head" role="button" tabindex="0" aria-expanded="false" aria-controls="rivo-earn-body-{{ section.id }}-2">
+        <div class="rivo-earn__col-head-text">
+          <div class="rivo-earn__col-title">{{ section.settings.col3_title }}</div>
+          {% if section.settings.col3_subtitle != blank %}<div class="rivo-earn__col-subtitle">{{ section.settings.col3_subtitle }}</div>{% endif %}
+        </div>
+        {% if section.settings.col3_badge != blank %}
+          <span class="rivo-earn__badge rivo-earn__badge--accent">{{ section.settings.col3_badge }}</span>
+        {% elsif section.settings.col3_icon != blank %}
+          <span class="rivo-earn__col-icon">
+            {{ section.settings.col3_icon | image_url: width: 160 | image_tag: loading: 'lazy', alt: section.settings.col3_title }}
+          </span>
+        {% endif %}
+        <span class="rivo-earn__col-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+      </div>
+      <div class="rivo-earn__col-body" id="rivo-earn-body-{{ section.id }}-2">
+        <div class="rivo-earn__col-body-inner">
+          <div class="rivo-earn__list" data-earn-list></div>
+          {%- comment -%} hardcoded Refer a friend row; the matching Rivo card is left out of the columns (see assignAndStyle) {%- endcomment -%}
+          {% if section.settings.referral_row_match != blank %}
+            {%- assign refer_link = section.settings.refer_row_link | default: '/pages/refer-a-friend' -%}
+            <a class="rivo-earn__static-row" href="{{ refer_link }}">
+              <span class="rivo-earn__static-title">{{ section.settings.referral_row_match }}<span class="rivo-earn-arrow" aria-hidden="true">↗</span></span>
+              {% if section.settings.referral_row_pill != blank %}
+                <span class="rivo-earn-value rivo-earn-pill"><span>{{ section.settings.referral_row_pill }}</span></span>
+              {% endif %}
+            </a>
+          {% endif %}
+          {%- comment -%} display-only row (no Rivo earning rule behind it), e.g. Subscribe · Double points {%- endcomment -%}
+          {% if section.settings.subscribe_title != blank %}
+            {% if section.settings.subscribe_link != blank %}<a class="rivo-earn__static-row" href="{{ section.settings.subscribe_link }}">{% else %}<div class="rivo-earn__static-row">{% endif %}
+              <span class="rivo-earn__static-title">{{ section.settings.subscribe_title }}{% if section.settings.subscribe_link != blank %}<span class="rivo-earn-arrow" aria-hidden="true">↗</span>{% endif %}</span>
+              <span class="rivo-earn-value rivo-earn-pill">
+                <span class="rivo-earn-star" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.6 12.8 7.5 21l4.5-2.6 4.5 2.6-1.1-8.2"/></svg></span>
+                <span>{{ section.settings.subscribe_pill }}</span>
+              </span>
+            {% if section.settings.subscribe_link != blank %}</a>{% else %}</div>{% endif %}
+          {% endif %}
+          {% if section.settings.referral_title != blank or section.settings.referral_image != blank %}
+            <div class="rivo-earn__referral">
+              <div class="rivo-earn__referral-row">
+                {% if section.settings.referral_title != blank %}
+                  <span class="rivo-earn__referral-title">{{ section.settings.referral_title }}</span>
+                {% endif %}
+                {% if section.settings.referral_button_text != blank %}
+                  <a class="rivo-earn__referral-btn" href="{{ section.settings.referral_button_link | default: '#' }}">{{ section.settings.referral_button_text }}</a>
+                {% endif %}
+              </div>
+              {% if section.settings.referral_image != blank %}
+                <div class="rivo-earn__referral-media">
+                  {{ section.settings.referral_image | image_url: width: 900 | image_tag: loading: 'lazy', alt: section.settings.referral_title }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="rivo-app-block-wrapper" class="rivo-earn__app-shell">
+    {% for block in section.blocks %}
+      <div class="rivo-app-block" {{ block.shopify_attributes }}>{% render block %}</div>
+    {% endfor %}
+  </div>
+</div>
+<script type="application/json" id="rivo-earn-config-{{ section.id }}">
+{
+  "earnedLabel": {{ section.settings.earned_label | default: 'Earned' | json }},
+  "ptsSuffix": {{ section.settings.pts_suffix | default: 'pts' | json }},
+  "rowHeight": {{ row_height }},
+  "rowGap": {{ row_gap }},
+  "referralMatch": {{ section.settings.referral_row_match | default: '' | json }},
+  "columns": [
+    { "match": {{ section.settings.col1_match | default: '' | split: ',' | json }} },
+    { "match": {{ section.settings.col2_match | default: '' | split: ',' | json }} },
+    { "match": {{ section.settings.col3_match | default: '' | split: ',' | json }} }
+  ]
+}
+</script>
+<style>
+.rivo-earn#rivo-earn-{{ section.id }},
+#rivo-earn-{{ section.id }}.rivo-earn {
+  --earn-panel: {{ section.settings.panel_bg | default: '#FFFFFF' }};
+  --earn-head-bg: {{ section.settings.col_head_bg | default: '#F5F4F2' }};
+  --earn-ink: {{ section.settings.ink | default: '#17171B' }};
+  --earn-muted: {{ section.settings.muted | default: '#ADADAD' }};
+  --earn-border: {{ section.settings.border_color | default: '#E4E4E4' }};
+  --earn-accent: {{ section.settings.accent | default: '#FF5A2D' }};
+  --earn-badge-bg: {{ section.settings.badge_bg | default: '#F5F4F2' }};
+  --earn-badge-accent-bg: {{ section.settings.badge_accent_bg | default: '#FFFFFF' }};
+  --earn-badge-accent-text: {{ section.settings.badge_accent_text | default: '#FF5A2D' }};
+  --earn-cta-bg: {{ section.settings.cta_bg | default: '#17171B' }};
+  --earn-cta-text: {{ section.settings.cta_text | default: '#FFFFFF' }};
+  --earn-icon-size: {{ icon_size }}px;
+  --earn-row-height: {{ row_height }}px;
+  --earn-row-gap: {{ row_gap }}px;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--earn-panel);
+  font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 56px 24px;
+}
+.rivo-earn *, .rivo-earn { box-sizing: border-box; }
+.rivo-earn__header { max-width: 720px; margin: 0 auto 40px; text-align: center; }
+.rivo-earn__title {
+  margin: 0 0 12px; color: var(--earn-ink); font-family: 'Canela', Georgia, serif;
+  font-size: 38px; font-weight: 300; line-height: 42px;
+}
+.rivo-earn__subtitle { margin: 0; color: var(--earn-ink); font-size: 16px; line-height: 1.5; }
+/* equal-height columns: stretch is the grid default, and each column is a flex
+   container whose list grows to fill, so all three bottoms line up */
+.rivo-earn__panel {
+  max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+  border: 1px solid var(--earn-border); border-radius: 24px; background: var(--earn-panel); overflow: hidden;
+}
+.rivo-earn__col {
+  display: flex; flex-direction: column;
+  padding: 12px 14px; border-right: 1px solid var(--earn-border); min-width: 0;
+}
+.rivo-earn__col:last-child { border-right: 0; }
+.rivo-earn__col-head {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 16px 18px; border-radius: 14px; background: var(--earn-head-bg);
+}
+.rivo-earn__col-title { color: var(--earn-ink); font-size: 20px; font-weight: 500; line-height: 1.15; letter-spacing: normal; }
+.rivo-earn__col-subtitle { margin-top: 4px; color: var(--earn-muted); font-size: 15px; line-height: 1.3; }
+.rivo-earn__col-icon {
+  flex: 0 0 auto; color: var(--earn-ink); line-height: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+/* uploaded icon images — PNG/JPG/SVG all render at the same box */
+.rivo-earn__col-icon img {
+  display: block; width: var(--earn-icon-size); height: var(--earn-icon-size);
+  object-fit: contain; max-width: none;
+}
+.rivo-earn__badge {
+  flex: 0 0 auto; padding: 7px 14px; border-radius: 999px; background: var(--earn-badge-bg);
+  color: var(--earn-ink); font-size: 13px; font-weight: 600; white-space: nowrap;
+}
+.rivo-earn__badge--accent {
+  background: var(--earn-badge-accent-bg); color: var(--earn-badge-accent-text);
+  border: 1.5px solid var(--earn-badge-accent-text); font-weight: 600;
+}
+/* mobile-only accordion arrow, hidden on desktop */
+.rivo-earn__col-arrow {
+  display: none; flex: 0 0 auto; width: 34px; height: 34px;
+  align-items: center; justify-content: center;
+  border-radius: 50%; border: 1.5px solid var(--earn-ink); color: var(--earn-ink);
+  transition: transform .25s ease;
+}
+/* pass-through on desktop so the flex column layout below is unaffected */
+.rivo-earn__col-body, .rivo-earn__col-body-inner { display: contents; }
+/* Fixed rhythm prevents flex redistribution. */
+.rivo-earn__list {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: minmax(var(--earn-row-height), auto);
+  align-content: start;
+  justify-content: stretch;
+  gap: var(--earn-row-gap);
+  min-height: 0;
+  height: auto;
+  padding: 6px 0;
+}
+/* real Rivo cards — layout-critical properties are set inline from JS (see hard() below),
+   because Rivo ships its own id-scoped !important rules on .rivo-card/.rivo-card-body that
+   beat a plain class rule here even with !important. This block only carries what's safe
+   to leave as a stylesheet fallback. */
+.rivo-earn .rivo-earn__list .rivo-card-title {
+  color: var(--earn-ink); font-size: 17px; font-weight: 400; line-height: 1.3; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+/* a wrapper we create and own outright, so the title/value split can't be fought by Rivo's CSS */
+.rivo-earn .rivo-earn-row-inner {
+  display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+  gap: 12px; width: 100%;
+}
+.rivo-earn .rivo-earn-arrow { display: none; margin-left: 8px; color: var(--earn-ink); font-size: 20px; line-height: 1; }
+.rivo-earn .rivo-earn-value { flex: 0 0 auto; font-size: 17px; font-weight: 400; white-space: nowrap; }
+.rivo-earn .rivo-earn-value--earned { color: var(--earn-muted); font-size: 16px; }
+.rivo-earn .rivo-earn__list .rivo-card.rivo-earn-row--done .rivo-card-title { color: var(--earn-muted); }
+/* ===== THE PILL — pink background + orange outline star, in EVERY column.
+   Hardcoded fallbacks so no stale saved setting can turn these black again. ===== */
+.rivo-earn .rivo-earn-pill,
+.rivo-earn .rivo-earn__list .rivo-card .rivo-earn-pill {
+  display: inline-flex !important; align-items: center; gap: 6px;
+  padding: 7px 15px !important; border-radius: 999px !important;
+  font-weight: 600; font-size: 16px; line-height: 1;
+  background: {{ pill_bg }} !important;
+  color: {{ pill_text }} !important;
+  border: 0 !important; box-shadow: none !important;
+}
+.rivo-earn .rivo-earn-star { flex: 0 0 auto; color: var(--earn-accent) !important; display: inline-flex; }
+.rivo-earn .rivo-earn-star svg { display: block; }
+/* display-only row (Subscribe · Double points): mirrors the Rivo card rows above it */
+.rivo-earn__static-row {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: var(--earn-row-height);
+  margin-top: calc(var(--earn-row-gap) - 6px);
+  padding: 12px 4px;
+  color: var(--earn-ink); text-decoration: none;
+}
+.rivo-earn__static-title {
+  min-width: 0; color: var(--earn-ink); font-size: 17px; font-weight: 400; line-height: 1.3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.rivo-earn .rivo-earn__static-title .rivo-earn-arrow { display: inline; }
+.rivo-earn__static-row + .rivo-earn__static-row { margin-top: var(--earn-row-gap); }
+/* themes often underline links on hover/focus, kill it on the row and everything inside it */
+.rivo-earn a.rivo-earn__static-row,
+.rivo-earn a.rivo-earn__static-row:hover,
+.rivo-earn a.rivo-earn__static-row:focus,
+.rivo-earn a.rivo-earn__static-row:visited,
+.rivo-earn a.rivo-earn__static-row * { text-decoration: none !important; background-image: none; }
+/* referral card: title + button on one row, full-width image underneath */
+/* desktop: card grows to fill the rest of the column so its bottom lines up with the last row
+   in the other columns (6px bottom margin = the list's bottom padding). The image doesn't add
+   height of its own, it just fills whatever space is left. */
+.rivo-earn__referral {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--earn-row-gap);
+  margin-bottom: 6px;
+  padding: 0;
+  border-radius: 16px;
+  background: var(--earn-head-bg);
+  overflow: hidden;
+}
+.rivo-earn__referral-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  margin: 0;
+  padding: 12px 12px 12px 18px;
+}
+.rivo-earn__referral-title {
+  min-width: 0;
+  color: var(--earn-ink);
+  font-family: 'Canela', Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+.rivo-earn__referral-btn {
+  flex: 0 0 auto; padding: 13px 20px; border-radius: 999px; background: var(--earn-cta-bg);
+  color: var(--earn-cta-text); font-size: 15px; font-weight: 500; line-height: 1; text-decoration: none; white-space: nowrap;
+}
+.rivo-earn__referral-media { position: relative; flex: 1 1 auto; min-height: 0; width: 100%; border-radius: 16px; overflow: hidden; line-height: 0; }
+.rivo-earn__referral-media img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.rivo-earn__app-shell { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 989px) {
+  /* mobile: grey section, each column its own bordered card */
+  .rivo-earn#rivo-earn-{{ section.id }} { background-color: {{ section.settings.section_bg_mobile }} !important; }
+  .rivo-earn__panel { grid-template-columns: 1fr; gap: 14px; border: 0; border-radius: 0; background: transparent; overflow: visible; }
+  .rivo-earn__col {
+    border: 2px solid var(--earn-border); border-radius: 24px;
+    background: {{ section.settings.section_bg_mobile }}; box-shadow: inset 0 0 0 2px #FFFFFF;
+  }
+  .rivo-earn__col:last-child { border-right: 2px solid var(--earn-border); }
+  .rivo-earn__col-head { background: transparent; border-radius: 0; }
+  .rivo-earn__list { justify-content: flex-start; }
+  /* accordion: arrow replaces the icon/badge, header becomes tappable */
+  .rivo-earn__col-icon, .rivo-earn__badge { display: none !important; }
+  .rivo-earn__col-arrow { display: inline-flex; }
+  .rivo-earn__col-head { cursor: pointer; }
+  .rivo-earn__col-head[aria-expanded="true"] .rivo-earn__col-arrow { transform: rotate(180deg); }
+  .rivo-earn__col-body {
+    display: grid; grid-template-rows: 1fr; transition: grid-template-rows .3s ease;
+  }
+  .rivo-earn__col-body-inner { display: block; overflow: hidden; min-height: 0; }
+  .rivo-earn__col[data-collapsed="true"] .rivo-earn__col-body { grid-template-rows: 0fr; }
+  /* mobile: no columns to line up with, so the image keeps its own 3:1 shape */
+  .rivo-earn__referral { margin-bottom: 0; }
+  .rivo-earn__referral-media { flex: none; aspect-ratio: 3 / 1; }
+}
+@media (max-width: 749px) {
+  .rivo-earn#rivo-earn-{{ section.id }} { padding: 48px 16px; }
+  .rivo-earn__title { font-size: 26px; }
+  .rivo-earn__col { padding: 8px 12px; border-radius: 22px; }
+  .rivo-earn__col-head { padding: 10px 6px; }
+  .rivo-earn__col-title { font-size: {{ section.settings.col_title_size_mobile }}px; }
+  .rivo-earn__referral-row { padding: 10px 10px 10px 14px; }
+  .rivo-earn__referral-title { font-size: 17px; }
+  .rivo-earn__referral-btn { padding: 11px 16px; font-size: 14px; }
+}
+</style>
+<script>
+(function () {
+  var root = document.getElementById('rivo-earn-{{ section.id }}');
+  var configNode = document.getElementById('rivo-earn-config-{{ section.id }}');
+  if (!root || !configNode) return;
+  var config = { columns: [] };
+  try { config = JSON.parse(configNode.textContent); } catch (e) { console.error('[rivo-earn] invalid config', e); }
+  var PILL_BG = {{ pill_bg | json }};
+  var PILL_TEXT = {{ pill_text | json }};
+  var ROW_HEIGHT = Math.max(44, Number(config.rowHeight) || 54);
+  var ROW_GAP = Number(config.rowGap);
+  if (!isFinite(ROW_GAP)) ROW_GAP = 8;
+  ROW_GAP = Math.max(0, ROW_GAP);
+  var STAR_SVG = '<span class="rivo-earn-star"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3.6l2.63 5.33 5.88.86-4.25 4.15 1 5.86L12 17.03l-5.26 2.77 1-5.86L3.5 9.79l5.88-.86L12 3.6Z"/></svg></span>';
+  var busy = false, retryCount = 0;
+  function norm(s) {
+    return String(s || '').replace(/ /g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+  }
+  function hard(el, props) {
+    if (!el) return;
+    Object.keys(props).forEach(function (k) { el.style.setProperty(k, props[k], 'important'); });
+  }
+  function hideAlpine(el) {
+    // never `display` on Alpine-toggled Rivo nodes — clip instead
+    hard(el, { opacity: '0', width: '0', height: '0', margin: '0', padding: '0', overflow: 'hidden', 'pointer-events': 'none' });
+  }
+  function matchColumn(title) {
+    var t = norm(title);
+    if (!t) return -1;
+    // pass 1: exact match only, so a short entry ("Subscribe") can't steal a longer title
+    // ("Subscribe to emails") that has its own exact entry elsewhere
+    for (var i = 0; i < config.columns.length; i++) {
+      var list = config.columns[i].match || [];
+      for (var j = 0; j < list.length; j++) {
+        if (norm(list[j]) === t) return i;
+      }
+    }
+    // pass 2: substring fallback — take the LONGEST matching entry across all columns,
+    // so a short entry ("Subscribe") can't outrank a more specific one on a different card
+    var best = -1, bestLen = 0;
+    for (var i2 = 0; i2 < config.columns.length; i2++) {
+      var list2 = config.columns[i2].match || [];
+      for (var j2 = 0; j2 < list2.length; j2++) {
+        var m = norm(list2[j2]);
+        if (m && (t.indexOf(m) !== -1 || m.indexOf(t) !== -1) && m.length > bestLen) {
+          best = i2; bestLen = m.length;
+        }
+      }
+    }
+    return best;
+  }
+  function isCompleted(card) {
+    if (card.className && /completed/i.test(card.className)) return true;
+    if (/\b(completed|earned)\b/i.test(card.textContent || '')) return true;
+    return false;
+  }
+  function styleCard(card, colIndex) {
+    var titleEl = card.querySelector('.rivo-card-title');
+    var descEl = card.querySelector('.rivo-card-description');
+    var bodyEl = card.querySelector('.rivo-card-body');
+    var iconEl = card.querySelector('.rivo-card-icon');
+    var arrowEl = card.querySelector('.rivo-arrow-icon');
+    hideAlpine(arrowEl);
+    hard(iconEl, { display: 'none' });
+    var completed = isCompleted(card);
+    card.classList.toggle('rivo-earn-row--done', completed);
+    // Rivo's real description text reads like "25 Points" or "Point for every $1 spent" —
+    // cache the first-seen text so it survives Rivo swapping the node's content on completion
+    var cleaned = String((descEl && descEl.textContent) || '').replace(/ /g, ' ').trim();
+    if (cleaned && !card.getAttribute('data-earn-value')) card.setAttribute('data-earn-value', cleaned);
+    var value = card.getAttribute('data-earn-value') || cleaned;
+    // only treat it as a number when the WHOLE description is a number (optionally followed by
+    // "pt/pts/point/points"), so custom descriptions like "1 pt / $1" show in full
+    var numMatch = value.match(/^([\d,.]+)\s*(points?|pts?)?$/i);
+    var isNumeric = !!numMatch;
+    var displayValue = isNumeric ? numMatch[1] : value;
+    hard(descEl, { display: 'none' });
+    var valueSpan = card.querySelector('.rivo-earn-value');
+    if (!valueSpan) {
+      valueSpan = document.createElement('span');
+      valueSpan.className = 'rivo-earn-value';
+    }
+    if (completed) {
+      valueSpan.className = 'rivo-earn-value rivo-earn-value--earned';
+      valueSpan.textContent = (config.earnedLabel || 'Earned') + ' · ' + displayValue + (isNumeric ? ' ' + (config.ptsSuffix || 'pts') : '');
+      valueSpan.removeAttribute('style');
+    } else {
+      // same pink pill + star in every column — also forced inline, so nothing can override it
+      valueSpan.className = 'rivo-earn-value rivo-earn-pill';
+      valueSpan.innerHTML = STAR_SVG + '<span>' + displayValue + '</span>';
+      hard(valueSpan, { background: PILL_BG, color: PILL_TEXT, border: '0', 'box-shadow': 'none' });
+    }
+    if (titleEl) {
+      var mark = titleEl.querySelector('.rivo-earn-arrow');
+      var showArrow = !!arrowEl && !completed;
+      if (showArrow && !mark) {
+        mark = document.createElement('span');
+        mark.className = 'rivo-earn-arrow';
+        mark.textContent = '↗';
+        titleEl.appendChild(mark);
+      }
+      if (mark) hard(mark, { display: showArrow ? 'inline' : 'none' });
+      hard(titleEl, {
+        color: completed ? 'var(--earn-muted)' : 'var(--earn-ink)',
+        margin: '0', padding: '0', 'text-align': 'left', 'white-space': 'nowrap'
+      });
+    }
+    // build our own row wrapper and move the title + value into it — the reliable way to
+    // force a left/right split without fighting Rivo's own flex CSS on .rivo-card /
+    // .rivo-card-body (an id-scoped !important rule there beats a class rule here even
+    // with !important; inline styles are the one thing that outranks it)
+    var rowInner = card.querySelector('.rivo-earn-row-inner');
+    if (!rowInner) {
+      rowInner = document.createElement('span');
+      rowInner.className = 'rivo-earn-row-inner';
+      card.insertBefore(rowInner, card.firstChild);
+    }
+    if (titleEl && titleEl.parentNode !== rowInner) rowInner.appendChild(titleEl);
+    if (valueSpan.parentNode !== rowInner) rowInner.appendChild(valueSpan);
+    hard(bodyEl, { display: 'none' });
+    hard(card, {
+      display: 'flex', 'flex-direction': 'row', 'align-items': 'center',
+      'justify-content': 'flex-start', flex: '0 0 auto', gap: '0', width: '100%', 'max-width': 'none',
+      height: 'auto', 'min-height': ROW_HEIGHT + 'px', 'max-height': 'none',
+      margin: '0', padding: '12px 4px', background: 'transparent', border: '0',
+      'border-radius': '0', 'box-shadow': 'none', 'text-align': 'left',
+      cursor: completed ? 'default' : 'pointer'
+    });
+  }
+  function assignAndStyle() {
+    var source = root.querySelector('#rivo-ways-to-earn');
+    var track = source && source.querySelector('.rivo-lp-cards-container');
+    if (!source || !track) return false;
+    var cards = track.querySelectorAll('.rivo-card');
+    if (!cards.length) return false;
+    var unmatched = [];
+    var refMatch = norm(config.referralMatch);
+    Array.prototype.forEach.call(cards, function (card) {
+      var titleEl = card.querySelector('.rivo-card-title');
+      var title = titleEl ? titleEl.textContent : '';
+      // Refer a friend is a hardcoded row now, so its Rivo card stays in the hidden source
+      if (refMatch && norm(title).indexOf(refMatch) !== -1) return;
+      var colIndex = matchColumn(title);
+      if (colIndex === -1) { unmatched.push(title); colIndex = 0; }
+      var list = root.querySelector('.rivo-earn__col[data-earn-col-index="' + colIndex + '"] [data-earn-list]');
+      if (list) {
+        hard(list, {
+          display: 'grid', 'grid-template-columns': 'minmax(0, 1fr)',
+          'grid-auto-rows': 'minmax(' + ROW_HEIGHT + 'px, auto)',
+          'align-content': 'start', 'justify-content': 'stretch',
+          gap: ROW_GAP + 'px', flex: '0 0 auto',
+          height: 'auto', 'min-height': '0', padding: '6px 0'
+        });
+        if (card.parentNode !== list) list.appendChild(card);
+      }
+      styleCard(card, colIndex);
+    });
+    if (unmatched.length) {
+      console.warn('[rivo-earn] unmatched card title(s), defaulted to column 1 — add to a column’s match list:', unmatched);
+    }
+    // hide leftover heading/description nodes and the now-empty native wrapper without `display`
+    var leftoverTitle = source.querySelector('.rivo-lp-section-title, h2, h3');
+    hideAlpine(leftoverTitle);
+    hard(source, { opacity: '0', height: '0', margin: '0', padding: '0', overflow: 'hidden', 'pointer-events': 'none' });
+    return true;
+  }
+  function render() {
+    if (busy) return;
+    busy = true;
+    try { assignAndStyle(); }
+    catch (e) { console.error('[rivo-earn] render failed', e); }
+    window.requestAnimationFrame(function () { busy = false; });
+  }
+  function setupAccordion() {
+    var cols = root.querySelectorAll('.rivo-earn__col');
+    function setState(col, open) {
+      col.setAttribute('data-collapsed', open ? 'false' : 'true');
+      var head = col.querySelector('.rivo-earn__col-head');
+      if (head) head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    function toggle(target) {
+      var opening = target.getAttribute('data-collapsed') === 'true';
+      Array.prototype.forEach.call(cols, function (col) { setState(col, opening && col === target); });
+    }
+    Array.prototype.forEach.call(cols, function (col) {
+      var head = col.querySelector('.rivo-earn__col-head');
+      if (!head) return;
+      head.addEventListener('click', function () { toggle(col); });
+      head.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+          e.preventDefault();
+          toggle(col);
+        }
+      });
+    });
+  }
+  setupAccordion();
+  render();
+  // short poll picks up Rivo's cards once the app block finishes rendering (no MutationObserver)
+  var poll = window.setInterval(function () {
+    retryCount += 1;
+    render();
+    if (retryCount >= 60) window.clearInterval(poll);
+  }, 250);
+  document.addEventListener('shopify:section:load', render);
+})();
+</script>
+{% schema %}
+{
+  "name": "Rivo: Ways to Earn v19",
+  "settings": [
+    { "type": "color", "id": "section_bg", "label": "Background Color", "default": "#ffffff" },
+    { "type": "color", "id": "section_bg_mobile", "label": "Mobile background color", "default": "#F5F5F5" },
+    { "type": "text", "id": "section_title", "label": "Section Title", "default": "Ways to Earn" },
+    { "type": "textarea", "id": "section_subtitle", "label": "Section Subtitle", "default": "Every purchase, referral, and review gets you closer to your next reward." },
+    { "type": "text", "id": "earned_label", "label": "\"Earned\" label", "default": "Earned" },
+    { "type": "text", "id": "pts_suffix", "label": "Points suffix", "default": "pts" },
+    { "type": "range", "id": "col_title_size_mobile", "label": "Mobile group title size", "min": 16, "max": 40, "step": 1, "unit": "px", "default": 26 },
+    { "type": "range", "id": "icon_size", "label": "Column icon size", "min": 16, "max": 64, "step": 2, "unit": "px", "default": 26 },
+    { "type": "range", "id": "row_height_v5", "label": "Minimum row height", "min": 44, "max": 72, "step": 2, "unit": "px", "default": 54 },
+    { "type": "range", "id": "row_gap_v5", "label": "Space between rows", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 8 },
+    { "type": "header", "content": "Column 1" },
+    { "type": "text", "id": "col1_title", "label": "Title", "default": "Get Started" },
+    { "type": "text", "id": "col1_subtitle", "label": "Subtitle", "default": "Set up in minutes" },
+    { "type": "image_picker", "id": "col1_icon", "label": "Icon image (PNG/JPG/SVG)", "info": "Upload your own icon. Leave empty for the built-in sparkle icon. A badge overrides the icon." },
+    { "type": "text", "id": "col1_badge", "label": "Badge (overrides icon)" },
+    { "type": "textarea", "id": "col1_match", "label": "Earn action titles for this column (comma separated)", "default": "Sign up, Subscribe to Emails, Sign Up to SMS, Download QURE app, VIP Tier Upgrade Points" },
+    { "type": "header", "content": "Column 2" },
+    { "type": "text", "id": "col2_title", "label": "Title", "default": "Join the Community" },
+    { "type": "text", "id": "col2_subtitle", "label": "Subtitle", "default": "Follow along everywhere" },
+    { "type": "image_picker", "id": "col2_icon", "label": "Icon image (PNG/JPG/SVG)", "info": "Upload your own icon. Leave empty for the built-in burst icon. A badge overrides the icon." },
+    { "type": "text", "id": "col2_badge", "label": "Badge (overrides icon)" },
+    { "type": "textarea", "id": "col2_match", "label": "Earn action titles for this column (comma separated)", "default": "Follow on Instagram, Follow on TikTok, Follow us on Facebook, Subscribe to our YouTube Channel, Join our Private Community" },
+    { "type": "header", "content": "Column 3" },
+    { "type": "text", "id": "col3_title", "label": "Title", "default": "Big Rewards" },
+    { "type": "text", "id": "col3_subtitle", "label": "Subtitle", "default": "Grow with us" },
+    { "type": "image_picker", "id": "col3_icon", "label": "Icon image (used only if badge is empty)" },
+    { "type": "text", "id": "col3_badge", "label": "Badge", "default": "Highest value" },
+    { "type": "textarea", "id": "col3_match", "label": "Earn action titles for this column (comma separated)", "default": "Make a purchase, Celebrate a birthday, Post a before/after photo" },
+    { "type": "header", "content": "Extra row (column 3, display only)" },
+    { "type": "paragraph", "content": "Shows a row that isn't a Rivo earning rule, like subscription double points. Leave the title empty to hide it." },
+    { "type": "text", "id": "subscribe_title", "label": "Title", "default": "Subscribe" },
+    { "type": "text", "id": "subscribe_pill", "label": "Pill text", "default": "Double points" },
+    { "type": "url", "id": "subscribe_link", "label": "Link", "default": "/collections/all", "info": "Where the row goes when tapped (e.g. a subscription collection). Clear it to make the row non-clickable." },
+    { "type": "header", "content": "Referral banner (bottom of column 3)" },
+    { "type": "text", "id": "referral_title", "label": "Title", "default": "Give 10% off & get 10% off" },
+    { "type": "text", "id": "referral_button_text", "label": "Button text", "default": "Invite Friends" },
+    { "type": "url", "id": "referral_button_link", "label": "Button link" },
+    { "type": "image_picker", "id": "referral_image", "label": "Image" },
+    { "type": "header", "content": "Refer a friend row (column 3)" },
+    { "type": "text", "id": "referral_row_match", "label": "Title", "default": "Refer a friend", "info": "Also hides the Rivo earn action with this name so it doesn't show twice. Leave empty to show the Rivo card instead." },
+    { "type": "text", "id": "referral_row_pill", "label": "Pill text", "default": "10% off" },
+    { "type": "url", "id": "refer_row_link", "label": "Link", "info": "Leave empty to use /pages/refer-a-friend." },
+    { "type": "header", "content": "Points pill (all 3 columns)" },
+    { "type": "color", "id": "pill_bg_v2", "label": "Pill background", "default": "#FFEDE7" },
+    { "type": "color", "id": "pill_text_v2", "label": "Pill number text", "default": "#17171B" },
+    { "type": "color", "id": "accent", "label": "Star color", "default": "#FF5A2D" },
+    { "type": "header", "content": "Other colors" },
+    { "type": "color", "id": "panel_bg", "label": "Section background", "default": "#FFFFFF" },
+    { "type": "color", "id": "col_head_bg", "label": "Column header / referral background", "default": "#F5F4F2" },
+    { "type": "color", "id": "ink", "label": "Primary text", "default": "#17171B" },
+    { "type": "color", "id": "muted", "label": "Secondary / earned text", "default": "#ADADAD" },
+    { "type": "color", "id": "border_color", "label": "Panel dividers / mobile card border", "default": "#E4E4E4" },
+    { "type": "color", "id": "badge_bg", "label": "Badge background", "default": "#F5F4F2" },
+    { "type": "color", "id": "badge_accent_bg", "label": "Accent badge background", "default": "#FFFFFF" },
+    { "type": "color", "id": "badge_accent_text", "label": "Accent badge text / border", "default": "#FF5A2D" },
+    { "type": "color", "id": "cta_bg", "label": "Invite button background", "default": "#17171B" },
+    { "type": "color", "id": "cta_text", "label": "Invite button text", "default": "#FFFFFF" }
+  ],
+  "blocks": [{ "type": "@app" }],
+  "max_blocks": 1,
+  "presets": [{ "name": "Rivo: Ways to Earn v19" }]
+}
+{% endschema %}

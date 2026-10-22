@@ -1,564 +1,708 @@
-{% comment %}
-  Rivo LP - Coming Soon Steps (3 steps)
-  Structure required:
-  .rivo-section → .rivo-content-wrapper → .rivo-container → .rivo-lp-content
-{% endcomment %}
+{%- comment -%}
+  Qure Rivo How It Works section for the loyalty page.
+  Add one Rivo How It Works app block inside this section.
+{%- endcomment -%}
 
-<section
-  id="rivo-lp-{{ section.id }}"
-  class="rivo-section rivo-lp-section"
-  style="
-    {% if section.settings.background_image != blank %}
-      background-image: url({{ section.settings.background_image | image_url: width: 2400 }});
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    {% else %}
-      background-color: {{ section.settings.background_color }};
-    {% endif %}
-  "
->
-  <div class="rivo-content-wrapper rivo-how-it-works-custom">
-    <div class="rivo-container">
-      <div class="rivo-lp-content">
+<style>
+  .rivo-hiw-{{ section.id }} {
+    --hiw-bg: {{ section.settings.member_background | default: '#FFFFFF' }};
+    --hiw-panel: {{ section.settings.member_panel | default: '#F5F5F5' }};
+    --hiw-surface: {{ section.settings.member_surface | default: '#FFFFFF' }};
+    --hiw-ink: {{ section.settings.member_ink | default: '#171717' }};
+    --hiw-muted: {{ section.settings.member_muted | default: '#8C8C8C' }};
+    --hiw-label: {{ section.settings.member_label_ink | default: '#595C60' }};
+    --hiw-accent: {{ section.settings.member_accent | default: '#FF5429' }};
+    --hiw-border: {{ section.settings.member_border | default: '#DEDCDC' }};
+    --hiw-pill: {{ section.settings.member_point_pill | default: '#FFEAE5' }};
+    --hiw-reward-card: {{ section.settings.member_reward_card_bg | default: '#F5F5F5' }};
+    --hiw-reward-image: {{ section.settings.member_reward_image_bg | default: '#FFFFFF' }};
+    --hiw-reward-pill: {{ section.settings.member_reward_pill_bg | default: '#212428' }};
+    --hiw-reward-pill-text: {{ section.settings.member_reward_pill_text | default: '#FFFFFF' }};
+    width: 100%; box-sizing: border-box; background: var(--hiw-bg); color: var(--hiw-ink);
+    font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
+    opacity: 0; animation: hiwReveal-{{ section.id }} 0s 1.5s forwards;
+  }
+  .rivo-hiw-{{ section.id }}.is-ready { opacity: 1; }
+  @keyframes hiwReveal-{{ section.id }} { to { opacity: 1; } }
+  .rivo-hiw-{{ section.id }}, .rivo-hiw-{{ section.id }} * { box-sizing: border-box; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__app-shell {
+    width: 100%; max-width: {{ section.settings.member_container_v6 | default: 1400 }}px; margin: 0 auto;
+  }
 
-        <div class="rivo-lp-grid">
-          <!-- LEFT -->
-          <div class="rivo-lp-left">
-            {% if section.settings.badge_text != blank %}
-              <div class="rivo-lp-badge">
-                <span class="rivo-lp-badge-text">{{ section.settings.badge_text }}</span>
-              </div>
-            {% endif %}
+  #login-modal .rivo-modal__title {
+    font-weight: 300 !important;
+  }
 
-            {% if section.settings.heading != blank %}
-              <h2 class="rivo-lp-title">{{ section.settings.heading }}</h2>
-            {% endif %}
+  .rivo-modal__content {
+    padding: 0 !important;
+  }
 
-            {% if section.settings.body != blank %}
-              <div class="rivo-lp-body">
-                {{ section.settings.body }}
-              </div>
-            {% endif %}
+  .rivo-modal__content {
+    font-weight: 400 !important;
+  }
 
-            {% if section.settings.button_label != blank and section.settings.button_link != blank %}
-              <div class="rivo-lp-actions">
-                <a class="rivo-lp-btn rivo-lp-btn-outline" href="{{ section.settings.button_link }}">
-                  <span class="rivo-lp-btn-text">{{ section.settings.button_label }}</span>
-                </a>
-              </div>
-            {% endif %}
-          </div>
+  .rivo-hiw-{{ section.id }}:not(.rivo-hiw--member) {
+    max-width: 1200px; margin: 0 auto;
+    padding-top: {{ section.settings.section_padding_top | default: 88 }}px;
+    padding-right: 5vw;
+    padding-bottom: {{ section.settings.section_padding_bottom | default: 96 }}px;
+    padding-left: 5vw;
+  }
+  .rivo-modal-button {
+    position: relative;
+    border-radius: 100px;
+    background: #212428;
+    padding: 16px 30px;
+    font-weight: 500;
+}
+  .rivo-hiw-{{ section.id }}:not(.rivo-hiw--member) #rivo-lp-explainer,
+  .rivo-hiw-{{ section.id }}:not(.rivo-hiw--member) .rivo-activity,
+  .rivo-hiw-{{ section.id }}:not(.rivo-hiw--member) .rivo-lp-customer-activity,
+  .rivo-hiw-{{ section.id }}:not(.rivo-hiw--member) .rivo-points-expiry { display: none !important; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__guest-row {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: start;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__guest-title {
+    margin: 0 0 18px; color: #171717; font-family: 'Canela', Georgia, serif;
+    font-size: 34px; font-weight: 300; line-height: 1.15;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__guest-description {
+    max-width: 38ch; margin: 0; color: #3A3D3F; font-size: 16px; line-height: 1.6;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__steps {
+    --rivo-marker: {{ section.settings.marker_size | default: 40 }}px;
+    --rivo-step-gap: {{ section.settings.step_gap | default: 32 }}px;
+    display: flex; flex-direction: column; gap: var(--rivo-step-gap);
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__step {
+    position: relative; display: grid; grid-template-columns: var(--rivo-marker) minmax(0, 1fr);
+    gap: 20px; align-items: start;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__step:not(:last-child)::before {
+    content: ''; position: absolute; z-index: 0; top: var(--rivo-marker); left: calc(var(--rivo-marker) / 2);
+    width: 2px; height: calc(100% - var(--rivo-marker) + var(--rivo-step-gap));
+    background: rgba(23, 23, 23, .18); transform: translateX(-50%);
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__step-marker {
+    position: relative; z-index: 1; display: flex; align-items: center; justify-content: center;
+    width: var(--rivo-marker); height: var(--rivo-marker); border-radius: 50%;
+    background: #1C1C1C; color: #FFFFFF; font-size: 14px; font-weight: 500; line-height: 1;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__step-title {
+    margin: 0 0 8px; color: #171717; font-family: 'Canela Web', 'Canela', Georgia, serif;
+    font-size: 24px; font-weight: 300; line-height: 1.3;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__step-description {
+    margin: 0; color: #3A3D3F; font-size: 16px; line-height: 1.6;
+  }
 
-          <!-- RIGHT -->
-          <div class="rivo-lp-right">
-            {% if section.settings.right_intro != blank %}
-              <div class="rivo-lp-right-intro">
-                {{ section.settings.right_intro }}
-              </div>
-            {% endif %}
+  .rivo-hiw-{{ section.id }}.rivo-hiw--member {
+    padding-top: {{ section.settings.member_padding_top_v6 | default: 64 }}px;
+    padding-right: 24px;
+    padding-bottom: {{ section.settings.member_padding_bottom_v6 | default: 80 }}px;
+    padding-left: 24px;
+  }
+  body.rivo-referral-landing-page .rivo-hiw-{{ section.id }}.rivo-hiw--member { display: none !important; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-layout {
+    position: relative; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 64px;
+    width: 100%; min-width: 0;
+    padding-top: 28px; padding-right: 34px; padding-bottom: 26px; padding-left: 34px;
+    border-radius: {{ section.settings.member_panel_radius_v6 | default: 28 }}px; background: var(--hiw-panel);
+  }
 
-            <div class="rivo-lp-steps">
-              <div class="rivo-lp-steps-line" aria-hidden="true"></div>
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-summary {
+    display: flex !important; flex-direction: column !important; align-items: flex-start !important;
+    justify-content: flex-start !important; min-width: 0; width: 100%; margin: 0 !important;
+    padding: 0 !important; color: var(--hiw-ink) !important; text-align: left !important;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-summary > * {
+    align-self: flex-start !important; margin-left: 0 !important; margin-right: 0 !important; text-align: left !important;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-name {
+    width: 100%; margin: 0 0 6px !important; padding: 0 !important; color: var(--hiw-ink) !important;
+    font-family: 'Canela', Georgia, serif !important; font-size: 34px !important; font-weight: 300 !important;
+    letter-spacing: 0 !important; line-height: 1.08 !important; text-transform: none !important; text-align: left !important;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__tier {
+    display: inline-flex; align-items: center; gap: 7px; min-height: 28px; margin: 0 !important;
+    padding: 3px 8px 3px 5px !important; border-radius: 100px; background: var(--hiw-surface);
+    color: var(--hiw-ink) !important; font-size: 16px; font-weight: 600; line-height: 1.15; white-space: nowrap;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__tier-mark { width: 22px; height: 22px; color: var(--hiw-ink); }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__balance-block { width: 100%; margin-top: 18px !important; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__balance-label {
+    display: block; margin: 0 0 5px !important; color: var(--hiw-ink) !important;
+    font-size: 19px; font-weight: 400; line-height: 1.25; text-align: left !important;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__balance {
+    display: flex !important; align-items: center !important; justify-content: flex-start !important;
+    gap: 9px; min-height: 30px; width: max-content; margin: 0 !important; color: var(--hiw-ink) !important;
+    font-size: 20px; font-weight: 500; line-height: 1.2; text-align: left !important;
+    padding: 7px 9px 7px 10px; border-radius: 999px; background: var(--hiw-pill);
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__star {
+    display: block; flex: 0 0 22px; width: 22px; height: 22px; color: var(--hiw-accent); overflow: visible;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__balance .rivo-hiw__star {
+    flex-basis: 16px; width: 16px; height: 16px;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__star path { stroke: currentColor; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__balance-value:empty::after { content: '—'; color: var(--hiw-muted); }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-meta { width: 100%; margin-top: 22px !important; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-description {
+    max-width: 25ch; margin: 0 !important; color: var(--hiw-muted) !important;
+    font-size: 15px; font-weight: 400; line-height: 1.5; text-align: left !important;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-expiry {
+    display: flex; flex-wrap: wrap; gap: 4px; width: 100%; margin: 8px 0 0 !important;
+    color: var(--hiw-muted) !important; font-size: 13px; font-weight: 400; line-height: 1.4; text-align: left !important;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__member-expiry-value:empty::after { content: '—'; }
 
-              {% for block in section.blocks %}
-                {% if block.type == 'step' %}
-                  <div class="rivo-lp-step" {{ block.shopify_attributes }}>
-                    <div class="rivo-lp-step-marker">
-                      <div class="rivo-lp-step-number">
-                        <span class="rivo-lp-step-number-text">{{ forloop.index }}</span>
-                      </div>
-                    </div>
+  .rivo-hiw-{{ section.id }} .rivo-lp-customer-activity { min-width: 0; width: 100%; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity {
+    width: 100%; border: 0; border-collapse: separate; border-spacing: 0; background: transparent;
+    color: var(--hiw-ink); font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif; table-layout: fixed;
+  }
+  #points-logs-activity th {
+    text-transform: none !important;
+  }
+  .rivo-hiw-{{ section.id }} #points-logs-activity thead,
+  .rivo-hiw-{{ section.id }} #points-logs-activity thead tr { background: transparent; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity th {
+    padding-top: 0; padding-right: 20px; padding-bottom: 24px; padding-left: 20px;
+    border: 0; background: transparent; color: var(--hiw-label);
+    -webkit-text-fill-color: var(--hiw-label);
+    font-size: 14px; font-weight: 400; line-height: 1.2; text-align: left;
+  }
+  .rivo-hiw-{{ section.id }} #points-logs-activity th:first-child { width: 43%; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity th:nth-child(2) { width: 19%; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity th:nth-child(3) { width: 20%; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity th:nth-child(4) { width: 18%; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity td {
+    height: 68px; padding: 16px 20px; border: 0; border-right: 1px solid var(--hiw-border);
+    background: var(--hiw-surface); color: var(--hiw-ink); font-size: 15px; font-weight: 400;
+    line-height: 1.25; text-align: left; vertical-align: middle;
+  }
+  .rivo-hiw-{{ section.id }} #points-logs-activity td:last-child { border-right: 0; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity tbody tr:first-child td:first-child { border-top-left-radius: {{ section.settings.member_table_radius_v6 | default: 18 }}px; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity tbody tr:first-child td:last-child { border-top-right-radius: {{ section.settings.member_table_radius_v6 | default: 18 }}px; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity tbody tr:last-child td:first-child { border-bottom-left-radius: {{ section.settings.member_table_radius_v6 | default: 18 }}px; }
+  .rivo-hiw-{{ section.id }} #points-logs-activity tbody tr:last-child td:last-child { border-bottom-right-radius: {{ section.settings.member_table_radius_v6 | default: 18 }}px; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__points-pill {
+    display: inline-flex; align-items: center; justify-content: flex-start; gap: 6px; width: max-content;
+    color: var(--hiw-ink); font-weight: 600; line-height: 1.15; white-space: nowrap;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__points-pill.is-positive {
+    padding: 7px 9px 7px 10px; border-radius: 999px; background: var(--hiw-pill);
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__points-pill .rivo-hiw__star { display: none; }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__points-pill.is-positive .rivo-hiw__star { display: block; }
+  .rivo-hiw-{{ section.id }} .rivo-points-table-load-more-container { margin: 42px 0 -4px; text-align: center; }
+  .rivo-hiw-{{ section.id }} .rivo-points-table-load-more-button {
+    padding-top: 0; padding-right: 0; padding-bottom: 2px; padding-left: 0;
+    border: 0; border-bottom: 1px solid currentColor; border-radius: 0;
+    background: transparent; color: var(--hiw-ink); font: inherit; cursor: pointer;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__empty-row td {
+    height: 100px; border-radius: {{ section.settings.member_table_radius_v6 | default: 18 }}px !important;
+    color: var(--hiw-muted); text-align: center;
+  }
 
-                    <div class="rivo-lp-step-content">
-                      {% if block.settings.title != blank %}
-                        <div class="rivo-lp-step-title">{{ block.settings.title }}</div>
-                      {% endif %}
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards {
+    width: 100%; max-width: none; margin: 72px auto 0; padding: 0; background: transparent;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards > .rivo-lp-content { width: 100%; max-width: none; margin: 0; padding: 0; }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-lp-section-title {
+    margin: 0 auto; padding: 0; color: var(--hiw-ink);
+    font-family: 'Canela', Georgia, serif; font-size: {{ section.settings.member_rewards_title_size_v9 | default: 48 }}px;
+    font-weight: 300; line-height: 1.08; letter-spacing: -.01em; text-align: center;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-lp-cards-container {
+    width: 100%; max-width: none; margin: 56px 0 0;
+    padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 0;
+    gap: {{ section.settings.member_reward_card_gap_v9 | default: 24 }}px; flex-wrap: nowrap;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 0;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-lp-cards-container::-webkit-scrollbar { display: none; }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card {
+    position: relative; flex: 0 0 {{ section.settings.member_reward_card_width_v9 | default: 520 }}px;
+    width: {{ section.settings.member_reward_card_width_v9 | default: 520 }}px;
+    min-width: {{ section.settings.member_reward_card_width_v9 | default: 520 }}px;
+    max-width: {{ section.settings.member_reward_card_width_v9 | default: 520 }}px;
+    margin: 0;
+    padding-top: 12px; padding-right: 12px; padding-bottom: 30px; padding-left: 12px;
+    border: 0;
+    border-radius: {{ section.settings.member_reward_card_radius_v9 | default: 18 }}px;
+    background: var(--hiw-reward-card); color: var(--hiw-ink); scroll-snap-align: start;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-icon {
+    display: flex; align-items: center; justify-content: center; width: 100%;
+    height: {{ section.settings.member_reward_image_height_v9 | default: 360 }}px;
+    min-height: {{ section.settings.member_reward_image_height_v9 | default: 360 }}px;
+    max-height: {{ section.settings.member_reward_image_height_v9 | default: 360 }}px;
+    margin: 0; border-radius: 0; background: var(--hiw-reward-image); overflow: hidden;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-icon img,
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-icon svg,
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-icon picture {
+    display: block; width: auto; max-width: 100%; height: auto; max-height: 100%; object-fit: contain;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-body {
+    display: flex; flex-direction: column; align-items: center; width: 100%; max-width: none;
+    margin: 0; padding-top: 24px; padding-right: 0; padding-bottom: 0; padding-left: 0; text-align: center;
+  }
+  .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-title {
+    margin: 0; padding: 0; color: var(--hiw-ink); font-size: 22px; font-weight: 600; line-height: 1.25; text-align: center;
+  }
+  .rivo-hiw-{{ section.id }} .rivo-hiw__reward-points {
+    position: absolute; top: 10px; left: 8px; display: inline-flex; align-items: center;
+    min-height: 32px; margin: 0; padding: 6px 18px; border-radius: 999px;
+    background: var(--hiw-reward-pill); color: var(--hiw-reward-pill-text);
+    font-size: 15px; font-weight: 600; line-height: 1; white-space: nowrap;
+  }
 
-                      {% if block.settings.description != blank %}
-                        <div class="rivo-lp-step-description">{{ block.settings.description }}</div>
-                      {% endif %}
-                    </div>
-                  </div>
-                {% endif %}
-              {% endfor %}
-            </div>
+  @media (max-width: 989px) {
+    .rivo-hiw-{{ section.id }} .rivo-hiw__member-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__member-description { max-width: 40ch; }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card {
+      flex-basis: min({{ section.settings.member_reward_card_width_v9 | default: 520 }}px, 72vw);
+      width: min({{ section.settings.member_reward_card_width_v9 | default: 520 }}px, 72vw);
+      min-width: min({{ section.settings.member_reward_card_width_v9 | default: 520 }}px, 72vw);
+      max-width: min({{ section.settings.member_reward_card_width_v9 | default: 520 }}px, 72vw);
+    }
+  }
+  @media (max-width: 749px) {
+    .rivo-hiw-{{ section.id }}:not(.rivo-hiw--member) { padding-top: 56px; padding-bottom: 64px; }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__guest-row { grid-template-columns: minmax(0, 1fr); gap: 44px; }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__step-title { font-size: 21px; }
+    .rivo-hiw-{{ section.id }}.rivo-hiw--member {
+      padding-top: {{ section.settings.member_padding_top_mobile_v6 | default: 48 }}px;
+      padding-right: 20px;
+      padding-bottom: {{ section.settings.member_padding_bottom_mobile_v6 | default: 64 }}px;
+      padding-left: 20px;
+    }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__member-layout {
+      gap: 26px;
+      padding-top: 18px; padding-right: 10px; padding-bottom: 20px; padding-left: 10px;
+    }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__member-name { font-size: 30px !important; }
+    .rivo-hiw-{{ section.id }} #points-logs-activity th:first-child { width: 28%; }
+    .rivo-hiw-{{ section.id }} #points-logs-activity th:nth-child(2) { width: 26%; }
+    .rivo-hiw-{{ section.id }} #points-logs-activity th:nth-child(3) { width: 23%; }
+    .rivo-hiw-{{ section.id }} #points-logs-activity th:nth-child(4) { width: 23%; }
+    .rivo-hiw-{{ section.id }} #points-logs-activity th,
+    .rivo-hiw-{{ section.id }} #points-logs-activity td { font-size: 13px; }
+    .rivo-hiw-{{ section.id }} #points-logs-activity td { height: auto; border-radius: 0 !important; }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__points-pill.is-positive { padding: 4px 6px; }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__points-pill.is-positive .rivo-hiw__star { display: none; }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards { margin-top: 56px; }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-lp-section-title {
+      font-size: {{ section.settings.member_rewards_title_size_mobile_v9 | default: 36 }}px;
+    }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-lp-cards-container { margin-top: 48px; }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card {
+      flex-basis: 100%; width: 100%; min-width: 100%; max-width: 100%;
+      padding-top: 8px; padding-right: 8px; padding-bottom: 24px; padding-left: 8px;
+    }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-icon {
+      height: {{ section.settings.member_reward_image_height_mobile_v9 | default: 260 }}px;
+      min-height: {{ section.settings.member_reward_image_height_mobile_v9 | default: 260 }}px;
+      max-height: {{ section.settings.member_reward_image_height_mobile_v9 | default: 260 }}px;
+    }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-body { padding-top: 20px; }
+    .rivo-hiw-{{ section.id }} #rivo-lp-my-rewards .rivo-card-title { font-size: 20px; }
+    .rivo-hiw-{{ section.id }} .rivo-hiw__reward-points { top: 10px; left: 8px; min-height: 28px; padding: 5px 15px; }
+  }
+</style>
 
-          </div>
+<script type="application/json" id="rivo-hiw-config-{{ section.id }}">
+{
+  "member": {% if customer %}true{% else %}false{% endif %},
+  "container": {{ section.settings.member_container_v6 | default: 1400 | json }},
+  "paddingTop": {{ section.settings.member_padding_top_v6 | default: 64 | json }},
+  "paddingBottom": {{ section.settings.member_padding_bottom_v6 | default: 80 | json }},
+  "paddingTopMobile": {{ section.settings.member_padding_top_mobile_v6 | default: 48 | json }},
+  "paddingBottomMobile": {{ section.settings.member_padding_bottom_mobile_v6 | default: 64 | json }},
+  "background": {{ section.settings.member_background | default: '#FFFFFF' | json }},
+  "surface": {{ section.settings.member_surface | default: '#FFFFFF' | json }},
+  "ink": {{ section.settings.member_ink | default: '#171717' | json }},
+  "muted": {{ section.settings.member_muted | default: '#8C8C8C' | json }},
+  "labelInk": {{ section.settings.member_label_ink | default: '#595C60' | json }},
+  "border": {{ section.settings.member_border | default: '#DEDCDC' | json }},
+  "tableRadius": {{ section.settings.member_table_radius_v6 | default: 18 | json }},
+  "showRewardsSubtitle": {{ section.settings.member_rewards_show_subtitle | default: false | json }},
+  "rewardsTitleSize": {{ section.settings.member_rewards_title_size_v9 | default: 48 | json }},
+  "rewardsTitleSizeMobile": {{ section.settings.member_rewards_title_size_mobile_v9 | default: 36 | json }},
+  "rewardCardWidth": {{ section.settings.member_reward_card_width_v9 | default: 520 | json }},
+  "rewardImageHeight": {{ section.settings.member_reward_image_height_v9 | default: 360 | json }},
+  "rewardImageHeightMobile": {{ section.settings.member_reward_image_height_mobile_v9 | default: 260 | json }},
+  "rewardCardRadius": {{ section.settings.member_reward_card_radius_v9 | default: 18 | json }},
+  "rewardCardGap": {{ section.settings.member_reward_card_gap_v9 | default: 24 | json }},
+  "rewardCardBg": {{ section.settings.member_reward_card_bg | default: '#F5F5F5' | json }},
+  "rewardImageBg": {{ section.settings.member_reward_image_bg | default: '#FFFFFF' | json }},
+  "rewardPillBg": {{ section.settings.member_reward_pill_bg | default: '#212428' | json }},
+  "rewardPillText": {{ section.settings.member_reward_pill_text | default: '#FFFFFF' | json }},
+  "balanceLabel": {{ section.settings.member_balance_label | default: 'My loyalty balance' | json }},
+  "pointsSuffix": {{ section.settings.member_points_suffix | default: 'points' | json }},
+  "expiryLabel": {{ section.settings.member_expiry_label | default: 'Points expiration date:' | json }},
+  "tierFallback": {{ section.settings.member_tier_fallback | default: 'Skin Insider' | json }},
+  "customerTags": {{ customer.tags | json }}
+}
+</script>
+
+<div class="rivo-hiw-{{ section.id }} rivo-hiw rivo-hiw--layout-text-steps{% if customer %} rivo-hiw--member rivo-member-dashboard{% endif %}"
+  id="rivo-hiw-{{ section.id }}" data-rivo-hiw-root data-rivo-member="{% if customer %}1{% else %}0{% endif %}">
+  {%- unless customer -%}
+    <div class="rivo-hiw__guest-row">
+      <div>
+        {%- if section.settings.copy_title != blank -%}<h2 class="rivo-hiw__guest-title">{{ section.settings.copy_title }}</h2>{%- endif -%}
+        {%- if section.settings.copy_description != blank -%}<p class="rivo-hiw__guest-description">{{ section.settings.copy_description }}</p>{%- endif -%}
+      </div>
+      <div class="rivo-hiw__steps">
+        <div class="rivo-hiw__step">
+          <div class="rivo-hiw__step-marker">1</div>
+          <div><div class="rivo-hiw__step-title">{{ section.settings.step_1_title }}</div><div class="rivo-hiw__step-description">{{ section.settings.step_1_description }}</div></div>
         </div>
-
+        <div class="rivo-hiw__step">
+          <div class="rivo-hiw__step-marker">2</div>
+          <div><div class="rivo-hiw__step-title">{{ section.settings.step_2_title }}</div><div class="rivo-hiw__step-description">{{ section.settings.step_2_description }}</div></div>
+        </div>
+        <div class="rivo-hiw__step">
+          <div class="rivo-hiw__step-marker">3</div>
+          <div><div class="rivo-hiw__step-title">{{ section.settings.step_3_title }}</div><div class="rivo-hiw__step-description">{{ section.settings.step_3_description }}</div></div>
+        </div>
       </div>
     </div>
-  </div>
+  {%- endunless -%}
+  <div class="rivo-hiw__app-shell">{%- for block in section.blocks -%}{% render block %}{%- endfor -%}</div>
+  {%- if section.blocks.size == 0 and request.design_mode -%}<div>Add the Rivo How It Works app block.</div>{%- endif -%}
+</div>
 
-  <style>
-    /* =========================
-       SECTION BASE
-    ========================= */
-    #rivo-lp-{{ section.id }}.rivo-lp-section {
-      color: {{ section.settings.text_color }};
-    }
+<script>
+  (function () {
+    var root = document.getElementById('rivo-hiw-{{ section.id }}');
+    var configNode = document.getElementById('rivo-hiw-config-{{ section.id }}');
+    if (!root || !configNode) return;
+    var config = {};
+    try { config = JSON.parse(configNode.textContent); } catch (error) { console.error('[rivo-hiw] invalid configuration', error); }
+    var member = root.getAttribute('data-rivo-member') === '1' || config.member === true;
+    var busy = false, lastMeta = '', customerCache = null, retryCount = 0;
 
-    #rivo-lp-{{ section.id }} .rivo-content-wrapper {
-      width: 100%;
+    function first(scope, selectors) {
+      if (!scope) return null;
+      for (var i = 0; i < selectors.length; i += 1) { var node = scope.querySelector(selectors[i]); if (node) return node; }
+      return null;
     }
-
-    #rivo-lp-{{ section.id }} .rivo-container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 24px;
-      padding-right: 24px;
+    function hard(node, properties) {
+      if (!node) return;
+      Object.keys(properties).forEach(function (key) { node.style.setProperty(key, properties[key], 'important'); });
     }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-content {
-      padding-top: {{ section.settings.section_padding_top }}px;
-      padding-right: 0px;
-      padding-bottom: {{ section.settings.section_padding_bottom }}px;
-      padding-left: 0px;
+    function clean(value) { return String(value || '').replace(/ /g, ' ').replace(/\s+/g, ' ').trim(); }
+    function clipSource(node) {
+      hard(node, { position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: '0', overflow: 'hidden', 'clip-path': 'inset(50%)', 'white-space': 'nowrap' });
     }
-
-    /* =========================
-       GRID
-    ========================= */
-    #rivo-lp-{{ section.id }} .rivo-lp-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 56px;
-      row-gap: 36px;
-      align-items: start;
+    function releaseSource(node, margin) {
+      hard(node, { position: 'static', width: 'auto', height: 'auto', margin: margin || '0', padding: '0', overflow: 'visible', 'clip-path': 'none', 'white-space': 'normal', opacity: '1' });
     }
-
-    /* =========================
-       LEFT
-    ========================= */
-    #rivo-lp-{{ section.id }} .rivo-lp-left {
-      max-width: 560px;
-      text-align:left;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: {{ section.settings.badge_bg_color }};
-      border-width: 1px;
-      border-style: solid;
-      border-color: {{ section.settings.badge_border_color }};
-      border-radius: 999px;
-      padding-top: 8px;
-      padding-right: 14px;
-      padding-bottom: 8px;
-      padding-left: 14px;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 14px;
-      margin-left: 0px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-badge-text {
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: {{ section.settings.badge_text_color }};
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-title {
-      font-size: 32px;
-      line-height: 1.2;
-      font-weight: 300;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 14px;
-      margin-left: 0px;
-      letter-spacing: -0.6px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-body {
-      font-size: 16px;
-      line-height: 24px;
-      color: {{ section.settings.muted_text_color }};
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 18px;
-      margin-left: 0px;
-      max-width: 520px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-body p {
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 10px;
-      margin-left: 0px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-actions {
-      margin-top: 18px;
-      margin-right: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      border-radius: 999px;
-      padding-top: 12px;
-      padding-right: 20px;
-      padding-bottom: 12px;
-      padding-left: 20px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 18px;
-      transition-property: background-color, color, border-color, transform;
-      transition-duration: 200ms;
-      transition-timing-function: ease;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-btn-outline {
-      background-color: transparent;
-      border-width: 2px;
-      border-style: solid;
-      border-color: {{ section.settings.accent_color }};
-      color: {{ section.settings.accent_color }};
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-btn-outline:hover {
-      background-color: {{ section.settings.accent_color }};
-      color: {{ section.settings.button_hover_text_color }};
-      transform: translateY(-1px);
-    }
-
-    /* =========================
-       RIGHT
-    ========================= */
-    #rivo-lp-{{ section.id }} .rivo-lp-right {
-      width: 100%;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-right-intro {
-      font-size: 14px;
-      line-height: 22px;
-      color: {{ section.settings.muted_text_color }};
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 18px;
-      margin-left: 0px;
-      max-width: 520px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-right-intro p {
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 10px;
-      margin-left: 0px;
-      text-align: left;
-    }
-
-    /* =========================
-       STEPS (TIMELINE)
-    ========================= */
-    #rivo-lp-{{ section.id }} .rivo-lp-steps {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      row-gap: 18px;
-      padding-top: 8px;
-      padding-right: 0px;
-      padding-bottom: 8px;
-      padding-left: 0px;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-steps-line {
-      position: absolute;
-      left: 21px;
-      top: 21px;
-      bottom: 42px;
-      width: 2px;
-      background-color: {{ section.settings.line_color }};
-      opacity: 1;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step {
-      display: grid;
-      grid-template-columns: 44px 1fr;
-      column-gap: 14px;
-      align-items: start;
-      position: relative;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step-marker {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding-top: 0px;
-      padding-right: 0px;
-      padding-bottom: 0px;
-      padding-left: 0px;
-      position: relative;
-      z-index: 1;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step-number {
-      width: 36px;
-      height: 36px;
-      border-radius: 999px;
-      background-color: {{ section.settings.accent_color }};
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.18);
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step-number-text {
-      font-size: 14px;
-      line-height: 14px;
-      font-weight: 400;
-      color: {{ section.settings.step_number_text_color }};
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step-content {
-      padding-top: 2px;
-      padding-right: 0px;
-      padding-bottom: 0px;
-      padding-left: 0px;
-      max-width: 520px;
-      text-align: left;
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step-title {
-      font-family: "Canela";
-      font-size: 20px;
-      line-height: 22px;
-      font-weight: 400;
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 4px;
-      margin-left: 0px;
-      color: {{ section.settings.text_color }};
-    }
-
-    #rivo-lp-{{ section.id }} .rivo-lp-step-description {
-      font-size: 16px;
-      line-height: 20px;
-      color: {{ section.settings.muted_text_color }};
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-    @media screen and (max-width: 749px) {
-    #rivo-lp-{{ section.id }} .rivo-lp-left,
-    #rivo-lp-{{ section.id }} .rivo-lp-right-intro p {
-      text-align: center;
-    }
-
-    .rivo-lp-steps-line {
-        left: 22px !important;
-        top: 22px !important;
-        bottom: 44px !important;
-    }
-      #rivo-lp-{{ section.id }} .rivo-container {
-        padding-left: 16px;
-        padding-right: 16px;
+    function tierName() {
+      var tags = Array.isArray(config.customerTags) ? config.customerTags.slice() : [];
+      if (customerCache && Array.isArray(customerCache.tags)) tags = tags.concat(customerCache.tags);
+      for (var i = 0; i < tags.length; i += 1) {
+        var match = clean(tags[i]).match(/(?:vip|tier)[:_\-\s]+(.+)/i);
+        if (match && clean(match[1])) return clean(match[1]);
       }
-
-      #rivo-lp-{{ section.id }} .rivo-lp-grid {
-        grid-template-columns: 1fr;
-        column-gap: 0px;
-        row-gap: 26px;
-      }
-
-      #rivo-lp-{{ section.id }} .rivo-lp-title {
-        font-size: 34px;
-        line-height: 40px;
-      }
-
-      #rivo-lp-{{ section.id }} .rivo-lp-steps-line {
-        left: 18px;
-        top: 18px;
-        bottom: 18px;
-      }
-
-      #rivo-lp-{{ section.id }} .rivo-lp-step {
-        grid-template-columns: 44px 1fr;
-        column-gap: 12px;
-      }
-
-      #rivo-lp-{{ section.id }} .rivo-lp-right-intro {
-        max-width: 100%;
-      }
-
-      #rivo-lp-{{ section.id }} .rivo-lp-left {
-        max-width: 100%;
-      }
+      return clean(config.tierFallback) || 'Skin Insider';
     }
-  </style>
-</section>
+    function sourceValues(title, expiry, subtitle) {
+      var titleText = clean(title && title.textContent);
+      var nameNode = first(title, ['[rivo-x-text="username"]', ':scope > span']);
+      var pointsNode = first(title, ['strong [rivo-x-text*="points_tally"]', 'strong span', 'strong']);
+      var expiryNode = first(expiry, ['[rivo-x-text*="points_expiry"]', 'span']);
+      var name = clean(nameNode && nameNode.textContent), points = clean(pointsNode && pointsNode.textContent), expires = clean(expiryNode && expiryNode.textContent);
+      var nameMatch = titleText.match(/^Hi\s+(.+?),\s+you have/i), pointsMatch = titleText.match(/you have\s+([\d,.]+)/i);
+      if (!name && nameMatch) name = clean(nameMatch[1]);
+      if (!points && pointsMatch) points = clean(pointsMatch[1]);
+      if (!points && customerCache) points = clean(customerCache.pretty_points_tally || customerCache.points_tally || customerCache.points || '');
+      if (!expires && expiry) expires = clean(expiry.textContent).replace(/^Expiration Date:\s*/i, '');
+      return { name: name || 'Member', points: points, expiry: formatExpiry(expires), description: clean(subtitle && subtitle.textContent), tier: tierName() };
+    }
+    // Match the table's "Aug 17, 2027" format.
+    function formatExpiry(value) {
+      var match = /^(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]{3,})\.?,?\s+(\d{4})$/.exec(clean(value));
+      if (!match) return value;
+      var month = match[2].charAt(0).toUpperCase() + match[2].slice(1, 3).toLowerCase();
+      return month + ' ' + parseInt(match[1], 10) + ', ' + match[3];
+    }
+    function tierMark() {
+      return '<svg class="rivo-hiw__tier-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-1.8 3.3-5.7 5.7-5.7 10.6A5.7 5.7 0 0 0 12 18.8a5.7 5.7 0 0 0 5.7-5.7c0-2.7-1.4-4.6-3-6.3.1 2.7-1 4.2-2.2 5.1.2-3.8-1.2-6.7-.5-9.4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.5 14.4c0 1.6 1.1 2.8 2.5 2.8s2.5-1.2 2.5-2.8c0-1.2-.7-2.1-1.4-2.9 0 1-.4 1.7-1 2.2 0-1.4-.5-2.5-.3-3.5-1 1.2-2.3 2.4-2.3 4.2Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>';
+    }
+    function starMark() {
+      return '<svg class="rivo-hiw__star" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7.78854 1.61651L8.84442 3.74573C8.9884 4.04212 9.37236 4.32642 9.69632 4.38086L11.6101 4.70145C12.834 4.90712 13.1219 5.80236 12.24 6.6855L10.7522 8.18563C10.5002 8.43968 10.3622 8.92965 10.4402 9.28048L10.8662 11.1375C11.2022 12.6074 10.4282 13.176 9.13839 12.4078L7.34458 11.3371C7.02062 11.1435 6.48668 11.1435 6.15672 11.3371L4.36291 12.4078C3.07906 13.176 2.29914 12.6013 2.6351 11.1375L3.06106 9.28048C3.13905 8.92965 3.00106 8.43968 2.74909 8.18563L1.26126 6.6855C0.385353 5.80236 0.667322 4.90712 1.89119 4.70145L3.80498 4.38086C4.12294 4.32642 4.5069 4.04212 4.65088 3.74573L5.70677 1.61651C6.2827 0.461164 7.2186 0.461164 7.78854 1.61651Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    }
+    function ensureSummary(layout) {
+      var summary = layout.querySelector('.rivo-hiw__member-summary');
+      if (summary) return summary;
+      summary = document.createElement('aside'); summary.className = 'rivo-hiw__member-summary'; summary.setAttribute('aria-label', 'Loyalty account summary');
+      summary.innerHTML = '<h2 class="rivo-hiw__member-name"></h2><div class="rivo-hiw__tier">' + tierMark() + '<span class="rivo-hiw__tier-text"></span></div><div class="rivo-hiw__balance-block"><span class="rivo-hiw__balance-label"></span><div class="rivo-hiw__balance" data-rivo-balance>' + starMark() + '<span class="rivo-hiw__balance-value"></span> <span class="rivo-hiw__balance-suffix"></span></div></div><div class="rivo-hiw__member-meta"><p class="rivo-hiw__member-description"></p><p class="rivo-hiw__member-expiry"><span class="rivo-hiw__member-expiry-label"></span> <span class="rivo-hiw__member-expiry-value"></span></p></div>';
+      layout.insertBefore(summary, layout.firstChild); return summary;
+    }
+    function paintTable(activity) {
+      var table = activity.querySelector('#points-logs-activity'); if (!table) return;
+      var mobile = window.innerWidth < 750;
+      hard(table, { width: '100%', 'max-width': 'none', background: 'transparent', border: '0' });
+      var thead = table.querySelector('thead');
+      hard(thead, { background: 'transparent', margin: '0', 'border-bottom': '0' });
+      var headings = Array.prototype.map.call(table.querySelectorAll('thead th'), function (node) { return clean(node.textContent); });
+      Array.prototype.forEach.call(table.querySelectorAll('tbody tr'), function (row) {
+        var cells = row.querySelectorAll('td');
+        if (cells.length === 1) { row.classList.add('rivo-hiw__empty-row'); return; }
+        row.classList.remove('rivo-hiw__empty-row');
+        Array.prototype.forEach.call(cells, function (cell, index) {
+          cell.setAttribute('data-label', headings[index] || '');
+          hard(cell, {
+            color: config.ink || '#171717',
+            background: config.surface || '#FFFFFF',
+            padding: mobile ? (index === 0 ? '12px 8px 12px 12px' : '12px 4px') : '16px 20px',
+            border: '0',
+            'border-right': index === cells.length - 1 ? '0' : '1px solid ' + (config.border || '#DEDCDC'),
+            'border-radius': '0',
+            'text-align': mobile && index > 0 ? 'center' : 'left'
+          });
+        });
+        var pointsCell = cells[1]; if (!pointsCell) return;
+        var pill = pointsCell.querySelector('.rivo-hiw__points-pill');
+        var valueNode = pill && pill.querySelector('.rivo-hiw__points-value');
+        var value = clean(valueNode ? valueNode.textContent : pointsCell.textContent);
+        if (!pill) {
+          pill = document.createElement('span'); pill.className = 'rivo-hiw__points-pill';
+          pointsCell.textContent = ''; pointsCell.appendChild(pill);
+        }
+        if (!valueNode) {
+          pill.innerHTML = starMark() + '<span class="rivo-hiw__points-value"></span>';
+          valueNode = pill.querySelector('.rivo-hiw__points-value');
+        }
+        if (valueNode.textContent !== value) valueNode.textContent = value;
+        pill.classList.toggle('is-positive', /^\+/.test(value));
+      });
+      if (!mobile) {
+        var rows = table.querySelectorAll('tbody tr');
+        if (rows.length) {
+          var radius = (config.tableRadius || 18) + 'px';
+          var firstCells = rows[0].querySelectorAll('td');
+          var lastCells = rows[rows.length - 1].querySelectorAll('td');
+          if (firstCells.length) {
+            hard(firstCells[0], { 'border-top-left-radius': radius });
+            hard(firstCells[firstCells.length - 1], { 'border-top-right-radius': radius });
+          }
+          if (lastCells.length) {
+            hard(lastCells[0], { 'border-bottom-left-radius': radius });
+            hard(lastCells[lastCells.length - 1], { 'border-bottom-right-radius': radius });
+          }
+        }
+      }
+      Array.prototype.forEach.call(table.querySelectorAll('thead tr'), function (row) { hard(row, { background: 'transparent' }); });
+      Array.prototype.forEach.call(table.querySelectorAll('th'), function (cell, index) {
+        hard(cell, {
+          color: config.labelInk || '#595C60',
+          '-webkit-text-fill-color': config.labelInk || '#595C60',
+          background: 'transparent',
+          padding: mobile ? (index === 0 ? '0 8px 16px 12px' : '0 4px 16px') : '0 20px 24px',
+          border: '0',
+          'font-size': mobile ? '13px' : '14px',
+          'font-weight': '400',
+          'text-align': mobile && index > 0 ? 'center' : 'left'
+        });
+      });
+    }
+    function paintRewards(rewards) {
+      if (!rewards) return;
+      var mobile = window.innerWidth < 750;
+      var content = first(rewards, ['.rivo-lp-content']) || rewards;
+      var title = first(rewards, ['.rivo-lp-section-title']);
+      var cardsHost = first(rewards, ['.rivo-lp-cards-container', '.rivo-points-purchases']);
+      var sectionShell = rewards.closest('.rivo-lp-section');
+      // Hide My Rewards until at least one reward card exists.
+      var rewardCount = cardsHost ? Array.prototype.filter.call(cardsHost.children, function (node) { return node.classList && node.classList.contains('rivo-card'); }).length : 0;
+      root.classList.toggle('rivo-hiw--no-rewards', rewardCount === 0);
+      if (rewardCount === 0) { clipSource(rewards); return; }
+      releaseSource(rewards);
+      hard(sectionShell, { width: '100%', 'max-width': 'none', margin: '0', padding: '0', background: 'transparent', 'box-sizing': 'border-box' });
+      hard(rewards, { width: '100%', 'max-width': 'none', margin: (mobile ? '56px' : '72px') + ' auto 0', padding: '0', background: 'transparent', 'box-sizing': 'border-box' });
+      hard(content, { width: '100%', 'max-width': 'none', margin: '0', padding: '0', background: 'transparent', 'box-sizing': 'border-box' });
+      hard(title, {
+        margin: '0 auto', padding: '0', color: config.ink || '#171717', '-webkit-text-fill-color': config.ink || '#171717',
+        'font-family': "'Canela', Georgia, serif", 'font-size': (mobile ? config.rewardsTitleSizeMobile : config.rewardsTitleSize) + 'px',
+        'font-weight': '300', 'line-height': '1.08', 'letter-spacing': '-.01em', 'text-align': 'center'
+      });
+      if (!cardsHost) return;
+      var cards = Array.prototype.filter.call(cardsHost.children, function (node) { return node.classList && node.classList.contains('rivo-card'); });
+      var subtitles = rewards.querySelectorAll('.rivo-lp-section-subtitle');
+      Array.prototype.forEach.call(subtitles, function (subtitle) {
+        if (cards.length && !config.showRewardsSubtitle) clipSource(subtitle);
+        else releaseSource(subtitle, '16px auto 0');
+      });
+      hard(cardsHost, {
+        width: '100%', 'max-width': 'none', margin: (config.showRewardsSubtitle ? '32px' : (mobile ? '48px' : '56px')) + ' 0 0',
+        padding: '0 0 10px', gap: config.rewardCardGap + 'px', 'flex-wrap': 'nowrap',
+        'overflow-x': 'auto', 'overflow-y': 'hidden', 'scroll-snap-type': 'x mandatory', 'scroll-padding-left': '0',
+        'box-sizing': 'border-box'
+      });
+      cards.forEach(function (card) {
+        var cardWidth = mobile ? '100%' : (window.innerWidth < 990 ? 'min(' + config.rewardCardWidth + 'px, 72vw)' : config.rewardCardWidth + 'px');
+        hard(card, {
+          position: 'relative', display: 'flex', 'flex-direction': 'column', 'align-items': 'stretch',
+          flex: '0 0 ' + cardWidth, width: cardWidth, 'min-width': cardWidth, 'max-width': cardWidth,
+          margin: '0', padding: mobile ? '8px 8px 24px' : '12px 12px 30px', border: '0',
+          'border-radius': config.rewardCardRadius + 'px', background: config.rewardCardBg || '#F5F5F5',
+          color: config.ink || '#171717', '-webkit-text-fill-color': config.ink || '#171717',
+          'scroll-snap-align': 'start', 'box-sizing': 'border-box', 'text-align': 'center', cursor: 'pointer'
+        });
+        var icon = first(card, ['.rivo-card-icon']);
+        var imageHeight = mobile ? config.rewardImageHeightMobile : config.rewardImageHeight;
+        hard(icon, {
+          display: 'flex', 'align-items': 'center', 'justify-content': 'center', width: '100%',
+          height: imageHeight + 'px', 'min-height': imageHeight + 'px', 'max-height': imageHeight + 'px',
+          margin: '0', padding: mobile ? '16px' : '20px', border: '0', 'border-radius': '0',
+          background: config.rewardImageBg || '#FFFFFF', overflow: 'hidden', 'box-sizing': 'border-box'
+        });
+        if (icon) Array.prototype.forEach.call(icon.querySelectorAll('img, svg, picture'), function (image) {
+          hard(image, { display: 'block', width: 'auto', 'max-width': '100%', height: 'auto', 'max-height': '100%', 'object-fit': 'contain', margin: 'auto' });
+        });
+        var body = first(card, ['.rivo-card-body']);
+        hard(body, { display: 'flex', 'flex-direction': 'column', 'align-items': 'center', width: '100%', 'max-width': 'none', margin: '0', padding: mobile ? '20px 0 0' : '24px 0 0', 'text-align': 'center' });
+        var cardTitle = first(card, ['.rivo-card-title']);
+        hard(cardTitle, { margin: '0', padding: '0', color: config.ink || '#171717', '-webkit-text-fill-color': config.ink || '#171717', 'font-size': mobile ? '20px' : '22px', 'font-weight': '600', 'line-height': '1.25', 'text-align': 'center' });
+        var description = first(card, ['.rivo-card-description']);
+        var pointText = clean(description && description.textContent).replace(/^Spent\s+/i, '');
+        var pointPill = first(card, [':scope > .rivo-hiw__reward-points']);
+        if (!pointPill) {
+          pointPill = document.createElement('span'); pointPill.className = 'rivo-hiw__reward-points';
+          card.insertBefore(pointPill, card.firstChild);
+        }
+        if (pointPill.textContent !== pointText) pointPill.textContent = pointText;
+        pointPill.hidden = !pointText;
+        hard(pointPill, {
+          position: 'absolute', top: '10px', left: '8px',
+          display: pointText ? 'inline-flex' : 'none', 'align-items': 'center', 'min-height': mobile ? '28px' : '32px',
+          margin: '0', padding: mobile ? '5px 15px' : '6px 18px', 'border-radius': '999px',
+          background: config.rewardPillBg || '#212428', color: config.rewardPillText || '#FFFFFF',
+          '-webkit-text-fill-color': config.rewardPillText || '#FFFFFF', 'font-size': '15px', 'font-weight': '600',
+          'line-height': '1', 'white-space': 'nowrap', 'box-sizing': 'border-box'
+        });
+        clipSource(description);
+        clipSource(first(card, ['.rivo-arrow-icon']));
+      });
+    }
+    function syncSummary(summary, values) {
+      var signature = [values.name, values.points, values.expiry, values.description, values.tier].join('|');
+      if (signature === lastMeta) return; lastMeta = signature;
+      summary.querySelector('.rivo-hiw__member-name').textContent = values.name;
+      summary.querySelector('.rivo-hiw__tier-text').textContent = values.tier;
+      summary.querySelector('.rivo-hiw__balance-label').textContent = config.balanceLabel || 'My loyalty balance';
+      summary.querySelector('.rivo-hiw__balance-value').textContent = values.points;
+      summary.querySelector('.rivo-hiw__balance-suffix').textContent = config.pointsSuffix || 'points';
+      summary.querySelector('.rivo-hiw__member-description').textContent = values.description;
+      summary.querySelector('.rivo-hiw__member-expiry-label').textContent = config.expiryLabel || 'Points expiration date:';
+      summary.querySelector('.rivo-hiw__member-expiry-value').textContent = values.expiry;
+    }
+    function fetchCustomer() {
+      if (!window.RivoJS || typeof window.RivoJS.getCustomerDetails !== 'function') return;
+      try { Promise.resolve(window.RivoJS.getCustomerDetails()).then(function (customer) { customerCache = customer && customer.customer ? customer.customer : customer; lastMeta = ''; render(); }).catch(function () {}); } catch (error) {}
+    }
+    function render() {
+      if (!member || busy) return;
+      var explainer = root.querySelector('#rivo-lp-explainer');
+      var activityHost = explainer && first(explainer, ['.rivo-activity', '.rivo-lp-content']);
+      var activity = explainer && explainer.querySelector('.rivo-lp-customer-activity');
+      var title = explainer && explainer.querySelector('.rivo-lp-section-title');
+      var expiry = explainer && explainer.querySelector('.rivo-points-expiry');
+      var subtitle = explainer && explainer.querySelector('.rivo-lp-section-subtitle');
+      if (!explainer || !activityHost || !activity || !title) return;
+      busy = true;
+      try {
+        var appShell = root.querySelector('.rivo-hiw__app-shell');
+        var myRewards = appShell && first(appShell, ['#rivo-lp-my-rewards', '[id*="rivo-lp-my-rewards"]']);
+        hard(root, { width: '100%', 'max-width': 'none', margin: '0', padding: (window.innerWidth < 750 ? config.paddingTopMobile + 'px 20px ' + config.paddingBottomMobile + 'px' : config.paddingTop + 'px 24px ' + config.paddingBottom + 'px'), background: config.background || '#FFFFFF', 'box-sizing': 'border-box' });
+        hard(appShell, { width: '100%', 'max-width': config.container + 'px', margin: '0 auto', padding: '0', 'box-sizing': 'border-box' });
+        [explainer, explainer.querySelector('.rivo-lp-content'), activityHost].forEach(function (node) { hard(node, { width: '100%', 'max-width': 'none', 'min-width': '0', margin: '0', padding: '0', background: 'transparent', 'box-sizing': 'border-box' }); });
+        var layout = activityHost.querySelector('.rivo-hiw__member-layout');
+        if (!layout) { layout = document.createElement('div'); layout.className = 'rivo-hiw__member-layout'; activityHost.appendChild(layout); }
+        var summary = ensureSummary(layout); if (activity.parentNode !== layout) layout.appendChild(activity);
+        hard(activity, { width: '100%', 'max-width': 'none', 'min-width': '0', margin: '0', padding: '0', background: 'transparent', 'border-radius': '0' });
+        hard(summary, { display: 'flex', 'align-items': 'flex-start', 'text-align': 'left', margin: '0', padding: '0' });
+        syncSummary(summary, sourceValues(title, expiry, subtitle)); paintTable(activity); paintRewards(myRewards);
+        clipSource(title); clipSource(expiry); clipSource(subtitle); root.classList.add('is-ready');
+      } catch (error) { console.error('[rivo-hiw] member layout failed', error); root.classList.add('is-ready'); }
+      window.requestAnimationFrame(function () { busy = false; });
+    }
+    if (!member) { root.classList.add('is-ready'); return; }
+    new MutationObserver(function () { if (!busy) window.requestAnimationFrame(render); }).observe(root, { childList: true, subtree: true, characterData: true });
+    render(); fetchCustomer();
+    var poll = window.setInterval(function () { retryCount += 1; render(); if (retryCount >= 60) window.clearInterval(poll); }, 250);
+    window.addEventListener('resize', render, { passive: true }); document.addEventListener('shopify:section:load', render);
+  }());
+</script>
 
 {% schema %}
 {
-  "name": "Rivo How It Work",
+  "name": "Rivo: How It Works v13",
+  "tag": "section",
+  "class": "rivo-hiw-section",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Background image"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color (used if no image)",
-      "default": "#F3C872"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Primary text color",
-      "default": "#2A1E12"
-    },
-    {
-      "type": "color",
-      "id": "muted_text_color",
-      "label": "Muted text color",
-      "default": "#5A4633"
-    },
-    {
-      "type": "color",
-      "id": "accent_color",
-      "label": "Accent color",
-      "default": "#3A2A1C"
-    },
-    {
-      "type": "color",
-      "id": "line_color",
-      "label": "Timeline line color",
-      "default": "#3A2A1C"
-    },
-    {
-      "type": "text",
-      "id": "badge_text",
-      "label": "Badge text",
-      "default": "SWEET UPDATES"
-    },
-    {
-      "type": "color",
-      "id": "badge_bg_color",
-      "label": "Badge background color",
-      "default": "rgba(255,255,255,0.35)"
-    },
-    {
-      "type": "color",
-      "id": "badge_border_color",
-      "label": "Badge border color",
-      "default": "rgba(58,42,28,0.35)"
-    },
-    {
-      "type": "color",
-      "id": "badge_text_color",
-      "label": "Badge text color",
-      "default": "#2A1E12"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Next Batch Coming Soon!"
-    },
-    {
-      "type": "richtext",
-      "id": "body",
-      "label": "Body text",
-      "default": "<p>Remember, good things come to those who wait! Join our list for updates and be the first to know when we start taking orders again.</p>"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "Join The Sweetness Squad"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button link"
-    },
-    {
-      "type": "color",
-      "id": "button_hover_text_color",
-      "label": "Button hover text color",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "richtext",
-      "id": "right_intro",
-      "label": "Right side intro text",
-      "default": "<p>Our kitchen is currently busy crafting sweet moments for existing orders. Here’s how you can be ready for the next batch:</p>"
-    },
-    {
-      "type": "color",
-      "id": "step_number_text_color",
-      "label": "Step number text color",
-      "default": "#FFFFFF"
-    },
-    {
-      "type": "range",
-      "id": "section_padding_top",
-      "label": "Section padding top",
-      "min": 0,
-      "max": 140,
-      "step": 4,
-      "unit": "px",
-      "default": 56
-    },
-    {
-      "type": "range",
-      "id": "section_padding_bottom",
-      "label": "Section padding bottom",
-      "min": 0,
-      "max": 140,
-      "step": 4,
-      "unit": "px",
-      "default": 56
-    }
+    { "type": "header", "content": "Guest content" },
+    { "type": "text", "id": "copy_title", "label": "Title", "default": "Start Earning Rewards Today" },
+    { "type": "textarea", "id": "copy_description", "label": "Description", "default": "Join thousands of Qure members getting more from every purchase. Here's how it works:" },
+    { "type": "text", "id": "step_1_title", "label": "Step 1 title", "default": "Create Your Account" },
+    { "type": "textarea", "id": "step_1_description", "label": "Step 1 description", "default": "Sign up free and start earning points instantly — no commitment, just rewards for every purchase." },
+    { "type": "text", "id": "step_2_title", "label": "Step 2 title", "default": "Earn Points Every Time You Shop" },
+    { "type": "textarea", "id": "step_2_description", "label": "Step 2 description", "default": "Get points on every order, referral, and review. The more you engage, the more you earn." },
+    { "type": "text", "id": "step_3_title", "label": "Step 3 title", "default": "Redeem for Products & Perks" },
+    { "type": "textarea", "id": "step_3_description", "label": "Step 3 description", "default": "Turn your points into discounts on science-backed treatments you'll actually use." },
+    { "type": "range", "id": "section_padding_top", "label": "Guest padding top", "min": 24, "max": 160, "step": 8, "default": 88, "unit": "px" },
+    { "type": "range", "id": "section_padding_bottom", "label": "Guest padding bottom", "min": 24, "max": 160, "step": 8, "default": 96, "unit": "px" },
+    { "type": "range", "id": "marker_size", "label": "Step marker size", "min": 28, "max": 64, "step": 2, "default": 40, "unit": "px" },
+    { "type": "range", "id": "step_gap", "label": "Space between steps", "min": 16, "max": 72, "step": 4, "default": 32, "unit": "px" },
+    { "type": "header", "content": "Member layout" },
+    { "type": "range", "id": "member_container_v6", "label": "Container width", "min": 1000, "max": 1600, "step": 50, "default": 1400, "unit": "px" },
+    { "type": "range", "id": "member_padding_top_v6", "label": "Padding top", "min": 0, "max": 160, "step": 8, "default": 64, "unit": "px" },
+    { "type": "range", "id": "member_padding_bottom_v6", "label": "Padding bottom", "min": 0, "max": 160, "step": 8, "default": 80, "unit": "px" },
+    { "type": "range", "id": "member_padding_top_mobile_v6", "label": "Mobile padding top", "min": 0, "max": 120, "step": 8, "default": 48, "unit": "px" },
+    { "type": "range", "id": "member_padding_bottom_mobile_v6", "label": "Mobile padding bottom", "min": 0, "max": 120, "step": 8, "default": 64, "unit": "px" },
+    { "type": "range", "id": "member_panel_radius_v6", "label": "Panel radius", "min": 0, "max": 48, "step": 4, "default": 28, "unit": "px" },
+    { "type": "range", "id": "member_table_radius_v6", "label": "Table radius", "min": 0, "max": 40, "step": 2, "default": 18, "unit": "px" },
+    { "type": "header", "content": "Member copy" },
+    { "type": "text", "id": "member_balance_label", "label": "Balance label", "default": "My loyalty balance" },
+    { "type": "text", "id": "member_points_suffix", "label": "Points suffix", "default": "points" },
+    { "type": "text", "id": "member_expiry_label", "label": "Expiration label", "default": "Points expiration date:" },
+    { "type": "text", "id": "member_tier_fallback", "label": "Tier fallback", "default": "Skin Insider" },
+    { "type": "header", "content": "Member colors" },
+    { "type": "color", "id": "member_background", "label": "Section background", "default": "#FFFFFF" },
+    { "type": "color", "id": "member_panel", "label": "Panel background", "default": "#F5F5F5" },
+    { "type": "color", "id": "member_surface", "label": "Table background", "default": "#FFFFFF" },
+    { "type": "color", "id": "member_ink", "label": "Primary text", "default": "#171717" },
+    { "type": "color", "id": "member_muted", "label": "Secondary text", "default": "#8C8C8C" },
+    { "type": "color", "id": "member_label_ink", "label": "Activity labels", "default": "#595C60" },
+    { "type": "color", "id": "member_accent", "label": "Accent", "default": "#FF5429" },
+    { "type": "color", "id": "member_border", "label": "Table dividers", "default": "#DEDCDC" },
+    { "type": "color", "id": "member_point_pill", "label": "Positive points pill", "default": "#FFEAE5" },
+    { "type": "header", "content": "Member rewards" },
+    { "type": "checkbox", "id": "member_rewards_show_subtitle", "label": "Show rewards subtitle", "default": false },
+    { "type": "range", "id": "member_rewards_title_size_v9", "label": "Rewards title size", "min": 32, "max": 64, "step": 2, "default": 48, "unit": "px" },
+    { "type": "range", "id": "member_rewards_title_size_mobile_v9", "label": "Mobile rewards title size", "min": 28, "max": 48, "step": 2, "default": 36, "unit": "px" },
+    { "type": "range", "id": "member_reward_card_width_v9", "label": "Reward card width", "min": 320, "max": 640, "step": 20, "default": 520, "unit": "px" },
+    { "type": "range", "id": "member_reward_image_height_v9", "label": "Reward image height", "min": 240, "max": 520, "step": 20, "default": 360, "unit": "px" },
+    { "type": "range", "id": "member_reward_image_height_mobile_v9", "label": "Mobile reward image height", "min": 200, "max": 360, "step": 20, "default": 260, "unit": "px" },
+    { "type": "range", "id": "member_reward_card_radius_v9", "label": "Reward card radius", "min": 8, "max": 32, "step": 2, "default": 18, "unit": "px" },
+    { "type": "range", "id": "member_reward_card_gap_v9", "label": "Space between reward cards", "min": 12, "max": 48, "step": 4, "default": 24, "unit": "px" },
+    { "type": "color", "id": "member_reward_card_bg", "label": "Reward card background", "default": "#F5F5F5" },
+    { "type": "color", "id": "member_reward_image_bg", "label": "Reward image background", "default": "#FFFFFF" },
+    { "type": "color", "id": "member_reward_pill_bg", "label": "Reward points pill", "default": "#212428" },
+    { "type": "color", "id": "member_reward_pill_text", "label": "Reward points pill text", "default": "#FFFFFF" }
   ],
-  "blocks": [
-    {
-      "type": "step",
-      "name": "Step",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Step title",
-          "default": "Subscribe for updates"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Step description",
-          "default": "Get notified as soon as ordering reopens."
-        }
-      ]
-    }
-  ],
-  "max_blocks": 3,
-  "presets": [
-    {
-      "name": "Rivo How It Works",
-      "blocks": [
-        { "type": "step" },
-        { "type": "step" },
-        { "type": "step" }
-      ]
-    }
-  ]
+  "blocks": [{ "type": "@app" }],
+  "max_blocks": 1,
+  "presets": [{ "name": "Rivo: How It Works v13" }]
 }
 {% endschema %}

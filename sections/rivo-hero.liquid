@@ -1,0 +1,549 @@
+{%- comment -%}
+  RIVO: HERO (v10)
+  Two content sources, switchable per section:
+    - "theme"  → copy comes from this section's settings (original behaviour)
+    - "rivo"   → copy is read live from the Rivo hero block's own markup,
+                 so editing the title in the Rivo app admin updates the page
+  The Rivo block is always mounted; it is clipped, never display:none'd,
+  so Alpine keeps rendering it and we can read its text.
+  Mobile can use its own photo (art-direction swap via <picture>) and stacks
+  image-on-top / copy-below instead of the desktop full-bleed overlay.
+{%- endcomment -%}
+
+{%- liquid
+  assign src = section.settings.content_source | default: 'theme'
+  assign from_rivo = false
+  if src == 'rivo'
+    assign from_rivo = true
+  endif
+
+  if customer
+    assign hero_eyebrow  = section.settings.eyebrow_member
+    assign hero_title    = section.settings.title_member
+    assign hero_subtitle = section.settings.subtitle_member
+    assign cta1_text     = section.settings.cta_text_member
+    assign cta1_url      = section.settings.cta_url_member
+    assign cta2_text     = section.settings.cta2_text_member
+    assign cta2_url      = section.settings.cta2_url_member
+  else
+    assign hero_eyebrow  = section.settings.eyebrow
+    assign hero_title    = section.settings.title
+    assign hero_subtitle = section.settings.subtitle
+    assign cta1_text     = section.settings.cta_text
+    assign cta1_url      = section.settings.cta_url
+    assign cta2_text     = section.settings.cta2_text
+    assign cta2_url      = section.settings.cta2_url
+  endif
+
+  # logo beside the title: hidden for signed-in members unless explicitly re-enabled
+  assign show_logo = section.settings.show_title_logo
+  if customer and section.settings.show_title_logo_member != true
+    assign show_logo = false
+  endif
+
+  assign has_desktop_img = false
+  if section.settings.background_image_url != blank or section.settings.background_image != blank
+    assign has_desktop_img = true
+  endif
+  assign has_mobile_img = false
+  if section.settings.mobile_image_url != blank or section.settings.mobile_image != blank
+    assign has_mobile_img = true
+  endif
+-%}
+
+<style>
+  /* Smooth-scroll for in-page anchor CTAs (member buttons scroll to other sections) */
+  html { scroll-behavior: smooth; }
+
+  .rivo-hero-{{ section.id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: {{ section.settings.section_bg | default: '#DEE2E3' }};
+    font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Reset Shopify's app-block wrappers — hybrid section requirement */
+  .rivo-hero-{{ section.id }} .shopify-block,
+  .rivo-hero-{{ section.id }} [class*="shopify-block"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    background: transparent !important;
+    display: block !important;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: {{ section.settings.min_height_desktop | default: 500 }}px;
+    overflow: hidden;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 560px;
+    box-sizing: border-box;
+    padding: 48px 5vw;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__eyebrow {
+    font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FF5429;
+    margin: 0 0 16px;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__title {
+    display: flex;
+    align-items: center;
+    gap: 0.32em;
+    font-family: 'Canela', Georgia, 'Times New Roman', serif;
+    font-weight: 300;
+    font-size: {{ section.settings.title_size_desktop | default: 44 }}px;
+    letter-spacing: 0;
+    line-height: 1.1;
+    text-transform: none;
+    color: #171717;
+    margin: 0 0 20px;
+    max-width: 18ch;
+  }
+  /* an empty title (waiting on Rivo) must not leave a 20px gap */
+  .rivo-hero-{{ section.id }} .rivo-hero__title:empty,
+  .rivo-hero-{{ section.id }} .rivo-hero__subtitle:empty { display: none; }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__title-logo {
+    height: 0.82em;
+    width: auto;
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__subtitle {
+    font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #3A3D3F;
+    margin: 0 0 32px;
+    max-width: 40ch;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__cta {
+    background: #1C1C1C;
+    color: #FFFFFF;
+    border: 1px solid #1C1C1C;
+    padding: 15px 28px;
+    font-family: 'TT Commons', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: none;
+    letter-spacing: 0;
+    border-radius: 9999px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__cta:hover {
+    background: #000000;
+    border-color: #000000;
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__cta--secondary {
+    background: #FFFFFF;
+    color: #171717;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__cta--secondary:hover {
+    background: #F6F6F7;
+    border-color: rgba(0, 0, 0, 0.16);
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__image,
+  .rivo-hero-{{ section.id }} .rivo-hero__placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: {{ section.settings.image_position | default: '75% center' }};
+    display: block;
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__placeholder {
+    background: #C7E5DB;
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(90deg, {{ section.settings.section_bg | default: '#DEE2E3' }} 0%, transparent {{ section.settings.scrim_fade | default: 55 }}%);
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__badge {
+    position: absolute;
+    z-index: 2;
+    top: 32px;
+    left: 32px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #C7E5DB;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  }
+  .rivo-hero-{{ section.id }} .rivo-hero__badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* The Rivo block stays mounted but clipped — NOT display:none, which would stop
+     Alpine from rendering it and make its text unreadable when we mirror it. */
+  .rivo-hero-{{ section.id }} .rivo-hero__source {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .hero__title span {
+    font-weight: 200 !important;
+  }
+
+  .rivo-hero-{{ section.id }} .rivo-hero__empty {
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px dashed rgba(0, 0, 0, 0.25);
+    color: #171717;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  /* ---------- mobile: same overlay as desktop, text pinned over the photo's headroom ---------- */
+  @media (max-width: 900px) {
+    .rivo-hero-{{ section.id }} .rivo-hero__inner {
+      align-items: flex-start;
+      min-height: {{ section.settings.min_height_mobile | default: 560 }}px;
+    }
+
+    .rivo-hero-{{ section.id }} .rivo-hero__image,
+    .rivo-hero-{{ section.id }} .rivo-hero__placeholder {
+      object-position: {{ section.settings.mobile_image_position | default: 'center 65%' }};
+    }
+    /* top-down fade instead of desktop's left-right one — text sits above the photo, not beside it */
+    .rivo-hero-{{ section.id }} .rivo-hero__scrim {
+      background: linear-gradient(180deg, {{ section.settings.section_bg | default: '#DEE2E3' }} 0%, transparent {{ section.settings.scrim_fade | default: 55 }}%);
+    }
+
+    .rivo-hero-{{ section.id }} .rivo-hero__content {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      padding-top: 48px;
+      padding-right: 20px;
+      padding-bottom: 16px;
+      padding-left: 20px;
+    }
+    .rivo-hero-{{ section.id }} .rivo-hero__title {
+      font-size: {{ section.settings.title_size_mobile | default: 32 }}px;
+      justify-content: center;
+      max-width: none;
+    }
+    .rivo-hero-{{ section.id }} .rivo-hero__subtitle {
+      max-width: none;
+    }
+    .rivo-hero-{{ section.id }} .rivo-hero__buttons {
+      width: 100%;
+      justify-content: center;
+    }
+    .rivo-hero-{{ section.id }} .rivo-hero__cta {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    .rivo-hero-{{ section.id }} .rivo-hero__badge {
+      width: 44px;
+      height: 44px;
+      top: 20px;
+      left: 20px;
+    }
+  }
+</style>
+
+<div class="rivo-hero-{{ section.id }} rivo-hero{% if customer %} rivo-hero--member{% endif %}"
+     id="rivo-hero-{{ section.id }}"
+     data-rivo-hero-root
+     data-hero-source="{{ src }}">
+  <div class="rivo-hero__inner">
+
+    <div class="rivo-hero__content">
+      {%- if hero_eyebrow != blank or from_rivo -%}
+        <div class="rivo-hero__eyebrow" data-hero-eyebrow>{{ hero_eyebrow }}</div>
+      {%- endif -%}
+
+      {%- if hero_title != blank or from_rivo -%}
+        <h1 class="rivo-hero__title" data-hero-title>
+          {%- if show_logo -%}
+            {%- if section.settings.title_logo != blank -%}
+              <img class="rivo-hero__title-logo" src="{{ section.settings.title_logo | image_url: width: 200 }}" alt="{{ shop.name }}" loading="eager">
+            {%- elsif section.settings.title_logo_url != blank -%}
+              <img class="rivo-hero__title-logo" src="{{ section.settings.title_logo_url }}" alt="{{ shop.name }}" loading="eager">
+            {%- endif -%}
+          {%- endif -%}
+          <span data-hero-title-text>{{ hero_title }}</span>
+        </h1>
+      {%- endif -%}
+
+      {%- if hero_subtitle != blank or from_rivo -%}
+        <p class="rivo-hero__subtitle" data-hero-subtitle>{{ hero_subtitle }}</p>
+      {%- endif -%}
+
+      {%- if cta1_text != blank or cta2_text != blank -%}
+        <div class="rivo-hero__buttons">
+          {%- if cta1_text != blank -%}
+            <a class="rivo-hero__cta" href="{{ cta1_url | default: '/account/register' }}">{{ cta1_text }}</a>
+          {%- endif -%}
+          {%- if cta2_text != blank -%}
+            <a class="rivo-hero__cta rivo-hero__cta--secondary" href="{{ cta2_url | default: '#' }}">{{ cta2_text }}</a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size == 0 -%}
+        <div class="rivo-hero__empty">Add the Rivo Hero block to satisfy the section requirement.</div>
+      {%- endif -%}
+    </div>
+
+    <div class="rivo-hero__media" aria-hidden="true">
+      {%- if has_desktop_img or has_mobile_img -%}
+        <picture>
+          {%- if has_mobile_img and has_desktop_img -%}
+            {%- if section.settings.mobile_image_url != blank -%}
+              <source media="(max-width: 900px)" srcset="{{ section.settings.mobile_image_url }}">
+            {%- else -%}
+              <source media="(max-width: 900px)"
+                      srcset="{{ section.settings.mobile_image | image_url: width: 800 }} 800w,
+                              {{ section.settings.mobile_image | image_url: width: 1200 }} 1200w"
+                      sizes="100vw">
+            {%- endif -%}
+          {%- endif -%}
+          {%- if section.settings.background_image_url != blank -%}
+            <img class="rivo-hero__image" src="{{ section.settings.background_image_url }}" alt="" loading="eager">
+          {%- elsif section.settings.background_image != blank -%}
+            <img class="rivo-hero__image"
+                 src="{{ section.settings.background_image | image_url: width: 1600 }}"
+                 srcset="{{ section.settings.background_image | image_url: width: 800 }} 800w,
+                         {{ section.settings.background_image | image_url: width: 1200 }} 1200w,
+                         {{ section.settings.background_image | image_url: width: 1600 }} 1600w,
+                         {{ section.settings.background_image | image_url: width: 2000 }} 2000w"
+                 sizes="(max-width: 900px) 100vw, 54vw"
+                 alt=""
+                 loading="eager"
+                 width="{{ section.settings.background_image.width }}"
+                 height="{{ section.settings.background_image.height }}">
+          {%- elsif section.settings.mobile_image_url != blank -%}
+            <img class="rivo-hero__image" src="{{ section.settings.mobile_image_url }}" alt="" loading="eager">
+          {%- else -%}
+            <img class="rivo-hero__image"
+                 src="{{ section.settings.mobile_image | image_url: width: 1200 }}"
+                 alt=""
+                 loading="eager"
+                 width="{{ section.settings.mobile_image.width }}"
+                 height="{{ section.settings.mobile_image.height }}">
+          {%- endif -%}
+        </picture>
+      {%- else -%}
+        <div class="rivo-hero__placeholder"></div>
+      {%- endif -%}
+
+      {%- unless section.settings.show_scrim == false -%}
+        <div class="rivo-hero__scrim"></div>
+      {%- endunless -%}
+
+      {%- if section.settings.badge_image != blank -%}
+        <div class="rivo-hero__badge">
+          <img src="{{ section.settings.badge_image | image_url: width: 160 }}" alt="" loading="eager">
+        </div>
+      {%- endif -%}
+    </div>
+
+  </div>
+
+  {%- comment -%} Live Rivo block: mounted, clipped, and used as the copy source when enabled {%- endcomment -%}
+  <div class="rivo-hero__source" data-hero-rivo-source>
+    {%- for block in section.blocks -%}
+      {% render block %}
+    {%- endfor -%}
+  </div>
+
+</div>
+
+{%- if from_rivo -%}
+<script>
+(function () {
+  var root = document.getElementById('rivo-hero-{{ section.id }}');
+  if (!root) { return; }
+
+  var TITLE_SEL = {{ section.settings.sel_rivo_title | default: '.rivo-lp-section-title, .rivo-lp-header-title, [class*="header-title"], [class*="section-title"], h1, h2' | json }};
+  var SUB_SEL = {{ section.settings.sel_rivo_subtitle | default: '.rivo-lp-section-subtitle, .rivo-lp-header-subtitle, [class*="header-subtitle"], [class*="section-subtitle"], p' | json }};
+
+  var source = root.querySelector('[data-hero-rivo-source]');
+  var titleText = root.querySelector('[data-hero-title-text]');
+  var subEl = root.querySelector('[data-hero-subtitle]');
+  var busy = false, tries = 0;
+
+  function txt(el) {
+    return el ? (el.textContent || '').replace(/ /g, ' ').replace(/\s+/g, ' ').trim() : '';
+  }
+  function pick(selectors) {
+    if (!source) { return ''; }
+    var list = selectors.split(',');
+    for (var i = 0; i < list.length; i++) {
+      var el = null;
+      try { el = source.querySelector(list[i].trim()); } catch (e) { el = null; }
+      var value = txt(el);
+      if (value) { return value; }
+    }
+    return '';
+  }
+
+  function sync() {
+    if (busy) { return false; }
+    var t = pick(TITLE_SEL);
+    var s = pick(SUB_SEL);
+    if (!t && !s) { return false; }
+
+    busy = true;
+    if (t && titleText && txt(titleText) !== t) { titleText.textContent = t; }
+    if (s && subEl && txt(subEl) !== s) { subEl.textContent = s; }
+    window.requestAnimationFrame(function () { busy = false; });
+    return true;
+  }
+
+  new MutationObserver(function () { if (!busy) { window.requestAnimationFrame(sync); } })
+    .observe(root, { childList: true, subtree: true, characterData: true });
+
+  var timer = window.setInterval(function () {
+    tries += 1;
+    if (sync() || tries >= 60) { window.clearInterval(timer); }
+  }, 150);
+
+  document.addEventListener('shopify:section:load', function (event) {
+    if (event.target && event.target.contains(root)) { sync(); }
+  });
+  sync();
+})();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Rivo: Hero v10",
+  "tag": "section",
+  "class": "rivo-hero-section",
+  "settings": [
+    { "type": "header", "content": "Where the copy comes from" },
+    {
+      "type": "select", "id": "content_source", "label": "Title & subtitle source", "default": "theme",
+      "info": "Theme = the Copy fields below (Rivo's own title is ignored). Rivo app = read live from the Rivo hero block, so editing it in Rivo's admin updates the page.",
+      "options": [
+        { "value": "theme", "label": "Theme settings (fields below)" },
+        { "value": "rivo", "label": "Rivo app admin (live)" }
+      ]
+    },
+
+    { "type": "header", "content": "Background photo (full-bleed)" },
+    { "type": "image_picker", "id": "background_image", "label": "Photo", "info": "Fills the entire section as a background image, behind the text, on desktop. Also used on mobile unless a Mobile photo is set below." },
+    { "type": "text", "id": "background_image_url", "label": "Or paste image URL", "info": "Direct https:// link. URL wins if both filled." },
+    { "type": "text", "id": "image_position", "label": "Focal point (desktop)", "default": "75% center", "info": "CSS object-position, e.g. \"75% center\" or \"top right\". Controls which part of the photo stays visible when cropped." },
+    { "type": "checkbox", "id": "show_scrim", "label": "Fade background color into photo", "default": true, "info": "Blends the Background color (below) into the photo so text stays legible over it — from the left edge on desktop, from the top edge on mobile. Turn off for a plain, uncovered photo." },
+    { "type": "range", "id": "scrim_fade", "label": "Fade distance", "default": 55, "min": 20, "max": 80, "step": 5, "unit": "%", "info": "How far the color fade extends across the photo." },
+    { "type": "image_picker", "id": "badge_image", "label": "Circular badge (optional)", "info": "Small logo mark overlaid on the photo, top-left. Leave blank to hide." },
+
+    { "type": "header", "content": "Mobile photo (optional)" },
+    { "type": "paragraph", "content": "Text still overlays the photo on phones, same as desktop. Upload a photo with headroom at the top — e.g. a plain background band above the subjects — so the title and buttons land on that instead of on faces. Leave blank to reuse the desktop photo." },
+    { "type": "image_picker", "id": "mobile_image", "label": "Mobile photo" },
+    { "type": "text", "id": "mobile_image_url", "label": "Or paste mobile image URL", "info": "Direct https:// link. URL wins if both filled." },
+    { "type": "text", "id": "mobile_image_position", "label": "Focal point (mobile)", "default": "center 65%", "info": "CSS object-position. Raising the % crops away more of the photo's top headroom, bringing the subjects up closer to the buttons." },
+
+    { "type": "header", "content": "Size" },
+    { "type": "color", "id": "section_bg", "label": "Background", "default": "#DEE2E3", "info": "Shows behind the photo, and feeds the fade above, when no photo is set." },
+    { "type": "range", "id": "min_height_desktop", "label": "Min-height (desktop)", "default": 500, "min": 360, "max": 900, "step": 20, "unit": "px" },
+    { "type": "range", "id": "min_height_mobile", "label": "Min-height (mobile)", "default": 560, "min": 480, "max": 900, "step": 20, "unit": "px" },
+    { "type": "range", "id": "title_size_desktop", "label": "Title size (desktop)", "default": 44, "min": 28, "max": 72, "step": 2, "unit": "px" },
+    { "type": "range", "id": "title_size_mobile", "label": "Title size (mobile)", "default": 32, "min": 22, "max": 48, "step": 2, "unit": "px" },
+
+    { "type": "header", "content": "Title logo" },
+    { "type": "checkbox", "id": "show_title_logo", "label": "Show logo before title", "default": true },
+    { "type": "checkbox", "id": "show_title_logo_member", "label": "Also show it to signed-in members", "default": false, "info": "Off = the logo disappears once a customer is logged in." },
+    { "type": "image_picker", "id": "title_logo", "label": "Logo mark", "info": "Uploaded to this store's Files. Wins over the URL below if both are set." },
+    { "type": "text", "id": "title_logo_url", "label": "Or paste logo URL", "default": "https://cdn.shopify.com/s/files/1/0441/1431/3365/files/Vector_764ac720-e357-4d08-b821-5aec61d0f2c4.svg?v=1787673418", "info": "Direct https:// link, e.g. an SVG from this store's CDN." },
+
+    { "type": "header", "content": "Copy — logged out" },
+    { "type": "paragraph", "content": "Used when the source above is set to Theme settings." },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "info": "Leave blank to hide." },
+    { "type": "text", "id": "title", "label": "Title (H1)", "default": "Loyalty Program", "info": "Renders after the logo, e.g. \"[logo] Loyalty Program\"." },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitle", "default": "Earn points and gain access to exclusive benefits every time you shop." },
+
+    { "type": "header", "content": "Copy — logged in" },
+    { "type": "paragraph", "content": "Shown to signed-in members." },
+    { "type": "text", "id": "eyebrow_member", "label": "Eyebrow", "info": "Leave blank to hide." },
+    { "type": "text", "id": "title_member", "label": "Title (H1)", "default": "Welcome back" },
+    { "type": "textarea", "id": "subtitle_member", "label": "Subtitle", "default": "Keep glowing and keep earning, your best skin is just getting started." },
+
+    { "type": "header", "content": "Buttons — logged out" },
+    { "type": "text", "id": "cta_text", "label": "Primary CTA text", "default": "Join Now" },
+    { "type": "url", "id": "cta_url", "label": "Primary CTA link", "info": "/account/register works for most stores." },
+    { "type": "text", "id": "cta2_text", "label": "Secondary CTA text", "default": "Sign In", "info": "Leave blank to hide." },
+    { "type": "url", "id": "cta2_url", "label": "Secondary CTA link", "info": "/account/login works for most stores." },
+
+    { "type": "header", "content": "Buttons — logged in" },
+    { "type": "paragraph", "content": "Tip: link to in-page anchors (e.g. #rivo-ways-to-earn, #rivo-ways-to-redeem) for smooth-scroll." },
+    { "type": "text", "id": "cta_text_member", "label": "Primary CTA text", "default": "Earn points" },
+    { "type": "text", "id": "cta_url_member", "label": "Primary CTA link", "default": "#rivo-ways-to-earn", "info": "Accepts anchors (#rivo-ways-to-earn — the real id Rivo renders on the Ways to Earn section), relative paths (/account), or full URLs." },
+    { "type": "text", "id": "cta2_text_member", "label": "Secondary CTA text", "default": "Redeem Rewards" },
+    { "type": "text", "id": "cta2_url_member", "label": "Secondary CTA link", "default": "#rivo-ways-to-redeem", "info": "Accepts anchors (#rivo-ways-to-redeem — the real id Rivo renders on the Ways to Redeem section), relative paths (/account), or full URLs." },
+
+    { "type": "header", "content": "Advanced (Rivo selectors)" },
+    { "type": "text", "id": "sel_rivo_title", "label": "Rivo title node", "default": ".rivo-lp-section-title, .rivo-lp-header-title, [class*=\"header-title\"], [class*=\"section-title\"], h1, h2" },
+    { "type": "text", "id": "sel_rivo_subtitle", "label": "Rivo subtitle node", "default": ".rivo-lp-section-subtitle, .rivo-lp-header-subtitle, [class*=\"header-subtitle\"], [class*=\"section-subtitle\"], p" }
+  ],
+  "blocks": [ { "type": "@app" } ],
+  "max_blocks": 1,
+  "presets": [ { "name": "Rivo: Hero" } ]
+}
+{% endschema %}
