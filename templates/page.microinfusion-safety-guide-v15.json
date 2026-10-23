@@ -33,6 +33,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/micro-infusion-banner-15.webp",
         "image_mobile": "shopify://shop_images/micro-infusion-banner-mob-15.webp",
+        "video_url": "",
         "button_label": "",
         "button_url": ""
       }
@@ -333,7 +334,7 @@
         "active": false,
         "must_read": false,
         "heading": "Where to Use",
-        "text": "<h2>Where to Use</h2><p>[image]</p><p>The Qure Micro-Infusion device is designed for use on the face and neck only.</p><p>You can safely treat the forehead, cheeks, nose, chin, jawline, and the under-eye area (up to the orbital bone). </p><p>Use light, even pressure and pass over each area 2-3 times. If a section feels too sensitive, it's okay to skip it.</p><p>[quote_content]</p>"
+        "text": "<h2>Where to Use</h2><p>[image]</p><p>The Qure Micro-Infusion device is designed for use on the face and neck only.</p><p>You can safely treat the forehead, cheeks, nose, chin, jawline, and the under-eye area (up to the orbital bone).&nbsp;</p><p>Use very gentle pressure and make one pass only when treating the under-eye area (up to the orbital bone) and lips. For all other treatment areas, use light, even pressure and pass over each area 2–3 times, as tolerated. Do not use Micro-Infusion on the eyelids, broken skin, or areas with active breakouts.</p><p>[quote_content]</p>"
       }
     },
     "n_guide_shedule_dY167v": {

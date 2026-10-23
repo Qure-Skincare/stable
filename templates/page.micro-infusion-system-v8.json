@@ -851,6 +851,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": true,
@@ -879,6 +880,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779399407,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -907,6 +909,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779432175,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -947,6 +950,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -975,6 +979,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1003,6 +1008,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779530479,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1043,6 +1049,7 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1083,6 +1090,7 @@
       ],
       "disabled": true,
       "settings": {
+        "modifier": "none",
         "type": "list",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
@@ -1094,7 +1102,11 @@
         "delivery_switcher_position": "header",
         "delivery_switcher_product": "",
         "guarantee_period": "90",
-        "available-stocks": false
+        "available-stocks": false,
+        "hide_product_types": false,
+        "subscription_details": false,
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_mi_ingredients_v5": {
@@ -1104,6 +1116,7 @@
           "type": "left_heading",
           "settings": {
             "image": "shopify://shop_images/dark-spots_d7bcd9e4-63e1-4bf8-afc1-875800cde11b.webp",
+            "badge": "",
             "text": "<h3>Dark Spots</h3><h6>MICRO-INFUSION SERUM</h6><p>Targets dark spots and uneven tone for a clearer, brighter complexion.</p>"
           }
         },
@@ -1139,6 +1152,7 @@
           "type": "right_heading",
           "settings": {
             "image": "shopify://shop_images/wrinkles_81c769db-e1d4-4377-86e8-324dd4e64e51.webp",
+            "badge": "",
             "text": "<h3>Wrinkles</h3><h6>MICRO-INFUSION SERUM</h6><p>Boosts hydration & smooths fine lines for plumper, younger-looking skin.</p>"
           }
         },
@@ -1187,7 +1201,10 @@
       "settings": {
         "use_own_file": false,
         "section_id": "ingredients",
-        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
+        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>",
+        "button_label": "",
+        "button_url": "",
+        "sub_text": ""
       }
     },
     "n_experts_grid_v5": {
@@ -1253,6 +1270,7 @@
       "name": "t:sections.n_experts-grid.name",
       "settings": {
         "use_own_file": false,
+        "awards": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
@@ -1397,7 +1415,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Where can I use it? Is it okay around my eyes and on my neck?",
-            "text": "<p><strong>Micro-Infusion can be used on the face, around the eye area, and on the neck.</strong> Around the eyes, it can help smooth the look of crow's feet - just ensure you apply very gentle pressure and only do one pass. Monitor your skin accordingly, as everyone's skin is different.</p><p>Performing Micro-Infusion on the neck can help improve the look of fine lines and rejuvenate the skin's appearance. It can target concerns such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and look of this area.</p>"
+            "text": "<p><strong>Micro-Infusion can be used on the face, around the eye area, and on the neck.</strong> Use very gentle pressure and make one pass only when treating the under-eye area (up to the orbital bone) and lips. For all other treatment areas, use light, even pressure and pass over each area 2–3 times, as tolerated. Do not use Micro-Infusion on the eyelids, broken skin, or areas with active breakouts. Monitor your skin accordingly, as everyone's skin is different.</p><p>Performing Micro-Infusion on the neck can help improve the look of fine lines and rejuvenate the skin's appearance. It can target concerns such as neck creases, horizontal lines, and age-related skin concerns to help enhance the overall texture, tone, and look of this area.</p>"
           }
         },
         "accordion_8": {
