@@ -154,6 +154,7 @@
     },
     "n_promo_strip_bF3xQk": {
       "type": "n_promo-strip",
+      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "against-cancer",
@@ -170,7 +171,6 @@
     },
     "n_promo_strip_wR8mHd": {
       "type": "n_promo-strip",
-      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "against-cancer",
