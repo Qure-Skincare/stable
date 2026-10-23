@@ -2,25 +2,20 @@
   Renders the save-up badge that links to the bundle page.
   When the sitewide sale is on, renders the Black Friday bundle promo badge instead.
 
-  @param {boolean} hide_bf - Skip the Black Friday badge (used on the bundle product page).
-
   @example
   {% render 'n-product-saveup-offer' %}
-  {% render 'n-product-saveup-offer', hide_bf: true %}
 {% enddoc %}
 
 {% if settings.black_friday_sitewide_turn_on %}
-    {% unless hide_bf %}
-        <a class="c-save-up-bf" href="{{ 'special-offer.bundle-promo.link' | t }}">
-            <span class="e-pill-save">{{ 'special-offer.bundle-promo.tag' | t }}</span>
-            <picture>
-                <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bg-limited-time-offer.webp" alt="" />
-            </picture>
-            <strong>{{ 'special-offer.bundle-promo.header' | t }}</strong>
-            <p>{{ 'special-offer.bundle-promo.text' | t }}</p>
-            <i class="e-icon e-icon-arrow"></i>
-        </a>
-    {% endunless %}
+    <a class="c-save-up-bf" href="{{ 'special-offer.bundle-promo.link' | t }}">
+        <span class="e-pill-save">{{ 'special-offer.bundle-promo.tag' | t }}</span>
+        <picture>
+            <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bg-limited-time-offer.webp" alt="" />
+        </picture>
+        <strong>{{ 'special-offer.bundle-promo.header' | t }}</strong>
+        <p>{{ 'special-offer.bundle-promo.text' | t }}</p>
+        <i class="e-icon e-icon-arrow"></i>
+    </a>
 {% else %}
     <div class="c-save-up">
         <i class="e-icon e-icon-gift"></i>
