@@ -844,6 +844,20 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_w8hqzj": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_3_30309ef5-8a33-4d2f-959a-36bfd3ae17c7.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Priscilla Y.",
+            "verified_customer": "Verified customer",
+            "badge": "Overall skin appearance",
+            "text": "<p>“Today is treatment 3. I've not looked at the pictures until today. I see some changes. Gradual, but I can finally see them. I'm hoping by 6th treatment, there will be a noticeable&nbsp;improvement.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -861,7 +875,8 @@
         "slider_pJ4Kw1",
         "slider_9NRFNC",
         "slider_cdVmwE",
-        "slider_GwmLL3"
+        "slider_GwmLL3",
+        "slider_w8hqzj"
       ],
       "name": "t:sections.n_trusted-reviews.name",
       "settings": {
