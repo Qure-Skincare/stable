@@ -86,3 +86,10 @@
             {% endunless %}
         {% endcase %}
 {% endfor %}
+
+{% if settings.black_friday_sitewide_turn_on %}
+    {%- assign saveup_block = section.blocks | where: 'type', 'saveup-offer' | first -%}
+    {%- unless saveup_block -%}
+        {% render 'n-product-saveup-offer' %}
+    {%- endunless -%}
+{% endif %}
