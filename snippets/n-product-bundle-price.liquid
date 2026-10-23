@@ -33,7 +33,7 @@
     {% assign bundle_before_price = bundle_total_original | money_without_trailing_zeros %}
     {% assign save_percent = bonus_price_original | times: 100.0 | divided_by: bundle_total_original | round %}
 
-    <div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
+    <div {% render 'n-product-special-offer-attrs' %}>
         <div class="e-price">
             <div class="e-price__main">
                 <div class="e-price__current">{{ main_price_display }}</div>

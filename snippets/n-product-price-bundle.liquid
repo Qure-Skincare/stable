@@ -43,7 +43,7 @@
 {% endif %}
 
 {%- if bundle_before_price != blank -%}
-    <div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
+    <div {% render 'n-product-special-offer-attrs' %}>
         <div class="e-price">
             <div class="e-price__main">
                 <div class="e-price__current">{{ product_sale_price }}</div>
