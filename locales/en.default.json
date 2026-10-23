@@ -413,15 +413,17 @@
   "special-offer": {
     "settings": {
       "header": "Special Offer",
+      "bf-header": "Black Friday",
       "total-value": "Total value"
     },
     "menu": {
       "header": "",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
-    "limited-offer": {
+    "bundle-promo": {
+      "tag": "limited time",
       "header": "UP TO 57% OFF",
-      "text": "Save with Special offer bundle deals",
+      "text": "Save with Black Friday bundle deals",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "cart": {
