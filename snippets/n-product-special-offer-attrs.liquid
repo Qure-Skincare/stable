@@ -1,0 +1,17 @@
+{% doc %}
+  Outputs the class and data-label attributes for a "c-special-offer" price block.
+  When the sitewide sale is on, adds the "c-special-offer--bf" modifier and the Black Friday label.
+
+  @param {string} label - Default label (falls back to special-offer.settings.header).
+
+  @example
+  <div {% render 'n-product-special-offer-attrs' %}>
+  <div {% render 'n-product-special-offer-attrs', label: 'SPECIAL OFFER' %}>
+{% enddoc %}
+
+{%- if settings.black_friday_sitewide_turn_on -%}
+    class="c-special-offer c-special-offer--bf" data-label="{{ 'special-offer.settings.bf-header' | t }}"
+{%- else -%}
+    {%- assign default_label = 'special-offer.settings.header' | t -%}
+    class="c-special-offer" data-label="{{ label | default: default_label }}"
+{%- endif -%}
