@@ -70,7 +70,11 @@
 
 {% comment %} blackfriday discount {% endcomment %}
 
-{% assign global_black_friday_discount_percent = settings.black_friday_discount_percent %}
+{% if settings.black_friday_sitewide_turn_on %}
+    {% assign global_black_friday_discount_percent = settings.black_friday_discount_percent %}
+{% else %}
+    {% assign global_black_friday_discount_percent = 0 %}
+{% endif %}
 {% assign global_black_friday_discount_exception = settings.black_friday_discount_exception %}
 
 {% if global_black_friday_discount_exception != blank %}

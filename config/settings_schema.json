@@ -205,7 +205,7 @@
     "name": "Special offer",
     "settings": [
       { "type": "checkbox", "id": "black_friday_turn_on", "label": "Special offer Turn on" },
-      { "type": "checkbox", "id": "black_friday_sitewide_turn_on", "label": "Sitewide sale Turn on", "info": "Product pages: bundle promo badge, Black Friday price label, discount percent and code" },
+      { "type": "checkbox", "id": "black_friday_sitewide_turn_on", "label": "Sitewide sale Turn on" },
       { "type": "text", "id": "black_friday_discount", "label": "Discount" },
       { "type": "range", "id": "black_friday_discount_percent", "label": "Percent", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 26 },
       { "type": "textarea", "id": "black_friday_discount_exception", "label": "Exception" },
