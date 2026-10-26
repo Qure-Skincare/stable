@@ -150,7 +150,7 @@
                     "url": "https://qureskincare.com/products/hair-growth-helmet",
                     "image": "shopify://shop_images/header-promo-card-image-4.webp",
                     "image_style": "product",
-                    "hide_on_mobile": true
+                    "hide_on_mobile": false
                   },
                   "blocks": {}
                 },
