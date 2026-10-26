@@ -200,7 +200,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How can I update my order or cancel my order?",
-            "text": "<p>If your order has not been shipped then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we'll do our best to process your request.</p>",
+            "text": "<p>Within 30 minutes of ordering, you can update your delivery address, email address and order notes yourself using the link in your confirmation email.</p><p>After 30 minutes, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> as soon as possible. If your order has not been dispatched, we can usually help with changes. We cannot move an order to an address in a different country.</p><p>Orders go to our warehouse automatically and we cannot always stop them. Once an order has shipped it cannot be cancelled or changed. You can return it after it arrives under our 30-day money-back guarantee (see Returns & Exchanges).</p>",
             "section_id": ""
           }
         },
