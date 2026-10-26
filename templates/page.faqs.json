@@ -109,7 +109,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When can I expect to receive my Qure package?",
-            "text": "<p>We are working closely with our external partners and carriers to ensure your Order can reach you as quickly as possible. See below for the most up-to-date information (excluding potential courier delays)*:</p><p>Estimated Shipping Time</p><p>Australia: 7-14 business days <br/>United States: 3-6 business days<br/>Canada: 3-10 business days<br/>United Kingdom: 7-14 business days<br/>Europe: 7-14 business days</p><p>* During the Black Friday and holiday seasons, please be aware that packages may experience delays due to high order volume.</p>",
+            "text": "<p>We are working closely with our external partners and carriers to ensure your Order can reach you as quickly as possible. See below for the most up-to-date information (excluding potential courier delays)*:</p><p>Estimated Shipping Time</p><p><strong>Australia & New Zealand</strong><br/>Standard: 7–14 business days<br/>Express: 1–5 business days</p><p><strong>United States</strong><br/>Standard: 3–6 business days<br/>Express: 2–5 business days</p><p><strong>Canada & Mexico</strong><br/>Standard: 5–10 business days<br/>Express: 2–3 business days</p><p><strong>United Kingdom</strong><br/>Standard: 3–4 business days<br/>Express: 1–2 business days</p><p><strong>Europe</strong><br/>Economy: 6–18 business days<br/>Express: 2–5 business days</p><p><strong>Asia</strong> <em>(selected countries)</em><br/>Economy: 6–18 business days<br/>Express: 2–3 business days</p><p><strong>Middle East</strong> <em>(selected countries)</em><br/>Standard: 6–12 business days<br/>Express: 3–6 business days</p><p><strong>Rest of World</strong><br/>Economy: 6–18 business days<br/>Express: 2–5 business days</p><p>*During the Black Friday and holiday seasons, please be aware that packages may experience delays due to high order volume.</p>",
             "section_id": "Shipping"
           }
         },
@@ -118,7 +118,16 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where does Qure ship to?",
-            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p>",
+            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p><p>Free shipping applies to orders over $149 for US and £149 for UK. See \"How much does shipping cost?\" below.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_GxG63x": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How much does shipping cost?",
+            "text": "<p>Final shipping charges and available express shipping options are shown at checkout.</p>",
             "section_id": ""
           }
         },
@@ -127,12 +136,31 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will my order ship?",
-            "text": "<p>Here's how it works: you order, we process, then we ship. Ordering takes a few seconds. </p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. </p><p>You'll get a shipment notification email with a tracking number as soon as your package ships and it's on the way!</p>",
+            "text": "<p>Here's how it works: you order, we process, then we ship. Ordering takes a few seconds.&nbsp;</p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. Pre-order and backordered items ship on the date shown on the product page.</p><p>You'll get a shipment notification email with a tracking number as soon as your package ships and it's on the way!</p><p>Check your spam folder if you do not see it, and add our sender address to your contacts.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_NXiPYf": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my order arriving in more than one package?",
+            "text": "<p>If your order includes an item that is on pre-order or back in stock later, or an item that ships from a different warehouse, we send the available items first rather than hold your whole order. Each package has its own tracking number and you are not charged extra for a split shipment. Tracking emails are sent for each package. If you would rather wait and receive everything together, contact us before your order ships and we will see what we can do.&nbsp;</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_UmwFTW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When will my pre-order or backordered item ship?",
+            "text": "<p>The expected ship date is shown on the product page when you order. Your card is charged at purchase. We email you a tracking number when your item ships. If the date changes, we will email you.</p>",
             "section_id": ""
           }
         },
         "faq_item_JJCJwr": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "I'm having problems tracking my order.",
@@ -145,7 +173,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Do I need to pay for Taxes and Duties?",
-            "text": "<p>Please note that depending on your order and country, you may be liable to pay local taxes and duties on receipt of your order, for which Qure cannot accept liability. International shipments may be subject to the imposition of customs or import duties once they reach their destination. You will be liable for all of these duties and it is your sole responsibility to pay the charges to release the goods from the shipment. We are legally required to declare the full value of the shipment and will provide an invoice to customs should they require it.</p><p>Please be aware that customers are responsible for payment of any local customs duties. If customs duties are refused or unpaid, these will be deducted from any future refund if applicable. We have no control over these charges as customs policies vary by country. Should you opt not to accept delivery and return the package to sender (RTS), a $10 restocking fee will be deducted from your refund once we receive the item back in our warehouse. If you have any questions related to customs charges, we advise you to contact your local customs office.</p>",
+            "text": "<p>Orders shipped outside the US may be charged local taxes, VAT or import duties when they reach your country. These are set by your local customs office, not by Qure. The carrier will ask you to pay them before delivery. For UK orders, VAT is collected at checkout. We are legally required to declare the full value of the shipment and will provide an invoice to customs should they require it.</p><p>Please do not refuse the parcel. If you refuse delivery or the charges go unpaid, the parcel is returned to us. Unpaid duties and a $10 restocking fee are then deducted from your refund. If you have questions about a charge, contact your local customs office first.</p>",
             "section_id": ""
           }
         },
@@ -154,7 +182,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "My order was lost, damaged, or missing something!",
-            "text": "<p>If your order has not arrived from the day you received your tracking number, or if you notice your package arrived damaged or with missing items, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">please contact us </a>within 15 days. </p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. </p><p>Any relevant information about the package you received will also be helpful.</p>",
+            "text": "<p>If your tracking says delivered but you cannot find the parcel, check with others in your household and your neighbors, look in safe places and check any doorbell camera. If you still cannot find it, or if the parcel arrived damaged or with items missing or wrong, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">please contact us </a>within 15 days of the delivery date.&nbsp;</p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. Keep all packaging until we have resolved your case.</p>",
             "section_id": "Orders"
           }
         },
@@ -163,7 +191,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where is my order?",
-            "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal. </a></p>",
+            "text": "<p>Use the tracking link in your shipping confirmation email, or enter your order number on our <a href=\"https://qureskincareaftership.aftership.com\" title=\"https://qureskincareaftership.aftership.com\">Order Tracking page. </a>Carriers can take 1 to 2 business days to show the first scan. Tracking can also pause for several days while a parcel moves between countries or between carriers.</p><p><a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Contact us</a> if tracking shows no movement for 5 business days, or if it says delivered and you cannot find the parcel. Have your order number ready.</p>",
             "section_id": ""
           }
         },
@@ -172,7 +200,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How can I update my order or cancel my order?",
-            "text": "<p>If your order has not been shipped then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we'll do our best to process your request.</p>",
+            "text": "<p>Within 30 minutes of ordering, you can update your delivery address, email address and order notes yourself using the link in your confirmation email.</p><p>After 30 minutes, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> as soon as possible. If your order has not been dispatched, we can usually help with changes. We cannot move an order to an address in a different country.</p><p>Orders go to our warehouse automatically and we cannot always stop them. Once an order has shipped it cannot be cancelled or changed. You can return it after it arrives under our 30-day money-back guarantee (see Returns & Exchanges).</p>",
             "section_id": ""
           }
         },
@@ -181,7 +209,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "My promo code isn't working.",
-            "text": "<p>If your promo code won't apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - All codes' life eventually comes to an end, make sure you use it before that happens.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to <a href=\"#\">subscribe to our newsletter</a>!</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Platform</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - we'll be happy to help!</p>",
+            "text": "<p>If your promo code won't apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - Check the end date in the email, text or post where you found it. We cannot apply expired codes after the order is placed.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to subscribe to our newsletter.</li><li>You signed up for a code but did not receive it: check your spam and promotions folders, then contact us and we will resend it.</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - we'll be happy to help!</p>",
             "section_id": ""
           }
         },
@@ -194,12 +222,30 @@
             "section_id": ""
           }
         },
+        "faq_item_RdfVdp": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "I bought from Amazon, TikTok Shop or another reseller. Who do I contact?",
+            "text": "<p>Orders placed on another store are handled by that store. Warranty and returns on this page apply to products bought directly from qureskincare.com.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_LKbEHD": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I contact Qure, and how long will you take to reply?",
+            "text": "<p>Use the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> (chat and email), WhatsApp (+1 240 896 3833), or book a free call with our team. &nbsp;Our team are always on hand to help and you can expect a response within 24hrs. During Busier times or holiday season it may take up to 48hrs for a response. Please include your order number so we can help faster.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_yhbpCU": {
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
             "heading": "What is SecureShip?",
-            "text": "<p>SecureShip provides shipping insurance for our customers' online purchases that are lost or damaged while in transit or “porch pirated” (“porch pirated” meaning the carrier reports the status as “delivered” but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
+            "text": "<p>SecureShip is optional shipping protection you can add at checkout. It covers parcels that are lost, damaged in transit, or reported delivered but stolen. If you have SecureShip and your parcel is lost or damaged, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> within 15 days of delivery, keep all packaging, and send photos. We will arrange a replacement or refund. If you did not add SecureShip, contact us anyway and we will look into your case with the carrier.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
             "section_id": ""
           }
         }
@@ -207,7 +253,10 @@
       "block_order": [
         "faq_item_Qkyqtx",
         "faq_item_J8LQPm",
+        "faq_item_GxG63x",
         "faq_item_wiXHBi",
+        "faq_item_NXiPYf",
+        "faq_item_UmwFTW",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
         "faq_item_4EgMGi",
@@ -215,6 +264,8 @@
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
+        "faq_item_RdfVdp",
+        "faq_item_LKbEHD",
         "faq_item_yhbpCU"
       ],
       "name": "t:sections.n_faq-content.name",
@@ -233,7 +284,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the Q-Rejuvalight Pro Facewear?",
-            "text": "<p>Q-Rejuvalight Pro Facewear is a face mask that puts professional LED therapy in your hands so you can operate easily, all by yourself, in the comfort of your own home!</p><p>It comes with a compatible iOS/Android app that allows you to fully customize, track and plan your treatments.</p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear is a non-invasive LED face mask that brings clinically studied light wavelengths into an easy at-home treatment. It is FDA-cleared for the treatment of wrinkles and mild to moderate inflammatory acne, helping improve the look of fine lines, firmness, skin tone and texture over time.</p><p>It comes with a compatible iOS/Android app that allows you to personalize, schedule and track your treatments.</p><p>Q-Rejuvalight Pro Facewear is a face mask that puts clinical-grade LED therapy in your hands so you can operate easily, all by yourself, in the comfort of your own home!</p><p>It comes with a compatible iOS/Android app that allows you to fully customize, track and plan your treatments.</p>",
             "section_id": "Technology"
           }
         },
@@ -242,7 +293,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How does Qure's Light Therapy technology work?",
-            "text": "<p>Q-Rejuvalight Pro Facewear uses clinical-grade technology to deliver safe, concentrated wavelengths of light directly to the underlying layers of your skin. </p><p>The optimal wavelengths of light are absorbed by your skin cells and kick start the production of collagen, elastin, and fibroblasts. </p><p>In turn, this stimulates mechanisms within the skin that solve skin problems and concerns from the inside out.</p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear uses clinically studied wavelengths of LED light delivered directly to the skin. In Skin Rejuvenating Mode, multiple wavelengths help reduce the appearance of fine lines and wrinkles while improving the look of firmness, elasticity, uneven texture and radiance.&nbsp;</p><p>Skin Clearing Mode uses targeted wavelengths to help treat mild to moderate inflammatory acne, reduce breakouts and support clearer-looking skin over time.</p><p>Q-Rejuvalight Pro Facewear uses clinical-grade technology to deliver concentrated wavelengths of light to your skin. The wavelengths are absorbed by your skin cells. Used consistently, this can help skin look smoother, firmer and more even over time.</p>",
             "section_id": ""
           }
         },
@@ -251,7 +302,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How many LEDs does the Q-Rejuvalight Pro have and what wavelengths?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring. Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are three treatment modes:</p><ul><li>The Skin Rejuvenating Treatment</li><li>The Skin Clearing Treatment</li><li>Custom zone selection on five facial areas via the Qure app.</li></ul>",
+            "text": "<p>The Q-Rejuvalight Pro features 160 dual-core LEDs and uses 5 clinically studied light wavelengths across its Skin Rejuvenating and Skin Clearing treatments:</p><ul><li>Infrared light (880 nm): Used in the Skin Rejuvenating treatment as part of a multi-wavelength approach designed to help improve the appearance of fine lines, firmness, elasticity and skin texture.</li><li>Deep Red (660 nm): Used in the Skin Rejuvenating treatment to support smoother-looking skin and a more radiant-looking complexion.</li><li>Red (630 nm): Used across both Skin Rejuvenating and Skin Clearing treatments to support smoother, clearer-looking skin and improve overall skin appearance over time.</li><li>Amber (605 nm): Used in the Skin Rejuvenating treatment to help improve the look of uneven skin tone and texture and support a more radiant-looking complexion.</li><li>Blue (415 nm): Used in the Skin Clearing treatment to help treat mild to moderate inflammatory acne, reduce breakouts and support clearer-looking skin over time.</li></ul><p>There are three treatment modes: the Skin Rejuvenating Treatment; the Skin Clearing Treatment; and custom zone selection on five facial areas via the Qure app.</p>",
             "section_id": ""
           }
         },
@@ -269,7 +320,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What does the Skin Rejuvenating mode treat?",
-            "text": "<p>The Skin Rejuvenating Treatment combines red, deep red, infrared and amber wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin. </p>",
+            "text": "<p>The Skin Rejuvenating Treatment is FDA-cleared for the treatment of wrinkles and combines red, deep red, infrared and amber wavelengths to target visible signs of skin aging, which is also why the LED lights appear orange. With consistent use, it helps reduce the appearance of fine lines and wrinkles, improve the look of firmness and elasticity, smooth uneven-looking texture and promote a more radiant-looking complexion.</p>",
             "section_id": ""
           }
         },
@@ -278,7 +329,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What does the Skin Clearing mode treat?",
-            "text": "<p>The Skin Clearing Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.</p>",
+            "text": "<p>The Skin Clearing Treatment combines red and blue wavelengths and is FDA-cleared for the treatment of mild to moderate inflammatory acne. With consistent use, it helps reduce breakouts, improve the appearance of acne-prone skin and redness associated with acne, and support clearer-looking skin over time.</p>",
             "section_id": ""
           }
         },
@@ -296,7 +347,16 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro Facewear safe to use?",
-            "text": "<p>Yes! Light therapy has been studied and tested across hundreds of peer-reviewed clinical trials, with overwhelmingly positive results for skin health. </p><p>The treatment is pain free, non-invasive, requires no surgery and is a completely safe and effective treatment for all skin types.</p>",
+            "text": "<p>Yes. Q-Rejuvalight Pro is an FDA-cleared, non-invasive LED light therapy device designed for at-home use. It requires no downtime and involves no needles or surgery. It is suitable for Fitzpatrick skin types I–IV when used as directed. If you have Fitzpatrick skin type V or VI, check with your doctor or healthcare professional before use.</p><p>Before your first full treatment, you must complete the light sensitivity test outlined in the user guide. After testing, wait 24 hours. If you experience pain, discomfort or redness lasting more than two hours, consult your doctor before continuing. Always use the supplied protective eyewear and follow the user guide.</p><p>It is not suitable for everyone: see \"Who should not use the Q-Rejuvalight Pro?\" below.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_6U4DBj": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Who should not use the Q-Rejuvalight Pro?",
+            "text": "<p>Q-Rejuvalight Pro is intended for adults only. Do not use the device if you are photosensitive or taking medication that increases sensitivity to light unless your healthcare professional has confirmed it is suitable for you.</p><p>Consult your doctor before use if you are pregnant, breastfeeding or planning to become pregnant, or if you have a history of seizures triggered by light. If you have severe acne or painful, raised, crusting or bleeding skin, consult a healthcare professional before treatment. Do not use the device if you have had a sunburn within the past two weeks.</p>",
             "section_id": ""
           }
         },
@@ -305,7 +365,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Should I protect and close my eyes during treatment?",
-            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.Regardless, we recommend closing your eyes and wearing protective eyewear duringtreatment.The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our unwavering commitment to your safety we decided to take the initiative to include certified light blocking protective eyewear with our Q-Rejuvalight Pro LED mask.</p>",
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not. Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our commitment to your safety we decided to take the initiative to include certified light blocking protective eyewear with our Q-Rejuvalight Pro LED mask.</p>",
             "section_id": ""
           }
         },
@@ -332,7 +392,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How often can I use my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>One of the best things about the Q-Rejuvalight Pro Facewear is that you only need to use it once per day. That's how effective the treatment is!&nbsp;</p><p>For best results, we recommend that you do your 3 minute treatment daily. You may also do one full Skin Rejuvenating treatment and one full Skin Clearing treatment per day.</p>",
+            "text": "<p>You only need one 3-minute treatment per day. For best results, we recommend that you do your 3 minute treatment daily. You may also do one full Skin Rejuvenating treatment and one full Skin Clearing treatment per day.</p>",
             "section_id": ""
           }
         },
@@ -341,7 +401,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long will it take before I start seeing results?",
-            "text": "<p>Depending on what skin concern you're wanting to treat.</p><p>With daily use, users will typically notice a reduction in acne breakouts after just 2 weeks!</p><p>While users typically see visible improvement of wrinkles, fine lines and signs of aging, as well as improved skin tone and smoothness after 8-12 weeks.</p>",
+            "text": "<p>Results depend on your skin and your concern. With daily use, many users notice clearer-looking skin within 2 weeks. Smoother-looking skin, softer-looking fine lines and a more even tone usually take 8 to 12 weeks. Individual results vary. We recommend using the mask consistently for at least 3 months before judging results.</p>",
             "section_id": ""
           }
         },
@@ -350,7 +410,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I use the Q-Rejuvalight Pro Facewear with retinol and microneedling routine?",
-            "text": "<p>You can use the Q-Rejuvalight Pro Facewear within days of microneedling since light therapy can speed up recovery time! Retinol is a treatment that helps slough skin away so you can use light therapy after this as well.</p>",
+            "text": "<p>Yes. Use the Q-Rejuvalight Pro on clean skin before applying retinol. After your LED treatment, follow with your usual retinol serum, such as Qure’s All-In-One Face Serum, as directed.</p><p>If you’re performing a Micro-Infusion treatment, you can use the Q-Rejuvalight Pro before your treatment and again the following morning, provided your skin feels comfortable. The morning-after LED session can be used as part of your post-treatment routine to support a calmer-looking complexion.</p><p>Many people use light therapy alongside retinol. If you use Micro-Infusion or another needling treatment, wait until any redness has settled before using the mask, and follow the post-treatment care steps in the Micro-Infusion guide. If your skin feels irritated, pause use and contact us.</p>",
             "section_id": ""
           }
         },
@@ -368,7 +428,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I charge my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into an USB power adaptor,input should be 5V/1A, the voltage should no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
+            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into a USB power adapter. Input should be 5V/1A and the voltage should be no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
             "section_id": "Charging Q-Rejuvalight Pro"
           }
         },
@@ -386,7 +446,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What does it mean when my Q-Rejuvalight Pro is continuously blinking?",
-            "text": "<p>A blinking light around device indicates that your Q-Rejuvalight Pro Facewear is low in battery and needs to be charged.</p>",
+            "text": "<p><strong>Charging</strong></p><ul><li><strong>Indicator light is slowly blinking while plugged in:</strong> The mask is charging. Leave it plugged in. A 2.5-hour charge gives up to 10 treatments.</li><li><strong>Indicator light turns off while plugged in:</strong> The mask is fully charged. Unplug it and it’s ready to use.</li><li><strong>Indicator light is rapidly blinking:</strong> The battery is low. Charge the mask.</li></ul><p><strong>Turning the mask on</strong></p><ul><li><strong>Indicator light on after you press and hold the Q button on the forehead:</strong> The mask is powered on. Press the button once for Skin Rejuvenating mode or twice for Skin Clearing mode, or choose a mode in the app.</li><li><strong>No light when you press the Q button while plugged in:</strong> The mask can’t be turned on while charging. Unplug it, then hold the Q button for 3 seconds.</li><li><strong>No light when you press and hold the Q button and it is not plugged in:</strong> The battery may be flat, or there may be a charging problem. Charge fully with the USB-C cable and a 5V adapter, and try a different cable or outlet. If it still doesn’t turn on, contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></li></ul><p><br/><strong>During treatment</strong></p><ul><li><strong>Lights go off before 3 minutes:</strong> The battery is low, or the mask is too warm. Let it cool for a few minutes and charge it fully. If it keeps switching off early, contact us.</li><li><strong>Lights go off at 3 minutes:</strong> The treatment has finished. Nothing is needed, as the mask shuts off automatically.</li></ul>",
             "section_id": ""
           }
         },
@@ -395,7 +455,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What's included in the box?",
-            "text": "<p>Inside the box, you'll find:</p><ul><li>Q-Rejuvalight Pro LED Face Mask</li><li>Adjustable head strap for a secure, comfortable fit</li><li>USB-C charging cable</li><li>Portable luxury storage pouch</li><li>Clear setup instructions and user manual</li></ul>",
+            "text": "<p>Inside the box, you'll find:</p><ul><li>Q-Rejuvalight Pro LED Face Mask</li><li>Adjustable head strap for a secure, comfortable fit</li><li>Protective eyewear</li><li>USB-C charging cable</li><li>Portable luxury storage pouch</li><li>Clear setup instructions and user manual</li></ul>",
             "section_id": "Storing Q-Rejuvalight Pro"
           }
         },
@@ -404,7 +464,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I properly store my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>We recommend to keep your Q-Rejuvalight Pro Facewear in a dry environment and always keeping your Q-Rejuvalight Pro in the storage bag when not using it. </p><p>Usually, the bathroom is not the best place for keeping your Qure device due to the heightened moisture in a bathroom.</p>",
+            "text": "<p>We recommend to keep your Q-Rejuvalight Pro Facewear in a dry environment and always keeping your Q-Rejuvalight Pro in the storage bag when not using it.&nbsp;</p><p>Usually, the bathroom is not the best place for keeping your Qure device due to the heightened moisture in a bathroom.</p>",
             "section_id": ""
           }
         },
@@ -440,7 +500,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro Facewear BPA free?",
-            "text": "<p>We always aim to provide excellent products to our customers to make them beautiful and healthy! Therefore, the Q-Rejuvalight Pro Facewear is BPA free.</p>",
+            "text": "<p>Yes. The Q-Rejuvalight Pro Facewear is BPA free.</p>",
             "section_id": "Safety"
           }
         },
@@ -458,7 +518,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Does the Q-Rejuvalight Pro Facewear come with a warranty?",
-            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! </p><p>For more information on warranty, please visit <a href=\"#\">Our Warranty Policy</a></p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. For more information on warranty, please visit our Warranty section below.</p>",
             "section_id": ""
           }
         },
@@ -467,7 +527,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro FDA-cleared?",
-            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world's first customizable, FDA-cleared at-home LED mask that's proven to be an effective and safe treatment for acne and aging skin concerns.</p>",
+            "text": "<p>Yes. The Q-Rejuvalight Pro is an FDA-cleared, at-home LED light therapy device for the treatment of wrinkles and mild to moderate inflammatory acne. It uses clinically studied light wavelengths and is designed for regular at-home use.</p>",
             "section_id": ""
           }
         }
@@ -481,6 +541,7 @@
         "faq_item_AXrMDh",
         "faq_item_wjtMGF",
         "faq_item_GN3gtL",
+        "faq_item_6U4DBj",
         "faq_item_pEnpkb",
         "faq_item_agNxHf",
         "faq_item_B4BF94",
@@ -768,12 +829,32 @@
             "text": "<p>If you received a product different from the one that you ordered, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal </a>and we'll be sure to make this right!</p>",
             "section_id": ""
           }
+        },
+        "faq_item_MBNWTW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Do I have to return the free gift or other promotional items if I return my order?",
+            "text": "<p>Yes. If you bought as part of a promotion, such as a bundle, a buy-one-get-one offer or a free gift with purchase, all items in the promotion must be returned to receive a refund. You may find our returns policy <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">here</a>.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_Q7CACi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I return a holiday gift after the holidays?",
+            "text": "<p>Yes. If you or someone you gave a gift to would like to return a product from an order placed between 1 November and 31 December 2026, you have until 31 January 2027, or 30 days from delivery, whichever is later. Returns are made by the person who placed the order, using the order number from the confirmation email. If you are returning a gift, ask the buyer to start the return, or contact us with the order number and we will help.</p><p>All other return terms still apply, including getting a Return Authorization Number before you send anything back. See our <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">returns policy</a> for the full terms.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_eBzKTC",
         "faq_item_Hrgtcf",
-        "faq_item_3MDwaa"
+        "faq_item_3MDwaa",
+        "faq_item_MBNWTW",
+        "faq_item_Q7CACi"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
