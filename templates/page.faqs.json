@@ -160,6 +160,7 @@
         },
         "faq_item_JJCJwr": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "I'm having problems tracking my order.",
