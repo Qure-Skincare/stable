@@ -109,7 +109,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When can I expect to receive my Qure package?",
-            "text": "<p>We are working closely with our external partners and carriers to ensure your Order can reach you as quickly as possible. See below for the most up-to-date information (excluding potential courier delays)*:</p><p>Estimated Shipping Time</p><p>Australia: 7-14 business days <br/>United States: 3-6 business days<br/>Canada: 3-10 business days<br/>United Kingdom: 7-14 business days<br/>Europe: 7-14 business days</p><p>* During the Black Friday and holiday seasons, please be aware that packages may experience delays due to high order volume.</p>",
+            "text": "<p>We are working closely with our external partners and carriers to ensure your Order can reach you as quickly as possible. See below for the most up-to-date information (excluding potential courier delays)*:</p><p>Estimated Shipping Time</p><p>Australia: 7-14 business days&nbsp;<br/>United States: 3-6 business days<br/>Canada: 3-10 business days<br/>United Kingdom: 7-14 business days<br/>Europe: 7-14 business days</p><p>* During the Black Friday and holiday seasons, please be aware that packages may experience delays due to high order volume.</p>",
             "section_id": "Shipping"
           }
         },
@@ -146,6 +146,15 @@
             "secure_strap": false,
             "heading": "Do I need to pay for Taxes and Duties?",
             "text": "<p>Please note that depending on your order and country, you may be liable to pay local taxes and duties on receipt of your order, for which Qure cannot accept liability. International shipments may be subject to the imposition of customs or import duties once they reach their destination. You will be liable for all of these duties and it is your sole responsibility to pay the charges to release the goods from the shipment. We are legally required to declare the full value of the shipment and will provide an invoice to customs should they require it.</p><p>Please be aware that customers are responsible for payment of any local customs duties. If customs duties are refused or unpaid, these will be deducted from any future refund if applicable. We have no control over these charges as customs policies vary by country. Should you opt not to accept delivery and return the package to sender (RTS), a $10 restocking fee will be deducted from your refund once we receive the item back in our warehouse. If you have any questions related to customs charges, we advise you to contact your local customs office.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_f3RGwi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the last day to order for delivery before the holidays?",
+            "text": "<p>Delivery times are estimates and are not guaranteed during peak periods.</p>",
             "section_id": ""
           }
         },
@@ -202,6 +211,15 @@
             "text": "<p>SecureShip provides shipping insurance for our customers' online purchases that are lost or damaged while in transit or “porch pirated” (“porch pirated” meaning the carrier reports the status as “delivered” but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_GgmgfX": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "",
+            "text": "",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -210,12 +228,14 @@
         "faq_item_wiXHBi",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
+        "faq_item_f3RGwi",
         "faq_item_4EgMGi",
         "faq_item_kHLgRg",
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
-        "faq_item_yhbpCU"
+        "faq_item_yhbpCU",
+        "faq_item_GgmgfX"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
@@ -768,12 +788,22 @@
             "text": "<p>If you received a product different from the one that you ordered, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal </a>and we'll be sure to make this right!</p>",
             "section_id": ""
           }
+        },
+        "faq_item_MBNWTW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Do I have to return the free gift or other promotional items if I return my order?",
+            "text": "<p>Yes. If you bought as part of a promotion, such as a bundle, a buy-one-get-one offer or a free gift with purchase, all items in the promotion must be returned to receive a refund. Return policy terms are in the Returns Policy section.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_eBzKTC",
         "faq_item_Hrgtcf",
-        "faq_item_3MDwaa"
+        "faq_item_3MDwaa",
+        "faq_item_MBNWTW"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
