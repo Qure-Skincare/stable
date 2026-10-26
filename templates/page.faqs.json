@@ -428,7 +428,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I charge my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into an USB power adaptor,input should be 5V/1A, the voltage should no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
+            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into a USB power adapter. Input should be 5V/1A and the voltage should be no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
             "section_id": "Charging Q-Rejuvalight Pro"
           }
         },
