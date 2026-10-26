@@ -222,6 +222,15 @@
             "section_id": ""
           }
         },
+        "faq_item_RdfVdp": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "I bought from Amazon, TikTok Shop or another reseller. Who do I contact?",
+            "text": "<p>Orders placed on another store are handled by that store. Warranty and returns on this page apply to products bought directly from qureskincare.com.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_yhbpCU": {
           "type": "faq_item",
           "settings": {
@@ -246,6 +255,7 @@
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
+        "faq_item_RdfVdp",
         "faq_item_yhbpCU"
       ],
       "name": "t:sections.n_faq-content.name",
