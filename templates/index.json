@@ -85,6 +85,22 @@
         "button_url": "shopify://collections/best-sellers"
       }
     },
+    "n_promo_strip_Hx7cVq": {
+      "type": "n_promo-strip",
+      "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "recovery-mask",
+        "pill_text": "NEW",
+        "text": "<h3>Recovery+ Sheet Mask</h3><p>Visibly calms, deeply hydrates and cools skin in <strong>20 minutes</strong></p>",
+        "button_label": "Shop Now",
+        "button_url": "shopify://products/recovery-sheet-mask",
+        "video_url": "https://qureskincaredns-stable.com/assets/images/recovery-mask/mask-video.mp4",
+        "badge_text": "",
+        "price": "",
+        "gift_text": ""
+      }
+    },
     "n_top_products_Qr7mXa": {
       "type": "n_top-products",
       "blocks": {
@@ -602,6 +618,7 @@
     "n_across_image_banner_Kd7pRw",
     "n_across_image_banner_Mv8kTq",
     "n_across_image_banner_TNGNLJ",
+    "n_promo_strip_Hx7cVq",
     "n_top_products_Qr7mXa",
     "n_promo_strip_bF3xQk",
     "n_promo_strip_wR8mHd",

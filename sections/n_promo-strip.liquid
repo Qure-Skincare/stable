@@ -4,16 +4,25 @@
 
 <!-- PROMO STRIP -->
 <section class="promo-strip{% if section.settings.modifier != 'none' %} promo-strip--{{ section.settings.modifier }}{% endif %}">
-    <picture>
-        {% if section.settings.image != blank %}
-            <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
-        {% endif %}
-        {% if section.settings.image_mobile != blank %}
-            <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
-        {% endif %}
-    </picture>
+    {% if section.settings.video_url != blank %}
+        <video autoplay="" loop="" muted="" playsinline="">
+            <source src="{{ section.settings.video_url }}" type="video/{{ section.settings.video_url | split: '.' | last | downcase }}" />
+        </video>
+    {% else %}
+        <picture>
+            {% if section.settings.image != blank %}
+                <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+            {% endif %}
+            {% if section.settings.image_mobile != blank %}
+                <img loading="lazy" src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}" />
+            {% endif %}
+        </picture>
+    {% endif %}
     <div class="container">
         <article>
+            {% if section.settings.pill_text != blank %}
+                <div class="e-pill-save">{{ section.settings.pill_text }}</div>
+            {% endif %}
             {{ section.settings.text | replace: '[ribbon_icon]', '<i class="e-icon e-icon-ribbon"></i>' }}
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
                 <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
@@ -56,8 +65,17 @@
                 {
                     "value": "against-cancer",
                     "label": "t:sections.n_promo-strip.settings.modifier-options.against-cancer"
+                },
+                {
+                    "value": "recovery-mask",
+                    "label": "t:sections.n_promo-strip.settings.modifier-options.recovery-mask"
                 }
             ]
+        },
+        {
+            "type": "text",
+            "id": "pill_text",
+            "label": "t:common.pill"
         },
         {
             "type": "richtext",
@@ -83,6 +101,11 @@
             "type": "image_picker",
             "id": "image_mobile",
             "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "video_url",
+            "label": "t:common.video-url"
         },
         {
             "type": "text",
