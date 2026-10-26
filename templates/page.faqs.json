@@ -127,7 +127,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How much does shipping cost?",
-            "text": "<p>Shipping is calculated at checkout. Express options are shown at checkout.</p>",
+            "text": "<p>Final shipping charges and available express shipping options are shown at checkout.</p>",
             "section_id": ""
           }
         },
