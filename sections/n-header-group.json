@@ -154,6 +154,20 @@
                   },
                   "blocks": {}
                 },
+                "nav_card_bHYt69": {
+                  "type": "nav-card",
+                  "name": "Nav card",
+                  "settings": {
+                    "title": "Shower Filters",
+                    "label": "",
+                    "badge": "Your Routine Starts Here",
+                    "url": "https://qureskincare.com/products/shower-filter",
+                    "image": "shopify://shop_images/Group_1000009039.png",
+                    "image_style": "product",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
                 "bestsellers_card_5": {
                   "type": "nav-card",
                   "settings": {
@@ -173,6 +187,7 @@
                 "bestsellers_card_2",
                 "bestsellers_card_3",
                 "bestsellers_card_4",
+                "nav_card_bHYt69",
                 "bestsellers_card_5"
               ]
             }
