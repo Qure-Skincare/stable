@@ -4,11 +4,13 @@
   (sections/n-header.liquid) can move it into the top menu.
 {% enddoc %}
 
-{% assign panel = block.settings.panel %}
-{% assign special_offer_link = 'special-offer.menu.link' | t %}
-{% if settings.black_friday_turn_on and block.settings.url contains special_offer_link %}
-    {% assign hidden = true %}
-{% endif %}
+{% liquid
+  assign panel = block.settings.panel
+  assign special_offer_link = 'special-offer.menu.link' | t
+  if settings.black_friday_turn_on and block.settings.url contains special_offer_link
+    assign hidden = true
+  endif
+%}
 
 {% unless hidden %}
 <!--nav-menu-->
