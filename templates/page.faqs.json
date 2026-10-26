@@ -149,15 +149,6 @@
             "section_id": ""
           }
         },
-        "faq_item_f3RGwi": {
-          "type": "faq_item",
-          "settings": {
-            "secure_strap": false,
-            "heading": "What is the last day to order for delivery before the holidays?",
-            "text": "<p>Delivery times are estimates and are not guaranteed during peak periods.</p>",
-            "section_id": ""
-          }
-        },
         "faq_item_4EgMGi": {
           "type": "faq_item",
           "settings": {
@@ -173,6 +164,15 @@
             "secure_strap": false,
             "heading": "Where is my order?",
             "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal. </a></p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_f3RGwi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the last day to order for delivery before the holidays?",
+            "text": "<p>Delivery times are estimates and are not guaranteed during peak periods.</p>",
             "section_id": ""
           }
         },
@@ -228,9 +228,9 @@
         "faq_item_wiXHBi",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
-        "faq_item_f3RGwi",
         "faq_item_4EgMGi",
         "faq_item_kHLgRg",
+        "faq_item_f3RGwi",
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
