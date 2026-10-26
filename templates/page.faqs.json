@@ -222,21 +222,30 @@
             "section_id": ""
           }
         },
+        "faq_item_RdfVdp": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "I bought from Amazon, TikTok Shop or another reseller. Who do I contact?",
+            "text": "<p>Orders placed on another store are handled by that store. Warranty and returns on this page apply to products bought directly from qureskincare.com.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_LKbEHD": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I contact Qure, and how long will you take to reply?",
+            "text": "<p>Use the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> (chat and email), WhatsApp (+1 240 896 3833), or book a free call with our team. &nbsp;Our team are always on hand to help and you can expect a response within 24hrs. During Busier times or holiday season it may take up to 48hrs for a response. Please include your order number so we can help faster.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_yhbpCU": {
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
             "heading": "What is SecureShip?",
-            "text": "<p>SecureShip provides shipping insurance for our customers' online purchases that are lost or damaged while in transit or “porch pirated” (“porch pirated” meaning the carrier reports the status as “delivered” but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
-            "section_id": ""
-          }
-        },
-        "faq_item_GgmgfX": {
-          "type": "faq_item",
-          "settings": {
-            "secure_strap": false,
-            "heading": "",
-            "text": "",
+            "text": "<p>SecureShip is optional shipping protection you can add at checkout. It covers parcels that are lost, damaged in transit, or reported delivered but stolen. If you have SecureShip and your parcel is lost or damaged, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> within 15 days of delivery, keep all packaging, and send photos. We will arrange a replacement or refund. If you did not add SecureShip, contact us anyway and we will look into your case with the carrier.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
             "section_id": ""
           }
         }
@@ -255,8 +264,9 @@
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
-        "faq_item_yhbpCU",
-        "faq_item_GgmgfX"
+        "faq_item_RdfVdp",
+        "faq_item_LKbEHD",
+        "faq_item_yhbpCU"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
@@ -274,7 +284,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the Q-Rejuvalight Pro Facewear?",
-            "text": "<p>Q-Rejuvalight Pro Facewear is a face mask that puts professional LED therapy in your hands so you can operate easily, all by yourself, in the comfort of your own home!</p><p>It comes with a compatible iOS/Android app that allows you to fully customize, track and plan your treatments.</p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear is a non-invasive LED face mask that brings clinically studied light wavelengths into an easy at-home treatment. It is FDA-cleared for the treatment of wrinkles and mild to moderate inflammatory acne, helping improve the look of fine lines, firmness, skin tone and texture over time.</p><p>It comes with a compatible iOS/Android app that allows you to personalize, schedule and track your treatments.</p><p>Q-Rejuvalight Pro Facewear is a face mask that puts clinical-grade LED therapy in your hands so you can operate easily, all by yourself, in the comfort of your own home!</p><p>It comes with a compatible iOS/Android app that allows you to fully customize, track and plan your treatments.</p>",
             "section_id": "Technology"
           }
         },
@@ -283,7 +293,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How does Qure's Light Therapy technology work?",
-            "text": "<p>Q-Rejuvalight Pro Facewear uses clinical-grade technology to deliver safe, concentrated wavelengths of light directly to the underlying layers of your skin. </p><p>The optimal wavelengths of light are absorbed by your skin cells and kick start the production of collagen, elastin, and fibroblasts. </p><p>In turn, this stimulates mechanisms within the skin that solve skin problems and concerns from the inside out.</p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear uses clinically studied wavelengths of LED light delivered directly to the skin. In Skin Rejuvenating Mode, multiple wavelengths help reduce the appearance of fine lines and wrinkles while improving the look of firmness, elasticity, uneven texture and radiance.&nbsp;</p><p>Skin Clearing Mode uses targeted wavelengths to help treat mild to moderate inflammatory acne, reduce breakouts and support clearer-looking skin over time.</p><p>Q-Rejuvalight Pro Facewear uses clinical-grade technology to deliver concentrated wavelengths of light to your skin. The wavelengths are absorbed by your skin cells. Used consistently, this can help skin look smoother, firmer and more even over time.</p>",
             "section_id": ""
           }
         },
@@ -292,7 +302,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How many LEDs does the Q-Rejuvalight Pro have and what wavelengths?",
-            "text": "<p>The Q-Rejuvalight Pro has a total of 5 clinically-proven wavelengths of lights:</p><ul><li>Infrared light (880 nm): Increases circulation, protects existing collagen and enhances product absorption.</li><li>Deep Red (660 nm): Accelerates skin healing to fade and prevent scarring. Builds collagen to help reduce wrinkles.</li><li>Red (630 nm): Stimulates collagen and elastin production, firms and plumps skin, repairs skin cells and promotes hydration to help reduce inflammation, redness and rosacea.</li><li>Amber (605 nm): Reduces appearance of dark spots. Soothes skin and calms swelling and inflammation.</li><li>Blue (415 nm): Anti-bacterial, eliminates and prevents acne breakouts. Soothes and calms skin.</li></ul><p>There are three treatment modes:</p><ul><li>The Skin Rejuvenating Treatment</li><li>The Skin Clearing Treatment</li><li>Custom zone selection on five facial areas via the Qure app.</li></ul>",
+            "text": "<p>The Q-Rejuvalight Pro features 160 dual-core LEDs and uses 5 clinically studied light wavelengths across its Skin Rejuvenating and Skin Clearing treatments:</p><ul><li>Infrared light (880 nm): Used in the Skin Rejuvenating treatment as part of a multi-wavelength approach designed to help improve the appearance of fine lines, firmness, elasticity and skin texture.</li><li>Deep Red (660 nm): Used in the Skin Rejuvenating treatment to support smoother-looking skin and a more radiant-looking complexion.</li><li>Red (630 nm): Used across both Skin Rejuvenating and Skin Clearing treatments to support smoother, clearer-looking skin and improve overall skin appearance over time.</li><li>Amber (605 nm): Used in the Skin Rejuvenating treatment to help improve the look of uneven skin tone and texture and support a more radiant-looking complexion.</li><li>Blue (415 nm): Used in the Skin Clearing treatment to help treat mild to moderate inflammatory acne, reduce breakouts and support clearer-looking skin over time.</li></ul><p>There are three treatment modes: the Skin Rejuvenating Treatment; the Skin Clearing Treatment; and custom zone selection on five facial areas via the Qure app.</p>",
             "section_id": ""
           }
         },
@@ -310,7 +320,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What does the Skin Rejuvenating mode treat?",
-            "text": "<p>The Skin Rejuvenating Treatment combines red, deep red, infrared and amber wavelengths which is why the LED lights appear to be an orange color. This combination stimulates collagen, help reduce redness, fine lines, dark spots while encouraging the skin to heal and rejuvenate itself, for visibly smoother, firmer, younger-looking skin. </p>",
+            "text": "<p>The Skin Rejuvenating Treatment is FDA-cleared for the treatment of wrinkles and combines red, deep red, infrared and amber wavelengths to target visible signs of skin aging, which is also why the LED lights appear orange. With consistent use, it helps reduce the appearance of fine lines and wrinkles, improve the look of firmness and elasticity, smooth uneven-looking texture and promote a more radiant-looking complexion.</p>",
             "section_id": ""
           }
         },
@@ -319,7 +329,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What does the Skin Clearing mode treat?",
-            "text": "<p>The Skin Clearing Treatment combines red and blue wavelengths to destroy the bacteria that causes acne, regulate oil production, reduce redness and other symptoms when a flare-up occurs for clearer skin.</p>",
+            "text": "<p>The Skin Clearing Treatment combines red and blue wavelengths and is FDA-cleared for the treatment of mild to moderate inflammatory acne. With consistent use, it helps reduce breakouts, improve the appearance of acne-prone skin and redness associated with acne, and support clearer-looking skin over time.</p>",
             "section_id": ""
           }
         },
@@ -337,7 +347,16 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro Facewear safe to use?",
-            "text": "<p>Yes! Light therapy has been studied and tested across hundreds of peer-reviewed clinical trials, with overwhelmingly positive results for skin health. </p><p>The treatment is pain free, non-invasive, requires no surgery and is a completely safe and effective treatment for all skin types.</p>",
+            "text": "<p>Yes. Q-Rejuvalight Pro is an FDA-cleared, non-invasive LED light therapy device designed for at-home use. It requires no downtime and involves no needles or surgery. It is suitable for Fitzpatrick skin types I–IV when used as directed. If you have Fitzpatrick skin type V or VI, check with your doctor or healthcare professional before use.</p><p>Before your first full treatment, you must complete the light sensitivity test outlined in the user guide. After testing, wait 24 hours. If you experience pain, discomfort or redness lasting more than two hours, consult your doctor before continuing. Always use the supplied protective eyewear and follow the user guide.</p><p>It is not suitable for everyone: see \"Who should not use the Q-Rejuvalight Pro?\" below.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_6U4DBj": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Who should not use the Q-Rejuvalight Pro?",
+            "text": "<p>Q-Rejuvalight Pro is intended for adults only. Do not use the device if you are photosensitive or taking medication that increases sensitivity to light unless your healthcare professional has confirmed it is suitable for you.</p><p>Consult your doctor before use if you are pregnant, breastfeeding or planning to become pregnant, or if you have a history of seizures triggered by light. If you have severe acne or painful, raised, crusting or bleeding skin, consult a healthcare professional before treatment. Do not use the device if you have had a sunburn within the past two weeks.</p>",
             "section_id": ""
           }
         },
@@ -346,7 +365,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Should I protect and close my eyes during treatment?",
-            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not.Regardless, we recommend closing your eyes and wearing protective eyewear duringtreatment.The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our unwavering commitment to your safety we decided to take the initiative to include certified light blocking protective eyewear with our Q-Rejuvalight Pro LED mask.</p>",
+            "text": "<p>The Q-Rejuvalight Pro has been tested and cleared for eye safety. It has successfully passed the IEC62471 evaluation for eye safety test, which is used to determine whether a device's light output is safe for the eyes or not. Regardless, we recommend closing your eyes and wearing protective eyewear during treatment. The light can be bright when powered on and some users may experience sensitivity, even when closing their eyes.</p><p>As part of our commitment to your safety we decided to take the initiative to include certified light blocking protective eyewear with our Q-Rejuvalight Pro LED mask.</p>",
             "section_id": ""
           }
         },
@@ -373,7 +392,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How often can I use my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>One of the best things about the Q-Rejuvalight Pro Facewear is that you only need to use it once per day. That's how effective the treatment is!&nbsp;</p><p>For best results, we recommend that you do your 3 minute treatment daily. You may also do one full Skin Rejuvenating treatment and one full Skin Clearing treatment per day.</p>",
+            "text": "<p>You only need one 3-minute treatment per day. For best results, we recommend that you do your 3 minute treatment daily. You may also do one full Skin Rejuvenating treatment and one full Skin Clearing treatment per day.</p>",
             "section_id": ""
           }
         },
@@ -382,7 +401,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long will it take before I start seeing results?",
-            "text": "<p>Depending on what skin concern you're wanting to treat.</p><p>With daily use, users will typically notice a reduction in acne breakouts after just 2 weeks!</p><p>While users typically see visible improvement of wrinkles, fine lines and signs of aging, as well as improved skin tone and smoothness after 8-12 weeks.</p>",
+            "text": "<p>Results depend on your skin and your concern. With daily use, many users notice clearer-looking skin within 2 weeks. Smoother-looking skin, softer-looking fine lines and a more even tone usually take 8 to 12 weeks. Individual results vary. We recommend using the mask consistently for at least 3 months before judging results.</p>",
             "section_id": ""
           }
         },
@@ -391,7 +410,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I use the Q-Rejuvalight Pro Facewear with retinol and microneedling routine?",
-            "text": "<p>You can use the Q-Rejuvalight Pro Facewear within days of microneedling since light therapy can speed up recovery time! Retinol is a treatment that helps slough skin away so you can use light therapy after this as well.</p>",
+            "text": "<p>Yes. Use the Q-Rejuvalight Pro on clean skin before applying retinol. After your LED treatment, follow with your usual retinol serum, such as Qure’s All-In-One Face Serum, as directed.</p><p>If you’re performing a Micro-Infusion treatment, you can use the Q-Rejuvalight Pro before your treatment and again the following morning, provided your skin feels comfortable. The morning-after LED session can be used as part of your post-treatment routine to support a calmer-looking complexion.</p><p>Many people use light therapy alongside retinol. If you use Micro-Infusion or another needling treatment, wait until any redness has settled before using the mask, and follow the post-treatment care steps in the Micro-Infusion guide. If your skin feels irritated, pause use and contact us.</p>",
             "section_id": ""
           }
         },
@@ -409,7 +428,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I charge my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into an USB power adaptor,input should be 5V/1A, the voltage should no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
+            "text": "<p>The Q-Rejuvalight Pro is USB-rechargeable. A two and a half hour charge can deliver up to 10 treatments. Plug into a USB power adapter. Input should be 5V/1A and the voltage should be no more than 5V.</p><p>Plug the USB-C power/charging cord into the port connector of your Q-Rejuvalight Pro Facewear, then plug it into a universal USB power adapter. Device is fully charged when the red power indicator light next to the charging port is turned off.</p>",
             "section_id": "Charging Q-Rejuvalight Pro"
           }
         },
@@ -427,7 +446,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What does it mean when my Q-Rejuvalight Pro is continuously blinking?",
-            "text": "<p>A blinking light around device indicates that your Q-Rejuvalight Pro Facewear is low in battery and needs to be charged.</p>",
+            "text": "<p><strong>Charging</strong></p><ul><li><strong>Indicator light is slowly blinking while plugged in:</strong> The mask is charging. Leave it plugged in. A 2.5-hour charge gives up to 10 treatments.</li><li><strong>Indicator light turns off while plugged in:</strong> The mask is fully charged. Unplug it and it’s ready to use.</li><li><strong>Indicator light is rapidly blinking:</strong> The battery is low. Charge the mask.</li></ul><p><strong>Turning the mask on</strong></p><ul><li><strong>Indicator light on after you press and hold the Q button on the forehead:</strong> The mask is powered on. Press the button once for Skin Rejuvenating mode or twice for Skin Clearing mode, or choose a mode in the app.</li><li><strong>No light when you press the Q button while plugged in:</strong> The mask can’t be turned on while charging. Unplug it, then hold the Q button for 3 seconds.</li><li><strong>No light when you press and hold the Q button and it is not plugged in:</strong> The battery may be flat, or there may be a charging problem. Charge fully with the USB-C cable and a 5V adapter, and try a different cable or outlet. If it still doesn’t turn on, contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></li></ul><p><br/><strong>During treatment</strong></p><ul><li><strong>Lights go off before 3 minutes:</strong> The battery is low, or the mask is too warm. Let it cool for a few minutes and charge it fully. If it keeps switching off early, contact us.</li><li><strong>Lights go off at 3 minutes:</strong> The treatment has finished. Nothing is needed, as the mask shuts off automatically.</li></ul>",
             "section_id": ""
           }
         },
@@ -436,7 +455,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What's included in the box?",
-            "text": "<p>Inside the box, you'll find:</p><ul><li>Q-Rejuvalight Pro LED Face Mask</li><li>Adjustable head strap for a secure, comfortable fit</li><li>USB-C charging cable</li><li>Portable luxury storage pouch</li><li>Clear setup instructions and user manual</li></ul>",
+            "text": "<p>Inside the box, you'll find:</p><ul><li>Q-Rejuvalight Pro LED Face Mask</li><li>Adjustable head strap for a secure, comfortable fit</li><li>Protective eyewear</li><li>USB-C charging cable</li><li>Portable luxury storage pouch</li><li>Clear setup instructions and user manual</li></ul>",
             "section_id": "Storing Q-Rejuvalight Pro"
           }
         },
@@ -445,7 +464,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I properly store my Q-Rejuvalight Pro Facewear?",
-            "text": "<p>We recommend to keep your Q-Rejuvalight Pro Facewear in a dry environment and always keeping your Q-Rejuvalight Pro in the storage bag when not using it. </p><p>Usually, the bathroom is not the best place for keeping your Qure device due to the heightened moisture in a bathroom.</p>",
+            "text": "<p>We recommend to keep your Q-Rejuvalight Pro Facewear in a dry environment and always keeping your Q-Rejuvalight Pro in the storage bag when not using it.&nbsp;</p><p>Usually, the bathroom is not the best place for keeping your Qure device due to the heightened moisture in a bathroom.</p>",
             "section_id": ""
           }
         },
@@ -481,7 +500,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro Facewear BPA free?",
-            "text": "<p>We always aim to provide excellent products to our customers to make them beautiful and healthy! Therefore, the Q-Rejuvalight Pro Facewear is BPA free.</p>",
+            "text": "<p>Yes. The Q-Rejuvalight Pro Facewear is BPA free.</p>",
             "section_id": "Safety"
           }
         },
@@ -499,7 +518,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Does the Q-Rejuvalight Pro Facewear come with a warranty?",
-            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. However, this device is designed to last years! </p><p>For more information on warranty, please visit <a href=\"#\">Our Warranty Policy</a></p>",
+            "text": "<p>Q-Rejuvalight Pro Facewear comes with one (1) year warranty covering any manufacturer related problems resulting from everyday use of the product. For more information on warranty, please visit our Warranty section below.</p>",
             "section_id": ""
           }
         },
@@ -508,7 +527,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is the Q-Rejuvalight Pro FDA-cleared?",
-            "text": "<p>Yes! Our Q-Rejuvalight Pro LED mask is the world's first customizable, FDA-cleared at-home LED mask that's proven to be an effective and safe treatment for acne and aging skin concerns.</p>",
+            "text": "<p>Yes. The Q-Rejuvalight Pro is an FDA-cleared, at-home LED light therapy device for the treatment of wrinkles and mild to moderate inflammatory acne. It uses clinically studied light wavelengths and is designed for regular at-home use.</p>",
             "section_id": ""
           }
         }
@@ -522,6 +541,7 @@
         "faq_item_AXrMDh",
         "faq_item_wjtMGF",
         "faq_item_GN3gtL",
+        "faq_item_6U4DBj",
         "faq_item_pEnpkb",
         "faq_item_agNxHf",
         "faq_item_B4BF94",

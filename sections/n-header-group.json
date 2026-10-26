@@ -150,12 +150,27 @@
                     "url": "https://qureskincare.com/products/hair-growth-helmet",
                     "image": "shopify://shop_images/header-promo-card-image-4.webp",
                     "image_style": "product",
-                    "hide_on_mobile": true
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
+                "nav_card_bHYt69": {
+                  "type": "nav-card",
+                  "name": "Nav card",
+                  "settings": {
+                    "title": "Shower Filters",
+                    "label": "",
+                    "badge": "Your Routine Starts Here",
+                    "url": "https://qureskincare.com/products/shower-filter",
+                    "image": "shopify://shop_images/Group_1000009039.png",
+                    "image_style": "product",
+                    "hide_on_mobile": false
                   },
                   "blocks": {}
                 },
                 "bestsellers_card_5": {
                   "type": "nav-card",
+                  "disabled": true,
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
@@ -173,6 +188,7 @@
                 "bestsellers_card_2",
                 "bestsellers_card_3",
                 "bestsellers_card_4",
+                "nav_card_bHYt69",
                 "bestsellers_card_5"
               ]
             }

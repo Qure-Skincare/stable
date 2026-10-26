@@ -6,8 +6,13 @@
 
 {% liquid
   assign panel = block.settings.panel
+  assign special_offer_link = 'special-offer.menu.link' | t
+  if settings.black_friday_turn_on and block.settings.url contains special_offer_link
+    assign hidden = true
+  endif
 %}
 
+{% unless hidden %}
 <!--nav-menu-->
 <li{% if panel == 'none' %} {{ block.shopify_attributes }}{% endif %}>
     {% if panel == 'none' %}
@@ -32,12 +37,19 @@
                     {% if block.settings.button_label != blank %}
                         <a class="btn btn--primary btn--md" href="{{ block.settings.button_url | default: '#' }}">{{ block.settings.button_label }}</a>
                     {% endif %}
+                    {% if settings.black_friday_turn_on and panel == 'shop_bestsellers' %}
+                        {% assign special_offer_header = 'special-offer.menu.header' | t %}
+                        {% if special_offer_header != '' %}
+                            <a class="bf-bundles" href="{{ 'special-offer.menu.link' | t }}">{{ special_offer_header }}</a>
+                        {% endif %}
+                    {% endif %}
                 </div>
             {% endif %}
             {% content_for 'blocks' %}
         </div>
     </div>
 {% endif %}
+{% endunless %}
 
 {% schema %}
 {
