@@ -7,140 +7,953 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
-    "product_header_YnMCRC": {
-      "type": "n-product",
+    "product_header_jT40UR": {
+      "type": "n-product-header",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "pills": {
+          "type": "pills",
+          "settings": {
+            "text": "<ul><li>Pairs With Q-Renew Helmet</li><li>Feel Confident</li><li>Dermatologist Tested</li></ul>"
+          }
+        },
+        "section_purchase_form": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "accordion": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "experts": {
+          "type": "experts",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>A nightly serum that hydrates the scalp and supports fuller-looking hair — pairs weekly with the Micro-Infusion Pro Hair System.</p>",
+            "username": "Dr. Shah",
+            "position": "Dermatologist",
+            "certified_count": "",
+            "certified_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "pills",
+        "section_purchase_form",
+        "accordion",
+        "experts"
+      ],
       "name": "t:sections.product-header.name",
       "settings": {
-        "show_discount": true
+        "section_id": "hero-product",
+        "product": "hair-renewal-serum",
+        "reverse": false,
+        "secondary": false,
+        "background": false,
+        "seo_heading": "Daily Support for Micro-Infusion Pro Hair System",
+        "heading": "Hair Renewal Serum",
+        "badge_text": "",
+        "heading_level": "h1",
+        "rating": true,
+        "rating_type": "trustpilot",
+        "limited": false,
+        "description": "<ul><li>Targets the appearance of thinning for visibly denser-looking hair</li><li>Supports thicker, fuller-looking hair with consistent daily use</li><li>Keeps the scalp hydrated, conditioned and refreshed between treatments</li></ul>",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
       }
     },
-    "n_press_reviews_HDaUTN": {
-      "type": "n_press-reviews",
+    "purchase-form-landing": {
+      "type": "n-purchase-form-landing",
       "blocks": {
-        "image_with_text_rczj6t": {
-          "type": "image_with_text",
+        "type_onetime": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_onetime": {
+          "type": "product_type",
           "settings": {
-            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
-            "image": "shopify://shop_images/vogue-black_4651a572-6206-4c65-a29d-e5edf1697ad2.svg"
+            "heading": "One time purchase",
+            "preselected": false
           }
         },
-        "image_with_text_WhtWNQ": {
-          "type": "image_with_text",
+        "product_onetime": {
+          "type": "product",
           "settings": {
-            "text": "<h4>“My skin actually seems considerable brighter and smoother! It’s simple, fast, and effective enough to become a daily habit.”</h4>",
-            "image": "shopify://shop_images/women-health.svg"
+            "product": "hair-renewal-serum",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "1 Bottle · 60 mL",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/mi-pro-hair-1-month-box.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
           }
         },
-        "image_with_text_rwJFRA": {
-          "type": "image_with_text",
+        "type_subscription": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_subscription": {
+          "type": "product_type",
           "settings": {
-            "text": "<h4>“The results are blatant — my glow after using the treatment speaks for itself. You'll notice hydrated, radiant, and healthy-looking skin.”</h4>",
-            "image": "shopify://shop_images/Popsugar_logo.svg"
+            "heading": "Subscribe & Save",
+            "preselected": true
           }
         },
-        "image_with_text_GcMQyX": {
-          "type": "image_with_text",
+        "product_subscription": {
+          "type": "product",
           "settings": {
-            "text": "<h4>“The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”</h4>",
-            "image": "shopify://shop_images/cosmopolitan_adf408aa-05b0-45c0-9349-a0f1f360ba73.svg"
-          }
-        },
-        "image_with_text_xNnbxX": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to address nearly every skincare concern you could imagine.”</h4>",
-            "image": "shopify://shop_images/gq.svg"
+            "product": "hair-renewal-serum",
+            "product_variant_id": 50927054160111,
+            "product_selling_plan": 9343041775,
+            "gift": "",
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "1 Bottle · 60 mL",
+            "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
+            "image": "shopify://shop_images/mi-pro-hair-1-month-box.webp",
+            "product_discount_percent": 17,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
           }
         }
       },
       "block_order": [
-        "image_with_text_rczj6t",
-        "image_with_text_WhtWNQ",
-        "image_with_text_rwJFRA",
-        "image_with_text_GcMQyX",
-        "image_with_text_xNnbxX"
+        "type_onetime",
+        "product_type_onetime",
+        "product_onetime",
+        "type_subscription",
+        "product_type_subscription",
+        "product_subscription"
       ],
-      "name": "t:sections.n_press-reviews.name",
       "settings": {
-        "use_own_file": false,
-        "text": "<h6>FEATURED IN</h6>",
-        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
+        "form_name": "purchase-form-landing-subscription",
+        "hide_types": true,
+        "hide_variants": false,
+        "color_types": false,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 10,
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "hair-renewal-serum",
+        "type": "list",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": false,
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
-    "n_trusted_reviews_HRLHtt": {
-      "type": "n_trusted-reviews",
+    "n_experts_pick_GdfycA": {
+      "type": "n_experts-pick",
       "blocks": {
-        "slider_iCfR9d": {
-          "type": "slider",
+        "percent_clarity": {
+          "type": "percent",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/ellie-v.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Ellie V.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>My skin returned to life!</strong></p><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Ellie uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "text": "<h6>Clarity & Tone</h6><p>Evens out tone over time</p>",
+            "percent": 100
           }
         },
-        "slider_xqHC8P": {
-          "type": "slider",
+        "percent_glow": {
+          "type": "percent",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/anton-m.webp",
-            "flag": "shopify://shop_images/australia_f.webp",
-            "username": "Anton M.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Can’t go a day without it</strong></p><p>“Straight away I noticed results with Qure, after the first week I had no active breakouts anymore. People ask me now how have I got my skin to be hydrated, acne-free, looking bright with no redness. I'm so reliant on the Qure mask now. I don't think I can go a day without using it.”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/q-rejuvalight-pro-led-mask.webp",
-            "product_text": "Anton uses...",
-            "product_title": "Q-Rejuvalight Pro LED Mask"
+            "text": "<h6>Radiant Glow</h6><p>Less fatigued, more vibrant</p>",
+            "percent": 100
           }
         },
-        "slider_ea3hLd": {
-          "type": "slider",
+        "percent_texture": {
+          "type": "percent",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/jennifer-n.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Jennifer N.",
-            "verified_customer": "Verified customer",
-            "text": "<p><strong>Works better than I imagined!</strong></p><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/micro-infusion-facial-system_f0e75ccc-2fd2-48d6-aea7-fe662896adaa.webp",
-            "product_text": "Jennifer uses...",
-            "product_title": "Micro-Infusion Facial System"
+            "text": "<h6>Smooth Texture</h6><p>Softer with consistent use</p>",
+            "percent": 100
           }
         }
       },
       "block_order": [
-        "slider_iCfR9d",
-        "slider_xqHC8P",
-        "slider_ea3hLd"
+        "percent_clarity",
+        "percent_glow",
+        "percent_texture"
       ],
-      "name": "t:sections.n_trusted-reviews.name",
+      "name": "t:sections.n_experts-pick.name",
       "settings": {
-        "use_own_file": false,
-        "background_color": "light",
-        "text": "<h2>Results you’ll see with your own eyes</h2>",
-        "button_label": "",
-        "button_url": ""
+        "section_id": "",
+        "badge_text": "",
+        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the <strong>Recovery+ Sheet Mask</strong> after Micro-Infusion because it provides an immediate cooling sensation, <strong>helps calm the appearance of visible redness</strong>, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
+        "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
-    "n_you_may_also_like_HZi1bC": {
-      "type": "n_product-you-may-also-like",
+    "n_logos_PKGksi": {
+      "type": "n_logos",
+      "blocks": {
+        "carousel_iU7k7V": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/vogue_1cc4c3cc-1f4c-432c-8fa5-4e2ecd7bdc2c.svg"
+          }
+        },
+        "carousel_ihTTwT": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/womens-health.svg"
+          }
+        },
+        "carousel_7pmCPD": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/elle_54660f6f-a533-4b3f-8a45-0345c881697a.webp"
+          }
+        },
+        "carousel_ReKdHc": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/cosmopolitan_f205bfe7-d6c2-481a-b639-273120ddcf5c.svg"
+          }
+        },
+        "carousel_QBqr3i": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/grazia_dd8672a7-9cb0-4f7c-ad61-1966664bd086.svg"
+          }
+        },
+        "carousel_YxgDDf": {
+          "type": "carousel",
+          "settings": {
+            "image": "shopify://shop_images/qq_37b5fce6-480a-47c9-b57f-c1807e9259ba.svg"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_iU7k7V",
+        "carousel_ihTTwT",
+        "carousel_7pmCPD",
+        "carousel_ReKdHc",
+        "carousel_QBqr3i",
+        "carousel_YxgDDf"
+      ],
+      "name": "t:sections.n_logos.name",
       "settings": {
         "use_own_file": false
+      }
+    },
+    "n_features_overview_a6Nk0R": {
+      "type": "n_features-overview",
+      "blocks": {
+        "component_methylene_blue": {
+          "type": "component",
+          "settings": {
+            "modifier": "reverse",
+            "heading": "Methylene Blue",
+            "text": "A powerful antioxidant that enhances LED response"
+          }
+        },
+        "component_beta_glucan": {
+          "type": "component",
+          "settings": {
+            "modifier": "none",
+            "heading": "Beta-Glucan",
+            "text": "Deeply soothing and hydrating"
+          }
+        },
+        "component_calendula": {
+          "type": "component",
+          "settings": {
+            "modifier": "none",
+            "heading": "Calendula iActive",
+            "text": "Calming properties"
+          }
+        },
+        "benefit_color_story": {
+          "type": "benefit",
+          "settings": {
+            "icon": "fine-lines",
+            "heading": "The Color Story",
+            "text": "That signature blue isn't a filter or added dye - it's the ingredient itself, Methylene Blue. What you see is literally the active."
+          }
+        },
+        "benefit_primes_led": {
+          "type": "benefit",
+          "settings": {
+            "icon": "verified-shield",
+            "heading": "Primes skin for LED",
+            "text": "Methylene blue is a cosmetic photosensitizer - it helps skin respond more effectively to every LED session. Same routine. More from it. Deeper synergy with every red and blue light session."
+          }
+        },
+        "benefit_antioxidant": {
+          "type": "benefit",
+          "settings": {
+            "icon": "antioxidant",
+            "heading": "Antioxidant Support",
+            "text": "Powerful antioxidant support with zero harsh or drying actives. Helps support skin exposed to daily blue light from your phone, laptop, and everything in between."
+          }
+        },
+        "benefit_hydration": {
+          "type": "benefit",
+          "settings": {
+            "icon": "droplet",
+            "heading": "Hydration Boost",
+            "text": "Helps skin retain moisture, leaving it visibly plumper and more balanced after each use."
+          }
+        }
       },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      "block_order": [
+        "component_methylene_blue",
+        "component_beta_glucan",
+        "component_calendula",
+        "benefit_color_story",
+        "benefit_primes_led",
+        "benefit_antioxidant",
+        "benefit_hydration"
+      ],
+      "name": "t:sections.n_features-overview.name",
+      "settings": {
+        "section_id": "",
+        "modifier": "blue-serum",
+        "heading": "<h2>Meet the active blue</h2>",
+        "text": "<p>A smarter ritual for skin that lives under LEDs, screens, and everyday light.</p>",
+        "image": "shopify://shop_images/blue.webp"
+      }
+    },
+    "n_features_marquee_rwufQa": {
+      "type": "n_features-marquee",
+      "blocks": {
+        "image_with_text_shipping": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "shipping-order",
+            "text": "Free Shipping On<br>Orders Over $149"
+          }
+        },
+        "image_with_text_reviewed": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "reviewed",
+            "text": "DermatologistReviewed"
+          }
+        },
+        "image_with_text_pay_later": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "pay-later",
+            "text": "Buy Now, Pay Later<br>Options Available"
+          }
+        },
+        "image_with_text_proven": {
+          "type": "image_with_text",
+          "settings": {
+            "icon": "proven",
+            "text": "Proven Results,<br>Backed By Science"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_shipping",
+        "image_with_text_reviewed",
+        "image_with_text_pay_later",
+        "image_with_text_proven"
+      ],
+      "name": "t:sections.n_features-marquee.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_accordion_tiles_square_QXb1bn": {
+      "type": "n_accordion-tiles-square",
+      "blocks": {
+        "accordion_hydration": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/methylene-blue-2-tile.webp",
+            "heading": "Hydration",
+            "text": "<h6>Polyglutamic Acid</h6><p>Helps lock in moisture, reduce moisture loss, and leave skin looking visibly plumper and more hydrated.</p><h6>Sodium Hyaluronate</h6><p>A form of hyaluronic acid that helps attract and retain moisture for softer, more hydrated-looking skin.</p>"
+          }
+        },
+        "accordion_calming": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/niacinamide-2-tile.webp",
+            "heading": "Calming",
+            "text": "<h6>Beta-Glucan</h6><p>Helps calm the appearance of visible redness and support the skin’s moisture barrier.</p><h6>Centella Asiatica</h6><p>A well-known soothing botanical that helps calm stressed-looking skin and support the skin barrier.</p>"
+          }
+        },
+        "accordion_protection": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/beta-glucan-3-tile.webp",
+            "heading": "Protection",
+            "text": "<h6>Ectoin</h6><p>Helps protect skin from environmental stressors and support the skin barrier.</p><h6>Allantoin</h6><p>Helps soothe dry, stressed skin, reduce visible flaking, and leave skin feeling softer and more comfortable.</p>"
+          }
+        },
+        "popup_ingredients": {
+          "type": "popup",
+          "settings": {
+            "button_label": "View Full Ingredient List",
+            "popup_id": "fullIngredient",
+            "text": "<p><strong>Recovery+ Sheet Mask Ingredients</strong></p><p>Glycerin, Aqua (Water), Sodium Cocoyl Glutamate, Disodium Cocoamphodiacetate, Lactic Acid, Sodium Chloride, Squalane, Aloe Barbadensis Leaf Juice Powder, Panthenol, Camellia Sinensis (Green Tea) Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Sodium Phytate, Caprylhydroxamic Acid, Glyceryl Caprylate</p>",
+            "sub_text": "<ul><li>Fragrance-free</li><li>Silicone-free</li><li>Cruelty-free</li><li>Non-drying</li><li>Hypoallergenic</li><li>Safe for sensitive skin</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_hydration",
+        "accordion_calming",
+        "accordion_protection",
+        "popup_ingredients"
+      ],
+      "name": "t:sections.n_accordion-tiles-square.name",
+      "settings": {
+        "use_own_file": false,
+        "section_id": "",
+        "heading": "<h6>FORMULATED WITH PURPOSE</h6><h2>Powerful Ingredients</h2>"
+      }
+    },
+    "n_usage_steps_rcfD2k": {
+      "type": "n_usage-steps",
+      "blocks": {
+        "step_prepare": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-recovery-mask-1.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-1-mob.webp",
+            "heading": "1. Prepare",
+            "text": "<p>After Micro-Infusion, apply the mask directly to skin. If using it on its own, start with clean, dry skin.</p>"
+          }
+        },
+        "step_take_out": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/usage-steps-recovery-mask-2.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-2-mob.webp",
+            "heading": "2. Take the mask out",
+            "text": "<p>Carefully unfold the mask and smooth it over your face, aligning the eye and mouth openings.</p>"
+          }
+        },
+        "step_place": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/recoverymaskq.webp",
+            "image_mobile": "shopify://shop_images/recoverymasktepsmobile.webp",
+            "heading": "3. Place mask on face",
+            "text": "<p>Leave the mask on for 15-20 minutes while you relax.</p>"
+          }
+        },
+        "step_rinse": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/recoverymaskstepd.webp",
+            "image_mobile": "shopify://shop_images/recoverysteps.webp",
+            "heading": "4. Do not rinse",
+            "text": "<p>Gently remove and discard the mask. Do not rinse. Pat or massage any remaining serum into the skin until absorbed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_prepare",
+        "step_take_out",
+        "step_place",
+        "step_rinse"
+      ],
+      "name": "t:sections.n_usage-steps.name",
+      "settings": {
+        "section_id": "easy_steps",
+        "heading": "<h6>SIMPLE 15-MINUTE RITUAL</h6><h2>How to Use</h2>",
+        "badge": "Pro tip",
+        "badge_text": "Refrigerate sealed pouch for cooling"
+      }
+    },
+    "n_base_section_PXZ3ip": {
+      "type": "n_base-section",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "haircare",
+        "modifier_2": "none",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>Go beyond surface-level haircare</h2>",
+        "text": "<p>Traditional serums sit on top of the scalp or rinse away. Once a week, the Micro-Infusion Pro Hair System uses 0.5mm 24k gold-plated needles to create tiny micro-channels, <strong>designed to help deliver serum actives directly to the scalp surface where they're needed most.</strong> On the days in between, the Hair Renewal Serum keeps your scalp conditioned.</p><p>The patent-pending system uses tiny, virtually painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp<br/></strong>Virtually painless micro-stamping with 0.5mm needles on a sterile, single-use tip.</li><li><strong>Infuse<br/></strong>Designed to help deliver serum actives directly to the scalp surface.</li><li><strong>Renews<br/></strong>Supports the look of fuller, denser-looking hair over time.</li></ul>",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "jhwgazmjv8",
+        "accordion_text": ""
+      }
+    },
+    "n_bundled_together_znyemy": {
+      "type": "n_bundled-together",
+      "blocks": {
+        "component_Yx3dKm": {
+          "type": "component",
+          "settings": {
+            "heading": "Hair Renewal Serum",
+            "badge": "Nightly",
+            "text": "Helps provide lasting scalp hydration"
+          }
+        },
+        "component_Lc7tPb": {
+          "type": "component",
+          "settings": {
+            "heading": "Micro-Infusion Pro Hair",
+            "badge": "Weekly",
+            "text": "Helps target the appearance of thinning areas"
+          }
+        },
+        "component_Rn2wGs": {
+          "type": "component",
+          "settings": {
+            "heading": "Together",
+            "badge": "Weekly + Nightly",
+            "text": "Visibly fuller, more resilient-looking hair"
+          }
+        },
+        "quote_Fj8mQe": {
+          "type": "quote",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>It's a simple, at-home system that is both quick and highly effective.</p>",
+            "username": "Dr. Shah",
+            "position": "Dermatologist"
+          }
+        }
+      },
+      "block_order": [
+        "component_Yx3dKm",
+        "component_Lc7tPb",
+        "component_Rn2wGs",
+        "quote_Fj8mQe"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "section_id": "",
+        "modifier": "hair",
+        "heading": "<h2>The Micro-Infusion Pro Hair System + Hair Renewal Serum</h2>",
+        "image": "shopify://shop_images/mi-hair-bungle.webp",
+        "button_label": "Shop Now",
+        "button_url": "#purchase-form"
+      }
+    },
+    "n_mi_ingredients_np84Ph": {
+      "type": "n_mi-ingredients",
+      "blocks": {
+        "left_heading_Qw7nFs": {
+          "type": "left_heading",
+          "settings": {
+            "image": "shopify://shop_images/mi-2-device-rejuvenating-1.webp",
+            "badge": "Weekly",
+            "text": "<h3>Thinning Areas</h3><h6>MICRO-INFUSION PRO HAIR SYSTEM</h6><p>Creates precise micro-channels at the scalp surface to help deliver serum actives where they’re needed.</p>"
+          }
+        },
+        "left_column_Hs2mVd": {
+          "type": "left_column",
+          "settings": {
+            "icon": "hair",
+            "text": "Targets the look of thinning"
+          }
+        },
+        "left_column_Kp9cRj": {
+          "type": "left_column",
+          "settings": {
+            "icon": "micro-stamping",
+            "text": "Supports denser, fuller-looking hair"
+          }
+        },
+        "left_column_Zm5tLq": {
+          "type": "left_column",
+          "settings": {
+            "icon": "fast",
+            "text": "5-minute weekly treatment"
+          }
+        },
+        "left_accordion_Nx8bGw": {
+          "type": "left_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p>Pisum Sativum (Pea) Sprout Extract<br/>Helps target the look of thinning, for visibly denser-looking hair.</p><p>Acetyl Tetrapeptide-3 / Clover Flower Extract<br/>Helps improve the appearance of scalp vitality and hair fullness.</p><p>Copper Tripeptide-1<br/>Supports the look of stronger, resilient-looking hair.</p><p>Niacinamide<br/>Helps condition and hydrate the scalp.</p><p>Caffeine<br/>Provides an energizing, invigorating sensation on the scalp.</p><p>Larix / Green Tea / Zinc / Glycine Complex<br/>Helps the scalp look and feel more balanced with regular use.</p><p>Pyrrolidinyl Diaminopyrimidine Oxide<br/>Supports the look of smoother, more resilient-looking strands.</p><p>Dihydroxypropyl Arginine HCl<br/>Supports a smoother, more comfortable-feeling scalp.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        },
+        "right_heading_Vc3jWe": {
+          "type": "right_heading",
+          "settings": {
+            "image": "shopify://shop_images/mi-2-device-rejuvenating-2_c649156e-25ff-4e1d-be22-ca0e6d17ffcf.webp",
+            "badge": "Nightly",
+            "text": "<h3>Scalp Hydration</h3><h6>HAIR RENEWAL SERUM</h6><p>A lightweight, dropper-applied serum for nightly use on non-infusion nights.</p>"
+          }
+        },
+        "right_column_Ly6kPt": {
+          "type": "right_column",
+          "settings": {
+            "icon": "smooths",
+            "text": "Conditions & hydrates scalp"
+          }
+        },
+        "right_column_Gd4rNb": {
+          "type": "right_column",
+          "settings": {
+            "icon": "cooling",
+            "text": "Invigorating, cooling feel"
+          }
+        },
+        "right_column_Tf7wHm": {
+          "type": "right_column",
+          "settings": {
+            "icon": "deeply-hydrates",
+            "text": "Antioxidant-rich formula"
+          }
+        },
+        "right_accordion_Jq2sXz": {
+          "type": "right_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p>Pisum Sativum (Pea) Sprout Extract<br/>Helps target the look of thinning, for visibly denser-looking hair.</p><p>Acetyl Tetrapeptide-3 / Clover Flower Extract<br/>Helps improve the appearance of scalp vitality and hair fullness.</p><p>Copper Tripeptide-1<br/>Supports the look of stronger, resilient-looking hair.</p><p>Niacinamide<br/>Helps condition and hydrate the scalp.</p><p>Caffeine<br/>Provides an energizing, invigorating sensation on the scalp.</p><p>Larix / Green Tea / Zinc / Glycine Complex<br/>Helps the scalp look and feel more balanced with regular use.</p><p>Pyrrolidinyl Diaminopyrimidine Oxide<br/>Supports the look of smoother, more resilient-looking strands.</p><p>Dihydroxypropyl Arginine HCl<br/>Supports a smoother, more comfortable-feeling scalp.</p><p>Peppermint Oil (Hair Renewal Serum only)<br/>Delivers a cooling, refreshing feel on application.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_heading_Qw7nFs",
+        "left_column_Hs2mVd",
+        "left_column_Kp9cRj",
+        "left_column_Zm5tLq",
+        "left_accordion_Nx8bGw",
+        "right_heading_Vc3jWe",
+        "right_column_Ly6kPt",
+        "right_column_Gd4rNb",
+        "right_column_Tf7wHm",
+        "right_accordion_Jq2sXz"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "section_id": "",
+        "text": "<h2>Two products. Complete care.</h2><p>Use Micro-Infusion Pro weekly, and Hair Renewal Serum nightly, for complete scalp care.</p>",
+        "button_label": "Add Full System to Cart",
+        "button_url": "#purchase-form",
+        "sub_text": "90-Day Money-Back Guarantee • Free US Shipping Over 149$"
+      }
+    },
+    "n_comparison_table_uhyaiU": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_b6fAAH": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Active Ingredients",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_PTcf36": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Multi-Benefit Formula",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_BTUB3F": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Ease of Use",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_w3ziN9": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Cost",
+            "color": "none"
+          }
+        },
+        "comparison_table_UY3pRQ": {
+          "type": "comparison_table",
+          "settings": {
+            "heading": "<h5>Qure <br />All-In-One Serum</h5>",
+            "text_1": "Retinol, peptides, niacinamide, bakuchiol",
+            "select_1": "checkmark",
+            "text_2": "Targets 5+ concerns in one easy-to-use formula",
+            "select_2": "checkmark",
+            "text_3": "One step, AM or PM",
+            "select_3": "checkmark",
+            "text_4": "Great value",
+            "select_4": "checkmark",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_J84FYW": {
+          "type": "comparison_table",
+          "settings": {
+            "heading": "<h5>High-End<br />Serums</h5>",
+            "text_1": "Usually 1–2 premium actives per product",
+            "select_1": "checkmark",
+            "text_2": "Often one concern per product",
+            "select_2": "cross",
+            "text_3": "Multi-step routine",
+            "select_3": "cross",
+            "text_4": "High ($90+ per product)",
+            "select_4": "cross",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        },
+        "comparison_table_mV9R3h": {
+          "type": "comparison_table",
+          "settings": {
+            "heading": "<h5>Drugstore<br />Serums</h5>",
+            "text_1": "Basic actives in lowest concentrations",
+            "select_1": "cross",
+            "text_2": "Often one concern per product",
+            "select_2": "cross",
+            "text_3": "Multi-step routine",
+            "select_3": "cross",
+            "text_4": "Low",
+            "select_4": "cross",
+            "text_5": "",
+            "select_5": "checkmark"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_b6fAAH",
+        "comparison_table_heading_PTcf36",
+        "comparison_table_heading_BTUB3F",
+        "comparison_table_heading_w3ziN9",
+        "comparison_table_UY3pRQ",
+        "comparison_table_J84FYW",
+        "comparison_table_mV9R3h"
+      ],
+      "name": "t:sections.n_comparison-table.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<h2>More actives, less hassle, better results</h2>"
+      }
+    },
+    "n_complete_system_fuYSn6": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_cleanser": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "variant_title": "",
+            "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_dermal_mist": {
+          "type": "product",
+          "settings": {
+            "product": "dermal-mist",
+            "variant_title": "",
+            "description": "Kills bacteria and prepares skin for a safer Micro-Infusion treatment.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_micro_infusion": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "variant_title": "",
+            "description": "Activates your skin’s renewal process and helps improve the look of fine lines, texture, and uneven tone.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "recovery-sheet-mask",
+            "variant_title": "",
+            "description": "Developed for skin after Micro-Infusion, as well as dry, sensitive, and stressed skin. The formula and ultra-soft TENCEL material are designed to sit comfortably on skin while delivering soothing hydration.",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "step": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_cleanser",
+        "product_dermal_mist",
+        "product_micro_infusion",
+        "product",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "name": "t:sections.n_page-microinfusion-complete-system.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "bg",
+        "heading": "<h2>Complete the Qure system</h2>",
+        "button_label": "Add Full System to Cart",
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
+    "n_faq_AE8YPK": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_benefit": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use this after clinical microneedling?",
+            "text": "<p>Yes. The Recovery+ Sheet Mask is formulated to mirror the cooling protocol used in clinics after treatments like Dermapen and SkinPen. It's made for freshly treated, sensitized skin, so it suits post-treatment care whether you've had an at-home Micro-Infusion session or a clinical microneedling treatment. If you're ever unsure, check with your provider first.</p>"
+          }
+        },
+        "accordion_showerheads": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often should I use it?",
+            "text": "<p>Once a week works well for most people, in line with a weekly Micro-Infusion routine — each box holds 6 masks, a 3-month supply. You can also reach for it any time skin feels dry, stressed, or in need of extra care, even outside your treatment days.</p>"
+          }
+        },
+        "accordion_pressure": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Why shouldn't I wash it off?",
+            "text": "<p>The serum is formulated to keep working after you remove the mask. Rinsing washes away the moisture and calming actives before they've had a chance to fully absorb. Instead, pat any leftover serum into your skin, leave it on overnight, and cleanse as normal the next morning.</p>"
+          }
+        },
+        "accordion_certified": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Does it contain synthetic fragrance?",
+            "text": "<p>No. The Recovery+ Sheet Mask is fragrance-free, and also free from parabens and PEG — made for sensitive, reactive, and freshly treated skin.</p>"
+          }
+        },
+        "accordion_replace": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it suitable for sensitive skin?",
+            "text": "<p>Yes. It's dermatologist tested, hypoallergenic, and formulated to be non-irritating — including on sensitive and reactive skin. If you have a specific skin condition or aren't sure, it's worth checking with your dermatologist first.</p>"
+          }
+        },
+        "accordion_install": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are the key ingredients?",
+            "text": "<p>The mask is built around a hydrating and calming actives stack: Polyglutamic Acid and Sodium Hyaluronate to draw in and hold moisture, Centella Asiatica (Cica) and Beta-Glucan to help calm the appearance of redness, and Ectoin and Allantoin to help soothe and support skin's barrier.</p>"
+          }
+        },
+        "accordion_subscribe": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it even if I haven't done Micro-Infusion?",
+            "text": "<p>Yes. While it's formulated for post-Micro-Infusion recovery, it also works well on its own, anytime skin feels dry, stressed, or in need of extra care — no treatment required.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_benefit",
+        "accordion_showerheads",
+        "accordion_pressure",
+        "accordion_certified",
+        "accordion_replace",
+        "accordion_install",
+        "accordion_subscribe"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
+        "text": "Don't see your question?",
+        "button_label": "Ask us",
+        "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
+      }
+    },
+    "sticky_cta_CkXGXJ": {
+      "type": "n-sticky-button",
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Hair Renewal Serum",
+        "text": "80 Units Reserved in last 48 hours",
+        "limited": false,
+        "button-label": "Buy Now",
+        "button-url": ""
+      }
     }
   },
   "order": [
-    "product_header_YnMCRC",
-    "n_press_reviews_HDaUTN",
-    "n_trusted_reviews_HRLHtt",
-    "n_you_may_also_like_HZi1bC"
+    "product_header_jT40UR",
+    "purchase-form-landing",
+    "n_experts_pick_GdfycA",
+    "n_logos_PKGksi",
+    "n_features_overview_a6Nk0R",
+    "n_features_marquee_rwufQa",
+    "n_accordion_tiles_square_QXb1bn",
+    "n_usage_steps_rcfD2k",
+    "n_base_section_PXZ3ip",
+    "n_bundled_together_znyemy",
+    "n_mi_ingredients_np84Ph",
+    "n_comparison_table_uhyaiU",
+    "n_complete_system_fuYSn6",
+    "n_faq_AE8YPK",
+    "sticky_cta_CkXGXJ"
   ]
 }
