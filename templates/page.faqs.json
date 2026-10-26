@@ -227,16 +227,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is SecureShip?",
-            "text": "<p>SecureShip provides shipping insurance for our customers' online purchases that are lost or damaged while in transit or “porch pirated” (“porch pirated” meaning the carrier reports the status as “delivered” but the parcel has been stolen from the delivery address).</p><p>Customers who do not purchase SecureShip shipping insurance are not eligible for coverage on items lost or damaged in transit.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
-            "section_id": ""
-          }
-        },
-        "faq_item_GgmgfX": {
-          "type": "faq_item",
-          "settings": {
-            "secure_strap": false,
-            "heading": "",
-            "text": "",
+            "text": "<p>SecureShip is optional shipping protection you can add at checkout. It covers parcels that are lost, damaged in transit, or reported delivered but stolen. If you have SecureShip and your parcel is lost or damaged, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> within 15 days of delivery, keep all packaging, and send photos. We will arrange a replacement or refund. If you did not add SecureShip, contact us anyway and we will look into your case with the carrier.</p><p>How to make a claim:</p><p>All packaging material and damaged goods must be kept in the original form as received. Packaging and damaged goods should not be disposed of or released to the carrier before a claim is completed as photographs will be required. Failure to comply will result in the denial of the claim due to insufficient packaging.</p><p>Concealed damage allows for the discovery of loss or damage up to 15 days after final delivery. The loss is deemed to have possibly occurred during the insured transit. Discovery of loss or damage occurring 16 days or later after final delivery is deemed to have occurred while the shipment was NOT in transit, and therefore, is not covered.</p><p>In case of loss or damage to the covered parcel or freight the following must be completed:</p><ul><li>The Insured will file immediate notice of non-delivery, damage, or shortage with the Qure Customer Service Team. The Insured will not file a claim with the Carrier as all rights to the carrier provided coverage is assigned to Qure Customer Service Team.</li></ul><p>Once a claim has been accepted and approved by us, prompt payment will be made to the Insured. SecureShip will rely on the determination of responsibility made by the original Carrier to assist in substantiating the loss.</p><p>All fees paid for the Services are non-refundable and non-transferable except as may be expressly provided in these Terms.</p>",
             "section_id": ""
           }
         }
@@ -255,8 +246,7 @@
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
-        "faq_item_yhbpCU",
-        "faq_item_GgmgfX"
+        "faq_item_yhbpCU"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
