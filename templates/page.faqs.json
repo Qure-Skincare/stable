@@ -149,6 +149,15 @@
             "section_id": ""
           }
         },
+        "faq_item_UmwFTW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When will my pre-order or backordered item ship?",
+            "text": "<p>The expected ship date is shown on the product page when you order. Your card is charged at purchase. We email you a tracking number when your item ships. If the date changes, we will email you.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_JJCJwr": {
           "type": "faq_item",
           "settings": {
@@ -237,6 +246,7 @@
         "faq_item_GxG63x",
         "faq_item_wiXHBi",
         "faq_item_NXiPYf",
+        "faq_item_UmwFTW",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
         "faq_item_4EgMGi",
