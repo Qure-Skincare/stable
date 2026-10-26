@@ -87,7 +87,6 @@
     },
     "n_promo_strip_Hx7cVq": {
       "type": "n_promo-strip",
-      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "recovery-mask",
@@ -624,12 +623,12 @@
     "n_across_image_banner_Kd7pRw",
     "n_across_image_banner_Mv8kTq",
     "n_across_image_banner_TNGNLJ",
-    "n_promo_strip_Hx7cVq",
     "n_top_products_Qr7mXa",
     "n_promo_strip_bF3xQk",
-    "n_promo_strip_wR8mHd",
-    "n_promo_strip_kR4nW8",
+    "n_promo_strip_Hx7cVq",
     "n_mi_buy_Lp3dWc",
+    "n_promo_strip_kR4nW8",
+    "n_promo_strip_wR8mHd",
     "n_trusted_reviews_ecfpDp",
     "n_experts_grid_Zk9bHt",
     "n_across_image_banner_Vx6nQp",
