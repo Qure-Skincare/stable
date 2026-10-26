@@ -167,15 +167,6 @@
             "section_id": ""
           }
         },
-        "faq_item_f3RGwi": {
-          "type": "faq_item",
-          "settings": {
-            "secure_strap": false,
-            "heading": "What is the last day to order for delivery before the holidays?",
-            "text": "<p>Delivery times are estimates and are not guaranteed during peak periods.</p>",
-            "section_id": ""
-          }
-        },
         "faq_item_ErhU7D": {
           "type": "faq_item",
           "settings": {
@@ -230,7 +221,6 @@
         "faq_item_tgNbME",
         "faq_item_4EgMGi",
         "faq_item_kHLgRg",
-        "faq_item_f3RGwi",
         "faq_item_ErhU7D",
         "faq_item_xczpmx",
         "faq_item_9enLGF",
@@ -797,13 +787,23 @@
             "text": "<p>Yes. If you bought as part of a promotion, such as a bundle, a buy-one-get-one offer or a free gift with purchase, all items in the promotion must be returned to receive a refund. You may find our returns policy <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">here</a>.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_Q7CACi": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I return a holiday gift after the holidays?",
+            "text": "<p>Yes. If you or someone you gave a gift to would like to return a product from an order placed between 1 November and 31 December 2026, you have until 31 January 2027, or 30 days from delivery, whichever is later. Returns are made by the person who placed the order, using the order number from the confirmation email. If you are returning a gift, ask the buyer to start the return, or contact us with the order number and we will help.</p><p>All other return terms still apply, including getting a Return Authorization Number before you send anything back. See our <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">returns policy</a> for the full terms.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_eBzKTC",
         "faq_item_Hrgtcf",
         "faq_item_3MDwaa",
-        "faq_item_MBNWTW"
+        "faq_item_MBNWTW",
+        "faq_item_Q7CACi"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
