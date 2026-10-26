@@ -583,7 +583,8 @@
                 "modifier-options": {
                     "none": "None",
                     "blue-plus": "Blue+ serum",
-                    "against-cancer": "Against cancer"
+                    "against-cancer": "Against cancer",
+                    "recovery-mask": "Recovery+ mask"
                 }
             }
         },
