@@ -21,6 +21,17 @@
     "announcement-bar": {
       "type": "n_announcement-bar",
       "blocks": {
+        "slider_XC6Aee": {
+          "type": "slider",
+          "settings": {
+            "countdown": false,
+            "text": "<p><strong>Halloween offer:</strong> get a free Neck & Décolletage System</p>",
+            "button_label": "",
+            "button_url": "https://qureskincare.com/pages/led-mask-offer-2",
+            "from": "",
+            "days": 5
+          }
+        },
         "slider_feYWqY": {
           "type": "slider",
           "settings": {
@@ -56,6 +67,7 @@
         }
       },
       "block_order": [
+        "slider_XC6Aee",
         "slider_feYWqY",
         "slider_1",
         "slider_2"
