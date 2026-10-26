@@ -136,7 +136,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will my order ship?",
-            "text": "<p>Here's how it works: you order, we process, then we ship. Ordering takes a few seconds. </p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. </p><p>You'll get a shipment notification email with a tracking number as soon as your package ships and it's on the way!</p>",
+            "text": "<p>Here's how it works: you order, we process, then we ship. Ordering takes a few seconds.&nbsp;</p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. Pre-order and backordered items ship on the date shown on the product page.</p><p>You'll get a shipment notification email with a tracking number as soon as your package ships and it's on the way!</p><p>Check your spam folder if you do not see it, and add our sender address to your contacts.</p>",
             "section_id": ""
           }
         },
