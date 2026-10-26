@@ -41,7 +41,6 @@
         },
         "exclusive-offer_iaSzaD": {
           "type": "exclusive-offer",
-          "disabled": true,
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_53.png",
@@ -62,6 +61,7 @@
         },
         "free_gift_offer_kR7mXd": {
           "type": "free-gift-offer",
+          "disabled": true,
           "settings": {
             "title": "<p><strong>FREE Blue+ Face Serum With<br/>Q-Rejuvalight Pro LED Mask</strong></p>",
             "value": "Value $79",
