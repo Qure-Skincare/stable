@@ -122,6 +122,15 @@
             "section_id": ""
           }
         },
+        "faq_item_GxG63x": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How much does shipping cost?",
+            "text": "<p>Shipping is calculated at checkout. Express options are shown at checkout.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_wiXHBi": {
           "type": "faq_item",
           "settings": {
@@ -216,6 +225,7 @@
       "block_order": [
         "faq_item_Qkyqtx",
         "faq_item_J8LQPm",
+        "faq_item_GxG63x",
         "faq_item_wiXHBi",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
