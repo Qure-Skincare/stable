@@ -15,7 +15,7 @@
         {% endif %}
         <span>{{ block.settings.title }}</span>
         {% if block.settings.badge != blank %}
-            <span class="e-pill-badge e-pill-badge--fill">{{ block.settings.badge }}</span>
+            <span class="e-pill-badge e-pill-badge--fill{% if block.settings.highlight_badge %} e-pill-badge--highlight{% endif %}">{{ block.settings.badge }}</span>
         {% endif %}
         {% if image != blank %}
             {% if block.settings.image_style == 'background' %}
@@ -33,6 +33,20 @@
         {% endif %}
     </a>
 </li>
+
+{% stylesheet %}
+.header__content-cards li:last-child a .e-pill-badge--fill:not(.e-pill-badge--highlight) {
+    --badge-base-color: #212428;
+    background-color: var(--badge-fill-color);
+    background-image: none;
+}
+
+.header__content-cards li a .e-pill-badge--fill.e-pill-badge--highlight {
+    --badge-base-color: #fff;
+    background-color: var(--discount-color);
+    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, .1) 30%, hsla(0, 0%, 100%, .4) 50%, hsla(0, 0%, 100%, .1));
+}
+{% endstylesheet %}
 
 {% schema %}
 {
@@ -54,8 +68,13 @@
         {
             "type": "text",
             "id": "badge",
-            "label": "Badge",
-            "info": "The badge of the last card is highlighted"
+            "label": "Badge"
+        },
+        {
+            "type": "checkbox",
+            "id": "highlight_badge",
+            "label": "Highlight badge",
+            "default": false
         },
         {
             "type": "url",
