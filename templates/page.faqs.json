@@ -191,7 +191,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where is my order?",
-            "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal. </a></p>",
+            "text": "<p>Use the tracking link in your shipping confirmation email, or enter your order number on our <a href=\"https://qureskincareaftership.aftership.com\" title=\"https://qureskincareaftership.aftership.com\">Order Tracking page. </a>Carriers can take 1 to 2 business days to show the first scan. Tracking can also pause for several days while a parcel moves between countries or between carriers.</p><p><a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Contact us</a> if tracking shows no movement for 5 business days, or if it says delivered and you cannot find the parcel. Have your order number ready.</p>",
             "section_id": ""
           }
         },
