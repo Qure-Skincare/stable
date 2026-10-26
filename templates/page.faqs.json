@@ -182,7 +182,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "My order was lost, damaged, or missing something!",
-            "text": "<p>If your order has not arrived from the day you received your tracking number, or if you notice your package arrived damaged or with missing items, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">please contact us </a>within 15 days. </p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. </p><p>Any relevant information about the package you received will also be helpful.</p>",
+            "text": "<p>If your tracking says delivered but you cannot find the parcel, check with others in your household and your neighbors, look in safe places and check any doorbell camera. If you still cannot find it, or if the parcel arrived damaged or with items missing or wrong, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">please contact us </a>within 15 days of the delivery date.&nbsp;</p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. Keep all packaging until we have resolved your case.</p>",
             "section_id": "Orders"
           }
         },
