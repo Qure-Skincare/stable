@@ -231,6 +231,15 @@
             "section_id": ""
           }
         },
+        "faq_item_LKbEHD": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How do I contact Qure, and how long will you take to reply?",
+            "text": "<p>Use the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> (chat and email), WhatsApp (+1 240 896 3833), or book a free call with our team. &nbsp;Our team are always on hand to help and you can expect a response within 24hrs. During Busier times or holiday season it may take up to 48hrs for a response. Please include your order number so we can help faster.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_yhbpCU": {
           "type": "faq_item",
           "settings": {
@@ -256,6 +265,7 @@
         "faq_item_xczpmx",
         "faq_item_9enLGF",
         "faq_item_RdfVdp",
+        "faq_item_LKbEHD",
         "faq_item_yhbpCU"
       ],
       "name": "t:sections.n_faq-content.name",
