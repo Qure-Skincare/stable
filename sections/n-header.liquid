@@ -65,7 +65,7 @@
                 {% if black_friday_turn_on == true %}
                     {% assign special_offer_header = 'special-offer.menu.header' | t %}
                     {% if special_offer_header != '' %}
-                        <li><a class="promo-animation" href="{{ 'special-offer.menu.link' | t }}" aria-label="{{ special_offer_header | escape }}"><span>{{ special_offer_header }}</span></a></li>
+                        <li><a class="bf-bundles" href="{{ 'special-offer.menu.link' | t }}">{{ special_offer_header }}</a></li>
                     {% endif %}
                 {% endif %}
                 {{ nav_menu }}
