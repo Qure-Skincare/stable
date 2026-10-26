@@ -118,7 +118,16 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where does Qure ship to?",
-            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p>",
+            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p><p>Free shipping applies to orders over $149 for US and £149 for UK. See \"How much does shipping cost?\" below.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_GxG63x": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "How much does shipping cost?",
+            "text": "<p>Final shipping charges and available express shipping options are shown at checkout.</p>",
             "section_id": ""
           }
         },
@@ -127,12 +136,31 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will my order ship?",
-            "text": "<p>Here's how it works: you order, we process, then we ship. Ordering takes a few seconds. </p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. </p><p>You'll get a shipment notification email with a tracking number as soon as your package ships and it's on the way!</p>",
+            "text": "<p>Here's how it works: you order, we process, then we ship. Ordering takes a few seconds.&nbsp;</p><p>Processing takes 1 to 3 business days (and orders placed after 9am ET are processed the next business day). Then one of our carriers takes it from there. Pre-order and backordered items ship on the date shown on the product page.</p><p>You'll get a shipment notification email with a tracking number as soon as your package ships and it's on the way!</p><p>Check your spam folder if you do not see it, and add our sender address to your contacts.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_NXiPYf": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my order arriving in more than one package?",
+            "text": "<p>If your order includes an item that is on pre-order or back in stock later, or an item that ships from a different warehouse, we send the available items first rather than hold your whole order. Each package has its own tracking number and you are not charged extra for a split shipment. Tracking emails are sent for each package. If you would rather wait and receive everything together, contact us before your order ships and we will see what we can do.&nbsp;</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_UmwFTW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "When will my pre-order or backordered item ship?",
+            "text": "<p>The expected ship date is shown on the product page when you order. Your card is charged at purchase. We email you a tracking number when your item ships. If the date changes, we will email you.</p>",
             "section_id": ""
           }
         },
         "faq_item_JJCJwr": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "I'm having problems tracking my order.",
@@ -145,7 +173,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Do I need to pay for Taxes and Duties?",
-            "text": "<p>Please note that depending on your order and country, you may be liable to pay local taxes and duties on receipt of your order, for which Qure cannot accept liability. International shipments may be subject to the imposition of customs or import duties once they reach their destination. You will be liable for all of these duties and it is your sole responsibility to pay the charges to release the goods from the shipment. We are legally required to declare the full value of the shipment and will provide an invoice to customs should they require it.</p><p>Please be aware that customers are responsible for payment of any local customs duties. If customs duties are refused or unpaid, these will be deducted from any future refund if applicable. We have no control over these charges as customs policies vary by country. Should you opt not to accept delivery and return the package to sender (RTS), a $10 restocking fee will be deducted from your refund once we receive the item back in our warehouse. If you have any questions related to customs charges, we advise you to contact your local customs office.</p>",
+            "text": "<p>Orders shipped outside the US may be charged local taxes, VAT or import duties when they reach your country. These are set by your local customs office, not by Qure. The carrier will ask you to pay them before delivery. For UK orders, VAT is collected at checkout. We are legally required to declare the full value of the shipment and will provide an invoice to customs should they require it.</p><p>Please do not refuse the parcel. If you refuse delivery or the charges go unpaid, the parcel is returned to us. Unpaid duties and a $10 restocking fee are then deducted from your refund. If you have questions about a charge, contact your local customs office first.</p>",
             "section_id": ""
           }
         },
@@ -154,7 +182,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "My order was lost, damaged, or missing something!",
-            "text": "<p>If your order has not arrived from the day you received your tracking number, or if you notice your package arrived damaged or with missing items, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">please contact us </a>within 15 days. </p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. </p><p>Any relevant information about the package you received will also be helpful.</p>",
+            "text": "<p>If your tracking says delivered but you cannot find the parcel, check with others in your household and your neighbors, look in safe places and check any doorbell camera. If you still cannot find it, or if the parcel arrived damaged or with items missing or wrong, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">please contact us </a>within 15 days of the delivery date.&nbsp;</p><p>Provide your order number and details of the missing items, and we will assist you in resolving the issue as quickly as possible. Please prepare a photo of all items received, the packing slip, barcode, and the shipping label affixed to the box. Keep all packaging until we have resolved your case.</p>",
             "section_id": "Orders"
           }
         },
@@ -163,7 +191,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where is my order?",
-            "text": "<p>You may track your order via the link in your shipping confirmation email. If you're having trouble doing this, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal. </a></p>",
+            "text": "<p>Use the tracking link in your shipping confirmation email, or enter your order number on our <a href=\"https://qureskincareaftership.aftership.com\" title=\"https://qureskincareaftership.aftership.com\">Order Tracking page. </a>Carriers can take 1 to 2 business days to show the first scan. Tracking can also pause for several days while a parcel moves between countries or between carriers.</p><p><a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Contact us</a> if tracking shows no movement for 5 business days, or if it says delivered and you cannot find the parcel. Have your order number ready.</p>",
             "section_id": ""
           }
         },
@@ -172,7 +200,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How can I update my order or cancel my order?",
-            "text": "<p>If your order has not been shipped then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a> as soon as possible if you would like to cancel or change your order. Our fulfillment center processes orders quickly, but we'll do our best to process your request.</p>",
+            "text": "<p>Within 30 minutes of ordering, you can update your delivery address, email address and order notes yourself using the link in your confirmation email.</p><p>After 30 minutes, <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> as soon as possible. If your order has not been dispatched, we can usually help with changes. We cannot move an order to an address in a different country.</p><p>Orders go to our warehouse automatically and we cannot always stop them. Once an order has shipped it cannot be cancelled or changed. You can return it after it arrives under our 30-day money-back guarantee (see Returns & Exchanges).</p>",
             "section_id": ""
           }
         },
@@ -181,7 +209,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "My promo code isn't working.",
-            "text": "<p>If your promo code won't apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - All codes' life eventually comes to an end, make sure you use it before that happens.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to <a href=\"#\">subscribe to our newsletter</a>!</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Platform</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - we'll be happy to help!</p>",
+            "text": "<p>If your promo code won't apply or you get an error message, check whether the following applies to you:</p><ul><li>You haven't entered the code exactly as it was advertised - Try copying and pasting it and don't leave any extra characters or spaces.</li><li>The code is expired - Check the end date in the email, text or post where you found it. We cannot apply expired codes after the order is placed.</li><li>The code is being used on an already discounted bundle.</li><li>The code is only valid for a particular product - Double check that you're purchasing the right product for the code you want to use.</li><li>You didn't obtain your coupon from a valid source - These are: our website banner, social media post, or email promotions - be sure to subscribe to our newsletter.</li><li>You signed up for a code but did not receive it: check your spam and promotions folders, then contact us and we will resend it.</li></ul><p>If you are still experiencing problems after checking all the points above, please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>. Include the details of the coupon code you're trying to use and the items you have in your cart - we'll be happy to help!</p>",
             "section_id": ""
           }
         },
@@ -216,7 +244,10 @@
       "block_order": [
         "faq_item_Qkyqtx",
         "faq_item_J8LQPm",
+        "faq_item_GxG63x",
         "faq_item_wiXHBi",
+        "faq_item_NXiPYf",
+        "faq_item_UmwFTW",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
         "faq_item_4EgMGi",
