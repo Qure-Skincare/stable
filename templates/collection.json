@@ -14,10 +14,10 @@
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "holidays",
+        "modifier": "none",
         "text": "<h1>Shop our best sellers</h1>",
         "image": "shopify://shop_images/best-seller-banner.webp",
-        "image_mobile": "shopify://shop_images/best-seller-banner-mob.webp"
+        "image_mobile": "shopify://shop_images/best-seller-banner-mob_51367c4d-76f2-4e3d-b201-929206f6fa60.webp"
       }
     },
     "n_breadcrumb_fXMjkJ": {

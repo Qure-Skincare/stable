@@ -197,6 +197,14 @@
             "bestsellers_cards"
           ]
         },
+        "mobile_shop_all": {
+          "type": "nav-mobile-button",
+          "settings": {
+            "label": "Shop All Products",
+            "url": "https://qureskincare.com/collections/all-products"
+          },
+          "blocks": {}
+        },
         "tab_benefits": {
           "type": "nav-tab",
           "settings": {
@@ -309,14 +317,6 @@
           },
           "blocks": {}
         },
-        "mobile_shop_all": {
-          "type": "nav-mobile-button",
-          "settings": {
-            "label": "Shop all",
-            "url": "https://qureskincare.com/collections/best-sellers"
-          },
-          "blocks": {}
-        },
         "tab_learn_more": {
           "type": "nav-tab",
           "settings": {
@@ -405,9 +405,9 @@
       },
       "block_order": [
         "tab_bestsellers",
+        "mobile_shop_all",
         "tab_benefits",
         "tab_bundle",
-        "mobile_shop_all",
         "tab_learn_more"
       ],
       "custom_css": [],
