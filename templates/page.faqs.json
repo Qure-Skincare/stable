@@ -118,7 +118,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where does Qure ship to?",
-            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p>",
+            "text": "<p>Qure currently ships worldwide! Packages are shipped via FedEx, USPS or DHL courier with standard shipping services.</p><p>In Spain we don't ship to Balears Province (also known as the Balearic Islands), Las Palmas, and Santa Cruz de Tenerife.</p><p>Free shipping applies to orders over $149 for US and £149 for UK. See \"How much does shipping cost?\" below.</p>",
             "section_id": ""
           }
         },
