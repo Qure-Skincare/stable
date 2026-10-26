@@ -140,6 +140,15 @@
             "section_id": ""
           }
         },
+        "faq_item_NXiPYf": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my order arriving in more than one package?",
+            "text": "<p>If your order includes an item that is on pre-order or back in stock later, or an item that ships from a different warehouse, we send the available items first rather than hold your whole order. Each package has its own tracking number and you are not charged extra for a split shipment. Tracking emails are sent for each package. If you would rather wait and receive everything together, contact us before your order ships and we will see what we can do.&nbsp;</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_JJCJwr": {
           "type": "faq_item",
           "settings": {
@@ -227,6 +236,7 @@
         "faq_item_J8LQPm",
         "faq_item_GxG63x",
         "faq_item_wiXHBi",
+        "faq_item_NXiPYf",
         "faq_item_JJCJwr",
         "faq_item_tgNbME",
         "faq_item_4EgMGi",
