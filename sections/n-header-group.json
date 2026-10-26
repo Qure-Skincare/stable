@@ -170,6 +170,7 @@
                 },
                 "bestsellers_card_5": {
                   "type": "nav-card",
+                  "disabled": true,
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
