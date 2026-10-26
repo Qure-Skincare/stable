@@ -11,7 +11,7 @@
   {% render 'n-product-price-special-offer', product_sale_price: '', product_before_price: '', product_discount: product_discount, product_black_friday_price: '', black_friday_discount: '' %}
 {% enddoc %}
 
-<div class="c-special-offer" data-label="{{ 'special-offer.settings.header' | t }}">
+<div {% render 'n-product-special-offer-attrs' %}>
     <div class="e-price">
         <div class="e-price__main">
             <div class="e-price__current">{{ product_black_friday_price }}</div>

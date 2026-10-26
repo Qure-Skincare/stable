@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="price-offer__bf">
-            <div class="price-offer__bf-label">{{ 'special-offer.settings.header' | t }}</div>
+            <div class="price-offer__bf-label">{%- if settings.black_friday_sitewide_turn_on -%}{{ 'special-offer.settings.bf-header' | t }}{%- else -%}{{ 'special-offer.settings.header' | t }}{%- endif -%}</div>
             <div class="price-offer__bf-discont">{{ 'product.settings.save' | t }} {{ black_friday_discount_percent }}%</div>
         </div>
     </div>

@@ -18,11 +18,16 @@
 {% endif %}
 
 {% if black_friday_discount_percent == blank %}
-    {% assign black_friday_discount_percent = settings.black_friday_discount_percent %}
+    {% if settings.black_friday_sitewide_turn_on %}
+        {% assign black_friday_discount_percent = settings.black_friday_discount_percent %}
+    {% else %}
+        {% assign black_friday_discount_percent = 0 %}
+    {% endif %}
 {% endif %}
 
 {% if black_friday_discount_percent > 0 %}
-    <div class="c-special-offer" data-label="{{ 'product.settings.special-offer-discount.header' | t }}">
+    {%- assign discount_label = 'product.settings.special-offer-discount.header' | t -%}
+    <div {% render 'n-product-special-offer-attrs', label: discount_label %}>
         <div class="e-pill-save">{{ 'product.settings.special-offer-discount.save' | t }} {{ black_friday_discount_percent }}%</div>
     </div>
 {% endif %}

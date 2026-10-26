@@ -1,15 +1,25 @@
 {% doc %}
-  Renders a save up snippet for the product-bundle section.
-
-  @param {string} button_link - A string value.
+  Renders the save-up badge that links to the bundle page.
+  When the sitewide sale is on, renders the Black Friday bundle promo badge instead.
 
   @example
   {% render 'n-product-saveup-offer' %}
-
 {% enddoc %}
 
-<div class="c-save-up">
-    <i class="e-icon e-icon-gift"></i>
-    {{ 'product.settings.saveup-offer.heading_html' | t }}
-    {{ 'product.settings.saveup-offer.n_button_html' | t: button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' }}
-</div>
+{% if settings.black_friday_sitewide_turn_on %}
+    <a class="c-save-up-bf" href="{{ 'special-offer.bundle-promo.link' | t }}">
+        <span class="e-pill-save">{{ 'special-offer.bundle-promo.tag' | t }}</span>
+        <picture>
+            <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bg-limited-time-offer.webp" alt="" />
+        </picture>
+        <strong>{{ 'special-offer.bundle-promo.header' | t }}</strong>
+        <p>{{ 'special-offer.bundle-promo.text' | t }}</p>
+        <i class="e-icon e-icon-arrow"></i>
+    </a>
+{% else %}
+    <div class="c-save-up">
+        <i class="e-icon e-icon-gift"></i>
+        {{ 'product.settings.saveup-offer.heading_html' | t }}
+        {{ 'product.settings.saveup-offer.n_button_html' | t: button_link: 'https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new' }}
+    </div>
+{% endif %}
