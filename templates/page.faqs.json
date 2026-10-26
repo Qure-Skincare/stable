@@ -351,6 +351,15 @@
             "section_id": ""
           }
         },
+        "faq_item_6U4DBj": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Who should not use the Q-Rejuvalight Pro?",
+            "text": "<p>Q-Rejuvalight Pro is intended for adults only. Do not use the device if you are photosensitive or taking medication that increases sensitivity to light unless your healthcare professional has confirmed it is suitable for you.</p><p>Consult your doctor before use if you are pregnant, breastfeeding or planning to become pregnant, or if you have a history of seizures triggered by light. If you have severe acne or painful, raised, crusting or bleeding skin, consult a healthcare professional before treatment. Do not use the device if you have had a sunburn within the past two weeks.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_pEnpkb": {
           "type": "faq_item",
           "settings": {
@@ -532,6 +541,7 @@
         "faq_item_AXrMDh",
         "faq_item_wjtMGF",
         "faq_item_GN3gtL",
+        "faq_item_6U4DBj",
         "faq_item_pEnpkb",
         "faq_item_agNxHf",
         "faq_item_B4BF94",
