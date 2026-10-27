@@ -845,7 +845,7 @@
         "items_FCH9ri": {
           "type": "items",
           "settings": {
-            "text": "<h6>Aftercare</h6><p>After the treatment peel off the patches gently. Wash your face and continue with your regular routine.</p>",
+            "text": "<h6>Aftercare</h6><p>After the treatment peel off the patches gently and continue with your regular routine.</p>",
             "image": "shopify://shop_images/patches-use-step-3.webp",
             "image_mobile": "shopify://shop_images/patches-use-step-3-mob.webp"
           }
