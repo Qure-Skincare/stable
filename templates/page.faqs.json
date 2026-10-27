@@ -665,6 +665,15 @@
             "text": "<p>Mild redness, slight sensitivity and a warm or tingling feeling can occur immediately after treatment. This is a normal temporary response and should typically settle within a few hours.</p><p>Do not perform Micro-Infusion over active acne, open wounds, broken or irritated skin. Do not use Micro-Infusion if you are pregnant or breastfeeding. You should also seek professional advice before use if you have a history of post-inflammatory hyperpigmentation, particularly sensitive skin, or an underlying skin or medical condition.&nbsp;</p><p>Stop use and seek medical advice if you experience significant swelling, a rash, blistering, severe or persistent redness, or significant pain. If symptoms are severe or worsening, contact a healthcare professional.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_AqchJX": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "The serum or needle head is not dispensing. What should I do?",
+            "text": "<p>This is usually the serum sitting away from the needles, and it is easy to fix.&nbsp;</p><p>Try these steps in order:</p><ol><li><strong>Let the serum reach the needles.</strong> After you attach the needle head, hold the device upside down for 1 to 2 minutes so the serum flows into the needle head.</li><li><strong>Tilt the device.</strong> While you stamp, keep the serum at the needle end. Lean your head back slightly, or tilt the device up towards the ceiling, to help the serum move through the needles.</li><li><strong>Give it a tap.</strong> Put the lid back on, hold the device upside down, and firmly tap the end a few times to push the serum down towards the needles.</li><li><strong>Check your pressure.</strong> Use light pressure. Pressing harder does not help the serum flow.</li><li>&nbsp;Loosening the needlehead slightly can also help with serum flow.</li></ol><p>Please do not reuse a needle head after a treatment, even if it looks clean. Each needle head is single-use.</p><p>If the serum still will not come through, or the vial or device looks damaged, contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number and a short video or photo showing the problem. We will help you sort it.&nbsp;</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -677,7 +686,8 @@
         "faq_item_G8KdpL",
         "faq_item_XgmPhV",
         "faq_item_WRYG99",
-        "faq_item_jiNXWP"
+        "faq_item_jiNXWP",
+        "faq_item_AqchJX"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
