@@ -625,12 +625,13 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I use any serum with my Micro-Infusion device?",
-            "text": "<p>Not all serums are suitable for Micro-Infusion. We have developed our potent serum ampoules that are perfect for Qure's Micro-Infusion System. They are formulated to have low risk of irritation and with no fragrance.</p>",
+            "text": "<p>No. We recommend using only Qure serums specifically formulated for the Micro-Infusion System.</p><p>The serum formulation, consistency and viscosity are selected and tested to work with the Micro-Infusion needle head and serum-delivery system for appropriate flow and treatment performance. Other serums may have a different viscosity, ingredient profile or formulation that has not been tested for use with the device and may affect flow, performance or skin compatibility.</p><p>Not all serums are suitable for Micro-Infusion. We have developed our serum ampoules for use with Qure's Micro-Infusion System. They are formulated without fragrance.</p>",
             "section_id": ""
           }
         },
         "faq_item_G8KdpL": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "How do I clean the device?",
