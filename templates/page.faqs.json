@@ -638,6 +638,15 @@
             "text": "<p>Once you've finished stamping your way to brighter and plumper skin, follow the below cleaning instructions:</p><ul><li>Twist off the needle head with the cap attached and safely dispose.</li><li>Wash the chamber out with water and gentle cleanser.</li><li>Let the device air dry completely, on a clean surface, before packing away.</li><li>Open a brand new needle head packet and attach the needle head onto the device. Ensure hands are clean and don't open the cap of the needle head.</li></ul>",
             "section_id": ""
           }
+        },
+        "faq_item_XgmPhV": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Which serum should I choose, and can I use both in one treatment?",
+            "text": "<p>Choose the serum that best matches your main skin concern:</p><p><strong>Rejuvenating Serum:</strong> Designed to hydrate, plump the look of skin and soften the appearance of fine lines and wrinkles.</p><p><strong>Brightening Serum:</strong> Designed to improve the appearance of uneven tone, dark spots and discoloration for a brighter, more even-looking complexion.</p><p>Use one serum per Micro-Infusion treatment. If you want to target both concerns, alternate between the Rejuvenating Serum and Brightening Serum with each treatment, performed every two weeks.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -647,7 +656,8 @@
         "faq_item_awj7Em",
         "faq_item_Txn6b6",
         "faq_item_YBQCFb",
-        "faq_item_G8KdpL"
+        "faq_item_G8KdpL",
+        "faq_item_XgmPhV"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
