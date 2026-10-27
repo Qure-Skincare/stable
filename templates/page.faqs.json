@@ -615,8 +615,8 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "How many treatments do I get out of one Micro-Infusion device?",
-            "text": "<p>Each needle head is to be used one time per treatment, and disposed of after each treatment. This minimizes the risk of infection and unnecessary damage to the skin. Use one full serum ampoule per treatment.</p>",
+            "heading": "How many treatments do I get out of one Micro-Infusion vial?",
+            "text": "<p>Each treatment uses one single-use needle head and one full serum ampoule. Dispose of the needle head after every treatment.</p>",
             "section_id": ""
           }
         },
