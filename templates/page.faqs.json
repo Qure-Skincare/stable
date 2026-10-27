@@ -674,6 +674,15 @@
             "text": "<p>This is usually the serum sitting away from the needles, and it is easy to fix.&nbsp;</p><p>Try these steps in order:</p><ol><li><strong>Let the serum reach the needles.</strong> After you attach the needle head, hold the device upside down for 1 to 2 minutes so the serum flows into the needle head.</li><li><strong>Tilt the device.</strong> While you stamp, keep the serum at the needle end. Lean your head back slightly, or tilt the device up towards the ceiling, to help the serum move through the needles.</li><li><strong>Give it a tap.</strong> Put the lid back on, hold the device upside down, and firmly tap the end a few times to push the serum down towards the needles.</li><li><strong>Check your pressure.</strong> Use light pressure. Pressing harder does not help the serum flow.</li><li>&nbsp;Loosening the needlehead slightly can also help with serum flow.</li></ol><p>Please do not reuse a needle head after a treatment, even if it looks clean. Each needle head is single-use.</p><p>If the serum still will not come through, or the vial or device looks damaged, contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number and a short video or photo showing the problem. We will help you sort it.&nbsp;</p>",
             "section_id": ""
           }
+        },
+        "faq_item_qAGj8i": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I buy extra needle heads or serum refills?",
+            "text": "<p>We don’t sell needle heads on their own. Each treatment is designed to use one serum vial with one single-use needle head, so they are supplied together as a set. Using a needle head more than once is not recommended, and using it with leftover serum from a different vial is not part of the treatment.</p><p>If you’d like more treatments, you can buy a Micro-Infusion supply with the number of months that suits you. Every supply includes a needle head and a serum vial for each treatment.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -687,7 +696,8 @@
         "faq_item_XgmPhV",
         "faq_item_WRYG99",
         "faq_item_jiNXWP",
-        "faq_item_AqchJX"
+        "faq_item_AqchJX",
+        "faq_item_qAGj8i"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
