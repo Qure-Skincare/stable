@@ -647,6 +647,15 @@
             "text": "<p>Choose the serum that best matches your main skin concern:</p><p><strong>Rejuvenating Serum:</strong> Designed to hydrate, plump the look of skin and soften the appearance of fine lines and wrinkles.</p><p><strong>Brightening Serum:</strong> Designed to improve the appearance of uneven tone, dark spots and discoloration for a brighter, more even-looking complexion.</p><p>Use one serum per Micro-Infusion treatment. If you want to target both concerns, alternate between the Rejuvenating Serum and Brightening Serum with each treatment, performed every two weeks.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_WRYG99": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What should I do before and after a treatment?",
+            "text": "<p>Before treatment:</p><p>1. Start with thoroughly cleansed skin and clean hands.</p><p>2. Patch test before your first full treatment.</p><p>3. Avoid retinol, exfoliating acids (AHAs, BHAs, PHAs), Vitamin C and alcohol-based toners for at least 48 hours beforehand.</p><p>4. Do not perform Micro-Infusion over active acne, open wounds, broken or irritated skin.&nbsp;</p><p>After treatment: Leave the serum on overnight and keep your routine simple. Avoid makeup, harsh skincare and direct sun exposure immediately after treatment. From days 2–3, use a gentle cleanser and moisturizer, continue daily SPF 50, and avoid retinoids, exfoliating acids, Vitamin C, excessive heat, sweating, steam rooms, saunas and swimming while your skin settles.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -657,7 +666,8 @@
         "faq_item_Txn6b6",
         "faq_item_YBQCFb",
         "faq_item_G8KdpL",
-        "faq_item_XgmPhV"
+        "faq_item_XgmPhV",
+        "faq_item_WRYG99"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
