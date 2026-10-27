@@ -64,6 +64,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "trustpilot",
+        "rating_position": "top",
         "limited": false,
         "description": "<ul><li>Targets the appearance of thinning for visibly denser-looking hair</li><li>Supports thicker, fuller-looking hair with consistent daily use</li><li>Keeps the scalp hydrated, conditioned and refreshed between treatments</li></ul>",
         "reserved": false,
@@ -147,7 +148,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "text": "",
             "image": "shopify://shop_images/mi-pro-hair-1-month-box.webp",
-            "product_discount_percent": 17,
+            "product_discount_percent": 12,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -180,49 +181,20 @@
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "30",
-        "hide_bottom": false,
+        "hide_bottom": true,
         "hide_certified": false,
         "hide_title_on_subscription": false
       }
     },
     "n_experts_pick_GdfycA": {
       "type": "n_experts-pick",
-      "blocks": {
-        "percent_clarity": {
-          "type": "percent",
-          "disabled": true,
-          "settings": {
-            "text": "<h6>Clarity & Tone</h6><p>Evens out tone over time</p>",
-            "percent": 100
-          }
-        },
-        "percent_glow": {
-          "type": "percent",
-          "disabled": true,
-          "settings": {
-            "text": "<h6>Radiant Glow</h6><p>Less fatigued, more vibrant</p>",
-            "percent": 100
-          }
-        },
-        "percent_texture": {
-          "type": "percent",
-          "disabled": true,
-          "settings": {
-            "text": "<h6>Smooth Texture</h6><p>Softer with consistent use</p>",
-            "percent": 100
-          }
-        }
-      },
-      "block_order": [
-        "percent_clarity",
-        "percent_glow",
-        "percent_texture"
-      ],
+      "blocks": {},
+      "block_order": [],
       "name": "t:sections.n_experts-pick.name",
       "settings": {
         "section_id": "",
-        "badge_text": "",
-        "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the <strong>Recovery+ Sheet Mask</strong> after Micro-Infusion because it provides an immediate cooling sensation, <strong>helps calm the appearance of visible redness</strong>, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
+        "badge_text": "Dermatologist Reviewed",
+        "text": "<h2>Recommended by Experts</h2><p>\"<strong>Fuller-looking hair starts with the scalp.</strong> I like that this serum pairs pea sprout extract with peptides and niacinamide, targeting the look of thinning while keeping the scalp hydrated every day.\"</p>",
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
       }
     },
@@ -282,79 +254,80 @@
     "n_features_overview_a6Nk0R": {
       "type": "n_features-overview",
       "blocks": {
-        "component_methylene_blue": {
-          "type": "component",
-          "settings": {
-            "modifier": "reverse",
-            "heading": "Methylene Blue",
-            "text": "A powerful antioxidant that enhances LED response"
-          }
-        },
-        "component_beta_glucan": {
+        "component_pea_sprout": {
           "type": "component",
           "settings": {
             "modifier": "none",
-            "heading": "Beta-Glucan",
-            "text": "Deeply soothing and hydrating"
+            "heading": "Pisum Sativum (Pea) Sprout Extract",
+            "text": "Denser, fuller-looking hair"
           }
         },
-        "component_calendula": {
+        "component_peptide": {
           "type": "component",
           "settings": {
             "modifier": "none",
-            "heading": "Calendula iActive",
-            "text": "Calming properties"
+            "heading": "Acetyl Tetrapeptide-3 / Clover Flower Extract",
+            "text": "Scalp vitality & fullness"
           }
         },
-        "benefit_color_story": {
-          "type": "benefit",
+        "component_niacinamide": {
+          "type": "component",
           "settings": {
-            "icon": "fine-lines",
-            "heading": "The Color Story",
-            "text": "That signature blue isn't a filter or added dye - it's the ingredient itself, Methylene Blue. What you see is literally the active."
+            "modifier": "none",
+            "heading": "Niacinamide",
+            "text": "Daily scalp hydration"
           }
         },
-        "benefit_primes_led": {
+        "benefit_thinning": {
           "type": "benefit",
           "settings": {
-            "icon": "verified-shield",
-            "heading": "Primes skin for LED",
-            "text": "Methylene blue is a cosmetic photosensitizer - it helps skin respond more effectively to every LED session. Same routine. More from it. Deeper synergy with every red and blue light session."
+            "icon": "wand",
+            "heading": "Targets the Look of Thinning",
+            "text": "Pisum Sativum (Pea) Sprout Extract leads the formula. It helps target the look of thinning areas, supporting visibly denser, fuller-looking hair over time."
           }
         },
-        "benefit_antioxidant": {
+        "benefit_vitality": {
           "type": "benefit",
           "settings": {
-            "icon": "antioxidant",
-            "heading": "Antioxidant Support",
-            "text": "Powerful antioxidant support with zero harsh or drying actives. Helps support skin exposed to daily blue light from your phone, laptop, and everything in between."
+            "icon": "micro-stamping",
+            "heading": "Scalp Vitality & Fullness",
+            "text": "Acetyl Tetrapeptide-3 and Clover Flower Extract help improve the appearance of scalp vitality and hair fullness. With consistent use, hair appears fuller and more resilient-looking."
           }
         },
         "benefit_hydration": {
           "type": "benefit",
           "settings": {
             "icon": "droplet",
-            "heading": "Hydration Boost",
-            "text": "Helps skin retain moisture, leaving it visibly plumper and more balanced after each use."
+            "heading": "Daily Scalp Hydration",
+            "text": "Niacinamide helps condition and hydrate the scalp, keeping it feeling refreshed, comfortable and balanced every day."
+          }
+        },
+        "benefit_cooling": {
+          "type": "benefit",
+          "settings": {
+            "icon": "snow-thin",
+            "heading": "The Cooling Story",
+            "text": "That fresh, cooling tingle isn't just a nice touch. It comes from peppermint oil and caffeine, giving your daily scalp ritual an invigorating feel you'll look forward to."
           }
         }
       },
       "block_order": [
-        "component_methylene_blue",
-        "component_beta_glucan",
-        "component_calendula",
-        "benefit_color_story",
-        "benefit_primes_led",
-        "benefit_antioxidant",
-        "benefit_hydration"
+        "component_pea_sprout",
+        "component_peptide",
+        "component_niacinamide",
+        "benefit_thinning",
+        "benefit_vitality",
+        "benefit_hydration",
+        "benefit_cooling"
       ],
       "name": "t:sections.n_features-overview.name",
       "settings": {
         "section_id": "",
-        "modifier": "blue-serum",
-        "heading": "<h2>Meet the active blue</h2>",
-        "text": "<p>A smarter ritual for skin that lives under LEDs, screens, and everyday light.</p>",
-        "image": "shopify://shop_images/blue.webp"
+        "modifier": "hair-serum",
+        "heading": "<h2>Formulated With Purpose</h2>",
+        "text": "<p>Three hero actives, one daily ritual for fuller, denser-looking hair with consistent use.</p>",
+        "image": "shopify://shop_images/hair-serum.webp",
+        "image_mobile": "shopify://shop_images/hair-serum-mob.webp"
       }
     },
     "n_features_marquee_rwufQa": {
@@ -403,28 +376,44 @@
     "n_accordion_tiles_square_QXb1bn": {
       "type": "n_accordion-tiles-square",
       "blocks": {
-        "accordion_hydration": {
+        "accordion_pea_sprout": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/methylene-blue-2-tile.webp",
-            "heading": "Hydration",
-            "text": "<h6>Polyglutamic Acid</h6><p>Helps lock in moisture, reduce moisture loss, and leave skin looking visibly plumper and more hydrated.</p><h6>Sodium Hyaluronate</h6><p>A form of hyaluronic acid that helps attract and retain moisture for softer, more hydrated-looking skin.</p>"
+            "image": "shopify://shop_images/methylene-blue-3-tile.webp",
+            "heading": "Pisum Sativum (Pea) Sprout Extract",
+            "text": "<p>The hero ingredient, with the strongest approved claims. It speaks directly to the customer’s main concern: the look of thinning hair.</p>"
           }
         },
-        "accordion_calming": {
+        "accordion_peptide": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/niacinamide-2-tile.webp",
-            "heading": "Calming",
-            "text": "<h6>Beta-Glucan</h6><p>Helps calm the appearance of visible redness and support the skin’s moisture barrier.</p><h6>Centella Asiatica</h6><p>A well-known soothing botanical that helps calm stressed-looking skin and support the skin barrier.</p>"
+            "image": "shopify://shop_images/niacinamide-3-tile.webp",
+            "heading": "Acetyl Tetrapeptide-3 & Clover Flower",
+            "text": "<p>Supports the fullness story while adding a scalp vitality benefit. Together with pea sprout extract, they form the core of the formula.</p>"
           }
         },
-        "accordion_protection": {
+        "accordion_niacinamide": {
           "type": "accordion",
           "settings": {
-            "image": "shopify://shop_images/beta-glucan-3-tile.webp",
-            "heading": "Protection",
-            "text": "<h6>Ectoin</h6><p>Helps protect skin from environmental stressors and support the skin barrier.</p><h6>Allantoin</h6><p>Helps soothe dry, stressed skin, reduce visible flaking, and leave skin feeling softer and more comfortable.</p>"
+            "image": "shopify://shop_images/beta-glucan-4-tile.webp",
+            "heading": "Niacinamide",
+            "text": "<p>Supports daily scalp hydration, making it a key ingredient for everyday use. Customers already know and trust it.</p>"
+          }
+        },
+        "accordion_peppermint": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/beta-glucan-5-tile.webp",
+            "heading": "Mentha Piperita (Peppermint) Oil",
+            "text": "<p>Provides a cooling, invigorating sensation with every application.</p>"
+          }
+        },
+        "accordion_caffeine": {
+          "type": "accordion",
+          "settings": {
+            "image": "shopify://shop_images/beta-glucan-6-tile.webp",
+            "heading": "Caffeine",
+            "text": "<p>Provides an awakening feel on the scalp, with antioxidant properties.</p>"
           }
         },
         "popup_ingredients": {
@@ -432,22 +421,25 @@
           "settings": {
             "button_label": "View Full Ingredient List",
             "popup_id": "fullIngredient",
-            "text": "<p><strong>Recovery+ Sheet Mask Ingredients</strong></p><p>Glycerin, Aqua (Water), Sodium Cocoyl Glutamate, Disodium Cocoamphodiacetate, Lactic Acid, Sodium Chloride, Squalane, Aloe Barbadensis Leaf Juice Powder, Panthenol, Camellia Sinensis (Green Tea) Leaf Extract, Cucumis Sativus (Cucumber) Fruit Extract, Xanthan Gum, Sodium Phytate, Caprylhydroxamic Acid, Glyceryl Caprylate</p>",
-            "sub_text": "<ul><li>Fragrance-free</li><li>Silicone-free</li><li>Cruelty-free</li><li>Non-drying</li><li>Hypoallergenic</li><li>Safe for sensitive skin</li></ul>"
+            "text": "<p><strong>Hair Renewal Serum Ingredients</strong></p><p>Water (Aqua), Propylene Glycol, PEG-40 Hydrogenated Castor Oil, Niacinamide, Pyrrolidinyl Diaminopyrimidine Oxide, Butylene Glycol, Glycerin, Ethylhexylglycerin, Mentha Piperita (Peppermint) Oil, Cyclodextrin, Caffeine, Curcuma Longa (Turmeric) Root Extract, Copper Tripeptide-1, Dihydroxypropyl Arginine HCl, Xanthan Gum, Phenoxyethanol, Pisum Sativum (Pea) Sprout Extract, Larix Europaea Wood Extract, Sodium Benzoate, Glycine, Sodium Metabisulfite, Dextran, Camellia Sinensis Leaf Extract, Zinc Chloride, Trifolium Pratense (Clover) Flower Extract, Acetyl Tetrapeptide-3.</p>",
+            "sub_text": "<ul><li>Paraben-free</li><li>Sulfate-free</li><li>Mineral oil-free</li><li>Water-based</li><li>Leave-in formula (no rinse)</li></ul>"
           }
         }
       },
       "block_order": [
-        "accordion_hydration",
-        "accordion_calming",
-        "accordion_protection",
+        "accordion_pea_sprout",
+        "accordion_peptide",
+        "accordion_niacinamide",
+        "accordion_peppermint",
+        "accordion_caffeine",
         "popup_ingredients"
       ],
       "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
         "use_own_file": false,
         "section_id": "",
-        "heading": "<h6>FORMULATED WITH PURPOSE</h6><h2>Powerful Ingredients</h2>"
+        "heading": "<h6>FORMULATED WITH PURPOSE</h6><h2>Powerful Ingredients</h2>",
+        "text": "<h2>Meet the Actives</h2>"
       }
     },
     "n_usage_steps_rcfD2k": {
@@ -456,74 +448,69 @@
         "step_prepare": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/usage-steps-recovery-mask-1.webp",
-            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-1-mob.webp",
+            "image": "shopify://shop_images/usage-steps-mi-hair-serum-1.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-mi-hair-serum-1-mob.webp",
             "heading": "1. Prepare",
-            "text": "<p>After Micro-Infusion, apply the mask directly to skin. If using it on its own, start with clean, dry skin.</p>"
+            "text": "<p>Start with a clean, dry scalp. If you use the Q-Renew Helmet, complete your session first.</p>"
           }
         },
-        "step_take_out": {
+        "step_apply": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/usage-steps-recovery-mask-2.webp",
-            "image_mobile": "shopify://shop_images/usage-steps-recovery-mask-2-mob.webp",
-            "heading": "2. Take the mask out",
-            "text": "<p>Carefully unfold the mask and smooth it over your face, aligning the eye and mouth openings.</p>"
+            "image": "shopify://shop_images/usage-steps-mi-hair-serum-2.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-mi-hair-serum-2-mob.webp",
+            "heading": "2. Apply",
+            "text": "<p>Apply 4–6 drops directly to the scalp, focusing on areas where hair appears thinner.</p>"
           }
         },
-        "step_place": {
+        "step_massage": {
           "type": "step",
           "settings": {
-            "image": "shopify://shop_images/recoverymaskq.webp",
-            "image_mobile": "shopify://shop_images/recoverymasktepsmobile.webp",
-            "heading": "3. Place mask on face",
-            "text": "<p>Leave the mask on for 15-20 minutes while you relax.</p>"
-          }
-        },
-        "step_rinse": {
-          "type": "step",
-          "settings": {
-            "image": "shopify://shop_images/recoverymaskstepd.webp",
-            "image_mobile": "shopify://shop_images/recoverysteps.webp",
-            "heading": "4. Do not rinse",
-            "text": "<p>Gently remove and discard the mask. Do not rinse. Pat or massage any remaining serum into the skin until absorbed.</p>"
+            "image": "shopify://shop_images/usage-steps-mi-hair-serum-3.webp",
+            "image_mobile": "shopify://shop_images/usage-steps-mi-hair-serum-3-mob.webp",
+            "heading": "3. Massage In",
+            "text": "<p>Gently massage the serum into the scalp. Don't rinse. Repeat nightly on nights between Micro-Infusion treatments.</p>"
           }
         }
       },
       "block_order": [
         "step_prepare",
-        "step_take_out",
-        "step_place",
-        "step_rinse"
+        "step_apply",
+        "step_massage"
       ],
       "name": "t:sections.n_usage-steps.name",
       "settings": {
-        "section_id": "easy_steps",
-        "heading": "<h6>SIMPLE 15-MINUTE RITUAL</h6><h2>How to Use</h2>",
-        "badge": "Pro tip",
-        "badge_text": "Refrigerate sealed pouch for cooling"
+        "section_id": "",
+        "heading": "<h2>Support fuller-looking hair with one simple nightly step</h2>",
+        "wistia_url": "jhwgazmjv8",
+        "badge": "",
+        "badge_text": ""
       }
     },
     "n_base_section_PXZ3ip": {
       "type": "n_base-section",
       "settings": {
         "use_own_file": false,
-        "modifier": "haircare",
+        "modifier": "none",
         "modifier_2": "none",
         "background_color": "none",
         "section_id": "",
-        "heading": "<h2>Go beyond surface-level haircare</h2>",
-        "text": "<p>Traditional serums sit on top of the scalp or rinse away. Once a week, the Micro-Infusion Pro Hair System uses 0.5mm 24k gold-plated needles to create tiny micro-channels, <strong>designed to help deliver serum actives directly to the scalp surface where they're needed most.</strong> On the days in between, the Hair Renewal Serum keeps your scalp conditioned.</p><p>The patent-pending system uses tiny, virtually painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp<br/></strong>Virtually painless micro-stamping with 0.5mm needles on a sterile, single-use tip.</li><li><strong>Infuse<br/></strong>Designed to help deliver serum actives directly to the scalp surface.</li><li><strong>Renews<br/></strong>Supports the look of fuller, denser-looking hair over time.</li></ul>",
-        "button_label": "",
-        "button_url": "",
-        "wistia_url": "jhwgazmjv8",
+        "heading": "<h2>A Daily Serum for Fuller-Looking Hair</h2>",
+        "image": "shopify://shop_images/mi-hair-serum-text.webp",
+        "text": "<p>Hair goes through a lot, from heat styling and everyday stress to the natural effects of time. Most hair products focus on the strands, but fuller-looking hair starts with the scalp.</p><p>The Hair Renewal Serum is built around pea sprout extract, peptides and niacinamide to help target the look of thinning, support the appearance of denser, fuller-looking hair and keep the scalp hydrated.</p><p>Its lightweight formula is easy to apply with the dropper and takes less than a minute a day.</p><p><strong>Already using the Q-Renew Helmet? The Hair Renewal Serum fits seamlessly into your routine. Use the Helmet first, then apply the serum.</strong></p>",
+        "button_label": "Shop Now",
+        "button_url": "#hero-product",
+        "wistia_url": "",
+        "video_image_cover": "",
         "accordion_text": ""
-      }
+      },
+      "blocks": {},
+      "block_order": []
     },
     "n_bundled_together_znyemy": {
       "type": "n_bundled-together",
       "blocks": {
-        "component_Yx3dKm": {
+        "component_serum": {
           "type": "component",
           "settings": {
             "heading": "Hair Renewal Serum",
@@ -531,7 +518,7 @@
             "text": "Helps provide lasting scalp hydration"
           }
         },
-        "component_Lc7tPb": {
+        "component_mi_hair": {
           "type": "component",
           "settings": {
             "heading": "Micro-Infusion Pro Hair",
@@ -539,7 +526,7 @@
             "text": "Helps target the appearance of thinning areas"
           }
         },
-        "component_Rn2wGs": {
+        "component_together": {
           "type": "component",
           "settings": {
             "heading": "Together",
@@ -547,7 +534,7 @@
             "text": "Visibly fuller, more resilient-looking hair"
           }
         },
-        "quote_Fj8mQe": {
+        "quote": {
           "type": "quote",
           "settings": {
             "image": "shopify://shop_images/dr-shah-quote.webp",
@@ -558,25 +545,26 @@
         }
       },
       "block_order": [
-        "component_Yx3dKm",
-        "component_Lc7tPb",
-        "component_Rn2wGs",
-        "quote_Fj8mQe"
+        "component_serum",
+        "component_mi_hair",
+        "component_together",
+        "quote"
       ],
       "settings": {
         "use_own_file": false,
         "section_id": "",
         "modifier": "hair",
-        "heading": "<h2>The Micro-Infusion Pro Hair System + Hair Renewal Serum</h2>",
+        "heading": "<h2>Why We Chose This Formula</h2>",
         "image": "shopify://shop_images/mi-hair-bungle.webp",
         "button_label": "Shop Now",
-        "button_url": "#purchase-form"
+        "button_url": "#hero-product",
+        "text": "<p>Micro-Infusion Pro weekly, Hair Renewal Serum nightly — complete scalp care in 5 minutes. Built around pea sprout extract to support denser, fuller-looking hair over time.</p><p>Paired with Acetyl Tetrapeptide-3, clover flower extract and caffeine for scalp vitality and an invigorating feel. Niacinamide and Copper Tripeptide-1 round out the formula, conditioning and hydrating the scalp.</p>"
       }
     },
     "n_mi_ingredients_np84Ph": {
       "type": "n_mi-ingredients",
       "blocks": {
-        "left_heading_Qw7nFs": {
+        "left_heading": {
           "type": "left_heading",
           "settings": {
             "image": "shopify://shop_images/mi-2-device-rejuvenating-1.webp",
@@ -584,64 +572,64 @@
             "text": "<h3>Thinning Areas</h3><h6>MICRO-INFUSION PRO HAIR SYSTEM</h6><p>Creates precise micro-channels at the scalp surface to help deliver serum actives where they’re needed.</p>"
           }
         },
-        "left_column_Hs2mVd": {
+        "left_column_1": {
           "type": "left_column",
           "settings": {
             "icon": "hair",
             "text": "Targets the look of thinning"
           }
         },
-        "left_column_Kp9cRj": {
+        "left_column_2": {
           "type": "left_column",
           "settings": {
             "icon": "micro-stamping",
             "text": "Supports denser, fuller-looking hair"
           }
         },
-        "left_column_Zm5tLq": {
+        "left_column_3": {
           "type": "left_column",
           "settings": {
             "icon": "fast",
             "text": "5-minute weekly treatment"
           }
         },
-        "left_accordion_Nx8bGw": {
+        "left_accordion": {
           "type": "left_accordion",
           "settings": {
             "heading": "All Ingredients",
             "text": "<p>Pisum Sativum (Pea) Sprout Extract<br/>Helps target the look of thinning, for visibly denser-looking hair.</p><p>Acetyl Tetrapeptide-3 / Clover Flower Extract<br/>Helps improve the appearance of scalp vitality and hair fullness.</p><p>Copper Tripeptide-1<br/>Supports the look of stronger, resilient-looking hair.</p><p>Niacinamide<br/>Helps condition and hydrate the scalp.</p><p>Caffeine<br/>Provides an energizing, invigorating sensation on the scalp.</p><p>Larix / Green Tea / Zinc / Glycine Complex<br/>Helps the scalp look and feel more balanced with regular use.</p><p>Pyrrolidinyl Diaminopyrimidine Oxide<br/>Supports the look of smoother, more resilient-looking strands.</p><p>Dihydroxypropyl Arginine HCl<br/>Supports a smoother, more comfortable-feeling scalp.</p><p><em>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</em></p>"
           }
         },
-        "right_heading_Vc3jWe": {
+        "right_heading": {
           "type": "right_heading",
           "settings": {
-            "image": "shopify://shop_images/mi-2-device-rejuvenating-2_c649156e-25ff-4e1d-be22-ca0e6d17ffcf.webp",
+            "image": "shopify://shop_images/mi-2-device-rejuvenating-2.webp",
             "badge": "Nightly",
             "text": "<h3>Scalp Hydration</h3><h6>HAIR RENEWAL SERUM</h6><p>A lightweight, dropper-applied serum for nightly use on non-infusion nights.</p>"
           }
         },
-        "right_column_Ly6kPt": {
+        "right_column_1": {
           "type": "right_column",
           "settings": {
             "icon": "smooths",
             "text": "Conditions & hydrates scalp"
           }
         },
-        "right_column_Gd4rNb": {
+        "right_column_2": {
           "type": "right_column",
           "settings": {
             "icon": "cooling",
             "text": "Invigorating, cooling feel"
           }
         },
-        "right_column_Tf7wHm": {
+        "right_column_3": {
           "type": "right_column",
           "settings": {
             "icon": "deeply-hydrates",
             "text": "Antioxidant-rich formula"
           }
         },
-        "right_accordion_Jq2sXz": {
+        "right_accordion": {
           "type": "right_accordion",
           "settings": {
             "heading": "All Ingredients",
@@ -650,194 +638,198 @@
         }
       },
       "block_order": [
-        "left_heading_Qw7nFs",
-        "left_column_Hs2mVd",
-        "left_column_Kp9cRj",
-        "left_column_Zm5tLq",
-        "left_accordion_Nx8bGw",
-        "right_heading_Vc3jWe",
-        "right_column_Ly6kPt",
-        "right_column_Gd4rNb",
-        "right_column_Tf7wHm",
-        "right_accordion_Jq2sXz"
+        "left_heading",
+        "left_column_1",
+        "left_column_2",
+        "left_column_3",
+        "left_accordion",
+        "right_heading",
+        "right_column_1",
+        "right_column_2",
+        "right_column_3",
+        "right_accordion"
       ],
       "settings": {
         "use_own_file": false,
         "section_id": "",
         "text": "<h2>Two products. Complete care.</h2><p>Use Micro-Infusion Pro weekly, and Hair Renewal Serum nightly, for complete scalp care.</p>",
         "button_label": "Add Full System to Cart",
-        "button_url": "#purchase-form",
-        "sub_text": "90-Day Money-Back Guarantee • Free US Shipping Over 149$"
+        "button_url": "#hero-product",
+        "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
       }
     },
     "n_comparison_table_uhyaiU": {
       "type": "n_comparison-table",
       "blocks": {
-        "comparison_table_heading_b6fAAH": {
+        "heading_1": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Active Ingredients",
+            "heading": "Active Blend",
             "color": "none"
           }
         },
-        "comparison_table_heading_PTcf36": {
+        "heading_2": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Multi-Benefit Formula",
+            "heading": "Multi-Benefit Approach",
             "color": "none"
           }
         },
-        "comparison_table_heading_BTUB3F": {
+        "heading_3": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Ease of Use",
+            "heading": "Scalp Support",
             "color": "none"
           }
         },
-        "comparison_table_heading_w3ziN9": {
+        "heading_4": {
           "type": "comparison_table_heading",
           "settings": {
-            "heading": "Cost",
+            "heading": "Treatment Format",
             "color": "none"
           }
         },
-        "comparison_table_UY3pRQ": {
+        "comparison_table_serum": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h5>Qure <br />All-In-One Serum</h5>",
-            "text_1": "Retinol, peptides, niacinamide, bakuchiol",
+            "image": "shopify://shop_images/mi-hair-serum-1.webp",
+            "heading": "<h5>Hair Renewal <br />Serum</h5>",
+            "text_1": "Peptides + copper peptide + caffeine + niacinamide",
             "select_1": "checkmark",
-            "text_2": "Targets 5+ concerns in one easy-to-use formula",
+            "text_2": "Fuller-looking hair + scalp conditioning",
             "select_2": "checkmark",
-            "text_3": "One step, AM or PM",
+            "text_3": "Hydrates while supporting hair fullness",
             "select_3": "checkmark",
-            "text_4": "Great value",
+            "text_4": "Targeted nightly leave-on serum",
             "select_4": "checkmark",
             "text_5": "",
             "select_5": "checkmark"
           }
         },
-        "comparison_table_J84FYW": {
+        "comparison_table_multi_active": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h5>High-End<br />Serums</h5>",
-            "text_1": "Usually 1–2 premium actives per product",
-            "select_1": "checkmark",
-            "text_2": "Often one concern per product",
+            "image": "shopify://shop_images/mi-hair-serum-2.webp",
+            "heading": "<h5>Typical Multi-Active <br />Scalp Serum</h5>",
+            "text_1": "Peptides + selected botanical actives",
+            "select_1": "cross",
+            "text_2": "Benefits vary by formula",
             "select_2": "cross",
-            "text_3": "Multi-step routine",
+            "text_3": "Usually focused on hair density/fullness",
             "select_3": "cross",
-            "text_4": "High ($90+ per product)",
+            "text_4": "Daily leave-on serum",
             "select_4": "cross",
             "text_5": "",
             "select_5": "checkmark"
           }
         },
-        "comparison_table_mV9R3h": {
+        "comparison_table_oil": {
           "type": "comparison_table",
           "settings": {
-            "heading": "<h5>Drugstore<br />Serums</h5>",
-            "text_1": "Basic actives in lowest concentrations",
+            "image": "shopify://shop_images/mi-hair-serum-3.webp",
+            "heading": "<h5>Botanical Hair <br />&amp; Scalp Oil</h5>",
+            "text_1": "Primarily botanical oils + extracts",
             "select_1": "cross",
-            "text_2": "Often one concern per product",
+            "text_2": "Primarily nourishment + conditioning",
             "select_2": "cross",
-            "text_3": "Multi-step routine",
+            "text_3": "Mainly conditions dry scalp + hair",
             "select_3": "cross",
-            "text_4": "Low",
-            "select_4": "cross",
+            "text_4": "Oil applied to scalp + hair",
+            "select_4": "checkmark",
             "text_5": "",
             "select_5": "checkmark"
           }
         }
       },
       "block_order": [
-        "comparison_table_heading_b6fAAH",
-        "comparison_table_heading_PTcf36",
-        "comparison_table_heading_BTUB3F",
-        "comparison_table_heading_w3ziN9",
-        "comparison_table_UY3pRQ",
-        "comparison_table_J84FYW",
-        "comparison_table_mV9R3h"
+        "heading_1",
+        "heading_2",
+        "heading_3",
+        "heading_4",
+        "comparison_table_serum",
+        "comparison_table_multi_active",
+        "comparison_table_oil"
       ],
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
-        "text": "<h2>More actives, less hassle, better results</h2>"
+        "equal_rows": true,
+        "text": "<h2>Your hair-care options, compared</h2>"
       }
     },
     "n_complete_system_fuYSn6": {
       "type": "n_page-microinfusion-complete-system",
       "blocks": {
-        "product_cleanser": {
+        "product_shower_filter": {
           "type": "product",
           "settings": {
-            "product": "cleanser",
+            "product": "shower-filter",
             "variant_title": "",
-            "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
+            "description": "Cleanse with filtered water to help reduce potential irritants and remove unwanted impurities from your hair and scalp.",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm"
           }
         },
-        "product_dermal_mist": {
+        "product_helmet": {
           "type": "product",
           "settings": {
-            "product": "dermal-mist",
+            "product": "hair-growth-helmet",
             "variant_title": "",
-            "description": "Kills bacteria and prepares skin for a safer Micro-Infusion treatment.",
-            "am_or_pm_1": "am",
-            "am_or_pm_2": "pm"
+            "description": "Use 5-7* per week, always on a clean, dry scalp and always before applying any serum.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
           }
         },
-        "product_micro_infusion": {
+        "product_mi_hair": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product": "micro-infusion-pro-hair-system-1-month-bundle",
             "variant_title": "",
-            "description": "Activates your skin’s renewal process and helps improve the look of fine lines, texture, and uneven tone.",
-            "am_or_pm_1": "am",
-            "am_or_pm_2": "pm"
+            "description": "Use 1* per week. On this day: Can use Helmet first.",
+            "am_or_pm_1": "weekly",
+            "am_or_pm_2": "none"
           }
         },
-        "product": {
+        "product_serum": {
           "type": "product",
           "settings": {
-            "product": "recovery-sheet-mask",
+            "product": "hair-renewal-serum",
             "variant_title": "",
-            "description": "Developed for skin after Micro-Infusion, as well as dry, sensitive, and stressed skin. The formula and ultra-soft TENCEL material are designed to sit comfortably on skin while delivering soothing hydration.",
-            "am_or_pm_1": "am",
-            "am_or_pm_2": "pm"
+            "description": "Use every night except the Micro-Infusion night. On regular nights: Helmet first → Hair Renewal Serum second.",
+            "am_or_pm_1": "pm",
+            "am_or_pm_2": "none"
           }
         },
         "step_1": {
           "type": "step",
           "settings": {
-            "step": ""
+            "step": "Restrict"
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
-            "step": ""
+            "step": "Refresh"
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "step": ""
+            "step": "Replenish"
           }
         },
         "step_4": {
           "type": "step",
           "settings": {
-            "step": ""
+            "step": "Repair"
           }
         }
       },
       "block_order": [
-        "product_cleanser",
-        "product_dermal_mist",
-        "product_micro_infusion",
-        "product",
+        "product_shower_filter",
+        "product_helmet",
+        "product_mi_hair",
+        "product_serum",
         "step_1",
         "step_2",
         "step_3",
@@ -846,73 +838,177 @@
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "bg",
-        "heading": "<h2>Complete the Qure system</h2>",
-        "button_label": "Add Full System to Cart",
-        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+        "modifier": "none",
+        "heading": "<h2>Complete your Qure Hair System</h2>",
+        "button_label": "Add the complete routine",
+        "quote": ""
       }
     },
     "n_faq_AE8YPK": {
       "type": "n_faq",
       "blocks": {
-        "accordion_benefit": {
+        "accordion_1": {
           "type": "accordion",
           "settings": {
-            "heading": "Can I use this after clinical microneedling?",
-            "text": "<p>Yes. The Recovery+ Sheet Mask is formulated to mirror the cooling protocol used in clinics after treatments like Dermapen and SkinPen. It's made for freshly treated, sensitized skin, so it suits post-treatment care whether you've had an at-home Micro-Infusion session or a clinical microneedling treatment. If you're ever unsure, check with your provider first.</p>"
+            "heading": "What is the Hair Renewal Serum?",
+            "text": "<p>A daily scalp serum with pea sprout extract, peptides and niacinamide, designed to support the appearance of fuller, denser-looking hair over time. The 60 mL dropper bottle makes it easy to apply directly to targeted areas of the scalp.</p>"
           }
         },
-        "accordion_showerheads": {
+        "accordion_2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are the benefits?",
+            "text": "<p>With consistent use, the Hair Renewal Serum may help with:</p><ul><li>The look of thinning areas</li><li>Visibly fuller, denser-looking hair</li><li>A hydrated, conditioned scalp</li><li>A refreshing, invigorating scalp feel</li></ul>"
+          }
+        },
+        "accordion_3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Who is it for?",
+            "text": "<p>Anyone who wants fuller, denser-looking hair, especially if you’ve noticed the appearance of thinning around the part, crown or hairline.</p>"
+          }
+        },
+        "accordion_4": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How do I use it?",
+            "text": "<p>Apply a few drops directly onto a clean, dry scalp and gently massage into and around the area.</p>"
+          }
+        },
+        "accordion_5": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Where on the scalp should I apply it?",
+            "text": "<p>Focus on areas where you’ve noticed the appearance of thinning, such as the part line, crown or hairline, then gently massage into and around the scalp.</p>"
+          }
+        },
+        "accordion_6": {
           "type": "accordion",
           "settings": {
             "heading": "How often should I use it?",
-            "text": "<p>Once a week works well for most people, in line with a weekly Micro-Infusion routine — each box holds 6 masks, a 3-month supply. You can also reach for it any time skin feels dry, stressed, or in need of extra care, even outside your treatment days.</p>"
+            "text": "<p>Apply nightly. If you’re also using the Micro-Infusion Pro Hair System, skip the serum on your weekly treatment night.</p>"
           }
         },
-        "accordion_pressure": {
+        "accordion_7": {
           "type": "accordion",
           "settings": {
-            "heading": "Why shouldn't I wash it off?",
-            "text": "<p>The serum is formulated to keep working after you remove the mask. Rinsing washes away the moisture and calming actives before they've had a chance to fully absorb. Instead, pat any leftover serum into your skin, leave it on overnight, and cleanse as normal the next morning.</p>"
+            "heading": "Do I need to use it every day?",
+            "text": "<p>For best visible results, yes — apart from your weekly Micro-Infusion treatment night, if you’re using both products together. The appearance of fuller, denser-looking hair takes time, so consistent use is important.</p>"
           }
         },
-        "accordion_certified": {
+        "accordion_8": {
           "type": "accordion",
           "settings": {
-            "heading": "Does it contain synthetic fragrance?",
-            "text": "<p>No. The Recovery+ Sheet Mask is fragrance-free, and also free from parabens and PEG — made for sensitive, reactive, and freshly treated skin.</p>"
+            "heading": "What if I miss a day?",
+            "text": "<p>No problem. Continue with your next application as usual. There’s no need to double up.</p>"
           }
         },
-        "accordion_replace": {
+        "accordion_9": {
           "type": "accordion",
           "settings": {
-            "heading": "Is it suitable for sensitive skin?",
-            "text": "<p>Yes. It's dermatologist tested, hypoallergenic, and formulated to be non-irritating — including on sensitive and reactive skin. If you have a specific skin condition or aren't sure, it's worth checking with your dermatologist first.</p>"
+            "heading": "How quickly will I see results?",
+            "text": "<p>Visible changes take time. The Hair Renewal Serum is designed to support the appearance of fuller, denser-looking hair over several weeks of consistent daily use.</p>"
           }
         },
-        "accordion_install": {
+        "accordion_10": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it with the Q-Renew Helmet?",
+            "text": "<p>Yes. They’re designed to work together. Use the Q-Renew Helmet first on a clean, dry scalp, then apply the Hair Renewal Serum.</p>"
+          }
+        },
+        "accordion_11": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it with the Micro-Infusion Pro Hair System?",
+            "text": "<p>Yes. Apply the Hair Renewal Serum nightly on non-infusion nights. Skip it on your weekly Micro-Infusion treatment day to keep the scalp conditioned and cared for between treatments.</p>"
+          }
+        },
+        "accordion_12": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What’s the difference between the Hair Renewal Serum and the Micro-Infusion Hair Serum?",
+            "text": "<p>Both formulas share the same core actives. The Micro-Infusion Hair Serum is formulated for your weekly Micro-Infusion treatment, while the Hair Renewal Serum is your daily scalp step and also contains peppermint oil for a cooling, invigorating feel.</p>"
+          }
+        },
+        "accordion_13": {
+          "type": "accordion",
+          "settings": {
+            "heading": "I’ve tried other hair products before. What makes this different?",
+            "text": "<p>It combines several key actives in one lightweight daily step: pea sprout extract to target the look of thinning, peptides and clover flower extract to support the appearance of scalp vitality and hair fullness, and niacinamide for daily scalp conditioning and hydration.</p>"
+          }
+        },
+        "accordion_14": {
           "type": "accordion",
           "settings": {
             "heading": "What are the key ingredients?",
-            "text": "<p>The mask is built around a hydrating and calming actives stack: Polyglutamic Acid and Sodium Hyaluronate to draw in and hold moisture, Centella Asiatica (Cica) and Beta-Glucan to help calm the appearance of redness, and Ectoin and Allantoin to help soothe and support skin's barrier.</p>"
+            "text": "<p>Pea Sprout Extract: Helps target the look of thinning for denser-looking hair<br />Acetyl Tetrapeptide-3 & Clover Flower Extract: Help support the appearance of scalp vitality and hair fullness<br />Niacinamide: Helps condition and hydrate the scalp<br />Caffeine & Peppermint Oil: Provide an invigorating, cooling scalp sensation</p>"
           }
         },
-        "accordion_subscribe": {
+        "accordion_15": {
           "type": "accordion",
           "settings": {
-            "heading": "Can I use it even if I haven't done Micro-Infusion?",
-            "text": "<p>Yes. While it's formulated for post-Micro-Infusion recovery, it also works well on its own, anytime skin feels dry, stressed, or in need of extra care — no treatment required.</p>"
+            "heading": "Why does the serum contain peppermint oil?",
+            "text": "<p>Peppermint oil provides a refreshing, cooling sensation that makes the daily scalp ritual feel invigorating. It is included only in the Hair Renewal Serum, not in the Micro-Infusion Hair Serum.</p>"
+          }
+        },
+        "accordion_16": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What does it feel like on the scalp?",
+            "text": "<p>Peppermint oil and caffeine provide a cooling, invigorating sensation. A light tingling sensation may occur on application.</p>"
+          }
+        },
+        "accordion_17": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Will it make my hair look greasy?",
+            "text": "<p>The lightweight formula is designed for easy daily scalp application and should not weigh hair down.</p>"
+          }
+        },
+        "accordion_18": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it on color-treated hair?",
+            "text": "<p>Yes. The serum can be used on color-treated hair and does not interfere with hair color.</p>"
+          }
+        },
+        "accordion_19": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How long does one bottle last?",
+            "text": "<p>One 60 mL bottle should last approximately 3 months with regular daily use.</p>"
+          }
+        },
+        "accordion_20": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it safe to use?",
+            "text": "<p>The formula has been dermatologically tested for skin and scalp tolerability.* As with any new product, patch test first and stop use if irritation occurs.</p>"
           }
         }
       },
       "block_order": [
-        "accordion_benefit",
-        "accordion_showerheads",
-        "accordion_pressure",
-        "accordion_certified",
-        "accordion_replace",
-        "accordion_install",
-        "accordion_subscribe"
+        "accordion_1",
+        "accordion_2",
+        "accordion_3",
+        "accordion_4",
+        "accordion_5",
+        "accordion_6",
+        "accordion_7",
+        "accordion_8",
+        "accordion_9",
+        "accordion_10",
+        "accordion_11",
+        "accordion_12",
+        "accordion_13",
+        "accordion_14",
+        "accordion_15",
+        "accordion_16",
+        "accordion_17",
+        "accordion_18",
+        "accordion_19",
+        "accordion_20"
       ],
       "name": "t:sections.n_faq.name",
       "settings": {
@@ -932,9 +1028,9 @@
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Hair Renewal Serum",
-        "text": "80 Units Reserved in last 48 hours",
+        "text": "",
         "limited": false,
-        "button-label": "Buy Now",
+        "button-label": "",
         "button-url": ""
       }
     }

@@ -32,7 +32,7 @@
     {% assign _tp_description = description | default: section.settings.description %}
     {% render 'n-product-description', description: _tp_description %}
 
-    {% if section.settings.rating != blank %}
+    {% if section.settings.rating != blank and section.settings.rating_position != 'top' %}
         {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
     {% endif %}
 

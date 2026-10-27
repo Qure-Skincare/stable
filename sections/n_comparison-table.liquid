@@ -6,7 +6,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/comparison-table/comparison-table.css" />
 {% endif %}
-<section class="comparison-table{% if section.settings.modifier != 'none' %} comparison-table--{{ section.settings.modifier }}{% endif %}">
+<section class="comparison-table{% if section.settings.modifier != 'none' %} comparison-table--{{ section.settings.modifier }}{% endif %}{% if section.settings.equal_rows %} comparison-table--equal-rows{% endif %}">
     <div class="container">
         {{ section.settings.text }}
         <div class="comparison-table__content">
@@ -120,6 +120,13 @@
         {% endunless %}
     </div>
 </section>
+{% if section.settings.equal_rows %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("comparison-table", "https://qureskincaredns-stable.com/sections/comparison-table/comparison-table.js");
+        });
+    </script>
+{% endif %}
 <!-- COMPARISON TABLE END -->
 
 {% schema %}
@@ -147,6 +154,12 @@
                     "label": "t:common.secondary"
                 }
             ]
+        },
+        {
+            "type": "checkbox",
+            "id": "equal_rows",
+            "label": "t:common.equal-rows",
+            "default": false
         },
         {
             "type": "richtext",

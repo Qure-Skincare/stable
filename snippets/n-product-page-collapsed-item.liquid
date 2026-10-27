@@ -2,7 +2,8 @@
   Renders one product-header accordion item from a rich text metafield.
 
   A paragraph whose whole text is `[hr]`, `[marked_list]`, `[benefit_grid]`
-  or `[spec_table]` is output without a `<p>` wrapper. `[marked_list]` prints
+  or `[spec_table]` is output without a `<p>` wrapper. `[marked_list]` reads
+  `custom.marked_list`: one item per line; when it is empty it prints
   `product.settings.marked_list_html`. `[benefit_grid]` reads
   `custom.benefit_grid`: tiles separated by semicolons, each tile is
   `icon|title|text`. A tile that starts with `disclaimer` is `disclaimer|icon|text`
@@ -74,7 +75,18 @@
                     {% when '[hr]' %}
                       <hr />
                     {% when '[marked_list]' %}
-                      {{ 'product.settings.marked_list_html' | t }}
+                      {% assign marked_source = product.metafields.custom.marked_list.value | default: page.metafields.custom.marked_list.value %}
+                      {% if marked_source != blank %}
+                        <ul class="c-marked-list">
+                          {% assign marked_rows = marked_source | newline_to_br | split: '<br />' %}
+                          {% for row in marked_rows %}
+                            {% assign row = row | strip %}
+                            {% if row != blank %}<li>{{ row | escape }}</li>{% endif %}
+                          {% endfor %}
+                        </ul>
+                      {% else %}
+                        {{ 'product.settings.marked_list_html' | t }}
+                      {% endif %}
                     {% when '[benefit_grid]' %}
                       {% assign benefit_source = product.metafields.custom.benefit_grid.value | default: page.metafields.custom.benefit_grid.value %}
                       {% assign disclaimer_icon = blank %}
