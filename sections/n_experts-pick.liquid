@@ -4,13 +4,13 @@
 
 <section class="experts-pick"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
+        {% if section.settings.badge_text != blank %}
+            <div class="e-pill-badge">
+                <span class="e-checkmark"></span>
+                {{ section.settings.badge_text }}
+            </div>
+        {% endif %}
         <article>
-            {% if section.settings.badge_text != blank %}
-                <div class="e-pill-badge">
-                    <span class="e-checkmark"></span>
-                    {{ section.settings.badge_text }}
-                </div>
-            {% endif %}
             {{ section.settings.text }}
         </article>
 
