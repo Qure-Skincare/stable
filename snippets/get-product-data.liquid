@@ -43,7 +43,11 @@
 
 {% if product_handle != blank %}
     {% assign get_product_data = blank %}
-    {% assign get_product_data = all_products[product_handle] %}
+    {% if product != blank and product.handle == product_handle %}
+        {% assign get_product_data = product %}
+    {% else %}
+        {% assign get_product_data = all_products[product_handle] %}
+    {% endif %}
 {% endif %}
 
 {% assign product_discount = 0 %}
