@@ -48,6 +48,10 @@
                                 {% endunless %}
                             {% endif %}
 
+                            {% if product_handle == 'hand-shower-filter' %}
+                                {% assign product_url = '/products/shower-filter' %}
+                            {% endif %}
+
                             {%- liquid
                                 assign tile_main_image = blank
                                 assign tile_hover_image = blank
