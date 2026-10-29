@@ -20,11 +20,6 @@
                 <div data-key="{{ 'product.settings.limited-offer.seconds' | t }}">00</div>
             </div>
         </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                loadScriptOnce("n-announcement-bar.js", "{{ 'n-announcement-bar.js' | asset_url }}");
-            });
-        </script>
       {% else %}
          <cart-notification>
             <div class="cart-countdown-time" data-countdown-time="{{ timer }}" data-timeout-message="{{ 'cart.drawer.settings.notification_time_end' | t }}">
@@ -37,6 +32,18 @@
             </div>
          </cart-notification>
       {% endif %}
+   {% endif %}
+
+   {% comment %}
+      Loaded even for an empty cart: the countdown appears later via a drawer
+      morph, which doesn't run inline scripts.
+   {% endcomment %}
+   {% if settings.black_friday_turn_on %}
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            loadScriptOnce("n-announcement-bar.js", "{{ 'n-announcement-bar.js' | asset_url }}");
+         });
+      </script>
    {% endif %}
 
    <!-- countdown-timer start  -->
