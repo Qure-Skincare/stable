@@ -20,6 +20,10 @@
                     {% endunless %}
                 {% endif %}
 
+                {% if product_handle == 'hand-shower-filter' %}
+                    {% assign product_url = '/products/shower-filter' %}
+                {% endif %}
+
                 {% assign n_tile_hover_url = '' %}
                 {% for media in product_media limit: 2 %}
                     {% if forloop.index == 2 %}

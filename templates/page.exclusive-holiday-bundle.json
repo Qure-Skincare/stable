@@ -247,7 +247,7 @@
           "type": "product",
           "settings": {
             "product": "skin-renewal-system",
-            "image": "shopify://shop_images/SkinRenewalSystem.jpg",
+            "image": "shopify://shop_images/SkinRenewalSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -257,7 +257,7 @@
           "type": "product",
           "settings": {
             "product": "total-skin-confidence-system",
-            "image": "shopify://shop_images/TotalSkinConfidenceSystem_d9cc18d9-d425-4da7-87f2-4f765c0fd522.jpg",
+            "image": "shopify://shop_images/TotalSkinConfidenceSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -289,7 +289,7 @@
           "type": "product",
           "settings": {
             "product": "total-radiance-system",
-            "image": "shopify://shop_images/TotalRadianceSystem.jpg",
+            "image": "shopify://shop_images/TotalRadianceSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -299,7 +299,7 @@
           "type": "product",
           "settings": {
             "product": "clear-skin-reset",
-            "image": "shopify://shop_images/ClearSkinReset.jpg",
+            "image": "shopify://shop_images/ClearSkinReset.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -332,7 +332,7 @@
           "type": "product",
           "settings": {
             "product": "skin-foundation-system",
-            "image": "shopify://shop_images/SkinFoundationSystem.jpg",
+            "image": "shopify://shop_images/SkinFoundationSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -342,7 +342,7 @@
           "type": "product",
           "settings": {
             "product": "even-firm-system",
-            "image": "shopify://shop_images/Even_FirmSystem.jpg",
+            "image": "shopify://shop_images/Even_FirmSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -352,7 +352,7 @@
           "type": "product",
           "settings": {
             "product": "total-skin-renewal-system",
-            "image": "shopify://shop_images/TotalSkinRenewalSystem.jpg",
+            "image": "shopify://shop_images/TotalSkinRenewalSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
@@ -925,6 +925,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/hero.webp",
         "image_mobile": "shopify://shop_images/hero-mob-1_2abc0783-5cc1-405d-9ff1-471b566527ad.webp",
+        "video_url": "",
         "button_label": "",
         "button_url": ""
       }
