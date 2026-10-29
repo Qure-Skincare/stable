@@ -20,42 +20,41 @@
                     {% assign total_compare_at_price = total_compare_at_price | plus: bundle_product.compare_at_price %}
                     {% assign bundle_url = bundle_product.handle | prepend: '/products/'  %}
 
+                    {% assign variant_options = blank %}
                     {% if bundle_product.variants.size > 1 %}
-                        <li class="included_product">
-                            <a href="{{ bundle_url }}" target="_blank"><img loading="lazy" class="variantImage" src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
-                            <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
-                            {% if bundle_product.compare_at_price %}
-                                <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>
-                            {% else %}
-                                <small>(Regular price - {{ bundle_product.price | money_without_trailing_zeros }})</small>
-                            {% endif %}
+                    {% capture variant_options %}
+                        {% for bundle_variant in bundle_product.variants %}
+                            {% for variant in product_variants %}
+                                {%- assign ext_variant = bundle_variant.title | append: ' / ' | append: bundle_variant.title -%}
+                                {% if variant.title == bundle_variant.title %}
+                                    <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
+                                {% endif %}
+                                {% if variant.title == ext_variant %}
+                                    <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-bundle-variant-title="{{ bundle_variant.title }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    {% endcapture %}
+                    {% assign variant_options = variant_options | strip %}
+                    {% endif %}
+                    {% assign item_image = bundle_product.selected_or_first_available_variant.featured_image | default: bundle_product.featured_image %}
+
+                    <li {% if variant_options != blank %}class="included_product"{% endif %}>
+                        <a href="{{ bundle_url }}" target="_blank"><img loading="lazy" class="variantImage" src="{{ item_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
+                        <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
+                        {% if bundle_product.compare_at_price %}
+                            <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>
+                        {% else %}
+                            <small>(Regular price - {{ bundle_product.price | money_without_trailing_zeros }})</small>
+                        {% endif %}
+                        {% if variant_options != blank %}
                             <form action="#">
                                 <select name="kit-item-options" class="variant-select">
-                                    {% for bundle_variant in bundle_product.variants %}
-                                        {% for variant in product_variants %}
-                                            {%- assign ext_variant = bundle_variant.title | append: ' / ' | append: bundle_variant.title -%}
-                                            {% if variant.title == bundle_variant.title %}
-                                                <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
-                                            {% endif %}
-                                            {% if variant.title == ext_variant %}
-                                                <option {% if variant.metafields.custom.bundle_not_available == true %}disabled{% endif %} value="{{ bundle_variant.title | escape }}" data-handle="{{ product_handle }}" data-image="{{ bundle_variant.featured_image | img_url: '250x' }}" data-variant-id="{{ variant.id }}" data-bundle-variant-title="{{ bundle_variant.title }}" data-variant-text="{{ variant.metafields.custom.bundle_text }}">{{ bundle_variant.title }}</option>
-                                            {% endif %}
-                                        {% endfor %}
-                                    {% endfor %}  
+                                    {{ variant_options }}
                                 </select>
                             </form>
-                        </li>
-                    {% else %}
-                        <li>
-                            <a href="{{ bundle_url }}" target="_blank"><img loading="lazy" src="{{ bundle_product.featured_image | img_url: '240x' }}" alt="{{ bundle_product.title | escape }}" /></a>
-                            <p><a href="{{ bundle_url }}" target="_blank">{{ bundle_product.title }}</a></p>
-                            {% if bundle_product.compare_at_price %}
-                                <small>(Regular price - {{ bundle_product.compare_at_price | money_without_trailing_zeros }})</small>
-                            {% else %}
-                                <small>(Regular price - {{ bundle_product.price | money_without_trailing_zeros }})</small>
-                            {% endif %}
-                        </li>
-                    {% endif %}
+                        {% endif %}
+                    </li>
                 {% endfor %}
             {% endif %}
         </ul>

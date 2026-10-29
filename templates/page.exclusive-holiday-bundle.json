@@ -60,9 +60,9 @@
       "name": "t:sections.n_hero-product.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<h1>Get Your Best Skin Yet — Save up to 57% on Exclusive Bundles.</h1>",
+        "heading": "<h1>Get Your Best Skin Yet — Save up to 59% on Exclusive Bundles.</h1>",
         "text": "",
-        "button_label": "SHOP & SAVE UP TO 57%",
+        "button_label": "SHOP & SAVE UP TO 59%",
         "button_url": "#purchase-form-bundle",
         "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>",
         "special_offer_badge": true
@@ -215,7 +215,7 @@
         "use_own_file": false,
         "text": "<h2>Top-rated products at best prices</h2>",
         "rating": "4.5",
-        "rating_text": "200,000+ Confident Customers"
+        "rating_text": "700,000+ Confident Customers"
       }
     },
     "purchase_form_bundle_v2": {
@@ -802,14 +802,14 @@
           "type": "accordion",
           "settings": {
             "text": "<h6>Micro-Infusion</h6><p>Smooth fine lines, hydrate, and firm skin.</p>",
-            "image": "shopify://shop_images/micro-infusion.webp"
+            "image": "shopify://shop_images/Micro-Infusion.png"
           }
         },
         "accordion_CMf9Pm": {
           "type": "accordion",
           "settings": {
             "text": "<h6>Topical Treatments</h6><p>Target acne and dehydration with clinical solutions.</p>",
-            "image": "shopify://shop_images/topical.webp"
+            "image": "shopify://shop_images/AIO.png"
           }
         },
         "accordion_zwV9FB": {
@@ -837,7 +837,7 @@
             "text": "<p>Infuse active ingredients beneath the surface of your skin for maximum efficacy, evening out texture, softening fine lines, and promoting a youthful appearance.</p><ul><li>Helps smooth the appearance of fine lines and wrinkles</li><li>Supports a brighter, more even-looking skin tone</li><li>Visibly plumps and supports smoother-looking skin texture</li><li>Clinically backed and easy to use at home.</li></ul>",
             "product_1": "Micro-Infusion Treatment",
             "link_url_1": "https://qureskincare.com/pages/microinfusion",
-            "image_1": "shopify://shop_images/micro-infusion-treatment.webp",
+            "image_1": "shopify://shop_images/hero-mi-bottles.webp",
             "product_2": "Micro-Infusion Targeted Patches",
             "link_url_2": "https://qureskincare.com/products/micro-infusion-targeted-patches",
             "image_2": "shopify://shop_images/image_c3f7733f-e17b-488d-ac70-3ecdc65bd098.png"
@@ -848,8 +848,8 @@
           "settings": {
             "text": "<p>Lightweight formulas to balance, calm, and support recovery after treatments.</p><ul><li>Improves skin texture by reducing roughness and dehydration lines.</li><li>Delivers long-lasting moisture to keep skin soft and plump.</li><li>Restores glow to dull or dehydrated skin.</li><li>Gentle on sensitive and reactive skin.</li></ul>",
             "product_1": "All-In-One Serum",
-            "link_url_1": "https://qureskincare.com/products/face-serum",
-            "image_1": "shopify://shop_images/Img_1f6e46c5-126c-499a-9458-ad4d167eb316.jpg",
+            "link_url_1": "https://qureskincare.com/products/all-in-one-serum",
+            "image_1": "shopify://shop_images/silver_AIO.webp",
             "product_2": "Dermal Mist",
             "link_url_2": "https://qureskincare.com/products/dermal-mist",
             "image_2": "shopify://shop_images/Img_cc4021fe-088f-4046-a2ff-7fa388967725.png"
@@ -860,10 +860,10 @@
           "settings": {
             "text": "<p>Remove chlorine, heavy metals, and harmful bacteria from your tap water, to help protect your skin against premature aging, dryness, and irritation.</p><ul><li>Supports a healthier skin barrier by preventing exposure to harsh water.</li><li>Improves the effectiveness of your skincare products.</li><li>Helps reduce skin irritation, dryness, and sensitivity.</li></ul>",
             "product_1": "Shower Filter",
-            "link_url_1": "#",
+            "link_url_1": "https://qureskincare.com/products/shower-filter",
             "image_1": "shopify://shop_images/shower-filter.webp",
             "product_2": "Water Filter",
-            "link_url_2": "#",
+            "link_url_2": "https://qureskincare.com/products/faucet-filter",
             "image_2": "shopify://shop_images/water-filter.webp"
           }
         }
@@ -993,8 +993,8 @@
       "type": "n-sticky-button",
       "name": "t:sections.sticky-button.name",
       "settings": {
-        "heading": "Shop now to save up to 57% on Exclusive Bundles",
-        "text": "1,893 bundles purchased in last 48 hours",
+        "heading": "Shop now to save up to 59% on Exclusive Bundles",
+        "text": "893 bundles purchased in last 48 hours",
         "limited": false,
         "button-label": "CHOOSE YOUR BUNDLE",
         "button-url": "#purchase-form-bundle"
