@@ -757,6 +757,7 @@
         },
         "faq_item_cHY4bn": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "How often can I use my Q-Renew LLLT Helmet?",
@@ -769,7 +770,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long will it take before I start seeing results?",
-            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3-6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
+            "text": "<p>Hair growth takes time and consistent use. Visible improvements were observed after 16 weeks in Q-Renew’s study, with results becoming more noticeable with continued treatment.</p><p>After 16 weeks, clinical measurements showed increases of up to 27% in hair growth rate, up to 12% in average hair thickness and up to 19% in total hair width per cm². Individual results may vary.</p>",
             "section_id": ""
           }
         },
