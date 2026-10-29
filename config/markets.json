@@ -9,31 +9,31 @@
  */
 {
   "markets": {
+    "australia": {
+      "parent": "@default"
+    },
     "us": {
-      "parent": "@default"
-    },
-    "asia": {
-      "parent": "@default"
-    },
-    "israel": {
       "parent": "@default"
     },
     "uae": {
       "parent": "@default"
     },
-    "international": {
-      "parent": "@default"
-    },
-    "united-kingdom": {
-      "parent": "@default"
-    },
     "canada": {
       "parent": "@default"
     },
-    "australia": {
+    "europe": {
       "parent": "@default"
     },
-    "europe": {
+    "israel": {
+      "parent": "@default"
+    },
+    "international": {
+      "parent": "@default"
+    },
+    "asia": {
+      "parent": "@default"
+    },
+    "united-kingdom": {
       "parent": "@default"
     }
   }
