@@ -715,7 +715,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the Q-Renew LLLT Helmet?",
-            "text": "<p>The Q-Renew LLLT Helmet is a medical-grade light therapy device designed to support healthier hair growth by delivering low-level red light and laser energy directly to the scalp. </p><p>It uses 220 LED diodes and 150 medical-grade, low-level laser diodes to target follicles with clinically studied wavelengths that help stimulate cellular activity, improve scalp circulation, and support thicker, fuller-looking hair over time.</p>",
+            "text": "<p>The Q-Renew LLLT Helmet is an FDA-cleared light therapy device designed to support healthier looking hair by delivering low-level red light and laser energy directly to the scalp.&nbsp;</p><p>It uses 220 LED diodes and 150, low-level laser diodes with clinically studied wavelengths, designed to promote hair growth and support fuller-looking hair over time.</p>",
             "section_id": ""
           }
         },
@@ -724,7 +724,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How does the technology work?",
-            "text": "<p>The Q-Renew LLLT Helmet works by delivering specific red-light wavelengths and low-level laser energy into the scalp, where the follicles absorb the light and convert it into cellular energy. This helps support healthier follicle activity, improve circulation, reduce mild inflammation, and encourage fuller, denser-looking hair over time.</p>",
+            "text": "<p>The Q-Renew LLLT Helmet delivers targeted red LED wavelengths and low-level laser energy directly to the scalp. This light therapy supports hair follicles, encourages the active growth phase, helps support follicle activity and supports circulation around the follicles. With consistent use, the Q-Renew LLLT Helmet has been clinically evaluated to improve hair fullness, thickness and overall hair quality in 16 weeks.</p>",
             "section_id": ""
           }
         },
@@ -751,12 +751,13 @@
           "settings": {
             "secure_strap": false,
             "heading": "Where should I fit in the Q-Renew LLLT Helmet in my haircare routine?",
-            "text": "<p>Use the Q-Renew LLLT Helmet on clean, dry, product-free hair before applying any styling products, oils, serums, or treatments.</p><p>We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to maintain results. Each treatment lasts 12 minutes and ends automatically.</p>",
+            "text": "<p>Use the Q-Renew LLLT Helmet on clean, dry, product-free hair before applying any styling products, oils, serums, or treatments. We recommend using the helmet 5-7 times per week for at least 16 weeks. After that, continue every other day to maintain results. Each treatment lasts 12 minutes and ends automatically.</p>",
             "section_id": ""
           }
         },
         "faq_item_cHY4bn": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "How often can I use my Q-Renew LLLT Helmet?",
@@ -769,7 +770,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long will it take before I start seeing results?",
-            "text": "<p>Visible changes take time. Most users should expect to use the helmet consistently for at least 3-6 months before noticing fuller, healthier-looking hair. Like any long-term treatment, consistency is key!</p>",
+            "text": "<p>Hair growth takes time and consistent use. Visible improvements were observed after 16 weeks in Q-Renew’s study, with results becoming more noticeable with continued treatment.</p><p>After 16 weeks, clinical measurements showed increases of up to 27% in hair growth rate, up to 12% in average hair thickness and up to 19% in total hair width per cm². Individual results may vary.</p>",
             "section_id": ""
           }
         },
@@ -778,7 +779,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I charge my Q-Renew LLLT Helmet?",
-            "text": "<p>To charge your Q-Renew LLLT Helmet, connect the provided USB-C cable to the charging port, located at the back of the charging base. Plug the other end into a power supply. Only use the provided USB-C cable and a 5V DC adapter for charging.</p><p>When your device is charging, the LCD screen will display the charging status. If inactive, tap the screen to check progress.  The device will take 240 minutes or 4 hours to fully change.</p>",
+            "text": "<p>To charge your Q-Renew LLLT Helmet, connect the provided USB-C cable to the charging port on the back of the charging base, or connect the cable directly to the helmet’s charging port. Plug the other end into a power supply using a 5V DC adapter. Only use the provided USB-C cable and a 5V DC adapter for charging.</p><p>When the device is charging, the LCD screen will display the charging status. If the screen is inactive, tap it to check the progress. A full charge takes approximately 4 hours.</p>",
             "section_id": ""
           }
         },
@@ -796,7 +797,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the best way to clean the Q-Renew LLLT Helmet?",
-            "text": "<p>The device can be cleaned with a water-based wipe or a damp, clean cloth. For stubborn stains, we recommend gently wiping with 70% alcohol. Avoid using harsh abrasive cleaners, solvents, or other chemical products as this may harm the device.</p><p><strong>Optional:</strong> For an enhanced cleaning experience, lightly spray the inside of the helmet with the <a href=\"#\">Qure Dermal Mist</a> and gently wipe to help maintain hygiene and freshness. </p>",
+            "text": "<p>The device can be cleaned with a water-based wipe or a damp, clean cloth. For stubborn stains, we recommend gently wiping with 70% alcohol. Avoid using harsh abrasive cleaners, solvents, or other chemical products as this may harm the device.</p><p><strong>Optional:</strong> For an enhanced cleaning experience, lightly spray the inside of the helmet with the <a href=\"#\">Qure Dermal Mist</a> and gently wipe to help maintain hygiene and freshness.&nbsp;</p>",
             "section_id": ""
           }
         },
@@ -805,7 +806,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Who is the Q-Renew LLLT Helmet not suitable for?",
-            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>",
+            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.<br/><br/>Not sure if it is right for you? Book a free consultation with our team.</p>",
             "section_id": ""
           }
         },
@@ -814,7 +815,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Does the Q-Renew LLLT Helmet come with a warranty?",
-            "text": "<p>We provide a 3-year limited warranty covering defects in materials and workmanship for the Q-Renew LLLT Helmet when purchased directly from Qure Skincare.</p><p>For more information on warranty, please visit <a href=\"#\">Our Warranty Policy</a>.</p>",
+            "text": "<p>We provide a 3-year limited warranty covering defects in materials and workmanship for the Q-Renew LLLT Helmet when purchased directly from Qure Skincare. For more information on warranty, please visit our Warranty section below.&nbsp;</p>",
             "section_id": ""
           }
         },
@@ -823,7 +824,16 @@
           "settings": {
             "secure_strap": false,
             "heading": "Is it FDA-cleared?",
-            "text": "<p>Yes, the Q-Renew LLLT Helmet is FDA-cleared. </p><p>The Q-Renew LLLT Helmet is indicated for the promotion of hair growth in males who have Norwood-Hamilton classifications of IIa-V, and in females with androgenetic alopecia who have Ludwig-Savin Classifications of I-II, and in both, Fitzpatrick Classification of Skin Phototypes I to IV.</p>",
+            "text": "<p>Yes. The Q-Renew LLLT Helmet is FDA-cleared for the promotion of hair growth in males who have Norwood-Hamilton classifications IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin classifications I–II, and in both, Fitzpatrick skin phototypes I–IV.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_iir6E7": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my Q-Renew LLLT Helmet not charging or turning on?",
+            "text": "<p>If your helmet isn’t charging or switching on, try the following:</p><p>1. Check the power connection. Make sure the supplied USB-C cable is securely connected and you’re using a 5V DC adapter. Try a different power outlet if needed.</p><p>2. Allow it to fully charge. A full charge takes approximately 4 hours. The LCD screen displays the charging status, and you can tap the screen to check progress if it is inactive.&nbsp;</p><p>3. Try charging the helmet directly. If you normally charge through the charging base, connect the supplied USB-C cable directly to the charging port on the helmet. This helps determine whether the issue is with the charging base or the helmet itself. The manual confirms the helmet can be charged either way.&nbsp;&nbsp;</p><p>4. Try turning it on again. Press and hold the power button for at least one second. If the helmet switches off unexpectedly, the battery may be low and should be fully charged before use.&nbsp;</p><p>5. Still not working? Contact <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Qure Customer Support</a> with your proof of purchase, device serial number, and a photo or short video showing the issue. Do not attempt to open, modify or repair the helmet yourself, as this may void the warranty.</p>",
             "section_id": ""
           }
         }
@@ -841,7 +851,8 @@
         "faq_item_dMeKDV",
         "faq_item_HRgQME",
         "faq_item_e6KPtw",
-        "faq_item_QCdqtq"
+        "faq_item_QCdqtq",
+        "faq_item_iir6E7"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {

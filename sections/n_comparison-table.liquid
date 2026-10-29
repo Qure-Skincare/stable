@@ -6,7 +6,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/comparison-table/comparison-table.css" />
 {% endif %}
-<section class="comparison-table{% if section.settings.modifier != 'none' %} comparison-table--{{ section.settings.modifier }}{% endif %}">
+<section class="comparison-table{% if section.settings.modifier != 'none' %} comparison-table--{{ section.settings.modifier }}{% endif %} comparison-table--equal-rows">
     <div class="container">
         {{ section.settings.text }}
         <div class="comparison-table__content">
@@ -120,6 +120,11 @@
         {% endunless %}
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadScriptOnce("comparison-table", "https://qureskincaredns-stable.com/sections/comparison-table/comparison-table.js");
+    });
+</script>
 <!-- COMPARISON TABLE END -->
 
 {% schema %}

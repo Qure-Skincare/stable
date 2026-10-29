@@ -30,6 +30,7 @@
                 {% endif %}
             {% endfor %}
         </div>
+        {% if section.settings.text != blank %}<article>{{ section.settings.text }}{% endif %}
         {% for block in section.blocks %}
             {% if block.type == 'quote' %}
                 <div class="e-quote-card" {{ block.shopify_attributes }}>
@@ -47,6 +48,7 @@
                 </div>
             {% endif %}
         {% endfor %}
+        {% if section.settings.text != blank %}</article>{% endif %}
         {% if section.settings.button_url != blank and section.settings.button_label != blank %}
             <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
         {% endif %}
@@ -92,6 +94,11 @@
             "type": "image_picker",
             "id": "image",
             "label": "t:common.image"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:common.text"
         },
         {
             "type": "text",
