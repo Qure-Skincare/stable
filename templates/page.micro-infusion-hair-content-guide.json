@@ -97,7 +97,7 @@
           "type": "link",
           "settings": {
             "link_text": "Learn more about Micro-Infusion Pro Hair System",
-            "link_url": "#"
+            "link_url": "shopify://pages/qure-microinfusion-hair-offer"
           }
         }
       },
@@ -234,12 +234,6 @@
     "n_guide_content_content_examples": {
       "type": "n_guide-content",
       "blocks": {
-        "wistia_slider_1": {
-          "type": "wistia_slider",
-          "settings": {
-            "wistia_url": ""
-          }
-        },
         "wistia_slider_2": {
           "type": "wistia_slider",
           "settings": {
@@ -254,7 +248,6 @@
         }
       },
       "block_order": [
-        "wistia_slider_1",
         "wistia_slider_2",
         "wistia_slider_3"
       ],
