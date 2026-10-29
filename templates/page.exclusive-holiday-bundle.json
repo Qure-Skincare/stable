@@ -60,9 +60,9 @@
       "name": "t:sections.n_hero-product.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<h1>Get Your Best Skin Yet — Save up to 57% on Exclusive Bundles.</h1>",
+        "heading": "<h1>Get Your Best Skin Yet — Save up to 59% on Exclusive Bundles.</h1>",
         "text": "",
-        "button_label": "SHOP & SAVE UP TO 57%",
+        "button_label": "SHOP & SAVE UP TO 59%",
         "button_url": "#purchase-form-bundle",
         "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>",
         "special_offer_badge": true
