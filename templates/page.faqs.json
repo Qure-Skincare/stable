@@ -779,7 +779,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How do I charge my Q-Renew LLLT Helmet?",
-            "text": "<p>To charge your Q-Renew LLLT Helmet, connect the provided USB-C cable to the charging port, located at the back of the charging base. Plug the other end into a power supply. Only use the provided USB-C cable and a 5V DC adapter for charging.</p><p>When your device is charging, the LCD screen will display the charging status. If inactive, tap the screen to check progress.  The device will take 240 minutes or 4 hours to fully change.</p>",
+            "text": "<p>To charge your Q-Renew LLLT Helmet, connect the provided USB-C cable to the charging port on the back of the charging base, or connect the cable directly to the helmet’s charging port. Plug the other end into a power supply using a 5V DC adapter. Only use the provided USB-C cable and a 5V DC adapter for charging.</p><p>When the device is charging, the LCD screen will display the charging status. If the screen is inactive, tap it to check the progress. A full charge takes approximately 4 hours.</p>",
             "section_id": ""
           }
         },
@@ -797,7 +797,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the best way to clean the Q-Renew LLLT Helmet?",
-            "text": "<p>The device can be cleaned with a water-based wipe or a damp, clean cloth. For stubborn stains, we recommend gently wiping with 70% alcohol. Avoid using harsh abrasive cleaners, solvents, or other chemical products as this may harm the device.</p><p><strong>Optional:</strong> For an enhanced cleaning experience, lightly spray the inside of the helmet with the <a href=\"#\">Qure Dermal Mist</a> and gently wipe to help maintain hygiene and freshness. </p>",
+            "text": "<p>The device can be cleaned with a water-based wipe or a damp, clean cloth. For stubborn stains, we recommend gently wiping with 70% alcohol. Avoid using harsh abrasive cleaners, solvents, or other chemical products as this may harm the device.</p><p><strong>Optional:</strong> For an enhanced cleaning experience, lightly spray the inside of the helmet with the <a href=\"#\">Qure Dermal Mist</a> and gently wipe to help maintain hygiene and freshness.&nbsp;</p>",
             "section_id": ""
           }
         },
@@ -806,7 +806,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Who is the Q-Renew LLLT Helmet not suitable for?",
-            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.</p>",
+            "text": "<p>Do not use this product if you are under 18, pregnant, breastfeeding, photosensitive, on light-sensitizing medications, prone to light-triggered headaches or seizures, or have open wounds or infections on the scalp.<br/><br/>Not sure if it is right for you? Book a free consultation with our team.</p>",
             "section_id": ""
           }
         },
