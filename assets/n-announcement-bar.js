@@ -7,6 +7,11 @@
         return String(n).padStart(2, '0');
     }
 
+    // Writes only on change, so ticks don't generate mutations of their own.
+    function setText(el, value) {
+        if (el.textContent !== value) el.textContent = value;
+    }
+
     // Returns the current LA wall-clock time as a "fake-UTC" timestamp
     // (Date.UTC built from LA Y/M/D h:m:s). Comparing this against another
     // value built the same way gives an accurate ms diff regardless of
@@ -76,10 +81,10 @@
         var mm = Math.floor(totalSeconds / 60);
         var s = totalSeconds - mm * 60;
 
-        children[0].textContent = pad2(d);
-        children[1].textContent = pad2(h);
-        children[2].textContent = pad2(mm);
-        children[3].textContent = pad2(s);
+        setText(children[0], pad2(d));
+        setText(children[1], pad2(h));
+        setText(children[2], pad2(mm));
+        setText(children[3], pad2(s));
 
         return diffMs > 0;
     }
@@ -88,11 +93,39 @@
         // Re-query each tick so Swiper-cloned slides (loop mode) update too.
         var roots = document.querySelectorAll(SCOPE_SELECTOR);
         roots.forEach(updateCountdown);
+        // Drop the records of our own writes so they don't trigger a re-tick.
+        if (observer) observer.takeRecords();
+    }
+
+    // The announcement bar and the cart drawer are re-rendered from section
+    // HTML with "00" placeholders on every cart change. Mutation callbacks run
+    // before the next paint, so re-ticking here keeps the reset invisible.
+    function touchesCountdown(mutation) {
+        var target = mutation.target.nodeType === 1 ? mutation.target : mutation.target.parentElement;
+        if (target && target.closest(SCOPE_SELECTOR)) return true;
+
+        for (var i = 0; i < mutation.addedNodes.length; i++) {
+            var node = mutation.addedNodes[i];
+            if (node.nodeType === 1 && (node.matches(SCOPE_SELECTOR) || node.querySelector(SCOPE_SELECTOR))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    var observer = null;
+
+    function watchRerenders() {
+        observer = new MutationObserver(function (mutations) {
+            if (mutations.some(touchesCountdown)) tick();
+        });
+        observer.observe(document.body, { childList: true, subtree: true, characterData: true });
     }
 
     function init() {
         tick();
         setInterval(tick, 1000);
+        watchRerenders();
     }
 
     if (document.readyState === 'loading') {
