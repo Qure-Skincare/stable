@@ -37,8 +37,10 @@
 
             {% render 'n-product-page-approved', section: section, product: product %}
 
-            {% if section.settings.rating != blank and section.settings.rating_type != 'trustpilot' %}
-                {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
+            {% if section.settings.rating != blank %}
+                {% if section.settings.rating_type != 'trustpilot' or section.settings.rating_position == 'top' %}
+                    {% render 'n-product-rating', product: product, rating_type: section.settings.rating_type %}
+                {% endif %}
             {% endif %}
 
             {% if section.settings.seo_heading != blank %}
@@ -184,6 +186,22 @@
                 {
                     "value": "reviews",
                     "label": "t:common.reviews"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "rating_position",
+            "label": "t:common.rating-position",
+            "default": "default",
+            "options": [
+                {
+                    "value": "default",
+                    "label": "t:common.default"
+                },
+                {
+                    "value": "top",
+                    "label": "t:common.top"
                 }
             ]
         },
@@ -936,6 +954,18 @@
             "name": "t:common.description",
             "limit": 1,
             "settings": []
+        },
+        {
+            "type": "pills",
+            "name": "t:common.pills",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "t:common.text"
+                }
+            ]
         },
         {
             "type": "description-collapsed",

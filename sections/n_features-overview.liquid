@@ -14,7 +14,12 @@
 
         {% if section.settings.image != blank %}
             <div class="c-product-components{% if section.settings.modifier != 'none' %} c-product-components--{{ section.settings.modifier }}{% endif %}">
-                <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                <picture>
+                    {% if section.settings.image_mobile != blank %}
+                        <source media="(max-width: 767px)" srcset="{{ section.settings.image_mobile | image_url }}">
+                    {% endif %}
+                    <img loading="lazy" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt | escape }}" />
+                </picture>
 
                 {% for block in section.blocks %}
                     {% if block.type == 'component' %}
@@ -85,6 +90,10 @@
                 {
                     "value": "blue-serum",
                     "label": "t:common.blue-serum"
+                },
+                {
+                    "value": "hair-serum",
+                    "label": "t:common.hair-serum"
                 }
             ]
         },
@@ -102,6 +111,11 @@
             "type": "image_picker",
             "id": "image",
             "label": "t:common.image"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "t:common.image-mobile"
         }
     ],
     "blocks": [

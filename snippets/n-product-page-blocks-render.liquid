@@ -22,6 +22,9 @@
                 {% assign _description = dp_description | default: section.settings.description %}
                 {% render 'n-product-description', description: _description %}
             {% endunless %}
+        {% when 'pills' %}
+            {{ block.settings.text | replace: '<ul>', '<ul class="c-pills-group">' | replace: '<li>', '<li class="e-pill-badge">' }}
+            <hr />
         {% when 'description-collapsed' %}
             {% render 'n-product-description-collapsed', block: block %}
         {% when 'quote' %}
