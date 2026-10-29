@@ -802,14 +802,14 @@
           "type": "accordion",
           "settings": {
             "text": "<h6>Micro-Infusion</h6><p>Smooth fine lines, hydrate, and firm skin.</p>",
-            "image": "shopify://shop_images/micro-infusion.webp"
+            "image": "shopify://shop_images/Micro-Infusion.png"
           }
         },
         "accordion_CMf9Pm": {
           "type": "accordion",
           "settings": {
             "text": "<h6>Topical Treatments</h6><p>Target acne and dehydration with clinical solutions.</p>",
-            "image": "shopify://shop_images/topical.webp"
+            "image": "shopify://shop_images/AIO.png"
           }
         },
         "accordion_zwV9FB": {
