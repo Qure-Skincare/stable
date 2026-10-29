@@ -827,6 +827,15 @@
             "text": "<p>Yes. The Q-Renew LLLT Helmet is FDA-cleared for the promotion of hair growth in males who have Norwood-Hamilton classifications IIa–V, and in females with androgenetic alopecia who have Ludwig-Savin classifications I–II, and in both, Fitzpatrick skin phototypes I–IV.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_iir6E7": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why is my Q-Renew LLLT Helmet not charging or turning on?",
+            "text": "<p>If your helmet isn’t charging or switching on, try the following:</p><p>1. Check the power connection. Make sure the supplied USB-C cable is securely connected and you’re using a 5V DC adapter. Try a different power outlet if needed.</p><p>2. Allow it to fully charge. A full charge takes approximately 4 hours. The LCD screen displays the charging status, and you can tap the screen to check progress if it is inactive.&nbsp;</p><p>3. Try charging the helmet directly. If you normally charge through the charging base, connect the supplied USB-C cable directly to the charging port on the helmet. This helps determine whether the issue is with the charging base or the helmet itself. The manual confirms the helmet can be charged either way.&nbsp;&nbsp;</p><p>4. Try turning it on again. Press and hold the power button for at least one second. If the helmet switches off unexpectedly, the battery may be low and should be fully charged before use.&nbsp;</p><p>5. Still not working? Contact <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Qure Customer Support</a> with your proof of purchase, device serial number, and a photo or short video showing the issue. Do not attempt to open, modify or repair the helmet yourself, as this may void the warranty.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -842,7 +851,8 @@
         "faq_item_dMeKDV",
         "faq_item_HRgQME",
         "faq_item_e6KPtw",
-        "faq_item_QCdqtq"
+        "faq_item_QCdqtq",
+        "faq_item_iir6E7"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
