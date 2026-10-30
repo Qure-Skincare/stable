@@ -56,14 +56,15 @@
                             <img loading="lazy" src="{{ media | img_url: '720x' }}" alt="{{ title | escape }}" data-product-handle="{{ title | escape }}" />
                             {% if watch_objects[index] != blank and watch_objects[index] != 'none' %}
                                 <div class="c-wistia c-wistia--custom">
-                                    <wistia-player media-id="{{ watch_objects[index] }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                    {% capture wistia_thumbnail %}
                                         <div class="c-wistia__custom">
                                             <a class="c-wistia__link" href="javascript:;">
                                                 <i class="e-icon e-icon-watch"></i>
                                                 <span><strong>Watch:</strong> How It Works</span>
                                             </a>
                                         </div>
-                                    </wistia-player>
+                                    {% endcapture %}
+                                    {% render 'n-wistia-facade', media_id: watch_objects[index], content: wistia_thumbnail %}
                                 </div>
                             {% endif %}
                         </div>

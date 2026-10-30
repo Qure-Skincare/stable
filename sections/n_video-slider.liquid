@@ -54,14 +54,15 @@
                                             {% endif %}
                                         {% else %}
                                             {% if block.settings.video_url != blank and block.settings.image != blank %}
+                                                {% capture wistia_thumbnail %}
+                                                    <div class="c-wistia__custom">
+                                                        <picture>
+                                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                        </picture>
+                                                    </div>
+                                                {% endcapture %}
                                                 <div class="c-wistia c-wistia--custom">
-                                                    <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
-                                                        <div class="c-wistia__custom">
-                                                            <picture>
-                                                                <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                                            </picture>
-                                                        </div>
-                                                    </wistia-player>
+                                                    {% render 'n-wistia-facade', media_id: block.settings.video_url, content: wistia_thumbnail %}
                                                 </div>
                                             {% endif %}
                                         {% endif %}
@@ -133,18 +134,19 @@
                                         {% endif %}
                                     {% elsif block.settings.video_url != blank %}
                                         {% if block.settings.image != blank %}
+                                            {% capture wistia_thumbnail %}
+                                                <div class="c-wistia__custom">
+                                                    <picture>
+                                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                                                    </picture>
+                                                </div>
+                                            {% endcapture %}
                                             <div class="c-wistia c-wistia--custom">
-                                                <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
-                                                    <div class="c-wistia__custom">
-                                                        <picture>
-                                                            <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                                        </picture>
-                                                    </div>
-                                                </wistia-player>
+                                                {% render 'n-wistia-facade', media_id: block.settings.video_url, content: wistia_thumbnail %}
                                             </div>
                                         {% else %}
                                             <div class="c-wistia">
-                                                <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" end-video-behavior="loop" controls-visible-on-load="false" play-button="false" inert></wistia-player>
+                                                {% render 'n-wistia-facade', media_id: block.settings.video_url %}
                                                 <div class="c-wistia__play"></div>
                                             </div>
                                         {% endif %}
