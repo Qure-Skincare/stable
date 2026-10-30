@@ -166,7 +166,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "trustpilot",
-        "rating_position": "default",
+        "rating_position": "top",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and acne.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
