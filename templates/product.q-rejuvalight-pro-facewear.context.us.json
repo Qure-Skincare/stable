@@ -14,7 +14,10 @@
   "parent": "product.q-rejuvalight-pro-facewear.json",
   "sections": {
     "product_header_V3N3T8": {
-      "settings": {},
+      "settings": {
+        "heading_level": "h1",
+        "rating_position": "top"
+      },
       "blocks": {
         "price_A11": {
           "settings": {
