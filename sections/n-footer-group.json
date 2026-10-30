@@ -35,7 +35,6 @@
     },
     "footer-gdpr": {
       "type": "n-footer-gdpr",
-      "disabled": true,
       "settings": {}
     },
     "footer-wistia": {

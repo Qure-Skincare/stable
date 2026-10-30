@@ -60,6 +60,9 @@
       </script>
     {% endif %}
 
+    {% comment %} Before n-redirect.js: its redirects drop the query string, fbclid with it. {% endcomment %}
+    {% render 'n-fbc-capture' %}
+
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">

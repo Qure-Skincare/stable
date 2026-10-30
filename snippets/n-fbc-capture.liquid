@@ -1,0 +1,80 @@
+{% doc %}
+  Stores the Facebook ad click id (fbclid) in the _fbc cookie as soon as the
+  landing page starts, in the format the Meta pixel uses.
+
+  The pixel loads ~4-5 s after the page, and fbclid is only in the landing URL.
+  A visitor who moves on before then (or is sent on by n-redirect.js) loses it,
+  and later events and purchases reach Meta without the click they came from.
+  When the pixel does load on the landing page it rewrites _fbc with the same
+  fbclid, so the two never disagree.
+
+  Follows the cookie banner (n-footer-gdpr / n-cookies.js): written only when
+  the visitor allowed advertising cookies, or when they haven't answered and
+  aren't in a country the banner is shown in (same list as is_gdpr_country()).
+  Also skipped when Shopify's consent tracking says marketing isn't allowed.
+
+  @example
+  {% render 'n-fbc-capture' %}
+{% enddoc %}
+
+{%- liquid
+  assign gdpr_countries = 'AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,IS,LI,NO,GB' | split: ','
+  assign needs_consent = false
+  if gdpr_countries contains localization.country.iso_code
+    assign needs_consent = true
+  endif
+-%}
+
+<script class="__init">
+(function (w, d, needsConsent) {
+  var fbclid;
+  try { fbclid = new URLSearchParams(w.location.search).get('fbclid'); } catch (e) { return; }
+  if (!fbclid) return;
+
+  var readCookie = function (name) {
+    var m = d.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : null;
+  };
+
+  // The theme's banner: qure_cookie_consent is 'false' after Decline,
+  // qure_cookie_settings holds the per-category toggles.
+  var bannerAllows = function () {
+    if (readCookie('qure_cookie_consent') === 'false') return false;
+    var settings = readCookie('qure_cookie_settings');
+    if (settings) {
+      try { return JSON.parse(settings).advertising === true; } catch (e) { return false; }
+    }
+    return !needsConsent;
+  };
+  if (!bannerAllows()) return;
+
+  var marketingAllowed = function () {
+    var privacy = w.Shopify && w.Shopify.customerPrivacy;
+    if (privacy && typeof privacy.marketingAllowed === 'function') return privacy.marketingAllowed();
+    var consent = readCookie('_tracking_consent');
+    if (!consent) return true;
+    try {
+      var data = JSON.parse(consent);
+      var marketing = data.con && data.con.CMP && data.con.CMP.m;
+      return marketing === '1' || (!data.reg && marketing !== '0');
+    } catch (e) {
+      return false;
+    }
+  };
+  if (!marketingAllowed()) return;
+
+  var current = readCookie('_fbc');
+  if (current && current.slice(-(fbclid.length + 1)) === '.' + fbclid) return;
+
+  // Same shape and scope as the pixel's own cookie: fb.<subdomain index>.<ms>.<fbclid>
+  // on the registrable domain, kept for 90 days.
+  var value = 'fb.1.' + Date.now() + '.' + fbclid;
+  var tail = '; path=/; max-age=7776000; SameSite=Lax';
+  var host = w.location.hostname;
+  var domain = host.split('.').slice(-2).join('.');
+  d.cookie = '_fbc=' + encodeURIComponent(value) + '; domain=.' + domain + tail;
+  // The registrable domain can't be guessed from two labels everywhere
+  // (e.g. *.myshopify.com previews); fall back to the current host.
+  if (readCookie('_fbc') !== value) d.cookie = '_fbc=' + encodeURIComponent(value) + tail;
+})(window, document, {{ needs_consent }});
+</script>
