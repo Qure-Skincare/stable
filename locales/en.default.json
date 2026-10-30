@@ -501,7 +501,7 @@
       },
       "limited-offer": {
         "header": "Exclusive offer:",
-        "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} </span> with code {{ code }}</p>",
+        "text_html": "<p class='qs-offer'>Get <span class='qs-badge'>{{ sum }} </span> with code {{ code }} auto-applied in cart</p>",
         "n_text_html": "<p>Get <span class='e-pill-save'>{{ sum }} </span> with code {{ code }}</p>",
         "days": "DAYS",
         "hours": "HOURS",
