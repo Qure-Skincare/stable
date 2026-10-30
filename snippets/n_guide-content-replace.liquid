@@ -97,6 +97,12 @@
     {% endif %}
     
     {% assign processed_text = processed_text | replace: '<p>[hr]</p>', '<hr />' %}
+
+    {% comment %} `[icon:name]` inside a paragraph prints `<i class="e-icon e-icon-name"></i>` {% endcomment %}
+    {% if processed_text contains '[icon:' %}
+        {% assign icon_parts = processed_text | split: '[icon:' %}
+        {% capture processed_text %}{{ icon_parts[0] }}{% for icon_part in icon_parts offset: 1 %}{% assign icon_name = icon_part | split: ']' | first | strip %}{% assign icon_rest = icon_part | remove_first: icon_name | remove_first: ']' | lstrip %}<i class="e-icon e-icon-{{ icon_name }}"></i> {{ icon_rest }}{% endfor %}{% endcapture %}
+    {% endif %}
     
     {{ processed_text }}
 {% endif %}

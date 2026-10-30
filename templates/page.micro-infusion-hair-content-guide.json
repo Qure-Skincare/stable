@@ -9,12 +9,280 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "settings": {}
+    "n_across_image_banner_hair": {
+      "type": "n_across-image-banner",
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "hero_reverse",
+        "heading": "<h1>Micro-Infusion Pro Hair System Creative Content Guide</h1>",
+        "text": "",
+        "image": "shopify://shop_images/mi-hair.webp",
+        "image_mobile": "shopify://shop_images/mi-hair-mob.webp",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_intro_hair": {
+      "type": "n_intro",
+      "name": "t:sections.n_intro.name",
+      "settings": {
+        "use_own_file": false,
+        "text": "<p><strong>Discover how to make the most of Qure's Micro-Infusion Pro Hair System with our creative content guide.</strong></p><p>This brief will help you craft engaging content that shows your weekly at-home treatment, and why hair is a higher-scrutiny category than skin, so the language rules here are stricter than any other Qure brief. Please read the Content Requirements section in full before filming.</p>"
+      }
+    },
+    "n_guide_menu_hair": {
+      "type": "n_guide-menu",
+      "blocks": {
+        "menu_item_1": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Information",
+            "must_read": false
+          }
+        },
+        "menu_item_2": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Usage Instructions",
+            "must_read": false
+          }
+        },
+        "menu_item_3": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Product Claims",
+            "must_read": false
+          }
+        },
+        "menu_item_4": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Requirements",
+            "must_read": true
+          }
+        },
+        "menu_item_5": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Creative Direction",
+            "must_read": false
+          }
+        },
+        "menu_item_6": {
+          "type": "menu_item",
+          "settings": {
+            "item": "Content Examples",
+            "must_read": false
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_1",
+        "menu_item_2",
+        "menu_item_3",
+        "menu_item_4",
+        "menu_item_5",
+        "menu_item_6"
+      ],
+      "name": "t:sections.n_guide-menu.name",
+      "settings": {
+        "use_own_file": false
+      }
+    },
+    "n_guide_content_product_information": {
+      "type": "n_guide-content",
+      "blocks": {
+        "link_1": {
+          "type": "link",
+          "settings": {
+            "link_text": "Learn more about Micro-Infusion Pro Hair System",
+            "link_url": "shopify://pages/qure-microinfusion-hair-offer"
+          }
+        }
+      },
+      "block_order": [
+        "link_1"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": true,
+        "must_read": false,
+        "heading": "Product Information",
+        "text": "<h2>Product Information</h2><p>Most hair serums never get past the surface. You apply them, you wait, and they sit there while your pillow absorbs half of it. The Micro-Infusion Pro Hair System is built to fix that. Each device is single-use, and uses 0.5mm gold-plated needles, combining the same microneedling technique used in professional in-clinic scalp treatments, to create micro-channels in the scalp and deliver 4ml of serum below the surface, where it can actually reach. The result, with consistent weekly use: visibly fuller, denser-looking hair.</p><p>[icon:hair] Visibly fuller, denser-looking hair</p><p>[icon:micro-stamping] Targets the appearance of thinning areas</p><p>[icon:fast] 5-minute treatment, no downtime</p><p>[icon:needles] Single-use, gold-plated needles infuses serum and delivers below the surface</p><p>[icon:recycled] Each device is made with 80% recycled plastic, certified by the Global Recycled Standard</p><p><strong>What's in the kit</strong></p><ul><li>12 treatments, one treatment a week</li><li>Kits include Hair Renewal Serum (also sold separately): used nightly on non-infusion nights, massaged into and around the scalp.</li></ul><p><strong>Key ingredients:</strong><br/>Six actives, one job: visibly fuller, denser-looking hair. This isn't a serum sitting on your scalp hoping for the best. Pea Sprout Extract, Acetyl Tetrapeptide-3, Clover Flower Extract, Niacinamide, Caffeine and Copper Tripeptide-1, delivered where your scalp can actually use them with the Micro-Infusion Pro.</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_usage_instructions": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_1": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>Each device is sterile and single-use only. Do not reuse a device across sessions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_1"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Usage Instructions",
+        "text": "<h2>Usage Instructions</h2><p><strong>Weekly Treatment (device):</strong></p><ol><li>Perform your Micro-Infusion Pro Hair treatment once a week, using a fresh, sterile, single-use device each session.</li><li>On the nights between treatments, apply a few drops of Hair Renewal Serum, massaged into and around the scalp.</li></ol><p>[quote_1]</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_product_claims": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_1": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>These claims describe visible appearance only. They do not describe hair growth, follicle activity, or any change to hair count or structure.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_1"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Product Claims",
+        "text": "<h2>Product Claims</h2><p>Key claims (cosmetic, appearance-based only):</p><ul><li>Helps target the look of thinning, for visibly denser-looking hair</li><li>Supports the appearance of thicker, fuller-looking hair with consistent use</li><li>Single-use, gold-plated needles engineered to work in tandem with the serum to target the appearance of thinning areas</li><li>Sterile, single-use tips ensure a consistent, hygienic experience with every treatment</li><li>Dermatologically tested and suitable for sensitive skin (formula safety and tolerability only)</li></ul><p>[quote_1]</p>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_content_requirements": {
+      "type": "n_guide-content",
+      "blocks": {
+        "quote_1": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p>If you want to talk about the device sanitation or hygiene versus reusable tools, the only approved phrasing is: “Typically more hygienic than reusable derma rollers, since each tip is sterile and single-use.”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "quote_1"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": true,
+        "heading": "Content Requirements",
+        "text": "<h2>Content Requirements</h2><p>Hair is a more heavily regulated category than skin. Hair regrowth is treated as a drug claim in the US, and this space has been actively pursued by the FTC for unsubstantiated regrowth claims. Read the do-not-say list below carefully, it applies to you as the creator, not just to Qure's own marketing.</p><p><strong>Messaging must include:</strong></p><ul><li>This is a weekly at-home treatment, performed with a fresh, sterile, single-use device each session.</li><li>Results build with consistent use over several weeks, never framed as fast or immediate.</li><li>The Hair Renewal Serum is used nightly on non-infusion nights, separate from the weekly device treatment.</li><li>Only ever describe visible appearance, such as \"visibly fuller, denser-looking hair,\" never hair growth, hair count, or follicle activity.</li></ul><p><strong>Never say:</strong></p><ul><li>Any medical condition name: alopecia, pattern baldness, androgenetic alopecia, or \"hair loss\" as something being treated.</li><li>Anything implying a biological or structural change: \"regrows hair,\" \"stimulates follicles,\" \"reactivates dormant follicles,\" \"increases hair density,\" \"boosts circulation,\" \"restores hair growth cycle,\" \"my hair grew back,\" \"my bald spot filled in.\"</li><li>Any speed or immediacy claim: \"instant results,\" \"overnight thickness,\" \"see results after one use,\" \"immediate improvement.\"</li><li>Any in-clinic or professional-treatment comparison, for this product this comparison is off-limits under any framing.</li><li>Any unhedged comparison to derma rollers or other at-home devices, such as \"safer than\" or \"better than\" without \"typically.\"</li><li>The overpromise: \"full head of hair,\" \"cure baldness,\" \"reverse hair loss,\" \"regrow lost hair,\" \"get your hair back.\"</li></ul><p>[quote_1]</p><p>All hair-related content is reviewed before it goes live, this is treated as Qure's own advertising once it's paid or gifted, so accuracy here matters as much as it would coming from us directly.</p><p>Remember to add a personal touch to the messaging, focused on how the ritual feels and looks, not on any biological claim you can't back up.</p><p>Examples:</p><ul><li>“This is my Tuesday night ritual now.”</li><li>“My hair looks visibly fuller after a few weeks of doing this every week.”</li></ul>",
+        "slides_per_view": ""
+      }
+    },
+    "n_guide_content_creative_direction": {
+      "type": "n_guide-content",
+      "blocks": {
+        "image_slider_1": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/mi-hair-brief-1.webp"
+          }
+        },
+        "image_slider_2": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/mi-hair-brief-2.webp"
+          }
+        },
+        "image_slider_3": {
+          "type": "image_slider",
+          "settings": {
+            "image": "shopify://shop_images/mi-hair-brief-3.webp"
+          }
+        },
+        "quote_1": {
+          "type": "quote",
+          "settings": {
+            "style": "blue",
+            "text": "<p><strong>Tag and mention</strong> @qureskincare #QureSkincare #MicroInfusionProHair #QureHairSystem</p><p>Include your affiliate or other links provided by Qure in Instagram Stories and content captions. If the link can't be placed in bio, include it in linktr.ee or similar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_slider_1",
+        "image_slider_2",
+        "image_slider_3",
+        "quote_1"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Creative Direction",
+        "text": "<h2>Creative Direction</h2><p>Recording Guidelines</p><ul><li>Use bright, natural lighting. No filters.</li><li>Show the full routine: prepping a fresh device, performing the weekly treatment, and applying the Hair Renewal Serum on an off night.</li><li>Keep backgrounds clean and uncluttered.</li><li>In cover photos, always show the device or serum in use (unless agreed otherwise).</li><li>Close-ups of the device's sterile packaging or the gold-plated needle head make for a strong, credible visual.</li></ul>",
+        "slides_per_view": "2"
+      }
+    },
+    "n_guide_content_content_examples": {
+      "type": "n_guide-content",
+      "blocks": {
+        "wistia_slider_2": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "fgpztdeimx"
+          }
+        },
+        "wistia_slider_3": {
+          "type": "wistia_slider",
+          "settings": {
+            "wistia_url": "9kwcjxx5h5"
+          }
+        }
+      },
+      "block_order": [
+        "wistia_slider_2",
+        "wistia_slider_3"
+      ],
+      "name": "t:sections.n_guide-content.name",
+      "settings": {
+        "use_own_file": false,
+        "active": false,
+        "must_read": false,
+        "heading": "Content Examples",
+        "text": "<h2>Content Examples</h2>",
+        "slides_per_view": "3.1"
+      }
+    },
+    "n_experts_pick_hair": {
+      "type": "n_experts-pick",
+      "name": "t:sections.n_experts-pick.name",
+      "settings": {
+        "section_id": "",
+        "modifier": "grey",
+        "badge_text": "Dermatologist Reviewed",
+        "text": "<h2>Recommended by Experts</h2><p>\"<em>Fuller-looking hair starts with the scalp.</em> I like that this serum pairs pea sprout extract with peptides and niacinamide, targeting the look of thinning while keeping the scalp hydrated every day.\"</p>",
+        "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
+      }
     }
   },
   "order": [
-    "main"
+    "n_across_image_banner_hair",
+    "n_intro_hair",
+    "n_guide_menu_hair",
+    "n_guide_content_product_information",
+    "n_guide_content_usage_instructions",
+    "n_guide_content_product_claims",
+    "n_guide_content_content_requirements",
+    "n_guide_content_creative_direction",
+    "n_guide_content_content_examples",
+    "n_experts_pick_hair"
   ]
 }

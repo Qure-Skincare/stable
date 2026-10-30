@@ -2,7 +2,7 @@
   Renders an experts pick section with quote, image and animated percent tiles.
 {% enddoc %}
 
-<section class="experts-pick"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+<section class="experts-pick{% if section.settings.modifier != 'none' %} experts-pick--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         {% if section.settings.badge_text != blank %}
             <div class="e-pill-badge">
@@ -56,6 +56,22 @@
             "type": "text",
             "id": "section_id",
             "label": "t:common.section_id"
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "grey",
+                    "label": "t:common.grey"
+                }
+            ]
         },
         {
             "type": "text",
