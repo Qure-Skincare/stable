@@ -34,19 +34,23 @@
 
 
 {%- if block.settings.show_discount != blank and product_discount != blank -%}
+    {% comment %} Intelligems rewrites ig* elements tied to a variant, so price tests reach this block. {% endcomment %}
+    {%- if product_variant_id != blank -%}
+      {%- capture ig_variant_attr %} data-variant-id="{{ product_variant_id }}"{% endcapture -%}
+    {%- endif -%}
     <div {% render 'n-product-special-offer-attrs' %}>
       <div class="e-price">
           <div class="e-price__main">
-              <div class="e-price__current">{{ product_sale_price }}</div>
-              <div class="e-price__old">{{ product_before_price }}</div>
+              <div class="e-price__current{% if ig_variant_attr %} igPrice{% endif %}"{{ ig_variant_attr }}>{{ product_sale_price }}</div>
+              <div class="e-price__old{% if ig_variant_attr %} igComparePrice{% endif %}"{{ ig_variant_attr }}>{{ product_before_price }}</div>
           </div>
       </div>
-      <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ product_discount }}%</div>
+      <div class="e-pill-save">{{ 'product.settings.save' | t }} {% if ig_variant_attr %}<span class="igSavingsPercentage"{{ ig_variant_attr }}>{{ product_discount }}%</span>{% else %}{{ product_discount }}%{% endif %}</div>
   </div>
 
   {% if reserved == false and soldout == false and section_button_label == blank %}
     <script>
-      let buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {{ product_discount }}%';
+      let buy_and_save_button_label = '{{ 'product.settings.buy-and-save-button-label' | t }} {% if ig_variant_attr %}<span class="igSavingsPercentage"{{ ig_variant_attr }}>{{ product_discount }}%</span>{% else %}{{ product_discount }}%{% endif %}';
 
       document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce('n-product-price.js', '{{ 'n-product-price.js' | asset_url }}');
