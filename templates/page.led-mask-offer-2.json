@@ -804,7 +804,7 @@
       "name": "t:sections.n_product-header-bundle.name",
       "settings": {
         "section_id": "buy-form",
-        "product": "q-rejuvalight-pro-facewear",
+        "product": "q-rejuvalight-pro-facewear-3",
         "reverse": true,
         "secondary": true,
         "background": false,
