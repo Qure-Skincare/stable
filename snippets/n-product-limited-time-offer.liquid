@@ -27,6 +27,48 @@
     {{ 'product.settings.limited-offer.n_text_html' | t: sum: block.settings.sum, code: block.settings.code }}
 </div>
 
+{% if block.settings.code != blank %}
+    {% comment %} class="__init" keeps it out of the sapp deferral: it must be bound before the first Buy Now click. {% endcomment %}
+    <script class="__init">
+        // Intelligems can rewrite the visible code, so the code this visitor
+        // sees wins over the block setting. The sticky CTA for the same
+        // variant carries the code too.
+        (function () {
+            if (window.__limitedOfferCodeBound) return;
+            window.__limitedOfferCodeBound = true;
+
+            var CODE_PATTERN = /code\s+([A-Z0-9][A-Z0-9&_-]*)/i;
+
+            function visibleCode() {
+                var text = document.querySelector('.c-limited-offer p:last-child');
+                var match = text && text.textContent.match(CODE_PATTERN);
+                return match ? match[1] : null;
+            }
+
+            document.addEventListener('submit', function (e) {
+                var form = e.target;
+                if (!form.matches || !form.matches('form[action$="/cart/add"]')) return;
+
+                var input = form.querySelector('[data-limited-offer-code]');
+
+                if (!input) {
+                    var source = document.querySelector('.c-buy-block [data-limited-offer-code]');
+                    var id = form.querySelector('input[name="id"]');
+                    var sourceId = source && source.form && source.form.querySelector('input[name="id"]');
+
+                    if (!form.querySelector('#sticky-cta-button') || !id || !sourceId || id.value !== sourceId.value) return;
+
+                    input = source.cloneNode();
+                    form.appendChild(input);
+                }
+
+                var code = visibleCode();
+                if (code) input.value = code;
+            }, true);
+        })();
+    </script>
+{% endif %}
+
 {% if block.settings.days > 0 %}
     <script>
         document.addEventListener("DOMContentLoaded", function () {
