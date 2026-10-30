@@ -16,7 +16,7 @@
     "product_header_V3N3T8": {
       "settings": {
         "heading_level": "h1",
-        "rating_position": "default"
+        "rating_position": "top"
       },
       "blocks": {
         "price_A11": {
