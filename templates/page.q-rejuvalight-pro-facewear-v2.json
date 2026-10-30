@@ -54,8 +54,8 @@
         "limited_offer_A8": {
           "type": "limited-offer",
           "settings": {
-            "sum": "$100",
-            "code": "QURE100",
+            "sum": "$150",
+            "code": "MASK150",
             "days": 4
           }
         },
