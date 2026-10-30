@@ -53,7 +53,6 @@
         },
         "limited_offer_A8": {
           "type": "limited-offer",
-          "disabled": true,
           "settings": {
             "sum": "$100 OFF",
             "code": "MASK100",
