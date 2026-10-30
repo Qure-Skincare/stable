@@ -54,8 +54,8 @@
         "limited_offer_A8": {
           "type": "limited-offer",
           "settings": {
-            "sum": "$100",
-            "code": "QURE100",
+            "sum": "$100 OFF",
+            "code": "MASK100",
             "days": 4
           }
         },
@@ -165,6 +165,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "trustpilot",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and acne.</li><li>Customizable treatment on 5 facial areas for your specific skin concerns.</li><li>Quick 3 minute, wireless daily treatments with convenient hands-free operation.</li></ul>",
         "reserved": false,
