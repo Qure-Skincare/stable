@@ -31,7 +31,7 @@
           "type": "exclusive-offer",
           "name": "Exclusive-offer",
           "settings": {
-            "product": "q-rejuvalight-pro-facewear",
+            "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_50.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
@@ -70,6 +70,7 @@
         "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "reserved": false,
