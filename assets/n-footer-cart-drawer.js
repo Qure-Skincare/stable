@@ -321,6 +321,16 @@ const siteDiscount = () => {
     return typeof footer_cart_drawer_discount !== 'undefined' ? footer_cart_drawer_discount : null;
 };
 
+// cart/update.js { discount } replaces the cart's whole code set, so codes the
+// cart already honours (e.g. an offer code from an earlier add) are re-sent.
+const withAppliedCodes = (cart, codes) => {
+    const applied = ((cart && cart.discount_codes) || [])
+        .filter(entry => entry.applicable)
+        .map(entry => entry.code);
+
+    return [...new Set([...applied, ...codes])];
+};
+
 // Threshold-gift decisions extracted from toogleGift: which gifts must be
 // added or removed given the current cart totals and the gift forms on page.
 const computeGiftOps = (cart) => {
@@ -520,13 +530,13 @@ const addToCart = async (input) => {
 
         // Form-level and site-wide discounts merged into one update.js call;
         // its response (post-discount totals) drives the gift threshold check.
-        const codes = [...new Set([
+        const codes = [
             ...parseDiscountCodes(form_discount),
             ...parseDiscountCodes(siteDiscount())
-        ])];
+        ];
 
         if (codes.length > 0) {
-            const res = await cartPost('cart/update.js', withSections({ discount: codes.join(',') }));
+            const res = await cartPost('cart/update.js', withSections({ discount: withAppliedCodes(cart, codes).join(',') }));
             cart = res;
             sections = res.sections || sections;
             earlyPaint(res.sections);
@@ -565,7 +575,7 @@ const addToCartJson = async (input) => {
 
         let sections = added.sections || null;
         if (codes.length > 0) {
-            const res = await cartPost('cart/update.js', withSections({ discount: codes.join(',') }));
+            const res = await cartPost('cart/update.js', withSections({ discount: withAppliedCodes(cart, codes).join(',') }));
             cart = res;
             sections = res.sections || sections;
             earlyPaint(res.sections);

@@ -47,7 +47,8 @@
    const footer_cart_drawer_template = '{{ template }}';
    
    {% if global_black_friday_discount != blank %}
-   const footer_cart_drawer_discount = '{{ global_black_friday_discount }}';
+   // A window property, not a const: offer scripts append their codes to it.
+   window.footer_cart_drawer_discount = '{{ global_black_friday_discount }}';
    {% endif %}
 
    document.addEventListener("DOMContentLoaded", function () {
