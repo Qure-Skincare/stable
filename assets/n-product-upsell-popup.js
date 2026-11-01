@@ -119,7 +119,11 @@ function upsellPopupHandleContinue(e) {
     if (dialog && typeof dialog.close === 'function') {
         dialog.close();
     }
-    document.getElementById('cartCanvasBtn')?.click();
+    if (window.CartDrawer?.open) {
+        window.CartDrawer.open();
+    } else {
+        document.getElementById('cartCanvasBtn')?.click();
+    }
 }
 
 (function initUpsellPopup() {
