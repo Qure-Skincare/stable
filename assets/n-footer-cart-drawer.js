@@ -218,13 +218,19 @@ const bindForms = () => {
     });
 }
 
+// Opens the drawer dialog the way the header's cart icon does (header.js), but
+// directly: a synthetic click on #cartCanvasBtn re-ran every third-party click
+// listener inside the add-to-cart tap and cost ~150 ms of INP on mid-range
+// phones. Listeners can cancel `cart.beforeOpen` to keep the drawer closed.
 const showCart = () => {
-    if(footer_cart_drawer_template != 'cart') {
-        const cartDrawer = document.querySelector('.offcanvas-end');
-        if (cartDrawer && !cartDrawer.classList.contains('show')) {
-            document.getElementById('cartCanvasBtn')?.click();
-        }
-    }
+    if (footer_cart_drawer_template == 'cart') return;
+
+    const cartDrawer = document.getElementById('cartCanvas');
+    if (!cartDrawer || cartDrawer.open) return;
+    if (!document.dispatchEvent(new CustomEvent('cart.beforeOpen', { cancelable: true }))) return;
+
+    document.body.style.top = `-${window.scrollY}px`;
+    cartDrawer.showModal();
 };
 
 // `adding` shows the skeleton row for an incoming item (add flows only);
@@ -901,6 +907,7 @@ const updateCartMany = (updates) => {
 };
 
 window.CartDrawer = {
+    open: showCart,
     applyDiscounts,
     toogleGift,
     addProductGift,
