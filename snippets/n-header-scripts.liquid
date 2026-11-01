@@ -127,27 +127,8 @@
     };
 </script>
 
-{% comment %}
-  Turns off Meta's automatic events (autoConfig) for both Converge-managed pixels: their
-  document click listener scanned the page on every tap and cost ~100-200 ms of INP.
-  Converge wraps an existing window.fbq instead of creating its own, so these calls queue
-  ahead of its fbq('init'). The stub resolves window.fbq at call time, as Converge's own
-  does, so calls keep reaching fbevents.js once it replaces the queue with callMethod.
-{% endcomment %}
-<script>
-    window.fbq || (function () {
-        var fbq = window.fbq = window._fbq = function () {
-            window.fbq.callMethod ? window.fbq.callMethod.apply(window.fbq, arguments) : window.fbq.queue.push(arguments);
-        };
-        fbq.push = fbq;
-        fbq.loaded = true;
-        fbq.version = '2.0';
-        fbq.disablePushState = true;
-        fbq.queue = [];
-        fbq('set', 'autoConfig', false, '1108799966942521');
-        fbq('set', 'autoConfig', false, '875056633226981');
-    })();
-</script>
+{% comment %} Must stay before the Converge script; remove to restore Meta's default click handling. {% endcomment %}
+{% render 'n-meta-inp-guard' %}
 
 <script src="https://static.runconverge.com/pixels/wZfB3h.js" async></script>
 
