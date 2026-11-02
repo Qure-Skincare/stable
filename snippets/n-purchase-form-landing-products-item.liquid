@@ -12,6 +12,7 @@
     {% comment %} A section-level `gift-included` block adds its product to the cart with every item, unless the item sets its own gift. {% endcomment %}
     {% assign section_gift_block = section.blocks | where: 'type', 'gift-included' | first %}
     {% assign section_gift = section_gift_block.settings.product.handle %}
+    {% assign section_gift_plan = section_gift_block.settings.selling_plan | default: 0 %}
 
     {%- for __id in array -%}
         {% assign block = section.blocks | where: "id", __id | first %}
@@ -81,8 +82,15 @@
                             data-preselected="false"
                             {% endif %}
                             {% assign item_gift = block.settings.gift | default: section_gift %}
+                            {% assign item_gift_plan = block.settings.gift_selling_plan | default: 0 %}
+                            {% if block.settings.gift == blank %}
+                                {% assign item_gift_plan = section_gift_plan %}
+                            {% endif %}
                             {% if subscription_is_on == true and item_gift != blank %}
                             data-gift="{{ all_products[item_gift].variants.first.id }}"
+                            {% if item_gift_plan > 0 %}
+                            data-gift-selling-plan="{{ item_gift_plan }}"
+                            {% endif %}
                             {% endif %}
                             {% if subscription_is_on == true and block.settings.discount_code != blank %}
                             data-discount-code="{{ block.settings.discount_code }}"

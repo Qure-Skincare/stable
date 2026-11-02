@@ -137,6 +137,7 @@ function __landing__handlerProductVariantSelector(e) {
     const product_selling_plan = this.getAttribute("data-product-selling-plan");
     const variant_title = this.getAttribute("data-variant-title");
     const gift = this.getAttribute("data-gift");
+    const gift_selling_plan = this.getAttribute("data-gift-selling-plan");
     const discount_code = this.getAttribute("data-discount-code");
 
     if (this.matches('.supply-cards-labels li.purchase_form_landing_product_variant_selector')) {
@@ -152,7 +153,7 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__updateStickyButton(variant_title, this);
     __landing__BackInStock(soldout);
     __landing__SubscriptionForm(this,product_selling_plan);
-    __landing__applyDiscount(gift, discount_code);
+    __landing__applyDiscount(gift, discount_code, gift_selling_plan);
 
     // The subscribe label is set by __landing__updateSellingPlan only when the
     // "Subscribe / One-Time" selector exists on the page. In every other case
@@ -175,7 +176,7 @@ function __landing__handlerProductVariantSelector(e) {
 
 }
 
-function __landing__applyDiscount(gift, discount_code) {
+function __landing__applyDiscount(gift, discount_code, gift_selling_plan) {
     const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
     if (!form) return;
 
@@ -186,6 +187,16 @@ function __landing__applyDiscount(gift, discount_code) {
     else
     {
         __landing__removeHiddenInput(form, 'properties[_gift]');
+    }
+
+    // The cart drawer adds the gift with this selling plan (e.g. "first bottle free").
+    if(gift && gift_selling_plan)
+    {
+        __landing__setHiddenInput(form, 'properties[_gift_selling_plan]', gift_selling_plan);
+    }
+    else
+    {
+        __landing__removeHiddenInput(form, 'properties[_gift_selling_plan]');
     }
 
     if(discount_code)
