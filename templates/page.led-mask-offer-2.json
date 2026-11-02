@@ -59,6 +59,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "hide_saveup_offer": true,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,

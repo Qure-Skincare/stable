@@ -29,7 +29,9 @@
             {%- endif -%}
 
             {% render 'n-product-page-buy-button', product_price: null, product_variant_id: product_variant_id, product_price_divided: product_price_divided, section: section, product_available: product_available %}
-            {% render 'n-product-saveup-offer' %}
+            {% unless section.settings.hide_saveup_offer %}
+                {% render 'n-product-saveup-offer' %}
+            {% endunless %}
         </div>
     </div>
 </section>
@@ -46,6 +48,12 @@
             "type": "checkbox",
             "id": "show_discount",
             "label": "t:common.show_discount",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_saveup_offer",
+            "label": "t:common.hide_saveup_offer",
             "default": false
         }
     ],
