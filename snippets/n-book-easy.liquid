@@ -1,15 +1,92 @@
-<script>
-    document.querySelectorAll('a[href="#book_a_call"]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const btn = document.querySelector('.bookeasy-btn[data-product-id="htGfwdi1vmeEiPRv6XLQuo"]');
-            if (btn) {
-              btn.click();
-            }
+{% comment %}
+  The BookEasy widget is held by sapp (manual trigger in __sapp-config-frontend) and loads only
+  when a "#book_a_call" link is clicked: the click starts the widget tasks, waits for the widget
+  to render and wire its hidden service button, then clicks that button to open the booking form.
+  The script has class "__init" so sapp runs it right away and the link works before the queues.
+{% endcomment %}
+<style>
+  a[href="#book_a_call"][aria-busy="true"] {
+    cursor: progress;
+    opacity: 0.6;
+  }
+</style>
+
+<script class="__init">
+  (() => {
+    const SERVICE_BUTTON = '.bookeasy-btn[data-product-id="htGfwdi1vmeEiPRv6XLQuo"][bookeasy-listener="true"]';
+    const READY_TIMEOUT = 15000;
+    const RECAPTCHA_TIMEOUT = 5000;
+    let pending = false;
+
+    const loadBookEasy = () => {
+      const tasks = (window.__sapp && window.__sapp.queues && window.__sapp.queues.event) || [];
+      tasks.forEach((task) => {
+        const src = (task.node && task.node.getAttribute('data-src')) || '';
+        if (!task.done && src.includes('bookeasy-widget')) window.__sapp.run.task(task);
+      });
+    };
+
+    const whenButtonReady = (callback) => {
+      const ready = document.querySelector(SERVICE_BUTTON);
+      if (ready) {
+        callback(ready);
+        return;
+      }
+      const observer = new MutationObserver(() => {
+        const button = document.querySelector(SERVICE_BUTTON);
+        if (!button) return;
+        observer.disconnect();
+        clearTimeout(timer);
+        callback(button);
+      });
+      const timer = setTimeout(() => {
+        observer.disconnect();
+        callback(null);
+      }, READY_TIMEOUT);
+      observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['bookeasy-listener'] });
+    };
+
+    // The booking form calls reCAPTCHA as soon as it opens and stays on its spinner if
+    // reCAPTCHA is not ready yet, so wait for it (or give up and open anyway if blocked).
+    const whenRecaptchaReady = (callback) => {
+      const started = Date.now();
+      const check = () => {
+        const enterprise = window.grecaptcha && window.grecaptcha.enterprise;
+        if (enterprise && enterprise.ready) {
+          enterprise.ready(callback);
+        } else if (Date.now() - started > RECAPTCHA_TIMEOUT) {
+          callback();
+        } else {
+          setTimeout(check, 50);
+        }
+      };
+      check();
+    };
+
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href="#book_a_call"]');
+      if (!link) return;
+      event.preventDefault();
+      if (pending) return;
+      pending = true;
+      link.setAttribute('aria-busy', 'true');
+      loadBookEasy();
+      whenButtonReady((button) => {
+        if (!button) {
+          pending = false;
+          link.removeAttribute('aria-busy');
+          return;
+        }
+        whenRecaptchaReady(() => {
+          pending = false;
+          link.removeAttribute('aria-busy');
+          button.click();
         });
+      });
     });
+  })();
 </script>
 
 <div style="display: none;">
-    <div class="bookeasy-appBlock-button" id="htGfwdi1vmeEiPRv6XLQuo" serviceId="htGfwdi1vmeEiPRv6XLQuo"></div>
+  <div class="bookeasy-appBlock-button" id="htGfwdi1vmeEiPRv6XLQuo" serviceId="htGfwdi1vmeEiPRv6XLQuo"></div>
 </div>
