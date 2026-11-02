@@ -883,6 +883,15 @@
             "section_id": ""
           }
         },
+        "faq_item_MPYeLY": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What does a return cost me?",
+            "text": "<p>You pay return shipping and carry the risk of loss in transit. Shipping, handling, wrapping fees and taxes (including customs and VAT) are not refunded. A restocking fee of $10 plus return shipping fee applies.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_Hrgtcf": {
           "type": "faq_item",
           "settings": {
@@ -923,6 +932,7 @@
       "block_order": [
         "faq_item_eBzKTC",
         "faq_item_daP4XW",
+        "faq_item_MPYeLY",
         "faq_item_Hrgtcf",
         "faq_item_3MDwaa",
         "faq_item_MBNWTW",
