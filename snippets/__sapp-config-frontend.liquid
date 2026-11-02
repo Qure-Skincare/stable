@@ -110,6 +110,14 @@
       "queue": "event",
       "trigger": ["manual"],
       "fallbackTimeout": 10000
+    },
+    {%- comment -%} BookEasy only serves the "Book a call" consultation (a service with no products), so
+      its widget, and the reCAPTCHA it pulls in, load only when that link is clicked: n-book-easy runs
+      these tasks. The app embed's inline cart validation does not need the widget and stays as is. {%- endcomment -%}
+    {
+      "match": { "src": "bookeasy-widget" },
+      "queue": "event",
+      "trigger": "manual"
     }
   ],
   "exceptions": {
