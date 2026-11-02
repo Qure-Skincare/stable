@@ -874,6 +874,15 @@
             "section_id": ""
           }
         },
+        "faq_item_daP4XW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the 30-day money-back guarantee?",
+            "text": "<p>If you change your mind, you can return your purchase within 30 days of receiving your order for a refund. We do not cover claims about results in the first 30 days. We recommend using the product for at least 3 months, as stated on the product page. Shipping delays are not covered by the guarantee.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_Hrgtcf": {
           "type": "faq_item",
           "settings": {
@@ -913,6 +922,7 @@
       },
       "block_order": [
         "faq_item_eBzKTC",
+        "faq_item_daP4XW",
         "faq_item_Hrgtcf",
         "faq_item_3MDwaa",
         "faq_item_MBNWTW",
