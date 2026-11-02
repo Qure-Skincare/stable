@@ -7,6 +7,11 @@
         {% render 'n-purchase-form-landing-klaviyo', section: section %}
         {% include 'n-purchase-form-landing-subscription' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'n-purchase-form-landing-optional-subscription', section: section %}
+        {% for block in section.blocks %}
+            {% if block.type == 'gift-included' %}
+                {% render 'n-product-gift-included-box', block: block %}
+            {% endif %}
+        {% endfor %}
         {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
         {% if section.settings.delivery_switcher_position == 'footer' %}
             {% include 'n-purchase-form-landing-delivery-switcher' %}
@@ -302,6 +307,56 @@
                         "id": "show_checkbox",
                         "label": "t:common.show-checkbox",
                         "default": false
+                    }
+                ]
+            },
+            {
+                "type": "gift-included",
+                "name": "t:common.gift-included",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "t:common.product"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "badge",
+                        "label": "t:common.badge-text",
+                        "default": "Gift included"
+                    },
+                    {
+                        "type": "text",
+                        "id": "name",
+                        "label": "t:common.header"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "label",
+                        "label": "t:common.note",
+                        "default": "First bottle Free"
+                    },
+                    {
+                        "type": "text",
+                        "id": "price_text",
+                        "label": "t:common.price"
+                    },
+                    {
+                        "type": "text",
+                        "id": "free_label",
+                        "label": "t:common.free-label",
+                        "default": "Free"
                     }
                 ]
             },

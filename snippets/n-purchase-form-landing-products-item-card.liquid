@@ -11,6 +11,9 @@
     {% assign product_prefix = 'purchase-form-products-item-' %}
     {% capture preorder-box-items %}{% endcapture %}
     {% capture product-included-dropdown %}{% endcapture %}
+    {% comment %} A section-level `gift-included` block adds its product to the cart with every item, unless the item sets its own gift. {% endcomment %}
+    {% assign section_gift_block = section.blocks | where: 'type', 'gift-included' | first %}
+    {% assign section_gift = section_gift_block.settings.product.handle %}
 
     {%- for __id in array -%}
         {% assign block = section.blocks | where: "id", __id | first %}
@@ -78,8 +81,9 @@
                                     {% else %}
                                     data-preselected="false"
                                     {% endif %}
-                                    {% if subscription_is_on == true and block.settings.gift != blank %}
-                                    data-gift="{{ all_products[block.settings.gift].variants.first.id }}"
+                                    {% assign item_gift = block.settings.gift | default: section_gift %}
+                                    {% if subscription_is_on == true and item_gift != blank %}
+                                    data-gift="{{ all_products[item_gift].variants.first.id }}"
                                     {% endif %}
                                     {% if subscription_is_on == true and block.settings.discount_code != blank %}
                                     data-discount-code="{{ block.settings.discount_code }}"

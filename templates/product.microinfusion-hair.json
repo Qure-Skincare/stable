@@ -34,19 +34,6 @@
             "section_id": "purchase-form-landing"
           }
         },
-        "gift_included": {
-          "type": "gift-included",
-          "settings": {
-            "product": "hair-renewal-serum",
-            "image": "shopify://shop_images/scalp-hydration-small.png",
-            "badge": "Gift included",
-            "name": "Hair Renewal Serum",
-            "text": "Helps provide lasting scalp hydration",
-            "label": "First bottle Free",
-            "price_text": "",
-            "free_label": "Free"
-          }
-        },
         "accordion": {
           "type": "accordion",
           "settings": {}
@@ -110,7 +97,6 @@
       "block_order": [
         "description_collapsed",
         "section_purchase_form",
-        "gift_included",
         "accordion",
         "experts",
         "jumpto_results",
@@ -263,6 +249,19 @@
             "included_text": ""
           }
         },
+        "gift_included": {
+          "type": "gift-included",
+          "settings": {
+            "product": "hair-renewal-serum",
+            "image": "shopify://shop_images/scalp-hydration-small.png",
+            "badge": "Gift included",
+            "name": "Hair Renewal Serum",
+            "text": "Helps provide lasting scalp hydration",
+            "label": "First bottle Free",
+            "price_text": "",
+            "free_label": "Free"
+          }
+        },
         "product_subscription_1m": {
           "type": "product",
           "settings": {
@@ -304,7 +303,8 @@
         "type_subscription",
         "product_type_subscription",
         "product_subscription_3m",
-        "product_subscription_1m"
+        "product_subscription_1m",
+        "gift_included"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
@@ -581,6 +581,7 @@
         "section_id": "reviews",
         "use_own_file": false,
         "awards": false,
+        "slider": true,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }

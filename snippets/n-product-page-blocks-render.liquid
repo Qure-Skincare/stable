@@ -63,8 +63,6 @@
             {% render 'n-product-optional-subscription', section: section, block: block, product: product %}
         {% when 'free-gift-offer' %}
             {% render 'n-product-free-gift-offer', section: section, block: block %}
-        {% when 'gift-included' %}
-            {% render 'n-product-gift-included-box', block: block %}
         {% when 'button' %}
             {% assign has_optional_subscription = false %}
             {% assign optional_subscription_layout = blank %}
