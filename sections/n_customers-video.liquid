@@ -57,7 +57,7 @@
                                         </figure>
                                     {% else %}
                                         <div class="c-wistia c-wistia--custom">
-                                            <wistia-player media-id="{{ block.settings.video_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                            {% capture wistia_thumbnail %}
                                                 <div class="c-wistia__custom">
                                                     <figure>
                                                         {% if block.settings.image != blank %}
@@ -76,7 +76,8 @@
                                                         {% endif %}
                                                     </figure>
                                                 </div>
-                                            </wistia-player>
+                                            {% endcapture %}
+                                            {% render 'n-wistia-facade', media_id: block.settings.video_url, content: wistia_thumbnail %}
                                         </div>
                                     {% endif %}
                                 </div>

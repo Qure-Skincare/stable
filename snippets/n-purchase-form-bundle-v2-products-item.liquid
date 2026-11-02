@@ -77,9 +77,9 @@
                             <h6>{{ product_title }}</h6>
                             <div class="e-price e-price--highlight">
                                 <div class="e-price__main">
-                                    <div class="e-price__current igPrice">{{ product_sale_price }}</div>
+                                    <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
                                     {% if product_before_price != blank %}
-                                        <div class="e-price__old igComparePrice">{{ product_before_price }}</div>
+                                        <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
                                     {% endif %}
                                 </div>
                             </div>
@@ -107,9 +107,9 @@
                                     <h6>{{ product_title }}</h6>
                                     <div class="e-price e-price--highlight">
                                         <div class="e-price__main">
-                                            <div class="e-price__current igPrice">{{ product_sale_price }}</div>
+                                            <div class="e-price__current igPrice" data-variant-id="{{ product_variant_id }}">{{ product_sale_price }}</div>
                                             {% if product_before_price != blank %}
-                                                <div class="e-price__old igComparePrice">{{ product_before_price }}</div>
+                                                <div class="e-price__old igComparePrice" data-variant-id="{{ product_variant_id }}">{{ product_before_price }}</div>
                                             {% endif %}
                                         </div>
                                     </div>

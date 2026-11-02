@@ -31,7 +31,7 @@
           "type": "exclusive-offer",
           "name": "Exclusive-offer",
           "settings": {
-            "product": "q-rejuvalight-pro-facewear",
+            "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_50.png",
             "product2": "neck-decolletage-led",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
@@ -70,6 +70,7 @@
         "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>FDA-cleared device designed to treat wrinkles and mild-to-moderate inflammatory acne.</li><li>Quick & convenient 3-minute wireless treatments</li><li>Customize, track & schedule treatments with app</li></ul>",
         "reserved": false,
@@ -774,7 +775,7 @@
         "bundle_purchase_QgKWfH": {
           "type": "bundle-purchase",
           "settings": {
-            "product": "q-rejuvalight-pro-facewear",
+            "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_50.png",
             "item1_text": "FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.",
             "product2": "neck-decolletage-led",
@@ -803,14 +804,14 @@
       "name": "t:sections.n_product-header-bundle.name",
       "settings": {
         "section_id": "buy-form",
-        "product": "q-rejuvalight-pro-facewear",
+        "product": "q-rejuvalight-pro-facewear-3",
         "reverse": true,
         "secondary": true,
         "background": false,
         "badge_text": "Limited Time Offer",
         "heading": "Q-Rejuvalight Pro LED Mask",
         "heading_level": "h2",
-        "description": "<ul><li>Lifetime Warranty</li><li>FDA Cleared</li></ul><p>Elevate your LED routine with full face and neck coverage for consistent all-over results.</p>"
+        "description": "<ul><li>1-Year Warranty</li><li>FDA Cleared</li></ul><p>Elevate your LED routine with full face and neck coverage for consistent all-over results.</p>"
       }
     },
     "n_features_marquee_4YPxHy": {
@@ -820,7 +821,7 @@
           "type": "image_with_text",
           "settings": {
             "icon": "shipping-order",
-            "text": "Free US Shipping On Orders Over $100"
+            "text": "Free US Shipping On Orders Over $149"
           }
         },
         "image_with_text_BUjmAT": {

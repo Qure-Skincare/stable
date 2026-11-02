@@ -14,8 +14,8 @@
 <div {% render 'n-product-special-offer-attrs' %}>
     <div class="e-price">
         <div class="e-price__main">
-            <div class="e-price__current">{{ product_black_friday_price }}</div>
-            <div class="e-price__old">{{ product_sale_price }}</div>
+            <div class="e-price__current igPrice">{{ product_black_friday_price }}</div>
+            <div class="e-price__old igComparePrice">{{ product_sale_price }}</div>
         </div>
     </div>
     <div class="e-pill-save">{{ 'product.settings.save' | t }} {{ black_friday_discount }}%</div>

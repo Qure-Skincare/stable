@@ -9,7 +9,7 @@
                     {% if block.type == 'slider' %}
                         <div class="swiper-slide">
                             <div class="c-wistia c-wistia--custom">
-                                <wistia-player media-id="{{ block.settings.wistia_url }}" wistia-popover="true" popover-content="link" end-video-behavior="loop" controls-visible-on-load="false" play-button="false">
+                                {% capture wistia_thumbnail %}
                                     <div class="c-wistia__custom">
                                         <picture>
                                             {% if block.settings.image != blank %}
@@ -21,7 +21,8 @@
                                             <div><strong>{{ 'sections.n_expert-reviews.watch' | t }}</strong> {{ block.settings.button_label }}</div>
                                         </div>
                                     </div>
-                                </wistia-player>
+                                {% endcapture %}
+                                {% render 'n-wistia-facade', media_id: block.settings.wistia_url, content: wistia_thumbnail %}
                             </div>
                         </div>
                     {% endif %}

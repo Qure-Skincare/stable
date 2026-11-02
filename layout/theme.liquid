@@ -119,6 +119,8 @@
     <script src="{{ 'n-swiper.js' | asset_url }}" defer="defer"></script>
     <script src="https://fast.wistia.com/player.js" defer="defer"></script>
     <script src="https://qureskincaredns-stable.com/assets/js/wistia.js" defer="defer"></script>
+    {% comment %} class="__init" keeps it out of the sapp deferral: facades must upgrade before the first tap. {% endcomment %}
+    <script class="__init" src="{{ 'n-wistia-facade.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
 {%- endcapture -%}

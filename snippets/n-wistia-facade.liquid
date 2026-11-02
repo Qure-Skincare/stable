@@ -1,0 +1,78 @@
+{% doc %}
+  Renders a Wistia popover video as a plain thumbnail. n-wistia-facade.js turns it
+  into the real <wistia-player> only when it nears the viewport, so pages with many
+  videos don't build every player on load.
+
+  Without content the player draws its own thumbnail (the inert player under a
+  .c-wistia__play overlay); the facade shows Wistia's tiny swatch of the same
+  frame meanwhile, sized to the video.
+
+  @param {string} media_id - Wistia media id.
+  @param {string} [content] - Thumbnail markup (the .c-wistia__custom element).
+  @param {boolean} [autoplay] - Passes autoplay="true" to the player.
+
+  @example
+  {% render 'n-wistia-facade', media_id: block.settings.video_url, content: wistia_thumbnail %}
+  {% render 'n-wistia-facade', media_id: block.settings.video_url %}
+{% enddoc %}
+
+{%- if content != blank -%}
+  <div class="c-wistia__facade" data-wistia-facade="{{ media_id | escape }}"{% if autoplay %} data-wistia-autoplay{% endif %}>
+    <div class="c-wistia__facade-content">{{ content }}</div>
+  </div>
+{%- else -%}
+  <div class="c-wistia__facade c-wistia__facade--swatch" data-wistia-facade="{{ media_id | escape }}" data-wistia-swatch{% if autoplay %} data-wistia-autoplay{% endif %}>
+    <div class="c-wistia__facade-content">
+      <img src="https://fast.wistia.com/embed/medias/{{ media_id | url_encode }}/swatch" alt="" loading="lazy" />
+    </div>
+  </div>
+{%- endif -%}
+
+{% comment %}
+  Mirrors the player so the swap doesn't move anything: its host styles (flex,
+  relative), the .wistia_click_to_play wrapper it puts around the content, and
+  the rules general.css and template CSS apply to both.
+{% endcomment %}
+{% stylesheet %}
+  .c-wistia__facade {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .c-wistia__facade-content {
+    position: relative;
+  }
+
+  .our-story .c-wistia__facade-content {
+    width: 100%;
+  }
+
+  .c-wistia .c-wistia__facade {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .c-trusted-video-card .c-wistia .c-wistia__facade {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .expert-reviews .c-wistia .c-wistia__facade {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .c-wistia__facade--swatch .c-wistia__facade-content {
+    width: 100%;
+    aspect-ratio: var(--wistia-aspect, 9 / 16);
+  }
+
+  .c-wistia__facade--swatch img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+{% endstylesheet %}

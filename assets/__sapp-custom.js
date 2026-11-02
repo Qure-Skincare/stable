@@ -184,8 +184,13 @@ window.__sapp.handlers = window.__sapp.handlers || {};
 
   function upgraded() { return !!(w.customElements && customElements.get('wistia-player')); }
 
+  /* n-wistia-facade.js creates popover players late, after setup() has run. */
+  w.__sappWistiaLoad = kickWistia;
+
   function setup() {
-    var links = d.querySelectorAll(LINK_SEL);
+    /* Facades (n-wistia-facade) become popover players near the viewport; player.js
+       itself is cheap, so preload it for them too. */
+    var links = d.querySelectorAll(LINK_SEL + ', [data-wistia-facade]');
     if (!links.length) return;   /* no Watch buttons on this page — stay fully deferred */
 
     /* (1) Proactive: load Wistia once the page is idle so the element is upgraded

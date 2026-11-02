@@ -39,7 +39,7 @@
             {%- elsif block.settings.bundle_compare != blank -%}
                 {% render 'n-product-price-bundle', product_sale_price: product_sale_price, product_price: product_price_original, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
             {%- else -%}
-                {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, section: section, block: block %}
+                {% render 'n-product-price', product_sale_price: product_sale_price, product_before_price: product_before_price, product_discount: product_discount, product_variant_id: product_variant_id, section: section, block: block %}
             {%- endif -%}
         {% when 'bundle-price' %}
             {% include 'n-product-bundle-price', section: section %}
