@@ -39,7 +39,9 @@
                 {% render 'n-product-page-next-ships', section: section, block: nextships_block %}
             {%- endif -%}
 
-            {% render 'n-product-saveup-offer' %}
+            {% unless section.settings.hide_saveup_offer %}
+                {% render 'n-product-saveup-offer' %}
+            {% endunless %}
         </div>
         <div class="hero-product__extra">
             {% render 'n-product-page-collapsed', product: product, page: page %}
@@ -59,6 +61,12 @@
             "type": "checkbox",
             "id": "show_discount",
             "label": "t:common.show_discount",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_saveup_offer",
+            "label": "t:common.hide_saveup_offer",
             "default": false
         },
         {
