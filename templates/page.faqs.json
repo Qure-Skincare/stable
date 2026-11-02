@@ -919,6 +919,15 @@
             "section_id": ""
           }
         },
+        "faq_item_bN7Ld7": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "My product is faulty. What do I do?",
+            "text": "<p><a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Contact us</a> with your order number, a description of the problem and photos or a video. We will guide you through troubleshooting first. If the issue is not fixed, we will help you make a warranty claim.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_MBNWTW": {
           "type": "faq_item",
           "settings": {
@@ -945,6 +954,7 @@
         "faq_item_xfbJQV",
         "faq_item_Hrgtcf",
         "faq_item_3MDwaa",
+        "faq_item_bN7Ld7",
         "faq_item_MBNWTW",
         "faq_item_Q7CACi"
       ],
