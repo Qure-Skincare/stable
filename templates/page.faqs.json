@@ -892,6 +892,15 @@
             "section_id": ""
           }
         },
+        "faq_item_xfbJQV": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Will I get a refund or store credit?",
+            "text": "<p>Full-price products are refunded to your original payment method. Orders paid with Klarna, Sezzle or Afterpay are eligible for store credit only.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_Hrgtcf": {
           "type": "faq_item",
           "settings": {
@@ -933,6 +942,7 @@
         "faq_item_eBzKTC",
         "faq_item_daP4XW",
         "faq_item_MPYeLY",
+        "faq_item_xfbJQV",
         "faq_item_Hrgtcf",
         "faq_item_3MDwaa",
         "faq_item_MBNWTW",
