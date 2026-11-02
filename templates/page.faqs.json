@@ -874,6 +874,15 @@
             "section_id": ""
           }
         },
+        "faq_item_HPi7CT": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I exchange an item?",
+            "text": "<p>Yes, please contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> and we’ll help you with your exchange. Include your order number and the item you’d like to exchange.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_daP4XW": {
           "type": "faq_item",
           "settings": {
@@ -949,6 +958,7 @@
       },
       "block_order": [
         "faq_item_eBzKTC",
+        "faq_item_HPi7CT",
         "faq_item_daP4XW",
         "faq_item_MPYeLY",
         "faq_item_xfbJQV",
