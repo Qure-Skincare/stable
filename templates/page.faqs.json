@@ -869,8 +869,8 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "How do I place a return or exchange?",
-            "text": "<p>Please submit your return via our <a href=\"https://qureskincare.return.richpanel.com/create\" title=\"https://qureskincare.return.richpanel.com/create\">portal here</a> for products you'd like to exchange or return, and we'll take care of the rest. Returns must be approved before you send anything back. You will receive a Return Authorization Number (RMA) that must be included with the parcel, or the return will be rejected. Return all accessories, original packaging, user manuals and inserts.</p>",
+            "heading": "How do I place a return?",
+            "text": "<p>Please submit your return via our <a href=\"https://qureskincare.return.richpanel.com/create\" title=\"https://qureskincare.return.richpanel.com/create\">portal here</a> for products you'd like to return, and we'll take care of the rest. Returns must be approved before you send anything back. You will receive a Return Authorization Number (RMA) that must be included with the parcel, or the return will be rejected. Return all accessories, original packaging, user manuals and inserts.</p>",
             "section_id": ""
           }
         },
