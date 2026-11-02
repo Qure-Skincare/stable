@@ -23,6 +23,14 @@
                     </div>
                 </wistia-player>
             </div>
+        {% elsif section.settings.image != blank or section.settings.image_mobile != blank %}
+            <picture>
+                {% if section.settings.image != blank %}
+                    <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}" />
+                {% endif %}
+                {% assign set_up_image = section.settings.image_mobile | default: section.settings.image %}
+                <img loading="lazy" src="{{ set_up_image | image_url }}" alt="{{ set_up_image.alt | escape }}" />
+            </picture>
         {% endif %}
         {{ section.settings.text }}
         <ol>

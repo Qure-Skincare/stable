@@ -70,6 +70,8 @@
         "bundle-item2-text": "Item 2 text",
         "optional-subscription": "Optional subscription",
         "free-gift-offer": "Free gift offer",
+        "gift-included": "Gift included box",
+        "free-label": "Free label",
         "background": "Background",
         "subscription-note": "Subscription note",
         "subscription-note-mode": "Subscription note mode",
@@ -1552,7 +1554,12 @@
             "name": "Accordion tiles square"
         },
         "n_features-overview": {
-            "name": "Features overview"
+            "name": "Features overview",
+            "settings": {
+                "modifier-options": {
+                    "mi-hair": "Micro-Infusion hair"
+                }
+            }
         },
         "n_ingredients-video": {
             "name": "Ingredients video"

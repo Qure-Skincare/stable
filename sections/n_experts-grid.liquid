@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/experts-grid/experts-grid.css" />
 {% endif %}
 
-<section class="experts-grid{% if section.settings.awards %} experts-grid--awards{% endif %}">
+<section class="experts-grid{% if section.settings.awards %} experts-grid--awards{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article>
             {% if section.settings.heading != blank %}
@@ -67,6 +67,11 @@
 {
     "name": "t:sections.n_experts-grid.name",
     "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
         {
             "type": "checkbox",
             "id": "use_own_file",
