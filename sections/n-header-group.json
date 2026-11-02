@@ -13,7 +13,6 @@
   "sections": {
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
-      "disabled": true,
       "settings": {
         "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, black-friday26-early-access"
       }
@@ -74,6 +73,7 @@
         "slider_1",
         "slider_2"
       ],
+      "disabled": true,
       "settings": {
         "slider": true,
         "countdown": false,
