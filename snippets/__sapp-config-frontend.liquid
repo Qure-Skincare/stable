@@ -103,13 +103,12 @@
       "trigger": ["scroll", "touchstart"]
     },
     {%- comment -%} Airwallex fraud protection draws nothing on the storefront but is one of the
-      heaviest scripts. It is held ~10 s, off the timed queues, so the replayed DOMContentLoaded
-      does not wait for it; it does not depend on load events. {%- endcomment -%}
+      heaviest scripts; it only fingerprints the device for orders (Klarna/Afterpay go through
+      Airwallex). n-airwallex-on-cart runs it when the slide cart opens or on the /cart page. {%- endcomment -%}
     {
       "match": { "src": "airwallex-fraud-protection" },
       "queue": "event",
-      "trigger": ["manual"],
-      "fallbackTimeout": 10000
+      "trigger": ["manual"]
     },
     {%- comment -%} BookEasy only serves the "Book a call" consultation (a service with no products), so
       its widget, and the reCAPTCHA it pulls in, load only when that link is clicked: n-book-easy runs
