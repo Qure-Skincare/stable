@@ -22,7 +22,6 @@
       "block_order": [
         "stars_image_Yt3mQz"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -69,6 +68,7 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
