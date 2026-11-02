@@ -915,7 +915,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What should I do if I receive the wrong product?",
-            "text": "<p>If you received a product different from the one that you ordered, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal </a>and we'll be sure to make this right!</p>",
+            "text": "<p>If you received a product different from the one that you ordered, please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number and a photo of what you received and we'll be sure to make this right!</p>",
             "section_id": ""
           }
         },
