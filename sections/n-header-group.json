@@ -23,6 +23,7 @@
       "blocks": {
         "slider_XC6Aee": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "countdown": false,
             "text": "<p><strong>Halloween Offer:</strong> Get a Free Neck & Décolletage System</p>",
