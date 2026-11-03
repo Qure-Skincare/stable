@@ -13,9 +13,8 @@
   "sections": {
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
-      "disabled": true,
       "settings": {
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, black-friday26-early-access"
+        "exception": "qure-microinfusion-offer-listicle, black-friday26-early-access"
       }
     },
     "announcement-bar": {
@@ -23,6 +22,7 @@
       "blocks": {
         "slider_XC6Aee": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "countdown": false,
             "text": "<p><strong>Halloween Offer:</strong> Get a Free Neck & Décolletage System</p>",
@@ -73,6 +73,7 @@
         "slider_1",
         "slider_2"
       ],
+      "disabled": true,
       "settings": {
         "slider": true,
         "countdown": false,

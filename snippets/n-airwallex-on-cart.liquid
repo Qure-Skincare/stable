@@ -1,0 +1,54 @@
+{% comment %}
+  Airwallex Fraud Protection is held by sapp (manual trigger in __sapp-config-frontend). It only needs
+  to fingerprint the device before checkout, and every theme path to checkout goes through the cart:
+  the slide cart (#cartCanvas gets "open") or the /cart page (where the slide cart never opens). So it
+  starts on the first slide cart opening, or on /cart load, in the next idle moment. The fingerprint
+  is kept in a cookie for later visits. The script has class "__init" so sapp runs it right away.
+{% endcomment %}
+<script class="__init">
+  (() => {
+    const ON_CART_PAGE = {{ template.name | json }} === 'cart';
+    const IDLE_TIMEOUT = 300;
+    const TASK_WAIT = 15000;
+    let started = false;
+
+    const idle = (callback) => window.requestIdleCallback
+      ? window.requestIdleCallback(callback, { timeout: IDLE_TIMEOUT })
+      : setTimeout(callback, 50);
+
+    // sapp registers its tasks shortly after start, so retry until the Airwallex task shows up.
+    const runAirwallex = (waited = 0) => {
+      const tasks = (window.__sapp && window.__sapp.queues && window.__sapp.queues.event) || [];
+      const pending = tasks.filter((task) => {
+        const src = (task.node && task.node.getAttribute('data-src')) || '';
+        return src.includes('airwallex-fraud-protection');
+      });
+      if (!pending.length) {
+        if (waited < TASK_WAIT) setTimeout(() => runAirwallex(waited + 250), 250);
+        return;
+      }
+      pending.forEach((task) => {
+        if (!task.done) window.__sapp.run.task(task);
+      });
+    };
+
+    const start = () => {
+      if (started) return;
+      started = true;
+      observer.disconnect();
+      idle(() => runAirwallex());
+    };
+
+    // Watch the attribute rather than the theme's cart events: the header cart icon opens the
+    // dialog without dispatching any, and the dialog may be re-rendered by the cart drawer.
+    const observer = new MutationObserver((mutations) => {
+      if (mutations.some((mutation) => mutation.target.id === 'cartCanvas' && mutation.target.open)) start();
+    });
+
+    if (ON_CART_PAGE) {
+      start();
+    } else {
+      observer.observe(document.documentElement, { subtree: true, attributes: true, attributeFilter: ['open'] });
+    }
+  })();
+</script>

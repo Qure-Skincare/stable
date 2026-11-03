@@ -22,7 +22,6 @@
       "block_order": [
         "stars_image_Yt3mQz"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -69,6 +68,7 @@
     },
     "n_across_image_banner_TNGNLJ": {
       "type": "n_across-image-banner",
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -134,7 +134,7 @@
             "image": "shopify://shop_images/bundles.webp",
             "name": "Bundles",
             "url": "/pages/exclusive-holiday-bundle-deal-new",
-            "badge_text": "57% OFF",
+            "badge_text": "59% OFF",
             "badge_fill": true
           }
         }
@@ -214,7 +214,7 @@
         "image": "shopify://shop_images/Frame_2147235831.png",
         "text": "<p>Reveal smoother, firmer, more radiant-looking skin at home. Micro-Infusion Rejuvenating is designed to help visibly refresh tired-looking skin with a simple treatment that pairs your Micro-Infusion device with the Blue Serum for glow, hydration, and rejuvenation.</p>",
         "supply_badge": "Save 65% • Best Value",
-        "supply_title": "3 Month Supply",
+        "supply_title": "3 Month Supply Black Friday Offer",
         "per_treatment": "<p>12 treatments • $21.17/treatment</p>",
         "subscription_discount_percent": 25,
         "selling_plan_id": "8779497711",

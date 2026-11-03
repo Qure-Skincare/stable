@@ -24,7 +24,7 @@
         "price_A11": {
           "type": "price",
           "settings": {
-            "show_discount": false,
+            "show_discount": true,
             "bundle_compare": false
           }
         },
@@ -128,7 +128,8 @@
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
-        "rating_type": "customers",
+        "rating_type": "trustpilot",
+        "rating_position": "top",
         "limited": false,
         "description": "<ul><li>Smoother, firmer-looking skin on the neck and chest where early signs of aging appear.</li><li>Improves the appearance of discoloration, crepey texture and wrinkles.</li><li>Visibly enhances skin tone and leaves skin with a brighter, more radiant finish.</li></ul>",
         "reserved": false,

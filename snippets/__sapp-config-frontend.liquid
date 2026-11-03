@@ -6,6 +6,11 @@
     "expiresAt": {{ sapp_license_expires }}
   },
   "debug": false,
+  {%- comment -%}
+    INP schedule: the original timeouts + paced queues (queueOptions) + one
+    Airwallex rule, no per-vendor rules. Earlier timeouts did not change INP in
+    isolated tests; they only start analytics sooner.
+  {%- endcomment -%}
   "timeouts": {
     "mobile":  { "preload": "1000", "scripts": "3500", "embeds": "4500", "other": "1000", "async": "5500" },
     "desktop": { "preload": "500", "scripts": "3500", "embeds": "4500", "other": "1000", "async": "5500" }
@@ -31,11 +36,15 @@
     at once — fewer simultaneous downloads (bandwidth stays free for user actions
     like add-to-cart) and spread-out execution (main thread stays responsive).
   {%- endcomment -%}
+  {%- comment -%}
+    One external script per chunk with a gap, and inline work cut into 15 ms
+    slices, so the thread keeps short idle gaps where a tap is handled at once.
+  {%- endcomment -%}
   "queueOptions": {
-    "*":       { "stagger": 50, "burst": 5, "slice": 30 },
-    "scripts": { "stagger": 50, "burst": 1, "slice": 30 },
-    "embeds": { "stagger": 50, "burst": 3, "slice": 30 },
-    "async":   { "stagger": 100, "burst": 1, "slice": 30 }
+    "*":       { "stagger": 90, "burst": 1, "slice": 15 },
+    "scripts": { "stagger": 90, "burst": 1, "slice": 15 },
+    "embeds":  { "stagger": 150, "burst": 1, "slice": 15 },
+    "async":   { "stagger": 150, "burst": 1, "slice": 15 }
   },
   {%- comment -%}
     OPTIONAL gentler pacing for slow connections — selected at queue-run time by
@@ -92,6 +101,22 @@
       "match": { "src": "widget.min.js" },
       "queue": "event",
       "trigger": ["scroll", "touchstart"]
+    },
+    {%- comment -%} Airwallex fraud protection draws nothing on the storefront but is one of the
+      heaviest scripts; it only fingerprints the device for orders (Klarna/Afterpay go through
+      Airwallex). n-airwallex-on-cart runs it when the slide cart opens or on the /cart page. {%- endcomment -%}
+    {
+      "match": { "src": "airwallex-fraud-protection" },
+      "queue": "event",
+      "trigger": ["manual"]
+    },
+    {%- comment -%} BookEasy only serves the "Book a call" consultation (a service with no products), so
+      its widget, and the reCAPTCHA it pulls in, load only when that link is clicked: n-book-easy runs
+      these tasks. The app embed's inline cart validation does not need the widget and stays as is. {%- endcomment -%}
+    {
+      "match": { "src": "bookeasy-widget" },
+      "queue": "event",
+      "trigger": "manual"
     }
   ],
   "exceptions": {

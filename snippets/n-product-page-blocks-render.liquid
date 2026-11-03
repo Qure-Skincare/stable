@@ -46,7 +46,9 @@
         {% when 'bundle-purchase' %}
             {% include 'n-product-bundle-purchase', section: section, block: block %}
         {% when 'saveup-offer' %}
-            {% render 'n-product-saveup-offer' %}
+            {% unless section.settings.hide_saveup_offer %}
+                {% render 'n-product-saveup-offer' %}
+            {% endunless %}
         {% when 'limited-offer' %}
             {% render 'n-product-limited-time-offer', section: section, block: block %}
         {% when 'black-friday-discount' %}
@@ -90,7 +92,7 @@
         {% endcase %}
 {% endfor %}
 
-{% if settings.black_friday_sitewide_turn_on %}
+{% if settings.black_friday_sitewide_turn_on and section.settings.hide_saveup_offer != true %}
     {%- assign saveup_block = section.blocks | where: 'type', 'saveup-offer' | first -%}
     {%- unless saveup_block -%}
         {% render 'n-product-saveup-offer' %}

@@ -92,9 +92,9 @@
         "marked_list": "",
         "marked_list_position": "footer",
         "badge_text": "",
-        "wistia_url": "6de5pg0r6e",
+        "wistia_url": "",
         "wistia_mode": "popover_button",
-        "video_button_label": "Watch Video"
+        "video_button_label": ""
       }
     },
     "n_progress_showcase_v5": {
@@ -533,7 +533,7 @@
             "free_shipping": false,
             "per_treatment": false,
             "preselected": false,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply Black Friday Offer",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
@@ -648,7 +648,7 @@
             "free_shipping": false,
             "per_treatment": false,
             "preselected": false,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply Black Friday Offer",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
             "image": "shopify://shop_images/MI_3_month_W.webp",
