@@ -1003,7 +1003,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will my credit card be charged?",
-            "text": "<p>Your credit card will be charged as soon as your order is accepted and processed.</p>",
+            "text": "<p>Your credit card will be charged as soon as your order is accepted and processed. A confirmation email serves as your receipt. Pre-order items are charged at purchase.</p>",
             "section_id": ""
           }
         },
