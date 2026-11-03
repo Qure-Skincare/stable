@@ -994,7 +994,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What forms of payment do you accept?",
-            "text": "<p>We accept Visa, Mastercard, American Express credit cards or debit cards and PayPal.</p>",
+            "text": "<p>Qure Skincare accepts several forms of payment, including Visa, Mastercard, and American Express credit and debit cards, as well as PayPal. Customers may also use buy now, pay later options such as Klarna, Sezzle, and Afterpay, where available at checkout.</p>",
             "section_id": ""
           }
         },
@@ -1003,7 +1003,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "When will my credit card be charged?",
-            "text": "<p>Your credit card will be charged as soon as your order is accepted and processed.</p>",
+            "text": "<p>Your credit card will be charged as soon as your order is accepted and processed. A confirmation email serves as your receipt. Pre-order items are charged at purchase.</p>",
             "section_id": ""
           }
         },
@@ -1012,7 +1012,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I remove a saved payment method?",
-            "text": "<p>Of course! You can make this change on your account page. If you need help, contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a>.</p>",
+            "text": "<p>Of course! You can make this change on your account page. If you need help, contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></p>",
             "section_id": ""
           }
         },
@@ -1021,7 +1021,34 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the credit card statement or PayPal statement name?",
-            "text": "<p>Please look out for “QURE SKIN” or “INSPIREBRANDS” charge on your credit card statement or PayPal account after you have placed your order. </p><p>If you're not sure what charge description you should be looking for then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> </p>",
+            "text": "<p>Please look out for \"QURE SKIN\" or \"INSPIREBRANDS\" charge on your credit card statement or PayPal account after you have placed your order.&nbsp;</p><p>If you're not sure what charge description you should be looking for then please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a> You can contact us before you dispute a charge. We can usually resolve it faster.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_LH6Bch": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why was my payment declined?",
+            "text": "<p>Check that the billing address and security code match your card, and that the name is entered exactly as on the card. Your bank may also have a restriction on online purchases, so a call to the bank often fixes it. You can also try another card or PayPal.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_gKH4M6": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Why was I charged twice?",
+            "text": "<p>A second charge on your statement is usually one of two things.</p><p><strong>1. A temporary hold, not a second charge.</strong> If your payment was declined or you retried at checkout, your bank may show a pending hold for each attempt. A hold is not a charge. It usually drops off within a few business days, although the timing depends on your bank. Only the charge for your accepted order is kept.</p><p><strong>2. Two orders were placed.</strong> Check your inbox, spam and promotions folders for order confirmation emails. Each order gets its own confirmation with its own order number. If you see two confirmations with two different order numbers, two orders were placed.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_TTCFTK": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Are Qure products HSA or FSA eligible?",
+            "text": "<p>Eligible products are listed on our <a href=\"https://qureskincare.com/pages/hsa-fsa-eligible\" title=\"https://qureskincare.com/pages/hsa-fsa-eligible\">HSA & FSA page.</a></p>",
             "section_id": ""
           }
         }
@@ -1030,7 +1057,10 @@
         "faq_item_P3za9Y",
         "faq_item_RTFQjx",
         "faq_item_3LXGiw",
-        "faq_item_yKAk6a"
+        "faq_item_yKAk6a",
+        "faq_item_LH6Bch",
+        "faq_item_gKH4M6",
+        "faq_item_TTCFTK"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {

@@ -18,12 +18,12 @@
       "blocks": {
         "product_onetime": {
           "settings": {
-            "soldout": true
+            "soldout": false
           }
         },
         "product_subscription": {
           "settings": {
-            "soldout": true
+            "soldout": false
           }
         }
       }
