@@ -15,8 +15,8 @@
   "sections": {
     "n_header": {
       "settings": {
-        "soldout": false,
-        "reserved": true
+        "reserved": false,
+        "soldout": false
       },
       "blocks": {}
     }
