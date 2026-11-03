@@ -1,0 +1,36 @@
+{% doc %}
+  Keeps Meta's automatic events (autoConfig) from slowing down taps. On every tap of a
+  button or link, Meta's click listener scanned the button, its form and the page to
+  build a SubscribedButtonClick event, which cost ~100-200 ms of INP on mid-range phones.
+  The scan now runs after the tap's next paint instead of before the site reacts; Meta
+  keeps every event and all its data.
+
+  Render it before the script that loads the Meta pixel (fbevents.js). Remove the render
+  to restore Meta's default behaviour. If Meta changes how it registers the listener, the
+  guard simply stops matching and the pixel works as before.
+
+  @example
+  {% render '__sapp-fbc-input-guard' %}
+{% enddoc %}
+
+<script>
+    (function () {
+        // Meta registers its click scan as a capture listener on document, so it runs before
+        // the site's own handlers. Click listeners that Meta's scripts register are wrapped
+        // to run after the next paint instead; the scan only reads event.target, which the
+        // event keeps after dispatch.
+        var addEventListener = document.addEventListener;
+        document.addEventListener = function (type, listener, options) {
+            if (type === 'click' && typeof listener === 'function' && /connect\.facebook\.net/.test(new Error().stack || '')) {
+                var scan = listener;
+                listener = function (event) {
+                    var target = this;
+                    requestAnimationFrame(function () {
+                        setTimeout(function () { scan.call(target, event); }, 0);
+                    });
+                };
+            }
+            return addEventListener.call(this, type, listener, options);
+        };
+    })();
+</script>
