@@ -144,17 +144,19 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
         "secondary": false,
         "background": false,
         "seo_heading": "",
-        "heading": "Your Micro Infusion System™ for patchy skin",
+        "heading": "The Micro-Infusion System with GHK-Cu Serum",
         "badge_text": "",
         "heading_level": "h1",
         "rating": true,
         "rating_type": "trustpilot",
+        "rating_position": "default",
         "limited": false,
         "description": "<p>Based on your answers, we recommend the Micro Infusion System to help your skin tone look more even. See results in just a few easy at-home applications or get your money back!*</p>",
         "reserved": false,
@@ -879,6 +881,7 @@
           "type": "left_heading",
           "settings": {
             "image": "shopify://shop_images/dark-spots_d7bcd9e4-63e1-4bf8-afc1-875800cde11b.webp",
+            "badge": "",
             "text": "<h3>Dark Spots</h3><h6>MICRO-INFUSION SERUM</h6><p>Targets dark spots and uneven tone for a clearer, brighter complexion.</p>"
           }
         },
@@ -914,6 +917,7 @@
           "type": "right_heading",
           "settings": {
             "image": "shopify://shop_images/wrinkles_81c769db-e1d4-4377-86e8-324dd4e64e51.webp",
+            "badge": "",
             "text": "<h3>Wrinkles</h3><h6>MICRO-INFUSION SERUM</h6><p>Boosts hydration & smooths fine lines for plumper, younger-looking skin.</p>"
           }
         },
@@ -962,7 +966,10 @@
       "settings": {
         "use_own_file": false,
         "section_id": "ingredients",
-        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>"
+        "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>",
+        "button_label": "",
+        "button_url": "",
+        "sub_text": ""
       }
     },
     "n_experts_grid_v5": {
@@ -1028,6 +1035,7 @@
       "name": "t:sections.n_experts-grid.name",
       "settings": {
         "use_own_file": false,
+        "awards": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
