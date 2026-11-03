@@ -1021,7 +1021,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "What is the credit card statement or PayPal statement name?",
-            "text": "<p>Please look out for “QURE SKIN” or “INSPIREBRANDS” charge on your credit card statement or PayPal account after you have placed your order. </p><p>If you're not sure what charge description you should be looking for then please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal.</a> </p>",
+            "text": "<p>Please look out for \"QURE SKIN\" or \"INSPIREBRANDS\" charge on your credit card statement or PayPal account after you have placed your order.&nbsp;</p><p>If you're not sure what charge description you should be looking for then please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a> You can contact us before you dispute a charge. We can usually resolve it faster.</p>",
             "section_id": ""
           }
         }
