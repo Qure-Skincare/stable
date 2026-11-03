@@ -1042,6 +1042,15 @@
             "text": "<p>A second charge on your statement is usually one of two things.</p><p><strong>1. A temporary hold, not a second charge.</strong> If your payment was declined or you retried at checkout, your bank may show a pending hold for each attempt. A hold is not a charge. It usually drops off within a few business days, although the timing depends on your bank. Only the charge for your accepted order is kept.</p><p><strong>2. Two orders were placed.</strong> Check your inbox, spam and promotions folders for order confirmation emails. Each order gets its own confirmation with its own order number. If you see two confirmations with two different order numbers, two orders were placed.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_TTCFTK": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Are Qure products HSA or FSA eligible?",
+            "text": "<p>Eligible products are listed on our <a href=\"https://qureskincare.com/pages/hsa-fsa-eligible\" title=\"https://qureskincare.com/pages/hsa-fsa-eligible\">HSA & FSA page.</a></p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -1050,7 +1059,8 @@
         "faq_item_3LXGiw",
         "faq_item_yKAk6a",
         "faq_item_LH6Bch",
-        "faq_item_gKH4M6"
+        "faq_item_gKH4M6",
+        "faq_item_TTCFTK"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
