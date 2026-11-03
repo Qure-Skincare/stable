@@ -1,0 +1,39 @@
+{% doc %}
+  Keeps Google tags from slowing down the Add to cart tap. Google tag (gtag.js, loaded by the
+  Google & YouTube app and GTM) listens to every form submit on document; with Google Ads
+  automatic detection of user-provided data it scans the form and the page before the site
+  reacts, which cost ~110-150 ms of INP on mid-range phones. For add-to-cart forms the
+  listener now runs after the tap's next paint; the page stays put, so the same Google
+  requests are sent a moment later. Every other form (checkout, newsletter, search) keeps
+  the original timing, because those submits may leave the page.
+
+  Render it before any script that loads Google tags. Remove the render to restore Google's
+  default behaviour. If Google changes how it registers the listener, the guard simply stops
+  matching and the tags work as before.
+
+  @example
+  {% render '__sapp-gtag-input-guard' %}
+{% enddoc %}
+
+<script class="__init">
+    (function () {
+        // Submit listeners that Google tag scripts register on document are wrapped: an
+        // add-to-cart submit is handed to them after the next paint, any other submit at once.
+        // The form element and the event keep their state after dispatch.
+        var addEventListener = document.addEventListener;
+        document.addEventListener = function (type, listener, options) {
+            if (type === 'submit' && typeof listener === 'function' && /googletagmanager\.com/.test(new Error().stack || '')) {
+                var tag = listener;
+                listener = function (event) {
+                    var target = this;
+                    var form = event.target;
+                    if (!form || !form.matches || !form.matches('form[action*="/cart/add"]')) return tag.call(target, event);
+                    requestAnimationFrame(function () {
+                        setTimeout(function () { tag.call(target, event); }, 0);
+                    });
+                };
+            }
+            return addEventListener.call(this, type, listener, options);
+        };
+    })();
+</script>
