@@ -104,9 +104,17 @@
     },
     {%- comment -%} Airwallex fraud protection draws nothing on the storefront but is one of the
       heaviest scripts; it only fingerprints the device for orders (Klarna/Afterpay go through
-      Airwallex). n-airwallex-on-cart runs it when the slide cart opens or on the /cart page. {%- endcomment -%}
+      Airwallex). __sapp-airwallex runs it when the slide cart opens or on the /cart page. {%- endcomment -%}
     {
       "match": { "src": "airwallex-fraud-protection" },
+      "queue": "event",
+      "trigger": ["manual"]
+    },
+    {%- comment -%} Rivo loyalty draws nothing on regular pages but runs a ~170 ms task when visitors start
+      tapping. __sapp-rivo runs it at once for referral links, its deep links and account pages,
+      and 10 s after load in an idle moment everywhere else. {%- endcomment -%}
+    {
+      "match": { "src": "rivo-loyalty-rewards-referrals" },
       "queue": "event",
       "trigger": ["manual"]
     },
