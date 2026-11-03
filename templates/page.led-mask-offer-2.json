@@ -33,7 +33,7 @@
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_50.png",
-            "product2": "neck-decolletage-led",
+            "product2": "neck-decolletage-system-copy",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
             "text": "<p>Buy the Q-Rejuvalight Pro and get the Neck & Décolletage LED System for FREE (value $299)</p>",
             "discount_code": ""
@@ -59,6 +59,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "hide_saveup_offer": true,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
@@ -576,7 +577,7 @@
           "type": "product",
           "settings": {
             "tab_id": "first-pane",
-            "product": "q-rejuvalight-pro-facewear",
+            "product": "q-rejuvalight-pro-facewear-3",
             "free": false
           }
         },
@@ -584,7 +585,7 @@
           "type": "product",
           "settings": {
             "tab_id": "second-pane",
-            "product": "neck-decolletage-led",
+            "product": "neck-decolletage-system-copy",
             "free": true
           }
         },
@@ -726,7 +727,7 @@
       "name": "Exclusive bundle",
       "settings": {
         "use_own_file": false,
-        "badge": "<p><strong>EXCLUSIVE</strong> SALE</p>",
+        "badge": "<p><strong>BLACK FRIDAY</strong> SALE</p>",
         "heading": "<p>Experience face and neck rejuvenation in one bundle</p>",
         "tabs_heading": "<p>Includes 2 LED Devices:</p>"
       }
@@ -778,7 +779,7 @@
             "product": "q-rejuvalight-pro-facewear-3",
             "image_product1": "shopify://shop_images/Img_50.png",
             "item1_text": "FDA-cleared device that treats acne, fine lines, wrinkles and dark spots.",
-            "product2": "neck-decolletage-led",
+            "product2": "neck-decolletage-system-copy",
             "image_product2": "shopify://shop_images/Frame_1073714744.png",
             "item2_text": "Clinically proven to smooth and firm where aging shows first.",
             "discount_code": "FREEN&DOFFER",

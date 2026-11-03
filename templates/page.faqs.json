@@ -869,8 +869,44 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "How do I place a return or exchange?",
-            "text": "<p>Please submit your return via <a href=\"https://qureskincare.com/pages/returns-exchanges\" title=\"https://qureskincare.com/pages/returns-exchanges\">our portal here</a> for products you'd like to exchange or return, and we'll take care of the rest.</p>",
+            "heading": "How do I place a return?",
+            "text": "<p>Please submit your return via our <a href=\"https://qureskincare.return.richpanel.com/create\" title=\"https://qureskincare.return.richpanel.com/create\">portal here</a> for products you'd like to return, and we'll take care of the rest. Returns must be approved before you send anything back. You will receive a Return Authorization Number (RMA) that must be included with the parcel, or the return will be rejected. Return all accessories, original packaging, user manuals and inserts.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_HPi7CT": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Can I exchange an item?",
+            "text": "<p>Yes, please contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> and we’ll help you with your exchange. Include your order number and the item you’d like to exchange.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_daP4XW": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What is the 30-day money-back guarantee?",
+            "text": "<p>If you change your mind, you can return your purchase within 30 days of receiving your order for a refund. We do not cover claims about results in the first 30 days. We recommend using the product for at least 3 months, as stated on the product page. Shipping delays are not covered by the guarantee.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_MPYeLY": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "What does a return cost me?",
+            "text": "<p>You pay return shipping and carry the risk of loss in transit. Shipping, handling, wrapping fees and taxes (including customs and VAT) are not refunded. A restocking fee of $10 plus return shipping fee applies.</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_xfbJQV": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Will I get a refund or store credit?",
+            "text": "<p>Full-price products are refunded to your original payment method. Orders paid with Klarna, Sezzle or Afterpay are eligible for store credit only.</p>",
             "section_id": ""
           }
         },
@@ -879,7 +915,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "How long does it take to credit my account for refunds?",
-            "text": "<p>Credit card refunds usually take 5-10 business days to appear on your statement.</p>",
+            "text": "<p>Once we receive and inspect your return, we process your refund within 7 to 10 business days and email you when it is done. Your bank may then take a further 5 to 10 business days to show it.</p>",
             "section_id": ""
           }
         },
@@ -888,7 +924,16 @@
           "settings": {
             "secure_strap": false,
             "heading": "What should I do if I receive the wrong product?",
-            "text": "<p>If you received a product different from the one that you ordered, please contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal </a>and we'll be sure to make this right!</p>",
+            "text": "<p>If you received a product different from the one that you ordered, please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number and a photo of what you received and we'll be sure to make this right!</p>",
+            "section_id": ""
+          }
+        },
+        "faq_item_bN7Ld7": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "My product is faulty. What do I do?",
+            "text": "<p><a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Contact us</a> with your order number, a description of the problem and photos or a video. We will guide you through troubleshooting first. If the issue is not fixed, we will help you make a warranty claim.</p>",
             "section_id": ""
           }
         },
@@ -897,7 +942,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Do I have to return the free gift or other promotional items if I return my order?",
-            "text": "<p>Yes. If you bought as part of a promotion, such as a bundle, a buy-one-get-one offer or a free gift with purchase, all items in the promotion must be returned to receive a refund. You may find our returns policy <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">here</a>.</p>",
+            "text": "<p>Yes. If you bought as part of a promotion, such as a bundle, a buy-one-get-one offer or a free gift with purchase, all items in the promotion must be returned to receive a refund. Bundles are already discounted and cannot be partly returned.</p><p>You may find our returns policy <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">here</a>.</p>",
             "section_id": ""
           }
         },
@@ -909,14 +954,29 @@
             "text": "<p>Yes. If you or someone you gave a gift to would like to return a product from an order placed between 1 November and 31 December 2026, you have until 31 January 2027, or 30 days from delivery, whichever is later. Returns are made by the person who placed the order, using the order number from the confirmation email. If you are returning a gift, ask the buyer to start the return, or contact us with the order number and we will help.</p><p>All other return terms still apply, including getting a Return Authorization Number before you send anything back. See our <a href=\"https://qureskincare.com/pages/return-policy\" title=\"https://qureskincare.com/pages/return-policy\">returns policy</a> for the full terms.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_86WaLb": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Didn’t find your answer on returns?",
+            "text": "<p>If these FAQs haven’t answered your question about returns, contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> and our team will help.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_eBzKTC",
+        "faq_item_HPi7CT",
+        "faq_item_daP4XW",
+        "faq_item_MPYeLY",
+        "faq_item_xfbJQV",
         "faq_item_Hrgtcf",
         "faq_item_3MDwaa",
+        "faq_item_bN7Ld7",
         "faq_item_MBNWTW",
-        "faq_item_Q7CACi"
+        "faq_item_Q7CACi",
+        "faq_item_86WaLb"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {

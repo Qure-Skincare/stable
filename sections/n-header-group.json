@@ -14,7 +14,7 @@
     "announcement-bar-gamification": {
       "type": "n-announcement-bar-gamification",
       "settings": {
-        "exception": "qure-microinfusion-offer, qure-microinfusion-offer-listicle, black-friday26-early-access"
+        "exception": "qure-microinfusion-offer-listicle, black-friday26-early-access"
       }
     },
     "announcement-bar": {
