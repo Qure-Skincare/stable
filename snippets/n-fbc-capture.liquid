@@ -2,49 +2,66 @@
   Stores the Facebook ad click id (fbclid) in the _fbc cookie as soon as the
   landing page starts, in the format the Meta pixel uses.
 
-  The pixel loads ~4-5 s after the page, and fbclid is only in the landing URL.
-  A visitor who moves on before then (or is sent on by n-redirect.js) loses it,
-  and later events and purchases reach Meta without the click they came from.
-  When the pixel does load on the landing page it rewrites _fbc with the same
-  fbclid, so the two never disagree.
+  When the pixel is loaded late (deferred by a speed plugin, ~4-5 s), fbclid is
+  only in the landing URL until then. A visitor who moves on sooner, or is
+  redirected by a script that drops the query string, loses it, and later
+  events and purchases reach Meta without the click they came from. When the
+  pixel does load on the landing page it rewrites _fbc with the same fbclid,
+  so the two never disagree. Without fbclid in the URL nothing runs.
 
-  Follows the cookie banner (n-footer-gdpr / n-cookies.js): written only when
-  the visitor allowed advertising cookies, or when they haven't answered and
-  aren't in a country the banner is shown in (same list as is_gdpr_country()).
-  Also skipped when Shopify's consent tracking says marketing isn't allowed.
+  Render it as early in <head> as possible: before any script that can
+  redirect the visitor.
+
+  Consent: always skipped when Shopify's consent tracking says marketing isn't
+  allowed. A store with its own cookie banner describes it with the optional
+  parameters below; without them only Shopify's consent is checked.
+
+  @param {string} [consent_countries] - Comma-separated ISO country codes where the visitor must allow advertising cookies first (e.g. 'DE,FR,GB'). Blank: no country needs it.
+  @param {string} [decline_cookie] - Banner cookie that marks a refusal; it is read together with decline_value.
+  @param {string} [decline_value] - Value of decline_cookie after the visitor declined. Default: 'false'.
+  @param {string} [consent_cookie] - Banner cookie that holds the visitor's choice.
+  @param {string} [consent_key] - Key of the advertising flag when consent_cookie holds JSON. Blank: the cookie itself must be 'true'.
 
   @example
-  {% render 'n-fbc-capture' %}
+  {% render 'n-fbc-capture',
+    consent_countries: 'DE,FR,GB',
+    decline_cookie: 'cookie_consent',
+    consent_cookie: 'cookie_settings',
+    consent_key: 'advertising'
+  %}
 {% enddoc %}
 
 {%- liquid
-  assign gdpr_countries = 'AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,IS,LI,NO,GB' | split: ','
   assign needs_consent = false
-  if gdpr_countries contains localization.country.iso_code
-    assign needs_consent = true
+  if consent_countries != blank
+    assign country_list = consent_countries | remove: ' ' | upcase | split: ','
+    if country_list contains localization.country.iso_code
+      assign needs_consent = true
+    endif
   endif
 -%}
 
 <script class="__init">
-(function (w, d, needsConsent) {
+(function (w, d, banner) {
   var fbclid;
   try { fbclid = new URLSearchParams(w.location.search).get('fbclid'); } catch (e) { return; }
   if (!fbclid) return;
 
   var readCookie = function (name) {
-    var m = d.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
-    return m ? decodeURIComponent(m[1]) : null;
+    var parts = d.cookie ? d.cookie.split('; ') : [];
+    for (var i = 0; i < parts.length; i++) {
+      if (parts[i].indexOf(name + '=') !== 0) continue;
+      try { return decodeURIComponent(parts[i].slice(name.length + 1)); } catch (e) { return null; }
+    }
+    return null;
   };
 
-  // The theme's banner: qure_cookie_consent is 'false' after Decline,
-  // qure_cookie_settings holds the per-category toggles.
   var bannerAllows = function () {
-    if (readCookie('qure_cookie_consent') === 'false') return false;
-    var settings = readCookie('qure_cookie_settings');
-    if (settings) {
-      try { return JSON.parse(settings).advertising === true; } catch (e) { return false; }
-    }
-    return !needsConsent;
+    if (banner.declineCookie && readCookie(banner.declineCookie) === banner.declineValue) return false;
+    var choice = banner.consentCookie ? readCookie(banner.consentCookie) : null;
+    if (choice === null) return !banner.needsConsent;
+    if (!banner.consentKey) return choice === 'true';
+    try { return JSON.parse(choice)[banner.consentKey] === true; } catch (e) { return false; }
   };
   if (!bannerAllows()) return;
 
@@ -66,15 +83,27 @@
   var current = readCookie('_fbc');
   if (current && current.slice(-(fbclid.length + 1)) === '.' + fbclid) return;
 
-  // Same shape and scope as the pixel's own cookie: fb.<subdomain index>.<ms>.<fbclid>
-  // on the registrable domain, kept for 90 days.
-  var value = 'fb.1.' + Date.now() + '.' + fbclid;
-  var tail = '; path=/; max-age=7776000; SameSite=Lax';
-  var host = w.location.hostname;
-  var domain = host.split('.').slice(-2).join('.');
-  d.cookie = '_fbc=' + encodeURIComponent(value) + '; domain=.' + domain + tail;
-  // The registrable domain can't be guessed from two labels everywhere
-  // (e.g. *.myshopify.com previews); fall back to the current host.
-  if (readCookie('_fbc') !== value) d.cookie = '_fbc=' + encodeURIComponent(value) + tail;
-})(window, document, {{ needs_consent }});
+  // Same shape and scope as the pixel's own cookie: fb.<domain index>.<ms>.<fbclid>, kept 90 days,
+  // set on the registrable domain. Like the pixel, try the shortest domain first: the browser
+  // rejects public suffixes (com, co.uk, myshopify.com), so the first one that sticks is the
+  // site's own. The index is that domain's label count minus one (example.com -> 1). A host
+  // without a dot (localhost) takes no domain attribute and gets a host-only cookie.
+  var labels = w.location.hostname.split('.');
+  var time = Date.now();
+  var write = function (index, scope) {
+    var value = encodeURIComponent('fb.' + index + '.' + time + '.' + fbclid);
+    d.cookie = '_fbc=' + value + scope + '; path=/; max-age=7776000; SameSite=Lax';
+    return d.cookie.indexOf('_fbc=' + value) !== -1;
+  };
+  for (var n = 2; n <= labels.length; n++) {
+    if (write(n - 1, '; domain=.' + labels.slice(-n).join('.'))) return;
+  }
+  write(labels.length - 1, '');
+})(window, document, {
+  needsConsent: {{ needs_consent }},
+  declineCookie: {{ decline_cookie | default: '' | json }},
+  declineValue: {{ decline_value | default: 'false' | json }},
+  consentCookie: {{ consent_cookie | default: '' | json }},
+  consentKey: {{ consent_key | default: '' | json }}
+});
 </script>

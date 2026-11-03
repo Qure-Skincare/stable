@@ -60,8 +60,17 @@
       </script>
     {% endif %}
 
-    {% comment %} Before n-redirect.js: its redirects drop the query string, fbclid with it. {% endcomment %}
-    {% render 'n-fbc-capture' %}
+    {% comment %}
+      Before n-redirect.js: its redirects drop the query string, fbclid with it. The consent values
+      describe the theme's cookie banner (n-footer-gdpr / n-cookies.js); the countries match
+      is_gdpr_country() in n-country-detect.js.
+    {% endcomment %}
+    {% render 'n-fbc-capture',
+      consent_countries: 'AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,IS,LI,NO,GB',
+      decline_cookie: 'qure_cookie_consent',
+      consent_cookie: 'qure_cookie_settings',
+      consent_key: 'advertising'
+    %}
 
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
