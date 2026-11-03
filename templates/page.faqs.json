@@ -1012,7 +1012,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Can I remove a saved payment method?",
-            "text": "<p>Of course! You can make this change on your account page. If you need help, contact us via <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Customer Portal</a>.</p>",
+            "text": "<p>Of course! You can make this change on your account page. If you need help, contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></p>",
             "section_id": ""
           }
         },
