@@ -19,11 +19,11 @@
         "description_collapsed_blue": {
           "type": "description-collapsed",
           "settings": {
-            "title_1": "Enhances how skin responds to LED light",
+            "title_1": "Methylene blue preps skin to respond to every LED session",
             "text_1": "<p>Enhances how skin responds to LED light USP Methylene Blue is a cosmetic photosensitizer that helps convert LED light into a stronger skin response — so every Q-Rejuvalight Pro session works harder, without increasing intensity or heat.</p>",
-            "title_2": "Helps target the appearance of congestion &amp; blemishes",
-            "text_2": "<p>Helps target the appearance of congestion &amp; blemishes Paired with Blue Light (Skin-Clearing Mode), it supports skin-clearing activity for a clearer-looking complexion — without harsh or drying actives.</p>",
-            "title_3": "Hydrates and soothes while it protects",
+            "title_2": "Skin measured 20.3% firmer and 21.2% more elastic in just 12 weeks",
+            "text_2": "<p>Helps target the appearance of congestion & blemishes Paired with Blue Light (Skin-Clearing Mode), it supports skin-clearing activity for a clearer-looking complexion — without harsh or drying actives.</p>",
+            "title_3": "Skin looks plumper and feels more hydrated after each use",
             "text_3": "<p>Hydrates and soothes while it protects Sodium Hyaluronate and Aloe Vera support hydration, while Methylene Blue and Vitamin E work as antioxidants — helping protect skin from the visible effects of everyday environmental stressors.</p>",
             "title_4": "Soothes skin from daily digital blue light exposure",
             "text_4": "<p>Soothes skin from daily digital blue light exposure Calendula iActive helps comfort skin exposed to screens all day — phones, laptops, and everyday digital blue light — with no LED mask required.</p>",
@@ -66,6 +66,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "blue-face-serum",
         "reverse": false,
@@ -77,6 +78,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>Built with Methylene Blue, one of medicine's most studied compounds</li><li>Enhances how skin responds to LED light</li><li>Helps skin retain moisture, leaving it visibly plumper-looking</li><li>Powerful antioxidant that protects skin exposed to blue light from digital devices.</li></ul>",
         "reserved": false,
@@ -469,6 +471,7 @@
       "name": "t:sections.n_experts-pick.name",
       "settings": {
         "section_id": "",
+        "modifier": "none",
         "badge_text": "Dermatologist Reviewed",
         "text": "<h2>Recommended by Experts</h2><p>“Methylene blue has been studied for how it interacts with cellular energy and light-dependent processes, making it <em>a great ingredient in skincare</em> — and a smart addition for anyone using LED light therapy.”</p>",
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
@@ -677,6 +680,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/blue-bg-image-1.webp",
         "image_mobile": "shopify://shop_images/blue-bg-image-1-mob.webp",
+        "video_url": "",
         "button_label": "",
         "button_url": ""
       }
