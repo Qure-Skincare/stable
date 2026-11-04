@@ -56,7 +56,7 @@
           "disabled": true,
           "settings": {
             "sum": "$100 OFF",
-            "code": "MASK100",
+            "code": "",
             "days": 4
           }
         },
@@ -155,6 +155,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "q-rejuvalight-pro-facewear-3",
         "reverse": false,
