@@ -351,8 +351,8 @@
         "product_xwqzya": {
           "type": "product",
           "settings": {
-            "product": "total-skin-renewal-system",
-            "image": "shopify://shop_images/TotalSkinRenewalSystem.webp",
+            "product": "total-skin-renewal-system-1",
+            "image": "shopify://shop_images/TotalSkinRenewalSystemv2.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
