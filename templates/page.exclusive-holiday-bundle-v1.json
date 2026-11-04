@@ -341,8 +341,8 @@
         "product_xJpDep": {
           "type": "product",
           "settings": {
-            "product": "even-firm-system",
-            "image": "shopify://shop_images/Even_FirmSystem.webp",
+            "product": "skin-foundation-system",
+            "image": "shopify://shop_images/SkinFoundationSystem.webp",
             "preselected": false,
             "soldout": false,
             "reserved": false
