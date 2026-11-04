@@ -68,61 +68,6 @@
         "special_offer_badge": true
       }
     },
-    "n_press_reviews_bundle_v2": {
-      "type": "n_press-reviews",
-      "blocks": {
-        "slider_ymUfgY": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
-            "image": "shopify://shop_images/vogue-black.svg"
-          }
-        },
-        "slider_eJj9q6": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“One of my favorite devices for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”</h4>",
-            "image": "shopify://shop_images/womens-health.svg"
-          }
-        },
-        "slider_x3CRkV": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“A foolproof pick: It’s affordable and high quality with dual-core red and near-infrared wavelengths.”</h4>",
-            "image": "shopify://shop_images/Popsugar_logo.svg"
-          }
-        },
-        "slider_Bzr4eD": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”</h4>",
-            "image": "shopify://shop_images/cosmopolitan_70c5f571-db67-4d3f-8998-714fa10f89be.svg"
-          }
-        },
-        "slider_4jJE7W": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”</h4>",
-            "image": "shopify://shop_images/gq.svg"
-          }
-        }
-      },
-      "block_order": [
-        "slider_ymUfgY",
-        "slider_eJj9q6",
-        "slider_x3CRkV",
-        "slider_Bzr4eD",
-        "slider_4jJE7W"
-      ],
-      "name": "t:sections.n_press-reviews.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "none",
-        "text": "<h6>FEATURED IN</h6>",
-        "slide": "none",
-        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
-      }
-    },
     "n_page-exclusive-bundle-resuslts-showcase": {
       "type": "n_page-exclusive-bundle-resuslts-showcase",
       "blocks": {
@@ -216,6 +161,61 @@
         "text": "<h2>Top-rated products at best prices</h2>",
         "rating": "4.5",
         "rating_text": "700,000+ Confident Customers"
+      }
+    },
+    "n_press_reviews_bundle_v2": {
+      "type": "n_press-reviews",
+      "blocks": {
+        "slider_ymUfgY": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“The professional grade is the perfect addition to any at-home skincare routine.”</h4>",
+            "image": "shopify://shop_images/vogue-black.svg"
+          }
+        },
+        "slider_eJj9q6": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“One of my favorite devices for the neck [...] It has a quick treatment time of 10 minutes, which makes it easy for someone to work into their daily routine.”</h4>",
+            "image": "shopify://shop_images/womens-health.svg"
+          }
+        },
+        "slider_x3CRkV": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“A foolproof pick: It’s affordable and high quality with dual-core red and near-infrared wavelengths.”</h4>",
+            "image": "shopify://shop_images/Popsugar_logo.svg"
+          }
+        },
+        "slider_Bzr4eD": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”</h4>",
+            "image": "shopify://shop_images/cosmopolitan_70c5f571-db67-4d3f-8998-714fa10f89be.svg"
+          }
+        },
+        "slider_4jJE7W": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“It complements the face mask and targets areas that age first. I think it is most important for your first LED treatment.”</h4>",
+            "image": "shopify://shop_images/gq.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slider_ymUfgY",
+        "slider_eJj9q6",
+        "slider_x3CRkV",
+        "slider_Bzr4eD",
+        "slider_4jJE7W"
+      ],
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"slidesPerView\": 5, \"spaceBetween\": 50"
       }
     },
     "purchase_form_bundle_v2": {
@@ -1003,8 +1003,8 @@
   },
   "order": [
     "n_hero_product_ezjb6K",
-    "n_press_reviews_bundle_v2",
     "n_page-exclusive-bundle-resuslts-showcase",
+    "n_press_reviews_bundle_v2",
     "purchase_form_bundle_v2",
     "n_take_quiz_V6p9AW",
     "n_trusted_reviews_bundle_v2",
