@@ -288,8 +288,8 @@
         "product_gia3hC": {
           "type": "product",
           "settings": {
-            "product": "total-radiance-system",
-            "image": "shopify://shop_images/TotalRadianceSystem.webp",
+            "product": "rejuvenation-system",
+            "image": "shopify://shop_images/RejuvenationSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
