@@ -246,8 +246,8 @@
         "product_8hJgNj": {
           "type": "product",
           "settings": {
-            "product": "skin-renewal-system",
-            "image": "shopify://shop_images/SkinRenewalSystem.webp",
+            "product": "glowing-skin-system",
+            "image": "shopify://shop_images/GlowingSkinSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
