@@ -256,8 +256,8 @@
         "product_BJXNMB": {
           "type": "product",
           "settings": {
-            "product": "total-skin-confidence-system",
-            "image": "shopify://shop_images/TotalSkinConfidenceSystem.webp",
+            "product": "radiant-skin-system",
+            "image": "shopify://shop_images/RadiantSkinSystem.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
