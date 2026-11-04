@@ -436,18 +436,18 @@
             "product_title": "Micro infusion Facial System"
           }
         },
-        "slider_ECMbpP": {
+        "slider_jdNazB": {
           "type": "slider",
           "settings": {
-            "image": "shopify://shop_images/anton-m.webp",
+            "image": "shopify://shop_images/terry-p.webp",
             "flag": "shopify://shop_images/america_f.webp",
-            "username": "Anton M.",
+            "username": "Terri P.",
             "verified_customer": "Verified customer",
             "badge": "",
-            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
+            "text": "<h6>Wish I had this technology years ago!</h6><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
             "product_url": "#",
             "product_image": "shopify://shop_images/Img_798bfa82-0458-44be-b56c-680a7c054959.png",
-            "product_text": "Anton uses...",
+            "product_text": "Terri uses...",
             "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
@@ -466,21 +466,6 @@
             "product_title": "Micro-Infusion Facial System"
           }
         },
-        "slider_jdNazB": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/terry-p.webp",
-            "flag": "shopify://shop_images/america_f.webp",
-            "username": "Terri P.",
-            "verified_customer": "Verified customer",
-            "badge": "",
-            "text": "<h6>Wish I had this technology years ago!</h6><p>“After two weeks I began to see results and after six weeks the changes in my skin were dramatic. I have now been using Qure six months and loving the compliments! I bought masks for my daughters for Christmas so they could start at a younger age…. I wish this technology had been available when I was younger. I am 76 years old!”</p>",
-            "product_url": "#",
-            "product_image": "shopify://shop_images/Img_798bfa82-0458-44be-b56c-680a7c054959.png",
-            "product_text": "Terri uses...",
-            "product_title": "Q-Rejuvalight Pro LED Mask"
-          }
-        },
         "slider_WrGfPY": {
           "type": "slider",
           "settings": {
@@ -494,6 +479,21 @@
             "product_image": "shopify://shop_images/Img_45470638-5f15-4e49-82ef-d726c981b6c6.png",
             "product_text": "Cassandra uses...",
             "product_title": "Micro-Infusion Targeted Patches"
+          }
+        },
+        "slider_ECMbpP": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/anton-m.webp",
+            "flag": "shopify://shop_images/america_f.webp",
+            "username": "Anton M.",
+            "verified_customer": "Verified customer",
+            "badge": "",
+            "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
+            "product_url": "#",
+            "product_image": "shopify://shop_images/Img_798bfa82-0458-44be-b56c-680a7c054959.png",
+            "product_text": "Anton uses...",
+            "product_title": "Q-Rejuvalight Pro LED Mask"
           }
         },
         "slider_WYy6pT": {
@@ -560,10 +560,10 @@
       },
       "block_order": [
         "slider_qYcxbX",
-        "slider_ECMbpP",
-        "slider_MLP4F6",
         "slider_jdNazB",
+        "slider_MLP4F6",
         "slider_WrGfPY",
+        "slider_ECMbpP",
         "slider_WYy6pT",
         "slider_mzetU8",
         "slider_RTBcJx",
