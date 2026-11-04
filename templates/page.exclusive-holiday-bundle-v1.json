@@ -331,8 +331,8 @@
         "product_eiHVrp": {
           "type": "product",
           "settings": {
-            "product": "skin-foundation-system",
-            "image": "shopify://shop_images/SkinFoundationSystem.webp",
+            "product": "even-firm-system-1",
+            "image": "shopify://shop_images/Even_FirmSystemv2.jpg",
             "preselected": false,
             "soldout": false,
             "reserved": false
