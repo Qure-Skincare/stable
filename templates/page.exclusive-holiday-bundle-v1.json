@@ -65,7 +65,8 @@
         "button_label": "SAVE UP TO 60% THIS BLACK FRIDAY",
         "button_url": "#purchase-form-bundle",
         "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>",
-        "special_offer_badge": true
+        "special_offer_badge": true,
+        "bf_countdown": true
       }
     },
     "n_page-exclusive-bundle-resuslts-showcase": {

@@ -69,24 +69,7 @@
                     {{ section.settings.text }}
                 </article>
             {% endif %}
-            <div class="c-buy-block">
-                <div class="c-order-button">
-                    {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                        <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
-                    {% endif %}
-                </div>
-                <ul class="e-features-list">
-                    {% for block in section.blocks %}
-                        {% if block.type == 'icon_with_text' %}
-                            {% if block.settings.text != blank %}
-                                <li>
-                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
-                                    {{ block.settings.text }}
-                                </li>
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+            {% capture certified_box %}
                 <div class="c-certified-box">
                     <ul>
                         {% for block in section.blocks %}
@@ -106,13 +89,43 @@
                         {% endif %}
                     {% endfor %}
                 </div>
+            {% endcapture %}
+            <div class="c-buy-block">
+                <div class="c-order-button">
+                    {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                        <a href="{{ section.settings.button_url }}" class="btn btn--primary">{{ section.settings.button_label }}</a>
+                    {% endif %}
+                </div>
+                <ul class="e-features-list">
+                    {% for block in section.blocks %}
+                        {% if block.type == 'icon_with_text' %}
+                            {% if block.settings.text != blank %}
+                                <li>
+                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                    {{ block.settings.text }}
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                {% unless section.settings.bf_countdown %}
+                    {{ certified_box }}
+                {% endunless %}
             </div>
+            {% if section.settings.bf_countdown %}
+                {% if settings.black_friday_turn_on %}
+                    <div class="hero-product__bf-countdown">
+                        <p>{{ 'cart.drawer.settings.bf_sale_ends_in' | t }}</p>
+                        {% render 'n-bf-countdown', short_labels: true %}
+                    </div>
+                {% endif %}
+                {{ certified_box }}
+            {% endif %}
         </div>
     </div>
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        loadScriptOnce("countdown", "https://qureskincaredns-stable.com/assets/js/countdown.js");
         loadScriptOnce("youtube-popup", "https://qureskincaredns-stable.com/assets/js/yt-popup.js");
         loadScriptOnce("gallery-sticky-video", "https://qureskincaredns-stable.com/assets/js/gallery-sticky-video.js");
         loadScriptOnce("dialog", "https://qureskincaredns-stable.com/assets/js/dialog.js");
@@ -161,6 +174,12 @@
             "type": "checkbox",
             "id": "special_offer_badge",
             "label": "t:common.special-offer-badge",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "bf_countdown",
+            "label": "t:sections.announcement-bar.settings.countdown",
             "default": false
         }
     ],
