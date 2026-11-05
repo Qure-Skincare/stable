@@ -7,15 +7,18 @@
   certified box is skipped unless the block sets `certified_image_1`.
 
   @param {object} section - The current section object.
+  @param {boolean} [no_wrapper] - When true, skip the `hero-product__experts` wrapper so the
+    quote-card and certified-box sit directly in `.hero-product__extra` (product header markup).
 
   @example
   {% render 'n-product-page-experts-aio', section: section %}
+  {% render 'n-product-page-experts-aio', section: section, no_wrapper: true %}
 {% enddoc %}
 
 {% assign experts_blocks = section.blocks | where: 'type', 'experts' %}
 
 {% if experts_blocks.size > 0 %}
-    <div class="hero-product__experts">
+    {% unless no_wrapper %}<div class="hero-product__experts">{% endunless %}
         {% for block in experts_blocks %}
             <div class="e-quote-card" {{ block.shopify_attributes }}>
                 <i class="e-icon e-icon-quote"></i>
@@ -50,5 +53,5 @@
                 </div>
             {% endif %}
         {% endfor %}
-    </div>
+    {% unless no_wrapper %}</div>{% endunless %}
 {% endif %}

@@ -382,6 +382,7 @@
         "guide": "Guide",
         "settings": "Settings",
         "single": "Single",
+        "single-with-text": "Single with text",
         "product-text": "Product text",
         "tag": "Tag",
         "client": "Client",
@@ -1553,7 +1554,12 @@
             "name": "Accordion tiles square"
         },
         "n_features-overview": {
-            "name": "Features overview"
+            "name": "Features overview",
+            "settings": {
+                "modifier-options": {
+                    "mi-pro": "Micro-Infusion Pro"
+                }
+            }
         },
         "n_ingredients-video": {
             "name": "Ingredients video"

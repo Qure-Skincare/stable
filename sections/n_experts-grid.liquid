@@ -1,6 +1,7 @@
 {% doc %}
   Renders a grid of experts with a photo, name, and role.
   Enable the "Awards" setting to show the awards row and the "--awards" variant (Q icon badge on each expert).
+  Enable "Slider" to render the experts as a c-swiper carousel instead of a static grid.
 {% enddoc %}
 
 <!-- EXPERTS GRID -->
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/experts-grid/experts-grid.css" />
 {% endif %}
 
-<section class="experts-grid{% if section.settings.awards %} experts-grid--awards{% endif %}">
+<section class="experts-grid{% if section.settings.awards %} experts-grid--awards{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article>
             {% if section.settings.heading != blank %}
@@ -30,22 +31,25 @@
                     {% endfor %}
                 </ol>
             {% endif %}
-            <ul>
+            {% if section.settings.slider %}
+                {% assign item_tag = 'div' %}
+                {% assign item_class = 'swiper-slide' %}
+            {% else %}
+                {% assign item_tag = 'li' %}
+                {% assign item_class = '' %}
+            {% endif %}
+            {% capture experts_items %}
                 {% for block in section.blocks %}
                     {% if block.type == 'expert' %}
-                        <li {{ block.shopify_attributes }}>
-                            {% if section.settings.awards %}
-                                <figure>
-                                    {% if block.settings.image != blank %}
-                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
-                                    {% endif %}
-                                    <figcaption><i class="e-icon e-icon-q"></i></figcaption>
-                                </figure>
-                            {% else %}
+                        <{{ item_tag }}{% if item_class != blank %} class="{{ item_class }}"{% endif %} {{ block.shopify_attributes }}>
+                            <figure>
                                 {% if block.settings.image != blank %}
                                     <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
                                 {% endif %}
-                            {% endif %}
+                                {% if section.settings.awards %}
+                                    <figcaption><i class="e-icon e-icon-q"></i></figcaption>
+                                {% endif %}
+                            </figure>
                             <div>
                                 {% if block.settings.name != blank %}
                                     <strong>{{ block.settings.name }}</strong>
@@ -54,10 +58,46 @@
                                     <small>{{ block.settings.role }}</small>
                                 {% endif %}
                             </div>
-                        </li>
+                        </{{ item_tag }}>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            {% endcapture %}
+            {% if section.settings.slider %}
+                <div
+                    class="c-swiper"
+                    data-swiper='{
+                        "slidesPerView": 2,
+                        "spaceBetween": 16,
+                        "loop": false,
+                        "pagination": {
+                            "el": ".c-swiper-pagination",
+                            "type": "custom"
+                        },
+                        "navigation": {
+                            "prevEl": ".c-swiper-button-prev",
+                            "nextEl": ".c-swiper-button-next"
+                        },
+                        "breakpoints": {
+                            "768": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 24
+                            }
+                        }
+                    }'>
+                    <div class="swiper-wrapper">
+                        {{ experts_items }}
+                    </div>
+                    <div class="c-swiper-nav">
+                        <button class="c-swiper-button-prev"></button>
+                        <div class="c-swiper-pagination"></div>
+                        <button class="c-swiper-button-next"></button>
+                    </div>
+                </div>
+            {% else %}
+                <ul>
+                    {{ experts_items }}
+                </ul>
+            {% endif %}
         </article>
     </div>
 </section>
@@ -68,6 +108,11 @@
     "name": "t:sections.n_experts-grid.name",
     "settings": [
         {
+            "type": "text",
+            "id": "section_id",
+            "label": "t:common.section_id"
+        },
+        {
             "type": "checkbox",
             "id": "use_own_file",
             "label": "t:common.use-own-file",
@@ -77,6 +122,12 @@
             "type": "checkbox",
             "id": "awards",
             "label": "t:sections.n_experts-grid.settings.awards",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "slider",
+            "label": "t:common.slider",
             "default": false
         },
         {

@@ -84,7 +84,7 @@
                         {% render 'n-product-page-collapsed', product: product, page: page, section: section %}
                 {% endcase %}
             {% endfor %}
-            {% render 'n-product-page-experts-aio', section: section %}
+            {% render 'n-product-page-experts-aio', section: section, no_wrapper: true %}
             {% render 'n-product-page-trustpilot', section: section, extra: true %}
             {% render 'n-product-page-jumpto', section: section %}
         </div>
