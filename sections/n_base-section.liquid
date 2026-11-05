@@ -157,6 +157,8 @@
                     | replace: '<p>[step]</p><ul>', '<ul class="e-steps-list">' 
                     | replace: '<p>[marked_list]</p><ul>', '<ul class="c-marked-list">' 
                     | replace: '<p>[normal]</p><ol>', '<ol class="normal">'
+                    | replace: '<p>[small]', '<small>'
+                    | replace: '[/small]</p>', '</small>'
                     }}
                 </div>
             {% endif %}

@@ -1,6 +1,6 @@
 {% doc %}
   Renders the trustpilot product-header column: description, rating and icon list in main;
-  certified-box and money-back when called with extra.
+  certified-box (unless an experts block renders its own) and money-back when called with extra.
 
   @param {object} section - A section object.
   @param {object} product - A product object.
@@ -13,7 +13,8 @@
 {% enddoc %}
 
 {% if extra %}
-    {% if section.settings.rating_type == 'trustpilot' %}
+    {% assign experts_blocks = section.blocks | where: 'type', 'experts' %}
+    {% if section.settings.rating_type == 'trustpilot' and experts_blocks.size == 0 %}
         <div class="c-certified-box">
             <ul>
                 <li><img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/targeted-patches/crt-1.webp" alt="Certified Dermatologists" /></li>
