@@ -1157,6 +1157,7 @@
         },
         "accordion_xknT3e": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Is micro infusion at home the same as a micro infusion facial?",
             "text": "<p>A micro infusion facial is done in a clinic. The at-home system lets you apply the serum yourself in about 5 minutes, once every 2 weeks, at roughly $20 a treatment. It is a cosmetic routine that works on how skin looks, and it complements professional care.</p>"
@@ -1227,6 +1228,7 @@
         },
         "accordion_8": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "heading": "Can I use a different serum with the Micro-Infusion device?",
             "text": "<p>No. Only use the Qure serums provided for use with your Micro-Infusion Device.</p><p>Please keep in mind that not all serums are suitable for Micro-Infusion. Some formulas may cause irritation and should be avoided, as the micro-channels created during treatment can increase absorption, meaning a formula that is suitable for use on the skin’s surface may not be appropriate for Micro-Infusion.</p><p>Qure serums and ampoules are specifically developed for the Qure Micro-Infusion System, with gentle, fragrance-free formulas designed with care for all skin types. The formulas are also tested for properties such as viscosity, texture and flow to ensure they work correctly with Qure needle heads and deliver serum as intended.</p><p>Because other formulas have not been tested for compatibility with the Qure Micro-Infusion System, we can only guarantee the safety, performance and proper serum flow of Qure formulas when used with the device.</p>"
