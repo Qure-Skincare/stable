@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_YnMCRC": {
       "type": "n-product-header",
@@ -154,7 +154,6 @@
             "optional_subscription": false,
             "popular": false,
             "best": true,
-            "tag_label": "Best Results",
             "free_shipping": false,
             "preselected": true,
             "heading": "3 Month Supply",
@@ -186,7 +185,6 @@
             "optional_subscription": false,
             "popular": false,
             "best": false,
-            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "1 Month Supply",
@@ -229,7 +227,6 @@
             "optional_subscription": false,
             "popular": false,
             "best": true,
-            "tag_label": "Best Results",
             "free_shipping": false,
             "preselected": true,
             "heading": "3 Month Supply",
@@ -261,7 +258,6 @@
             "optional_subscription": false,
             "popular": false,
             "best": false,
-            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "1 Month Supply",
