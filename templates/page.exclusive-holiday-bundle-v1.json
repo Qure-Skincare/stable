@@ -38,15 +38,15 @@
         "icon_with_text_KMapiD": {
           "type": "icon_with_text",
           "settings": {
-            "icon": "guarantee",
+            "icon": "checkmark",
             "text": "Easy 30-Day Returns"
           }
         },
         "icon_with_text_fmpmjE": {
           "type": "icon_with_text",
           "settings": {
-            "icon": "shipping-order",
-            "text": "Free US Shipping"
+            "icon": "checkmark",
+            "text": "Free Worldwide Shipping"
           }
         }
       },
@@ -60,12 +60,13 @@
       "name": "t:sections.n_hero-product.name",
       "settings": {
         "use_own_file": false,
-        "heading": "<h1>Save Up to 60% on<br/>Certified Skincare Solutions</h1>",
+        "heading": "<h1>[orange]Save Up to 60%[/orange] on<br/>Certified Skincare Solutions</h1>",
         "text": "<p>Backed by the most respected peer-reviewed Dermatologist Journals and scientific studies that prove; Qure’s skincare works.</p>",
         "button_label": "SAVE UP TO 60% THIS BLACK FRIDAY",
         "button_url": "#purchase-form-bundle",
         "bundle_text": "<p><strong>EXCLUSIVE</strong> BUNDLES</p>",
-        "special_offer_badge": true
+        "special_offer_badge": true,
+        "bf_countdown": true
       }
     },
     "n_page-exclusive-bundle-resuslts-showcase": {
@@ -159,8 +160,9 @@
       "settings": {
         "use_own_file": false,
         "text": "<h2>Top-rated products at best prices</h2>",
+        "rating_type": "trustpilot",
         "rating": "4.5",
-        "rating_text": "700,000+ Confident Customers"
+        "rating_text": "200,000+ Confident Customers"
       }
     },
     "n_press_reviews_bundle_v2": {
@@ -240,7 +242,9 @@
             "image": "shopify://shop_images/MI_6_month_W.webp",
             "preselected": false,
             "soldout": false,
-            "reserved": false
+            "reserved": false,
+            "bestseller": true,
+            "bestseller_text": "Exclusive Offer"
           }
         },
         "product_8hJgNj": {

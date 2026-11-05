@@ -506,7 +506,11 @@
         "days": "DAYS",
         "hours": "HOURS",
         "minutes": "MINUTES",
-        "seconds": "SECONDS"
+        "seconds": "SECONDS",
+        "days_short": "D",
+        "hours_short": "H",
+        "minutes_short": "M",
+        "seconds_short": "S"
       },
       "you-may-also-like": {
         "header": "You may also like..."

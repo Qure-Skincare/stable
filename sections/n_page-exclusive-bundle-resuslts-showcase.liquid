@@ -9,7 +9,9 @@
 <section class="results-showcase">
     <div class="container">
         <article class="results-showcase__text">
-            {% if section.settings.rating != blank %}
+            {% if section.settings.rating_type == 'trustpilot' %}
+                {% render 'n-trustpilot-rating' %}
+            {% elsif section.settings.rating != blank %}
                 <div class="e-rating-stars" style="--rating: {{ section.settings.rating }}"></div>
             {% endif %}
             {% if section.settings.rating_text != blank %}
@@ -87,6 +89,22 @@
       "type": "richtext",
       "id": "text",
       "label": "t:common.text"
+    },
+    {
+      "type": "select",
+      "id": "rating_type",
+      "label": "t:common.rating-type",
+      "default": "rating",
+      "options": [
+        {
+          "value": "rating",
+          "label": "t:common.rating"
+        },
+        {
+          "value": "trustpilot",
+          "label": "t:common.trustpilot"
+        }
+      ]
     },
     {
       "type": "text",
