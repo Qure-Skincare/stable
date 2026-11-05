@@ -60,7 +60,10 @@
             {% elsif section.settings.bundle_text != blank %}
                 <div class="e-double-tag">{{ section.settings.bundle_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
             {% endif %}
-            {{ section.settings.heading }}
+            {{ section.settings.heading
+            | replace: '[orange]', '<span>'
+            | replace: '[/orange]', '</span>'
+            }}
             {% if section.settings.text != blank %}
                 <article>
                     {{ section.settings.text }}
@@ -175,9 +178,13 @@
                             "value": "shipping-order", 
                             "label": "t:common.shipping-order" 
                         },
-                        { 
-                            "value": "guarantee", 
-                            "label": "t:common.guarantee" 
+                        {
+                            "value": "guarantee",
+                            "label": "t:common.guarantee"
+                        },
+                        {
+                            "value": "checkmark",
+                            "label": "t:common.checkmark"
                         }
                     ]
                 },
