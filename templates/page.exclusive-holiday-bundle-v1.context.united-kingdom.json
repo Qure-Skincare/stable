@@ -12,5 +12,26 @@
     "market": "united-kingdom"
   },
   "parent": "page.exclusive-holiday-bundle-v1.json",
-  "sections": {}
+  "sections": {
+    "purchase_form_bundle_v2": {
+      "settings": {},
+      "blocks": {
+        "product_8hJgNj": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_xJpDep": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_xwqzya": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
+    }
+  }
 }
