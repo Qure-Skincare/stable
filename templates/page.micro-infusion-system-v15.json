@@ -1127,6 +1127,48 @@
     "n_faq_gD5hPw": {
       "type": "n_faq",
       "blocks": {
+        "accordion_T9W6DE": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What is GHK-Cu?",
+            "text": "<p>GHK-Cu is a copper peptide. A peptide is a short chain of amino acids, and in GHK-Cu one is paired with copper. It is popular in serums for skin that looks smoother and firmer over time. It works on how skin looks, and it works gradually, so expect weeks, not days.</p>"
+          }
+        },
+        "accordion_8U6Pzm": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is Copper Tripeptide-1 the same as GHK-Cu?",
+            "text": "<p>Yes. They are two names for the same ingredient. Copper Tripeptide-1 is the name on an ingredient list, and GHK-Cu is the name most people search for. The Rejuvenating serum lists Copper Tripeptide-1.</p>"
+          }
+        },
+        "accordion_hdCdPD": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Which Qure serum has GHK-Cu?",
+            "text": "<p>The Rejuvenating serum. It pairs GHK-Cu with sodium hyaluronate, beta-glucan and niacinamide for skin that looks smoother, more hydrated and more even-toned. The Brightening serum does not contain it.</p>"
+          }
+        },
+        "accordion_ejmTfR": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is there a GHK-Cu cream or copper peptide cream?",
+            "text": "<p>Not from Qure. The GHK-Cu is in a serum that you apply with the Micro-Infusion device. A cream is richer and suits dry skin. A serum is lighter and layers under moisturizer.</p>"
+          }
+        },
+        "accordion_xknT3e": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is micro infusion at home the same as a micro infusion facial?",
+            "text": "<p>A micro infusion facial is done in a clinic. The at-home system lets you apply the serum yourself in about 5 minutes, once every 2 weeks, at roughly $20 a treatment. It is a cosmetic routine that works on how skin looks, and it complements professional care.</p>"
+          }
+        },
+        "accordion_3nnVYh": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use my own copper peptide serum with the device?",
+            "text": "<p>No. Use only the Qure serums made for the device, including the GHK-Cu Rejuvenating serum. Not every serum suits a needling device, and a formula made for the skin's surface may sting or irritate freshly treated skin. Qure serums are tested with the needle heads for texture and flow, so they come through as intended. Other formulas, including other copper peptide serums, have not been tested this way.</p>"
+          }
+        },
         "accordion_1": {
           "type": "accordion",
           "settings": {
@@ -1263,6 +1305,12 @@
         }
       },
       "block_order": [
+        "accordion_T9W6DE",
+        "accordion_8U6Pzm",
+        "accordion_hdCdPD",
+        "accordion_ejmTfR",
+        "accordion_xknT3e",
+        "accordion_3nnVYh",
         "accordion_1",
         "accordion_2",
         "accordion_3",
