@@ -53,8 +53,15 @@
                         <div class="c-bundle-card__image" onclick="{{ product_dialog }}.showModal()">
                             {% if product_discount > 0 %}
                                 {% if section.settings.special_offer_badge %}
-                                    <div class="e-bf-badge e-bf-badge--silver e-bf-badge--md">
-                                        <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-badge-silver.webp" alt="Black Friday" />
+                                    {% if block.settings.bestseller %}
+                                        {% assign badge_modifier = 'exclusive' %}
+                                        {% assign badge_image = 'bf-badge-exclusive.svg' %}
+                                    {% else %}
+                                        {% assign badge_modifier = 'silver' %}
+                                        {% assign badge_image = 'bf-badge-silver.webp' %}
+                                    {% endif %}
+                                    <div class="e-bf-badge e-bf-badge--{{ badge_modifier }} e-bf-badge--md">
+                                        <img src="https://qureskincaredns-stable.com/assets/images/bf-26/{{ badge_image }}" alt="Black Friday" />
                                         <div class="e-bf-badge__content">
                                             <strong>{{ product_discount }}%</strong>
                                             <span>{{ 'product.settings.discount-text' | t }}</span>
@@ -63,6 +70,10 @@
                                 {% else %}
                                     <div class="e-pill-save">{{ 'purchase-form-bundle.settings.discount-text' | t }} {{ product_discount }}%</div>
                                 {% endif %}
+                            {% endif %}
+
+                            {% if block.settings.bestseller %}
+                                <div class="e-pill-save e-pill-save--bf">{{ block.settings.bestseller_text | default: 'Exclusive Offer' }}</div>
                             {% endif %}
 
                             {% if block.settings.image != blank %}

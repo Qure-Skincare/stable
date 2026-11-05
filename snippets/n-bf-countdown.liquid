@@ -1,0 +1,30 @@
+{% doc %}
+  Renders the Black Friday countdown from the global "Special offer" theme settings,
+  so it shows the same deadline as the announcement bar countdown.
+  Ticked by n-announcement-bar.js, which the announcement bar already loads on the page;
+  the wrapper must be listed in that script's SCOPE_SELECTOR.
+
+  @param {boolean} [short_labels] - Use D/H/M/S labels instead of DAYS/HOURS/MINUTES/SECONDS.
+
+  @example
+  {% render 'n-bf-countdown', short_labels: true %}
+{% enddoc %}
+
+{% if short_labels %}
+    {% assign label_days = 'product.settings.limited-offer.days_short' | t %}
+    {% assign label_hours = 'product.settings.limited-offer.hours_short' | t %}
+    {% assign label_minutes = 'product.settings.limited-offer.minutes_short' | t %}
+    {% assign label_seconds = 'product.settings.limited-offer.seconds_short' | t %}
+{% else %}
+    {% assign label_days = 'product.settings.limited-offer.days' | t %}
+    {% assign label_hours = 'product.settings.limited-offer.hours' | t %}
+    {% assign label_minutes = 'product.settings.limited-offer.minutes' | t %}
+    {% assign label_seconds = 'product.settings.limited-offer.seconds' | t %}
+{% endif %}
+
+<div class="e-countdown"{% if settings.black_friday_countdown_from != blank %} data-deadline="{{ settings.black_friday_countdown_from }}"{% endif %} data-offer-days="{{ settings.black_friday_countdown_days }}">
+    <div data-key="{{ label_days }}">00</div>
+    <div data-key="{{ label_hours }}">00</div>
+    <div data-key="{{ label_minutes }}">00</div>
+    <div data-key="{{ label_seconds }}">00</div>
+</div>

@@ -1,0 +1,15 @@
+{% doc %}
+  Renders the Trustpilot logo with five Trustpilot stars.
+
+  @example
+  {% render 'n-trustpilot-rating' %}
+{% enddoc %}
+
+<div class="trustpilot-rating">
+    <img loading="lazy" src="https://qureskincaredns-stable.com/assets/images/trustpilot.webp" alt="Trustpilot" />
+    <ul>
+        {% for i in (1..5) %}
+            <li><i class="e-icon e-icon-trustpilot"></i></li>
+        {% endfor %}
+    </ul>
+</div>
