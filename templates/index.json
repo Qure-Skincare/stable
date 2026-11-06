@@ -23,6 +23,7 @@
       "block_order": [
         "stars_image_Qn4wPe"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
