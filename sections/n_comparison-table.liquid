@@ -96,6 +96,9 @@
                                         {% if block.settings.text_5 != blank %}
                                             <li><i class="e-icon e-icon-{{ block.settings.select_5 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_5 }}</span></li>
                                         {% endif %}
+                                        {% if block.settings.text_6 != blank %}
+                                            <li><i class="e-icon e-icon-{{ block.settings.select_6 }}{% unless section.settings.modifier == 'secondary' %}-fill{% endunless %}"></i> <span>{{ block.settings.text_6 }}</span></li>
+                                        {% endif %}
                                     </ul>
                                 </article>
                             </div>
@@ -289,6 +292,26 @@
             {
                 "type": "select",
                 "id": "select_5",
+                "label": "t:common.select",
+                "options": [
+                    {
+                        "value": "checkmark",
+                        "label": "t:common.checkmark"
+                    },
+                    {
+                        "value": "cross",
+                        "label": "t:common.cross"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "id": "text_6",
+                "label": "t:common.text"
+            },
+            {
+                "type": "select",
+                "id": "select_6",
                 "label": "t:common.select",
                 "options": [
                     {

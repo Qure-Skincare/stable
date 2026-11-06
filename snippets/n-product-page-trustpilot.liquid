@@ -13,6 +13,7 @@
 {% enddoc %}
 
 {% if extra %}
+    {% comment %} The experts block renders its own certified-box, so skip the hardcoded one. {% endcomment %}
     {% assign experts_blocks = section.blocks | where: 'type', 'experts' %}
     {% if section.settings.rating_type == 'trustpilot' and experts_blocks.size == 0 %}
         <div class="c-certified-box">

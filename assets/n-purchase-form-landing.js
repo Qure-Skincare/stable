@@ -137,6 +137,8 @@ function __landing__handlerProductVariantSelector(e) {
     const product_selling_plan = this.getAttribute("data-product-selling-plan");
     const variant_title = this.getAttribute("data-variant-title");
     const gift = this.getAttribute("data-gift");
+    const gift_selling_plan = this.getAttribute("data-gift-selling-plan");
+    const included_gift = this.getAttribute("data-included-gift");
     const discount_code = this.getAttribute("data-discount-code");
 
     if (this.matches('.supply-cards-labels li.purchase_form_landing_product_variant_selector')) {
@@ -152,7 +154,7 @@ function __landing__handlerProductVariantSelector(e) {
     __landing__updateStickyButton(variant_title, this);
     __landing__BackInStock(soldout);
     __landing__SubscriptionForm(this,product_selling_plan);
-    __landing__applyDiscount(gift, discount_code);
+    __landing__applyDiscount(gift, discount_code, gift_selling_plan, included_gift);
 
     // The subscribe label is set by __landing__updateSellingPlan only when the
     // "Subscribe / One-Time" selector exists on the page. In every other case
@@ -175,7 +177,12 @@ function __landing__handlerProductVariantSelector(e) {
 
 }
 
-function __landing__applyDiscount(gift, discount_code) {
+function __landing__applyDiscount(gift, discount_code, gift_selling_plan, included_gift) {
+    // The "Gift included" box (section `gift` block) follows the variant's
+    // `included_gift` setting only; the regular `gift` keeps the in-card notice.
+    const giftBox = document.querySelector('.' + __section_landing + ' .c-gift-included-box');
+    if (giftBox) giftBox.classList.toggle('hide', !(gift && included_gift));
+
     const form = document.querySelector('.' + __section_landing + ' .c-order-button form[action="/cart/add"]');
     if (!form) return;
 
@@ -186,6 +193,15 @@ function __landing__applyDiscount(gift, discount_code) {
     else
     {
         __landing__removeHiddenInput(form, 'properties[_gift]');
+    }
+
+    if(gift && gift_selling_plan)
+    {
+        __landing__setHiddenInput(form, 'properties[_gift_selling_plan]', gift_selling_plan);
+    }
+    else
+    {
+        __landing__removeHiddenInput(form, 'properties[_gift_selling_plan]');
     }
 
     if(discount_code)
