@@ -83,6 +83,12 @@
                                     {% if block.settings.gift_selling_plan > 0 %}
                                     data-gift-selling-plan="{{ block.settings.gift_selling_plan }}"
                                     {% endif %}
+                                    {% elsif subscription_is_on == true and block.settings.included_gift != blank %}
+                                    data-gift="{{ all_products[block.settings.included_gift].variants.first.id }}"
+                                    data-included-gift="true"
+                                    {% if block.settings.included_gift_selling_plan > 0 %}
+                                    data-gift-selling-plan="{{ block.settings.included_gift_selling_plan }}"
+                                    {% endif %}
                                     {% endif %}
                                     {% if subscription_is_on == true and block.settings.discount_code != blank %}
                                     data-discount-code="{{ block.settings.discount_code }}"

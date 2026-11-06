@@ -131,100 +131,25 @@
     "purchase-form-landing": {
       "type": "n-purchase-form-landing",
       "blocks": {
-        "type_onetime": {
+        "type_hair": {
           "type": "type",
           "settings": {}
         },
-        "product_type_onetime": {
+        "product_type_hair": {
           "type": "product_type",
           "settings": {
-            "heading": "One time purchase",
-            "preselected": false
-          }
-        },
-        "product_onetime_3m": {
-          "type": "product",
-          "settings": {
-            "product": "micro-infusion-pro-hair-system-3-month-bundle",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "optional_subscription": false,
-            "popular": false,
-            "best": true,
-            "tag_label": "Best Results",
-            "free_shipping": false,
-            "preselected": true,
-            "heading": "3 Month Supply",
-            "subheading": "(12 bottles)",
-            "product_selling_plan_text": "Ships every 3 months",
-            "text": "",
-            "image": "shopify://shop_images/mi-pro-hair-12-bottles.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "product_onetime_1m": {
-          "type": "product",
-          "settings": {
-            "product": "microinfusion-hair",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_text": "",
-            "discount_code": "",
-            "optional_subscription": false,
-            "popular": false,
-            "best": false,
-            "tag_label": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "1 Month Supply",
-            "subheading": "(4 bottles)",
-            "product_selling_plan_text": "Ships every 1 months",
-            "text": "",
-            "image": "shopify://shop_images/mi-pro-hair-4-bottles.webp",
-            "product_discount_percent": 0,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "type_subscription": {
-          "type": "type",
-          "settings": {}
-        },
-        "product_type_subscription": {
-          "type": "product_type",
-          "settings": {
-            "heading": "Subscribe & Save",
+            "heading": "Hair",
             "preselected": true
           }
         },
-        "product_subscription_3m": {
+        "product_3m": {
           "type": "product",
           "settings": {
             "product": "micro-infusion-pro-hair-system-3-month-bundle",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "hair-renewal-serum",
-            "gift_selling_plan": 9330622703,
+            "product_selling_plan": 9330426095,
+            "gift": "",
+            "gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
@@ -238,7 +163,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "text": "",
             "image": "shopify://shop_images/mi-pro-hair-12-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -247,24 +172,17 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": ""
+            "included_text": "",
+            "included_gift": "hair-renewal-serum",
+            "included_gift_selling_plan": 9330622703
           }
         },
-        "gift_included": {
-          "type": "gift-included",
-          "settings": {
-            "product": "hair-renewal-serum",
-            "image": "shopify://shop_images/scalp-hydration-small.png",
-            "name": "Hair Renewal Serum",
-            "text": "Helps provide lasting scalp hydration"
-          }
-        },
-        "product_subscription_1m": {
+        "product_1m": {
           "type": "product",
           "settings": {
             "product": "microinfusion-hair",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 9330458863,
             "gift": "",
             "gift_text": "",
             "discount_code": "",
@@ -279,7 +197,7 @@
             "product_selling_plan_text": "Ships every 1 months",
             "text": "",
             "image": "shopify://shop_images/mi-pro-hair-4-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -288,20 +206,26 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": ""
+            "included_text": "",
+            "gift_selling_plan": 0
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {
+            "product": "hair-renewal-serum",
+            "image": "shopify://shop_images/scalp-hydration-small.png",
+            "heading": "Hair Renewal Serum",
+            "text": "Helps provide lasting scalp hydration"
           }
         }
       },
       "block_order": [
-        "type_onetime",
-        "product_type_onetime",
-        "product_onetime_3m",
-        "product_onetime_1m",
-        "type_subscription",
-        "product_type_subscription",
-        "product_subscription_3m",
-        "product_subscription_1m",
-        "gift_included"
+        "type_hair",
+        "product_type_hair",
+        "product_3m",
+        "product_1m",
+        "gift"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
@@ -309,7 +233,7 @@
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 10,
+        "subscription_discount_max_percent": 45,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "microinfusion-hair",
         "type": "list",

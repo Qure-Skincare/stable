@@ -71,7 +71,6 @@
         "bundle-item2-text": "Item 2 text",
         "optional-subscription": "Optional subscription",
         "free-gift-offer": "Free gift offer",
-        "gift-included": "Gift included box",
         "background": "Background",
         "subscription-note": "Subscription note",
         "subscription-note-mode": "Subscription note mode",
@@ -2244,7 +2243,9 @@
                         "total_treatments_info": "Use this setting to show the number of treatments in product variant",
                         "left_items": "Left items",
                         "left_items_info": "Use this setting to show the number of items left in stock.",
-                        "gift_selling_plan": "Gift selling plan"
+                        "gift_selling_plan": "Gift selling plan",
+                        "included_gift": "Included gift (\"Gift included\" box)",
+                        "included_gift_selling_plan": "Included gift selling plan"
                     }
                 }
             }

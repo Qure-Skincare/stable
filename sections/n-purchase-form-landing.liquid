@@ -7,11 +7,7 @@
         {% render 'n-purchase-form-landing-klaviyo', section: section %}
         {% include 'n-purchase-form-landing-subscription' section: section, __idsArray1: __idsArray1, __idsArray2: __idsArray2, __idsArray3: __idsArray3 %}
         {% render 'n-purchase-form-landing-optional-subscription', section: section %}
-        {% for block in section.blocks %}
-            {% if block.type == 'gift-included' %}
-                {% render 'n-product-gift-included-box', block: block %}
-            {% endif %}
-        {% endfor %}
+        {% include 'n-purchase-form-gift', box_class: 'c-gift-included-box', content_class: 'c-gift-included-box__content' %}
         {% render 'n-product-page-buy-button', product_price: null, product_variant_id: null, section: section, product_available: true, static: true %}
         {% if section.settings.delivery_switcher_position == 'footer' %}
             {% include 'n-purchase-form-landing-delivery-switcher' %}
@@ -311,8 +307,8 @@
                 ]
             },
             {
-                "type": "gift-included",
-                "name": "t:common.gift-included",
+                "type": "gift",
+                "name": "t:common.gift",
                 "limit": 1,
                 "settings": [
                     {
@@ -327,7 +323,7 @@
                     },
                     {
                         "type": "text",
-                        "id": "name",
+                        "id": "heading",
                         "label": "t:common.header"
                     },
                     {
@@ -454,6 +450,17 @@
                         "type": "number",
                         "id": "gift_selling_plan",
                         "label": "t:sections.purchase-form.blocks.product.settings.gift_selling_plan",
+                        "default": 0
+                    },
+                    {
+                        "type": "product",
+                        "id": "included_gift",
+                        "label": "t:sections.purchase-form.blocks.product.settings.included_gift"
+                    },
+                    {
+                        "type": "number",
+                        "id": "included_gift_selling_plan",
+                        "label": "t:sections.purchase-form.blocks.product.settings.included_gift_selling_plan",
                         "default": 0
                     },
                     {
