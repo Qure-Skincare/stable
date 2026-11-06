@@ -1133,12 +1133,22 @@
             "text": "<p>To pair the app with your Q-Rejuvalight Pro Facewear, follow these steps:</p><ol><li>Open the app on your mobile device and follow the instructions to set up your profile and pair your Q-Rejuvalight Pro Facewear with the app.</li><li>Turn on your Bluetooth on your phone.</li><li>Turn on Q-Rejuvalight Pro Facewear by holding the center button on the forehead until the light is on.</li><li>Once your Q-Rejuvalight Pro Facewear appears on the Bluetooth available devices list, click on it to connect.</li><li>You should then see on your app that the Q-Rejuvalight Pro Facewear has been successfully paired.</li></ol>",
             "section_id": ""
           }
+        },
+        "faq_item_MdGmhL": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Which phones does the app support?",
+            "text": "<p>The Qure Skincare app is compatible with iPhone and Android smartphones. You can download it through the Apple App Store or Google Play Store.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_WymVHH",
         "faq_item_pccJCJ",
-        "faq_item_He8KcE"
+        "faq_item_He8KcE",
+        "faq_item_MdGmhL"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
