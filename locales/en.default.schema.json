@@ -1557,6 +1557,7 @@
             "name": "Features overview",
             "settings": {
                 "modifier-options": {
+                    "mi-hair": "Micro-Infusion hair",
                     "mi-pro": "Micro-Infusion Pro"
                 }
             }
@@ -2244,7 +2245,9 @@
                         "total_treatments_info": "Use this setting to show the number of treatments in product variant",
                         "left_items": "Left items",
                         "left_items_info": "Use this setting to show the number of items left in stock.",
-                        "gift_selling_plan": "Gift selling plan"
+                        "gift_selling_plan": "Gift selling plan",
+                        "included_gift": "Included gift (\"Gift included\" box)",
+                        "included_gift_selling_plan": "Included gift selling plan"
                     }
                 }
             }

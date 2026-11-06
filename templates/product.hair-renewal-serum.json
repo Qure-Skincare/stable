@@ -39,8 +39,10 @@
             "text": "<p>A nightly serum that hydrates the scalp and supports fuller-looking hair — pairs weekly with the Micro-Infusion Pro Hair System.</p>",
             "username": "Dr. Shah",
             "position": "Dermatologist",
-            "certified_count": "",
-            "certified_text": ""
+            "certified_image_1": "shopify://shop_images/crt-1.webp",
+            "certified_image_2": "shopify://shop_images/crt-2.webp",
+            "certified_count": "+50",
+            "certified_text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
           }
         }
       },

@@ -1,23 +1,31 @@
 {% doc %}
   Renders the gift box of a purchase form section from its `gift` block: badge, image, name, text and the gift product price struck out.
+  Used by `n-purchase-form` (classic markup, `treatment__gift`) and `n-purchase-form-landing` (`c-gift-included-box` markup).
 
   @param {object} section - purchase form section
+  @param {string} [box_class] - root element class, `treatment__gift` by default
+  @param {string} [content_class] - content wrapper class, `treatment__gift-box` by default
 
   @example
   {% include 'n-purchase-form-gift' %}
+  {% include 'n-purchase-form-gift', box_class: 'c-gift-included-box', content_class: 'c-gift-included-box__content' %}
 {% enddoc %}
 {% assign block = section.blocks | where: 'type', 'gift' | first %}
+{% assign gift_box_class = box_class | default: 'treatment__gift' %}
+{% assign gift_content_class = content_class | default: 'treatment__gift-box' %}
 {% if block != blank %}
     {% include 'get-product-data', product_handle: block.settings.product, product_prefix: 'purchase-form-gift-' %}
-    <div class="treatment__gift" {{ block.shopify_attributes }}>
+    <div class="{{ gift_box_class }}" {{ block.shopify_attributes }}>
         <div class="e-pill-save">{{ 'purchase-form.settings.gift_included' | t }}</div>
-        <div class="treatment__gift-box">
+        <div class="{{ gift_content_class }}">
             {% if block.settings.image != blank %}
-                <img loading="lazy" src="{{ block.settings.image | image_url: width: 120 }}" alt="{{ block.settings.heading | escape }}" />
+                <img loading="lazy" src="{{ block.settings.image | image_url: width: 160 }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" alt="{{ block.settings.heading | escape }}" />
             {% endif %}
             <div>
                 <strong>{{ block.settings.heading }}</strong>
-                <span>{{ block.settings.text }}</span>
+                {% if block.settings.text != blank %}
+                    <span>{{ block.settings.text }}</span>
+                {% endif %}
             </div>
             <p>
                 <span>{{ 'purchase-form.settings.first_free' | t }}</span>

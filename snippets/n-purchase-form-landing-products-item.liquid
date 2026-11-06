@@ -79,6 +79,15 @@
                             {% endif %}
                             {% if subscription_is_on == true and block.settings.gift != blank %}
                             data-gift="{{ all_products[block.settings.gift].variants.first.id }}"
+                            {% if block.settings.gift_selling_plan > 0 %}
+                            data-gift-selling-plan="{{ block.settings.gift_selling_plan }}"
+                            {% endif %}
+                            {% elsif subscription_is_on == true and block.settings.included_gift != blank %}
+                            data-gift="{{ all_products[block.settings.included_gift].variants.first.id }}"
+                            data-included-gift="true"
+                            {% if block.settings.included_gift_selling_plan > 0 %}
+                            data-gift-selling-plan="{{ block.settings.included_gift_selling_plan }}"
+                            {% endif %}
                             {% endif %}
                             {% if subscription_is_on == true and block.settings.discount_code != blank %}
                             data-discount-code="{{ block.settings.discount_code }}"
@@ -185,14 +194,16 @@
                                     {% endif %}
                                 {% else %}
                                     {% if block.settings.popular == true %}
+                                        {% capture tag_label %}{{ 'purchase-form.settings.popular' | t }}{% endcapture %}
                                         <div class="c-supply-selector__tag">
-                                            <div class="selector-tag-down">{{ 'purchase-form.settings.popular' | t }}</div>
+                                            <div class="selector-tag-down">{{ block.settings.tag_label | default: tag_label }}</div>
                                         </div>
                                     {% endif %}
 
                                     {% if block.settings.best == true %}
+                                        {% capture tag_label %}{{ 'purchase-form.settings.best-value' | t }}{% endcapture %}
                                         <div class="c-supply-selector__tag">
-                                            <div class="selector-tag-down">{{ 'purchase-form.settings.best-value' | t }}</div>
+                                            <div class="selector-tag-down">{{ block.settings.tag_label | default: tag_label }}</div>
                                         </div>
                                     {% endif %}
                                 {% endif %}
