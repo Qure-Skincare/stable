@@ -422,7 +422,7 @@
     },
     "bundle-promo": {
       "tag": "limited time",
-      "header": "UP TO 59% OFF",
+      "header": "UP TO 60% OFF",
       "text": "Save with Black Friday bundle deals",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
@@ -460,7 +460,7 @@
         "shipping_text": "Free US Shipping over $149"
       },
       "saveup-offer": {
-        "heading_html": "<p>Save up to <strong>57%</strong> with our curated bundles</p>",
+        "heading_html": "<p>Save up to <strong>60%</strong> with our curated bundles</p>",
         "button_html": "<a href='{{ button_link }}' class='btn bg-white border-0 text-black mt-15 mt-md-0'>Shop Now <img src='https://qureskincaredns-stable.com/assets/images/arrow_right.svg' alt='arrow'></a>",
         "n_button_html": "<a href='{{ button_link }}' class='btn btn--primary-white'>Shop Now <i class='e-icon e-icon-arrow'></i></a>"
       },
@@ -506,7 +506,11 @@
         "days": "DAYS",
         "hours": "HOURS",
         "minutes": "MINUTES",
-        "seconds": "SECONDS"
+        "seconds": "SECONDS",
+        "days_short": "D",
+        "hours_short": "H",
+        "minutes_short": "M",
+        "seconds_short": "S"
       },
       "you-may-also-like": {
         "header": "You may also like..."
@@ -622,7 +626,7 @@
         "header": "Your cart is empty..",
         "text": "Fill it with amazing skincare.",
         "settings": {
-          "header": "Save up to 57% on our Exclusive Bundles",
+          "header": "Save up to 60% on our Exclusive Bundles",
           "image": "https://qureskincaredns-stable.com/sections/cart/images/flyout-cart-placeholder.webp",
           "content_html": "<ul><li>Shop our devices & skincare at our best prices.</li><li>Target your skin concerns in one simple routine.</li><li>Get clinical results at home - no downtime.</li></ul>",
           "button-label": "Shop Bundles",

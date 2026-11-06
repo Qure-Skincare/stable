@@ -74,6 +74,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "recovery-sheet-mask",
         "reverse": false,
@@ -85,6 +86,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<p>An intensive, serum-soaked mask with <strong>Polyglutamic Acid, Beta-Glucan, Cica & Ectoin</strong> to replenish dry, freshly-treated skin.</p><ul><li>Helps calm <strong>visible redness</strong> and support the skin barrier</li><li>Floods skin with <strong>moisture</strong>, leaving it soft, replenished, and comfortable.</li><li>A cooling <strong>15–20 minute</strong> reset, after Micro-Infusion or whenever skin needs extra care.</li></ul>",
         "reserved": false,
@@ -423,6 +425,7 @@
       "name": "t:sections.n_experts-pick.name",
       "settings": {
         "section_id": "",
+        "modifier": "none",
         "badge_text": "",
         "text": "<h6>TRUSTED BY PROFESSIONALS</h6><h2>Recommended by Experts</h2><p>“We recommend the <strong>Recovery+ Sheet Mask</strong> after Micro-Infusion because it provides an immediate cooling sensation, <strong>helps calm the appearance of visible redness</strong>, and delivers a blend of hydrating ingredients to leave skin feeling soothed, replenished, and comfortable.”</p>",
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
@@ -670,6 +673,7 @@
       "settings": {
         "section_id": "easy_steps",
         "heading": "<h6>SIMPLE 15-MINUTE RITUAL</h6><h2>How to Use</h2>",
+        "wistia_url": "",
         "badge": "Pro tip",
         "badge_text": "Refrigerate sealed pouch for cooling"
       }
@@ -680,9 +684,9 @@
         "review_1": {
           "type": "review",
           "settings": {
-            "image_before": "shopify://shop_images/Split_Screen_Card.png",
+            "image_before": "shopify://shop_images/Blaire_E._Left.png",
             "before_text": "",
-            "image_after": "shopify://shop_images/Split_Screen_Card_1.png",
+            "image_after": "shopify://shop_images/Day_28_Panel-2.png",
             "after_text": "",
             "username": "",
             "verified_customer": "",
@@ -693,9 +697,9 @@
         "review_2": {
           "type": "review",
           "settings": {
-            "image_before": "shopify://shop_images/Split_Screen_Card_2.png",
+            "image_before": "shopify://shop_images/Teresa_Left.png",
             "before_text": "",
-            "image_after": "shopify://shop_images/Split_Screen_Card_3.png",
+            "image_after": "shopify://shop_images/Day_28_Panel-1.png",
             "after_text": "",
             "username": "",
             "verified_customer": "",
@@ -706,9 +710,9 @@
         "review_3": {
           "type": "review",
           "settings": {
-            "image_before": "shopify://shop_images/Split_Screen_Card_4.png",
+            "image_before": "shopify://shop_images/Dee_M._Left.png",
             "before_text": "",
-            "image_after": "shopify://shop_images/Day_28_Panel.png",
+            "image_after": "shopify://shop_images/Day_28_Panel_510681ee-8d9d-4f9b-903b-f2b8a26874b0.png",
             "after_text": "",
             "username": "",
             "verified_customer": "",

@@ -294,7 +294,7 @@
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
-                    "badge": "Save up to 57%",
+                    "badge": "Save up to 60%",
                     "highlight_badge": true,
                     "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
                     "image": "shopify://shop_images/header-promo-card-image-5.webp",
@@ -321,7 +321,7 @@
           "type": "nav-tab",
           "settings": {
             "title": "Bundle & Save",
-            "pill": "Save up to 57%",
+            "pill": "Save up to 60%",
             "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
             "panel": "none",
             "heading": "",

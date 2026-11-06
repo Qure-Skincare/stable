@@ -15,10 +15,14 @@
       "settings": {
         "use_own_file": false,
         "modifier": "hero_reverse",
+        "rating": "",
+        "rating_text": "",
         "heading": "<h1>Micro-Infusion Pro Hair System Creative Content Guide</h1>",
         "text": "",
+        "sub_text": "",
         "image": "shopify://shop_images/mi-hair.webp",
         "image_mobile": "shopify://shop_images/mi-hair-mob.webp",
+        "video_url": "",
         "button_label": "",
         "button_url": ""
       }
@@ -28,6 +32,7 @@
       "name": "t:sections.n_intro.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<p><strong>Discover how to make the most of Qure's Micro-Infusion Pro Hair System with our creative content guide.</strong></p><p>This brief will help you craft engaging content that shows your weekly at-home treatment, and why hair is a higher-scrutiny category than skin, so the language rules here are stricter than any other Qure brief. Please read the Content Requirements section in full before filming.</p>"
       }
     },
@@ -71,6 +76,7 @@
         },
         "menu_item_6": {
           "type": "menu_item",
+          "disabled": true,
           "settings": {
             "item": "Content Examples",
             "must_read": false
@@ -251,6 +257,7 @@
         "wistia_slider_2",
         "wistia_slider_3"
       ],
+      "disabled": true,
       "name": "t:sections.n_guide-content.name",
       "settings": {
         "use_own_file": false,

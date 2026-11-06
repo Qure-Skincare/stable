@@ -49,6 +49,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "all-in-one-serum",
         "reverse": false,
@@ -303,7 +304,7 @@
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "all-in-one-serum-2-0-6-month-bundle",
         "type": "list",
-        "klaviyo_form_name": "",
+        "klaviyo_form_name": "UpdfZ5",
         "guarantee_period": "30",
         "hide_bottom": true,
         "hide_certified": false,

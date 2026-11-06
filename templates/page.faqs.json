@@ -1077,8 +1077,8 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "Q-Rejuvalight Pro Facewear Warranty",
-            "text": "<p>This <strong>1-year limited warranty</strong> covers defects in materials and workmanship in your Q-Rejuvalight Pro Facewear when purchased directly from Qure Skincare. Your 1-year limited warranty is valid for you alone, the original purchaser, and cannot be transferred.</p><p>If the product was a gift then please obtain a copy of the original receipt or have the original purchaser process the warranty claim on your behalf. This warranty does not cover: damage, defects, failure caused by abuse or misuse, improper care, impact or insertion of foreign objects, use with a voltage connector, or loss of device.</p><p>The limited warranty begins from the date of delivery and expires after one year. The warranty period is not extended if your device is replaced by Qure during the warranty period.</p><p><strong>To make a warranty claim:</strong><br/>&nbsp;If you discover a defect in your Q-Rejuvalight Pro Facewear that is covered by the warranty, before the warranty period expires, contact Qure customer support for assistance via email or live chat.</p><p>If we confirm a defect covered by this limited warranty, Qure will decide whether to replace your device. If we find that your device is not defective, we will notify you and return the device to you. All limited warranty services must be authorized and performed by Qure.</p>",
+            "heading": "Q-Rejuvalight Pro Facewear and Neck & Décolletage LED System Warranty",
+            "text": "<p>This 1-year limited warranty covers defects in materials and workmanship in your Q-Rejuvalight Pro Facewear or Neck & Décolletage LED System when purchased directly from Qure Skincare. Your 1-year limited warranty is valid for you alone, the original purchaser, and cannot be transferred. If the product was a gift then please obtain a copy of the original receipt or have the original purchaser process the warranty claim on your behalf. This warranty does not cover: damage, defects, failure caused by abuse or misuse, improper care, impact or insertion of foreign objects, use with a voltage connector, or loss of device.</p><p>The limited warranty begins from the date of delivery and expires after one year. The warranty period is not extended if your device is replaced by Qure during the warranty period.</p><p><strong>To make a warranty claim:</strong> If you discover a defect in your Q-Rejuvalight Pro Facewear or Neck & Décolletage LED System that is covered by the warranty, before the warranty period expires, contact Qure customer support for assistance via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a> Provide your full name, proof of purchase, device serial number, a description of the issue and photos or video if available. If we confirm a defect covered by this limited warranty, Qure will decide whether to replace your device. If we find that your device is not defective, we will notify you and return the device to you. All limited warranty services must be authorized and performed by Qure.</p>",
             "section_id": ""
           }
         },
@@ -1087,7 +1087,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Q-Renew LLLT Helmet Warranty",
-            "text": "<p>The Q-Renew LLLT Helmet comes with a limited warranty covering defects in materials and workmanship for <strong>2 years, plus 1 additional year at no added cost — 3 years of protection in total</strong> — when purchased directly from Qure Skincare. Your 3-year limited warranty is valid for you alone, the original purchaser, and cannot be transferred.</p><p>If the product was a gift then please obtain a copy of the original receipt or have the original purchaser process the warranty claim on your behalf. This warranty does not cover: damage, defects, failure caused by abuse or misuse, improper care, impact or insertion of foreign objects, use with a voltage connector, or loss of device.</p><p>The limited warranty begins from the date of purchase and expires after 3 years. The warranty period is not extended if your device is replaced by Qure during the warranty period.</p><p><strong>To make a warranty claim:</strong><br/>&nbsp;If you discover a defect in your Q-Renew LLLT Helmet that is covered by the warranty, before the warranty period expires, contact Qure customer support for assistance via email or live chat.&nbsp;</p><p>Provide your full name, proof of purchase, device serial number, a detailed description of the issues, and photos or videos if available. If a defect is confirmed, Qure Skincare will replace the device. Non-defective devices will be returned to you.</p>",
+            "text": "<p>The Q-Renew LLLT Helmet comes with a limited warranty covering defects in materials and workmanship for <strong>2 years, plus 1 additional year at no added cost — 3 years of protection in total</strong> — when purchased directly from Qure Skincare. Your 3-year limited warranty is valid for you alone, the original purchaser, and cannot be transferred.</p><p>If the product was a gift then please obtain a copy of the original receipt or have the original purchaser process the warranty claim on your behalf. This warranty does not cover: damage, defects, failure caused by abuse or misuse, improper care, impact or insertion of foreign objects, use with a voltage connector, or loss of device.</p><p>The limited warranty begins from the delivery date and expires after 3 years. The warranty period is not extended if your device is replaced by Qure during the warranty period.</p><p><strong>To make a warranty claim:</strong><br/>&nbsp;If you discover a defect in your Q-Renew LLLT Helmet that is covered by the warranty, before the warranty period expires, contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a>.</p><p>Provide your full name, proof of purchase, device serial number, a detailed description of the issues, and photos or videos if available. If a defect is confirmed, Qure Skincare will replace the device. Non-defective devices will be returned to you.</p>",
             "section_id": ""
           }
         }
@@ -1133,12 +1133,22 @@
             "text": "<p>To pair the app with your Q-Rejuvalight Pro Facewear, follow these steps:</p><ol><li>Open the app on your mobile device and follow the instructions to set up your profile and pair your Q-Rejuvalight Pro Facewear with the app.</li><li>Turn on your Bluetooth on your phone.</li><li>Turn on Q-Rejuvalight Pro Facewear by holding the center button on the forehead until the light is on.</li><li>Once your Q-Rejuvalight Pro Facewear appears on the Bluetooth available devices list, click on it to connect.</li><li>You should then see on your app that the Q-Rejuvalight Pro Facewear has been successfully paired.</li></ol>",
             "section_id": ""
           }
+        },
+        "faq_item_MdGmhL": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Which phones does the app support?",
+            "text": "<p>The Qure Skincare app is compatible with iPhone and Android smartphones. You can download it through the Apple App Store or Google Play Store.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_WymVHH",
         "faq_item_pccJCJ",
-        "faq_item_He8KcE"
+        "faq_item_He8KcE",
+        "faq_item_MdGmhL"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {

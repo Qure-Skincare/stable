@@ -28,7 +28,7 @@
         "modifier": "bf",
         "rating": "",
         "rating_text": "",
-        "heading": "<h1>Save Up to 59%</h1>",
+        "heading": "<h1>Save Up to [span]60%[/span]</h1>",
         "text": "<p>Your favourite skincare. Perfectly bundled together.</p>",
         "sub_text": "",
         "image": "shopify://shop_images/bf-home.webp",
@@ -134,7 +134,7 @@
             "image": "shopify://shop_images/bundles.webp",
             "name": "Bundles",
             "url": "/pages/exclusive-holiday-bundle-deal-new",
-            "badge_text": "59% OFF",
+            "badge_text": "60% OFF",
             "badge_fill": true
           }
         }
@@ -519,8 +519,10 @@
       ],
       "name": "t:sections.n_experts-grid.name",
       "settings": {
+        "section_id": "",
         "use_own_file": false,
         "awards": true,
+        "slider": false,
         "heading": "Award winning, critically-acclaimed, & backed by experts",
         "text": ""
       }

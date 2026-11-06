@@ -382,6 +382,7 @@
         "guide": "Guide",
         "settings": "Settings",
         "single": "Single",
+        "single-with-text": "Single with text",
         "product-text": "Product text",
         "tag": "Tag",
         "client": "Client",
@@ -1556,7 +1557,8 @@
             "name": "Features overview",
             "settings": {
                 "modifier-options": {
-                    "mi-hair": "Micro-Infusion hair"
+                    "mi-hair": "Micro-Infusion hair",
+                    "mi-pro": "Micro-Infusion Pro"
                 }
             }
         },

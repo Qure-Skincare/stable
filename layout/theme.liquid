@@ -72,6 +72,9 @@
       consent_key: 'advertising'
     %}
 
+    {% comment %} Before content_for_header and GTM, which load the Google tags. {% endcomment %}
+    {% render '__sapp-gtag-input-guard' %}
+
     <script src="{{ 'n-redirect.js' | asset_url }}"></script>
 
     <link rel="shortcut icon" href="https://qureskincaredns-stable.com/assets/images/qure_32x32.webp" type="image/png">
