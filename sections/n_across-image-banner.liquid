@@ -12,7 +12,7 @@
         assign banner_class = 'across-image-banner across-image-banner--hero across-image-banner--reverse'
     elsif mod == 'quiz'
         assign banner_class = 'across-image-banner across-image-banner--reverse across-image-banner--quiz'
-    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer' or mod == 'labor-day' or mod == 'bf'
+    elsif mod == 'holidays-secondary' or mod == 'fathers-day' or mod == 'fourth-of-july' or mod == 'qure-birthday' or mod == 'summer' or mod == 'labor-day' or mod == 'bf' or mod == 'bf-video'
         assign banner_class = banner_class | append: ' across-image-banner--holidays across-image-banner--' | append: mod
     elsif mod != 'none' and mod != blank
         assign banner_class = banner_class | append: ' across-image-banner--' | append: mod
@@ -20,8 +20,14 @@
 -%}
 <section class="{{ banner_class }}">
         {% if section.settings.video_url != blank %}
+        {%- liquid
+            assign video_type = 'video/webm'
+            if section.settings.video_url contains '.mp4'
+                assign video_type = 'video/mp4'
+            endif
+        -%}
         <video autoplay="" loop="" muted="" playsinline="">
-            <source src="{{ section.settings.video_url }}" type="video/webm" />
+            <source src="{{ section.settings.video_url }}" type="{{ video_type }}" />
         </video>
         {% else %}
         <picture>
@@ -80,6 +86,8 @@
                     {% if block.type == 'stars_image' %}
                         {% if block.settings.image != blank %}
                             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                        {% elsif block.settings.image_url != blank %}
+                            <img src="{{ block.settings.image_url }}" alt="{{ block.settings.image_alt | escape }}" />
                         {% endif %}
                     {% endif %}
                 {% endfor %}
@@ -166,7 +174,7 @@
                 {% endif %}
 
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' or section.settings.modifier == 'quiz' %}btn--primary-white{% else %}btn--primary{% endif %}">{{ section.settings.button_label }}</a>
+                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' or section.settings.modifier == 'quiz' or section.settings.modifier == 'bf-video' %}btn--primary-white{% else %}btn--primary{% endif %}">{{ section.settings.button_label }}</a>
                 {% endif %}
 
                 {% for block in section.blocks %}
@@ -413,6 +421,10 @@
                 {
                     "value": "bf",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.bf"
+                },
+                {
+                    "value": "bf-video",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.bf-video"
                 },
                 {
                     "value": "flex",
@@ -700,6 +712,16 @@
                 "type": "image_picker",
                 "id": "image",
                 "label": "t:common.image"
+            },
+            {
+                "type": "text",
+                "id": "image_url",
+                "label": "t:common.image-url"
+            },
+            {
+                "type": "text",
+                "id": "image_alt",
+                "label": "t:common.image-alt"
             }
         ]
     },
