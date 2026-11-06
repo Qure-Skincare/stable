@@ -9,6 +9,35 @@
  */
 {
   "sections": {
+    "n_across_image_banner_Bv7sLx": {
+      "type": "n_across-image-banner",
+      "blocks": {
+        "stars_image_Qn4wPe": {
+          "type": "stars_image",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/assets/images/bf-26/bf-sale-label.webp",
+            "image_alt": "Black Friday Sale"
+          }
+        }
+      },
+      "block_order": [
+        "stars_image_Qn4wPe"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "bf-video",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>Save Up to [span]70%[/span]</h1>",
+        "text": "<p>The same science-backed rituals, at the best price of the year.</p>",
+        "sub_text": "",
+        "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/bf-best-sellers.mp4",
+        "button_label": "Shop Best Sellers",
+        "button_url": "/collections/best-sellers"
+      }
+    },
     "n_across_image_banner_Kd7pRw": {
       "type": "n_across-image-banner",
       "blocks": {
@@ -623,6 +652,7 @@
     }
   },
   "order": [
+    "n_across_image_banner_Bv7sLx",
     "n_across_image_banner_Kd7pRw",
     "n_across_image_banner_Mv8kTq",
     "n_across_image_banner_TNGNLJ",
