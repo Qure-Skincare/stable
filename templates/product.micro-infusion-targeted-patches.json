@@ -63,6 +63,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "product": "",
         "reverse": false,
         "seo_heading": "SELF-DISSOLVING MICRO-DART PATCHES",
@@ -189,6 +190,7 @@
       "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
@@ -200,6 +202,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>Reduces appearance of fine lines and wrinkles, under-eye darkness, and puffiness. </li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients beyond the surface for faster results.</li><li>Science backed, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul>",
         "reserved": false,
