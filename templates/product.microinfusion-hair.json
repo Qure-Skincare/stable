@@ -188,6 +188,7 @@
             "gift_selling_plan": 0,
             "included_gift": "",
             "included_gift_selling_plan": 0,
+            "gift_image": "shopify://shop_images/MI_Hair_2_treatments.jpg",
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
