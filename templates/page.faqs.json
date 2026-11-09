@@ -1134,6 +1134,15 @@
             "section_id": ""
           }
         },
+        "faq_item_rkrGW8": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "The app cannot find my device",
+            "text": "<ul><li>Ensure the Q-Rejuvalight Pro is charged and switched on.</li><li>Turn on Bluetooth and check the phone permissions required by the app.</li><li>Open the Qure app and follow the pairing instructions.</li><li>If the device still cannot be found, contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></li></ul>",
+            "section_id": ""
+          }
+        },
         "faq_item_MdGmhL": {
           "type": "faq_item",
           "settings": {
@@ -1148,6 +1157,7 @@
         "faq_item_WymVHH",
         "faq_item_pccJCJ",
         "faq_item_He8KcE",
+        "faq_item_rkrGW8",
         "faq_item_MdGmhL"
       ],
       "name": "t:sections.n_faq-content.name",
