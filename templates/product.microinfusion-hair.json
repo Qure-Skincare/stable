@@ -976,7 +976,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/mi-pro-hair-1.webp",
-            "heading": "<h5>Micro-Infusion<br />Pro Hair System</h5>",
+            "heading": "<h5>Micro-Infusion<br/>Pro Hair System</h5>",
             "text_1": "Micro-stamping + targeted serum in one system",
             "select_1": "checkmark",
             "text_2": "Creates precise micro-channels for targeted serum delivery",
@@ -987,7 +987,7 @@
             "select_4": "checkmark",
             "text_5": "Preassembled. No separate vials. No assembly.",
             "select_5": "checkmark",
-            "text_6": "5-minute weekly treatment",
+            "text_6": "5-minute treatment",
             "select_6": "checkmark"
           }
         },
