@@ -649,6 +649,56 @@
         "button_label": "Join Our Community",
         "button_url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
       }
+    },
+    "n_promo_strip_bfB7nd": {
+      "type": "n_promo-strip",
+      "disabled": true,
+      "blocks": {
+        "bundle_bf1Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-1.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "bundle_bf2Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-2.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "bundle_bf3Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-3.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_bf1Qx",
+        "bundle_bf2Qx",
+        "bundle_bf3Qx"
+      ],
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "bf-bundles",
+        "pill_text": "",
+        "text": "<h3>Bundles [span]60%[/span]</h3><p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_label": "Shop Bundles Now",
+        "button_url": "/pages/exclusive-holiday-bundle-deal-new",
+        "video_url": "",
+        "badge_text": "",
+        "price": "",
+        "gift_text": "",
+        "offer_badge_top": "Up to",
+        "offer_badge_value": "60%",
+        "offer_badge_bottom": "Off"
+      }
     }
   },
   "order": [
@@ -663,6 +713,7 @@
     "n_promo_strip_kR4nW8",
     "n_promo_strip_wR8mHd",
     "n_trusted_reviews_ecfpDp",
+    "n_promo_strip_bfB7nd",
     "n_experts_grid_Zk9bHt",
     "n_across_image_banner_Vx6nQp",
     "n_our_story_Tm4sRd",

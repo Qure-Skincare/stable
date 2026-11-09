@@ -593,7 +593,17 @@
                     "none": "None",
                     "blue-plus": "Blue+ serum",
                     "against-cancer": "Against cancer",
-                    "recovery-mask": "Recovery+ mask"
+                    "recovery-mask": "Recovery+ mask",
+                    "bf-bundles": "Black Friday bundles"
+                },
+                "offer-badge-top": "Offer badge: top line",
+                "offer-badge-value": "Offer badge: value",
+                "offer-badge-bottom": "Offer badge: bottom line"
+            },
+            "blocks": {
+                "bundle": {
+                    "name": "Bundle",
+                    "alt": "Image alt text (for image URL)"
                 }
             }
         },
