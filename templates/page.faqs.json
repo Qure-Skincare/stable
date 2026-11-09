@@ -1233,7 +1233,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "Micro-Infusion System",
-            "text": "<p><strong>The serum or needle head is not dispensing.</strong></p><p>Hold the device upside down for 1 to 2 minutes, tilt it or lean your head back so the serum reaches the needles, then put the lid on, hold it upside down and tap the end firmly a few times. Use light pressure. Don’t reuse a needle head.</p><p><strong>My serum vial is broken, leaking or damaged.</strong></p><p>Don’t use it. Contact us through the Help Center with your order number and a photo, and keep the packaging.</p>",
+            "text": "<p><strong>The serum or needle head is not dispensing.</strong></p><p>Hold the device upside down for 1 to 2 minutes, tilt it or lean your head back so the serum reaches the needles, then put the lid on, hold it upside down and tap the end firmly a few times. Use light pressure. Don’t reuse a needle head.</p><p><strong>My serum vial is broken, leaking or damaged.</strong></p><p>Don’t use it. Contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number and a photo, and keep the packaging.</p>",
             "section_id": ""
           }
         },
