@@ -1210,6 +1210,15 @@
             "section_id": ""
           }
         },
+        "faq_item_3dnGkH": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Neck & Décolletage LED System",
+            "text": "<p><strong>My Neck & Décolletage LED System won't turn on.</strong></p><ul><li>Ensure the system is fully charged.</li><li>Check that the USB-C cable is connected to the controller's correct charging port, marked with the battery/lightning symbol.</li><li>Press and hold the power button for one full second.</li><li>Try another compatible cable or power outlet if necessary.</li></ul><p><strong>My system turns off too early.</strong><br/><br/>The battery may be low. Charge the system fully and try again. If the issue persists, contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></p><p><strong>How do I clean and store the system?</strong></p><p>Wipe the system with a soft, damp cloth after each treatment. You can use Qure Dermal Mist as directed in the product guide. Store it in the provided pouch in a cool, dry environment. Do not use the device while it is charging.</p>",
+            "section_id": ""
+          }
+        },
         "faq_item_PXmbjP": {
           "type": "faq_item",
           "settings": {
@@ -1252,6 +1261,7 @@
         "faq_item_9yzzUp",
         "faq_item_FgVXPt",
         "faq_item_tA4Tqh",
+        "faq_item_3dnGkH",
         "faq_item_PXmbjP",
         "faq_item_XbjjXJ",
         "faq_item_rXLDD4",
