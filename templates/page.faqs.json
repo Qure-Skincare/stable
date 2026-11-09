@@ -1223,7 +1223,7 @@
           "settings": {
             "secure_strap": false,
             "heading": "All-In-One Face Serum",
-            "text": "<p><strong>The pump isn’t dispensing.</strong></p><p>Don’t force the pump. If it still won’t dispense, stop using it and contact us.</p>",
+            "text": "<p><strong>The pump isn’t dispensing.</strong></p><p>Don’t force the pump. If it still won’t dispense, stop using it and <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us.</a></p>",
             "section_id": ""
           }
         }
