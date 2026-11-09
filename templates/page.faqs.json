@@ -1199,13 +1199,23 @@
             "text": "<p>You may have been connecting the mask via the Bluetooth menu on your phone hence why this occurred. Please connect directly by opening the Qure app and connect to your phone bluetooth.</p>",
             "section_id": ""
           }
+        },
+        "faq_item_PXmbjP": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Q-Renew LLLT Helmet",
+            "text": "<p><strong>My helmet won’t turn on.</strong></p><ul><li>Unplug the helmet from the charging base. It cannot be used while charging.</li><li>Check the USB-C cable is fully connected to the charging base and the power outlet, then charge the helmet fully. A full charge takes about 4 hours. Tap the LCD screen to see charging progress.</li><li>Use the provided USB-C cable and a 5V power adapter, and try a different outlet.</li><li>Press and hold the Q button for at least 1 second.</li></ul><p><strong>The helmet turns off during a session.</strong></p><p>The battery may be low. Charge it fully and try again. A session lasts 12 minutes and ends automatically. If you take the helmet off during a session, it pauses and resumes when you put it back on.</p><p><strong>The lights don’t come on when I put the helmet on.</strong></p><p>The lights only activate when the helmet is positioned correctly. Wear your hair down with no clips or ties, adjust the fit with the dial at the back, then press Play on the LCD screen.</p><p><strong>My helmet isn’t charging.</strong></p><p>Check the cable is fully inserted into the charging base, the ports are completely dry, and you are using the provided cable with a 5V adapter. Tap the screen to check charging progress.</p><p>If it still doesn’t work, please don’t open or modify the helmet, as it has no serviceable parts. Contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number, serial number and a short video of the problem. The helmet has a 3-year warranty from your delivery date.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
         "faq_item_dbrEcB",
         "faq_item_9yzzUp",
         "faq_item_FgVXPt",
-        "faq_item_tA4Tqh"
+        "faq_item_tA4Tqh",
+        "faq_item_PXmbjP"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
