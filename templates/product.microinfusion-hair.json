@@ -15,13 +15,13 @@
         "description_collapsed": {
           "type": "description-collapsed",
           "settings": {
-            "title_1": "<strong>Visibly fuller, denser-looking hair</strong> with consistent use",
-            "text_1": "<p>A weekly micro-stamping ritual with a targeted serum, designed to support the look of fuller, denser-looking hair over time.</p>",
-            "title_2": "<strong>Serum delivered below the surface,</strong> not left sitting on top, for better results",
+            "title_1": "Visibly fuller, denser-looking hair with consistent use",
+            "text_1": "<p>A micro-stamping ritual every 2 weeks with a targeted serum, designed to support the look of fuller, denser-looking hair over time.</p>",
+            "title_2": "Serum delivered below the surface, not left sitting on top, for better results",
             "text_2": "<p>Virtually painless micro-stamping works with a targeted serum, designed to help deliver actives directly to the scalp surface.</p>",
-            "title_3": "<strong>5 minutes, once a week.</strong> No downtime, no appointments",
-            "text_3": "<p>A weekly ritual built for at-home use, with a fresh, sterile, single-use tip every time.</p>",
-            "title_4": "<strong>Six targeted actives,</strong> including Caffeine and Copper Tripeptide‑1",
+            "title_3": "5 minutes, once every 2 weeks. No downtime, no appointments",
+            "text_3": "<p>Bi-weekly ritual built for at-home use, with a fresh, sterile, single-use tip every time.</p>",
+            "title_4": "Six targeted actives, including Caffeine and Copper Tripeptide‑1",
             "text_4": "<p>Including Pea Sprout Extract, Acetyl Tetrapeptide-3, Niacinamide, Caffeine and Copper Tripeptide-1, chosen to support the look of healthier-looking hair and scalp.</p>",
             "title_5": "",
             "text_5": "",
@@ -295,7 +295,7 @@
           "settings": {
             "icon": "antioxidant",
             "heading": "A routine you can actually keep",
-            "text": "Once a week, 5 minutes, no downtime, no appointments. On the nights in between, massage in the Hair Renewal Serum. We kept the routine simple enough to stick with."
+            "text": "Once every 2 weeks, 5 minutes, no downtime, no appointments. On the nights in between, massage in the Hair Renewal Serum. We kept the routine simple enough to stick with."
           }
         },
         "benefit_clean": {
@@ -397,7 +397,7 @@
         "heading": "Go beyond surface-level skincare",
         "wistia_url": "4lvki730al",
         "wistia_url_mobile": "jhwgazmjv8",
-        "text": "<p>You’ve probably tried the serums, the topicals everyone swore by. Most of them can only work from the surface. <em>Micro-Infusion Pro does a different job.</em> <br>It stamps straight down onto your scalp, so there’s no rolling or dragging through your hair. Its tiny 0.5mm gold-plated microneedles create channels in the scalp, so the serum goes where your hair grows and not just onto the strands. <br><em>Part your hair, press, lift, move on. Five minutes, once a week.</em></p>",
+        "text": "<p>You’ve probably tried the serums, the topicals everyone swore by. Most of them can only work from the surface. <em>Micro-Infusion Pro does a different job.</em>&nbsp;<br/>It stamps straight down onto your scalp, so there’s no rolling or dragging through your hair. Its tiny 0.5mm gold-plated microneedles create channels in the scalp, so the serum goes where your hair grows and not just onto the strands.&nbsp;<br/><em>Part your hair, press, lift, move on. Five minutes, once every 2 weeks.</em></p>",
         "features_heading": "6 Target Areas - 1 Solution"
       }
     },
@@ -602,7 +602,7 @@
       "settings": {
         "use_own_file": false,
         "section_id": "",
-        "text": "<h2>Fuller-looking hair in 2 steps.</h2><p>Use Micro-Infusion Pro weekly, and Hair Renewal Serum nightly, for complete scalp care.</p>",
+        "text": "<h2>Fuller-looking hair in 2 steps.</h2><p>Use Micro-Infusion Pro every 2 weeks, and Hair Renewal Serum nightly, for complete scalp care.</p>",
         "button_label": "Add Full System to Cart",
         "button_url": "#hero-product",
         "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
@@ -630,7 +630,7 @@
         "items_3": {
           "type": "items",
           "settings": {
-            "text": "<h6>Repeat Weekly</h6><p>Use once a week. Between treatments, apply Hair Renewal Serum nightly as part of your regular hair routine.</p>",
+            "text": "<h6>Repeat every 2 weeks</h6><p>Use every 2 weeks. Between treatments, apply Hair Renewal Serum nightly as part of your regular hair routine.</p>",
             "image": "shopify://shop_images/mi-hair-step-3.webp",
             "image_mobile": "shopify://shop_images/mi-hair-step-3-mob.webp"
           }
@@ -958,10 +958,10 @@
         "product_mi_hair": {
           "type": "product",
           "settings": {
-            "product": "microinfusion-hair",
+            "product": "micro-infusion-pro-hair-system-2-treatments",
             "variant_title": "",
-            "description": "Use 1* per week. On this day: Can use Helmet first.",
-            "am_or_pm_1": "weekly",
+            "description": "Use biweekly.  On this day: Can use Helmet first.",
+            "am_or_pm_1": "none",
             "am_or_pm_2": "none"
           }
         },
@@ -1047,14 +1047,14 @@
           "type": "accordion",
           "settings": {
             "heading": "How do I use it?",
-            "text": "<p>Perform the treatment once a week on a clean scalp. Focus on areas where hair appears thinner and use the preassembled device as directed.</p>"
+            "text": "<p>Perform the treatment once every 2 weeks on a clean scalp. Focus on areas where hair appears thinner and use the preassembled device as directed.</p>"
           }
         },
         "accordion_5": {
           "type": "accordion",
           "settings": {
             "heading": "How often should I use it?",
-            "text": "<p>Once weekly. On non-infusion nights, you can use the Hair Renewal Serum as part of your regular scalp-care routine.</p>"
+            "text": "<p>Once every 2 weeks. On non-infusion nights, you can use the Hair Renewal Serum as part of your regular scalp-care routine.</p>"
           }
         },
         "accordion_6": {
