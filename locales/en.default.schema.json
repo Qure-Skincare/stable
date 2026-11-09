@@ -906,7 +906,8 @@
                     "grey": "Grey"
                 },
                 "modifier-options": {
-                    "dotted-nav": "Dotted navigation"
+                    "dotted-nav": "Dotted navigation",
+                    "short-cards": "Short cards (image and name)"
                 }
             }
         },

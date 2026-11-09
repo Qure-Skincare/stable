@@ -1161,14 +1161,132 @@
         "button-label": "",
         "button-url": ""
       }
+    },
+    "n_expert_feature_hair": {
+      "type": "n_expert-feature",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Does Micro-Infusion Hair hurt?</h2>",
+        "text": "<p>Qure Micro-Infusion Hair is designed for comfortable at-home use. Its single-use, gold-plated needles (0.5 mm) gently stamp the scalp, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the needles create channels that help your scalp absorb Qure’s Hair Renewal Serum, for hair that looks fuller and a healthier-looking scalp.</p>",
+        "quote": "“What I really like about Qure Micro-Infusion Hair is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.”",
+        "author": "Dr. Shah",
+        "caption": "1.2M followers",
+        "badge": "Board Certified Dermatologist",
+        "image": "shopify://shop_images/dr-shah.webp",
+        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
+      }
+    },
+    "n_trusted_reviews_hair": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_hair_1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-1.webp",
+            "username": "Jimmy A.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-2.webp",
+            "username": "Monica P.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-3.webp",
+            "username": "Nick S.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-4.webp",
+            "username": "Nathan M.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_5": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-5.webp",
+            "username": "James G.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_6": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-6.webp",
+            "username": "Oliver P.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_hair_1",
+        "slider_hair_2",
+        "slider_hair_3",
+        "slider_hair_4",
+        "slider_hair_5",
+        "slider_hair_6"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "background_color": "light",
+        "modifier": "short-cards",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
+        "text": "<h2>See the change, feel the difference</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
     }
   },
   "order": [
     "product_header",
     "purchase-form-landing",
+    "n_expert_feature_hair",
     "n_features_overview",
     "n_mi_overview",
     "n_press_reviews",
+    "n_trusted_reviews_hair",
     "n_experts_grid",
     "n_mi_ingredients",
     "n_easy_steps",

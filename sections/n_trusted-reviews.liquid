@@ -5,7 +5,7 @@
 {% if section.settings.use_own_file %}
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/trusted-reviews/trusted-reviews.css" />
 {% endif %}
-<section class="trusted-reviews{% if section.settings.modifier == 'trustpilot' %} trusted-reviews--trustpilot{% endif %}{% if section.settings.modifier == 'dotted-nav' %} trusted-reviews--dotted-nav{% endif %}{% if section.settings.background_color != 'none' %} trusted-reviews--{{ section.settings.background_color }}{% endif %}" id="{{ section.settings.section_id | default: 'trusted-reviews' }}">
+<section class="trusted-reviews{% if section.settings.modifier == 'trustpilot' %} trusted-reviews--trustpilot{% endif %}{% if section.settings.modifier == 'dotted-nav' %} trusted-reviews--dotted-nav{% endif %}{% if section.settings.modifier == 'short-cards' %} trusted-reviews--short-cards{% endif %}{% if section.settings.background_color != 'none' %} trusted-reviews--{{ section.settings.background_color }}{% endif %}" id="{{ section.settings.section_id | default: 'trusted-reviews' }}">
     <div class="container">
         {% if section.settings.modifier == 'trustpilot' %}
             <i class="e-icon e-icon-qure"></i>
@@ -24,7 +24,7 @@
         {% else %}
             {{ section.settings.text }}
         {% endif %}
-        {% if section.settings.modifier == 'trustpilot' %}
+        {% if section.settings.modifier == 'trustpilot' or section.settings.modifier == 'short-cards' %}
             <div
                 class="c-swiper"
                 data-swiper='{
@@ -108,10 +108,17 @@
                             <div class="c-trusted-review-card">
                                 {% if block.settings.image != blank %}
                                     <picture>
-                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" width="380" height="250" />
+                                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | default: block.settings.username | escape }}" width="380" height="250" />
                                     </picture>
                                 {% endif %}
-                                {% unless section.settings.modifier == 'dotted-nav' %}
+                                {% if section.settings.modifier == 'short-cards' %}
+                                    {% if block.settings.username != blank %}
+                                        <article>
+                                            <small>{{ block.settings.username }}</small>
+                                        </article>
+                                    {% endif %}
+                                {% endif %}
+                                {% unless section.settings.modifier == 'dotted-nav' or section.settings.modifier == 'short-cards' %}
                                     {% if block.settings.flag != blank and block.settings.username != blank %}
                                         <div class="e-author">
                                             <img loading="lazy" src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
@@ -209,6 +216,10 @@
                     {
                         "value": "dotted-nav",
                         "label": "t:sections.n_trusted-reviews.settings.modifier-options.dotted-nav"
+                    },
+                    {
+                        "value": "short-cards",
+                        "label": "t:sections.n_trusted-reviews.settings.modifier-options.short-cards"
                     }
                 ]
             },
