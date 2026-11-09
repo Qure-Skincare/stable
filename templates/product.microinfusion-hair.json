@@ -247,6 +247,20 @@
         "hide_title_on_subscription": false
       }
     },
+    "n_expert_feature_hair": {
+      "type": "n_expert-feature",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h2>Does Micro-Infusion Hair hurt?</h2>",
+        "text": "<p>Qure Micro-Infusion Hair is designed for comfortable at-home use. Its single-use, gold-plated needles (0.5 mm) gently stamp the scalp, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the needles create channels that help your scalp absorb Qure’s Hair Renewal Serum, for hair that looks fuller and a healthier-looking scalp.</p>",
+        "quote": "“What I really like about Qure Micro-Infusion Hair is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.”",
+        "author": "Dr. Shah",
+        "caption": "1.2M followers",
+        "badge": "Board Certified Dermatologist",
+        "image": "shopify://shop_images/dr-shah.webp",
+        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
+      }
+    },
     "n_features_overview": {
       "type": "n_features-overview",
       "blocks": {
@@ -440,6 +454,108 @@
         "settings": "\"spaceBetween\": 80"
       }
     },
+    "n_trusted_reviews_hair": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_hair_1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-1.webp",
+            "username": "Jimmy A.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-2.webp",
+            "username": "Monica P.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-3.webp",
+            "username": "Nick S.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-4.webp",
+            "username": "Nathan M.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_5": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-5.webp",
+            "username": "James G.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_hair_6": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/before-after-hair-6.webp",
+            "username": "Oliver P.",
+            "verified_customer": "",
+            "badge": "",
+            "text": "",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_hair_1",
+        "slider_hair_2",
+        "slider_hair_3",
+        "slider_hair_4",
+        "slider_hair_5",
+        "slider_hair_6"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "background_color": "light",
+        "modifier": "short-cards",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
+        "text": "<h2>See the change, feel the difference</h2>",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "n_experts_grid": {
       "type": "n_experts-grid",
       "blocks": {
@@ -517,7 +633,7 @@
           "type": "left_heading",
           "settings": {
             "image": "shopify://shop_images/mi-2-device-rejuvenating-1.webp",
-            "badge": "Weekly",
+            "badge": "Every 2 weeks",
             "text": "<h3>Thinning Areas</h3><h6>MICRO-INFUSION PRO HAIR SYSTEM</h6><p>Creates precise micro-channels at the scalp surface to help deliver serum actives where they’re needed.</p>"
           }
         },
@@ -539,7 +655,7 @@
           "type": "left_column",
           "settings": {
             "icon": "fast",
-            "text": "5-minute weekly treatment"
+            "text": "5-minute treatment"
           }
         },
         "left_accordion": {
@@ -649,7 +765,7 @@
         "image": "shopify://shop_images/mi-hair-main.webp",
         "image_mobile": "shopify://shop_images/mi-hair-main-mob.webp",
         "wistia_url": "",
-        "button_label": "BUY NOW & SAVE UP TO 70%",
+        "button_label": "BUY NOW & SAVE UP TO 62%",
         "button_url": "#hero-product"
       }
     },
@@ -860,7 +976,7 @@
           "type": "comparison_table",
           "settings": {
             "image": "shopify://shop_images/mi-pro-hair-1.webp",
-            "heading": "<h5>Micro-Infusion<br />Pro Hair System</h5>",
+            "heading": "<h5>Micro-Infusion<br/>Pro Hair System</h5>",
             "text_1": "Micro-stamping + targeted serum in one system",
             "select_1": "checkmark",
             "text_2": "Creates precise micro-channels for targeted serum delivery",
@@ -871,7 +987,7 @@
             "select_4": "checkmark",
             "text_5": "Preassembled. No separate vials. No assembly.",
             "select_5": "checkmark",
-            "text_6": "5-minute weekly treatment",
+            "text_6": "5-minute treatment",
             "select_6": "checkmark"
           }
         },
@@ -1089,7 +1205,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What’s the difference between the Micro-Infusion Hair Serum and the Hair Renewal Serum?",
-            "text": "<p>Both formulas share the same core actives. The Micro-Infusion Hair Serum is formulated specifically for your weekly Micro-Infusion treatment.</p><p>The Hair Renewal Serum is your nightly scalp serum for non-infusion nights and also contains peppermint oil for a cooling, invigorating sensation.</p>"
+            "text": "<p>Both formulas share the same core actives. The Micro-Infusion Hair Serum is formulated specifically for your Micro-Infusion treatment.</p><p>The Hair Renewal Serum is your nightly scalp serum for non-infusion nights and also contains peppermint oil for a cooling, invigorating sensation.</p>"
           }
         },
         "accordion_11": {
@@ -1110,7 +1226,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Is the Micro-Infusion Pro Hair System reusable?",
-            "text": "<p>No. Each device is designed for a single treatment and should be disposed of after use, giving you a fresh needle head for every weekly treatment.</p>"
+            "text": "<p>No. Each device is designed for a single treatment and should be disposed of after use, giving you a fresh needle head for every &nbsp;treatment.</p>"
           }
         },
         "accordion_14": {
@@ -1160,122 +1276,6 @@
         "limited": false,
         "button-label": "",
         "button-url": ""
-      }
-    },
-    "n_expert_feature_hair": {
-      "type": "n_expert-feature",
-      "settings": {
-        "use_own_file": false,
-        "heading": "<h2>Does Micro-Infusion Hair hurt?</h2>",
-        "text": "<p>Qure Micro-Infusion Hair is designed for comfortable at-home use. Its single-use, gold-plated needles (0.5 mm) gently stamp the scalp, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the needles create channels that help your scalp absorb Qure’s Hair Renewal Serum, for hair that looks fuller and a healthier-looking scalp.</p>",
-        "quote": "“What I really like about Qure Micro-Infusion Hair is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.”",
-        "author": "Dr. Shah",
-        "caption": "1.2M followers",
-        "badge": "Board Certified Dermatologist",
-        "image": "shopify://shop_images/dr-shah.webp",
-        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
-      }
-    },
-    "n_trusted_reviews_hair": {
-      "type": "n_trusted-reviews",
-      "blocks": {
-        "slider_hair_1": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/before-after-hair-1.webp",
-            "username": "Jimmy A.",
-            "verified_customer": "",
-            "badge": "",
-            "text": "",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_hair_2": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/before-after-hair-2.webp",
-            "username": "Monica P.",
-            "verified_customer": "",
-            "badge": "",
-            "text": "",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_hair_3": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/before-after-hair-3.webp",
-            "username": "Nick S.",
-            "verified_customer": "",
-            "badge": "",
-            "text": "",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_hair_4": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/before-after-hair-4.webp",
-            "username": "Nathan M.",
-            "verified_customer": "",
-            "badge": "",
-            "text": "",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_hair_5": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/before-after-hair-5.webp",
-            "username": "James G.",
-            "verified_customer": "",
-            "badge": "",
-            "text": "",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        },
-        "slider_hair_6": {
-          "type": "slider",
-          "settings": {
-            "image": "shopify://shop_images/before-after-hair-6.webp",
-            "username": "Oliver P.",
-            "verified_customer": "",
-            "badge": "",
-            "text": "",
-            "product_url": "",
-            "product_text": "",
-            "product_title": ""
-          }
-        }
-      },
-      "block_order": [
-        "slider_hair_1",
-        "slider_hair_2",
-        "slider_hair_3",
-        "slider_hair_4",
-        "slider_hair_5",
-        "slider_hair_6"
-      ],
-      "settings": {
-        "use_own_file": false,
-        "background_color": "light",
-        "modifier": "short-cards",
-        "section_id": "",
-        "heading": "",
-        "disclaimer": "",
-        "text": "<h2>See the change, feel the difference</h2>",
-        "button_label": "",
-        "button_url": ""
       }
     }
   },
