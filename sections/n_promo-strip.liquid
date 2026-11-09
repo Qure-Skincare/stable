@@ -20,12 +20,48 @@
     {% endif %}
     <div class="container">
         <article>
+            {% if section.blocks.size > 0 %}
+                <div class="bundles-list">
+                    {% if section.settings.offer_badge_value != blank %}
+                        <div class="e-bf-badge e-bf-badge--exclusive e-bf-badge--md">
+                            <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-badge-exclusive.svg" alt="" />
+                            <div class="e-bf-badge__content">
+                                {% if section.settings.offer_badge_top != blank %}
+                                    <span>{{ section.settings.offer_badge_top }}</span>
+                                {% endif %}
+                                <strong>{{ section.settings.offer_badge_value }}</strong>
+                                {% if section.settings.offer_badge_bottom != blank %}
+                                    <span>{{ section.settings.offer_badge_bottom }}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                    <ul>
+                        {% for block in section.blocks %}
+                            <li {{ block.shopify_attributes }}>
+                                {% capture bundle_image %}
+                                    {% if block.settings.image != blank %}
+                                        {{ block.settings.image | image_url: width: 1140 | image_tag: loading: 'lazy', widths: '380, 570, 760, 1140', sizes: '(min-width: 992px) 30vw, 50vw' }}
+                                    {% elsif block.settings.image_url != blank %}
+                                        <img src="{{ block.settings.image_url }}" alt="{{ block.settings.alt | escape }}" loading="lazy" />
+                                    {% endif %}
+                                {% endcapture %}
+                                {% if block.settings.url != blank %}
+                                    <a href="{{ block.settings.url }}">{{ bundle_image }}</a>
+                                {% else %}
+                                    {{ bundle_image }}
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
             {% if section.settings.pill_text != blank %}
                 <div class="e-pill-save">{{ section.settings.pill_text }}</div>
             {% endif %}
-            {{ section.settings.text | replace: '[ribbon_icon]', '<i class="e-icon e-icon-ribbon"></i>' }}
+            {{ section.settings.text | replace: '[ribbon_icon]', '<i class="e-icon e-icon-ribbon"></i>' | replace: '[span]', '<span>' | replace: '[/span]', '</span>' }}
             {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                <a class="btn btn--primary" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
+                <a class="btn {% if section.settings.modifier == 'bf-bundles' %}btn--primary-white{% else %}btn--primary{% endif %}" href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
             {% endif %}
         </article>
     </div>
@@ -69,6 +105,10 @@
                 {
                     "value": "recovery-mask",
                     "label": "t:sections.n_promo-strip.settings.modifier-options.recovery-mask"
+                },
+                {
+                    "value": "bf-bundles",
+                    "label": "t:sections.n_promo-strip.settings.modifier-options.bf-bundles"
                 }
             ]
         },
@@ -126,6 +166,49 @@
             "type": "richtext",
             "id": "gift_text",
             "label": "t:common.gift_text"
+        },
+        {
+            "type": "text",
+            "id": "offer_badge_top",
+            "label": "t:sections.n_promo-strip.settings.offer-badge-top"
+        },
+        {
+            "type": "text",
+            "id": "offer_badge_value",
+            "label": "t:sections.n_promo-strip.settings.offer-badge-value"
+        },
+        {
+            "type": "text",
+            "id": "offer_badge_bottom",
+            "label": "t:sections.n_promo-strip.settings.offer-badge-bottom"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "bundle",
+            "name": "t:sections.n_promo-strip.blocks.bundle.name",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "t:common.image"
+                },
+                {
+                    "type": "text",
+                    "id": "image_url",
+                    "label": "t:common.image-url"
+                },
+                {
+                    "type": "text",
+                    "id": "alt",
+                    "label": "t:sections.n_promo-strip.blocks.bundle.alt"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "t:common.link"
+                }
+            ]
         }
     ],
     "presets": [
