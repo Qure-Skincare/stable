@@ -108,6 +108,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "microinfusion-hair",
         "reverse": false,
@@ -150,6 +151,8 @@
             "product_selling_plan": 9330426095,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "hair-renewal-serum",
+            "included_gift_selling_plan": 9330622703,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
@@ -172,9 +175,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "",
-            "included_gift": "hair-renewal-serum",
-            "included_gift_selling_plan": 9330622703
+            "included_text": ""
           }
         },
         "product_1m": {
@@ -184,6 +185,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 9330458863,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
@@ -206,8 +210,7 @@
             "preorder_date_soldout": "",
             "preorder_date_reserved": "",
             "preorder_percent": 55,
-            "included_text": "",
-            "gift_selling_plan": 0
+            "included_text": ""
           }
         },
         "gift": {
@@ -795,6 +798,7 @@
         "component_together",
         "quote"
       ],
+      "disabled": true,
       "name": "t:sections.n_bundled-together.name",
       "settings": {
         "use_own_file": false,
