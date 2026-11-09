@@ -1165,13 +1165,14 @@
           "type": "faq_item",
           "settings": {
             "secure_strap": false,
-            "heading": "Why is my Q-Rejuvalight Pro not turning on?",
-            "text": "<p>If your Q-Rejuvalight Pro Facewear is not turning on, follow these troubleshooting steps:</p><ul><li>Make sure the device is fully charged (you'll see a blinking light when charging).</li><li>Remove the mask from the charging cable, as the mask cannot be used while plugged in.</li><li>Check that the USB-C charging cable is fully inserted when charging.</li></ul><p>Still nothing? Try a different outlet or charging cable to rule out charging issues.</p><p>If the Q-Rejuvalight Pro Facewear is fully charged and still does not turn on, please contact us and our team will help futher.</p>",
+            "heading": "Q-Rejuvalight Pro Facewear",
+            "text": "<p><strong>Why is my Q-Rejuvalight Pro not turning on?</strong></p><p>If your Q-Rejuvalight Pro Facewear is not turning on, follow these troubleshooting steps:</p><ul><li>Make sure the device is fully charged (you'll see a slow blinking light when charging).</li><li>Remove the mask from the charging cable, as the mask cannot be used while plugged in.</li><li>Check that the USB-C charging cable is fully inserted when charging.</li></ul><p>Still nothing? Try a different outlet or charging cable to rule out charging issues.</p><p>If the Q-Rejuvalight Pro Facewear is fully charged and still does not turn on, please <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us</a> and our team will help further.</p><p><strong>The Qure Skincare App does not connect to the Q-Rejuvalight Pro Facewear. What should I do?</strong></p><p>Make sure that Bluetooth is turned on and the mask is powered on. Also, ensure that Location Sharing is enabled on your phone. Once confirmed, fully close the app and reopen it, then connect to the Q-Rejuvalight Pro Facewear. Please connect from within the Qure app, not through your phone's Bluetooth settings.</p><p><strong>Why is my Q-Rejuvalight Pro shutting off abruptly, prior to completion of 3-minute treatment?</strong></p><p>The Q-Rejuvalight Pro treatment is designed to shut off automatically after 3 minutes. It also may shut off after multiple repeated uses if it exceeds desired temperature. Allow the Q-Rejuvalight Pro to cool for several minutes and try again.</p><p>If the Q-Rejuvalight Pro is low in battery then it can shut off prior to the 3 minute treatment so ensure that the battery is fully charged.</p><p>If you're still experiencing the same issue and continues to shut off prior to 3 minutes, please contact us via the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center.</a></p><p><strong>Why is a PIN code being asked when I'm trying to connect my Q-Rejuvalight Pro with the Qure app?</strong></p><p>You may have been connecting the mask via the Bluetooth menu on your phone hence why this occurred. Please connect directly by opening the Qure app and connect to your phone bluetooth.</p>",
             "section_id": ""
           }
         },
         "faq_item_9yzzUp": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "The Qure Skincare App does not connect to the Q-Rejuvalight Pro Facewear. What should I do?",
@@ -1181,6 +1182,7 @@
         },
         "faq_item_FgVXPt": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "Why is my Q-Rejuvalight Pro shutting off abruptly, prior to completion of 3-minute treatment?",
@@ -1190,6 +1192,7 @@
         },
         "faq_item_tA4Tqh": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "secure_strap": false,
             "heading": "Why is a PIN code being asked when I'm trying to connect my Q-Rejuvalight Pro with the Qure app?",
