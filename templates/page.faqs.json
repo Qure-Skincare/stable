@@ -1226,6 +1226,15 @@
             "text": "<p><strong>The pump isn’t dispensing.</strong></p><p>Don’t force the pump. If it still won’t dispense, stop using it and <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">contact us.</a></p>",
             "section_id": ""
           }
+        },
+        "faq_item_nihqPp": {
+          "type": "faq_item",
+          "settings": {
+            "secure_strap": false,
+            "heading": "Micro-Infusion Targeted Patches",
+            "text": "<p><strong>My patches won’t stick or keep lifting.</strong></p><ul><li>Apply to clean, dry skin with no cream, oil or serum on the area.</li><li>Peel off the adhesive strips and avoid touching the adhesive or the darts with your fingers.</li><li>Place the patch with the adhesive side down and press gently for 5 to 10 seconds.</li><li>Choose a spot where the patch lies flat. If your skin is very dry or the area moves a lot, try another area, such as under the eye or at the sides of the eyes.</li></ul><p>Each patch is for one use. Please don’t reapply a patch that has come off.</p><p>If patches repeatedly won’t stick, contact us through the <a href=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\" title=\"https://qureskincare.customerdesk.io/#rp-customer-widget-home\">Help Center</a> with your order number and a photo of the patch.</p>",
+            "section_id": ""
+          }
         }
       },
       "block_order": [
@@ -1235,7 +1244,8 @@
         "faq_item_tA4Tqh",
         "faq_item_PXmbjP",
         "faq_item_XbjjXJ",
-        "faq_item_rXLDD4"
+        "faq_item_rXLDD4",
+        "faq_item_nihqPp"
       ],
       "name": "t:sections.n_faq-content.name",
       "settings": {
