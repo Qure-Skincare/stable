@@ -630,7 +630,7 @@
         "items_3": {
           "type": "items",
           "settings": {
-            "text": "<h6>Repeat Weekly</h6><p>Use once a week. Between treatments, apply Hair Renewal Serum nightly as part of your regular hair routine.</p>",
+            "text": "<h6>Repeat every 2 weeks</h6><p>Use every 2 weeks. Between treatments, apply Hair Renewal Serum nightly as part of your regular hair routine.</p>",
             "image": "shopify://shop_images/mi-hair-step-3.webp",
             "image_mobile": "shopify://shop_images/mi-hair-step-3-mob.webp"
           }
