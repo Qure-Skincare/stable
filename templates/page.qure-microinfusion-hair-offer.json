@@ -53,7 +53,7 @@
           "type": "feature",
           "settings": {
             "icon": "smooths",
-            "text": "Designed to Work Better Together"
+            "text": "Helps Nourish<br> Where It Matters"
           }
         }
       },
@@ -70,11 +70,11 @@
         "hidden": false,
         "modifier": "none",
         "approved_position": "before_text",
-        "text": "<p>The Perfect Pair, Bundled Together</p><h1>Two Steps to Visibly&nbsp;<br/>&nbsp;Fuller-Looking Hair</h1><p><strong>Pair the Micro-Infusion Pro Hair System with Hair Renewal Serum</strong> for a simple, science-backed routine.</p>",
+        "text": "<p>At-Home Scalp Treatment for Fuller-Looking Hair</p><h1>Hair That Looks Fuller, <br/>Week After Week</h1><p><strong>The Micro-Infusion Pro Hair</strong> System is a weekly routine designed to support the look of fuller, denser-looking hair over time.</p>",
         "rating": "",
         "rating_text": "100+ dermatologists • <a href=\"#\"><strong>4.7/5</strong></a> 750k+ customers",
-        "image": "shopify://shop_images/mihairherobanner.webp",
-        "image_mobile": "shopify://shop_images/micro-infusion-hair-mob.webp",
+        "image": "shopify://shop_images/micro-infusion-hair-2.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hair-2-mob.webp",
         "button_url": "#purchase-form",
         "button_label": "Start My Hair Transformation",
         "button_line": false,
@@ -144,7 +144,7 @@
         "background_color": "none",
         "section_id": "",
         "heading": "<h2>Go beyond surface-level haircare</h2>",
-        "text": "<p>Traditional serums sit on top of the scalp or rinse away. Once a week, the Micro-Infusion Pro Hair System uses 0.5mm 24k gold-plated needles to create tiny micro-channels, <strong>designed to help deliver serum actives directly to the scalp surface where they're needed most.</strong> On the days in between, the Hair Renewal Serum keeps your scalp conditioned.</p><p>The patent-pending system uses tiny, virtually painless, microneedles penetrate beyond the skin’s surface increasing serum absorption and delivering powerful active ingredients exactly where they’re needed!</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp<br/></strong>Virtually painless micro-stamping with 0.5mm needles on a sterile, single-use tip.</li><li><strong>Infuse<br/></strong>Designed to help deliver serum actives directly to the scalp surface.</li><li><strong>Renews<br/></strong>Supports the look of fuller, denser-looking hair over time.</li></ul>",
+        "text": "<p>Traditional serums sit on the scalp or rinse away. Once a week, the <strong>Micro-Infusion Pro Hair</strong> System uses 0.5mm 24k gold-plated microneedles to create tiny micro-channels that help deliver serum actives directly where they’re needed most. On the days in between, the <strong>Hair Renewal Serum</strong> keeps your scalp conditioned.</p><p>This patent-pending system’s virtually painless microneedles go beyond the skin’s surface, boosting serum absorption and delivering powerful actives exactly where they’re needed.</p><p><strong>How Qure refreshes your skin in 3 easy steps:</strong></p><p>[step]</p><ul><li><strong>Stamp<br/></strong>Virtually painless micro-stamping with 0.5mm needles on a sterile, single-use tip.</li><li><strong>Infuse<br/></strong>Designed to help deliver serum actives directly to the scalp surface.</li><li><strong>Renews<br/></strong>Supports the look of fuller, denser-looking hair over time.</li></ul>",
         "button_label": "",
         "button_url": "",
         "wistia_url": "jhwgazmjv8",
@@ -157,25 +157,25 @@
         "component_Yx3dKm": {
           "type": "component",
           "settings": {
-            "heading": "Hair Renewal Serum",
-            "badge": "Nightly",
-            "text": "Helps provide lasting scalp hydration"
+            "heading": "Sterile Tip",
+            "badge": "Single-use",
+            "text": "A fresh device for every weekly treatment."
           }
         },
         "component_Lc7tPb": {
           "type": "component",
           "settings": {
-            "heading": "Micro-Infusion Pro Hair",
-            "badge": "Weekly",
-            "text": "Helps target the appearance of thinning areas"
+            "heading": "Infusion Serum",
+            "badge": "4ml per treatment",
+            "text": "Helps condition and hydrate the scalp."
           }
         },
         "component_Rn2wGs": {
           "type": "component",
           "settings": {
-            "heading": "Together",
-            "badge": "Weekly + Nightly",
-            "text": "Visibly fuller, more resilient-looking hair"
+            "heading": "Weekly Ritual",
+            "badge": "Once a week",
+            "text": "One simple treatment a week for hair that looks visibly fuller over time."
           }
         },
         "quote_Fj8mQe": {
@@ -197,9 +197,9 @@
       "settings": {
         "use_own_file": false,
         "section_id": "",
-        "modifier": "hair",
+        "modifier": "mi-hair",
         "heading": "<h2>The Micro-Infusion Pro Hair System + Hair Renewal Serum</h2>",
-        "image": "shopify://shop_images/mi-hair-bungle.webp",
+        "image": "shopify://shop_images/mi-hair-features.webp",
         "button_label": "Shop Now",
         "button_url": "#purchase-form"
       }
@@ -610,7 +610,8 @@
         "heading": "<h2>Complete your Qure Hair System</h2>",
         "button_label": "Add the complete routine",
         "quote": "30-Day Money-Back Guarantee • Free US Shipping"
-      }
+      },
+      "disabled": true
     },
     "n_faq_Jd6pEy": {
       "type": "n_faq",
@@ -718,6 +719,126 @@
         "button_label": "",
         "button_url": ""
       }
+    },
+    "n_comparison_table_Hx7cMp": {
+      "type": "n_comparison-table",
+      "blocks": {
+        "comparison_table_heading_Hr1": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Treatment Format",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_Hr2": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Serum Delivery",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_Hr3": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Hygiene",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_Hr4": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Consistency",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_Hr5": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Setup",
+            "color": "none"
+          }
+        },
+        "comparison_table_heading_Hr6": {
+          "type": "comparison_table_heading",
+          "settings": {
+            "heading": "Routine",
+            "color": "none"
+          }
+        },
+        "comparison_table_Hc1": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/mi-pro-hair-1.webp",
+            "heading": "<h5>Micro-Infusion<br/>Pro Hair System</h5>",
+            "text_1": "Micro-stamping + targeted serum in one system",
+            "select_1": "checkmark",
+            "text_2": "Creates precise micro-channels for targeted serum delivery",
+            "select_2": "checkmark",
+            "text_3": "Fresh EO-sterilized needle head for every treatment",
+            "select_3": "checkmark",
+            "text_4": "Airless pump delivers a consistent amount of serum with every press",
+            "select_4": "checkmark",
+            "text_5": "Preassembled. No separate vials. No assembly.",
+            "select_5": "checkmark",
+            "text_6": "5-minute weekly treatment",
+            "select_6": "checkmark"
+          }
+        },
+        "comparison_table_Hc2": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/mi-pro-hair-2.webp",
+            "heading": "<h5>Typical At-Home<br/>Microneedling Hair System</h5>",
+            "text_1": "Microneedling device used with a separate serum or cartridge",
+            "select_1": "cross",
+            "text_2": "Delivery method varies by system",
+            "select_2": "cross",
+            "text_3": "Single-use or reusable components vary",
+            "select_3": "cross",
+            "text_4": "Delivery consistency varies by device",
+            "select_4": "cross",
+            "text_5": "May require setup or separate components",
+            "select_5": "cross",
+            "text_6": "Treatment time and frequency vary",
+            "select_6": "cross"
+          }
+        },
+        "comparison_table_Hc3": {
+          "type": "comparison_table",
+          "settings": {
+            "image": "shopify://shop_images/mi-pro-hair-3.webp",
+            "heading": "<h5>Professional<br/>In-Clinic Treatment</h5>",
+            "text_1": "Performed by a provider at a clinic or med spa",
+            "select_1": "cross",
+            "text_2": "Protocol varies by clinic and provider",
+            "select_2": "cross",
+            "text_3": "Depends on the clinic’s own standards",
+            "select_3": "cross",
+            "text_4": "Can vary by provider and visit",
+            "select_4": "cross",
+            "text_5": "Appointment, travel and scheduling required",
+            "select_5": "cross",
+            "text_6": "Repeat visits on the clinic’s schedule",
+            "select_6": "cross"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_table_heading_Hr1",
+        "comparison_table_heading_Hr2",
+        "comparison_table_heading_Hr3",
+        "comparison_table_heading_Hr4",
+        "comparison_table_heading_Hr5",
+        "comparison_table_heading_Hr6",
+        "comparison_table_Hc1",
+        "comparison_table_Hc2",
+        "comparison_table_Hc3"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "text": "<h2>Your hair-care options, compared</h2>"
+      }
     }
   },
   "order": [
@@ -730,6 +851,7 @@
     "n_usage_steps_Dm9eVb",
     "purchase_form_Rk7nVw",
     "n_page_microinfusion_complete_system_Gv8cRt",
+    "n_comparison_table_Hx7cMp",
     "n_faq_Jd6pEy"
   ]
 }

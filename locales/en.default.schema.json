@@ -945,7 +945,8 @@
             "name": "Bundled together",
             "settings": {
                 "modifier-options": {
-                    "hair": "Hair"
+                    "hair": "Hair",
+                    "mi-hair": "Micro-Infusion Hair"
                 }
             }
         },
