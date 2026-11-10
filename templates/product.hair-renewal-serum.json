@@ -55,6 +55,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "hair-renewal-serum",
         "reverse": false,
@@ -96,11 +97,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "3 Month Supply",
@@ -138,11 +143,15 @@
             "product_variant_id": 50927054160111,
             "product_selling_plan": 9343041775,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "3 Month Supply",
@@ -193,6 +202,7 @@
       "name": "t:sections.n_experts-pick.name",
       "settings": {
         "section_id": "",
+        "modifier": "none",
         "badge_text": "Dermatologist Reviewed",
         "text": "<h2>Recommended by Experts</h2><p>\"<strong>Fuller-looking hair starts with the scalp.</strong> I like that this serum pairs pea sprout extract with peptides and niacinamide, targeting the look of thinning while keeping the scalp hydrated every day.\"</p>",
         "image": "shopify://shop_images/dr-shah-maxfield-3.webp"
@@ -518,7 +528,7 @@
           "type": "component",
           "settings": {
             "heading": "Micro-Infusion Pro Hair",
-            "badge": "Weekly",
+            "badge": "Biweekly",
             "text": "Helps target the appearance of thinning areas"
           }
         },
@@ -526,7 +536,7 @@
           "type": "component",
           "settings": {
             "heading": "Together",
-            "badge": "Weekly + Nightly",
+            "badge": "Biweekly + Nightly",
             "text": "Visibly fuller, more resilient-looking hair"
           }
         },
@@ -552,7 +562,7 @@
         "modifier": "hair",
         "heading": "<h2>Why We Chose This Formula</h2>",
         "image": "shopify://shop_images/mi-hair-bungle.webp",
-        "text": "<p>Micro-Infusion Pro weekly, Hair Renewal Serum nightly — complete scalp care in 5 minutes. Built around pea sprout extract to support denser, fuller-looking hair over time.</p><p>Paired with Acetyl Tetrapeptide-3, clover flower extract and caffeine for scalp vitality and an invigorating feel. Niacinamide and Copper Tripeptide-1 round out the formula, conditioning and hydrating the scalp.</p>",
+        "text": "<p>Micro-Infusion Pro biweekly, Hair Renewal Serum nightly — complete scalp care in 5 minutes. Built around pea sprout extract to support denser, fuller-looking hair over time.</p><p>Paired with Acetyl Tetrapeptide-3, clover flower extract and caffeine for scalp vitality and an invigorating feel. Niacinamide and Copper Tripeptide-1 round out the formula, conditioning and hydrating the scalp.</p>",
         "button_label": "Shop Now",
         "button_url": "#hero-product"
       }
@@ -699,7 +709,9 @@
             "text_4": "Targeted nightly leave-on serum",
             "select_4": "checkmark",
             "text_5": "",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_multi_active": {
@@ -716,7 +728,9 @@
             "text_4": "Daily leave-on serum",
             "select_4": "cross",
             "text_5": "",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_oil": {
@@ -733,7 +747,9 @@
             "text_4": "Oil applied to scalp + hair",
             "select_4": "checkmark",
             "text_5": "",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         }
       },
