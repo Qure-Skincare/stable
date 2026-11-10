@@ -574,7 +574,7 @@
           "type": "left_heading",
           "settings": {
             "image": "shopify://shop_images/mi-2-device-rejuvenating-1.webp",
-            "badge": "Weekly",
+            "badge": "Biweekly",
             "text": "<h3>Thinning Areas</h3><h6>MICRO-INFUSION PRO HAIR SYSTEM</h6><p>Creates precise micro-channels at the scalp surface to help deliver serum actives where they’re needed.</p>"
           }
         },
@@ -596,7 +596,7 @@
           "type": "left_column",
           "settings": {
             "icon": "fast",
-            "text": "5-minute weekly treatment"
+            "text": "5-minute treatment every 2 weeks"
           }
         },
         "left_accordion": {
@@ -797,7 +797,7 @@
           "settings": {
             "product": "microinfusion-hair",
             "variant_title": "",
-            "description": "Use 1* per week. On this day: Can use Helmet first.",
+            "description": "Use once every 2 weeks. On this day: Can use Helmet first.",
             "am_or_pm_1": "weekly",
             "am_or_pm_2": "none"
           }
