@@ -159,7 +159,7 @@
           "settings": {
             "heading": "Sterile Tip",
             "badge": "Single-use",
-            "text": "A fresh device for every weekly treatment."
+            "text": "A fresh device for each treatment, designed for use every 2 weeks."
           }
         },
         "component_Lc7tPb": {
@@ -173,9 +173,9 @@
         "component_Rn2wGs": {
           "type": "component",
           "settings": {
-            "heading": "Weekly Ritual",
-            "badge": "Once a week",
-            "text": "One simple treatment a week for hair that looks visibly fuller over time."
+            "heading": "Biweekly Ritual",
+            "badge": "Once every 2 weeks",
+            "text": "One simple treatment every 2 weeks for hair that looks visibly fuller over time."
           }
         },
         "quote_Fj8mQe": {
