@@ -452,7 +452,7 @@
             "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
-            "total_treatments": 0,
+            "total_treatments": 6,
             "left_items": 3,
             "preorder_text": "",
             "preorder_date_soldout": "",
