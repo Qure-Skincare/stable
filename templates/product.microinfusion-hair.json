@@ -236,7 +236,7 @@
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 62,
+        "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-pro-hair-system-6-treatments",
         "type": "list",
