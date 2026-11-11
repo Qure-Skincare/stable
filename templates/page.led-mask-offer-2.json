@@ -20,6 +20,10 @@
           "type": "description",
           "settings": {}
         },
+        "bundle_price_bf": {
+          "type": "bundle-price",
+          "settings": {}
+        },
         "link_iPBNaS": {
           "type": "link",
           "settings": {
@@ -53,6 +57,7 @@
       "block_order": [
         "accordion_migrated",
         "description_iSDNaK",
+        "bundle_price_bf",
         "link_iPBNaS",
         "exclusive-offer_iaSzaK",
         "nextships_4QXeV7"
