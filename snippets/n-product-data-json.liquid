@@ -35,8 +35,8 @@
     "@type": "Brand",
     "name": {{ product.vendor | json }}
   },
-  {% assign rating_value = product.metafields.stamped.reviews_average | default: product.metafields.stamped.rating | default: product.metafields.reviews.rating.value %}
-  {% assign review_count = product.metafields.stamped.reviews_count | default: product.metafields.reviews.rating_count.value | plus: 0 %}
+  {% assign rating_value = product.metafields.reviews.rating.value.rating %}
+  {% assign review_count = product.metafields.reviews.rating_count.value | plus: 0 %}
   {% if rating_value != blank and review_count > 0 %}
     "aggregateRating": {
       "@type": "AggregateRating",

@@ -103,7 +103,7 @@
       },
       "3436920659579967349": {
         "type": "shopify://apps/stamped-reviews/blocks/loyalty-rewards-launcher/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "2567389343055140935": {

@@ -921,6 +921,18 @@
                 }
             }
         },
+        "n_yotpo-reviews": {
+            "name": "Yotpo reviews",
+            "settings": {
+                "product": {
+                    "label": "Product",
+                    "info": "Used when the page metafield \"Product reviews mapping\" is empty. Leave empty to use the current product. Without a product, the section is hidden."
+                },
+                "instance_id": {
+                    "label": "Yotpo widget instance ID"
+                }
+            }
+        },
         "n_before-after-slider": {
             "name": "Before after slider"
         },

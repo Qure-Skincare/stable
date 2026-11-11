@@ -80,7 +80,7 @@
     },
     {%- comment -%} Triggers are scroll/touchstart only — NO `click`/`mousemove` — so the add-to-cart
       click (and desktop hover) never wakes these heavier third parties on the cart interaction. The
-      reviews widget (widget.min.js) is additionally kicked by the rating-anchor fix in __sapp-custom.js
+      Yotpo reviews loader (widgetsrepository.yotpo.com) is additionally kicked by the rating-anchor fix in __sapp-custom.js
       on a rating click, since there is no `click` trigger to load it for that flow. {%- endcomment -%}
     {
       "match": { "src": "portable-wallets" },
@@ -98,9 +98,17 @@
       "trigger": ["scroll", "touchstart"]
     },
     {
-      "match": { "src": "widget.min.js" },
+      "match": { "src": "widgetsrepository.yotpo.com" },
       "queue": "event",
       "trigger": ["scroll", "touchstart"]
+    },
+    {%- comment -%} Stamped reviews were replaced by Yotpo, but the installed Stamped app still injects its
+      widget through content_for_header. Nothing on the storefront runs this task, so it never loads.
+      Remove the rule once the app is uninstalled. {%- endcomment -%}
+    {
+      "match": { "src": "cdn1.stamped.io" },
+      "queue": "event",
+      "trigger": ["manual"]
     },
     {%- comment -%} Airwallex fraud protection draws nothing on the storefront but is one of the
       heaviest scripts; it only fingerprints the device for orders (Klarna/Afterpay go through

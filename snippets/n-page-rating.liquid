@@ -21,7 +21,7 @@
             {% if rating_text != blank %}
                 <span>{{ rating_text }}</span>
             {% else %}
-                <a href="{% if section.settings.rating-url != blank %}{{ section.settings.rating-url }}{% else %}#stamped-main-widget{% endif %}">{{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}</a>
+                <a href="{% if section.settings.rating-url != blank %}{{ section.settings.rating-url }}{% else %}#yotpo-reviews{% endif %}">{{ 'product.settings.n-product-rating.static_html' | t: rating: '4.8' }}</a>
             {% endif %}
         </div>
     {% endif %}
