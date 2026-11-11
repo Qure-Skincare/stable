@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_header_YnMCRC": {
       "type": "n-product",
@@ -131,16 +131,32 @@
     },
     "n_you_may_also_like_HZi1bC": {
       "type": "n_product-you-may-also-like",
+      "name": "t:sections.n_product-you-may-also-like.name",
       "settings": {
         "use_own_file": false
+      }
+    },
+    "4f5ae429fb982c31de5f": {
+      "type": "apps",
+      "blocks": {
+        "66d8b21e-f549-4d8f-b314-912c50070d77": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
       },
-      "name": "t:sections.n_product-you-may-also-like.name"
+      "block_order": [
+        "66d8b21e-f549-4d8f-b314-912c50070d77"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "product_header_YnMCRC",
     "n_press_reviews_HDaUTN",
     "n_trusted_reviews_HRLHtt",
-    "n_you_may_also_like_HZi1bC"
+    "n_you_may_also_like_HZi1bC",
+    "4f5ae429fb982c31de5f"
   ]
 }
