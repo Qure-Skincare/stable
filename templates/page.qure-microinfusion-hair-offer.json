@@ -518,7 +518,7 @@
         "klaviyo_form_name": "",
         "form_name": "purchase-form",
         "subscription_product": "true",
-        "subscription_discount_max_percent": 62,
+        "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-pro-hair-system-6-treatments",
         "guarantee_period": "30",
