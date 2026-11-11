@@ -17,6 +17,13 @@
 {% assign section_id = section.settings.section_id | default: 'hero-product' %}
 {% assign gallery_blocks = section.blocks | where: 'type', 'image' %}
 
+{%- if settings.black_friday_sitewide_turn_on -%}
+    {% comment %} The page CSS hides the special-offer label in secondary headers; bring back the Black Friday label in front of the price. {% endcomment %}
+    <style>
+        .hero-product--secondary .hero-product__main .c-special-offer--bf[data-label]::before { display: block; }
+    </style>
+{%- endif -%}
+
 <section class="hero-product{% if section.settings.reverse == true %} hero-product--reverse{% endif %}{% if section.settings.secondary == true %} hero-product--secondary{% endif %}{% if section.settings.background == true %} hero-product--bg{% endif %}" id="{{ section_id }}">
     <div class="hero-product__container container">
         <div class="hero-product__gallery">
