@@ -14,11 +14,18 @@
 {% enddoc %}
 
 {% assign bundle_block = blank %}
+{% assign exclusive_offer_block = blank %}
 {% for _block in section.blocks %}
     {% if _block.type == 'bundle-purchase' %}
         {% assign bundle_block = _block %}
+    {% elsif _block.type == 'exclusive-offer' %}
+        {% assign exclusive_offer_block = _block %}
     {% endif %}
 {% endfor %}
+{% comment %} Product headers without a bundle form describe the same pair in the exclusive-offer block. {% endcomment %}
+{% if bundle_block == blank %}
+    {% assign bundle_block = exclusive_offer_block %}
+{% endif %}
 
 {% include 'get-product-data', product_handle: bundle_block.settings.product, product_prefix: 'bundle-price-' %}
 {% assign main_price_display = product_sale_price %}
