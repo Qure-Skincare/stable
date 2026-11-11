@@ -1475,26 +1475,10 @@
       }
     },
     "1707653061bd3707e6": {
-      "type": "apps",
-      "blocks": {
-        "stamped_product_reviews_ugc_main_widget_A4ebAn": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "take_questions": 2,
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "stamped_product_reviews_ugc_main_widget_A4ebAn"
-      ],
-      "settings": {}
+      "type": "n_yotpo-reviews",
+      "settings": {
+        "instance_id": "1386845"
+      }
     },
     "n_faq_6Bcjt9": {
       "type": "n_faq",

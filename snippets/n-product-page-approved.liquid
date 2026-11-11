@@ -34,7 +34,7 @@
                     {% assign show_rating = '4.8' %}
                 {% endif %}
                 {% assign approved_text = block.settings.text | strip_html | strip %}
-                <p>{% if approved_text != blank %}{{ approved_text }} <span>&bull;</span> {% endif %}<a href="#stamped-main-widget"><strong>{{ show_rating }}/5</strong></a>{% if block.settings.rating_text != blank %} {{ block.settings.rating_text }}{% endif %}</p>
+                <p>{% if approved_text != blank %}{{ approved_text }} <span>&bull;</span> {% endif %}<a href="#yotpo-reviews"><strong>{{ show_rating }}/5</strong></a>{% if block.settings.rating_text != blank %} {{ block.settings.rating_text }}{% endif %}</p>
             {% elsif block.settings.text != blank %}
                 {{ block.settings.text }}
             {% endif %}

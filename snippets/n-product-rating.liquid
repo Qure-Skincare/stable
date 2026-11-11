@@ -39,7 +39,7 @@
       {% if rating_count > 5 %}
         {{ 'product.settings.n-product-rating.reviews_html' | t: rating: show_rating, count: rating_count }}
       {% else %}
-        <a href="#stamped-main-widget"><strong id="rating">{{ show_rating }}</strong>/5</a>
+        <a href="#yotpo-reviews"><strong id="rating">{{ show_rating }}</strong>/5</a>
       {% endif %}
     </div>
 {% elsif rating_count > 5 %}
@@ -49,7 +49,7 @@
       {% if rating_text != blank %}
           <span>{{ rating_text }}</span>
       {% else %}
-          <a href="#stamped-main-widget">{{ 'product.settings.n-product-rating.static_html' | t: rating: show_rating }}</a>
+          <a href="#yotpo-reviews">{{ 'product.settings.n-product-rating.static_html' | t: rating: show_rating }}</a>
       {% endif %}
     </div>
 {% else %}

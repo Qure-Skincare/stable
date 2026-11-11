@@ -29,7 +29,7 @@ window.__sapp.handlers = window.__sapp.handlers || {};
 /* Anchor-scroll fix for lazy layout.
    A native <a href="#id"> jump computes the target position at click time, but
    sapp defers images (src -> data-src, 1x1 placeholder) and gates widgets on
-   interaction (the Stamped reviews widget loads on the very click that scrolls
+   interaction (the Yotpo reviews widget loads on the very click that scrolls
    to it), so content ABOVE the target is still 0-height — the page lands short,
    then shifts down as images/widgets settle. We intercept the review-rating
    anchors, scroll, then RE-CORRECT the position for a short window while the
@@ -39,7 +39,7 @@ window.__sapp.handlers = window.__sapp.handlers || {};
   if (w.__sappAnchorFix) return;
   w.__sappAnchorFix = 1;
 
-  var SEL = 'a[href="#stamped-main-widget"], .c-rating a[href^="#"], a[href="#purchase-form"], .c-jump-to a[href^="#"]';
+  var SEL = 'a[href="#yotpo-reviews"], .c-rating a[href^="#"], a[href="#purchase-form"], .c-jump-to a[href^="#"]';
   var HARD_CAP = 20000;     /* absolute max tracking time after the click */
   var IDLE_STOP = 1500;     /* stop this long after the document stops growing, once pinned */
   var EASE = 0.18;          /* fraction of the remaining distance covered per frame */
@@ -68,7 +68,7 @@ window.__sapp.handlers = window.__sapp.handlers || {};
       var t = ev[k];
       if (!t || t.done || !t.node) continue;
       var src = (t.node.getAttribute && (t.node.getAttribute('data-src') || t.node.getAttribute('src')) || t.node.src) || '';
-      if (src.indexOf('widget.min.js') >= 0) { try { S.run.task(t); } catch (e) {} }
+      if (src.indexOf('widgetsrepository.yotpo.com') >= 0) { try { S.run.task(t); } catch (e) {} }
     }
   }
 

@@ -1116,25 +1116,10 @@
       }
     },
     "17575763435227ec8e": {
-      "type": "apps",
-      "blocks": {
-        "stamped_reviews_main_widget_RMWMmx": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "stamped_reviews_main_widget_RMWMmx"
-      ],
-      "settings": {}
+      "type": "n_yotpo-reviews",
+      "settings": {
+        "instance_id": "1386845"
+      }
     },
     "n_faq_CqC3HU": {
       "type": "n_faq",

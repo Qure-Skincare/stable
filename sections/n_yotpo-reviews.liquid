@@ -1,0 +1,42 @@
+{%- liquid
+    assign reviews_product = page.metafields.custom.product_reviews_mapping.value
+    if reviews_product == blank
+        assign reviews_product = section.settings.product
+    endif
+    if reviews_product == blank
+        assign reviews_product = product
+    endif
+-%}
+
+{%- if reviews_product != blank -%}
+    <div class="n-yotpo-reviews" id="yotpo-reviews">
+        <div class="container">
+            {% render 'n-yotpo-reviews-widget', product: reviews_product, instance_id: section.settings.instance_id %}
+        </div>
+    </div>
+{%- endif -%}
+
+{% schema %}
+{
+    "name": "t:sections.n_yotpo-reviews.name",
+    "settings": [
+        {
+            "type": "product",
+            "id": "product",
+            "label": "t:sections.n_yotpo-reviews.settings.product.label",
+            "info": "t:sections.n_yotpo-reviews.settings.product.info"
+        },
+        {
+            "type": "text",
+            "id": "instance_id",
+            "label": "t:sections.n_yotpo-reviews.settings.instance_id.label",
+            "default": "1386845"
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.n_yotpo-reviews.name"
+        }
+    ]
+}
+{% endschema %}

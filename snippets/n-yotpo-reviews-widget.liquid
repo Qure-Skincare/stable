@@ -1,0 +1,23 @@
+{% doc %}
+  Renders the Yotpo reviews widget for a product.
+
+  @param {product} product - The product whose reviews are shown.
+  @param {string} instance_id - The Yotpo widget instance ID.
+
+  @example
+  {% render 'n-yotpo-reviews-widget', product: reviews_product, instance_id: '1386845' %}
+{% enddoc %}
+
+{%- if product != blank -%}
+    <div
+        class="yotpo-widget-instance"
+        data-yotpo-instance-id="{{ instance_id | escape }}"
+        data-yotpo-product-id="{{ product.id }}"
+        data-yotpo-name="{{ product.title | escape }}"
+        data-yotpo-url="{{ shop.url }}{{ product.url }}"
+        data-yotpo-image-url="{% if product.featured_image != blank %}https:{{ product.featured_image | image_url: width: 1024 }}{% endif %}"
+        data-yotpo-price="{{ product.price | divided_by: 100.0 }}"
+        data-yotpo-currency="{{ cart.currency.iso_code }}"
+        data-yotpo-description="{{ product.description | strip_html | truncate: 500 | escape }}"
+    ></div>
+{%- endif -%}
