@@ -118,6 +118,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
@@ -578,7 +579,9 @@
             "text_4": "Endorsed by 50+ board-certified dermatologists",
             "select_4": "checkmark",
             "text_5": "Mid-range with high-end features",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_WWA8HN": {
@@ -595,7 +598,9 @@
             "text_4": "Backed by 6 dermatologists",
             "select_4": "cross",
             "text_5": "Premium price, fewer features",
-            "select_5": "cross"
+            "select_5": "cross",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_Wk7XhY": {
@@ -612,7 +617,9 @@
             "text_4": "No dermatologist backing",
             "select_4": "cross",
             "text_5": "Premium price, fewer features",
-            "select_5": "cross"
+            "select_5": "cross",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "disclaimer_tmatyH": {
@@ -642,6 +649,7 @@
     },
     "n_text_q7bzjA": {
       "type": "n_text",
+      "disabled": true,
       "name": "t:sections.n_text.name",
       "settings": {
         "use_own_file": false,
@@ -655,6 +663,7 @@
     "17574113984fdd4547": {
       "type": "n_yotpo-reviews",
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
