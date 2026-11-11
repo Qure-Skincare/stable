@@ -68,6 +68,7 @@
       ],
       "name": "t:sections.page-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "product": "dermal-mist",
         "reverse": false,
         "seo_heading": "HYPOCHLOROUS ACID SPRAY DERMAL MIST",
@@ -170,6 +171,7 @@
       "disabled": true,
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "dermal-mist",
         "reverse": false,
@@ -181,6 +183,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>A hypochlorous acid mist to rebalance skin, kills breakout-causing bacteria, and supports barrier repair.</li><li>Use on clean skin to soothe visible redness, calm irritation or as a no-rinse refresher throughout the day. </li><li>Comes as a duo: 100ml for daily use and a travel-friendly 15ml.</li></ul>",
         "reserved": false,
@@ -219,11 +222,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": true,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "6 Months",
@@ -250,11 +257,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "4 Months",
@@ -281,11 +292,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "2 Months",
@@ -323,11 +338,15 @@
             "product_variant_id": 47076021567727,
             "product_selling_plan": 8615100655,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": true,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "180 Days Supply",
@@ -354,11 +373,15 @@
             "product_variant_id": 47076027957487,
             "product_selling_plan": 8615035119,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "120 Days Supply",
@@ -385,11 +408,15 @@
             "product_variant_id": 45818368033007,
             "product_selling_plan": 8614936815,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "60 Days Supply",
@@ -470,11 +497,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "6 Months",
@@ -501,11 +532,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "4 Months",
@@ -532,11 +567,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "2 Months",
@@ -992,6 +1031,7 @@
     },
     "n_text_VGtQXJ": {
       "type": "n_text",
+      "disabled": true,
       "name": "t:sections.n_text.name",
       "settings": {
         "use_own_file": false,
@@ -1002,11 +1042,46 @@
         "arrow_button": false
       }
     },
+    "17944019744a55242c": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_UU4Yim": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_UU4Yim"
+      ],
+      "settings": {}
+    },
     "17574126382ef36ccf": {
       "type": "n_yotpo-reviews",
       "settings": {
         "instance_id": "1386845"
       }
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_zxTJa8": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_zxTJa8"
+      ],
+      "disabled": true,
+      "settings": {}
     },
     "n_faq_CqC3HU": {
       "type": "n_faq",
@@ -1128,6 +1203,7 @@
     "n_video_slider_HiYyrf",
     "n_comparison_WktgAV",
     "n_text_VGtQXJ",
+    "17944019744a55242c",
     "17574126382ef36ccf",
     "n_faq_CqC3HU",
     "sticky_cta_ddPFdd"
