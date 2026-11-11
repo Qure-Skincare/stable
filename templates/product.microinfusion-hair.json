@@ -166,7 +166,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "text": "",
             "image": "shopify://shop_images/Group_1000008510.png",
-            "product_discount_percent": 19,
+            "product_discount_percent": 25,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -236,7 +236,7 @@
         "hide_variants": false,
         "color_types": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 62,
+        "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-pro-hair-system-6-treatments",
         "type": "list",
@@ -765,7 +765,7 @@
         "image": "shopify://shop_images/mi-hair-main.webp",
         "image_mobile": "shopify://shop_images/mi-hair-main-mob.webp",
         "wistia_url": "",
-        "button_label": "BUY NOW & SAVE UP TO 62%",
+        "button_label": "BUY NOW & SAVE UP TO 65%",
         "button_url": "#hero-product"
       }
     },
