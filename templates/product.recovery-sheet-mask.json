@@ -1025,6 +1025,15 @@
         "button-label": "Buy Now",
         "button-url": ""
       }
+    },
+    "n_yotpo_reviews_hw6h9h": {
+      "type": "n_yotpo-reviews",
+      "disabled": true,
+      "name": "t:sections.n_yotpo-reviews.name",
+      "settings": {
+        "product": "",
+        "instance_id": "1386845"
+      }
     }
   },
   "order": [
@@ -1042,6 +1051,7 @@
     "n_complete_system_recovery_mask",
     "n_customers_video_recovery_mask",
     "n_faq_recovery_mask",
-    "sticky_cta_recovery_mask"
+    "sticky_cta_recovery_mask",
+    "n_yotpo_reviews_hw6h9h"
   ]
 }
