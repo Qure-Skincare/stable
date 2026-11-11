@@ -202,6 +202,9 @@ const bindForms = () => {
             const formData = new FormData(form);
             addToCart(formData);
         });
+        // The purchase-form scripts bind the same addToCart handler unless this flag is set;
+        // without it a form bound here first got a second listener and added every item twice.
+        form.dataset.bound = '1';
     });
 
     //clear all binds before if they are exist
