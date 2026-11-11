@@ -1280,7 +1280,9 @@
             "text_4": "5 wavelengths",
             "select_4": "checkmark",
             "text_5": "Mid-range – $399",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_MUD8yh": {
@@ -1297,7 +1299,9 @@
             "text_4": "2 basic wavelengths",
             "select_4": "checkmark",
             "text_5": "Mid-range – <strong>$395</strong>",
-            "select_5": "cross"
+            "select_5": "cross",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_CT33hJ": {
@@ -1314,7 +1318,9 @@
             "text_4": "4 basic wavelengths",
             "select_4": "cross",
             "text_5": "Premium – <strong>$455</strong>",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "disclaimer_NKfCrX": {
@@ -1467,6 +1473,7 @@
     },
     "n_text_VGtQXJ": {
       "type": "n_text",
+      "disabled": true,
       "name": "t:sections.n_text.name",
       "settings": {
         "use_own_file": false,
@@ -1480,6 +1487,7 @@
     "1707653061bd3707e6": {
       "type": "n_yotpo-reviews",
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
