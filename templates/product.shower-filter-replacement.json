@@ -134,6 +134,7 @@
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
+          "disabled": true,
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
@@ -266,6 +267,7 @@
       "blocks": {
         "subscription_7yq2vM": {
           "type": "subscription",
+          "disabled": true,
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
