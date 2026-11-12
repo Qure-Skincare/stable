@@ -762,8 +762,8 @@
         "use_own_file": false,
         "modifier": "none",
         "text": "<h2>See how quick and easy it is to use</h2>",
-        "image": "shopify://shop_images/mi-hair-main.webp",
-        "image_mobile": "shopify://shop_images/mi-hair-main-mob.webp",
+        "image": "shopify://shop_images/Video_placeholder_desktop.webp",
+        "image_mobile": "shopify://shop_images/Video_placeholder_mobile.webp",
         "wistia_url": "7mz0xdpci0",
         "button_label": "BUY NOW & SAVE UP TO 65%",
         "button_url": "#hero-product"
