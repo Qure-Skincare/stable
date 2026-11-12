@@ -134,7 +134,6 @@
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
-          "disabled": true,
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
@@ -267,7 +266,6 @@
       "blocks": {
         "subscription_7yq2vM": {
           "type": "subscription",
-          "disabled": true,
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
@@ -347,7 +345,7 @@
         "hide_types": true,
         "hide_variants": true,
         "color_types": false,
-        "subscription_product": "false",
+        "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
         "delivery_switcher_product": "",
