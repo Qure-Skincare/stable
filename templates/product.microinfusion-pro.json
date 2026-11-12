@@ -792,24 +792,24 @@
           "type": "items",
           "settings": {
             "text": "<h6>Cleanse</h6><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"Dermal Mist\">Dermal Mist</a> to refresh and prepare your skin further.</p>",
-            "image": "shopify://shop_images/mi-20-use-step-1.webp",
-            "image_mobile": "shopify://shop_images/mi-20-use-step-1-mob.webp"
+            "image": "shopify://shop_images/1_70c9920d-6350-4142-bf98-89997a11db73.webp",
+            "image_mobile": "shopify://shop_images/1_70c9920d-6350-4142-bf98-89997a11db73.webp"
           }
         },
         "items_Kd8jXq": {
           "type": "items",
           "settings": {
             "text": "<h6>Treatment</h6><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
-            "image": "shopify://shop_images/mi-20-use-step-2.webp",
-            "image_mobile": "shopify://shop_images/mi-20-use-step-2-mob.webp"
+            "image": "shopify://shop_images/1-1.webp",
+            "image_mobile": "shopify://shop_images/1-1.webp"
           }
         },
         "items_Ys1nHf": {
           "type": "items",
           "settings": {
             "text": "<h6>Aftercare</h6><p>Once the treatment is complete, pat the remaining serum into skin. The system is designed for single use.</p>",
-            "image": "shopify://shop_images/mi-20-use-step-3.webp",
-            "image_mobile": "shopify://shop_images/mi-20-use-step-3-mob.webp"
+            "image": "shopify://shop_images/1-2.webp",
+            "image_mobile": "shopify://shop_images/1-2.webp"
           }
         }
       },
