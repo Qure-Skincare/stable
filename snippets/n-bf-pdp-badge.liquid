@@ -1,12 +1,27 @@
 {% doc %}
   Renders the Black Friday sale badge on product pages.
-  Shown only on product templates while the theme setting "Badge PDPs" (Special offer) is on.
+  Shown while the theme setting "Badge PDPs" (Special offer) is on: on every product template
+  and on the pages whose handles are listed in "Badge pages" (comma-separated).
 
   @example
   {% render 'n-bf-pdp-badge' %}
 {% enddoc %}
 
-{%- if settings.bf_pdp_badge and template.name == 'product' -%}
+{%- liquid
+  assign show_bf_badge = false
+  if settings.bf_pdp_badge
+    if template.name == 'product'
+      assign show_bf_badge = true
+    elsif template.name == 'page' and settings.bf_pdp_badge_pages != blank
+      assign bf_badge_pages = settings.bf_pdp_badge_pages | strip_newlines | remove: ' ' | split: ','
+      if bf_badge_pages contains page.handle
+        assign show_bf_badge = true
+      endif
+    endif
+  endif
+-%}
+
+{%- if show_bf_badge -%}
     <div class="e-bf-label e-bf-label--pdp">
         <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-sale-label.webp" alt="Black Friday Sale" width="432" height="92" />
     </div>
