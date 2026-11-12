@@ -116,7 +116,6 @@
       "blocks": {
         "subscription_6xp1uL": {
           "type": "subscription",
-          "disabled": true,
           "settings": {
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
