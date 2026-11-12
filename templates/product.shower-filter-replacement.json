@@ -1118,6 +1118,7 @@
     },
     "n_text_VGtQXJ": {
       "type": "n_text",
+      "disabled": true,
       "name": "t:sections.n_text.name",
       "settings": {
         "use_own_file": false,
