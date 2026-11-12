@@ -337,7 +337,7 @@
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_nyJ9n7": {
@@ -455,7 +455,7 @@
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_hD69Aq": {
