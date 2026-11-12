@@ -90,6 +90,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
@@ -101,6 +102,7 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>Qure Faucet Filter Refill cartridge provides up to 3 months or 13,000 liters of purified, filtered water.</li><li>Shown to reduce up to 99% of possible irritants for clearer-looking, hydrated skin.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
@@ -150,10 +152,15 @@
             "product_variant_id": 45852989653231,
             "product_selling_plan": 6180143343,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "White",
@@ -175,15 +182,21 @@
         },
         "product_NEgEkN": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "faucet-filter-refill",
             "product_variant_id": 45852989620463,
             "product_selling_plan": 6180143343,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "Black",
@@ -225,7 +238,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "n_base_section_CGMUkn": {
@@ -576,7 +590,9 @@
         "use_own_file": false,
         "modifier": "faucet-filter",
         "text": "<h2>Why It Works</h2><p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/faucet-filter.webp"
+        "image": "shopify://shop_images/faucet-filter.webp",
+        "badge_text": "",
+        "disclaimer": ""
       }
     },
     "n_video_slider_UbQYbp": {
@@ -857,6 +873,7 @@
     "17574115467f0c78e8": {
       "type": "n_yotpo-reviews",
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
@@ -934,7 +951,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
