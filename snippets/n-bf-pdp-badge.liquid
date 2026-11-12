@@ -1,7 +1,7 @@
 {% doc %}
   Renders the Black Friday sale badge on product pages.
   Shown while the theme setting "Badge PDPs" (Special offer) is on: on every product template
-  and on the pages whose handles are listed in "Badge pages" (comma-separated).
+  and on the micro-infusion landing pages listed below.
 
   @example
   {% render 'n-bf-pdp-badge' %}
@@ -12,8 +12,8 @@
   if settings.bf_pdp_badge
     if template.name == 'product'
       assign show_bf_badge = true
-    elsif template.name == 'page' and settings.bf_pdp_badge_pages != blank
-      assign bf_badge_pages = settings.bf_pdp_badge_pages | strip_newlines | remove: ' ' | split: ','
+    elsif template.name == 'page'
+      assign bf_badge_pages = 'microinfusion,micro-infusion-system-v5,micro-infusion-system-v15' | split: ','
       if bf_badge_pages contains page.handle
         assign show_bf_badge = true
       endif
