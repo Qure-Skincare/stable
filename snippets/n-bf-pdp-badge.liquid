@@ -1,0 +1,43 @@
+{% doc %}
+  Renders the Black Friday sale badge on product pages.
+  Shown while the theme setting "Badge PDPs" (Special offer) is on: on every product template
+  and on the micro-infusion landing pages listed below.
+
+  @example
+  {% render 'n-bf-pdp-badge' %}
+{% enddoc %}
+
+{%- liquid
+  assign show_bf_badge = false
+  if settings.bf_pdp_badge
+    if template.name == 'product'
+      assign show_bf_badge = true
+    elsif template.name == 'page'
+      assign bf_badge_pages = 'microinfusion,micro-infusion-system-v5,micro-infusion-system-v15' | split: ','
+      if bf_badge_pages contains page.handle
+        assign show_bf_badge = true
+      endif
+    endif
+  endif
+-%}
+
+{%- if show_bf_badge -%}
+    <div class="e-bf-label e-bf-label--pdp">
+        <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-sale-label.webp" alt="Black Friday Sale" width="432" height="92" />
+    </div>
+{%- endif -%}
+
+{% stylesheet %}
+    .e-bf-label--pdp img {
+        width: auto;
+        max-height: 34px;
+    }
+
+    .hero-product__main .e-bf-label--pdp {
+        margin-bottom: -16px;
+    }
+
+    .helmet-home__header .e-bf-label--pdp {
+        margin-bottom: 12px;
+    }
+{% endstylesheet %}

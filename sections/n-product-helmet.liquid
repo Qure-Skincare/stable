@@ -29,6 +29,8 @@
                             {%- endif -%}
                         </div>
 
+                        {% render 'n-bf-pdp-badge' %}
+
                         {% if section.settings.heading != blank %}
                             <h1 class="helmet-home__header-title">{{ section.settings.heading }}</h1>
                         {% endif %}
@@ -221,6 +223,8 @@
                             {% render 'n-page-rating', section: section %}
                         {%- endif -%}
                     </div>
+
+                    {% render 'n-bf-pdp-badge' %}
 
                     {% if section.settings.heading != blank %}
                         <h1 class="helmet-home__header-title">{{ section.settings.heading }}</h1>
