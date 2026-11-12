@@ -108,6 +108,7 @@
       ],
       "name": "t:sections.product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
@@ -119,8 +120,9 @@
         "heading_level": "h1",
         "rating": true,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
-        "description": "<ul><li>Replace Shower Filter cartridge every 3 months for consistently hydrated, healthier hair and skin. </li><li>Removes up to 99% chlorine, heavy metals & contaminants that harms your skin and hair.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
+        "description": "<ul><li>Replace Shower Filter cartridge every 3 months for consistently hydrated, healthier hair and skin.&nbsp;</li><li>Removes up to 99% chlorine, heavy metals & contaminants that harms your skin and hair.</li><li>Easy to refill, only 2 minutes, no tools needed.</li></ul>",
         "reserved": false,
         "soldout": false,
         "button-label": "",
@@ -170,10 +172,15 @@
             "product_variant_id": 46010772652271,
             "product_selling_plan": 6286082287,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "White",
@@ -195,16 +202,20 @@
         },
         "product_NEgEkN": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "shower-filter-replacement",
             "product_variant_id": 46010772685039,
             "product_selling_plan": 6286082287,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "Black",
@@ -246,7 +257,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "purchase-form-landing-second": {
@@ -292,10 +304,15 @@
             "product_variant_id": 50530966438127,
             "product_selling_plan": 9103245551,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
+            "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "White",
@@ -336,7 +353,8 @@
         "klaviyo_form_name": "",
         "guarantee_period": "30",
         "hide_bottom": false,
-        "hide_certified": false
+        "hide_certified": false,
+        "hide_title_on_subscription": false
       }
     },
     "n_base_section_CGMUkn": {
@@ -791,7 +809,9 @@
         "use_own_file": false,
         "modifier": "shower-filter",
         "text": "<h2>Why It Works</h2><p>Our triple filtration technology filters the water to remove heavy metals and purify.</p>",
-        "image": "shopify://shop_images/shower-filter_bc590c03-1d3c-48fb-8379-f75a9cc587d9.webp"
+        "image": "shopify://shop_images/shower-filter_bc590c03-1d3c-48fb-8379-f75a9cc587d9.webp",
+        "badge_text": "",
+        "disclaimer": ""
       }
     },
     "n_video_slider_UbQYbp": {
@@ -980,6 +1000,7 @@
       ],
       "name": "t:sections.n_set-up-toggle.name",
       "settings": {
+        "section_id": "",
         "text": "<h2>How to replace your filter refill cartridge</h2>"
       }
     },
@@ -1110,6 +1131,7 @@
     "175741161617f7c983": {
       "type": "n_yotpo-reviews",
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
@@ -1170,7 +1192,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
