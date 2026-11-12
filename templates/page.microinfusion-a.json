@@ -1585,6 +1585,14 @@
         "button_url": "#hero-product"
       }
     },
+    "n_yotpo_reviews_zByxgN": {
+      "type": "n_yotpo-reviews",
+      "name": "t:sections.n_yotpo-reviews.name",
+      "settings": {
+        "product": "",
+        "instance_id": "1386845"
+      }
+    },
     "n_faq_gD5hPw": {
       "type": "n_faq",
       "blocks": {
@@ -1784,6 +1792,7 @@
     "n_experts_grid_v5",
     "n_press_reviews_sJ1kCv",
     "n_easy_steps_mN3vBe",
+    "n_yotpo_reviews_zByxgN",
     "n_faq_gD5hPw",
     "sticky_cta_KCAhq3"
   ]
