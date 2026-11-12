@@ -823,8 +823,8 @@
         "use_own_file": false,
         "modifier": "custom",
         "text": "<h2>See how quick and easy it is to use</h2>",
-        "image": "shopify://shop_images/mi-20-use-video.webp",
-        "image_mobile": "shopify://shop_images/mi-20-use-video-mob.webp",
+        "image": "shopify://shop_images/Video_placeholder_desktop.jpg",
+        "image_mobile": "shopify://shop_images/Video_placeholder_mobile.jpg",
         "wistia_url": "gyk649fiml",
         "button_label": "buy now & SAVE up to 70%",
         "button_url": "#hero-product"
