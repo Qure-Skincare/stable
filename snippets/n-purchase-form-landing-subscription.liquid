@@ -18,7 +18,12 @@
 
             {% assign subscription_discount_percent = block.settings.subscription_discount_percent %}
 
-            {% include 'get-product-data', product_handle: product.handle, product_prefix: product_prefix %}
+            {% assign subscription_form_product_block = section.blocks | where: 'type', 'product' | first %}
+            {% if subscription_form_product_block.settings.product != blank %}
+                {% include 'get-product-data', product_handle: subscription_form_product_block.settings.product, product_current_variant_id: subscription_form_product_block.settings.product_variant_id, product_prefix: product_prefix %}
+            {% else %}
+                {% include 'get-product-data', product_handle: product.handle, product_prefix: product_prefix %}
+            {% endif %}
 
             {% capture data-per %}
                 {% if subscription_discount_percent > 0 %}
@@ -28,9 +33,10 @@
                 {% endif %}
             {% endcapture %}
 
-            <div class="c-subscribe-selector" id="purchase_form_landing_subscription">
+            <div class="c-subscribe-selector" id="purchase_form_landing_subscription"{% if block.settings.hide_subscription_option %} data-onetime-only="true"{% endif %}>
                 <p class="c-subscribe-selector__title">{{ 'purchase-form.settings.select-product-delivery' | t }}</p>
                 <ul class="c-subscribe-selector__list">
+                    {% unless block.settings.hide_subscription_option %}
                     <li class="c-subscribe-selector__item save-subscription" data-per="{{ data-per }}" data-per-preorder="{{ 'purchase-form.settings.reserve-and-save-button-label' | t: value: subscription_discount_percent }}">
                         <label class="c-subscribe-selector__label">
                             <input type="radio" name="subscribe" checked="checked" />
@@ -97,9 +103,10 @@
                             <div class="c-subscribe-selector__tag">{{ 'purchase-form.settings.best-value' | t }} <i class="e-icon e-icon-rating-fill"></i></div>
                         </label>
                     </li>
+                    {% endunless %}
                     <li class="c-subscribe-selector__item one_time_purchase">
                         <label class="c-subscribe-selector__label">
-                            <input type="radio" name="subscribe" />
+                            <input type="radio" name="subscribe"{% if block.settings.hide_subscription_option %} checked="checked"{% endif %} />
                             {% if block.settings.onetime_image != blank %}
                                 <div class="c-subscribe-selector__image">
                                     <img loading="lazy" src="{{ block.settings.onetime_image | img_url: '250x' }}" alt="{{ block.settings.onetime_image.alt | escape }}" />
@@ -112,6 +119,9 @@
                                     <div class="e-price">
                                         <div class="e-price__main">
                                             <div class="e-price__current">{{ product_sale_price }}</div>
+                                            {% if product_price_compare_original > product_price_original %}
+                                                <div class="e-price__old">{{ product_price_compare }}</div>
+                                            {% endif %}
                                             <div class="e-price__blackfriday">{{ product_black_friday_price }}</div>
                                         </div>
                                     </div>
@@ -121,6 +131,9 @@
                                     <div class="e-price">
                                         <div class="e-price__main">
                                             <div class="e-price__current">{{ product_sale_price }}</div>
+                                            {% if product_price_compare_original > product_price_original %}
+                                                <div class="e-price__old">{{ product_price_compare }}</div>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </div>

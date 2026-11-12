@@ -44,7 +44,7 @@
                         {% assign array_count = array_count |  minus: 1 %}
                         {% assign product_type = array_count %}
 
-                        {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
+                        {% capture data-per %}{{ 'purchase-form.settings.buy-button-label' | t }} {% if product_discount != blank and product_discount > 0 %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
 
                         {% if subscription_is_on == true and block.settings.product_selling_plan > 0 %}
                             {% capture data-per %}{{ 'purchase-form.settings.subscribe-button-label' | t }} {% if product_discount != blank %} {{ 'purchase-form.settings.and' | t }} {{ 'purchase-form.settings.save' | t }} {{ product_discount }}%{% endif %}{% endcapture %}
