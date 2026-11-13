@@ -455,7 +455,8 @@
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
-            "preselected": true
+            "preselected": true,
+            "subheading": "Rejuvenating + Brightening"
           }
         },
         "product_hD69Aq": {
@@ -568,21 +569,21 @@
       },
       "block_order": [
         "nextships_4xp7uM",
-        "type_hHPdgJ",
-        "product_type_QKQhNr",
-        "product_NEgEkN",
-        "product_gbPf3J",
-        "product_RBCPe8",
+        "type_yDwWmt",
+        "product_type_YrPQrV",
+        "product_hD69Aq",
+        "product_DBd4ef",
+        "product_Xf8A6C",
         "type_aJwQ9q",
         "product_type_VLXcAn",
         "product_EKAAzA",
         "product_nyJ9n7",
         "product_eiY89h",
-        "type_yDwWmt",
-        "product_type_YrPQrV",
-        "product_hD69Aq",
-        "product_DBd4ef",
-        "product_Xf8A6C"
+        "type_hHPdgJ",
+        "product_type_QKQhNr",
+        "product_NEgEkN",
+        "product_gbPf3J",
+        "product_RBCPe8"
       ],
       "settings": {
         "form_name": "purchase-form-landing-subscription",
@@ -598,7 +599,8 @@
         "guarantee_period": "90",
         "hide_bottom": true,
         "hide_certified": true,
-        "hide_title_on_subscription": false
+        "hide_title_on_subscription": false,
+        "supply_first": true
       }
     },
     "n_progress_showcase_v5": {
