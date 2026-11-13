@@ -14,6 +14,9 @@
                         {% endif %}
                     {% endif %}
                     <span>{{ block.settings.heading }}</span>
+                    {% if block.settings.subheading != blank %}
+                        <small class="c-options-selector__subheading">{{ block.settings.subheading }}</small>
+                    {% endif %}
                 </label>
             </li>
         {% endif %}

@@ -2212,7 +2212,9 @@
                 "form_name": "Form name",
                 "hide_types": "Hide product types",
                 "hide_variants": "Hide variants row",
-                "color_types": "Color types"
+                "color_types": "Color types",
+                "supply_first": "Supply first (dynamic product row)",
+                "supply_first_info": "List type only. All supply cards are shown at once, and the product row shows only the product types that have the selected supply. Cards with the same heading are one supply; their order follows the order of the product type groups."
             },
             "blocks": {
                 "product": {
