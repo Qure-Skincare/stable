@@ -334,7 +334,6 @@
         },
         "product_type_VLXcAn": {
           "type": "product_type",
-          "disabled": true,
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
