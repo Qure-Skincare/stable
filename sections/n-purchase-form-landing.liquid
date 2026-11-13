@@ -7,7 +7,8 @@
             assign supply_first = true
         endif
     -%}
-    <div class="{{ section.id }} purchase-form-wrapper"{% if supply_first %} data-supply-first="true"{% endif %}>
+    {%- comment -%} id="buy-form": the sticky CTA bar (cta-bar.js) stays hidden while an element with this id is on screen. {%- endcomment -%}
+    <div id="buy-form" class="{{ section.id }} purchase-form-wrapper"{% if supply_first %} data-supply-first="true"{% endif %}>
         {% if supply_first %}
             <style>
                 [data-supply-first] .c-options-selector__list:not(.is-supply-first-ready) {
