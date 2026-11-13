@@ -219,6 +219,7 @@
           "settings": {
             "heading": "Brightening",
             "image": "shopify://shop_images/Dark_Spots_6.png",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -336,6 +337,7 @@
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -453,6 +455,7 @@
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "subheading": "",
             "preselected": true
           }
         },
@@ -587,6 +590,7 @@
         "hide_types": false,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "footer",
@@ -1063,7 +1067,7 @@
             "included_gift": "",
             "included_gift_selling_plan": 0,
             "gift_text": "",
-            "discount_code": "",
+            "discount_code": "EXTRAOFF6",
             "free_shipping": true,
             "per_treatment": false,
             "preselected": true,
@@ -1071,7 +1075,7 @@
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "image": "shopify://shop_images/MI_1.5_6month_DSno_mist.webp",
-            "product_discount_percent": 16,
+            "product_discount_percent": 23,
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
@@ -1168,14 +1172,14 @@
             "included_gift": "",
             "included_gift_selling_plan": 0,
             "gift_text": "",
-            "discount_code": "",
+            "discount_code": "EXTRAOFF6",
             "free_shipping": true,
             "per_treatment": false,
             "preselected": true,
             "heading": "6 Month Supply Black Friday Offer",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
-            "product_discount_percent": 16,
+            "product_discount_percent": 23,
             "soldout": false,
             "preorder": false,
             "total_treatments": 12,
@@ -1272,7 +1276,7 @@
             "included_gift": "",
             "included_gift_selling_plan": 0,
             "gift_text": "",
-            "discount_code": "",
+            "discount_code": "EXTRAOFF6",
             "free_shipping": true,
             "per_treatment": false,
             "preselected": true,
