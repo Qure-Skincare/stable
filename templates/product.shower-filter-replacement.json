@@ -275,7 +275,7 @@
             "subscription_discount_percent": 30,
             "product": "",
             "product_discount_percent": 30,
-            "onetime_text": "Qure Handheld Shower Filter Refill",
+            "onetime_text": "4 filters (12-month Supply)",
             "onetime_image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg"
           }
         },
@@ -302,7 +302,7 @@
         "product_hcQg4K": {
           "type": "product",
           "settings": {
-            "product": "hand-shower-refill",
+            "product": "hand-shower-refill-12-month-supply",
             "product_variant_id": 50530966438127,
             "product_selling_plan": 9103245551,
             "gift": "",
