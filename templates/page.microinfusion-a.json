@@ -260,7 +260,6 @@
         },
         "product_DBd4ef": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
@@ -380,7 +379,6 @@
         },
         "product_EKAAzA": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-3-month-bundle-for-wrinkles",
             "product_variant_id": 0,
