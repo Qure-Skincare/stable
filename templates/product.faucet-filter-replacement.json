@@ -117,6 +117,7 @@
         "subscription_6xp1uL": {
           "type": "subscription",
           "settings": {
+            "hide_subscription_option": true,
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
             "subscription_discount_percent": 30,

@@ -135,6 +135,7 @@
         "subscription_6xp1uL": {
           "type": "subscription",
           "settings": {
+            "hide_subscription_option": true,
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
             "subscription_image": "shopify://shop_images/cartiage-1.webp",
@@ -267,6 +268,7 @@
         "subscription_7yq2vM": {
           "type": "subscription",
           "settings": {
+            "hide_subscription_option": true,
             "subscription_onetime_text": "",
             "subscription_days_text": "Receive a new Filter Refill",
             "subscription_image": "shopify://shop_images/HandheldShowerFilterRefill-01.jpg",
@@ -345,7 +347,7 @@
         "hide_types": true,
         "hide_variants": true,
         "color_types": false,
-        "subscription_product": "true",
+        "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
         "delivery_switcher_product": "",

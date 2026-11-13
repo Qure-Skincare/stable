@@ -342,6 +342,13 @@ function __landing__updateSellingPlan(element, product_selling_plan, soldout, pr
 
     sellingPlanInput.value = product_selling_plan;
 
+    // "Hide subscription option" on the subscription block: only one-time purchase
+    // is offered, so the selling plan is never submitted.
+    if (subscriptionBox.dataset.onetimeOnly === 'true') {
+        sellingPlanInput.setAttribute('disabled', 'disabled');
+        return;
+    }
+
     __updateSellingPlanButtonLabel(preorder);
 
     document.querySelectorAll('.' + __section_landing + ' .c-subscribe-selector__item').forEach(el => {
