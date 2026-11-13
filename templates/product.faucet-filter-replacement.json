@@ -161,7 +161,7 @@
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
-            "best": false,
+            "best": true,
             "tag_label": "",
             "free_shipping": false,
             "preselected": true,
