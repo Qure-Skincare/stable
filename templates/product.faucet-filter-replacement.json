@@ -974,6 +974,7 @@
         },
         "variant_45xfGi": {
           "type": "variant",
+          "disabled": true,
           "settings": {
             "heading": "Black",
             "image": "shopify://shop_images/black_swatch.webp"
