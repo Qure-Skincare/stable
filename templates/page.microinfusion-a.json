@@ -210,60 +210,25 @@
             "date_reserved": "9th May"
           }
         },
-        "type_hHPdgJ": {
+        "type_yDwWmt": {
           "type": "type",
           "settings": {}
         },
-        "product_type_QKQhNr": {
+        "product_type_YrPQrV": {
           "type": "product_type",
           "settings": {
-            "heading": "Brightening",
-            "image": "shopify://shop_images/Dark_Spots_6.png",
-            "preselected": false
+            "heading": "Mixed",
+            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
+            "subheading": "Rejuvenating + Brightening",
+            "preselected": true
           }
         },
-        "product_NEgEkN": {
+        "product_hD69Aq": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-3-month-bundle-for-dark-spots",
+            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779399407,
-            "gift": "",
-            "gift_selling_plan": 0,
-            "included_gift": "",
-            "included_gift_selling_plan": 0,
-            "gift_text": "",
-            "discount_code": "",
-            "optional_subscription": false,
-            "popular": true,
-            "best": false,
-            "tag_label": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "Ships every 3 months",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
-            "product_discount_percent": 25,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": ""
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779235567,
+            "product_selling_plan": 8779563247,
             "gift": "",
             "gift_selling_plan": 0,
             "included_gift": "",
@@ -274,31 +239,68 @@
             "popular": false,
             "best": true,
             "tag_label": "",
-            "free_shipping": false,
-            "preselected": false,
+            "free_shipping": true,
+            "preselected": true,
             "heading": "6 Month Supply Black Friday Offer",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
-            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
+            "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
             "product_discount_percent": 23,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
+            "preorder_percent": 92,
             "included_text": ""
           }
         },
-        "product_RBCPe8": {
+        "product_DBd4ef": {
           "type": "product",
+          "disabled": true,
           "settings": {
-            "product": "micro-infusion-1-month-bundle-for-dark-spots",
+            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779432175,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "",
+            "text": "",
+            "image": "shopify://shop_images/pdp_MI_3_month_DSW.webp",
+            "product_discount_percent": 19,
+            "soldout": true,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_Xf8A6C": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
             "gift": "",
             "gift_selling_plan": 0,
             "included_gift": "",
@@ -313,9 +315,9 @@
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "Ships every 1 month",
+            "product_selling_plan_text": "",
             "text": "",
-            "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
+            "image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
             "product_discount_percent": 17,
             "soldout": true,
             "preorder": false,
@@ -337,6 +339,7 @@
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -446,25 +449,61 @@
             "included_text": ""
           }
         },
-        "type_yDwWmt": {
+        "type_hHPdgJ": {
           "type": "type",
           "settings": {}
         },
-        "product_type_YrPQrV": {
+        "product_type_QKQhNr": {
           "type": "product_type",
           "settings": {
-            "heading": "Mixed",
-            "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
-            "preselected": true,
-            "subheading": "Rejuvenating + Brightening"
+            "heading": "Brightening",
+            "image": "shopify://shop_images/Dark_Spots_6.png",
+            "subheading": "",
+            "preselected": false
           }
         },
-        "product_hD69Aq": {
+        "product_NEgEkN": {
           "type": "product",
           "settings": {
-            "product": "6-month-micro-infusion-for-wrinkles-dark-spots",
+            "product": "micro-infusion-3-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 8779563247,
+            "product_selling_plan": 8779399407,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": true,
+            "best": false,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "3 Month Supply",
+            "subheading": "(6 Treatments)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
+            "image": "shopify://shop_images/pdp_MI_3_month_DS_f2cc1b71-eb12-48ae-b8b8-069bac3c498b.webp",
+            "product_discount_percent": 25,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": ""
+          }
+        },
+        "product_gbPf3J": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779235567,
             "gift": "",
             "gift_selling_plan": 0,
             "included_gift": "",
@@ -475,68 +514,31 @@
             "popular": false,
             "best": true,
             "tag_label": "",
-            "free_shipping": true,
-            "preselected": true,
+            "free_shipping": false,
+            "preselected": false,
             "heading": "6 Month Supply Black Friday Offer",
             "subheading": "(12 Treatments)",
             "product_selling_plan_text": "Ships every 6 months",
             "text": "",
-            "image": "shopify://shop_images/pdp_MI_6_month_DSW.webp",
+            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
             "product_discount_percent": 23,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June:  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
-            "preorder_percent": 92,
+            "preorder_percent": 93,
             "included_text": ""
           }
         },
-        "product_DBd4ef": {
+        "product_RBCPe8": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "micro-infusion-3-month-bundle-for-wrinkles-dark-spots",
+            "product": "micro-infusion-1-month-bundle-for-dark-spots",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
-            "gift": "",
-            "gift_selling_plan": 0,
-            "included_gift": "",
-            "included_gift_selling_plan": 0,
-            "gift_text": "",
-            "discount_code": "",
-            "optional_subscription": false,
-            "popular": false,
-            "best": false,
-            "tag_label": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "3 Month Supply",
-            "subheading": "(6 Treatments)",
-            "product_selling_plan_text": "",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_3_month_DSW.webp",
-            "product_discount_percent": 19,
-            "soldout": true,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "",
-            "preorder_date_soldout": "",
-            "preorder_date_reserved": "",
-            "preorder_percent": 55,
-            "included_text": ""
-          }
-        },
-        "product_Xf8A6C": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "micro-infusion-1-month-bundle-for-wrinkles-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 8779432175,
             "gift": "",
             "gift_selling_plan": 0,
             "included_gift": "",
@@ -551,9 +553,9 @@
             "preselected": false,
             "heading": "1 Month Supply",
             "subheading": "(2 Treatments)",
-            "product_selling_plan_text": "",
+            "product_selling_plan_text": "Ships every 1 month",
             "text": "",
-            "image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
+            "image": "shopify://shop_images/pdp_MI_1_month_DS.webp",
             "product_discount_percent": 17,
             "soldout": true,
             "preorder": false,
@@ -590,6 +592,7 @@
         "hide_types": false,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": true,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "footer",
@@ -599,8 +602,7 @@
         "guarantee_period": "90",
         "hide_bottom": true,
         "hide_certified": true,
-        "hide_title_on_subscription": false,
-        "supply_first": true
+        "hide_title_on_subscription": false
       }
     },
     "n_progress_showcase_v5": {
@@ -994,7 +996,7 @@
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
-            "per_treatment": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
@@ -1100,7 +1102,7 @@
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
-            "per_treatment": true,
+            "per_treatment": false,
             "preselected": false,
             "heading": "3 Month Supply",
             "subheading": "(6 Treatments)",
