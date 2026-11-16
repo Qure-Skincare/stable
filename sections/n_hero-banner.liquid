@@ -6,14 +6,36 @@
 {% if section.settings.use_own_file %}
     <link href="https://qureskincaredns-stable.com/sections/hero-banner/hero-banner.css" rel="stylesheet" type="text/css"> 
 {% endif %}
+    {% liquid
+        if section.settings.image != blank
+            assign image_src = section.settings.image | image_url
+        else
+            assign image_src = section.settings.image_url | strip
+        endif
+        if section.settings.image_mobile != blank
+            assign image_mobile_src = section.settings.image_mobile | image_url
+            assign image_mobile_alt = section.settings.image_mobile.alt
+        else
+            assign image_mobile_src = section.settings.image_mobile_url | strip
+            assign image_mobile_alt = ''
+        endif
+        if section.settings.label_image != blank
+            assign label_src = section.settings.label_image | image_url: width: 300
+            assign label_alt = section.settings.label_image.alt
+        else
+            assign label_src = section.settings.label_image_url | strip
+            assign label_alt = ''
+        endif
+        if label_alt == blank
+            assign label_alt = section.settings.label_image_alt
+        endif
+    %}
     <section class="hero-banner{% if section.settings.modifier != 'none' %} hero-banner--{{ section.settings.modifier }}{% endif %}">
-        {% if section.settings.image != blank %}
+        {% if image_src != blank %}
             <picture>
-                {% if section.settings.image != blank %}
-                    <source media="(min-width:768px)" srcset="{{ section.settings.image | image_url }}">
-                {% endif %}
-                {% if section.settings.image_mobile != blank %}
-                    <img src="{{ section.settings.image_mobile | image_url }}" alt="{{ section.settings.image_mobile.alt | escape }}">
+                <source media="(min-width:768px)" srcset="{{ image_src }}">
+                {% if image_mobile_src != blank %}
+                    <img src="{{ image_mobile_src }}" alt="{{ image_mobile_alt | escape }}">
                 {% endif %}
             </picture>
         {% endif %}
@@ -32,8 +54,15 @@
 
         <div class="container">
             <article>
+                {% if label_src != blank %}
+                    <img src="{{ label_src }}" alt="{{ label_alt | escape }}" width="432" height="92">
+                {% endif %}
                 {% if section.settings.text != blank %}
-                    {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]</p>', '</small>' }}
+                    {{ section.settings.text
+                    | replace: '<p>[small]', '<small>'
+                    | replace: '[/small]</p>', '</small>'
+                    | replace: '[accent]', '<span>'
+                    | replace: '[/accent]', '</span>' }}
                 {% endif %}
 
                 {% assign has_text_block = false %}
@@ -95,13 +124,18 @@
                 {
                     "value": "qure-birthday",
                     "label": "t:sections.n_hero-banner.settings.modifier-options.qure-birthday"
+                },
+                {
+                    "value": "bf",
+                    "label": "t:sections.n_hero-banner.settings.modifier-options.bf"
                 }
             ]
         },
         {
             "type": "richtext",
             "id": "text",
-            "label": "t:common.text"
+            "label": "t:common.text",
+            "info": "t:sections.n_hero-banner.settings.text_info"
         },
         {
             "type": "image_picker",
@@ -109,9 +143,34 @@
             "label": "t:common.image"
         },
         {
+            "type": "text",
+            "id": "image_url",
+            "label": "t:sections.n_hero-banner.settings.image_url"
+        },
+        {
             "type": "image_picker",
             "id": "image_mobile",
             "label": "t:common.image-mobile"
+        },
+        {
+            "type": "text",
+            "id": "image_mobile_url",
+            "label": "t:sections.n_hero-banner.settings.image_mobile_url"
+        },
+        {
+            "type": "image_picker",
+            "id": "label_image",
+            "label": "t:sections.n_hero-banner.settings.label_image"
+        },
+        {
+            "type": "text",
+            "id": "label_image_url",
+            "label": "t:sections.n_hero-banner.settings.label_image_url"
+        },
+        {
+            "type": "text",
+            "id": "label_image_alt",
+            "label": "t:sections.n_hero-banner.settings.label_image_alt"
         }
     ],
     "blocks": [

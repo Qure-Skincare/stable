@@ -577,8 +577,15 @@
                     "none": "None",
                     "holidays": "Holidays",
                     "easter": "Easter",
-                    "qure-birthday": "Qure birthday"
-                }
+                    "qure-birthday": "Qure birthday",
+                    "bf": "Black Friday"
+                },
+                "text_info": "Wrap words in [accent]…[/accent] to highlight them. A paragraph that starts with [small] and ends with [/small] becomes small print.",
+                "image_url": "Image URL (used when no image is selected)",
+                "image_mobile_url": "Image mobile URL (used when no image is selected)",
+                "label_image": "Label image (above the text)",
+                "label_image_url": "Label image URL (used when no image is selected)",
+                "label_image_alt": "Label image alt text (used when the image has none)"
             }
         },
         "n_pills-navigation": {
