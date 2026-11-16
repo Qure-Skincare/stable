@@ -618,6 +618,7 @@
                     "none": "None",
                     "reverse": "Reverse",
                     "haircare": "Haircare",
+                    "product-details": "Product details",
                     "simple-grid": "Simple grid"
                 },
                 "background-color-options": {
@@ -796,7 +797,10 @@
             "name": "MI overview",
             "settings": {
                 "features-heading": "Features heading",
-                "wistia-url-mobile": "Wistia URL mobile"
+                "wistia-url-mobile": "Wistia URL mobile",
+                "modifier-options": {
+                    "simple": "Simple"
+                }
             }
         },
         "n_mi-ingredients": {

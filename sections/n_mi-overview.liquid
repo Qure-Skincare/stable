@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/mi-overview/mi-overview.css" />
 {% endif %}
 
-<section class="mi-overview"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+<section class="mi-overview{% if section.settings.modifier != blank and section.settings.modifier != 'none' %} mi-overview--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <div class="mi-overview__titles">
             {% if section.settings.subheader != blank %}
@@ -70,6 +70,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "simple",
+                    "label": "t:sections.n_mi-overview.settings.modifier-options.simple"
+                }
+            ]
         },
         {
             "type": "text",
