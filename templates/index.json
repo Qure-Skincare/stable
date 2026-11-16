@@ -487,7 +487,7 @@
         "expert_shah": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/shah_55a79f40-8353-4a7d-ad53-704ff2ef065e.webp",
+            "image": "shopify://shop_images/shah-2.webp",
             "name": "Dr. Shah",
             "role": "Dermatologist"
           }
@@ -495,7 +495,7 @@
         "expert_maxfield": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/maxfield_c5ad7eb1-74ec-44ad-832e-03cef413d310.webp",
+            "image": "shopify://shop_images/maxfield-2.webp",
             "name": "Dr. Maxfield",
             "role": "Dermatologist"
           }
@@ -503,7 +503,7 @@
         "expert_brown": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/brown.webp",
+            "image": "shopify://shop_images/brown-2.webp",
             "name": "Dr. Alekandra Brown",
             "role": "Dermatologist"
           }
@@ -511,7 +511,7 @@
         "expert_zubritsky": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/zubritsky.webp",
+            "image": "shopify://shop_images/zubritsky-2.webp",
             "name": "Dr. Lindsey Zubritsky",
             "role": "Dermatologist"
           }
@@ -519,7 +519,7 @@
         "expert_stephens": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/stephens_fab58e4c-3158-45cc-9c9f-38a3e8083899.webp",
+            "image": "shopify://shop_images/stephens-2.webp",
             "name": "Dr. Alexis Stephens",
             "role": "Internal Medicine Doctor"
           }
@@ -527,7 +527,7 @@
         "expert_tripati": {
           "type": "expert",
           "settings": {
-            "image": "shopify://shop_images/tripati.webp",
+            "image": "shopify://shop_images/tripati-2.webp",
             "name": "Dr. Prem Tripati",
             "role": "Facial Plastic Surgeon"
           }
