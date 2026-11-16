@@ -577,8 +577,10 @@
                     "none": "None",
                     "holidays": "Holidays",
                     "easter": "Easter",
-                    "qure-birthday": "Qure birthday"
-                }
+                    "qure-birthday": "Qure birthday",
+                    "bf": "Black Friday"
+                },
+                "label_image": "Label image"
             }
         },
         "n_pills-navigation": {

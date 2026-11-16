@@ -32,8 +32,15 @@
 
         <div class="container">
             <article>
+                {% if section.settings.label_image != blank %}
+                    {{ section.settings.label_image | image_url: width: 432 | image_tag: loading: 'eager' }}
+                {% endif %}
                 {% if section.settings.text != blank %}
-                    {{ section.settings.text | replace: '<p>[small]', '<small>' | replace: '[/small]</p>', '</small>' }}
+                    {{ section.settings.text
+                    | replace: '<p>[small]', '<small>'
+                    | replace: '[/small]</p>', '</small>'
+                    | replace: '[accent]', '<span>'
+                    | replace: '[/accent]', '</span>' }}
                 {% endif %}
 
                 {% assign has_text_block = false %}
@@ -95,6 +102,10 @@
                 {
                     "value": "qure-birthday",
                     "label": "t:sections.n_hero-banner.settings.modifier-options.qure-birthday"
+                },
+                {
+                    "value": "bf",
+                    "label": "t:sections.n_hero-banner.settings.modifier-options.bf"
                 }
             ]
         },
@@ -112,6 +123,11 @@
             "type": "image_picker",
             "id": "image_mobile",
             "label": "t:common.image-mobile"
+        },
+        {
+            "type": "image_picker",
+            "id": "label_image",
+            "label": "t:sections.n_hero-banner.settings.label_image"
         }
     ],
     "blocks": [

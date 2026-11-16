@@ -9,6 +9,19 @@
  */
 {
   "sections": {
+    "n_hero_banner_bf": {
+      "type": "n_hero-banner",
+      "name": "t:sections.n_hero-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "bf",
+        "text": "<h2>Save [accent]Up to 72%[/accent]</h2><p>Shop our biggest sale of the year.</p>",
+        "image": "shopify://shop_images/bf-26.webp",
+        "image_mobile": "shopify://shop_images/bf-26-mob.webp",
+        "label_image": "shopify://shop_images/bf-sale-label.webp"
+      },
+      "disabled": true
+    },
     "n_hero_banner_zUyTB8": {
       "type": "n_hero-banner",
       "name": "t:sections.n_hero-banner.name",
@@ -185,6 +198,7 @@
     }
   },
   "order": [
+    "n_hero_banner_bf",
     "n_hero_banner_zUyTB8",
     "n_breadcrumb_fXMjkJ",
     "n_pills_nav_fXMjkJ",
