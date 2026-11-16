@@ -18,52 +18,6 @@
                 </picture>
             {% endif %}
 
-            {% assign has_accordion = false %}
-            {% for block in section.blocks %}
-                {% if block.type == 'accordion' %}
-                    {% assign has_accordion = true %}
-                {% endif %}
-            {% endfor %}
-            {% if has_accordion %}
-                <div>
-                    {{ section.settings.accordion_text }}
-                    <div class="c-accordion c-accordion--lines c-accordion--arrow-icon">
-                        <div class="c-accordion__list">
-                            {% for block in section.blocks %}
-                                {% if block.type == 'accordion' %}
-                                    <details class="c-accordion__item">
-                                        {% if block.settings.heading != blank %}
-                                            <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
-                                        {% endif %}
-                                        <article class="c-accordion__content">
-                                            {{ block.settings.text }}
-                                            <ul class="c-percent-list">
-                                                <li>
-                                                    {% if block.settings.percent_value_1 != blank %}
-                                                        <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_1 }}"><span>{{ block.settings.percent_value_1 }}%</span></div>
-                                                    {% endif %}
-                                                    {% if block.settings.percent_scale_text_1 != blank %}
-                                                        <span>{{ block.settings.percent_scale_text_1 }}</span>
-                                                    {% endif %}
-                                                </li>
-                                                <li>
-                                                    {% if block.settings.percent_value_2 != blank %}
-                                                        <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_2 }}"><span>{{ block.settings.percent_value_2 }}%</span></div>
-                                                    {% endif %}
-                                                    {% if block.settings.percent_scale_text_2 != blank %}
-                                                        <span>{{ block.settings.percent_scale_text_2 }}</span>
-                                                    {% endif %}
-                                                </li>
-                                            </ul>
-                                        </article>
-                                    </details>
-                                {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-
             {% if section.settings.wistia_url != blank %}
                 {% if section.settings.video_image_cover != blank %}
                     <div class="c-wistia c-wistia--custom c-wistia--is-playing">
@@ -82,6 +36,59 @@
                         <div class="c-wistia__play"></div>
                     </div>
                 {% endif %}
+            {% endif %}
+
+            {% assign has_accordion = false %}
+            {% for block in section.blocks %}
+                {% if block.type == 'accordion' %}
+                    {% assign has_accordion = true %}
+                {% endif %}
+            {% endfor %}
+            {% if has_accordion %}
+                <div>
+                    {{ section.settings.accordion_text }}
+                    <div class="c-accordion c-accordion--lines{% unless section.settings.modifier == 'product-details' %} c-accordion--arrow-icon{% endunless %}">
+                        <div class="c-accordion__list">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'accordion' %}
+                                    <details class="c-accordion__item"{% if section.settings.modifier == 'product-details' %} name="accordion-{{ section.id }}"{% endif %}>
+                                        {% if block.settings.heading != blank %}
+                                            <summary class="c-accordion__summary">
+                                                {% if block.settings.icon != blank and block.settings.icon != 'none' %}
+                                                    <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                                {% endif %}
+                                                {{ block.settings.heading }}
+                                            </summary>
+                                        {% endif %}
+                                        <article class="c-accordion__content">
+                                            {{ block.settings.text }}
+                                            {% if block.settings.percent_value_1 != blank or block.settings.percent_value_2 != blank %}
+                                                <ul class="c-percent-list">
+                                                    <li>
+                                                        {% if block.settings.percent_value_1 != blank %}
+                                                            <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_1 }}"><span>{{ block.settings.percent_value_1 }}%</span></div>
+                                                        {% endif %}
+                                                        {% if block.settings.percent_scale_text_1 != blank %}
+                                                            <span>{{ block.settings.percent_scale_text_1 }}</span>
+                                                        {% endif %}
+                                                    </li>
+                                                    <li>
+                                                        {% if block.settings.percent_value_2 != blank %}
+                                                            <div class="e-circle-percent" style="--percent-value: {{ block.settings.percent_value_2 }}"><span>{{ block.settings.percent_value_2 }}%</span></div>
+                                                        {% endif %}
+                                                        {% if block.settings.percent_scale_text_2 != blank %}
+                                                            <span>{{ block.settings.percent_scale_text_2 }}</span>
+                                                        {% endif %}
+                                                    </li>
+                                                </ul>
+                                            {% endif %}
+                                        </article>
+                                    </details>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
             {% endif %}
 
             {% assign has_app_store = false %}
@@ -343,6 +350,10 @@
                 {
                     "value": "haircare",
                     "label": "t:sections.n_base-section.settings.modifier-options.haircare"
+                },
+                {
+                    "value": "product-details",
+                    "label": "t:sections.n_base-section.settings.modifier-options.product-details"
                 }
             ]
         },
@@ -635,6 +646,34 @@
         "type": "accordion",
         "name": "t:common.accordion",
         "settings": [
+            {
+                "type": "select",
+                "id": "icon",
+                "label": "t:common.icon",
+                "default": "none",
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "t:common.none"
+                    },
+                    {
+                        "value": "fine-lines",
+                        "label": "t:common.fine-lines"
+                    },
+                    {
+                        "value": "verified-shield",
+                        "label": "t:common.verified-shield"
+                    },
+                    {
+                        "value": "antioxidant",
+                        "label": "t:common.antioxidant"
+                    },
+                    {
+                        "value": "droplet",
+                        "label": "t:common.droplet"
+                    }
+                ]
+            },
             {
                 "type": "text",
                 "id": "heading",

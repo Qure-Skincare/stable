@@ -261,92 +261,66 @@
         "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
       }
     },
-    "n_features_overview": {
-      "type": "n_features-overview",
+    "n_base_section_product_details": {
+      "type": "n_base-section",
       "blocks": {
-        "component_cartridge": {
-          "type": "component",
-          "settings": {
-            "modifier": "reverse",
-            "heading": "One Sealed Cartridge",
-            "text": "No vials. No assembly."
-          }
-        },
-        "component_design": {
-          "type": "component",
-          "settings": {
-            "modifier": "none",
-            "heading": "Patent-pending design",
-            "text": "Consistent serum, every press."
-          }
-        },
-        "component_needles": {
-          "type": "component",
-          "settings": {
-            "modifier": "reverse",
-            "heading": "24K Gold-Plated Needles",
-            "text": "Deeper serum absorption."
-          }
-        },
-        "benefit_actives": {
-          "type": "benefit",
+        "accordion_actives": {
+          "type": "accordion",
           "settings": {
             "icon": "fine-lines",
-            "heading": "Six actives, one job: visibly fuller, denser-looking hair",
-            "text": "This isn’t a serum sitting on your scalp hoping for the best. 6 science-backed actives are delivered where your scalp can actually use them with the Micro-Infusion Pro."
+            "heading": "Six actives, one job: visibly fuller, denser-looking hair.",
+            "text": "<p>This isn’t a serum sitting on your scalp hoping for the best. 6 science-backed actives are delivered where your scalp can actually use them with the Micro-Infusion Pro.</p>"
           }
         },
-        "benefit_areas": {
-          "type": "benefit",
+        "accordion_areas": {
+          "type": "accordion",
           "settings": {
             "icon": "verified-shield",
-            "heading": "Made for the areas where thinning shows",
-            "text": "Use it across the part, temples and crown. Tiny micro-channels let the serum go below the surface instead of staying on top."
+            "heading": "Made for the areas where thinning shows.",
+            "text": "<p>Use it across the part, temples and crown. Tiny micro-channels let the serum go below the surface instead of staying on top.</p>"
           }
         },
-        "benefit_routine": {
-          "type": "benefit",
+        "accordion_routine": {
+          "type": "accordion",
           "settings": {
             "icon": "antioxidant",
-            "heading": "A routine you can actually keep",
-            "text": "Once every 2 weeks, 5 minutes, no downtime, no appointments. On the nights in between, massage in the Hair Renewal Serum. We kept the routine simple enough to stick with."
+            "heading": "A routine you can actually keep.",
+            "text": "<p>Once a week, 5 minutes, no downtime, no appointments. On the nights in between, massage in the Hair Renewal Serum. We kept the routine simple enough to stick with.</p>"
           }
         },
-        "benefit_clean": {
-          "type": "benefit",
+        "accordion_clean": {
+          "type": "accordion",
           "settings": {
             "icon": "droplet",
-            "heading": "Clean and comfortable, every time",
-            "text": "0.5mm gold-plated needles. A new, EO-sterilized needle head for every treatment, so you never reuse anything on your scalp."
+            "heading": "Clean and comfortable, every time.",
+            "text": "<p>0.5mm gold-plated needles. A new, EO-sterilized needle head for every treatment, so you never reuse anything on your scalp.</p>"
           }
         },
-        "benefit_ready": {
-          "type": "benefit",
+        "accordion_ready": {
+          "type": "accordion",
           "settings": {
             "icon": "antioxidant",
-            "heading": "Ready when you are",
-            "text": "One sealed cartridge, with the serum and needle head built in. No vials, no mixing. The airless pump gives you the same amount every press, so there’s no guesswork."
+            "heading": "Ready when you are.",
+            "text": "<p>One sealed cartridge, with the serum and needle head built in. No vials, no mixing. The airless pump gives you the same amount every press, so there’s no guesswork.</p>"
           }
         }
       },
       "block_order": [
-        "component_cartridge",
-        "component_design",
-        "component_needles",
-        "benefit_actives",
-        "benefit_areas",
-        "benefit_routine",
-        "benefit_clean",
-        "benefit_ready"
+        "accordion_actives",
+        "accordion_areas",
+        "accordion_routine",
+        "accordion_clean",
+        "accordion_ready"
       ],
-      "name": "t:sections.n_features-overview.name",
+      "name": "t:sections.n_base-section.name",
       "settings": {
+        "use_own_file": false,
+        "modifier": "product-details",
+        "modifier_2": "none",
+        "background_color": "none",
         "section_id": "results",
-        "modifier": "mi-hair",
-        "heading": "<h2>You’ve tried what sits on top. This goes below.</h2>",
-        "text": "<p>If your part is widening or your ponytail feels thinner, you’ve probably already tried the shampoos, the supplements and the serums. Micro-Infusion Pro uses the same microneedling technique as in-clinic scalp treatments to get serum below the surface, where your scalp can use it.</p>",
-        "image": "shopify://shop_images/mi-pro-hair.webp",
-        "image_mobile": "shopify://shop_images/mi-pro-hair-mob.webp"
+        "heading": "<h2>You’ve tried what sits on top. This&nbsp;goes below.</h2>",
+        "wistia_url": "zi98z5ke8z"
       }
     },
     "n_mi_overview": {
@@ -409,10 +383,9 @@
         "section_id": "how-it-works",
         "subheader": "How it works",
         "heading": "Go beyond surface-level skincare",
-        "wistia_url": "4lvki730al",
-        "wistia_url_mobile": "jhwgazmjv8",
-        "text": "<p>You’ve probably tried the serums, the topicals everyone swore by. Most of them can only work from the surface. <em>Micro-Infusion Pro does a different job.</em>&nbsp;<br/>It stamps straight down onto your scalp, so there’s no rolling or dragging through your hair. Its tiny 0.5mm gold-plated microneedles create channels in the scalp, so the serum goes where your hair grows and not just onto the strands.&nbsp;<br/><em>Part your hair, press, lift, move on. Five minutes, once every 2 weeks.</em></p>",
-        "features_heading": "6 Target Areas - 1 Solution"
+        "text": "<p>You’ve probably tried the serums, the topicals everyone swore by. Most of them can only work from the surface. <em>Micro-Infusion Pro does a different job.</em>&nbsp;<br/>It stamps straight down onto your scalp, so there’s no rolling or dragging through your hair. Its tiny 0.5mm gold-plated microneedles create channels in the scalp, so the serum goes where your hair grows and not just onto the strands.&nbsp;<br/><em>Part your hair, press, lift, move on. Five minutes, once a week.</em></p>",
+        "features_heading": "6 Target Areas - 1 Solution",
+        "modifier": "simple"
       }
     },
     "n_press_reviews": {
@@ -1283,7 +1256,7 @@
     "product_header",
     "purchase-form-landing",
     "n_expert_feature_hair",
-    "n_features_overview",
+    "n_base_section_product_details",
     "n_mi_overview",
     "n_press_reviews",
     "n_trusted_reviews_hair",
