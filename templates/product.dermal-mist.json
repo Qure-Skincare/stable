@@ -212,6 +212,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -328,6 +329,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
+            "subheading": "",
             "preselected": true
           }
         },
@@ -455,6 +457,7 @@
         "hide_types": true,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 46,
         "delivery_switcher_position": "footer",
@@ -487,6 +490,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Micro-Infusion Targeted Patches",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -610,6 +614,7 @@
         "hide_types": true,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": false,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
@@ -807,7 +812,7 @@
           "type": "dialog",
           "settings": {
             "button_label": "View Full Ingredient List",
-            "text": "<p><strong>Dermal Mist Ingredients</strong></p><p>Water (aqua)*, Chrysanthellum indicum flower water, sodium chloride, sodium phosphate, disodium phosphate, hypochlorous acid. *Ultra pure water.</p>"
+            "text": "<p><strong>Dermal Mist Ingredients</strong></p><p>Water, Sodium Phosphate, Sodium Chloride, Hypochlorous Acid.</p>"
           }
         }
       },
