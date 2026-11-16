@@ -16,10 +16,9 @@
         "use_own_file": false,
         "modifier": "bf",
         "text": "<h2>Save [accent]Up to 72%[/accent]</h2><p>Shop our biggest sale of the year.</p>",
-        "image_url": "https://qureskincaredns-stable.com/assets/images/page-banner/bf-26.webp",
-        "image_mobile_url": "https://qureskincaredns-stable.com/assets/images/page-banner/bf-26-mob.webp",
-        "label_image_url": "https://qureskincaredns-stable.com/assets/images/bf-26/bf-sale-label.webp",
-        "label_image_alt": "Black Friday sale"
+        "image": "shopify://shop_images/bf-26.webp",
+        "image_mobile": "shopify://shop_images/bf-26-mob.webp",
+        "label_image": "shopify://shop_images/bf-sale-label.webp"
       },
       "disabled": true
     },
