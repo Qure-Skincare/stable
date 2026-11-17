@@ -808,6 +808,7 @@
         "image_with_text_pay_later",
         "image_with_text_proven"
       ],
+      "disabled": true,
       "name": "t:sections.n_features-marquee.name",
       "settings": {
         "use_own_file": false
