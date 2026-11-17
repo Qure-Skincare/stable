@@ -451,6 +451,24 @@
         "button_url": ""
       }
     },
+    "n_base_section_UEmWLp": {
+      "type": "n_base-section",
+      "disabled": true,
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "modifier_2": "none",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "",
+        "text": "",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "",
+        "accordion_text": ""
+      }
+    },
     "n_mi_overview": {
       "type": "n_mi-overview",
       "blocks": {
@@ -1290,6 +1308,7 @@
     "n_base_section_product_details",
     "n_expert_feature_hair",
     "n_trusted_reviews_hair",
+    "n_base_section_UEmWLp",
     "n_mi_overview",
     "n_mi_ingredients",
     "n_experts_grid",
