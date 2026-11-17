@@ -140,6 +140,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Hair",
+            "subheading": "",
             "preselected": true
           }
         },
@@ -235,6 +236,7 @@
         "hide_types": true,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 65,
         "delivery_switcher_position": "footer",
@@ -247,20 +249,6 @@
         "hide_title_on_subscription": false
       }
     },
-    "n_expert_feature_hair": {
-      "type": "n_expert-feature",
-      "settings": {
-        "use_own_file": false,
-        "heading": "<h2>Does Micro-Infusion Hair hurt?</h2>",
-        "text": "<p>Qure Micro-Infusion Hair is designed for comfortable at-home use. Its single-use, gold-plated needles (0.5 mm) gently stamp the scalp, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the needles create channels that help your scalp absorb Qure’s Hair Renewal Serum, for hair that looks fuller and a healthier-looking scalp.</p>",
-        "quote": "“What I really like about Qure Micro-Infusion Hair is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.”",
-        "author": "Dr. Shah",
-        "caption": "1.2M followers",
-        "badge": "Board Certified Dermatologist",
-        "image": "shopify://shop_images/dr-shah.webp",
-        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
-      }
-    },
     "n_base_section_product_details": {
       "type": "n_base-section",
       "blocks": {
@@ -269,7 +257,11 @@
           "settings": {
             "icon": "fine-lines",
             "heading": "Six actives, one job: visibly fuller, denser-looking hair.",
-            "text": "<p>This isn’t a serum sitting on your scalp hoping for the best. 6 science-backed actives are delivered where your scalp can actually use them with the Micro-Infusion Pro.</p>"
+            "text": "<p>This isn’t a serum sitting on your scalp hoping for the best. 6 science-backed actives are delivered where your scalp can actually use them with the Micro-Infusion Pro.</p>",
+            "percent_value_1": "",
+            "percent_scale_text_1": "",
+            "percent_value_2": "",
+            "percent_scale_text_2": ""
           }
         },
         "accordion_areas": {
@@ -277,7 +269,11 @@
           "settings": {
             "icon": "verified-shield",
             "heading": "Made for the areas where thinning shows.",
-            "text": "<p>Use it across the part, temples and crown. Tiny micro-channels let the serum go below the surface instead of staying on top.</p>"
+            "text": "<p>Use it across the part, temples and crown. Tiny micro-channels let the serum go below the surface instead of staying on top.</p>",
+            "percent_value_1": "",
+            "percent_scale_text_1": "",
+            "percent_value_2": "",
+            "percent_scale_text_2": ""
           }
         },
         "accordion_routine": {
@@ -285,7 +281,11 @@
           "settings": {
             "icon": "antioxidant",
             "heading": "A routine you can actually keep.",
-            "text": "<p>Once a week, 5 minutes, no downtime, no appointments. On the nights in between, massage in the Hair Renewal Serum. We kept the routine simple enough to stick with.</p>"
+            "text": "<p>Once a week, 5 minutes, no downtime, no appointments. On the nights in between, massage in the Hair Renewal Serum. We kept the routine simple enough to stick with.</p>",
+            "percent_value_1": "",
+            "percent_scale_text_1": "",
+            "percent_value_2": "",
+            "percent_scale_text_2": ""
           }
         },
         "accordion_clean": {
@@ -293,7 +293,11 @@
           "settings": {
             "icon": "droplet",
             "heading": "Clean and comfortable, every time.",
-            "text": "<p>0.5mm gold-plated needles. A new, EO-sterilized needle head for every treatment, so you never reuse anything on your scalp.</p>"
+            "text": "<p>0.5mm gold-plated needles. A new, EO-sterilized needle head for every treatment, so you never reuse anything on your scalp.</p>",
+            "percent_value_1": "",
+            "percent_scale_text_1": "",
+            "percent_value_2": "",
+            "percent_scale_text_2": ""
           }
         },
         "accordion_ready": {
@@ -301,7 +305,11 @@
           "settings": {
             "icon": "antioxidant",
             "heading": "Ready when you are.",
-            "text": "<p>One sealed cartridge, with the serum and needle head built in. No vials, no mixing. The airless pump gives you the same amount every press, so there’s no guesswork.</p>"
+            "text": "<p>One sealed cartridge, with the serum and needle head built in. No vials, no mixing. The airless pump gives you the same amount every press, so there’s no guesswork.</p>",
+            "percent_value_1": "",
+            "percent_scale_text_1": "",
+            "percent_value_2": "",
+            "percent_scale_text_2": ""
           }
         }
       },
@@ -320,111 +328,25 @@
         "background_color": "none",
         "section_id": "results",
         "heading": "<h2>You’ve tried what sits on top. This&nbsp;goes below.</h2>",
-        "wistia_url": "zi98z5ke8z"
+        "text": "",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "zi98z5ke8z",
+        "accordion_text": ""
       }
     },
-    "n_mi_overview": {
-      "type": "n_mi-overview",
-      "blocks": {
-        "area_1": {
-          "type": "area",
-          "settings": {
-            "image": "shopify://shop_images/mi-hair-1.webp",
-            "heading": "Crown thinning"
-          }
-        },
-        "area_2": {
-          "type": "area",
-          "settings": {
-            "image": "shopify://shop_images/mi-hair-2.webp",
-            "heading": "Receding hairline"
-          }
-        },
-        "area_3": {
-          "type": "area",
-          "settings": {
-            "image": "shopify://shop_images/mi-hair-3.webp",
-            "heading": "Scalp dryness"
-          }
-        },
-        "area_4": {
-          "type": "area",
-          "settings": {
-            "image": "shopify://shop_images/mi-hair-4.webp",
-            "heading": "Hair shedding"
-          }
-        },
-        "area_5": {
-          "type": "area",
-          "settings": {
-            "image": "shopify://shop_images/mi-hair-5.webp",
-            "heading": "Scalp dryness"
-          }
-        },
-        "area_6": {
-          "type": "area",
-          "settings": {
-            "image": "shopify://shop_images/mi-hair-6.webp",
-            "heading": "Overall density"
-          }
-        }
-      },
-      "block_order": [
-        "area_1",
-        "area_2",
-        "area_3",
-        "area_4",
-        "area_5",
-        "area_6"
-      ],
-      "name": "t:sections.n_mi-overview.name",
+    "n_expert_feature_hair": {
+      "type": "n_expert-feature",
       "settings": {
         "use_own_file": false,
-        "section_id": "how-it-works",
-        "subheader": "How it works",
-        "heading": "Go beyond surface-level skincare",
-        "text": "<p>You’ve probably tried the serums, the topicals everyone swore by. Most of them can only work from the surface. <em>Micro-Infusion Pro does a different job.</em>&nbsp;<br/>It stamps straight down onto your scalp, so there’s no rolling or dragging through your hair. Its tiny 0.5mm gold-plated microneedles create channels in the scalp, so the serum goes where your hair grows and not just onto the strands.&nbsp;<br/><em>Part your hair, press, lift, move on. Five minutes, once a week.</em></p>",
-        "features_heading": "6 Target Areas - 1 Solution",
-        "modifier": "simple"
-      }
-    },
-    "n_press_reviews": {
-      "type": "n_press-reviews",
-      "blocks": {
-        "image_with_text_1": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
-            "image": "shopify://shop_images/forbes.svg"
-          }
-        },
-        "image_with_text_2": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.</h4>",
-            "image": "shopify://shop_images/bazzar.svg"
-          }
-        },
-        "image_with_text_3": {
-          "type": "image_with_text",
-          "settings": {
-            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
-            "image": "shopify://shop_images/ps.svg"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_1",
-        "image_with_text_2",
-        "image_with_text_3"
-      ],
-      "name": "t:sections.n_press-reviews.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "light",
-        "text": "<h6>FEATURED IN</h6>",
-        "slide": "none",
-        "settings": "\"spaceBetween\": 80"
+        "heading": "<h2>Does Micro-Infusion Hair hurt?</h2>",
+        "text": "<p>Qure Micro-Infusion Hair is designed for comfortable at-home use. Its single-use, gold-plated needles (0.5 mm) gently stamp the scalp, unlike more aggressive treatments that involve rolling or dragging.</p><p>You may feel a slight prickling, similar to Velcro lightly pressed against your skin. As you stamp, the needles create channels that help your scalp absorb Qure’s Hair Renewal Serum, for hair that looks fuller and a healthier-looking scalp.</p>",
+        "quote": "“What I really like about Qure Micro-Infusion Hair is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.”",
+        "author": "Dr. Shah",
+        "caption": "1.2M followers",
+        "badge": "Board Certified Dermatologist",
+        "image": "shopify://shop_images/dr-shah.webp",
+        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
       }
     },
     "n_trusted_reviews_hair": {
@@ -529,74 +451,71 @@
         "button_url": ""
       }
     },
-    "n_experts_grid": {
-      "type": "n_experts-grid",
+    "n_mi_overview": {
+      "type": "n_mi-overview",
       "blocks": {
-        "expert_1": {
-          "type": "expert",
+        "area_1": {
+          "type": "area",
           "settings": {
-            "image": "shopify://shop_images/shah_55a79f40-8353-4a7d-ad53-704ff2ef065e.webp",
-            "name": "Dr. Shah",
-            "role": "Board Certified Dermatologist"
+            "image": "shopify://shop_images/mi-hair-1.webp",
+            "heading": "Crown thinning"
           }
         },
-        "expert_2": {
-          "type": "expert",
+        "area_2": {
+          "type": "area",
           "settings": {
-            "image": "shopify://shop_images/maxfield_c5ad7eb1-74ec-44ad-832e-03cef413d310.webp",
-            "name": "Dr. Maxfield",
-            "role": "Board Certified Dermatologist"
+            "image": "shopify://shop_images/mi-hair-2.webp",
+            "heading": "Receding hairline"
           }
         },
-        "expert_3": {
-          "type": "expert",
+        "area_3": {
+          "type": "area",
           "settings": {
-            "image": "shopify://shop_images/brown.webp",
-            "name": "Dr. Alekandra Brown",
-            "role": "Board Certified Dermatologist"
+            "image": "shopify://shop_images/mi-hair-3.webp",
+            "heading": "Scalp dryness"
           }
         },
-        "expert_4": {
-          "type": "expert",
+        "area_4": {
+          "type": "area",
           "settings": {
-            "image": "shopify://shop_images/zubritsky.webp",
-            "name": "Dr. Lindsey Zubritsky",
-            "role": "Board Certified Dermatologist"
+            "image": "shopify://shop_images/mi-hair-4.webp",
+            "heading": "Hair shedding"
           }
         },
-        "expert_5": {
-          "type": "expert",
+        "area_5": {
+          "type": "area",
           "settings": {
-            "image": "shopify://shop_images/stephens_fab58e4c-3158-45cc-9c9f-38a3e8083899.webp",
-            "name": "Dr. Alexis Stephens",
-            "role": "Internal Medicine Doctor"
+            "image": "shopify://shop_images/mi-hair-5.webp",
+            "heading": "Scalp dryness"
           }
         },
-        "expert_6": {
-          "type": "expert",
+        "area_6": {
+          "type": "area",
           "settings": {
-            "image": "shopify://shop_images/tripati.webp",
-            "name": "Dr. Prem Tripati",
-            "role": "Facial Plastic Surgeon"
+            "image": "shopify://shop_images/mi-hair-6.webp",
+            "heading": "Overall density"
           }
         }
       },
       "block_order": [
-        "expert_1",
-        "expert_2",
-        "expert_3",
-        "expert_4",
-        "expert_5",
-        "expert_6"
+        "area_1",
+        "area_2",
+        "area_3",
+        "area_4",
+        "area_5",
+        "area_6"
       ],
-      "name": "t:sections.n_experts-grid.name",
+      "name": "t:sections.n_mi-overview.name",
       "settings": {
-        "section_id": "reviews",
         "use_own_file": false,
-        "awards": false,
-        "slider": true,
-        "heading": "Trusted and Recommended by Skin Experts",
-        "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
+        "modifier": "simple",
+        "section_id": "how-it-works",
+        "subheader": "How it works",
+        "heading": "Go beyond surface-level skincare",
+        "wistia_url": "",
+        "wistia_url_mobile": "",
+        "text": "<p>You’ve probably tried the serums, the topicals everyone swore by. Most of them can only work from the surface. <em>Micro-Infusion Pro does a different job.</em>&nbsp;<br/>It stamps straight down onto your scalp, so there’s no rolling or dragging through your hair. Its tiny 0.5mm gold-plated microneedles create channels in the scalp, so the serum goes where your hair grows and not just onto the strands.&nbsp;<br/><em>Part your hair, press, lift, move on. Five minutes, once a week.</em></p>",
+        "features_heading": "6 Target Areas - 1 Solution"
       }
     },
     "n_mi_ingredients": {
@@ -695,6 +614,115 @@
         "button_label": "Add Full System to Cart",
         "button_url": "#hero-product",
         "sub_text": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
+    "n_experts_grid": {
+      "type": "n_experts-grid",
+      "blocks": {
+        "expert_1": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/shah_55a79f40-8353-4a7d-ad53-704ff2ef065e.webp",
+            "name": "Dr. Shah",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_2": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/maxfield_c5ad7eb1-74ec-44ad-832e-03cef413d310.webp",
+            "name": "Dr. Maxfield",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_3": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/brown.webp",
+            "name": "Dr. Alekandra Brown",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_4": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/zubritsky.webp",
+            "name": "Dr. Lindsey Zubritsky",
+            "role": "Board Certified Dermatologist"
+          }
+        },
+        "expert_5": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/stephens_fab58e4c-3158-45cc-9c9f-38a3e8083899.webp",
+            "name": "Dr. Alexis Stephens",
+            "role": "Internal Medicine Doctor"
+          }
+        },
+        "expert_6": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/tripati.webp",
+            "name": "Dr. Prem Tripati",
+            "role": "Facial Plastic Surgeon"
+          }
+        }
+      },
+      "block_order": [
+        "expert_1",
+        "expert_2",
+        "expert_3",
+        "expert_4",
+        "expert_5",
+        "expert_6"
+      ],
+      "name": "t:sections.n_experts-grid.name",
+      "settings": {
+        "section_id": "reviews",
+        "use_own_file": false,
+        "awards": false,
+        "slider": true,
+        "heading": "Trusted and Recommended by Skin Experts",
+        "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
+      }
+    },
+    "n_press_reviews": {
+      "type": "n_press-reviews",
+      "blocks": {
+        "image_with_text_1": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
+            "image": "shopify://shop_images/forbes.svg"
+          }
+        },
+        "image_with_text_2": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.</h4>",
+            "image": "shopify://shop_images/bazzar.svg"
+          }
+        },
+        "image_with_text_3": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
+            "image": "shopify://shop_images/ps.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_1",
+        "image_with_text_2",
+        "image_with_text_3"
+      ],
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "light",
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"spaceBetween\": 80"
       }
     },
     "n_easy_steps": {
@@ -837,6 +865,7 @@
         "accordion_copper",
         "popup_ingredients"
       ],
+      "disabled": true,
       "name": "t:sections.n_accordion-tiles-square.name",
       "settings": {
         "use_own_file": false,
@@ -1014,6 +1043,7 @@
         "comparison_table_typical",
         "comparison_table_clinic"
       ],
+      "disabled": true,
       "name": "t:sections.n_comparison-table.name",
       "settings": {
         "use_own_file": false,
@@ -1099,6 +1129,7 @@
         "step_3",
         "step_4"
       ],
+      "disabled": true,
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
@@ -1255,13 +1286,13 @@
   "order": [
     "product_header",
     "purchase-form-landing",
-    "n_expert_feature_hair",
     "n_base_section_product_details",
-    "n_mi_overview",
-    "n_press_reviews",
+    "n_expert_feature_hair",
     "n_trusted_reviews_hair",
-    "n_experts_grid",
+    "n_mi_overview",
     "n_mi_ingredients",
+    "n_experts_grid",
+    "n_press_reviews",
     "n_easy_steps",
     "n_features_marquee",
     "n_accordion_tiles_square",
