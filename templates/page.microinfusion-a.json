@@ -345,7 +345,6 @@
         },
         "product_nyJ9n7": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "micro-infusion-6-month-bundle-for-wrinkles",
             "product_variant_id": 0,
@@ -462,6 +461,41 @@
             "preselected": false
           }
         },
+        "product_gbPf3J": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-6-month-bundle-for-dark-spots",
+            "product_variant_id": 0,
+            "product_selling_plan": 8779235567,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "EXTRAOFF6",
+            "optional_subscription": false,
+            "popular": false,
+            "best": true,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "6 Month Supply Black Friday Offer",
+            "subheading": "(12 Treatments)",
+            "product_selling_plan_text": "Ships every 6 months",
+            "text": "",
+            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
+            "product_discount_percent": 23,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
+            "preorder_date_soldout": "25th May",
+            "preorder_date_reserved": "26th June",
+            "preorder_percent": 93,
+            "included_text": ""
+          }
+        },
         "product_NEgEkN": {
           "type": "product",
           "settings": {
@@ -491,42 +525,6 @@
             "total_treatments": 0,
             "left_items": 0,
             "preorder_text": "Your Delivery Timeline: next batch ships 26th June Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
-            "preorder_date_soldout": "25th May",
-            "preorder_date_reserved": "26th June",
-            "preorder_percent": 93,
-            "included_text": ""
-          }
-        },
-        "product_gbPf3J": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "micro-infusion-6-month-bundle-for-dark-spots",
-            "product_variant_id": 0,
-            "product_selling_plan": 8779235567,
-            "gift": "",
-            "gift_selling_plan": 0,
-            "included_gift": "",
-            "included_gift_selling_plan": 0,
-            "gift_text": "",
-            "discount_code": "EXTRAOFF6",
-            "optional_subscription": false,
-            "popular": false,
-            "best": true,
-            "tag_label": "",
-            "free_shipping": false,
-            "preselected": false,
-            "heading": "6 Month Supply Black Friday Offer",
-            "subheading": "(12 Treatments)",
-            "product_selling_plan_text": "Ships every 6 months",
-            "text": "",
-            "image": "shopify://shop_images/pdp_MI_6_month_DS.webp",
-            "product_discount_percent": 23,
-            "soldout": false,
-            "preorder": false,
-            "total_treatments": 0,
-            "left_items": 0,
-            "preorder_text": "Your Delivery Timeline: next batch ships 26th June  Due to high demand, our product is sold out. Order now and secure yours from the next shipment.",
             "preorder_date_soldout": "25th May",
             "preorder_date_reserved": "26th June",
             "preorder_percent": 93,
@@ -583,8 +581,8 @@
         "product_eiY89h",
         "type_hHPdgJ",
         "product_type_QKQhNr",
-        "product_NEgEkN",
         "product_gbPf3J",
+        "product_NEgEkN",
         "product_RBCPe8"
       ],
       "settings": {
