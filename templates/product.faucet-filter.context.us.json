@@ -30,6 +30,10 @@
           "settings": {
             "soldout": true
           }
+        },
+        "product_type_YrPQrV": {
+          "disabled": true,
+          "settings": {}
         }
       }
     }
