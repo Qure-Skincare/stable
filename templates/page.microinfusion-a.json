@@ -1202,7 +1202,7 @@
             "included_gift": "",
             "included_gift_selling_plan": 0,
             "gift_image": "shopify://shop_images/Free_Pillow.png",
-            "gift_text": "",
+            "gift_text": "pillow",
             "discount_code": "EXTRAOFF6",
             "free_shipping": true,
             "per_treatment": false,
