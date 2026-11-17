@@ -15,7 +15,23 @@
   "sections": {
     "purchase-form-landing": {
       "settings": {},
-      "blocks": {}
+      "blocks": {
+        "product_iFQte9": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_DBd4ef": {
+          "settings": {
+            "soldout": true
+          }
+        },
+        "product_Xf8A6C": {
+          "settings": {
+            "soldout": true
+          }
+        }
+      }
     }
   }
 }
