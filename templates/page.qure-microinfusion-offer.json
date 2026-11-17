@@ -428,6 +428,7 @@
       "name": "t:sections.n_mi-overview.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "section_id": "how_it_works",
         "subheader": "How it works",
         "heading": "Go beyond surface-level skincare",
@@ -498,6 +499,8 @@
             "product_selling_plan": 8779235567,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -527,6 +530,8 @@
             "product_selling_plan": 8779399407,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "",
@@ -557,6 +562,8 @@
             "product_selling_plan": 8779432175,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -613,6 +620,8 @@
             "product_selling_plan": 8779464943,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -642,6 +651,8 @@
             "product_selling_plan": 8779497711,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "",
             "discount_code": "",
@@ -672,6 +683,8 @@
             "product_selling_plan": 8779530479,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -729,6 +742,8 @@
             "product_selling_plan": 8779563247,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -759,6 +774,8 @@
             "product_selling_plan": 0,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -789,6 +806,8 @@
             "product_selling_plan": 0,
             "gift": "",
             "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -896,7 +915,7 @@
           "type": "left_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.</p><p><strong>Niacinamide:</strong> A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.</p><p><strong>Tranexamic Acid:</strong> A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.</p><p><strong>All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, Sh-Oligopeptide-1.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France):</strong> Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Epidermal Growth Factor (EGF):</strong> A science-backed ingredient known to support the look of smoother, hydrated, and more refreshed skin. Helps visibly reduce the look of fine lines and uneven tone.<br/><br/><strong>Niacinamide:</strong> A multi-benefit vitamin known to help improve the look of uneven tone, minimize visible pores, and support smoother-looking skin.<br/><br/><strong>Tranexamic Acid: </strong>A brightening ingredient that helps visibly improve the look of dark spots, uneven tone, and dullness.<br/>All ingredients: Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.</p><p><strong>All ingredients: </strong></p><p>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Tranexamic Acid, Niacinamide, Panthenol, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Tripeptide-1, Xanthan Gum, Allantoin, SH-Oligopeptide-1.<br/><br/>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
           }
         },
         "right_heading": {
@@ -932,7 +951,7 @@
           "type": "right_accordion",
           "settings": {
             "heading": "All Ingredients",
-            "text": "<p><strong>Beta Glucan:</strong> A deeply hydrating ingredient that helps the skin feel soothed, soft, and supple. Supports the look of a healthy skin barrier.</p><p><strong>GHK-Cu (Copper Peptide):</strong> A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.</p><p><strong>Sodium Hyaluronate:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
+            "text": "<p><strong>Odycea Onsen-Sui Thermal Spring Water (France): </strong>Making up 50% of the formula, this mineral-rich thermal spring water is the foundation of our serum. Naturally sourced from the Onsen-Sui springs in France, it’s known for its soothing, hydrating, and balancing properties that help support skin comfort, barrier strength, and ingredient performance. As the main base of our micro-infusion system, it gives the formula its refreshing and lightweight feel — gentle enough even for sensitive skin.<br/><br/><strong>Beta Glucan: </strong>A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.<br/><br/><strong>GHK-Cu (Copper Peptide):</strong> A peptide complex known to help improve the appearance of firmness and smoothness for youthful-looking skin. Gives the serum its signature blue hue.<br/><br/><strong>Sodium Hyaluronate:</strong> A powerful hydrator that helps the skin feel supple, moisturized, and visibly smoother.</p><p><strong>All ingredients:</strong><br/>Odycea Onsen-Sui (Thermal water), Propanediol, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Copper Tripeptide-1, Beta-Glucan, Chrysanthellum Indicum Extract, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Xanthan Gum.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>"
           }
         }
       },
@@ -1020,8 +1039,10 @@
       ],
       "name": "t:sections.n_experts-grid.name",
       "settings": {
+        "section_id": "",
         "use_own_file": false,
         "awards": false,
+        "slider": false,
         "heading": "Trusted and Recommended by Skin Experts",
         "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
       }
