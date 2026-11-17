@@ -592,7 +592,7 @@
         "hide_types": false,
         "hide_variants": false,
         "color_types": false,
-        "supply_first": true,
+        "supply_first": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "footer",
@@ -936,6 +936,7 @@
       "name": "t:sections.n_mi-overview.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "section_id": "how_it_works",
         "subheader": "How it works",
         "heading": "Go beyond surface-level skincare",
