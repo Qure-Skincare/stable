@@ -338,7 +338,7 @@
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Frame_1073714897.png",
             "subheading": "",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_nyJ9n7": {
@@ -456,7 +456,7 @@
             "heading": "Mixed",
             "image": "shopify://shop_images/mix_393d5047-dff7-41cf-aba6-3dd09e5a32a7.png",
             "subheading": "",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_hD69Aq": {
@@ -1009,6 +1009,7 @@
       "name": "t:sections.n_mi-overview.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "section_id": "how_it_works",
         "subheader": "How it works",
         "heading": "Go beyond surface-level skincare",
