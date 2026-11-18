@@ -603,7 +603,7 @@
           "settings": {
             "product": "faucet-filter",
             "variant_title": "",
-            "description": "Wash with filtered water to help boost hydration and reduce the look of irritation.",
+            "description": "Removes the harsh chemicals in tap water before they dry out and disrupt your skin barrier.",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm"
           }
@@ -613,7 +613,7 @@
           "settings": {
             "product": "cleanser",
             "variant_title": "",
-            "description": "Cleanses thoroughly while helping skin stay calm and balanced.",
+            "description": "Cleans while it hydrates — no tight, dry after-feeling.",
             "am_or_pm_1": "am",
             "am_or_pm_2": "pm"
           }
@@ -633,31 +633,35 @@
           "settings": {
             "product": "q-rejuvalight-pro-facewear-3",
             "variant_title": "",
-            "description": "Daily multi wavelength LED treatment for clearer, firmer-looking skin.",
+            "description": "Locks in the results — clearer, firmer skin in as little as 3 minutes a day.",
             "am_or_pm_1": "pm",
             "am_or_pm_2": "none"
           }
         },
         "step_restrict": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Restrict"
           }
         },
         "step_revive": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Revive"
           }
         },
         "step_ready": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Ready"
           }
         },
         "step_rejuvenate": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Rejuvenate"
           }
