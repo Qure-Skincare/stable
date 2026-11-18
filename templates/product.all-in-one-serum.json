@@ -842,6 +842,7 @@
         },
         "product_cleanser_aio": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "cleanser",
             "variant_title": "",
