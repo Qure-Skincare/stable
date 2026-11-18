@@ -804,24 +804,28 @@
       "blocks": {
         "step_restrict_aio": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Restrict"
           }
         },
         "step_revive_aio": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Revive"
           }
         },
         "step_ready_aio": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Ready"
           }
         },
         "step_rejuvenate_aio": {
           "type": "step",
+          "disabled": true,
           "settings": {
             "step": "Rejuvenate"
           }
