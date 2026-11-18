@@ -72,6 +72,7 @@
       ],
       "name": "t:sections.n_product-header.name",
       "settings": {
+        "hide_saveup_offer": false,
         "section_id": "hero-product",
         "product": "",
         "reverse": false,
@@ -83,6 +84,7 @@
         "heading_level": "h1",
         "rating": false,
         "rating_type": "customers",
+        "rating_position": "default",
         "limited": false,
         "description": "<ul><li>Cleanses without leaving skin feel tight, dry, or stripped</li><li>Formulated with 50% glycerin — a hydrating ingredient,&nbsp;<br/>not filler water&nbsp;</li><li>Clinically shown to strengthen your skin barrier by 18.5%</li></ul>",
         "reserved": false,
@@ -102,6 +104,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -112,11 +115,15 @@
             "product_variant_id": 48762730152175,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "4 Months Supply",
@@ -143,11 +150,15 @@
             "product_variant_id": 48762174767343,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "2 Months Supply",
@@ -175,11 +186,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "6 Month Supply",
@@ -207,6 +222,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
+            "subheading": "",
             "preselected": true
           }
         },
@@ -217,12 +233,16 @@
             "product_variant_id": 48762730152175,
             "product_selling_plan": 8853324015,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_image": "shopify://shop_images/gift_headband_and_wristband.webp",
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": true,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": true,
             "heading": "120 Days Supply",
@@ -249,11 +269,15 @@
             "product_variant_id": 48762174767343,
             "product_selling_plan": 8853291247,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "60 Days Supply",
@@ -281,11 +305,15 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "optional_subscription": false,
             "popular": false,
             "best": false,
+            "tag_label": "",
             "free_shipping": false,
             "preselected": false,
             "heading": "",
@@ -322,6 +350,7 @@
         "hide_types": true,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": false,
         "subscription_product": "true",
         "subscription_discount_max_percent": 31,
         "delivery_switcher_position": "footer",
@@ -347,6 +376,7 @@
         "sub_text": "",
         "image": "shopify://shop_images/cleanser-bg-image-1.webp",
         "image_mobile": "shopify://shop_images/cleanser-bg-image-1-mob.webp",
+        "video_url": "",
         "button_label": "",
         "button_url": ""
       }
@@ -406,6 +436,7 @@
         "accordion_hydration": {
           "type": "accordion",
           "settings": {
+            "icon": "none",
             "heading": "Boosts hydration",
             "text": "<p>Our glycerin-first formula draws moisture into skin as it cleanses, so you finish feeling hydrated rather than stripped.</p>",
             "percent_value_1": "100",
@@ -417,6 +448,7 @@
         "accordion_texture": {
           "type": "accordion",
           "settings": {
+            "icon": "none",
             "heading": "Improves texture",
             "text": "<p>A gentle 1.75% lactic acid refines skin over time without irritation, while 50% glycerin ensures skin stays comfortable throughout.</p>",
             "percent_value_1": "93",
@@ -428,6 +460,7 @@
         "accordion_soothe": {
           "type": "accordion",
           "settings": {
+            "icon": "none",
             "heading": "Soothes and calms",
             "text": "<p>Tested on 106 volunteers and confirmed to be non-irritating and soothing for sensitive skin.</p>",
             "percent_value_1": "83",
@@ -588,9 +621,9 @@
         "product_face_serum": {
           "type": "product",
           "settings": {
-            "product": "face-serum",
+            "product": "blue-face-serum",
             "variant_title": "",
-            "description": "Prepares skin for a more effective LED session.",
+            "description": "Antioxidant-rich serum that fuels skin at the cellular level so your LED treatment goes further.",
             "am_or_pm_1": "pm",
             "am_or_pm_2": "none"
           }
@@ -640,14 +673,13 @@
         "step_ready",
         "step_rejuvenate"
       ],
-      "disabled": true,
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
         "use_own_file": false,
         "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
-        "quote": "30-Day Money-Back Guarantee &bull; Free US Shipping"
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
       }
     },
     "n_comparison_table_mK4pQx": {
@@ -702,7 +734,9 @@
             "text_4": "+18.5% stronger (6-week study)",
             "select_4": "checkmark",
             "text_5": "Yes, hypoallergenic, dermatologist reviewed",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_2": {
@@ -719,7 +753,9 @@
             "text_4": "Not usually disclosed",
             "select_4": "cross",
             "text_5": "Often not formulated for it",
-            "select_5": "cross"
+            "select_5": "cross",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         }
       },
@@ -743,6 +779,7 @@
       "type": "n_yotpo-reviews",
       "disabled": true,
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
