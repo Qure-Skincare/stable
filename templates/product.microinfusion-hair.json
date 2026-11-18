@@ -453,7 +453,6 @@
     },
     "n_base_section_UEmWLp": {
       "type": "n_base-section",
-      "disabled": true,
       "name": "t:sections.n_base-section.name",
       "settings": {
         "use_own_file": false,
@@ -461,8 +460,9 @@
         "modifier_2": "none",
         "background_color": "none",
         "section_id": "",
-        "heading": "",
-        "text": "",
+        "heading": "<h2>Clinic-inspired results. Without&nbsp;the&nbsp;clinic price.</h2>",
+        "text": "<p>Save over $3,000 a year with Qure Micro-Infusion.</p><p>[marked_list]</p><ul><li>5-minute treatment</li><li>No appointments or travel</li><li>Professional-inspired glow from home</li></ul><p>*Estimated using two Qure treatments per month at $20 per treatment versus one $300+ in-clinic treatment per month. Prices and treatment frequency vary.</p>",
+        "image": "shopify://shop_images/Frame_1073714788_1.webp",
         "button_label": "",
         "button_url": "",
         "wistia_url": "",
