@@ -62,7 +62,6 @@
     "dynamic_upsells_us_only": true,
     "black_friday_turn_on": true,
     "black_friday_sitewide_turn_on": true,
-    "holiday_offer_turn_on": true,
     "bf_pdp_badge": false,
     "black_friday_discount": "",
     "black_friday_discount_percent": 0,
@@ -123,6 +122,11 @@
       "11560147490181472608": {
         "type": "shopify://apps/rivo-loyalty-rewards-referrals/blocks/app-embed/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
         "disabled": false,
+        "settings": {}
+      },
+      "471852632697159186": {
+        "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+        "disabled": true,
         "settings": {}
       },
       "3409074178882204272": {
