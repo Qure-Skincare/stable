@@ -939,7 +939,7 @@
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
-        "modifier": "none",
+        "modifier": "hero",
         "rating": "",
         "rating_text": "",
         "heading": "",
