@@ -428,7 +428,8 @@
     },
     "cart": {
       "savings": "EXCLUSIVE SAVINGS",
-      "offer-savings": "BLACK FRIDAY SAVINGS"
+      "offer-savings": "BLACK FRIDAY SAVINGS",
+      "holiday-savings": "HOLIDAY SAVINGS"
     }
   },
   "announcement-bar": {
@@ -620,7 +621,8 @@
         "checkout": "CHECKOUT",
         "preorder": "Pre-order.",
         "ships": "Ships",
-        "bf_sale_ends_in": "Black Friday Sale Ends In:"
+        "bf_sale_ends_in": "Black Friday Sale Ends In:",
+        "holiday_sale_ends_in": "Holiday Sale Ends In:"
       },
       "empty": {
         "header": "Your cart is empty..",

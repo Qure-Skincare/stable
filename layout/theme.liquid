@@ -107,7 +107,7 @@
     {% comment %} {% include 'ai-advisor' %} {% endcomment %}
   </head>
 
-  <body class="{{ template | downcase }}">
+  <body class="{{ template | downcase }}{% if settings.holiday_offer_turn_on %} holiday-theme{% endif %}">
 
     <!-- Google Tag Manager (noscript) -->
     
