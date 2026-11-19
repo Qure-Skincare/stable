@@ -5,9 +5,31 @@
 <!-- PROMO STRIP -->
 <section class="promo-strip{% if section.settings.modifier != 'none' %} promo-strip--{{ section.settings.modifier }}{% endif %}">
     {% if section.settings.video_url != blank %}
-        <video autoplay="" loop="" muted="" playsinline="">
+        {% assign video_poster = section.settings.image_mobile | default: section.settings.image %}
+        <video loop="" muted="" playsinline=""{% if video_poster != blank %} poster="{{ video_poster | image_url: width: 800 }}"{% endif %}>
             <source src="{{ section.settings.video_url }}" type="video/{{ section.settings.video_url | split: '.' | last | downcase }}" />
         </video>
+        <script class="__init">
+            // No autoplay attribute on purpose: with it iOS in Low Power Mode draws its own Play button over the video.
+            // The video is started here instead; if the browser refuses, the poster stays and the first user gesture starts it.
+            // class="__init" keeps this script out of the sapp delay queue, so it runs right after the video is parsed.
+            (() => {
+                const video = document.currentScript.parentElement.querySelector('video');
+                if (!video) return;
+                const gestures = ['touchstart', 'pointerdown', 'touchend', 'pointerup', 'click', 'keydown'];
+                const start = () => {
+                    video.muted = true;
+                    const attempt = video.play();
+                    if (attempt) attempt.catch(() => {});
+                };
+                const onGesture = () => {
+                    if (video.paused) start();
+                };
+                gestures.forEach((name) => document.addEventListener(name, onGesture, { capture: true, passive: true }));
+                video.addEventListener('playing', () => gestures.forEach((name) => document.removeEventListener(name, onGesture, true)), { once: true });
+                start();
+            })();
+        </script>
     {% else %}
         <picture>
             {% if section.settings.image != blank %}

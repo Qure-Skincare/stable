@@ -164,6 +164,7 @@
         "text": "<h3>Recovery+ Sheet Mask</h3><p>Visibly calms, deeply hydrates and cools skin in <strong>20 minutes</strong></p>",
         "button_label": "Shop Now",
         "button_url": "shopify://products/recovery-sheet-mask",
+        "image_mobile": "shopify://shop_images/recovery-mask-video-poster.jpg",
         "video_url": "https://qureskincaredns-stable.com/assets/images/recovery-mask/mask-video.mp4",
         "badge_text": "",
         "price": "",
