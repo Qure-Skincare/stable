@@ -1624,10 +1624,9 @@
         "product_fd744A",
         "product_rpYCCj"
       ],
-      "disabled": true,
       "name": "t:sections.n_page-microinfusion-complete-system.name",
       "settings": {
-        "use_own_file": false,
+        "use_own_file": true,
         "modifier": "none",
         "heading": "<h2>Complete the Qure system</h2>",
         "button_label": "Add Full System to Cart",
