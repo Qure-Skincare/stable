@@ -34,7 +34,7 @@
             {% if summary_saving_price != null %}
                 {% if black_friday_turn_on == true %}
                 <li>
-                    <div><div class="e-pill-save">{{ 'special-offer.cart.offer-savings' | t }}</div></div>
+                    <div><div class="e-pill-save">{% if settings.holiday_offer_turn_on %}{{ 'special-offer.cart.holiday-savings' | t }}{% else %}{{ 'special-offer.cart.offer-savings' | t }}{% endif %}</div></div>
                     <div class="e-price e-price--highlight">
                         <div class="e-price__main">
                             <div class="e-price__current">{{ summary_saving_price }}</div>
