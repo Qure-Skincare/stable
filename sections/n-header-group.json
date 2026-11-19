@@ -121,12 +121,12 @@
                 "bestsellers_card_2": {
                   "type": "nav-card",
                   "settings": {
-                    "title": "All-In-One Serum",
+                    "title": "Micro-Infusion Pro Hair System",
                     "label": "",
-                    "badge": "Targets Aging & Dark Spots",
+                    "badge": "Boost Your Scalp Routine",
                     "highlight_badge": false,
-                    "url": "https://qureskincare.com/products/all-in-one-serum",
-                    "image": "shopify://shop_images/header-promo-card-image-2.webp",
+                    "url": "https://qureskincare.com/products/microinfusion-hair",
+                    "image": "shopify://shop_images/MI_2.0_1_month_1_02cb9b69-2fef-4c16-9c6e-48df5ed7de38.png",
                     "image_style": "product",
                     "hide_on_mobile": false
                   },
