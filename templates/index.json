@@ -9,6 +9,37 @@
  */
 {
   "sections": {
+    "n_across_image_banner_Hl26Bd": {
+      "type": "n_across-image-banner",
+      "disabled": true,
+      "blocks": {
+        "badge_Hl26Bd": {
+          "type": "badge",
+          "settings": {
+            "badge_text": "Tied Together for the Season"
+          }
+        }
+      },
+      "block_order": [
+        "badge_Hl26Bd"
+      ],
+      "name": "t:sections.n_across-image-banner.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "holiday-bundles",
+        "rating": "",
+        "rating_text": "",
+        "heading": "<h1>Bundle Up &amp; <br/>Save [span]Up to 60%[/span]</h1>",
+        "text": "",
+        "sub_text": "",
+        "image": "shopify://shop_images/holiday-home.webp",
+        "image_mobile": "shopify://shop_images/holiday-home-mob.webp",
+        "video_url": "",
+        "button_label": "Shop Skincare Bundles",
+        "button_label_mobile": "Shop Bundles",
+        "button_url": "/pages/exclusive-holiday-bundle-deal-new"
+      }
+    },
     "n_across_image_banner_Bv7sLx": {
       "type": "n_across-image-banner",
       "blocks": {
@@ -624,6 +655,7 @@
     }
   },
   "order": [
+    "n_across_image_banner_Hl26Bd",
     "n_across_image_banner_Bv7sLx",
     "n_across_image_banner_Kd7pRw",
     "n_across_image_banner_TNGNLJ",
