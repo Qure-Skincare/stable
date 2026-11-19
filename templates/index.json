@@ -44,7 +44,9 @@
         "stars_image_Yt3mQz": {
           "type": "stars_image",
           "settings": {
-            "image": "shopify://shop_images/bf-bundles-label.webp"
+            "image": "shopify://shop_images/bf-bundles-label.webp",
+            "image_url": "",
+            "image_alt": ""
           }
         }
       },
@@ -65,34 +67,6 @@
         "video_url": "",
         "button_label": "Shop Bundles Now",
         "button_url": "/pages/exclusive-holiday-bundle-deal-new"
-      }
-    },
-    "n_across_image_banner_Mv8kTq": {
-      "type": "n_across-image-banner",
-      "blocks": {
-        "free_gift_Hq2nWd": {
-          "type": "free_gift",
-          "settings": {
-            "badge_text": "NEW"
-          }
-        }
-      },
-      "block_order": [
-        "free_gift_Hq2nWd"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_across-image-banner.name",
-      "settings": {
-        "use_own_file": false,
-        "modifier": "mask",
-        "rating": "",
-        "rating_text": "",
-        "heading": "<h1>Recovery+ Sheet Mask</h1>",
-        "text": "<p>Visibly calms, deeply hydrates and cools skin in <strong>20 minutes</strong></p>",
-        "sub_text": "",
-        "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/recovery-mask-video.mp4",
-        "button_label": "Shop Now",
-        "button_url": "https://qureskincare.com/products/recovery-sheet-mask"
       }
     },
     "n_across_image_banner_TNGNLJ": {
@@ -181,25 +155,6 @@
         "heading": "<h2>Get the Qure</h2>"
       }
     },
-    "n_promo_strip_bF3xQk": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "against-cancer",
-        "pill_text": "",
-        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
-        "button_label": "Support Now",
-        "button_url": "shopify://collections/best-sellers",
-        "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
-        "video_url": "",
-        "badge_text": "FREE TOTE BAG",
-        "price": "",
-        "gift_image": "shopify://shop_images/against-cancer-gift.webp",
-        "gift_text": "<p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>"
-      }
-    },
     "n_promo_strip_Hx7cVq": {
       "type": "n_promo-strip",
       "name": "t:sections.n_promo-strip.name",
@@ -212,7 +167,10 @@
         "video_url": "https://qureskincaredns-stable.com/assets/images/recovery-mask/mask-video.mp4",
         "badge_text": "",
         "price": "",
-        "gift_text": ""
+        "gift_text": "",
+        "offer_badge_top": "",
+        "offer_badge_value": "",
+        "offer_badge_bottom": ""
       }
     },
     "n_mi_buy_Lp3dWc": {
@@ -249,43 +207,6 @@
         "selling_plan_id": "8779497711",
         "button_label": "Add to Cart",
         "disclaimer": "We recommend 3 months of consistent use for best results."
-      }
-    },
-    "n_promo_strip_kR4nW8": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "blue-plus",
-        "pill_text": "",
-        "text": "<h3>Save $100 on LED mask & Get&nbsp;Free Blue+ Serum</h3><p>Visibly firmer, more radiant skin as the seasons change</p>",
-        "button_label": "Buy Now",
-        "button_url": "/pages/mask-serum-offer",
-        "image": "shopify://shop_images/blue-plus_079da3f8-0271-49d0-8c1f-01c68d9844b4.webp",
-        "image_mobile": "shopify://shop_images/daily-cleanser-bg-mob.webp",
-        "video_url": "",
-        "badge_text": "Free Gift",
-        "price": "$79",
-        "gift_image": "shopify://shop_images/blue-plus-free-gift_cbd5e52a-f016-4b18-83fa-60819ab5a48f.webp",
-        "gift_text": ""
-      }
-    },
-    "n_promo_strip_wR8mHd": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "against-cancer",
-        "pill_text": "",
-        "text": "<h6>[ribbon_icon] STRONGER <strong>TOGETHER</strong></h6><h3>Join Us in the Fight Against Breast Cancer</h3><p>$3 from every purchase goes to <em>National Breast Cancer Foundation.</em></p>",
-        "button_label": "Support Now",
-        "button_url": "shopify://collections/best-sellers",
-        "image": "shopify://shop_images/against-cancer.webp",
-        "image_mobile": "shopify://shop_images/against-cancer-mob.webp",
-        "video_url": "",
-        "badge_text": "",
-        "price": "",
-        "gift_text": ""
       }
     },
     "n_trusted_reviews_ecfpDp": {
@@ -449,6 +370,56 @@
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
+      }
+    },
+    "n_promo_strip_bfB7nd": {
+      "type": "n_promo-strip",
+      "blocks": {
+        "bundle_bf1Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-1.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "bundle_bf2Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-2.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "bundle_bf3Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-3.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_bf1Qx",
+        "bundle_bf2Qx",
+        "bundle_bf3Qx"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "bf-bundles",
+        "pill_text": "",
+        "text": "<h3>Bundles [span]60%[/span]</h3><p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_label": "Shop Bundles Now",
+        "button_url": "/pages/exclusive-holiday-bundle-deal-new",
+        "video_url": "",
+        "badge_text": "",
+        "price": "",
+        "gift_text": "",
+        "offer_badge_top": "Up to",
+        "offer_badge_value": "60%",
+        "offer_badge_bottom": "Off"
       }
     },
     "n_experts_grid_Zk9bHt": {
@@ -649,69 +620,15 @@
         "button_label": "Join Our Community",
         "button_url": "https://m.facebook.com/groups/140594262121805/?ref=d6cb54b2-d73b-423e-8d66-3b5b3a661340"
       }
-    },
-    "n_promo_strip_bfB7nd": {
-      "type": "n_promo-strip",
-      "disabled": true,
-      "blocks": {
-        "bundle_bf1Qx": {
-          "type": "bundle",
-          "settings": {
-            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-1.webp",
-            "alt": "Black Friday bundle",
-            "url": "/pages/exclusive-holiday-bundle-deal-new"
-          }
-        },
-        "bundle_bf2Qx": {
-          "type": "bundle",
-          "settings": {
-            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-2.webp",
-            "alt": "Black Friday bundle",
-            "url": "/pages/exclusive-holiday-bundle-deal-new"
-          }
-        },
-        "bundle_bf3Qx": {
-          "type": "bundle",
-          "settings": {
-            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-3.webp",
-            "alt": "Black Friday bundle",
-            "url": "/pages/exclusive-holiday-bundle-deal-new"
-          }
-        }
-      },
-      "block_order": [
-        "bundle_bf1Qx",
-        "bundle_bf2Qx",
-        "bundle_bf3Qx"
-      ],
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "bf-bundles",
-        "pill_text": "",
-        "text": "<h3>Bundles [span]60%[/span]</h3><p>Your Favorite Products, Perfectly Bundled</p>",
-        "button_label": "Shop Bundles Now",
-        "button_url": "/pages/exclusive-holiday-bundle-deal-new",
-        "video_url": "",
-        "badge_text": "",
-        "price": "",
-        "gift_text": "",
-        "offer_badge_top": "Up to",
-        "offer_badge_value": "60%",
-        "offer_badge_bottom": "Off"
-      }
     }
   },
   "order": [
     "n_across_image_banner_Bv7sLx",
     "n_across_image_banner_Kd7pRw",
-    "n_across_image_banner_Mv8kTq",
     "n_across_image_banner_TNGNLJ",
     "n_top_products_Qr7mXa",
-    "n_promo_strip_bF3xQk",
     "n_promo_strip_Hx7cVq",
     "n_mi_buy_Lp3dWc",
-    "n_promo_strip_kR4nW8",
-    "n_promo_strip_wR8mHd",
     "n_trusted_reviews_ecfpDp",
     "n_promo_strip_bfB7nd",
     "n_experts_grid_Zk9bHt",
