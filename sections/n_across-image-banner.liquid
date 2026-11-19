@@ -174,7 +174,14 @@
                 {% endif %}
 
                 {% if section.settings.button_label != blank and section.settings.button_url != blank %}
-                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' or section.settings.modifier == 'quiz' or section.settings.modifier == 'bf-video' %}btn--primary-white{% else %}btn--primary{% endif %}">{{ section.settings.button_label }}</a>
+                    <a href="{{ section.settings.button_url }}" class="btn {% if section.settings.modifier == 'doctorly' or section.settings.modifier == 'quiz' or section.settings.modifier == 'bf-video' %}btn--primary-white{% else %}btn--primary{% endif %}">
+                        {%- if section.settings.button_label_mobile != blank -%}
+                            <span class="d-none d-sm-inline">{{ section.settings.button_label }}</span>
+                            <span class="d-sm-none">{{ section.settings.button_label_mobile }}</span>
+                        {%- else -%}
+                            {{ section.settings.button_label }}
+                        {%- endif -%}
+                    </a>
                 {% endif %}
 
                 {% for block in section.blocks %}
@@ -449,6 +456,10 @@
                 {
                     "value": "mask",
                     "label": "t:sections.n_across-image-banner.settings.modifier-options.mask"
+                },
+                {
+                    "value": "holiday-bundles",
+                    "label": "t:sections.n_across-image-banner.settings.modifier-options.holiday-bundles"
                 }
             ]
         },
@@ -496,6 +507,11 @@
             "type": "text",
             "id": "button_label",
             "label": "t:common.button-label"
+        },
+        {
+            "type": "text",
+            "id": "button_label_mobile",
+            "label": "t:common.button-label-mobile"
         },
         {
             "type": "url",
