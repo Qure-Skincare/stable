@@ -1348,6 +1348,65 @@
         "text": "<h2>How Q-Rejuvalight compares</h2>"
       }
     },
+    "n_page_microinfusion_complete_system_LzpATe": {
+      "type": "n_page-microinfusion-complete-system",
+      "blocks": {
+        "product_kyXNtj": {
+          "type": "product",
+          "settings": {
+            "product": "faucet-filter",
+            "variant_title": "",
+            "description": "Wash with filtered water to help boost hydration and reduce the look of irritation",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_dznRKR": {
+          "type": "product",
+          "settings": {
+            "product": "cleanser",
+            "variant_title": "",
+            "description": "Cleanses thoroughly while helping skin stay calm and balanced",
+            "am_or_pm_1": "am",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_KfqmJR": {
+          "type": "product",
+          "settings": {
+            "product": "blue-face-serum",
+            "variant_title": "",
+            "description": "Prepares skin for a more effective LED session",
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "pm"
+          }
+        },
+        "product_nLWapU": {
+          "type": "product",
+          "settings": {
+            "product": "q-rejuvalight-pro-facewear",
+            "variant_title": "",
+            "description": "Daily multi wavelength LED treatment for clearer, firmer-looking skin",
+            "am_or_pm_1": "none",
+            "am_or_pm_2": "pm"
+          }
+        }
+      },
+      "block_order": [
+        "product_kyXNtj",
+        "product_dznRKR",
+        "product_KfqmJR",
+        "product_nLWapU"
+      ],
+      "name": "t:sections.n_page-microinfusion-complete-system.name",
+      "settings": {
+        "use_own_file": true,
+        "modifier": "none",
+        "heading": "<h2>Complete the Qure system</h2>",
+        "button_label": "Add Full System to Cart",
+        "quote": "30-Day Money-Back Guarantee • Free US Shipping"
+      }
+    },
     "n_comparison_yAAa44": {
       "type": "n_comparison",
       "blocks": {
@@ -1630,6 +1689,7 @@
     "n_easy_steps_qtaB86",
     "n_base_section_YgM7Rd",
     "n_comparison_table_UNdXnK",
+    "n_page_microinfusion_complete_system_LzpATe",
     "n_comparison_yAAa44",
     "sticky_cta_AFkFxe",
     "n_text_VGtQXJ",
