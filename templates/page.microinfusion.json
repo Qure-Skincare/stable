@@ -1159,7 +1159,7 @@
           "settings": {
             "heading": "Rejuvenating",
             "image": "shopify://shop_images/Wrinkles_2.png",
-            "preselected": false
+            "preselected": true
           }
         },
         "product_nyJ9n7": {
@@ -1264,7 +1264,7 @@
           "settings": {
             "heading": "Mixed",
             "image": "shopify://shop_images/Mixed_3.png",
-            "preselected": true
+            "preselected": false
           }
         },
         "product_gbPf3J": {
