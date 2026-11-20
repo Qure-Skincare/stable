@@ -91,13 +91,16 @@
         "tab_bestsellers": {
           "type": "nav-tab",
           "settings": {
-            "title": "Shop All Products",
+            "title": "Black Friday Bestsellers",
             "pill": "",
             "url": "",
             "panel": "shop_bestsellers",
-            "heading": "Shop Products",
-            "button_label": "Shop all",
-            "button_url": "https://qureskincare.com/collections/all-products"
+            "bf_style": true,
+            "bf_badge_text": "up to",
+            "bf_badge_value": "70%",
+            "heading": "Shop Bestsellers",
+            "button_label": "Shop All",
+            "button_url": "https://qureskincare.com/collections/best-sellers"
           },
           "blocks": {
             "bestsellers_cards": {
@@ -118,8 +121,23 @@
                   },
                   "blocks": {}
                 },
+                "bestsellers_card_serum": {
+                  "type": "nav-card",
+                  "settings": {
+                    "title": "All-In-One Serum",
+                    "label": "",
+                    "badge": "Targets Aging & Dark Spots",
+                    "highlight_badge": false,
+                    "url": "https://qureskincare.com/products/all-in-one-serum",
+                    "image": "shopify://shop_images/header-promo-card-image-2.webp",
+                    "image_style": "product",
+                    "hide_on_mobile": false
+                  },
+                  "blocks": {}
+                },
                 "bestsellers_card_2": {
                   "type": "nav-card",
+                  "disabled": true,
                   "settings": {
                     "title": "Micro-Infusion Pro Hair System",
                     "label": "",
@@ -135,13 +153,13 @@
                 "bestsellers_card_3": {
                   "type": "nav-card",
                   "settings": {
-                    "title": "Q-Rejuvalight Mask",
+                    "title": "Q-Rejuvalight Facewear",
                     "label": "",
-                    "badge": "Multi-Light Therapy",
+                    "badge": "Multi-Benefit Light Therapy",
                     "highlight_badge": false,
                     "url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
-                    "image": "shopify://shop_images/LED_mask_b3be69d9-166f-4b1d-b5c1-f5252ced4789.png",
-                    "image_style": "product",
+                    "image": "shopify://shop_images/header-promo-card-q-rejuvalight.webp",
+                    "image_style": "multiply",
                     "hide_on_mobile": false
                   },
                   "blocks": {}
@@ -156,13 +174,14 @@
                     "url": "https://qureskincare.com/products/hair-growth-helmet",
                     "image": "shopify://shop_images/header-promo-card-image-4.webp",
                     "image_style": "product",
-                    "hide_on_mobile": false
+                    "hide_on_mobile": true
                   },
                   "blocks": {}
                 },
                 "nav_card_bHYt69": {
                   "type": "nav-card",
                   "name": "Nav card",
+                  "disabled": true,
                   "settings": {
                     "title": "Shower Filters",
                     "label": "",
@@ -177,7 +196,6 @@
                 },
                 "bestsellers_card_5": {
                   "type": "nav-card",
-                  "disabled": true,
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
@@ -193,6 +211,7 @@
               },
               "block_order": [
                 "bestsellers_card_1",
+                "bestsellers_card_serum",
                 "bestsellers_card_2",
                 "bestsellers_card_3",
                 "bestsellers_card_4",
