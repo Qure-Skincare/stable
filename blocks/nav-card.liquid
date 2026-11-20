@@ -27,6 +27,8 @@
                         {{ image | image_url: width: 344 | image_tag: loading: 'lazy', alt: title, width: nil, height: nil, widths: '172, 344', sizes: '172px' }}
                     {% endif %}
                 </picture>
+            {% elsif block.settings.image_style == 'multiply' %}
+                {{ image | image_url: width: 344 | image_tag: loading: 'lazy', alt: title, width: nil, height: nil, widths: '172, 344', sizes: '172px', class: 'header__card-image-multiply' }}
             {% else %}
                 {{ image | image_url: width: 344 | image_tag: loading: 'lazy', alt: title, width: nil, height: nil, widths: '172, 344', sizes: '172px' }}
             {% endif %}
@@ -92,6 +94,7 @@
             "label": "Image style",
             "options": [
                 { "value": "product", "label": "Product (below text)" },
+                { "value": "multiply", "label": "Product (multiply blend)" },
                 { "value": "background", "label": "Background (fills card)" }
             ],
             "default": "product"

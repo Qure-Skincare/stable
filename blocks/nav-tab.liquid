@@ -6,23 +6,19 @@
 
 {% liquid
   assign panel = block.settings.panel
-  assign special_offer_link = 'special-offer.menu.link' | t
-  if settings.black_friday_turn_on and block.settings.url contains special_offer_link
-    assign hidden = true
-  endif
+  assign bf_style = block.settings.bf_style
 %}
 
-{% unless hidden %}
 <!--nav-menu-->
 <li{% if panel == 'none' %} {{ block.shopify_attributes }}{% endif %}>
     {% if panel == 'none' %}
-        <a href="{{ block.settings.url | default: '#' }}">
+        <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: '#' }}">
     {% else %}
-        <a href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}">
+        <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}">
     {% endif %}
         <span>{{ block.settings.title }}</span>
         {% if block.settings.pill != blank %}
-            <span class="e-pill-save">{{ block.settings.pill }}</span>
+            <span class="e-pill-save{% if settings.black_friday_turn_on %} e-pill-save--bf{% endif %}">{{ block.settings.pill }}</span>
         {% endif %}
     </a>
 </li>
@@ -31,17 +27,30 @@
 {% if panel != 'none' %}
     <div class="header__content" id="{{ panel }}" {{ block.shopify_attributes }}>
         <div class="header__content-container container">
+            {% if bf_style and block.settings.bf_badge_value != blank %}
+                <div class="e-bf-badge e-bf-badge--silver">
+                    <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-badge-silver.webp" alt="Black Friday" loading="lazy" />
+                    <div class="e-bf-badge__content">
+                        {% if block.settings.bf_badge_text != blank %}
+                            <span>{{ block.settings.bf_badge_text }}</span>
+                        {% endif %}
+                        <strong>{{ block.settings.bf_badge_value }}</strong>
+                    </div>
+                </div>
+            {% endif %}
             {% if block.settings.heading != blank %}
                 <div class="header__content-title">
+                    {% if bf_style %}
+                        <div class="e-bf-label e-bf-label--md">
+                            <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-label-md.webp" alt="Black Friday" loading="lazy" />
+                        </div>
+                    {% endif %}
                     <h3>{{ block.settings.heading }}</h3>
                     {% if block.settings.button_label != blank %}
                         <a class="btn btn--primary btn--md" href="{{ block.settings.button_url | default: '#' }}">{{ block.settings.button_label }}</a>
                     {% endif %}
-                    {% if settings.black_friday_turn_on and panel == 'shop_bestsellers' %}
-                        {% assign special_offer_header = 'special-offer.menu.header' | t %}
-                        {% if special_offer_header != '' %}
-                            <a class="bf-bundles" href="{{ 'special-offer.menu.link' | t }}">{{ special_offer_header }}</a>
-                        {% endif %}
+                    {% if bf_style %}
+                        <a class="bf-bundles" href="{{ block.settings.button_url | default: '#' }}">{{ block.settings.title }}</a>
                     {% endif %}
                 </div>
             {% endif %}
@@ -49,7 +58,6 @@
         </div>
     </div>
 {% endif %}
-{% endunless %}
 
 {% schema %}
 {
@@ -90,6 +98,24 @@
             ],
             "default": "none",
             "info": "Each layout can be used by one tab only"
+        },
+        {
+            "type": "checkbox",
+            "id": "bf_style",
+            "label": "Black Friday style",
+            "default": false
+        },
+        {
+            "type": "text",
+            "id": "bf_badge_text",
+            "label": "Badge text",
+            "visible_if": "{{ block.settings.bf_style }}"
+        },
+        {
+            "type": "text",
+            "id": "bf_badge_value",
+            "label": "Badge value",
+            "visible_if": "{{ block.settings.bf_style }}"
         },
         {
             "type": "header",
