@@ -11,7 +11,6 @@
   "sections": {
     "n_across_image_banner_Hl26Bd": {
       "type": "n_across-image-banner",
-      "disabled": true,
       "blocks": {
         "badge_Hl26Bd": {
           "type": "badge",
@@ -66,6 +65,7 @@
         "sub_text": "",
         "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/bf-best-sellers.mp4",
         "button_label": "Shop Best Sellers",
+        "button_label_mobile": "",
         "button_url": "/collections/best-sellers"
       }
     },
@@ -84,6 +84,7 @@
       "block_order": [
         "stars_image_Yt3mQz"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -97,6 +98,7 @@
         "image_mobile": "shopify://shop_images/bf-home-mob.webp",
         "video_url": "",
         "button_label": "Shop Bundles Now",
+        "button_label_mobile": "",
         "button_url": "/pages/exclusive-holiday-bundle-deal-new"
       }
     },
@@ -116,6 +118,7 @@
         "image_mobile": "shopify://shop_images/hero-mob.webp",
         "video_url": "",
         "button_label": "Shop All Best Sellers",
+        "button_label_mobile": "",
         "button_url": "shopify://collections/best-sellers"
       }
     },
@@ -188,6 +191,7 @@
     },
     "n_promo_strip_Hx7cVq": {
       "type": "n_promo-strip",
+      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "recovery-mask",
@@ -437,7 +441,6 @@
         "bundle_bf2Qx",
         "bundle_bf3Qx"
       ],
-      "disabled": true,
       "name": "t:sections.n_promo-strip.name",
       "settings": {
         "modifier": "bf-bundles",
@@ -574,6 +577,7 @@
         "image_mobile": "shopify://shop_images/quiz-mob.webp",
         "video_url": "",
         "button_label": "Take the Quiz",
+        "button_label_mobile": "",
         "button_url": "/pages/skin-consultation"
       }
     },
@@ -660,10 +664,10 @@
     "n_across_image_banner_Kd7pRw",
     "n_across_image_banner_TNGNLJ",
     "n_top_products_Qr7mXa",
+    "n_promo_strip_bfB7nd",
     "n_promo_strip_Hx7cVq",
     "n_mi_buy_Lp3dWc",
     "n_trusted_reviews_ecfpDp",
-    "n_promo_strip_bfB7nd",
     "n_experts_grid_Zk9bHt",
     "n_across_image_banner_Vx6nQp",
     "n_our_story_Tm4sRd",
