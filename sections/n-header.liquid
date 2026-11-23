@@ -5,8 +5,6 @@
   {% section 'n-header' %}
 {% enddoc %}
 
-{% assign black_friday_turn_on = settings.black_friday_turn_on %}
-
 {% if section.settings.exception != blank %}
     {% assign exception_list = section.settings.exception | split: ',' %}
     {% assign path_lower = request.path | downcase %}
@@ -62,12 +60,6 @@
                 </svg>
             </a>
             <ul class="header__menu">
-                {% if black_friday_turn_on == true %}
-                    {% assign special_offer_header = 'special-offer.menu.header' | t %}
-                    {% if special_offer_header != '' %}
-                        <li><a class="bf-bundles" href="{{ 'special-offer.menu.link' | t }}">{{ special_offer_header }}</a></li>
-                    {% endif %}
-                {% endif %}
                 {{ nav_menu }}
             </ul>
             <ul class="header__icons">
