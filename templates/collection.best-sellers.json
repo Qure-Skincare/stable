@@ -19,8 +19,7 @@
         "image": "shopify://shop_images/bf-26.webp",
         "image_mobile": "shopify://shop_images/bf-26-mob.webp",
         "label_image": "shopify://shop_images/bf-sale-label.webp"
-      },
-      "disabled": true
+      }
     },
     "n_hero_banner_qure_birthday": {
       "type": "n_hero-banner",
@@ -45,6 +44,7 @@
     },
     "n_hero_banner_ddhnmk": {
       "type": "n_hero-banner",
+      "disabled": true,
       "name": "t:sections.n_hero-banner.name",
       "settings": {
         "use_own_file": false,
@@ -154,6 +154,7 @@
             "flag": "shopify://shop_images/america_f.webp",
             "username": "Ellie V.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>My skin returned to life!</h6><p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! You will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
@@ -168,6 +169,7 @@
             "flag": "shopify://shop_images/australia_f.webp",
             "username": "Anton M.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Can’t go a day without it</h6><p>“Straight away I noticed results with the Qure mask. After the first week my skin looked clearer and more balanced. People ask me now how I have got my skin to be hydrated and looking bright with reduced redness. I’m so reliant on the Qure mask now. I don’t think I can go a day without using it.”</p>",
             "product_url": "https://qureskincare.com/products/q-rejuvalight-pro-facewear",
             "product_image": "shopify://shop_images/Img_10.png",
@@ -181,6 +183,7 @@
             "image": "shopify://shop_images/Image_14_e4f17107-9f08-48d2-ac29-0ad001741697.png",
             "username": "Jennifer N.",
             "verified_customer": "Verified customer",
+            "badge": "",
             "text": "<h6>Works better than I imagined!</h6><p>“I am really stunned by how well this product works. I have had professional micro-needling and I wanted the benefits without the downtime. I did my treatment, went to bed and woke up the next morning and was ready to go. My skin looks better than it has in years.”</p>",
             "product_url": "https://qureskincare.com/pages/microinfusion",
             "product_image": "shopify://shop_images/pdp_mi_1_month_dsw.webp",
@@ -198,6 +201,10 @@
       "settings": {
         "use_own_file": false,
         "background_color": "light",
+        "modifier": "none",
+        "section_id": "",
+        "heading": "",
+        "disclaimer": "",
         "text": "",
         "button_label": "",
         "button_url": ""
