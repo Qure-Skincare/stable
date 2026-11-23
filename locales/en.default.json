@@ -430,7 +430,8 @@
       "savings": "EXCLUSIVE SAVINGS",
       "offer-savings": "BLACK FRIDAY SAVINGS",
       "holiday-savings": "HOLIDAY SAVINGS"
-    }
+    },
+    "holiday_bundles_html": "<strong>Holiday</strong> Bundles"
   },
   "announcement-bar": {
     "settings": {
