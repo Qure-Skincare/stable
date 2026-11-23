@@ -122,7 +122,7 @@
             {% if section.settings.bf_countdown %}
                 {% if settings.black_friday_turn_on %}
                     <div class="hero-product__bf-countdown">
-                        <p>{% if settings.holiday_offer_turn_on %}{{ 'cart.drawer.settings.holiday_sale_ends_in' | t }}{% else %}{{ 'cart.drawer.settings.bf_sale_ends_in' | t }}{% endif %}</p>
+                        <p>{% render 'n-offer-ends-in-label' %}</p>
                         {% render 'n-bf-countdown', short_labels: true %}
                     </div>
                 {% endif %}

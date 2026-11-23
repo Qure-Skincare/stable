@@ -414,6 +414,7 @@
     "settings": {
       "header": "Special Offer",
       "bf-header": "Black Friday",
+      "holiday-header": "Holiday",
       "total-value": "Total value"
     },
     "menu": {
@@ -424,12 +425,15 @@
       "tag": "limited time",
       "header": "UP TO 60% OFF",
       "text": "Save with Black Friday bundle deals",
+      "holiday-text": "Save with Holiday bundle deals",
+      "special-text": "Save with Special bundle deals",
       "link": "/pages/exclusive-holiday-bundle-deal-new"
     },
     "cart": {
       "savings": "EXCLUSIVE SAVINGS",
       "offer-savings": "BLACK FRIDAY SAVINGS",
-      "holiday-savings": "HOLIDAY SAVINGS"
+      "holiday-savings": "HOLIDAY SAVINGS",
+      "special-savings": "SPECIAL SAVINGS"
     },
     "holiday_bundles_html": "<strong>Holiday</strong> Bundles"
   },
@@ -623,7 +627,8 @@
         "preorder": "Pre-order.",
         "ships": "Ships",
         "bf_sale_ends_in": "Black Friday Sale Ends In:",
-        "holiday_sale_ends_in": "Holiday Sale Ends In:"
+        "holiday_sale_ends_in": "Holiday Sale Ends In:",
+        "special_sale_ends_in": "Special Sale Ends In:"
       },
       "empty": {
         "header": "Your cart is empty..",
