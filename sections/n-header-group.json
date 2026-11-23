@@ -123,6 +123,7 @@
                 },
                 "bestsellers_card_serum": {
                   "type": "nav-card",
+                  "disabled": true,
                   "settings": {
                     "title": "All-In-One Serum",
                     "label": "",
@@ -137,7 +138,6 @@
                 },
                 "bestsellers_card_2": {
                   "type": "nav-card",
-                  "disabled": true,
                   "settings": {
                     "title": "Micro-Infusion Pro Hair System",
                     "label": "",
@@ -181,7 +181,6 @@
                 "nav_card_bHYt69": {
                   "type": "nav-card",
                   "name": "Nav card",
-                  "disabled": true,
                   "settings": {
                     "title": "Shower Filters",
                     "label": "",
@@ -196,6 +195,7 @@
                 },
                 "bestsellers_card_5": {
                   "type": "nav-card",
+                  "disabled": true,
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
@@ -239,6 +239,9 @@
             "pill": "",
             "url": "",
             "panel": "shop_benefits",
+            "bf_style": false,
+            "bf_badge_text": "",
+            "bf_badge_value": "",
             "heading": "Shop by Benefits",
             "button_label": "Shop all",
             "button_url": "https://qureskincare.com/collections/best-sellers"
@@ -343,6 +346,9 @@
             "pill": "Save up to 60%",
             "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
             "panel": "none",
+            "bf_style": false,
+            "bf_badge_text": "",
+            "bf_badge_value": "",
             "heading": "",
             "button_label": "",
             "button_url": ""
@@ -356,6 +362,9 @@
             "pill": "",
             "url": "",
             "panel": "learn_more",
+            "bf_style": false,
+            "bf_badge_text": "",
+            "bf_badge_value": "",
             "heading": "",
             "button_label": "",
             "button_url": ""
