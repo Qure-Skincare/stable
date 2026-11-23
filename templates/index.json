@@ -22,6 +22,7 @@
       "block_order": [
         "badge_Hl26Bd"
       ],
+      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -53,7 +54,6 @@
       "block_order": [
         "stars_image_Qn4wPe"
       ],
-      "disabled": true,
       "name": "t:sections.n_across-image-banner.name",
       "settings": {
         "use_own_file": false,
@@ -187,6 +187,55 @@
       "settings": {
         "use_own_file": false,
         "heading": "<h2>Get the Qure</h2>"
+      }
+    },
+    "n_promo_strip_bfB7nd": {
+      "type": "n_promo-strip",
+      "blocks": {
+        "bundle_bf1Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-1.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "bundle_bf2Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-2.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        },
+        "bundle_bf3Qx": {
+          "type": "bundle",
+          "settings": {
+            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-3.webp",
+            "alt": "Black Friday bundle",
+            "url": "/pages/exclusive-holiday-bundle-deal-new"
+          }
+        }
+      },
+      "block_order": [
+        "bundle_bf1Qx",
+        "bundle_bf2Qx",
+        "bundle_bf3Qx"
+      ],
+      "name": "t:sections.n_promo-strip.name",
+      "settings": {
+        "modifier": "bf-bundles",
+        "pill_text": "",
+        "text": "<h3>Bundles [span]60%[/span]</h3><p>Your Favorite Products, Perfectly Bundled</p>",
+        "button_label": "Shop Bundles Now",
+        "button_url": "/pages/exclusive-holiday-bundle-deal-new",
+        "video_url": "",
+        "badge_text": "",
+        "price": "",
+        "gift_text": "",
+        "offer_badge_top": "Up to",
+        "offer_badge_value": "60%",
+        "offer_badge_bottom": "Off"
       }
     },
     "n_promo_strip_Hx7cVq": {
@@ -406,55 +455,6 @@
         "text": "<h2>Results you’ll see with your own eyes</h2>",
         "button_label": "",
         "button_url": ""
-      }
-    },
-    "n_promo_strip_bfB7nd": {
-      "type": "n_promo-strip",
-      "blocks": {
-        "bundle_bf1Qx": {
-          "type": "bundle",
-          "settings": {
-            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-1.webp",
-            "alt": "Black Friday bundle",
-            "url": "/pages/exclusive-holiday-bundle-deal-new"
-          }
-        },
-        "bundle_bf2Qx": {
-          "type": "bundle",
-          "settings": {
-            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-2.webp",
-            "alt": "Black Friday bundle",
-            "url": "/pages/exclusive-holiday-bundle-deal-new"
-          }
-        },
-        "bundle_bf3Qx": {
-          "type": "bundle",
-          "settings": {
-            "image_url": "https://qureskincaredns-stable.com/sections/promo-strip/images/bf-bundle-3.webp",
-            "alt": "Black Friday bundle",
-            "url": "/pages/exclusive-holiday-bundle-deal-new"
-          }
-        }
-      },
-      "block_order": [
-        "bundle_bf1Qx",
-        "bundle_bf2Qx",
-        "bundle_bf3Qx"
-      ],
-      "name": "t:sections.n_promo-strip.name",
-      "settings": {
-        "modifier": "bf-bundles",
-        "pill_text": "",
-        "text": "<h3>Bundles [span]60%[/span]</h3><p>Your Favorite Products, Perfectly Bundled</p>",
-        "button_label": "Shop Bundles Now",
-        "button_url": "/pages/exclusive-holiday-bundle-deal-new",
-        "video_url": "",
-        "badge_text": "",
-        "price": "",
-        "gift_text": "",
-        "offer_badge_top": "Up to",
-        "offer_badge_value": "60%",
-        "offer_badge_bottom": "Off"
       }
     },
     "n_experts_grid_Zk9bHt": {
