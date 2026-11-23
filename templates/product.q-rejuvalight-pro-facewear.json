@@ -873,7 +873,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Treatment details",
-            "text": "<p><strong>USE: </strong> Use daily after cleansing, before topical skincare<br/><strong>SKIN REJUVENATING TREATMENT: </strong> 415nm (Blue), 605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br/><strong>SKIN CLEARING TREATMENT: </strong> 415nm (Blue), 630nm (Red)<br/><strong>CUSTOMIZED TREATMENT: </strong> Choose treatment modes for each facial area via app<br/><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
+            "text": "<p><strong>USE: </strong>&nbsp;Use daily after cleansing, before topical skincare<br/><strong>SKIN REJUVENATING TREATMENT: </strong>&nbsp;605nm (Amber), 630nm (Red), 660nm (Deep Red), 880nm (Infrared)<br/><strong>SKIN CLEARING TREATMENT: </strong>&nbsp;415nm (Blue), 630nm (Red)<br/><strong>CUSTOMIZED TREATMENT: </strong>&nbsp;Choose treatment modes for each facial area via app<br/><strong>Skin Type: </strong>Most suitable for Fitzpatrick Skin Types I-IV</p>"
           }
         }
       },
