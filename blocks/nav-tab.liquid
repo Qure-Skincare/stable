@@ -6,7 +6,16 @@
 
 {% liquid
   assign panel = block.settings.panel
-  assign bf_style = block.settings.bf_style
+  assign bf_style = false
+  assign bf_assets = false
+  if block.settings.bf_style
+    if settings.bf_pdp_badge or settings.holiday_offer_turn_on
+      assign bf_style = true
+    endif
+    if settings.bf_pdp_badge
+      assign bf_assets = true
+    endif
+  endif
 %}
 
 <!--nav-menu-->
@@ -16,7 +25,11 @@
     {% else %}
         <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}">
     {% endif %}
-        <span>{{ block.settings.title }}</span>
+        {% if panel == 'none' and bf_style %}
+            {{ block.settings.title }}
+        {% else %}
+            <span>{{ block.settings.title }}</span>
+        {% endif %}
         {% if block.settings.pill != blank %}
             <span class="e-pill-save{% if settings.black_friday_turn_on %} e-pill-save--bf{% endif %}">{{ block.settings.pill }}</span>
         {% endif %}
@@ -24,10 +37,14 @@
 </li>
 <!--/nav-menu-->
 
+{% if panel == 'none' and bf_style %}
+    <!--nav-mobile--><a class="bf-bundles" href="{{ block.settings.url | default: '#' }}">{{ block.settings.title }}</a>
+{% endif %}
+
 {% if panel != 'none' %}
     <div class="header__content" id="{{ panel }}" {{ block.shopify_attributes }}>
         <div class="header__content-container container">
-            {% if bf_style and block.settings.bf_badge_value != blank %}
+            {% if bf_assets and block.settings.bf_badge_value != blank %}
                 <div class="e-bf-badge e-bf-badge--silver">
                     <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-badge-silver.webp" alt="Black Friday" loading="lazy" />
                     <div class="e-bf-badge__content">
@@ -40,7 +57,7 @@
             {% endif %}
             {% if block.settings.heading != blank %}
                 <div class="header__content-title">
-                    {% if bf_style %}
+                    {% if bf_assets %}
                         <div class="e-bf-label e-bf-label--md">
                             <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-label-md.webp" alt="Black Friday" loading="lazy" />
                         </div>
@@ -52,6 +69,7 @@
                     {% if bf_style %}
                         <a class="bf-bundles" href="{{ block.settings.button_url | default: '#' }}">{{ block.settings.title }}</a>
                     {% endif %}
+                    <!--nav-mobile-slot-->
                 </div>
             {% endif %}
             {% content_for 'blocks' %}
@@ -103,7 +121,8 @@
             "type": "checkbox",
             "id": "bf_style",
             "label": "Black Friday style",
-            "default": false
+            "default": false,
+            "info": "Highlighted button: shown while \"Black Friday offer Turn on\" or \"Holiday offer Turn on\" is enabled (blue for Holiday). Badge and Black Friday label: Black Friday only"
         },
         {
             "type": "text",
