@@ -1,6 +1,6 @@
 {% doc %}
   Renders the save-up badge that links to the bundle page.
-  When the sitewide sale is on, renders the Black Friday bundle promo badge instead.
+  When the sitewide sale is on, renders the bundle promo badge for the active campaign instead.
 
   @example
   {% render 'n-product-saveup-offer' %}
@@ -13,7 +13,7 @@
             <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bg-limited-time-offer.webp" alt="" />
         </picture>
         <strong>{{ 'special-offer.bundle-promo.header' | t }}</strong>
-        <p>{{ 'special-offer.bundle-promo.text' | t }}</p>
+        <p>{% if settings.holiday_offer_turn_on %}{{ 'special-offer.bundle-promo.holiday-text' | t }}{% elsif settings.bf_pdp_badge %}{{ 'special-offer.bundle-promo.text' | t }}{% else %}{{ 'special-offer.bundle-promo.special-text' | t }}{% endif %}</p>
         <i class="e-icon e-icon-arrow"></i>
     </a>
 {% else %}

@@ -1,0 +1,15 @@
+{% doc %}
+  Renders the special offer countdown label for the active campaign:
+  Holiday offer, then BF offer, otherwise the neutral label.
+
+  @example
+  <p>{% render 'n-offer-ends-in-label' %}</p>
+{% enddoc %}
+
+{%- if settings.holiday_offer_turn_on -%}
+    {{- 'cart.drawer.settings.holiday_sale_ends_in' | t -}}
+{%- elsif settings.bf_pdp_badge -%}
+    {{- 'cart.drawer.settings.bf_sale_ends_in' | t -}}
+{%- else -%}
+    {{- 'cart.drawer.settings.special_sale_ends_in' | t -}}
+{%- endif -%}

@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/hero-product/hero-product.css" />
 {% endif %}
 
+{%- capture hero_heading -%}
+    {{ section.settings.heading
+    | replace: '[orange]', '<span>'
+    | replace: '[/orange]', '</span>'
+    }}
+{%- endcapture -%}
+
 <section class="hero-product" id="hero-product">
     <div class="hero-product__container container">
+        {% if section.settings.special_offer_badge and settings.holiday_offer_turn_on %}
+            <div class="hero-product__main d-sm-none">
+                <div class="e-double-tag e-double-tag--pill" style="color: #1f1fb0;">{{ 'special-offer.holiday_bundles_html' | t }}</div>
+                {{ hero_heading }}
+            </div>
+        {% endif %}
         <div class="hero-product__gallery">
             <div
                 class="c-swiper"
@@ -53,17 +66,16 @@
             </div>
         </div>
         <div class="hero-product__main">
-            {% if section.settings.special_offer_badge %}
+            {% if section.settings.special_offer_badge and settings.holiday_offer_turn_on %}
+                <div class="e-double-tag e-double-tag--pill" style="color: #1f1fb0;">{{ 'special-offer.holiday_bundles_html' | t }}</div>
+            {% elsif section.settings.special_offer_badge and settings.bf_pdp_badge %}
                 <div class="e-bf-label e-bf-label--md">
                     <img src="https://qureskincaredns-stable.com/assets/images/bf-26/bf-label-md.webp" alt="Black Friday" />
                 </div>
             {% elsif section.settings.bundle_text != blank %}
                 <div class="e-double-tag">{{ section.settings.bundle_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
             {% endif %}
-            {{ section.settings.heading
-            | replace: '[orange]', '<span>'
-            | replace: '[/orange]', '</span>'
-            }}
+            {{ hero_heading }}
             {% if section.settings.text != blank %}
                 <article>
                     {{ section.settings.text }}
@@ -115,7 +127,7 @@
             {% if section.settings.bf_countdown %}
                 {% if settings.black_friday_turn_on %}
                     <div class="hero-product__bf-countdown">
-                        <p>{{ 'cart.drawer.settings.bf_sale_ends_in' | t }}</p>
+                        <p>{% render 'n-offer-ends-in-label' %}</p>
                         {% render 'n-bf-countdown', short_labels: true %}
                     </div>
                 {% endif %}
