@@ -100,7 +100,7 @@
             "bf_badge_value": "70%",
             "heading": "Shop Bestsellers",
             "button_label": "Shop All",
-            "button_url": "https://qureskincare.com/collections/shop-all"
+            "button_url": "shopify://collections/all-products"
           },
           "blocks": {
             "bestsellers_cards": {
