@@ -1370,12 +1370,14 @@
         },
         "payment_type_3zQTmH": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/payment-icons-1.svg"
           }
         },
         "payment_type_B6Pzbh": {
           "type": "payment_type",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Pay_Icons.svg"
           }
@@ -1775,7 +1777,7 @@
         "modifier": "none",
         "type": "list",
         "heading": "Choose your treatment",
-        "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
+        "text": "",
         "image": "shopify://shop_images/tami-cropped.webp",
         "klaviyo_form_name": "",
         "form_name": "purchase-form",
