@@ -23,6 +23,8 @@
 {% liquid
   # nav-tab blocks output their menu item wrapped in <!--nav-menu--> markers,
   # followed by their dropdown panel. Split them into the top menu and the panels area.
+  # A highlighted tab without a dropdown outputs its mobile button after <!--nav-mobile-->;
+  # it goes into the first dropdown title (<!--nav-mobile-slot-->), since the top menu is hidden on mobile.
   capture nav_blocks
     content_for 'blocks'
   endcapture
@@ -30,15 +32,21 @@
   assign nav_parts = nav_blocks | split: '<!--nav-menu-->'
   assign nav_menu = ''
   assign nav_panels = ''
+  assign nav_mobile = ''
   for part in nav_parts
     if part contains '<!--/nav-menu-->'
       assign menu_and_panel = part | split: '<!--/nav-menu-->'
       assign nav_menu = nav_menu | append: menu_and_panel[0]
-      assign nav_panels = nav_panels | append: menu_and_panel[1]
+      if menu_and_panel[1] contains '<!--nav-mobile-->'
+        assign nav_mobile = nav_mobile | append: menu_and_panel[1] | remove: '<!--nav-mobile-->'
+      else
+        assign nav_panels = nav_panels | append: menu_and_panel[1]
+      endif
     else
       assign nav_panels = nav_panels | append: part
     endif
   endfor
+  assign nav_panels = nav_panels | replace_first: '<!--nav-mobile-slot-->', nav_mobile
 %}
 
 <!-- HEADER -->

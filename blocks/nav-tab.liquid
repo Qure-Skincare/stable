@@ -33,6 +33,10 @@
 </li>
 <!--/nav-menu-->
 
+{% if panel == 'none' and bf_style %}
+    <!--nav-mobile--><a class="bf-bundles" href="{{ block.settings.url | default: '#' }}">{{ block.settings.title }}</a>
+{% endif %}
+
 {% if panel != 'none' %}
     <div class="header__content" id="{{ panel }}" {{ block.shopify_attributes }}>
         <div class="header__content-container container">
@@ -61,6 +65,7 @@
                     {% if bf_style %}
                         <a class="bf-bundles" href="{{ block.settings.button_url | default: '#' }}">{{ block.settings.title }}</a>
                     {% endif %}
+                    <!--nav-mobile-slot-->
                 </div>
             {% endif %}
             {% content_for 'blocks' %}
