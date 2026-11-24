@@ -9,78 +9,6 @@
  */
 {
   "sections": {
-    "n_hero_section_xMcaXr": {
-      "type": "n_hero-section",
-      "blocks": {
-        "approved_by_aW7ELB": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/approved-by-1.webp",
-            "text": ""
-          }
-        },
-        "approved_by_7K9PVt": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/approved-by-2.webp",
-            "text": ""
-          }
-        },
-        "approved_by_brPqPE": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/image_8_5294b392-76fa-4d5c-b135-a504683d3c2c.png",
-            "text": ""
-          }
-        },
-        "approved_by_Cj34Up": {
-          "type": "approved-by",
-          "settings": {
-            "image": "shopify://shop_images/image_7_3248f920-bfe4-43a3-ba3e-784a1e6f0c60.png",
-            "text": "<p> based on 2,400+ verified reviews</p>"
-          }
-        },
-        "approved_by_DpRR3G": {
-          "type": "approved-by",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/approved-by-2.webp",
-            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "approved_by_aW7ELB",
-        "approved_by_7K9PVt",
-        "approved_by_brPqPE",
-        "approved_by_Cj34Up",
-        "approved_by_DpRR3G"
-      ],
-      "disabled": true,
-      "name": "t:sections.n_hero-section.name",
-      "settings": {
-        "use_own_file": false,
-        "hidden": false,
-        "modifier": "none",
-        "approved_position": "before_text",
-        "text": "<h1>Helps visibly improve the appearance of fine lines and dark spots - no injectables required.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
-        "rating": "4.8",
-        "rating_text": "",
-        "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
-        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
-        "button_url": "#purchase-form",
-        "button_label": "See My Options",
-        "button_line": false,
-        "alert": "",
-        "sub_text": "<p>90-day money-back guarantee · Free shipping over $100</p>",
-        "marked_list": "",
-        "marked_list_position": "footer",
-        "badge_text": "",
-        "wistia_url": "8ymvdqzx92",
-        "wistia_mode": "modal",
-        "video_button_label": "Watch Video"
-      }
-    },
     "n_hero_section_PD7Bdp": {
       "type": "n_hero-section",
       "blocks": {
@@ -166,6 +94,78 @@
         "badge_text": "",
         "wistia_url": "6de5pg0r6e",
         "wistia_mode": "popover_button",
+        "video_button_label": "Watch Video"
+      }
+    },
+    "n_hero_section_xMcaXr": {
+      "type": "n_hero-section",
+      "blocks": {
+        "approved_by_aW7ELB": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-1.webp",
+            "text": ""
+          }
+        },
+        "approved_by_7K9PVt": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": ""
+          }
+        },
+        "approved_by_brPqPE": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/image_8_5294b392-76fa-4d5c-b135-a504683d3c2c.png",
+            "text": ""
+          }
+        },
+        "approved_by_Cj34Up": {
+          "type": "approved-by",
+          "settings": {
+            "image": "shopify://shop_images/image_7_3248f920-bfe4-43a3-ba3e-784a1e6f0c60.png",
+            "text": "<p> based on 2,400+ verified reviews</p>"
+          }
+        },
+        "approved_by_DpRR3G": {
+          "type": "approved-by",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/approved-by-2.webp",
+            "text": "<p>Approved by <strong>Dr. Shah</strong> & <strong>Dr. Maxfield</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "approved_by_aW7ELB",
+        "approved_by_7K9PVt",
+        "approved_by_brPqPE",
+        "approved_by_Cj34Up",
+        "approved_by_DpRR3G"
+      ],
+      "disabled": true,
+      "name": "t:sections.n_hero-section.name",
+      "settings": {
+        "use_own_file": false,
+        "hidden": false,
+        "modifier": "none",
+        "approved_position": "before_text",
+        "text": "<h1>Helps visibly improve the appearance of fine lines and dark spots - no injectables required.</h1><p><strong>24K gold-plated microneedles</strong> deliver <strong>targeted serums</strong> beyond your skin's barrier where traditional creams can't reach.</p>",
+        "rating": "4.8",
+        "rating_text": "",
+        "image": "shopify://shop_images/micro-infusion-hero_2_d36a18db-6067-459d-ac17-60c0ef0b8edb.webp",
+        "image_mobile": "shopify://shop_images/micro-infusion-hero-mob.webp",
+        "button_url": "#purchase-form",
+        "button_label": "See My Options",
+        "button_line": false,
+        "alert": "",
+        "sub_text": "<p>90-day money-back guarantee · Free shipping over $100</p>",
+        "marked_list": "",
+        "marked_list_position": "footer",
+        "badge_text": "",
+        "wistia_url": "8ymvdqzx92",
+        "wistia_mode": "modal",
         "video_button_label": "Watch Video"
       }
     },
@@ -265,6 +265,7 @@
       "name": "t:sections.n_press-reviews.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "text": "<h6>FEATURED IN</h6>",
         "slide": "none",
         "settings": "\"spaceBetween\": 80"
@@ -900,7 +901,9 @@
             "text_4": "$20 per treatment",
             "select_4": "checkmark",
             "text_5": "",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_2": {
@@ -917,7 +920,9 @@
             "text_4": "$300+ per treatment",
             "select_4": "checkmark",
             "text_5": "",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "comparison_table_3": {
@@ -934,7 +939,9 @@
             "text_4": "< $10 per treatment",
             "select_4": "checkmark",
             "text_5": "",
-            "select_5": "checkmark"
+            "select_5": "checkmark",
+            "text_6": "",
+            "select_6": "checkmark"
           }
         },
         "disclaimer_1": {
@@ -1407,6 +1414,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779235567,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1435,13 +1445,16 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779399407,
             "gift": "dermal-mist-travel-size",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "Travel Dermal Mist",
             "discount_code": "FREEM&I3MIST",
             "free_shipping": false,
             "per_treatment": true,
             "preselected": true,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply Black Friday Offer",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
             "image": "shopify://shop_images/MI_3_month_DS.webp",
@@ -1464,6 +1477,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779432175,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1519,6 +1535,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779464943,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1547,13 +1566,16 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779497711,
             "gift": "dermal-mist-travel-size",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_image": "shopify://shop_images/icon-branded-frame-32.png",
             "gift_text": "Travel Dermal Mist",
             "discount_code": "FREEM&I3MIST",
             "free_shipping": false,
             "per_treatment": true,
             "preselected": true,
-            "heading": "3 Month Supply",
+            "heading": "3 Month Supply Black Friday Offer",
             "subheading": "(6 Treatments)",
             "product_selling_plan_text": "Ships every 12 weeks",
             "image": "shopify://shop_images/MI_3_month_W.webp",
@@ -1576,6 +1598,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779530479,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1632,6 +1657,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 8779563247,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1660,6 +1688,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1689,6 +1720,9 @@
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
             "gift_text": "",
             "discount_code": "",
             "free_shipping": false,
@@ -1738,6 +1772,7 @@
         "product_RBCPe8"
       ],
       "settings": {
+        "modifier": "none",
         "type": "list",
         "heading": "Choose your treatment",
         "text": "All orders are one-time purchases. No extra charges, and no hidden fees.",
@@ -1749,7 +1784,11 @@
         "delivery_switcher_position": "footer",
         "delivery_switcher_product": "micro-infusion-3-month-bundle-for-wrinkles",
         "guarantee_period": "90",
-        "available-stocks": false
+        "available-stocks": false,
+        "hide_product_types": false,
+        "subscription_details": false,
+        "hide_bottom": false,
+        "hide_certified": false
       }
     },
     "n_features_marquee_vMOx3w": {
@@ -1923,7 +1962,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don’t see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
