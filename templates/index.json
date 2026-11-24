@@ -66,7 +66,7 @@
         "video_url": "https://qureskincaredns-stable.com/sections/across-image-banner/images/bf-best-sellers.mp4",
         "button_label": "Shop Best Sellers",
         "button_label_mobile": "",
-        "button_url": "https://qureskincare.com/collections/shop-all"
+        "button_url": "shopify://collections/shop-all"
       }
     },
     "n_across_image_banner_Kd7pRw": {
