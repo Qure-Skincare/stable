@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/hero-product/hero-product.css" />
 {% endif %}
 
+{%- capture hero_heading -%}
+    {{ section.settings.heading
+    | replace: '[orange]', '<span>'
+    | replace: '[/orange]', '</span>'
+    }}
+{%- endcapture -%}
+
 <section class="hero-product" id="hero-product">
     <div class="hero-product__container container">
         {% if section.settings.special_offer_badge and settings.holiday_offer_turn_on %}
             <div class="hero-product__main d-sm-none">
                 <div class="e-double-tag e-double-tag--pill" style="color: #1f1fb0;">{{ 'special-offer.holiday_bundles_html' | t }}</div>
+                {{ hero_heading }}
             </div>
         {% endif %}
         <div class="hero-product__gallery">
@@ -67,10 +75,7 @@
             {% elsif section.settings.bundle_text != blank %}
                 <div class="e-double-tag">{{ section.settings.bundle_text | replace: '<p>', '' | replace: '</p>', '' }}</div>
             {% endif %}
-            {{ section.settings.heading
-            | replace: '[orange]', '<span>'
-            | replace: '[/orange]', '</span>'
-            }}
+            {{ hero_heading }}
             {% if section.settings.text != blank %}
                 <article>
                     {{ section.settings.text }}
