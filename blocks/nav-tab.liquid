@@ -25,7 +25,11 @@
     {% else %}
         <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}">
     {% endif %}
-        <span>{{ block.settings.title }}</span>
+        {% if panel == 'none' and bf_style %}
+            {{ block.settings.title }}
+        {% else %}
+            <span>{{ block.settings.title }}</span>
+        {% endif %}
         {% if block.settings.pill != blank %}
             <span class="e-pill-save{% if settings.black_friday_turn_on %} e-pill-save--bf{% endif %}">{{ block.settings.pill }}</span>
         {% endif %}
