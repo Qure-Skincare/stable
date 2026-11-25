@@ -1,0 +1,943 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_header": {
+      "type": "n-product-header",
+      "blocks": {
+        "description_collapsed_Nk4rTw": {
+          "type": "description-collapsed",
+          "settings": {
+            "title_1": "Naturally pink from B12, no colorants",
+            "text_1": "<p>Needle head, serum, and pump are sealed together in a single device — no separate vials, no assembly, ever.</p>",
+            "title_2": "Helps visibly calm the look of redness",
+            "text_2": "<p>Our patent-pending airless pump delivers consistent serum with every press — no clogging, no leaks, no guesswork.</p>",
+            "title_3": "Airless pump for consistent flow",
+            "text_3": "<p>0.5mm, 24-karat gold-plated, sterile microneedles create micro-channels so active ingredients absorb deeper and work harder.</p>",
+            "title_4": "Dermatologist-Loved Actives",
+            "text_4": "<p>Formulated with Tranexamic Acid, Niacinamide, and Copper Tripeptide-1 to visibly brighten, smooth, and even out skin tone.</p>",
+            "title_5": "Sterile & Single-Use",
+            "text_5": "<p>Each device is EO Sterilized and used once, then disposed of — zero cleanup, minimal risk of infection or irritation.</p>",
+            "line": true
+          }
+        },
+        "section_Pq7mLz": {
+          "type": "section",
+          "settings": {
+            "section_id": "purchase-form-landing"
+          }
+        },
+        "accordion_Hd2sVb": {
+          "type": "accordion",
+          "settings": {}
+        },
+        "experts_Wt9cKf": {
+          "type": "experts",
+          "settings": {
+            "image": "shopify://shop_images/dr-shah-quote.webp",
+            "text": "<p>Our favorite treatment that brings you closer to in-office results at home.</p>",
+            "username": "Dr. Shah",
+            "position": "Dermatologist",
+            "certified_image_1": "shopify://shop_images/crt-1.webp",
+            "certified_image_2": "shopify://shop_images/crt-2.webp",
+            "certified_count": "+50",
+            "certified_text": "<p><strong>50+ Board Certified Dermatologists</strong> recommend Qure to their patients.</p>"
+          }
+        },
+        "jumpto_Rb3xQn": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "The Results",
+            "button-url": "#improve_skin"
+          }
+        },
+        "jumpto_Gs6yMp": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How It Works",
+            "button-url": "#how_it_works"
+          }
+        },
+        "jumpto_Vc8kTd": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "Reviews",
+            "button-url": "#reviews"
+          }
+        },
+        "jumpto_Lf2nHw": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "How To Use",
+            "button-url": "#easy_steps"
+          }
+        },
+        "jumpto_Ky7vBs": {
+          "type": "jumpto",
+          "settings": {
+            "button-label": "FAQs",
+            "button-url": "#faq"
+          }
+        }
+      },
+      "block_order": [
+        "description_collapsed_Nk4rTw",
+        "section_Pq7mLz",
+        "accordion_Hd2sVb",
+        "experts_Wt9cKf",
+        "jumpto_Rb3xQn",
+        "jumpto_Gs6yMp",
+        "jumpto_Vc8kTd",
+        "jumpto_Lf2nHw",
+        "jumpto_Ky7vBs"
+      ],
+      "name": "t:sections.product-header.name",
+      "settings": {
+        "hide_saveup_offer": false,
+        "section_id": "hero-product",
+        "product": "",
+        "reverse": false,
+        "secondary": false,
+        "background": false,
+        "seo_heading": "BRIGHTENING AT-HOME MICRONEEDLING SYSTEM",
+        "heading": "Your serum shouldn’t stop at the surface. Meet Micro-Infusion Pro PDRN.",
+        "badge_text": "",
+        "heading_level": "h1",
+        "rating": true,
+        "rating_type": "trustpilot",
+        "rating_position": "top",
+        "limited": false,
+        "description": "",
+        "reserved": false,
+        "soldout": false,
+        "button-label": "",
+        "button-url": ""
+      }
+    },
+    "purchase-form-landing": {
+      "type": "n-purchase-form-landing",
+      "blocks": {
+        "type_Xa4dQe": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_Jn8wRt": {
+          "type": "product_type",
+          "settings": {
+            "heading": "One time purchase",
+            "preselected": false
+          }
+        },
+        "product_Cv2kLm": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-pdrn-3-month",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": true,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "(6 bottles)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
+            "image": "shopify://shop_images/mi-pdrn-6-bottles.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_Tz6hNb": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-pdrn-1-month",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 bottles)",
+            "product_selling_plan_text": "Ships every 1 months",
+            "text": "",
+            "image": "shopify://shop_images/mi-pdrn-2-bottles.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "type_Ds9pWq": {
+          "type": "type",
+          "settings": {}
+        },
+        "product_type_Fk3mYv": {
+          "type": "product_type",
+          "settings": {
+            "heading": "Subscribe & Save",
+            "preselected": true
+          }
+        },
+        "product_Hr7sBc": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-pdrn-3-month",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": true,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": true,
+            "heading": "3 Month Supply",
+            "subheading": "(6 bottles)",
+            "product_selling_plan_text": "Ships every 3 months",
+            "text": "",
+            "image": "shopify://shop_images/mi-pdrn-6-bottles.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        },
+        "product_Qw1jXz": {
+          "type": "product",
+          "settings": {
+            "product": "micro-infusion-pro-pdrn-1-month",
+            "product_variant_id": 0,
+            "product_selling_plan": 0,
+            "gift": "",
+            "gift_selling_plan": 0,
+            "included_gift": "",
+            "included_gift_selling_plan": 0,
+            "gift_text": "",
+            "discount_code": "",
+            "optional_subscription": false,
+            "popular": false,
+            "best": false,
+            "tag_label": "",
+            "free_shipping": false,
+            "preselected": false,
+            "heading": "1 Month Supply",
+            "subheading": "(2 bottles)",
+            "product_selling_plan_text": "Ships every 1 months",
+            "text": "",
+            "image": "shopify://shop_images/mi-pdrn-2-bottles.webp",
+            "product_discount_percent": 0,
+            "soldout": false,
+            "preorder": false,
+            "total_treatments": 0,
+            "left_items": 0,
+            "preorder_text": "",
+            "preorder_date_soldout": "",
+            "preorder_date_reserved": "",
+            "preorder_percent": 55,
+            "included_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "type_Xa4dQe",
+        "product_type_Jn8wRt",
+        "product_Cv2kLm",
+        "product_Tz6hNb",
+        "type_Ds9pWq",
+        "product_type_Fk3mYv",
+        "product_Hr7sBc",
+        "product_Qw1jXz"
+      ],
+      "settings": {
+        "form_name": "purchase-form-landing-subscription",
+        "hide_types": true,
+        "hide_variants": false,
+        "color_types": false,
+        "subscription_product": "true",
+        "subscription_discount_max_percent": 10,
+        "delivery_switcher_position": "footer",
+        "delivery_switcher_product": "micro-infusion-pro-pdrn-1-month",
+        "type": "list",
+        "klaviyo_form_name": "",
+        "guarantee_period": "30",
+        "hide_bottom": true,
+        "hide_certified": false,
+        "hide_title_on_subscription": false
+      }
+    },
+    "n_why_it_works": {
+      "type": "n_why-it-works",
+      "blocks": {
+        "accordion_1": {
+          "type": "accordion",
+          "settings": {
+            "section_id": "",
+            "component": "none",
+            "open": true,
+            "heading": "No Set-Up Required",
+            "text": "<p>Comes preassembled, with the PDRN serum and needle head sealed in one cartridge. Just remove the cap and start.</p>",
+            "icon": "benefits-box"
+          }
+        },
+        "accordion_2": {
+          "type": "accordion",
+          "settings": {
+            "section_id": "",
+            "component": "none",
+            "open": false,
+            "heading": "Naturally Pink",
+            "text": "<p>The pink is the natural color of Vitamin B12 (cyanocobalamin), not a dye. B12 also helps visibly calm the look of redness and reactive-looking skin.</p>",
+            "icon": "double-drop"
+          }
+        },
+        "accordion_3": {
+          "type": "accordion",
+          "settings": {
+            "section_id": "",
+            "component": "none",
+            "open": false,
+            "heading": "Single-Use & Disposable",
+            "text": "<p>Designed for hygienic, single-use treatment. Each needle head is EO-sterilized and intended for one-time use. Made with 80% GRS-certified recycled post-consumer polycarbonate.</p>",
+            "icon": "rotation"
+          }
+        },
+        "accordion_4": {
+          "type": "accordion",
+          "settings": {
+            "section_id": "",
+            "component": "none",
+            "open": false,
+            "heading": "Patent-pending design",
+            "text": "<p>Our airless pump delivers a consistent amount of serum with every press, designed for smoother flow and less mess.</p>",
+            "icon": "shield"
+          }
+        },
+        "accordion_5": {
+          "type": "accordion",
+          "settings": {
+            "section_id": "",
+            "component": "none",
+            "open": false,
+            "heading": "24K Gold-Plated Needles",
+            "text": "<p>0.5mm, 24 karat gold-plated stainless steel needles.</p>",
+            "icon": "needles"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_1",
+        "accordion_2",
+        "accordion_3",
+        "accordion_4",
+        "accordion_5"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "mi-pdrn",
+        "text": "<h2>Inspired by the Clinic.<br/> Made for Home.</h2>",
+        "image": "shopify://shop_images/mi-pdrn-why-it-works.webp",
+        "image_mobile": "shopify://shop_images/mi-pdrn-why-it-works-mob.webp",
+        "badge_text": "",
+        "disclaimer": ""
+      }
+    },
+    "n_progress_showcase": {
+      "type": "n_progress-showcase",
+      "blocks": {
+        "slide_Fh2nRa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-1.webp",
+            "badge": "Fine Lines and Wrinkles",
+            "percent_value": 70,
+            "text": "<p>say their skin appeared firmer and smoother.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
+        "slide_Vb7cXe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-2.webp",
+            "badge": "Dark Spots",
+            "percent_value": 90,
+            "text": "<p>agreed their skin looked better after Micro-Infusion Pro treatments.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
+        "slide_Gp9wLt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-3.webp",
+            "badge": "Visible pores",
+            "percent_value": 70,
+            "text": "<p>of participants saw visibly reduced pore size.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        },
+        "slide_Nq3jDy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/progress-showcase-4.webp",
+            "badge": "Uneven Skintone",
+            "percent_value": 93,
+            "text": "<p>noticed results the next day after their first Micro-Infusion treatment.</p>",
+            "disclaimer": "Based on a user study of 30 participants aged 25-65"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Fh2nRa",
+        "slide_Vb7cXe",
+        "slide_Gp9wLt",
+        "slide_Nq3jDy"
+      ],
+      "name": "t:sections.n_progress-showcase.name",
+      "settings": {
+        "use_own_file": false,
+        "section_id": "improve_skin",
+        "arrows_only": true,
+        "text": "<h2>Visible Micro-Infusion results backed by our clinical study</h2>"
+      }
+    },
+    "n_expert_feature": {
+      "type": "n_expert-feature",
+      "name": "t:sections.n_expert-feature.name",
+      "settings": {
+        "use_own_file": false,
+        "heading": "<h6>Does it hurt?</h6><h2>What it actually feels like: a light prickle.</h2>",
+        "text": "<p>Picture Velcro pressed lightly against your skin. That’s the feeling. The 0.5mm needles stamp straight down. No rolling, no dragging, no tugging.</p><p>Each stamp creates tiny channels that help your skin take up the serum, for smoother-looking, more radiant skin.</p><p>Every treatment starts with a fresh, sterile, single-use needle head, so there’s nothing to worry about on the hygiene side either.</p>",
+        "quote": "“What I really like about Qure Micro-Infusion is the thought put into safe at-home use. Every treatment starts with a fresh, sterile, single-use needle head. That attention to detail matters.”",
+        "author": "Dr. Shah",
+        "caption": "1.2M followers",
+        "badge": "Board Certified Dermatologist",
+        "image": "shopify://shop_images/dr-shah.webp",
+        "image_mobile": "shopify://shop_images/dr-shah-mob.webp"
+      }
+    },
+    "n_trusted_reviews": {
+      "type": "n_trusted-reviews",
+      "blocks": {
+        "slider_1": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/shelly_s-pdrn.webp",
+            "username": "Shelly S.",
+            "verified_customer": "",
+            "badge": "Wrinkles",
+            "text": "<p>“I have used the Qure Micro- Infusion Pro for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_2": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/jennifer_n-pdrn.webp",
+            "username": "Jennifer N.",
+            "verified_customer": "",
+            "badge": "Smokers Lines",
+            "text": "<p>“I wanted the benefits of microneedling without the downtime. My skin looks better than it has in years—I’m stunned by how well it works.”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        },
+        "slider_3": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/janeda_t-pdrn.webp",
+            "username": "Janeda T.",
+            "verified_customer": "",
+            "badge": "Dark Spots",
+            "text": "<p>“After just two treatments, I’ve seen an incredible reduction in dark spots. My skin is so smooth—I can’t believe I can do this at home!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_1",
+        "slider_2",
+        "slider_3"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "background_color": "light",
+        "modifier": "author-name",
+        "section_id": "reviews",
+        "heading": "",
+        "disclaimer": "",
+        "text": "<h2>Results with Qure</h2>",
+        "heading_mobile": "Real Skin, Real Transformations",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "n_base_section": {
+      "type": "n_base-section",
+      "name": "t:sections.n_base-section.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "none",
+        "modifier_2": "none",
+        "background_color": "none",
+        "section_id": "",
+        "heading": "<h2>Clinic-inspired results. Without&nbsp;the&nbsp;clinic price.</h2>",
+        "text": "<p>Save over $3,000 a year with Qure Micro-Infusion Pro PDRN.</p><p>[marked_list]</p><ul><li>5-minute treatment</li><li>No appointments or travel</li><li>Professional-inspired glow from home</li></ul><p>[small]*Estimated using two Qure treatments per month at $20 per treatment versus one $300+ in-clinic treatment per month. Prices and treatment frequency vary.[/small]</p>",
+        "image": "shopify://shop_images/mi-pdrn-price-diagrams.webp",
+        "button_label": "",
+        "button_url": "",
+        "wistia_url": "",
+        "accordion_text": ""
+      }
+    },
+    "n_mi_overview": {
+      "type": "n_mi-overview",
+      "blocks": {
+        "area_Bk3nMp": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/forehead-wrinkles.webp",
+            "heading": "Forehead Wrinkles"
+          }
+        },
+        "area_Wq8dLf": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/eye-wrinkles.webp",
+            "heading": "Eye Wrinkles"
+          }
+        },
+        "area_Hs5xRv": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/smokers-wrinkles.webp",
+            "heading": "Smoker’s Wrinkles"
+          }
+        },
+        "area_Tn9cYg": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/post-acne-marks.webp",
+            "heading": "Post acne marks"
+          }
+        },
+        "area_Ce2mKd": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/laugh-lines.webp",
+            "heading": "Laugh Lines"
+          }
+        },
+        "area_Py6vZb": {
+          "type": "area",
+          "settings": {
+            "image": "shopify://shop_images/pigmentation-marks.webp",
+            "heading": "Age Spots & Pigmentation marks"
+          }
+        }
+      },
+      "block_order": [
+        "area_Bk3nMp",
+        "area_Wq8dLf",
+        "area_Hs5xRv",
+        "area_Tn9cYg",
+        "area_Ce2mKd",
+        "area_Py6vZb"
+      ],
+      "name": "t:sections.n_mi-overview.name",
+      "settings": {
+        "use_own_file": false,
+        "section_id": "how_it_works",
+        "subheader": "How it works",
+        "heading": "Qure’s Micro-Infusion PDRN goes where your skin cream can’t...",
+        "wistia_url": "",
+        "wistia_url_mobile": "",
+        "text": "<p>Its tiny, <em>virtually painless micro-needles</em> create micro-channels at the skin’s surface to support increased serum absorption, helping deliver science-backed active ingredients beyond where everyday topical skincare typically sits.</p>",
+        "features_heading": "6 Target Areas - 1 Solution",
+        "modifier": "simple"
+      }
+    },
+    "n_mi_ingredients": {
+      "type": "n_mi-ingredients",
+      "blocks": {
+        "left_heading": {
+          "type": "left_heading",
+          "settings": {
+            "image": "shopify://shop_images/mi-pdrn-ingredients.webp",
+            "badge": "",
+            "text": "<h3>Micro-Infusion Pro PDRN</h3>"
+          }
+        },
+        "left_column_1": {
+          "type": "left_column",
+          "settings": {
+            "icon": "perfect-transforming",
+            "text": "Brighter-Looking Skin"
+          }
+        },
+        "left_column_2": {
+          "type": "left_column",
+          "settings": {
+            "icon": "calms-redness",
+            "text": "Reduced Look of Redness"
+          }
+        },
+        "left_column_3": {
+          "type": "left_column",
+          "settings": {
+            "icon": "smooths",
+            "text": "Smoother-Looking Texture"
+          }
+        },
+        "left_accordion_1": {
+          "type": "left_accordion",
+          "settings": {
+            "heading": "What can it do for your skin",
+            "text": "<p><strong>Micro-Infusion Pro PDRN</strong> pairs precision micro-stamping with a PDRN <strong>(Sodium DNA)</strong> serum in one targeted treatment.</p><p>Designed to support a smoother, brighter and more refreshed-looking complexion, the formula also helps improve the appearance of uneven tone, visible dark spots and texture.</p><p><strong>Skin Concerns:</strong> Ideal for dull, uneven-looking skin, visible dark spots, rough texture and skin that looks tired or lacking in radiance.</p>"
+          }
+        },
+        "left_accordion_2": {
+          "type": "left_accordion",
+          "settings": {
+            "heading": "All Ingredients",
+            "text": "<p>Aqua (Water), Propanediol, Niacinamide, Glycerin, Tranexamic Acid, Myrothamnus Flabellifolia Leaf/Stem Extract, Water, Butylene Glycol, Hydroxyacetophenone, Panthenol, Pentylene Glycol, Sodium DNA, Chrysanthellum Indicum Extract, Beta-Glucan, Ethylhexylglycerin, Allantoin, Sodium Hyaluronate, Hydroxyethylcellulose, Cyanocobalamin</p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_column_1",
+        "left_column_2",
+        "left_column_3",
+        "left_accordion_1",
+        "left_accordion_2"
+      ],
+      "settings": {
+        "use_own_file": false,
+        "modifier": "pdrn",
+        "section_id": "ingredients",
+        "text": "<h2>PDRN-Powered Formula</h2><p>Formulated with PDRN (Sodium DNA)</p>",
+        "button_label": "",
+        "button_url": "",
+        "sub_text": ""
+      }
+    },
+    "n_experts_grid": {
+      "type": "n_experts-grid",
+      "blocks": {
+        "expert_Kp3mWx": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/shah_55a79f40-8353-4a7d-ad53-704ff2ef065e.webp",
+            "name": "Dr. Shah",
+            "role": "Dermatologist"
+          }
+        },
+        "expert_Ht7bRq": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/maxfield_c5ad7eb1-74ec-44ad-832e-03cef413d310.webp",
+            "name": "Dr. Maxfield",
+            "role": "Dermatologist"
+          }
+        },
+        "expert_Zc2nLd": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/brown.webp",
+            "name": "Dr. Alekandra Brown",
+            "role": "Dermatologist"
+          }
+        },
+        "expert_Fv9sYk": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/zubritsky.webp",
+            "name": "Dr. Lindsey Zubritsky",
+            "role": "Dermatologist"
+          }
+        },
+        "expert_Qw4jTn": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/stephens_fab58e4c-3158-45cc-9c9f-38a3e8083899.webp",
+            "name": "Dr. Alexis Stephens",
+            "role": "Internal Medicine Doctor"
+          }
+        },
+        "expert_Bm6gPz": {
+          "type": "expert",
+          "settings": {
+            "image": "shopify://shop_images/tripati.webp",
+            "name": "Dr. Prem Tripati",
+            "role": "Facial Plastic Surgeon"
+          }
+        }
+      },
+      "block_order": [
+        "expert_Kp3mWx",
+        "expert_Ht7bRq",
+        "expert_Zc2nLd",
+        "expert_Fv9sYk",
+        "expert_Qw4jTn",
+        "expert_Bm6gPz"
+      ],
+      "name": "t:sections.n_experts-grid.name",
+      "settings": {
+        "section_id": "",
+        "use_own_file": false,
+        "awards": false,
+        "slider": true,
+        "heading": "Trusted and Recommended by Skin Experts",
+        "text": "<p>Backed by skin experts. Designed to target visible signs of aging at home.</p>"
+      }
+    },
+    "n_press_reviews": {
+      "type": "n_press-reviews",
+      "blocks": {
+        "image_with_text_Qa4rTz": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“Few beauty trends are actually worth adopting, but Qure’s take on at-home Micro-Infusion is a viral skin trend with merit.”</h4>",
+            "image": "shopify://shop_images/forbes.svg"
+          }
+        },
+        "image_with_text_Ue7sKm": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>A true micro-infusion treatment — creating microchannels that help enhance serum absorption and support visibly smoother-looking skin.</h4>",
+            "image": "shopify://shop_images/bazzar.svg"
+          }
+        },
+        "image_with_text_Ib2fNx": {
+          "type": "image_with_text",
+          "settings": {
+            "text": "<h4>“This microneedling alternative is my secret to glowing skin.”</h4>",
+            "image": "shopify://shop_images/ps.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_Qa4rTz",
+        "image_with_text_Ue7sKm",
+        "image_with_text_Ib2fNx"
+      ],
+      "name": "t:sections.n_press-reviews.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "light",
+        "text": "<h6>FEATURED IN</h6>",
+        "slide": "none",
+        "settings": "\"spaceBetween\": 80"
+      }
+    },
+    "n_easy_steps": {
+      "type": "n_easy-steps",
+      "blocks": {
+        "items_Rm6tLc": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Cleanse</h6><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"Dermal Mist\">Dermal Mist</a> to refresh and prepare your skin further.</p>",
+            "image": "shopify://shop_images/mi-20-use-step-1.webp",
+            "image_mobile": "shopify://shop_images/mi-20-use-step-1-mob.webp"
+          }
+        },
+        "items_Kd8jXq": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Treatment</h6><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
+            "image": "shopify://shop_images/mi-20-use-step-2.webp",
+            "image_mobile": "shopify://shop_images/mi-20-use-step-2-mob.webp"
+          }
+        },
+        "items_Ys1nHf": {
+          "type": "items",
+          "settings": {
+            "text": "<h6>Aftercare</h6><p>Once the treatment is complete, pat the remaining serum into skin. The system is designed for single use.</p>",
+            "image": "shopify://shop_images/mi-20-use-step-3.webp",
+            "image_mobile": "shopify://shop_images/mi-20-use-step-3-mob.webp"
+          }
+        }
+      },
+      "block_order": [
+        "items_Rm6tLc",
+        "items_Kd8jXq",
+        "items_Ys1nHf"
+      ],
+      "name": "t:sections.n_easy-steps.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "custom",
+        "text": "<h2>See how quick and easy it is to use</h2>",
+        "image": "shopify://shop_images/mi-pdrn-use-video.webp",
+        "image_mobile": "shopify://shop_images/mi-pdrn-use-video-mob.webp",
+        "wistia_url": "hwf5rmmxsm",
+        "button_label": "buy now & SAVE up to 70%",
+        "button_url": "#hero-product"
+      }
+    },
+    "n_faq": {
+      "type": "n_faq",
+      "blocks": {
+        "accordion_1": {
+          "type": "accordion",
+          "settings": {
+            "heading": "What are the benefits of Micro-Infusion Pro PDRN?",
+            "text": "<p>Micro-Infusion Pro PDRN combines our newly redesigned Micro-Infusion Pro device with a brand-new serum formulated with PDRN and Vitamin B12. PDRN (Polydeoxyribonucleotide) is a salmon-derived DNA ingredient popular in Korean skincare and aesthetic treatments for its skin-rejuvenating properties and ability to support healthier-looking, smoother skin. Vitamin B12 helps condition the skin and gives our serum its beautiful, naturally pink hue.</p><p>Unlike traditional topical PDRN serums, Micro-Infusion Pro uses 20 ultra-fine, 0.5 mm gold-plated needles to create tiny micro-channels while simultaneously applying the serum directly to the treated skin. Together, this innovative treatment helps:</p><ul><li>Visibly reduce the appearance of fine lines and wrinkles.</li><li>Improve uneven skin texture and smoothness.</li><li>Deeply hydrate for plumper, bouncier-looking skin.</li><li>Support a brighter, more even-looking complexion.</li><li>Leave skin looking refreshed, radiant and revitalised.</li></ul>"
+          }
+        },
+        "accordion_2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How quickly will I see results?",
+            "text": "<p>You can expect to wake up to a beautiful, dewy glow as early as the morning after your first treatment, with skin looking more hydrated, refreshed and plump.</p><p>Consistency is key! With regular treatments every two weeks, you can expect to see more noticeable improvements over approximately three months, including smoother-looking skin texture, visibly softened fine lines and a plumper, more youthful-looking complexion. Individual results may vary.</p>"
+          }
+        },
+        "accordion_3": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Is it painful to use?",
+            "text": "<p>Not at all! Micro-Infusion Pro is designed to be virtually painless, making it an easy and comfortable at-home treatment. Its 20 ultra-fine, 0.5 mm gold-plated needles create tiny micro-channels in the skin. You may feel a slight prickling sensation during treatment, but most users find it very comfortable.</p><p>Simply use gentle, even pressure when stamping. If you have particularly sensitive skin, we recommend using lighter, gentler stamps for a more comfortable experience.</p>"
+          }
+        },
+        "accordion_4": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How often can I use the treatment?",
+            "text": "<p>We recommend using Micro-Infusion Pro PDRN once every two weeks for optimal results. Consistency is key to achieving and maintaining visible improvements in your skin’s appearance.</p>"
+          }
+        },
+        "accordion_5": {
+          "type": "accordion",
+          "settings": {
+            "heading": "When is the best time to do Micro-Infusion Pro PDRN?",
+            "text": "<p>We recommend using Micro-Infusion Pro PDRN every two weeks, preferably at night, to give your skin time to recover overnight. You’ll wake up to skin that looks beautifully hydrated, plump and glowing!</p><p>For detailed pre- and post-treatment skincare instructions, please refer to the product manual and our online Micro-Infusion treatment guide.</p>"
+          }
+        },
+        "accordion_6": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use it around the eyes and on the neck?",
+            "text": "<p>Yes! Micro-Infusion Pro can be used on the face and neck, including carefully around the under-eye area, up to the orbital bone. Use very gentle pressure and only one pass around the eyes. Avoid the eyelids, lash line, broken skin and any areas experiencing irritation.</p>"
+          }
+        },
+        "accordion_7": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Can I use a different serum with the Micro-Infusion Pro PDRN device?",
+            "text": "<p>Micro-Infusion Pro PDRN comes pre-filled with our specially formulated PDRN serum and is ready to use straight out of the box. There’s no need to add, mix or replace the serum.</p><p>We don’t recommend using third-party serums with Micro-Infusion Pro. Every Qure serum is specifically formulated and carefully tested to work with our device, including its needle head and serum delivery system. We assess everything from serum texture and consistency to pumping performance and flow, ensuring smooth, reliable application. We can only guarantee the compatibility and tested safety of our own formulas when used as directed.</p><p>If you’re also using our Micro-Infusion Pro 2-in-1 serum, you can alternate between the two treatments every two weeks to enjoy the benefits of both formulas.</p>"
+          }
+        },
+        "accordion_8": {
+          "type": "accordion",
+          "settings": {
+            "heading": "How is this different from micro-rolling?",
+            "text": "<p>Unlike traditional derma rollers, which use a rolling motion across the skin, Micro-Infusion Pro uses a controlled stamping action to create tiny micro-channels. This allows the specially formulated PDRN serum to be applied during treatment, combining the benefits of micro-infusion with targeted skincare ingredients. The pre-filled design also means there’s no mixing, filling or manual assembly required.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_1",
+        "accordion_2",
+        "accordion_3",
+        "accordion_4",
+        "accordion_5",
+        "accordion_6",
+        "accordion_7",
+        "accordion_8"
+      ],
+      "name": "t:sections.n_faq.name",
+      "settings": {
+        "use_own_file": false,
+        "modifier": "light",
+        "heading": "<h2>Have questions?</h2>",
+        "advisor_image": "shopify://shop_images/advisor.webp",
+        "advisor_heading": "Get free skin consultation",
+        "advisor_text": "Chat with our skincare team for personalized advice",
+        "advisor_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home",
+        "text": "",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "sticky_cta": {
+      "type": "n-sticky-button",
+      "name": "t:sections.sticky-button.name",
+      "settings": {
+        "heading": "Qure Micro-Infusion Pro PDRN",
+        "text": "580 Units Reserved in last 48 hours",
+        "limited": false,
+        "button-label": "",
+        "button-url": ""
+      }
+    }
+  },
+  "order": [
+    "product_header",
+    "purchase-form-landing",
+    "n_why_it_works",
+    "n_progress_showcase",
+    "n_expert_feature",
+    "n_trusted_reviews",
+    "n_base_section",
+    "n_mi_overview",
+    "n_mi_ingredients",
+    "n_experts_grid",
+    "n_press_reviews",
+    "n_easy_steps",
+    "n_faq",
+    "sticky_cta"
+  ]
+}
