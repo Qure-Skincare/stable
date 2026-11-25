@@ -32,8 +32,8 @@
         "money-back": {
           "type": "money-back",
           "settings": {
-            "heading": "Money Back Guarantee",
-            "text": "Hair growth isn't instant. That's why we offer a money-back guarantee. If you don't see real results, get a full refund - no questions asked.",
+            "heading": "Money Back Guarantee*",
+            "text": "Hair growth isn’t instant. That’s why we offer a money-back guarantee. If you don’t see results after 12 months, send it back for a refund.*",
             "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
@@ -170,6 +170,7 @@
         "use_own_file": false,
         "heading": "<h2>See the change, feel the difference</h2>",
         "text": "<p>Join real people experiencing real transformations with consistent use of Q-Renew.</p>",
+        "quote_text": "",
         "button_label": "Read the Study",
         "button_url": "#backed-by-real-results"
       }
@@ -452,7 +453,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Your Androgenetic Alopecia Questions Answered</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Have a concern we didn't cover?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
@@ -702,6 +707,7 @@
     "1779694271ab3fccdb": {
       "type": "n_yotpo-reviews",
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
@@ -778,7 +784,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "#"
