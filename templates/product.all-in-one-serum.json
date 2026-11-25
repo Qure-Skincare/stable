@@ -833,7 +833,7 @@
         "product_faucet_aio": {
           "type": "product",
           "settings": {
-            "product": "faucet-filter",
+            "product": "shower-filter",
             "variant_title": "",
             "description": "Wash with filtered water to help boost hydration and reduce the look of irritation.",
             "am_or_pm_1": "am",
