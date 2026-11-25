@@ -862,6 +862,7 @@
         },
         "product_serum_aio": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "all-in-one-serum",
             "variant_title": "",
