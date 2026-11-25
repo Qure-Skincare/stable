@@ -45,8 +45,8 @@
         "money-back": {
           "type": "money-back",
           "settings": {
-            "heading": "Money Back Guarantee",
-            "text": "Hair growth isn’t instant. That’s why we offer a money-back guarantee. If you don’t see real results, get a full refund – no questions asked.",
+            "heading": "Money Back Guarantee*",
+            "text": "Hair growth isn’t instant. That’s why we offer a money-back guarantee. If you don’t see results after 12 months, send it back for a refund.*",
             "image": "shopify://shop_images/moneyback_1.webp"
           }
         },
@@ -795,6 +795,7 @@
     "1773337341b2168cc6": {
       "type": "n_yotpo-reviews",
       "settings": {
+        "product": "",
         "instance_id": "1386845"
       }
     },
@@ -919,7 +920,11 @@
       "name": "t:sections.n_faq.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "heading": "<h2>Have questions?</h2>",
+        "advisor_heading": "",
+        "advisor_text": "",
+        "advisor_url": "",
         "text": "Don't see your question?",
         "button_label": "Ask us",
         "button_url": "https://qureskincare.customerdesk.io/#rp-customer-widget-home"
