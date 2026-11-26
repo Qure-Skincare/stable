@@ -876,16 +876,16 @@
           "type": "items",
           "settings": {
             "text": "<h6>Treatment</h6><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
-            "image": "shopify://shop_images/1a_2_3ff10ae7-9748-4071-9ede-76d59b71c156.png",
-            "image_mobile": "shopify://shop_images/1a_2_1_496b28d9-f3bb-4fd4-8044-117fa8a53dad.png"
+            "image": "shopify://shop_images/1a_1_1_01525680-1efc-4233-9cc1-d9d1011ea03e.png",
+            "image_mobile": "shopify://shop_images/1a_1_1_01525680-1efc-4233-9cc1-d9d1011ea03e.png"
           }
         },
         "items_Ys1nHf": {
           "type": "items",
           "settings": {
             "text": "<h6>Aftercare</h6><p>Once the treatment is complete, pat the remaining serum into skin. The system is designed for single use.</p>",
-            "image": "shopify://shop_images/mi-20-use-step-3.webp",
-            "image_mobile": "shopify://shop_images/mi-20-use-step-3-mob.webp"
+            "image": "shopify://shop_images/1a_2_3ff10ae7-9748-4071-9ede-76d59b71c156.png",
+            "image_mobile": "shopify://shop_images/1a_2_1_496b28d9-f3bb-4fd4-8044-117fa8a53dad.png"
           }
         }
       },
