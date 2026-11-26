@@ -447,6 +447,7 @@
         "heading": "",
         "disclaimer": "",
         "text": "<h2>See the change, feel the difference</h2>",
+        "heading_mobile": "",
         "button_label": "",
         "button_url": ""
       }
@@ -627,6 +628,7 @@
       "name": "t:sections.n_mi-ingredients.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "section_id": "",
         "text": "<h2>Fuller-looking hair in 2 steps.</h2><p>Use Micro-Infusion Pro every 2 weeks, and Hair Renewal Serum nightly, for complete scalp care.</p>",
         "button_label": "Add Full System to Cart",
@@ -1297,8 +1299,8 @@
         "heading": "Qure Micro-Infusion Pro Hair System",
         "text": "580 Units Reserved in last 48 hours",
         "limited": false,
-        "button-label": "",
-        "button-url": ""
+        "button-label": "Choose Your Supply",
+        "button-url": "#purchase-form"
       }
     }
   },
