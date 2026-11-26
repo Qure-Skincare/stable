@@ -549,6 +549,20 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_TrNfx4": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_59.webp",
+            "flag": "shopify://shop_images/usa_flag.svg",
+            "username": "Andrea F.",
+            "verified_customer": "Verified customer",
+            "badge": "Dark spots",
+            "text": "<p>“I’ve done three treatments now and have noticed my dark spots, scars and overall pigmentation has significantly improved. The bags below my eyes have lessened and my face looks brighter. I will definitely recommend this to my friends!”</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -557,7 +571,8 @@
         "slider_3",
         "slider_ebWJCe",
         "slider_ThX4zC",
-        "slider_JztYJi"
+        "slider_JztYJi",
+        "slider_TrNfx4"
       ],
       "settings": {
         "use_own_file": false,
