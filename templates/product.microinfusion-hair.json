@@ -1313,10 +1313,18 @@
             "heading": "3 Month Supply",
             "image": "shopify://shop_images/Group_1000008510.png"
           }
+        },
+        "variant_JNCEf9": {
+          "type": "variant",
+          "settings": {
+            "heading": "1 Month Supply",
+            "image": "shopify://shop_images/pdpd_mi_1.png"
+          }
         }
       },
       "block_order": [
-        "variant_h43WWy"
+        "variant_h43WWy",
+        "variant_JNCEf9"
       ],
       "name": "t:sections.sticky-button-variants.name",
       "settings": {
