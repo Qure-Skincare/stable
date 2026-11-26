@@ -563,6 +563,20 @@
             "product_text": "",
             "product_title": ""
           }
+        },
+        "slider_QDV844": {
+          "type": "slider",
+          "settings": {
+            "image": "shopify://shop_images/Image_8_fb9b7c49-01c1-48f9-9609-b9d8bdf8bb7d.png",
+            "flag": "shopify://shop_images/uk_flag.svg",
+            "username": "Lourdes F.",
+            "verified_customer": "Verified customer",
+            "badge": "Wrinkles",
+            "text": "<p>\"I am loving the micro infusion. I was skeptical because nothing ever works for my face, except Botox. But let me tell you, I am seeing a difference already. I've only done three treatments and the my face looks so much better... It is a little painful in certain areas but for the few seconds of pain, it's worth it! Definitely give it a try and see for yourself.\"</p>",
+            "product_url": "",
+            "product_text": "",
+            "product_title": ""
+          }
         }
       },
       "block_order": [
@@ -572,7 +586,8 @@
         "slider_ebWJCe",
         "slider_ThX4zC",
         "slider_JztYJi",
-        "slider_TrNfx4"
+        "slider_TrNfx4",
+        "slider_QDV844"
       ],
       "settings": {
         "use_own_file": false,
