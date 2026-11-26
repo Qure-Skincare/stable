@@ -139,7 +139,7 @@
         "product_Cv2kLm": {
           "type": "product",
           "settings": {
-            "product": "microinfusion-pdrn",
+            "product": "micro-infusion-pro-pdrn-3-month",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
@@ -174,7 +174,7 @@
         "product_Tz6hNb": {
           "type": "product",
           "settings": {
-            "product": "microinfusion-pdrn-1",
+            "product": "microinfusion-pdrn",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
@@ -195,7 +195,7 @@
             "text": "",
             "image": "shopify://shop_images/mi-pdrn-2-bottles.webp",
             "product_discount_percent": 0,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -221,7 +221,7 @@
         "product_Hr7sBc": {
           "type": "product",
           "settings": {
-            "product": "microinfusion-pdrn",
+            "product": "micro-infusion-pro-pdrn-3-month",
             "product_variant_id": 0,
             "product_selling_plan": 9548529903,
             "gift": "",
@@ -256,7 +256,7 @@
         "product_Qw1jXz": {
           "type": "product",
           "settings": {
-            "product": "microinfusion-pdrn-1",
+            "product": "microinfusion-pdrn",
             "product_variant_id": 0,
             "product_selling_plan": 9548497135,
             "gift": "",
@@ -277,7 +277,7 @@
             "text": "",
             "image": "shopify://shop_images/1_monthpdrn.png",
             "product_discount_percent": 17,
-            "soldout": true,
+            "soldout": false,
             "preorder": false,
             "total_treatments": 0,
             "left_items": 0,
@@ -308,7 +308,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 62,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "microinfusion-pdrn",
+        "delivery_switcher_product": "micro-infusion-pro-pdrn-3-month",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "90",
@@ -868,16 +868,16 @@
           "type": "items",
           "settings": {
             "text": "<h6>Cleanse</h6><p>Cleanse your face thoroughly and spritz the <a href=\"https://qureskincare.com/products/dermal-mist\" title=\"Dermal Mist\">Dermal Mist</a> to refresh and prepare your skin further.</p>",
-            "image": "shopify://shop_images/mi-20-use-step-1.webp",
-            "image_mobile": "shopify://shop_images/mi-20-use-step-1-mob.webp"
+            "image": "shopify://shop_images/1a_1_414b3f91-9f22-438f-a3aa-773acc01f4da.png",
+            "image_mobile": "shopify://shop_images/1a_1_2_68a5bded-33bb-451e-932d-ae5db0bf542d.png"
           }
         },
         "items_Kd8jXq": {
           "type": "items",
           "settings": {
             "text": "<h6>Treatment</h6><p>Start at the centre of the face and work your way outward to cover the full face.</p>",
-            "image": "shopify://shop_images/mi-20-use-step-2.webp",
-            "image_mobile": "shopify://shop_images/mi-20-use-step-2-mob.webp"
+            "image": "shopify://shop_images/1a_2_3ff10ae7-9748-4071-9ede-76d59b71c156.png",
+            "image_mobile": "shopify://shop_images/1a_2_1_496b28d9-f3bb-4fd4-8044-117fa8a53dad.png"
           }
         },
         "items_Ys1nHf": {
