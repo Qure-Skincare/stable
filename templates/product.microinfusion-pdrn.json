@@ -139,7 +139,7 @@
         "product_Cv2kLm": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-pro-pdrn-3-month",
+            "product": "microinfusion-pdrn",
             "product_variant_id": 0,
             "product_selling_plan": 0,
             "gift": "",
@@ -221,7 +221,7 @@
         "product_Hr7sBc": {
           "type": "product",
           "settings": {
-            "product": "micro-infusion-pro-pdrn-3-month",
+            "product": "microinfusion-pdrn",
             "product_variant_id": 0,
             "product_selling_plan": 9548529903,
             "gift": "",
@@ -308,7 +308,7 @@
         "subscription_product": "true",
         "subscription_discount_max_percent": 62,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-pro-pdrn-3-month",
+        "delivery_switcher_product": "microinfusion-pdrn",
         "type": "list",
         "klaviyo_form_name": "",
         "guarantee_period": "90",
