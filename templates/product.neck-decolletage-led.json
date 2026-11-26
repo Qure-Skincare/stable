@@ -357,6 +357,7 @@
         "heading": "",
         "disclaimer": "",
         "text": "<h2>Results you’ll see with your own eyes</h2>",
+        "heading_mobile": "",
         "button_label": "",
         "button_url": ""
       }
@@ -507,7 +508,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Technical Specifications",
-            "text": "<p><strong>WAVELENGTH:</strong>633nm (Red), 830nm (Near-Infrared)<br/><strong>TREATMENT TIME:</strong>10 minutes<br/><strong>CHARGING TIME:</strong>4 hours<br/><strong>LEDs:</strong>55 dual core</p>"
+            "text": "<p><strong>WAVELENGTH: </strong>633nm (Red), 830nm (Near-Infrared)<br/><strong>TREATMENT TIME: </strong>10 minutes<br/><strong>CHARGING TIME: </strong>4 hours<br/><strong>LEDs: </strong>55 dual core</p>"
           }
         }
       },
