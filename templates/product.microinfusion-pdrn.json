@@ -899,8 +899,8 @@
         "use_own_file": false,
         "modifier": "custom",
         "text": "<h2>See how quick and easy it is to use</h2>",
-        "image": "shopify://shop_images/mi-pdrn-use-video.webp",
-        "image_mobile": "shopify://shop_images/mi-pdrn-use-video-mob.webp",
+        "image": "shopify://shop_images/Desktop_video_placeholder.webp",
+        "image_mobile": "shopify://shop_images/Mobile_video_placeholder.webp",
         "wistia_url": "hwf5rmmxsm",
         "button_label": "buy now & SAVE up to 70%",
         "button_url": "#hero-product"
