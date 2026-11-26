@@ -66,9 +66,15 @@
             </div>
         </div>
         <div class="progress-showcase__nav">
-            <button class="progress-showcase__nav-prev" type="button"><i class="e-icon e-icon-chevron"></i> {{ 'sections.n_progress-showcase.previous' | t }}</button>
-            <div class="progress-showcase__nav-pagination"></div>
-            <button class="progress-showcase__nav-next" type="button">{{ 'sections.n_progress-showcase.next' | t }} <i class="e-icon e-icon-chevron"></i></button>
+            {% if section.settings.arrows_only %}
+                <button class="progress-showcase__nav-prev" type="button" aria-label="{{ 'sections.n_progress-showcase.previous' | t }}"><i class="e-icon e-icon-chevron"></i></button>
+                <div class="progress-showcase__nav-pagination"></div>
+                <button class="progress-showcase__nav-next" type="button" aria-label="{{ 'sections.n_progress-showcase.next' | t }}"><i class="e-icon e-icon-chevron"></i></button>
+            {% else %}
+                <button class="progress-showcase__nav-prev" type="button"><i class="e-icon e-icon-chevron"></i> {{ 'sections.n_progress-showcase.previous' | t }}</button>
+                <div class="progress-showcase__nav-pagination"></div>
+                <button class="progress-showcase__nav-next" type="button">{{ 'sections.n_progress-showcase.next' | t }} <i class="e-icon e-icon-chevron"></i></button>
+            {% endif %}
         </div>
     </div>
 </section>
@@ -88,6 +94,12 @@
             "type": "text",
             "id": "section_id",
             "label": "t:common.section_id"
+        },
+        {
+            "type": "checkbox",
+            "id": "arrows_only",
+            "label": "t:common.arrows-only",
+            "default": false
         },
         {
             "type": "richtext",

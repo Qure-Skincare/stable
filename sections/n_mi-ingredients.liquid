@@ -7,11 +7,57 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/sections/mi-ingredients/mi-ingredients.css" />
 {% endif %}
 
-<section class="mi-ingredients"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
+<section class="mi-ingredients{% if section.settings.modifier != blank and section.settings.modifier != 'none' %} mi-ingredients--{{ section.settings.modifier }}{% endif %}"{% if section.settings.section_id != blank %} id="{{ section.settings.section_id }}"{% endif %}>
     <div class="container">
         <article class="mi-ingredients__text">
             {{ section.settings.text }}
         </article>
+        {% if section.settings.modifier == 'pdrn' %}
+            {% for block in section.blocks %}
+                {% if block.type == 'left_heading' and block.settings.image != blank %}
+                    <picture class="mi-ingredients__picture" {{ block.shopify_attributes }}>
+                        <img loading="lazy" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" />
+                    </picture>
+                {% endif %}
+            {% endfor %}
+            <div class="mi-ingredients__card">
+                {% for block in section.blocks %}
+                    {% if block.type == 'left_heading' %}
+                        {{ block.settings.text }}
+                    {% endif %}
+                {% endfor %}
+                <ul>
+                    {% for block in section.blocks %}
+                        {% if block.type == 'left_column' and block.settings.icon != blank %}
+                            <li {{ block.shopify_attributes }}>
+                                <i class="e-icon e-icon-{{ block.settings.icon }}"></i>
+                                {{ block.settings.text }}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <div class="c-accordion c-accordion--lines">
+                    <div class="c-accordion__list">
+                        {% assign accordion_open = true %}
+                        {% for block in section.blocks %}
+                            {% if block.type == 'left_accordion' %}
+                                <details class="c-accordion__item"{% if accordion_open %} open{% endif %} {{ block.shopify_attributes }}>
+                                    {% if block.settings.heading != blank %}
+                                        <summary class="c-accordion__summary">{{ block.settings.heading }}</summary>
+                                    {% endif %}
+                                    {% if block.settings.text != blank %}
+                                        <article class="c-accordion__content">
+                                            {{ block.settings.text }}
+                                        </article>
+                                    {% endif %}
+                                </details>
+                                {% assign accordion_open = false %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% else %}
         <div class="mi-ingredients__card">
             {% for block in section.blocks %}
                 {% if block.type == 'left_heading' and block.settings.image != blank %}
@@ -106,6 +152,7 @@
                 {% endif %}
             {% endfor %}
         </div>
+        {% endif %}
         {% if section.settings.button_url != blank and section.settings.button_label != blank %}
             <div class="mi-ingredients__button">
                 <div class="c-order-button">
@@ -127,6 +174,22 @@
             "id": "use_own_file",
             "label": "t:common.use-own-file",
             "default": false
+        },
+        {
+            "type": "select",
+            "id": "modifier",
+            "label": "t:common.modifier",
+            "default": "none",
+            "options": [
+                {
+                    "value": "none",
+                    "label": "t:common.none"
+                },
+                {
+                    "value": "pdrn",
+                    "label": "t:sections.n_mi-ingredients.settings.modifier-options.pdrn"
+                }
+            ]
         },
         {
             "type": "text",
@@ -320,7 +383,6 @@
         {
             "type": "left_accordion",
             "name": "t:sections.n_mi-ingredients.blocks.left-accordion.name",
-            "limit": 1,
             "settings": [
                 {
                     "type": "text",

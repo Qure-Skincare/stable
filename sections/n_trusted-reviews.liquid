@@ -21,10 +21,12 @@
                 </div>
             </div>
             <p class="e-disclaimer">{{ section.settings.disclaimer }}</p>
+        {% elsif section.settings.heading_mobile != blank %}
+            <h2><span class="d-none d-sm-inline">{{ section.settings.text | strip_html | strip }}</span><span class="d-sm-none">{{ section.settings.heading_mobile }}</span></h2>
         {% else %}
             {{ section.settings.text }}
         {% endif %}
-        {% if section.settings.modifier == 'trustpilot' or section.settings.modifier == 'short-cards' %}
+        {% if section.settings.modifier == 'trustpilot' or section.settings.modifier == 'short-cards' or section.settings.modifier == 'author-name' %}
             <div
                 class="c-swiper"
                 data-swiper='{
@@ -118,7 +120,7 @@
                                         </article>
                                     {% endif %}
                                 {% endif %}
-                                {% unless section.settings.modifier == 'dotted-nav' or section.settings.modifier == 'short-cards' %}
+                                {% unless section.settings.modifier == 'dotted-nav' or section.settings.modifier == 'short-cards' or section.settings.modifier == 'author-name' %}
                                     {% if block.settings.flag != blank and block.settings.username != blank %}
                                         <div class="e-author">
                                             <img loading="lazy" src="{{ block.settings.flag | image_url }}" alt="{{ block.settings.flag.alt | escape }}" />
@@ -138,8 +140,10 @@
                                 {% if block.settings.text != blank %}
                                     <article>
                                         {{ block.settings.text }}
-                                        {% if section.settings.modifier == 'dotted-nav' and block.settings.username != blank %}
-                                            <small>{{ block.settings.username }}</small>
+                                        {% if section.settings.modifier == 'dotted-nav' or section.settings.modifier == 'author-name' %}
+                                            {% if block.settings.username != blank %}
+                                                <small>{{ block.settings.username }}</small>
+                                            {% endif %}
                                         {% endif %}
                                     </article>
                                 {% endif %}
@@ -220,6 +224,10 @@
                     {
                         "value": "short-cards",
                         "label": "t:sections.n_trusted-reviews.settings.modifier-options.short-cards"
+                    },
+                    {
+                        "value": "author-name",
+                        "label": "t:sections.n_trusted-reviews.settings.modifier-options.author-name"
                     }
                 ]
             },
@@ -242,6 +250,11 @@
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text"
+            },
+            {
+                "type": "text",
+                "id": "heading_mobile",
+                "label": "t:common.heading-mobile"
             },
             {
                 "type": "text",

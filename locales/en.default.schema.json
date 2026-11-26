@@ -423,7 +423,13 @@
         "arrow-button": "Arrow button",
         "web-video": "Web video",
         "changes": "Changes",
-        "accordion-text": "Accordion text"
+        "accordion-text": "Accordion text",
+        "open": "Open",
+        "benefits-box": "Benefits box",
+        "shield": "Shield",
+        "needles": "Needles",
+        "heading-mobile": "Heading mobile",
+        "arrows-only": "Arrows only"
     },
     "blocks": {
         "block-card": {
@@ -808,6 +814,11 @@
         },
         "n_mi-ingredients": {
             "name": "MI ingredients",
+            "settings": {
+                "modifier-options": {
+                    "pdrn": "PDRN"
+                }
+            },
             "blocks": {
                 "left-column": {
                     "name": "Left column"
@@ -925,7 +936,8 @@
                 },
                 "modifier-options": {
                     "dotted-nav": "Dotted navigation",
-                    "short-cards": "Short cards (image and name)"
+                    "short-cards": "Short cards (image and name)",
+                    "author-name": "Author name under text"
                 }
             }
         },
@@ -976,7 +988,8 @@
                 "modifier-options": {
                     "faucet-filter": "Faucet filter",
                     "shower-filter": "Shower filter",
-                    "recovery-mask": "Recovery mask"
+                    "recovery-mask": "Recovery mask",
+                    "mi-pdrn": "MI PDRN"
                 }
             },
             "blocks": {
