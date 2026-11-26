@@ -132,6 +132,7 @@
           "type": "product_type",
           "settings": {
             "heading": "One time purchase",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -213,6 +214,7 @@
           "type": "product_type",
           "settings": {
             "heading": "Subscribe & Save",
+            "subheading": "",
             "preselected": true
           }
         },
@@ -221,7 +223,7 @@
           "settings": {
             "product": "micro-infusion-pro-pdrn-3-month",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 9548529903,
             "gift": "",
             "gift_selling_plan": 0,
             "included_gift": "",
@@ -231,7 +233,7 @@
             "optional_subscription": false,
             "popular": false,
             "best": true,
-            "tag_label": "",
+            "tag_label": "Black Friday Offer",
             "free_shipping": false,
             "preselected": true,
             "heading": "3 Month Supply",
@@ -239,7 +241,7 @@
             "product_selling_plan_text": "Ships every 3 months",
             "text": "",
             "image": "shopify://shop_images/mi-pdrn-6-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 19,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -256,7 +258,7 @@
           "settings": {
             "product": "micro-infusion-pro-pdrn-1-month",
             "product_variant_id": 0,
-            "product_selling_plan": 0,
+            "product_selling_plan": 9548497135,
             "gift": "",
             "gift_selling_plan": 0,
             "included_gift": "",
@@ -274,7 +276,7 @@
             "product_selling_plan_text": "Ships every 1 months",
             "text": "",
             "image": "shopify://shop_images/mi-pdrn-2-bottles.webp",
-            "product_discount_percent": 0,
+            "product_discount_percent": 17,
             "soldout": false,
             "preorder": false,
             "total_treatments": 0,
@@ -302,13 +304,14 @@
         "hide_types": true,
         "hide_variants": false,
         "color_types": false,
+        "supply_first": false,
         "subscription_product": "true",
-        "subscription_discount_max_percent": 10,
+        "subscription_discount_max_percent": 62,
         "delivery_switcher_position": "footer",
-        "delivery_switcher_product": "micro-infusion-pro-pdrn-1-month",
+        "delivery_switcher_product": "micro-infusion-pro-pdrn-3-month",
         "type": "list",
         "klaviyo_form_name": "",
-        "guarantee_period": "30",
+        "guarantee_period": "90",
         "hide_bottom": true,
         "hide_certified": false,
         "hide_title_on_subscription": false
@@ -599,14 +602,14 @@
       "name": "t:sections.n_mi-overview.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "simple",
         "section_id": "how_it_works",
         "subheader": "How it works",
         "heading": "Qure’s Micro-Infusion PDRN goes where your skin cream can’t...",
         "wistia_url": "",
         "wistia_url_mobile": "",
         "text": "<p>Its tiny, <em>virtually painless micro-needles</em> create micro-channels at the skin’s surface to support increased serum absorption, helping deliver science-backed active ingredients beyond where everyday topical skincare typically sits.</p>",
-        "features_heading": "6 Target Areas - 1 Solution",
-        "modifier": "simple"
+        "features_heading": "6 Target Areas - 1 Solution"
       }
     },
     "n_mi_ingredients": {
