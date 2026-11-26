@@ -1294,6 +1294,7 @@
     },
     "sticky_cta": {
       "type": "n-sticky-button",
+      "disabled": true,
       "name": "t:sections.sticky-button.name",
       "settings": {
         "heading": "Qure Micro-Infusion Pro Hair System",
@@ -1301,6 +1302,28 @@
         "limited": false,
         "button-label": "Choose Your Supply",
         "button-url": "#purchase-form"
+      }
+    },
+    "n_sticky_button_variants_yd4CNB": {
+      "type": "n-sticky-button-variants",
+      "blocks": {
+        "variant_h43WWy": {
+          "type": "variant",
+          "settings": {
+            "heading": "3 Month Supply",
+            "image": "shopify://shop_images/Group_1000008510.png"
+          }
+        }
+      },
+      "block_order": [
+        "variant_h43WWy"
+      ],
+      "name": "t:sections.sticky-button-variants.name",
+      "settings": {
+        "heading": "",
+        "text": "80 Units Reserved in last 48 hours",
+        "button-label": "Subscribe & Save {dyn}%",
+        "button-url": ""
       }
     }
   },
@@ -1322,6 +1345,7 @@
     "n_comparison_table",
     "n_complete_system",
     "n_faq",
-    "sticky_cta"
+    "sticky_cta",
+    "n_sticky_button_variants_yd4CNB"
   ]
 }
