@@ -660,6 +660,7 @@
       "settings": {
         "use_own_file": false,
         "section_id": "improve_skin",
+        "arrows_only": false,
         "text": "<h2>Visible results backed by our clinical study</h2>"
       }
     },
@@ -787,7 +788,7 @@
             "username": "Rodrigo M.",
             "verified_customer": "Verified customer",
             "badge": "Acne Scars",
-            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. Im loving it.”</p>",
+            "text": "<p>“The process is simple and very easy to follow. You can really see results. People are noticing the glow. I'm loving it.”</p>",
             "product_url": "",
             "product_text": "",
             "product_title": ""
@@ -933,6 +934,7 @@
         "heading": "",
         "disclaimer": "",
         "text": "<h2>Real stories, real results</h2>",
+        "heading_mobile": "",
         "button_label": "",
         "button_url": ""
       }
@@ -1503,6 +1505,7 @@
       "name": "t:sections.n_mi-ingredients.name",
       "settings": {
         "use_own_file": false,
+        "modifier": "none",
         "section_id": "ingredients",
         "text": "<h2>Two serums. Targeted results.</h2><p>Choose the right serum for your concern or use both for complete results.</p>",
         "button_label": "",
