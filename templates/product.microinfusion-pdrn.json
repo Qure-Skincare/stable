@@ -474,7 +474,7 @@
           "settings": {
             "image": "shopify://shop_images/shelly_s-pdrn.webp",
             "username": "Shelly S.",
-            "verified_customer": "",
+            "verified_customer": "Verified customer",
             "badge": "Wrinkles",
             "text": "<p>“I have used the Qure Micro- Infusion Pro for 3 monthly treatments. The results are clearer, plumper and firmer skin. With further treatments I am looking forward to looking better and better.”</p>",
             "product_url": "",
@@ -487,7 +487,7 @@
           "settings": {
             "image": "shopify://shop_images/jennifer_n-pdrn.webp",
             "username": "Jennifer N.",
-            "verified_customer": "",
+            "verified_customer": "Verified customer",
             "badge": "Smokers Lines",
             "text": "<p>“I wanted the benefits of microneedling without the downtime. My skin looks better than it has in years—I’m stunned by how well it works.”</p>",
             "product_url": "",
@@ -500,7 +500,7 @@
           "settings": {
             "image": "shopify://shop_images/janeda_t-pdrn.webp",
             "username": "Janeda T.",
-            "verified_customer": "",
+            "verified_customer": "Verified customer",
             "badge": "Dark Spots",
             "text": "<p>“After just two treatments, I’ve seen an incredible reduction in dark spots. My skin is so smooth—I can’t believe I can do this at home!”</p>",
             "product_url": "",
