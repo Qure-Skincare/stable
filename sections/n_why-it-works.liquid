@@ -41,7 +41,22 @@
                 {% unless section.settings.modifier == 'mi-pdrn' %}
                 <div class="c-product-components{% if section.settings.modifier != 'none' %} c-product-components--{{ section.settings.modifier }}{% endif %}">
                 {% endunless %}
-                    {% if section.settings.image_mobile != blank %}
+                    {% if section.settings.video != blank %}
+                        {% liquid
+                            assign video = section.settings.video
+                            assign video_sources = video.sources | where: 'format', 'mp4' | sort: 'width'
+                            assign video_source = video_sources | last
+                            for source in video_sources
+                                if source.width >= 720
+                                    assign video_source = source
+                                    break
+                                endif
+                            endfor
+                        %}
+                        <video class="why-it-works__video" loop muted playsinline preload="none"{% if video.preview_image != blank %} poster="{{ video.preview_image | image_url: width: 1100 }}"{% endif %}{% if video.alt != blank %} aria-label="{{ video.alt | escape }}"{% endif %}>
+                            <source src="{{ video_source.url }}" type="{{ video_source.mime_type }}" />
+                        </video>
+                    {% elsif section.settings.image_mobile != blank %}
                         <picture>
                             {% if section.settings.image != blank %}
                                 <source media="(min-width: 768px)" srcset="{{ section.settings.image | image_url }}" />
@@ -86,8 +101,42 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         loadScriptOnce("why-it-works", "https://qureskincaredns-stable.com/sections/why-it-works/why-it-works.js");
+
+        const video = document.querySelector("#why_it_works .why-it-works__video");
+        if (video) {
+            new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            video.play().catch(() => {});
+                        } else {
+                            video.pause();
+                        }
+                    });
+                },
+                { rootMargin: "200px" }
+            ).observe(video);
+        }
     });
 </script>
+
+{% stylesheet %}
+    .why-it-works__video {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .why-it-works--mi-pdrn .why-it-works__video {
+        width: 347px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .why-it-works--mi-pdrn .why-it-works__video {
+            width: 549px;
+        }
+    }
+{% endstylesheet %}
 
 {% schema %}
 {
@@ -141,6 +190,11 @@
             "type": "image_picker",
             "id": "image_mobile",
             "label": "t:common.image-mobile"
+        },
+        {
+            "type": "video",
+            "id": "video",
+            "label": "t:common.video"
         },
         {
             "type": "text",
