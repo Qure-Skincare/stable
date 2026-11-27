@@ -1,0 +1,182 @@
+{% doc %}
+  Keyboard accessibility layer shared by every layout: visible focus, the skip
+  link styles, keyboard access to visually hidden radios/checkboxes and to the
+  header dropdowns. Rendered in <head>.
+
+  @example
+  {% render 'n-a11y' %}
+{% enddoc %}
+
+<style>
+  /* general.css resets `outline` on every element; restore a focus ring for
+     keyboard users. Two tones keep it visible on light and dark backgrounds. */
+  :focus-visible {
+    outline: 2px solid #212428;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #fff;
+  }
+
+  /* Option tiles hide their radio/checkbox with `visibility: hidden`, which
+     also removes it from the tab order. Keep it invisible but focusable; the
+     ring is drawn on the label above. */
+  html:root label input:is([type="radio"], [type="checkbox"]) {
+    visibility: visible;
+  }
+
+  html:root label input:is([type="radio"], [type="checkbox"]):focus-visible {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  /* No box-shadow here: selected tiles draw their border with it. */
+  html:root label:has(input:focus-visible) {
+    outline: 2px solid #212428;
+    outline-offset: 2px;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10000;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #212428;
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  #MainContent:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+</style>
+
+{% comment %} class="__init" keeps it out of the sapp deferral: keyboard handling must be ready before the first key press. {% endcomment %}
+<script class="__init">
+  (() => {
+    const DESKTOP_MIN_WIDTH = 992;
+    const OPEN_CLASS = 'show-on-hover';
+    const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select, textarea, [tabindex]:not([tabindex="-1"])';
+
+    const isDesktop = () => window.innerWidth >= DESKTOP_MIN_WIDTH;
+    const openPane = (header) => header.querySelector(`.header__content.${OPEN_CLASS}`);
+    const triggerFor = (header, pane) => header.querySelector(`.header__menu [data-target="${pane.id}"]`);
+
+    // header.js closes the dropdowns when the pointer leaves the header;
+    // reuse that path so its internal state stays in sync.
+    const closePanes = (header) => header.dispatchEvent(new PointerEvent('pointerout', { bubbles: true }));
+
+    // Closed dropdowns are only faded out by CSS; `inert` also takes them out
+    // of the tab order and away from screen readers. On mobile the same
+    // panels are the menu content, so they stay interactive there.
+    const syncExpanded = (header) => {
+      header.querySelectorAll('.header__menu [data-target]').forEach((trigger) => {
+        const pane = document.getElementById(trigger.dataset.target);
+        if (!pane) return;
+        const open = pane.classList.contains(OPEN_CLASS);
+        trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pane.inert = isDesktop() && !open;
+      });
+    };
+
+    // Choosing an option can hide its own tile (the purchase type switcher
+    // shows only the other option); keep focus on the tile that remains.
+    document.addEventListener('change', (e) => {
+      const input = e.target;
+      if (!input.matches || !input.matches('input[type="radio"]') || !input.name) return;
+
+      setTimeout(() => {
+        if (document.activeElement && document.activeElement !== document.body) return;
+        const scope = input.form || document;
+        const next = [...scope.querySelectorAll(`input[type="radio"][name="${CSS.escape(input.name)}"]`)].find((el) => el.checkVisibility());
+        if (next) next.focus();
+      }, 100);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('header');
+      if (!header) return;
+
+      let pendingPane = null;
+      header.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.header__menu [data-target]');
+        if (!trigger || e.detail !== 0 || !isDesktop()) return;
+        pendingPane = trigger.dataset.target;
+        setTimeout(() => { pendingPane = null; }, 3000);
+      });
+
+      syncExpanded(header);
+      window.matchMedia(`(min-width: ${DESKTOP_MIN_WIDTH}px)`).addEventListener('change', () => syncExpanded(header));
+      header.querySelectorAll('.header__content').forEach((pane) => {
+        new MutationObserver(() => {
+          syncExpanded(header);
+          if (pendingPane === pane.id && pane.classList.contains(OPEN_CLASS)) {
+            pendingPane = null;
+            focusPane(pane);
+          }
+        }).observe(pane, { attributes: true, attributeFilter: ['class'] });
+      });
+
+      // Enter on a menu item opens its dropdown (header.js, possibly after a
+      // delay); once the dropdown is open, move keyboard focus into it.
+      const focusPane = (pane) => {
+        const trigger = triggerFor(header, pane);
+        if (!trigger || document.activeElement !== trigger || !trigger.matches(':focus-visible')) return;
+        const first = [...pane.querySelectorAll(FOCUSABLE)].find((el) => el.checkVisibility());
+        if (first) first.focus();
+      };
+
+      header.addEventListener('keydown', (e) => {
+        if (!isDesktop()) return;
+        const pane = openPane(header);
+        if (!pane) return;
+
+        if (e.key === 'Escape') {
+          const trigger = triggerFor(header, pane);
+          closePanes(header);
+          if (trigger) trigger.focus();
+          return;
+        }
+
+        // Leaving the dropdown with Tab continues from its menu item.
+        if (e.key !== 'Tab' || !pane.contains(e.target)) return;
+        const items = [...pane.querySelectorAll(FOCUSABLE)].filter((el) => el.checkVisibility());
+        const edge = e.shiftKey ? items[0] : items[items.length - 1];
+        if (e.target !== edge) return;
+
+        const trigger = triggerFor(header, pane);
+        closePanes(header);
+        if (!trigger) return;
+        trigger.focus();
+        if (e.shiftKey) e.preventDefault();
+      });
+
+      header.addEventListener('focusout', (e) => {
+        if (!isDesktop() || !openPane(header)) return;
+        if (e.relatedTarget && !header.contains(e.relatedTarget)) closePanes(header);
+      });
+
+      // The hamburger is a <div>; let Enter and Space press it.
+      const hamburger = document.getElementById('hamburger');
+      if (hamburger) {
+        hamburger.addEventListener('keydown', (e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return;
+          e.preventDefault();
+          hamburger.click();
+          const close = document.getElementById('dismiss-menu');
+          if (close) close.focus();
+        });
+
+        const dismiss = document.getElementById('dismiss-menu');
+        if (dismiss) dismiss.addEventListener('click', () => hamburger.focus());
+      }
+    });
+  })();
+</script>

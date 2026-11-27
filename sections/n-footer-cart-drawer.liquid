@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="{{ 'n-footer-cart-drawer.css' | asset_url }}">
 
-<dialog class="flyout-cart offcanvas offcanvas-end" id="cartCanvas">
+<dialog class="flyout-cart offcanvas offcanvas-end" id="cartCanvas" aria-label="{{ 'cart.drawer.settings.header' | t | escape }}">
    <div id="cart-dynamic-content" class="flyout-cart__dynamic" data-ql-arm="{{ cart.attributes['_ql_arm'] | escape }}">
       {% render 'n-footer-cart-drawer-timer', timer: global_timer %}
       <div class="flyout-cart__wrapper">
@@ -13,6 +13,7 @@
                <button
                   class="flyout-cart__close"
                   type="button"
+                  aria-label="Close cart"
                   onclick="cartCanvas.close()"
                >
                   <i class="e-icon e-icon-cross"></i>

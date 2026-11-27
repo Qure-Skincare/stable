@@ -23,7 +23,7 @@
     {% if panel == 'none' %}
         <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: '#' }}">
     {% else %}
-        <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}">
+        <a{% if bf_style %} class="bf-bundles"{% endif %} href="{{ block.settings.url | default: 'javascript:;' }}" data-target="{{ panel }}" aria-haspopup="true" aria-expanded="false" aria-controls="{{ panel }}">
     {% endif %}
         {% if panel == 'none' and bf_style %}
             {{ block.settings.title }}

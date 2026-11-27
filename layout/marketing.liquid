@@ -55,10 +55,14 @@
         }
     </style>
     
+    {% render 'n-a11y' %}
+
     {{ content_for_header }}
   </head>
 
   <body class="{{ template | downcase }}">
+
+    <a class="skip-link" href="#MainContent">Skip to content</a>
 
     <!-- Google Tag Manager (noscript) -->
     
@@ -72,7 +76,7 @@
     <link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://qureskincaredns-stable.com/assets/css/fonts.css" /></noscript>
     
-    <main>
+    <main id="MainContent" tabindex="-1">
       {{ content_for_layout }}
     </main>
 

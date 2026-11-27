@@ -117,11 +117,21 @@ const morphSectionHtml = (html, targetId) => {
     const next = temp.querySelector('#' + targetId);
     if (!next) return;
 
+    // Keyboard users must not lose their place when the re-render removes the
+    // focused control (or lands while the drawer has just opened).
+    const drawer = current.closest('dialog');
+    const focused = drawer && drawer.contains(document.activeElement) ? document.activeElement : null;
+    const focusedFormId = focused ? focused.closest('form[id]')?.id : null;
+
     morphdom(current, next, {
         getNodeKey(node) {
             return node.nodeType === Node.ELEMENT_NODE ? node.getAttribute('id') : undefined;
         }
     });
+
+    if (!drawer || !drawer.open || drawer.contains(document.activeElement)) return;
+    const sameControl = focusedFormId ? document.getElementById(focusedFormId)?.querySelector('button') : null;
+    (sameControl || drawer.querySelector('.flyout-cart__close'))?.focus();
 };
 
 const applySections = async (sectionsObj, { allowGetFallback = true } = {}) => {
@@ -234,6 +244,7 @@ const showCart = () => {
 
     document.body.style.top = `-${window.scrollY}px`;
     cartDrawer.showModal();
+    if (!cartDrawer.contains(document.activeElement)) cartDrawer.querySelector('.flyout-cart__close')?.focus();
 };
 
 // `adding` shows the skeleton row for an incoming item (add flows only);
