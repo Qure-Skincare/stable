@@ -92,6 +92,8 @@
         }
     </style>
     
+    {% render 'n-a11y' %}
+
     {{ content_for_header }}
 
     {% render 'n-header-scripts' %}
@@ -109,6 +111,8 @@
 
   <body class="{{ template | downcase }}{% if settings.holiday_offer_turn_on %} holiday-theme{% endif %}">
 
+    <a class="skip-link" href="#MainContent">Skip to content</a>
+
     <!-- Google Tag Manager (noscript) -->
     
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXV2ZDXR"
@@ -123,7 +127,7 @@
     
     {% sections 'n-header-group' %}
 
-    <main class="sections-stack">
+    <main class="sections-stack" id="MainContent" tabindex="-1">
       {{ content_for_layout }}
     </main>
 

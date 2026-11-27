@@ -48,13 +48,13 @@
                 <div class="c-cart-tile__pcs">
                     <div class="e-quantity">
                         <form id="{{ cart_item_id }}_minus" method="post" action="/cart/change" enctype="multipart/form-data">
-                            <button type="submit"><i class="e-icon e-icon-minus"></i></button>
+                            <button type="submit" aria-label="Decrease quantity of {{ cart_item_title | escape }}"><i class="e-icon e-icon-minus"></i></button>
                             <input type="hidden" name="quantity" value="{{ cart_item_quantity_minus }}">
                             <input type="hidden" name="id" value="{{ cart_item_key }}">
                         </form>
-                        <input type="number" name="qty" value="{{ cart_item_quantity }}" min="0" />
+                        <input type="number" name="qty" value="{{ cart_item_quantity }}" min="0" aria-label="Quantity of {{ cart_item_title | escape }}" />
                         <form id="{{ cart_item_id }}_plus" method="post" action="/cart/change" enctype="multipart/form-data">
-                            <button type="submit"><i class="e-icon e-icon-plus"></i></button>
+                            <button type="submit" aria-label="Increase quantity of {{ cart_item_title | escape }}"><i class="e-icon e-icon-plus"></i></button>
                             <input type="hidden" name="quantity" value="{{ cart_item_quantity_plus }}">
                             <input type="hidden" name="id" value="{{ cart_item_key }}">
                         </form>
@@ -64,7 +64,7 @@
         </div>
         {% unless gift_exists %}
             <form id="{{ cart_item_id }}_remove" method="post" action="/cart/change" enctype="multipart/form-data">
-                <button type="submit" class="c-cart-tile__remove">
+                <button type="submit" class="c-cart-tile__remove" aria-label="Remove {{ cart_item_title | escape }}">
                     <i class="e-icon e-icon-cross"></i>
                 </button>
                 <input type="hidden" name="quantity" value="0">
