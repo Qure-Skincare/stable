@@ -138,6 +138,7 @@
                 },
                 "bestsellers_card_2": {
                   "type": "nav-card",
+                  "disabled": true,
                   "settings": {
                     "title": "Micro-Infusion Pro Hair",
                     "label": "",
@@ -195,11 +196,10 @@
                 },
                 "bestsellers_card_5": {
                   "type": "nav-card",
-                  "disabled": true,
                   "settings": {
                     "title": "Bundle & Save",
                     "label": "",
-                    "badge": "Save up to 57%",
+                    "badge": "Save up to 60%",
                     "highlight_badge": true,
                     "url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal-new",
                     "image": "shopify://shop_images/header-promo-card-image-5.webp",
