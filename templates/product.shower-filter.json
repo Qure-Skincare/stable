@@ -161,6 +161,7 @@
           "settings": {
             "heading": "White",
             "image": "shopify://shop_images/variant-white-1.webp",
+            "subheading": "",
             "preselected": true
           }
         },
@@ -278,6 +279,7 @@
           "settings": {
             "heading": "Black",
             "image": "shopify://shop_images/variant-black-1.webp",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -395,6 +397,7 @@
           "settings": {
             "heading": "Silver",
             "image": "shopify://shop_images/variant-silver-1.webp",
+            "subheading": "",
             "preselected": false
           }
         },
@@ -527,6 +530,7 @@
         "hide_types": false,
         "hide_variants": false,
         "color_types": true,
+        "supply_first": false,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
@@ -560,11 +564,13 @@
           "settings": {
             "heading": "Silver",
             "image": "shopify://shop_images/variant-silver-1.webp",
+            "subheading": "",
             "preselected": true
           }
         },
         "product_RBCPe8": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hand-shower-filter-12-month-bundle",
             "product_variant_id": 50530887827695,
@@ -600,6 +606,7 @@
         },
         "product_gbPf3J": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "hand-shower-filter-6-month-bundle",
             "product_variant_id": 50530923086063,
@@ -682,6 +689,7 @@
         "hide_types": true,
         "hide_variants": false,
         "color_types": true,
+        "supply_first": false,
         "subscription_product": "false",
         "subscription_discount_max_percent": 70,
         "delivery_switcher_position": "header",
@@ -1053,6 +1061,7 @@
         "heading": "",
         "disclaimer": "",
         "text": "<h2>The results are crystal clear</h2>",
+        "heading_mobile": "",
         "button_label": "",
         "button_url": ""
       }
@@ -1133,6 +1142,7 @@
           "settings": {
             "section_id": "carbon-fiber",
             "component": "none",
+            "open": false,
             "heading": "Carbon Fiber Layer",
             "text": "<p>Removes up to 99% of chlorine which can reduce dry and irritated feeling skin leaving skin and hair looking healthier.</p>",
             "icon": "carbon"
@@ -1143,6 +1153,7 @@
           "settings": {
             "section_id": "kdf-filter",
             "component": "reverse",
+            "open": false,
             "heading": "KDF-55 Layer",
             "text": "<p>Helps reduce heavy metals such as lead and mercury, supporting cleaner shower water.</p>",
             "icon": "pp-filter"
@@ -1153,6 +1164,7 @@
           "settings": {
             "section_id": "fof-filter",
             "component": "none",
+            "open": false,
             "heading": "FOF (Filter of Future)",
             "text": "<p>Helps limit limescale buildup by reducing hard water mineral accumulation, which can support improved water flow over time.</p>",
             "icon": "nok-filter"
